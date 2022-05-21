@@ -1,0 +1,1049 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 5.4.0">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/avatar.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/avatar.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+<link rel="stylesheet" href="/lib/font-awesome/css/all.min.css">
+  <link rel="stylesheet" href="/lib/pace/pace-theme-mac-osx.min.css">
+  <script src="/lib/pace/pace.min.js"></script>
+
+<script id="hexo-configurations">
+    var NexT = window.NexT || {};
+    var CONFIG = {"hostname":"smile1231.github.io","root":"/","scheme":"Pisces","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":true,"show_result":true,"style":"mac"},"back2top":{"enable":true,"sidebar":false,"scrollpercent":true},"bookmark":{"enable":true,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":true,"lazyload":true,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
+  </script>
+
+  <meta name="description" content="最近受到客服的一个反馈:某个功能长时间无反馈,响应时间达到了20s以上,通过调用日志发现,某条sql查询竟然花费了12s的时间,而且查询了两次,于是准备通过执行计划对此进行找方向调优. 什么是执行计划1. MySQL逻辑结构先知">
+<meta property="og:type" content="article">
+<meta property="og:title" content="关于sql执行计划">
+<meta property="og:url" content="https://smile1231.github.io/posts/60f024c8/index.html">
+<meta property="og:site_name" content="JIN MAO &#39;s Blog">
+<meta property="og:description" content="最近受到客服的一个反馈:某个功能长时间无反馈,响应时间达到了20s以上,通过调用日志发现,某条sql查询竟然花费了12s的时间,而且查询了两次,于是准备通过执行计划对此进行找方向调优. 什么是执行计划1. MySQL逻辑结构先知">
+<meta property="og:locale" content="en_US">
+<meta property="og:image" content="https://smile1231.github.io/posts/60f024c8/2021-11-17-15-24-30.png">
+<meta property="og:image" content="https://smile1231.github.io/posts/60f024c8/2021-11-22-15-55-16.png">
+<meta property="og:image" content="https://smile1231.github.io/posts/60f024c8/2021-11-22-16-00-46.png">
+<meta property="og:image" content="https://smile1231.github.io/posts/60f024c8/2021-11-22-16-03-34.png">
+<meta property="og:image" content="https://smile1231.github.io/posts/60f024c8/2021-11-22-16-05-35.png">
+<meta property="og:image" content="https://smile1231.github.io/posts/60f024c8/2021-11-22-16-06-53.png">
+<meta property="og:image" content="https://smile1231.github.io/posts/60f024c8/2021-11-22-16-13-44.png">
+<meta property="og:image" content="https://smile1231.github.io/posts/60f024c8/2021-11-22-16-15-17.png">
+<meta property="og:image" content="https://smile1231.github.io/posts/60f024c8/2021-11-22-16-16-49.png">
+<meta property="og:image" content="https://smile1231.github.io/posts/60f024c8/2021-11-22-16-17-39.png">
+<meta property="og:image" content="https://smile1231.github.io/posts/60f024c8/2021-11-22-16-18-35.png">
+<meta property="og:image" content="https://smile1231.github.io/posts/60f024c8/2021-11-22-16-21-32.png">
+<meta property="og:image" content="https://smile1231.github.io/posts/60f024c8/2021-11-22-16-22-02.png">
+<meta property="og:image" content="https://smile1231.github.io/posts/60f024c8/2021-11-22-16-22-32.png">
+<meta property="og:image" content="https://smile1231.github.io/posts/60f024c8/2021-11-22-16-22-59.png">
+<meta property="og:image" content="https://smile1231.github.io/posts/60f024c8/2021-11-22-16-23-30.png">
+<meta property="og:image" content="https://smile1231.github.io/posts/60f024c8/2021-11-22-16-23-57.png">
+<meta property="og:image" content="https://smile1231.github.io/posts/60f024c8/2021-11-22-16-24-29.png">
+<meta property="og:image" content="https://smile1231.github.io/posts/60f024c8/2021-11-22-16-25-14.png">
+<meta property="og:image" content="https://smile1231.github.io/posts/60f024c8/2021-11-22-16-30-20.png">
+<meta property="og:image" content="https://smile1231.github.io/posts/60f024c8/2021-11-22-16-30-30.png">
+<meta property="og:image" content="https://smile1231.github.io/posts/60f024c8/2021-11-22-16-31-08.png">
+<meta property="og:image" content="https://smile1231.github.io/posts/60f024c8/2021-11-22-16-32-01.png">
+<meta property="og:image" content="https://smile1231.github.io/posts/60f024c8/2021-11-22-16-32-30.png">
+<meta property="og:image" content="https://smile1231.github.io/posts/60f024c8/2021-11-22-16-33-30.png">
+<meta property="og:image" content="https://smile1231.github.io/posts/60f024c8/2021-11-22-16-33-42.png">
+<meta property="article:published_time" content="2021-11-08T08:54:09.000Z">
+<meta property="article:modified_time" content="2021-11-22T14:37:20.097Z">
+<meta property="article:author" content="JIN Mao">
+<meta property="article:tag" content="数据库">
+<meta property="article:tag" content="执行计划">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://smile1231.github.io/posts/60f024c8/2021-11-17-15-24-30.png">
+
+<link rel="canonical" href="https://smile1231.github.io/posts/60f024c8/">
+
+
+<script id="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome : false,
+    isPost : true,
+    lang   : 'en'
+  };
+</script>
+
+  <title>关于sql执行计划 | JIN MAO 's Blog</title>
+  
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-FWV5496QFL"></script>
+    <script>
+      if (CONFIG.hostname === location.hostname) {
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-FWV5496QFL');
+      }
+    </script>
+
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header { opacity: initial; }
+
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+<link rel="alternate" href="/atom.xml" title="JIN MAO 's Blog" type="application/atom+xml">
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div class="container use-motion">
+    <div class="headband"></div>
+      <!-- <a target="_blank" rel="noopener" href="https://github.com/Smile1231/StudyRepository"><img loading="lazy" width="149" height="149" src="https://github.blog/wp-content/uploads/2008/12/forkme_right_gray_6d6d6d.png?resize=149%2C149" class="attachment-full size-full" alt="Fork me on GitHub" data-recalc-dims="1"></a> -->
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="Toggle navigation bar">
+      <span class="toggle-line toggle-line-first"></span>
+      <span class="toggle-line toggle-line-middle"></span>
+      <span class="toggle-line toggle-line-last"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <h1 class="site-title">JIN MAO 's Blog</h1>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+      <p class="site-subtitle" itemprop="description">got windy (起风了)</p>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+        <i class="fa fa-search fa-fw fa-lg"></i>
+    </div>
+  </div>
+</div>
+
+
+
+
+<nav class="site-nav">
+  <ul id="menu" class="main-menu menu">
+        <li class="menu-item menu-item-home">
+
+    <a href="/" rel="section"><i class="fa fa-home fa-fw"></i>Home</a>
+
+  </li>
+        <li class="menu-item menu-item-about">
+
+    <a href="/about/" rel="section"><i class="fa fa-user fa-fw"></i>About</a>
+
+  </li>
+        <li class="menu-item menu-item-tags">
+
+    <a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>Tags<span class="badge">91</span></a>
+
+  </li>
+        <li class="menu-item menu-item-categories">
+
+    <a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>Categories<span class="badge">69</span></a>
+
+  </li>
+        <li class="menu-item menu-item-archives">
+
+    <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>Archives<span class="badge">124</span></a>
+
+  </li>
+      <li class="menu-item menu-item-search">
+        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>Search
+        </a>
+      </li>
+  </ul>
+</nav>
+
+
+
+  <div class="search-pop-overlay">
+    <div class="popup search-popup">
+        <div class="search-header">
+  <span class="search-icon">
+    <i class="fa fa-search"></i>
+  </span>
+  <div class="search-input-container">
+    <input autocomplete="off" autocapitalize="off"
+           placeholder="Searching..." spellcheck="false"
+           type="search" class="search-input">
+  </div>
+  <span class="popup-btn-close">
+    <i class="fa fa-times-circle"></i>
+  </span>
+</div>
+<div id="search-result">
+  <div id="no-result">
+    <i class="fa fa-spinner fa-pulse fa-5x fa-fw"></i>
+  </div>
+</div>
+
+    </div>
+  </div>
+
+</div>
+    </header>
+
+    
+  <div class="back-to-top">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+  <div class="reading-progress-bar"></div>
+  <a role="button" class="book-mark-link book-mark-link-fixed"></a>
+
+
+    <main class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+
+          <div class="content post posts-expand">
+            
+
+    
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
+    <link itemprop="mainEntityOfPage" href="https://smile1231.github.io/posts/60f024c8/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.png">
+      <meta itemprop="name" content="JIN Mao">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="JIN MAO 's Blog">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          关于sql执行计划
+        </h1>
+
+        <div class="post-meta">
+          
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">Posted on</span>
+
+              <time title="Created: 2021-11-08 16:54:09" itemprop="dateCreated datePublished" datetime="2021-11-08T16:54:09+08:00">2021-11-08</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">Edited on</span>
+                <time title="Modified: 2021-11-22 22:37:20" itemprop="dateModified" datetime="2021-11-22T22:37:20+08:00">2021-11-22</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">In</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E6%95%B0%E6%8D%AE%E5%BA%93/" itemprop="url" rel="index"><span itemprop="name">数据库</span></a>
+                </span>
+            </span>
+
+          
+           <!-- <span class="post-meta-item" title="Views" id="busuanzi_container_page_pv" style="display: none;">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-eye"></i>
+              </span>
+              <span class="post-meta-item-text">Views: </span>
+              <span id="busuanzi_value_page_pv"></span>
+            </span> -->
+            <span>&emsp;</span><span class="post-meta-item-icon"><i class="fa fa-eye"></i></span>
+            <span class="post-meta-item-text">Views: </span>
+            <span id="busuanzi_value_page_pv"></span>
+  
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="far fa-comment"></i>
+      </span>
+      <span class="post-meta-item-text">Valine: </span>
+    
+    <a title="valine" href="/posts/60f024c8/#valine-comments" itemprop="discussionUrl">
+      <span class="post-comments-count valine-comment-count" data-xid="/posts/60f024c8/" itemprop="commentCount"></span>
+    </a>
+  </span>
+  
+  
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+        <p>最近受到客服的一个反馈:某个功能长时间无反馈,响应时间达到了<code>20s</code>以上,通过调用日志发现,某条<code>sql</code>查询竟然花费了<code>12s</code>的时间,而且查询了两次,于是准备通过执行计划对此进行找方向调优.</p>
+<h1 id="什么是执行计划"><a href="#什么是执行计划" class="headerlink" title="什么是执行计划"></a>什么是执行计划</h1><h2 id="1-MySQL逻辑结构先知"><a href="#1-MySQL逻辑结构先知" class="headerlink" title="1. MySQL逻辑结构先知"></a>1. <code>MySQL</code>逻辑结构先知</h2><span id="more"></span>
+
+<p>关于<code>MySQL</code>的逻辑结构，将其理解为四层，就像项目分层一样，每一层处理不同的业务逻辑，先看图后说话：</p>
+<img data-src="/posts/60f024c8/2021-11-17-15-24-30.png" class="">
+
+<p>上图概述：</p>
+<ul>
+<li><p>客户端：这里指连接<code>MySQL</code>各种形式，如<code>.Net</code>中使用的<code>ADO</code>连接、<code>Java</code>使用<code>JDBC</code>连接等；<code>MySQL</code>是客户端和服务器模式，前提先建立连接，才能传输数据，处理相关逻辑；</p>
+</li>
+<li><p>业务逻辑：在<code>MySQL</code>内部有很多模块组成，分别处理相关业务逻辑；</p>
+</li>
+<li><p>连接管理：负责连接认证、连接数判断、连接池处理等业务逻辑处理；</p>
+</li>
+<li><p>查询缓存：当一个<code>SQL</code>进来时，如果开启查询缓存功能，<code>MySQL</code>会优先去查询缓存中检查是否有数据匹配，如果匹配上，就不会再去解析对应的<code>SQL</code>啦，但如果语句中有用户自定义函数、存储函数、用户变量、临时表、<code>mysql</code>库中的系统表时，都不会走缓存； 对于查询缓存来说，在<code>MySQL8.0</code>已经去除，官方回应的是在一定场景上，查询缓存会导致性能上的瓶颈。</p>
+</li>
+<li><p>解析器：对于一个<code>SQL</code>语句，<code>MySql</code>根据语法规则需要对其进行解析，并生成一个内部能识别的解析树；</p>
+</li>
+<li><p>优化器：负责对解析器得到的解析树进行优化，<code>MySQL</code>会根据内部算法找到一个<code>MySQL</code>认为最优的执行计划，后续就按照这个执行计划执行。所以后续我们分析的就是<code>MySQL</code>针对<code>SQL</code>语句选择出来的最优执行计划，结合业务，根据规则对<code>SQL</code>进行优化，从而让<code>SQL</code>语句在<code>MySQL</code>内部达到真正的最优。</p>
+</li>
+<li><p>执行器：得到执行计划之后，就会找到对应的存储引擎，根据执行计划给出的指令依次执行。</p>
+</li>
+<li><p>存储引擎：数据的存储和提取最后是靠存储引擎；<code>MySQL</code>内部实现可插拔式的存储引擎机制，不同的存储引擎执行不同的逻辑；</p>
+</li>
+<li><p>物理文件：数据存储的最终位置，即磁盘上；协同存储引擎对数据进行读写操作。</p>
+</li>
+</ul>
+<p>关于<code>MySql</code>的逻辑结构，以上只是简单描述，业务逻辑层的功能模块远不止上面提到的，小伙伴有兴趣可以专门研究一下，这里的目的就是为了体现<code>SQL</code>语句到服务器上时经过的几个关键步骤，方便后续优化的理解。</p>
+<h2 id="2-SQL语句的中关键字执行顺序须知"><a href="#2-SQL语句的中关键字执行顺序须知" class="headerlink" title="2.SQL语句的中关键字执行顺序须知"></a>2.<code>SQL</code>语句的中关键字执行顺序须知</h2><p>在编写一条查询语句时，习惯性的从头到尾开始敲出来，应该都是从<code>select</code> 开始吧，但似乎没太注意它们真正的执行顺序；既然要优化，肯定需要得知道一条<code>SQL</code>语句大概的执行流程，结合执行计划，目的就更加清晰啦；上一张一看就明白的图：</p>
+<img data-src="/posts/60f024c8/2021-11-22-15-55-16.png" class="">
+
+<p>关键字简述：</p>
+<ul>
+<li><code>FROM</code>：确定数据来源，即指定表；</li>
+<li><code>JOIN...ON</code>：确定关联表和关联条件；</li>
+<li><code>WHERE</code>：指定过滤条件，过滤出满足条件的数据；</li>
+<li><code>GROUP BY</code>：按指定的字段对过滤后的数据进行分组；</li>
+<li><code>HAVING</code>：对分组之后的数据指定过滤条件；</li>
+<li><code>SELECT</code>：查找想要的字段数据；</li>
+<li><code>DISTINCT</code>：针对查找出来的数据进行去重；</li>
+<li><code>ORDER BY</code>：对去重后的数据指定字段进行排序；</li>
+<li><code>LIMIT</code>：对去重后的数据限制获取到的条数，即分页；<br>好啦，大概了解<code>MySQL</code>的逻辑结构和<code>SQL</code>查询关键字执行顺序之后，接下来就可以好好说说执行计划啦。</li>
+</ul>
+<h2 id="3-好好说说执行计划"><a href="#3-好好说说执行计划" class="headerlink" title="3. 好好说说执行计划"></a>3. 好好说说执行计划</h2><p>通过上面的逻辑结构，当一个<code>SQL</code>发送到<code>MySQL</code>执行时，需要经过内部优化器进行优化，而使用<code>explain</code>关键字可以模拟优化器执行<code>SQL</code>查询语句，从而知道<code>MySQL</code>是如何处理<code>SQL</code>的，即<code>SQL</code>的执行计划；根据<code>explain</code>提供的执行计划信息分析<code>SQL</code>语句，然后进行相关优化操作。接下来的示例演示用到五张表：<code>USER(用户表)、MENU(菜单表)、ROLE(角色表)、USER_ROLE(用户角色关系表)、ROLE_MENU(角色菜单关系表)、ADDR(用户地址表，这里认为和用户一一对应)、FRIEND(朋友表，一对多关系)</code>，它们的关系这里就不详细说了吧，小伙伴肯定都明白，这是管控菜单权限的五张基础表和两个基础信息表；</p>
+<p>表DDL</p>
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br><span class="line">105</span><br><span class="line">106</span><br><span class="line">107</span><br><span class="line">108</span><br><span class="line">109</span><br><span class="line">110</span><br><span class="line">111</span><br><span class="line">112</span><br><span class="line">113</span><br><span class="line">114</span><br><span class="line">115</span><br><span class="line">116</span><br><span class="line">117</span><br><span class="line">118</span><br><span class="line">119</span><br><span class="line">120</span><br><span class="line">121</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/*</span></span><br><span class="line"><span class="comment">SQLyog Ultimate - MySQL GUI v8.2 </span></span><br><span class="line"><span class="comment">MySQL - 5.5.27 : Database - sql_optimization</span></span><br><span class="line"><span class="comment">*********************************************************************</span></span><br><span class="line"><span class="comment">*/</span></span><br><span class="line"></span><br><span class="line"><span class="comment">/*!40101 SET NAMES utf8 */</span>;</span><br><span class="line"></span><br><span class="line"><span class="comment">/*!40101 SET SQL_MODE=&#x27;&#x27;*/</span>;</span><br><span class="line"></span><br><span class="line"><span class="comment">/*!40014 SET @OLD_UNIQUE_CHECKS=@@UNIQUE_CHECKS, UNIQUE_CHECKS=0 */</span>;</span><br><span class="line"><span class="comment">/*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */</span>;</span><br><span class="line"><span class="comment">/*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE=&#x27;NO_AUTO_VALUE_ON_ZERO&#x27; */</span>;</span><br><span class="line"><span class="comment">/*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */</span>;</span><br><span class="line"><span class="keyword">CREATE</span> DATABASE <span class="comment">/*!32312 IF NOT EXISTS*/</span>`sql_optimization` <span class="comment">/*!40100 DEFAULT CHARACTER SET utf8 COLLATE utf8_bin */</span>;</span><br><span class="line"></span><br><span class="line">USE `sql_optimization`;</span><br><span class="line"></span><br><span class="line"><span class="comment">/*Table structure for table `addr` */</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">DROP</span> <span class="keyword">TABLE</span> IF <span class="keyword">EXISTS</span> `addr`;</span><br><span class="line"></span><br><span class="line"><span class="keyword">CREATE</span> <span class="keyword">TABLE</span> `addr` (</span><br><span class="line">  `ID` <span class="type">int</span>(<span class="number">11</span>) <span class="keyword">NOT</span> <span class="keyword">NULL</span>,</span><br><span class="line">  `ADDR` <span class="type">varchar</span>(<span class="number">128</span>) <span class="keyword">COLLATE</span> utf8_bin <span class="keyword">DEFAULT</span> <span class="keyword">NULL</span>,</span><br><span class="line">  <span class="keyword">PRIMARY</span> KEY (`ID`)</span><br><span class="line">) ENGINE<span class="operator">=</span>InnoDB <span class="keyword">DEFAULT</span> CHARSET<span class="operator">=</span>utf8 <span class="keyword">COLLATE</span><span class="operator">=</span>utf8_bin;</span><br><span class="line"></span><br><span class="line"><span class="comment">/*Data for the table `addr` */</span></span><br><span class="line"></span><br><span class="line"><span class="comment">/*Table structure for table `friend` */</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">DROP</span> <span class="keyword">TABLE</span> IF <span class="keyword">EXISTS</span> `friend`;</span><br><span class="line"></span><br><span class="line"><span class="keyword">CREATE</span> <span class="keyword">TABLE</span> `friend` (</span><br><span class="line">  `USER_ID` <span class="type">int</span>(<span class="number">11</span>) <span class="keyword">DEFAULT</span> <span class="keyword">NULL</span>,</span><br><span class="line">  `FRIEND_ID` <span class="type">int</span>(<span class="number">11</span>) <span class="keyword">DEFAULT</span> <span class="keyword">NULL</span>,</span><br><span class="line">  KEY `idx_user_id` (`USER_ID`)</span><br><span class="line">) ENGINE<span class="operator">=</span>InnoDB <span class="keyword">DEFAULT</span> CHARSET<span class="operator">=</span>utf8 <span class="keyword">COLLATE</span><span class="operator">=</span>utf8_bin;</span><br><span class="line"></span><br><span class="line"><span class="comment">/*Data for the table `friend` */</span></span><br><span class="line"></span><br><span class="line"><span class="comment">/*Table structure for table `menu` */</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">DROP</span> <span class="keyword">TABLE</span> IF <span class="keyword">EXISTS</span> `menu`;</span><br><span class="line"></span><br><span class="line"><span class="keyword">CREATE</span> <span class="keyword">TABLE</span> `menu` (</span><br><span class="line">  `ID` <span class="type">int</span>(<span class="number">11</span>) <span class="keyword">NOT</span> <span class="keyword">NULL</span>,</span><br><span class="line">  `MENU_NAME` <span class="type">varchar</span>(<span class="number">128</span>) <span class="keyword">COLLATE</span> utf8_bin <span class="keyword">DEFAULT</span> <span class="keyword">NULL</span>,</span><br><span class="line">  `MENU_URL` <span class="type">varchar</span>(<span class="number">128</span>) <span class="keyword">COLLATE</span> utf8_bin <span class="keyword">DEFAULT</span> <span class="keyword">NULL</span>,</span><br><span class="line">  <span class="keyword">PRIMARY</span> KEY (`ID`)</span><br><span class="line">) ENGINE<span class="operator">=</span>InnoDB <span class="keyword">DEFAULT</span> CHARSET<span class="operator">=</span>utf8 <span class="keyword">COLLATE</span><span class="operator">=</span>utf8_bin;</span><br><span class="line"></span><br><span class="line"><span class="comment">/*Data for the table `menu` */</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">insert</span>  <span class="keyword">into</span> `menu`(`ID`,`MENU_NAME`,`MENU_URL`) <span class="keyword">values</span> (<span class="number">1</span>,<span class="string">&#x27;用户新增&#x27;</span>,<span class="string">&#x27;api/User/Add&#x27;</span>),(<span class="number">2</span>,<span class="string">&#x27;用户删除&#x27;</span>,<span class="string">&#x27;api/User/Delete&#x27;</span>),(<span class="number">3</span>,<span class="string">&#x27;用户修改&#x27;</span>,<span class="string">&#x27;api/User/Update&#x27;</span>),(<span class="number">4</span>,<span class="string">&#x27;用户查询&#x27;</span>,<span class="string">&#x27;api/User/Query&#x27;</span>),(<span class="number">5</span>,<span class="string">&#x27;角色新增&#x27;</span>,<span class="string">&#x27;api/Role/Add&#x27;</span>),(<span class="number">6</span>,<span class="string">&#x27;角色修改&#x27;</span>,<span class="string">&#x27;api/Role/Update&#x27;</span>),(<span class="number">7</span>,<span class="string">&#x27;角色删除&#x27;</span>,<span class="string">&#x27;api/Role/Delete&#x27;</span>),(<span class="number">8</span>,<span class="string">&#x27;角色查询&#x27;</span>,<span class="string">&#x27;api/Role/Query&#x27;</span>);</span><br><span class="line"></span><br><span class="line"><span class="comment">/*Table structure for table `role` */</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">DROP</span> <span class="keyword">TABLE</span> IF <span class="keyword">EXISTS</span> `role`;</span><br><span class="line"></span><br><span class="line"><span class="keyword">CREATE</span> <span class="keyword">TABLE</span> `role` (</span><br><span class="line">  `ID` <span class="type">int</span>(<span class="number">11</span>) <span class="keyword">NOT</span> <span class="keyword">NULL</span>,</span><br><span class="line">  `ROLE_NAME` <span class="type">varchar</span>(<span class="number">128</span>) <span class="keyword">COLLATE</span> utf8_bin <span class="keyword">DEFAULT</span> <span class="keyword">NULL</span>,</span><br><span class="line">  <span class="keyword">PRIMARY</span> KEY (`ID`)</span><br><span class="line">) ENGINE<span class="operator">=</span>InnoDB <span class="keyword">DEFAULT</span> CHARSET<span class="operator">=</span>utf8 <span class="keyword">COLLATE</span><span class="operator">=</span>utf8_bin;</span><br><span class="line"></span><br><span class="line"><span class="comment">/*Data for the table `role` */</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">insert</span>  <span class="keyword">into</span> `role`(`ID`,`ROLE_NAME`) <span class="keyword">values</span> (<span class="number">1</span>,<span class="string">&#x27;admin&#x27;</span>),(<span class="number">2</span>,<span class="string">&#x27;test&#x27;</span>),(<span class="number">3</span>,<span class="string">&#x27;custmor&#x27;</span>),(<span class="number">4</span>,<span class="string">&#x27;role1&#x27;</span>),(<span class="number">5</span>,<span class="string">&#x27;role2&#x27;</span>);</span><br><span class="line"></span><br><span class="line"><span class="comment">/*Table structure for table `role_menu` */</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">DROP</span> <span class="keyword">TABLE</span> IF <span class="keyword">EXISTS</span> `role_menu`;</span><br><span class="line"></span><br><span class="line"><span class="keyword">CREATE</span> <span class="keyword">TABLE</span> `role_menu` (</span><br><span class="line">  `ID` <span class="type">int</span>(<span class="number">11</span>) <span class="keyword">NOT</span> <span class="keyword">NULL</span>,</span><br><span class="line">  `ROLE_ID` <span class="type">int</span>(<span class="number">11</span>) <span class="keyword">DEFAULT</span> <span class="keyword">NULL</span>,</span><br><span class="line">  `MENU_ID` <span class="type">int</span>(<span class="number">11</span>) <span class="keyword">DEFAULT</span> <span class="keyword">NULL</span>,</span><br><span class="line">  <span class="keyword">PRIMARY</span> KEY (`ID`)</span><br><span class="line">) ENGINE<span class="operator">=</span>InnoDB <span class="keyword">DEFAULT</span> CHARSET<span class="operator">=</span>utf8 <span class="keyword">COLLATE</span><span class="operator">=</span>utf8_bin;</span><br><span class="line"></span><br><span class="line"><span class="comment">/*Data for the table `role_menu` */</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">insert</span>  <span class="keyword">into</span> `role_menu`(`ID`,`ROLE_ID`,`MENU_ID`) <span class="keyword">values</span> (<span class="number">1</span>,<span class="number">1</span>,<span class="number">1</span>),(<span class="number">2</span>,<span class="number">1</span>,<span class="number">2</span>),(<span class="number">3</span>,<span class="number">1</span>,<span class="number">3</span>),(<span class="number">4</span>,<span class="number">1</span>,<span class="number">4</span>),(<span class="number">5</span>,<span class="number">1</span>,<span class="number">5</span>),(<span class="number">6</span>,<span class="number">1</span>,<span class="number">6</span>),(<span class="number">7</span>,<span class="number">1</span>,<span class="number">7</span>),(<span class="number">8</span>,<span class="number">1</span>,<span class="number">8</span>),(<span class="number">9</span>,<span class="number">2</span>,<span class="number">1</span>),(<span class="number">10</span>,<span class="number">2</span>,<span class="number">2</span>),(<span class="number">11</span>,<span class="number">2</span>,<span class="number">3</span>),(<span class="number">12</span>,<span class="number">3</span>,<span class="number">5</span>),(<span class="number">13</span>,<span class="number">3</span>,<span class="number">6</span>),(<span class="number">14</span>,<span class="number">3</span>,<span class="number">7</span>),(<span class="number">15</span>,<span class="number">4</span>,<span class="number">1</span>),(<span class="number">16</span>,<span class="number">4</span>,<span class="number">5</span>),(<span class="number">17</span>,<span class="number">4</span>,<span class="number">8</span>),(<span class="number">18</span>,<span class="number">5</span>,<span class="number">3</span>);</span><br><span class="line"></span><br><span class="line"><span class="comment">/*Table structure for table `user` */</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">DROP</span> <span class="keyword">TABLE</span> IF <span class="keyword">EXISTS</span> `<span class="keyword">user</span>`;</span><br><span class="line"></span><br><span class="line"><span class="keyword">CREATE</span> <span class="keyword">TABLE</span> `<span class="keyword">user</span>` (</span><br><span class="line">  `ID` <span class="type">int</span>(<span class="number">11</span>) <span class="keyword">NOT</span> <span class="keyword">NULL</span>,</span><br><span class="line">  `USER_NAME` <span class="type">varchar</span>(<span class="number">128</span>) <span class="keyword">COLLATE</span> utf8_bin <span class="keyword">DEFAULT</span> <span class="keyword">NULL</span>,</span><br><span class="line">  `USER_PWD` <span class="type">varchar</span>(<span class="number">128</span>) <span class="keyword">COLLATE</span> utf8_bin <span class="keyword">DEFAULT</span> <span class="keyword">NULL</span>,</span><br><span class="line">  <span class="keyword">PRIMARY</span> KEY (`ID`),</span><br><span class="line">  KEY `idx_user_name` (`USER_NAME`)</span><br><span class="line">) ENGINE<span class="operator">=</span>InnoDB <span class="keyword">DEFAULT</span> CHARSET<span class="operator">=</span>utf8 <span class="keyword">COLLATE</span><span class="operator">=</span>utf8_bin;</span><br><span class="line"></span><br><span class="line"><span class="comment">/*Data for the table `user` */</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">insert</span>  <span class="keyword">into</span> `<span class="keyword">user</span>`(`ID`,`USER_NAME`,`USER_PWD`) <span class="keyword">values</span> (<span class="number">1</span>,<span class="string">&#x27;Zoe&#x27;</span>,<span class="string">&#x27;123456&#x27;</span>),(<span class="number">2</span>,<span class="string">&#x27;Coder&#x27;</span>,<span class="string">&#x27;23452a&#x27;</span>),(<span class="number">3</span>,<span class="string">&#x27;Code综艺圈&#x27;</span>,<span class="string">&#x27;231235&#x27;</span>);</span><br><span class="line"></span><br><span class="line"><span class="comment">/*Table structure for table `user_role` */</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">DROP</span> <span class="keyword">TABLE</span> IF <span class="keyword">EXISTS</span> `user_role`;</span><br><span class="line"></span><br><span class="line"><span class="keyword">CREATE</span> <span class="keyword">TABLE</span> `user_role` (</span><br><span class="line">  `ID` <span class="type">int</span>(<span class="number">11</span>) <span class="keyword">NOT</span> <span class="keyword">NULL</span>,</span><br><span class="line">  `USER_ID` <span class="type">int</span>(<span class="number">11</span>) <span class="keyword">DEFAULT</span> <span class="keyword">NULL</span>,</span><br><span class="line">  `ROLE_ID` <span class="type">int</span>(<span class="number">11</span>) <span class="keyword">DEFAULT</span> <span class="keyword">NULL</span>,</span><br><span class="line">  <span class="keyword">PRIMARY</span> KEY (`ID`)</span><br><span class="line">) ENGINE<span class="operator">=</span>InnoDB <span class="keyword">DEFAULT</span> CHARSET<span class="operator">=</span>utf8 <span class="keyword">COLLATE</span><span class="operator">=</span>utf8_bin;</span><br><span class="line"></span><br><span class="line"><span class="comment">/*Data for the table `user_role` */</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">insert</span>  <span class="keyword">into</span> `user_role`(`ID`,`USER_ID`,`ROLE_ID`) <span class="keyword">values</span> (<span class="number">1</span>,<span class="number">1</span>,<span class="number">1</span>),(<span class="number">2</span>,<span class="number">2</span>,<span class="number">2</span>),(<span class="number">3</span>,<span class="number">2</span>,<span class="number">3</span>),(<span class="number">4</span>,<span class="number">3</span>,<span class="number">2</span>),(<span class="number">5</span>,<span class="number">3</span>,<span class="number">5</span>);</span><br><span class="line"></span><br><span class="line"><span class="comment">/*!40101 SET SQL_MODE=@OLD_SQL_MODE */</span>;</span><br><span class="line"><span class="comment">/*!40014 SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS */</span>;</span><br><span class="line"><span class="comment">/*!40014 SET UNIQUE_CHECKS=@OLD_UNIQUE_CHECKS */</span>;</span><br><span class="line"><span class="comment">/*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */</span>;</span><br></pre></td></tr></table></figure>
+
+<p>演示用的版本是<code>MySql5.5</code>，各版本之间会有不同，所以小伙伴用的版本测试结果不一样的时候，千万别骂我渣哦；其实重要的是查看的思路，整体是大同小异。(求原谅……)</p>
+<p>通过<code>explain</code>会输出如下信息，很多小伙伴只关注红框标注部分(即索引)，但其实是不够的，接下来就一个一个好好说说。</p>
+<img data-src="/posts/60f024c8/2021-11-22-16-00-46.png" class="">
+
+<ul>
+<li><p><code>id</code></p>
+<p>  这个<code>id</code>和咱们平时表结构设计的主键<code>ID</code>不太一样，这里的<code>id</code>代表了每一条<code>SQL</code>语句执行计划中表加载的顺序，分为三种情况：</p>
+<blockquote>
+<p><code>id</code>相同的时候：这时是从上到下依次执行；</p>
+</blockquote>
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">EXPLAIN <span class="keyword">SELECT</span> t.ID,t.USER_NAME,r.ROLE_NAME <span class="keyword">FROM</span> <span class="keyword">USER</span> t </span><br><span class="line">	<span class="keyword">JOIN</span> USER_ROLE tr <span class="keyword">ON</span> t.ID <span class="operator">=</span> tr.USER_ID</span><br><span class="line">	<span class="keyword">JOIN</span> ROLE r <span class="keyword">ON</span> tr.ROLE_ID <span class="operator">=</span> r.ID</span><br></pre></td></tr></table></figure></li>
+</ul>
+<p>执行如下语句，得如下结果：</p>
+<img data-src="/posts/60f024c8/2021-11-22-16-03-34.png" class="">
+
+<p>如上图所示，<code>id</code>一样，从上到下依次执行，所对应表加载顺序为<code>t-&gt;tr-&gt;r</code>(这里的表是别名)；</p>
+<pre><code>&gt; `id`不同的时候：当`id`不同的时，`id`越大的越先执行；
+</code></pre>
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">EXPLAIN <span class="keyword">SELECT</span> t.ID,t.MENU_NAME,t.MENU_URL <span class="keyword">FROM</span> MENU t</span><br><span class="line">	<span class="keyword">WHERE</span> t.ID <span class="keyword">IN</span> (<span class="keyword">SELECT</span> MENU_ID <span class="keyword">FROM</span> ROLE_MENU rm </span><br><span class="line">		<span class="keyword">WHERE</span> rm.ROLE_ID <span class="keyword">IN</span>(<span class="keyword">SELECT</span> ROLE_ID <span class="keyword">FROM</span> USER_ROLE ur <span class="keyword">WHERE</span> ur.USER_ID<span class="operator">=</span><span class="number">1</span>))</span><br></pre></td></tr></table></figure>
+<p>子查询会导致<code>id</code>递增，结果如下：</p>
+<img data-src="/posts/60f024c8/2021-11-22-16-05-35.png" class="">
+
+<p>如上图所示，<code>id</code>递增啦，所对应表的加载顺序为<code>ur-&gt;rm-&gt;t</code>(这里的表是别名)；</p>
+<pre><code>&gt; `id`相同和不同同时存在时：id相同的认为是同一组，还是从上往下加载；不一样的情况还是越大越优先执行
+</code></pre>
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">EXPLAIN <span class="keyword">SELECT</span> t.ROLE_ID,m.ID,m.MENU_NAME,m.MENU_URL <span class="keyword">FROM</span> </span><br><span class="line">	(<span class="keyword">SELECT</span> ROLE_ID <span class="keyword">FROM</span> USER_ROLE <span class="keyword">WHERE</span> USER_ID<span class="operator">=</span><span class="number">3</span>) t,ROLE_MENU rm,MENU m</span><br><span class="line">	<span class="keyword">WHERE</span> t.ROLE_ID<span class="operator">=</span>rm.ROLE_ID</span><br><span class="line">	<span class="keyword">AND</span> rm.MENU_ID<span class="operator">=</span>m.ID</span><br></pre></td></tr></table></figure>
+
+<p>执行结果如下：</p>
+<img data-src="/posts/60f024c8/2021-11-22-16-06-53.png" class="">
+
+<p>如上图所示，<code>id</code>有一样的，也有不同的，则对应表的加载顺序为<code>USER_ROLE-&gt;derived2 (衍生表)-&gt;rm-&gt;m</code>；衍生表表名后面的<code>2</code>代表的是<code>id</code>，所以可以通过衍生表表名后面的<code>id</code>知道是哪一步产生的，即<code>derived2</code>衍生表是<code>id</code>为<code>2</code>的这一步产生的。</p>
+<ul>
+<li><code>select_type</code></li>
+</ul>
+<p><code>select_type</code> 是表示每一步的查询类型，方便分析人员很直接的看到当前步骤执行的是什么查询，有多种类型，见下图：</p>
+<blockquote>
+<p>1&gt; <code>SIMPLE</code>：简单的<code>SELECT</code>查询，不包含子查询或<code>UNION</code>的那种；</p>
+</blockquote>
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">EXPLAIN <span class="keyword">SELECT</span> <span class="operator">*</span> <span class="keyword">FROM</span> <span class="keyword">USER</span>;</span><br></pre></td></tr></table></figure>
+
+<p>输出结果如下：</p>
+<img data-src="/posts/60f024c8/2021-11-22-16-13-44.png" class="">
+
+<blockquote>
+<p>2&gt; <code>PRIMARY</code>：查询语句中包含其他子查询或<code>UNION</code>操作，那最外层的<code>SELECT</code>就被标记为该类型；</p>
+</blockquote>
+<img data-src="/posts/60f024c8/2021-11-22-16-15-17.png" class="">
+
+<p>如上图所示，查询中包含子查询，最外层查询被标记为<code>PRIMARY</code>；</p>
+<blockquote>
+<p>3&gt; <code>SUBQUERY</code>：在<code>SELECT</code>或<code>WHERE</code>中包含的子查询会被标记为该类型；</p>
+</blockquote>
+<p>见<code>PRIMARY</code>图，当存在子查询时，会将子查询标记为<code>SUBQUERY</code></p>
+<blockquote>
+<p>4&gt; <code>MATERIALIZED</code>：被物化的子查询，即针对对应的子查询将其物化为一个临时表；</p>
+</blockquote>
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">EXPLAIN <span class="keyword">SELECT</span> t.ID,t.MENU_NAME,t.MENU_URL <span class="keyword">FROM</span> MENU t</span><br><span class="line">	<span class="keyword">WHERE</span> t.ID <span class="keyword">IN</span> (<span class="keyword">SELECT</span> MENU_ID <span class="keyword">FROM</span> ROLE_MENU rm </span><br><span class="line">		<span class="keyword">WHERE</span> rm.ROLE_ID <span class="keyword">IN</span>(<span class="keyword">SELECT</span> ROLE_ID <span class="keyword">FROM</span> USER_ROLE ur <span class="keyword">WHERE</span> ur.USER_ID<span class="operator">=</span><span class="number">1</span>));</span><br></pre></td></tr></table></figure>
+<p>测试物化用的是<code>MySQL8.0</code>，和<code>5.*</code>版本有所不同，输出结果如下：</p>
+<img data-src="/posts/60f024c8/2021-11-22-16-16-49.png" class="">
+
+<p>如上图所示，将子查询物化为一个临时表<code>subquery2</code>，这个功能是可以通过设置优化器对应的开关的。</p>
+<blockquote>
+<p>5&gt; <code>DERIVED</code>：在<code>FROM</code>之后的子查询会被标记为该类型，同样会把结果放在一个临时表中</p>
+</blockquote>
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">EXPLAIN <span class="keyword">SELECT</span> tm.MENU_NAME,rm.ROLE_ID <span class="keyword">FROM</span> </span><br><span class="line">	(<span class="keyword">SELECT</span> <span class="operator">*</span> <span class="keyword">FROM</span> MENU <span class="keyword">WHERE</span> ID <span class="operator">&gt;</span><span class="number">3</span> ) tm ,ROLE_MENU rm </span><br><span class="line">	<span class="keyword">WHERE</span> tm.ID<span class="operator">=</span>rm.MENU_ID <span class="keyword">AND</span> rm.ROLE_ID<span class="operator">=</span><span class="number">1</span></span><br></pre></td></tr></table></figure>
+<p>输出结果：</p>
+<img data-src="/posts/60f024c8/2021-11-22-16-17-39.png" class="">
+
+<p>如图所示，<code>FROM</code>后面跟的子查询就被标记为<code>DERIVED</code>，对应步骤产生的衍生表为<code>derived2</code>。高版本好像对其进行了优化，<code>8.0</code>版本这种形式认为是简单查询。</p>
+<blockquote>
+<p>6&gt; <code>UNION：UNION</code>操作中，查询中处于内层的<code>SELECT</code>；</p>
+</blockquote>
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">EXPLAIN <span class="keyword">SELECT</span> <span class="operator">*</span> <span class="keyword">FROM</span> USER_ROLE T1 <span class="keyword">WHERE</span> T1.USER_ID<span class="operator">=</span><span class="number">1</span></span><br><span class="line"><span class="keyword">UNION</span></span><br><span class="line"><span class="keyword">SELECT</span> <span class="operator">*</span> <span class="keyword">FROM</span> USER_ROLE T2 <span class="keyword">WHERE</span> T2.USER_ID<span class="operator">=</span><span class="number">2</span></span><br></pre></td></tr></table></figure>
+<p>输出结果如下：</p>
+<img data-src="/posts/60f024c8/2021-11-22-16-18-35.png" class="">
+
+<p>如上图所示，将第二个<code>SELECT</code>标注为<code>UNION</code> ，即对应加载的表为<code>T2</code>。</p>
+<blockquote>
+<p>7&gt; <code>UNIOIN RESULT：UNION</code>操作的结果，对应的<code>id</code>为空，代表的是一个结果集；</p>
+</blockquote>
+<p>见<code>UNIOIN</code>图，<code>UNIOIN RESULT</code>代表的是<code>UNION</code>之后的结果，对应<code>id</code>为空。</p>
+<ul>
+<li><code>table</code></li>
+</ul>
+<p><code>table</code>代表对应步骤加载的是哪张表，中间会出现一些临时表，比如<code>subquery2、derived2</code>等这种，最后的数字代表产生该表对应步骤的<code>id</code>。</p>
+<ul>
+<li><code>type</code></li>
+</ul>
+<p>代表访问类型，<code>MySQL</code>内部将其分为多类型，常用的类型从好到差的顺序展示如下：</p>
+<p><strong><code>system-&gt;const-&gt;eq_ef-&gt;ref-&gt;fulltext-&gt;ref_or_null-&gt;index_merge-&gt;unique_subquery-&gt;index_subquery-&gt;range-&gt;index-&gt;ALL;</code></strong></p>
+<p>而在实际开发场景中，比较常见的几种类型如下：<code>const-&gt;eq_ref-&gt;ref-&gt;range-&gt;index-&gt;ALL</code>(顺序从好到差)，通常优化至少在<code>range</code>级别或以上，比如<code>ref</code>算是比较不错的啦；</p>
+<p>上面说到的从好到差指的是查询性能。</p>
+<blockquote>
+<p>1&gt;<code>const</code>：表示通过索引一次就找到数据，用于比较<code>primary key</code>或者<code>unique</code>索引，很快就能找到对应的数据；</p>
+</blockquote>
+<img data-src="/posts/60f024c8/2021-11-22-16-21-32.png" class="">
+
+<blockquote>
+<p>2&gt;<code>eq_ref</code>：唯一性索引扫描，对于每个索引键，表中只有一条记录与之匹配，常用于主键或唯一索引扫描；</p>
+</blockquote>
+<img data-src="/posts/60f024c8/2021-11-22-16-22-02.png" class="">
+
+<blockquote>
+<p>3&gt;<code>ref</code>：非唯一索引扫描，返回匹配的所有行，如建立一个朋友维护表，维护用户对应的朋友，而在用户<code>ID</code>建立非唯一索引；</p>
+</blockquote>
+<img data-src="/posts/60f024c8/2021-11-22-16-22-32.png" class="">
+
+<blockquote>
+<p>4&gt;<code>range</code>：使用一个索引检索指定范围的行，一般在<code>where</code>语句中会出现<code>between、&lt;、&gt;、in</code>等范围查询；</p>
+</blockquote>
+<img data-src="/posts/60f024c8/2021-11-22-16-22-59.png" class="">
+
+<blockquote>
+<p>5&gt;<code>index</code>：全索引扫描，只遍历索引树；</p>
+</blockquote>
+<img data-src="/posts/60f024c8/2021-11-22-16-23-30.png" class="">
+
+<blockquote>
+<p>6&gt;<code>ALL</code>：全表扫描，找到匹配行。与<code>index</code>比较，<code>ALL</code>需要扫描磁盘数据，<code>index</code>值需要遍历索引树。</p>
+</blockquote>
+<img data-src="/posts/60f024c8/2021-11-22-16-23-57.png" class="">
+
+<ul>
+<li><code>possible_keys</code></li>
+</ul>
+<p>显示可能被用到的索引，但在实际查询中不一定能用到； 查询涉及到字段，如果存在索引，会被列出，但如果使用的是覆盖索引，只会在<code>key</code>中列出；</p>
+<img data-src="/posts/60f024c8/2021-11-22-16-24-29.png" class="">
+
+<ul>
+<li><code>key</code></li>
+</ul>
+<p>实际使用到的索引，如果为<code>NULL</code>代表没有使用到索引；这也是平时小伙伴判断是否用上索引的关键。</p>
+<ul>
+<li><code>key_len</code></li>
+</ul>
+<p><code>key_len</code>表示索引使用的字节数，根据这个值可以判断索引的使用情况，特别是在组合索引的时候，判断该索引有多少部分被使用到，非常重要；<code>key_len</code>是根据表定义计算而得。这里测试在<code>USER</code>表中对<code>USER_NAME</code>创建一个非唯一索引，如下：</p>
+<img data-src="/posts/60f024c8/2021-11-22-16-25-14.png" class="">
+
+<p>这里<code>key_len</code>是这么计算的，前提是指定的字符串集是<code>utf8</code>，可变长 且允许为空，计算过程如下：</p>
+<p><code>128(设置的可变长度)*3(utf8占3字节)+1(允许为空标识占一个字节)+2(长度信息占两个字节)=387；</code></p>
+<p><code>key_len</code>针对不同类型字段的计算规则不一样，这里用<code>USER(用户表)</code>简单计算为例：</p>
+<table>
+<thead>
+<tr>
+<th>字段</th>
+<th>Key_len</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>ID(int，不为空)</code></td>
+<td><code>4</code></td>
+<td><code>int</code>为<code>4</code>个字节，不为空</td>
+</tr>
+<tr>
+<td><code>USER_NAME(varchar(128)，utf8，可为空)</code></td>
+<td><code>128*3+1+2=387</code></td>
+<td>可变为<code>128，utf8</code>每个占<code>3</code>字节，<code>1</code>个字节标识可控，两个字节标识长度</td>
+</tr>
+</tbody></table>
+<p>不同类型占用的字节不一样，字符集不一样占用的字节也不一样，允许为空的字段需要<code>1</code>个字节做标识，可变长度的字段需要<code>2</code>个字节标识长度。小伙伴照着这个思路就可以计算其他类型啦。</p>
+<ul>
+<li><code>ef</code></li>
+</ul>
+<p>显示索引的哪些列被引用了，通常是对应字段或<code>const</code>；</p>
+<img data-src="/posts/60f024c8/2021-11-22-16-30-20.png" class="">
+<img data-src="/posts/60f024c8/2021-11-22-16-30-30.png" class="">
+
+<ul>
+<li><code>rows</code></li>
+</ul>
+<p>根据表统计信息和索引的使用情况，大概估算出找到所需记录数据所扫描的数据行数；不是所需数据的行数。</p>
+<ul>
+<li><code>Extra</code></li>
+</ul>
+<p>这个字段里包含一些其他信息，但也是优化<code>SQL</code>的重要参考，通常会出现以下几种信息：</p>
+<blockquote>
+<p><code>Using index</code>：表示查询语句中用到了覆盖索引，不访问表的数据行，查询效率比较好。</p>
+</blockquote>
+<img data-src="/posts/60f024c8/2021-11-22-16-31-08.png" class="">
+
+<p>如果用<code>SELECT *</code>进行查询，就不会有<code>Using index</code>，关于索引的介绍下篇好好说说。</p>
+<blockquote>
+<p><code>Using filesort</code>：代表<code>MySQL</code>会使用一个外部索引对数据进行排序(文件排序)，而不是使用表内索引。这种情况在<code>SQL</code>查询需要避免，最好不要在<code>Extra</code>中出现此类型：</p>
+</blockquote>
+<img data-src="/posts/60f024c8/2021-11-22-16-32-01.png" class="">
+
+<p>通常会是使用<code>ORDER BY</code>语句导致，上图中使用无索引的字段进行排序会出现，同样如果使用有索引的字段，但用法不对也会出现，比如使用组合索引不规范时。</p>
+<ul>
+<li><code>Using temporary</code>：产生临时表保存中间结果，这种SQL是不允许的，遇见数据量大的场景，基本就跑不动啦；</li>
+</ul>
+<img data-src="/posts/60f024c8/2021-11-22-16-32-30.png" class="">
+
+<p>这种类型常常因为<code>ORDER BY</code> 和 <code>GROUP BY</code>导致，所以在进行数据排序和分组查询时，要注意索引的合理利用。</p>
+<blockquote>
+<p><code>Using where</code>：使用<code>where</code>过滤数据，小伙伴试一把。</p>
+</blockquote>
+<blockquote>
+<p><code>Using join buffer</code>：表示使用到了表连接缓存； 当表数据量大，可能导致<code>buffer</code>过大，查询效率比较低，这种情况注意在表连接字段上正确使用索引。</p>
+</blockquote>
+<img data-src="/posts/60f024c8/2021-11-22-16-33-30.png" class="">
+
+<p>如果表连接查询慢时，在连接字段上加个索引试试，药到病除；</p>
+<blockquote>
+<p><code>impossible where</code>：代表<code>where</code>后面的条件永远为<code>false</code>，匹配不到数据；</p>
+</blockquote>
+<img data-src="/posts/60f024c8/2021-11-22-16-33-42.png" class="">
+
+
+
+
+
+
+      <div>
+        
+          <div>
+    
+        <div style="text-align:center;color: #636363;font-size:14px;letter-spacing: 10px">This article is over<i class="fa fa-bell"></i>thank you for reading</div>
+    
+</div>
+        
+      </div>
+    </div>
+
+    
+    
+    
+      
+  <div class="popular-posts-header">Related Posts</div>
+  <ul class="popular-posts">
+    <li class="popular-posts-item">
+      <div class="popular-posts-title"><a href="/posts/666b2933/" rel="bookmark">面试之旅关于数据库</a></div>
+    </li>
+    <li class="popular-posts-item">
+      <div class="popular-posts-title"><a href="/posts/377b6f7d/" rel="bookmark">关于mysql中对Json类型字段进行筛选查询</a></div>
+    </li>
+  </ul>
+
+        
+
+<div>
+<ul class="post-copyright">
+  <li class="post-copyright-author">
+    <strong>Post author:  </strong>JIN Mao
+  </li>
+  <li class="post-copyright-link">
+    <strong>Post link: </strong>
+    <a href="https://smile1231.github.io/posts/60f024c8/" title="关于sql执行计划">https://smile1231.github.io/posts/60f024c8/</a>
+  </li>
+  <li class="post-copyright-license">
+    <strong>Copyright Notice:  </strong>All articles in this blog are licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/en" rel="noopener" target="_blank"><i class="fab fa-fw fa-creative-commons"></i>BY-NC-SA</a> unless stating additionally.
+  </li>
+</ul>
+</div>
+
+
+      <footer class="post-footer">
+          
+          <div class="post-tags">
+              <a href="/tags/%E6%95%B0%E6%8D%AE%E5%BA%93/" rel="tag"><i class="fa fa-tag"></i> 数据库</a>
+              <a href="/tags/%E6%89%A7%E8%A1%8C%E8%AE%A1%E5%88%92/" rel="tag"><i class="fa fa-tag"></i> 执行计划</a>
+          </div>
+
+        
+  <div class="post-widgets">
+    <div class="wp_rating">
+      <div id="wpac-rating"></div>
+    </div>
+  </div>
+
+
+        
+    <div class="post-nav">
+      <div class="post-nav-item">
+    <a href="/posts/afe5178f/" rel="prev" title="关于设置git以及npm代理">
+      <i class="fa fa-chevron-left"></i> 关于设置git以及npm代理
+    </a></div>
+      <div class="post-nav-item">
+    <a href="/posts/b7653deb/" rel="next" title="什么是CRISPR/Cas9">
+      什么是CRISPR/Cas9 <i class="fa fa-chevron-right"></i>
+    </a></div>
+    </div>
+      </footer>
+    
+  </article>
+  
+  
+  
+
+
+
+          </div>
+          
+    <div class="comments" id="valine-comments"></div>
+
+<script>
+  window.addEventListener('tabs:register', () => {
+    let { activeClass } = CONFIG.comments;
+    if (CONFIG.comments.storage) {
+      activeClass = localStorage.getItem('comments_active') || activeClass;
+    }
+    if (activeClass) {
+      let activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
+      if (activeTab) {
+        activeTab.click();
+      }
+    }
+  });
+  if (CONFIG.comments.storage) {
+    window.addEventListener('tabs:click', event => {
+      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
+      let commentClass = event.target.classList[1];
+      localStorage.setItem('comments_active', commentClass);
+    });
+  }
+</script>
+
+        </div>
+          
+  
+  <div class="toggle sidebar-toggle">
+    <span class="toggle-line toggle-line-first"></span>
+    <span class="toggle-line toggle-line-middle"></span>
+    <span class="toggle-line toggle-line-last"></span>
+  </div>
+
+  <aside class="sidebar">
+    <div class="sidebar-inner">
+    
+    
+    <!-- 霓虹灯时钟 -->
+    <div>
+    <svg style="height: 60px;">
+        <text id="time" text-anchor="middle" x="36%" y="80%" class="words words-1"></text>
+        <text id="time" text-anchor="middle" x="36%" y="80%" class="words words-2"></text>
+        <text id="time" text-anchor="middle" x="36%" y="80%" class="words words-3"></text>
+        <text id="time" text-anchor="middle" x="36%" y="80%" class="words words-4"></text>
+    </svg>
+</div>
+
+<script>
+function showtime(){
+    var noatime = new Date();
+    var h = noatime.getHours(),
+        m = noatime.getMinutes(),
+        s = noatime.getSeconds();
+    h=checktime(h);
+    m=checktime(m);
+    s=checktime(s);
+  return h+":"+m+":"+s;
+}
+
+function checktime(x){
+  if(x<10){
+    x="0"+x;
+  }
+  return x;
+}
+
+var div1=document.getElementsByTagName("text");
+setInterval(function(){
+  for (var i in div1){
+      div1[i].innerHTML=showtime();
+  }
+},1000);
+</script>
+
+<style>
+.words{
+    font-size: 50px;
+    font-weight: bold;
+    text-transform: uppercase;
+    fill: none;
+    stroke-width: 3px;
+    stroke-dasharray: 35,125;
+    animation-name: drawing;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+.words-1{
+    stroke: deepskyblue;
+    text-shadow: 0 0 15px deepskyblue;
+    animation-delay: -1.5s;
+}
+.words-2{
+    stroke: lightseagreen;
+    text-shadow: 0 0 15px lightseagreen;
+    animation-delay: -3s;
+}
+.words-3{
+    stroke: orange;
+    text-shadow: 0 0 15px orange;
+    animation-delay: -4.5s;
+}
+.words-4{
+    stroke: purple;
+    text-shadow: 0 0 15px purple;
+    animation-delay: -6s;
+}
+@keyframes drawing {
+    100%{
+        stroke-dashoffset: -160
+    }
+}
+</style>
+
+    
+
+        <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=86 src="//music.163.com/outchain/player?type=2&id=1489346184&auto=1&height=66"></iframe>
+
+      <ul class="sidebar-nav motion-element">
+        <li class="sidebar-nav-toc">
+          Table of Contents
+        </li>
+        <li class="sidebar-nav-overview">
+          Overview
+        </li>
+      </ul>
+
+      <!--noindex-->
+      <div class="post-toc-wrap sidebar-panel">
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#%E4%BB%80%E4%B9%88%E6%98%AF%E6%89%A7%E8%A1%8C%E8%AE%A1%E5%88%92"><span class="nav-number">1.</span> <span class="nav-text">什么是执行计划</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#1-MySQL%E9%80%BB%E8%BE%91%E7%BB%93%E6%9E%84%E5%85%88%E7%9F%A5"><span class="nav-number">1.1.</span> <span class="nav-text">1. MySQL逻辑结构先知</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-SQL%E8%AF%AD%E5%8F%A5%E7%9A%84%E4%B8%AD%E5%85%B3%E9%94%AE%E5%AD%97%E6%89%A7%E8%A1%8C%E9%A1%BA%E5%BA%8F%E9%A1%BB%E7%9F%A5"><span class="nav-number">1.2.</span> <span class="nav-text">2.SQL语句的中关键字执行顺序须知</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3-%E5%A5%BD%E5%A5%BD%E8%AF%B4%E8%AF%B4%E6%89%A7%E8%A1%8C%E8%AE%A1%E5%88%92"><span class="nav-number">1.3.</span> <span class="nav-text">3. 好好说说执行计划</span></a></li></ol></li></ol></div>
+      </div>
+      <!--/noindex-->
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image" alt="JIN Mao"
+      src="/images/avatar.png">
+  <p class="site-author-name" itemprop="name">JIN Mao</p>
+  <div class="site-description" itemprop="description"></div>
+</div>
+<div class="site-state-wrap motion-element">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/archives/">
+        
+          <span class="site-state-item-count">124</span>
+          <span class="site-state-item-name">posts</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+            <a href="/categories/">
+          
+        <span class="site-state-item-count">69</span>
+        <span class="site-state-item-name">categories</span></a>
+      </div>
+      <div class="site-state-item site-state-tags">
+            <a href="/tags/">
+          
+        <span class="site-state-item-count">91</span>
+        <span class="site-state-item-name">tags</span></a>
+      </div>
+  </nav>
+</div>
+
+
+
+      </div>
+
+  
+
+    </div>
+
+
+  </aside>
+  <div id="sidebar-dimmer"></div>
+
+
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        
+
+        
+
+<div class="copyright">
+  
+  &copy; 
+  <span itemprop="copyrightYear">2022</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">JIN Mao</span>
+</div>
+  <!--添加运行时间-->
+  <span id="sitetime"></span>
+  <script language=javascript>
+    function siteTime(){
+      window.setTimeout("siteTime()", 1000);
+      var seconds = 1000;
+      var minutes = seconds * 60;
+      var hours = minutes * 60;
+      var days = hours * 24;
+      var years = days * 365;
+      var today = new Date();
+      var todayYear = today.getFullYear();
+      var todayMonth = today.getMonth()+1;
+      var todayDate = today.getDate();
+      var todayHour = today.getHours();
+      var todayMinute = today.getMinutes();
+      var todaySecond = today.getSeconds();
+      /* 
+        Date.UTC() -- 返回date对象距世界标准时间(UTC)1970年1月1日午夜之间的毫秒数(时间戳)
+        year - 作为date对象的年份，为4位年份值
+        month - 0-11之间的整数，做为date对象的月份
+        day - 1-31之间的整数，做为date对象的天数
+        hours - 0(午夜24点)-23之间的整数，做为date对象的小时数
+        minutes - 0-59之间的整数，做为date对象的分钟数
+        seconds - 0-59之间的整数，做为date对象的秒数
+        microseconds - 0-999之间的整数，做为date对象的毫秒数
+      */
+      var t1 = Date.UTC(2021,11,11,00,00,00); //北京时间2018-2-13 00:00:00
+      var t2 = Date.UTC(todayYear,todayMonth,todayDate,todayHour,todayMinute,todaySecond);
+      var diff = t2-t1;
+      var diffYears = Math.floor(diff/years);
+      var diffDays = Math.floor((diff/days)-diffYears*365);
+      var diffHours = Math.floor((diff-(diffYears*365+diffDays)*days)/hours);
+      var diffMinutes = Math.floor((diff-(diffYears*365+diffDays)*days-diffHours*hours)/minutes);
+      var diffSeconds = Math.floor((diff-(diffYears*365+diffDays)*days-diffHours*hours-diffMinutes*minutes)/seconds);
+      document.getElementById("sitetime").innerHTML=" This blog is up and running "+/*diffYears+" Year "+*/diffDays+" Days "+diffHours+" Hours "+diffMinutes+" Minutes "+diffSeconds+" Seconds";
+    }
+    siteTime();
+  </script>
+  <!--// 添加运行时间-->
+
+
+<!--
+  <div class="powered-by">Powered by <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> & <a href="https://pisces.theme-next.org/" class="theme-link" rel="noopener" target="_blank">NexT.Pisces</a>
+  </div>
+-->
+
+
+        
+<div class="busuanzi-count">
+  <script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+
+  <span class="site-uv" title="Total Visitors">
+    My <span id="busuanzi_value_site_uv"></span>th Friend, 
+  </span>
+
+  <span class="site-pv" title="Total Views">
+    After  <span id="busuanzi_value_site_pv"></span> times of looking back, I met you 。
+  </span>
+  <!--
+    <span class="post-meta-item" id="busuanzi_container_site_uv" >
+      <span class="post-meta-item-icon">
+        <i class="fa fa-user"></i>
+      </span>
+      <span class="site-uv" title="Total Visitors">
+        <span id="busuanzi_value_site_uv"></span>
+      </span>
+    </span>
+    <span class="post-meta-divider">|</span>
+    <span class="post-meta-item" id="busuanzi_container_site_pv">
+      <span class="post-meta-item-icon">
+        <i class="fa fa-eye"></i>
+      </span>
+      <span class="site-pv" title="Total Views">
+        <span id="busuanzi_value_site_pv"></span>
+      </span>
+    </span>-->
+</div>
+
+
+
+
+
+
+
+
+      </div>
+    </footer>
+  </div>
+
+  
+  <script src="/lib/anime.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/medium-zoom@1/dist/medium-zoom.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/lozad@1/dist/lozad.min.js"></script>
+  <script src="/lib/velocity/velocity.min.js"></script>
+  <script src="/lib/velocity/velocity.ui.min.js"></script>
+
+<script src="/js/utils.js"></script>
+
+<script src="/js/motion.js"></script>
+
+
+<script src="/js/schemes/pisces.js"></script>
+
+
+<script src="/js/next-boot.js"></script>
+
+<script src="/js/bookmark.js"></script>
+
+
+  <script defer src="/lib/three/three.min.js"></script>
+    <script defer src="/lib/three/canvas_lines.min.js"></script>
+
+
+  
+
+
+
+  <script>
+  if (CONFIG.page.isPost) {
+    wpac_init = window.wpac_init || [];
+    wpac_init.push({
+      widget: 'Rating',
+      id    : ,
+      el    : 'wpac-rating',
+      color : 'fc6423'
+    });
+    (function() {
+      if ('WIDGETPACK_LOADED' in window) return;
+      WIDGETPACK_LOADED = true;
+      var mc = document.createElement('script');
+      mc.type = 'text/javascript';
+      mc.async = true;
+      mc.src = '//embed.widgetpack.com/widget.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(mc, s.nextSibling);
+    })();
+  }
+  </script>
+
+  
+<script src="/js/local-search.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+
+<script>
+NexT.utils.loadComments(document.querySelector('#valine-comments'), () => {
+  NexT.utils.getScript('//unpkg.com/valine/dist/Valine.min.js', () => {
+    var GUEST = ['nick', 'mail', 'link'];
+    var guest = 'nick,mail,link';
+    guest = guest.split(',').filter(item => {
+      return GUEST.includes(item);
+    });
+    new Valine({
+      el         : '#valine-comments',
+      verify     : true,
+      notify     : true,
+      appId      : 'J2bQH6GquIhMurLQc9NYgXWJ-gzGzoHsz',
+      appKey     : 'mbmntmQLrVScI2O7gV6zBej5',
+      placeholder: "Just go go",
+      avatar     : 'mm',
+      meta       : guest,
+      pageSize   : '10' || 10,
+      visitor    : false,
+      lang       : 'en' || 'zh-cn',
+      path       : location.pathname,
+      recordIP   : true,
+      serverURLs : ''
+    });
+  }, window.Valine);
+});
+</script>
+
+
+  
+  <script type="text/javascript" src="/js/cursor/love.js"></script>
+
+
+
+  
+<script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"model":{"jsonPath":"/live2dw/assets/shizuku.model.json"},"display":{"position":"left","width":200,"height":400},"mobile":{"show":false},"log":false,"pluginJsPath":"lib/","pluginModelPath":"assets/","pluginRootPath":"live2dw/","tagMode":false});</script></body>
+</html>

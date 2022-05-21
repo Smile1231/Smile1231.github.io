@@ -1,0 +1,796 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 5.4.0">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/avatar.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/avatar.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+<link rel="stylesheet" href="/lib/font-awesome/css/all.min.css">
+  <link rel="stylesheet" href="/lib/pace/pace-theme-mac-osx.min.css">
+  <script src="/lib/pace/pace.min.js"></script>
+
+<script id="hexo-configurations">
+    var NexT = window.NexT || {};
+    var CONFIG = {"hostname":"smile1231.github.io","root":"/","scheme":"Pisces","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":true,"show_result":true,"style":"mac"},"back2top":{"enable":true,"sidebar":false,"scrollpercent":true},"bookmark":{"enable":true,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":true,"lazyload":true,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
+  </script>
+
+  <meta name="description" content="建议收藏，减少百度重复造轮子我们应该都知道SimpleDateFormat是线程不安全的，在多线程的环境下会出现日期错乱的问题。 假设我们有一些字符串日期，需要格式化成日期，然后编写下面的程序，同时多个线程请求，观察结果： 1234567891011121314151617181920212223242526272829public class SimpleDateFormatTest &amp;#123">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Java关于时间的轮子">
+<meta property="og:url" content="https://smile1231.github.io/posts/7a29d22a/index.html">
+<meta property="og:site_name" content="JIN MAO &#39;s Blog">
+<meta property="og:description" content="建议收藏，减少百度重复造轮子我们应该都知道SimpleDateFormat是线程不安全的，在多线程的环境下会出现日期错乱的问题。 假设我们有一些字符串日期，需要格式化成日期，然后编写下面的程序，同时多个线程请求，观察结果： 1234567891011121314151617181920212223242526272829public class SimpleDateFormatTest &amp;#123">
+<meta property="og:locale" content="en_US">
+<meta property="og:image" content="https://smile1231.github.io/posts/7a29d22a/2021-11-22-15-37-24.png">
+<meta property="og:image" content="https://smile1231.github.io/posts/7a29d22a/2021-11-22-15-38-42.png">
+<meta property="article:published_time" content="2021-11-22T07:29:28.000Z">
+<meta property="article:modified_time" content="2022-02-15T16:21:10.030Z">
+<meta property="article:author" content="JIN Mao">
+<meta property="article:tag" content="Java">
+<meta property="article:tag" content="Date">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://smile1231.github.io/posts/7a29d22a/2021-11-22-15-37-24.png">
+
+<link rel="canonical" href="https://smile1231.github.io/posts/7a29d22a/">
+
+
+<script id="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome : false,
+    isPost : true,
+    lang   : 'en'
+  };
+</script>
+
+  <title>Java关于时间的轮子 | JIN MAO 's Blog</title>
+  
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-FWV5496QFL"></script>
+    <script>
+      if (CONFIG.hostname === location.hostname) {
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-FWV5496QFL');
+      }
+    </script>
+
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header { opacity: initial; }
+
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+<link rel="alternate" href="/atom.xml" title="JIN MAO 's Blog" type="application/atom+xml">
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div class="container use-motion">
+    <div class="headband"></div>
+      <!-- <a target="_blank" rel="noopener" href="https://github.com/Smile1231/StudyRepository"><img loading="lazy" width="149" height="149" src="https://github.blog/wp-content/uploads/2008/12/forkme_right_gray_6d6d6d.png?resize=149%2C149" class="attachment-full size-full" alt="Fork me on GitHub" data-recalc-dims="1"></a> -->
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="Toggle navigation bar">
+      <span class="toggle-line toggle-line-first"></span>
+      <span class="toggle-line toggle-line-middle"></span>
+      <span class="toggle-line toggle-line-last"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <h1 class="site-title">JIN MAO 's Blog</h1>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+      <p class="site-subtitle" itemprop="description">got windy (起风了)</p>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+        <i class="fa fa-search fa-fw fa-lg"></i>
+    </div>
+  </div>
+</div>
+
+
+
+
+<nav class="site-nav">
+  <ul id="menu" class="main-menu menu">
+        <li class="menu-item menu-item-home">
+
+    <a href="/" rel="section"><i class="fa fa-home fa-fw"></i>Home</a>
+
+  </li>
+        <li class="menu-item menu-item-about">
+
+    <a href="/about/" rel="section"><i class="fa fa-user fa-fw"></i>About</a>
+
+  </li>
+        <li class="menu-item menu-item-tags">
+
+    <a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>Tags<span class="badge">91</span></a>
+
+  </li>
+        <li class="menu-item menu-item-categories">
+
+    <a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>Categories<span class="badge">69</span></a>
+
+  </li>
+        <li class="menu-item menu-item-archives">
+
+    <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>Archives<span class="badge">124</span></a>
+
+  </li>
+      <li class="menu-item menu-item-search">
+        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>Search
+        </a>
+      </li>
+  </ul>
+</nav>
+
+
+
+  <div class="search-pop-overlay">
+    <div class="popup search-popup">
+        <div class="search-header">
+  <span class="search-icon">
+    <i class="fa fa-search"></i>
+  </span>
+  <div class="search-input-container">
+    <input autocomplete="off" autocapitalize="off"
+           placeholder="Searching..." spellcheck="false"
+           type="search" class="search-input">
+  </div>
+  <span class="popup-btn-close">
+    <i class="fa fa-times-circle"></i>
+  </span>
+</div>
+<div id="search-result">
+  <div id="no-result">
+    <i class="fa fa-spinner fa-pulse fa-5x fa-fw"></i>
+  </div>
+</div>
+
+    </div>
+  </div>
+
+</div>
+    </header>
+
+    
+  <div class="back-to-top">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+  <div class="reading-progress-bar"></div>
+  <a role="button" class="book-mark-link book-mark-link-fixed"></a>
+
+
+    <main class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+
+          <div class="content post posts-expand">
+            
+
+    
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
+    <link itemprop="mainEntityOfPage" href="https://smile1231.github.io/posts/7a29d22a/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.png">
+      <meta itemprop="name" content="JIN Mao">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="JIN MAO 's Blog">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          Java关于时间的轮子
+        </h1>
+
+        <div class="post-meta">
+          
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">Posted on</span>
+
+              <time title="Created: 2021-11-22 15:29:28" itemprop="dateCreated datePublished" datetime="2021-11-22T15:29:28+08:00">2021-11-22</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">Edited on</span>
+                <time title="Modified: 2022-02-16 00:21:10" itemprop="dateModified" datetime="2022-02-16T00:21:10+08:00">2022-02-16</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">In</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/Java/" itemprop="url" rel="index"><span itemprop="name">Java</span></a>
+                </span>
+            </span>
+
+          
+           <!-- <span class="post-meta-item" title="Views" id="busuanzi_container_page_pv" style="display: none;">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-eye"></i>
+              </span>
+              <span class="post-meta-item-text">Views: </span>
+              <span id="busuanzi_value_page_pv"></span>
+            </span> -->
+            <span>&emsp;</span><span class="post-meta-item-icon"><i class="fa fa-eye"></i></span>
+            <span class="post-meta-item-text">Views: </span>
+            <span id="busuanzi_value_page_pv"></span>
+  
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="far fa-comment"></i>
+      </span>
+      <span class="post-meta-item-text">Valine: </span>
+    
+    <a title="valine" href="/posts/7a29d22a/#valine-comments" itemprop="discussionUrl">
+      <span class="post-comments-count valine-comment-count" data-xid="/posts/7a29d22a/" itemprop="commentCount"></span>
+    </a>
+  </span>
+  
+  
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+        <h1 id="建议收藏，减少百度重复造轮子"><a href="#建议收藏，减少百度重复造轮子" class="headerlink" title="建议收藏，减少百度重复造轮子"></a>建议收藏，减少百度重复造轮子</h1><p>我们应该都知道<code>SimpleDateFormat</code>是线程不安全的，在多线程的环境下会出现日期错乱的问题。</p>
+<p>假设我们有一些字符串日期，需要格式化成日期，然后编写下面的程序，同时多个线程请求，观察结果：</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">SimpleDateFormatTest</span> </span>&#123;</span><br><span class="line">    <span class="comment">/**</span></span><br><span class="line"><span class="comment">     * 需要格式化的字符串</span></span><br><span class="line"><span class="comment">     */</span></span><br><span class="line">    <span class="keyword">private</span> <span class="keyword">static</span> <span class="keyword">final</span> SimpleDateFormat DATE_FORMAT = <span class="keyword">new</span> SimpleDateFormat(<span class="string">&quot;yyyy-MM-dd HH:mm:ss&quot;</span>);</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">final</span> CountDownLatch latch = <span class="keyword">new</span> CountDownLatch(<span class="number">1</span>);</span><br><span class="line">        List&lt;String&gt; date = Arrays.asList(<span class="string">&quot;2021-01-01 12:12:12&quot;</span>, <span class="string">&quot;2021-01-02 11:11:11&quot;</span>, <span class="string">&quot;2021-01-11 09:09:09&quot;</span>);</span><br><span class="line">        IntStream.range(<span class="number">1</span>, <span class="number">10</span>).forEach(v -&gt; &#123;</span><br><span class="line">            <span class="keyword">new</span> Thread(() -&gt; &#123;</span><br><span class="line">                <span class="keyword">try</span> &#123;</span><br><span class="line">                    latch.await();</span><br><span class="line">                &#125; <span class="keyword">catch</span> (InterruptedException e) &#123;</span><br><span class="line">                    e.printStackTrace();</span><br><span class="line">                &#125;</span><br><span class="line">                IntStream.range(<span class="number">0</span>, <span class="number">10</span>).forEach(i -&gt; &#123;</span><br><span class="line">                    <span class="keyword">try</span> &#123;</span><br><span class="line">                        System.out.println(DATE_FORMAT.parse(date.get(i % date.size())));</span><br><span class="line">                        Thread.sleep(<span class="number">100</span>);</span><br><span class="line">                    &#125; <span class="keyword">catch</span> (InterruptedException | ParseException e) &#123;</span><br><span class="line">                        e.printStackTrace();</span><br><span class="line">                    &#125;</span><br><span class="line">                &#125;);</span><br><span class="line">            &#125;).start();</span><br><span class="line">        &#125;);</span><br><span class="line">        latch.countDown();</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<span id="more"></span>
+
+<img data-src="/posts/7a29d22a/2021-11-22-15-37-24.png" class="">
+
+<p>观察上面的结果可以发现，程序最终的运行结果是抛出了异常。也就是说：<code>SimpleDateFormat</code>类是线程不安全的。</p>
+<p>其实<code>SimpleDateFormat</code>不安全主要是<code>SimpleDateFormat</code>类中的包含的<code>Calender</code>类是作为共享成员变量存在<code>SimpleDateFormat</code>中。</p>
+<p>假如在多线程环境下，如果两个线程都使用同一个 <code>SimpleDateFormat</code> 实例，那么就有可能存在其中一个线程修改了 <code>calendar</code> 后紧接着另一个线程也修改了 <code>calendar</code>，那么随后第一个线程用到 <code>calendar</code> 时已经不是它所期待的值。</p>
+<p>因此在<code>Java8</code>中，<code>JDK</code>给我们提供了线程安全的时间类<code>“LocalDate”、“LocalDateTIme”</code>和<code>“LocalTime”</code>。通过查阅官方文档，可以了解到类是不可变的，并且线程安全。</p>
+<img data-src="/posts/7a29d22a/2021-11-22-15-38-42.png" class="">
+
+
+
+<p>常用整理:</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br><span class="line">105</span><br><span class="line">106</span><br><span class="line">107</span><br><span class="line">108</span><br><span class="line">109</span><br><span class="line">110</span><br><span class="line">111</span><br><span class="line">112</span><br><span class="line">113</span><br><span class="line">114</span><br><span class="line">115</span><br><span class="line">116</span><br><span class="line">117</span><br><span class="line">118</span><br><span class="line">119</span><br><span class="line">120</span><br><span class="line">121</span><br><span class="line">122</span><br><span class="line">123</span><br><span class="line">124</span><br><span class="line">125</span><br><span class="line">126</span><br><span class="line">127</span><br><span class="line">128</span><br><span class="line">129</span><br><span class="line">130</span><br><span class="line">131</span><br><span class="line">132</span><br><span class="line">133</span><br><span class="line">134</span><br><span class="line">135</span><br><span class="line">136</span><br><span class="line">137</span><br><span class="line">138</span><br><span class="line">139</span><br><span class="line">140</span><br><span class="line">141</span><br><span class="line">142</span><br><span class="line">143</span><br><span class="line">144</span><br><span class="line">145</span><br><span class="line">146</span><br><span class="line">147</span><br><span class="line">148</span><br><span class="line">149</span><br><span class="line">150</span><br><span class="line">151</span><br><span class="line">152</span><br><span class="line">153</span><br><span class="line">154</span><br><span class="line">155</span><br><span class="line">156</span><br><span class="line">157</span><br><span class="line">158</span><br><span class="line">159</span><br><span class="line">160</span><br><span class="line">161</span><br><span class="line">162</span><br><span class="line">163</span><br><span class="line">164</span><br><span class="line">165</span><br><span class="line">166</span><br><span class="line">167</span><br><span class="line">168</span><br><span class="line">169</span><br><span class="line">170</span><br><span class="line">171</span><br><span class="line">172</span><br><span class="line">173</span><br><span class="line">174</span><br><span class="line">175</span><br><span class="line">176</span><br><span class="line">177</span><br><span class="line">178</span><br><span class="line">179</span><br><span class="line">180</span><br><span class="line">181</span><br><span class="line">182</span><br><span class="line">183</span><br><span class="line">184</span><br><span class="line">185</span><br><span class="line">186</span><br><span class="line">187</span><br><span class="line">188</span><br><span class="line">189</span><br><span class="line">190</span><br><span class="line">191</span><br><span class="line">192</span><br><span class="line">193</span><br><span class="line">194</span><br><span class="line">195</span><br><span class="line">196</span><br><span class="line">197</span><br><span class="line">198</span><br><span class="line">199</span><br><span class="line">200</span><br><span class="line">201</span><br><span class="line">202</span><br><span class="line">203</span><br><span class="line">204</span><br><span class="line">205</span><br><span class="line">206</span><br><span class="line">207</span><br><span class="line">208</span><br><span class="line">209</span><br><span class="line">210</span><br><span class="line">211</span><br><span class="line">212</span><br><span class="line">213</span><br><span class="line">214</span><br><span class="line">215</span><br><span class="line">216</span><br><span class="line">217</span><br><span class="line">218</span><br><span class="line">219</span><br><span class="line">220</span><br><span class="line">221</span><br><span class="line">222</span><br><span class="line">223</span><br><span class="line">224</span><br><span class="line">225</span><br><span class="line">226</span><br><span class="line">227</span><br><span class="line">228</span><br><span class="line">229</span><br><span class="line">230</span><br><span class="line">231</span><br><span class="line">232</span><br><span class="line">233</span><br><span class="line">234</span><br><span class="line">235</span><br><span class="line">236</span><br><span class="line">237</span><br><span class="line">238</span><br><span class="line">239</span><br><span class="line">240</span><br><span class="line">241</span><br><span class="line">242</span><br><span class="line">243</span><br><span class="line">244</span><br><span class="line">245</span><br><span class="line">246</span><br><span class="line">247</span><br><span class="line">248</span><br><span class="line">249</span><br><span class="line">250</span><br><span class="line">251</span><br><span class="line">252</span><br><span class="line">253</span><br><span class="line">254</span><br><span class="line">255</span><br><span class="line">256</span><br><span class="line">257</span><br><span class="line">258</span><br><span class="line">259</span><br><span class="line">260</span><br><span class="line">261</span><br><span class="line">262</span><br><span class="line">263</span><br><span class="line">264</span><br><span class="line">265</span><br><span class="line">266</span><br><span class="line">267</span><br><span class="line">268</span><br><span class="line">269</span><br><span class="line">270</span><br><span class="line">271</span><br><span class="line">272</span><br><span class="line">273</span><br><span class="line">274</span><br><span class="line">275</span><br><span class="line">276</span><br><span class="line">277</span><br><span class="line">278</span><br><span class="line">279</span><br><span class="line">280</span><br><span class="line">281</span><br><span class="line">282</span><br><span class="line">283</span><br><span class="line">284</span><br><span class="line">285</span><br><span class="line">286</span><br><span class="line">287</span><br><span class="line">288</span><br><span class="line">289</span><br><span class="line">290</span><br><span class="line">291</span><br><span class="line">292</span><br><span class="line">293</span><br><span class="line">294</span><br><span class="line">295</span><br><span class="line">296</span><br><span class="line">297</span><br><span class="line">298</span><br><span class="line">299</span><br><span class="line">300</span><br><span class="line">301</span><br><span class="line">302</span><br><span class="line">303</span><br><span class="line">304</span><br><span class="line">305</span><br><span class="line">306</span><br><span class="line">307</span><br><span class="line">308</span><br><span class="line">309</span><br><span class="line">310</span><br><span class="line">311</span><br><span class="line">312</span><br><span class="line">313</span><br><span class="line">314</span><br><span class="line">315</span><br><span class="line">316</span><br><span class="line">317</span><br><span class="line">318</span><br><span class="line">319</span><br><span class="line">320</span><br><span class="line">321</span><br><span class="line">322</span><br><span class="line">323</span><br><span class="line">324</span><br><span class="line">325</span><br><span class="line">326</span><br><span class="line">327</span><br><span class="line">328</span><br><span class="line">329</span><br><span class="line">330</span><br><span class="line">331</span><br><span class="line">332</span><br><span class="line">333</span><br><span class="line">334</span><br><span class="line">335</span><br><span class="line">336</span><br><span class="line">337</span><br><span class="line">338</span><br><span class="line">339</span><br><span class="line">340</span><br><span class="line">341</span><br><span class="line">342</span><br><span class="line">343</span><br><span class="line">344</span><br><span class="line">345</span><br><span class="line">346</span><br><span class="line">347</span><br><span class="line">348</span><br><span class="line">349</span><br><span class="line">350</span><br><span class="line">351</span><br><span class="line">352</span><br><span class="line">353</span><br><span class="line">354</span><br><span class="line">355</span><br><span class="line">356</span><br><span class="line">357</span><br><span class="line">358</span><br><span class="line">359</span><br><span class="line">360</span><br><span class="line">361</span><br><span class="line">362</span><br><span class="line">363</span><br><span class="line">364</span><br><span class="line">365</span><br><span class="line">366</span><br><span class="line">367</span><br><span class="line">368</span><br><span class="line">369</span><br><span class="line">370</span><br><span class="line">371</span><br><span class="line">372</span><br><span class="line">373</span><br><span class="line">374</span><br><span class="line">375</span><br><span class="line">376</span><br><span class="line">377</span><br><span class="line">378</span><br><span class="line">379</span><br><span class="line">380</span><br><span class="line">381</span><br><span class="line">382</span><br><span class="line">383</span><br><span class="line">384</span><br><span class="line">385</span><br><span class="line">386</span><br><span class="line">387</span><br><span class="line">388</span><br><span class="line">389</span><br><span class="line">390</span><br><span class="line">391</span><br><span class="line">392</span><br><span class="line">393</span><br><span class="line">394</span><br><span class="line">395</span><br><span class="line">396</span><br><span class="line">397</span><br><span class="line">398</span><br><span class="line">399</span><br><span class="line">400</span><br><span class="line">401</span><br><span class="line">402</span><br><span class="line">403</span><br><span class="line">404</span><br><span class="line">405</span><br><span class="line">406</span><br><span class="line">407</span><br><span class="line">408</span><br><span class="line">409</span><br><span class="line">410</span><br><span class="line">411</span><br><span class="line">412</span><br><span class="line">413</span><br><span class="line">414</span><br><span class="line">415</span><br><span class="line">416</span><br><span class="line">417</span><br><span class="line">418</span><br><span class="line">419</span><br><span class="line">420</span><br><span class="line">421</span><br><span class="line">422</span><br><span class="line">423</span><br><span class="line">424</span><br><span class="line">425</span><br><span class="line">426</span><br><span class="line">427</span><br><span class="line">428</span><br><span class="line">429</span><br><span class="line">430</span><br><span class="line">431</span><br><span class="line">432</span><br><span class="line">433</span><br><span class="line">434</span><br><span class="line">435</span><br><span class="line">436</span><br><span class="line">437</span><br><span class="line">438</span><br><span class="line">439</span><br><span class="line">440</span><br><span class="line">441</span><br><span class="line">442</span><br><span class="line">443</span><br><span class="line">444</span><br><span class="line">445</span><br><span class="line">446</span><br><span class="line">447</span><br><span class="line">448</span><br><span class="line">449</span><br><span class="line">450</span><br><span class="line">451</span><br><span class="line">452</span><br><span class="line">453</span><br><span class="line">454</span><br><span class="line">455</span><br><span class="line">456</span><br><span class="line">457</span><br><span class="line">458</span><br><span class="line">459</span><br><span class="line">460</span><br><span class="line">461</span><br><span class="line">462</span><br><span class="line">463</span><br><span class="line">464</span><br><span class="line">465</span><br><span class="line">466</span><br><span class="line">467</span><br><span class="line">468</span><br><span class="line">469</span><br><span class="line">470</span><br><span class="line">471</span><br><span class="line">472</span><br><span class="line">473</span><br><span class="line">474</span><br><span class="line">475</span><br><span class="line">476</span><br><span class="line">477</span><br><span class="line">478</span><br><span class="line">479</span><br><span class="line">480</span><br><span class="line">481</span><br><span class="line">482</span><br><span class="line">483</span><br><span class="line">484</span><br><span class="line">485</span><br><span class="line">486</span><br><span class="line">487</span><br><span class="line">488</span><br><span class="line">489</span><br><span class="line">490</span><br><span class="line">491</span><br><span class="line">492</span><br><span class="line">493</span><br><span class="line">494</span><br><span class="line">495</span><br><span class="line">496</span><br><span class="line">497</span><br><span class="line">498</span><br><span class="line">499</span><br><span class="line">500</span><br><span class="line">501</span><br><span class="line">502</span><br><span class="line">503</span><br><span class="line">504</span><br><span class="line">505</span><br><span class="line">506</span><br><span class="line">507</span><br><span class="line">508</span><br><span class="line">509</span><br><span class="line">510</span><br><span class="line">511</span><br><span class="line">512</span><br><span class="line">513</span><br><span class="line">514</span><br><span class="line">515</span><br><span class="line">516</span><br><span class="line">517</span><br><span class="line">518</span><br><span class="line">519</span><br><span class="line">520</span><br><span class="line">521</span><br><span class="line">522</span><br><span class="line">523</span><br><span class="line">524</span><br><span class="line">525</span><br><span class="line">526</span><br><span class="line">527</span><br><span class="line">528</span><br><span class="line">529</span><br><span class="line">530</span><br><span class="line">531</span><br><span class="line">532</span><br><span class="line">533</span><br><span class="line">534</span><br><span class="line">535</span><br><span class="line">536</span><br><span class="line">537</span><br><span class="line">538</span><br><span class="line">539</span><br><span class="line">540</span><br><span class="line">541</span><br><span class="line">542</span><br><span class="line">543</span><br><span class="line">544</span><br><span class="line">545</span><br><span class="line">546</span><br><span class="line">547</span><br><span class="line">548</span><br><span class="line">549</span><br><span class="line">550</span><br><span class="line">551</span><br><span class="line">552</span><br><span class="line">553</span><br><span class="line">554</span><br><span class="line">555</span><br><span class="line">556</span><br><span class="line">557</span><br><span class="line">558</span><br><span class="line">559</span><br><span class="line">560</span><br><span class="line">561</span><br><span class="line">562</span><br><span class="line">563</span><br><span class="line">564</span><br><span class="line">565</span><br><span class="line">566</span><br><span class="line">567</span><br><span class="line">568</span><br><span class="line">569</span><br><span class="line">570</span><br><span class="line">571</span><br><span class="line">572</span><br><span class="line">573</span><br><span class="line">574</span><br><span class="line">575</span><br><span class="line">576</span><br><span class="line">577</span><br><span class="line">578</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@Desc</span> 日期工具类</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@Author</span> jinMao</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@Date</span> 2021/11/12 </span></span><br><span class="line"><span class="comment"> **/</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">DateUtils</span> </span>&#123;</span><br><span class="line">    <span class="keyword">public</span> <span class="class"><span class="keyword">enum</span> <span class="title">DateType</span> </span>&#123;</span><br><span class="line">        NORM_DATE_PATTERN(<span class="string">&quot;yyyy-MM-dd&quot;</span>),</span><br><span class="line">        NORM_DATETIME_PATTERN(<span class="string">&quot;yyyy-MM-dd HH:mm:ss&quot;</span>),</span><br><span class="line">        NORM_TIME_PATTERN(<span class="string">&quot;HH:mm:ss&quot;</span>),</span><br><span class="line">        NORM_DATETIME_MINUTE_PATTERN(<span class="string">&quot;yyyy-MM-dd HH:mm&quot;</span>),</span><br><span class="line">        NORM_DATETIME_MS_PATTERN(<span class="string">&quot;yyyy-MM-dd HH:mm:ss.SSS&quot;</span>),</span><br><span class="line">        CHINESE_DATE_PATTERN(<span class="string">&quot;yyyy年MM月dd日&quot;</span>),</span><br><span class="line">        PURE_DATE_PATTERN(<span class="string">&quot;yyyyMMdd&quot;</span>),</span><br><span class="line">        PURE_TIME_PATTERN(<span class="string">&quot;HHmmss&quot;</span>),</span><br><span class="line">        PURE_DATETIME_PATTERN(<span class="string">&quot;yyyyMMddHHmmss&quot;</span>),</span><br><span class="line">        PURE_DATETIME_MS_PATTERN(<span class="string">&quot;yyyyMMddHHmmssSSS&quot;</span>),</span><br><span class="line">        PURE_DATE_MD_PATTERN(<span class="string">&quot;MMdd&quot;</span>),</span><br><span class="line">        ;</span><br><span class="line">        <span class="keyword">private</span> String format;</span><br><span class="line"></span><br><span class="line">        DateType(String format) &#123;</span><br><span class="line">            <span class="keyword">this</span>.format = format;</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        <span class="function"><span class="keyword">public</span> String <span class="title">getFormat</span><span class="params">()</span> </span>&#123;</span><br><span class="line">            <span class="keyword">return</span> format;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="comment">/**</span></span><br><span class="line"><span class="comment">     * 定义一周的每天表示的常量，用于返回中文展示</span></span><br><span class="line"><span class="comment">     */</span></span><br><span class="line">    <span class="keyword">private</span> <span class="keyword">static</span> <span class="keyword">final</span> String[] DAY_OF_WEEK = &#123;<span class="string">&quot;周一&quot;</span>, <span class="string">&quot;周二&quot;</span>, <span class="string">&quot;周三&quot;</span>, <span class="string">&quot;周四&quot;</span>, <span class="string">&quot;周五&quot;</span>, <span class="string">&quot;周六&quot;</span>, <span class="string">&quot;周日&quot;</span>&#125;;</span><br><span class="line"></span><br><span class="line">    <span class="comment">/**</span></span><br><span class="line"><span class="comment">     * 把长整型的时间戳转换成日期</span></span><br><span class="line"><span class="comment">     *</span></span><br><span class="line"><span class="comment">     * <span class="doctag">@param</span> time   时间戳</span></span><br><span class="line"><span class="comment">     * <span class="doctag">@param</span> format 格式化日期格式</span></span><br><span class="line"><span class="comment">     * <span class="doctag">@return</span> 格式化之后的日期</span></span><br><span class="line"><span class="comment">     */</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> String <span class="title">stampToDate</span><span class="params">(<span class="keyword">long</span> time, String format)</span> </span>&#123;</span><br><span class="line">        DateTimeFormatter dateTimeFormatter = DateTimeFormatter.ofPattern(format);</span><br><span class="line">        <span class="keyword">return</span> dateTimeFormatter.format(LocalDateTime.ofInstant(Instant.ofEpochMilli(time), ZoneId.systemDefault()));</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="comment">/**</span></span><br><span class="line"><span class="comment">     * 把日期转换成指定格式的字符串日期</span></span><br><span class="line"><span class="comment">     *</span></span><br><span class="line"><span class="comment">     * <span class="doctag">@param</span> date 传递的日期</span></span><br><span class="line"><span class="comment">     * <span class="doctag">@param</span> type 指定格式</span></span><br><span class="line"><span class="comment">     * <span class="doctag">@return</span> 字符串日期</span></span><br><span class="line"><span class="comment">     */</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> String <span class="title">dateToString</span><span class="params">(Date date, DateType type)</span> </span>&#123;</span><br><span class="line">        ZonedDateTime now = dateToZonedDateTime(date);</span><br><span class="line">        DateTimeFormatter formatter = DateTimeFormatter.ofPattern(type.getFormat());</span><br><span class="line">        <span class="keyword">return</span> now.format(formatter);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="comment">/**</span></span><br><span class="line"><span class="comment">     * 把日期转换成字默认的符串日期</span></span><br><span class="line"><span class="comment">     *</span></span><br><span class="line"><span class="comment">     * <span class="doctag">@param</span> date 传递日期</span></span><br><span class="line"><span class="comment">     * <span class="doctag">@return</span> 字符串日期</span></span><br><span class="line"><span class="comment">     */</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> String <span class="title">dateToString</span><span class="params">(Date date)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">return</span> dateToString(date, DateType.NORM_DATETIME_MINUTE_PATTERN);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">    <span class="comment">/**</span></span><br><span class="line"><span class="comment">     * 把当前日期格式化成指定的的字符串日期</span></span><br><span class="line"><span class="comment">     *</span></span><br><span class="line"><span class="comment">     * <span class="doctag">@param</span> type 指定的格式化日期</span></span><br><span class="line"><span class="comment">     * <span class="doctag">@return</span> 字符串日期</span></span><br><span class="line"><span class="comment">     */</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> String <span class="title">dateToString</span><span class="params">(DateType type)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">return</span> dateToString(<span class="keyword">new</span> Date(), type);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="comment">/**</span></span><br><span class="line"><span class="comment">     * 把当前日期格式化成默认的字符串日期</span></span><br><span class="line"><span class="comment">     *</span></span><br><span class="line"><span class="comment">     * <span class="doctag">@return</span> 字符串日期</span></span><br><span class="line"><span class="comment">     */</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> String <span class="title">dateToString</span><span class="params">()</span> </span>&#123;</span><br><span class="line">        <span class="keyword">return</span> dateToString(<span class="keyword">new</span> Date(), DateType.NORM_DATETIME_MINUTE_PATTERN);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="comment">/**</span></span><br><span class="line"><span class="comment">     * 将字符串日期转换成Date</span></span><br><span class="line"><span class="comment">     *</span></span><br><span class="line"><span class="comment">     * <span class="doctag">@param</span> dateStr  日期字符串，可以是20200101、2020-01-01、2020年01月01日</span></span><br><span class="line"><span class="comment">     * <span class="doctag">@param</span> dateType 格式化日期类型，必须包含完整的年月日</span></span><br><span class="line"><span class="comment">     * <span class="doctag">@return</span> Date类型日期</span></span><br><span class="line"><span class="comment">     */</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> Date <span class="title">strToDate</span><span class="params">(String dateStr, DateType dateType)</span> </span>&#123;</span><br><span class="line">        DateTimeFormatter formatter = DateTimeFormatter.ofPattern(dateType.getFormat());</span><br><span class="line">        <span class="keyword">return</span> Date.from(LocalDate.parse(dateStr, formatter).atStartOfDay(ZoneId.systemDefault()).toInstant());</span><br><span class="line"></span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="comment">/**</span></span><br><span class="line"><span class="comment">     * 将字符串日期转换成Date</span></span><br><span class="line"><span class="comment">     *</span></span><br><span class="line"><span class="comment">     * <span class="doctag">@param</span> dateStr  日期字符串，可以是20200101131313、2020-01-01 13:13:13</span></span><br><span class="line"><span class="comment">     * <span class="doctag">@param</span> dateType 格式化日期类型，必须包含完整的年月日时分秒</span></span><br><span class="line"><span class="comment">     * <span class="doctag">@return</span> Date类型日期</span></span><br><span class="line"><span class="comment">     */</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> Date <span class="title">strToDateTime</span><span class="params">(String dateStr, DateType dateType)</span> </span>&#123;</span><br><span class="line">        DateTimeFormatter formatter = DateTimeFormatter.ofPattern(dateType.getFormat());</span><br><span class="line">        <span class="keyword">return</span> Date.from(LocalDateTime.parse(dateStr, formatter).atZone(ZoneId.systemDefault()).toInstant());</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="comment">/**</span></span><br><span class="line"><span class="comment">     * 判断是否是当天</span></span><br><span class="line"><span class="comment">     *</span></span><br><span class="line"><span class="comment">     * <span class="doctag">@param</span> date 传递的时间</span></span><br><span class="line"><span class="comment">     * <span class="doctag">@return</span> true|false</span></span><br><span class="line"><span class="comment">     */</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">boolean</span> <span class="title">isToday</span><span class="params">(Date date)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">return</span> LocalDate.now().equals(dateToLocalDate(date));</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="comment">/**</span></span><br><span class="line"><span class="comment">     * 获取给定日期之前或者之后的日期</span></span><br><span class="line"><span class="comment">     * beforeOrAfterNumDay(new Date(), 0) 当天 2020-10-10</span></span><br><span class="line"><span class="comment">     * beforeOrAfterNumDay(new Date(), -1) 当天的前一天 2020-10-09</span></span><br><span class="line"><span class="comment">     * beforeOrAfterNumDay(new Date(), 1) 当天的后一天  2020-10-11</span></span><br><span class="line"><span class="comment">     *</span></span><br><span class="line"><span class="comment">     * <span class="doctag">@param</span> date 给定的Date类型的日期</span></span><br><span class="line"><span class="comment">     * <span class="doctag">@param</span> num  天数偏移量</span></span><br><span class="line"><span class="comment">     * <span class="doctag">@return</span> 计算之后的日期</span></span><br><span class="line"><span class="comment">     */</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> Date <span class="title">getBeforeOrAfterNumDay</span><span class="params">(Date date, <span class="keyword">long</span> num)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">return</span> localDateToDate(dateToLocalDate(date).plusDays(num));</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="comment">/**</span></span><br><span class="line"><span class="comment">     * 获取当前日期之前或者之后的月份</span></span><br><span class="line"><span class="comment">     * beforeOrAfterNumMonth(0) 当月 2020-10</span></span><br><span class="line"><span class="comment">     * beforeOrAfterNumMonth(-1) 当天的前一月 2020-09</span></span><br><span class="line"><span class="comment">     * beforeOrAfterNumMonth(1) 当天的后一月 2020-11</span></span><br><span class="line"><span class="comment">     *</span></span><br><span class="line"><span class="comment">     * <span class="doctag">@param</span> num 月份偏移量</span></span><br><span class="line"><span class="comment">     * <span class="doctag">@return</span> 计算之后的月份</span></span><br><span class="line"><span class="comment">     */</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> String <span class="title">getBeforeOrAfterNumMonth</span><span class="params">(<span class="keyword">int</span> num)</span> </span>&#123;</span><br><span class="line">        String date = LocalDate.now().plusMonths(num).toString();</span><br><span class="line">        <span class="keyword">return</span> date.substring(<span class="number">0</span>, date.lastIndexOf(<span class="string">&quot;-&quot;</span>));</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="comment">/**</span></span><br><span class="line"><span class="comment">     * 给当前时间增加年数</span></span><br><span class="line"><span class="comment">     *</span></span><br><span class="line"><span class="comment">     * <span class="doctag">@param</span> date 当前时间</span></span><br><span class="line"><span class="comment">     * <span class="doctag">@param</span> num  增加的数量</span></span><br><span class="line"><span class="comment">     * <span class="doctag">@return</span> 返回增加日期之后的新日期</span></span><br><span class="line"><span class="comment">     */</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> Date <span class="title">addYear</span><span class="params">(Date date, <span class="keyword">int</span> num)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">return</span> localDateTimeToDate(dateToLocalDateTime(date).plusYears(num));</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="comment">/**</span></span><br><span class="line"><span class="comment">     * 按照指定分割符号获取当前年份和月份</span></span><br><span class="line"><span class="comment">     *</span></span><br><span class="line"><span class="comment">     * <span class="doctag">@param</span> separator 分隔符号</span></span><br><span class="line"><span class="comment">     * <span class="doctag">@return</span> 7位字符串日期</span></span><br><span class="line"><span class="comment">     */</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> String <span class="title">getCurrentYearAndMonth</span><span class="params">(String separator)</span> </span>&#123;</span><br><span class="line">        String month = LocalDate.now().getMonth().getValue() &gt;= <span class="number">10</span> ? <span class="string">&quot;&quot;</span> + LocalDate.now().getMonth().getValue() : <span class="string">&quot;0&quot;</span> + LocalDate.now().getMonth().getValue();</span><br><span class="line">        <span class="keyword">return</span> LocalDate.now().getYear() + separator + month;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="comment">/**</span></span><br><span class="line"><span class="comment">     * 按照指定分割符号获取当前年份和一月份</span></span><br><span class="line"><span class="comment">     *</span></span><br><span class="line"><span class="comment">     * <span class="doctag">@param</span> separator 分隔符号</span></span><br><span class="line"><span class="comment">     * <span class="doctag">@return</span> 7位字符串日期</span></span><br><span class="line"><span class="comment">     */</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> String <span class="title">getCurrentYearWithFirstMonth</span><span class="params">(String separator)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">return</span> LocalDate.now().getYear() + separator + <span class="string">&quot;01&quot;</span>;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="comment">/**</span></span><br><span class="line"><span class="comment">     * 校验两个 月日 字符串日期的大小</span></span><br><span class="line"><span class="comment">     * &lt;p&gt;比如 01-02 和 02-03 比较 得到的结果就是 true&lt;/p&gt;</span></span><br><span class="line"><span class="comment">     * &lt;p&gt;比如 01-03 和 02-03 比较 得到的结果就是 true&lt;/p&gt;</span></span><br><span class="line"><span class="comment">     * &lt;p&gt;比如 01-04 和 02-03 比较 得到的结果就是 false&lt;/p&gt;</span></span><br><span class="line"><span class="comment">     *</span></span><br><span class="line"><span class="comment">     * <span class="doctag">@param</span> beginDate 开始日期</span></span><br><span class="line"><span class="comment">     * <span class="doctag">@param</span> endDate   结束日期</span></span><br><span class="line"><span class="comment">     * <span class="doctag">@param</span> split     分隔符</span></span><br><span class="line"><span class="comment">     * <span class="doctag">@return</span> 比较结果</span></span><br><span class="line"><span class="comment">     */</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">boolean</span> <span class="title">checkDate</span><span class="params">(String beginDate, String endDate, String split)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">return</span> Integer.parseInt(endDate.replace(split, <span class="string">&quot;&quot;</span>)) - Integer.parseInt(beginDate.replace(split, <span class="string">&quot;&quot;</span>)) &gt;= <span class="number">0</span>;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="comment">/**</span></span><br><span class="line"><span class="comment">     * 按照指定的分隔符获取当前月份和日期</span></span><br><span class="line"><span class="comment">     * &lt;p&gt;比如 今天是2020年2月2日 分隔符为“-” 则获取的日期为 “02-02”&lt;/p&gt;</span></span><br><span class="line"><span class="comment">     * <span class="doctag">@param</span> separator 指定的分隔符</span></span><br><span class="line"><span class="comment">     * <span class="doctag">@return</span> 字符串日期</span></span><br><span class="line"><span class="comment">     */</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> String <span class="title">getCurrentMonthAndDay</span><span class="params">(String separator)</span> </span>&#123;</span><br><span class="line">        String month = LocalDate.now().getMonth().getValue() &gt;= <span class="number">10</span> ? <span class="string">&quot;&quot;</span> + LocalDate.now().getMonth().getValue() : <span class="string">&quot;0&quot;</span> + LocalDate.now().getMonth().getValue();</span><br><span class="line">        String day = LocalDate.now().getDayOfMonth() &gt;= <span class="number">10</span> ? <span class="string">&quot;&quot;</span> + LocalDate.now().getDayOfMonth() : <span class="string">&quot;0&quot;</span> + LocalDate.now().getDayOfMonth();</span><br><span class="line">        <span class="keyword">return</span> month + separator + day;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="comment">/**</span></span><br><span class="line"><span class="comment">     * 给当前时间增加月数</span></span><br><span class="line"><span class="comment">     *</span></span><br><span class="line"><span class="comment">     * <span class="doctag">@param</span> date 当前时间</span></span><br><span class="line"><span class="comment">     * <span class="doctag">@param</span> num  增加的数量</span></span><br><span class="line"><span class="comment">     * <span class="doctag">@return</span> 返回增加日期之后的新日期</span></span><br><span class="line"><span class="comment">     */</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> Date <span class="title">addMonth</span><span class="params">(Date date, <span class="keyword">int</span> num)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">return</span> localDateTimeToDate(dateToLocalDateTime(date).plusMonths(num));</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="comment">/**</span></span><br><span class="line"><span class="comment">     * 给当前时间增加天数</span></span><br><span class="line"><span class="comment">     *</span></span><br><span class="line"><span class="comment">     * <span class="doctag">@param</span> date 当前时间</span></span><br><span class="line"><span class="comment">     * <span class="doctag">@param</span> num  增加的数量</span></span><br><span class="line"><span class="comment">     * <span class="doctag">@return</span> 返回增加日期之后的新日期</span></span><br><span class="line"><span class="comment">     */</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> Date <span class="title">addDay</span><span class="params">(Date date, <span class="keyword">int</span> num)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">return</span> localDateTimeToDate(dateToLocalDateTime(date).plusDays(num));</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="comment">/**</span></span><br><span class="line"><span class="comment">     * 给当前时间增加小时</span></span><br><span class="line"><span class="comment">     *</span></span><br><span class="line"><span class="comment">     * <span class="doctag">@param</span> date 当前时间</span></span><br><span class="line"><span class="comment">     * <span class="doctag">@param</span> num  增加的数量</span></span><br><span class="line"><span class="comment">     * <span class="doctag">@return</span> 返回增加日期之后的新日期</span></span><br><span class="line"><span class="comment">     */</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> Date <span class="title">addHours</span><span class="params">(Date date, <span class="keyword">int</span> num)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">return</span> localDateTimeToDate(dateToLocalDateTime(date).plusHours(num));</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="comment">/**</span></span><br><span class="line"><span class="comment">     * 给当前时间增加分钟</span></span><br><span class="line"><span class="comment">     *</span></span><br><span class="line"><span class="comment">     * <span class="doctag">@param</span> date 当前时间</span></span><br><span class="line"><span class="comment">     * <span class="doctag">@param</span> num  增加的数量</span></span><br><span class="line"><span class="comment">     * <span class="doctag">@return</span> 返回增加日期之后的新日期</span></span><br><span class="line"><span class="comment">     */</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> Date <span class="title">addMinutes</span><span class="params">(Date date, <span class="keyword">int</span> num)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">return</span> localDateTimeToDate(dateToLocalDateTime(date).plusMinutes(num));</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="comment">/**</span></span><br><span class="line"><span class="comment">     * 给当前时间增加秒数</span></span><br><span class="line"><span class="comment">     *</span></span><br><span class="line"><span class="comment">     * <span class="doctag">@param</span> date 当前时间</span></span><br><span class="line"><span class="comment">     * <span class="doctag">@param</span> num  增加的数量</span></span><br><span class="line"><span class="comment">     * <span class="doctag">@return</span> 返回增加日期之后的新日期</span></span><br><span class="line"><span class="comment">     */</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> Date <span class="title">addSeconds</span><span class="params">(Date date, <span class="keyword">int</span> num)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">return</span> localDateTimeToDate(dateToLocalDateTime(date).plusSeconds(num));</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="comment">/**</span></span><br><span class="line"><span class="comment">     * 给当前时间增加纳秒</span></span><br><span class="line"><span class="comment">     *</span></span><br><span class="line"><span class="comment">     * <span class="doctag">@param</span> date 当前时间</span></span><br><span class="line"><span class="comment">     * <span class="doctag">@param</span> num  增加的数量</span></span><br><span class="line"><span class="comment">     * <span class="doctag">@return</span> 返回增加日期之后的新日期</span></span><br><span class="line"><span class="comment">     */</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> Date <span class="title">addNanos</span><span class="params">(Date date, <span class="keyword">int</span> num)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">return</span> localDateTimeToDate(dateToLocalDateTime(date).plusNanos(num));</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="comment">/**</span></span><br><span class="line"><span class="comment">     * 给当前时间增加周数</span></span><br><span class="line"><span class="comment">     *</span></span><br><span class="line"><span class="comment">     * <span class="doctag">@param</span> date 当前时间</span></span><br><span class="line"><span class="comment">     * <span class="doctag">@param</span> num  增加的数量</span></span><br><span class="line"><span class="comment">     * <span class="doctag">@return</span> 返回增加日期之后的新日期</span></span><br><span class="line"><span class="comment">     */</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> Date <span class="title">addWeeks</span><span class="params">(Date date, <span class="keyword">int</span> num)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">return</span> localDateTimeToDate(dateToLocalDateTime(date).plusWeeks(num));</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">    <span class="comment">/**</span></span><br><span class="line"><span class="comment">     * 获取当天是星期几</span></span><br><span class="line"><span class="comment">     *</span></span><br><span class="line"><span class="comment">     * <span class="doctag">@return</span> 整形的星期数</span></span><br><span class="line"><span class="comment">     */</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">int</span> <span class="title">getDayOfWeek</span><span class="params">()</span> </span>&#123;</span><br><span class="line">        <span class="keyword">return</span> LocalDate.now().atStartOfDay(ZoneId.systemDefault()).getDayOfWeek().getValue();</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="comment">/**</span></span><br><span class="line"><span class="comment">     * 获取当天是星期几</span></span><br><span class="line"><span class="comment">     *</span></span><br><span class="line"><span class="comment">     * <span class="doctag">@return</span> 中文表示的星期数</span></span><br><span class="line"><span class="comment">     */</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> String <span class="title">getDayOfWeekWithChinese</span><span class="params">()</span> </span>&#123;</span><br><span class="line">        <span class="keyword">return</span> DAY_OF_WEEK[getDayOfWeek() - <span class="number">1</span>];</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="comment">/**</span></span><br><span class="line"><span class="comment">     * 获取传递的日期在当天是星期几</span></span><br><span class="line"><span class="comment">     *</span></span><br><span class="line"><span class="comment">     * <span class="doctag">@param</span> date 传递的日期</span></span><br><span class="line"><span class="comment">     * <span class="doctag">@return</span> 整形的星期数</span></span><br><span class="line"><span class="comment">     */</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">int</span> <span class="title">getDayOfWeek</span><span class="params">(Date date)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">return</span> dateToLocalDate(date).atStartOfDay(ZoneId.systemDefault()).getDayOfWeek().getValue();</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="comment">/**</span></span><br><span class="line"><span class="comment">     * 获取传递的日期在当天是星期几</span></span><br><span class="line"><span class="comment">     *</span></span><br><span class="line"><span class="comment">     * <span class="doctag">@param</span> date 传递的日期</span></span><br><span class="line"><span class="comment">     * <span class="doctag">@return</span> 中文表示的星期数</span></span><br><span class="line"><span class="comment">     */</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> String <span class="title">getDayOfWeekWithChinese</span><span class="params">(Date date)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">return</span> DAY_OF_WEEK[getDayOfWeek(date) - <span class="number">1</span>];</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="comment">/**</span></span><br><span class="line"><span class="comment">     * 判断给定的日期是否在给定的日期范围内</span></span><br><span class="line"><span class="comment">     *</span></span><br><span class="line"><span class="comment">     * <span class="doctag">@param</span> date      给定的日期</span></span><br><span class="line"><span class="comment">     * <span class="doctag">@param</span> beginTime 开始日期</span></span><br><span class="line"><span class="comment">     * <span class="doctag">@param</span> endTime   结束日期</span></span><br><span class="line"><span class="comment">     * <span class="doctag">@return</span> true|false</span></span><br><span class="line"><span class="comment">     */</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">boolean</span> <span class="title">belongDateRange</span><span class="params">(Date date, Date beginTime, Date endTime)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">return</span> date.before(beginTime) &amp;&amp; date.after(endTime);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="comment">/**</span></span><br><span class="line"><span class="comment">     * 获取当前的小时（24小时制）</span></span><br><span class="line"><span class="comment">     *</span></span><br><span class="line"><span class="comment">     * <span class="doctag">@return</span> 当前的小时</span></span><br><span class="line"><span class="comment">     */</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">int</span> <span class="title">getNowHour</span><span class="params">()</span> </span>&#123;</span><br><span class="line">        <span class="keyword">return</span> LocalDateTime.now().getHour();</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="comment">/**</span></span><br><span class="line"><span class="comment">     * 根据指定日期获取年龄</span></span><br><span class="line"><span class="comment">     *</span></span><br><span class="line"><span class="comment">     * <span class="doctag">@param</span> birthday 指定日期</span></span><br><span class="line"><span class="comment">     * <span class="doctag">@return</span> 年龄</span></span><br><span class="line"><span class="comment">     */</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">int</span> <span class="title">getAgeByBirthday</span><span class="params">(Date birthday)</span> </span>&#123;</span><br><span class="line">        LocalDateTime birthdayDate = dateToLocalDateTime(birthday);</span><br><span class="line">        <span class="keyword">if</span> (LocalDateTime.now().isBefore(birthdayDate)) &#123;</span><br><span class="line">            <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">        &#125;</span><br><span class="line">        Duration duration = Duration.between(birthdayDate, LocalDateTime.now());</span><br><span class="line">        <span class="keyword">return</span> (<span class="keyword">int</span>) duration.toDays();</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="comment">/**</span></span><br><span class="line"><span class="comment">     * 根据传入的时间获取这个时间是第几周</span></span><br><span class="line"><span class="comment">     *</span></span><br><span class="line"><span class="comment">     * <span class="doctag">@param</span> date 指定的时间</span></span><br><span class="line"><span class="comment">     * <span class="doctag">@return</span> 周数</span></span><br><span class="line"><span class="comment">     */</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">int</span> <span class="title">getWeekOfYear</span><span class="params">(Date date)</span> </span>&#123;</span><br><span class="line">        WeekFields weekFields = WeekFields.of(DayOfWeek.MONDAY, <span class="number">1</span>);</span><br><span class="line">        <span class="keyword">return</span> dateToLocalDateTime(date).get(weekFields.weekOfYear());</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="comment">/**</span></span><br><span class="line"><span class="comment">     * 获取给定时间的上个小时的开始时间和结束时间</span></span><br><span class="line"><span class="comment">     * 给一个为&quot;2020-10-26-09:36:24&quot;得到结果为 [2020-10-26 08:00:00, 2020-10-26 08:59:59, 08]</span></span><br><span class="line"><span class="comment">     *</span></span><br><span class="line"><span class="comment">     * <span class="doctag">@param</span> date 给定的时间</span></span><br><span class="line"><span class="comment">     * <span class="doctag">@return</span> 字符串数组</span></span><br><span class="line"><span class="comment">     */</span></span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">static</span> String[] getPreviousBeginHourAndEndHour(Date date) &#123;</span><br><span class="line">        String[] lastHours = <span class="keyword">new</span> String[<span class="number">3</span>];</span><br><span class="line">        String hour = dateToLocalDateTime(date).getHour() - <span class="number">1</span> + <span class="string">&quot;&quot;</span>;</span><br><span class="line">        <span class="keyword">if</span> (hour.length() &lt; <span class="number">2</span>) &#123;</span><br><span class="line">            hour = <span class="number">0</span> + hour;</span><br><span class="line">        &#125;</span><br><span class="line">        LocalDate localDateTime = dateToLocalDate(date);</span><br><span class="line">        lastHours[<span class="number">0</span>] = localDateTime + <span class="string">&quot; &quot;</span> + hour + <span class="string">&quot;:00:00&quot;</span>;</span><br><span class="line">        lastHours[<span class="number">1</span>] = localDateTime + <span class="string">&quot; &quot;</span> + hour + <span class="string">&quot;:59:59&quot;</span>;</span><br><span class="line">        lastHours[<span class="number">2</span>] = hour;</span><br><span class="line">        <span class="keyword">return</span> lastHours;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">    <span class="comment">/**</span></span><br><span class="line"><span class="comment">     * 获取上周的开始日期和结束日期</span></span><br><span class="line"><span class="comment">     *</span></span><br><span class="line"><span class="comment">     * <span class="doctag">@return</span> 字符串数组</span></span><br><span class="line"><span class="comment">     */</span></span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">static</span> String[] getPreviousBeginDayAndEndDay() &#123;</span><br><span class="line">        <span class="keyword">return</span> getPreviousBeginDayAndEndDay(<span class="keyword">new</span> Date());</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="comment">/**</span></span><br><span class="line"><span class="comment">     * 根据给定的时间获取上周的开始日期和结束日期</span></span><br><span class="line"><span class="comment">     *</span></span><br><span class="line"><span class="comment">     * <span class="doctag">@param</span> date 给定的时间</span></span><br><span class="line"><span class="comment">     * <span class="doctag">@return</span> 字符串数组</span></span><br><span class="line"><span class="comment">     */</span></span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">static</span> String[] getPreviousBeginDayAndEndDay(Date date) &#123;</span><br><span class="line">        LocalDate prevDay = dateToLocalDate(date).plusWeeks(-<span class="number">1</span>);</span><br><span class="line">        DayOfWeek week = prevDay.getDayOfWeek();</span><br><span class="line">        <span class="keyword">int</span> value = week.getValue();</span><br><span class="line">        <span class="keyword">return</span> <span class="keyword">new</span> String[]&#123;prevDay.minusDays(value - <span class="number">1</span>).toString(), prevDay.plusDays(<span class="number">7</span> - value).toString()&#125;;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="comment">/**</span></span><br><span class="line"><span class="comment">     * 根据传入的开始日期和结束日期获取两者之间的日期集合，格式为 “yyyy-MM-dd”</span></span><br><span class="line"><span class="comment">     *</span></span><br><span class="line"><span class="comment">     * <span class="doctag">@param</span> start 开始日期</span></span><br><span class="line"><span class="comment">     * <span class="doctag">@param</span> end   结束日期</span></span><br><span class="line"><span class="comment">     * <span class="doctag">@return</span> 日期集合</span></span><br><span class="line"><span class="comment">     */</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> List&lt;String&gt; <span class="title">getDatesBetweenStartDateAndEndDate</span><span class="params">(String start, String end)</span> </span>&#123;</span><br><span class="line">        List&lt;String&gt; list = <span class="keyword">new</span> ArrayList&lt;&gt;(<span class="number">10</span>);</span><br><span class="line">        LocalDate startDate = LocalDate.parse(start);</span><br><span class="line">        LocalDate endDate = LocalDate.parse(end);</span><br><span class="line">        <span class="keyword">long</span> distance = ChronoUnit.DAYS.between(startDate, endDate);</span><br><span class="line">        <span class="keyword">if</span> (distance &lt; <span class="number">1</span>) &#123;</span><br><span class="line">            <span class="keyword">return</span> list;</span><br><span class="line">        &#125;</span><br><span class="line">        Stream.iterate(startDate, d -&gt; d.plusDays(<span class="number">1</span>)).limit(distance + <span class="number">1</span>).forEach(f -&gt; list.add(f.toString()));</span><br><span class="line">        <span class="keyword">return</span> list;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="comment">/**</span></span><br><span class="line"><span class="comment">     * 根据传入的开始日期和结束日期获取两者之间的日期集合</span></span><br><span class="line"><span class="comment">     *</span></span><br><span class="line"><span class="comment">     * <span class="doctag">@param</span> start 开始日期</span></span><br><span class="line"><span class="comment">     * <span class="doctag">@param</span> end   结束日期</span></span><br><span class="line"><span class="comment">     * <span class="doctag">@return</span> 日期集合</span></span><br><span class="line"><span class="comment">     */</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> List&lt;Date&gt; <span class="title">getDatesBetweenStartDateAndEndDate</span><span class="params">(Date start, Date end)</span> </span>&#123;</span><br><span class="line">        List&lt;Date&gt; list = <span class="keyword">new</span> ArrayList&lt;&gt;(<span class="number">10</span>);</span><br><span class="line">        LocalDate startDate = dateToLocalDate(start);</span><br><span class="line">        LocalDate endDate = dateToLocalDate(end);</span><br><span class="line">        <span class="keyword">long</span> distance = ChronoUnit.DAYS.between(startDate, endDate);</span><br><span class="line">        <span class="keyword">if</span> (distance &lt; <span class="number">1</span>) &#123;</span><br><span class="line">            <span class="keyword">return</span> list;</span><br><span class="line">        &#125;</span><br><span class="line">        Stream.iterate(startDate, d -&gt; d.plusDays(<span class="number">1</span>)).limit(distance + <span class="number">1</span>).forEach(f -&gt; list.add(localDateToDate(f)));</span><br><span class="line">        <span class="keyword">return</span> list;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="comment">/**</span></span><br><span class="line"><span class="comment">     * 获取给定日期的月份的最后一天</span></span><br><span class="line"><span class="comment">     *</span></span><br><span class="line"><span class="comment">     * <span class="doctag">@param</span> yearMonth 给定的月份，格式为“yyyy-MM” 2020-01----&gt;2020-02-31</span></span><br><span class="line"><span class="comment">     * <span class="doctag">@return</span> 本月最后一天</span></span><br><span class="line"><span class="comment">     */</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> String <span class="title">getLastDayOfMonth</span><span class="params">(String yearMonth)</span> </span>&#123;</span><br><span class="line">        LocalDate resDate = LocalDate.parse(yearMonth + <span class="string">&quot;-01&quot;</span>);</span><br><span class="line">        Month month = resDate.getMonth();</span><br><span class="line">        <span class="keyword">int</span> length = month.length(resDate.isLeapYear());</span><br><span class="line">        <span class="keyword">return</span> LocalDate.of(resDate.getYear(), month, length).toString();</span><br><span class="line"></span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="comment">/**</span></span><br><span class="line"><span class="comment">     * 根据传入的秒数获取格式化之后的时间</span></span><br><span class="line"><span class="comment">     * getFormatBySeconds(799) ---&gt; 00:13:19</span></span><br><span class="line"><span class="comment">     *</span></span><br><span class="line"><span class="comment">     * <span class="doctag">@param</span> seconds 给定的秒数</span></span><br><span class="line"><span class="comment">     * <span class="doctag">@return</span> 格式化之后的时间字符串</span></span><br><span class="line"><span class="comment">     */</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> String <span class="title">getTimeBySeconds</span><span class="params">(<span class="keyword">int</span> seconds)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">if</span> (seconds &gt; <span class="number">60</span> * <span class="number">60</span> * <span class="number">24</span> - <span class="number">1</span>) &#123;</span><br><span class="line">            <span class="keyword">return</span> <span class="string">&quot;23:59:59&quot;</span>;</span><br><span class="line">        &#125;</span><br><span class="line">        seconds = seconds % <span class="number">86400</span>;</span><br><span class="line">        String hours = String.valueOf(seconds / <span class="number">3600</span>).length() &gt; <span class="number">1</span> ? String.valueOf(seconds / <span class="number">3600</span>) : <span class="string">&quot;0&quot;</span> + (seconds / <span class="number">3600</span>);</span><br><span class="line">        seconds = seconds % <span class="number">3600</span>;</span><br><span class="line">        String minutes = String.valueOf(seconds / <span class="number">60</span>).length() &gt; <span class="number">1</span> ? String.valueOf(seconds / <span class="number">60</span>) : <span class="string">&quot;0&quot;</span> + (seconds / <span class="number">60</span>);</span><br><span class="line">        String second = String.valueOf(seconds % <span class="number">60</span>).length() &gt; <span class="number">1</span> ? String.valueOf(seconds % <span class="number">60</span>) : <span class="string">&quot;0&quot;</span> + (seconds % <span class="number">60</span>);</span><br><span class="line">        <span class="keyword">return</span> hours + <span class="string">&quot;:&quot;</span> + minutes + <span class="string">&quot;:&quot;</span> + second;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="comment">/**</span></span><br><span class="line"><span class="comment">     * 计算给定两个日期之前的时间差</span></span><br><span class="line"><span class="comment">     *</span></span><br><span class="line"><span class="comment">     * <span class="doctag">@param</span> begin 开始时间</span></span><br><span class="line"><span class="comment">     * <span class="doctag">@param</span> end   结束时间</span></span><br><span class="line"><span class="comment">     * <span class="doctag">@return</span> 时间差值（单位秒）</span></span><br><span class="line"><span class="comment">     */</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">int</span> <span class="title">getTimeDifference</span><span class="params">(Date begin, Date end)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">return</span> (<span class="keyword">int</span>) (((end.getTime() - begin.getTime()) / (<span class="number">1000</span>)));</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="comment">/**</span></span><br><span class="line"><span class="comment">     * 获取给定时间的日期集合，包含开始时间和结束时间</span></span><br><span class="line"><span class="comment">     *</span></span><br><span class="line"><span class="comment">     * <span class="doctag">@param</span> beginTime 开始时间</span></span><br><span class="line"><span class="comment">     * <span class="doctag">@param</span> endTime   结束时间</span></span><br><span class="line"><span class="comment">     * <span class="doctag">@return</span> 时间范围集合</span></span><br><span class="line"><span class="comment">     */</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> List&lt;String&gt; <span class="title">getRangeOfDates</span><span class="params">(String beginTime, String endTime)</span> </span>&#123;</span><br><span class="line">        List&lt;String&gt; dayList = <span class="keyword">new</span> ArrayList&lt;&gt;();</span><br><span class="line">        LocalDate startDate = LocalDate.parse(beginTime);</span><br><span class="line">        LocalDate endDate = LocalDate.parse(endTime);</span><br><span class="line">        <span class="keyword">long</span> days = ChronoUnit.DAYS.between(startDate, endDate);</span><br><span class="line">        LongStream.range(<span class="number">0</span>, days + <span class="number">1</span>).forEach(d -&gt; dayList.add(startDate.plusDays(d).toString()));</span><br><span class="line">        <span class="keyword">return</span> dayList;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">    <span class="comment">/**</span></span><br><span class="line"><span class="comment">     * 把Date类型的日期转化成ZoneDateTime类型的日期</span></span><br><span class="line"><span class="comment">     *</span></span><br><span class="line"><span class="comment">     * <span class="doctag">@param</span> date date类型日期</span></span><br><span class="line"><span class="comment">     * <span class="doctag">@return</span> ZoneDateTime类型日期</span></span><br><span class="line"><span class="comment">     */</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> ZonedDateTime <span class="title">dateToZonedDateTime</span><span class="params">(Date date)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">return</span> ZonedDateTime.ofInstant(date.toInstant(), ZoneId.systemDefault());</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="comment">/**</span></span><br><span class="line"><span class="comment">     * 把ZoneDateTime类型的日期转化成Date类型的日期</span></span><br><span class="line"><span class="comment">     *</span></span><br><span class="line"><span class="comment">     * <span class="doctag">@param</span> zonedDateTime ZoneDateTime类型日期</span></span><br><span class="line"><span class="comment">     * <span class="doctag">@return</span> date类型日期</span></span><br><span class="line"><span class="comment">     */</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> Date <span class="title">zonedDateTimeToDate</span><span class="params">(ZonedDateTime zonedDateTime)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">return</span> Date.from(zonedDateTime.toInstant());</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="comment">/**</span></span><br><span class="line"><span class="comment">     * 把Date类型的日志转换成LocalDate类型的日期</span></span><br><span class="line"><span class="comment">     *</span></span><br><span class="line"><span class="comment">     * <span class="doctag">@param</span> date Date类型日期</span></span><br><span class="line"><span class="comment">     * <span class="doctag">@return</span> LocalDate类型日期</span></span><br><span class="line"><span class="comment">     */</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> LocalDate <span class="title">dateToLocalDate</span><span class="params">(Date date)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">return</span> date.toInstant().atZone(ZoneId.systemDefault()).toLocalDate();</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="comment">/**</span></span><br><span class="line"><span class="comment">     * 把LocalDate类型的日志转换成Date类型的日期</span></span><br><span class="line"><span class="comment">     *</span></span><br><span class="line"><span class="comment">     * <span class="doctag">@param</span> localDate LocalDate类型日期</span></span><br><span class="line"><span class="comment">     * <span class="doctag">@return</span> Date类型日期</span></span><br><span class="line"><span class="comment">     */</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> Date <span class="title">localDateToDate</span><span class="params">(LocalDate localDate)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">return</span> Date.from(localDate.atStartOfDay(ZoneId.systemDefault()).toInstant());</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="comment">/**</span></span><br><span class="line"><span class="comment">     * 把Date类型的日志转换成LocalDateTime类型的日期</span></span><br><span class="line"><span class="comment">     *</span></span><br><span class="line"><span class="comment">     * <span class="doctag">@param</span> date Date类型日期</span></span><br><span class="line"><span class="comment">     * <span class="doctag">@return</span> LocalDateTime类型日期</span></span><br><span class="line"><span class="comment">     */</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> LocalDateTime <span class="title">dateToLocalDateTime</span><span class="params">(Date date)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">return</span> date.toInstant().atZone(ZoneId.systemDefault()).toLocalDateTime();</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="comment">/**</span></span><br><span class="line"><span class="comment">     * 把LocalDateTime类型的日志转换成Date类型的日期</span></span><br><span class="line"><span class="comment">     *</span></span><br><span class="line"><span class="comment">     * <span class="doctag">@param</span> localDateTime LocalDateTime类型日期</span></span><br><span class="line"><span class="comment">     * <span class="doctag">@return</span> Date类型日期</span></span><br><span class="line"><span class="comment">     */</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> Date <span class="title">localDateTimeToDate</span><span class="params">(LocalDateTime localDateTime)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">return</span> Date.from(localDateTime.atZone(ZoneId.systemDefault()).toInstant());</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+
+<p><a target="_blank" rel="noopener" href="https://mp.weixin.qq.com/s/ek16I-i469f8vU_tWulT7g">本文参考链接</a></p>
+
+
+      <div>
+        
+          <div>
+    
+        <div style="text-align:center;color: #636363;font-size:14px;letter-spacing: 10px">This article is over<i class="fa fa-bell"></i>thank you for reading</div>
+    
+</div>
+        
+      </div>
+    </div>
+
+    
+    
+    
+      
+  <div class="popular-posts-header">Related Posts</div>
+  <ul class="popular-posts">
+    <li class="popular-posts-item">
+      <div class="popular-posts-title"><a href="/posts/67f40b37/" rel="bookmark">Spring Boot 获取服务IP地址和端口号</a></div>
+    </li>
+    <li class="popular-posts-item">
+      <div class="popular-posts-title"><a href="/posts/bd76a990/" rel="bookmark">一图看懂Java中的PO,BO,VO,DTO,POJO,DAO,DO</a></div>
+    </li>
+    <li class="popular-posts-item">
+      <div class="popular-posts-title"><a href="/posts/d6d1be75/" rel="bookmark">在Javadoc注释中引用方法</a></div>
+    </li>
+    <li class="popular-posts-item">
+      <div class="popular-posts-title"><a href="/posts/f23f1351/" rel="bookmark">equals与==区别</a></div>
+    </li>
+    <li class="popular-posts-item">
+      <div class="popular-posts-title"><a href="/posts/b42f0c87/" rel="bookmark">Cache、Cookie、Session、Token</a></div>
+    </li>
+  </ul>
+
+        
+
+<div>
+<ul class="post-copyright">
+  <li class="post-copyright-author">
+    <strong>Post author:  </strong>JIN Mao
+  </li>
+  <li class="post-copyright-link">
+    <strong>Post link: </strong>
+    <a href="https://smile1231.github.io/posts/7a29d22a/" title="Java关于时间的轮子">https://smile1231.github.io/posts/7a29d22a/</a>
+  </li>
+  <li class="post-copyright-license">
+    <strong>Copyright Notice:  </strong>All articles in this blog are licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/en" rel="noopener" target="_blank"><i class="fab fa-fw fa-creative-commons"></i>BY-NC-SA</a> unless stating additionally.
+  </li>
+</ul>
+</div>
+
+
+      <footer class="post-footer">
+          
+          <div class="post-tags">
+              <a href="/tags/Java/" rel="tag"><i class="fa fa-tag"></i> Java</a>
+              <a href="/tags/Date/" rel="tag"><i class="fa fa-tag"></i> Date</a>
+          </div>
+
+        
+  <div class="post-widgets">
+    <div class="wp_rating">
+      <div id="wpac-rating"></div>
+    </div>
+  </div>
+
+
+        
+    <div class="post-nav">
+      <div class="post-nav-item">
+    <a href="/posts/3fec5852/" rel="prev" title="DDD领域驱动设计">
+      <i class="fa fa-chevron-left"></i> DDD领域驱动设计
+    </a></div>
+      <div class="post-nav-item">
+    <a href="/posts/307637a3/" rel="next" title="扫尾">
+      扫尾 <i class="fa fa-chevron-right"></i>
+    </a></div>
+    </div>
+      </footer>
+    
+  </article>
+  
+  
+  
+
+
+
+          </div>
+          
+    <div class="comments" id="valine-comments"></div>
+
+<script>
+  window.addEventListener('tabs:register', () => {
+    let { activeClass } = CONFIG.comments;
+    if (CONFIG.comments.storage) {
+      activeClass = localStorage.getItem('comments_active') || activeClass;
+    }
+    if (activeClass) {
+      let activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
+      if (activeTab) {
+        activeTab.click();
+      }
+    }
+  });
+  if (CONFIG.comments.storage) {
+    window.addEventListener('tabs:click', event => {
+      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
+      let commentClass = event.target.classList[1];
+      localStorage.setItem('comments_active', commentClass);
+    });
+  }
+</script>
+
+        </div>
+          
+  
+  <div class="toggle sidebar-toggle">
+    <span class="toggle-line toggle-line-first"></span>
+    <span class="toggle-line toggle-line-middle"></span>
+    <span class="toggle-line toggle-line-last"></span>
+  </div>
+
+  <aside class="sidebar">
+    <div class="sidebar-inner">
+    
+    
+    <!-- 霓虹灯时钟 -->
+    <div>
+    <svg style="height: 60px;">
+        <text id="time" text-anchor="middle" x="36%" y="80%" class="words words-1"></text>
+        <text id="time" text-anchor="middle" x="36%" y="80%" class="words words-2"></text>
+        <text id="time" text-anchor="middle" x="36%" y="80%" class="words words-3"></text>
+        <text id="time" text-anchor="middle" x="36%" y="80%" class="words words-4"></text>
+    </svg>
+</div>
+
+<script>
+function showtime(){
+    var noatime = new Date();
+    var h = noatime.getHours(),
+        m = noatime.getMinutes(),
+        s = noatime.getSeconds();
+    h=checktime(h);
+    m=checktime(m);
+    s=checktime(s);
+  return h+":"+m+":"+s;
+}
+
+function checktime(x){
+  if(x<10){
+    x="0"+x;
+  }
+  return x;
+}
+
+var div1=document.getElementsByTagName("text");
+setInterval(function(){
+  for (var i in div1){
+      div1[i].innerHTML=showtime();
+  }
+},1000);
+</script>
+
+<style>
+.words{
+    font-size: 50px;
+    font-weight: bold;
+    text-transform: uppercase;
+    fill: none;
+    stroke-width: 3px;
+    stroke-dasharray: 35,125;
+    animation-name: drawing;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+.words-1{
+    stroke: deepskyblue;
+    text-shadow: 0 0 15px deepskyblue;
+    animation-delay: -1.5s;
+}
+.words-2{
+    stroke: lightseagreen;
+    text-shadow: 0 0 15px lightseagreen;
+    animation-delay: -3s;
+}
+.words-3{
+    stroke: orange;
+    text-shadow: 0 0 15px orange;
+    animation-delay: -4.5s;
+}
+.words-4{
+    stroke: purple;
+    text-shadow: 0 0 15px purple;
+    animation-delay: -6s;
+}
+@keyframes drawing {
+    100%{
+        stroke-dashoffset: -160
+    }
+}
+</style>
+
+    
+
+        <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=86 src="//music.163.com/outchain/player?type=2&id=1489346184&auto=1&height=66"></iframe>
+
+      <ul class="sidebar-nav motion-element">
+        <li class="sidebar-nav-toc">
+          Table of Contents
+        </li>
+        <li class="sidebar-nav-overview">
+          Overview
+        </li>
+      </ul>
+
+      <!--noindex-->
+      <div class="post-toc-wrap sidebar-panel">
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#%E5%BB%BA%E8%AE%AE%E6%94%B6%E8%97%8F%EF%BC%8C%E5%87%8F%E5%B0%91%E7%99%BE%E5%BA%A6%E9%87%8D%E5%A4%8D%E9%80%A0%E8%BD%AE%E5%AD%90"><span class="nav-number">1.</span> <span class="nav-text">建议收藏，减少百度重复造轮子</span></a></li></ol></div>
+      </div>
+      <!--/noindex-->
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image" alt="JIN Mao"
+      src="/images/avatar.png">
+  <p class="site-author-name" itemprop="name">JIN Mao</p>
+  <div class="site-description" itemprop="description"></div>
+</div>
+<div class="site-state-wrap motion-element">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/archives/">
+        
+          <span class="site-state-item-count">124</span>
+          <span class="site-state-item-name">posts</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+            <a href="/categories/">
+          
+        <span class="site-state-item-count">69</span>
+        <span class="site-state-item-name">categories</span></a>
+      </div>
+      <div class="site-state-item site-state-tags">
+            <a href="/tags/">
+          
+        <span class="site-state-item-count">91</span>
+        <span class="site-state-item-name">tags</span></a>
+      </div>
+  </nav>
+</div>
+
+
+
+      </div>
+
+  
+
+    </div>
+
+
+  </aside>
+  <div id="sidebar-dimmer"></div>
+
+
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        
+
+        
+
+<div class="copyright">
+  
+  &copy; 
+  <span itemprop="copyrightYear">2022</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">JIN Mao</span>
+</div>
+  <!--添加运行时间-->
+  <span id="sitetime"></span>
+  <script language=javascript>
+    function siteTime(){
+      window.setTimeout("siteTime()", 1000);
+      var seconds = 1000;
+      var minutes = seconds * 60;
+      var hours = minutes * 60;
+      var days = hours * 24;
+      var years = days * 365;
+      var today = new Date();
+      var todayYear = today.getFullYear();
+      var todayMonth = today.getMonth()+1;
+      var todayDate = today.getDate();
+      var todayHour = today.getHours();
+      var todayMinute = today.getMinutes();
+      var todaySecond = today.getSeconds();
+      /* 
+        Date.UTC() -- 返回date对象距世界标准时间(UTC)1970年1月1日午夜之间的毫秒数(时间戳)
+        year - 作为date对象的年份，为4位年份值
+        month - 0-11之间的整数，做为date对象的月份
+        day - 1-31之间的整数，做为date对象的天数
+        hours - 0(午夜24点)-23之间的整数，做为date对象的小时数
+        minutes - 0-59之间的整数，做为date对象的分钟数
+        seconds - 0-59之间的整数，做为date对象的秒数
+        microseconds - 0-999之间的整数，做为date对象的毫秒数
+      */
+      var t1 = Date.UTC(2021,11,11,00,00,00); //北京时间2018-2-13 00:00:00
+      var t2 = Date.UTC(todayYear,todayMonth,todayDate,todayHour,todayMinute,todaySecond);
+      var diff = t2-t1;
+      var diffYears = Math.floor(diff/years);
+      var diffDays = Math.floor((diff/days)-diffYears*365);
+      var diffHours = Math.floor((diff-(diffYears*365+diffDays)*days)/hours);
+      var diffMinutes = Math.floor((diff-(diffYears*365+diffDays)*days-diffHours*hours)/minutes);
+      var diffSeconds = Math.floor((diff-(diffYears*365+diffDays)*days-diffHours*hours-diffMinutes*minutes)/seconds);
+      document.getElementById("sitetime").innerHTML=" This blog is up and running "+/*diffYears+" Year "+*/diffDays+" Days "+diffHours+" Hours "+diffMinutes+" Minutes "+diffSeconds+" Seconds";
+    }
+    siteTime();
+  </script>
+  <!--// 添加运行时间-->
+
+
+<!--
+  <div class="powered-by">Powered by <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> & <a href="https://pisces.theme-next.org/" class="theme-link" rel="noopener" target="_blank">NexT.Pisces</a>
+  </div>
+-->
+
+
+        
+<div class="busuanzi-count">
+  <script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+
+  <span class="site-uv" title="Total Visitors">
+    My <span id="busuanzi_value_site_uv"></span>th Friend, 
+  </span>
+
+  <span class="site-pv" title="Total Views">
+    After  <span id="busuanzi_value_site_pv"></span> times of looking back, I met you 。
+  </span>
+  <!--
+    <span class="post-meta-item" id="busuanzi_container_site_uv" >
+      <span class="post-meta-item-icon">
+        <i class="fa fa-user"></i>
+      </span>
+      <span class="site-uv" title="Total Visitors">
+        <span id="busuanzi_value_site_uv"></span>
+      </span>
+    </span>
+    <span class="post-meta-divider">|</span>
+    <span class="post-meta-item" id="busuanzi_container_site_pv">
+      <span class="post-meta-item-icon">
+        <i class="fa fa-eye"></i>
+      </span>
+      <span class="site-pv" title="Total Views">
+        <span id="busuanzi_value_site_pv"></span>
+      </span>
+    </span>-->
+</div>
+
+
+
+
+
+
+
+
+      </div>
+    </footer>
+  </div>
+
+  
+  <script src="/lib/anime.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/medium-zoom@1/dist/medium-zoom.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/lozad@1/dist/lozad.min.js"></script>
+  <script src="/lib/velocity/velocity.min.js"></script>
+  <script src="/lib/velocity/velocity.ui.min.js"></script>
+
+<script src="/js/utils.js"></script>
+
+<script src="/js/motion.js"></script>
+
+
+<script src="/js/schemes/pisces.js"></script>
+
+
+<script src="/js/next-boot.js"></script>
+
+<script src="/js/bookmark.js"></script>
+
+
+  <script defer src="/lib/three/three.min.js"></script>
+    <script defer src="/lib/three/canvas_lines.min.js"></script>
+
+
+  
+
+
+
+  <script>
+  if (CONFIG.page.isPost) {
+    wpac_init = window.wpac_init || [];
+    wpac_init.push({
+      widget: 'Rating',
+      id    : ,
+      el    : 'wpac-rating',
+      color : 'fc6423'
+    });
+    (function() {
+      if ('WIDGETPACK_LOADED' in window) return;
+      WIDGETPACK_LOADED = true;
+      var mc = document.createElement('script');
+      mc.type = 'text/javascript';
+      mc.async = true;
+      mc.src = '//embed.widgetpack.com/widget.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(mc, s.nextSibling);
+    })();
+  }
+  </script>
+
+  
+<script src="/js/local-search.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+
+<script>
+NexT.utils.loadComments(document.querySelector('#valine-comments'), () => {
+  NexT.utils.getScript('//unpkg.com/valine/dist/Valine.min.js', () => {
+    var GUEST = ['nick', 'mail', 'link'];
+    var guest = 'nick,mail,link';
+    guest = guest.split(',').filter(item => {
+      return GUEST.includes(item);
+    });
+    new Valine({
+      el         : '#valine-comments',
+      verify     : true,
+      notify     : true,
+      appId      : 'J2bQH6GquIhMurLQc9NYgXWJ-gzGzoHsz',
+      appKey     : 'mbmntmQLrVScI2O7gV6zBej5',
+      placeholder: "Just go go",
+      avatar     : 'mm',
+      meta       : guest,
+      pageSize   : '10' || 10,
+      visitor    : false,
+      lang       : 'en' || 'zh-cn',
+      path       : location.pathname,
+      recordIP   : true,
+      serverURLs : ''
+    });
+  }, window.Valine);
+});
+</script>
+
+
+  
+  <script type="text/javascript" src="/js/cursor/love.js"></script>
+
+
+
+  
+<script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"model":{"jsonPath":"/live2dw/assets/shizuku.model.json"},"display":{"position":"left","width":200,"height":400},"mobile":{"show":false},"log":false,"pluginJsPath":"lib/","pluginModelPath":"assets/","pluginRootPath":"live2dw/","tagMode":false});</script></body>
+</html>

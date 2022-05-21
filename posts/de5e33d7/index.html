@@ -1,0 +1,795 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 5.4.0">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/avatar.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/avatar.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+<link rel="stylesheet" href="/lib/font-awesome/css/all.min.css">
+  <link rel="stylesheet" href="/lib/pace/pace-theme-mac-osx.min.css">
+  <script src="/lib/pace/pace.min.js"></script>
+
+<script id="hexo-configurations">
+    var NexT = window.NexT || {};
+    var CONFIG = {"hostname":"smile1231.github.io","root":"/","scheme":"Pisces","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":true,"show_result":true,"style":"mac"},"back2top":{"enable":true,"sidebar":false,"scrollpercent":true},"bookmark":{"enable":true,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":true,"lazyload":true,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
+  </script>
+
+  <meta name="description" content="是这样的，我们在刚学数据结构时候，都会学什么八大排序算法乱七八糟的，但是真正在写Java项目时，都是直接化身API调用工程师，Arrays.sort()完事，无意间点开，其实里面的玄机另有洞天。">
+<meta property="og:type" content="article">
+<meta property="og:title" content="关于JDK中的Arrays.sort排序方法">
+<meta property="og:url" content="https://smile1231.github.io/posts/de5e33d7/index.html">
+<meta property="og:site_name" content="JIN MAO &#39;s Blog">
+<meta property="og:description" content="是这样的，我们在刚学数据结构时候，都会学什么八大排序算法乱七八糟的，但是真正在写Java项目时，都是直接化身API调用工程师，Arrays.sort()完事，无意间点开，其实里面的玄机另有洞天。">
+<meta property="og:locale" content="en_US">
+<meta property="og:image" content="https://smile1231.github.io/posts/de5e33d7/2022-03-13-14-55-38.png">
+<meta property="article:published_time" content="2022-03-13T05:11:15.000Z">
+<meta property="article:modified_time" content="2022-03-13T07:04:07.031Z">
+<meta property="article:author" content="JIN Mao">
+<meta property="article:tag" content="Java面试">
+<meta property="article:tag" content="算法">
+<meta property="article:tag" content="排序">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://smile1231.github.io/posts/de5e33d7/2022-03-13-14-55-38.png">
+
+<link rel="canonical" href="https://smile1231.github.io/posts/de5e33d7/">
+
+
+<script id="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome : false,
+    isPost : true,
+    lang   : 'en'
+  };
+</script>
+
+  <title>关于JDK中的Arrays.sort排序方法 | JIN MAO 's Blog</title>
+  
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-FWV5496QFL"></script>
+    <script>
+      if (CONFIG.hostname === location.hostname) {
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-FWV5496QFL');
+      }
+    </script>
+
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header { opacity: initial; }
+
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+<link rel="alternate" href="/atom.xml" title="JIN MAO 's Blog" type="application/atom+xml">
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div class="container use-motion">
+    <div class="headband"></div>
+      <!-- <a target="_blank" rel="noopener" href="https://github.com/Smile1231/StudyRepository"><img loading="lazy" width="149" height="149" src="https://github.blog/wp-content/uploads/2008/12/forkme_right_gray_6d6d6d.png?resize=149%2C149" class="attachment-full size-full" alt="Fork me on GitHub" data-recalc-dims="1"></a> -->
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="Toggle navigation bar">
+      <span class="toggle-line toggle-line-first"></span>
+      <span class="toggle-line toggle-line-middle"></span>
+      <span class="toggle-line toggle-line-last"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <h1 class="site-title">JIN MAO 's Blog</h1>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+      <p class="site-subtitle" itemprop="description">got windy (起风了)</p>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+        <i class="fa fa-search fa-fw fa-lg"></i>
+    </div>
+  </div>
+</div>
+
+
+
+
+<nav class="site-nav">
+  <ul id="menu" class="main-menu menu">
+        <li class="menu-item menu-item-home">
+
+    <a href="/" rel="section"><i class="fa fa-home fa-fw"></i>Home</a>
+
+  </li>
+        <li class="menu-item menu-item-about">
+
+    <a href="/about/" rel="section"><i class="fa fa-user fa-fw"></i>About</a>
+
+  </li>
+        <li class="menu-item menu-item-tags">
+
+    <a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>Tags<span class="badge">91</span></a>
+
+  </li>
+        <li class="menu-item menu-item-categories">
+
+    <a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>Categories<span class="badge">69</span></a>
+
+  </li>
+        <li class="menu-item menu-item-archives">
+
+    <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>Archives<span class="badge">124</span></a>
+
+  </li>
+      <li class="menu-item menu-item-search">
+        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>Search
+        </a>
+      </li>
+  </ul>
+</nav>
+
+
+
+  <div class="search-pop-overlay">
+    <div class="popup search-popup">
+        <div class="search-header">
+  <span class="search-icon">
+    <i class="fa fa-search"></i>
+  </span>
+  <div class="search-input-container">
+    <input autocomplete="off" autocapitalize="off"
+           placeholder="Searching..." spellcheck="false"
+           type="search" class="search-input">
+  </div>
+  <span class="popup-btn-close">
+    <i class="fa fa-times-circle"></i>
+  </span>
+</div>
+<div id="search-result">
+  <div id="no-result">
+    <i class="fa fa-spinner fa-pulse fa-5x fa-fw"></i>
+  </div>
+</div>
+
+    </div>
+  </div>
+
+</div>
+    </header>
+
+    
+  <div class="back-to-top">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+  <div class="reading-progress-bar"></div>
+  <a role="button" class="book-mark-link book-mark-link-fixed"></a>
+
+
+    <main class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+
+          <div class="content post posts-expand">
+            
+
+    
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
+    <link itemprop="mainEntityOfPage" href="https://smile1231.github.io/posts/de5e33d7/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.png">
+      <meta itemprop="name" content="JIN Mao">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="JIN MAO 's Blog">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          关于JDK中的Arrays.sort排序方法
+        </h1>
+
+        <div class="post-meta">
+          
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">Posted on</span>
+              
+
+              <time title="Created: 2022-03-13 13:11:15 / Modified: 15:04:07" itemprop="dateCreated datePublished" datetime="2022-03-13T13:11:15+08:00">2022-03-13</time>
+            </span>
+
+          
+           <!-- <span class="post-meta-item" title="Views" id="busuanzi_container_page_pv" style="display: none;">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-eye"></i>
+              </span>
+              <span class="post-meta-item-text">Views: </span>
+              <span id="busuanzi_value_page_pv"></span>
+            </span> -->
+            <span>&emsp;</span><span class="post-meta-item-icon"><i class="fa fa-eye"></i></span>
+            <span class="post-meta-item-text">Views: </span>
+            <span id="busuanzi_value_page_pv"></span>
+  
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="far fa-comment"></i>
+      </span>
+      <span class="post-meta-item-text">Valine: </span>
+    
+    <a title="valine" href="/posts/de5e33d7/#valine-comments" itemprop="discussionUrl">
+      <span class="post-comments-count valine-comment-count" data-xid="/posts/de5e33d7/" itemprop="commentCount"></span>
+    </a>
+  </span>
+  
+  
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+        <p>是这样的，我们在刚学数据结构时候，都会学什么八大排序算法乱七八糟的，但是真正在写<code>Java</code>项目时，都是直接化身<code>API</code>调用工程师，<code>Arrays.sort()</code>完事，无意间点开，其实里面的玄机另有洞天。</p>
+<span id="more"></span>
+
+<h2 id="Debug源码"><a href="#Debug源码" class="headerlink" title="Debug源码"></a><code>Debug</code>源码</h2><p>我们以最基础的方法<code>public static void sort(int[] a)</code>为例；</p>
+<p>点开<code>Arrays.sort()</code>：</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">sort</span><span class="params">(<span class="keyword">int</span>[] a)</span> </span>&#123;</span><br><span class="line">    DualPivotQuicksort.sort(a, <span class="number">0</span>, a.length - <span class="number">1</span>, <span class="keyword">null</span>, <span class="number">0</span>, <span class="number">0</span>);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>直接进去，此处<code>Sort</code>有很多的重载，需要仔细注意</p>
+<p><code>Arrays.sort()</code>重载了四类方法</p>
+<ol>
+<li><code>sort(T[] a)</code>：对指定T型数组按数字升序排序。</li>
+<li><code>sort(T[] a,int formIndex, int toIndex)</code>：对指定<code>T</code>型数组的指定范围按数字升序排序。</li>
+<li><code>sort(T[] a, Comparator&lt;? supre T&gt; c)</code>: 根据指定比较器产生的顺序对指定对象数组进行排序。</li>
+<li><code>sort(T[] a, int formIndex, int toIndex, Comparator&lt;? supre T&gt; c)</code>: 根据指定比较器产生的顺序对指定对象数组的指定对象数组进行排序。</li>
+</ol>
+<img data-src="/posts/de5e33d7/2022-03-13-14-55-38.png" class="">
+
+
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br><span class="line">105</span><br><span class="line">106</span><br><span class="line">107</span><br><span class="line">108</span><br><span class="line">109</span><br><span class="line">110</span><br><span class="line">111</span><br><span class="line">112</span><br><span class="line">113</span><br><span class="line">114</span><br><span class="line">115</span><br><span class="line">116</span><br><span class="line">117</span><br><span class="line">118</span><br><span class="line">119</span><br><span class="line">120</span><br><span class="line">121</span><br><span class="line">122</span><br><span class="line">123</span><br><span class="line">124</span><br><span class="line">125</span><br><span class="line">126</span><br><span class="line">127</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment">    如果可能合并，使用给定的工作空间数组片对数组的指定范围进行排序</span></span><br><span class="line"><span class="comment">    参数:</span></span><br><span class="line"><span class="comment">    a -要排序的数组</span></span><br><span class="line"><span class="comment">    left - 要排序的第一个元素的索引(包括第一个元素)</span></span><br><span class="line"><span class="comment">    right - 最后一个要排序的元素的下标</span></span><br><span class="line"><span class="comment">    Work -工作空间数组(片)</span></span><br><span class="line"><span class="comment">    workBase -工作数组中可用空间的来源</span></span><br><span class="line"><span class="comment">    workLen -工作数组的可用大小</span></span><br><span class="line"><span class="comment">*/</span></span><br><span class="line"></span><br><span class="line"><span class="comment">//如果要排序的数组长度小于这个常量，则优先使用快速排序，而不是归并排序。</span></span><br><span class="line"><span class="keyword">private</span> <span class="keyword">static</span> <span class="keyword">final</span> <span class="keyword">int</span> QUICKSORT_THRESHOLD = <span class="number">286</span>;</span><br><span class="line"><span class="comment">//归并排序的最大运行次数。</span></span><br><span class="line"><span class="keyword">private</span> <span class="keyword">static</span> <span class="keyword">final</span> <span class="keyword">int</span> MAX_RUN_COUNT = <span class="number">67</span>;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">static</span> <span class="keyword">void</span> <span class="title">sort</span><span class="params">(<span class="keyword">int</span>[] a, <span class="keyword">int</span> left, <span class="keyword">int</span> right,<span class="keyword">int</span>[] work, <span class="keyword">int</span> workBase, <span class="keyword">int</span> workLen)</span> </span>&#123;</span><br><span class="line">    <span class="comment">// 小数组使用快排，阈值为286</span></span><br><span class="line">    <span class="keyword">if</span> (right - left &lt; QUICKSORT_THRESHOLD) &#123;</span><br><span class="line">        <span class="comment">//快排</span></span><br><span class="line">        sort(a, left, right, <span class="keyword">true</span>);</span><br><span class="line">        <span class="keyword">return</span>;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="comment">//索引运行[i]是第i次运行的开始(升序或降序)。</span></span><br><span class="line">    <span class="keyword">int</span>[] run = <span class="keyword">new</span> <span class="keyword">int</span>[MAX_RUN_COUNT + <span class="number">1</span>];</span><br><span class="line">    <span class="keyword">int</span> count = <span class="number">0</span>; run[<span class="number">0</span>] = left;</span><br><span class="line"></span><br><span class="line">    <span class="comment">// 检查数组是否接近排序 见解释 1</span></span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">int</span> k = left; k &lt; right; run[count] = k) &#123;</span><br><span class="line">        <span class="comment">// 序列开头相等的项</span></span><br><span class="line">        <span class="keyword">while</span> (k &lt; right &amp;&amp; a[k] == a[k + <span class="number">1</span>])</span><br><span class="line">            k++;</span><br><span class="line">        <span class="keyword">if</span> (k == right) <span class="keyword">break</span>;  <span class="comment">// 序列以相等的项结束</span></span><br><span class="line">        <span class="keyword">if</span> (a[k] &lt; a[k + <span class="number">1</span>]) &#123; <span class="comment">// 升序</span></span><br><span class="line">            <span class="keyword">while</span> (++k &lt;= right &amp;&amp; a[k - <span class="number">1</span>] &lt;= a[k]);</span><br><span class="line">        &#125; <span class="keyword">else</span> <span class="keyword">if</span> (a[k] &gt; a[k + <span class="number">1</span>]) &#123; <span class="comment">// 降序</span></span><br><span class="line">            <span class="keyword">while</span> (++k &lt;= right &amp;&amp; a[k - <span class="number">1</span>] &gt;= a[k]);</span><br><span class="line">            <span class="comment">//转换成一个升序序列</span></span><br><span class="line">            <span class="keyword">for</span> (<span class="keyword">int</span> lo = run[count] - <span class="number">1</span>, hi = k; ++lo &lt; --hi; ) &#123;</span><br><span class="line">                <span class="keyword">int</span> t = a[lo]; </span><br><span class="line">                a[lo] = a[hi]; </span><br><span class="line">                a[hi] = t;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        <span class="comment">// 合并一个转换后的降序序列，后面跟着升序序列</span></span><br><span class="line">        <span class="keyword">if</span> (run[count] &gt; left &amp;&amp; a[run[count]] &gt;= a[run[count] - <span class="number">1</span>]) &#123;</span><br><span class="line">            count--;</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        <span class="comment">/*</span></span><br><span class="line"><span class="comment">        * 如果count == 归并排序的最大次数说明数组不是高度结构化的，使用快速排序代替归并排序。</span></span><br><span class="line"><span class="comment">        */</span></span><br><span class="line">        <span class="keyword">if</span> (++count == MAX_RUN_COUNT) &#123;</span><br><span class="line">            <span class="comment">//进入到快排</span></span><br><span class="line">            sort(a, left, right, <span class="keyword">true</span>);</span><br><span class="line">            <span class="keyword">return</span>;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="comment">// 这些不变量应该是正确的:</span></span><br><span class="line">    <span class="comment">//    run[0] = 0</span></span><br><span class="line">    <span class="comment">//    run[&lt;last&gt;] = right + 1; (terminator)</span></span><br><span class="line"></span><br><span class="line">    <span class="keyword">if</span> (count == <span class="number">0</span>) &#123;</span><br><span class="line">        <span class="comment">// 单次相等跑</span></span><br><span class="line">        <span class="keyword">return</span>;</span><br><span class="line">    &#125; <span class="keyword">else</span> <span class="keyword">if</span> (count == <span class="number">1</span> &amp;&amp; run[count] &gt; right) &#123;</span><br><span class="line">        <span class="comment">//单个升序或转换后的降序运行。总是检查一个最终运行是一个适当的结束符，否则我们有一个未终止的尾随运行，以处理下游。</span></span><br><span class="line">        <span class="keyword">return</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    right++;</span><br><span class="line">    <span class="keyword">if</span> (run[count] &lt; right) &#123;</span><br><span class="line">        <span class="comment">// 极端情况:最后的运行不是终结者。</span></span><br><span class="line">        <span class="comment">//这可能发生：如果最后一次运行是一个等于运行，或有一个单元素运行在结尾。通过在末尾添加适当的终止符来解决这个问题。</span></span><br><span class="line">        <span class="comment">//注意，我们以(right + 1)结束，在前面加1。</span></span><br><span class="line">        run[++count] = right;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="comment">// 确定合并的交替基</span></span><br><span class="line">    <span class="keyword">byte</span> odd = <span class="number">0</span>;</span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">int</span> n = <span class="number">1</span>; (n &lt;&lt;= <span class="number">1</span>) &lt; count; odd ^= <span class="number">1</span>);</span><br><span class="line"></span><br><span class="line">    <span class="comment">// 使用或创建临时数组b进行合并</span></span><br><span class="line">    <span class="keyword">int</span>[] b;                 <span class="comment">// temp array; alternates with a</span></span><br><span class="line">    <span class="keyword">int</span> ao, bo;              <span class="comment">// array offsets from &#x27;left&#x27;</span></span><br><span class="line">    <span class="keyword">int</span> blen = right - left; <span class="comment">// space needed for b</span></span><br><span class="line">    <span class="keyword">if</span> (work == <span class="keyword">null</span> || workLen &lt; blen || workBase + blen &gt; work.length) &#123;</span><br><span class="line">        work = <span class="keyword">new</span> <span class="keyword">int</span>[blen];</span><br><span class="line">        workBase = <span class="number">0</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">if</span> (odd == <span class="number">0</span>) &#123;</span><br><span class="line">        System.arraycopy(a, left, work, workBase, blen);</span><br><span class="line">        b = a;</span><br><span class="line">        bo = <span class="number">0</span>;</span><br><span class="line">        a = work;</span><br><span class="line">        ao = workBase - left;</span><br><span class="line">    &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">        b = work;</span><br><span class="line">        ao = <span class="number">0</span>;</span><br><span class="line">        bo = workBase - left;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="comment">// 归并</span></span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">int</span> last; count &gt; <span class="number">1</span>; count = last) &#123;</span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> k = (last = <span class="number">0</span>) + <span class="number">2</span>; k &lt;= count; k += <span class="number">2</span>) &#123;</span><br><span class="line">            <span class="keyword">int</span> hi = run[k], mi = run[k - <span class="number">1</span>];</span><br><span class="line">            <span class="keyword">for</span> (<span class="keyword">int</span> i = run[k - <span class="number">2</span>], p = i, q = mi; i &lt; hi; ++i) &#123;</span><br><span class="line">                <span class="keyword">if</span> (q &gt;= hi || p &lt; mi &amp;&amp; a[p + ao] &lt;= a[q + ao]) &#123;</span><br><span class="line">                    b[i + bo] = a[p++ + ao];</span><br><span class="line">                &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">                    b[i + bo] = a[q++ + ao];</span><br><span class="line">                &#125;</span><br><span class="line">            &#125;</span><br><span class="line">            run[++last] = hi;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">if</span> ((count &amp; <span class="number">1</span>) != <span class="number">0</span>) &#123;</span><br><span class="line">            <span class="keyword">for</span> (<span class="keyword">int</span> i = right, lo = run[count - <span class="number">1</span>]; --i &gt;= lo;</span><br><span class="line">                b[i + bo] = a[i + ao]</span><br><span class="line">            );</span><br><span class="line">            run[++last] = right;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">int</span>[] t = a; a = b; b = t;</span><br><span class="line">        <span class="keyword">int</span> o = ao; ao = bo; bo = o;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br><span class="line">105</span><br><span class="line">106</span><br><span class="line">107</span><br><span class="line">108</span><br><span class="line">109</span><br><span class="line">110</span><br><span class="line">111</span><br><span class="line">112</span><br><span class="line">113</span><br><span class="line">114</span><br><span class="line">115</span><br><span class="line">116</span><br><span class="line">117</span><br><span class="line">118</span><br><span class="line">119</span><br><span class="line">120</span><br><span class="line">121</span><br><span class="line">122</span><br><span class="line">123</span><br><span class="line">124</span><br><span class="line">125</span><br><span class="line">126</span><br><span class="line">127</span><br><span class="line">128</span><br><span class="line">129</span><br><span class="line">130</span><br><span class="line">131</span><br><span class="line">132</span><br><span class="line">133</span><br><span class="line">134</span><br><span class="line">135</span><br><span class="line">136</span><br><span class="line">137</span><br><span class="line">138</span><br><span class="line">139</span><br><span class="line">140</span><br><span class="line">141</span><br><span class="line">142</span><br><span class="line">143</span><br><span class="line">144</span><br><span class="line">145</span><br><span class="line">146</span><br><span class="line">147</span><br><span class="line">148</span><br><span class="line">149</span><br><span class="line">150</span><br><span class="line">151</span><br><span class="line">152</span><br><span class="line">153</span><br><span class="line">154</span><br><span class="line">155</span><br><span class="line">156</span><br><span class="line">157</span><br><span class="line">158</span><br><span class="line">159</span><br><span class="line">160</span><br><span class="line">161</span><br><span class="line">162</span><br><span class="line">163</span><br><span class="line">164</span><br><span class="line">165</span><br><span class="line">166</span><br><span class="line">167</span><br><span class="line">168</span><br><span class="line">169</span><br><span class="line">170</span><br><span class="line">171</span><br><span class="line">172</span><br><span class="line">173</span><br><span class="line">174</span><br><span class="line">175</span><br><span class="line">176</span><br><span class="line">177</span><br><span class="line">178</span><br><span class="line">179</span><br><span class="line">180</span><br><span class="line">181</span><br><span class="line">182</span><br><span class="line">183</span><br><span class="line">184</span><br><span class="line">185</span><br><span class="line">186</span><br><span class="line">187</span><br><span class="line">188</span><br><span class="line">189</span><br><span class="line">190</span><br><span class="line">191</span><br><span class="line">192</span><br><span class="line">193</span><br><span class="line">194</span><br><span class="line">195</span><br><span class="line">196</span><br><span class="line">197</span><br><span class="line">198</span><br><span class="line">199</span><br><span class="line">200</span><br><span class="line">201</span><br><span class="line">202</span><br><span class="line">203</span><br><span class="line">204</span><br><span class="line">205</span><br><span class="line">206</span><br><span class="line">207</span><br><span class="line">208</span><br><span class="line">209</span><br><span class="line">210</span><br><span class="line">211</span><br><span class="line">212</span><br><span class="line">213</span><br><span class="line">214</span><br><span class="line">215</span><br><span class="line">216</span><br><span class="line">217</span><br><span class="line">218</span><br><span class="line">219</span><br><span class="line">220</span><br><span class="line">221</span><br><span class="line">222</span><br><span class="line">223</span><br><span class="line">224</span><br><span class="line">225</span><br><span class="line">226</span><br><span class="line">227</span><br><span class="line">228</span><br><span class="line">229</span><br><span class="line">230</span><br><span class="line">231</span><br><span class="line">232</span><br><span class="line">233</span><br><span class="line">234</span><br><span class="line">235</span><br><span class="line">236</span><br><span class="line">237</span><br><span class="line">238</span><br><span class="line">239</span><br><span class="line">240</span><br><span class="line">241</span><br><span class="line">242</span><br><span class="line">243</span><br><span class="line">244</span><br><span class="line">245</span><br><span class="line">246</span><br><span class="line">247</span><br><span class="line">248</span><br><span class="line">249</span><br><span class="line">250</span><br><span class="line">251</span><br><span class="line">252</span><br><span class="line">253</span><br><span class="line">254</span><br><span class="line">255</span><br><span class="line">256</span><br><span class="line">257</span><br><span class="line">258</span><br><span class="line">259</span><br><span class="line">260</span><br><span class="line">261</span><br><span class="line">262</span><br><span class="line">263</span><br><span class="line">264</span><br><span class="line">265</span><br><span class="line">266</span><br><span class="line">267</span><br><span class="line">268</span><br><span class="line">269</span><br><span class="line">270</span><br><span class="line">271</span><br><span class="line">272</span><br><span class="line">273</span><br><span class="line">274</span><br><span class="line">275</span><br><span class="line">276</span><br><span class="line">277</span><br><span class="line">278</span><br><span class="line">279</span><br><span class="line">280</span><br><span class="line">281</span><br><span class="line">282</span><br><span class="line">283</span><br><span class="line">284</span><br><span class="line">285</span><br><span class="line">286</span><br><span class="line">287</span><br><span class="line">288</span><br><span class="line">289</span><br><span class="line">290</span><br><span class="line">291</span><br><span class="line">292</span><br><span class="line">293</span><br><span class="line">294</span><br><span class="line">295</span><br><span class="line">296</span><br><span class="line">297</span><br><span class="line">298</span><br><span class="line">299</span><br><span class="line">300</span><br><span class="line">301</span><br><span class="line">302</span><br><span class="line">303</span><br><span class="line">304</span><br><span class="line">305</span><br><span class="line">306</span><br><span class="line">307</span><br><span class="line">308</span><br><span class="line">309</span><br><span class="line">310</span><br><span class="line">311</span><br><span class="line">312</span><br><span class="line">313</span><br><span class="line">314</span><br><span class="line">315</span><br><span class="line">316</span><br><span class="line">317</span><br><span class="line">318</span><br><span class="line">319</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//上文快速排序入口</span></span><br><span class="line"></span><br><span class="line"><span class="comment">//如果要排序的数组长度小于这个值常量，插入排序优先于快速排序。</span></span><br><span class="line"><span class="keyword">private</span> <span class="keyword">static</span> <span class="keyword">final</span> <span class="keyword">int</span> INSERTION_SORT_THRESHOLD = <span class="number">47</span>;</span><br><span class="line"></span><br><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment">* 按双重Povit快速排序 对数组的指定范围进行排序</span></span><br><span class="line"><span class="comment">*</span></span><br><span class="line"><span class="comment">* <span class="doctag">@param</span> a 待排序数组</span></span><br><span class="line"><span class="comment">* <span class="doctag">@param</span> left 待排数组左索引</span></span><br><span class="line"><span class="comment">* <span class="doctag">@param</span> right 待排数组右索引</span></span><br><span class="line"><span class="comment">* <span class="doctag">@param</span> leftmost 指示这部分是否为范围的最左边</span></span><br><span class="line"><span class="comment">*/</span></span><br><span class="line"><span class="function"><span class="keyword">private</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">sort</span><span class="params">(<span class="keyword">int</span>[] a, <span class="keyword">int</span> left, <span class="keyword">int</span> right, <span class="keyword">boolean</span> leftmost)</span> </span>&#123;</span><br><span class="line">    <span class="keyword">int</span> length = right - left + <span class="number">1</span>;</span><br><span class="line"></span><br><span class="line">    <span class="comment">// 小于47，使用插入排序</span></span><br><span class="line">    <span class="keyword">if</span> (length &lt; INSERTION_SORT_THRESHOLD) &#123;</span><br><span class="line">        <span class="keyword">if</span> (leftmost) &#123;</span><br><span class="line">           <span class="comment">//传统的(没有哨兵的)插入排序，为服务器虚拟机优化，用于最左边的部分。</span></span><br><span class="line">            <span class="keyword">for</span> (<span class="keyword">int</span> i = left, j = i; i &lt; right; j = ++i) &#123;</span><br><span class="line">                <span class="keyword">int</span> ai = a[i + <span class="number">1</span>];</span><br><span class="line">                <span class="keyword">while</span> (ai &lt; a[j]) &#123;</span><br><span class="line">                    a[j + <span class="number">1</span>] = a[j];</span><br><span class="line">                    <span class="keyword">if</span> (j-- == left) &#123;</span><br><span class="line">                        <span class="keyword">break</span>;</span><br><span class="line">                    &#125;</span><br><span class="line">                &#125;</span><br><span class="line">                a[j + <span class="number">1</span>] = ai;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">            <span class="comment">//跳过最长升序序列。</span></span><br><span class="line">            <span class="keyword">do</span> &#123;</span><br><span class="line">                <span class="keyword">if</span> (left &gt;= right) &#123;</span><br><span class="line">                    <span class="keyword">return</span>;</span><br><span class="line">                &#125;</span><br><span class="line">            &#125; <span class="keyword">while</span> (a[++left] &gt;= a[left - <span class="number">1</span>]);</span><br><span class="line"></span><br><span class="line">            <span class="comment">//来自相邻部分的每一个元素都起着作用，因此这允许我们避免每次迭代的左范围检查。</span></span><br><span class="line">            <span class="comment">//此外,我们使用更优化的算法，所谓的对插入排序，它更快(在快速排序的上下文中)比传统的插入排序实现。</span></span><br><span class="line">            <span class="keyword">for</span> (<span class="keyword">int</span> k = left; ++left &lt;= right; k = ++left) &#123;</span><br><span class="line">                <span class="keyword">int</span> a1 = a[k], a2 = a[left];</span><br><span class="line"></span><br><span class="line">                <span class="keyword">if</span> (a1 &lt; a2) &#123;</span><br><span class="line">                    a2 = a1; a1 = a[left];</span><br><span class="line">                &#125;</span><br><span class="line">                <span class="keyword">while</span> (a1 &lt; a[--k]) &#123;</span><br><span class="line">                    a[k + <span class="number">2</span>] = a[k];</span><br><span class="line">                &#125;</span><br><span class="line">                a[++k + <span class="number">1</span>] = a1;</span><br><span class="line"></span><br><span class="line">                <span class="keyword">while</span> (a2 &lt; a[--k]) &#123;</span><br><span class="line">                    a[k + <span class="number">1</span>] = a[k];</span><br><span class="line">                &#125;</span><br><span class="line">                a[k + <span class="number">1</span>] = a2;</span><br><span class="line">            &#125;</span><br><span class="line">            <span class="keyword">int</span> last = a[right];</span><br><span class="line"></span><br><span class="line">            <span class="keyword">while</span> (last &lt; a[--right]) &#123;</span><br><span class="line">                a[right + <span class="number">1</span>] = a[right];</span><br><span class="line">            &#125;</span><br><span class="line">            a[right + <span class="number">1</span>] = last;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span>;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="comment">//////////////以下为双轴快排</span></span><br><span class="line">    <span class="comment">// 长度/7的近似</span></span><br><span class="line">    <span class="keyword">int</span> seventh = (length &gt;&gt; <span class="number">3</span>) + (length &gt;&gt; <span class="number">6</span>) + <span class="number">1</span>;</span><br><span class="line"></span><br><span class="line">    <span class="comment">// 对五个均匀间隔的元素进行排序 ，在范围的中心元素。这些元素将被用于枢轴选择如下所述。</span></span><br><span class="line">    <span class="comment">//间隔的选择 根据经验，这些因素决定很好地发挥作用 各种各样的输入。</span></span><br><span class="line">    <span class="keyword">int</span> e3 = (left + right) &gt;&gt;&gt; <span class="number">1</span>; <span class="comment">// The midpoint</span></span><br><span class="line">    <span class="keyword">int</span> e2 = e3 - seventh;</span><br><span class="line">    <span class="keyword">int</span> e1 = e2 - seventh;</span><br><span class="line">    <span class="keyword">int</span> e4 = e3 + seventh;</span><br><span class="line">    <span class="keyword">int</span> e5 = e4 + seventh;</span><br><span class="line"></span><br><span class="line">    <span class="comment">// 使用插入排序对这些元素进行排序</span></span><br><span class="line">    <span class="keyword">if</span> (a[e2] &lt; a[e1]) &#123; <span class="keyword">int</span> t = a[e2]; a[e2] = a[e1]; a[e1] = t; &#125;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">if</span> (a[e3] &lt; a[e2]) &#123; <span class="keyword">int</span> t = a[e3]; a[e3] = a[e2]; a[e2] = t;</span><br><span class="line">        <span class="keyword">if</span> (t &lt; a[e1]) &#123; a[e2] = a[e1]; a[e1] = t; &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">if</span> (a[e4] &lt; a[e3]) &#123; <span class="keyword">int</span> t = a[e4]; a[e4] = a[e3]; a[e3] = t;</span><br><span class="line">        <span class="keyword">if</span> (t &lt; a[e2]) &#123; a[e3] = a[e2]; a[e2] = t;</span><br><span class="line">            <span class="keyword">if</span> (t &lt; a[e1]) &#123; a[e2] = a[e1]; a[e1] = t; &#125;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">if</span> (a[e5] &lt; a[e4]) &#123; <span class="keyword">int</span> t = a[e5]; a[e5] = a[e4]; a[e4] = t;</span><br><span class="line">        <span class="keyword">if</span> (t &lt; a[e3]) &#123; a[e4] = a[e3]; a[e3] = t;</span><br><span class="line">            <span class="keyword">if</span> (t &lt; a[e2]) &#123; a[e3] = a[e2]; a[e2] = t;</span><br><span class="line">                <span class="keyword">if</span> (t &lt; a[e1]) &#123; a[e2] = a[e1]; a[e1] = t; &#125;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="comment">// Pointers</span></span><br><span class="line">    <span class="keyword">int</span> less  = left;  <span class="comment">// The index of the first element of center part</span></span><br><span class="line">    <span class="keyword">int</span> great = right; <span class="comment">// The index before the first element of right part</span></span><br><span class="line"></span><br><span class="line">    <span class="keyword">if</span> (a[e1] != a[e2] &amp;&amp; a[e2] != a[e3] &amp;&amp; a[e3] != a[e4] &amp;&amp; a[e4] != a[e5]) &#123;</span><br><span class="line">        <span class="comment">//使用五个排序元素中的第二个和第四个作为枢轴。 </span></span><br><span class="line">        <span class="comment">//这些值是第一个和的廉价近似值. Note that pivot1 &lt;= pivot2.</span></span><br><span class="line">        <span class="keyword">int</span> pivot1 = a[e2];</span><br><span class="line">        <span class="keyword">int</span> pivot2 = a[e4];</span><br><span class="line"></span><br><span class="line">        <span class="comment">/*</span></span><br><span class="line"><span class="comment">            * The first and the last elements to be sorted are moved to the</span></span><br><span class="line"><span class="comment">            * locations formerly occupied by the pivots. When partitioning</span></span><br><span class="line"><span class="comment">            * is complete, the pivots are swapped back into their final</span></span><br><span class="line"><span class="comment">            * positions, and excluded from subsequent sorting.</span></span><br><span class="line"><span class="comment">            */</span></span><br><span class="line">        a[e2] = a[left];</span><br><span class="line">        a[e4] = a[right];</span><br><span class="line"></span><br><span class="line">        <span class="comment">/*</span></span><br><span class="line"><span class="comment">            * Skip elements, which are less or greater than pivot values.</span></span><br><span class="line"><span class="comment">            */</span></span><br><span class="line">        <span class="keyword">while</span> (a[++less] &lt; pivot1);</span><br><span class="line">        <span class="keyword">while</span> (a[--great] &gt; pivot2);</span><br><span class="line"></span><br><span class="line">        <span class="comment">/*</span></span><br><span class="line"><span class="comment">            * Partitioning:</span></span><br><span class="line"><span class="comment">            *</span></span><br><span class="line"><span class="comment">            *   left part           center part                   right part</span></span><br><span class="line"><span class="comment">            * +--------------------------------------------------------------+</span></span><br><span class="line"><span class="comment">            * |  &lt; pivot1  |  pivot1 &lt;= &amp;&amp; &lt;= pivot2  |    ?    |  &gt; pivot2  |</span></span><br><span class="line"><span class="comment">            * +--------------------------------------------------------------+</span></span><br><span class="line"><span class="comment">            *               ^                          ^       ^</span></span><br><span class="line"><span class="comment">            *               |                          |       |</span></span><br><span class="line"><span class="comment">            *              less                        k     great</span></span><br><span class="line"><span class="comment">            *</span></span><br><span class="line"><span class="comment">            * Invariants:</span></span><br><span class="line"><span class="comment">            *</span></span><br><span class="line"><span class="comment">            *              all in (left, less)   &lt; pivot1</span></span><br><span class="line"><span class="comment">            *    pivot1 &lt;= all in [less, k)     &lt;= pivot2</span></span><br><span class="line"><span class="comment">            *              all in (great, right) &gt; pivot2</span></span><br><span class="line"><span class="comment">            *</span></span><br><span class="line"><span class="comment">            * Pointer k is the first index of ?-part.</span></span><br><span class="line"><span class="comment">            */</span></span><br><span class="line">        outer:</span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> k = less - <span class="number">1</span>; ++k &lt;= great; ) &#123;</span><br><span class="line">            <span class="keyword">int</span> ak = a[k];</span><br><span class="line">            <span class="keyword">if</span> (ak &lt; pivot1) &#123; <span class="comment">// Move a[k] to left part</span></span><br><span class="line">                a[k] = a[less];</span><br><span class="line">                <span class="comment">/*</span></span><br><span class="line"><span class="comment">                    * Here and below we use &quot;a[i] = b; i++;&quot; instead</span></span><br><span class="line"><span class="comment">                    * of &quot;a[i++] = b;&quot; due to performance issue.</span></span><br><span class="line"><span class="comment">                    */</span></span><br><span class="line">                a[less] = ak;</span><br><span class="line">                ++less;</span><br><span class="line">            &#125; <span class="keyword">else</span> <span class="keyword">if</span> (ak &gt; pivot2) &#123; <span class="comment">// Move a[k] to right part</span></span><br><span class="line">                <span class="keyword">while</span> (a[great] &gt; pivot2) &#123;</span><br><span class="line">                    <span class="keyword">if</span> (great-- == k) &#123;</span><br><span class="line">                        <span class="keyword">break</span> outer;</span><br><span class="line">                    &#125;</span><br><span class="line">                &#125;</span><br><span class="line">                <span class="keyword">if</span> (a[great] &lt; pivot1) &#123; <span class="comment">// a[great] &lt;= pivot2</span></span><br><span class="line">                    a[k] = a[less];</span><br><span class="line">                    a[less] = a[great];</span><br><span class="line">                    ++less;</span><br><span class="line">                &#125; <span class="keyword">else</span> &#123; <span class="comment">// pivot1 &lt;= a[great] &lt;= pivot2</span></span><br><span class="line">                    a[k] = a[great];</span><br><span class="line">                &#125;</span><br><span class="line">                <span class="comment">/*</span></span><br><span class="line"><span class="comment">                    * Here and below we use &quot;a[i] = b; i--;&quot; instead</span></span><br><span class="line"><span class="comment">                    * of &quot;a[i--] = b;&quot; due to performance issue.</span></span><br><span class="line"><span class="comment">                    */</span></span><br><span class="line">                a[great] = ak;</span><br><span class="line">                --great;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        <span class="comment">// Swap pivots into their final positions</span></span><br><span class="line">        a[left]  = a[less  - <span class="number">1</span>]; a[less  - <span class="number">1</span>] = pivot1;</span><br><span class="line">        a[right] = a[great + <span class="number">1</span>]; a[great + <span class="number">1</span>] = pivot2;</span><br><span class="line"></span><br><span class="line">        <span class="comment">// Sort left and right parts recursively, excluding known pivots</span></span><br><span class="line">        sort(a, left, less - <span class="number">2</span>, leftmost);</span><br><span class="line">        sort(a, great + <span class="number">2</span>, right, <span class="keyword">false</span>);</span><br><span class="line"></span><br><span class="line">        <span class="comment">/*</span></span><br><span class="line"><span class="comment">            * If center part is too large (comprises &gt; 4/7 of the array),</span></span><br><span class="line"><span class="comment">            * swap internal pivot values to ends.</span></span><br><span class="line"><span class="comment">            */</span></span><br><span class="line">        <span class="keyword">if</span> (less &lt; e1 &amp;&amp; e5 &lt; great) &#123;</span><br><span class="line">            <span class="comment">/*</span></span><br><span class="line"><span class="comment">                * Skip elements, which are equal to pivot values.</span></span><br><span class="line"><span class="comment">                */</span></span><br><span class="line">            <span class="keyword">while</span> (a[less] == pivot1) &#123;</span><br><span class="line">                ++less;</span><br><span class="line">            &#125;</span><br><span class="line"></span><br><span class="line">            <span class="keyword">while</span> (a[great] == pivot2) &#123;</span><br><span class="line">                --great;</span><br><span class="line">            &#125;</span><br><span class="line"></span><br><span class="line">            <span class="comment">/*</span></span><br><span class="line"><span class="comment">                * Partitioning:</span></span><br><span class="line"><span class="comment">                *</span></span><br><span class="line"><span class="comment">                *   left part         center part                  right part</span></span><br><span class="line"><span class="comment">                * +----------------------------------------------------------+</span></span><br><span class="line"><span class="comment">                * | == pivot1 |  pivot1 &lt; &amp;&amp; &lt; pivot2  |    ?    | == pivot2 |</span></span><br><span class="line"><span class="comment">                * +----------------------------------------------------------+</span></span><br><span class="line"><span class="comment">                *              ^                        ^       ^</span></span><br><span class="line"><span class="comment">                *              |                        |       |</span></span><br><span class="line"><span class="comment">                *             less                      k     great</span></span><br><span class="line"><span class="comment">                *</span></span><br><span class="line"><span class="comment">                * Invariants:</span></span><br><span class="line"><span class="comment">                *</span></span><br><span class="line"><span class="comment">                *              all in (*,  less) == pivot1</span></span><br><span class="line"><span class="comment">                *     pivot1 &lt; all in [less,  k)  &lt; pivot2</span></span><br><span class="line"><span class="comment">                *              all in (great, *) == pivot2</span></span><br><span class="line"><span class="comment">                *</span></span><br><span class="line"><span class="comment">                * Pointer k is the first index of ?-part.</span></span><br><span class="line"><span class="comment">                */</span></span><br><span class="line">            outer:</span><br><span class="line">            <span class="keyword">for</span> (<span class="keyword">int</span> k = less - <span class="number">1</span>; ++k &lt;= great; ) &#123;</span><br><span class="line">                <span class="keyword">int</span> ak = a[k];</span><br><span class="line">                <span class="keyword">if</span> (ak == pivot1) &#123; <span class="comment">// Move a[k] to left part</span></span><br><span class="line">                    a[k] = a[less];</span><br><span class="line">                    a[less] = ak;</span><br><span class="line">                    ++less;</span><br><span class="line">                &#125; <span class="keyword">else</span> <span class="keyword">if</span> (ak == pivot2) &#123; <span class="comment">// Move a[k] to right part</span></span><br><span class="line">                    <span class="keyword">while</span> (a[great] == pivot2) &#123;</span><br><span class="line">                        <span class="keyword">if</span> (great-- == k) &#123;</span><br><span class="line">                            <span class="keyword">break</span> outer;</span><br><span class="line">                        &#125;</span><br><span class="line">                    &#125;</span><br><span class="line">                    <span class="keyword">if</span> (a[great] == pivot1) &#123; <span class="comment">// a[great] &lt; pivot2</span></span><br><span class="line">                        a[k] = a[less];</span><br><span class="line">                        <span class="comment">/*</span></span><br><span class="line"><span class="comment">                            * Even though a[great] equals to pivot1, the</span></span><br><span class="line"><span class="comment">                            * assignment a[less] = pivot1 may be incorrect,</span></span><br><span class="line"><span class="comment">                            * if a[great] and pivot1 are floating-point zeros</span></span><br><span class="line"><span class="comment">                            * of different signs. Therefore in float and</span></span><br><span class="line"><span class="comment">                            * double sorting methods we have to use more</span></span><br><span class="line"><span class="comment">                            * accurate assignment a[less] = a[great].</span></span><br><span class="line"><span class="comment">                            */</span></span><br><span class="line">                        a[less] = pivot1;</span><br><span class="line">                        ++less;</span><br><span class="line">                    &#125; <span class="keyword">else</span> &#123; <span class="comment">// pivot1 &lt; a[great] &lt; pivot2</span></span><br><span class="line">                        a[k] = a[great];</span><br><span class="line">                    &#125;</span><br><span class="line">                    a[great] = ak;</span><br><span class="line">                    --great;</span><br><span class="line">                &#125;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        <span class="comment">// 对中心部分进行递归排序</span></span><br><span class="line">        sort(a, less, great, <span class="keyword">false</span>);</span><br><span class="line"></span><br><span class="line">    &#125; <span class="keyword">else</span> &#123; <span class="comment">// Partitioning with one pivot</span></span><br><span class="line">        <span class="comment">/*</span></span><br><span class="line"><span class="comment">            * Use the third of the five sorted elements as pivot.</span></span><br><span class="line"><span class="comment">            * This value is inexpensive approximation of the median.</span></span><br><span class="line"><span class="comment">            */</span></span><br><span class="line">        <span class="keyword">int</span> pivot = a[e3];</span><br><span class="line"></span><br><span class="line">        <span class="comment">/*</span></span><br><span class="line"><span class="comment">            * Partitioning degenerates to the traditional 3-way</span></span><br><span class="line"><span class="comment">            * (or &quot;Dutch National Flag&quot;) schema:</span></span><br><span class="line"><span class="comment">            *</span></span><br><span class="line"><span class="comment">            *   left part    center part              right part</span></span><br><span class="line"><span class="comment">            * +-------------------------------------------------+</span></span><br><span class="line"><span class="comment">            * |  &lt; pivot  |   == pivot   |     ?    |  &gt; pivot  |</span></span><br><span class="line"><span class="comment">            * +-------------------------------------------------+</span></span><br><span class="line"><span class="comment">            *              ^              ^        ^</span></span><br><span class="line"><span class="comment">            *              |              |        |</span></span><br><span class="line"><span class="comment">            *             less            k      great</span></span><br><span class="line"><span class="comment">            *</span></span><br><span class="line"><span class="comment">            * Invariants:</span></span><br><span class="line"><span class="comment">            *</span></span><br><span class="line"><span class="comment">            *   all in (left, less)   &lt; pivot</span></span><br><span class="line"><span class="comment">            *   all in [less, k)     == pivot</span></span><br><span class="line"><span class="comment">            *   all in (great, right) &gt; pivot</span></span><br><span class="line"><span class="comment">            *</span></span><br><span class="line"><span class="comment">            * Pointer k is the first index of ?-part.</span></span><br><span class="line"><span class="comment">            */</span></span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> k = less; k &lt;= great; ++k) &#123;</span><br><span class="line">            <span class="keyword">if</span> (a[k] == pivot) &#123;</span><br><span class="line">                <span class="keyword">continue</span>;</span><br><span class="line">            &#125;</span><br><span class="line">            <span class="keyword">int</span> ak = a[k];</span><br><span class="line">            <span class="keyword">if</span> (ak &lt; pivot) &#123; <span class="comment">// Move a[k] to left part</span></span><br><span class="line">                a[k] = a[less];</span><br><span class="line">                a[less] = ak;</span><br><span class="line">                ++less;</span><br><span class="line">            &#125; <span class="keyword">else</span> &#123; <span class="comment">// a[k] &gt; pivot - Move a[k] to right part</span></span><br><span class="line">                <span class="keyword">while</span> (a[great] &gt; pivot) &#123;</span><br><span class="line">                    --great;</span><br><span class="line">                &#125;</span><br><span class="line">                <span class="keyword">if</span> (a[great] &lt; pivot) &#123; <span class="comment">// a[great] &lt;= pivot</span></span><br><span class="line">                    a[k] = a[less];</span><br><span class="line">                    a[less] = a[great];</span><br><span class="line">                    ++less;</span><br><span class="line">                &#125; <span class="keyword">else</span> &#123; <span class="comment">// a[great] == pivot</span></span><br><span class="line">                    <span class="comment">/*</span></span><br><span class="line"><span class="comment">                        * Even though a[great] equals to pivot, the</span></span><br><span class="line"><span class="comment">                        * assignment a[k] = pivot may be incorrect,</span></span><br><span class="line"><span class="comment">                        * if a[great] and pivot are floating-point</span></span><br><span class="line"><span class="comment">                        * zeros of different signs. Therefore in float</span></span><br><span class="line"><span class="comment">                        * and double sorting methods we have to use</span></span><br><span class="line"><span class="comment">                        * more accurate assignment a[k] = a[great].</span></span><br><span class="line"><span class="comment">                        */</span></span><br><span class="line">                    a[k] = pivot;</span><br><span class="line">                &#125;</span><br><span class="line">                a[great] = ak;</span><br><span class="line">                --great;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        <span class="comment">//对左右部分递归排序。所有元素从中心部分是相等的，因此，已经排序。</span></span><br><span class="line">        sort(a, left, less - <span class="number">1</span>, leftmost);</span><br><span class="line">        sort(a, great + <span class="number">1</span>, right, <span class="keyword">false</span>);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>Tips： </p>
+<ul>
+<li>如果<code>length&lt;47</code>，那么采用插入排序算法。</li>
+<li>如果<code>47&lt;=length&lt;286</code>，或者<code>286&lt;=length</code>，但数组不具备特定结构，那么使用快速排序的一种优化形式：双轴快排算法。</li>
+<li>如果<code>286&lt;=length</code>，并且数组具备特定结构，那么使用归并排序算法。</li>
+</ul>
+<h3 id="解释1"><a href="#解释1" class="headerlink" title="解释1:"></a>解释1:</h3><p>这里主要作用是看他数组具不具备结构：实际逻辑是分组排序，每个降序序列为一个组，像<code>1,9,8,7,6,8。9</code>到<code>6</code>是降序，为一个组，然后把降序的一组排成升序：<code>1,6,7,8,9,8。</code>然后再从最后的8开始继续往后面找。</p>
+<p>每遇到这样一个降序组，<code>++count</code>，当<code>count</code>大于<code>MAX_RUN_COUNT（67）</code>，被判断为这个数组不具备结构，也就是说这数据时而升时而降，波峰波谷太多，排列太过陡峭，说明不适合采用归并排序，还是使用快速排序为宜。</p>
+<p>如果<code>count</code>少于<code>MAX_RUN_COUNT（67）</code>的，说明这个数组还有点结构，就继续往下走下面的归并排序。</p>
+<p>参考链接 :</p>
+<p><a target="_blank" rel="noopener" href="https://cherish-ls.github.io/2020/10/14/JAVA%E5%86%85%E7%BD%AE%E6%8E%92%E5%BA%8FArrays-sort%E5%AE%9E%E7%8E%B0%E7%AE%80%E8%BF%B0/">源码讲解</a><br><a target="_blank" rel="noopener" href="https://blog.csdn.net/Holmofy/article/details/71168530">单轴与双轴快排</a></p>
+
+
+      <div>
+        
+          <div>
+    
+        <div style="text-align:center;color: #636363;font-size:14px;letter-spacing: 10px">This article is over<i class="fa fa-bell"></i>thank you for reading</div>
+    
+</div>
+        
+      </div>
+    </div>
+
+    
+    
+    
+      
+  <div class="popular-posts-header">Related Posts</div>
+  <ul class="popular-posts">
+    <li class="popular-posts-item">
+      <div class="popular-posts-title"><a href="/posts/1599bffe/" rel="bookmark">归并排序</a></div>
+    </li>
+    <li class="popular-posts-item">
+      <div class="popular-posts-title"><a href="/posts/14e6f1eb/" rel="bookmark">冒泡排序</a></div>
+    </li>
+    <li class="popular-posts-item">
+      <div class="popular-posts-title"><a href="/posts/c2a5fdc5/" rel="bookmark">堆排序</a></div>
+    </li>
+    <li class="popular-posts-item">
+      <div class="popular-posts-title"><a href="/posts/43d00a99/" rel="bookmark">选择排序</a></div>
+    </li>
+    <li class="popular-posts-item">
+      <div class="popular-posts-title"><a href="/posts/2b06d603/" rel="bookmark">直接插入排序</a></div>
+    </li>
+  </ul>
+
+        
+
+<div>
+<ul class="post-copyright">
+  <li class="post-copyright-author">
+    <strong>Post author:  </strong>JIN Mao
+  </li>
+  <li class="post-copyright-link">
+    <strong>Post link: </strong>
+    <a href="https://smile1231.github.io/posts/de5e33d7/" title="关于JDK中的Arrays.sort排序方法">https://smile1231.github.io/posts/de5e33d7/</a>
+  </li>
+  <li class="post-copyright-license">
+    <strong>Copyright Notice:  </strong>All articles in this blog are licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/en" rel="noopener" target="_blank"><i class="fab fa-fw fa-creative-commons"></i>BY-NC-SA</a> unless stating additionally.
+  </li>
+</ul>
+</div>
+
+
+      <footer class="post-footer">
+          
+          <div class="post-tags">
+              <a href="/tags/Java%E9%9D%A2%E8%AF%95/" rel="tag"><i class="fa fa-tag"></i> Java面试</a>
+              <a href="/tags/%E7%AE%97%E6%B3%95/" rel="tag"><i class="fa fa-tag"></i> 算法</a>
+              <a href="/tags/%E6%8E%92%E5%BA%8F/" rel="tag"><i class="fa fa-tag"></i> 排序</a>
+          </div>
+
+        
+  <div class="post-widgets">
+    <div class="wp_rating">
+      <div id="wpac-rating"></div>
+    </div>
+  </div>
+
+
+        
+    <div class="post-nav">
+      <div class="post-nav-item">
+    <a href="/posts/1599bffe/" rel="prev" title="归并排序">
+      <i class="fa fa-chevron-left"></i> 归并排序
+    </a></div>
+      <div class="post-nav-item">
+    <a href="/posts/a72f470b/" rel="next" title="关于JVM常用参数">
+      关于JVM常用参数 <i class="fa fa-chevron-right"></i>
+    </a></div>
+    </div>
+      </footer>
+    
+  </article>
+  
+  
+  
+
+
+
+          </div>
+          
+    <div class="comments" id="valine-comments"></div>
+
+<script>
+  window.addEventListener('tabs:register', () => {
+    let { activeClass } = CONFIG.comments;
+    if (CONFIG.comments.storage) {
+      activeClass = localStorage.getItem('comments_active') || activeClass;
+    }
+    if (activeClass) {
+      let activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
+      if (activeTab) {
+        activeTab.click();
+      }
+    }
+  });
+  if (CONFIG.comments.storage) {
+    window.addEventListener('tabs:click', event => {
+      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
+      let commentClass = event.target.classList[1];
+      localStorage.setItem('comments_active', commentClass);
+    });
+  }
+</script>
+
+        </div>
+          
+  
+  <div class="toggle sidebar-toggle">
+    <span class="toggle-line toggle-line-first"></span>
+    <span class="toggle-line toggle-line-middle"></span>
+    <span class="toggle-line toggle-line-last"></span>
+  </div>
+
+  <aside class="sidebar">
+    <div class="sidebar-inner">
+    
+    
+    <!-- 霓虹灯时钟 -->
+    <div>
+    <svg style="height: 60px;">
+        <text id="time" text-anchor="middle" x="36%" y="80%" class="words words-1"></text>
+        <text id="time" text-anchor="middle" x="36%" y="80%" class="words words-2"></text>
+        <text id="time" text-anchor="middle" x="36%" y="80%" class="words words-3"></text>
+        <text id="time" text-anchor="middle" x="36%" y="80%" class="words words-4"></text>
+    </svg>
+</div>
+
+<script>
+function showtime(){
+    var noatime = new Date();
+    var h = noatime.getHours(),
+        m = noatime.getMinutes(),
+        s = noatime.getSeconds();
+    h=checktime(h);
+    m=checktime(m);
+    s=checktime(s);
+  return h+":"+m+":"+s;
+}
+
+function checktime(x){
+  if(x<10){
+    x="0"+x;
+  }
+  return x;
+}
+
+var div1=document.getElementsByTagName("text");
+setInterval(function(){
+  for (var i in div1){
+      div1[i].innerHTML=showtime();
+  }
+},1000);
+</script>
+
+<style>
+.words{
+    font-size: 50px;
+    font-weight: bold;
+    text-transform: uppercase;
+    fill: none;
+    stroke-width: 3px;
+    stroke-dasharray: 35,125;
+    animation-name: drawing;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+.words-1{
+    stroke: deepskyblue;
+    text-shadow: 0 0 15px deepskyblue;
+    animation-delay: -1.5s;
+}
+.words-2{
+    stroke: lightseagreen;
+    text-shadow: 0 0 15px lightseagreen;
+    animation-delay: -3s;
+}
+.words-3{
+    stroke: orange;
+    text-shadow: 0 0 15px orange;
+    animation-delay: -4.5s;
+}
+.words-4{
+    stroke: purple;
+    text-shadow: 0 0 15px purple;
+    animation-delay: -6s;
+}
+@keyframes drawing {
+    100%{
+        stroke-dashoffset: -160
+    }
+}
+</style>
+
+    
+
+        <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=86 src="//music.163.com/outchain/player?type=2&id=1489346184&auto=1&height=66"></iframe>
+
+      <ul class="sidebar-nav motion-element">
+        <li class="sidebar-nav-toc">
+          Table of Contents
+        </li>
+        <li class="sidebar-nav-overview">
+          Overview
+        </li>
+      </ul>
+
+      <!--noindex-->
+      <div class="post-toc-wrap sidebar-panel">
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Debug%E6%BA%90%E7%A0%81"><span class="nav-number">1.</span> <span class="nav-text">Debug源码</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E8%A7%A3%E9%87%8A1"><span class="nav-number">1.1.</span> <span class="nav-text">解释1:</span></a></li></ol></li></ol></div>
+      </div>
+      <!--/noindex-->
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image" alt="JIN Mao"
+      src="/images/avatar.png">
+  <p class="site-author-name" itemprop="name">JIN Mao</p>
+  <div class="site-description" itemprop="description"></div>
+</div>
+<div class="site-state-wrap motion-element">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/archives/">
+        
+          <span class="site-state-item-count">124</span>
+          <span class="site-state-item-name">posts</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+            <a href="/categories/">
+          
+        <span class="site-state-item-count">69</span>
+        <span class="site-state-item-name">categories</span></a>
+      </div>
+      <div class="site-state-item site-state-tags">
+            <a href="/tags/">
+          
+        <span class="site-state-item-count">91</span>
+        <span class="site-state-item-name">tags</span></a>
+      </div>
+  </nav>
+</div>
+
+
+
+      </div>
+
+  
+
+    </div>
+
+
+  </aside>
+  <div id="sidebar-dimmer"></div>
+
+
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        
+
+        
+
+<div class="copyright">
+  
+  &copy; 
+  <span itemprop="copyrightYear">2022</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">JIN Mao</span>
+</div>
+  <!--添加运行时间-->
+  <span id="sitetime"></span>
+  <script language=javascript>
+    function siteTime(){
+      window.setTimeout("siteTime()", 1000);
+      var seconds = 1000;
+      var minutes = seconds * 60;
+      var hours = minutes * 60;
+      var days = hours * 24;
+      var years = days * 365;
+      var today = new Date();
+      var todayYear = today.getFullYear();
+      var todayMonth = today.getMonth()+1;
+      var todayDate = today.getDate();
+      var todayHour = today.getHours();
+      var todayMinute = today.getMinutes();
+      var todaySecond = today.getSeconds();
+      /* 
+        Date.UTC() -- 返回date对象距世界标准时间(UTC)1970年1月1日午夜之间的毫秒数(时间戳)
+        year - 作为date对象的年份，为4位年份值
+        month - 0-11之间的整数，做为date对象的月份
+        day - 1-31之间的整数，做为date对象的天数
+        hours - 0(午夜24点)-23之间的整数，做为date对象的小时数
+        minutes - 0-59之间的整数，做为date对象的分钟数
+        seconds - 0-59之间的整数，做为date对象的秒数
+        microseconds - 0-999之间的整数，做为date对象的毫秒数
+      */
+      var t1 = Date.UTC(2021,11,11,00,00,00); //北京时间2018-2-13 00:00:00
+      var t2 = Date.UTC(todayYear,todayMonth,todayDate,todayHour,todayMinute,todaySecond);
+      var diff = t2-t1;
+      var diffYears = Math.floor(diff/years);
+      var diffDays = Math.floor((diff/days)-diffYears*365);
+      var diffHours = Math.floor((diff-(diffYears*365+diffDays)*days)/hours);
+      var diffMinutes = Math.floor((diff-(diffYears*365+diffDays)*days-diffHours*hours)/minutes);
+      var diffSeconds = Math.floor((diff-(diffYears*365+diffDays)*days-diffHours*hours-diffMinutes*minutes)/seconds);
+      document.getElementById("sitetime").innerHTML=" This blog is up and running "+/*diffYears+" Year "+*/diffDays+" Days "+diffHours+" Hours "+diffMinutes+" Minutes "+diffSeconds+" Seconds";
+    }
+    siteTime();
+  </script>
+  <!--// 添加运行时间-->
+
+
+<!--
+  <div class="powered-by">Powered by <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> & <a href="https://pisces.theme-next.org/" class="theme-link" rel="noopener" target="_blank">NexT.Pisces</a>
+  </div>
+-->
+
+
+        
+<div class="busuanzi-count">
+  <script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+
+  <span class="site-uv" title="Total Visitors">
+    My <span id="busuanzi_value_site_uv"></span>th Friend, 
+  </span>
+
+  <span class="site-pv" title="Total Views">
+    After  <span id="busuanzi_value_site_pv"></span> times of looking back, I met you 。
+  </span>
+  <!--
+    <span class="post-meta-item" id="busuanzi_container_site_uv" >
+      <span class="post-meta-item-icon">
+        <i class="fa fa-user"></i>
+      </span>
+      <span class="site-uv" title="Total Visitors">
+        <span id="busuanzi_value_site_uv"></span>
+      </span>
+    </span>
+    <span class="post-meta-divider">|</span>
+    <span class="post-meta-item" id="busuanzi_container_site_pv">
+      <span class="post-meta-item-icon">
+        <i class="fa fa-eye"></i>
+      </span>
+      <span class="site-pv" title="Total Views">
+        <span id="busuanzi_value_site_pv"></span>
+      </span>
+    </span>-->
+</div>
+
+
+
+
+
+
+
+
+      </div>
+    </footer>
+  </div>
+
+  
+  <script src="/lib/anime.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/medium-zoom@1/dist/medium-zoom.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/lozad@1/dist/lozad.min.js"></script>
+  <script src="/lib/velocity/velocity.min.js"></script>
+  <script src="/lib/velocity/velocity.ui.min.js"></script>
+
+<script src="/js/utils.js"></script>
+
+<script src="/js/motion.js"></script>
+
+
+<script src="/js/schemes/pisces.js"></script>
+
+
+<script src="/js/next-boot.js"></script>
+
+<script src="/js/bookmark.js"></script>
+
+
+  <script defer src="/lib/three/three.min.js"></script>
+    <script defer src="/lib/three/canvas_lines.min.js"></script>
+
+
+  
+
+
+
+  <script>
+  if (CONFIG.page.isPost) {
+    wpac_init = window.wpac_init || [];
+    wpac_init.push({
+      widget: 'Rating',
+      id    : ,
+      el    : 'wpac-rating',
+      color : 'fc6423'
+    });
+    (function() {
+      if ('WIDGETPACK_LOADED' in window) return;
+      WIDGETPACK_LOADED = true;
+      var mc = document.createElement('script');
+      mc.type = 'text/javascript';
+      mc.async = true;
+      mc.src = '//embed.widgetpack.com/widget.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(mc, s.nextSibling);
+    })();
+  }
+  </script>
+
+  
+<script src="/js/local-search.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+
+<script>
+NexT.utils.loadComments(document.querySelector('#valine-comments'), () => {
+  NexT.utils.getScript('//unpkg.com/valine/dist/Valine.min.js', () => {
+    var GUEST = ['nick', 'mail', 'link'];
+    var guest = 'nick,mail,link';
+    guest = guest.split(',').filter(item => {
+      return GUEST.includes(item);
+    });
+    new Valine({
+      el         : '#valine-comments',
+      verify     : true,
+      notify     : true,
+      appId      : 'J2bQH6GquIhMurLQc9NYgXWJ-gzGzoHsz',
+      appKey     : 'mbmntmQLrVScI2O7gV6zBej5',
+      placeholder: "Just go go",
+      avatar     : 'mm',
+      meta       : guest,
+      pageSize   : '10' || 10,
+      visitor    : false,
+      lang       : 'en' || 'zh-cn',
+      path       : location.pathname,
+      recordIP   : true,
+      serverURLs : ''
+    });
+  }, window.Valine);
+});
+</script>
+
+
+  
+  <script type="text/javascript" src="/js/cursor/love.js"></script>
+
+
+
+  
+<script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"model":{"jsonPath":"/live2dw/assets/shizuku.model.json"},"display":{"position":"left","width":200,"height":400},"mobile":{"show":false},"log":false,"pluginJsPath":"lib/","pluginModelPath":"assets/","pluginRootPath":"live2dw/","tagMode":false});</script></body>
+</html>

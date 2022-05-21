@@ -1,0 +1,948 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 5.4.0">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/avatar.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/avatar.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+<link rel="stylesheet" href="/lib/font-awesome/css/all.min.css">
+  <link rel="stylesheet" href="/lib/pace/pace-theme-mac-osx.min.css">
+  <script src="/lib/pace/pace.min.js"></script>
+
+<script id="hexo-configurations">
+    var NexT = window.NexT || {};
+    var CONFIG = {"hostname":"smile1231.github.io","root":"/","scheme":"Pisces","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":true,"show_result":true,"style":"mac"},"back2top":{"enable":true,"sidebar":false,"scrollpercent":true},"bookmark":{"enable":true,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":true,"lazyload":true,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
+  </script>
+
+  <meta name="description" content="正则表达式中的特殊字符正则表达式中的特殊字符（📖表示 |）正则真的太难学了: https:&#x2F;&#x2F;regexone.com&#x2F;   学习网站这不就来了  git + 正则   手册   好用的网站">
+<meta property="og:type" content="article">
+<meta property="og:title" content="正则表达式">
+<meta property="og:url" content="https://smile1231.github.io/posts/2f57a694/index.html">
+<meta property="og:site_name" content="JIN MAO &#39;s Blog">
+<meta property="og:description" content="正则表达式中的特殊字符正则表达式中的特殊字符（📖表示 |）正则真的太难学了: https:&#x2F;&#x2F;regexone.com&#x2F;   学习网站这不就来了  git + 正则   手册   好用的网站">
+<meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2022-02-19T08:18:37.000Z">
+<meta property="article:modified_time" content="2022-05-12T18:18:46.397Z">
+<meta property="article:author" content="JIN Mao">
+<meta property="article:tag" content="正则表达式">
+<meta name="twitter:card" content="summary">
+
+<link rel="canonical" href="https://smile1231.github.io/posts/2f57a694/">
+
+
+<script id="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome : false,
+    isPost : true,
+    lang   : 'en'
+  };
+</script>
+
+  <title>正则表达式 | JIN MAO 's Blog</title>
+  
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-FWV5496QFL"></script>
+    <script>
+      if (CONFIG.hostname === location.hostname) {
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-FWV5496QFL');
+      }
+    </script>
+
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header { opacity: initial; }
+
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+<link rel="alternate" href="/atom.xml" title="JIN MAO 's Blog" type="application/atom+xml">
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div class="container use-motion">
+    <div class="headband"></div>
+      <!-- <a target="_blank" rel="noopener" href="https://github.com/Smile1231/StudyRepository"><img loading="lazy" width="149" height="149" src="https://github.blog/wp-content/uploads/2008/12/forkme_right_gray_6d6d6d.png?resize=149%2C149" class="attachment-full size-full" alt="Fork me on GitHub" data-recalc-dims="1"></a> -->
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="Toggle navigation bar">
+      <span class="toggle-line toggle-line-first"></span>
+      <span class="toggle-line toggle-line-middle"></span>
+      <span class="toggle-line toggle-line-last"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <h1 class="site-title">JIN MAO 's Blog</h1>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+      <p class="site-subtitle" itemprop="description">got windy (起风了)</p>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+        <i class="fa fa-search fa-fw fa-lg"></i>
+    </div>
+  </div>
+</div>
+
+
+
+
+<nav class="site-nav">
+  <ul id="menu" class="main-menu menu">
+        <li class="menu-item menu-item-home">
+
+    <a href="/" rel="section"><i class="fa fa-home fa-fw"></i>Home</a>
+
+  </li>
+        <li class="menu-item menu-item-about">
+
+    <a href="/about/" rel="section"><i class="fa fa-user fa-fw"></i>About</a>
+
+  </li>
+        <li class="menu-item menu-item-tags">
+
+    <a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>Tags<span class="badge">91</span></a>
+
+  </li>
+        <li class="menu-item menu-item-categories">
+
+    <a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>Categories<span class="badge">69</span></a>
+
+  </li>
+        <li class="menu-item menu-item-archives">
+
+    <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>Archives<span class="badge">124</span></a>
+
+  </li>
+      <li class="menu-item menu-item-search">
+        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>Search
+        </a>
+      </li>
+  </ul>
+</nav>
+
+
+
+  <div class="search-pop-overlay">
+    <div class="popup search-popup">
+        <div class="search-header">
+  <span class="search-icon">
+    <i class="fa fa-search"></i>
+  </span>
+  <div class="search-input-container">
+    <input autocomplete="off" autocapitalize="off"
+           placeholder="Searching..." spellcheck="false"
+           type="search" class="search-input">
+  </div>
+  <span class="popup-btn-close">
+    <i class="fa fa-times-circle"></i>
+  </span>
+</div>
+<div id="search-result">
+  <div id="no-result">
+    <i class="fa fa-spinner fa-pulse fa-5x fa-fw"></i>
+  </div>
+</div>
+
+    </div>
+  </div>
+
+</div>
+    </header>
+
+    
+  <div class="back-to-top">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+  <div class="reading-progress-bar"></div>
+  <a role="button" class="book-mark-link book-mark-link-fixed"></a>
+
+
+    <main class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+
+          <div class="content post posts-expand">
+            
+
+    
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
+    <link itemprop="mainEntityOfPage" href="https://smile1231.github.io/posts/2f57a694/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.png">
+      <meta itemprop="name" content="JIN Mao">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="JIN MAO 's Blog">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          正则表达式
+        </h1>
+
+        <div class="post-meta">
+          
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">Posted on</span>
+
+              <time title="Created: 2022-02-19 16:18:37" itemprop="dateCreated datePublished" datetime="2022-02-19T16:18:37+08:00">2022-02-19</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">Edited on</span>
+                <time title="Modified: 2022-05-13 02:18:46" itemprop="dateModified" datetime="2022-05-13T02:18:46+08:00">2022-05-13</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">In</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F/" itemprop="url" rel="index"><span itemprop="name">正则表达式</span></a>
+                </span>
+            </span>
+
+          
+           <!-- <span class="post-meta-item" title="Views" id="busuanzi_container_page_pv" style="display: none;">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-eye"></i>
+              </span>
+              <span class="post-meta-item-text">Views: </span>
+              <span id="busuanzi_value_page_pv"></span>
+            </span> -->
+            <span>&emsp;</span><span class="post-meta-item-icon"><i class="fa fa-eye"></i></span>
+            <span class="post-meta-item-text">Views: </span>
+            <span id="busuanzi_value_page_pv"></span>
+  
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="far fa-comment"></i>
+      </span>
+      <span class="post-meta-item-text">Valine: </span>
+    
+    <a title="valine" href="/posts/2f57a694/#valine-comments" itemprop="discussionUrl">
+      <span class="post-comments-count valine-comment-count" data-xid="/posts/2f57a694/" itemprop="commentCount"></span>
+    </a>
+  </span>
+  
+  
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+        <h1 id="正则表达式中的特殊字符"><a href="#正则表达式中的特殊字符" class="headerlink" title="正则表达式中的特殊字符"></a>正则表达式中的特殊字符</h1><h2 id="正则表达式中的特殊字符（📖表示-）"><a href="#正则表达式中的特殊字符（📖表示-）" class="headerlink" title="正则表达式中的特殊字符（📖表示 |）"></a>正则表达式中的特殊字符（📖表示 <code>|</code>）</h2><p>正则真的太难学了: <a target="_blank" rel="noopener" href="https://regexone.com/">https://regexone.com/</a>   学习网站这不就来了</p>
+<p><a target="_blank" rel="noopener" href="https://www.cnblogs.com/labuladong/p/12320413.html"> git + 正则 </a></p>
+<p><a target="_blank" rel="noopener" href="https://tool.oschina.net/uploads/apidocs/jquery/regexp.html"> 手册 </a></p>
+<p><a target="_blank" rel="noopener" href="https://regex101.com/r/cO8lqs/9"> 好用的网站 </a></p>
+<span id="more"></span>
+
+<table>
+<thead>
+<tr>
+<th>字符</th>
+<th>含义</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>\</code></td>
+<td>依照下列规则匹配：在非特殊字符之前的反斜杠表示下一个字符是特殊字符，不能按照字面理解。例如，前面没有<code>&quot;\&quot;</code>的 <code>&quot;b&quot;</code> 通常匹配小写字母 <code>&quot;b&quot;</code>，即字符会被作为字面理解，无论它出现在哪里。但如果前面加了 <code>&quot;\&quot;</code>，它将不再匹配任何字符，而是表示一个字符边界。在特殊字符之前的反斜杠表示下一个字符不是特殊字符，应该按照字面理解。详情请参阅下文中的 “转义（Escaping）” 部分。如果你想将字符串传递给 RegExp 构造函数，不要忘记在字符串字面量中反斜杠是转义字符。所以为了在模式中添加一个反斜杠，你需要在字符串字面量中转义它。<code>/[a-z]\s/i</code> 和 <code>new RegExp(&quot;[a-z]\\s&quot;, &quot;i&quot;)</code> 创建了相同的正则表达式：一个用于搜索后面紧跟着空白字符（<code>\s</code> 可看后文）并且在 <code>a-z</code> 范围内的任意字符的表达式。为了通过字符串字面量给 RegExp 构造函数创建包含反斜杠的表达式，你需要在字符串级别和正则表达式级别都对它进行转义。例如 <code>/[a-z]:\\/i </code>和 <code>new RegExp(&quot;[a-z]:\\\\&quot;,&quot;i&quot;)</code> 会创建相同的表达式，即匹配类似 <code>&quot;C:\&quot;</code> 字符串。</td>
+</tr>
+<tr>
+<td><code>^</code></td>
+<td>匹配输入的开始。如果多行标志被设置为<code> true</code>，那么也匹配换行符后紧跟的位置。例如，<code>/^A/</code> 并不会匹配 <code>&quot;an A&quot; </code>中的 <code>&#39;A&#39;</code>，但是会匹配 <code>&quot;An E&quot; </code>中的<code> &#39;A&#39;</code>。当 <code>&#39;^&#39; </code>作为第一个字符出现在一个字符集合模式时，它将会有不同的含义。反向字符集合 一节有详细介绍和示例。</td>
+</tr>
+<tr>
+<td><code>$</code></td>
+<td>匹配输入的结束。如果多行标志被设置为<code> true</code>，那么也匹配换行符前的位置。例如，<code>/t$/</code> 并不会匹配 <code>&quot;eater&quot;</code> 中的 <code>&#39;t&#39;</code>，但是会匹配 <code>&quot;eat&quot; </code>中的<code>&#39;t&#39;</code>。</td>
+</tr>
+<tr>
+<td><code>*</code></td>
+<td>匹配前一个表达式<code> 0 次</code>或<code>多次</code>。等价于 <code>&#123;0,&#125;</code>。例如，<code>/bo*/</code> 会匹配 <code>&quot;A ghost boooooed&quot;</code> 中的 <code>&#39;booooo&#39; </code>和 <code>&quot;A bird warbled&quot;</code> 中的 <code>&#39;b&#39;</code>，但是在 <code>&quot;A goat grunted&quot;</code> 中不会匹配任何内容。</td>
+</tr>
+<tr>
+<td><code>+</code></td>
+<td>匹配前面一个表达式 <code>1 次</code>或者<code>多次</code>。等价于<code> &#123;1,&#125;</code>。例如，<code>/a+/</code> 会匹配 <code>&quot;candy&quot;</code> 中的 <code>&#39;a&#39;</code> 和<code>&quot;caaaaaaandy&quot;</code>中所有的 <code>&#39;a&#39;</code>，但是在<code>&quot;cndy&quot;</code>中不会匹配任何内容。</td>
+</tr>
+<tr>
+<td><code>?</code></td>
+<td>匹配前面一个表达式 <code>0 次</code>或者<code> 1 次</code>。等价于<code> &#123;0,1&#125;</code>。例如，<code>/e?le?/</code> 匹配 <code>&quot;angel&quot;</code> 中的 <code>&#39;el&#39;、&quot;angle&quot;</code> 中的 <code>&#39;le&#39;</code> 以及 <code>&quot;oslo&#39;</code> 中的 <code>&#39;l&#39;</code>。如果紧跟在任何量词 <code>*、 +、?</code> 或 <code>&#123;&#125;</code> 的后面，将会使量词变为非贪婪（匹配尽量少的字符），和缺省使用的贪婪模式（匹配尽可能多的字符）正好相反。例如，对 <code>&quot;123abc&quot;</code> 使用 <code>/\d+/</code> 将会匹配 <code>&quot;123&quot;</code>，而使用 <code>/\d+?/</code> 则只会匹配到 <code>&quot;1&quot;</code>。还用于先行断言中，如本表的 <code>x(?=y)</code> 和 <code>x(?!y)</code> 条目所述。</td>
+</tr>
+<tr>
+<td><code>.    </code></td>
+<td>小数点）默认匹配除换行符之外的任何单个字符。例如，<code>/.n/</code> 将会匹配 <code>&quot;nay, an apple is on the tree&quot;</code> 中的 <code>&#39;an&#39;</code> 和 <code>&#39;on&#39;</code>，但是不会匹配 <code>&#39;nay&#39;</code>。如果 <code>s (&quot;dotAll&quot;) </code>标志位被设为 <code>true</code>，它也会匹配换行符。</td>
+</tr>
+<tr>
+<td><code>(x)</code></td>
+<td>像下面的例子展示的那样，它会匹配 <code>&#39;x&#39;</code> 并且记住匹配项。其中括号被称为捕获括号。模式 <code>/(foo) (bar) \1 \2/ </code>中的 <code>&#39;(foo)&#39;</code> 和 <code>&#39;(bar)&#39;</code> 匹配并记住字符串 <code>&quot;foo bar foo bar&quot;</code> 中前两个单词。模式中的 <code>\1</code> 和 <code>\2</code> 表示第一个和第二个被捕获括号匹配的子字符串，即 <code>foo</code> 和 <code>bar</code>，匹配了原字符串中的后两个单词。注意 <code>\1、\2、...、\n</code> 是用在正则表达式的匹配环节，详情可以参阅后文的 <code>\n</code> 条目。而在正则表达式的替换环节，则要使用像 <code>$1、$2、...、$n</code> 这样的语法，例如，<code>&#39;bar foo&#39;.replace(/(...) (...)/, &#39;$2 $1&#39;)</code>。<code>$&amp;</code> 表示整个用于匹配的原字符串。</td>
+</tr>
+<tr>
+<td><code>(?:x)    </code></td>
+<td>匹配 <code>&#39;x&#39;</code> 但是不记住匹配项。这种括号叫作非捕获括号，使得你能够定义与正则表达式运算符一起使用的子表达式。看看这个例子 <code>/(?:foo)&#123;1,2&#125;/</code>。如果表达式是 <code>/foo&#123;1,2&#125;/，&#123;1,2&#125;</code> 将只应用于 <code>&#39;foo&#39;</code> 的最后一个字符 <code>&#39;o&#39;</code>。如果使用非捕获括号，则 <code>&#123;1,2&#125;</code> 会应用于整个 <code>&#39;foo&#39;</code> 单词。更多信息，可以参阅下文的 <code>Using parentheses</code> 条目.</td>
+</tr>
+<tr>
+<td><code>x(?=y)</code></td>
+<td>匹配<code>&#39;x&#39;</code>仅仅当<code>&#39;x&#39;</code>后面跟着<code>&#39;y&#39;</code>.这种叫做先行断言。例如，<code>/Jack(?=Sprat)/</code>会匹配到<code>&#39;Jack&#39;</code>仅当它后面跟着``’Sprat’。/Jack(?=Sprat</td>
+</tr>
+<tr>
+<td><code>(?&lt;=y)x</code></td>
+<td>匹配<code>&#39;x&#39;</code>仅当<code>&#39;x&#39;</code>前面是<code>&#39;y&#39;</code>.这种叫做后行断言。例如，<code>/(?&lt;=Jack)Sprat/</code>会匹配到<code>&#39; Sprat &#39;</code>仅仅当它前面是<code>&#39;Jack&#39;。/(?&lt;=Jack📖Tom)Sprat/</code>匹配<code>‘ Sprat ’</code>仅仅当它前面是<code>Jack</code>或者是<code>‘Tom’</code>。但是<code>‘Jack’</code>和<code>‘Tom’</code>都不是匹配结果的一部分。</td>
+</tr>
+<tr>
+<td><code>x(?!y)</code></td>
+<td>仅仅当<code>&#39;x&#39;</code>后面不跟着<code>&#39;y&#39;</code>时匹配<code>&#39;x&#39;</code>，这被称为正向否定查找。例如，仅仅当这个数字后面没有跟小数点的时候，<code>/\d+(?!\.)/ </code>匹配一个数字。正则表达式<code>/\d+(?!\.)/.exec(&quot;3.141&quot;)</code>匹配<code>‘141’</code>而不是<code>‘3.141’</code></td>
+</tr>
+<tr>
+<td><code>(?&lt;!y)x</code></td>
+<td>仅仅当<code>&#39;x&#39;</code>前面不是<code>&#39;y&#39;</code>时匹配<code>&#39;x&#39;</code>，这被称为反向否定查找。例如, 仅仅当这个数字前面没有负号的时候，<code>/(?&lt;!-)\d+/</code> 匹配一个数字。<code>/(?&lt;!-)\d+/.exec(&#39;3&#39;)</code> 匹配到 <code>&quot;3&quot;./(?&lt;!-)\d+/.exec(&#39;-3&#39;) </code>因为这个数字前有负号，所以没有匹配到。</td>
+</tr>
+<tr>
+<td><code>x📖y</code></td>
+<td>匹配<code>‘x’</code>或者<code>‘y’</code>。例如，``/green</td>
+</tr>
+<tr>
+<td><code>&#123;n&#125;</code></td>
+<td><code>n</code> 是一个正整数，匹配了前面一个字符刚好出现了 <code>n</code> 次。比如，<code> /a&#123;2&#125;/</code> 不会匹配<code>“candy”</code>中的<code>&#39;a&#39;</code>,但是会匹配<code>“caandy”</code>中所有的 <code>a</code>，以及<code>“caaandy”</code>中的前两个<code>&#39;a&#39;</code>。</td>
+</tr>
+<tr>
+<td><code>&#123;n,&#125;</code></td>
+<td><code>n</code>是一个正整数，匹配前一个字符至少出现了<code>n</code>次。例如, <code>/a&#123;2,&#125;/ </code>匹配 <code>&quot;aa&quot;</code>, <code>&quot;aaaa&quot;</code> 和 <code>&quot;aaaaa&quot;</code> 但是不匹配 <code>&quot;a&quot;</code>。</td>
+</tr>
+<tr>
+<td><code>&#123;n,m&#125;    </code></td>
+<td><code>n</code> 和 <code>m</code> 都是整数。匹配前面的字符至少<code>n</code>次，最多<code>m</code>次。如果 <code>n</code> 或者 <code>m</code> 的值是<code>0</code>， 这个值被忽略。例如，<code>/a&#123;1, 3&#125;/</code> 并不匹配<code>“cndy”</code>中的任意字符，匹配<code>“candy”</code>中的<code>a</code>，匹配<code>“caandy”</code>中的前两个<code>a</code>，也匹配<code>“caaaaaaandy”</code>中的前三个<code>a</code>。注意，当匹配<code>”caaaaaaandy“</code>时，匹配的值是<code>“aaa”</code>，即使原始的字符串中有更多的<code>a</code>。</td>
+</tr>
+<tr>
+<td><code>[xyz]</code></td>
+<td>一个字符集合。匹配方括号中的任意字符，包括转义序列。你可以使用破折号（<code>-</code>）来指定一个字符范围。对于点<code>（.）</code>和星号<code>（*）</code>这样的特殊符号在一个字符集中没有特殊的意义。他们不必进行转义，不过转义也是起作用的。例如，<code>[abcd]</code> 和<code>[a-d]</code>是一样的。他们都匹配<code>&quot;brisket&quot;</code>中的<code>‘b’</code>,也都匹配<code>“city”</code>中的<code>‘c’</code>。<code>/[a-z.]+/</code> 和<code>/[\w.]+/</code>与字符串<code>“test.i.ng”</code>匹配。</td>
+</tr>
+<tr>
+<td><code>[^xyz]</code></td>
+<td>一个反向字符集。也就是说， 它匹配任何没有包含在方括号中的字符。你可以使用破折号（-）来指定一个字符范围。任何普通字符在这里都是起作用的。例如，<code>[^abc]</code> 和 <code>[^a-c]</code> 是一样的。他们匹配<code>&quot;brisket&quot;</code>中的<code>‘r’</code>，也匹配<code>“chop”</code>中的<code>‘h’</code>。</td>
+</tr>
+<tr>
+<td><code>[\b]</code></td>
+<td>匹配一个退格(<code>U+0008</code>)。（不要和<code>\b</code>混淆了。）</td>
+</tr>
+<tr>
+<td><code>\b</code></td>
+<td><strong>匹配一个词的边界</strong>。一个词的边界就是一个词不被另外一个“字”字符跟随的位置或者前面跟其他“字”字符的位置，例如在字母和空格之间。注意，匹配中不包括匹配的字边界。换句话说，一个匹配的词的边界的内容的长度是<code>0</code>。（不要和<code>[\b]</code>混淆了）使用<code>&quot;moon&quot;</code>举例：<code>/\bm/</code>匹配<code>“moon”</code>中的<code>‘m’</code>；<code>/oo\b/</code>并不匹配<code>&quot;moon&quot;</code>中的<code>&#39;oo&#39;</code>，因为<code>&#39;oo&#39;</code>被一个“字”字符<code>&#39;n&#39;</code>紧跟着。<code>/oon\b/</code>匹配<code>&quot;moon&quot;</code>中的<code>&#39;oon&#39;</code>，因为<code>&#39;oon&#39;</code>是这个字符串的结束部分。这样他没有被一个“字”字符紧着。<code>/\w\b\w/</code>将不能匹配任何字符串，因为在一个单词中间的字符永远也不可能同时满足没有“字”字符跟随和有“字”字符跟随两种情况。注意: <code>JavaScript</code>的正则表达式引擎将特定的字符集定义为“字”字符。不在该集合中的任何字符都被认为是一个断词。这组字符相当有限：它只包括大写和小写的罗马字母，十进制数字和下划线字符。不幸的是，重要的字符，例如<code>“é”</code>或<code>“ü”</code>，被视为断词。</td>
+</tr>
+<tr>
+<td><code>\B</code></td>
+<td>匹配一个非单词边界。匹配如下几种情况：字符串第一个字符为非“字”字符字符串最后一个字符为非“字”字符两个单词字符之间两个非单词字符之间空字符串例如，<code>/\B../</code>匹配<code>&quot;noonday&quot;</code>中的<code>&#39;oo&#39;</code>, 而<code>/y\B../</code>匹配<code>&quot;possibly yesterday&quot;</code>中的<code>’yes‘</code></td>
+</tr>
+<tr>
+<td><code>\cX</code></td>
+<td>当<code>X</code>是处于<code>A</code>到<code>Z</code>之间的字符的时候，匹配字符串中的一个控制符。例如，<code>/\cM/</code> 匹配字符串中的 <code>control-M (U+000D)</code>。</td>
+</tr>
+<tr>
+<td><code>\d</code></td>
+<td>匹配一个数字。等价于[0-9]。例如， <code>/\d/</code> 或者 <code>/[0-9]/</code> 匹配”<code>B2 is the suite number.</code>“中的<code>&#39;2&#39;</code>。</td>
+</tr>
+<tr>
+<td><code>\D</code></td>
+<td>匹配一个非数字字符。等价于<code>[^0-9]</code>。例如， <code>/\D/</code> 或者 <code>/[^0-9]/</code> 匹配”<code>B2 is the suite number.</code>“中的’<code>B</code>‘ 。</td>
+</tr>
+<tr>
+<td><code>\f</code></td>
+<td>匹配一个换页符 <code>(U+000C)</code>。</td>
+</tr>
+<tr>
+<td><code>\n</code></td>
+<td>匹配一个换行符 <code>(U+000A)</code>。</td>
+</tr>
+<tr>
+<td><code>\r</code></td>
+<td>匹配一个回车符 <code>(U+000D)</code>。</td>
+</tr>
+<tr>
+<td><code>\s</code></td>
+<td>匹配一个空白字符，包括空格、制表符、换页符和换行符。等价于<code>[ \f\n\r\t\v\u00a0\u1680\u180e\u2000-\u200a\u2028\u2029\u202f\u205f\u3000\ufeff]</code>。例如, <code>/\s\w*/</code> 匹配”foo bar.”中的’ bar’。经测试，\s不匹配”\u180e”，在当前版本Chrome(v80.0.3987.122)和Firefox(76.0.1)控制台输入/\s/.test(“\u180e”)均返回false。</td>
+</tr>
+<tr>
+<td><code>\S</code></td>
+<td>匹配一个非空白字符。等价于 <code>[^\f\n\r\t\v\u00a0\u1680\u180e\u2000-\u200a\u2028\u2029\u202f\u205f\u3000\ufeff]</code>。例如，<code>/\S\w*/</code> 匹配<code>&quot;foo bar.&quot;</code>中的’foo’。</td>
+</tr>
+<tr>
+<td><code>\t</code></td>
+<td>匹配一个水平制表符 <code>(U+0009</code>)。</td>
+</tr>
+<tr>
+<td><code>\v</code></td>
+<td>匹配一个垂直制表符 (U+000B)。</td>
+</tr>
+<tr>
+<td><code>\w</code></td>
+<td>匹配一个单字字符（字母、数字或者下划线）。等价于 <code>[A-Za-z0-9_]</code>。例如, <code>/\w/</code> 匹配 <code>&quot;apple,&quot;</code> 中的 <code>&#39;a&#39;，&quot;$5.28,&quot;</code>中的 <code>&#39;5&#39;</code> 和 <code>&quot;3D.&quot;</code> 中的 <code>&#39;3&#39;</code>。</td>
+</tr>
+<tr>
+<td><code>\W</code></td>
+<td>匹配一个非单字字符。等价于 <code>[^A-Za-z0-9_]</code>。例如,<code> /\W/</code> 或者 <code>/[^A-Za-z0-9_]/</code> 匹配 <code>&quot;50%.&quot;</code> 中的 <code>&#39;%&#39;</code>。</td>
+</tr>
+<tr>
+<td><code>\n</code></td>
+<td>在正则表达式中，它返回最后的第n个子捕获匹配的子字符串(捕获的数目以左括号计数)。比如 <code>/apple(,)\sorange\1/</code> 匹配<code>&quot;apple, orange, cherry, peach.&quot;</code>中的<code>&#39;apple, orange,&#39;</code> 。</td>
+</tr>
+<tr>
+<td><code>\0</code></td>
+<td>匹配<code> NULL（U+0000）</code>字符， 不要在这后面跟其它小数，因为 <code>\0&lt;digits&gt;</code> 是一个八进制转义序列。</td>
+</tr>
+<tr>
+<td><code>\xhh</code></td>
+<td>匹配一个两位十六进制数<code>（\x00-\xFF）</code>表示的字符。</td>
+</tr>
+<tr>
+<td><code>\uhhhh</code></td>
+<td>匹配一个四位十六进制数表示的 <code>UTF-16</code> 代码单元。</td>
+</tr>
+<tr>
+<td><code>\u&#123;hhhh&#125;或\u&#123;hhhhh&#125;</code></td>
+<td>（仅当设置了u标志时）匹配一个十六进制数表示的 <code>Unicode</code> 字符。</td>
+</tr>
+</tbody></table>
+<hr/>
+
+
+
+
+<table>
+<thead>
+<tr>
+<th>表达式</th>
+<th>可匹配</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>\r, \n</code></td>
+<td>代表回车和换行符</td>
+</tr>
+<tr>
+<td>\t</td>
+<td>制表符</td>
+</tr>
+<tr>
+<td><code>\\</code></td>
+<td>代表 <code>&quot;\&quot;</code> 本身</td>
+</tr>
+</tbody></table>
+
+
+      <div>
+        
+          <div>
+    
+        <div style="text-align:center;color: #636363;font-size:14px;letter-spacing: 10px">This article is over<i class="fa fa-bell"></i>thank you for reading</div>
+    
+</div>
+        
+      </div>
+    </div>
+
+    
+    
+    
+      
+
+        
+
+<div>
+<ul class="post-copyright">
+  <li class="post-copyright-author">
+    <strong>Post author:  </strong>JIN Mao
+  </li>
+  <li class="post-copyright-link">
+    <strong>Post link: </strong>
+    <a href="https://smile1231.github.io/posts/2f57a694/" title="正则表达式">https://smile1231.github.io/posts/2f57a694/</a>
+  </li>
+  <li class="post-copyright-license">
+    <strong>Copyright Notice:  </strong>All articles in this blog are licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/en" rel="noopener" target="_blank"><i class="fab fa-fw fa-creative-commons"></i>BY-NC-SA</a> unless stating additionally.
+  </li>
+</ul>
+</div>
+
+
+      <footer class="post-footer">
+          
+          <div class="post-tags">
+              <a href="/tags/%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F/" rel="tag"><i class="fa fa-tag"></i> 正则表达式</a>
+          </div>
+
+        
+  <div class="post-widgets">
+    <div class="wp_rating">
+      <div id="wpac-rating"></div>
+    </div>
+  </div>
+
+
+        
+    <div class="post-nav">
+      <div class="post-nav-item">
+    <a href="/posts/f976ebe7/" rel="prev" title="SpringMvc中标准的后端接口格式">
+      <i class="fa fa-chevron-left"></i> SpringMvc中标准的后端接口格式
+    </a></div>
+      <div class="post-nav-item">
+    <a href="/posts/ff8068c0/" rel="next" title="快速排序">
+      快速排序 <i class="fa fa-chevron-right"></i>
+    </a></div>
+    </div>
+      </footer>
+    
+  </article>
+  
+  
+  
+
+
+
+          </div>
+          
+    <div class="comments" id="valine-comments"></div>
+
+<script>
+  window.addEventListener('tabs:register', () => {
+    let { activeClass } = CONFIG.comments;
+    if (CONFIG.comments.storage) {
+      activeClass = localStorage.getItem('comments_active') || activeClass;
+    }
+    if (activeClass) {
+      let activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
+      if (activeTab) {
+        activeTab.click();
+      }
+    }
+  });
+  if (CONFIG.comments.storage) {
+    window.addEventListener('tabs:click', event => {
+      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
+      let commentClass = event.target.classList[1];
+      localStorage.setItem('comments_active', commentClass);
+    });
+  }
+</script>
+
+        </div>
+          
+  
+  <div class="toggle sidebar-toggle">
+    <span class="toggle-line toggle-line-first"></span>
+    <span class="toggle-line toggle-line-middle"></span>
+    <span class="toggle-line toggle-line-last"></span>
+  </div>
+
+  <aside class="sidebar">
+    <div class="sidebar-inner">
+    
+    
+    <!-- 霓虹灯时钟 -->
+    <div>
+    <svg style="height: 60px;">
+        <text id="time" text-anchor="middle" x="36%" y="80%" class="words words-1"></text>
+        <text id="time" text-anchor="middle" x="36%" y="80%" class="words words-2"></text>
+        <text id="time" text-anchor="middle" x="36%" y="80%" class="words words-3"></text>
+        <text id="time" text-anchor="middle" x="36%" y="80%" class="words words-4"></text>
+    </svg>
+</div>
+
+<script>
+function showtime(){
+    var noatime = new Date();
+    var h = noatime.getHours(),
+        m = noatime.getMinutes(),
+        s = noatime.getSeconds();
+    h=checktime(h);
+    m=checktime(m);
+    s=checktime(s);
+  return h+":"+m+":"+s;
+}
+
+function checktime(x){
+  if(x<10){
+    x="0"+x;
+  }
+  return x;
+}
+
+var div1=document.getElementsByTagName("text");
+setInterval(function(){
+  for (var i in div1){
+      div1[i].innerHTML=showtime();
+  }
+},1000);
+</script>
+
+<style>
+.words{
+    font-size: 50px;
+    font-weight: bold;
+    text-transform: uppercase;
+    fill: none;
+    stroke-width: 3px;
+    stroke-dasharray: 35,125;
+    animation-name: drawing;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+.words-1{
+    stroke: deepskyblue;
+    text-shadow: 0 0 15px deepskyblue;
+    animation-delay: -1.5s;
+}
+.words-2{
+    stroke: lightseagreen;
+    text-shadow: 0 0 15px lightseagreen;
+    animation-delay: -3s;
+}
+.words-3{
+    stroke: orange;
+    text-shadow: 0 0 15px orange;
+    animation-delay: -4.5s;
+}
+.words-4{
+    stroke: purple;
+    text-shadow: 0 0 15px purple;
+    animation-delay: -6s;
+}
+@keyframes drawing {
+    100%{
+        stroke-dashoffset: -160
+    }
+}
+</style>
+
+    
+
+        <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=86 src="//music.163.com/outchain/player?type=2&id=1489346184&auto=1&height=66"></iframe>
+
+      <ul class="sidebar-nav motion-element">
+        <li class="sidebar-nav-toc">
+          Table of Contents
+        </li>
+        <li class="sidebar-nav-overview">
+          Overview
+        </li>
+      </ul>
+
+      <!--noindex-->
+      <div class="post-toc-wrap sidebar-panel">
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F%E4%B8%AD%E7%9A%84%E7%89%B9%E6%AE%8A%E5%AD%97%E7%AC%A6"><span class="nav-number">1.</span> <span class="nav-text">正则表达式中的特殊字符</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F%E4%B8%AD%E7%9A%84%E7%89%B9%E6%AE%8A%E5%AD%97%E7%AC%A6%EF%BC%88%F0%9F%93%96%E8%A1%A8%E7%A4%BA-%EF%BC%89"><span class="nav-number">1.1.</span> <span class="nav-text">正则表达式中的特殊字符（📖表示 |）</span></a></li></ol></li></ol></div>
+      </div>
+      <!--/noindex-->
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image" alt="JIN Mao"
+      src="/images/avatar.png">
+  <p class="site-author-name" itemprop="name">JIN Mao</p>
+  <div class="site-description" itemprop="description"></div>
+</div>
+<div class="site-state-wrap motion-element">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/archives/">
+        
+          <span class="site-state-item-count">124</span>
+          <span class="site-state-item-name">posts</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+            <a href="/categories/">
+          
+        <span class="site-state-item-count">69</span>
+        <span class="site-state-item-name">categories</span></a>
+      </div>
+      <div class="site-state-item site-state-tags">
+            <a href="/tags/">
+          
+        <span class="site-state-item-count">91</span>
+        <span class="site-state-item-name">tags</span></a>
+      </div>
+  </nav>
+</div>
+
+
+
+      </div>
+
+  
+
+    </div>
+
+
+  </aside>
+  <div id="sidebar-dimmer"></div>
+
+
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        
+
+        
+
+<div class="copyright">
+  
+  &copy; 
+  <span itemprop="copyrightYear">2022</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">JIN Mao</span>
+</div>
+  <!--添加运行时间-->
+  <span id="sitetime"></span>
+  <script language=javascript>
+    function siteTime(){
+      window.setTimeout("siteTime()", 1000);
+      var seconds = 1000;
+      var minutes = seconds * 60;
+      var hours = minutes * 60;
+      var days = hours * 24;
+      var years = days * 365;
+      var today = new Date();
+      var todayYear = today.getFullYear();
+      var todayMonth = today.getMonth()+1;
+      var todayDate = today.getDate();
+      var todayHour = today.getHours();
+      var todayMinute = today.getMinutes();
+      var todaySecond = today.getSeconds();
+      /* 
+        Date.UTC() -- 返回date对象距世界标准时间(UTC)1970年1月1日午夜之间的毫秒数(时间戳)
+        year - 作为date对象的年份，为4位年份值
+        month - 0-11之间的整数，做为date对象的月份
+        day - 1-31之间的整数，做为date对象的天数
+        hours - 0(午夜24点)-23之间的整数，做为date对象的小时数
+        minutes - 0-59之间的整数，做为date对象的分钟数
+        seconds - 0-59之间的整数，做为date对象的秒数
+        microseconds - 0-999之间的整数，做为date对象的毫秒数
+      */
+      var t1 = Date.UTC(2021,11,11,00,00,00); //北京时间2018-2-13 00:00:00
+      var t2 = Date.UTC(todayYear,todayMonth,todayDate,todayHour,todayMinute,todaySecond);
+      var diff = t2-t1;
+      var diffYears = Math.floor(diff/years);
+      var diffDays = Math.floor((diff/days)-diffYears*365);
+      var diffHours = Math.floor((diff-(diffYears*365+diffDays)*days)/hours);
+      var diffMinutes = Math.floor((diff-(diffYears*365+diffDays)*days-diffHours*hours)/minutes);
+      var diffSeconds = Math.floor((diff-(diffYears*365+diffDays)*days-diffHours*hours-diffMinutes*minutes)/seconds);
+      document.getElementById("sitetime").innerHTML=" This blog is up and running "+/*diffYears+" Year "+*/diffDays+" Days "+diffHours+" Hours "+diffMinutes+" Minutes "+diffSeconds+" Seconds";
+    }
+    siteTime();
+  </script>
+  <!--// 添加运行时间-->
+
+
+<!--
+  <div class="powered-by">Powered by <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> & <a href="https://pisces.theme-next.org/" class="theme-link" rel="noopener" target="_blank">NexT.Pisces</a>
+  </div>
+-->
+
+
+        
+<div class="busuanzi-count">
+  <script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+
+  <span class="site-uv" title="Total Visitors">
+    My <span id="busuanzi_value_site_uv"></span>th Friend, 
+  </span>
+
+  <span class="site-pv" title="Total Views">
+    After  <span id="busuanzi_value_site_pv"></span> times of looking back, I met you 。
+  </span>
+  <!--
+    <span class="post-meta-item" id="busuanzi_container_site_uv" >
+      <span class="post-meta-item-icon">
+        <i class="fa fa-user"></i>
+      </span>
+      <span class="site-uv" title="Total Visitors">
+        <span id="busuanzi_value_site_uv"></span>
+      </span>
+    </span>
+    <span class="post-meta-divider">|</span>
+    <span class="post-meta-item" id="busuanzi_container_site_pv">
+      <span class="post-meta-item-icon">
+        <i class="fa fa-eye"></i>
+      </span>
+      <span class="site-pv" title="Total Views">
+        <span id="busuanzi_value_site_pv"></span>
+      </span>
+    </span>-->
+</div>
+
+
+
+
+
+
+
+
+      </div>
+    </footer>
+  </div>
+
+  
+  <script src="/lib/anime.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/medium-zoom@1/dist/medium-zoom.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/lozad@1/dist/lozad.min.js"></script>
+  <script src="/lib/velocity/velocity.min.js"></script>
+  <script src="/lib/velocity/velocity.ui.min.js"></script>
+
+<script src="/js/utils.js"></script>
+
+<script src="/js/motion.js"></script>
+
+
+<script src="/js/schemes/pisces.js"></script>
+
+
+<script src="/js/next-boot.js"></script>
+
+<script src="/js/bookmark.js"></script>
+
+
+  <script defer src="/lib/three/three.min.js"></script>
+    <script defer src="/lib/three/canvas_lines.min.js"></script>
+
+
+  
+
+
+
+  <script>
+  if (CONFIG.page.isPost) {
+    wpac_init = window.wpac_init || [];
+    wpac_init.push({
+      widget: 'Rating',
+      id    : ,
+      el    : 'wpac-rating',
+      color : 'fc6423'
+    });
+    (function() {
+      if ('WIDGETPACK_LOADED' in window) return;
+      WIDGETPACK_LOADED = true;
+      var mc = document.createElement('script');
+      mc.type = 'text/javascript';
+      mc.async = true;
+      mc.src = '//embed.widgetpack.com/widget.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(mc, s.nextSibling);
+    })();
+  }
+  </script>
+
+  
+<script src="/js/local-search.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+
+<script>
+NexT.utils.loadComments(document.querySelector('#valine-comments'), () => {
+  NexT.utils.getScript('//unpkg.com/valine/dist/Valine.min.js', () => {
+    var GUEST = ['nick', 'mail', 'link'];
+    var guest = 'nick,mail,link';
+    guest = guest.split(',').filter(item => {
+      return GUEST.includes(item);
+    });
+    new Valine({
+      el         : '#valine-comments',
+      verify     : true,
+      notify     : true,
+      appId      : 'J2bQH6GquIhMurLQc9NYgXWJ-gzGzoHsz',
+      appKey     : 'mbmntmQLrVScI2O7gV6zBej5',
+      placeholder: "Just go go",
+      avatar     : 'mm',
+      meta       : guest,
+      pageSize   : '10' || 10,
+      visitor    : false,
+      lang       : 'en' || 'zh-cn',
+      path       : location.pathname,
+      recordIP   : true,
+      serverURLs : ''
+    });
+  }, window.Valine);
+});
+</script>
+
+
+  
+  <script type="text/javascript" src="/js/cursor/love.js"></script>
+
+
+
+  
+<script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"model":{"jsonPath":"/live2dw/assets/shizuku.model.json"},"display":{"position":"left","width":200,"height":400},"mobile":{"show":false},"log":false,"pluginJsPath":"lib/","pluginModelPath":"assets/","pluginRootPath":"live2dw/","tagMode":false});</script></body>
+</html>
