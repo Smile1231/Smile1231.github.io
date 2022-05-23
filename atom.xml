@@ -167,31 +167,6 @@
   </entry>
   
   <entry>
-    <title>some sap links</title>
-    <link href="https://smile1231.github.io/posts/9f1e6853/"/>
-    <id>https://smile1231.github.io/posts/9f1e6853/</id>
-    <published>2022-05-05T03:38:23.000Z</published>
-    <updated>2022-05-18T06:06:06.437Z</updated>
-    
-    <content type="html"><![CDATA[<p><a href="https://github.tools.sap/CPICACF/cf-us30-ica-iat/"> cf-us30-ica-iat </a></p><p><a href="https://cockpit.canary.scp.sapns2.us/cockpit/#/globalaccount/f573e8a6-301b-4e75-aa26-9e8e805353a4/subaccount"> BTP Link </a></p><p><a href="https://pages.github.tools.sap/IO-CLOUD/ica-docs/development/ica/custom-domain/"> INFRA process </a></p><p><a href="https://icaauthor-ns2.cfapps.canary.scp.sapns2.us/shell/ica.authoring"> NS2 authoring app </a>  <a href="https://icaauthor-iacd.cfapps.eu10.hana.ondemand.com/shell/ica.authoring"> eu10 </a></p><p><a href="https://pages.github.tools.sap/IO-CLOUD-REL-ENG/dev-guide/getting_started/getting_access/"> local destop to pull Pro </a></p><p><a href="https://github.tools.sap/IO-CLOUD/ia-ts-contents"> ia-ts-contents </a></p><p><a href="https://pages.github.tools.sap/agile/scrum-course/course-description.html"> Scrum course </a></p><p><a href="https://github.tools.sap/cloudfoundry/iacbox"> Iacbox - A Self-Contained DevOps Environment </a></p><p><a href="https://github.tools.sap/CPICACF"> landscape </a></p><p><a href="https://common.repositories.cloud.sap/ui/native/build.milestones/com/sap/it/spc/icaclientnode/"> repo – clientNode </a></p><blockquote><p><code>githubToken</code><br><code>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</code></p></blockquote><blockquote><p><code>JFrogToken</code><br><code>AKCp8mYoWpf7cpTkXiyXuHq6TFxVng1HnkAukttfSWPjpZ63GnRduzP6jSRL9XLUfu1VHa4r8</code></p></blockquote><p>TypeSystemId + VersionId + Revision ==&gt; Primary key</p><p>🆔： I568938</p><p>docker login iacbox.common.cdn.repositories.cloud.sap -u “i568938” -p “AKCp8mYoWpf7cpTkXiyXuHq6TFxVng1HnkAukttfSWPjpZ63GnRduzP6jSRL9XLUfu1VHa4r8”</p><blockquote><p>devOps Env </p></blockquote><p><a href="https://github.tools.sap/cloudfoundry/iacbox"> wiki </a></p><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">git clone --recursive https://github.tools.sap/CPICACF/cf-us30-ica-iat</span><br><span class="line"></span><br><span class="line">iacbox -iv=iacbox.common.cdn.repositories.cloud.sap/iacbox2:v530</span><br><span class="line"></span><br><span class="line">iac state pull</span><br><span class="line"></span><br><span class="line">lscrypt unseal</span><br><span class="line"></span><br><span class="line">Master-Password:  2020IntegrationAdvisorHeidelberg!</span><br><span class="line"></span><br><span class="line">iac init-config -p product-cf-ica --secure-data -d env_setup -f    (subscribe)</span><br><span class="line"></span><br><span class="line">iac action create_manifest -d icaautoimport   (ctx.yml file)</span><br><span class="line"></span><br><span class="line">iac action deploy -d icaautoimport</span><br><span class="line"><span class="meta"></span></span><br><span class="line"><span class="meta"></span></span><br><span class="line"><span class="meta">#</span><span class="bash"><span class="comment">####################################################################</span></span></span><br><span class="line"><span class="meta"></span></span><br><span class="line"><span class="meta">#</span><span class="bash"> common</span>  </span><br><span class="line"></span><br><span class="line">iac init-config -p product-cf-ica --secure-data -d env_setup -f  #初始化一个component </span><br><span class="line"></span><br><span class="line">iac action deploy -d env_setup</span><br><span class="line"></span><br><span class="line">iac -d icaworkspacenode lifecycle deploy --skip-state-update #一个完整的命令，包含所有的步骤</span><br><span class="line"></span><br><span class="line">curl &#x27;http://localhost:8080/api/v1/cli?arch=amd64&amp;platform=linux&#x27; -o fly &amp;&amp; chmod +x ./fly &amp;&amp; mv ./fly /usr/local/bin/</span><br><span class="line"></span><br><span class="line">sudo ln -s /usr/local/bin/fly /usr/bin/fly</span><br><span class="line"></span><br><span class="line">iacbox -iv=iacbox.common.cdn.repositories.cloud.sap/iacbox2:v391</span><br><span class="line"><span class="meta"></span></span><br><span class="line"><span class="meta">#</span><span class="bash"> because creadentials file can is not visible , we must use this script</span> </span><br><span class="line">lscrypt edit -d ianode credentials.yml </span><br><span class="line"></span><br><span class="line">lscrypt read -d icaworkspacenode credentials.yml</span><br><span class="line"><span class="meta"></span></span><br><span class="line"><span class="meta">#</span><span class="bash"><span class="comment">####################################################################</span></span></span><br><span class="line"><span class="meta">#</span><span class="bash"> two procedure : iac push and git push</span></span><br><span class="line"><span class="meta">#</span><span class="bash"> push code to cf-us30</span></span><br><span class="line">iac state</span><br><span class="line">iac state status</span><br><span class="line"><span class="meta">#</span><span class="bash"> push to state branch</span></span><br><span class="line">iac state push</span><br><span class="line"><span class="meta">#</span><span class="bash"> the next produre is git push.so ..</span></span><br><span class="line"><span class="meta">#</span><span class="bash"><span class="comment">####################################################################</span></span></span><br><span class="line"></span><br></pre></td></tr></table></figure><p>credentials:<br>  api:<br>    apitoken: Z5R1nVh4Sca0YDNOrdlHE<br>  cflogin:<br>    email: <a href="mailto:&#83;&#x41;&#80;&#x5f;&#x53;&#x43;&#80;&#95;&#x43;&#x46;&#x5f;&#x49;&#67;&#65;&#95;&#83;&#69;&#84;&#x55;&#x50;&#95;&#80;&#x52;&#x4f;&#68;&#x40;&#x53;&#x41;&#80;&#46;&#67;&#79;&#77;">&#83;&#x41;&#80;&#x5f;&#x53;&#x43;&#80;&#95;&#x43;&#x46;&#x5f;&#x49;&#67;&#65;&#95;&#83;&#69;&#84;&#x55;&#x50;&#95;&#80;&#x52;&#x4f;&#68;&#x40;&#x53;&#x41;&#80;&#46;&#67;&#79;&#77;</a><br>    password: 08IntegrationAdvisorWalldorf!<br>    user: P2002213338<br>  nexus:<br>    basic:<br>      name: cpiproduser<br>      password: AKCp8kqCFKc5w75bF2C4Dvfc5qGpicKravMR7dtkv1TyyhQ1xUEZXHWYSHw3my49Wauz7FHMh</p><p><a href="https://password.wdf.sap.corp/passvault/index.html"> <code>SAP PassVault</code></a></p>]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;p&gt;&lt;a href=&quot;https://github.tools.sap/CPICACF/cf-us30-ica-iat/&quot;&gt; cf-us30-ica-iat &lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href=&quot;https://cockpit.canary.scp.sapns2.us/co</summary>
-      
-    
-    
-    
-    <category term="SAP" scheme="https://smile1231.github.io/categories/SAP/"/>
-    
-    
-    <category term="SAP" scheme="https://smile1231.github.io/tags/SAP/"/>
-    
-  </entry>
-  
-  <entry>
     <title>CEST与北京时间转换表</title>
     <link href="https://smile1231.github.io/posts/ef55dc85/"/>
     <id>https://smile1231.github.io/posts/ef55dc85/</id>
@@ -340,9 +315,9 @@
     
     
     
-    <category term="数据结构" scheme="https://smile1231.github.io/tags/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/"/>
-    
     <category term="Java 面试" scheme="https://smile1231.github.io/tags/Java-%E9%9D%A2%E8%AF%95/"/>
+    
+    <category term="数据结构" scheme="https://smile1231.github.io/tags/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/"/>
     
     <category term="阻塞队列" scheme="https://smile1231.github.io/tags/%E9%98%BB%E5%A1%9E%E9%98%9F%E5%88%97/"/>
     
@@ -496,6 +471,38 @@
     <category term="算法" scheme="https://smile1231.github.io/tags/%E7%AE%97%E6%B3%95/"/>
     
     <category term="堆排序" scheme="https://smile1231.github.io/tags/%E5%A0%86%E6%8E%92%E5%BA%8F/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>选择排序</title>
+    <link href="https://smile1231.github.io/posts/43d00a99/"/>
+    <id>https://smile1231.github.io/posts/43d00a99/</id>
+    <published>2022-03-12T13:45:07.000Z</published>
+    <updated>2022-03-12T13:57:07.134Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="选择排序（不稳定）ON2"><a href="#选择排序（不稳定）ON2" class="headerlink" title="选择排序（不稳定）ON2"></a>选择排序（不稳定）ON2</h2><p>从算法逻辑上看，选择排序是一种简单直观的排序算法，在简单选择排序过程中，所需移动记录的次数比较少。</p><h3 id="1、基本思想"><a href="#1、基本思想" class="headerlink" title="1、基本思想"></a>1、基本思想</h3><p>选择排序的基本思想：比较 + 交换。</p><p>在未排序序列中找到最小（大）元素，存放到未排序序列的起始位置。在所有的完全依靠交换去移动元素的排序方法中，选择排序属于非常好的一种。</p><h3 id="2、算法描述"><a href="#2、算法描述" class="headerlink" title="2、算法描述"></a>2、算法描述</h3><p>①. 从待排序序列中，找到关键字最小的元素；<br>②. 如果最小元素不是待排序序列的第一个元素，将其和第一个元素互换；<br>③. 从余下的 N - 1 个元素中，找出关键字最小的元素，重复①、②步，直到排序结束。</p><h3 id="3、代码实现"><a href="#3、代码实现" class="headerlink" title="3、代码实现"></a>3、代码实现</h3><p>选择排序比较简单，以下是我自己的实现，跟官方版差不多，所以完全可以参考。</p><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">selectionSort</span><span class="params">(<span class="keyword">int</span>[] arr)</span></span>&#123;</span><br><span class="line">    <span class="keyword">for</span>(<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; arr.length-<span class="number">1</span>; i++)&#123;</span><br><span class="line">        <span class="keyword">int</span> min = i;</span><br><span class="line">        <span class="keyword">for</span>(<span class="keyword">int</span> j = i+<span class="number">1</span>; j &lt; arr.length; j++)&#123;    <span class="comment">//选出之后待排序中值最小的位置</span></span><br><span class="line">            <span class="keyword">if</span>(arr[j] &lt; arr[min])&#123;</span><br><span class="line">                min = j;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">if</span>(min != i)&#123;</span><br><span class="line">            <span class="keyword">int</span> temp = arr[min];      <span class="comment">//交换操作</span></span><br><span class="line">            arr[min] = arr[i];</span><br><span class="line">            arr[i] = temp;</span><br><span class="line">            System.out.println(<span class="string">&quot;Sorting:  &quot;</span> + Arrays.toString(arr));</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><p><a href="https://itimetraveler.github.io/2017/07/18/%E5%85%AB%E5%A4%A7%E6%8E%92%E5%BA%8F%E7%AE%97%E6%B3%95%E6%80%BB%E7%BB%93%E4%B8%8Ejava%E5%AE%9E%E7%8E%B0/">链接</a></p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h2 id=&quot;选择排序（不稳定）ON2&quot;&gt;&lt;a href=&quot;#选择排序（不稳定）ON2&quot; class=&quot;headerlink&quot; title=&quot;选择排序（不稳定）ON2&quot;&gt;&lt;/a&gt;选择排序（不稳定）ON2&lt;/h2&gt;&lt;p&gt;从算法逻辑上看，选择排序是一种简单直观的排序算法，在简单选择</summary>
+      
+    
+    
+    
+    <category term="Java面试" scheme="https://smile1231.github.io/categories/Java%E9%9D%A2%E8%AF%95/"/>
+    
+    <category term="选择排序" scheme="https://smile1231.github.io/categories/Java%E9%9D%A2%E8%AF%95/%E9%80%89%E6%8B%A9%E6%8E%92%E5%BA%8F/"/>
+    
+    <category term="算法" scheme="https://smile1231.github.io/categories/Java%E9%9D%A2%E8%AF%95/%E9%80%89%E6%8B%A9%E6%8E%92%E5%BA%8F/%E7%AE%97%E6%B3%95/"/>
+    
+    
+    <category term="Java面试" scheme="https://smile1231.github.io/tags/Java%E9%9D%A2%E8%AF%95/"/>
+    
+    <category term="算法" scheme="https://smile1231.github.io/tags/%E7%AE%97%E6%B3%95/"/>
+    
+    <category term="选择排序" scheme="https://smile1231.github.io/tags/%E9%80%89%E6%8B%A9%E6%8E%92%E5%BA%8F/"/>
     
   </entry>
   
