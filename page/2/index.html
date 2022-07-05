@@ -135,17 +135,17 @@
   </li>
         <li class="menu-item menu-item-tags">
 
-    <a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>Tags<span class="badge">91</span></a>
+    <a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>Tags<span class="badge">97</span></a>
 
   </li>
         <li class="menu-item menu-item-categories">
 
-    <a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>Categories<span class="badge">69</span></a>
+    <a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>Categories<span class="badge">70</span></a>
 
   </li>
         <li class="menu-item menu-item-archives">
 
-    <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>Archives<span class="badge">123</span></a>
+    <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>Archives<span class="badge">133</span></a>
 
   </li>
       <li class="menu-item menu-item-search">
@@ -212,7 +212,7 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
-    <link itemprop="mainEntityOfPage" href="https://smile1231.github.io/posts/a1926332/">
+    <link itemprop="mainEntityOfPage" href="https://smile1231.github.io/posts/f35c5140/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/avatar.png">
@@ -226,7 +226,7 @@
       <header class="post-header">
         <h2 class="post-title" itemprop="name headline">
           
-            <a href="/posts/a1926332/" class="post-title-link" itemprop="url">Springboot+Vue二进制文件传输</a>
+            <a href="/posts/f35c5140/" class="post-title-link" itemprop="url">JAVA-jar包运行及日志输出</a>
         </h2>
 
         <div class="post-meta">
@@ -238,7 +238,7 @@
               <span class="post-meta-item-text">Posted on</span>
               
 
-              <time title="Created: 2022-05-21 21:42:10 / Modified: 23:15:48" itemprop="dateCreated datePublished" datetime="2022-05-21T21:42:10+08:00">2022-05-21</time>
+              <time title="Created: 2022-07-05 22:01:26 / Modified: 23:40:39" itemprop="dateCreated datePublished" datetime="2022-07-05T22:01:26+08:00">2022-07-05</time>
             </span>
 
           
@@ -250,8 +250,8 @@
       </span>
       <span class="post-meta-item-text">Valine: </span>
     
-    <a title="valine" href="/posts/a1926332/#valine-comments" itemprop="discussionUrl">
-      <span class="post-comments-count valine-comment-count" data-xid="/posts/a1926332/" itemprop="commentCount"></span>
+    <a title="valine" href="/posts/f35c5140/#valine-comments" itemprop="discussionUrl">
+      <span class="post-comments-count valine-comment-count" data-xid="/posts/f35c5140/" itemprop="commentCount"></span>
     </a>
   </span>
   
@@ -266,11 +266,13 @@
     <div class="post-body" itemprop="articleBody">
 
       
-          <p>最近用到了<code>springboot</code>项目返回二进制流，话不多说，代码贴上:</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">@PostMapping(value = &quot;/file/&#123;fileName&#125;&quot;)</span></span><br><span class="line"><span class="function"><span class="keyword">public</span> ResponseEntity&lt;FileSystemResource&gt; <span class="title">getFile</span><span class="params">(<span class="meta">@PathVariable(&quot;fileName&quot;)</span> String fileName)</span> <span class="keyword">throws</span> FileNotFoundException </span>&#123;</span><br><span class="line">	File file = <span class="keyword">new</span> File(filePath, fileName);</span><br><span class="line">	<span class="keyword">if</span> (file.exists()) &#123;</span><br><span class="line">		<span class="keyword">return</span> export(file);</span><br><span class="line">	&#125;</span><br><span class="line">	System.out.println(file);</span><br><span class="line">	<span class="keyword">return</span> <span class="keyword">null</span>;</span><br><span class="line">&#125;</span><br><span class="line"> </span><br><span class="line"><span class="function"><span class="keyword">public</span> ResponseEntity&lt;FileSystemResource&gt; <span class="title">export</span><span class="params">(File file)</span> </span>&#123;</span><br><span class="line">	<span class="keyword">if</span> (file == <span class="keyword">null</span>) &#123;</span><br><span class="line">		<span class="keyword">return</span> <span class="keyword">null</span>;</span><br><span class="line">	&#125;</span><br><span class="line">	HttpHeaders headers = <span class="keyword">new</span> HttpHeaders();</span><br><span class="line">	headers.add(<span class="string">&quot;Cache-Control&quot;</span>, <span class="string">&quot;no-cache, no-store, must-revalidate&quot;</span>);</span><br><span class="line">	headers.add(<span class="string">&quot;Content-Disposition&quot;</span>, <span class="string">&quot;attachment; filename=&quot;</span> + file.getName());</span><br><span class="line">	headers.add(<span class="string">&quot;Pragma&quot;</span>, <span class="string">&quot;no-cache&quot;</span>);</span><br><span class="line">	headers.add(<span class="string">&quot;Expires&quot;</span>, <span class="string">&quot;0&quot;</span>);</span><br><span class="line">	headers.add(<span class="string">&quot;Last-Modified&quot;</span>, <span class="keyword">new</span> Date().toString());</span><br><span class="line">	headers.add(<span class="string">&quot;ETag&quot;</span>, String.valueOf(System.currentTimeMillis()));</span><br><span class="line">	<span class="keyword">return</span> ResponseEntity.ok()</span><br><span class="line">                        .headers(headers)</span><br><span class="line">                        .contentLength(file.length())</span><br><span class="line">                        .contentType(MediaType.parseMediaType(<span class="string">&quot;application/octet-stream&quot;</span>))</span><br><span class="line">                        .body(<span class="keyword">new</span> FileSystemResource(file));</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+          <p><a target="_blank" rel="noopener" href="https://www.cnblogs.com/lsh-admin/p/15345176.html">原文地址</a></p>
+<p>一般情况下运行jar包，当前是可运行的jar包，直接命令</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">java -jar common.jar </span><br></pre></td></tr></table></figure>
+<p>按下<code>ctrl+C</code> ，关闭当前<code>ssh</code>或者直接关闭窗口，当前程序都会退出。</p>
           <!--noindex-->
             <div class="post-button">
-              <a class="btn" href="/posts/a1926332/#more" rel="contents">
+              <a class="btn" href="/posts/f35c5140/#more" rel="contents">
                 Read more &raquo;
               </a>
             </div>
@@ -300,7 +302,7 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
-    <link itemprop="mainEntityOfPage" href="https://smile1231.github.io/posts/7733848a/">
+    <link itemprop="mainEntityOfPage" href="https://smile1231.github.io/posts/823298d2/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/avatar.png">
@@ -314,103 +316,7 @@
       <header class="post-header">
         <h2 class="post-title" itemprop="name headline">
           
-            <a href="/posts/7733848a/" class="post-title-link" itemprop="url">文件上传前端小结</a>
-        </h2>
-
-        <div class="post-meta">
-          
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">Posted on</span>
-              
-
-              <time title="Created: 2022-05-21 21:24:07 / Modified: 23:15:48" itemprop="dateCreated datePublished" datetime="2022-05-21T21:24:07+08:00">2022-05-21</time>
-            </span>
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-folder"></i>
-              </span>
-              <span class="post-meta-item-text">In</span>
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/%E5%89%8D%E7%AB%AF/" itemprop="url" rel="index"><span itemprop="name">前端</span></a>
-                </span>
-            </span>
-
-          
-  
-  <span class="post-meta-item">
-    
-      <span class="post-meta-item-icon">
-        <i class="far fa-comment"></i>
-      </span>
-      <span class="post-meta-item-text">Valine: </span>
-    
-    <a title="valine" href="/posts/7733848a/#valine-comments" itemprop="discussionUrl">
-      <span class="post-comments-count valine-comment-count" data-xid="/posts/7733848a/" itemprop="commentCount"></span>
-    </a>
-  </span>
-  
-  
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <h2 id="页面a标签-点击不跳转"><a href="#页面a标签-点击不跳转" class="headerlink" title="页面a标签 点击不跳转"></a>页面<code>a</code>标签 点击不跳转</h2><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">href=&quot;javascript:viod(0)&quot;</span><br><span class="line"></span><br><span class="line">href=&quot;javascript:;&quot;</span><br></pre></td></tr></table></figure>
-          <!--noindex-->
-            <div class="post-button">
-              <a class="btn" href="/posts/7733848a/#more" rel="contents">
-                Read more &raquo;
-              </a>
-            </div>
-          <!--/noindex-->
-        
-      
-
-      <div>
-        
-      </div>
-    </div>
-
-    
-    
-    
-      
-
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
-    <link itemprop="mainEntityOfPage" href="https://smile1231.github.io/posts/55b095e0/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.png">
-      <meta itemprop="name" content="JIN Mao">
-      <meta itemprop="description" content="">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="JIN MAO 's Blog">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/posts/55b095e0/" class="post-title-link" itemprop="url">The learning of Shell</a>
+            <a href="/posts/823298d2/" class="post-title-link" itemprop="url">VsCode 如何Debug Shell</a>
         </h2>
 
         <div class="post-meta">
@@ -421,24 +327,15 @@
               </span>
               <span class="post-meta-item-text">Posted on</span>
 
-              <time title="Created: 2022-05-10 23:35:17" itemprop="dateCreated datePublished" datetime="2022-05-10T23:35:17+08:00">2022-05-10</time>
+              <time title="Created: 2022-07-01 10:58:13" itemprop="dateCreated datePublished" datetime="2022-07-01T10:58:13+08:00">2022-07-01</time>
             </span>
               <span class="post-meta-item">
                 <span class="post-meta-item-icon">
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">Edited on</span>
-                <time title="Modified: 2022-05-21 23:14:51" itemprop="dateModified" datetime="2022-05-21T23:14:51+08:00">2022-05-21</time>
+                <time title="Modified: 2022-07-02 11:05:50" itemprop="dateModified" datetime="2022-07-02T11:05:50+08:00">2022-07-02</time>
               </span>
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-folder"></i>
-              </span>
-              <span class="post-meta-item-text">In</span>
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/Shell/" itemprop="url" rel="index"><span itemprop="name">Shell</span></a>
-                </span>
-            </span>
 
           
   
@@ -449,8 +346,8 @@
       </span>
       <span class="post-meta-item-text">Valine: </span>
     
-    <a title="valine" href="/posts/55b095e0/#valine-comments" itemprop="discussionUrl">
-      <span class="post-comments-count valine-comment-count" data-xid="/posts/55b095e0/" itemprop="commentCount"></span>
+    <a title="valine" href="/posts/823298d2/#valine-comments" itemprop="discussionUrl">
+      <span class="post-comments-count valine-comment-count" data-xid="/posts/823298d2/" itemprop="commentCount"></span>
     </a>
   </span>
   
@@ -465,12 +362,10 @@
     <div class="post-body" itemprop="articleBody">
 
       
-          <p>Nowdays , i hava a task about how to use shell script ,so it is time to learn shell .</p>
-<p><a target="_blank" rel="noopener" href="https://www.cnblogs.com/jingmoxukong/p/7867397.html"> shell  入门 </a></p>
-<p><a target="_blank" rel="noopener" href="http://tool.rbtree.cn/"> 好用的工具网站 </a></p>
+          <h2 id="1-下载Vscode插件-Bash-Debug"><a href="#1-下载Vscode插件-Bash-Debug" class="headerlink" title="1. 下载Vscode插件 Bash Debug"></a>1. 下载<code>Vscode</code>插件 <code>Bash Debug</code></h2><img src="/posts/823298d2/2022-07-01-10-59-08.png" class="">
           <!--noindex-->
             <div class="post-button">
-              <a class="btn" href="/posts/55b095e0/#more" rel="contents">
+              <a class="btn" href="/posts/823298d2/#more" rel="contents">
                 Read more &raquo;
               </a>
             </div>
@@ -500,7 +395,7 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
-    <link itemprop="mainEntityOfPage" href="https://smile1231.github.io/posts/ef55dc85/">
+    <link itemprop="mainEntityOfPage" href="https://smile1231.github.io/posts/11faeb76/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/avatar.png">
@@ -514,103 +409,7 @@
       <header class="post-header">
         <h2 class="post-title" itemprop="name headline">
           
-            <a href="/posts/ef55dc85/" class="post-title-link" itemprop="url">CEST与北京时间转换表</a>
-        </h2>
-
-        <div class="post-meta">
-          
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">Posted on</span>
-              
-
-              <time title="Created: 2022-04-29 21:41:49 / Modified: 22:08:18" itemprop="dateCreated datePublished" datetime="2022-04-29T21:41:49+08:00">2022-04-29</time>
-            </span>
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-folder"></i>
-              </span>
-              <span class="post-meta-item-text">In</span>
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/SAP/" itemprop="url" rel="index"><span itemprop="name">SAP</span></a>
-                </span>
-            </span>
-
-          
-  
-  <span class="post-meta-item">
-    
-      <span class="post-meta-item-icon">
-        <i class="far fa-comment"></i>
-      </span>
-      <span class="post-meta-item-text">Valine: </span>
-    
-    <a title="valine" href="/posts/ef55dc85/#valine-comments" itemprop="discussionUrl">
-      <span class="post-comments-count valine-comment-count" data-xid="/posts/ef55dc85/" itemprop="commentCount"></span>
-    </a>
-  </span>
-  
-  
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <p><a target="_blank" rel="noopener" href="https://datetime360.com/cn/cet-beijing-time/">参考链接</a></p>
-          <!--noindex-->
-            <div class="post-button">
-              <a class="btn" href="/posts/ef55dc85/#more" rel="contents">
-                Read more &raquo;
-              </a>
-            </div>
-          <!--/noindex-->
-        
-      
-
-      <div>
-        
-      </div>
-    </div>
-
-    
-    
-    
-      
-
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
-    <link itemprop="mainEntityOfPage" href="https://smile1231.github.io/posts/96b6e8a1/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.png">
-      <meta itemprop="name" content="JIN Mao">
-      <meta itemprop="description" content="">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="JIN MAO 's Blog">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/posts/96b6e8a1/" class="post-title-link" itemprop="url">simple self introduction</a>
+            <a href="/posts/11faeb76/" class="post-title-link" itemprop="url">Docker指令以及部署</a>
         </h2>
 
         <div class="post-meta">
@@ -621,24 +420,15 @@
               </span>
               <span class="post-meta-item-text">Posted on</span>
 
-              <time title="Created: 2022-04-28 17:33:16" itemprop="dateCreated datePublished" datetime="2022-04-28T17:33:16+08:00">2022-04-28</time>
+              <time title="Created: 2022-06-30 21:30:40" itemprop="dateCreated datePublished" datetime="2022-06-30T21:30:40+08:00">2022-06-30</time>
             </span>
               <span class="post-meta-item">
                 <span class="post-meta-item-icon">
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">Edited on</span>
-                <time title="Modified: 2022-04-29 22:08:18" itemprop="dateModified" datetime="2022-04-29T22:08:18+08:00">2022-04-29</time>
+                <time title="Modified: 2022-07-02 13:39:15" itemprop="dateModified" datetime="2022-07-02T13:39:15+08:00">2022-07-02</time>
               </span>
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-folder"></i>
-              </span>
-              <span class="post-meta-item-text">In</span>
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/SAP/" itemprop="url" rel="index"><span itemprop="name">SAP</span></a>
-                </span>
-            </span>
 
           
   
@@ -649,8 +439,8 @@
       </span>
       <span class="post-meta-item-text">Valine: </span>
     
-    <a title="valine" href="/posts/96b6e8a1/#valine-comments" itemprop="discussionUrl">
-      <span class="post-comments-count valine-comment-count" data-xid="/posts/96b6e8a1/" itemprop="commentCount"></span>
+    <a title="valine" href="/posts/11faeb76/#valine-comments" itemprop="discussionUrl">
+      <span class="post-comments-count valine-comment-count" data-xid="/posts/11faeb76/" itemprop="commentCount"></span>
     </a>
   </span>
   
@@ -665,10 +455,205 @@
     <div class="post-body" itemprop="articleBody">
 
       
-          <p>哈哈，今天要当着印度的同事和德国的同事来介绍自己，初中作文来啦！</p>
+          <p>文档地址：<a target="_blank" rel="noopener" href="https://yeasy.gitbook.io/docker_practice/">https://yeasy.gitbook.io/docker_practice/</a></p>
+<p><a target="_blank" rel="noopener" href="https://hub.docker.com/">Docker hub</a></p>
+<p><a target="_blank" rel="noopener" href="https://docs.docker.com/engine/install/">Docker Install</a></p>
+<h2 id="列出所有镜像"><a href="#列出所有镜像" class="headerlink" title="列出所有镜像"></a>列出所有镜像</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">docker images</span><br></pre></td></tr></table></figure>
+
+<h2 id="查看运行的容器"><a href="#查看运行的容器" class="headerlink" title="查看运行的容器"></a>查看运行的容器</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">docker ps</span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>列出所有容器ID</p>
+</blockquote>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">docker ps -aq</span><br></pre></td></tr></table></figure>
           <!--noindex-->
             <div class="post-button">
-              <a class="btn" href="/posts/96b6e8a1/#more" rel="contents">
+              <a class="btn" href="/posts/11faeb76/#more" rel="contents">
+                Read more &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
+      
+
+      <div>
+        
+      </div>
+    </div>
+
+    
+    
+    
+      
+
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
+    <link itemprop="mainEntityOfPage" href="https://smile1231.github.io/posts/ba003691/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.png">
+      <meta itemprop="name" content="JIN Mao">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="JIN MAO 's Blog">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/posts/ba003691/" class="post-title-link" itemprop="url">Springboot工程项目.gitignore配置</a>
+        </h2>
+
+        <div class="post-meta">
+          
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">Posted on</span>
+
+              <time title="Created: 2022-06-30 08:57:45" itemprop="dateCreated datePublished" datetime="2022-06-30T08:57:45+08:00">2022-06-30</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">Edited on</span>
+                <time title="Modified: 2022-07-01 09:13:52" itemprop="dateModified" datetime="2022-07-01T09:13:52+08:00">2022-07-01</time>
+              </span>
+
+          
+  
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="far fa-comment"></i>
+      </span>
+      <span class="post-meta-item-text">Valine: </span>
+    
+    <a title="valine" href="/posts/ba003691/#valine-comments" itemprop="discussionUrl">
+      <span class="post-comments-count valine-comment-count" data-xid="/posts/ba003691/" itemprop="commentCount"></span>
+    </a>
+  </span>
+  
+  
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <img src="/posts/ba003691/2022-06-30-08-58-34.png" class="">
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/posts/ba003691/#more" rel="contents">
+                Read more &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
+      
+
+      <div>
+        
+      </div>
+    </div>
+
+    
+    
+    
+      
+
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
+    <link itemprop="mainEntityOfPage" href="https://smile1231.github.io/posts/d0edc1ed/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.png">
+      <meta itemprop="name" content="JIN Mao">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="JIN MAO 's Blog">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/posts/d0edc1ed/" class="post-title-link" itemprop="url">Linux常用命令</a>
+        </h2>
+
+        <div class="post-meta">
+          
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">Posted on</span>
+
+              <time title="Created: 2022-06-29 22:06:39" itemprop="dateCreated datePublished" datetime="2022-06-29T22:06:39+08:00">2022-06-29</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">Edited on</span>
+                <time title="Modified: 2022-07-02 17:28:33" itemprop="dateModified" datetime="2022-07-02T17:28:33+08:00">2022-07-02</time>
+              </span>
+
+          
+  
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="far fa-comment"></i>
+      </span>
+      <span class="post-meta-item-text">Valine: </span>
+    
+    <a title="valine" href="/posts/d0edc1ed/#valine-comments" itemprop="discussionUrl">
+      <span class="post-comments-count valine-comment-count" data-xid="/posts/d0edc1ed/" itemprop="commentCount"></span>
+    </a>
+  </span>
+  
+  
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h2 id="Linux查看空间大小的命令"><a href="#Linux查看空间大小的命令" class="headerlink" title="Linux查看空间大小的命令"></a><code>Linux</code>查看空间大小的命令</h2>
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/posts/d0edc1ed/#more" rel="contents">
                 Read more &raquo;
               </a>
             </div>
@@ -697,7 +682,7 @@
 
   
   <nav class="pagination">
-    <a class="extend prev" rel="prev" href="/"><i class="fa fa-angle-left" aria-label="Previous page"></i></a><a class="page-number" href="/">1</a><span class="page-number current">2</span><a class="page-number" href="/page/3/">3</a><a class="page-number" href="/page/4/">4</a><a class="page-number" href="/page/5/">5</a><span class="space">&hellip;</span><a class="page-number" href="/page/25/">25</a><a class="extend next" rel="next" href="/page/3/"><i class="fa fa-angle-right" aria-label="Next page"></i></a>
+    <a class="extend prev" rel="prev" href="/"><i class="fa fa-angle-left" aria-label="Previous page"></i></a><a class="page-number" href="/">1</a><span class="page-number current">2</span><a class="page-number" href="/page/3/">3</a><a class="page-number" href="/page/4/">4</a><a class="page-number" href="/page/5/">5</a><span class="space">&hellip;</span><a class="page-number" href="/page/27/">27</a><a class="extend next" rel="next" href="/page/3/"><i class="fa fa-angle-right" aria-label="Next page"></i></a>
   </nav>
 
 
@@ -818,8 +803,9 @@ setInterval(function(){
 </style>
 
     
-
-      <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=86 src="//music.163.com/outchain/player?type=2&id=1901069794&auto=1&height=66"></iframe>
+      <!-- 起风了 -->
+      <!-- <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=86 src="//music.163.com/outchain/player?type=2&id=1901069794&auto=1&height=66"></iframe> -->
+      <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=86 src="//music.163.com/outchain/player?type=2&id=1927119724&auto=1&height=66"></iframe>
 
       <ul class="sidebar-nav motion-element">
         <li class="sidebar-nav-toc">
@@ -847,20 +833,20 @@ setInterval(function(){
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">123</span>
+          <span class="site-state-item-count">133</span>
           <span class="site-state-item-name">posts</span>
         </a>
       </div>
       <div class="site-state-item site-state-categories">
             <a href="/categories/">
           
-        <span class="site-state-item-count">69</span>
+        <span class="site-state-item-count">70</span>
         <span class="site-state-item-name">categories</span></a>
       </div>
       <div class="site-state-item site-state-tags">
             <a href="/tags/">
           
-        <span class="site-state-item-count">91</span>
+        <span class="site-state-item-count">97</span>
         <span class="site-state-item-name">tags</span></a>
       </div>
   </nav>

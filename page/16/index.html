@@ -135,17 +135,17 @@
   </li>
         <li class="menu-item menu-item-tags">
 
-    <a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>Tags<span class="badge">91</span></a>
+    <a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>Tags<span class="badge">97</span></a>
 
   </li>
         <li class="menu-item menu-item-categories">
 
-    <a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>Categories<span class="badge">69</span></a>
+    <a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>Categories<span class="badge">70</span></a>
 
   </li>
         <li class="menu-item menu-item-archives">
 
-    <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>Archives<span class="badge">123</span></a>
+    <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>Archives<span class="badge">133</span></a>
 
   </li>
       <li class="menu-item menu-item-search">
@@ -212,7 +212,7 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
-    <link itemprop="mainEntityOfPage" href="https://smile1231.github.io/posts/610bdf07/">
+    <link itemprop="mainEntityOfPage" href="https://smile1231.github.io/posts/b1231c9f/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/avatar.png">
@@ -226,7 +226,7 @@
       <header class="post-header">
         <h2 class="post-title" itemprop="name headline">
           
-            <a href="/posts/610bdf07/" class="post-title-link" itemprop="url">IDEA快捷键</a>
+            <a href="/posts/b1231c9f/" class="post-title-link" itemprop="url">java stream中Collectors的用法</a>
         </h2>
 
         <div class="post-meta">
@@ -238,7 +238,7 @@
               <span class="post-meta-item-text">Posted on</span>
               
 
-              <time title="Created: 2022-02-13 21:36:41 / Modified: 22:11:25" itemprop="dateCreated datePublished" datetime="2022-02-13T21:36:41+08:00">2022-02-13</time>
+              <time title="Created: 2022-02-13 21:48:00 / Modified: 23:17:40" itemprop="dateCreated datePublished" datetime="2022-02-13T21:48:00+08:00">2022-02-13</time>
             </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -246,7 +246,11 @@
               </span>
               <span class="post-meta-item-text">In</span>
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/IDEA/" itemprop="url" rel="index"><span itemprop="name">IDEA</span></a>
+                  <a href="/categories/Java/" itemprop="url" rel="index"><span itemprop="name">Java</span></a>
+                </span>
+                  , 
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/Java/Stream/" itemprop="url" rel="index"><span itemprop="name">Stream</span></a>
                 </span>
             </span>
 
@@ -259,8 +263,8 @@
       </span>
       <span class="post-meta-item-text">Valine: </span>
     
-    <a title="valine" href="/posts/610bdf07/#valine-comments" itemprop="discussionUrl">
-      <span class="post-comments-count valine-comment-count" data-xid="/posts/610bdf07/" itemprop="commentCount"></span>
+    <a title="valine" href="/posts/b1231c9f/#valine-comments" itemprop="discussionUrl">
+      <span class="post-comments-count valine-comment-count" data-xid="/posts/b1231c9f/" itemprop="commentCount"></span>
     </a>
   </span>
   
@@ -275,10 +279,28 @@
     <div class="post-body" itemprop="articleBody">
 
       
-          <h1 id="IDEA快捷键"><a href="#IDEA快捷键" class="headerlink" title="IDEA快捷键"></a><code>IDEA</code>快捷键</h1><h2 id="Ctrl快捷键"><a href="#Ctrl快捷键" class="headerlink" title="Ctrl快捷键"></a><code>Ctrl</code>快捷键</h2>
+          <h1 id="java-stream中Collectors的用法"><a href="#java-stream中Collectors的用法" class="headerlink" title="java stream中Collectors的用法"></a><code>java stream</code>中<code>Collectors</code>的用法</h1><ul>
+<li><a href="#java-stream%E4%B8%ADcollectors%E7%9A%84%E7%94%A8%E6%B3%95"><code>java stream</code>中<code>Collectors</code>的用法</a><ul>
+<li><a href="#%E7%AE%80%E4%BB%8B"><span id="common">简介</span></a></li>
+<li><a href="#collectorstolist"><span id="toList"><code>Collectors.toList()</code></span></a></li>
+<li><a href="#collectorstoset"><span id="toSet"><code>Collectors.toSet()</code></span></a></li>
+<li><a href="#collectorstocollection"><span id="toColl"><code>Collectors.toCollection()</code></span></a></li>
+<li><a href="#collectorstomap"><span id="toMap"><code>Collectors.toMap()</code></span></a></li>
+<li><a href="#collectorscollectingandthen"><span id="toCollAndThen"><code>Collectors.collectingAndThen()</code></span></a></li>
+<li><a href="#collectorsjoining"><span id="join"><code>Collectors.joining()</code></span></a></li>
+<li><a href="#collectorscounting"><span id="count"><code>Collectors.counting()</code></span></a></li>
+<li><a href="#collectorssummarizingdoublelongint"><span id="sum"><code>Collectors.summarizingDouble/Long/Int()</code></span></a></li>
+<li><a href="#collectorsaveragingdoublelongint"><span id="average"><code>Collectors.averagingDouble/Long/Int()</code></span></a></li>
+<li><a href="#collectorssummingdoublelongint"><span id="summing"><code>Collectors.summingDouble/Long/Int()</code></span></a></li>
+<li><a href="#collectorsmaxbyminby"><span id="max"><code>Collectors.maxBy()/minBy()</code></span></a></li>
+<li><a href="#collectorsgroupingby"><span id="group"><code>Collectors.groupingBy()</code></span></a></li>
+<li><a href="#collectorspartitioningby"><span id="par"><code>Collectors.partitioningBy()</code></span></a></li>
+</ul>
+</li>
+</ul>
           <!--noindex-->
             <div class="post-button">
-              <a class="btn" href="/posts/610bdf07/#more" rel="contents">
+              <a class="btn" href="/posts/b1231c9f/#more" rel="contents">
                 Read more &raquo;
               </a>
             </div>
@@ -308,7 +330,7 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
-    <link itemprop="mainEntityOfPage" href="https://smile1231.github.io/posts/9dcbb5fa/">
+    <link itemprop="mainEntityOfPage" href="https://smile1231.github.io/posts/8b8fedea/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/avatar.png">
@@ -322,7 +344,7 @@
       <header class="post-header">
         <h2 class="post-title" itemprop="name headline">
           
-            <a href="/posts/9dcbb5fa/" class="post-title-link" itemprop="url">Corn表达式</a>
+            <a href="/posts/8b8fedea/" class="post-title-link" itemprop="url">Stream流的介绍</a>
         </h2>
 
         <div class="post-meta">
@@ -334,7 +356,7 @@
               <span class="post-meta-item-text">Posted on</span>
               
 
-              <time title="Created: 2022-02-13 21:35:47 / Modified: 22:09:17" itemprop="dateCreated datePublished" datetime="2022-02-13T21:35:47+08:00">2022-02-13</time>
+              <time title="Created: 2022-02-13 21:43:58 / Modified: 23:01:20" itemprop="dateCreated datePublished" datetime="2022-02-13T21:43:58+08:00">2022-02-13</time>
             </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -343,6 +365,10 @@
               <span class="post-meta-item-text">In</span>
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
                   <a href="/categories/Java/" itemprop="url" rel="index"><span itemprop="name">Java</span></a>
+                </span>
+                  , 
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/Java/Stream/" itemprop="url" rel="index"><span itemprop="name">Stream</span></a>
                 </span>
             </span>
 
@@ -355,8 +381,8 @@
       </span>
       <span class="post-meta-item-text">Valine: </span>
     
-    <a title="valine" href="/posts/9dcbb5fa/#valine-comments" itemprop="discussionUrl">
-      <span class="post-comments-count valine-comment-count" data-xid="/posts/9dcbb5fa/" itemprop="commentCount"></span>
+    <a title="valine" href="/posts/8b8fedea/#valine-comments" itemprop="discussionUrl">
+      <span class="post-comments-count valine-comment-count" data-xid="/posts/8b8fedea/" itemprop="commentCount"></span>
     </a>
   </span>
   
@@ -371,10 +397,14 @@
     <div class="post-body" itemprop="articleBody">
 
       
-          <h1 id="Corn表达式"><a href="#Corn表达式" class="headerlink" title="Corn表达式"></a><code>Corn</code>表达式</h1><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">一个cron表达式有至少6个（也可能7个）有空格分隔的时间元素。</span><br><span class="line">按顺序依次为</span><br><span class="line">秒（0~59）</span><br><span class="line">分钟（0~59）</span><br><span class="line">小时（0~23）</span><br><span class="line">天（月）（0~31，但是你需要考虑你月的天数）</span><br><span class="line">月（0~11）</span><br><span class="line">天（星期）（1~7 1=SUN 或 SUN，MON，TUE，WED，THU，FRI，SAT）</span><br><span class="line">年份（1970－2099）</span><br><span class="line"></span><br><span class="line">其中每个元素可以是一个值(如6),一个连续区间(9-12),一个间隔时间(8-18/4)(/表示每隔4小时),一个列表(1,3,5),通配符。由于&quot;月份中的日期&quot;和&quot;星期中的日期&quot;这两个元素互斥的,必须要对其中一个设置?</span><br></pre></td></tr></table></figure>
+          <h1 id="Stream-流的介绍"><a href="#Stream-流的介绍" class="headerlink" title="Stream 流的介绍"></a><code>Stream</code> 流的介绍</h1><h2 id="1-1-java8-stream介绍"><a href="#1-1-java8-stream介绍" class="headerlink" title="1.1 java8 stream介绍"></a>1.1 <code>java8 stream</code>介绍</h2><p>　　<code>java8</code>新增了<code>stream</code>流的特性，能够让用户以函数式的方式、更为简单的操纵集合等数据结构，并实现了用户无感知的并行计算。</p>
+<h2 id="1-2-从零开始实现一个stream流"><a href="#1-2-从零开始实现一个stream流" class="headerlink" title="1.2 从零开始实现一个stream流"></a>1.2 从零开始实现一个<code>stream</code>流</h2><p>　　相信很多人在使用过<code>java8</code>的<code>streamAPI</code>接口之后，都会对其实现原理感到好奇，但往往在看到<code>jdk</code>的<code>stream</code>源码后却被其复杂的抽象、封装给弄糊涂了，而无法很好的理解其背后的原理。究其原因，是因为<code>jdk</code>的<code>stream</code>源码是高度工程化的代码，工程化的代码为了效率和满足各式各样的需求，会将代码实现的极其复杂，不易理解。</p>
+<p>　　在这里，我们将抛开<code>jdk</code>的实现思路，从零开始实现一个<code>stream</code>流。</p>
+<p>　　我们的<code>stream</code>流同样拥有惰性求值，函数式编程接口等特性，并兼容<code>jdk</code>的<code>Collection</code>等数据结构(但不支持并行计算 <code>orz</code>)。</p>
+<p>　　相信在亲手实现一个<code>stream</code>流的框架之后，大家能更好的理解流计算的原理。</p>
           <!--noindex-->
             <div class="post-button">
-              <a class="btn" href="/posts/9dcbb5fa/#more" rel="contents">
+              <a class="btn" href="/posts/8b8fedea/#more" rel="contents">
                 Read more &raquo;
               </a>
             </div>
@@ -404,7 +434,7 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
-    <link itemprop="mainEntityOfPage" href="https://smile1231.github.io/posts/c3733521/">
+    <link itemprop="mainEntityOfPage" href="https://smile1231.github.io/posts/a3dfcd98/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/avatar.png">
@@ -418,7 +448,7 @@
       <header class="post-header">
         <h2 class="post-title" itemprop="name headline">
           
-            <a href="/posts/c3733521/" class="post-title-link" itemprop="url">Java之assert关键字</a>
+            <a href="/posts/a3dfcd98/" class="post-title-link" itemprop="url">SpringBoot中常见的几种解决跨域的方式</a>
         </h2>
 
         <div class="post-meta">
@@ -430,7 +460,7 @@
               <span class="post-meta-item-text">Posted on</span>
               
 
-              <time title="Created: 2022-02-13 21:35:24 / Modified: 22:06:46" itemprop="dateCreated datePublished" datetime="2022-02-13T21:35:24+08:00">2022-02-13</time>
+              <time title="Created: 2022-02-13 21:43:13 / Modified: 22:56:46" itemprop="dateCreated datePublished" datetime="2022-02-13T21:43:13+08:00">2022-02-13</time>
             </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -439,6 +469,10 @@
               <span class="post-meta-item-text">In</span>
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
                   <a href="/categories/Java/" itemprop="url" rel="index"><span itemprop="name">Java</span></a>
+                </span>
+                  , 
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/Java/SpringBoot/" itemprop="url" rel="index"><span itemprop="name">SpringBoot</span></a>
                 </span>
             </span>
 
@@ -451,8 +485,8 @@
       </span>
       <span class="post-meta-item-text">Valine: </span>
     
-    <a title="valine" href="/posts/c3733521/#valine-comments" itemprop="discussionUrl">
-      <span class="post-comments-count valine-comment-count" data-xid="/posts/c3733521/" itemprop="commentCount"></span>
+    <a title="valine" href="/posts/a3dfcd98/#valine-comments" itemprop="discussionUrl">
+      <span class="post-comments-count valine-comment-count" data-xid="/posts/a3dfcd98/" itemprop="commentCount"></span>
     </a>
   </span>
   
@@ -467,11 +501,11 @@
     <div class="post-body" itemprop="articleBody">
 
       
-          <h1 id="Java之assert关键字"><a href="#Java之assert关键字" class="headerlink" title="Java之assert关键字"></a><code>Java</code>之<code>assert</code>关键字</h1><p>在<code>Java</code>中，<code>assert</code>关键字是从<code>JAVA SE 1.4</code> 引入的，为了避免和老版本的<code>Java</code>代码中使用了<code>assert</code>关键字导致错误，<code>Java</code>在执行的时候默认是不启动断言检查的（这个时候，所有的断言语句都 将忽略！），如果要开启断言检查，则需要用开关<code>-enableassertions</code>或<code>-ea</code>来开启。</p>
-<p><code>assert</code>关键字语法很简单，有两种用法：</p>
+          <h1 id="SpringBoot中常见的几种解决跨域的方式"><a href="#SpringBoot中常见的几种解决跨域的方式" class="headerlink" title="SpringBoot中常见的几种解决跨域的方式"></a><code>SpringBoot</code>中常见的几种解决跨域的方式</h1><h2 id="一、为什么会出现跨域问题"><a href="#一、为什么会出现跨域问题" class="headerlink" title="一、为什么会出现跨域问题"></a>一、为什么会出现跨域问题</h2><p>出于浏览器的同源策略限制。同源策略（<code>Sameoriginpolicy</code>）是一种约定，它是浏览器最核心也最基本的安全功能，如果缺少了同源策略，则浏览器的正常功能可能都会受到影响。可以说<code>Web</code>是构建在同源策略基础之上的，浏览器只是针对同源策略的一种实现。</p>
+<p>同源策略会阻止一个域的<code>javascript</code>脚本和另外一个域的内容进行交互。所谓同源（即指在同一个域）就是两个页面具有相同的协议（<code>protocol</code>），主机（<code>host</code>）和端口号（<code>port</code>）</p>
           <!--noindex-->
             <div class="post-button">
-              <a class="btn" href="/posts/c3733521/#more" rel="contents">
+              <a class="btn" href="/posts/a3dfcd98/#more" rel="contents">
                 Read more &raquo;
               </a>
             </div>
@@ -501,7 +535,7 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
-    <link itemprop="mainEntityOfPage" href="https://smile1231.github.io/posts/e18abc1d/">
+    <link itemprop="mainEntityOfPage" href="https://smile1231.github.io/posts/c112412d/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/avatar.png">
@@ -515,7 +549,7 @@
       <header class="post-header">
         <h2 class="post-title" itemprop="name headline">
           
-            <a href="/posts/e18abc1d/" class="post-title-link" itemprop="url">关于YAML中List存放Map</a>
+            <a href="/posts/c112412d/" class="post-title-link" itemprop="url">Mybatis封装成Map结果</a>
         </h2>
 
         <div class="post-meta">
@@ -527,7 +561,7 @@
               <span class="post-meta-item-text">Posted on</span>
               
 
-              <time title="Created: 2022-02-13 21:27:41 / Modified: 22:06:28" itemprop="dateCreated datePublished" datetime="2022-02-13T21:27:41+08:00">2022-02-13</time>
+              <time title="Created: 2022-02-13 21:42:17 / Modified: 22:45:32" itemprop="dateCreated datePublished" datetime="2022-02-13T21:42:17+08:00">2022-02-13</time>
             </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -536,6 +570,14 @@
               <span class="post-meta-item-text">In</span>
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
                   <a href="/categories/Java/" itemprop="url" rel="index"><span itemprop="name">Java</span></a>
+                </span>
+                  , 
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/Java/Mybatis/" itemprop="url" rel="index"><span itemprop="name">Mybatis</span></a>
+                </span>
+                  , 
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/Java/Mybatis/SpringBoot/" itemprop="url" rel="index"><span itemprop="name">SpringBoot</span></a>
                 </span>
             </span>
 
@@ -548,8 +590,8 @@
       </span>
       <span class="post-meta-item-text">Valine: </span>
     
-    <a title="valine" href="/posts/e18abc1d/#valine-comments" itemprop="discussionUrl">
-      <span class="post-comments-count valine-comment-count" data-xid="/posts/e18abc1d/" itemprop="commentCount"></span>
+    <a title="valine" href="/posts/c112412d/#valine-comments" itemprop="discussionUrl">
+      <span class="post-comments-count valine-comment-count" data-xid="/posts/c112412d/" itemprop="commentCount"></span>
     </a>
   </span>
   
@@ -564,17 +606,10 @@
     <div class="post-body" itemprop="articleBody">
 
       
-          <h1 id="关于YAML中List存放Map"><a href="#关于YAML中List存放Map" class="headerlink" title="关于YAML中List存放Map"></a>关于<code>YAML</code>中<code>List</code>存放<code>Map</code></h1><h2 id="YAML如何书写"><a href="#YAML如何书写" class="headerlink" title="YAML如何书写"></a><code>YAML</code>如何书写</h2><blockquote>
-<p><code>YAML</code>语法</p>
-</blockquote>
-<figure class="highlight arcade"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">大小写敏感</span><br><span class="line">使用缩进表示层级关系</span><br><span class="line">缩进时不允许使用<span class="literal">Tab</span>键，只允许使用空格。</span><br><span class="line">缩进的空格数目不重要，只要相同层级的元素左侧对齐即可</span><br></pre></td></tr></table></figure>
-<blockquote>
-<p>支持的数据结构</p>
-</blockquote>
-<figure class="highlight pgsql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">对象：键值对的集合，又称为映射（<span class="keyword">mapping</span>）/ 哈希（hashes） / 字典（<span class="keyword">dictionary</span>）</span><br><span class="line">数组：一组按次序排列的值，又称为序列（<span class="keyword">sequence</span>） / 列表（list）</span><br><span class="line">基本类型：单个的、不可再分的值</span><br></pre></td></tr></table></figure>
+          <h1 id="Mybatis封装成Map结果"><a href="#Mybatis封装成Map结果" class="headerlink" title="Mybatis封装成Map结果"></a><code>Mybatis</code>封装成<code>Map</code>结果</h1><h2 id="Dao层"><a href="#Dao层" class="headerlink" title="Dao层"></a><code>Dao</code>层</h2><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">@MapKey(&quot;cityCode&quot;)</span></span><br><span class="line"><span class="function">Map&lt;String,InvoiceSubjectRuleCity&gt; <span class="title">bulkSelectRuleCityByRuleIdList</span><span class="params">(<span class="meta">@Param(&quot;ruleIdList&quot;)</span> List&lt;Long&gt; ruleIdList)</span></span>;</span><br></pre></td></tr></table></figure>
           <!--noindex-->
             <div class="post-button">
-              <a class="btn" href="/posts/e18abc1d/#more" rel="contents">
+              <a class="btn" href="/posts/c112412d/#more" rel="contents">
                 Read more &raquo;
               </a>
             </div>
@@ -604,7 +639,7 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
-    <link itemprop="mainEntityOfPage" href="https://smile1231.github.io/posts/91c18f7c/">
+    <link itemprop="mainEntityOfPage" href="https://smile1231.github.io/posts/2edf7887/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/avatar.png">
@@ -618,7 +653,7 @@
       <header class="post-header">
         <h2 class="post-title" itemprop="name headline">
           
-            <a href="/posts/91c18f7c/" class="post-title-link" itemprop="url">关于Try-With-Source的使用以及注意点</a>
+            <a href="/posts/2edf7887/" class="post-title-link" itemprop="url">MybatisPlus实现分页查询</a>
         </h2>
 
         <div class="post-meta">
@@ -630,7 +665,7 @@
               <span class="post-meta-item-text">Posted on</span>
               
 
-              <time title="Created: 2022-02-13 21:26:36 / Modified: 22:06:12" itemprop="dateCreated datePublished" datetime="2022-02-13T21:26:36+08:00">2022-02-13</time>
+              <time title="Created: 2022-02-13 21:41:49 / Modified: 22:37:05" itemprop="dateCreated datePublished" datetime="2022-02-13T21:41:49+08:00">2022-02-13</time>
             </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -639,6 +674,18 @@
               <span class="post-meta-item-text">In</span>
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
                   <a href="/categories/Java/" itemprop="url" rel="index"><span itemprop="name">Java</span></a>
+                </span>
+                  , 
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/Java/Mybatis/" itemprop="url" rel="index"><span itemprop="name">Mybatis</span></a>
+                </span>
+                  , 
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/Java/Mybatis/SpringBoot/" itemprop="url" rel="index"><span itemprop="name">SpringBoot</span></a>
+                </span>
+                  , 
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/Java/Mybatis/SpringBoot/%E5%88%86%E9%A1%B5%E6%9F%A5%E8%AF%A2/" itemprop="url" rel="index"><span itemprop="name">分页查询</span></a>
                 </span>
             </span>
 
@@ -651,8 +698,8 @@
       </span>
       <span class="post-meta-item-text">Valine: </span>
     
-    <a title="valine" href="/posts/91c18f7c/#valine-comments" itemprop="discussionUrl">
-      <span class="post-comments-count valine-comment-count" data-xid="/posts/91c18f7c/" itemprop="commentCount"></span>
+    <a title="valine" href="/posts/2edf7887/#valine-comments" itemprop="discussionUrl">
+      <span class="post-comments-count valine-comment-count" data-xid="/posts/2edf7887/" itemprop="commentCount"></span>
     </a>
   </span>
   
@@ -667,10 +714,13 @@
     <div class="post-body" itemprop="articleBody">
 
       
-          <h1 id="关于-Try-With-Source-的使用以及注意点"><a href="#关于-Try-With-Source-的使用以及注意点" class="headerlink" title="关于 Try-With-Source 的使用以及注意点"></a>关于 <code>Try-With-Source</code> 的使用以及注意点</h1><h2 id="在JDK-1-7-之前-资源需要手动关闭"><a href="#在JDK-1-7-之前-资源需要手动关闭" class="headerlink" title="在JDK 1.7 之前 , 资源需要手动关闭"></a>在<code>JDK 1.7 </code>之前 , 资源需要手动关闭</h2>
+          <h1 id="MybatisPlus实现分页查询"><a href="#MybatisPlus实现分页查询" class="headerlink" title="MybatisPlus实现分页查询"></a><code>MybatisPlus</code>实现分页查询</h1><h2 id="分页区别"><a href="#分页区别" class="headerlink" title="分页区别"></a>分页区别</h2><p>分页查询每个人程序猿几乎都使用过，但是有部分同学不懂什么是物理分页和逻辑分页。</p>
+<p>物理分页：相当于执行了<code>limit</code>分页语句，返回部分数据。物理分页只返回部分数据占用内存小，能够获取数据库最新的状态，实施性比较强，一般适用于数据量比较大，数据更新比较频繁的场景。</p>
+<p>逻辑分页：一次性把全部的数据取出来，通过程序进行筛选数据。如果数据量大的情况下会消耗大量的内存，由于逻辑分页只需要读取数据库一次，不能获取数据库最新状态，实施性比较差，适用于数据量小，数据稳定的场合。</p>
+<p>那么MP中的物理分页怎么实现呢？ 往下看往下看</p>
           <!--noindex-->
             <div class="post-button">
-              <a class="btn" href="/posts/91c18f7c/#more" rel="contents">
+              <a class="btn" href="/posts/2edf7887/#more" rel="contents">
                 Read more &raquo;
               </a>
             </div>
@@ -699,7 +749,7 @@
 
   
   <nav class="pagination">
-    <a class="extend prev" rel="prev" href="/page/15/"><i class="fa fa-angle-left" aria-label="Previous page"></i></a><a class="page-number" href="/">1</a><span class="space">&hellip;</span><a class="page-number" href="/page/13/">13</a><a class="page-number" href="/page/14/">14</a><a class="page-number" href="/page/15/">15</a><span class="page-number current">16</span><a class="page-number" href="/page/17/">17</a><a class="page-number" href="/page/18/">18</a><a class="page-number" href="/page/19/">19</a><span class="space">&hellip;</span><a class="page-number" href="/page/25/">25</a><a class="extend next" rel="next" href="/page/17/"><i class="fa fa-angle-right" aria-label="Next page"></i></a>
+    <a class="extend prev" rel="prev" href="/page/15/"><i class="fa fa-angle-left" aria-label="Previous page"></i></a><a class="page-number" href="/">1</a><span class="space">&hellip;</span><a class="page-number" href="/page/13/">13</a><a class="page-number" href="/page/14/">14</a><a class="page-number" href="/page/15/">15</a><span class="page-number current">16</span><a class="page-number" href="/page/17/">17</a><a class="page-number" href="/page/18/">18</a><a class="page-number" href="/page/19/">19</a><span class="space">&hellip;</span><a class="page-number" href="/page/27/">27</a><a class="extend next" rel="next" href="/page/17/"><i class="fa fa-angle-right" aria-label="Next page"></i></a>
   </nav>
 
 
@@ -820,8 +870,9 @@ setInterval(function(){
 </style>
 
     
-
-      <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=86 src="//music.163.com/outchain/player?type=2&id=1901069794&auto=1&height=66"></iframe>
+      <!-- 起风了 -->
+      <!-- <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=86 src="//music.163.com/outchain/player?type=2&id=1901069794&auto=1&height=66"></iframe> -->
+      <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=86 src="//music.163.com/outchain/player?type=2&id=1927119724&auto=1&height=66"></iframe>
 
       <ul class="sidebar-nav motion-element">
         <li class="sidebar-nav-toc">
@@ -849,20 +900,20 @@ setInterval(function(){
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">123</span>
+          <span class="site-state-item-count">133</span>
           <span class="site-state-item-name">posts</span>
         </a>
       </div>
       <div class="site-state-item site-state-categories">
             <a href="/categories/">
           
-        <span class="site-state-item-count">69</span>
+        <span class="site-state-item-count">70</span>
         <span class="site-state-item-name">categories</span></a>
       </div>
       <div class="site-state-item site-state-tags">
             <a href="/tags/">
           
-        <span class="site-state-item-count">91</span>
+        <span class="site-state-item-count">97</span>
         <span class="site-state-item-name">tags</span></a>
       </div>
   </nav>

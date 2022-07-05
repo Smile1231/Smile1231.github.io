@@ -135,17 +135,17 @@
   </li>
         <li class="menu-item menu-item-tags">
 
-    <a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>Tags<span class="badge">91</span></a>
+    <a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>Tags<span class="badge">97</span></a>
 
   </li>
         <li class="menu-item menu-item-categories">
 
-    <a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>Categories<span class="badge">69</span></a>
+    <a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>Categories<span class="badge">70</span></a>
 
   </li>
         <li class="menu-item menu-item-archives">
 
-    <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>Archives<span class="badge">123</span></a>
+    <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>Archives<span class="badge">133</span></a>
 
   </li>
       <li class="menu-item menu-item-search">
@@ -212,7 +212,7 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
-    <link itemprop="mainEntityOfPage" href="https://smile1231.github.io/posts/1c3390ab/">
+    <link itemprop="mainEntityOfPage" href="https://smile1231.github.io/posts/52d9f7d3/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/avatar.png">
@@ -226,7 +226,7 @@
       <header class="post-header">
         <h2 class="post-title" itemprop="name headline">
           
-            <a href="/posts/1c3390ab/" class="post-title-link" itemprop="url">将Java数据输出为本地txt</a>
+            <a href="/posts/52d9f7d3/" class="post-title-link" itemprop="url">Java面试必问--HashMap的底层</a>
         </h2>
 
         <div class="post-meta">
@@ -237,14 +237,14 @@
               </span>
               <span class="post-meta-item-text">Posted on</span>
 
-              <time title="Created: 2021-12-16 17:57:55" itemprop="dateCreated datePublished" datetime="2021-12-16T17:57:55+08:00">2021-12-16</time>
+              <time title="Created: 2022-02-09 17:00:15" itemprop="dateCreated datePublished" datetime="2022-02-09T17:00:15+08:00">2022-02-09</time>
             </span>
               <span class="post-meta-item">
                 <span class="post-meta-item-icon">
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">Edited on</span>
-                <time title="Modified: 2021-12-17 00:14:42" itemprop="dateModified" datetime="2021-12-17T00:14:42+08:00">2021-12-17</time>
+                <time title="Modified: 2022-02-21 23:23:41" itemprop="dateModified" datetime="2022-02-21T23:23:41+08:00">2022-02-21</time>
               </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -252,7 +252,11 @@
               </span>
               <span class="post-meta-item-text">In</span>
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/Java/" itemprop="url" rel="index"><span itemprop="name">Java</span></a>
+                  <a href="/categories/Java%E9%9D%A2%E8%AF%95/" itemprop="url" rel="index"><span itemprop="name">Java面试</span></a>
+                </span>
+                  , 
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/Java%E9%9D%A2%E8%AF%95/HashMap/" itemprop="url" rel="index"><span itemprop="name">HashMap</span></a>
                 </span>
             </span>
 
@@ -265,8 +269,8 @@
       </span>
       <span class="post-meta-item-text">Valine: </span>
     
-    <a title="valine" href="/posts/1c3390ab/#valine-comments" itemprop="discussionUrl">
-      <span class="post-comments-count valine-comment-count" data-xid="/posts/1c3390ab/" itemprop="commentCount"></span>
+    <a title="valine" href="/posts/52d9f7d3/#valine-comments" itemprop="discussionUrl">
+      <span class="post-comments-count valine-comment-count" data-xid="/posts/52d9f7d3/" itemprop="commentCount"></span>
     </a>
   </span>
   
@@ -281,11 +285,16 @@
     <div class="post-body" itemprop="articleBody">
 
       
-          <p>转载<a target="_blank" rel="noopener" href="https://www.cnblogs.com/vickylinj/p/15490194.html">https://www.cnblogs.com/vickylinj/p/15490194.html</a></p>
-<p> 将<code>List</code>写入文件：</p>
+          <h2 id="jdk7-HashMap"><a href="#jdk7-HashMap" class="headerlink" title="jdk7 HashMap"></a><code>jdk7 HashMap</code></h2><blockquote>
+<p>数组</p>
+</blockquote>
+<p>数组存储区间是连续的，占用内存严重，故空间复杂的很大。但数组的二分查找时间复杂度小，为<code>O(1)</code>；<br>数组的特点是：寻址容易，插入和删除困难；</p>
+<ul>
+<li><code>HashMap</code> 里面实现一个静态内部类 <code>Entry，Entry</code> 包含四个属性：<code>key，value，hash</code>值和用于单向链表的 <code>next</code>。<code>Entry</code> 就是 <code>HashMap</code> 键值对实现的一个基础 <code>bean</code>，我们上面说到 <code>HashMap</code> 的基础就是一个线性数组，这个数组就是 <code>Entry[]，Map</code> 里面的内容都保存在 <code>Entry[]</code> 里面</li>
+</ul>
           <!--noindex-->
             <div class="post-button">
-              <a class="btn" href="/posts/1c3390ab/#more" rel="contents">
+              <a class="btn" href="/posts/52d9f7d3/#more" rel="contents">
                 Read more &raquo;
               </a>
             </div>
@@ -315,7 +324,7 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
-    <link itemprop="mainEntityOfPage" href="https://smile1231.github.io/posts/49b96938/">
+    <link itemprop="mainEntityOfPage" href="https://smile1231.github.io/posts/feb84842/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/avatar.png">
@@ -329,7 +338,7 @@
       <header class="post-header">
         <h2 class="post-title" itemprop="name headline">
           
-            <a href="/posts/49b96938/" class="post-title-link" itemprop="url">Java获取一天时间的起始</a>
+            <a href="/posts/feb84842/" class="post-title-link" itemprop="url">Java面试必问--ArrayList的底层</a>
         </h2>
 
         <div class="post-meta">
@@ -340,14 +349,123 @@
               </span>
               <span class="post-meta-item-text">Posted on</span>
 
-              <time title="Created: 2021-12-16 17:36:55" itemprop="dateCreated datePublished" datetime="2021-12-16T17:36:55+08:00">2021-12-16</time>
+              <time title="Created: 2022-02-09 14:18:14" itemprop="dateCreated datePublished" datetime="2022-02-09T14:18:14+08:00">2022-02-09</time>
             </span>
               <span class="post-meta-item">
                 <span class="post-meta-item-icon">
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">Edited on</span>
-                <time title="Modified: 2022-02-16 00:21:20" itemprop="dateModified" datetime="2022-02-16T00:21:20+08:00">2022-02-16</time>
+                <time title="Modified: 2022-02-12 10:04:51" itemprop="dateModified" datetime="2022-02-12T10:04:51+08:00">2022-02-12</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">In</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/Java%E9%9D%A2%E8%AF%95/" itemprop="url" rel="index"><span itemprop="name">Java面试</span></a>
+                </span>
+            </span>
+
+          
+  
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="far fa-comment"></i>
+      </span>
+      <span class="post-meta-item-text">Valine: </span>
+    
+    <a title="valine" href="/posts/feb84842/#valine-comments" itemprop="discussionUrl">
+      <span class="post-comments-count valine-comment-count" data-xid="/posts/feb84842/" itemprop="commentCount"></span>
+    </a>
+  </span>
+  
+  
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h2 id="1-ArrayList、LinkedList-和-Vector-的区别。"><a href="#1-ArrayList、LinkedList-和-Vector-的区别。" class="headerlink" title="1. ArrayList、LinkedList 和 Vector 的区别。"></a>1. <code>ArrayList</code>、<code>LinkedList</code> 和 <code>Vector</code> 的区别。</h2><ol>
+<li><code>ArrayList</code>非线程安全的，<code>Vector</code>是线程安全的。</li>
+<li><code>ArrayList</code>扩容时按照<code>50%</code>增加，<code>Vector</code>按照<code>100%</code>增加。</li>
+<li><code>ArrayList</code>的性能要高于<code>Vector</code></li>
+<li><code>LinkedList</code>是链表实现的，因此查询慢，增删快。</li>
+<li><code>LinkedList</code>提供了<code>List</code>接口没有提供的方法，方便数据的头尾操作。</li>
+</ol>
+<h2 id="2-ArrayList简介"><a href="#2-ArrayList简介" class="headerlink" title="2. ArrayList简介"></a>2. <code>ArrayList</code>简介</h2>
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/posts/feb84842/#more" rel="contents">
+                Read more &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
+      
+
+      <div>
+        
+      </div>
+    </div>
+
+    
+    
+    
+      
+
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
+    <link itemprop="mainEntityOfPage" href="https://smile1231.github.io/posts/817eab42/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.png">
+      <meta itemprop="name" content="JIN Mao">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="JIN MAO 's Blog">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/posts/817eab42/" class="post-title-link" itemprop="url">java中产生指定范围内的随机数</a>
+        </h2>
+
+        <div class="post-meta">
+          
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">Posted on</span>
+
+              <time title="Created: 2022-01-27 17:57:25" itemprop="dateCreated datePublished" datetime="2022-01-27T17:57:25+08:00">2022-01-27</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">Edited on</span>
+                <time title="Modified: 2022-02-16 00:21:44" itemprop="dateModified" datetime="2022-02-16T00:21:44+08:00">2022-02-16</time>
               </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -372,8 +490,8 @@
       </span>
       <span class="post-meta-item-text">Valine: </span>
     
-    <a title="valine" href="/posts/49b96938/#valine-comments" itemprop="discussionUrl">
-      <span class="post-comments-count valine-comment-count" data-xid="/posts/49b96938/" itemprop="commentCount"></span>
+    <a title="valine" href="/posts/817eab42/#valine-comments" itemprop="discussionUrl">
+      <span class="post-comments-count valine-comment-count" data-xid="/posts/817eab42/" itemprop="commentCount"></span>
     </a>
   </span>
   
@@ -388,10 +506,14 @@
     <div class="post-body" itemprop="articleBody">
 
       
-          <p>如何获取一个指定日期的一天起始时间呢:<code>hutool</code>中有自带的方法:</p>
+          <ol>
+<li><p><code>Math.random()</code>方法返回一个<code>[0.0 , 1.0)</code>的伪随机<code>double</code>类型的随机数</p>
+</li>
+<li><p><code>[min,max]</code>范围内的数</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">int</span>    num = min + (<span class="keyword">int</span>)(Math.random() * (max-min));</span><br><span class="line"><span class="keyword">double</span> num = min + (Math.random() * (max-min));</span><br></pre></td></tr></table></figure>
           <!--noindex-->
             <div class="post-button">
-              <a class="btn" href="/posts/49b96938/#more" rel="contents">
+              <a class="btn" href="/posts/817eab42/#more" rel="contents">
                 Read more &raquo;
               </a>
             </div>
@@ -421,7 +543,7 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
-    <link itemprop="mainEntityOfPage" href="https://smile1231.github.io/posts/96e2d97b/">
+    <link itemprop="mainEntityOfPage" href="https://smile1231.github.io/posts/ba83fda/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/avatar.png">
@@ -435,7 +557,7 @@
       <header class="post-header">
         <h2 class="post-title" itemprop="name headline">
           
-            <a href="/posts/96e2d97b/" class="post-title-link" itemprop="url">mysql 获取当前日期及格式化</a>
+            <a href="/posts/ba83fda/" class="post-title-link" itemprop="url">超级好用的StringJoiner</a>
         </h2>
 
         <div class="post-meta">
@@ -446,14 +568,14 @@
               </span>
               <span class="post-meta-item-text">Posted on</span>
 
-              <time title="Created: 2021-12-16 17:16:50" itemprop="dateCreated datePublished" datetime="2021-12-16T17:16:50+08:00">2021-12-16</time>
+              <time title="Created: 2022-01-26 23:00:04" itemprop="dateCreated datePublished" datetime="2022-01-26T23:00:04+08:00">2022-01-26</time>
             </span>
               <span class="post-meta-item">
                 <span class="post-meta-item-icon">
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">Edited on</span>
-                <time title="Modified: 2021-12-17 00:14:42" itemprop="dateModified" datetime="2021-12-17T00:14:42+08:00">2021-12-17</time>
+                <time title="Modified: 2022-03-12 14:46:20" itemprop="dateModified" datetime="2022-03-12T14:46:20+08:00">2022-03-12</time>
               </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -461,7 +583,7 @@
               </span>
               <span class="post-meta-item-text">In</span>
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/%E6%95%B0%E6%8D%AE%E5%BA%93/" itemprop="url" rel="index"><span itemprop="name">数据库</span></a>
+                  <a href="/categories/Tools/" itemprop="url" rel="index"><span itemprop="name">Tools</span></a>
                 </span>
             </span>
 
@@ -474,8 +596,8 @@
       </span>
       <span class="post-meta-item-text">Valine: </span>
     
-    <a title="valine" href="/posts/96e2d97b/#valine-comments" itemprop="discussionUrl">
-      <span class="post-comments-count valine-comment-count" data-xid="/posts/96e2d97b/" itemprop="commentCount"></span>
+    <a title="valine" href="/posts/ba83fda/#valine-comments" itemprop="discussionUrl">
+      <span class="post-comments-count valine-comment-count" data-xid="/posts/ba83fda/" itemprop="commentCount"></span>
     </a>
   </span>
   
@@ -490,15 +612,11 @@
     <div class="post-body" itemprop="articleBody">
 
       
-          <p><code>MYSQL</code> 获取当前日期及日期格式</p>
-<ul>
-<li>获取系统日期： <code>NOW()</code></li>
-<li>格式化日期： <code>DATE_FORMAT(date, format)</code></li>
-</ul>
-<p>注： date：时间字段<br>format：日期格式</p>
+          <h1 id="超级好用的StringJoiner"><a href="#超级好用的StringJoiner" class="headerlink" title="超级好用的StringJoiner"></a>超级好用的<code>StringJoiner</code></h1><p>主要先说一下自己的最近的需求,类似于</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//&amp;lt;402162465.20106.1625035747695.JavaMail.saicapp@deployment-invoiceservice-7bc58468c5-gtqb7&amp;gt;</span></span><br><span class="line"></span><br><span class="line"><span class="comment">//其实是读取的时候 &lt;&gt; 大小于号 变成了字符串,所以现在要做的就是把他还原成</span></span><br><span class="line"><span class="comment">//&lt;402162465.20106.1625035747695.JavaMail.saicapp@deployment-invoiceservice-7bc58468c5-gtqb7&gt;</span></span><br></pre></td></tr></table></figure>
           <!--noindex-->
             <div class="post-button">
-              <a class="btn" href="/posts/96e2d97b/#more" rel="contents">
+              <a class="btn" href="/posts/ba83fda/#more" rel="contents">
                 Read more &raquo;
               </a>
             </div>
@@ -528,7 +646,7 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
-    <link itemprop="mainEntityOfPage" href="https://smile1231.github.io/posts/fc16798c/">
+    <link itemprop="mainEntityOfPage" href="https://smile1231.github.io/posts/9a0369ec/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/avatar.png">
@@ -542,7 +660,7 @@
       <header class="post-header">
         <h2 class="post-title" itemprop="name headline">
           
-            <a href="/posts/fc16798c/" class="post-title-link" itemprop="url">Java8遍历Map的三种方式</a>
+            <a href="/posts/9a0369ec/" class="post-title-link" itemprop="url">布隆过滤器</a>
         </h2>
 
         <div class="post-meta">
@@ -552,23 +670,17 @@
                 <i class="far fa-calendar"></i>
               </span>
               <span class="post-meta-item-text">Posted on</span>
+              
 
-              <time title="Created: 2021-12-16 16:47:03" itemprop="dateCreated datePublished" datetime="2021-12-16T16:47:03+08:00">2021-12-16</time>
+              <time title="Created: 2022-01-26 22:53:19 / Modified: 22:57:10" itemprop="dateCreated datePublished" datetime="2022-01-26T22:53:19+08:00">2022-01-26</time>
             </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="far fa-calendar-check"></i>
-                </span>
-                <span class="post-meta-item-text">Edited on</span>
-                <time title="Modified: 2022-02-16 00:21:03" itemprop="dateModified" datetime="2022-02-16T00:21:03+08:00">2022-02-16</time>
-              </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
                 <i class="far fa-folder"></i>
               </span>
               <span class="post-meta-item-text">In</span>
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/Java/" itemprop="url" rel="index"><span itemprop="name">Java</span></a>
+                  <a href="/categories/Daily/" itemprop="url" rel="index"><span itemprop="name">Daily</span></a>
                 </span>
             </span>
 
@@ -581,8 +693,8 @@
       </span>
       <span class="post-meta-item-text">Valine: </span>
     
-    <a title="valine" href="/posts/fc16798c/#valine-comments" itemprop="discussionUrl">
-      <span class="post-comments-count valine-comment-count" data-xid="/posts/fc16798c/" itemprop="commentCount"></span>
+    <a title="valine" href="/posts/9a0369ec/#valine-comments" itemprop="discussionUrl">
+      <span class="post-comments-count valine-comment-count" data-xid="/posts/9a0369ec/" itemprop="commentCount"></span>
     </a>
   </span>
   
@@ -597,119 +709,14 @@
     <div class="post-body" itemprop="articleBody">
 
       
-          <p>常见的<code>Java8</code>遍历<code>Map</code>的三种方式</p>
-<ul>
-<li><code>for</code>循环</li>
-<li><code>stream</code>流的方式处理</li>
-<li><code>forEach</code>方法遍历</li>
-</ul>
-<p><a target="_blank" rel="noopener" href="https://juejin.cn/post/6844903927096295432">转载</a></p>
-<p><code>Show me the code first!</code>以下是代码，解释一下逻辑，原来的<code>cookies</code>数据结构为<code>Map&lt;String, List&lt;HttpCookie&gt;&gt;</code>,其中<code>HttpCookie</code>为<code>cookie</code>键值对，由于业务需要，我们需要将其转换成<code>Map&lt;String, String&gt;</code>才更方便处理，于是乎就有了以下代码。（我这里直接用了<code>foreach</code>循环，也可以用<code>fori</code>循环，例如<code>for(int i = 0; i&lt; xx; i++)</code>）</p>
+          <h1 id="布隆过滤器"><a href="#布隆过滤器" class="headerlink" title="布隆过滤器"></a>布隆过滤器</h1><h2 id="什么是布隆过滤器"><a href="#什么是布隆过滤器" class="headerlink" title="什么是布隆过滤器"></a>什么是布隆过滤器</h2><p>布隆过滤器（<code>Bloom Filter</code>），是1970年，由一个叫布隆的小伙子提出的，距今已经五十年了，和老哥一样老。</p>
+<p>它实际上是一个很长的二进制向量和一系列随机映射函数，二进制大家应该都清楚，存储的数据不是<code>0</code>就是<code>1</code>，默认是<code>0</code>。</p>
+<p>主要用于判断一个元素是否在一个集合中，<code>0</code>代表不存在某个数据，<code>1</code>代表存在某个数据。</p>
+<p>懂了吗？作为暖男的老哥在给你们画张图来帮助理解：</p>
+<img src="/posts/9a0369ec/2022-01-26-22-56-13.png" class="">
           <!--noindex-->
             <div class="post-button">
-              <a class="btn" href="/posts/fc16798c/#more" rel="contents">
-                Read more &raquo;
-              </a>
-            </div>
-          <!--/noindex-->
-        
-      
-
-      <div>
-        
-      </div>
-    </div>
-
-    
-    
-    
-      
-
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
-    <link itemprop="mainEntityOfPage" href="https://smile1231.github.io/posts/97604c34/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.png">
-      <meta itemprop="name" content="JIN Mao">
-      <meta itemprop="description" content="">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="JIN MAO 's Blog">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/posts/97604c34/" class="post-title-link" itemprop="url">获取指定集合要求中的mapkey值并重新返回map</a>
-        </h2>
-
-        <div class="post-meta">
-          
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">Posted on</span>
-
-              <time title="Created: 2021-12-16 16:21:02" itemprop="dateCreated datePublished" datetime="2021-12-16T16:21:02+08:00">2021-12-16</time>
-            </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="far fa-calendar-check"></i>
-                </span>
-                <span class="post-meta-item-text">Edited on</span>
-                <time title="Modified: 2021-12-17 00:14:42" itemprop="dateModified" datetime="2021-12-17T00:14:42+08:00">2021-12-17</time>
-              </span>
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-folder"></i>
-              </span>
-              <span class="post-meta-item-text">In</span>
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/Java/" itemprop="url" rel="index"><span itemprop="name">Java</span></a>
-                </span>
-            </span>
-
-          
-  
-  <span class="post-meta-item">
-    
-      <span class="post-meta-item-icon">
-        <i class="far fa-comment"></i>
-      </span>
-      <span class="post-meta-item-text">Valine: </span>
-    
-    <a title="valine" href="/posts/97604c34/#valine-comments" itemprop="discussionUrl">
-      <span class="post-comments-count valine-comment-count" data-xid="/posts/97604c34/" itemprop="commentCount"></span>
-    </a>
-  </span>
-  
-  
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <p>最近遇到一个很奇怪的诉求,进行分批处理时,所得到的是一个<code>List&lt;List&lt;String&gt;&gt; partition = Lists.partition(list, 1000)</code>的分批<code>List</code>,由于只是一个类似于<code>Map&lt;string,Object&gt;</code>的<code>key</code>值进行了分组,但是业务方法使用了后面的实体类,所以想将<code>value</code>值保持和前面分组一致,同时<code>map</code>的<code>key</code>值变成<code>Object</code>实体类的其他属性.</p>
-          <!--noindex-->
-            <div class="post-button">
-              <a class="btn" href="/posts/97604c34/#more" rel="contents">
+              <a class="btn" href="/posts/9a0369ec/#more" rel="contents">
                 Read more &raquo;
               </a>
             </div>
@@ -738,7 +745,7 @@
 
   
   <nav class="pagination">
-    <a class="extend prev" rel="prev" href="/page/19/"><i class="fa fa-angle-left" aria-label="Previous page"></i></a><a class="page-number" href="/">1</a><span class="space">&hellip;</span><a class="page-number" href="/page/17/">17</a><a class="page-number" href="/page/18/">18</a><a class="page-number" href="/page/19/">19</a><span class="page-number current">20</span><a class="page-number" href="/page/21/">21</a><a class="page-number" href="/page/22/">22</a><a class="page-number" href="/page/23/">23</a><span class="space">&hellip;</span><a class="page-number" href="/page/25/">25</a><a class="extend next" rel="next" href="/page/21/"><i class="fa fa-angle-right" aria-label="Next page"></i></a>
+    <a class="extend prev" rel="prev" href="/page/19/"><i class="fa fa-angle-left" aria-label="Previous page"></i></a><a class="page-number" href="/">1</a><span class="space">&hellip;</span><a class="page-number" href="/page/17/">17</a><a class="page-number" href="/page/18/">18</a><a class="page-number" href="/page/19/">19</a><span class="page-number current">20</span><a class="page-number" href="/page/21/">21</a><a class="page-number" href="/page/22/">22</a><a class="page-number" href="/page/23/">23</a><span class="space">&hellip;</span><a class="page-number" href="/page/27/">27</a><a class="extend next" rel="next" href="/page/21/"><i class="fa fa-angle-right" aria-label="Next page"></i></a>
   </nav>
 
 
@@ -859,8 +866,9 @@ setInterval(function(){
 </style>
 
     
-
-      <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=86 src="//music.163.com/outchain/player?type=2&id=1901069794&auto=1&height=66"></iframe>
+      <!-- 起风了 -->
+      <!-- <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=86 src="//music.163.com/outchain/player?type=2&id=1901069794&auto=1&height=66"></iframe> -->
+      <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=86 src="//music.163.com/outchain/player?type=2&id=1927119724&auto=1&height=66"></iframe>
 
       <ul class="sidebar-nav motion-element">
         <li class="sidebar-nav-toc">
@@ -888,20 +896,20 @@ setInterval(function(){
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">123</span>
+          <span class="site-state-item-count">133</span>
           <span class="site-state-item-name">posts</span>
         </a>
       </div>
       <div class="site-state-item site-state-categories">
             <a href="/categories/">
           
-        <span class="site-state-item-count">69</span>
+        <span class="site-state-item-count">70</span>
         <span class="site-state-item-name">categories</span></a>
       </div>
       <div class="site-state-item site-state-tags">
             <a href="/tags/">
           
-        <span class="site-state-item-count">91</span>
+        <span class="site-state-item-count">97</span>
         <span class="site-state-item-name">tags</span></a>
       </div>
   </nav>
