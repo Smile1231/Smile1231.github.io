@@ -212,7 +212,7 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
-    <link itemprop="mainEntityOfPage" href="https://smile1231.github.io/posts/8da68a98/">
+    <link itemprop="mainEntityOfPage" href="https://smile1231.github.io/posts/dfdc2005/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/avatar.png">
@@ -226,7 +226,183 @@
       <header class="post-header">
         <h2 class="post-title" itemprop="name headline">
           
-            <a href="/posts/8da68a98/" class="post-title-link" itemprop="url">Java运行调用Shell脚本</a>
+            <a href="/posts/dfdc2005/" class="post-title-link" itemprop="url">JDK动态代理原理剖析(简洁版)</a>
+        </h2>
+
+        <div class="post-meta">
+          
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">Posted on</span>
+              
+
+              <time title="Created: 2022-03-14 17:40:52 / Modified: 22:49:10" itemprop="dateCreated datePublished" datetime="2022-03-14T17:40:52+08:00">2022-03-14</time>
+            </span>
+
+          
+  
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="far fa-comment"></i>
+      </span>
+      <span class="post-meta-item-text">Valine: </span>
+    
+    <a title="valine" href="/posts/dfdc2005/#valine-comments" itemprop="discussionUrl">
+      <span class="post-comments-count valine-comment-count" data-xid="/posts/dfdc2005/" itemprop="commentCount"></span>
+    </a>
+  </span>
+  
+  
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h2 id="动态代理两个实例-视频中学的"><a href="#动态代理两个实例-视频中学的" class="headerlink" title="动态代理两个实例(视频中学的)"></a>动态代理两个实例(视频中学的)</h2><p>动态代理在<code>Java</code>中有着广泛的应用，比如<code>Spring AOP、Hibernate</code>数据查询、测试框架的后端<code>mock、RPC</code>远程调用、<code>Java</code>注解对象获取、日志、用户鉴权、全局性异常处理、性能监控，甚至事务处理等。<br>本文主要介绍<code>Java</code>中两种常见的动态代理方式：<code>JDK</code>原生动态代理和<code>CGLIB</code>动态代理。</p>
+<h3 id="代理模式"><a href="#代理模式" class="headerlink" title="代理模式"></a>代理模式</h3><p>本文将介绍的<code>Java</code>动态代理与设计模式中的代理模式有关，什么是代理模式呢？</p>
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/posts/dfdc2005/#more" rel="contents">
+                Read more &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
+      
+
+      <div>
+        
+      </div>
+    </div>
+
+    
+    
+    
+      
+
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
+    <link itemprop="mainEntityOfPage" href="https://smile1231.github.io/posts/159c6098/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.png">
+      <meta itemprop="name" content="JIN Mao">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="JIN MAO 's Blog">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/posts/159c6098/" class="post-title-link" itemprop="url">阻塞队列</a>
+        </h2>
+
+        <div class="post-meta">
+          
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">Posted on</span>
+              
+
+              <time title="Created: 2022-03-13 16:31:51 / Modified: 20:07:21" itemprop="dateCreated datePublished" datetime="2022-03-13T16:31:51+08:00">2022-03-13</time>
+            </span>
+
+          
+  
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="far fa-comment"></i>
+      </span>
+      <span class="post-meta-item-text">Valine: </span>
+    
+    <a title="valine" href="/posts/159c6098/#valine-comments" itemprop="discussionUrl">
+      <span class="post-comments-count valine-comment-count" data-xid="/posts/159c6098/" itemprop="commentCount"></span>
+    </a>
+  </span>
+  
+  
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h2 id="阻塞队列接口结构和实现类"><a href="#阻塞队列接口结构和实现类" class="headerlink" title="阻塞队列接口结构和实现类"></a>阻塞队列接口结构和实现类</h2><p><strong>阻塞队列</strong>，顾名思义，首先它是一个队列，而一个阻塞队列在数据结构中所起的作用大致如下图所示：</p>
+<img src="/posts/159c6098/2022-03-13-16-33-09.png" class="">
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/posts/159c6098/#more" rel="contents">
+                Read more &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
+      
+
+      <div>
+        
+      </div>
+    </div>
+
+    
+    
+    
+      
+
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
+    <link itemprop="mainEntityOfPage" href="https://smile1231.github.io/posts/56be7cc9/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.png">
+      <meta itemprop="name" content="JIN Mao">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="JIN MAO 's Blog">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/posts/56be7cc9/" class="post-title-link" itemprop="url">关于Linux排查问题命令</a>
         </h2>
 
         <div class="post-meta">
@@ -237,14 +413,14 @@
               </span>
               <span class="post-meta-item-text">Posted on</span>
 
-              <time title="Created: 2022-06-29 22:02:56" itemprop="dateCreated datePublished" datetime="2022-06-29T22:02:56+08:00">2022-06-29</time>
+              <time title="Created: 2022-03-13 15:13:24" itemprop="dateCreated datePublished" datetime="2022-03-13T15:13:24+08:00">2022-03-13</time>
             </span>
               <span class="post-meta-item">
                 <span class="post-meta-item-icon">
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">Edited on</span>
-                <time title="Modified: 2022-07-05 22:47:31" itemprop="dateModified" datetime="2022-07-05T22:47:31+08:00">2022-07-05</time>
+                <time title="Modified: 2022-03-14 20:40:24" itemprop="dateModified" datetime="2022-03-14T20:40:24+08:00">2022-03-14</time>
               </span>
 
           
@@ -256,8 +432,8 @@
       </span>
       <span class="post-meta-item-text">Valine: </span>
     
-    <a title="valine" href="/posts/8da68a98/#valine-comments" itemprop="discussionUrl">
-      <span class="post-comments-count valine-comment-count" data-xid="/posts/8da68a98/" itemprop="commentCount"></span>
+    <a title="valine" href="/posts/56be7cc9/#valine-comments" itemprop="discussionUrl">
+      <span class="post-comments-count valine-comment-count" data-xid="/posts/56be7cc9/" itemprop="commentCount"></span>
     </a>
   </span>
   
@@ -272,11 +448,12 @@
     <div class="post-body" itemprop="articleBody">
 
       
-          <p>关于在<code>java</code>中如何去调用<code>shell</code>脚本，最近忙活了老半天</p>
-<p>在<code>java</code>中有一个<code>ProcessBuilder</code>类,能够调用到<code>sh</code>命令，话不多说，贴上代码</p>
+          <h2 id="Linux命令之top"><a href="#Linux命令之top" class="headerlink" title="Linux命令之top"></a><code>Linux</code>命令之<code>top</code></h2><blockquote>
+<p>top - 整机性能查看</p>
+</blockquote>
           <!--noindex-->
             <div class="post-button">
-              <a class="btn" href="/posts/8da68a98/#more" rel="contents">
+              <a class="btn" href="/posts/56be7cc9/#more" rel="contents">
                 Read more &raquo;
               </a>
             </div>
@@ -306,7 +483,7 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
-    <link itemprop="mainEntityOfPage" href="https://smile1231.github.io/posts/378107f2/">
+    <link itemprop="mainEntityOfPage" href="https://smile1231.github.io/posts/a72f470b/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/avatar.png">
@@ -320,7 +497,270 @@
       <header class="post-header">
         <h2 class="post-title" itemprop="name headline">
           
-            <a href="/posts/378107f2/" class="post-title-link" itemprop="url">The Basic knowledge of Anaconda</a>
+            <a href="/posts/a72f470b/" class="post-title-link" itemprop="url">关于JVM常用参数</a>
+        </h2>
+
+        <div class="post-meta">
+          
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">Posted on</span>
+              
+
+              <time title="Created: 2022-03-13 15:12:45 / Modified: 16:19:47" itemprop="dateCreated datePublished" datetime="2022-03-13T15:12:45+08:00">2022-03-13</time>
+            </span>
+
+          
+  
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="far fa-comment"></i>
+      </span>
+      <span class="post-meta-item-text">Valine: </span>
+    
+    <a title="valine" href="/posts/a72f470b/#valine-comments" itemprop="discussionUrl">
+      <span class="post-comments-count valine-comment-count" data-xid="/posts/a72f470b/" itemprop="commentCount"></span>
+    </a>
+  </span>
+  
+  
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p>笔记链接： <a target="_blank" rel="noopener" href="https://blog.csdn.net/u011863024/article/details/114684428">大厂面试视频</a></p>
+<h2 id="JVM的标配参数和X参数"><a href="#JVM的标配参数和X参数" class="headerlink" title="JVM的标配参数和X参数"></a><code>JVM</code>的标配参数和<code>X</code>参数</h2><p><a target="_blank" rel="noopener" href="https://docs.oracle.com/javase/8/docs/technotes/tools/windows/java.html">官方文档</a></p>
+<p><code>JVM</code>的参数类型：</p>
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/posts/a72f470b/#more" rel="contents">
+                Read more &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
+      
+
+      <div>
+        
+      </div>
+    </div>
+
+    
+    
+    
+      
+
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
+    <link itemprop="mainEntityOfPage" href="https://smile1231.github.io/posts/de5e33d7/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.png">
+      <meta itemprop="name" content="JIN Mao">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="JIN MAO 's Blog">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/posts/de5e33d7/" class="post-title-link" itemprop="url">关于JDK中的Arrays.sort排序方法</a>
+        </h2>
+
+        <div class="post-meta">
+          
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">Posted on</span>
+              
+
+              <time title="Created: 2022-03-13 13:11:15 / Modified: 15:04:07" itemprop="dateCreated datePublished" datetime="2022-03-13T13:11:15+08:00">2022-03-13</time>
+            </span>
+
+          
+  
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="far fa-comment"></i>
+      </span>
+      <span class="post-meta-item-text">Valine: </span>
+    
+    <a title="valine" href="/posts/de5e33d7/#valine-comments" itemprop="discussionUrl">
+      <span class="post-comments-count valine-comment-count" data-xid="/posts/de5e33d7/" itemprop="commentCount"></span>
+    </a>
+  </span>
+  
+  
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p>是这样的，我们在刚学数据结构时候，都会学什么八大排序算法乱七八糟的，但是真正在写<code>Java</code>项目时，都是直接化身<code>API</code>调用工程师，<code>Arrays.sort()</code>完事，无意间点开，其实里面的玄机另有洞天。</p>
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/posts/de5e33d7/#more" rel="contents">
+                Read more &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
+      
+
+      <div>
+        
+      </div>
+    </div>
+
+    
+    
+    
+      
+
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
+    <link itemprop="mainEntityOfPage" href="https://smile1231.github.io/posts/1599bffe/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.png">
+      <meta itemprop="name" content="JIN Mao">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="JIN MAO 's Blog">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/posts/1599bffe/" class="post-title-link" itemprop="url">归并排序</a>
+        </h2>
+
+        <div class="post-meta">
+          
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">Posted on</span>
+              
+
+              <time title="Created: 2022-03-13 01:09:11 / Modified: 15:03:27" itemprop="dateCreated datePublished" datetime="2022-03-13T01:09:11+08:00">2022-03-13</time>
+            </span>
+
+          
+  
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="far fa-comment"></i>
+      </span>
+      <span class="post-meta-item-text">Valine: </span>
+    
+    <a title="valine" href="/posts/1599bffe/#valine-comments" itemprop="discussionUrl">
+      <span class="post-comments-count valine-comment-count" data-xid="/posts/1599bffe/" itemprop="commentCount"></span>
+    </a>
+  </span>
+  
+  
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h2 id="归并排序（稳定）"><a href="#归并排序（稳定）" class="headerlink" title="归并排序（稳定）"></a>归并排序（稳定）</h2><p>归并排序是建立在归并操作上的一种有效的排序算法，1945年由约翰·冯·诺伊曼首次提出。该算法是采用分治法（Divide and Conquer）的一个非常典型的应用，且各层分治递归可以同时进行。</p>
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/posts/1599bffe/#more" rel="contents">
+                Read more &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
+      
+
+      <div>
+        
+      </div>
+    </div>
+
+    
+    
+    
+      
+
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
+    <link itemprop="mainEntityOfPage" href="https://smile1231.github.io/posts/14e6f1eb/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.png">
+      <meta itemprop="name" content="JIN Mao">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="JIN MAO 's Blog">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/posts/14e6f1eb/" class="post-title-link" itemprop="url">冒泡排序</a>
         </h2>
 
         <div class="post-meta">
@@ -331,14 +771,14 @@
               </span>
               <span class="post-meta-item-text">Posted on</span>
 
-              <time title="Created: 2022-05-23 16:16:39" itemprop="dateCreated datePublished" datetime="2022-05-23T16:16:39+08:00">2022-05-23</time>
+              <time title="Created: 2022-03-12 21:58:14" itemprop="dateCreated datePublished" datetime="2022-03-12T21:58:14+08:00">2022-03-12</time>
             </span>
               <span class="post-meta-item">
                 <span class="post-meta-item-icon">
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">Edited on</span>
-                <time title="Modified: 2022-07-05 23:16:31" itemprop="dateModified" datetime="2022-07-05T23:16:31+08:00">2022-07-05</time>
+                <time title="Modified: 2022-03-13 01:06:13" itemprop="dateModified" datetime="2022-03-13T01:06:13+08:00">2022-03-13</time>
               </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -346,7 +786,15 @@
               </span>
               <span class="post-meta-item-text">In</span>
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/master/" itemprop="url" rel="index"><span itemprop="name">master</span></a>
+                  <a href="/categories/Java%E9%9D%A2%E8%AF%95/" itemprop="url" rel="index"><span itemprop="name">Java面试</span></a>
+                </span>
+                  , 
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/Java%E9%9D%A2%E8%AF%95/%E5%86%92%E6%B3%A1%E6%8E%92%E5%BA%8F/" itemprop="url" rel="index"><span itemprop="name">冒泡排序</span></a>
+                </span>
+                  , 
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/Java%E9%9D%A2%E8%AF%95/%E5%86%92%E6%B3%A1%E6%8E%92%E5%BA%8F/%E7%AE%97%E6%B3%95/" itemprop="url" rel="index"><span itemprop="name">算法</span></a>
                 </span>
             </span>
 
@@ -359,8 +807,8 @@
       </span>
       <span class="post-meta-item-text">Valine: </span>
     
-    <a title="valine" href="/posts/378107f2/#valine-comments" itemprop="discussionUrl">
-      <span class="post-comments-count valine-comment-count" data-xid="/posts/378107f2/" itemprop="commentCount"></span>
+    <a title="valine" href="/posts/14e6f1eb/#valine-comments" itemprop="discussionUrl">
+      <span class="post-comments-count valine-comment-count" data-xid="/posts/14e6f1eb/" itemprop="commentCount"></span>
     </a>
   </span>
   
@@ -375,312 +823,10 @@
     <div class="post-body" itemprop="articleBody">
 
       
-          <h1 id="Anaconda基本学习"><a href="#Anaconda基本学习" class="headerlink" title="Anaconda基本学习"></a><code>Anaconda</code>基本学习</h1><p><code>conda</code>中想要安装的包，可以在这个网站搜索查询： <a target="_blank" rel="noopener" href="https://anaconda.org/search?q=fastq-join">https://anaconda.org/search?q=fastq-join</a></p>
-<blockquote>
-<p> 官网下载  <a target="_blank" rel="noopener" href="https://link.jianshu.com/?t=https://www.anaconda.com/download/">链接</a></p>
-</blockquote>
-<p>此处不多说</p>
-<blockquote>
-<p>环境变量的配置(windows)</p>
-</blockquote>
-<p>需要注意的是,<code>AnaConda</code>需要配置三个路径的环境变量</p>
+          <h2 id="冒泡排序（稳定）"><a href="#冒泡排序（稳定）" class="headerlink" title="冒泡排序（稳定）"></a>冒泡排序（稳定）</h2><h3 id="1、基本思想"><a href="#1、基本思想" class="headerlink" title="1、基本思想"></a>1、基本思想</h3><p>冒泡排序（<code>Bubble Sort</code>）是一种简单的排序算法。它重复地走访过要排序的数列，一次比较两个元素，如果他们的顺序错误就把他们交换过来。走访数列的工作是重复地进行直到没有再需要交换，也就是说该数列已经排序完成。这个算法的名字由来是因为越小的元素会经由交换慢慢“浮”到数列的顶端。</p>
           <!--noindex-->
             <div class="post-button">
-              <a class="btn" href="/posts/378107f2/#more" rel="contents">
-                Read more &raquo;
-              </a>
-            </div>
-          <!--/noindex-->
-        
-      
-
-      <div>
-        
-      </div>
-    </div>
-
-    
-    
-    
-      
-
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
-    <link itemprop="mainEntityOfPage" href="https://smile1231.github.io/posts/67f40b37/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.png">
-      <meta itemprop="name" content="JIN Mao">
-      <meta itemprop="description" content="">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="JIN MAO 's Blog">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/posts/67f40b37/" class="post-title-link" itemprop="url">Spring Boot 获取服务IP地址和端口号</a>
-        </h2>
-
-        <div class="post-meta">
-          
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">Posted on</span>
-              
-
-              <time title="Created: 2022-05-21 22:58:51 / Modified: 23:15:48" itemprop="dateCreated datePublished" datetime="2022-05-21T22:58:51+08:00">2022-05-21</time>
-            </span>
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-folder"></i>
-              </span>
-              <span class="post-meta-item-text">In</span>
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/SpringBoot/" itemprop="url" rel="index"><span itemprop="name">SpringBoot</span></a>
-                </span>
-            </span>
-
-          
-  
-  <span class="post-meta-item">
-    
-      <span class="post-meta-item-icon">
-        <i class="far fa-comment"></i>
-      </span>
-      <span class="post-meta-item-text">Valine: </span>
-    
-    <a title="valine" href="/posts/67f40b37/#valine-comments" itemprop="discussionUrl">
-      <span class="post-comments-count valine-comment-count" data-xid="/posts/67f40b37/" itemprop="commentCount"></span>
-    </a>
-  </span>
-  
-  
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <blockquote>
-<p><code>IP</code>地址</p>
-</blockquote>
-<p><code>IP</code>地址非常简单, 直接上代码:</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">try</span> &#123;</span><br><span class="line">    String result = InetAddress.getLocalHost().getHostAddress();</span><br><span class="line">&#125; <span class="keyword">catch</span> (UnknownHostException e) &#123;</span><br><span class="line">    LOGGER.error(<span class="string">&quot;获取IP失败&quot;</span>, e);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-          <!--noindex-->
-            <div class="post-button">
-              <a class="btn" href="/posts/67f40b37/#more" rel="contents">
-                Read more &raquo;
-              </a>
-            </div>
-          <!--/noindex-->
-        
-      
-
-      <div>
-        
-      </div>
-    </div>
-
-    
-    
-    
-      
-
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
-    <link itemprop="mainEntityOfPage" href="https://smile1231.github.io/posts/bd76a990/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.png">
-      <meta itemprop="name" content="JIN Mao">
-      <meta itemprop="description" content="">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="JIN MAO 's Blog">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/posts/bd76a990/" class="post-title-link" itemprop="url">一图看懂Java中的PO,BO,VO,DTO,POJO,DAO,DO</a>
-        </h2>
-
-        <div class="post-meta">
-          
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">Posted on</span>
-              
-
-              <time title="Created: 2022-05-21 22:57:50 / Modified: 23:15:48" itemprop="dateCreated datePublished" datetime="2022-05-21T22:57:50+08:00">2022-05-21</time>
-            </span>
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-folder"></i>
-              </span>
-              <span class="post-meta-item-text">In</span>
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/Java/" itemprop="url" rel="index"><span itemprop="name">Java</span></a>
-                </span>
-            </span>
-
-          
-  
-  <span class="post-meta-item">
-    
-      <span class="post-meta-item-icon">
-        <i class="far fa-comment"></i>
-      </span>
-      <span class="post-meta-item-text">Valine: </span>
-    
-    <a title="valine" href="/posts/bd76a990/#valine-comments" itemprop="discussionUrl">
-      <span class="post-comments-count valine-comment-count" data-xid="/posts/bd76a990/" itemprop="commentCount"></span>
-    </a>
-  </span>
-  
-  
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <p><a target="_blank" rel="noopener" href="https://juejin.cn/post/6952848675924082718"> 参考链接 </a></p>
-
-      
-
-      <div>
-        
-      </div>
-    </div>
-
-    
-    
-    
-      
-
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
-    <link itemprop="mainEntityOfPage" href="https://smile1231.github.io/posts/d6d1be75/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.png">
-      <meta itemprop="name" content="JIN Mao">
-      <meta itemprop="description" content="">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="JIN MAO 's Blog">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/posts/d6d1be75/" class="post-title-link" itemprop="url">在Javadoc注释中引用方法</a>
-        </h2>
-
-        <div class="post-meta">
-          
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">Posted on</span>
-              
-
-              <time title="Created: 2022-05-21 22:00:19 / Modified: 23:15:48" itemprop="dateCreated datePublished" datetime="2022-05-21T22:00:19+08:00">2022-05-21</time>
-            </span>
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-folder"></i>
-              </span>
-              <span class="post-meta-item-text">In</span>
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/Java/" itemprop="url" rel="index"><span itemprop="name">Java</span></a>
-                </span>
-            </span>
-
-          
-  
-  <span class="post-meta-item">
-    
-      <span class="post-meta-item-icon">
-        <i class="far fa-comment"></i>
-      </span>
-      <span class="post-meta-item-text">Valine: </span>
-    
-    <a title="valine" href="/posts/d6d1be75/#valine-comments" itemprop="discussionUrl">
-      <span class="post-comments-count valine-comment-count" data-xid="/posts/d6d1be75/" itemprop="commentCount"></span>
-    </a>
-  </span>
-  
-  
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <p>最近用到如何在注释中<code>link</code>到另一个类</p>
-<ol>
-<li><code>@link</code>标签<br><code>Javadoc</code> 提供了<code>@link</code>内联标记来引用Java 类中的成员。我们可以认为<code>@link</code>标签类似于 <code>HTML</code> 中的锚标签，用于通过超链接将一个页面链接到另一个页面。</li>
-</ol>
-<p>让我们看看使用<code>@link</code>标记引用 <code>Javadoc</code> 注释中的方法的语法：</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&#123;<span class="meta">@link</span> path_to_member label&#125;</span><br></pre></td></tr></table></figure>
-
-<p>与锚标签类似，<code>path_to_member</code>是目的地，标签是显示文本。</p>
-<p>标签是可选的，但<code>path_to_member</code>是引用方法所必需的。但是，始终使用标签名称来避免复杂的参考链接是一种很好的做法。<code>path_to_member</code>的语法 根据我们引用的方法是否驻留在同一个类中而有所不同。</p>
-<p>需要注意的是，大括号<code>&#123;</code>和<code>@link</code>之间不能有空格。如果它们之间有空格，<code>Javadoc </code>工具将无法正确生成引用。但是， <code>path_to_member、label</code>和右大括号之间没有空间限制。</p>
-          <!--noindex-->
-            <div class="post-button">
-              <a class="btn" href="/posts/d6d1be75/#more" rel="contents">
+              <a class="btn" href="/posts/14e6f1eb/#more" rel="contents">
                 Read more &raquo;
               </a>
             </div>
@@ -709,7 +855,7 @@
 
   
   <nav class="pagination">
-    <a class="extend prev" rel="prev" href="/page/2/"><i class="fa fa-angle-left" aria-label="Previous page"></i></a><a class="page-number" href="/">1</a><a class="page-number" href="/page/2/">2</a><span class="page-number current">3</span><a class="page-number" href="/page/4/">4</a><a class="page-number" href="/page/5/">5</a><a class="page-number" href="/page/6/">6</a><span class="space">&hellip;</span><a class="page-number" href="/page/27/">27</a><a class="extend next" rel="next" href="/page/4/"><i class="fa fa-angle-right" aria-label="Next page"></i></a>
+    <a class="extend prev" rel="prev" href="/page/2/"><i class="fa fa-angle-left" aria-label="Previous page"></i></a><a class="page-number" href="/">1</a><a class="page-number" href="/page/2/">2</a><span class="page-number current">3</span><a class="page-number" href="/page/4/">4</a><a class="page-number" href="/page/5/">5</a><a class="page-number" href="/page/6/">6</a><span class="space">&hellip;</span><a class="page-number" href="/page/14/">14</a><a class="extend next" rel="next" href="/page/4/"><i class="fa fa-angle-right" aria-label="Next page"></i></a>
   </nav>
 
 

@@ -212,7 +212,7 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
-    <link itemprop="mainEntityOfPage" href="https://smile1231.github.io/posts/a1926332/">
+    <link itemprop="mainEntityOfPage" href="https://smile1231.github.io/posts/c2a5fdc5/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/avatar.png">
@@ -226,191 +226,7 @@
       <header class="post-header">
         <h2 class="post-title" itemprop="name headline">
           
-            <a href="/posts/a1926332/" class="post-title-link" itemprop="url">Springboot+Vue二进制文件传输</a>
-        </h2>
-
-        <div class="post-meta">
-          
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">Posted on</span>
-              
-
-              <time title="Created: 2022-05-21 21:42:10 / Modified: 23:15:48" itemprop="dateCreated datePublished" datetime="2022-05-21T21:42:10+08:00">2022-05-21</time>
-            </span>
-
-          
-  
-  <span class="post-meta-item">
-    
-      <span class="post-meta-item-icon">
-        <i class="far fa-comment"></i>
-      </span>
-      <span class="post-meta-item-text">Valine: </span>
-    
-    <a title="valine" href="/posts/a1926332/#valine-comments" itemprop="discussionUrl">
-      <span class="post-comments-count valine-comment-count" data-xid="/posts/a1926332/" itemprop="commentCount"></span>
-    </a>
-  </span>
-  
-  
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <p>最近用到了<code>springboot</code>项目返回二进制流，话不多说，代码贴上:</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">@PostMapping(value = &quot;/file/&#123;fileName&#125;&quot;)</span></span><br><span class="line"><span class="function"><span class="keyword">public</span> ResponseEntity&lt;FileSystemResource&gt; <span class="title">getFile</span><span class="params">(<span class="meta">@PathVariable(&quot;fileName&quot;)</span> String fileName)</span> <span class="keyword">throws</span> FileNotFoundException </span>&#123;</span><br><span class="line">	File file = <span class="keyword">new</span> File(filePath, fileName);</span><br><span class="line">	<span class="keyword">if</span> (file.exists()) &#123;</span><br><span class="line">		<span class="keyword">return</span> export(file);</span><br><span class="line">	&#125;</span><br><span class="line">	System.out.println(file);</span><br><span class="line">	<span class="keyword">return</span> <span class="keyword">null</span>;</span><br><span class="line">&#125;</span><br><span class="line"> </span><br><span class="line"><span class="function"><span class="keyword">public</span> ResponseEntity&lt;FileSystemResource&gt; <span class="title">export</span><span class="params">(File file)</span> </span>&#123;</span><br><span class="line">	<span class="keyword">if</span> (file == <span class="keyword">null</span>) &#123;</span><br><span class="line">		<span class="keyword">return</span> <span class="keyword">null</span>;</span><br><span class="line">	&#125;</span><br><span class="line">	HttpHeaders headers = <span class="keyword">new</span> HttpHeaders();</span><br><span class="line">	headers.add(<span class="string">&quot;Cache-Control&quot;</span>, <span class="string">&quot;no-cache, no-store, must-revalidate&quot;</span>);</span><br><span class="line">	headers.add(<span class="string">&quot;Content-Disposition&quot;</span>, <span class="string">&quot;attachment; filename=&quot;</span> + file.getName());</span><br><span class="line">	headers.add(<span class="string">&quot;Pragma&quot;</span>, <span class="string">&quot;no-cache&quot;</span>);</span><br><span class="line">	headers.add(<span class="string">&quot;Expires&quot;</span>, <span class="string">&quot;0&quot;</span>);</span><br><span class="line">	headers.add(<span class="string">&quot;Last-Modified&quot;</span>, <span class="keyword">new</span> Date().toString());</span><br><span class="line">	headers.add(<span class="string">&quot;ETag&quot;</span>, String.valueOf(System.currentTimeMillis()));</span><br><span class="line">	<span class="keyword">return</span> ResponseEntity.ok()</span><br><span class="line">                        .headers(headers)</span><br><span class="line">                        .contentLength(file.length())</span><br><span class="line">                        .contentType(MediaType.parseMediaType(<span class="string">&quot;application/octet-stream&quot;</span>))</span><br><span class="line">                        .body(<span class="keyword">new</span> FileSystemResource(file));</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-          <!--noindex-->
-            <div class="post-button">
-              <a class="btn" href="/posts/a1926332/#more" rel="contents">
-                Read more &raquo;
-              </a>
-            </div>
-          <!--/noindex-->
-        
-      
-
-      <div>
-        
-      </div>
-    </div>
-
-    
-    
-    
-      
-
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
-    <link itemprop="mainEntityOfPage" href="https://smile1231.github.io/posts/7733848a/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.png">
-      <meta itemprop="name" content="JIN Mao">
-      <meta itemprop="description" content="">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="JIN MAO 's Blog">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/posts/7733848a/" class="post-title-link" itemprop="url">文件上传前端小结</a>
-        </h2>
-
-        <div class="post-meta">
-          
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">Posted on</span>
-              
-
-              <time title="Created: 2022-05-21 21:24:07 / Modified: 23:15:48" itemprop="dateCreated datePublished" datetime="2022-05-21T21:24:07+08:00">2022-05-21</time>
-            </span>
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-folder"></i>
-              </span>
-              <span class="post-meta-item-text">In</span>
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/%E5%89%8D%E7%AB%AF/" itemprop="url" rel="index"><span itemprop="name">前端</span></a>
-                </span>
-            </span>
-
-          
-  
-  <span class="post-meta-item">
-    
-      <span class="post-meta-item-icon">
-        <i class="far fa-comment"></i>
-      </span>
-      <span class="post-meta-item-text">Valine: </span>
-    
-    <a title="valine" href="/posts/7733848a/#valine-comments" itemprop="discussionUrl">
-      <span class="post-comments-count valine-comment-count" data-xid="/posts/7733848a/" itemprop="commentCount"></span>
-    </a>
-  </span>
-  
-  
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <h2 id="页面a标签-点击不跳转"><a href="#页面a标签-点击不跳转" class="headerlink" title="页面a标签 点击不跳转"></a>页面<code>a</code>标签 点击不跳转</h2><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">href=&quot;javascript:viod(0)&quot;</span><br><span class="line"></span><br><span class="line">href=&quot;javascript:;&quot;</span><br></pre></td></tr></table></figure>
-          <!--noindex-->
-            <div class="post-button">
-              <a class="btn" href="/posts/7733848a/#more" rel="contents">
-                Read more &raquo;
-              </a>
-            </div>
-          <!--/noindex-->
-        
-      
-
-      <div>
-        
-      </div>
-    </div>
-
-    
-    
-    
-      
-
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
-    <link itemprop="mainEntityOfPage" href="https://smile1231.github.io/posts/55b095e0/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.png">
-      <meta itemprop="name" content="JIN Mao">
-      <meta itemprop="description" content="">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="JIN MAO 's Blog">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/posts/55b095e0/" class="post-title-link" itemprop="url">The learning of Shell</a>
+            <a href="/posts/c2a5fdc5/" class="post-title-link" itemprop="url">堆排序</a>
         </h2>
 
         <div class="post-meta">
@@ -421,14 +237,14 @@
               </span>
               <span class="post-meta-item-text">Posted on</span>
 
-              <time title="Created: 2022-05-10 23:35:17" itemprop="dateCreated datePublished" datetime="2022-05-10T23:35:17+08:00">2022-05-10</time>
+              <time title="Created: 2022-03-12 21:58:00" itemprop="dateCreated datePublished" datetime="2022-03-12T21:58:00+08:00">2022-03-12</time>
             </span>
               <span class="post-meta-item">
                 <span class="post-meta-item-icon">
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">Edited on</span>
-                <time title="Modified: 2022-06-01 20:53:31" itemprop="dateModified" datetime="2022-06-01T20:53:31+08:00">2022-06-01</time>
+                <time title="Modified: 2022-03-13 00:50:12" itemprop="dateModified" datetime="2022-03-13T00:50:12+08:00">2022-03-13</time>
               </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -436,7 +252,15 @@
               </span>
               <span class="post-meta-item-text">In</span>
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/Shell/" itemprop="url" rel="index"><span itemprop="name">Shell</span></a>
+                  <a href="/categories/Java%E9%9D%A2%E8%AF%95/" itemprop="url" rel="index"><span itemprop="name">Java面试</span></a>
+                </span>
+                  , 
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/Java%E9%9D%A2%E8%AF%95/%E5%A0%86%E6%8E%92%E5%BA%8F/" itemprop="url" rel="index"><span itemprop="name">堆排序</span></a>
+                </span>
+                  , 
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/Java%E9%9D%A2%E8%AF%95/%E5%A0%86%E6%8E%92%E5%BA%8F/%E7%AE%97%E6%B3%95/" itemprop="url" rel="index"><span itemprop="name">算法</span></a>
                 </span>
             </span>
 
@@ -449,8 +273,8 @@
       </span>
       <span class="post-meta-item-text">Valine: </span>
     
-    <a title="valine" href="/posts/55b095e0/#valine-comments" itemprop="discussionUrl">
-      <span class="post-comments-count valine-comment-count" data-xid="/posts/55b095e0/" itemprop="commentCount"></span>
+    <a title="valine" href="/posts/c2a5fdc5/#valine-comments" itemprop="discussionUrl">
+      <span class="post-comments-count valine-comment-count" data-xid="/posts/c2a5fdc5/" itemprop="commentCount"></span>
     </a>
   </span>
   
@@ -465,12 +289,11 @@
     <div class="post-body" itemprop="articleBody">
 
       
-          <p>Nowdays , i hava a task about how to use shell script ,so it is time to learn shell .</p>
-<p><a target="_blank" rel="noopener" href="https://www.cnblogs.com/jingmoxukong/p/7867397.html"> shell  入门 </a></p>
-<p><a target="_blank" rel="noopener" href="http://tool.rbtree.cn/"> 好用的工具网站 </a></p>
+          <h2 id="堆排序（不稳定）"><a href="#堆排序（不稳定）" class="headerlink" title="堆排序（不稳定）"></a>堆排序（不稳定）</h2><p>个人感觉堆排序还是挺难的，虽然会有演示动画<br><a target="_blank" rel="noopener" href="https://itimetraveler.github.io/2017/07/18/%E5%85%AB%E5%A4%A7%E6%8E%92%E5%BA%8F%E7%AE%97%E6%B3%95%E6%80%BB%E7%BB%93%E4%B8%8Ejava%E5%AE%9E%E7%8E%B0/#%E5%9B%9B%E3%80%81%E5%A0%86%E6%8E%92%E5%BA%8F%EF%BC%88Heap-Sort%EF%BC%89">链接</a></p>
+<p>但是从代码层面就没有那么好的通俗</p>
           <!--noindex-->
             <div class="post-button">
-              <a class="btn" href="/posts/55b095e0/#more" rel="contents">
+              <a class="btn" href="/posts/c2a5fdc5/#more" rel="contents">
                 Read more &raquo;
               </a>
             </div>
@@ -500,7 +323,7 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
-    <link itemprop="mainEntityOfPage" href="https://smile1231.github.io/posts/ef55dc85/">
+    <link itemprop="mainEntityOfPage" href="https://smile1231.github.io/posts/43d00a99/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/avatar.png">
@@ -514,7 +337,7 @@
       <header class="post-header">
         <h2 class="post-title" itemprop="name headline">
           
-            <a href="/posts/ef55dc85/" class="post-title-link" itemprop="url">CEST与北京时间转换表</a>
+            <a href="/posts/43d00a99/" class="post-title-link" itemprop="url">选择排序</a>
         </h2>
 
         <div class="post-meta">
@@ -526,7 +349,7 @@
               <span class="post-meta-item-text">Posted on</span>
               
 
-              <time title="Created: 2022-04-29 21:41:49 / Modified: 22:08:18" itemprop="dateCreated datePublished" datetime="2022-04-29T21:41:49+08:00">2022-04-29</time>
+              <time title="Created: 2022-03-12 21:45:07 / Modified: 21:57:07" itemprop="dateCreated datePublished" datetime="2022-03-12T21:45:07+08:00">2022-03-12</time>
             </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -534,7 +357,15 @@
               </span>
               <span class="post-meta-item-text">In</span>
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/SAP/" itemprop="url" rel="index"><span itemprop="name">SAP</span></a>
+                  <a href="/categories/Java%E9%9D%A2%E8%AF%95/" itemprop="url" rel="index"><span itemprop="name">Java面试</span></a>
+                </span>
+                  , 
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/Java%E9%9D%A2%E8%AF%95/%E9%80%89%E6%8B%A9%E6%8E%92%E5%BA%8F/" itemprop="url" rel="index"><span itemprop="name">选择排序</span></a>
+                </span>
+                  , 
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/Java%E9%9D%A2%E8%AF%95/%E9%80%89%E6%8B%A9%E6%8E%92%E5%BA%8F/%E7%AE%97%E6%B3%95/" itemprop="url" rel="index"><span itemprop="name">算法</span></a>
                 </span>
             </span>
 
@@ -547,8 +378,8 @@
       </span>
       <span class="post-meta-item-text">Valine: </span>
     
-    <a title="valine" href="/posts/ef55dc85/#valine-comments" itemprop="discussionUrl">
-      <span class="post-comments-count valine-comment-count" data-xid="/posts/ef55dc85/" itemprop="commentCount"></span>
+    <a title="valine" href="/posts/43d00a99/#valine-comments" itemprop="discussionUrl">
+      <span class="post-comments-count valine-comment-count" data-xid="/posts/43d00a99/" itemprop="commentCount"></span>
     </a>
   </span>
   
@@ -563,10 +394,122 @@
     <div class="post-body" itemprop="articleBody">
 
       
-          <p><a target="_blank" rel="noopener" href="https://datetime360.com/cn/cet-beijing-time/">参考链接</a></p>
+          <h2 id="选择排序（不稳定）ON2"><a href="#选择排序（不稳定）ON2" class="headerlink" title="选择排序（不稳定）ON2"></a>选择排序（不稳定）ON2</h2><p>从算法逻辑上看，选择排序是一种简单直观的排序算法，在简单选择排序过程中，所需移动记录的次数比较少。</p>
+<h3 id="1、基本思想"><a href="#1、基本思想" class="headerlink" title="1、基本思想"></a>1、基本思想</h3><p>选择排序的基本思想：比较 + 交换。</p>
+<p>在未排序序列中找到最小（大）元素，存放到未排序序列的起始位置。在所有的完全依靠交换去移动元素的排序方法中，选择排序属于非常好的一种。</p>
+<h3 id="2、算法描述"><a href="#2、算法描述" class="headerlink" title="2、算法描述"></a>2、算法描述</h3><p>①. 从待排序序列中，找到关键字最小的元素；<br>②. 如果最小元素不是待排序序列的第一个元素，将其和第一个元素互换；<br>③. 从余下的 N - 1 个元素中，找出关键字最小的元素，重复①、②步，直到排序结束。</p>
+<h3 id="3、代码实现"><a href="#3、代码实现" class="headerlink" title="3、代码实现"></a>3、代码实现</h3><p>选择排序比较简单，以下是我自己的实现，跟官方版差不多，所以完全可以参考。</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">selectionSort</span><span class="params">(<span class="keyword">int</span>[] arr)</span></span>&#123;</span><br><span class="line">    <span class="keyword">for</span>(<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; arr.length-<span class="number">1</span>; i++)&#123;</span><br><span class="line">        <span class="keyword">int</span> min = i;</span><br><span class="line">        <span class="keyword">for</span>(<span class="keyword">int</span> j = i+<span class="number">1</span>; j &lt; arr.length; j++)&#123;    <span class="comment">//选出之后待排序中值最小的位置</span></span><br><span class="line">            <span class="keyword">if</span>(arr[j] &lt; arr[min])&#123;</span><br><span class="line">                min = j;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">if</span>(min != i)&#123;</span><br><span class="line">            <span class="keyword">int</span> temp = arr[min];      <span class="comment">//交换操作</span></span><br><span class="line">            arr[min] = arr[i];</span><br><span class="line">            arr[i] = temp;</span><br><span class="line">            System.out.println(<span class="string">&quot;Sorting:  &quot;</span> + Arrays.toString(arr));</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+
+<p><a target="_blank" rel="noopener" href="https://itimetraveler.github.io/2017/07/18/%E5%85%AB%E5%A4%A7%E6%8E%92%E5%BA%8F%E7%AE%97%E6%B3%95%E6%80%BB%E7%BB%93%E4%B8%8Ejava%E5%AE%9E%E7%8E%B0/">链接</a></p>
+
+      
+
+      <div>
+        
+      </div>
+    </div>
+
+    
+    
+    
+      
+
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
+    <link itemprop="mainEntityOfPage" href="https://smile1231.github.io/posts/2b06d603/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.png">
+      <meta itemprop="name" content="JIN Mao">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="JIN MAO 's Blog">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/posts/2b06d603/" class="post-title-link" itemprop="url">直接插入排序</a>
+        </h2>
+
+        <div class="post-meta">
+          
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">Posted on</span>
+
+              <time title="Created: 2022-03-12 17:57:45" itemprop="dateCreated datePublished" datetime="2022-03-12T17:57:45+08:00">2022-03-12</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">Edited on</span>
+                <time title="Modified: 2022-03-13 14:41:14" itemprop="dateModified" datetime="2022-03-13T14:41:14+08:00">2022-03-13</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">In</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/Java%E9%9D%A2%E8%AF%95/" itemprop="url" rel="index"><span itemprop="name">Java面试</span></a>
+                </span>
+                  , 
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/Java%E9%9D%A2%E8%AF%95/%E7%9B%B4%E6%8E%A5%E6%8F%92%E5%85%A5%E6%8E%92%E5%BA%8F/" itemprop="url" rel="index"><span itemprop="name">直接插入排序</span></a>
+                </span>
+                  , 
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/Java%E9%9D%A2%E8%AF%95/%E7%9B%B4%E6%8E%A5%E6%8F%92%E5%85%A5%E6%8E%92%E5%BA%8F/%E7%AE%97%E6%B3%95/" itemprop="url" rel="index"><span itemprop="name">算法</span></a>
+                </span>
+            </span>
+
+          
+  
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="far fa-comment"></i>
+      </span>
+      <span class="post-meta-item-text">Valine: </span>
+    
+    <a title="valine" href="/posts/2b06d603/#valine-comments" itemprop="discussionUrl">
+      <span class="post-comments-count valine-comment-count" data-xid="/posts/2b06d603/" itemprop="commentCount"></span>
+    </a>
+  </span>
+  
+  
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h2 id="插入排序（稳定）"><a href="#插入排序（稳定）" class="headerlink" title="插入排序（稳定）"></a>插入排序（稳定）</h2><p>一般来说，插入排序都采用in-place在数组上实现。具体算法描述如下：</p>
+<p>①. 从第一个元素开始，该元素可以认为已经被排序<br>②. 取出下一个元素，在已经排序的元素序列中从后向前扫描<br>③. 如果该元素（已排序）大于新元素，将该元素移到下一位置<br>④. 重复步骤3，直到找到已排序的元素小于或者等于新元素的位置<br>⑤. 将新元素插入到该位置后<br>⑥. 重复步骤②~⑤</p>
           <!--noindex-->
             <div class="post-button">
-              <a class="btn" href="/posts/ef55dc85/#more" rel="contents">
+              <a class="btn" href="/posts/2b06d603/#more" rel="contents">
                 Read more &raquo;
               </a>
             </div>
@@ -596,7 +539,7 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
-    <link itemprop="mainEntityOfPage" href="https://smile1231.github.io/posts/96b6e8a1/">
+    <link itemprop="mainEntityOfPage" href="https://smile1231.github.io/posts/ff8068c0/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/avatar.png">
@@ -610,7 +553,7 @@
       <header class="post-header">
         <h2 class="post-title" itemprop="name headline">
           
-            <a href="/posts/96b6e8a1/" class="post-title-link" itemprop="url">simple self introduction</a>
+            <a href="/posts/ff8068c0/" class="post-title-link" itemprop="url">快速排序</a>
         </h2>
 
         <div class="post-meta">
@@ -620,23 +563,25 @@
                 <i class="far fa-calendar"></i>
               </span>
               <span class="post-meta-item-text">Posted on</span>
+              
 
-              <time title="Created: 2022-04-28 17:33:16" itemprop="dateCreated datePublished" datetime="2022-04-28T17:33:16+08:00">2022-04-28</time>
+              <time title="Created: 2022-03-12 13:24:41 / Modified: 22:01:55" itemprop="dateCreated datePublished" datetime="2022-03-12T13:24:41+08:00">2022-03-12</time>
             </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="far fa-calendar-check"></i>
-                </span>
-                <span class="post-meta-item-text">Edited on</span>
-                <time title="Modified: 2022-04-29 22:08:18" itemprop="dateModified" datetime="2022-04-29T22:08:18+08:00">2022-04-29</time>
-              </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
                 <i class="far fa-folder"></i>
               </span>
               <span class="post-meta-item-text">In</span>
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/SAP/" itemprop="url" rel="index"><span itemprop="name">SAP</span></a>
+                  <a href="/categories/Java%E9%9D%A2%E8%AF%95/" itemprop="url" rel="index"><span itemprop="name">Java面试</span></a>
+                </span>
+                  , 
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/Java%E9%9D%A2%E8%AF%95/%E5%BF%AB%E9%80%9F%E6%8E%92%E5%BA%8F/" itemprop="url" rel="index"><span itemprop="name">快速排序</span></a>
+                </span>
+                  , 
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/Java%E9%9D%A2%E8%AF%95/%E5%BF%AB%E9%80%9F%E6%8E%92%E5%BA%8F/%E7%AE%97%E6%B3%95/" itemprop="url" rel="index"><span itemprop="name">算法</span></a>
                 </span>
             </span>
 
@@ -649,8 +594,8 @@
       </span>
       <span class="post-meta-item-text">Valine: </span>
     
-    <a title="valine" href="/posts/96b6e8a1/#valine-comments" itemprop="discussionUrl">
-      <span class="post-comments-count valine-comment-count" data-xid="/posts/96b6e8a1/" itemprop="commentCount"></span>
+    <a title="valine" href="/posts/ff8068c0/#valine-comments" itemprop="discussionUrl">
+      <span class="post-comments-count valine-comment-count" data-xid="/posts/ff8068c0/" itemprop="commentCount"></span>
     </a>
   </span>
   
@@ -665,10 +610,625 @@
     <div class="post-body" itemprop="articleBody">
 
       
-          <p>哈哈，今天要当着印度的同事和德国的同事来介绍自己，初中作文来啦！</p>
+          <h2 id="快排-不稳定"><a href="#快排-不稳定" class="headerlink" title="快排 (不稳定)"></a>快排 (不稳定)</h2><p>快速排序的基本思想是：通过一趟排序将要排序的数据分割成独立的两部分，其中一部分的所有数据比另一部分的所有数据要小，再按这种方法对这两部分数据分别进行快速排序，整个排序过程可以递归进行，使整个数据变成有序序列。</p>
+<h3 id="快速排序的原理"><a href="#快速排序的原理" class="headerlink" title="快速排序的原理"></a>快速排序的原理</h3>
           <!--noindex-->
             <div class="post-button">
-              <a class="btn" href="/posts/96b6e8a1/#more" rel="contents">
+              <a class="btn" href="/posts/ff8068c0/#more" rel="contents">
+                Read more &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
+      
+
+      <div>
+        
+      </div>
+    </div>
+
+    
+    
+    
+      
+
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
+    <link itemprop="mainEntityOfPage" href="https://smile1231.github.io/posts/2f57a694/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.png">
+      <meta itemprop="name" content="JIN Mao">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="JIN MAO 's Blog">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/posts/2f57a694/" class="post-title-link" itemprop="url">正则表达式</a>
+        </h2>
+
+        <div class="post-meta">
+          
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">Posted on</span>
+
+              <time title="Created: 2022-02-19 16:18:37" itemprop="dateCreated datePublished" datetime="2022-02-19T16:18:37+08:00">2022-02-19</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">Edited on</span>
+                <time title="Modified: 2022-05-13 02:18:46" itemprop="dateModified" datetime="2022-05-13T02:18:46+08:00">2022-05-13</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">In</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F/" itemprop="url" rel="index"><span itemprop="name">正则表达式</span></a>
+                </span>
+            </span>
+
+          
+  
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="far fa-comment"></i>
+      </span>
+      <span class="post-meta-item-text">Valine: </span>
+    
+    <a title="valine" href="/posts/2f57a694/#valine-comments" itemprop="discussionUrl">
+      <span class="post-comments-count valine-comment-count" data-xid="/posts/2f57a694/" itemprop="commentCount"></span>
+    </a>
+  </span>
+  
+  
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h1 id="正则表达式中的特殊字符"><a href="#正则表达式中的特殊字符" class="headerlink" title="正则表达式中的特殊字符"></a>正则表达式中的特殊字符</h1><h2 id="正则表达式中的特殊字符（📖表示-）"><a href="#正则表达式中的特殊字符（📖表示-）" class="headerlink" title="正则表达式中的特殊字符（📖表示 |）"></a>正则表达式中的特殊字符（📖表示 <code>|</code>）</h2><p>正则真的太难学了: <a target="_blank" rel="noopener" href="https://regexone.com/">https://regexone.com/</a>   学习网站这不就来了</p>
+<p><a target="_blank" rel="noopener" href="https://www.cnblogs.com/labuladong/p/12320413.html"> git + 正则 </a></p>
+<p><a target="_blank" rel="noopener" href="https://tool.oschina.net/uploads/apidocs/jquery/regexp.html"> 手册 </a></p>
+<p><a target="_blank" rel="noopener" href="https://regex101.com/r/cO8lqs/9"> 好用的网站 </a></p>
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/posts/2f57a694/#more" rel="contents">
+                Read more &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
+      
+
+      <div>
+        
+      </div>
+    </div>
+
+    
+    
+    
+      
+
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
+    <link itemprop="mainEntityOfPage" href="https://smile1231.github.io/posts/f976ebe7/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.png">
+      <meta itemprop="name" content="JIN Mao">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="JIN MAO 's Blog">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/posts/f976ebe7/" class="post-title-link" itemprop="url">SpringMvc中标准的后端接口格式</a>
+        </h2>
+
+        <div class="post-meta">
+          
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">Posted on</span>
+              
+
+              <time title="Created: 2022-02-19 13:46:06 / Modified: 14:10:07" itemprop="dateCreated datePublished" datetime="2022-02-19T13:46:06+08:00">2022-02-19</time>
+            </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">In</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/SpringBoot/" itemprop="url" rel="index"><span itemprop="name">SpringBoot</span></a>
+                </span>
+                  , 
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/SpringBoot/Java/" itemprop="url" rel="index"><span itemprop="name">Java</span></a>
+                </span>
+            </span>
+
+          
+  
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="far fa-comment"></i>
+      </span>
+      <span class="post-meta-item-text">Valine: </span>
+    
+    <a title="valine" href="/posts/f976ebe7/#valine-comments" itemprop="discussionUrl">
+      <span class="post-comments-count valine-comment-count" data-xid="/posts/f976ebe7/" itemprop="commentCount"></span>
+    </a>
+  </span>
+  
+  
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h1 id="用SpringBoot手把手教你写出优雅的后端接口"><a href="#用SpringBoot手把手教你写出优雅的后端接口" class="headerlink" title="用SpringBoot手把手教你写出优雅的后端接口"></a>用<code>SpringBoot</code>手把手教你写出优雅的后端接口</h1><p>一个后端接口大致分为四个部分组成：<code>接口地址（url）</code>、<code>接口请求方式（get、post等）</code>、<code>请求数据（request）</code>、<code>响应数据（response）</code>。如何构建这几个部分每个公司要求都不同，没有什么“一定是最好的”标准，但一个优秀的后端接口和一个糟糕的后端接口对比起来差异还是蛮大的，其中最重要的关键点就是看是否规范!</p>
+<p>本文就一步一步演示如何构建起一个优秀的后端接口体系，体系构建好了自然就有了规范，同时再构建新的后端接口也会十分轻松。</p>
+<p>所需依赖包</p>
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/posts/f976ebe7/#more" rel="contents">
+                Read more &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
+      
+
+      <div>
+        
+      </div>
+    </div>
+
+    
+    
+    
+      
+
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
+    <link itemprop="mainEntityOfPage" href="https://smile1231.github.io/posts/a80d0031/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.png">
+      <meta itemprop="name" content="JIN Mao">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="JIN MAO 's Blog">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/posts/a80d0031/" class="post-title-link" itemprop="url">动态规划</a>
+        </h2>
+
+        <div class="post-meta">
+          
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">Posted on</span>
+              
+
+              <time title="Created: 2022-02-17 22:58:10 / Modified: 23:19:57" itemprop="dateCreated datePublished" datetime="2022-02-17T22:58:10+08:00">2022-02-17</time>
+            </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">In</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/Java%E9%9D%A2%E8%AF%95/" itemprop="url" rel="index"><span itemprop="name">Java面试</span></a>
+                </span>
+                  , 
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/Java%E9%9D%A2%E8%AF%95/%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92/" itemprop="url" rel="index"><span itemprop="name">动态规划</span></a>
+                </span>
+            </span>
+
+          
+  
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="far fa-comment"></i>
+      </span>
+      <span class="post-meta-item-text">Valine: </span>
+    
+    <a title="valine" href="/posts/a80d0031/#valine-comments" itemprop="discussionUrl">
+      <span class="post-comments-count valine-comment-count" data-xid="/posts/a80d0031/" itemprop="commentCount"></span>
+    </a>
+  </span>
+  
+  
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h1 id="动态规划算法"><a href="#动态规划算法" class="headerlink" title="动态规划算法"></a>动态规划算法</h1><h2 id="什么是动态规划"><a href="#什么是动态规划" class="headerlink" title="什么是动态规划"></a>什么是动态规划</h2><p>动态规划的大致思路是把一个复杂的问题转化成一个分阶段逐步递推的过程，从简单的初始状态一步一步递推，最终得到复杂问题的最优解。</p>
+<blockquote>
+<p>基本思想与策略编辑:</p>
+</blockquote>
+<p>由于动态规划解决的问题多数有重叠子问题这个特点，为减少重复计算，对每一个子问题只解一次，将其不同阶段的不同状态保存在一个二维数组中</p>
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/posts/a80d0031/#more" rel="contents">
+                Read more &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
+      
+
+      <div>
+        
+      </div>
+    </div>
+
+    
+    
+    
+      
+
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
+    <link itemprop="mainEntityOfPage" href="https://smile1231.github.io/posts/a4ce31d2/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.png">
+      <meta itemprop="name" content="JIN Mao">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="JIN MAO 's Blog">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/posts/a4ce31d2/" class="post-title-link" itemprop="url">贪心算法</a>
+        </h2>
+
+        <div class="post-meta">
+          
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">Posted on</span>
+              
+
+              <time title="Created: 2022-02-17 22:58:04 / Modified: 23:14:53" itemprop="dateCreated datePublished" datetime="2022-02-17T22:58:04+08:00">2022-02-17</time>
+            </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">In</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/Java%E9%9D%A2%E8%AF%95/" itemprop="url" rel="index"><span itemprop="name">Java面试</span></a>
+                </span>
+                  , 
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/Java%E9%9D%A2%E8%AF%95/%E7%AE%97%E6%B3%95/" itemprop="url" rel="index"><span itemprop="name">算法</span></a>
+                </span>
+            </span>
+
+          
+  
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="far fa-comment"></i>
+      </span>
+      <span class="post-meta-item-text">Valine: </span>
+    
+    <a title="valine" href="/posts/a4ce31d2/#valine-comments" itemprop="discussionUrl">
+      <span class="post-comments-count valine-comment-count" data-xid="/posts/a4ce31d2/" itemprop="commentCount"></span>
+    </a>
+  </span>
+  
+  
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h1 id="贪心算法"><a href="#贪心算法" class="headerlink" title="贪心算法"></a>贪心算法</h1><h2 id="基本概念"><a href="#基本概念" class="headerlink" title="基本概念"></a>基本概念</h2><p>所谓贪心算法是指，在对问题求解时，总是做出<strong>在当前看来是最好的选择</strong>。也就是说，不从整体最优上加以考虑，他所做出的仅是在某种意义上的局部最优解。</p>
+<p>贪心算法没有固定的算法框架，算法设计的关键是贪心策略的选择。必须注意的是，贪心算法不是对所有问题都能得到整体最优解，选择的贪心策略必须具备无后效性，即某个状态以后的过程不会影响以前的状态，只与当前状态有关。</p>
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/posts/a4ce31d2/#more" rel="contents">
+                Read more &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
+      
+
+      <div>
+        
+      </div>
+    </div>
+
+    
+    
+    
+      
+
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
+    <link itemprop="mainEntityOfPage" href="https://smile1231.github.io/posts/7474c898/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.png">
+      <meta itemprop="name" content="JIN Mao">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="JIN MAO 's Blog">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/posts/7474c898/" class="post-title-link" itemprop="url">分治算法</a>
+        </h2>
+
+        <div class="post-meta">
+          
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">Posted on</span>
+              
+
+              <time title="Created: 2022-02-17 22:57:48 / Modified: 23:09:54" itemprop="dateCreated datePublished" datetime="2022-02-17T22:57:48+08:00">2022-02-17</time>
+            </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">In</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/Java%E9%9D%A2%E8%AF%95/" itemprop="url" rel="index"><span itemprop="name">Java面试</span></a>
+                </span>
+                  , 
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/Java%E9%9D%A2%E8%AF%95/%E7%AE%97%E6%B3%95/" itemprop="url" rel="index"><span itemprop="name">算法</span></a>
+                </span>
+            </span>
+
+          
+  
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="far fa-comment"></i>
+      </span>
+      <span class="post-meta-item-text">Valine: </span>
+    
+    <a title="valine" href="/posts/7474c898/#valine-comments" itemprop="discussionUrl">
+      <span class="post-comments-count valine-comment-count" data-xid="/posts/7474c898/" itemprop="commentCount"></span>
+    </a>
+  </span>
+  
+  
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h1 id="分治算法"><a href="#分治算法" class="headerlink" title="分治算法"></a>分治算法</h1><h2 id="定义"><a href="#定义" class="headerlink" title="定义"></a>定义</h2><p>将原问题划分成<code>n</code>个规模较小，并且结构与原问题相似的子问题，递归地解决这些子问题，然后再合并其结果，就得到原问题的解</p>
+<h2 id="分治策略"><a href="#分治策略" class="headerlink" title="分治策略"></a>分治策略</h2><p>“分而治之”，大问题能够拆成相似的小问题，记住这些小问题需要具有相似性。而后将小问题的每个解合成为大问题的解。所以说大问题如何拆，小问题如何合并才是这个算法最主要的一个思想。实际上很多算法如贪心算法，动态规划等等都是要求把大问题拆成小问题。而分治算法的重要一点就是要适用于能够重新把小问题的解合并为大问题的解。</p>
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/posts/7474c898/#more" rel="contents">
+                Read more &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
+      
+
+      <div>
+        
+      </div>
+    </div>
+
+    
+    
+    
+      
+
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
+    <link itemprop="mainEntityOfPage" href="https://smile1231.github.io/posts/b9b9f7e7/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.png">
+      <meta itemprop="name" content="JIN Mao">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="JIN MAO 's Blog">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/posts/b9b9f7e7/" class="post-title-link" itemprop="url">二叉树遍历</a>
+        </h2>
+
+        <div class="post-meta">
+          
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">Posted on</span>
+              
+
+              <time title="Created: 2022-02-17 22:52:52 / Modified: 23:00:39" itemprop="dateCreated datePublished" datetime="2022-02-17T22:52:52+08:00">2022-02-17</time>
+            </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">In</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/Java%E9%9D%A2%E8%AF%95/" itemprop="url" rel="index"><span itemprop="name">Java面试</span></a>
+                </span>
+                  , 
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/Java%E9%9D%A2%E8%AF%95/%E7%AE%97%E6%B3%95/" itemprop="url" rel="index"><span itemprop="name">算法</span></a>
+                </span>
+            </span>
+
+          
+  
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="far fa-comment"></i>
+      </span>
+      <span class="post-meta-item-text">Valine: </span>
+    
+    <a title="valine" href="/posts/b9b9f7e7/#valine-comments" itemprop="discussionUrl">
+      <span class="post-comments-count valine-comment-count" data-xid="/posts/b9b9f7e7/" itemprop="commentCount"></span>
+    </a>
+  </span>
+  
+  
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h1 id="二叉树遍历（前序、中序、后序、层次遍历）"><a href="#二叉树遍历（前序、中序、后序、层次遍历）" class="headerlink" title="二叉树遍历（前序、中序、后序、层次遍历）"></a>二叉树遍历（前序、中序、后序、层次遍历）</h1><p>二叉树是一种非常重要的数据结构，很多其它数据结构都是基于二叉树的基础演变而来的。对于二叉树，有深度遍历和广度遍历，深度遍历有前序、中序以及后序三种遍历方法，广度遍历即我们平常所说的层次遍历。因为树的定义本身就是递归定义，因此采用递归的方法去实现树的三种遍历不仅容易理解而且代码很简洁，而对于广度遍历来说，需要其他数据结构的支撑，比如堆了。所以，对于一段代码来说，可读性有时候要比代码本身的效率要重要的多。</p>
+<p>四种主要的遍历思想为：</p>
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/posts/b9b9f7e7/#more" rel="contents">
                 Read more &raquo;
               </a>
             </div>
@@ -697,7 +1257,7 @@
 
   
   <nav class="pagination">
-    <a class="extend prev" rel="prev" href="/page/3/"><i class="fa fa-angle-left" aria-label="Previous page"></i></a><a class="page-number" href="/">1</a><a class="page-number" href="/page/2/">2</a><a class="page-number" href="/page/3/">3</a><span class="page-number current">4</span><a class="page-number" href="/page/5/">5</a><a class="page-number" href="/page/6/">6</a><a class="page-number" href="/page/7/">7</a><span class="space">&hellip;</span><a class="page-number" href="/page/27/">27</a><a class="extend next" rel="next" href="/page/5/"><i class="fa fa-angle-right" aria-label="Next page"></i></a>
+    <a class="extend prev" rel="prev" href="/page/3/"><i class="fa fa-angle-left" aria-label="Previous page"></i></a><a class="page-number" href="/">1</a><a class="page-number" href="/page/2/">2</a><a class="page-number" href="/page/3/">3</a><span class="page-number current">4</span><a class="page-number" href="/page/5/">5</a><a class="page-number" href="/page/6/">6</a><a class="page-number" href="/page/7/">7</a><span class="space">&hellip;</span><a class="page-number" href="/page/14/">14</a><a class="extend next" rel="next" href="/page/5/"><i class="fa fa-angle-right" aria-label="Next page"></i></a>
   </nav>
 
 

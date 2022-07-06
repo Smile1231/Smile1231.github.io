@@ -212,7 +212,7 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
-    <link itemprop="mainEntityOfPage" href="https://smile1231.github.io/posts/7e4601e3/">
+    <link itemprop="mainEntityOfPage" href="https://smile1231.github.io/posts/31dc52e1/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/avatar.png">
@@ -226,7 +226,7 @@
       <header class="post-header">
         <h2 class="post-title" itemprop="name headline">
           
-            <a href="/posts/7e4601e3/" class="post-title-link" itemprop="url">面试之旅之关于Spring事务处理</a>
+            <a href="/posts/31dc52e1/" class="post-title-link" itemprop="url">MyBatis之分页查询：MyBatis PageHelper</a>
         </h2>
 
         <div class="post-meta">
@@ -238,7 +238,7 @@
               <span class="post-meta-item-text">Posted on</span>
               
 
-              <time title="Created: 2022-02-16 21:14:23 / Modified: 21:43:18" itemprop="dateCreated datePublished" datetime="2022-02-16T21:14:23+08:00">2022-02-16</time>
+              <time title="Created: 2022-02-13 21:40:27 / Modified: 22:32:09" itemprop="dateCreated datePublished" datetime="2022-02-13T21:40:27+08:00">2022-02-13</time>
             </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -246,11 +246,15 @@
               </span>
               <span class="post-meta-item-text">In</span>
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/Java%E9%9D%A2%E8%AF%95/" itemprop="url" rel="index"><span itemprop="name">Java面试</span></a>
+                  <a href="/categories/Java/" itemprop="url" rel="index"><span itemprop="name">Java</span></a>
                 </span>
                   , 
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/Java%E9%9D%A2%E8%AF%95/Spring%E4%BA%8B%E5%8A%A1/" itemprop="url" rel="index"><span itemprop="name">Spring事务</span></a>
+                  <a href="/categories/Java/Mybatis/" itemprop="url" rel="index"><span itemprop="name">Mybatis</span></a>
+                </span>
+                  , 
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/Java/Mybatis/SpringBoot/" itemprop="url" rel="index"><span itemprop="name">SpringBoot</span></a>
                 </span>
             </span>
 
@@ -263,8 +267,8 @@
       </span>
       <span class="post-meta-item-text">Valine: </span>
     
-    <a title="valine" href="/posts/7e4601e3/#valine-comments" itemprop="discussionUrl">
-      <span class="post-comments-count valine-comment-count" data-xid="/posts/7e4601e3/" itemprop="commentCount"></span>
+    <a title="valine" href="/posts/31dc52e1/#valine-comments" itemprop="discussionUrl">
+      <span class="post-comments-count valine-comment-count" data-xid="/posts/31dc52e1/" itemprop="commentCount"></span>
     </a>
   </span>
   
@@ -279,12 +283,11 @@
     <div class="post-body" itemprop="articleBody">
 
       
-          <h1 id="Spring事务处理"><a href="#Spring事务处理" class="headerlink" title="Spring事务处理"></a><code>Spring</code>事务处理</h1><h2 id="Spring和事务的关系"><a href="#Spring和事务的关系" class="headerlink" title="Spring和事务的关系"></a><code>Spring</code>和事务的关系</h2><p>关系型数据库、某些消息队列等产品或中间件称为事务性资源，因为它们本身支持事务，也能够处理事务。</p>
-<p><code>Spring</code>很显然不是事务性资源，但是它可以管理事务性资源，所以<code>Spring</code>和事务之间是管理关系。</p>
-<p>就像<code>Jack Ma</code>虽然不会写代码，但是他却管理者一大批会写代码的码农。</p>
+          <h1 id="MyBatis之分页查询：MyBatis-PageHelper"><a href="#MyBatis之分页查询：MyBatis-PageHelper" class="headerlink" title="MyBatis之分页查询：MyBatis PageHelper"></a><code>MyBatis</code>之分页查询：<code>MyBatis PageHelper</code></h1><h2 id="1-添加依赖"><a href="#1-添加依赖" class="headerlink" title="1. 添加依赖"></a>1. 添加依赖</h2><figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">&lt;!--MyBatis 分页插件: MyBatis PageHelper--&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">dependency</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">groupId</span>&gt;</span>com.github.pagehelper<span class="tag">&lt;/<span class="name">groupId</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>pagehelper-spring-boot-starter<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">version</span>&gt;</span>1.2.5<span class="tag">&lt;/<span class="name">version</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">dependency</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<h2 id="2-添加配置"><a href="#2-添加配置" class="headerlink" title="2. 添加配置"></a>2. 添加配置</h2>
           <!--noindex-->
             <div class="post-button">
-              <a class="btn" href="/posts/7e4601e3/#more" rel="contents">
+              <a class="btn" href="/posts/31dc52e1/#more" rel="contents">
                 Read more &raquo;
               </a>
             </div>
@@ -314,7 +317,7 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
-    <link itemprop="mainEntityOfPage" href="https://smile1231.github.io/posts/6b5f7afc/">
+    <link itemprop="mainEntityOfPage" href="https://smile1231.github.io/posts/105c245f/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/avatar.png">
@@ -328,7 +331,7 @@
       <header class="post-header">
         <h2 class="post-title" itemprop="name headline">
           
-            <a href="/posts/6b5f7afc/" class="post-title-link" itemprop="url">面试之旅关于Java知识点</a>
+            <a href="/posts/105c245f/" class="post-title-link" itemprop="url">Mybatis使用Sql进行模糊查询</a>
         </h2>
 
         <div class="post-meta">
@@ -340,7 +343,7 @@
               <span class="post-meta-item-text">Posted on</span>
               
 
-              <time title="Created: 2022-02-16 21:14:07 / Modified: 21:41:43" itemprop="dateCreated datePublished" datetime="2022-02-16T21:14:07+08:00">2022-02-16</time>
+              <time title="Created: 2022-02-13 21:39:52 / Modified: 22:31:15" itemprop="dateCreated datePublished" datetime="2022-02-13T21:39:52+08:00">2022-02-13</time>
             </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -348,7 +351,15 @@
               </span>
               <span class="post-meta-item-text">In</span>
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/Java%E9%9D%A2%E8%AF%95/" itemprop="url" rel="index"><span itemprop="name">Java面试</span></a>
+                  <a href="/categories/Java/" itemprop="url" rel="index"><span itemprop="name">Java</span></a>
+                </span>
+                  , 
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/Java/Mybatis/" itemprop="url" rel="index"><span itemprop="name">Mybatis</span></a>
+                </span>
+                  , 
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/Java/Mybatis/SpringBoot/" itemprop="url" rel="index"><span itemprop="name">SpringBoot</span></a>
                 </span>
             </span>
 
@@ -361,8 +372,8 @@
       </span>
       <span class="post-meta-item-text">Valine: </span>
     
-    <a title="valine" href="/posts/6b5f7afc/#valine-comments" itemprop="discussionUrl">
-      <span class="post-comments-count valine-comment-count" data-xid="/posts/6b5f7afc/" itemprop="commentCount"></span>
+    <a title="valine" href="/posts/105c245f/#valine-comments" itemprop="discussionUrl">
+      <span class="post-comments-count valine-comment-count" data-xid="/posts/105c245f/" itemprop="commentCount"></span>
     </a>
   </span>
   
@@ -377,10 +388,12 @@
     <div class="post-body" itemprop="articleBody">
 
       
-          <h1 id="Java知识点"><a href="#Java知识点" class="headerlink" title="Java知识点"></a><code>Java</code>知识点</h1><h2 id="Collection类"><a href="#Collection类" class="headerlink" title="Collection类"></a><code>Collection</code>类</h2><img src="/posts/6b5f7afc/2022-02-16-21-41-42.png" class="">
+          <h1 id="Mybatis使用Sql进行模糊查询"><a href="#Mybatis使用Sql进行模糊查询" class="headerlink" title="Mybatis使用Sql进行模糊查询"></a><code>Mybatis</code>使用<code>Sql</code>进行模糊查询</h1><h2 id="方式一"><a href="#方式一" class="headerlink" title="方式一"></a>方式一</h2><figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">&lt;!-- 根据名称模糊查询 --&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">select</span> <span class="attr">id</span>=<span class="string">&quot;findByName&quot;</span> <span class="attr">resultType</span>=<span class="string">&quot;com.sc.domain.User&quot;</span> <span class="attr">parameterType</span>=<span class="string">&quot;String&quot;</span>&gt;</span></span><br><span class="line">    select * from user where username like #&#123;username&#125;</span><br><span class="line"><span class="tag">&lt;/<span class="name">select</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<p>模糊查询的测试方法</p>
           <!--noindex-->
             <div class="post-button">
-              <a class="btn" href="/posts/6b5f7afc/#more" rel="contents">
+              <a class="btn" href="/posts/105c245f/#more" rel="contents">
                 Read more &raquo;
               </a>
             </div>
@@ -410,7 +423,7 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
-    <link itemprop="mainEntityOfPage" href="https://smile1231.github.io/posts/666b2933/">
+    <link itemprop="mainEntityOfPage" href="https://smile1231.github.io/posts/b246d3ce/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/avatar.png">
@@ -424,7 +437,7 @@
       <header class="post-header">
         <h2 class="post-title" itemprop="name headline">
           
-            <a href="/posts/666b2933/" class="post-title-link" itemprop="url">面试之旅关于数据库</a>
+            <a href="/posts/b246d3ce/" class="post-title-link" itemprop="url">Java自带的好用的工具类</a>
         </h2>
 
         <div class="post-meta">
@@ -434,21 +447,27 @@
                 <i class="far fa-calendar"></i>
               </span>
               <span class="post-meta-item-text">Posted on</span>
-              
 
-              <time title="Created: 2022-02-16 21:13:54 / Modified: 21:40:34" itemprop="dateCreated datePublished" datetime="2022-02-16T21:13:54+08:00">2022-02-16</time>
+              <time title="Created: 2022-02-13 21:39:11" itemprop="dateCreated datePublished" datetime="2022-02-13T21:39:11+08:00">2022-02-13</time>
             </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">Edited on</span>
+                <time title="Modified: 2022-02-16 00:21:57" itemprop="dateModified" datetime="2022-02-16T00:21:57+08:00">2022-02-16</time>
+              </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
                 <i class="far fa-folder"></i>
               </span>
               <span class="post-meta-item-text">In</span>
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/Java%E9%9D%A2%E8%AF%95/" itemprop="url" rel="index"><span itemprop="name">Java面试</span></a>
+                  <a href="/categories/Java/" itemprop="url" rel="index"><span itemprop="name">Java</span></a>
                 </span>
                   , 
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/Java%E9%9D%A2%E8%AF%95/%E6%95%B0%E6%8D%AE%E5%BA%93/" itemprop="url" rel="index"><span itemprop="name">数据库</span></a>
+                  <a href="/categories/Java/Tools/" itemprop="url" rel="index"><span itemprop="name">Tools</span></a>
                 </span>
             </span>
 
@@ -461,8 +480,8 @@
       </span>
       <span class="post-meta-item-text">Valine: </span>
     
-    <a title="valine" href="/posts/666b2933/#valine-comments" itemprop="discussionUrl">
-      <span class="post-comments-count valine-comment-count" data-xid="/posts/666b2933/" itemprop="commentCount"></span>
+    <a title="valine" href="/posts/b246d3ce/#valine-comments" itemprop="discussionUrl">
+      <span class="post-comments-count valine-comment-count" data-xid="/posts/b246d3ce/" itemprop="commentCount"></span>
     </a>
   </span>
   
@@ -477,12 +496,10 @@
     <div class="post-body" itemprop="articleBody">
 
       
-          <h1 id="常见面试题整理–数据库篇（每位开发者必备）"><a href="#常见面试题整理–数据库篇（每位开发者必备）" class="headerlink" title="常见面试题整理–数据库篇（每位开发者必备）"></a>常见面试题整理–数据库篇（每位开发者必备）</h1><img src="/posts/666b2933/2022-02-16-21-40-29.png" class="">
-
-<h2 id="1-什么是存储过程？有哪些优缺点？"><a href="#1-什么是存储过程？有哪些优缺点？" class="headerlink" title="1. 什么是存储过程？有哪些优缺点？"></a>1. 什么是存储过程？有哪些优缺点？</h2>
+          <h1 id="Java自带的好用的工具类"><a href="#Java自带的好用的工具类" class="headerlink" title="Java自带的好用的工具类"></a><code>Java</code>自带的好用的工具类</h1><h2 id="List集合拼接成以逗号分隔的字符串"><a href="#List集合拼接成以逗号分隔的字符串" class="headerlink" title="List集合拼接成以逗号分隔的字符串"></a><code>List</code>集合拼接成以逗号分隔的字符串</h2><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 如何把list集合拼接成以逗号分隔的字符串 a,b,c </span></span><br><span class="line">List&lt;String&gt; list = Arrays.asList(<span class="string">&quot;a&quot;</span>, <span class="string">&quot;b&quot;</span>, <span class="string">&quot;c&quot;</span>);  </span><br><span class="line"><span class="comment">// 第一种方法，可以用stream流 </span></span><br><span class="line">String join = list.stream().collect(Collectors.joining(<span class="string">&quot;,&quot;</span>));  </span><br><span class="line">System.out.println(join); <span class="comment">// 输出 a,b,c </span></span><br><span class="line"><span class="comment">// 第二种方法，其实String也有join方法可以实现这个功能 </span></span><br><span class="line">String join = String.join(<span class="string">&quot;,&quot;</span>, list);  </span><br><span class="line">System.out.println(join); <span class="comment">// 输出 a,b,c</span></span><br></pre></td></tr></table></figure>
           <!--noindex-->
             <div class="post-button">
-              <a class="btn" href="/posts/666b2933/#more" rel="contents">
+              <a class="btn" href="/posts/b246d3ce/#more" rel="contents">
                 Read more &raquo;
               </a>
             </div>
@@ -512,7 +529,7 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
-    <link itemprop="mainEntityOfPage" href="https://smile1231.github.io/posts/9f9a6182/">
+    <link itemprop="mainEntityOfPage" href="https://smile1231.github.io/posts/96eb888f/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/avatar.png">
@@ -526,7 +543,7 @@
       <header class="post-header">
         <h2 class="post-title" itemprop="name headline">
           
-            <a href="/posts/9f9a6182/" class="post-title-link" itemprop="url">面试之旅关于数据结构</a>
+            <a href="/posts/96eb888f/" class="post-title-link" itemprop="url">Java学习线路图</a>
         </h2>
 
         <div class="post-meta">
@@ -538,7 +555,7 @@
               <span class="post-meta-item-text">Posted on</span>
               
 
-              <time title="Created: 2022-02-16 21:13:39 / Modified: 21:38:45" itemprop="dateCreated datePublished" datetime="2022-02-16T21:13:39+08:00">2022-02-16</time>
+              <time title="Created: 2022-02-13 21:38:15 / Modified: 22:19:21" itemprop="dateCreated datePublished" datetime="2022-02-13T21:38:15+08:00">2022-02-13</time>
             </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -546,11 +563,7 @@
               </span>
               <span class="post-meta-item-text">In</span>
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/Java%E9%9D%A2%E8%AF%95/" itemprop="url" rel="index"><span itemprop="name">Java面试</span></a>
-                </span>
-                  , 
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/Java%E9%9D%A2%E8%AF%95/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/" itemprop="url" rel="index"><span itemprop="name">数据结构</span></a>
+                  <a href="/categories/Java/" itemprop="url" rel="index"><span itemprop="name">Java</span></a>
                 </span>
             </span>
 
@@ -563,8 +576,8 @@
       </span>
       <span class="post-meta-item-text">Valine: </span>
     
-    <a title="valine" href="/posts/9f9a6182/#valine-comments" itemprop="discussionUrl">
-      <span class="post-comments-count valine-comment-count" data-xid="/posts/9f9a6182/" itemprop="commentCount"></span>
+    <a title="valine" href="/posts/96eb888f/#valine-comments" itemprop="discussionUrl">
+      <span class="post-comments-count valine-comment-count" data-xid="/posts/96eb888f/" itemprop="commentCount"></span>
     </a>
   </span>
   
@@ -579,87 +592,15 @@
     <div class="post-body" itemprop="articleBody">
 
       
-          <h1 id="面试之旅关于数据结构"><a href="#面试之旅关于数据结构" class="headerlink" title="面试之旅关于数据结构"></a>面试之旅关于数据结构</h1><p><strong><a target="_blank" rel="noopener" href="http://data.biancheng.net/intro/">数据结构详细讲解</a></strong></p>
-<p>数据结构是计算机存储、组织数据的方式。数据结构是指相互之间存在一种或多种特定关系的数据元素的集合。通常情况下，精心选择的数据结构可以带来更高的运行或者存储效率。数据结构往往同高效的检索算法和索引技术有关。</p>
-<h2 id="数据结构中的逻辑结构"><a href="#数据结构中的逻辑结构" class="headerlink" title="数据结构中的逻辑结构"></a>数据结构中的逻辑结构</h2><blockquote>
-<p>集合结构</p>
-</blockquote>
-<p>集合结构的里面的元素关系是孤立的</p>
-<img data-src="/posts/9f9a6182/2022-02-16-21-37-01.png" class="">
-
-<blockquote>
-<p>线性结构</p>
-</blockquote>
-<p>线性结构里面的元素关系：一对一</p>
-<img data-src="/posts/9f9a6182/2022-02-16-21-37-13.png" class="">
-
-
-<blockquote>
-<p>树形结构</p>
-</blockquote>
-<p>树形结构里面的元素关系：一对多</p>
-<img data-src="/posts/9f9a6182/2022-02-16-21-37-28.png" class="">
-
-
-<blockquote>
-<p>图结构</p>
-</blockquote>
-<p>图结构里面的元素关系：多对多</p>
-<img data-src="/posts/9f9a6182/2022-02-16-21-37-47.png" class="">
-
-<h2 id="数据结构的物理结构"><a href="#数据结构的物理结构" class="headerlink" title="数据结构的物理结构"></a>数据结构的物理结构</h2><p>物理结构:是指数据的逻辑结构在计算机中的存储形式。存储结构有两种：</p>
-<blockquote>
-<p>顺序存储结构：</p>
-</blockquote>
-<p>顺序存储结构：是把数据元素存放在地址连续的存储单元里，其数据间的逻辑关系和物理关系是一致的。</p>
-<img data-src="/posts/9f9a6182/2022-02-16-21-37-57.png" class="">
-
-<blockquote>
-<p>链式存储结构</p>
-</blockquote>
-<p>链式存储结构：是把数据元素存放在任意的存储单元里，这组存储单元可以是连续的，也可以是不连续的。</p>
-<img data-src="/posts/9f9a6182/2022-02-16-21-38-04.png" class="">
-
-
-<h2 id="常见的数据结构"><a href="#常见的数据结构" class="headerlink" title="常见的数据结构"></a>常见的数据结构</h2><ul>
-<li><p>数组（<code>Array</code>）</p>
-</li>
-<li><p>堆栈（<code>Stack</code>）</p>
-</li>
-<li><p>队列（<code>Queue</code>）</p>
-</li>
-<li><p>链表（<code>Linked List</code>）</p>
-</li>
-<li><p>树（<code>Tree</code>）</p>
-</li>
-<li><p>图（<code>Graph</code>）</p>
-</li>
-<li><p>堆（<code>Heap</code>）</p>
-</li>
-<li><p>散列表（<code>Hash</code>）</p>
-</li>
-</ul>
-<h2 id="链表"><a href="#链表" class="headerlink" title="链表"></a>链表</h2><p>链表是一种数据结构，和数组同级。比如，<code>Java</code>中我们使用的<code>ArrayList</code>，其实现原理是数组。而<code>LinkedList</code>的实现原理就是链表了。链表在进行循环遍历时效率不高，但是插入和删除时优势明显。下面对单向链表做一个介绍。</p>
-<p>单向链表是一种线性表，实际上是由节点（<code>Node</code>）组成的，一个链表拥有不定数量的节点。其数据在内存中存储是不连续的，它存储的数据分散在内存中，每个结点只能也只有它能知道下一个结点的存储位置。由N各节点（<code>Node</code>）组成单向链表，每一个<code>Node</code>记录本<code>Node</code>的数据及下一个<code>Node</code>。向外暴露的只有一个头节点（<code>Head</code>），我们对链表的所有操作，都是直接或者间接地通过其头节点来进行的。</p>
-<img data-src="/posts/9f9a6182/2022-02-16-21-38-15.png" class="">
-
-<p>上图中最左边的节点即为头结点（<code>Head</code>），但是添加节点的顺序是从右向左的，添加的新节点会被作为新节点。最先添加的节点对下一节点的引用可以为空。引用是引用下一个节点而非下一个节点的对象。因为有着不断的引用，所以头节点就可以操作所有节点了。</p>
-<p>下图描述了单向链表存储情况。存储是分散的，每一个节点只要记录下一节点，就把所有数据串了起来，形成了一个单向链表。</p>
-<img data-src="/posts/9f9a6182/2022-02-16-21-38-25.png" class="">
-
-<p>节点（<code>Node</code>）是由一个需要储存的对象及对下一个节点的引用组成的。也就是说，节点拥有两个成员：储存的对象、对下一个节点的引用。下面图是具体的说明：</p>
-<img data-src="/posts/9f9a6182/2022-02-16-21-38-31.png" class="">
-
-<blockquote>
-<p>单链表实现</p>
-</blockquote>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br><span class="line">105</span><br><span class="line">106</span><br><span class="line">107</span><br><span class="line">108</span><br><span class="line">109</span><br><span class="line">110</span><br><span class="line">111</span><br><span class="line">112</span><br><span class="line">113</span><br><span class="line">114</span><br><span class="line">115</span><br><span class="line">116</span><br><span class="line">117</span><br><span class="line">118</span><br><span class="line">119</span><br><span class="line">120</span><br><span class="line">121</span><br><span class="line">122</span><br><span class="line">123</span><br><span class="line">124</span><br><span class="line">125</span><br><span class="line">126</span><br><span class="line">127</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">package</span> com.zjn.LinkAndQueue;</span><br><span class="line"></span><br><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * 自定义链表设计</span></span><br><span class="line"><span class="comment"> * </span></span><br><span class="line"><span class="comment"> * <span class="doctag">@author</span> zjn</span></span><br><span class="line"><span class="comment"> *</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">MyLink</span> </span>&#123;</span><br><span class="line">    Node head = <span class="keyword">null</span>; <span class="comment">// 头节点</span></span><br><span class="line"></span><br><span class="line">    <span class="comment">/**</span></span><br><span class="line"><span class="comment">     * 链表中的节点，data代表节点的值，next是指向下一个节点的引用</span></span><br><span class="line"><span class="comment">     * </span></span><br><span class="line"><span class="comment">     * <span class="doctag">@author</span> zjn</span></span><br><span class="line"><span class="comment">     *</span></span><br><span class="line"><span class="comment">     */</span></span><br><span class="line">    <span class="class"><span class="keyword">class</span> <span class="title">Node</span> </span>&#123;</span><br><span class="line">        Node next = <span class="keyword">null</span>;<span class="comment">// 节点的引用，指向下一个节点</span></span><br><span class="line">        <span class="keyword">int</span> data;<span class="comment">// 节点的对象，即内容</span></span><br><span class="line"></span><br><span class="line">        <span class="function"><span class="keyword">public</span> <span class="title">Node</span><span class="params">(<span class="keyword">int</span> data)</span> </span>&#123;</span><br><span class="line">            <span class="keyword">this</span>.data = data;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="comment">/**</span></span><br><span class="line"><span class="comment">     * 向链表中插入数据</span></span><br><span class="line"><span class="comment">     * </span></span><br><span class="line"><span class="comment">     * <span class="doctag">@param</span> d</span></span><br><span class="line"><span class="comment">     */</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">addNode</span><span class="params">(<span class="keyword">int</span> d)</span> </span>&#123;</span><br><span class="line">        Node newNode = <span class="keyword">new</span> Node(d);<span class="comment">// 实例化一个节点</span></span><br><span class="line">        <span class="keyword">if</span> (head == <span class="keyword">null</span>) &#123;</span><br><span class="line">            head = newNode;</span><br><span class="line">            <span class="keyword">return</span>;</span><br><span class="line">        &#125;</span><br><span class="line">        Node tmp = head;</span><br><span class="line">        <span class="keyword">while</span> (tmp.next != <span class="keyword">null</span>) &#123;</span><br><span class="line">            tmp = tmp.next;</span><br><span class="line">        &#125;</span><br><span class="line">        tmp.next = newNode;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="comment">/**</span></span><br><span class="line"><span class="comment">     * </span></span><br><span class="line"><span class="comment">     * <span class="doctag">@param</span> index:删除第index个节点</span></span><br><span class="line"><span class="comment">     * <span class="doctag">@return</span></span></span><br><span class="line"><span class="comment">     */</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">boolean</span> <span class="title">deleteNode</span><span class="params">(<span class="keyword">int</span> index)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">if</span> (index &lt; <span class="number">1</span> || index &gt; length()) &#123;</span><br><span class="line">            <span class="keyword">return</span> <span class="keyword">false</span>;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">if</span> (index == <span class="number">1</span>) &#123;</span><br><span class="line">            head = head.next;</span><br><span class="line">            <span class="keyword">return</span> <span class="keyword">true</span>;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">int</span> i = <span class="number">1</span>;</span><br><span class="line">        Node preNode = head;</span><br><span class="line">        Node curNode = preNode.next;</span><br><span class="line">        <span class="keyword">while</span> (curNode != <span class="keyword">null</span>) &#123;</span><br><span class="line">            <span class="keyword">if</span> (i == index) &#123;</span><br><span class="line">                preNode.next = curNode.next;</span><br><span class="line">                <span class="keyword">return</span> <span class="keyword">true</span>;</span><br><span class="line">            &#125;</span><br><span class="line">            preNode = curNode;</span><br><span class="line">            curNode = curNode.next;</span><br><span class="line">            i++;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> <span class="keyword">false</span>;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="comment">/**</span></span><br><span class="line"><span class="comment">     * </span></span><br><span class="line"><span class="comment">     * <span class="doctag">@return</span> 返回节点长度</span></span><br><span class="line"><span class="comment">     */</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">int</span> <span class="title">length</span><span class="params">()</span> </span>&#123;</span><br><span class="line">        <span class="keyword">int</span> length = <span class="number">0</span>;</span><br><span class="line">        Node tmp = head;</span><br><span class="line">        <span class="keyword">while</span> (tmp != <span class="keyword">null</span>) &#123;</span><br><span class="line">            length++;</span><br><span class="line">            tmp = tmp.next;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> length;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="comment">/**</span></span><br><span class="line"><span class="comment">     * 在不知道头指针的情况下删除指定节点</span></span><br><span class="line"><span class="comment">     * </span></span><br><span class="line"><span class="comment">     * <span class="doctag">@param</span> n</span></span><br><span class="line"><span class="comment">     * <span class="doctag">@return</span></span></span><br><span class="line"><span class="comment">     */</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">boolean</span> <span class="title">deleteNode11</span><span class="params">(Node n)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">if</span> (n == <span class="keyword">null</span> || n.next == <span class="keyword">null</span>)</span><br><span class="line">            <span class="keyword">return</span> <span class="keyword">false</span>;</span><br><span class="line">        <span class="keyword">int</span> tmp = n.data;</span><br><span class="line">        n.data = n.next.data;</span><br><span class="line">        n.next.data = tmp;</span><br><span class="line">        n.next = n.next.next;</span><br><span class="line">        System.out.println(<span class="string">&quot;删除成功！&quot;</span>);</span><br><span class="line">        <span class="keyword">return</span> <span class="keyword">true</span>;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">printList</span><span class="params">()</span> </span>&#123;</span><br><span class="line">        Node tmp = head;</span><br><span class="line">        <span class="keyword">while</span> (tmp != <span class="keyword">null</span>) &#123;</span><br><span class="line">            System.out.println(tmp.data);</span><br><span class="line">            tmp = tmp.next;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">        MyLink list = <span class="keyword">new</span> MyLink();</span><br><span class="line">        list.addNode(<span class="number">5</span>);</span><br><span class="line">        list.addNode(<span class="number">3</span>);</span><br><span class="line">        list.addNode(<span class="number">1</span>);</span><br><span class="line">        list.addNode(<span class="number">2</span>);</span><br><span class="line">        list.addNode(<span class="number">55</span>);</span><br><span class="line">        list.addNode(<span class="number">36</span>);</span><br><span class="line">        System.out.println(<span class="string">&quot;linkLength:&quot;</span> + list.length());</span><br><span class="line">        System.out.println(<span class="string">&quot;head.data:&quot;</span> + list.head.data);</span><br><span class="line">        list.printList();</span><br><span class="line">        list.deleteNode(<span class="number">4</span>);</span><br><span class="line">        System.out.println(<span class="string">&quot;After deleteNode(4):&quot;</span>);</span><br><span class="line">        list.printList();</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<h2 id="树"><a href="#树" class="headerlink" title="树"></a>树</h2><p>非线性存储结构</p>
-<img data-src="/posts/9f9a6182/2022-02-16-21-38-44.png" class="">
-
-<p><a target="_blank" rel="noopener" href="http://data.biancheng.net/view/23.html">树的详细讲解</a></p>
-
+          <p>图片可能很长。。。</p>
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/posts/96eb888f/#more" rel="contents">
+                Read more &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
       
 
       <div>
@@ -684,7 +625,7 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
-    <link itemprop="mainEntityOfPage" href="https://smile1231.github.io/posts/c7cf6e41/">
+    <link itemprop="mainEntityOfPage" href="https://smile1231.github.io/posts/579bb697/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/avatar.png">
@@ -698,7 +639,7 @@
       <header class="post-header">
         <h2 class="post-title" itemprop="name headline">
           
-            <a href="/posts/c7cf6e41/" class="post-title-link" itemprop="url">面试之旅关于计算机网络</a>
+            <a href="/posts/579bb697/" class="post-title-link" itemprop="url">IDEA小图标含义</a>
         </h2>
 
         <div class="post-meta">
@@ -710,7 +651,7 @@
               <span class="post-meta-item-text">Posted on</span>
               
 
-              <time title="Created: 2022-02-16 21:13:16 / Modified: 21:33:34" itemprop="dateCreated datePublished" datetime="2022-02-16T21:13:16+08:00">2022-02-16</time>
+              <time title="Created: 2022-02-13 21:37:19 / Modified: 22:15:35" itemprop="dateCreated datePublished" datetime="2022-02-13T21:37:19+08:00">2022-02-13</time>
             </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -718,11 +659,7 @@
               </span>
               <span class="post-meta-item-text">In</span>
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/Java%E9%9D%A2%E8%AF%95/" itemprop="url" rel="index"><span itemprop="name">Java面试</span></a>
-                </span>
-                  , 
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/Java%E9%9D%A2%E8%AF%95/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/" itemprop="url" rel="index"><span itemprop="name">操作系统</span></a>
+                  <a href="/categories/IDEA/" itemprop="url" rel="index"><span itemprop="name">IDEA</span></a>
                 </span>
             </span>
 
@@ -735,8 +672,8 @@
       </span>
       <span class="post-meta-item-text">Valine: </span>
     
-    <a title="valine" href="/posts/c7cf6e41/#valine-comments" itemprop="discussionUrl">
-      <span class="post-comments-count valine-comment-count" data-xid="/posts/c7cf6e41/" itemprop="commentCount"></span>
+    <a title="valine" href="/posts/579bb697/#valine-comments" itemprop="discussionUrl">
+      <span class="post-comments-count valine-comment-count" data-xid="/posts/579bb697/" itemprop="commentCount"></span>
     </a>
   </span>
   
@@ -751,20 +688,499 @@
     <div class="post-body" itemprop="articleBody">
 
       
-          <h1 id="常见面试题整理–计算机网络篇（每位开发者必备）"><a href="#常见面试题整理–计算机网络篇（每位开发者必备）" class="headerlink" title="常见面试题整理–计算机网络篇（每位开发者必备）"></a>常见面试题整理–计算机网络篇（每位开发者必备）</h1><img src="/posts/c7cf6e41/2022-02-16-21-31-41.png" class="">
-
-<h2 id="1-请简述TCP-UDP的区别"><a href="#1-请简述TCP-UDP的区别" class="headerlink" title="1. 请简述TCP\UDP的区别"></a>1. 请简述<code>TCP\UDP</code>的区别</h2><p><code>TCP</code>和<code>UDP</code>是<code>OSI</code>模型中的运输层中的协议。<code>TCP</code>提供可靠的通信传输，而<code>UDP</code>则常被用于让广播和细节控制交给应用的通信传输。</p>
-<p>两者的区别大致如下：</p>
-<ul>
-<li><code>TCP</code>面向连接，<code>UDP</code>面向非连接即发送数据前不需要建立链接</li>
-<li><code>TCP</code>提供可靠的服务（数据传输），<code>UDP</code>无法保证</li>
-<li><code>TCP</code>面向字节流，<code>UDP</code>面向报文</li>
-<li><code>TCP</code>数据传输慢，<code>UDP</code>数据传输快</li>
-</ul>
-<h2 id="2-请简单说一下你了解的端口及对应的服务？"><a href="#2-请简单说一下你了解的端口及对应的服务？" class="headerlink" title="2. 请简单说一下你了解的端口及对应的服务？"></a>2. 请简单说一下你了解的端口及对应的服务？</h2>
+          <h1 id="IDEA小图标含义"><a href="#IDEA小图标含义" class="headerlink" title="IDEA小图标含义"></a><code>IDEA</code>小图标含义</h1><p>日常图标</p>
+<img src="/posts/579bb697/2022-02-13-22-13-27.png" class="">
           <!--noindex-->
             <div class="post-button">
-              <a class="btn" href="/posts/c7cf6e41/#more" rel="contents">
+              <a class="btn" href="/posts/579bb697/#more" rel="contents">
+                Read more &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
+      
+
+      <div>
+        
+      </div>
+    </div>
+
+    
+    
+    
+      
+
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
+    <link itemprop="mainEntityOfPage" href="https://smile1231.github.io/posts/610bdf07/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.png">
+      <meta itemprop="name" content="JIN Mao">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="JIN MAO 's Blog">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/posts/610bdf07/" class="post-title-link" itemprop="url">IDEA快捷键</a>
+        </h2>
+
+        <div class="post-meta">
+          
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">Posted on</span>
+              
+
+              <time title="Created: 2022-02-13 21:36:41 / Modified: 22:11:25" itemprop="dateCreated datePublished" datetime="2022-02-13T21:36:41+08:00">2022-02-13</time>
+            </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">In</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/IDEA/" itemprop="url" rel="index"><span itemprop="name">IDEA</span></a>
+                </span>
+            </span>
+
+          
+  
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="far fa-comment"></i>
+      </span>
+      <span class="post-meta-item-text">Valine: </span>
+    
+    <a title="valine" href="/posts/610bdf07/#valine-comments" itemprop="discussionUrl">
+      <span class="post-comments-count valine-comment-count" data-xid="/posts/610bdf07/" itemprop="commentCount"></span>
+    </a>
+  </span>
+  
+  
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h1 id="IDEA快捷键"><a href="#IDEA快捷键" class="headerlink" title="IDEA快捷键"></a><code>IDEA</code>快捷键</h1><h2 id="Ctrl快捷键"><a href="#Ctrl快捷键" class="headerlink" title="Ctrl快捷键"></a><code>Ctrl</code>快捷键</h2>
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/posts/610bdf07/#more" rel="contents">
+                Read more &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
+      
+
+      <div>
+        
+      </div>
+    </div>
+
+    
+    
+    
+      
+
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
+    <link itemprop="mainEntityOfPage" href="https://smile1231.github.io/posts/9dcbb5fa/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.png">
+      <meta itemprop="name" content="JIN Mao">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="JIN MAO 's Blog">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/posts/9dcbb5fa/" class="post-title-link" itemprop="url">Corn表达式</a>
+        </h2>
+
+        <div class="post-meta">
+          
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">Posted on</span>
+              
+
+              <time title="Created: 2022-02-13 21:35:47 / Modified: 22:09:17" itemprop="dateCreated datePublished" datetime="2022-02-13T21:35:47+08:00">2022-02-13</time>
+            </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">In</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/Java/" itemprop="url" rel="index"><span itemprop="name">Java</span></a>
+                </span>
+            </span>
+
+          
+  
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="far fa-comment"></i>
+      </span>
+      <span class="post-meta-item-text">Valine: </span>
+    
+    <a title="valine" href="/posts/9dcbb5fa/#valine-comments" itemprop="discussionUrl">
+      <span class="post-comments-count valine-comment-count" data-xid="/posts/9dcbb5fa/" itemprop="commentCount"></span>
+    </a>
+  </span>
+  
+  
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h1 id="Corn表达式"><a href="#Corn表达式" class="headerlink" title="Corn表达式"></a><code>Corn</code>表达式</h1><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">一个cron表达式有至少6个（也可能7个）有空格分隔的时间元素。</span><br><span class="line">按顺序依次为</span><br><span class="line">秒（0~59）</span><br><span class="line">分钟（0~59）</span><br><span class="line">小时（0~23）</span><br><span class="line">天（月）（0~31，但是你需要考虑你月的天数）</span><br><span class="line">月（0~11）</span><br><span class="line">天（星期）（1~7 1=SUN 或 SUN，MON，TUE，WED，THU，FRI，SAT）</span><br><span class="line">年份（1970－2099）</span><br><span class="line"></span><br><span class="line">其中每个元素可以是一个值(如6),一个连续区间(9-12),一个间隔时间(8-18/4)(/表示每隔4小时),一个列表(1,3,5),通配符。由于&quot;月份中的日期&quot;和&quot;星期中的日期&quot;这两个元素互斥的,必须要对其中一个设置?</span><br></pre></td></tr></table></figure>
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/posts/9dcbb5fa/#more" rel="contents">
+                Read more &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
+      
+
+      <div>
+        
+      </div>
+    </div>
+
+    
+    
+    
+      
+
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
+    <link itemprop="mainEntityOfPage" href="https://smile1231.github.io/posts/c3733521/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.png">
+      <meta itemprop="name" content="JIN Mao">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="JIN MAO 's Blog">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/posts/c3733521/" class="post-title-link" itemprop="url">Java之assert关键字</a>
+        </h2>
+
+        <div class="post-meta">
+          
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">Posted on</span>
+              
+
+              <time title="Created: 2022-02-13 21:35:24 / Modified: 22:06:46" itemprop="dateCreated datePublished" datetime="2022-02-13T21:35:24+08:00">2022-02-13</time>
+            </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">In</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/Java/" itemprop="url" rel="index"><span itemprop="name">Java</span></a>
+                </span>
+            </span>
+
+          
+  
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="far fa-comment"></i>
+      </span>
+      <span class="post-meta-item-text">Valine: </span>
+    
+    <a title="valine" href="/posts/c3733521/#valine-comments" itemprop="discussionUrl">
+      <span class="post-comments-count valine-comment-count" data-xid="/posts/c3733521/" itemprop="commentCount"></span>
+    </a>
+  </span>
+  
+  
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h1 id="Java之assert关键字"><a href="#Java之assert关键字" class="headerlink" title="Java之assert关键字"></a><code>Java</code>之<code>assert</code>关键字</h1><p>在<code>Java</code>中，<code>assert</code>关键字是从<code>JAVA SE 1.4</code> 引入的，为了避免和老版本的<code>Java</code>代码中使用了<code>assert</code>关键字导致错误，<code>Java</code>在执行的时候默认是不启动断言检查的（这个时候，所有的断言语句都 将忽略！），如果要开启断言检查，则需要用开关<code>-enableassertions</code>或<code>-ea</code>来开启。</p>
+<p><code>assert</code>关键字语法很简单，有两种用法：</p>
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/posts/c3733521/#more" rel="contents">
+                Read more &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
+      
+
+      <div>
+        
+      </div>
+    </div>
+
+    
+    
+    
+      
+
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
+    <link itemprop="mainEntityOfPage" href="https://smile1231.github.io/posts/e18abc1d/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.png">
+      <meta itemprop="name" content="JIN Mao">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="JIN MAO 's Blog">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/posts/e18abc1d/" class="post-title-link" itemprop="url">关于YAML中List存放Map</a>
+        </h2>
+
+        <div class="post-meta">
+          
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">Posted on</span>
+              
+
+              <time title="Created: 2022-02-13 21:27:41 / Modified: 22:06:28" itemprop="dateCreated datePublished" datetime="2022-02-13T21:27:41+08:00">2022-02-13</time>
+            </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">In</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/Java/" itemprop="url" rel="index"><span itemprop="name">Java</span></a>
+                </span>
+            </span>
+
+          
+  
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="far fa-comment"></i>
+      </span>
+      <span class="post-meta-item-text">Valine: </span>
+    
+    <a title="valine" href="/posts/e18abc1d/#valine-comments" itemprop="discussionUrl">
+      <span class="post-comments-count valine-comment-count" data-xid="/posts/e18abc1d/" itemprop="commentCount"></span>
+    </a>
+  </span>
+  
+  
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h1 id="关于YAML中List存放Map"><a href="#关于YAML中List存放Map" class="headerlink" title="关于YAML中List存放Map"></a>关于<code>YAML</code>中<code>List</code>存放<code>Map</code></h1><h2 id="YAML如何书写"><a href="#YAML如何书写" class="headerlink" title="YAML如何书写"></a><code>YAML</code>如何书写</h2><blockquote>
+<p><code>YAML</code>语法</p>
+</blockquote>
+<figure class="highlight arcade"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">大小写敏感</span><br><span class="line">使用缩进表示层级关系</span><br><span class="line">缩进时不允许使用<span class="literal">Tab</span>键，只允许使用空格。</span><br><span class="line">缩进的空格数目不重要，只要相同层级的元素左侧对齐即可</span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>支持的数据结构</p>
+</blockquote>
+<figure class="highlight pgsql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">对象：键值对的集合，又称为映射（<span class="keyword">mapping</span>）/ 哈希（hashes） / 字典（<span class="keyword">dictionary</span>）</span><br><span class="line">数组：一组按次序排列的值，又称为序列（<span class="keyword">sequence</span>） / 列表（list）</span><br><span class="line">基本类型：单个的、不可再分的值</span><br></pre></td></tr></table></figure>
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/posts/e18abc1d/#more" rel="contents">
+                Read more &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
+      
+
+      <div>
+        
+      </div>
+    </div>
+
+    
+    
+    
+      
+
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
+    <link itemprop="mainEntityOfPage" href="https://smile1231.github.io/posts/91c18f7c/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.png">
+      <meta itemprop="name" content="JIN Mao">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="JIN MAO 's Blog">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/posts/91c18f7c/" class="post-title-link" itemprop="url">关于Try-With-Source的使用以及注意点</a>
+        </h2>
+
+        <div class="post-meta">
+          
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">Posted on</span>
+              
+
+              <time title="Created: 2022-02-13 21:26:36 / Modified: 22:06:12" itemprop="dateCreated datePublished" datetime="2022-02-13T21:26:36+08:00">2022-02-13</time>
+            </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">In</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/Java/" itemprop="url" rel="index"><span itemprop="name">Java</span></a>
+                </span>
+            </span>
+
+          
+  
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="far fa-comment"></i>
+      </span>
+      <span class="post-meta-item-text">Valine: </span>
+    
+    <a title="valine" href="/posts/91c18f7c/#valine-comments" itemprop="discussionUrl">
+      <span class="post-comments-count valine-comment-count" data-xid="/posts/91c18f7c/" itemprop="commentCount"></span>
+    </a>
+  </span>
+  
+  
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h1 id="关于-Try-With-Source-的使用以及注意点"><a href="#关于-Try-With-Source-的使用以及注意点" class="headerlink" title="关于 Try-With-Source 的使用以及注意点"></a>关于 <code>Try-With-Source</code> 的使用以及注意点</h1><h2 id="在JDK-1-7-之前-资源需要手动关闭"><a href="#在JDK-1-7-之前-资源需要手动关闭" class="headerlink" title="在JDK 1.7 之前 , 资源需要手动关闭"></a>在<code>JDK 1.7 </code>之前 , 资源需要手动关闭</h2>
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/posts/91c18f7c/#more" rel="contents">
                 Read more &raquo;
               </a>
             </div>
@@ -793,7 +1209,7 @@
 
   
   <nav class="pagination">
-    <a class="extend prev" rel="prev" href="/page/8/"><i class="fa fa-angle-left" aria-label="Previous page"></i></a><a class="page-number" href="/">1</a><span class="space">&hellip;</span><a class="page-number" href="/page/6/">6</a><a class="page-number" href="/page/7/">7</a><a class="page-number" href="/page/8/">8</a><span class="page-number current">9</span><a class="page-number" href="/page/10/">10</a><a class="page-number" href="/page/11/">11</a><a class="page-number" href="/page/12/">12</a><span class="space">&hellip;</span><a class="page-number" href="/page/27/">27</a><a class="extend next" rel="next" href="/page/10/"><i class="fa fa-angle-right" aria-label="Next page"></i></a>
+    <a class="extend prev" rel="prev" href="/page/8/"><i class="fa fa-angle-left" aria-label="Previous page"></i></a><a class="page-number" href="/">1</a><span class="space">&hellip;</span><a class="page-number" href="/page/6/">6</a><a class="page-number" href="/page/7/">7</a><a class="page-number" href="/page/8/">8</a><span class="page-number current">9</span><a class="page-number" href="/page/10/">10</a><a class="page-number" href="/page/11/">11</a><a class="page-number" href="/page/12/">12</a><span class="space">&hellip;</span><a class="page-number" href="/page/14/">14</a><a class="extend next" rel="next" href="/page/10/"><i class="fa fa-angle-right" aria-label="Next page"></i></a>
   </nav>
 
 
