@@ -76,7 +76,7 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
       <i class="ic i-pen"></i>
     </span>
     <span class="text">Symbols count in article</span>
-    <span>2.5k</span>
+    <span>2.4k</span>
     <span class="text">words</span>
   </span>
   <span class="item" title="Reading time">
@@ -117,12 +117,12 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
       </div>
       <div id="imgs" class="pjax">
         <ul>
-          <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1gipeyvx1d4j20zk0m8hdt.jpg"></li>
-          <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1gipetlbztpj20zk0m84qp.jpg"></li>
-          <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1giciub8ja1j20zk0m81ky.jpg"></li>
-          <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1gicmnywqgpj20zk0m8dwx.jpg"></li>
-          <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1gipeyhsblkj20zk0m81kx.jpg"></li>
-          <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1giclhtuo6nj20zk0m8ttm.jpg"></li>
+          <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1gipesx5fdwj20zk0m81kx.jpg"></li>
+          <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1gipex2cdtbj20zk0m8x6p.jpg"></li>
+          <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1gicm0fdw5cj20zk0m8hdt.jpg"></li>
+          <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1gipevgoki5j20zk0m84qp.jpg"></li>
+          <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1gipev1x5e4j20zk0m8b29.jpg"></li>
+          <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1gipesrnqv3j20zk0m8ava.jpg"></li>
         </ul>
       </div>
     </header>
@@ -171,79 +171,79 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
   <div class="body md" itemprop="articleBody">
     
 
-    <h1 id="ubuntu中安装卸载mysql数据库"><a class="markdownIt-Anchor" href="#ubuntu中安装卸载mysql数据库">#</a>  <code>Ubuntu</code>  中安装卸载 <code>Mysql</code>  数据库</h1>
-<blockquote>
-<p>启动 <code>Mysql</code></p>
+    <h1 id="Ubuntu中安装卸载Mysql数据库"><a href="#Ubuntu中安装卸载Mysql数据库" class="headerlink" title="Ubuntu中安装卸载Mysql数据库"></a><code>Ubuntu</code>中安装卸载<code>Mysql</code>数据库</h1><blockquote>
+<p>启动<code>Mysql</code></p>
 </blockquote>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">service mysql start</span><br></pre></td></tr></table></figure>
 <blockquote>
-<p>关闭 <code>Mysql</code></p>
+<p>关闭<code>Mysql</code></p>
 </blockquote>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">service mysql stop</span><br></pre></td></tr></table></figure>
+
 <span id="more"></span>
+
 <blockquote>
-<p>重启 <code>Mysql</code></p>
+<p>重启<code>Mysql</code></p>
 </blockquote>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">/etc/init.d/mysql restart</span><br></pre></td></tr></table></figure>
-<h2 id="mysql卸载"><a class="markdownIt-Anchor" href="#mysql卸载">#</a>  <code>Mysql</code>  卸载</h2>
-<ol>
-<li>先卸载  <code>mysql-common</code></li>
+
+<h2 id="Mysql卸载"><a href="#Mysql卸载" class="headerlink" title="Mysql卸载"></a><code>Mysql</code>卸载</h2><ol>
+<li>先卸载 <code>mysql-common</code></li>
 </ol>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo apt-get remove mysql-common</span><br></pre></td></tr></table></figure>
 <ol start="2">
-<li>再卸载 (因为我的 <code>Mysql</code>  是 <code>8.0</code> )</li>
+<li>再卸载(因为我的<code>Mysql</code>是<code>8.0</code>)</li>
 </ol>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo apt-get autoremove --purge mysql-server-8.0</span><br></pre></td></tr></table></figure>
+
 <ol start="3">
-<li>
-<p>再用 <code>dpkg --list|grep mysql</code>  查看，还剩什么就卸载什么</p>
+<li><p>再用<code>dpkg --list|grep mysql</code>查看，还剩什么就卸载什么</p>
 </li>
-<li>
-<p>最后清除残留数据</p>
-</li>
+<li><p>最后清除残留数据</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">dpkg -l |grep ^rc|awk <span class="string">&#x27;&#123;print $2&#125;&#x27;</span> |sudo xargs dpkg -P </span><br></pre></td></tr></table></figure></li>
 </ol>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">dpkg -l |grep ^rc|awk <span class="string">&#x27;&#123;print $2&#125;&#x27;</span> |sudo xargs dpkg -P </span><br></pre></td></tr></table></figure>
-<h2 id="mysql安装"><a class="markdownIt-Anchor" href="#mysql安装">#</a>  <code>Mysql</code>  安装</h2>
-<h3 id="一-安装"><a class="markdownIt-Anchor" href="#一-安装">#</a> 一、安装</h3>
-<ol>
-<li>更新软件库<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo apt update</span><br></pre></td></tr></table></figure>
-</li>
-<li>安装 <code>Mysql</code>  服务<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo apt install mysql-server(这步就已经安装mysql-client)</span><br></pre></td></tr></table></figure>
-</li>
+<h2 id="Mysql安装"><a href="#Mysql安装" class="headerlink" title="Mysql安装"></a><code>Mysql</code>安装</h2><h3 id="一、安装"><a href="#一、安装" class="headerlink" title="一、安装"></a>一、安装</h3><ol>
+<li>更新软件库<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo apt update</span><br></pre></td></tr></table></figure></li>
+<li>安装<code>Mysql</code>服务<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo apt install mysql-server(这步就已经安装mysql-client)</span><br></pre></td></tr></table></figure></li>
 <li>安装依赖<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">   sudo apt install libmysqlclient-dev</span><br><span class="line">   ```      </span><br><span class="line"></span><br><span class="line"><span class="comment">### 二、检查状态</span></span><br><span class="line">```bash</span><br><span class="line">sudo netstat -tap | grep mysql</span><br></pre></td></tr></table></figure>
-</li>
+如果出现“无此命令”，输入命令<code>sudo apt install netstat</code></li>
 </ol>
-<p>如果出现 “无此命令”，输入命令 <code>sudo apt install netstat</code></p>
 <img data-src="/posts/31f95091/2022-02-13-23-21-16.png" class="">
-<h3 id="三-设置root密码"><a class="markdownIt-Anchor" href="#三-设置root密码">#</a> 三、设置 <code>Root</code>  密码</h3>
-<p>1、进入 <code>root</code></p>
+
+<h3 id="三、设置Root密码"><a href="#三、设置Root密码" class="headerlink" title="三、设置Root密码"></a>三、设置<code>Root</code>密码</h3><p>1、进入<code>root</code></p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo su</span><br></pre></td></tr></table></figure>
-<p>2、进入 <code>mysql</code></p>
+<p>2、进入<code>mysql</code></p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">mysql</span><br></pre></td></tr></table></figure>
-<p>3、配置数据库 <code>root</code>  权限</p>
+<p>3、配置数据库<code>root</code>权限</p>
 <figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">update mysql.user <span class="keyword">set</span> authentication_string<span class="operator">=</span>PASSWORD(<span class="string">&#x27;123456&#x27;</span>), plugin<span class="operator">=</span><span class="string">&#x27;mysql_native_password&#x27;</span> <span class="keyword">where</span> <span class="keyword">user</span><span class="operator">=</span><span class="string">&#x27;root&#x27;</span>;</span><br></pre></td></tr></table></figure>
 <p>或者</p>
 <figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">ALTER</span> <span class="keyword">USER</span> <span class="string">&#x27;root&#x27;</span>@<span class="string">&#x27;localhost&#x27;</span> IDENTIFIED <span class="keyword">WITH</span> mysql_native_password <span class="keyword">BY</span> <span class="string">&#x27;root&#x27;</span>;</span><br></pre></td></tr></table></figure>
+
 <img data-src="/posts/31f95091/2022-02-13-23-21-34.png" class="">
+
 <p>如果显示密码过于简单则需要重新设置密码强度</p>
 <figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">SHOW</span> VARIABLES <span class="keyword">LIKE</span> <span class="string">&#x27;validate_password%&#x27;</span>;</span><br></pre></td></tr></table></figure>
+
 <img data-src="/posts/31f95091/2022-02-13-23-21-46.png" class="">
+
 <blockquote>
-<p>密码的长度是由 <code>validate_password.length</code>  决定的，但是可以通过以下命令修改</p>
+<p>密码的长度是由<code>validate_password.length</code>决定的,但是可以通过以下命令修改</p>
 </blockquote>
 <figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">set</span> <span class="keyword">global</span> validate_password.length<span class="operator">=</span><span class="number">4</span>;</span><br></pre></td></tr></table></figure>
 <blockquote>
-<p><code>validate_password.policy</code>  决定密码的验证策略，默认等级为 <code>MEDIUM</code>  (中等), 可通过以下命令修改为 <code>LOW</code>  (低)</p>
+<p><code>validate_password.policy</code>决定密码的验证策略,默认等级为<code>MEDIUM</code>(中等),可通过以下命令修改为<code>LOW</code>(低)</p>
 </blockquote>
 <figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">set</span> <span class="keyword">global</span> validate_password.policy<span class="operator">=</span><span class="number">0</span>;</span><br></pre></td></tr></table></figure>
+
 <img data-src="/posts/31f95091/2022-02-13-23-21-56.png" class="">
-<h3 id="四-配置远程连接"><a class="markdownIt-Anchor" href="#四-配置远程连接">#</a> 四、配置远程连接</h3>
-<p>查看目前是否支持远程连接</p>
+
+<h3 id="四、配置远程连接"><a href="#四、配置远程连接" class="headerlink" title="四、配置远程连接"></a>四、配置远程连接</h3><p>查看目前是否支持远程连接</p>
 <figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">use mysql;</span><br><span class="line"><span class="keyword">select</span> <span class="keyword">user</span>,host <span class="keyword">from</span> <span class="keyword">user</span>;</span><br></pre></td></tr></table></figure>
 <img data-src="/posts/31f95091/2022-02-13-23-22-07.png" class="">
+
 <p>目前只支持本地连接</p>
 <blockquote>
-<p>更新域属性， <code>'%'</code>  表示允许外部访问：</p>
+<p>更新域属性，<code>&#39;%&#39;</code>表示允许外部访问：</p>
 </blockquote>
 <figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">update <span class="keyword">user</span> <span class="keyword">set</span> host<span class="operator">=</span><span class="string">&#x27;%&#x27;</span> <span class="keyword">where</span> <span class="keyword">user</span> <span class="operator">=</span><span class="string">&#x27;root&#x27;</span>;</span><br></pre></td></tr></table></figure>
 <blockquote>
@@ -254,36 +254,30 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
 <p>再执行授权语句：</p>
 </blockquote>
 <figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">GRANT</span> <span class="keyword">ALL</span> PRIVILEGES <span class="keyword">ON</span> <span class="operator">*</span>.<span class="operator">*</span> <span class="keyword">TO</span> <span class="string">&#x27;root&#x27;</span>@<span class="string">&#x27;%&#x27;</span><span class="keyword">WITH</span> <span class="keyword">GRANT</span> OPTION;</span><br></pre></td></tr></table></figure>
-<p><code>FLUSH PRIVILEGES;</code>  命令本质上的作用是：</p>
-<p>将当前 <code>user</code>  和 <code>privilige</code>  表中的用户信息 / 权限设置从 <code>mysql</code>  库 ( <code>MySQL</code>  数据库的内置库) 中提取到内存里。</p>
-<p><code>MySQL</code>  用户数据和权限有修改后，希望在 &quot; 不重启 <code>MySQL</code>  服务 &quot; 的情况下直接生效，那么就需要执行这个命令。</p>
-<p>通常是在修改 <code>ROOT</code>  帐号的设置后，怕重启后无法再登录进来，那么直接 <code>flush</code>  之后就可以看权限设置是否生效。</p>
+<p><code>FLUSH PRIVILEGES;</code> 命令本质上的作用是：</p>
+<p>将当前<code>user</code>和<code>privilige</code>表中的用户信息/权限设置从<code>mysql</code>库(<code>MySQL</code>数据库的内置库)中提取到内存里。</p>
+<p><code>MySQL</code>用户数据和权限有修改后，希望在”不重启<code>MySQL</code>服务”的情况下直接生效，那么就需要执行这个命令。</p>
+<p>通常是在修改<code>ROOT</code>帐号的设置后，怕重启后无法再登录进来，那么直接<code>flush</code>之后就可以看权限设置是否生效。</p>
 <p>而不必冒太大风险。</p>
-<h4 id="可能存在的其它问题"><a class="markdownIt-Anchor" href="#可能存在的其它问题">#</a> 可能存在的其它问题</h4>
-<p>执行完之后，再用 <code>Navicat</code>  连接 <code>mysql</code> ，报错如下：</p>
+<h4 id="可能存在的其它问题"><a href="#可能存在的其它问题" class="headerlink" title="可能存在的其它问题"></a>可能存在的其它问题</h4><p>执行完之后，再用<code>Navicat</code>连接<code>mysql</code>，报错如下：</p>
 <figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Client does <span class="keyword">not</span> support authentication protocol requested <span class="keyword">by</span> server；</span><br></pre></td></tr></table></figure>
 <p>报错原因：</p>
-<p><code>mysql8.0</code>  引入了新特性  <code>caching_sha2_password；</code> 这种密码加密方式 <code>Navicat 12</code>  以下客户端不支持；</p>
-<p><code>Navicat 12</code>  以下客户端支持的是 <code>mysql_native_password</code>  这种加密方式；</p>
+<p><code>mysql8.0</code> 引入了新特性 <code>caching_sha2_password；</code>这种密码加密方式<code>Navicat 12</code>以下客户端不支持；</p>
+<p><code>Navicat 12</code>以下客户端支持的是<code>mysql_native_password</code> 这种加密方式；</p>
 <p>解决方案:</p>
 <ol>
-<li>用如下语句查看 <code>MySQL</code>  当前加密方式</li>
+<li>用如下语句查看<code>MySQL</code>当前加密方式<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">select</span> host,<span class="keyword">user</span>,plugin <span class="keyword">from</span> <span class="keyword">user</span>;</span><br></pre></td></tr></table></figure>
+<img data-src="/posts/31f95091/2022-02-13-23-22-58.png" class=""></li>
 </ol>
-<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">select</span> host,<span class="keyword">user</span>,plugin <span class="keyword">from</span> <span class="keyword">user</span>;</span><br></pre></td></tr></table></figure>
-<img data-src="/posts/31f95091/2022-02-13-23-22-58.png" class="">
-<p>一般第一行， <code>root</code>  加密方式为 <code>caching_sha2_password</code> 。</p>
-<p>2，使用命令将他修改成 <code>mysql_native_password</code>  加密模式：</p>
+<p>一般第一行，<code>root</code>加密方式为<code>caching_sha2_password</code>。</p>
+<p>2，使用命令将他修改成<code>mysql_native_password</code>加密模式：</p>
 <figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">update <span class="keyword">user</span> <span class="keyword">set</span> plugin<span class="operator">=</span><span class="string">&#x27;mysql_native_password&#x27;</span> <span class="keyword">where</span> <span class="keyword">user</span><span class="operator">=</span><span class="string">&#x27;root&#x27;</span>;</span><br></pre></td></tr></table></figure>
 <p>再次连接的时候，就成功了。</p>
-<h4 id="如果还连接不上"><a class="markdownIt-Anchor" href="#如果还连接不上">#</a> 如果还连接不上</h4>
-<p>通过以上操作后，依然无法连接上，问题可能出在了防火墙上。</p>
-<p>1， <code>MySQL</code>  部署在实体服务器上解决方案如下：<br>
-a. 开放 <code>MySQL</code>  的端口号，默认端口号是 <code>3306</code> 。<br>
-b. 直接关闭防火墙（慎重操作，不建议。当然测试玩的话就随意了。。。。）</p>
-<p>2， <code>MySQL</code>  部署在云计算机上的方案如下：<br>
-a. 以阿里云为例，找到实例，设置安全组，开放端口号即可。</p>
-<h3 id="关于开放端口"><a class="markdownIt-Anchor" href="#关于开放端口">#</a> 关于开放端口</h3>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#防火墙开放3306端口</span></span><br><span class="line">iptables -A INPUT -p tcp --dport 3306 -j ACCEPT</span><br><span class="line"><span class="comment">#修改MySQL监听</span></span><br><span class="line">vim /etc/mysql/mysql.conf.d/mysqld.cnf</span><br><span class="line"><span class="comment">##注释掉bind-address = 127.0.0.1</span></span><br><span class="line"><span class="comment">#重启动MySQL</span></span><br><span class="line">sudo /etc/init.d/mysql restart</span><br><span class="line"><span class="comment">#开放MySQL用户远程访问权限</span></span><br><span class="line">grant all privileges on *.* to <span class="string">&#x27;root&#x27;</span>@<span class="string">&#x27;%&#x27;</span> identified by <span class="string">&#x27;root&#x27;</span>;</span><br><span class="line">flush privileges;​</span><br></pre></td></tr></table></figure>
+<h4 id="如果还连接不上"><a href="#如果还连接不上" class="headerlink" title="如果还连接不上"></a>如果还连接不上</h4><p>通过以上操作后，依然无法连接上，问题可能出在了防火墙上。</p>
+<p>1，<code>MySQL</code>部署在实体服务器上解决方案如下：<br>a.开放<code>MySQL</code>的端口号，默认端口号是<code>3306</code>。<br>b.直接关闭防火墙（慎重操作，不建议。当然测试玩的话就随意了。。。。）</p>
+<p>2，<code>MySQL</code>部署在云计算机上的方案如下：<br>a.以阿里云为例，找到实例，设置安全组，开放端口号即可。</p>
+<h3 id="关于开放端口"><a href="#关于开放端口" class="headerlink" title="关于开放端口"></a>关于开放端口</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#防火墙开放3306端口</span></span><br><span class="line">iptables -A INPUT -p tcp --dport 3306 -j ACCEPT</span><br><span class="line"><span class="comment">#修改MySQL监听</span></span><br><span class="line">vim /etc/mysql/mysql.conf.d/mysqld.cnf</span><br><span class="line"><span class="comment">##注释掉bind-address = 127.0.0.1</span></span><br><span class="line"><span class="comment">#重启动MySQL</span></span><br><span class="line">sudo /etc/init.d/mysql restart</span><br><span class="line"><span class="comment">#开放MySQL用户远程访问权限</span></span><br><span class="line">grant all privileges on *.* to <span class="string">&#x27;root&#x27;</span>@<span class="string">&#x27;%&#x27;</span> identified by <span class="string">&#x27;root&#x27;</span>;</span><br><span class="line">flush privileges;​</span><br></pre></td></tr></table></figure>
+
 <p>大功告成</p>
 
       <div class="tags">
@@ -340,7 +334,7 @@ a. 以阿里云为例，找到实例，设置安全组，开放端口号即可�
     <div class="item left">
       
 
-  <a href="/posts/b1231c9f/" itemprop="url" rel="prev" data-background-image="https:&#x2F;&#x2F;tva3.sinaimg.cn&#x2F;mw690&#x2F;6833939bly1gipet8c1a2j20zk0m8kct.jpg" title="java stream中Collectors的用法">
+  <a href="/posts/b1231c9f/" itemprop="url" rel="prev" data-background-image="https:&#x2F;&#x2F;tva3.sinaimg.cn&#x2F;mw690&#x2F;6833939bly1gipevarprfj20zk0m8npd.jpg" title="java stream中Collectors的用法">
   <span class="type">Previous Post</span>
   <span class="category"><i class="ic i-flag"></i> Stream</span>
   <h3>java stream中Collectors的用法</h3>
@@ -350,7 +344,7 @@ a. 以阿里云为例，找到实例，设置安全组，开放端口号即可�
     <div class="item right">
       
 
-  <a href="/posts/f610585/" itemprop="url" rel="next" data-background-image="https:&#x2F;&#x2F;tva3.sinaimg.cn&#x2F;mw690&#x2F;6833939bly1gicitspjpbj20zk0m81ky.jpg" title="UML:类图关系总结">
+  <a href="/posts/f610585/" itemprop="url" rel="next" data-background-image="https:&#x2F;&#x2F;tva3.sinaimg.cn&#x2F;mw690&#x2F;6833939bly1giclip4jbpj20zk0m87cv.jpg" title="UML:类图关系总结">
   <span class="type">Next Post</span>
   <span class="category"><i class="ic i-flag"></i> UML</span>
   <h3>UML:类图关系总结</h3>
@@ -372,7 +366,7 @@ a. 以阿里云为例，找到实例，设置安全组，开放端口号即可�
   <div class="panels">
     <div class="inner">
       <div class="contents panel pjax" data-title="Contents">
-          <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#ubuntu%E4%B8%AD%E5%AE%89%E8%A3%85%E5%8D%B8%E8%BD%BDmysql%E6%95%B0%E6%8D%AE%E5%BA%93"><span class="toc-number">1.</span> <span class="toc-text">  Ubuntu  中安装卸载 Mysql  数据库</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#mysql%E5%8D%B8%E8%BD%BD"><span class="toc-number">1.1.</span> <span class="toc-text">  Mysql  卸载</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#mysql%E5%AE%89%E8%A3%85"><span class="toc-number">1.2.</span> <span class="toc-text">  Mysql  安装</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%B8%80-%E5%AE%89%E8%A3%85"><span class="toc-number">1.2.1.</span> <span class="toc-text"> 一、安装</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%B8%89-%E8%AE%BE%E7%BD%AEroot%E5%AF%86%E7%A0%81"><span class="toc-number">1.2.2.</span> <span class="toc-text"> 三、设置 Root  密码</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%9B%9B-%E9%85%8D%E7%BD%AE%E8%BF%9C%E7%A8%8B%E8%BF%9E%E6%8E%A5"><span class="toc-number">1.2.3.</span> <span class="toc-text"> 四、配置远程连接</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%8F%AF%E8%83%BD%E5%AD%98%E5%9C%A8%E7%9A%84%E5%85%B6%E5%AE%83%E9%97%AE%E9%A2%98"><span class="toc-number">1.2.3.1.</span> <span class="toc-text"> 可能存在的其它问题</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%A6%82%E6%9E%9C%E8%BF%98%E8%BF%9E%E6%8E%A5%E4%B8%8D%E4%B8%8A"><span class="toc-number">1.2.3.2.</span> <span class="toc-text"> 如果还连接不上</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%85%B3%E4%BA%8E%E5%BC%80%E6%94%BE%E7%AB%AF%E5%8F%A3"><span class="toc-number">1.2.4.</span> <span class="toc-text"> 关于开放端口</span></a></li></ol></li></ol></li></ol>
+          <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#Ubuntu%E4%B8%AD%E5%AE%89%E8%A3%85%E5%8D%B8%E8%BD%BDMysql%E6%95%B0%E6%8D%AE%E5%BA%93"><span class="toc-number">1.</span> <span class="toc-text">Ubuntu中安装卸载Mysql数据库</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#Mysql%E5%8D%B8%E8%BD%BD"><span class="toc-number">1.1.</span> <span class="toc-text">Mysql卸载</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Mysql%E5%AE%89%E8%A3%85"><span class="toc-number">1.2.</span> <span class="toc-text">Mysql安装</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%B8%80%E3%80%81%E5%AE%89%E8%A3%85"><span class="toc-number">1.2.1.</span> <span class="toc-text">一、安装</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%B8%89%E3%80%81%E8%AE%BE%E7%BD%AERoot%E5%AF%86%E7%A0%81"><span class="toc-number">1.2.2.</span> <span class="toc-text">三、设置Root密码</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%9B%9B%E3%80%81%E9%85%8D%E7%BD%AE%E8%BF%9C%E7%A8%8B%E8%BF%9E%E6%8E%A5"><span class="toc-number">1.2.3.</span> <span class="toc-text">四、配置远程连接</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%8F%AF%E8%83%BD%E5%AD%98%E5%9C%A8%E7%9A%84%E5%85%B6%E5%AE%83%E9%97%AE%E9%A2%98"><span class="toc-number">1.2.3.1.</span> <span class="toc-text">可能存在的其它问题</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%A6%82%E6%9E%9C%E8%BF%98%E8%BF%9E%E6%8E%A5%E4%B8%8D%E4%B8%8A"><span class="toc-number">1.2.3.2.</span> <span class="toc-text">如果还连接不上</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%85%B3%E4%BA%8E%E5%BC%80%E6%94%BE%E7%AB%AF%E5%8F%A3"><span class="toc-number">1.2.4.</span> <span class="toc-text">关于开放端口</span></a></li></ol></li></ol></li></ol>
       </div>
       <div class="related panel pjax" data-title="Related">
         <ul>
@@ -390,7 +384,7 @@ a. 以阿里云为例，找到实例，设置安全组，开放端口号即可�
 <nav class="state">
     <div class="item posts">
       <a href="/archives/">
-        <span class="count">134</span>
+        <span class="count">135</span>
         <span class="name">posts</span>
       </a>
     </div>
@@ -402,7 +396,7 @@ a. 以阿里云为例，找到实例，设置安全组，开放端口号即可�
     </div>
     <div class="item tags">
       <a href="/tags/">
-        <span class="count">98</span>
+        <span class="count">99</span>
         <span class="name">tags</span>
       </a>
     </div>
@@ -481,95 +475,6 @@ a. 以阿里云为例，找到实例，设置安全组，开放端口号即可�
   <li class="item">
     
 <div class="breadcrumb">
-<a href="/categories/Java%E9%9D%A2%E8%AF%95/" title="In Java面试">Java面试</a>
-<i class="ic i-angle-right"></i>
-<a href="/categories/Java%E9%9D%A2%E8%AF%95/SpringBoot/" title="In SpringBoot">SpringBoot</a>
-</div>
-
-    <span><a href="/posts/eec4b728/" title="SpringBoot中如何优雅的使用多线程">SpringBoot中如何优雅的使用多线程</a></span>
-  </li>
-
-      
-  <li class="item">
-    
-<div class="breadcrumb">
-<a href="/categories/Java/" title="In Java">Java</a>
-<i class="ic i-angle-right"></i>
-<a href="/categories/Java/Mysql/" title="In Mysql">Mysql</a>
-</div>
-
-    <span><a href="/posts/69c17d37/" title="关于事务提交中踩坑">关于事务提交中踩坑</a></span>
-  </li>
-
-      
-  <li class="item">
-    
-<div class="breadcrumb">
-</div>
-
-    <span><a href="/posts/823298d2/" title="VsCode 如何Debug Shell">VsCode 如何Debug Shell</a></span>
-  </li>
-
-      
-  <li class="item">
-    
-<div class="breadcrumb">
-</div>
-
-    <span><a href="/posts/f35c5140/" title="JAVA-jar包运行及日志输出">JAVA-jar包运行及日志输出</a></span>
-  </li>
-
-      
-  <li class="item">
-    
-<div class="breadcrumb">
-<a href="/categories/%E5%89%8D%E7%AB%AF/" title="In 前端">前端</a>
-<i class="ic i-angle-right"></i>
-<a href="/categories/%E5%89%8D%E7%AB%AF/Vue/" title="In Vue">Vue</a>
-</div>
-
-    <span><a href="/posts/21d4b84b/" title="Vue3项目的创建">Vue3项目的创建</a></span>
-  </li>
-
-      
-  <li class="item">
-    
-<div class="breadcrumb">
-<a href="/categories/Java%E9%9D%A2%E8%AF%95/" title="In Java面试">Java面试</a>
-<i class="ic i-angle-right"></i>
-<a href="/categories/Java%E9%9D%A2%E8%AF%95/%E7%AE%97%E6%B3%95/" title="In 算法">算法</a>
-</div>
-
-    <span><a href="/posts/a4ce31d2/" title="贪心算法">贪心算法</a></span>
-  </li>
-
-      
-  <li class="item">
-    
-<div class="breadcrumb">
-</div>
-
-    <span><a href="/posts/5a74c6a6/" title="宝儿的大腿小腿围">宝儿的大腿小腿围</a></span>
-  </li>
-
-      
-  <li class="item">
-    
-<div class="breadcrumb">
-<a href="/categories/Java%E9%9D%A2%E8%AF%95/" title="In Java面试">Java面试</a>
-<i class="ic i-angle-right"></i>
-<a href="/categories/Java%E9%9D%A2%E8%AF%95/%E5%BF%AB%E9%80%9F%E6%8E%92%E5%BA%8F/" title="In 快速排序">快速排序</a>
-<i class="ic i-angle-right"></i>
-<a href="/categories/Java%E9%9D%A2%E8%AF%95/%E5%BF%AB%E9%80%9F%E6%8E%92%E5%BA%8F/%E7%AE%97%E6%B3%95/" title="In 算法">算法</a>
-</div>
-
-    <span><a href="/posts/ff8068c0/" title="快速排序">快速排序</a></span>
-  </li>
-
-      
-  <li class="item">
-    
-<div class="breadcrumb">
 <a href="/categories/%E5%89%8D%E7%AB%AF/" title="In 前端">前端</a>
 <i class="ic i-angle-right"></i>
 <a href="/categories/%E5%89%8D%E7%AB%AF/Css/" title="In Css">Css</a>
@@ -582,14 +487,105 @@ a. 以阿里云为例，找到实例，设置安全组，开放端口号即可�
   <li class="item">
     
 <div class="breadcrumb">
-<a href="/categories/Java%E9%9D%A2%E8%AF%95/" title="In Java面试">Java面试</a>
-<i class="ic i-angle-right"></i>
-<a href="/categories/Java%E9%9D%A2%E8%AF%95/%E4%BA%8C%E5%88%86%E6%9F%A5%E6%89%BE/" title="In 二分查找">二分查找</a>
-<i class="ic i-angle-right"></i>
-<a href="/categories/Java%E9%9D%A2%E8%AF%95/%E4%BA%8C%E5%88%86%E6%9F%A5%E6%89%BE/%E7%AE%97%E6%B3%95/" title="In 算法">算法</a>
+<a href="/categories/SAP/" title="In SAP">SAP</a>
 </div>
 
-    <span><a href="/posts/e8eb0481/" title="二分查找">二分查找</a></span>
+    <span><a href="/posts/4187faeb/" title="English self_introduction">English self_introduction</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/Java%E9%9D%A2%E8%AF%95/" title="In Java面试">Java面试</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/Java%E9%9D%A2%E8%AF%95/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/" title="In 操作系统">操作系统</a>
+</div>
+
+    <span><a href="/posts/4847d2e5/" title="面试之旅关于操作系统">面试之旅关于操作系统</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/Java/" title="In Java">Java</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/Java/Tools/" title="In Tools">Tools</a>
+</div>
+
+    <span><a href="/posts/49b96938/" title="Java获取一天时间的起始">Java获取一天时间的起始</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/SAP/" title="In SAP">SAP</a>
+</div>
+
+    <span><a href="/posts/96b6e8a1/" title="simple self introduction">simple self introduction</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/Java%E9%9D%A2%E8%AF%95/" title="In Java面试">Java面试</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/Java%E9%9D%A2%E8%AF%95/%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92/" title="In 动态规划">动态规划</a>
+</div>
+
+    <span><a href="/posts/a80d0031/" title="动态规划">动态规划</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/Java%E9%9D%A2%E8%AF%95/" title="In Java面试">Java面试</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/Java%E9%9D%A2%E8%AF%95/%E7%9B%B4%E6%8E%A5%E6%8F%92%E5%85%A5%E6%8E%92%E5%BA%8F/" title="In 直接插入排序">直接插入排序</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/Java%E9%9D%A2%E8%AF%95/%E7%9B%B4%E6%8E%A5%E6%8F%92%E5%85%A5%E6%8E%92%E5%BA%8F/%E7%AE%97%E6%B3%95/" title="In 算法">算法</a>
+</div>
+
+    <span><a href="/posts/2b06d603/" title="直接插入排序">直接插入排序</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/Java%E9%9D%A2%E8%AF%95/" title="In Java面试">Java面试</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/Java%E9%9D%A2%E8%AF%95/%E9%80%89%E6%8B%A9%E6%8E%92%E5%BA%8F/" title="In 选择排序">选择排序</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/Java%E9%9D%A2%E8%AF%95/%E9%80%89%E6%8B%A9%E6%8E%92%E5%BA%8F/%E7%AE%97%E6%B3%95/" title="In 算法">算法</a>
+</div>
+
+    <span><a href="/posts/43d00a99/" title="选择排序">选择排序</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/Java%E9%9D%A2%E8%AF%95/" title="In Java面试">Java面试</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/Java%E9%9D%A2%E8%AF%95/HashMap/" title="In HashMap">HashMap</a>
+</div>
+
+    <span><a href="/posts/52d9f7d3/" title="Java面试必问--HashMap的底层">Java面试必问--HashMap的底层</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+</div>
+
+    <span><a href="/posts/4da9c93/" title="Web-based design and analysis tools for CRISPR base editing 文献阅读">Web-based design and analysis tools for CRISPR base editing 文献阅读</a></span>
   </li>
 
   </ul>
@@ -614,13 +610,13 @@ a. 以阿里云为例，找到实例，设置安全组，开放端口号即可�
     <span class="post-meta-item-icon">
       <i class="ic i-chart-area"></i>
     </span>
-    <span title="Symbols count total">557k words</span>
+    <span title="Symbols count total">558k words</span>
 
     <span class="post-meta-divider">|</span>
     <span class="post-meta-item-icon">
       <i class="ic i-coffee"></i>
     </span>
-    <span title="Reading time total">8:26</span>
+    <span title="Reading time total">8:27</span>
   </div>
 </div>
 

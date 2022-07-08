@@ -117,12 +117,12 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
       </div>
       <div id="imgs" class="pjax">
         <ul>
-          <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1gicm0fdw5cj20zk0m8hdt.jpg"></li>
-          <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1gipexbei4hj20zk0m8npd.jpg"></li>
-          <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1giciundwu5j20zk0m8n9e.jpg"></li>
-          <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1giclh3brzpj20zk0m8ann.jpg"></li>
-          <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1giclxp31goj20zk0m8qv5.jpg"></li>
-          <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1gicis3attqj20zk0m8k7l.jpg"></li>
+          <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1gipet8c1a2j20zk0m8kct.jpg"></li>
+          <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1giph4wqtg4j20zk0m8x6p.jpg"></li>
+          <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1gipeybxm1pj20zk0m8niv.jpg"></li>
+          <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1giciukx8a7j20zk0m8aio.jpg"></li>
+          <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1gicitzannuj20zk0m8b29.jpg"></li>
+          <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1giciusoyjnj219g0u0x56.jpg"></li>
         </ul>
       </div>
     </header>
@@ -171,44 +171,36 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
   <div class="body md" itemprop="articleBody">
     
 
-    <h1 id="mybatis中号和号的区别"><a class="markdownIt-Anchor" href="#mybatis中号和号的区别">#</a>  <code>Mybatis</code>  中 <code>#</code> 号和 <code>$</code>  号的区别</h1>
-<h2 id="默认会用引号将参数引起来"><a class="markdownIt-Anchor" href="#默认会用引号将参数引起来">#</a>  <code>#&#123;&#125;</code>  默认会用引号将参数引起来</h2>
-<h2 id="单纯替代"><a class="markdownIt-Anchor" href="#单纯替代">#</a>  <code>$&#123;&#125;</code>  单纯替代</h2>
-<p>示例：</p>
+    <h1 id="Mybatis中-号和-号的区别"><a href="#Mybatis中-号和-号的区别" class="headerlink" title="Mybatis中#号和$号的区别"></a><code>Mybatis</code>中<code>#</code>号和<code>$</code>号的区别</h1><h2 id="默认会用引号将参数引起来"><a href="#默认会用引号将参数引起来" class="headerlink" title="#{} 默认会用引号将参数引起来"></a><code>#&#123;&#125;</code> 默认会用引号将参数引起来</h2><h2 id="单纯替代"><a href="#单纯替代" class="headerlink" title="${}单纯替代"></a><code>$&#123;&#125;</code>单纯替代</h2><p>示例：</p>
 <span id="more"></span>
-<p>之前的写法， <code>select * from product_tree_v pv where pv.product_code in(#&#123;product&#125;)</code></p>
-<p>预编译出来的结果： <code>select * from product_tree_v pv where pv.product_code in ？</code> ;</p>
-<p><code>#&#123;&#125;</code>  被当作一个占位符了，而参数前后也会被加上引号。</p>
-<p>运行时的 <code>sql</code>  是： <code>select * from product_tree_v pv where pv.product_code in('‘p001','p002','p003'')</code> ;</p>
+
+<p>之前的写法，<code>select * from product_tree_v pv where pv.product_code in(#&#123;product&#125;)</code></p>
+<p>预编译出来的结果：<code>select * from product_tree_v pv where pv.product_code in ？</code>;</p>
+<p><code>#&#123;&#125;</code>被当作一个占位符了，而参数前后也会被加上引号。</p>
+<p>运行时的<code>sql</code>是：<code>select * from product_tree_v pv where pv.product_code in(&#39;‘p001&#39;,&#39;p002&#39;,&#39;p003&#39;&#39;)</code>;</p>
 <p>所以无论如何都是查不到数据的。</p>
-<p>换成 <code>$&#123;&#125;</code> ： <code>select * from product_tree_v pv where pv.product_code in($product&#125;)</code> ;</p>
-<p>预编译出来的结果 ： <code>select * from product_tree_v pv where pv.product_code in (‘p001','p002','p003')</code> ;</p>
+<p>换成<code>$&#123;&#125;</code>：<code>select * from product_tree_v pv where pv.product_code in($product&#125;)</code>;</p>
+<p>预编译出来的结果 ：<code>select * from product_tree_v pv where pv.product_code in (‘p001&#39;,&#39;p002&#39;,&#39;p003&#39;)</code>;</p>
 <p>这样就是纯粹的将参数传进去，没有做任何的转义操作。这才是我们真正想要的。</p>
-<h2 id="总结"><a class="markdownIt-Anchor" href="#总结">#</a> 总结</h2>
-<p><code>mybatis</code>  作为 <code>ORM</code>  框架，从性能，系统维护性，实用性上来说，都是非常优秀的，</p>
-<p>其所有的 <code>sql</code>  在执行前都会通过数据库驱动进行预编译，这样 <code>DBMS</code>  就可以不用编译直接接收参数运行，</p>
-<p>而 <code>#</code> 和 <code>$</code>  号的区别在预编译后就能看出来了， <code>#&#123;&#125;</code>  预编译完是占位符 <code>?</code> ，而 <code>$&#123;&#125;</code>  预编译完就是传进来的参数。</p>
-<h2 id="的优点"><a class="markdownIt-Anchor" href="#的优点">#</a>  <code>#&#123;&#125;</code>  的优点：</h2>
-<p>使用 <code>#&#123;&#125;</code>  可以预防 <code>sql</code>  攻击，而 <code>$&#123;&#125;</code>  却不能</p>
-<p>例如  <code>select * from $&#123;tablename&#125; </code>   如果传入的是  <code>product; drop product;</code></p>
+<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><p><code>mybatis</code>作为<code>ORM</code>框架，从性能，系统维护性，实用性上来说，都是非常优秀的，</p>
+<p>其所有的<code>sql</code>在执行前都会通过数据库驱动进行预编译，这样<code>DBMS</code>就可以不用编译直接接收参数运行，</p>
+<p>而<code>#</code>和<code>$</code>号的区别在预编译后就能看出来了，<code>#&#123;&#125;</code>预编译完是占位符<code>?</code>，而<code>$&#123;&#125;</code>预编译完就是传进来的参数。</p>
+<h2 id="的优点："><a href="#的优点：" class="headerlink" title="#{}的优点："></a><code>#&#123;&#125;</code>的优点：</h2><p>  使用<code>#&#123;&#125;</code>可以预防<code>sql</code>攻击，而<code>$&#123;&#125;</code>却不能</p>
+<p>例如 <code>select * from $&#123;tablename&#125; </code>  如果传入的是 <code>product; drop product;</code></p>
 <p>那么你的表数据就会被无声无息的干掉了。</p>
-<p>使用 <code>$&#123;&#125;</code>  的场景：</p>
+<p>使用<code>$&#123;&#125;</code>的场景：</p>
 <ol>
-<li>
-<p>作为 <code>in</code>  条件时，</p>
+<li><p>作为<code>in</code>条件时，</p>
 </li>
-<li>
-<p>参数为 <code>int</code>  类型并且数据库中字段的类型是 <code>number</code> ，</p>
+<li><p>参数为<code>int</code>类型并且数据库中字段的类型是<code>number</code>，</p>
 </li>
-<li>
-<p>表名</p>
+<li><p>表名</p>
 </li>
-<li>
-<p><code>order by $&#123;&#125;</code> ，排序字段</p>
+<li><p><code>order by $&#123;&#125;</code>，排序字段</p>
 </li>
 </ol>
 <p><code>--------------------------ps----------------------------</code></p>
-<p><code>&lt;![CDATA[]]&gt;</code>  的用法，在该符号内的语句，将不会被当成字符串来处理，而是直接当成 <code>sql</code>  语句，比如有大于，小于号，要执行一个存储过程都需要加上这个。</p>
+<p><code>&lt;![CDATA[]]&gt;</code>的用法，在该符号内的语句，将不会被当成字符串来处理，而是直接当成<code>sql</code>语句，比如有大于，小于号，要执行一个存储过程都需要加上这个。</p>
 
       <div class="tags">
           <a href="/tags/Java%E9%9D%A2%E8%AF%95/" rel="tag"><i class="ic i-tag"></i> Java面试</a>
@@ -274,7 +266,7 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
     <div class="item right">
       
 
-  <a href="/posts/89080a8e/" itemprop="url" rel="next" data-background-image="https:&#x2F;&#x2F;tva3.sinaimg.cn&#x2F;mw690&#x2F;6833939bly1gipeubcbajj20zk0m8h1h.jpg" title="Spring Bean的生命周期">
+  <a href="/posts/89080a8e/" itemprop="url" rel="next" data-background-image="https:&#x2F;&#x2F;tva3.sinaimg.cn&#x2F;mw690&#x2F;6833939bly1gipew8gmvyj20zk0m87wh.jpg" title="Spring Bean的生命周期">
   <span class="type">Next Post</span>
   <span class="category"><i class="ic i-flag"></i> Spring</span>
   <h3>Spring Bean的生命周期</h3>
@@ -296,7 +288,7 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
   <div class="panels">
     <div class="inner">
       <div class="contents panel pjax" data-title="Contents">
-          <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#mybatis%E4%B8%AD%E5%8F%B7%E5%92%8C%E5%8F%B7%E7%9A%84%E5%8C%BA%E5%88%AB"><span class="toc-number">1.</span> <span class="toc-text">  Mybatis  中 # 号和 $  号的区别</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E9%BB%98%E8%AE%A4%E4%BC%9A%E7%94%A8%E5%BC%95%E5%8F%B7%E5%B0%86%E5%8F%82%E6%95%B0%E5%BC%95%E8%B5%B7%E6%9D%A5"><span class="toc-number">1.1.</span> <span class="toc-text">  #{}  默认会用引号将参数引起来</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%8D%95%E7%BA%AF%E6%9B%BF%E4%BB%A3"><span class="toc-number">1.2.</span> <span class="toc-text">  ${}  单纯替代</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%80%BB%E7%BB%93"><span class="toc-number">1.3.</span> <span class="toc-text"> 总结</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%9A%84%E4%BC%98%E7%82%B9"><span class="toc-number">1.4.</span> <span class="toc-text">  #{}  的优点：</span></a></li></ol></li></ol>
+          <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#Mybatis%E4%B8%AD-%E5%8F%B7%E5%92%8C-%E5%8F%B7%E7%9A%84%E5%8C%BA%E5%88%AB"><span class="toc-number">1.</span> <span class="toc-text">Mybatis中#号和$号的区别</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E9%BB%98%E8%AE%A4%E4%BC%9A%E7%94%A8%E5%BC%95%E5%8F%B7%E5%B0%86%E5%8F%82%E6%95%B0%E5%BC%95%E8%B5%B7%E6%9D%A5"><span class="toc-number">1.1.</span> <span class="toc-text">#{} 默认会用引号将参数引起来</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%8D%95%E7%BA%AF%E6%9B%BF%E4%BB%A3"><span class="toc-number">1.2.</span> <span class="toc-text">${}单纯替代</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%80%BB%E7%BB%93"><span class="toc-number">1.3.</span> <span class="toc-text">总结</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%9A%84%E4%BC%98%E7%82%B9%EF%BC%9A"><span class="toc-number">1.4.</span> <span class="toc-text">#{}的优点：</span></a></li></ol></li></ol>
       </div>
       <div class="related panel pjax" data-title="Related">
         <ul>
@@ -314,7 +306,7 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
 <nav class="state">
     <div class="item posts">
       <a href="/archives/">
-        <span class="count">134</span>
+        <span class="count">135</span>
         <span class="name">posts</span>
       </a>
     </div>
@@ -326,7 +318,7 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
     </div>
     <div class="item tags">
       <a href="/tags/">
-        <span class="count">98</span>
+        <span class="count">99</span>
         <span class="name">tags</span>
       </a>
     </div>
@@ -405,10 +397,27 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
   <li class="item">
     
 <div class="breadcrumb">
-<a href="/categories/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/" title="In 设计模式">设计模式</a>
 </div>
 
-    <span><a href="/posts/79c6d028/" title="23设计模式(更新中)">23设计模式(更新中)</a></span>
+    <span><a href="/posts/a1926332/" title="Springboot+Vue二进制文件传输">Springboot+Vue二进制文件传输</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+</div>
+
+    <span><a href="/posts/7874a051/" title="Nginx踩坑之解决前后端跨域">Nginx踩坑之解决前后端跨域</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+</div>
+
+    <span><a href="/posts/de5e33d7/" title="关于JDK中的Arrays.sort排序方法">关于JDK中的Arrays.sort排序方法</a></span>
   </li>
 
       
@@ -418,17 +427,29 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
 <a href="/categories/Java/" title="In Java">Java</a>
 </div>
 
-    <span><a href="/posts/fc16798c/" title="Java8遍历Map的三种方式">Java8遍历Map的三种方式</a></span>
+    <span><a href="/posts/9dcbb5fa/" title="Corn表达式">Corn表达式</a></span>
   </li>
 
       
   <li class="item">
     
 <div class="breadcrumb">
-<a href="/categories/%E5%89%8D%E7%AB%AF/" title="In 前端">前端</a>
+<a href="/categories/Java%E9%9D%A2%E8%AF%95/" title="In Java面试">Java面试</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/Java%E9%9D%A2%E8%AF%95/%E7%AE%97%E6%B3%95/" title="In 算法">算法</a>
 </div>
 
-    <span><a href="/posts/7733848a/" title="文件上传前端小结">文件上传前端小结</a></span>
+    <span><a href="/posts/a4ce31d2/" title="贪心算法">贪心算法</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/UML/" title="In UML">UML</a>
+</div>
+
+    <span><a href="/posts/f610585/" title="UML:类图关系总结">UML:类图关系总结</a></span>
   </li>
 
       
@@ -445,68 +466,39 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
   <li class="item">
     
 <div class="breadcrumb">
+<a href="/categories/%E5%89%8D%E7%AB%AF/" title="In 前端">前端</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/%E5%89%8D%E7%AB%AF/TypeScript/" title="In TypeScript">TypeScript</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/%E5%89%8D%E7%AB%AF/TypeScript/WebPack/" title="In WebPack">WebPack</a>
+</div>
+
+    <span><a href="/posts/ddb0d187/" title="TS配置Webpack">TS配置Webpack</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+</div>
+
+    <span><a href="/posts/f35c5140/" title="JAVA-jar包运行及日志输出">JAVA-jar包运行及日志输出</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
 <a href="/categories/Java/" title="In Java">Java</a>
 <i class="ic i-angle-right"></i>
-<a href="/categories/Java/Java%E9%9D%A2%E8%AF%95/" title="In Java面试">Java面试</a>
+<a href="/categories/Java/Mybatis/" title="In Mybatis">Mybatis</a>
 <i class="ic i-angle-right"></i>
-<a href="/categories/Java/Java%E9%9D%A2%E8%AF%95/SpringBoot/" title="In SpringBoot">SpringBoot</a>
-</div>
-
-    <span><a href="/posts/59de1824/" title="spring中&#x2F;和&#x2F;*和&#x2F;**的区别">spring中/和/*和/**的区别</a></span>
-  </li>
-
-      
-  <li class="item">
-    
-<div class="breadcrumb">
-<a href="/categories/Daily/" title="In Daily">Daily</a>
-</div>
-
-    <span><a href="/posts/9a0369ec/" title="布隆过滤器">布隆过滤器</a></span>
-  </li>
-
-      
-  <li class="item">
-    
-<div class="breadcrumb">
-</div>
-
-    <span><a href="/posts/d0edc1ed/" title="Linux常用命令">Linux常用命令</a></span>
-  </li>
-
-      
-  <li class="item">
-    
-<div class="breadcrumb">
-<a href="/categories/VSCODE/" title="In VSCODE">VSCODE</a>
+<a href="/categories/Java/Mybatis/SpringBoot/" title="In SpringBoot">SpringBoot</a>
 <i class="ic i-angle-right"></i>
-<a href="/categories/VSCODE/%E5%BF%AB%E6%8D%B7%E9%94%AE/" title="In 快捷键">快捷键</a>
+<a href="/categories/Java/Mybatis/SpringBoot/%E5%88%86%E9%A1%B5%E6%9F%A5%E8%AF%A2/" title="In 分页查询">分页查询</a>
 </div>
 
-    <span><a href="/posts/d199d651/" title="VsCode快捷键">VsCode快捷键</a></span>
-  </li>
-
-      
-  <li class="item">
-    
-<div class="breadcrumb">
-</div>
-
-    <span><a href="/posts/a72f470b/" title="关于JVM常用参数">关于JVM常用参数</a></span>
-  </li>
-
-      
-  <li class="item">
-    
-<div class="breadcrumb">
-<a href="/categories/Java%E9%9D%A2%E8%AF%95/" title="In Java面试">Java面试</a>
-<i class="ic i-angle-right"></i>
-<a href="/categories/Java%E9%9D%A2%E8%AF%95/%E9%80%89%E6%8B%A9%E6%8E%92%E5%BA%8F/" title="In 选择排序">选择排序</a>
-<i class="ic i-angle-right"></i>
-<a href="/categories/Java%E9%9D%A2%E8%AF%95/%E9%80%89%E6%8B%A9%E6%8E%92%E5%BA%8F/%E7%AE%97%E6%B3%95/" title="In 算法">算法</a>
-</div>
-
-    <span><a href="/posts/43d00a99/" title="选择排序">选择排序</a></span>
+    <span><a href="/posts/2edf7887/" title="MybatisPlus实现分页查询">MybatisPlus实现分页查询</a></span>
   </li>
 
   </ul>
@@ -531,13 +523,13 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
     <span class="post-meta-item-icon">
       <i class="ic i-chart-area"></i>
     </span>
-    <span title="Symbols count total">557k words</span>
+    <span title="Symbols count total">558k words</span>
 
     <span class="post-meta-divider">|</span>
     <span class="post-meta-item-icon">
       <i class="ic i-coffee"></i>
     </span>
-    <span title="Reading time total">8:26</span>
+    <span title="Reading time total">8:27</span>
   </div>
 </div>
 

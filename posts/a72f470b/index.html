@@ -117,12 +117,12 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
       </div>
       <div id="imgs" class="pjax">
         <ul>
-          <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1gipewkhf1zj20zk0m81kx.jpg"></li>
-          <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1giclhtuo6nj20zk0m8ttm.jpg"></li>
-          <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1giclfw2t96j20zk0m8x6p.jpg"></li>
-          <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1gipexoj0moj20zk0m8kgu.jpg"></li>
-          <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1giclffsa1cj20zk0m811l.jpg"></li>
-          <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1gipeu1usa7j20zk0m8b29.jpg"></li>
+          <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1gipewr8iypj20zk0m8b29.jpg"></li>
+          <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1giclj9410cj20zk0m8h12.jpg"></li>
+          <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1gipeun65urj20zk0m81ii.jpg"></li>
+          <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1gipet4bz0yj20zk0m8e81.jpg"></li>
+          <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1giph4lm9i7j20zk0m84qp.jpg"></li>
+          <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1gicitht3xtj20zk0m8k5v.jpg"></li>
         </ul>
       </div>
     </header>
@@ -167,10 +167,10 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
     
 
     <p>笔记链接： <span class="exturl" data-url="aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3UwMTE4NjMwMjQvYXJ0aWNsZS9kZXRhaWxzLzExNDY4NDQyOA==">大厂面试视频</span></p>
-<h2 id="jvm的标配参数和x参数"><a class="markdownIt-Anchor" href="#jvm的标配参数和x参数">#</a>  <code>JVM</code>  的标配参数和 <code>X</code>  参数</h2>
-<p><span class="exturl" data-url="aHR0cHM6Ly9kb2NzLm9yYWNsZS5jb20vamF2YXNlLzgvZG9jcy90ZWNobm90ZXMvdG9vbHMvd2luZG93cy9qYXZhLmh0bWw=">官方文档</span></p>
-<p><code>JVM</code>  的参数类型：</p>
+<h2 id="JVM的标配参数和X参数"><a href="#JVM的标配参数和X参数" class="headerlink" title="JVM的标配参数和X参数"></a><code>JVM</code>的标配参数和<code>X</code>参数</h2><p><span class="exturl" data-url="aHR0cHM6Ly9kb2NzLm9yYWNsZS5jb20vamF2YXNlLzgvZG9jcy90ZWNobm90ZXMvdG9vbHMvd2luZG93cy9qYXZhLmh0bWw=">官方文档</span></p>
+<p><code>JVM</code>的参数类型：</p>
 <span id="more"></span>
+
 <blockquote>
 <p>标配参数</p>
 </blockquote>
@@ -179,108 +179,105 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
 <li><code>-help</code></li>
 </ul>
 <blockquote>
-<p><code>X</code>  参数（了解）</p>
+<p><code>X</code>参数（了解）</p>
 </blockquote>
 <ul>
-<li><code>-Xint</code> ：解释执行</li>
-<li><code>-Xcomp</code> ：第一次使用就编译成本地代码</li>
-<li><code>-Xmixed</code> ：混合模式</li>
+<li><code>-Xint</code>：解释执行</li>
+<li><code>-Xcomp</code>：第一次使用就编译成本地代码</li>
+<li><code>-Xmixed</code>：混合模式</li>
 </ul>
-<h2 id="vm的xx参数之布尔类型"><a class="markdownIt-Anchor" href="#vm的xx参数之布尔类型">#</a>  <code>VM</code>  的 <code>XX</code>  参数之布尔类型</h2>
-<p>公式： <code>-XX:+</code>  或者  <code>-</code>  某个属性值（ <code>+</code>  表示开启， <code>-</code>  表示关闭）</p>
-<p>如何查看一个正在运行中的 <code>java</code>  程序，它的某个 <code>jvm</code>  参数是否开启？具体值是多少？</p>
+<h2 id="VM的XX参数之布尔类型"><a href="#VM的XX参数之布尔类型" class="headerlink" title="VM的XX参数之布尔类型"></a><code>VM</code>的<code>XX</code>参数之布尔类型</h2><p>公式：<code>-XX:+</code> 或者 <code>-</code> 某个属性值（<code>+</code>表示开启，<code>-</code>表示关闭）</p>
+<p>如何查看一个正在运行中的<code>java</code>程序，它的某个<code>jvm</code>参数是否开启？具体值是多少？</p>
 <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">jps -l 查看一个正在运行中的java程序，得到Java程序号。</span><br><span class="line">jinfo -<span class="function">flag <span class="title">PrintGCDetails</span> <span class="params">(Java程序号 )</span>查看它的某个jvm参数（如PrintGCDetails ）是否开启。</span></span><br><span class="line"><span class="function">jinfo -<span class="title">flags</span> <span class="params">(Java程序号 )</span>查看它的所有jvm参数</span></span><br></pre></td></tr></table></figure>
 <p>Case</p>
 <blockquote>
-<p>是否打印 <code>GC</code>  收集细节</p>
+<p>是否打印<code>GC</code>收集细节</p>
 </blockquote>
 <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">-XX:-PrintGCDetails</span><br><span class="line">-XX:+PrintGCDetails</span><br></pre></td></tr></table></figure>
 <blockquote>
 <p>是否使用串行垃圾回收器</p>
 </blockquote>
 <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">-XX:-UseSerialGC</span><br><span class="line">-XX:+UserSerialGC</span><br></pre></td></tr></table></figure>
-<h2 id="jvm的xx参数之设值类型"><a class="markdownIt-Anchor" href="#jvm的xx参数之设值类型">#</a>  <code>JVM</code>  的 <code>XX</code>  参数之设值类型</h2>
-<p>公式： <code>-XX</code> : 属性 <code>key=</code>  属性值 <code>value</code></p>
+
+<h2 id="JVM的XX参数之设值类型"><a href="#JVM的XX参数之设值类型" class="headerlink" title="JVM的XX参数之设值类型"></a><code>JVM</code>的<code>XX</code>参数之设值类型</h2><p>公式：<code>-XX</code>:属性<code>key=</code>属性值<code>value</code></p>
 <p>Case</p>
 <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">-XX:MetaspaceSize=128m</span><br><span class="line">-XX:MaxTenuringThreshold=<span class="number">15</span></span><br></pre></td></tr></table></figure>
-<h2 id="vm的xx参数之xmsxmx坑题"><a class="markdownIt-Anchor" href="#vm的xx参数之xmsxmx坑题">#</a>  <code>VM</code>  的 <code>XX</code>  参数之 <code>XmsXmx</code>  坑题</h2>
-<p>两个经典参数：</p>
+<h2 id="VM的XX参数之XmsXmx坑题"><a href="#VM的XX参数之XmsXmx坑题" class="headerlink" title="VM的XX参数之XmsXmx坑题"></a><code>VM</code>的<code>XX</code>参数之<code>XmsXmx</code>坑题</h2><p>两个经典参数：</p>
 <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">-Xms等价于-XX:InitialHeapSize，初始大小内存，默认物理内存<span class="number">1</span>/<span class="number">64</span></span><br><span class="line">-Xmx等价于-XX:MaxHeapSize，最大分配内存，默认为物理内存<span class="number">1</span>/<span class="number">4</span></span><br></pre></td></tr></table></figure>
-<h2 id="jvm盘点家底查看初始默认"><a class="markdownIt-Anchor" href="#jvm盘点家底查看初始默认">#</a>  <code>JVM</code>  盘点家底查看初始默认</h2>
-<blockquote>
+
+<h2 id="JVM盘点家底查看初始默认"><a href="#JVM盘点家底查看初始默认" class="headerlink" title="JVM盘点家底查看初始默认"></a><code>JVM</code>盘点家底查看初始默认</h2><blockquote>
 <p>查看初始默认参数值</p>
 </blockquote>
 <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">-XX:+PrintFlagsInitial</span><br></pre></td></tr></table></figure>
-<p>公式： <code>java -XX:+PrintFlagsInitial</code></p>
+
+<p>公式：<code>java -XX:+PrintFlagsInitial</code></p>
 <img data-src="/posts/a72f470b/2022-03-13-15-29-37.png" class="">
+
 <blockquote>
 <p>查看修改更新参数值</p>
 </blockquote>
 <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">-XX:+PrintFlagsFinal</span><br></pre></td></tr></table></figure>
-<p>公式： <code>java -XX:+PrintFlagsFinal</code></p>
+
+<p>公式：<code>java -XX:+PrintFlagsFinal</code></p>
 <img data-src="/posts/a72f470b/2022-03-13-15-32-07.png" class="">
-<p><strong> <code>=</code>  表示默认， <code>:=</code>  表示修改过的。</strong></p>
-<h2 id="jvm盘点家底查看修改变更值"><a class="markdownIt-Anchor" href="#jvm盘点家底查看修改变更值">#</a>  <code>JVM</code>  盘点家底查看修改变更值</h2>
-<p><code>PrintFlagsFinal</code>  举例，运行 <code>java</code>  命令的同时打印出参数</p>
+
+<p><strong><code>=</code>表示默认，<code>:=</code>表示修改过的。</strong></p>
+<h2 id="JVM盘点家底查看修改变更值"><a href="#JVM盘点家底查看修改变更值" class="headerlink" title="JVM盘点家底查看修改变更值"></a><code>JVM</code>盘点家底查看修改变更值</h2><p><code>PrintFlagsFinal</code>举例，运行<code>java</code>命令的同时打印出参数</p>
 <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">java -XX:+PrintFlagsFinal -XX:MetaspaceSize=512m HelloWorld</span><br><span class="line"></span><br><span class="line">--------------</span><br><span class="line">...</span><br><span class="line">   size_t MetaspaceSize                            := <span class="number">536870912</span>                               &#123;pd product&#125; &#123;<span class="keyword">default</span>&#125;</span><br><span class="line">...</span><br></pre></td></tr></table></figure>
+
 <blockquote>
 <p>打印命令行参数</p>
 </blockquote>
 <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">-XX:+PrintCommandLineFlags</span><br></pre></td></tr></table></figure>
 <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">(base) ➜  ~ java -XX:+PrintCommandLineFlags -version</span><br><span class="line"></span><br><span class="line">-XX:G1ConcRefinementThreads=<span class="number">8</span> -XX:GCDrainStackTargetSize=<span class="number">64</span> -XX:InitialHeapSize=<span class="number">268435456</span> -XX:MaxHeapSize=<span class="number">4294967296</span> -XX:+PrintCommandLineFlags -XX:ReservedCodeCacheSize=<span class="number">251658240</span> -XX:+SegmentedCodeCache -XX:+UseCompressedClassPointers -XX:+UseCompressedOops -XX:+UseG1GC</span><br><span class="line">java version <span class="string">&quot;11.0.10&quot;</span> <span class="number">2021</span>-<span class="number">01</span>-<span class="number">19</span> <span class="function">LTS</span></span><br><span class="line"><span class="function"><span class="title">Java</span><span class="params">(TM)</span> SE Runtime Environment 18.9 <span class="params">(build <span class="number">11.0</span><span class="number">.10</span>+<span class="number">8</span>-LTS-<span class="number">162</span>)</span></span></span><br><span class="line"><span class="function">Java <span class="title">HotSpot</span><span class="params">(TM)</span> 64-Bit Server VM 18.9 <span class="params">(build <span class="number">11.0</span><span class="number">.10</span>+<span class="number">8</span>-LTS-<span class="number">162</span>, mixed mode)</span></span></span><br></pre></td></tr></table></figure>
-<h2 id="堆内存初始大小快速复习"><a class="markdownIt-Anchor" href="#堆内存初始大小快速复习">#</a> 堆内存初始大小快速复习</h2>
-<p><code>JDK 1.8</code>  之后将最初的永久代取消了，由元空间取代。</p>
+
+<h2 id="堆内存初始大小快速复习"><a href="#堆内存初始大小快速复习" class="headerlink" title="堆内存初始大小快速复习"></a>堆内存初始大小快速复习</h2><p><code>JDK 1.8</code>之后将最初的永久代取消了，由元空间取代。</p>
 <img data-src="/posts/a72f470b/2022-03-13-15-48-45.png" class="">
-<p>在 <code>Java8</code>  中，永久代已经被移除，被一个称为元空间的区域所取代。元空间的本质和永久代类似。</p>
-<p>元空间 ( <code>Java8</code> ) 与永久代 ( <code>Java7</code> ) 之间最大的区别在于：永久带使用的 <code>JVM</code>  的堆内存，但是 <code>Java8</code>  以后的元空间<strong>并不在虚拟机中而是使用本机物理内存</strong>。</p>
-<p>因此，默认情况下，元空间的大小仅受本地内存限制。类的元数据放入 <code>native memory</code> ，字符串池和类的静态变量放入 <code>java</code>  堆中，这样可以加载多少类的元数据就不再由 <code>MaxPermSize</code>  控制，而由系统的实际可用空间来控制。</p>
+
+<p>在<code>Java8</code>中，永久代已经被移除，被一个称为元空间的区域所取代。元空间的本质和永久代类似。</p>
+<p>元空间(<code>Java8</code>)与永久代(<code>Java7</code>)之间最大的区别在于：永久带使用的<code>JVM</code>的堆内存，但是<code>Java8</code>以后的元空间<strong>并不在虚拟机中而是使用本机物理内存</strong>。</p>
+<p>因此，默认情况下，元空间的大小仅受本地内存限制。类的元数据放入<code>native memory</code>，字符串池和类的静态变量放入<code>java</code>堆中，这样可以加载多少类的元数据就不再由<code>MaxPermSize</code>控制，而由系统的实际可用空间来控制。</p>
 <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">JVMMemorySizeDemo</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> <span class="keyword">throws</span> InterruptedException </span>&#123;</span><br><span class="line">        <span class="comment">// 返回Java虚拟机中内存的总量</span></span><br><span class="line">        <span class="keyword">long</span> totalMemory = Runtime.getRuntime().totalMemory();</span><br><span class="line"></span><br><span class="line">        <span class="comment">// 返回Java虚拟机中试图使用的最大内存量</span></span><br><span class="line">        <span class="keyword">long</span> maxMemory = Runtime.getRuntime().maxMemory();</span><br><span class="line"></span><br><span class="line">        System.out.println(String.format(<span class="string">&quot;TOTAL_MEMORY(-Xms): %d B, %.2f MB.&quot;</span>, totalMemory, totalMemory / <span class="number">1024.0</span> / <span class="number">1024</span>));</span><br><span class="line">        System.out.println(String.format(<span class="string">&quot;MAX_MEMORY(-Xmx): %d B, %.2f MB.&quot;</span>, maxMemory, maxMemory / <span class="number">1024.0</span> / <span class="number">1024</span>));</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <p>输出结果：</p>
 <img data-src="/posts/a72f470b/2022-03-13-15-51-39.png" class="">
-<h2 id="常用基础参数栈内存xss讲解"><a class="markdownIt-Anchor" href="#常用基础参数栈内存xss讲解">#</a> 常用基础参数栈内存 <code>Xss</code>  讲解</h2>
-<p>设置单个线程栈的大小，一般默认为 <code>512k~1024K</code></p>
-<p>等价于 <code>-XX:ThreadStackSize</code></p>
+
+<h2 id="常用基础参数栈内存Xss讲解"><a href="#常用基础参数栈内存Xss讲解" class="headerlink" title="常用基础参数栈内存Xss讲解"></a>常用基础参数栈内存<code>Xss</code>讲解</h2><p>设置单个线程栈的大小，一般默认为<code>512k~1024K</code></p>
+<p>等价于<code>-XX:ThreadStackSize</code></p>
 <blockquote>
-<p>-XX:ThreadStackSize=size<br>
-Sets the thread stack size (in bytes). Append the letter k or K to indicate kilobytes, m or M to indicate megabytes, g or G to indicate gigabytes. The default value depends on virtual memory.<br>
-The following examples show how to set the thread stack size to 1024 KB in different units:<br>
--XX:ThreadStackSize=1m<br>
--XX:ThreadStackSize=1024k<br>
--XX:ThreadStackSize=1048576<br>
-This option is equivalent to  <code>-Xss</code> . <span class="exturl" data-url="aHR0cHM6Ly9kb2NzLm9yYWNsZS5jb20vamF2YXNlLzgvZG9jcy90ZWNobm90ZXMvdG9vbHMvd2luZG93cy9qYXZhLmh0bWwjQkdCQ0lFRkM=">文档</span></p>
+<p>-XX:ThreadStackSize=size<br>Sets the thread stack size (in bytes). Append the letter k or K to indicate kilobytes, m or M to indicate megabytes, g or G to indicate gigabytes. The default value depends on virtual memory.<br>The following examples show how to set the thread stack size to 1024 KB in different units:<br>-XX:ThreadStackSize=1m<br>-XX:ThreadStackSize=1024k<br>-XX:ThreadStackSize=1048576<br>This option is equivalent to <code>-Xss</code>. <span class="exturl" data-url="aHR0cHM6Ly9kb2NzLm9yYWNsZS5jb20vamF2YXNlLzgvZG9jcy90ZWNobm90ZXMvdG9vbHMvd2luZG93cy9qYXZhLmh0bWwjQkdCQ0lFRkM=">文档</span></p>
 </blockquote>
-<h2 id="常用基础参数元空间metaspacesize讲解"><a class="markdownIt-Anchor" href="#常用基础参数元空间metaspacesize讲解">#</a> 常用基础参数元空间 <code>MetaspaceSize</code>  讲解</h2>
-<ul>
-<li><code>-Xmn</code> ：设置年轻代大小</li>
-<li><code>-XX:MetaspaceSize</code>  设置元空间大小</li>
+<h2 id="常用基础参数元空间MetaspaceSize讲解"><a href="#常用基础参数元空间MetaspaceSize讲解" class="headerlink" title="常用基础参数元空间MetaspaceSize讲解"></a>常用基础参数元空间<code>MetaspaceSize</code>讲解</h2><ul>
+<li><code>-Xmn</code>：设置年轻代大小</li>
+<li><code>-XX:MetaspaceSize</code> 设置元空间大小</li>
 </ul>
-<p>元空间的本质和永久代类似，都是对 JVM 规范中方法区的实现。不过元空间与永久代之间最大的区别在于：元空间并不在虚拟机中，而是使用本地内存。因此，默认情况下，元空间的大小仅受本地内存限制</p>
+<p>元空间的本质和永久代类似，都是对JVM规范中方法区的实现。不过元空间与永久代之间最大的区别在于：元空间并不在虚拟机中，而是使用本地内存。因此，默认情况下，元空间的大小仅受本地内存限制</p>
 <p>典型设置案例</p>
 <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">-Xms128m -Xmx4096m -Xss1024k -XX:MetaspaceSize=512m -XX:+PrintCommandLineFlags -XX:+PrintGCDetails-XX:+UseSerialGC</span><br></pre></td></tr></table></figure>
-<h2 id="常用基础参数printgcdetails回收前后对比讲解"><a class="markdownIt-Anchor" href="#常用基础参数printgcdetails回收前后对比讲解">#</a> 常用基础参数 <code>PrintGCDetails</code>  回收前后对比讲解</h2>
-<p><code>-XX:+PrintGCDetails</code>  输出详细 <code>GC</code>  收集日志信息</p>
-<p>设置参数  <code>-Xms10m -Xmx10m -XX:+PrintGCDetails</code>  运行以下程序</p>
+
+<h2 id="常用基础参数PrintGCDetails回收前后对比讲解"><a href="#常用基础参数PrintGCDetails回收前后对比讲解" class="headerlink" title="常用基础参数PrintGCDetails回收前后对比讲解"></a>常用基础参数<code>PrintGCDetails</code>回收前后对比讲解</h2><p><code>-XX:+PrintGCDetails</code> 输出详细<code>GC</code>收集日志信息</p>
+<p>设置参数 <code>-Xms10m -Xmx10m -XX:+PrintGCDetails</code> 运行以下程序</p>
 <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> java.util.concurrent.TimeUnit;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">PrintGCDetailsDemo</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">	</span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> <span class="keyword">throws</span> InterruptedException </span>&#123;</span><br><span class="line">		<span class="keyword">byte</span>[] byteArray = <span class="keyword">new</span> <span class="keyword">byte</span>[<span class="number">10</span> * <span class="number">1024</span> * <span class="number">1024</span>];</span><br><span class="line">		</span><br><span class="line">		TimeUnit.SECONDS.sleep(Integer.MAX_VALUE);</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <p>输出结果：</p>
 <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line">[GC (Allocation Failure) [PSYoungGen: 778K-&gt;480K(2560K)] 778K-&gt;608K(9728K), <span class="number">0.0029909</span> secs] [Times: user=<span class="number">0.00</span> sys=<span class="number">0.00</span>, real=<span class="number">0.00</span> secs] </span><br><span class="line">[GC (Allocation Failure) [PSYoungGen: 480K-&gt;480K(2560K)] 608K-&gt;616K(9728K), <span class="number">0.0007890</span> secs] [Times: user=<span class="number">0.00</span> sys=<span class="number">0.00</span>, real=<span class="number">0.00</span> secs] </span><br><span class="line">[<span class="function">Full <span class="title">GC</span> <span class="params">(Allocation Failure)</span> [PSYoungGen: 480K-&gt;0<span class="title">K</span><span class="params">(2560K)</span>] [ParOldGen: 136K-&gt;518<span class="title">K</span><span class="params">(7168K)</span>] 616K-&gt;518<span class="title">K</span><span class="params">(9728K)</span>, [Metaspace: 2644K-&gt;2644<span class="title">K</span><span class="params">(1056768K)</span>], 0.0058272 secs] [Times: user</span>=<span class="number">0.00</span> sys=<span class="number">0.00</span>, real=<span class="number">0.01</span> secs] </span><br><span class="line">[GC (Allocation Failure) [PSYoungGen: 0K-&gt;0K(2560K)] 518K-&gt;518K(9728K), <span class="number">0.0002924</span> secs] [Times: user=<span class="number">0.00</span> sys=<span class="number">0.00</span>, real=<span class="number">0.00</span> secs] </span><br><span class="line">[<span class="function">Full <span class="title">GC</span> <span class="params">(Allocation Failure)</span> [PSYoungGen: 0K-&gt;0<span class="title">K</span><span class="params">(2560K)</span>] [ParOldGen: 518K-&gt;506<span class="title">K</span><span class="params">(7168K)</span>] 518K-&gt;506<span class="title">K</span><span class="params">(9728K)</span>, [Metaspace: 2644K-&gt;2644<span class="title">K</span><span class="params">(1056768K)</span>], 0.0056906 secs] [Times: user</span>=<span class="number">0.01</span> sys=<span class="number">0.00</span>, real=<span class="number">0.01</span> secs] </span><br><span class="line">Exception in thread <span class="string">&quot;main&quot;</span> java.lang.OutOfMemoryError: Java heap space</span><br><span class="line">	at com.lun.jvm.PrintGCDetailsDemo.main(PrintGCDetailsDemo.java:<span class="number">9</span>)</span><br><span class="line">Heap</span><br><span class="line"> PSYoungGen      total 2560K, used 61K [<span class="number">0x00000000ffd00000</span>, <span class="number">0x0000000100000000</span>, <span class="number">0x0000000100000000</span>)</span><br><span class="line">  eden space 2048K, <span class="number">3</span>% used [<span class="number">0x00000000ffd00000</span>,<span class="number">0x00000000ffd0f748</span>,<span class="number">0x00000000fff00000</span>)</span><br><span class="line">  from space 512K, <span class="number">0</span>% used [<span class="number">0x00000000fff00000</span>,<span class="number">0x00000000fff00000</span>,<span class="number">0x00000000fff80000</span>)</span><br><span class="line">  to   space 512K, <span class="number">0</span>% used [<span class="number">0x00000000fff80000</span>,<span class="number">0x00000000fff80000</span>,<span class="number">0x0000000100000000</span>)</span><br><span class="line"> ParOldGen       total 7168K, used 506K [<span class="number">0x00000000ff600000</span>, <span class="number">0x00000000ffd00000</span>, <span class="number">0x00000000ffd00000</span>)</span><br><span class="line">  object space 7168K, <span class="number">7</span>% used [<span class="number">0x00000000ff600000</span>,<span class="number">0x00000000ff67ea58</span>,<span class="number">0x00000000ffd00000</span>)</span><br><span class="line"> Metaspace       used 2676K, capacity 4486K, committed 4864K, reserved 1056768K</span><br><span class="line">  <span class="class"><span class="keyword">class</span> <span class="title">space</span>    <span class="title">used</span> 285<span class="title">K</span>, <span class="title">capacity</span> 386<span class="title">K</span>, <span class="title">committed</span> 512<span class="title">K</span>, <span class="title">reserved</span> 1048576<span class="title">K</span></span></span><br></pre></td></tr></table></figure>
+
 <img data-src="/posts/a72f470b/2022-03-13-16-04-30.png" class="">
+
 <img data-src="/posts/a72f470b/2022-03-13-16-04-40.png" class="">
-<h2 id="常用基础参数survivorratio讲解"><a class="markdownIt-Anchor" href="#常用基础参数survivorratio讲解">#</a> 常用基础参数 <code>SurvivorRatio</code>  讲解</h2>
-<img data-src="/posts/a72f470b/2022-03-13-16-05-01.png" class="">
-<p>调节新生代中  <code>eden</code>  和  <code>S0、S1</code>  的空间比例，默认为  <code>-XX:SuriviorRatio=8，Eden:S0:S1 = 8:1:1</code></p>
-<p>假如设置成  <code>-XX:SurvivorRatio=4</code> ，则为  <code>Eden:S0:S1 = 4:1:1</code></p>
-<p><code>SurvivorRatio</code>  值就是设置 <code>eden</code>  区的比例占多少， <code>S0</code>  和 <code>S1</code>  相同。</p>
-<h2 id="常用基础参数newratio讲解"><a class="markdownIt-Anchor" href="#常用基础参数newratio讲解">#</a> 常用基础参数 <code>NewRatio</code>  讲解</h2>
-<p>配置年轻代 <code>new</code>  和老年代 <code>old</code>  在堆结构的占比</p>
-<p>默认： <code>-XX:NewRatio=2</code>  新生代占 <code>1</code> ，老年代 <code>2</code> ，年轻代占整个堆的 <code>1/3</code></p>
-<p><code>-XX:NewRatio=4：</code> 新生代占 <code>1</code> ，老年代占 <code>4</code> ，年轻代占整个堆的 <code>1/5</code> ，</p>
-<p><code>NewRadio</code>  值就是设置老年代的占比，剩下的 <code>1</code>  个新生代。</p>
-<p>新生代特别小，会造成频繁的进行 <code>GC</code>  收集。</p>
-<h2 id="常用基础参数maxtenuringthreshold讲解"><a class="markdownIt-Anchor" href="#常用基础参数maxtenuringthreshold讲解">#</a> 常用基础参数 <code>MaxTenuringThreshold</code>  讲解</h2>
-<p>晋升到老年代的对象年龄。</p>
-<p><code>SurvivorTo和SurvivorFrom</code>  互换，原 <code>SurvivorTo</code>  成为下一次 <code>GC</code>  时的 <code>SurvivorFrom</code>  区，部分对象会在 <code>From</code>  和 <code>To</code>  区域中复制来复制去，如此交换 <code>15</code>  次（由 <code>JVM</code>  参数 <code>MaxTenuringThreshold</code>  决定，这个参数默认为 <code>15</code> ），最终如果还是存活，就存入老年代。</p>
-<p>这里就是调整这个次数的，默认是 15，并且设置的值 在  <code>0~15</code>  之间。</p>
-<p><code>-XX:MaxTenuringThreshold=0</code> ：设置垃圾最大年龄。如果设置为 0 的话，则年轻对象不经过 <code>Survivor</code>  区，直接进入老年代。对于年老代比较多的应用，可以提高效率。如果将此值设置为一个较大的值，则年轻代对象会在 <code>Survivor</code>  区进行多次复制，这样可以增加对象再年轻代的存活时间，增加在年轻代即被回收的概念。</p>
+
+<h2 id="常用基础参数SurvivorRatio讲解"><a href="#常用基础参数SurvivorRatio讲解" class="headerlink" title="常用基础参数SurvivorRatio讲解"></a>常用基础参数<code>SurvivorRatio</code>讲解</h2><img data-src="/posts/a72f470b/2022-03-13-16-05-01.png" class="">
+
+<p>调节新生代中 <code>eden</code> 和 <code>S0、S1</code>的空间比例，默认为 <code>-XX:SuriviorRatio=8，Eden:S0:S1 = 8:1:1</code></p>
+<p>假如设置成 <code>-XX:SurvivorRatio=4</code>，则为 <code>Eden:S0:S1 = 4:1:1</code></p>
+<p><code>SurvivorRatio</code>值就是设置<code>eden</code>区的比例占多少，<code>S0</code>和<code>S1</code>相同。</p>
+<h2 id="常用基础参数NewRatio讲解"><a href="#常用基础参数NewRatio讲解" class="headerlink" title="常用基础参数NewRatio讲解"></a>常用基础参数<code>NewRatio</code>讲解</h2><p>配置年轻代<code>new</code>和老年代<code>old</code> 在堆结构的占比</p>
+<p>默认：<code>-XX:NewRatio=2</code> 新生代占<code>1</code>，老年代<code>2</code>，年轻代占整个堆的<code>1/3</code></p>
+<p><code>-XX:NewRatio=4：</code>新生代占<code>1</code>，老年代占<code>4</code>，年轻代占整个堆的<code>1/5</code>，</p>
+<p><code>NewRadio</code>值就是设置老年代的占比，剩下的<code>1</code>个新生代。</p>
+<p>新生代特别小，会造成频繁的进行<code>GC</code>收集。</p>
+<h2 id="常用基础参数MaxTenuringThreshold讲解"><a href="#常用基础参数MaxTenuringThreshold讲解" class="headerlink" title="常用基础参数MaxTenuringThreshold讲解"></a>常用基础参数<code>MaxTenuringThreshold</code>讲解</h2><p>晋升到老年代的对象年龄。</p>
+<p><code>SurvivorTo和SurvivorFrom</code>互换，原<code>SurvivorTo</code>成为下一次<code>GC</code>时的<code>SurvivorFrom</code>区，部分对象会在<code>From</code>和<code>To</code>区域中复制来复制去，如此交换<code>15</code>次（由<code>JVM</code>参数<code>MaxTenuringThreshold</code>决定，这个参数默认为<code>15</code>），最终如果还是存活，就存入老年代。</p>
+<p>这里就是调整这个次数的，默认是15，并且设置的值 在 <code>0~15</code>之间。</p>
+<p><code>-XX:MaxTenuringThreshold=0</code>：设置垃圾最大年龄。如果设置为0的话，则年轻对象不经过<code>Survivor</code>区，直接进入老年代。对于年老代比较多的应用，可以提高效率。如果将此值设置为一个较大的值，则年轻代对象会在<code>Survivor</code>区进行多次复制，这样可以增加对象再年轻代的存活时间，增加在年轻代即被回收的概念。</p>
 
       <div class="tags">
           <a href="/tags/Java%E9%9D%A2%E8%AF%95/" rel="tag"><i class="ic i-tag"></i> Java面试</a>
@@ -336,7 +333,7 @@ This option is equivalent to  <code>-Xss</code> . <span class="exturl" data-url=
     <div class="item left">
       
 
-  <a href="/posts/de5e33d7/" itemprop="url" rel="prev" data-background-image="https:&#x2F;&#x2F;tva3.sinaimg.cn&#x2F;mw690&#x2F;6833939bly1gicm07ih54j20zk0m84qp.jpg" title="关于JDK中的Arrays.sort排序方法">
+  <a href="/posts/de5e33d7/" itemprop="url" rel="prev" data-background-image="https:&#x2F;&#x2F;tva3.sinaimg.cn&#x2F;mw690&#x2F;6833939bly1gipeun65urj20zk0m81ii.jpg" title="关于JDK中的Arrays.sort排序方法">
   <span class="type">Previous Post</span>
   <span class="category"><i class="ic i-flag"></i> </span>
   <h3>关于JDK中的Arrays.sort排序方法</h3>
@@ -346,7 +343,7 @@ This option is equivalent to  <code>-Xss</code> . <span class="exturl" data-url=
     <div class="item right">
       
 
-  <a href="/posts/56be7cc9/" itemprop="url" rel="next" data-background-image="https:&#x2F;&#x2F;tva3.sinaimg.cn&#x2F;mw690&#x2F;6833939bly1gipeyvx1d4j20zk0m8hdt.jpg" title="关于Linux排查问题命令">
+  <a href="/posts/56be7cc9/" itemprop="url" rel="next" data-background-image="https:&#x2F;&#x2F;tva3.sinaimg.cn&#x2F;mw690&#x2F;6833939bly1gipexe4oykj20zk0m87ji.jpg" title="关于Linux排查问题命令">
   <span class="type">Next Post</span>
   <span class="category"><i class="ic i-flag"></i> </span>
   <h3>关于Linux排查问题命令</h3>
@@ -368,7 +365,7 @@ This option is equivalent to  <code>-Xss</code> . <span class="exturl" data-url=
   <div class="panels">
     <div class="inner">
       <div class="contents panel pjax" data-title="Contents">
-          <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#jvm%E7%9A%84%E6%A0%87%E9%85%8D%E5%8F%82%E6%95%B0%E5%92%8Cx%E5%8F%82%E6%95%B0"><span class="toc-number">1.</span> <span class="toc-text">  JVM  的标配参数和 X  参数</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#vm%E7%9A%84xx%E5%8F%82%E6%95%B0%E4%B9%8B%E5%B8%83%E5%B0%94%E7%B1%BB%E5%9E%8B"><span class="toc-number">2.</span> <span class="toc-text">  VM  的 XX  参数之布尔类型</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#jvm%E7%9A%84xx%E5%8F%82%E6%95%B0%E4%B9%8B%E8%AE%BE%E5%80%BC%E7%B1%BB%E5%9E%8B"><span class="toc-number">3.</span> <span class="toc-text">  JVM  的 XX  参数之设值类型</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#vm%E7%9A%84xx%E5%8F%82%E6%95%B0%E4%B9%8Bxmsxmx%E5%9D%91%E9%A2%98"><span class="toc-number">4.</span> <span class="toc-text">  VM  的 XX  参数之 XmsXmx  坑题</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#jvm%E7%9B%98%E7%82%B9%E5%AE%B6%E5%BA%95%E6%9F%A5%E7%9C%8B%E5%88%9D%E5%A7%8B%E9%BB%98%E8%AE%A4"><span class="toc-number">5.</span> <span class="toc-text">  JVM  盘点家底查看初始默认</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#jvm%E7%9B%98%E7%82%B9%E5%AE%B6%E5%BA%95%E6%9F%A5%E7%9C%8B%E4%BF%AE%E6%94%B9%E5%8F%98%E6%9B%B4%E5%80%BC"><span class="toc-number">6.</span> <span class="toc-text">  JVM  盘点家底查看修改变更值</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%A0%86%E5%86%85%E5%AD%98%E5%88%9D%E5%A7%8B%E5%A4%A7%E5%B0%8F%E5%BF%AB%E9%80%9F%E5%A4%8D%E4%B9%A0"><span class="toc-number">7.</span> <span class="toc-text"> 堆内存初始大小快速复习</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%B8%B8%E7%94%A8%E5%9F%BA%E7%A1%80%E5%8F%82%E6%95%B0%E6%A0%88%E5%86%85%E5%AD%98xss%E8%AE%B2%E8%A7%A3"><span class="toc-number">8.</span> <span class="toc-text"> 常用基础参数栈内存 Xss  讲解</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%B8%B8%E7%94%A8%E5%9F%BA%E7%A1%80%E5%8F%82%E6%95%B0%E5%85%83%E7%A9%BA%E9%97%B4metaspacesize%E8%AE%B2%E8%A7%A3"><span class="toc-number">9.</span> <span class="toc-text"> 常用基础参数元空间 MetaspaceSize  讲解</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%B8%B8%E7%94%A8%E5%9F%BA%E7%A1%80%E5%8F%82%E6%95%B0printgcdetails%E5%9B%9E%E6%94%B6%E5%89%8D%E5%90%8E%E5%AF%B9%E6%AF%94%E8%AE%B2%E8%A7%A3"><span class="toc-number">10.</span> <span class="toc-text"> 常用基础参数 PrintGCDetails  回收前后对比讲解</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%B8%B8%E7%94%A8%E5%9F%BA%E7%A1%80%E5%8F%82%E6%95%B0survivorratio%E8%AE%B2%E8%A7%A3"><span class="toc-number">11.</span> <span class="toc-text"> 常用基础参数 SurvivorRatio  讲解</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%B8%B8%E7%94%A8%E5%9F%BA%E7%A1%80%E5%8F%82%E6%95%B0newratio%E8%AE%B2%E8%A7%A3"><span class="toc-number">12.</span> <span class="toc-text"> 常用基础参数 NewRatio  讲解</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%B8%B8%E7%94%A8%E5%9F%BA%E7%A1%80%E5%8F%82%E6%95%B0maxtenuringthreshold%E8%AE%B2%E8%A7%A3"><span class="toc-number">13.</span> <span class="toc-text"> 常用基础参数 MaxTenuringThreshold  讲解</span></a></li></ol>
+          <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#JVM%E7%9A%84%E6%A0%87%E9%85%8D%E5%8F%82%E6%95%B0%E5%92%8CX%E5%8F%82%E6%95%B0"><span class="toc-number">1.</span> <span class="toc-text">JVM的标配参数和X参数</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#VM%E7%9A%84XX%E5%8F%82%E6%95%B0%E4%B9%8B%E5%B8%83%E5%B0%94%E7%B1%BB%E5%9E%8B"><span class="toc-number">2.</span> <span class="toc-text">VM的XX参数之布尔类型</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#JVM%E7%9A%84XX%E5%8F%82%E6%95%B0%E4%B9%8B%E8%AE%BE%E5%80%BC%E7%B1%BB%E5%9E%8B"><span class="toc-number">3.</span> <span class="toc-text">JVM的XX参数之设值类型</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#VM%E7%9A%84XX%E5%8F%82%E6%95%B0%E4%B9%8BXmsXmx%E5%9D%91%E9%A2%98"><span class="toc-number">4.</span> <span class="toc-text">VM的XX参数之XmsXmx坑题</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#JVM%E7%9B%98%E7%82%B9%E5%AE%B6%E5%BA%95%E6%9F%A5%E7%9C%8B%E5%88%9D%E5%A7%8B%E9%BB%98%E8%AE%A4"><span class="toc-number">5.</span> <span class="toc-text">JVM盘点家底查看初始默认</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#JVM%E7%9B%98%E7%82%B9%E5%AE%B6%E5%BA%95%E6%9F%A5%E7%9C%8B%E4%BF%AE%E6%94%B9%E5%8F%98%E6%9B%B4%E5%80%BC"><span class="toc-number">6.</span> <span class="toc-text">JVM盘点家底查看修改变更值</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%A0%86%E5%86%85%E5%AD%98%E5%88%9D%E5%A7%8B%E5%A4%A7%E5%B0%8F%E5%BF%AB%E9%80%9F%E5%A4%8D%E4%B9%A0"><span class="toc-number">7.</span> <span class="toc-text">堆内存初始大小快速复习</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%B8%B8%E7%94%A8%E5%9F%BA%E7%A1%80%E5%8F%82%E6%95%B0%E6%A0%88%E5%86%85%E5%AD%98Xss%E8%AE%B2%E8%A7%A3"><span class="toc-number">8.</span> <span class="toc-text">常用基础参数栈内存Xss讲解</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%B8%B8%E7%94%A8%E5%9F%BA%E7%A1%80%E5%8F%82%E6%95%B0%E5%85%83%E7%A9%BA%E9%97%B4MetaspaceSize%E8%AE%B2%E8%A7%A3"><span class="toc-number">9.</span> <span class="toc-text">常用基础参数元空间MetaspaceSize讲解</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%B8%B8%E7%94%A8%E5%9F%BA%E7%A1%80%E5%8F%82%E6%95%B0PrintGCDetails%E5%9B%9E%E6%94%B6%E5%89%8D%E5%90%8E%E5%AF%B9%E6%AF%94%E8%AE%B2%E8%A7%A3"><span class="toc-number">10.</span> <span class="toc-text">常用基础参数PrintGCDetails回收前后对比讲解</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%B8%B8%E7%94%A8%E5%9F%BA%E7%A1%80%E5%8F%82%E6%95%B0SurvivorRatio%E8%AE%B2%E8%A7%A3"><span class="toc-number">11.</span> <span class="toc-text">常用基础参数SurvivorRatio讲解</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%B8%B8%E7%94%A8%E5%9F%BA%E7%A1%80%E5%8F%82%E6%95%B0NewRatio%E8%AE%B2%E8%A7%A3"><span class="toc-number">12.</span> <span class="toc-text">常用基础参数NewRatio讲解</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%B8%B8%E7%94%A8%E5%9F%BA%E7%A1%80%E5%8F%82%E6%95%B0MaxTenuringThreshold%E8%AE%B2%E8%A7%A3"><span class="toc-number">13.</span> <span class="toc-text">常用基础参数MaxTenuringThreshold讲解</span></a></li></ol>
       </div>
       <div class="related panel pjax" data-title="Related">
       </div>
@@ -383,7 +380,7 @@ This option is equivalent to  <code>-Xss</code> . <span class="exturl" data-url=
 <nav class="state">
     <div class="item posts">
       <a href="/archives/">
-        <span class="count">134</span>
+        <span class="count">135</span>
         <span class="name">posts</span>
       </a>
     </div>
@@ -395,7 +392,7 @@ This option is equivalent to  <code>-Xss</code> . <span class="exturl" data-url=
     </div>
     <div class="item tags">
       <a href="/tags/">
-        <span class="count">98</span>
+        <span class="count">99</span>
         <span class="name">tags</span>
       </a>
     </div>
@@ -474,76 +471,28 @@ This option is equivalent to  <code>-Xss</code> . <span class="exturl" data-url=
   <li class="item">
     
 <div class="breadcrumb">
-<a href="/categories/Java%E9%9D%A2%E8%AF%95/" title="In Java面试">Java面试</a>
-<i class="ic i-angle-right"></i>
-<a href="/categories/Java%E9%9D%A2%E8%AF%95/HashMap/" title="In HashMap">HashMap</a>
 </div>
 
-    <span><a href="/posts/52d9f7d3/" title="Java面试必问--HashMap的底层">Java面试必问--HashMap的底层</a></span>
+    <span><a href="/posts/159c6098/" title="阻塞队列">阻塞队列</a></span>
   </li>
 
       
   <li class="item">
     
 <div class="breadcrumb">
-<a href="/categories/Java%E9%9D%A2%E8%AF%95/" title="In Java面试">Java面试</a>
-<i class="ic i-angle-right"></i>
-<a href="/categories/Java%E9%9D%A2%E8%AF%95/%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92/" title="In 动态规划">动态规划</a>
 </div>
 
-    <span><a href="/posts/a80d0031/" title="动态规划">动态规划</a></span>
+    <span><a href="/posts/5a74c6a6/" title="宝儿的大腿小腿围">宝儿的大腿小腿围</a></span>
   </li>
 
       
   <li class="item">
     
 <div class="breadcrumb">
-<a href="/categories/Java/" title="In Java">Java</a>
+<a href="/categories/%E5%89%8D%E7%AB%AF/" title="In 前端">前端</a>
 </div>
 
-    <span><a href="/posts/bd76a990/" title="一图看懂Java中的PO,BO,VO,DTO,POJO,DAO,DO">一图看懂Java中的PO,BO,VO,DTO,POJO,DAO,DO</a></span>
-  </li>
-
-      
-  <li class="item">
-    
-<div class="breadcrumb">
-<a href="/categories/Java/" title="In Java">Java</a>
-<i class="ic i-angle-right"></i>
-<a href="/categories/Java/Stream/" title="In Stream">Stream</a>
-</div>
-
-    <span><a href="/posts/8b8fedea/" title="Stream流的介绍">Stream流的介绍</a></span>
-  </li>
-
-      
-  <li class="item">
-    
-<div class="breadcrumb">
-<a href="/categories/UML/" title="In UML">UML</a>
-</div>
-
-    <span><a href="/posts/f610585/" title="UML:类图关系总结">UML:类图关系总结</a></span>
-  </li>
-
-      
-  <li class="item">
-    
-<div class="breadcrumb">
-<a href="/categories/Java%E9%9D%A2%E8%AF%95/" title="In Java面试">Java面试</a>
-</div>
-
-    <span><a href="/posts/feb84842/" title="Java面试必问--ArrayList的底层">Java面试必问--ArrayList的底层</a></span>
-  </li>
-
-      
-  <li class="item">
-    
-<div class="breadcrumb">
-<a href="/categories/LeetCode/" title="In LeetCode">LeetCode</a>
-</div>
-
-    <span><a href="/posts/4491edd3/" title="LeetCode07_整数反转">LeetCode07_整数反转</a></span>
+    <span><a href="/posts/e43580c1/" title="flex布局">flex布局</a></span>
   </li>
 
       
@@ -552,20 +501,22 @@ This option is equivalent to  <code>-Xss</code> . <span class="exturl" data-url=
 <div class="breadcrumb">
 <a href="/categories/%E5%89%8D%E7%AB%AF/" title="In 前端">前端</a>
 <i class="ic i-angle-right"></i>
-<a href="/categories/%E5%89%8D%E7%AB%AF/JavaScript/" title="In JavaScript">JavaScript</a>
+<a href="/categories/%E5%89%8D%E7%AB%AF/Css/" title="In Css">Css</a>
 </div>
 
-    <span><a href="/posts/4aa00b9a/" title="Js中的some、find、findindex、includes、filter的使用">Js中的some、find、findindex、includes、filter的使用</a></span>
+    <span><a href="/posts/7f59931c/" title="Css选择器">Css选择器</a></span>
   </li>
 
       
   <li class="item">
     
 <div class="breadcrumb">
-<a href="/categories/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/" title="In 设计模式">设计模式</a>
+<a href="/categories/Java%E9%9D%A2%E8%AF%95/" title="In Java面试">Java面试</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/Java%E9%9D%A2%E8%AF%95/SpringBoot/" title="In SpringBoot">SpringBoot</a>
 </div>
 
-    <span><a href="/posts/79c6d028/" title="23设计模式(更新中)">23设计模式(更新中)</a></span>
+    <span><a href="/posts/20ac1950/" title="SpringBoot文件上传下载">SpringBoot文件上传下载</a></span>
   </li>
 
       
@@ -573,9 +524,58 @@ This option is equivalent to  <code>-Xss</code> . <span class="exturl" data-url=
     
 <div class="breadcrumb">
 <a href="/categories/Java/" title="In Java">Java</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/Java/Mybatis/" title="In Mybatis">Mybatis</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/Java/Mybatis/SpringBoot/" title="In SpringBoot">SpringBoot</a>
 </div>
 
-    <span><a href="/posts/c3733521/" title="Java之assert关键字">Java之assert关键字</a></span>
+    <span><a href="/posts/c112412d/" title="Mybatis封装成Map结果">Mybatis封装成Map结果</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+</div>
+
+    <span><a href="/posts/7874a051/" title="Nginx踩坑之解决前后端跨域">Nginx踩坑之解决前后端跨域</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/Java%E9%9D%A2%E8%AF%95/" title="In Java面试">Java面试</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/Java%E9%9D%A2%E8%AF%95/%E9%80%89%E6%8B%A9%E6%8E%92%E5%BA%8F/" title="In 选择排序">选择排序</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/Java%E9%9D%A2%E8%AF%95/%E9%80%89%E6%8B%A9%E6%8E%92%E5%BA%8F/%E7%AE%97%E6%B3%95/" title="In 算法">算法</a>
+</div>
+
+    <span><a href="/posts/43d00a99/" title="选择排序">选择排序</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/Java%E9%9D%A2%E8%AF%95/" title="In Java面试">Java面试</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/Java%E9%9D%A2%E8%AF%95/SpringBoot/" title="In SpringBoot">SpringBoot</a>
+</div>
+
+    <span><a href="/posts/eec4b728/" title="SpringBoot中如何优雅的使用多线程">SpringBoot中如何优雅的使用多线程</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/Java%E9%9D%A2%E8%AF%95/" title="In Java面试">Java面试</a>
+</div>
+
+    <span><a href="/posts/3eb5e557/" title="赛可出行面试">赛可出行面试</a></span>
   </li>
 
   </ul>
@@ -600,13 +600,13 @@ This option is equivalent to  <code>-Xss</code> . <span class="exturl" data-url=
     <span class="post-meta-item-icon">
       <i class="ic i-chart-area"></i>
     </span>
-    <span title="Symbols count total">557k words</span>
+    <span title="Symbols count total">558k words</span>
 
     <span class="post-meta-divider">|</span>
     <span class="post-meta-item-icon">
       <i class="ic i-coffee"></i>
     </span>
-    <span title="Reading time total">8:26</span>
+    <span title="Reading time total">8:27</span>
   </div>
 </div>
 

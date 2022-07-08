@@ -117,12 +117,12 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
       </div>
       <div id="imgs" class="pjax">
         <ul>
-          <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1giclfdu6exj20zk0m87hw.jpg"></li>
-          <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1gipevo9j1jj20zk0m8e81.jpg"></li>
-          <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1gipey0a334j20zk0m8qpt.jpg"></li>
-          <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1gipewkhf1zj20zk0m81kx.jpg"></li>
-          <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1gipexw3o58j20zk0m8e81.jpg"></li>
-          <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1giclwuom7cj20zk0m8dvn.jpg"></li>
+          <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1giciuja1j1j20zk0m8kjl.jpg"></li>
+          <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1gicit4jrvuj20zk0m8785.jpg"></li>
+          <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1gicitht3xtj20zk0m8k5v.jpg"></li>
+          <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1gicm0fdw5cj20zk0m8hdt.jpg"></li>
+          <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1gipevarprfj20zk0m8npd.jpg"></li>
+          <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1giciuv0socj20zk0m8qes.jpg"></li>
         </ul>
       </div>
     </header>
@@ -171,56 +171,65 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
   <div class="body md" itemprop="articleBody">
     
 
-    <h1 id="jvm原理的第一次接触"><a class="markdownIt-Anchor" href="#jvm原理的第一次接触">#</a>  <code>Jvm</code>  原理的第一次接触</h1>
-<h2 id="jvm内存结构"><a class="markdownIt-Anchor" href="#jvm内存结构">#</a>  <code>JVM</code>  内存结构</h2>
-<span id="more"></span>
+    <h1 id="Jvm原理的第一次接触"><a href="#Jvm原理的第一次接触" class="headerlink" title="Jvm原理的第一次接触"></a><code>Jvm</code>原理的第一次接触</h1><h2 id="JVM内存结构"><a href="#JVM内存结构" class="headerlink" title="JVM内存结构"></a><code>JVM</code>内存结构</h2><span id="more"></span>
+
 <img data-src="/posts/57681474/2022-02-16-20-49-46.png" class="">
+
 <ul>
-<li>第一， <code>JVM</code>  分为五个区域：虚拟机栈 ( <code>VM Stack</code> )、本地方法栈 ( <code>Native Method Stack</code> )、方法区 ( <code>Method Area</code> )、堆 ( <code>Heap</code> )、程序计数器 ( <code>Program Counter Register</code> )。 <code>PS</code> ：大家不要排斥英语，此处用英文记忆反而更容易理解。</li>
-<li>第二， <code>JVM</code>  五个区中虚拟机栈、本地方法栈、程序计数器为线程私有，方法区和堆为线程共享区。图中已经用颜色区分，绿色表示 “通行”，橘黄色表示停一停（需等待）。</li>
-<li>第三， <code>JVM</code>  不同区域的占用内存大小不同，一般情况下堆最大，程序计数器较小。那么最大的区域会放什么？当然就是 <code>Java中最多的“对象”</code>  了。<br>
-学习延伸：如果你记住了这张图，是不是就可以说出关于 <code>JVM</code>  的内存结构了呢？可以尝试一下，切记不用死记硬背，发挥你的想象。</li>
+<li>第一，<code>JVM</code>分为五个区域：虚拟机栈(<code>VM Stack</code>)、本地方法栈(<code>Native Method Stack</code>)、方法区(<code>Method Area</code>)、堆(<code>Heap</code>)、程序计数器(<code>Program Counter Register</code>)。<code>PS</code>：大家不要排斥英语，此处用英文记忆反而更容易理解。</li>
+<li>第二，<code>JVM</code>五个区中虚拟机栈、本地方法栈、程序计数器为线程私有，方法区和堆为线程共享区。图中已经用颜色区分，绿色表示“通行”，橘黄色表示停一停（需等待）。</li>
+<li>第三，<code>JVM</code>不同区域的占用内存大小不同，一般情况下堆最大，程序计数器较小。那么最大的区域会放什么？当然就是<code>Java中最多的“对象”</code>了。<br>学习延伸：如果你记住了这张图，是不是就可以说出关于<code>JVM</code>的内存结构了呢？可以尝试一下，切记不用死记硬背，发挥你的想象。</li>
 </ul>
-<h2 id="堆heap"><a class="markdownIt-Anchor" href="#堆heap">#</a> 堆 ( <code>Heap</code> )</h2>
-<p>上面已经得出结论，堆内存最大，堆是被线程共享，堆的目的就是存放对象。几乎所有的对象实例都在此分配。当然，随着优化技术的更新，某些数据也会被放在栈上等。</p>
-<p>枪打出头鸟，树大招风。因为堆占用内存空间最大，堆也是 <code>Java</code>  垃圾回收的主要区域（重点对象），因此也称作 <code>“GC堆”</code> （ <code>Garbage Collected Heap</code> ）。</p>
-<p>关于 <code>GC</code>  的操作，我们后面章节会详细讲，但正因为 <code>GC</code>  的存在，而现代收集器基本都采用分代收集算法，堆又被细化了。</p>
+<h2 id="堆-Heap"><a href="#堆-Heap" class="headerlink" title="堆(Heap)"></a>堆(<code>Heap</code>)</h2><p>上面已经得出结论，堆内存最大，堆是被线程共享，堆的目的就是存放对象。几乎所有的对象实例都在此分配。当然，随着优化技术的更新，某些数据也会被放在栈上等。</p>
+<p>枪打出头鸟，树大招风。因为堆占用内存空间最大，堆也是<code>Java</code>垃圾回收的主要区域（重点对象），因此也称作<code>“GC堆”</code>（<code>Garbage Collected Heap</code>）。</p>
+<p>关于<code>GC</code>的操作，我们后面章节会详细讲，但正因为<code>GC</code>的存在，而现代收集器基本都采用分代收集算法，堆又被细化了。</p>
 <img data-src="/posts/57681474/2022-02-16-20-49-59.png" class="">
+
 <p>同样，对上图呈现内容汇总分析。</p>
 <ul>
-<li>第一，堆的 <code>GC</code>  操作采用分代收集算法。</li>
+<li>第一，堆的<code>GC</code>操作采用分代收集算法。</li>
 <li>第二，堆区分了新生代和老年代；</li>
-<li>第三，新生代又分为： <code>Eden</code>  空间、 <code>From Survivor（S0）</code> 空间、 <code>To Survivor（S1）</code> 空间。</li>
+<li>第三，新生代又分为：<code>Eden</code>空间、<code>From Survivor（S0）</code>空间、<code>To Survivor（S1）</code>空间。</li>
 </ul>
-<p><code>Java</code>  虚拟机规范规定， <code>Java</code>  堆可以处于物理上不连续的内存空间中，只要逻辑上是连续的即可。也就是说堆的内存是一块块拼凑起来的。要增加堆空间时，往上 “拼凑”（可扩展性）即可，但当堆中没有内存完成实例分配，并且堆也无法再扩展时，将会抛出 <code>OutOfMemoryError</code>  异常。</p>
-<h2 id="方法区method-area"><a class="markdownIt-Anchor" href="#方法区method-area">#</a> 方法区 <code>（Method Area）</code></h2>
-<p>方法区与堆有很多共性：线程共享、内存不连续、可扩展、可垃圾回收，同样当无法再扩展时会抛出 <code>OutOfMemoryError</code>  异常。</p>
-<p>正因为如此相像， <code>Java</code>  虚拟机规范把<em><strong>方法区描述为堆</strong></em>的一个逻辑部分，但目前实际上是与 <code>Java</code>  堆分开的（ <code>Non-Heap</code> ）。</p>
+<p><code>Java</code>虚拟机规范规定，<code>Java</code>堆可以处于物理上不连续的内存空间中，只要逻辑上是连续的即可。也就是说堆的内存是一块块拼凑起来的。要增加堆空间时，往上“拼凑”（可扩展性）即可，但当堆中没有内存完成实例分配，并且堆也无法再扩展时，将会抛出<code>OutOfMemoryError</code>异常。</p>
+<h2 id="方法区（Method-Area）"><a href="#方法区（Method-Area）" class="headerlink" title="方法区（Method Area）"></a>方法区<code>（Method Area）</code></h2><p>方法区与堆有很多共性：线程共享、内存不连续、可扩展、可垃圾回收，同样当无法再扩展时会抛出<code>OutOfMemoryError</code>异常。</p>
+<p>正因为如此相像，<code>Java</code>虚拟机规范把<em><strong>方法区描述为堆</strong></em>的一个逻辑部分，但目前实际上是与<code>Java</code>堆分开的（<code>Non-Heap</code>）。</p>
 <p>方法区个性化的是，它存储的是<em><strong>已被虚拟机加载的类信息、常量、静态变量</strong></em>即时编译器编译后的代码等数据。</p>
-<p>方法区的内存回收目标主要是针对<em><strong>常量池的回收和对类型的卸载</strong></em>，一般来说这个区域的回收 “成绩” 比较难以令人满意，尤其是类型的卸载，条件相当苛刻，但是回收确实是有必要的。</p>
+<p>方法区的内存回收目标主要是针对<em><strong>常量池的回收和对类型的卸载</strong></em>，一般来说这个区域的回收“成绩”比较难以令人满意，尤其是类型的卸载，条件相当苛刻，但是回收确实是有必要的。</p>
 <img data-src="/posts/57681474/2022-02-16-20-50-12.png" class="">
-<h2 id="程序计数器program-counter-register"><a class="markdownIt-Anchor" href="#程序计数器program-counter-register">#</a> 程序计数器（ <code>Program Counter Register</code> ）</h2>
-<p>关于程序计数器我们已经得知：占用内存较小，现成私有。它是唯一没有 <code>OutOfMemoryError</code>  异常的区域。</p>
+
+
+<h2 id="程序计数器（Program-Counter-Register）"><a href="#程序计数器（Program-Counter-Register）" class="headerlink" title="程序计数器（Program Counter Register）"></a>程序计数器（<code>Program Counter Register</code>）</h2><p>关于程序计数器我们已经得知：占用内存较小，现成私有。它是唯一没有<code>OutOfMemoryError</code>异常的区域。</p>
 <p>程序计数器的作用可以看做是当前线程所执行的<strong>字节码的行号指示器</strong>，字节码解释器工作时就是通过改变计数器的值来选取下一条字节码指令。其中，分支、循环、跳转、异常处理、线程恢复等基础功能都需要依赖计数器来完成。</p>
-<p><code>Java</code>  虚拟机的多线程是通过线程轮流切换并分配处理器执行时间的方式来实现的，在任何一个确定的时刻，一个处理器（对于多核处理器来说是一个内核）只会执行一条线程中的指令。</p>
+<p><code>Java</code>虚拟机的多线程是通过线程轮流切换并分配处理器执行时间的方式来实现的，在任何一个确定的时刻，一个处理器（对于多核处理器来说是一个内核）只会执行一条线程中的指令。</p>
 <img data-src="/posts/57681474/2022-02-16-20-50-23.png" class="">
-<p>因此，为了线程切换后能恢复到正确的执行位置，每条线程都需要有一个独立的程序计数器，各条线程之间的计数器互不影响，独立存储，我们称这类内存区域为 “线程私有” 的内存。</p>
-<p>如果线程正在执行的是一个 <code>Java</code>  方法，这个计数器记录的是正在执行的虚拟机字节码指令的地址；如果正在执行的是 <code>Natvie</code>  方法，这个计数器值则为空（ <code>Undefined</code> ）。</p>
-<h2 id="虚拟机栈jvm-stacks"><a class="markdownIt-Anchor" href="#虚拟机栈jvm-stacks">#</a> 虚拟机栈（ <code>JVM Stacks</code> ）</h2>
-<p>虚拟机栈线程私有，生命周期与线程相同。</p>
-<p>栈帧 ( <code>Stack Frame</code> ) 是用于支持虚拟机进行方法调用和方法执行的数据结构。栈帧存储了方法的局部变量表、操作数栈、动态连接和方法返回地址等信息。每一个方法从调用至执行完成的过程，都对应着一个栈帧在虚拟机栈里从入栈到出栈的过程。</p>
+
+
+
+<p>因此，为了线程切换后能恢复到正确的执行位置，每条线程都需要有一个独立的程序计数器，各条线程之间的计数器互不影响，独立存储，我们称这类内存区域为“线程私有”的内存。</p>
+<p>如果线程正在执行的是一个<code>Java</code>方法，这个计数器记录的是正在执行的虚拟机字节码指令的地址；如果正在执行的是<code>Natvie</code>方法，这个计数器值则为空（<code>Undefined</code>）。</p>
+<h2 id="虚拟机栈（JVM-Stacks）"><a href="#虚拟机栈（JVM-Stacks）" class="headerlink" title="虚拟机栈（JVM Stacks）"></a>虚拟机栈（<code>JVM Stacks</code>）</h2><p>虚拟机栈线程私有，生命周期与线程相同。</p>
+<p>栈帧(<code>Stack Frame</code>)是用于支持虚拟机进行方法调用和方法执行的数据结构。栈帧存储了方法的局部变量表、操作数栈、动态连接和方法返回地址等信息。每一个方法从调用至执行完成的过程，都对应着一个栈帧在虚拟机栈里从入栈到出栈的过程。</p>
 <img data-src="/posts/57681474/2022-02-16-20-50-34.png" class="">
-<p>局部变量表 ( <code>Local Variable Table</code> ) 是一组变量值存储空间，用于 <code>存放方法参数</code> 和 <code>方法内定义</code> 的局部变量。包括 8 种基本数据类型、对象引用（ <code>reference</code>  类型）和 <code>returnAddress</code>  类型（指向一条字节码指令的地址）。</p>
-<p>其中 <code>64位</code> 长度的 <code>long</code>  和 <code>double</code>  类型的数据会占用 2 个局部变量空间（ <code>Slot</code> ），其余的数据类型只占用 <code>1</code>  个。</p>
-<p>如果线程请求的栈深度大于虚拟机所允许的深度，将抛出 <code>StackOverflowError</code>  异常；如果虚拟机栈动态扩展时无法申请到足够的内存时会抛出 <code>OutOfMemoryError</code>  异常。</p>
-<p>操作数栈 ( <code>Operand Stack</code> ) 也称作操作栈，是一个 <code>后入先出栈(LIFO)</code> 。随着方法执行和字节码指令的执行，会从局部变量表或对象实例的字段中复制常量或变量写入到操作数栈，再随着计算的进行将栈中元素出栈到局部变量表或者返回给方法调用者，也就是出栈 / 入栈操作。</p>
-<p>动态链接： <code>Java</code>  虚拟机栈中，每个栈帧都包含一个指向运行时常量池中该栈所属方法的符号引用，持有这个引用的目的是为了支持方法调用过程中的动态链接 ( <code>Dynamic Linking</code> )。</p>
+
+
+<p>局部变量表(<code>Local Variable Table</code>)是一组变量值存储空间，用于<code>存放方法参数</code>和<code>方法内定义</code>的局部变量。包括8种基本数据类型、对象引用（<code>reference</code>类型）和<code>returnAddress</code>类型（指向一条字节码指令的地址）。</p>
+<p>其中<code>64位</code>长度的<code>long</code>和<code>double</code>类型的数据会占用2个局部变量空间（<code>Slot</code>），其余的数据类型只占用<code>1</code>个。</p>
+<p>如果线程请求的栈深度大于虚拟机所允许的深度，将抛出<code>StackOverflowError</code>异常；如果虚拟机栈动态扩展时无法申请到足够的内存时会抛出<code>OutOfMemoryError</code>异常。</p>
+<p>操作数栈(<code>Operand Stack</code>)也称作操作栈，是一个<code>后入先出栈(LIFO)</code>。随着方法执行和字节码指令的执行，会从局部变量表或对象实例的字段中复制常量或变量写入到操作数栈，再随着计算的进行将栈中元素出栈到局部变量表或者返回给方法调用者，也就是出栈/入栈操作。</p>
+<p>动态链接：<code>Java</code>虚拟机栈中，每个栈帧都包含一个指向运行时常量池中该栈所属方法的符号引用，持有这个引用的目的是为了支持方法调用过程中的动态链接(<code>Dynamic Linking</code>)。</p>
 <p>方法返回：无论方法是否正常完成，都需要返回到方法被调用的位置，程序才能继续进行。</p>
-<h2 id="本地方法栈native-method-stacks"><a class="markdownIt-Anchor" href="#本地方法栈native-method-stacks">#</a> 本地方法栈（ <code>Native Method Stacks</code> ）</h2>
-<p>本地方法栈（ <code>Native Method Stacks</code> ）与虚拟机栈作用相似，也会抛出 <code>StackOverflowError和OutOfMemoryError</code>  异常。</p>
-<p>区别在于虚拟机栈为虚拟机执行 <code>Java</code>  方法（ <code>字节码</code> ）服务，而本地方法栈是为虚拟机使用到的 <code>Native</code>  方法服务。</p>
-<h2 id="小结"><a class="markdownIt-Anchor" href="#小结">#</a> 小结</h2>
-<img data-src="/posts/57681474/2022-02-16-20-50-46.png" class="">
+<h2 id="本地方法栈（Native-Method-Stacks）"><a href="#本地方法栈（Native-Method-Stacks）" class="headerlink" title="本地方法栈（Native Method Stacks）"></a>本地方法栈（<code>Native Method Stacks</code>）</h2><p>本地方法栈（<code>Native Method Stacks</code>）与虚拟机栈作用相似，也会抛出<code>StackOverflowError和OutOfMemoryError</code>异常。</p>
+<p>区别在于虚拟机栈为虚拟机执行<code>Java</code>方法（<code>字节码</code>）服务，而本地方法栈是为虚拟机使用到的<code>Native</code>方法服务。</p>
+<h2 id="小结"><a href="#小结" class="headerlink" title="小结"></a>小结</h2><img data-src="/posts/57681474/2022-02-16-20-50-46.png" class="">
+
+
+
+
+
+
+
+
 
       <div class="tags">
           <a href="/tags/Java%E9%9D%A2%E8%AF%95/" rel="tag"><i class="ic i-tag"></i> Java面试</a>
@@ -276,7 +285,7 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
     <div class="item left">
       
 
-  <a href="/posts/a5258aa2/" itemprop="url" rel="prev" data-background-image="https:&#x2F;&#x2F;tva3.sinaimg.cn&#x2F;mw690&#x2F;6833939bly1giciundwu5j20zk0m8n9e.jpg" title="Java面试小册子">
+  <a href="/posts/a5258aa2/" itemprop="url" rel="prev" data-background-image="https:&#x2F;&#x2F;tva3.sinaimg.cn&#x2F;mw690&#x2F;6833939bly1gicit4jrvuj20zk0m8785.jpg" title="Java面试小册子">
   <span class="type">Previous Post</span>
   <span class="category"><i class="ic i-flag"></i> Java面试</span>
   <h3>Java面试小册子</h3>
@@ -286,7 +295,7 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
     <div class="item right">
       
 
-  <a href="/posts/31d0fffb/" itemprop="url" rel="next" data-background-image="https:&#x2F;&#x2F;tva3.sinaimg.cn&#x2F;mw690&#x2F;6833939bly1giclip4jbpj20zk0m87cv.jpg" title="Mybatis中#号和$号的区别">
+  <a href="/posts/31d0fffb/" itemprop="url" rel="next" data-background-image="https:&#x2F;&#x2F;tva3.sinaimg.cn&#x2F;mw690&#x2F;6833939bly1gipevo9j1jj20zk0m8e81.jpg" title="Mybatis中#号和$号的区别">
   <span class="type">Next Post</span>
   <span class="category"><i class="ic i-flag"></i> Mybatis</span>
   <h3>Mybatis中#号和$号的区别</h3>
@@ -308,7 +317,7 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
   <div class="panels">
     <div class="inner">
       <div class="contents panel pjax" data-title="Contents">
-          <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#jvm%E5%8E%9F%E7%90%86%E7%9A%84%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%8E%A5%E8%A7%A6"><span class="toc-number">1.</span> <span class="toc-text">  Jvm  原理的第一次接触</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#jvm%E5%86%85%E5%AD%98%E7%BB%93%E6%9E%84"><span class="toc-number">1.1.</span> <span class="toc-text">  JVM  内存结构</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%A0%86heap"><span class="toc-number">1.2.</span> <span class="toc-text"> 堆 ( Heap )</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%96%B9%E6%B3%95%E5%8C%BAmethod-area"><span class="toc-number">1.3.</span> <span class="toc-text"> 方法区 （Method Area）</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%A8%8B%E5%BA%8F%E8%AE%A1%E6%95%B0%E5%99%A8program-counter-register"><span class="toc-number">1.4.</span> <span class="toc-text"> 程序计数器（ Program Counter Register ）</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%99%9A%E6%8B%9F%E6%9C%BA%E6%A0%88jvm-stacks"><span class="toc-number">1.5.</span> <span class="toc-text"> 虚拟机栈（ JVM Stacks ）</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%9C%AC%E5%9C%B0%E6%96%B9%E6%B3%95%E6%A0%88native-method-stacks"><span class="toc-number">1.6.</span> <span class="toc-text"> 本地方法栈（ Native Method Stacks ）</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%B0%8F%E7%BB%93"><span class="toc-number">1.7.</span> <span class="toc-text"> 小结</span></a></li></ol></li></ol>
+          <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#Jvm%E5%8E%9F%E7%90%86%E7%9A%84%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%8E%A5%E8%A7%A6"><span class="toc-number">1.</span> <span class="toc-text">Jvm原理的第一次接触</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#JVM%E5%86%85%E5%AD%98%E7%BB%93%E6%9E%84"><span class="toc-number">1.1.</span> <span class="toc-text">JVM内存结构</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%A0%86-Heap"><span class="toc-number">1.2.</span> <span class="toc-text">堆(Heap)</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%96%B9%E6%B3%95%E5%8C%BA%EF%BC%88Method-Area%EF%BC%89"><span class="toc-number">1.3.</span> <span class="toc-text">方法区（Method Area）</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%A8%8B%E5%BA%8F%E8%AE%A1%E6%95%B0%E5%99%A8%EF%BC%88Program-Counter-Register%EF%BC%89"><span class="toc-number">1.4.</span> <span class="toc-text">程序计数器（Program Counter Register）</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%99%9A%E6%8B%9F%E6%9C%BA%E6%A0%88%EF%BC%88JVM-Stacks%EF%BC%89"><span class="toc-number">1.5.</span> <span class="toc-text">虚拟机栈（JVM Stacks）</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%9C%AC%E5%9C%B0%E6%96%B9%E6%B3%95%E6%A0%88%EF%BC%88Native-Method-Stacks%EF%BC%89"><span class="toc-number">1.6.</span> <span class="toc-text">本地方法栈（Native Method Stacks）</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%B0%8F%E7%BB%93"><span class="toc-number">1.7.</span> <span class="toc-text">小结</span></a></li></ol></li></ol>
       </div>
       <div class="related panel pjax" data-title="Related">
         <ul>
@@ -326,7 +335,7 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
 <nav class="state">
     <div class="item posts">
       <a href="/archives/">
-        <span class="count">134</span>
+        <span class="count">135</span>
         <span class="name">posts</span>
       </a>
     </div>
@@ -338,7 +347,7 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
     </div>
     <div class="item tags">
       <a href="/tags/">
-        <span class="count">98</span>
+        <span class="count">99</span>
         <span class="name">tags</span>
       </a>
     </div>
@@ -417,84 +426,20 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
   <li class="item">
     
 <div class="breadcrumb">
-<a href="/categories/Java/" title="In Java">Java</a>
+<a href="/categories/%E6%95%B0%E6%8D%AE%E5%BA%93/" title="In 数据库">数据库</a>
 </div>
 
-    <span><a href="/posts/96eb888f/" title="Java学习线路图">Java学习线路图</a></span>
+    <span><a href="/posts/377b6f7d/" title="关于mysql中对Json类型字段进行筛选查询">关于mysql中对Json类型字段进行筛选查询</a></span>
   </li>
 
       
   <li class="item">
     
 <div class="breadcrumb">
-<a href="/categories/Java/" title="In Java">Java</a>
-<i class="ic i-angle-right"></i>
-<a href="/categories/Java/SpringBoot/" title="In SpringBoot">SpringBoot</a>
+<a href="/categories/Java%E9%9D%A2%E8%AF%95/" title="In Java面试">Java面试</a>
 </div>
 
-    <span><a href="/posts/a3dfcd98/" title="SpringBoot中常见的几种解决跨域的方式">SpringBoot中常见的几种解决跨域的方式</a></span>
-  </li>
-
-      
-  <li class="item">
-    
-<div class="breadcrumb">
-<a href="/categories/Java/" title="In Java">Java</a>
-</div>
-
-    <span><a href="/posts/1748805d/" title="java线程池与五种常用线程池策略使用与解析">java线程池与五种常用线程池策略使用与解析</a></span>
-  </li>
-
-      
-  <li class="item">
-    
-<div class="breadcrumb">
-<a href="/categories/%E5%89%8D%E7%AB%AF/" title="In 前端">前端</a>
-<i class="ic i-angle-right"></i>
-<a href="/categories/%E5%89%8D%E7%AB%AF/JavaScript/" title="In JavaScript">JavaScript</a>
-<i class="ic i-angle-right"></i>
-<a href="/categories/%E5%89%8D%E7%AB%AF/JavaScript/Html/" title="In Html">Html</a>
-</div>
-
-    <span><a href="/posts/7b604068/" title="Html页面插入地图">Html页面插入地图</a></span>
-  </li>
-
-      
-  <li class="item">
-    
-<div class="breadcrumb">
-<a href="/categories/Java/" title="In Java">Java</a>
-<i class="ic i-angle-right"></i>
-<a href="/categories/Java/Java%E9%9D%A2%E8%AF%95/" title="In Java面试">Java面试</a>
-<i class="ic i-angle-right"></i>
-<a href="/categories/Java/Java%E9%9D%A2%E8%AF%95/SpringBoot/" title="In SpringBoot">SpringBoot</a>
-</div>
-
-    <span><a href="/posts/5e7baeeb/" title="过滤器和拦截器的区别">过滤器和拦截器的区别</a></span>
-  </li>
-
-      
-  <li class="item">
-    
-<div class="breadcrumb">
-<a href="/categories/%E5%89%8D%E7%AB%AF/" title="In 前端">前端</a>
-<i class="ic i-angle-right"></i>
-<a href="/categories/%E5%89%8D%E7%AB%AF/Css/" title="In Css">Css</a>
-</div>
-
-    <span><a href="/posts/54880bcd/" title="Css样式">Css样式</a></span>
-  </li>
-
-      
-  <li class="item">
-    
-<div class="breadcrumb">
-<a href="/categories/%E5%89%8D%E7%AB%AF/" title="In 前端">前端</a>
-<i class="ic i-angle-right"></i>
-<a href="/categories/%E5%89%8D%E7%AB%AF/Css/" title="In Css">Css</a>
-</div>
-
-    <span><a href="/posts/7f59931c/" title="Css选择器">Css选择器</a></span>
+    <span><a href="/posts/6b5f7afc/" title="面试之旅关于Java知识点">面试之旅关于Java知识点</a></span>
   </li>
 
       
@@ -503,10 +448,58 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
 <div class="breadcrumb">
 <a href="/categories/Java%E9%9D%A2%E8%AF%95/" title="In Java面试">Java面试</a>
 <i class="ic i-angle-right"></i>
-<a href="/categories/Java%E9%9D%A2%E8%AF%95/HashMap/" title="In HashMap">HashMap</a>
+<a href="/categories/Java%E9%9D%A2%E8%AF%95/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/" title="In 操作系统">操作系统</a>
 </div>
 
-    <span><a href="/posts/52d9f7d3/" title="Java面试必问--HashMap的底层">Java面试必问--HashMap的底层</a></span>
+    <span><a href="/posts/4847d2e5/" title="面试之旅关于操作系统">面试之旅关于操作系统</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/Java/" title="In Java">Java</a>
+</div>
+
+    <span><a href="/posts/4ca5bfdf/" title="Spring手动回滚事务">Spring手动回滚事务</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+</div>
+
+    <span><a href="/posts/4da9c93/" title="Web-based design and analysis tools for CRISPR base editing 文献阅读">Web-based design and analysis tools for CRISPR base editing 文献阅读</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+</div>
+
+    <span><a href="/posts/de5e33d7/" title="关于JDK中的Arrays.sort排序方法">关于JDK中的Arrays.sort排序方法</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/IDEA/" title="In IDEA">IDEA</a>
+</div>
+
+    <span><a href="/posts/610bdf07/" title="IDEA快捷键">IDEA快捷键</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/Daily/" title="In Daily">Daily</a>
+</div>
+
+    <span><a href="/posts/9a0369ec/" title="布隆过滤器">布隆过滤器</a></span>
   </li>
 
       
@@ -523,9 +516,10 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
   <li class="item">
     
 <div class="breadcrumb">
+<a href="/categories/Mybtais/" title="In Mybtais">Mybtais</a>
 </div>
 
-    <span><a href="/posts/e694a882/" title="Windows下如何查看某个端口被谁占用">Windows下如何查看某个端口被谁占用</a></span>
+    <span><a href="/posts/9aff665a/" title="mybatis中大于等于小于等于的写法">mybatis中大于等于小于等于的写法</a></span>
   </li>
 
   </ul>
@@ -550,13 +544,13 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
     <span class="post-meta-item-icon">
       <i class="ic i-chart-area"></i>
     </span>
-    <span title="Symbols count total">557k words</span>
+    <span title="Symbols count total">558k words</span>
 
     <span class="post-meta-divider">|</span>
     <span class="post-meta-item-icon">
       <i class="ic i-coffee"></i>
     </span>
-    <span title="Reading time total">8:26</span>
+    <span title="Reading time total">8:27</span>
   </div>
 </div>
 

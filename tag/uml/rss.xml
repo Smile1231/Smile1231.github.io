@@ -7,94 +7,95 @@
         <language>en</language>
         <pubDate>Sun, 13 Feb 2022 21:52:04 +0800</pubDate>
         <lastBuildDate>Sun, 13 Feb 2022 21:52:04 +0800</lastBuildDate>
+        <category>SAP</category>
         <category>生物信息</category>
         <category>基因编辑</category>
         <category>Java</category>
+        <category>Corn</category>
         <category>Cache</category>
         <category>Cookie</category>
         <category>Session</category>
         <category>Java面试</category>
-        <category>SAP</category>
-        <category>Corn</category>
-        <category>前端</category>
-        <category>Css</category>
+        <category>Docker</category>
         <category>DDD</category>
         <category>领域驱动设计</category>
-        <category>FastJson</category>
-        <category>DisPlay属性</category>
-        <category>Docker</category>
         <category>blog</category>
         <category>hexo</category>
         <category>next</category>
-        <category>IDEA</category>
-        <category>SpringBoot</category>
-        <category>Jvm</category>
-        <category>map</category>
-        <category>Stream流</category>
-        <category>函数式接口</category>
-        <category>Assert</category>
+        <category>前端</category>
+        <category>Css</category>
         <category>JavaScript</category>
         <category>Html</category>
-        <category>Springboot</category>
+        <category>FastJson</category>
+        <category>DisPlay属性</category>
+        <category>IDEA</category>
+        <category>SpringBoot</category>
+        <category>函数式接口</category>
+        <category>Jvm</category>
+        <category>Assert</category>
+        <category>map</category>
+        <category>Stream流</category>
         <category>java</category>
         <category>calender</category>
         <category>LeetCode</category>
         <category>算法</category>
         <category>递归</category>
-        <category>Linux</category>
         <category>Mybatis</category>
         <category>分页查询</category>
+        <category>Linux</category>
+        <category>Springboot</category>
         <category>模糊查询</category>
         <category>Nginx</category>
         <category>Spring</category>
         <category>SrpingBoot</category>
         <category>文件上传</category>
+        <category>事务</category>
+        <category>master</category>
         <category>TypeScript</category>
         <category>WebPack</category>
         <category>UML</category>
-        <category>事务</category>
-        <category>VSCODE</category>
-        <category>快捷键</category>
-        <category>master</category>
-        <category>VsCode</category>
-        <category>Shell</category>
-        <category>Vue</category>
-        <category>Stream</category>
         <category>Ubuntu</category>
         <category>Mysql</category>
-        <category>日期</category>
+        <category>VsCode</category>
+        <category>Shell</category>
+        <category>VSCODE</category>
+        <category>快捷键</category>
+        <category>Vue</category>
+        <category>Stream</category>
         <category>线程池</category>
+        <category>日期</category>
         <category>ubuntu</category>
         <category>虚拟机</category>
         <category>二分查找</category>
         <category>Hadoop</category>
         <category>数据挖掘</category>
-        <category>操作系统</category>
-        <category>node</category>
         <category>EasyExcel</category>
+        <category>node</category>
         <category>JVM</category>
-        <category>Hexo</category>
-        <category>数据库</category>
-        <category>junit</category>
+        <category>操作系统</category>
         <category>Yaml</category>
-        <category>Git</category>
-        <category>git,npm,node</category>
+        <category>Hexo</category>
+        <category>junit</category>
+        <category>数据库</category>
         <category>Mysql事务</category>
+        <category>git,npm,node</category>
         <category>冒泡排序</category>
+        <category>Git</category>
         <category>动态规划</category>
-        <category>多线程</category>
         <category>堆排序</category>
         <category>幂等性</category>
+        <category>多线程</category>
+        <category>Google</category>
         <category>流</category>
         <category>归并排序</category>
         <category>正则表达式</category>
-        <category>直接插入排序</category>
         <category>快速排序</category>
-        <category>Spring事务</category>
-        <category>选择排序</category>
+        <category>直接插入排序</category>
         <category>Java 面试</category>
         <category>数据结构</category>
         <category>阻塞队列</category>
+        <category>选择排序</category>
+        <category>Spring事务</category>
         <category>JDK</category>
         <category>动态代理</category>
         <category>Date</category>
@@ -111,45 +112,36 @@
             <link>https://smile1231.github.io/posts/f610585/</link>
             <category>UML</category>
             <pubDate>Sun, 13 Feb 2022 21:52:04 +0800</pubDate>
-            <description><![CDATA[ &lt;h1 id=&#34;uml类图关系总结&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#uml类图关系总结&#34;&gt;#&lt;/a&gt;  &lt;code&gt;UML&lt;/code&gt; : 类图关系总结&lt;/h1&gt;
-&lt;p&gt;UML 类图几种关系的总结，泛化 = 实现 &amp;gt; 组合 &amp;gt; 聚合 &amp;gt; 关联 &amp;gt; 依赖&lt;br&gt;
-在 UML 类图中，常见的有以下几种关系:  &lt;code&gt;泛化（Generalization）&lt;/code&gt; ,  &lt;code&gt;实现（Realization）&lt;/code&gt; ， &lt;code&gt;关联（Association)&lt;/code&gt; ， &lt;code&gt;聚合（Aggregation）&lt;/code&gt; ， &lt;code&gt;组合(Composition)&lt;/code&gt; ， &lt;code&gt;依赖(Dependency)&lt;/code&gt;&lt;/p&gt;
+            <description><![CDATA[ &lt;h1 id=&#34;UML-类图关系总结&#34;&gt;&lt;a href=&#34;#UML-类图关系总结&#34; class=&#34;headerlink&#34; title=&#34;UML:类图关系总结&#34;&gt;&lt;/a&gt;&lt;code&gt;UML&lt;/code&gt;:类图关系总结&lt;/h1&gt;&lt;p&gt;UML类图几种关系的总结，泛化 = 实现 &amp;gt; 组合 &amp;gt; 聚合 &amp;gt; 关联 &amp;gt; 依赖&lt;br&gt;在UML类图中，常见的有以下几种关系: &lt;code&gt;泛化（Generalization）&lt;/code&gt;, &lt;code&gt;实现（Realization）&lt;/code&gt;，&lt;code&gt;关联（Association)&lt;/code&gt;，&lt;code&gt;聚合（Aggregation）&lt;/code&gt;，&lt;code&gt;组合(Composition)&lt;/code&gt;，&lt;code&gt;依赖(Dependency)&lt;/code&gt;&lt;/p&gt;
 &lt;span id=&#34;more&#34;&gt;&lt;/span&gt;
-&lt;h2 id=&#34;1-泛化generalization&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#1-泛化generalization&#34;&gt;#&lt;/a&gt; 1. 泛化（ &lt;code&gt;Generalization&lt;/code&gt; ）&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;【泛化关系】：是一种&lt;strong&gt;继承&lt;/strong&gt;关系，表示一般与特殊的关系，它指定了子类如何特化父类的所有特征和行为。例如：老虎是动物的一种，即有老虎的特性也有动物的共性。&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;【箭头指向】：带三角箭头的实线，箭头指向父类.&lt;/p&gt;
-  &lt;img data-src=&#34;/posts/f610585/2022-02-13-23-24-28.png&#34; class=&#34;&#34;&gt;
-&lt;/li&gt;
+
+&lt;h2 id=&#34;1-泛化（Generalization）&#34;&gt;&lt;a href=&#34;#1-泛化（Generalization）&#34; class=&#34;headerlink&#34; title=&#34;1. 泛化（Generalization）&#34;&gt;&lt;/a&gt;1. 泛化（&lt;code&gt;Generalization&lt;/code&gt;）&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;【泛化关系】：是一种&lt;strong&gt;继承&lt;/strong&gt;关系，表示一般与特殊的关系，它指定了子类如何特化父类的所有特征和行为。例如：老虎是动物的一种，即有老虎的特性也有动物的共性。&lt;/li&gt;
+&lt;li&gt;【箭头指向】：带三角箭头的实线，箭头指向父类.  &lt;img data-src=&#34;/posts/f610585/2022-02-13-23-24-28.png&#34; class=&#34;&#34;&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2 id=&#34;2实现realization&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#2实现realization&#34;&gt;#&lt;/a&gt; 2. 实现（ &lt;code&gt;Realization&lt;/code&gt; ）&lt;/h2&gt;
-&lt;p&gt;【实现关系】：在这里插入图片描述是一种类与接口的关系，表示类是接口所有特征和行为的实现.&lt;/p&gt;
+&lt;h2 id=&#34;2-实现（Realization）&#34;&gt;&lt;a href=&#34;#2-实现（Realization）&#34; class=&#34;headerlink&#34; title=&#34;2.实现（Realization）&#34;&gt;&lt;/a&gt;2.实现（&lt;code&gt;Realization&lt;/code&gt;）&lt;/h2&gt;&lt;p&gt;【实现关系】：在这里插入图片描述是一种类与接口的关系，表示类是接口所有特征和行为的实现.&lt;/p&gt;
 &lt;p&gt;【箭头指向】：带三角箭头的虚线，箭头指向接口&lt;/p&gt;
 &lt;img data-src=&#34;/posts/f610585/2022-02-13-23-24-40.png&#34; class=&#34;&#34;&gt;
-&lt;h2 id=&#34;3关联association&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#3关联association&#34;&gt;#&lt;/a&gt; 3. 关联（ &lt;code&gt;Association&lt;/code&gt; )&lt;/h2&gt;
-&lt;p&gt;【关联关系】：是一种拥有的关系，它使一个类知道另一个类的属性和方法；如：老师与学生，丈夫与妻子关联可以是双向的，也可以是单向的。双向的关联可以有两个箭头或者没有箭头，单向的关联有一个箭头。&lt;/p&gt;
+
+
+&lt;h2 id=&#34;3-关联（Association&#34;&gt;&lt;a href=&#34;#3-关联（Association&#34; class=&#34;headerlink&#34; title=&#34;3.关联（Association)&#34;&gt;&lt;/a&gt;3.关联（&lt;code&gt;Association&lt;/code&gt;)&lt;/h2&gt;&lt;p&gt;【关联关系】：是一种拥有的关系，它使一个类知道另一个类的属性和方法；如：老师与学生，丈夫与妻子关联可以是双向的，也可以是单向的。双向的关联可以有两个箭头或者没有箭头，单向的关联有一个箭头。&lt;/p&gt;
 &lt;p&gt;【代码体现】：成员变量&lt;/p&gt;
 &lt;p&gt;【箭头及指向】：带普通箭头的实心线，指向被拥有者&lt;/p&gt;
   &lt;img data-src=&#34;/posts/f610585/2022-02-13-23-24-49.png&#34; class=&#34;&#34;&gt;
-&lt;h2 id=&#34;4聚合aggregation&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#4聚合aggregation&#34;&gt;#&lt;/a&gt; 4. 聚合（ &lt;code&gt;Aggregation&lt;/code&gt; ）&lt;/h2&gt;
-&lt;p&gt;【聚合关系】：是整体与部分的关系，且部分可以离开整体而单独存在。如车和轮胎是整体和部分的关系，轮胎离开车仍然可以存在。&lt;br&gt;
-聚合关系是关联关系的一种，是强的关联关系；关联和聚合在语法上无法区分，必须考察具体的逻辑关系。&lt;br&gt;
-【代码体现】：成员变量&lt;br&gt;
-【箭头及指向】：带空心菱形的实心线，菱形指向整体&lt;/p&gt;
+
+&lt;h2 id=&#34;4-聚合（Aggregation）&#34;&gt;&lt;a href=&#34;#4-聚合（Aggregation）&#34; class=&#34;headerlink&#34; title=&#34;4.聚合（Aggregation）&#34;&gt;&lt;/a&gt;4.聚合（&lt;code&gt;Aggregation&lt;/code&gt;）&lt;/h2&gt;&lt;p&gt;【聚合关系】：是整体与部分的关系，且部分可以离开整体而单独存在。如车和轮胎是整体和部分的关系，轮胎离开车仍然可以存在。&lt;br&gt;聚合关系是关联关系的一种，是强的关联关系；关联和聚合在语法上无法区分，必须考察具体的逻辑关系。&lt;br&gt;【代码体现】：成员变量&lt;br&gt;【箭头及指向】：带空心菱形的实心线，菱形指向整体&lt;/p&gt;
 &lt;img data-src=&#34;/posts/f610585/2022-02-13-23-24-59.png&#34; class=&#34;&#34;&gt;
-&lt;h2 id=&#34;5组合composition&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#5组合composition&#34;&gt;#&lt;/a&gt; 5. 组合 ( &lt;code&gt;Composition&lt;/code&gt; )&lt;/h2&gt;
-&lt;p&gt;【组合关系】：是&lt;strong&gt;整体与部分&lt;/strong&gt;的关系，但部分不能离开整体而单独存在。如公司和部门是整体和部分的关系，没有公司就不存在部门。&lt;br&gt;
-组合关系是关联关系的一种，是比聚合关系还要强的关系，它要求普通的聚合关系中代表整体的对象负责代表部分的对象的生命周期。&lt;br&gt;
-【代码体现】：成员变量&lt;/p&gt;
+&lt;h2 id=&#34;5-组合-Composition&#34;&gt;&lt;a href=&#34;#5-组合-Composition&#34; class=&#34;headerlink&#34; title=&#34;5.组合(Composition)&#34;&gt;&lt;/a&gt;5.组合(&lt;code&gt;Composition&lt;/code&gt;)&lt;/h2&gt;&lt;p&gt;【组合关系】：是&lt;strong&gt;整体与部分&lt;/strong&gt;的关系，但部分不能离开整体而单独存在。如公司和部门是整体和部分的关系，没有公司就不存在部门。&lt;br&gt;组合关系是关联关系的一种，是比聚合关系还要强的关系，它要求普通的聚合关系中代表整体的对象负责代表部分的对象的生命周期。&lt;br&gt;【代码体现】：成员变量&lt;/p&gt;
 &lt;p&gt;【箭头及指向】：带实心菱形的实线，菱形指向整体&lt;/p&gt;
 &lt;img data-src=&#34;/posts/f610585/2022-02-13-23-25-08.png&#34; class=&#34;&#34;&gt;
-&lt;h2 id=&#34;6-依赖dependency&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#6-依赖dependency&#34;&gt;#&lt;/a&gt; 6. 依赖 ( &lt;code&gt;Dependency&lt;/code&gt; )&lt;/h2&gt;
-&lt;p&gt;只要在类中用到了对方，他们之间就存在依赖关系&lt;/p&gt;
+
+&lt;h2 id=&#34;6-依赖-Dependency&#34;&gt;&lt;a href=&#34;#6-依赖-Dependency&#34; class=&#34;headerlink&#34; title=&#34;6. 依赖(Dependency)&#34;&gt;&lt;/a&gt;6. 依赖(&lt;code&gt;Dependency&lt;/code&gt;)&lt;/h2&gt;&lt;p&gt; 只要在类中用到了对方，他们之间就存在依赖关系&lt;/p&gt;
 &lt;img data-src=&#34;/posts/f610585/2022-02-13-23-25-20.png&#34; class=&#34;&#34;&gt;
+
+
 &lt;img data-src=&#34;/posts/f610585/2022-02-13-23-25-27.png&#34; class=&#34;&#34;&gt;
+
+
  ]]></description>
         </item>
     </channel>

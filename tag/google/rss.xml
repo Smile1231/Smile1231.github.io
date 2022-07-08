@@ -1,0 +1,185 @@
+<?xml version="1.0"?>
+<rss version="2.0">
+    <channel>
+        <title>JIN MAO &#39;s Blog • Posts by &#34;google&#34; tag</title>
+        <link>https://smile1231.github.io</link>
+        <description></description>
+        <language>en</language>
+        <pubDate>Fri, 08 Jul 2022 14:23:55 +0800</pubDate>
+        <lastBuildDate>Fri, 08 Jul 2022 14:23:55 +0800</lastBuildDate>
+        <category>SAP</category>
+        <category>生物信息</category>
+        <category>基因编辑</category>
+        <category>Java</category>
+        <category>Corn</category>
+        <category>Cache</category>
+        <category>Cookie</category>
+        <category>Session</category>
+        <category>Java面试</category>
+        <category>Docker</category>
+        <category>DDD</category>
+        <category>领域驱动设计</category>
+        <category>blog</category>
+        <category>hexo</category>
+        <category>next</category>
+        <category>前端</category>
+        <category>Css</category>
+        <category>JavaScript</category>
+        <category>Html</category>
+        <category>FastJson</category>
+        <category>DisPlay属性</category>
+        <category>IDEA</category>
+        <category>SpringBoot</category>
+        <category>函数式接口</category>
+        <category>Jvm</category>
+        <category>Assert</category>
+        <category>map</category>
+        <category>Stream流</category>
+        <category>java</category>
+        <category>calender</category>
+        <category>LeetCode</category>
+        <category>算法</category>
+        <category>递归</category>
+        <category>Mybatis</category>
+        <category>分页查询</category>
+        <category>Linux</category>
+        <category>Springboot</category>
+        <category>模糊查询</category>
+        <category>Nginx</category>
+        <category>Spring</category>
+        <category>SrpingBoot</category>
+        <category>文件上传</category>
+        <category>事务</category>
+        <category>master</category>
+        <category>TypeScript</category>
+        <category>WebPack</category>
+        <category>UML</category>
+        <category>Ubuntu</category>
+        <category>Mysql</category>
+        <category>VsCode</category>
+        <category>Shell</category>
+        <category>VSCODE</category>
+        <category>快捷键</category>
+        <category>Vue</category>
+        <category>Stream</category>
+        <category>线程池</category>
+        <category>日期</category>
+        <category>ubuntu</category>
+        <category>虚拟机</category>
+        <category>二分查找</category>
+        <category>Hadoop</category>
+        <category>数据挖掘</category>
+        <category>EasyExcel</category>
+        <category>node</category>
+        <category>JVM</category>
+        <category>操作系统</category>
+        <category>Yaml</category>
+        <category>Hexo</category>
+        <category>junit</category>
+        <category>数据库</category>
+        <category>Mysql事务</category>
+        <category>git,npm,node</category>
+        <category>冒泡排序</category>
+        <category>Git</category>
+        <category>动态规划</category>
+        <category>堆排序</category>
+        <category>幂等性</category>
+        <category>多线程</category>
+        <category>Google</category>
+        <category>流</category>
+        <category>归并排序</category>
+        <category>正则表达式</category>
+        <category>快速排序</category>
+        <category>直接插入排序</category>
+        <category>Java 面试</category>
+        <category>数据结构</category>
+        <category>阻塞队列</category>
+        <category>选择排序</category>
+        <category>Spring事务</category>
+        <category>JDK</category>
+        <category>动态代理</category>
+        <category>Date</category>
+        <category>ArrayList</category>
+        <category>接口</category>
+        <category>SpringMvc</category>
+        <category>排序</category>
+        <category>执行计划</category>
+        <category>HashMap</category>
+        <category>设计模式</category>
+        <item>
+            <guid isPermalink="true">https://smile1231.github.io/posts/3c59e6c8/</guid>
+            <title>如何让自己的博客被Google以及百度收录</title>
+            <link>https://smile1231.github.io/posts/3c59e6c8/</link>
+            <category>Hexo</category>
+            <category>Google</category>
+            <pubDate>Fri, 08 Jul 2022 14:23:55 +0800</pubDate>
+            <description><![CDATA[ &lt;p&gt;参考文章： &lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9zZWdtZW50ZmF1bHQuY29tL2EvMTE5MDAwMDAzNzU1MDM2Mg==&#34;&gt;https://segmentfault.com/a/1190000037550362&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;这篇文章讲的很详细&lt;/p&gt;
+&lt;h2 id=&#34;agenda&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#agenda&#34;&gt;#&lt;/a&gt; Agenda&lt;/h2&gt;
+&lt;p&gt;突然奇想，我的博客能在 &lt;code&gt;Google&lt;/code&gt;  或者百度上搜到吗，果不其然，是不能的，测试方法：&lt;/p&gt;
+&lt;figure class=&#34;highlight dts&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;symbol&#34;&gt;site:&lt;/span&gt;&lt;span class=&#34;params&#34;&gt;&amp;lt;域名&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;例如我的：&lt;/p&gt;
+&lt;figure class=&#34;highlight apache&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;attribute&#34;&gt;site&lt;/span&gt;:smile&lt;span class=&#34;number&#34;&gt;1231&lt;/span&gt;.github.io&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;img data-src=&#34;/posts/3c59e6c8/2022-07-08-22-34-25.png&#34; class=&#34;&#34;&gt;
+&lt;p&gt;百度还在申请中：&lt;/p&gt;
+&lt;img data-src=&#34;/posts/3c59e6c8/2022-07-08-22-36-33.png&#34; class=&#34;&#34;&gt;
+&lt;h2 id=&#34;百度申请&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#百度申请&#34;&gt;#&lt;/a&gt; 百度申请&lt;/h2&gt;
+&lt;p&gt;我们需要登录&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9saW5rLnNlZ21lbnRmYXVsdC5jb20vP2VuYz1NMG9kZGFxWmwlMkJBNzdEZVY1WnA1RkElM0QlM0QuNTg0SyUyQnFLb0pEVVdxZCUyQlpIVUxIcGFoMGVGem12OTRhJTJGdjIlMkI1Vlg1ZFVrJTNE&#34;&gt;百度搜索资源平台&lt;/span&gt;， 只要是百度旗下的账号就可以， 登录成功之后在站点管理中点击&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9saW5rLnNlZ21lbnRmYXVsdC5jb20vP2VuYz15bndBbGYlMkZ5UHZuJTJCZUk1cEFSJTJCOFRRJTNEJTNELkZLJTJGMVpnRWtBMHc1JTJGOENOY1dnc09tVzR2NXkwdzltJTJCS3drdW5iR0xvd3FJbW8lMkZ0bFA0cVN6UFpJakFxSmJRNQ==&#34;&gt;添加网站&lt;/span&gt;，输入域名，按照步骤走。&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;输入网址&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;img data-src=&#34;/posts/3c59e6c8/2022-07-08-22-39-27.png&#34; class=&#34;&#34;&gt;
+&lt;blockquote&gt;
+&lt;p&gt;一些站点标签&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;img data-src=&#34;/posts/3c59e6c8/2022-07-08-22-41-13.png&#34; class=&#34;&#34;&gt;
+&lt;blockquote&gt;
+&lt;p&gt;需要验证所有权，所以这边我选择了文件验证，需要将 &lt;code&gt;html&lt;/code&gt;  文件进行下载&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;img data-src=&#34;/posts/3c59e6c8/2022-07-08-22-41-04.png&#34; class=&#34;&#34;&gt;
+&lt;p&gt;将 &lt;code&gt;html&lt;/code&gt;  文件放在 &lt;code&gt;theme&lt;/code&gt;  主题下的 &lt;code&gt;source&lt;/code&gt;  文件夹中&lt;/p&gt;
+&lt;img data-src=&#34;/posts/3c59e6c8/2022-07-08-22-43-41.png&#34; class=&#34;&#34;&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;code&gt;Google&lt;/code&gt;  文件下载&lt;br&gt;
+这边可以同时将&lt;a href=&#34;https://search.google.com/search-console/welcome&#34;&gt; &lt;code&gt;Google&lt;/code&gt;  的 &lt;code&gt;html&lt;/code&gt;  文件&lt;/a&gt;也下载了&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;img data-src=&#34;/posts/3c59e6c8/2022-07-08-22-50-55.png&#34; class=&#34;&#34;&gt;
+&lt;p&gt;点击下载放在同样的位置：&lt;/p&gt;
+&lt;img data-src=&#34;/posts/3c59e6c8/2022-07-08-22-53-06.png&#34; class=&#34;&#34;&gt;
+&lt;blockquote&gt;
+&lt;p&gt;依次执行 &lt;code&gt;hexo clean&lt;/code&gt;   &lt;code&gt;hexo g&lt;/code&gt;   &lt;code&gt;hexo d&lt;/code&gt; ，需要等待部署完毕之后，访问  &lt;code&gt;https://&amp;lt;域名&amp;gt;/&amp;lt;htmlFileName&amp;gt;&lt;/code&gt;  ， 不报 &lt;code&gt;404&lt;/code&gt;  就 ok 啦&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;img data-src=&#34;/posts/3c59e6c8/2022-07-08-22-56-26.png&#34; class=&#34;&#34;&gt;
+&lt;img data-src=&#34;/posts/3c59e6c8/2022-07-08-22-57-11.png&#34; class=&#34;&#34;&gt;
+&lt;blockquote&gt;
+&lt;p&gt;点击验证完成即可&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;img data-src=&#34;/posts/3c59e6c8/2022-07-08-22-57-41.png&#34; class=&#34;&#34;&gt;
+&lt;h2 id=&#34;关于收录&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#关于收录&#34;&gt;#&lt;/a&gt; 关于收录&lt;/h2&gt;
+&lt;img data-src=&#34;/posts/3c59e6c8/2022-07-08-23-01-54.png&#34; class=&#34;&#34;&gt;
+&lt;h3 id=&#34;使用sitemap方式推送&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#使用sitemap方式推送&#34;&gt;#&lt;/a&gt; 使用 &lt;code&gt;sitemap&lt;/code&gt;  方式推送&lt;/h3&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;code&gt;hexo&lt;/code&gt;  框架只需要在两个 &lt;code&gt;sitemap&lt;/code&gt;  插件&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;npm install hexo-generator-sitemap --save &lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;npm install hexo-generator-baidu-sitemap --save&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;这两个插件是用来生成  &lt;code&gt;Sitemap&lt;/code&gt;  文件 的插件，而  &lt;code&gt;Sitemap&lt;/code&gt;  文件 是用来告诉搜索引擎我们的站点有哪些资源是可以抓取的。&lt;/p&gt;
+&lt;p&gt;安装完成后我们执行 &lt;code&gt;hexo clean&lt;/code&gt; &amp;amp;&amp;amp; &lt;code&gt;hexo g&lt;/code&gt;  命令后我们会发现在 &lt;code&gt;public&lt;/code&gt;  目录下面会多了 &lt;code&gt;baidusitemap.xml&lt;/code&gt;  和 &lt;code&gt;sitemap.xml&lt;/code&gt;  文件。&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;安装 &lt;code&gt;hexo-abbrlink&lt;/code&gt; , 这个会自动生成一个永久博客链接且不重复，同时需要配置 &lt;code&gt;root&lt;/code&gt;  目录下的 &lt;code&gt;_config.&lt;/code&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;figure class=&#34;highlight yml&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;attr&#34;&gt;permalink:&lt;/span&gt; &lt;span class=&#34;string&#34;&gt;posts/:abbrlink/&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;attr&#34;&gt;abbrlink:&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  &lt;span class=&#34;attr&#34;&gt;alg:&lt;/span&gt; &lt;span class=&#34;string&#34;&gt;crc32&lt;/span&gt;   &lt;span class=&#34;comment&#34;&gt;#算法： crc16(default) and crc32&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  &lt;span class=&#34;attr&#34;&gt;rep:&lt;/span&gt; &lt;span class=&#34;string&#34;&gt;hex&lt;/span&gt;     &lt;span class=&#34;comment&#34;&gt;#进制： dec(default) and hex&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;code&gt;hexo d&lt;/code&gt;  完成之后，可以访问  &lt;code&gt;https://&amp;lt;域名&amp;gt;/baidusitemap.xml&lt;/code&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;img data-src=&#34;/posts/3c59e6c8/2022-07-08-23-33-54.png&#34; class=&#34;&#34;&gt;
+&lt;p&gt;回到百度提交 &lt;code&gt;sitemap&lt;/code&gt;  界面，将 &lt;code&gt;https://smile1231.github.io/baidusitemap.xml&lt;/code&gt;  填入然后提交即可，就会进入审核状态，需要耗时一段时间。&lt;/p&gt;
+&lt;img data-src=&#34;/posts/3c59e6c8/2022-07-08-23-36-16.png&#34; class=&#34;&#34;&gt;
+&lt;h3 id=&#34;google提交sitemap&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#google提交sitemap&#34;&gt;#&lt;/a&gt;  &lt;code&gt;Google&lt;/code&gt;  提交 &lt;code&gt;sitemap&lt;/code&gt;&lt;/h3&gt;
+&lt;p&gt;由于之前的插件也会在 &lt;code&gt;public&lt;/code&gt;  目录下生成一个 &lt;code&gt;sitemap.xml&lt;/code&gt; ，同样的在 &lt;code&gt;google&lt;/code&gt;  站点地图中提交即可&lt;/p&gt;
+&lt;img data-src=&#34;/posts/3c59e6c8/2022-07-08-23-38-49.png&#34; class=&#34;&#34;&gt;
+&lt;p&gt;&lt;code&gt;ex: sitemap.xml&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;google&lt;/code&gt;  收录会很快，估计几个小时即可！效果上图已经展示&lt;/p&gt;
+ ]]></description>
+        </item>
+    </channel>
+</rss>

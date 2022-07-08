@@ -117,12 +117,12 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
       </div>
       <div id="imgs" class="pjax">
         <ul>
-          <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1giclx29mstj20zk0m8hdt.jpg"></li>
-          <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1giciub8ja1j20zk0m81ky.jpg"></li>
-          <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1gicitht3xtj20zk0m8k5v.jpg"></li>
-          <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1giciszlczyj20zk0m816d.jpg"></li>
-          <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1gipeybxm1pj20zk0m8niv.jpg"></li>
-          <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1gipeuibk9fj20zk0m8ay2.jpg"></li>
+          <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1giclxxcb6rj20zk0m8b29.jpg"></li>
+          <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1gipew28b65j20zk0m8hdt.jpg"></li>
+          <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1giclh0m9pdj20zk0m8hdt.jpg"></li>
+          <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1gipew8gmvyj20zk0m87wh.jpg"></li>
+          <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1gipetfk5zwj20zk0m8e81.jpg"></li>
+          <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1gipet4bz0yj20zk0m8e81.jpg"></li>
         </ul>
       </div>
     </header>
@@ -171,22 +171,20 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
   <div class="body md" itemprop="articleBody">
     
 
-    <h1 id="常见面试题整理操作系统篇每位开发者必备"><a class="markdownIt-Anchor" href="#常见面试题整理操作系统篇每位开发者必备">#</a> 常见面试题整理–操作系统篇（每位开发者必备）</h1>
-<img data-src="/posts/4847d2e5/2022-02-16-21-18-10.png" class="">
-<h2 id="1-请分别简单说一说进程和线程以及它们的区别"><a class="markdownIt-Anchor" href="#1-请分别简单说一说进程和线程以及它们的区别">#</a> 1. 请分别简单说一说进程和线程以及它们的区别。</h2>
-<blockquote>
-<p>进程是具有一定功能的程序关于某个数据集合上的一次运行活动，进程是系统进行资源调度和分配的一个独立单位。线程是进程的实体，是 <code>CPU</code>  调度和分派的基本单位，它是比进程更小的能独立运行的基本单位。一个进程可以有多个线程，多个线程也可以并发执行</p>
+    <h1 id="常见面试题整理–操作系统篇（每位开发者必备）"><a href="#常见面试题整理–操作系统篇（每位开发者必备）" class="headerlink" title="常见面试题整理–操作系统篇（每位开发者必备）"></a>常见面试题整理–操作系统篇（每位开发者必备）</h1><img data-src="/posts/4847d2e5/2022-02-16-21-18-10.png" class="">
+
+<h2 id="1-请分别简单说一说进程和线程以及它们的区别。"><a href="#1-请分别简单说一说进程和线程以及它们的区别。" class="headerlink" title="1. 请分别简单说一说进程和线程以及它们的区别。"></a>1. 请分别简单说一说进程和线程以及它们的区别。</h2><blockquote>
+<p>进程是具有一定功能的程序关于某个数据集合上的一次运行活动，进程是系统进行资源调度和分配的一个独立单位。线程是进程的实体，是<code>CPU</code>调度和分派的基本单位，它是比进程更小的能独立运行的基本单位。一个进程可以有多个线程，多个线程也可以并发执行</p>
 </blockquote>
 <span id="more"></span>
-<h2 id="2-线程同步的方式有哪些"><a class="markdownIt-Anchor" href="#2-线程同步的方式有哪些">#</a> 2. 线程同步的方式有哪些？</h2>
-<ul>
+
+<h2 id="2-线程同步的方式有哪些？"><a href="#2-线程同步的方式有哪些？" class="headerlink" title="2. 线程同步的方式有哪些？"></a>2. 线程同步的方式有哪些？</h2><ul>
 <li>互斥量：采用互斥对象机制，只有拥有互斥对象的线程才有访问公共资源的权限。因为互斥对象只有一个，所以可以保证公共资源不会被多个线程同时访问。</li>
 <li>信号量：它允许同一时刻多个线程访问同一资源，但是需要控制同一时刻访问此资源的最大线程数量。</li>
 <li>事件（信号): 通过通知操作的方式来保持多线程同步，还可以方便的实现多线程优先级的比较操作。</li>
 </ul>
-<h2 id="3-进程的通信方式有哪些"><a class="markdownIt-Anchor" href="#3-进程的通信方式有哪些">#</a> 3. 进程的通信方式有哪些？</h2>
-<p>主要分为：管道、系统 <code>IPC</code> （包括消息队列、信号量、共享存储）、 <code>SOCKET</code></p>
-<p>管道主要分为：普通管道 <code>PIPE</code>  、流管道（ <code>s_pipe</code> ）、命名管道（ <code>name_pipe</code> ）</p>
+<h2 id="3-进程的通信方式有哪些？"><a href="#3-进程的通信方式有哪些？" class="headerlink" title="3. 进程的通信方式有哪些？"></a>3. 进程的通信方式有哪些？</h2><p>主要分为：管道、系统<code>IPC</code>（包括消息队列、信号量、共享存储）、<code>SOCKET</code></p>
+<p>管道主要分为：普通管道<code>PIPE</code> 、流管道（<code>s_pipe</code>）、命名管道（<code>name_pipe</code>）</p>
 <ul>
 <li>管道是一种半双工的通信方式，数据只能单项流动，并且只能在具有亲缘关系的进程间流动，进程的亲缘关系通常是父子进程</li>
 <li>命名管道也是半双工的通信方式，它允许无亲缘关系的进程间进行通信</li>
@@ -195,16 +193,14 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
 <li>信号是一种比较复杂的通信方式，用于通知接收进程某个事件已经发生。</li>
 <li>共享内存就是映射一段能被其它进程访问的内存，这段共享内存由一个进程创建，但是多个进程可以访问。</li>
 </ul>
-<h2 id="4-什么是缓冲区溢出有什么危害其原因是什么"><a class="markdownIt-Anchor" href="#4-什么是缓冲区溢出有什么危害其原因是什么">#</a> 4. 什么是缓冲区溢出？有什么危害？其原因是什么？</h2>
-<p>缓冲区溢出是指当计算机向缓冲区填充数据时超出了缓冲区本身的容量，溢出的数据覆盖在合法数据上。</p>
+<h2 id="4-什么是缓冲区溢出？有什么危害？其原因是什么？"><a href="#4-什么是缓冲区溢出？有什么危害？其原因是什么？" class="headerlink" title="4. 什么是缓冲区溢出？有什么危害？其原因是什么？"></a>4. 什么是缓冲区溢出？有什么危害？其原因是什么？</h2><p>缓冲区溢出是指当计算机向缓冲区填充数据时超出了缓冲区本身的容量，溢出的数据覆盖在合法数据上。</p>
 <p>危害有以下两点：</p>
 <ul>
 <li>程序崩溃，导致拒绝额服务</li>
 <li>跳转并且执行一段恶意代码</li>
 </ul>
 <p>造成缓冲区溢出的主要原因是程序中没有仔细检查用户输入。</p>
-<h2 id="5-什么是死锁死锁产生的条件"><a class="markdownIt-Anchor" href="#5-什么是死锁死锁产生的条件">#</a> 5. 什么是死锁？死锁产生的条件</h2>
-<p>在两个或者多个并发进程中，如果每个进程持有某种资源而又等待其它进程释放它或它们现在保持着的资源，在未改变这种状态之前都不能向前推进，称这一组进程产生了死锁。通俗的讲就是两个或多个进程无限期的阻塞、相互等待的一种状态。</p>
+<h2 id="5-什么是死锁？死锁产生的条件"><a href="#5-什么是死锁？死锁产生的条件" class="headerlink" title="5. 什么是死锁？死锁产生的条件"></a>5. 什么是死锁？死锁产生的条件</h2><p>在两个或者多个并发进程中，如果每个进程持有某种资源而又等待其它进程释放它或它们现在保持着的资源，在未改变这种状态之前都不能向前推进，称这一组进程产生了死锁。通俗的讲就是两个或多个进程无限期的阻塞、相互等待的一种状态。</p>
 <p>死锁产生的四个条件（有一个条件不成立，则不会产生死锁）</p>
 <ol>
 <li>互斥条件：一个资源一次只能被一个进程使用</li>
@@ -212,32 +208,23 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
 <li>不剥夺条件：进程获得的资源，在未完全使用完之前，不能强行剥夺</li>
 <li>循环等待条件：若干进程之间形成一种头尾相接的环形等待资源关系</li>
 </ol>
-<h2 id="6-进程有哪几种状态"><a class="markdownIt-Anchor" href="#6-进程有哪几种状态">#</a> 6. 进程有哪几种状态？</h2>
-<ul>
+<h2 id="6-进程有哪几种状态？"><a href="#6-进程有哪几种状态？" class="headerlink" title="6. 进程有哪几种状态？"></a>6. 进程有哪几种状态？</h2><ul>
 <li>就绪状态：进程已获得除处理机以外的所需资源，等待分配处理机资源</li>
-<li>运行状态：占用处理机资源运行，处于此状态的进程数小于等于 <code>CPU</code>  数</li>
+<li>运行状态：占用处理机资源运行，处于此状态的进程数小于等于<code>CPU</code>数</li>
 <li>阻塞状态： 进程等待某种条件，在条件满足之前无法执行</li>
 </ul>
-<h2 id="7-分页和分段有什么区别"><a class="markdownIt-Anchor" href="#7-分页和分段有什么区别">#</a> 7. 分页和分段有什么区别？</h2>
-<ul>
+<h2 id="7-分页和分段有什么区别？"><a href="#7-分页和分段有什么区别？" class="headerlink" title="7. 分页和分段有什么区别？"></a>7. 分页和分段有什么区别？</h2><ul>
 <li>段是信息的逻辑单位，它是根据用户的需要划分的，因此段对用户是可见的 ；页是信息的物理单位，是为了管理主存的方便而划分的，对用户是透明的。</li>
 <li>段的大小不固定，有它所完成的功能决定；页大大小固定，由系统决定</li>
 <li>段向用户提供二维地址空间；页向用户提供的是一维地址空间</li>
 <li>段是信息的逻辑单位，便于存储保护和信息的共享，页的保护和共享受到限制。</li>
 </ul>
-<h2 id="8-操作系统中进程调度策略有哪几种"><a class="markdownIt-Anchor" href="#8-操作系统中进程调度策略有哪几种">#</a> 8. 操作系统中进程调度策略有哪几种？</h2>
-<p><code>FCFS</code>  (先来先服务)，优先级，时间片轮转，多级反馈</p>
-<h2 id="9-说一说进程同步有哪几种机制"><a class="markdownIt-Anchor" href="#9-说一说进程同步有哪几种机制">#</a> 9. 说一说进程同步有哪几种机制？</h2>
-<p>原子操作、信号量机制、自旋锁管程、会合、分布式系统</p>
-<h2 id="10-说一说死锁的处理基本策略和常用方法"><a class="markdownIt-Anchor" href="#10-说一说死锁的处理基本策略和常用方法">#</a> 10. 说一说死锁的处理基本策略和常用方法</h2>
-<ul>
-<li>
-<p>解决死锁的基本方法如下：<br>
-预防死锁、避免死锁、检测死锁、解除死锁</p>
+<h2 id="8-操作系统中进程调度策略有哪几种？"><a href="#8-操作系统中进程调度策略有哪几种？" class="headerlink" title="8. 操作系统中进程调度策略有哪几种？"></a>8. 操作系统中进程调度策略有哪几种？</h2><p><code>FCFS</code>(先来先服务)，优先级，时间片轮转，多级反馈</p>
+<h2 id="9-说一说进程同步有哪几种机制"><a href="#9-说一说进程同步有哪几种机制" class="headerlink" title="9. 说一说进程同步有哪几种机制?"></a>9. 说一说进程同步有哪几种机制?</h2><p>原子操作、信号量机制、自旋锁管程、会合、分布式系统</p>
+<h2 id="10-说一说死锁的处理基本策略和常用方法"><a href="#10-说一说死锁的处理基本策略和常用方法" class="headerlink" title="10. 说一说死锁的处理基本策略和常用方法"></a>10. 说一说死锁的处理基本策略和常用方法</h2><ul>
+<li><p>解决死锁的基本方法如下：<br>预防死锁、避免死锁、检测死锁、解除死锁</p>
 </li>
-<li>
-<p>解决四多的常用策略如下：<br>
-鸵鸟策略、预防策略、避免策略、检测与解除死锁</p>
+<li><p>解决四多的常用策略如下：<br>鸵鸟策略、预防策略、避免策略、检测与解除死锁</p>
 </li>
 </ul>
 
@@ -295,7 +282,7 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
     <div class="item left">
       
 
-  <a href="/posts/e8eb0481/" itemprop="url" rel="prev" data-background-image="https:&#x2F;&#x2F;tva3.sinaimg.cn&#x2F;mw690&#x2F;6833939bly1giclxxcb6rj20zk0m8b29.jpg" title="二分查找">
+  <a href="/posts/e8eb0481/" itemprop="url" rel="prev" data-background-image="https:&#x2F;&#x2F;tva3.sinaimg.cn&#x2F;mw690&#x2F;6833939bly1gipexbei4hj20zk0m8npd.jpg" title="二分查找">
   <span class="type">Previous Post</span>
   <span class="category"><i class="ic i-flag"></i> 算法</span>
   <h3>二分查找</h3>
@@ -305,7 +292,7 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
     <div class="item right">
       
 
-  <a href="/posts/c7cf6e41/" itemprop="url" rel="next" data-background-image="https:&#x2F;&#x2F;tva3.sinaimg.cn&#x2F;mw690&#x2F;6833939bly1gipeyvx1d4j20zk0m8hdt.jpg" title="面试之旅关于计算机网络">
+  <a href="/posts/c7cf6e41/" itemprop="url" rel="next" data-background-image="https:&#x2F;&#x2F;tva3.sinaimg.cn&#x2F;mw690&#x2F;6833939bly1giclh3brzpj20zk0m8ann.jpg" title="面试之旅关于计算机网络">
   <span class="type">Next Post</span>
   <span class="category"><i class="ic i-flag"></i> 操作系统</span>
   <h3>面试之旅关于计算机网络</h3>
@@ -327,7 +314,7 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
   <div class="panels">
     <div class="inner">
       <div class="contents panel pjax" data-title="Contents">
-          <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%B8%B8%E8%A7%81%E9%9D%A2%E8%AF%95%E9%A2%98%E6%95%B4%E7%90%86%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E7%AF%87%E6%AF%8F%E4%BD%8D%E5%BC%80%E5%8F%91%E8%80%85%E5%BF%85%E5%A4%87"><span class="toc-number">1.</span> <span class="toc-text"> 常见面试题整理–操作系统篇（每位开发者必备）</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#1-%E8%AF%B7%E5%88%86%E5%88%AB%E7%AE%80%E5%8D%95%E8%AF%B4%E4%B8%80%E8%AF%B4%E8%BF%9B%E7%A8%8B%E5%92%8C%E7%BA%BF%E7%A8%8B%E4%BB%A5%E5%8F%8A%E5%AE%83%E4%BB%AC%E7%9A%84%E5%8C%BA%E5%88%AB"><span class="toc-number">1.1.</span> <span class="toc-text"> 1. 请分别简单说一说进程和线程以及它们的区别。</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2-%E7%BA%BF%E7%A8%8B%E5%90%8C%E6%AD%A5%E7%9A%84%E6%96%B9%E5%BC%8F%E6%9C%89%E5%93%AA%E4%BA%9B"><span class="toc-number">1.2.</span> <span class="toc-text"> 2. 线程同步的方式有哪些？</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#3-%E8%BF%9B%E7%A8%8B%E7%9A%84%E9%80%9A%E4%BF%A1%E6%96%B9%E5%BC%8F%E6%9C%89%E5%93%AA%E4%BA%9B"><span class="toc-number">1.3.</span> <span class="toc-text"> 3. 进程的通信方式有哪些？</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#4-%E4%BB%80%E4%B9%88%E6%98%AF%E7%BC%93%E5%86%B2%E5%8C%BA%E6%BA%A2%E5%87%BA%E6%9C%89%E4%BB%80%E4%B9%88%E5%8D%B1%E5%AE%B3%E5%85%B6%E5%8E%9F%E5%9B%A0%E6%98%AF%E4%BB%80%E4%B9%88"><span class="toc-number">1.4.</span> <span class="toc-text"> 4. 什么是缓冲区溢出？有什么危害？其原因是什么？</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#5-%E4%BB%80%E4%B9%88%E6%98%AF%E6%AD%BB%E9%94%81%E6%AD%BB%E9%94%81%E4%BA%A7%E7%94%9F%E7%9A%84%E6%9D%A1%E4%BB%B6"><span class="toc-number">1.5.</span> <span class="toc-text"> 5. 什么是死锁？死锁产生的条件</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#6-%E8%BF%9B%E7%A8%8B%E6%9C%89%E5%93%AA%E5%87%A0%E7%A7%8D%E7%8A%B6%E6%80%81"><span class="toc-number">1.6.</span> <span class="toc-text"> 6. 进程有哪几种状态？</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#7-%E5%88%86%E9%A1%B5%E5%92%8C%E5%88%86%E6%AE%B5%E6%9C%89%E4%BB%80%E4%B9%88%E5%8C%BA%E5%88%AB"><span class="toc-number">1.7.</span> <span class="toc-text"> 7. 分页和分段有什么区别？</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#8-%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E4%B8%AD%E8%BF%9B%E7%A8%8B%E8%B0%83%E5%BA%A6%E7%AD%96%E7%95%A5%E6%9C%89%E5%93%AA%E5%87%A0%E7%A7%8D"><span class="toc-number">1.8.</span> <span class="toc-text"> 8. 操作系统中进程调度策略有哪几种？</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#9-%E8%AF%B4%E4%B8%80%E8%AF%B4%E8%BF%9B%E7%A8%8B%E5%90%8C%E6%AD%A5%E6%9C%89%E5%93%AA%E5%87%A0%E7%A7%8D%E6%9C%BA%E5%88%B6"><span class="toc-number">1.9.</span> <span class="toc-text"> 9. 说一说进程同步有哪几种机制？</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#10-%E8%AF%B4%E4%B8%80%E8%AF%B4%E6%AD%BB%E9%94%81%E7%9A%84%E5%A4%84%E7%90%86%E5%9F%BA%E6%9C%AC%E7%AD%96%E7%95%A5%E5%92%8C%E5%B8%B8%E7%94%A8%E6%96%B9%E6%B3%95"><span class="toc-number">1.10.</span> <span class="toc-text"> 10. 说一说死锁的处理基本策略和常用方法</span></a></li></ol></li></ol>
+          <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%B8%B8%E8%A7%81%E9%9D%A2%E8%AF%95%E9%A2%98%E6%95%B4%E7%90%86%E2%80%93%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E7%AF%87%EF%BC%88%E6%AF%8F%E4%BD%8D%E5%BC%80%E5%8F%91%E8%80%85%E5%BF%85%E5%A4%87%EF%BC%89"><span class="toc-number">1.</span> <span class="toc-text">常见面试题整理–操作系统篇（每位开发者必备）</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#1-%E8%AF%B7%E5%88%86%E5%88%AB%E7%AE%80%E5%8D%95%E8%AF%B4%E4%B8%80%E8%AF%B4%E8%BF%9B%E7%A8%8B%E5%92%8C%E7%BA%BF%E7%A8%8B%E4%BB%A5%E5%8F%8A%E5%AE%83%E4%BB%AC%E7%9A%84%E5%8C%BA%E5%88%AB%E3%80%82"><span class="toc-number">1.1.</span> <span class="toc-text">1. 请分别简单说一说进程和线程以及它们的区别。</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2-%E7%BA%BF%E7%A8%8B%E5%90%8C%E6%AD%A5%E7%9A%84%E6%96%B9%E5%BC%8F%E6%9C%89%E5%93%AA%E4%BA%9B%EF%BC%9F"><span class="toc-number">1.2.</span> <span class="toc-text">2. 线程同步的方式有哪些？</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#3-%E8%BF%9B%E7%A8%8B%E7%9A%84%E9%80%9A%E4%BF%A1%E6%96%B9%E5%BC%8F%E6%9C%89%E5%93%AA%E4%BA%9B%EF%BC%9F"><span class="toc-number">1.3.</span> <span class="toc-text">3. 进程的通信方式有哪些？</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#4-%E4%BB%80%E4%B9%88%E6%98%AF%E7%BC%93%E5%86%B2%E5%8C%BA%E6%BA%A2%E5%87%BA%EF%BC%9F%E6%9C%89%E4%BB%80%E4%B9%88%E5%8D%B1%E5%AE%B3%EF%BC%9F%E5%85%B6%E5%8E%9F%E5%9B%A0%E6%98%AF%E4%BB%80%E4%B9%88%EF%BC%9F"><span class="toc-number">1.4.</span> <span class="toc-text">4. 什么是缓冲区溢出？有什么危害？其原因是什么？</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#5-%E4%BB%80%E4%B9%88%E6%98%AF%E6%AD%BB%E9%94%81%EF%BC%9F%E6%AD%BB%E9%94%81%E4%BA%A7%E7%94%9F%E7%9A%84%E6%9D%A1%E4%BB%B6"><span class="toc-number">1.5.</span> <span class="toc-text">5. 什么是死锁？死锁产生的条件</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#6-%E8%BF%9B%E7%A8%8B%E6%9C%89%E5%93%AA%E5%87%A0%E7%A7%8D%E7%8A%B6%E6%80%81%EF%BC%9F"><span class="toc-number">1.6.</span> <span class="toc-text">6. 进程有哪几种状态？</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#7-%E5%88%86%E9%A1%B5%E5%92%8C%E5%88%86%E6%AE%B5%E6%9C%89%E4%BB%80%E4%B9%88%E5%8C%BA%E5%88%AB%EF%BC%9F"><span class="toc-number">1.7.</span> <span class="toc-text">7. 分页和分段有什么区别？</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#8-%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E4%B8%AD%E8%BF%9B%E7%A8%8B%E8%B0%83%E5%BA%A6%E7%AD%96%E7%95%A5%E6%9C%89%E5%93%AA%E5%87%A0%E7%A7%8D%EF%BC%9F"><span class="toc-number">1.8.</span> <span class="toc-text">8. 操作系统中进程调度策略有哪几种？</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#9-%E8%AF%B4%E4%B8%80%E8%AF%B4%E8%BF%9B%E7%A8%8B%E5%90%8C%E6%AD%A5%E6%9C%89%E5%93%AA%E5%87%A0%E7%A7%8D%E6%9C%BA%E5%88%B6"><span class="toc-number">1.9.</span> <span class="toc-text">9. 说一说进程同步有哪几种机制?</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#10-%E8%AF%B4%E4%B8%80%E8%AF%B4%E6%AD%BB%E9%94%81%E7%9A%84%E5%A4%84%E7%90%86%E5%9F%BA%E6%9C%AC%E7%AD%96%E7%95%A5%E5%92%8C%E5%B8%B8%E7%94%A8%E6%96%B9%E6%B3%95"><span class="toc-number">1.10.</span> <span class="toc-text">10. 说一说死锁的处理基本策略和常用方法</span></a></li></ol></li></ol>
       </div>
       <div class="related panel pjax" data-title="Related">
         <ul>
@@ -345,7 +332,7 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
 <nav class="state">
     <div class="item posts">
       <a href="/archives/">
-        <span class="count">134</span>
+        <span class="count">135</span>
         <span class="name">posts</span>
       </a>
     </div>
@@ -357,7 +344,7 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
     </div>
     <div class="item tags">
       <a href="/tags/">
-        <span class="count">98</span>
+        <span class="count">99</span>
         <span class="name">tags</span>
       </a>
     </div>
@@ -436,6 +423,18 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
   <li class="item">
     
 <div class="breadcrumb">
+<a href="/categories/Java%E9%9D%A2%E8%AF%95/" title="In Java面试">Java面试</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/Java%E9%9D%A2%E8%AF%95/%E6%95%B0%E6%8D%AE%E5%BA%93/" title="In 数据库">数据库</a>
+</div>
+
+    <span><a href="/posts/666b2933/" title="面试之旅关于数据库">面试之旅关于数据库</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
 <a href="/categories/IDEA/" title="In IDEA">IDEA</a>
 </div>
 
@@ -446,10 +445,19 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
   <li class="item">
     
 <div class="breadcrumb">
-<a href="/categories/Java/" title="In Java">Java</a>
+<a href="/categories/Hexo/" title="In Hexo">Hexo</a>
 </div>
 
-    <span><a href="/posts/1da18d70/" title="Java8内置四大函数式接口">Java8内置四大函数式接口</a></span>
+    <span><a href="/posts/5c2529f6/" title="Hexo中添加动态2d二次元人物模型">Hexo中添加动态2d二次元人物模型</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+</div>
+
+    <span><a href="/posts/56be7cc9/" title="关于Linux排查问题命令">关于Linux排查问题命令</a></span>
   </li>
 
       
@@ -458,50 +466,10 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
 <div class="breadcrumb">
 <a href="/categories/Java/" title="In Java">Java</a>
 <i class="ic i-angle-right"></i>
-<a href="/categories/Java/%E5%A4%9A%E7%BA%BF%E7%A8%8B/" title="In 多线程">多线程</a>
-<i class="ic i-angle-right"></i>
-<a href="/categories/Java/%E5%A4%9A%E7%BA%BF%E7%A8%8B/Java%E9%9D%A2%E8%AF%95/" title="In Java面试">Java面试</a>
+<a href="/categories/Java/Mysql/" title="In Mysql">Mysql</a>
 </div>
 
-    <span><a href="/posts/12fecb94/" title="多线程笔记">多线程笔记</a></span>
-  </li>
-
-      
-  <li class="item">
-    
-<div class="breadcrumb">
-<a href="/categories/Java%E9%9D%A2%E8%AF%95/" title="In Java面试">Java面试</a>
-<i class="ic i-angle-right"></i>
-<a href="/categories/Java%E9%9D%A2%E8%AF%95/%E7%AE%97%E6%B3%95/" title="In 算法">算法</a>
-</div>
-
-    <span><a href="/posts/a4ce31d2/" title="贪心算法">贪心算法</a></span>
-  </li>
-
-      
-  <li class="item">
-    
-<div class="breadcrumb">
-<a href="/categories/Java%E9%9D%A2%E8%AF%95/" title="In Java面试">Java面试</a>
-<i class="ic i-angle-right"></i>
-<a href="/categories/Java%E9%9D%A2%E8%AF%95/%E9%80%89%E6%8B%A9%E6%8E%92%E5%BA%8F/" title="In 选择排序">选择排序</a>
-<i class="ic i-angle-right"></i>
-<a href="/categories/Java%E9%9D%A2%E8%AF%95/%E9%80%89%E6%8B%A9%E6%8E%92%E5%BA%8F/%E7%AE%97%E6%B3%95/" title="In 算法">算法</a>
-</div>
-
-    <span><a href="/posts/43d00a99/" title="选择排序">选择排序</a></span>
-  </li>
-
-      
-  <li class="item">
-    
-<div class="breadcrumb">
-<a href="/categories/Java/" title="In Java">Java</a>
-<i class="ic i-angle-right"></i>
-<a href="/categories/Java/SpringBoot/" title="In SpringBoot">SpringBoot</a>
-</div>
-
-    <span><a href="/posts/a3dfcd98/" title="SpringBoot中常见的几种解决跨域的方式">SpringBoot中常见的几种解决跨域的方式</a></span>
+    <span><a href="/posts/69c17d37/" title="关于事务提交中踩坑">关于事务提交中踩坑</a></span>
   </li>
 
       
@@ -510,37 +478,47 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
 <div class="breadcrumb">
 </div>
 
-    <span><a href="/posts/ba003691/" title="Springboot工程项目.gitignore配置">Springboot工程项目.gitignore配置</a></span>
+    <span><a href="/posts/159c6098/" title="阻塞队列">阻塞队列</a></span>
   </li>
 
       
   <li class="item">
     
 <div class="breadcrumb">
-<a href="/categories/Java%E9%9D%A2%E8%AF%95/" title="In Java面试">Java面试</a>
+<a href="/categories/%E6%95%B0%E6%8D%AE%E5%BA%93/" title="In 数据库">数据库</a>
 </div>
 
-    <span><a href="/posts/3b6bfba3/" title="如何保证接口的幂等性">如何保证接口的幂等性</a></span>
+    <span><a href="/posts/377b6f7d/" title="关于mysql中对Json类型字段进行筛选查询">关于mysql中对Json类型字段进行筛选查询</a></span>
   </li>
 
       
   <li class="item">
     
 <div class="breadcrumb">
-<a href="/categories/Git/" title="In Git">Git</a>
+<a href="/categories/Daily/" title="In Daily">Daily</a>
 </div>
 
-    <span><a href="/posts/424eebf1/" title="关于在IDEA中回滚Git版本">关于在IDEA中回滚Git版本</a></span>
+    <span><a href="/posts/9a0369ec/" title="布隆过滤器">布隆过滤器</a></span>
   </li>
 
       
   <li class="item">
     
 <div class="breadcrumb">
-<a href="/categories/Java/" title="In Java">Java</a>
+<a href="/categories/%E5%9F%BA%E5%9B%A0%E7%BC%96%E8%BE%91/" title="In 基因编辑">基因编辑</a>
 </div>
 
-    <span><a href="/posts/bd76a990/" title="一图看懂Java中的PO,BO,VO,DTO,POJO,DAO,DO">一图看懂Java中的PO,BO,VO,DTO,POJO,DAO,DO</a></span>
+    <span><a href="/posts/b7653deb/" title="什么是CRISPR&#x2F;Cas9">什么是CRISPR/Cas9</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/%E5%89%8D%E7%AB%AF/" title="In 前端">前端</a>
+</div>
+
+    <span><a href="/posts/7733848a/" title="文件上传前端小结">文件上传前端小结</a></span>
   </li>
 
   </ul>
@@ -565,13 +543,13 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
     <span class="post-meta-item-icon">
       <i class="ic i-chart-area"></i>
     </span>
-    <span title="Symbols count total">557k words</span>
+    <span title="Symbols count total">558k words</span>
 
     <span class="post-meta-divider">|</span>
     <span class="post-meta-item-icon">
       <i class="ic i-coffee"></i>
     </span>
-    <span title="Reading time total">8:26</span>
+    <span title="Reading time total">8:27</span>
   </div>
 </div>
 
