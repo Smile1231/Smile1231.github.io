@@ -76,7 +76,7 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
       <i class="ic i-pen"></i>
     </span>
     <span class="text">Symbols count in article</span>
-    <span>2.6k</span>
+    <span>2.7k</span>
     <span class="text">words</span>
   </span>
   <span class="item" title="Reading time">
@@ -117,12 +117,12 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
       </div>
       <div id="imgs" class="pjax">
         <ul>
-          <li class="item" data-background-image="https://tva1.sinaimg.cn/large/6833939bly1giclhfehz7j20zk0m8u0x.jpg"></li>
-          <li class="item" data-background-image="https://tva1.sinaimg.cn/large/6833939bly1giclh0m9pdj20zk0m8hdt.jpg"></li>
-          <li class="item" data-background-image="https://tva1.sinaimg.cn/large/6833939bly1giclip4jbpj20zk0m87cv.jpg"></li>
-          <li class="item" data-background-image="https://tva1.sinaimg.cn/large/6833939bly1gipeyonbf9j20zk0m8e81.jpg"></li>
-          <li class="item" data-background-image="https://tva1.sinaimg.cn/large/6833939bly1gicitcxhpij20zk0m8hdt.jpg"></li>
-          <li class="item" data-background-image="https://tva1.sinaimg.cn/large/6833939bly1gipeyvx1d4j20zk0m8hdt.jpg"></li>
+          <li class="item" data-background-image="https://tva2.sinaimg.cn/large/6833939bly1gipeun65urj20zk0m81ii.jpg"></li>
+          <li class="item" data-background-image="https://tva2.sinaimg.cn/large/6833939bly1giclhfehz7j20zk0m8u0x.jpg"></li>
+          <li class="item" data-background-image="https://tva2.sinaimg.cn/large/6833939bly1giclimtf7dj20zk0m8qav.jpg"></li>
+          <li class="item" data-background-image="https://tva2.sinaimg.cn/large/6833939bly1gipeyonbf9j20zk0m8e81.jpg"></li>
+          <li class="item" data-background-image="https://tva2.sinaimg.cn/large/6833939bly1gicitspjpbj20zk0m81ky.jpg"></li>
+          <li class="item" data-background-image="https://tva2.sinaimg.cn/large/6833939bly1giph4fomxoj20zk0m8axp.jpg"></li>
         </ul>
       </div>
     </header>
@@ -168,48 +168,44 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
   <div class="body md" itemprop="articleBody">
     
 
-    <h1 id="关于yaml中list存放map"><a class="markdownIt-Anchor" href="#关于yaml中list存放map">#</a> 关于 <code>YAML</code>  中 <code>List</code>  存放 <code>Map</code></h1>
-<h2 id="yaml如何书写"><a class="markdownIt-Anchor" href="#yaml如何书写">#</a>  <code>YAML</code>  如何书写</h2>
-<blockquote>
-<p><code>YAML</code>  语法</p>
+    <h1 id="关于YAML中List存放Map"><a href="#关于YAML中List存放Map" class="headerlink" title="关于YAML中List存放Map"></a>关于<code>YAML</code>中<code>List</code>存放<code>Map</code></h1><h2 id="YAML如何书写"><a href="#YAML如何书写" class="headerlink" title="YAML如何书写"></a><code>YAML</code>如何书写</h2><blockquote>
+<p><code>YAML</code>语法</p>
 </blockquote>
 <figure class="highlight arcade"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">大小写敏感</span><br><span class="line">使用缩进表示层级关系</span><br><span class="line">缩进时不允许使用<span class="literal">Tab</span>键，只允许使用空格。</span><br><span class="line">缩进的空格数目不重要，只要相同层级的元素左侧对齐即可</span><br></pre></td></tr></table></figure>
 <blockquote>
 <p>支持的数据结构</p>
 </blockquote>
 <figure class="highlight pgsql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">对象：键值对的集合，又称为映射（<span class="keyword">mapping</span>）/ 哈希（hashes） / 字典（<span class="keyword">dictionary</span>）</span><br><span class="line">数组：一组按次序排列的值，又称为序列（<span class="keyword">sequence</span>） / 列表（list）</span><br><span class="line">基本类型：单个的、不可再分的值</span><br></pre></td></tr></table></figure>
+
 <span id="more"></span>
 <blockquote>
 <p>基本语法</p>
 </blockquote>
 <ul>
-<li><code>k:</code> (空格) <code>v：</code> 表示一对键值对</li>
-<li><code>v:</code>  包含上面举的数据</li>
-<li><code>k;string</code>  类型</li>
+<li><code>k:</code>(空格)<code>v：</code>表示一对键值对</li>
+<li><code>v:</code>包含上面举的数据</li>
+<li><code>k;string</code>类型</li>
 </ul>
 <blockquote>
-<p><code>value</code>  的使用说明</p>
+<p><code>value</code>的使用说明</p>
 </blockquote>
 <ul>
-<li>
-<p>基本类型：数字，字符串，布尔</p>
+<li><p>基本类型：数字，字符串，布尔</p>
 <ul>
-<li><code>k: v：</code> 字面直接来写；</li>
+<li><code>k: v：</code>字面直接来写；</li>
 <li>字符串默认不用加上单引号或者双引号；</li>
 </ul>
 </li>
-<li>
-<p><code>&quot;&quot;</code> ：双引号：不会转义字符串里面的特殊字符；</p>
+<li><p><code>&quot;&quot;</code>：双引号:不会转义字符串里面的特殊字符；</p>
 <ul>
 <li>特殊字符会作为本身想表示的意思；</li>
-<li>如 ： <code>name: &quot;zhangsan \n lisi&quot;：</code> 输出； <code>zhangsan</code>  换行  <code>lisi</code></li>
+<li>如 ：<code>name: &quot;zhangsan \n lisi&quot;：</code>输出；<code>zhangsan</code> 换行 <code>lisi</code></li>
 </ul>
 </li>
-<li>
-<p><code>''</code> ：单引号：转义特殊字符</p>
+<li><p><code>&#39;&#39;</code>：单引号:转义特殊字符</p>
 <ul>
 <li>特殊字符终只是一个普通的字符串数据 ，</li>
-<li>如：  <code>name: ‘zhangsan \n lisi’：输出；zhangsan \n lisi </code></li>
+<li>如： <code>name: ‘zhangsan \n lisi’：输出；zhangsan \n lisi </code></li>
 </ul>
 </li>
 </ul>
@@ -217,34 +213,40 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
 <p>对象、Map（属性和值）（键值对）：</p>
 </blockquote>
 <figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"> <span class="attr">k:</span> <span class="string">v：在下一行来写对象的属性和值的关系；注意缩进对象还是k:</span> <span class="string">v的方式</span></span><br><span class="line"></span><br><span class="line"><span class="attr">friends:</span> </span><br><span class="line"> 	<span class="attr">lastName:</span> <span class="string">zhangsan</span>          </span><br><span class="line"> 	<span class="attr">age:</span> <span class="number">20</span></span><br><span class="line"> <span class="comment">## 行内写法：friends: &#123;lastName: zhangsan,age: 18&#125;</span></span><br></pre></td></tr></table></figure>
+
 <blockquote>
-<p>数组（ <code>List、Set</code> ）：</p>
+<p>数组（<code>List、Set</code>）：</p>
 </blockquote>
-<p>用 - 值表示数组中的一个元素</p>
+<p>用- 值表示数组中的一个元素</p>
 <figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"> <span class="attr">pets:</span>  </span><br><span class="line">	<span class="string">‐</span> <span class="string">cat</span>  </span><br><span class="line">	<span class="string">‐</span> <span class="string">dog</span>  </span><br><span class="line">	<span class="string">‐</span> <span class="string">pig</span></span><br><span class="line"><span class="comment"># 行内写法 pets: [cat,dog,pig]</span></span><br></pre></td></tr></table></figure>
-<h2 id="yml的使用"><a class="markdownIt-Anchor" href="#yml的使用">#</a>  <code>yml</code>  的使用</h2>
-<ul>
-<li>
-<p>简单类型使用  <code>@Value</code></p>
+
+<h2 id="yml的使用"><a href="#yml的使用" class="headerlink" title="yml的使用"></a><code>yml</code>的使用</h2><ul>
+<li><p>简单类型使用 <code>@Value</code></p>
 </li>
-<li>
-<p>复杂类型使用 ： <code>@ConfigurationProperties</code></p>
+<li><p>复杂类型使用 ：<code>@ConfigurationProperties</code></p>
 <ol>
-<li>如果说，我们只是在某个业务逻辑中需要获取一下配置文件中的某项值，使用 <code>@Value；</code></li>
-<li>如果说，我们专门编写了一个 javaBean 来和配置文件进行映射，我们就直接使用 <code>@ConﬁgurationProperties；</code></li>
+<li>如果说，我们只是在某个业务逻辑中需要获取一下配置文件中的某项值，使用<code>@Value；</code> </li>
+<li>如果说，我们专门编写了一个javaBean来和配置文件进行映射，我们就直接使用<code>@ConﬁgurationProperties；</code></li>
 </ol>
 </li>
 </ul>
-<p><code>yml</code>  文件：</p>
+<p><code>yml</code>文件：</p>
 <figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">spring:</span></span><br><span class="line">  <span class="attr">test:</span> <span class="string">小猪</span></span><br><span class="line">  <span class="comment">#list&lt;map&gt;</span></span><br><span class="line">  <span class="attr">testList:</span></span><br><span class="line">    <span class="bullet">-</span></span><br><span class="line">      <span class="attr">name:</span> <span class="string">小王</span></span><br><span class="line">      <span class="attr">age:</span> <span class="number">12</span></span><br><span class="line">    <span class="bullet">-</span></span><br><span class="line">      <span class="attr">name:</span> <span class="string">小李</span></span><br><span class="line">      <span class="attr">age:</span> <span class="number">13</span></span><br><span class="line">  <span class="comment"># map&lt;String,String&gt;</span></span><br><span class="line">  <span class="attr">testMap:</span></span><br><span class="line">    <span class="attr">name:</span> <span class="string">小朱</span></span><br><span class="line">    <span class="attr">age:</span> <span class="number">14</span></span><br><span class="line"><span class="attr">testname:</span> <span class="string">小明</span></span><br></pre></td></tr></table></figure>
-<h2 id="使用value"><a class="markdownIt-Anchor" href="#使用value">#</a> 使用 <code>@Value</code></h2>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment">* value 的使用</span></span><br><span class="line"><span class="comment">*/</span></span><br><span class="line"><span class="meta">@Component</span></span><br><span class="line"><span class="meta">@Data</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">ValueTest</span> </span>&#123;</span><br><span class="line">     <span class="comment">// 直接赋值</span></span><br><span class="line"></span><br><span class="line">     <span class="meta">@Value(&quot;小李&quot;)</span></span><br><span class="line">     <span class="keyword">private</span>  String name;</span><br><span class="line"></span><br><span class="line">     <span class="meta">@Value(&quot;1&quot;)</span></span><br><span class="line">     <span class="keyword">private</span> <span class="keyword">int</span> num;</span><br><span class="line"></span><br><span class="line">     <span class="comment">//读取配置文件的信息</span></span><br><span class="line">     <span class="meta">@Value(&quot;$&#123;spring.testMap.name&#125;&quot;)</span></span><br><span class="line">     <span class="keyword">private</span> String name2;</span><br><span class="line"></span><br><span class="line">     <span class="meta">@Value(&quot;$&#123;spring.test&#125;&quot;)</span></span><br><span class="line">     <span class="keyword">private</span> String name1;</span><br><span class="line">     <span class="comment">//报错</span></span><br><span class="line">     <span class="comment">//@Value(&quot;$&#123;spring.testMap&#125;&quot;)</span></span><br><span class="line">     <span class="keyword">private</span> Map&lt;String,String&gt; map;</span><br><span class="line"></span><br><span class="line">     <span class="comment">//使用SpEL</span></span><br><span class="line">     <span class="meta">@Value(&quot;#&#123;1+1&#125;&quot;)</span></span><br><span class="line">     <span class="keyword">private</span> <span class="keyword">int</span> num1;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p>进行测试 <code>Test</code> :</p>
+<h2 id="使用-Value"><a href="#使用-Value" class="headerlink" title="使用@Value"></a>使用<code>@Value</code></h2><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment">* value 的使用</span></span><br><span class="line"><span class="comment">*/</span></span><br><span class="line"><span class="meta">@Component</span></span><br><span class="line"><span class="meta">@Data</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">ValueTest</span> </span>&#123;</span><br><span class="line">     <span class="comment">// 直接赋值</span></span><br><span class="line"></span><br><span class="line">     <span class="meta">@Value(&quot;小李&quot;)</span></span><br><span class="line">     <span class="keyword">private</span>  String name;</span><br><span class="line"></span><br><span class="line">     <span class="meta">@Value(&quot;1&quot;)</span></span><br><span class="line">     <span class="keyword">private</span> <span class="keyword">int</span> num;</span><br><span class="line"></span><br><span class="line">     <span class="comment">//读取配置文件的信息</span></span><br><span class="line">     <span class="meta">@Value(&quot;$&#123;spring.testMap.name&#125;&quot;)</span></span><br><span class="line">     <span class="keyword">private</span> String name2;</span><br><span class="line"></span><br><span class="line">     <span class="meta">@Value(&quot;$&#123;spring.test&#125;&quot;)</span></span><br><span class="line">     <span class="keyword">private</span> String name1;</span><br><span class="line">     <span class="comment">//报错</span></span><br><span class="line">     <span class="comment">//@Value(&quot;$&#123;spring.testMap&#125;&quot;)</span></span><br><span class="line">     <span class="keyword">private</span> Map&lt;String,String&gt; map;</span><br><span class="line"></span><br><span class="line">     <span class="comment">//使用SpEL</span></span><br><span class="line">     <span class="meta">@Value(&quot;#&#123;1+1&#125;&quot;)</span></span><br><span class="line">     <span class="keyword">private</span> <span class="keyword">int</span> num1;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>进行测试<code>Test</code>:</p>
 <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">@Autowired</span></span><br><span class="line"><span class="keyword">private</span> ValueTest valueTest;</span><br><span class="line"><span class="meta">@Test</span></span><br><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">test111</span><span class="params">()</span></span>&#123;</span><br><span class="line">     System.out.println(valueTest);</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">// ValueTest&#123;name=&#x27;小李&#x27;, num=1, name2=&#x27;小朱&#x27;, name1=&#x27;小猪&#x27;, map=null, num1=2&#125;</span></span><br></pre></td></tr></table></figure>
-<h2 id="使用configurationproperties"><a class="markdownIt-Anchor" href="#使用configurationproperties">#</a> 使用 <code>@ConfigurationProperties</code></h2>
-<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">dependency</span>&gt;</span>         </span><br><span class="line">     <span class="tag">&lt;<span class="name">groupId</span>&gt;</span>org.springframework.boot<span class="tag">&lt;/<span class="name">groupId</span>&gt;</span>              					</span><br><span class="line">     <span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>spring‐boot‐configuration‐processor<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span>              </span><br><span class="line">     <span class="tag">&lt;<span class="name">optional</span>&gt;</span>true<span class="tag">&lt;/<span class="name">optional</span>&gt;</span>              </span><br><span class="line"><span class="tag">&lt;/<span class="name">dependency</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<h2 id="使用-ConfigurationProperties"><a href="#使用-ConfigurationProperties" class="headerlink" title="使用@ConfigurationProperties"></a>使用<code>@ConfigurationProperties</code></h2><figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">dependency</span>&gt;</span>         </span><br><span class="line">     <span class="tag">&lt;<span class="name">groupId</span>&gt;</span>org.springframework.boot<span class="tag">&lt;/<span class="name">groupId</span>&gt;</span>              					</span><br><span class="line">     <span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>spring‐boot‐configuration‐processor<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span>              </span><br><span class="line">     <span class="tag">&lt;<span class="name">optional</span>&gt;</span>true<span class="tag">&lt;/<span class="name">optional</span>&gt;</span>              </span><br><span class="line"><span class="tag">&lt;/<span class="name">dependency</span>&gt;</span></span><br></pre></td></tr></table></figure>
 <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">@Data</span></span><br><span class="line"><span class="meta">@Component</span></span><br><span class="line"><span class="meta">@ConfigurationProperties(prefix = &quot;spring&quot;)</span></span><br><span class="line"><span class="meta">@Validated</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">TestConfigurationProperties</span> </span>&#123;</span><br><span class="line">    <span class="keyword">private</span> List&lt;Map&gt; testList;</span><br><span class="line">    <span class="keyword">private</span> Map&lt;String,String&gt; testMap;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">private</span> String name;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">private</span> String test;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"><span class="meta">@Autowired</span></span><br><span class="line">    <span class="keyword">private</span> TestConfigurationProperties testConfigurationProperties;</span><br><span class="line"></span><br><span class="line">    <span class="meta">@Test</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">test8</span><span class="params">()</span></span>&#123;</span><br><span class="line">        System.out.println(testConfigurationProperties.getTestMap());</span><br><span class="line">        System.out.println(testConfigurationProperties.getTestList());</span><br><span class="line">        System.out.println(testConfigurationProperties.getName());</span><br><span class="line">        System.out.println(testConfigurationProperties.getTest());</span><br><span class="line"></span><br><span class="line">    &#125;</span><br><span class="line"><span class="comment">//&#123;name=小朱, age=14&#125;</span></span><br><span class="line"><span class="comment">//[&#123;name=小王, age=12&#125;, &#123;name=小李, age=13&#125;]</span></span><br><span class="line"><span class="comment">//null</span></span><br><span class="line"><span class="comment">//小猪</span></span><br></pre></td></tr></table></figure>
+
+
+
+
+
+
+
+
+
 
       <div class="tags">
           <a href="/tags/Java/" rel="tag"><i class="ic i-tag"></i> Java</a>
@@ -300,7 +302,7 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
     <div class="item left">
       
 
-  <a href="/posts/91c18f7c/" itemprop="url" rel="prev" data-background-image="https:&#x2F;&#x2F;tva1.sinaimg.cn&#x2F;mw690&#x2F;6833939bly1giclhnx9glj20zk0m8npd.jpg" title="关于Try-With-Source的使用以及注意点">
+  <a href="/posts/91c18f7c/" itemprop="url" rel="prev" data-background-image="https:&#x2F;&#x2F;tva2.sinaimg.cn&#x2F;mw690&#x2F;6833939bly1gipeubcbajj20zk0m8h1h.jpg" title="关于Try-With-Source的使用以及注意点">
   <span class="type">Previous Post</span>
   <span class="category"><i class="ic i-flag"></i> Java</span>
   <h3>关于Try-With-Source的使用以及注意点</h3>
@@ -310,7 +312,7 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
     <div class="item right">
       
 
-  <a href="/posts/c3733521/" itemprop="url" rel="next" data-background-image="https:&#x2F;&#x2F;tva1.sinaimg.cn&#x2F;mw690&#x2F;6833939bly1gipey0a334j20zk0m8qpt.jpg" title="Java之assert关键字">
+  <a href="/posts/c3733521/" itemprop="url" rel="next" data-background-image="https:&#x2F;&#x2F;tva2.sinaimg.cn&#x2F;mw690&#x2F;6833939bly1gicliierfjj20zk0m8npd.jpg" title="Java之assert关键字">
   <span class="type">Next Post</span>
   <span class="category"><i class="ic i-flag"></i> Java</span>
   <h3>Java之assert关键字</h3>
@@ -332,7 +334,7 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
   <div class="panels">
     <div class="inner">
       <div class="contents panel pjax" data-title="Contents">
-          <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%85%B3%E4%BA%8Eyaml%E4%B8%ADlist%E5%AD%98%E6%94%BEmap"><span class="toc-number">1.</span> <span class="toc-text"> 关于 YAML  中 List  存放 Map</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#yaml%E5%A6%82%E4%BD%95%E4%B9%A6%E5%86%99"><span class="toc-number">1.1.</span> <span class="toc-text">  YAML  如何书写</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#yml%E7%9A%84%E4%BD%BF%E7%94%A8"><span class="toc-number">1.2.</span> <span class="toc-text">  yml  的使用</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BD%BF%E7%94%A8value"><span class="toc-number">1.3.</span> <span class="toc-text"> 使用 @Value</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BD%BF%E7%94%A8configurationproperties"><span class="toc-number">1.4.</span> <span class="toc-text"> 使用 @ConfigurationProperties</span></a></li></ol></li></ol>
+          <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%85%B3%E4%BA%8EYAML%E4%B8%ADList%E5%AD%98%E6%94%BEMap"><span class="toc-number">1.</span> <span class="toc-text">关于YAML中List存放Map</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#YAML%E5%A6%82%E4%BD%95%E4%B9%A6%E5%86%99"><span class="toc-number">1.1.</span> <span class="toc-text">YAML如何书写</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#yml%E7%9A%84%E4%BD%BF%E7%94%A8"><span class="toc-number">1.2.</span> <span class="toc-text">yml的使用</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BD%BF%E7%94%A8-Value"><span class="toc-number">1.3.</span> <span class="toc-text">使用@Value</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BD%BF%E7%94%A8-ConfigurationProperties"><span class="toc-number">1.4.</span> <span class="toc-text">使用@ConfigurationProperties</span></a></li></ol></li></ol>
       </div>
       <div class="related panel pjax" data-title="Related">
         <ul>
@@ -441,10 +443,41 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
   <li class="item">
     
 <div class="breadcrumb">
-<a href="/categories/Ubuntu/" title="In Ubuntu">Ubuntu</a>
+<a href="/categories/Java%E9%9D%A2%E8%AF%95/" title="In Java面试">Java面试</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/Java%E9%9D%A2%E8%AF%95/SpringBoot/" title="In SpringBoot">SpringBoot</a>
 </div>
 
-    <span><a href="/posts/6e65ed30/" title="ubuntu20无法安装vmtools解决">ubuntu20无法安装vmtools解决</a></span>
+    <span><a href="/posts/20ac1950/" title="SpringBoot文件上传下载">SpringBoot文件上传下载</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+</div>
+
+    <span><a href="/posts/823298d2/" title="VsCode 如何Debug Shell">VsCode 如何Debug Shell</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/SpringBoot/" title="In SpringBoot">SpringBoot</a>
+</div>
+
+    <span><a href="/posts/67f40b37/" title="Spring Boot 获取服务IP地址和端口号">Spring Boot 获取服务IP地址和端口号</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/%E5%89%8D%E7%AB%AF/" title="In 前端">前端</a>
+</div>
+
+    <span><a href="/posts/e43580c1/" title="flex布局">flex布局</a></span>
   </li>
 
       
@@ -452,9 +485,11 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
     
 <div class="breadcrumb">
 <a href="/categories/Java/" title="In Java">Java</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/Java/Stream/" title="In Stream">Stream</a>
 </div>
 
-    <span><a href="/posts/c3733521/" title="Java之assert关键字">Java之assert关键字</a></span>
+    <span><a href="/posts/8b8fedea/" title="Stream流的介绍">Stream流的介绍</a></span>
   </li>
 
       
@@ -466,37 +501,7 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
 <a href="/categories/Java/Tools/" title="In Tools">Tools</a>
 </div>
 
-    <span><a href="/posts/b246d3ce/" title="Java自带的好用的工具类">Java自带的好用的工具类</a></span>
-  </li>
-
-      
-  <li class="item">
-    
-<div class="breadcrumb">
-</div>
-
-    <span><a href="/posts/8da68a98/" title="Java运行调用Shell脚本">Java运行调用Shell脚本</a></span>
-  </li>
-
-      
-  <li class="item">
-    
-<div class="breadcrumb">
-<a href="/categories/%E5%89%8D%E7%AB%AF/" title="In 前端">前端</a>
-<i class="ic i-angle-right"></i>
-<a href="/categories/%E5%89%8D%E7%AB%AF/Css/" title="In Css">Css</a>
-</div>
-
-    <span><a href="/posts/2e6621e1/" title="DisPlay属性">DisPlay属性</a></span>
-  </li>
-
-      
-  <li class="item">
-    
-<div class="breadcrumb">
-</div>
-
-    <span><a href="/posts/66edb7d2/" title="关于hexo使用shoka主题注意点">关于hexo使用shoka主题注意点</a></span>
+    <span><a href="/posts/49b96938/" title="Java获取一天时间的起始">Java获取一天时间的起始</a></span>
   </li>
 
       
@@ -504,9 +509,25 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
     
 <div class="breadcrumb">
 <a href="/categories/Java%E9%9D%A2%E8%AF%95/" title="In Java面试">Java面试</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/Java%E9%9D%A2%E8%AF%95/Jvm/" title="In Jvm">Jvm</a>
 </div>
 
-    <span><a href="/posts/3eb5e557/" title="赛可出行面试">赛可出行面试</a></span>
+    <span><a href="/posts/57681474/" title="JVM简单原理">JVM简单原理</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/Java%E9%9D%A2%E8%AF%95/" title="In Java面试">Java面试</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/Java%E9%9D%A2%E8%AF%95/%E7%9B%B4%E6%8E%A5%E6%8F%92%E5%85%A5%E6%8E%92%E5%BA%8F/" title="In 直接插入排序">直接插入排序</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/Java%E9%9D%A2%E8%AF%95/%E7%9B%B4%E6%8E%A5%E6%8F%92%E5%85%A5%E6%8E%92%E5%BA%8F/%E7%AE%97%E6%B3%95/" title="In 算法">算法</a>
+</div>
+
+    <span><a href="/posts/2b06d603/" title="直接插入排序">直接插入排序</a></span>
   </li>
 
       
@@ -516,33 +537,17 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
 <a href="/categories/Java/" title="In Java">Java</a>
 </div>
 
-    <span><a href="/posts/fc16798c/" title="Java8遍历Map的三种方式">Java8遍历Map的三种方式</a></span>
+    <span><a href="/posts/1c3390ab/" title="将Java数据输出为本地txt">将Java数据输出为本地txt</a></span>
   </li>
 
       
   <li class="item">
     
 <div class="breadcrumb">
-<a href="/categories/%E5%89%8D%E7%AB%AF/" title="In 前端">前端</a>
-<i class="ic i-angle-right"></i>
-<a href="/categories/%E5%89%8D%E7%AB%AF/TypeScript/" title="In TypeScript">TypeScript</a>
-<i class="ic i-angle-right"></i>
-<a href="/categories/%E5%89%8D%E7%AB%AF/TypeScript/WebPack/" title="In WebPack">WebPack</a>
+<a href="/categories/Java/" title="In Java">Java</a>
 </div>
 
-    <span><a href="/posts/ddb0d187/" title="TS配置Webpack">TS配置Webpack</a></span>
-  </li>
-
-      
-  <li class="item">
-    
-<div class="breadcrumb">
-<a href="/categories/Java%E9%9D%A2%E8%AF%95/" title="In Java面试">Java面试</a>
-<i class="ic i-angle-right"></i>
-<a href="/categories/Java%E9%9D%A2%E8%AF%95/Spring%E4%BA%8B%E5%8A%A1/" title="In Spring事务">Spring事务</a>
-</div>
-
-    <span><a href="/posts/7e4601e3/" title="面试之旅之关于Spring事务处理">面试之旅之关于Spring事务处理</a></span>
+    <span><a href="/posts/1da18d70/" title="Java8内置四大函数式接口">Java8内置四大函数式接口</a></span>
   </li>
 
   </ul>

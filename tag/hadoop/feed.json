@@ -9,7 +9,7 @@
             "url": "https://smile1231.github.io/posts/737c98ca/",
             "title": "什么是MapReduce",
             "date_published": "2021-11-22T02:28:54.000Z",
-            "content_html": "<p><code>Hadoop</code>  的各个组成部分</p>\n<img data-src=\"/posts/737c98ca/2021-11-22-11-27-10.png\" class=\"\">\n<span id=\"more\"></span>\n<pre><code>归纳:\nHadoop组成\n \n    Hadoop  HDFS：一个高可靠、高吞吐量的分布式文件系统，对海量数据的存储。\n \tHadoop  MapReduce：一个分布式的资源调度和离线并行计算框架。\n \tHadoop  Yarn：基于HDFS,用于作业调度和集群资源管理的框架。\n</code></pre>\n",
+            "content_html": "<p><code>Hadoop</code>的各个组成部分</p>\n<img data-src=\"/posts/737c98ca/2021-11-22-11-27-10.png\" class=\"\">\n\n<span id=\"more\"></span>\n\n<pre><code>归纳:\nHadoop组成\n \n    Hadoop  HDFS：一个高可靠、高吞吐量的分布式文件系统，对海量数据的存储。\n     Hadoop  MapReduce：一个分布式的资源调度和离线并行计算框架。\n     Hadoop  Yarn：基于HDFS,用于作业调度和集群资源管理的框架。\n</code></pre>\n",
             "tags": [
                 "Hadoop"
             ]

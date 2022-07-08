@@ -76,7 +76,7 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
       <i class="ic i-pen"></i>
     </span>
     <span class="text">Symbols count in article</span>
-    <span>848</span>
+    <span>886</span>
     <span class="text">words</span>
   </span>
   <span class="item" title="Reading time">
@@ -117,12 +117,12 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
       </div>
       <div id="imgs" class="pjax">
         <ul>
-          <li class="item" data-background-image="https://tva1.sinaimg.cn/large/6833939bly1giclwuom7cj20zk0m8dvn.jpg"></li>
-          <li class="item" data-background-image="https://tva1.sinaimg.cn/large/6833939bly1gipew8gmvyj20zk0m87wh.jpg"></li>
-          <li class="item" data-background-image="https://tva1.sinaimg.cn/large/6833939bly1gipexw3o58j20zk0m8e81.jpg"></li>
-          <li class="item" data-background-image="https://tva1.sinaimg.cn/large/6833939bly1giciub8ja1j20zk0m81ky.jpg"></li>
-          <li class="item" data-background-image="https://tva1.sinaimg.cn/large/6833939bly1giph4fomxoj20zk0m8axp.jpg"></li>
-          <li class="item" data-background-image="https://tva1.sinaimg.cn/large/6833939bly1gipewr8iypj20zk0m8b29.jpg"></li>
+          <li class="item" data-background-image="https://tva2.sinaimg.cn/large/6833939bly1giclize41wj20zk0m87gk.jpg"></li>
+          <li class="item" data-background-image="https://tva2.sinaimg.cn/large/6833939bly1giph4lm9i7j20zk0m84qp.jpg"></li>
+          <li class="item" data-background-image="https://tva2.sinaimg.cn/large/6833939bly1gicis3attqj20zk0m8k7l.jpg"></li>
+          <li class="item" data-background-image="https://tva2.sinaimg.cn/large/6833939bly1giciryrr3rj20zk0m8nhk.jpg"></li>
+          <li class="item" data-background-image="https://tva2.sinaimg.cn/large/6833939bly1gipexoj0moj20zk0m8kgu.jpg"></li>
+          <li class="item" data-background-image="https://tva2.sinaimg.cn/large/6833939bly1gicitcxhpij20zk0m8hdt.jpg"></li>
         </ul>
       </div>
     </header>
@@ -168,135 +168,23 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
   <div class="body md" itemprop="articleBody">
     
 
-    <p><code>MYSQL</code>  获取当前日期及日期格式</p>
+    <p><code>MYSQL</code> 获取当前日期及日期格式</p>
 <ul>
-<li>获取系统日期：  <code>NOW()</code></li>
-<li>格式化日期：  <code>DATE_FORMAT(date, format)</code></li>
+<li>获取系统日期： <code>NOW()</code></li>
+<li>格式化日期： <code>DATE_FORMAT(date, format)</code></li>
 </ul>
-<p>注： date：时间字段<br>
- format：日期格式</p>
+<p>注： date：时间字段<br>format：日期格式</p>
 <span id="more"></span>
+
 <ul>
-<li>
-<p><code>select now();</code></p>
-<p>输出 <code>2021-12-16 17:20:21</code></p>
+<li><p><code>select now();</code></p>
+<p>  输出<code>2021-12-16 17:20:21</code></p>
 </li>
-<li>
-<p><code>select date_format(now(),'%Y-%m-%d');</code></p>
-<p>输出 <code>2021-12-16</code></p>
+<li><p><code>select date_format(now(),&#39;%Y-%m-%d&#39;);</code></p>
+<p>  输出<code>2021-12-16</code></p>
 </li>
 </ul>
-<p>根据 <code>format</code>  字符串格式化 <code>date</code>  值:</p>
-<table>
-<thead>
-<tr>
-<th>参数值</th>
-<th>效果</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><code>%S, %s</code></td>
-<td>两位数字形式的秒（ <code>00,01, ..., 59</code> ）</td>
-</tr>
-<tr>
-<td><code>%I, %i</code></td>
-<td>两位数字形式的分（  <code>00,01, ..., 59</code> ）</td>
-</tr>
-<tr>
-<td><code>%H</code></td>
-<td>两位数字形式的小时， <code>24</code>  小时（ <code>00,01, ..., 23</code> ）</td>
-</tr>
-<tr>
-<td><code>%h</code></td>
-<td>两位数字形式的小时， <code>12</code>  小时（ <code>01,02, ..., 12</code> ）</td>
-</tr>
-<tr>
-<td><code>%k</code></td>
-<td>数字形式的小时， <code>24</code>  小时（ <code>0,1, ..., 23</code> ）</td>
-</tr>
-<tr>
-<td><code>%l</code></td>
-<td>数字形式的小时， <code>12</code>  小时（ <code>1, 2, ..., 12</code> ）</td>
-</tr>
-<tr>
-<td><code>%T</code></td>
-<td><code>24</code>  小时的时间形式（ <code>hh:mm:ss</code> ）</td>
-</tr>
-<tr>
-<td><code>%r</code></td>
-<td><code>12</code>  小时的时间形式（ <code>hh:mm:ss AM</code>  或 <code>hh:mm:ss PM</code> ）</td>
-</tr>
-<tr>
-<td><code>%p</code></td>
-<td><code>AM</code>  或 <code>PM</code></td>
-</tr>
-<tr>
-<td><code>%W</code></td>
-<td>一周中每一天的名称（ <code>Sunday, Monday, ..., Saturday</code> ）</td>
-</tr>
-<tr>
-<td><code>%a</code></td>
-<td>一周中每一天名称的缩写（ <code>Sun, Mon, ..., Sat</code> ）</td>
-</tr>
-<tr>
-<td><code>%d</code></td>
-<td>两位数字表示月中的天数（ <code>00, 01,..., 31</code> ）</td>
-</tr>
-<tr>
-<td><code>%e</code></td>
-<td>数字形式表示月中的天数（ <code>1, 2， ..., 31</code> ）</td>
-</tr>
-<tr>
-<td><code>%D</code></td>
-<td>英文后缀表示月中的天数（ <code>1st, 2nd, 3rd,...</code> ）</td>
-</tr>
-<tr>
-<td><code>%w</code></td>
-<td>以数字形式表示周中的天数（  <code>0 = Sunday, 1=Monday, ..., 6=Saturday</code> ）</td>
-</tr>
-<tr>
-<td><code>%j</code></td>
-<td>以三位数字表示年中的天数（  <code>001, 002, ..., 366</code> ）</td>
-</tr>
-<tr>
-<td><code>%U</code></td>
-<td>周（ <code>0, 1, 52</code> ），其中 <code>Sunday</code>  为周中的第一天</td>
-</tr>
-<tr>
-<td><code>%u</code></td>
-<td>周（ <code>0, 1, 52</code> ），其中 <code>Monday</code>  为周中的第一天</td>
-</tr>
-<tr>
-<td><code>%M</code></td>
-<td>月名（ <code>January, February, ..., December</code> ）</td>
-</tr>
-<tr>
-<td><code>%b</code></td>
-<td>缩写的月名（  <code>January, February,...., December</code> ）</td>
-</tr>
-<tr>
-<td><code>%m</code></td>
-<td>两位数字表示的月份（ <code>01, 02, ..., 12</code> ）</td>
-</tr>
-<tr>
-<td><code>%c</code></td>
-<td>数字表示的月份（ <code>1, 2, ...., 12</code> ）</td>
-</tr>
-<tr>
-<td><code>%Y</code></td>
-<td>四位数字表示的年份</td>
-</tr>
-<tr>
-<td><code>%y</code></td>
-<td>两位数字表示的年份</td>
-</tr>
-<tr>
-<td><code>%%</code></td>
-<td>直接值 <code>“%”</code></td>
-</tr>
-</tbody>
-</table>
+<p>根据<code>format</code>字符串格式化<code>date</code>值:<br>参数值 | 效果<br>—-|—<br><code>%S, %s</code> | 两位数字形式的秒（<code>00,01, ..., 59</code>）<br><code>%I, %i</code> | 两位数字形式的分（ <code>00,01, ..., 59</code>）<br><code>%H</code> | 两位数字形式的小时，<code>24</code> 小时（<code>00,01, ..., 23</code>）<br><code>%h</code> | 两位数字形式的小时，<code>12</code> 小时（<code>01,02, ..., 12</code>）<br><code>%k</code> | 数字形式的小时，<code>24</code> 小时（<code>0,1, ..., 23</code>）<br><code>%l</code> | 数字形式的小时，<code>12</code> 小时（<code>1, 2, ..., 12</code>）<br><code>%T</code> | <code>24</code> 小时的时间形式（<code>hh:mm:ss</code>）<br><code>%r</code> | <code>12</code> 小时的时间形式（<code>hh:mm:ss AM</code> 或<code>hh:mm:ss PM</code>）<br><code>%p</code> | <code>AM</code>或<code>PM</code><br><code>%W</code> | 一周中每一天的名称（<code>Sunday, Monday, ..., Saturday</code>）<br><code>%a</code> | 一周中每一天名称的缩写（<code>Sun, Mon, ..., Sat</code>）<br><code>%d</code> | 两位数字表示月中的天数（<code>00, 01,..., 31</code>）<br><code>%e</code> | 数字形式表示月中的天数（<code>1, 2， ..., 31</code>）<br><code>%D</code> | 英文后缀表示月中的天数（<code>1st, 2nd, 3rd,...</code>）<br><code>%w</code> | 以数字形式表示周中的天数（ <code>0 = Sunday, 1=Monday, ..., 6=Saturday</code>）<br><code>%j</code> | 以三位数字表示年中的天数（ <code>001, 002, ..., 366</code>）<br><code>%U</code> | 周（<code>0, 1, 52</code>），其中<code>Sunday</code> 为周中的第一天<br><code>%u</code> | 周（<code>0, 1, 52</code>），其中<code>Monday</code> 为周中的第一天<br><code>%M</code> | 月名（<code>January, February, ..., December</code>）<br><code>%b</code> | 缩写的月名（ <code>January, February,...., December</code>）<br><code>%m</code> | 两位数字表示的月份（<code>01, 02, ..., 12</code>）<br><code>%c</code> | 数字表示的月份（<code>1, 2, ...., 12</code>）<br><code>%Y</code> | 四位数字表示的年份<br><code>%y</code> | 两位数字表示的年份<br><code>%%</code> | 直接值<code>“%”</code></p>
 
   </div>
 
@@ -348,7 +236,7 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
     <div class="item left">
       
 
-  <a href="/posts/fc16798c/" itemprop="url" rel="prev" data-background-image="https:&#x2F;&#x2F;tva1.sinaimg.cn&#x2F;mw690&#x2F;6833939bly1gipeubcbajj20zk0m8h1h.jpg" title="Java8遍历Map的三种方式">
+  <a href="/posts/fc16798c/" itemprop="url" rel="prev" data-background-image="https:&#x2F;&#x2F;tva2.sinaimg.cn&#x2F;mw690&#x2F;6833939bly1giciryrr3rj20zk0m8nhk.jpg" title="Java8遍历Map的三种方式">
   <span class="type">Previous Post</span>
   <span class="category"><i class="ic i-flag"></i> Java</span>
   <h3>Java8遍历Map的三种方式</h3>
@@ -358,7 +246,7 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
     <div class="item right">
       
 
-  <a href="/posts/49b96938/" itemprop="url" rel="next" data-background-image="https:&#x2F;&#x2F;tva1.sinaimg.cn&#x2F;mw690&#x2F;6833939bly1gipeubcbajj20zk0m8h1h.jpg" title="Java获取一天时间的起始">
+  <a href="/posts/49b96938/" itemprop="url" rel="next" data-background-image="https:&#x2F;&#x2F;tva2.sinaimg.cn&#x2F;mw690&#x2F;6833939bly1gipex2cdtbj20zk0m8x6p.jpg" title="Java获取一天时间的起始">
   <span class="type">Next Post</span>
   <span class="category"><i class="ic i-flag"></i> Tools</span>
   <h3>Java获取一天时间的起始</h3>
@@ -488,51 +376,6 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
   <li class="item">
     
 <div class="breadcrumb">
-</div>
-
-    <span><a href="/posts/5a74c6a6/" title="宝儿的大腿小腿围">宝儿的大腿小腿围</a></span>
-  </li>
-
-      
-  <li class="item">
-    
-<div class="breadcrumb">
-<a href="/categories/Java%E9%9D%A2%E8%AF%95/" title="In Java面试">Java面试</a>
-</div>
-
-    <span><a href="/posts/feb84842/" title="Java面试必问--ArrayList的底层">Java面试必问--ArrayList的底层</a></span>
-  </li>
-
-      
-  <li class="item">
-    
-<div class="breadcrumb">
-<a href="/categories/Java%E9%9D%A2%E8%AF%95/" title="In Java面试">Java面试</a>
-<i class="ic i-angle-right"></i>
-<a href="/categories/Java%E9%9D%A2%E8%AF%95/%E7%AE%97%E6%B3%95/" title="In 算法">算法</a>
-</div>
-
-    <span><a href="/posts/7474c898/" title="分治算法">分治算法</a></span>
-  </li>
-
-      
-  <li class="item">
-    
-<div class="breadcrumb">
-<a href="/categories/Java%E9%9D%A2%E8%AF%95/" title="In Java面试">Java面试</a>
-<i class="ic i-angle-right"></i>
-<a href="/categories/Java%E9%9D%A2%E8%AF%95/%E9%80%89%E6%8B%A9%E6%8E%92%E5%BA%8F/" title="In 选择排序">选择排序</a>
-<i class="ic i-angle-right"></i>
-<a href="/categories/Java%E9%9D%A2%E8%AF%95/%E9%80%89%E6%8B%A9%E6%8E%92%E5%BA%8F/%E7%AE%97%E6%B3%95/" title="In 算法">算法</a>
-</div>
-
-    <span><a href="/posts/43d00a99/" title="选择排序">选择排序</a></span>
-  </li>
-
-      
-  <li class="item">
-    
-<div class="breadcrumb">
 <a href="/categories/Java/" title="In Java">Java</a>
 <i class="ic i-angle-right"></i>
 <a href="/categories/Java/Stream/" title="In Stream">Stream</a>
@@ -545,12 +388,54 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
   <li class="item">
     
 <div class="breadcrumb">
+<a href="/categories/Hexo/" title="In Hexo">Hexo</a>
+</div>
+
+    <span><a href="/posts/575a6046/" title="Hexo-Next主题如何文章置顶">Hexo-Next主题如何文章置顶</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/Java/" title="In Java">Java</a>
+</div>
+
+    <span><a href="/posts/1da18d70/" title="Java8内置四大函数式接口">Java8内置四大函数式接口</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/Java/" title="In Java">Java</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/Java/Tools/" title="In Tools">Tools</a>
+</div>
+
+    <span><a href="/posts/49b96938/" title="Java获取一天时间的起始">Java获取一天时间的起始</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
 <a href="/categories/Java%E9%9D%A2%E8%AF%95/" title="In Java面试">Java面试</a>
+</div>
+
+    <span><a href="/posts/3eb5e557/" title="赛可出行面试">赛可出行面试</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/Hexo/" title="In Hexo">Hexo</a>
 <i class="ic i-angle-right"></i>
-<a href="/categories/Java%E9%9D%A2%E8%AF%95/HashMap/" title="In HashMap">HashMap</a>
+<a href="/categories/Hexo/Tools/" title="In Tools">Tools</a>
 </div>
 
-    <span><a href="/posts/52d9f7d3/" title="Java面试必问--HashMap的底层">Java面试必问--HashMap的底层</a></span>
+    <span><a href="/posts/3d071a12/" title="使用hexo框架+next主题+githubPage搭建个人博客">使用hexo框架+next主题+githubPage搭建个人博客</a></span>
   </li>
 
       
@@ -559,40 +444,40 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
 <div class="breadcrumb">
 <a href="/categories/Java/" title="In Java">Java</a>
 <i class="ic i-angle-right"></i>
-<a href="/categories/Java/Java%E9%9D%A2%E8%AF%95/" title="In Java面试">Java面试</a>
+<a href="/categories/Java/Stream/" title="In Stream">Stream</a>
 </div>
 
-    <span><a href="/posts/f23f1351/" title="equals与&#x3D;&#x3D;区别">equals与==区别</a></span>
+    <span><a href="/posts/8b8fedea/" title="Stream流的介绍">Stream流的介绍</a></span>
   </li>
 
       
   <li class="item">
     
 <div class="breadcrumb">
-<a href="/categories/Java/" title="In Java">Java</a>
 </div>
 
-    <span><a href="/posts/9dcbb5fa/" title="Corn表达式">Corn表达式</a></span>
+    <span><a href="/posts/2dc35ee/" title="多线程分批处理方案">多线程分批处理方案</a></span>
   </li>
 
       
   <li class="item">
     
 <div class="breadcrumb">
-<a href="/categories/Java/" title="In Java">Java</a>
+<a href="/categories/Ubuntu/" title="In Ubuntu">Ubuntu</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/Ubuntu/Mysql/" title="In Mysql">Mysql</a>
 </div>
 
-    <span><a href="/posts/d6d1be75/" title="在Javadoc注释中引用方法">在Javadoc注释中引用方法</a></span>
+    <span><a href="/posts/31f95091/" title="Ubuntu中安装卸载Mysql数据库">Ubuntu中安装卸载Mysql数据库</a></span>
   </li>
 
       
   <li class="item">
     
 <div class="breadcrumb">
-<a href="/categories/SpringBoot/" title="In SpringBoot">SpringBoot</a>
 </div>
 
-    <span><a href="/posts/67f40b37/" title="Spring Boot 获取服务IP地址和端口号">Spring Boot 获取服务IP地址和端口号</a></span>
+    <span><a href="/posts/ba003691/" title="Springboot工程项目.gitignore配置">Springboot工程项目.gitignore配置</a></span>
   </li>
 
   </ul>

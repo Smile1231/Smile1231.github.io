@@ -117,12 +117,12 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
       </div>
       <div id="imgs" class="pjax">
         <ul>
-          <li class="item" data-background-image="https://tva1.sinaimg.cn/large/6833939bly1gipeu7txpzj20zk0m81kx.jpg"></li>
-          <li class="item" data-background-image="https://tva1.sinaimg.cn/large/6833939bly1gipetfk5zwj20zk0m8e81.jpg"></li>
-          <li class="item" data-background-image="https://tva1.sinaimg.cn/large/6833939bly1giclx6phq6j20zk0m8e36.jpg"></li>
-          <li class="item" data-background-image="https://tva1.sinaimg.cn/large/6833939bly1gipewf5l51j20zk0m8b29.jpg"></li>
-          <li class="item" data-background-image="https://tva1.sinaimg.cn/large/6833939bly1gipevuctzzj20zk0m84qp.jpg"></li>
-          <li class="item" data-background-image="https://tva1.sinaimg.cn/large/6833939bly1gipevo9j1jj20zk0m8e81.jpg"></li>
+          <li class="item" data-background-image="https://tva2.sinaimg.cn/large/6833939bly1gipexw3o58j20zk0m8e81.jpg"></li>
+          <li class="item" data-background-image="https://tva2.sinaimg.cn/large/6833939bly1gicis3attqj20zk0m8k7l.jpg"></li>
+          <li class="item" data-background-image="https://tva2.sinaimg.cn/large/6833939bly1giclfdu6exj20zk0m87hw.jpg"></li>
+          <li class="item" data-background-image="https://tva2.sinaimg.cn/large/6833939bly1giclxxcb6rj20zk0m8b29.jpg"></li>
+          <li class="item" data-background-image="https://tva2.sinaimg.cn/large/6833939bly1gicivghyooj20zk0m8dir.jpg"></li>
+          <li class="item" data-background-image="https://tva2.sinaimg.cn/large/6833939bly1gicljgocqbj20zk0m8e81.jpg"></li>
         </ul>
       </div>
     </header>
@@ -171,24 +171,21 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
   <div class="body md" itemprop="articleBody">
     
 
-    <h1 id="用springboot手把手教你写出优雅的后端接口"><a class="markdownIt-Anchor" href="#用springboot手把手教你写出优雅的后端接口">#</a> 用 <code>SpringBoot</code>  手把手教你写出优雅的后端接口</h1>
-<p>一个后端接口大致分为四个部分组成： <code>接口地址（url）</code> 、 <code>接口请求方式（get、post等）</code> 、 <code>请求数据（request）</code> 、 <code>响应数据（response）</code> 。如何构建这几个部分每个公司要求都不同，没有什么 “一定是最好的” 标准，但一个优秀的后端接口和一个糟糕的后端接口对比起来差异还是蛮大的，其中最重要的关键点就是看是否规范！</p>
+    <h1 id="用SpringBoot手把手教你写出优雅的后端接口"><a href="#用SpringBoot手把手教你写出优雅的后端接口" class="headerlink" title="用SpringBoot手把手教你写出优雅的后端接口"></a>用<code>SpringBoot</code>手把手教你写出优雅的后端接口</h1><p>一个后端接口大致分为四个部分组成：<code>接口地址（url）</code>、<code>接口请求方式（get、post等）</code>、<code>请求数据（request）</code>、<code>响应数据（response）</code>。如何构建这几个部分每个公司要求都不同，没有什么“一定是最好的”标准，但一个优秀的后端接口和一个糟糕的后端接口对比起来差异还是蛮大的，其中最重要的关键点就是看是否规范!</p>
 <p>本文就一步一步演示如何构建起一个优秀的后端接口体系，体系构建好了自然就有了规范，同时再构建新的后端接口也会十分轻松。</p>
 <p>所需依赖包</p>
 <span id="more"></span>
-<p>这里用的是 <code>SpringBoot</code>  配置项目，本文讲解的重点是后端接口，所以只需要导入一个 <code>spring-boot-starter-web</code>  包就可以了：</p>
+
+<p>这里用的是<code>SpringBoot</code>配置项目，本文讲解的重点是后端接口，所以只需要导入一个<code>spring-boot-starter-web</code>包就可以了：</p>
 <figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">&lt;!--web依赖包，web应用必备--&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">dependency</span>&gt;</span></span><br><span class="line">   <span class="tag">&lt;<span class="name">groupId</span>&gt;</span>org.springframework.boot<span class="tag">&lt;/<span class="name">groupId</span>&gt;</span></span><br><span class="line">   <span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>spring-boot-starter-web<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">dependency</span>&gt;</span></span><br><span class="line"><span class="comment">&lt;!--StringUtils的使用--&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">dependency</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">groupId</span>&gt;</span>commons-lang<span class="tag">&lt;/<span class="name">groupId</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>commons-lang<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">version</span>&gt;</span>2.6<span class="tag">&lt;/<span class="name">version</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">dependency</span>&gt;</span></span><br></pre></td></tr></table></figure>
-<p>本文还用了 <code>swagger</code>  来生成 <code>API</code>  文档， <code>lombok</code>  来简化类，不过这两者不是必须的，可用可不用。</p>
-<h2 id="一-参数校验"><a class="markdownIt-Anchor" href="#一-参数校验">#</a> 一、参数校验</h2>
-<p>一个接口一般对参数（请求数据）都会进行安全校验，参数校验的重要性自然不必多说，那么如何对参数进行校验就有讲究了。</p>
-<h2 id="二-业务层校验"><a class="markdownIt-Anchor" href="#二-业务层校验">#</a> 二、业务层校验</h2>
-<p>首先我们来看一下最常见的做法，就是在业务层进行参数校验：</p>
+<p>本文还用了<code>swagger</code>来生成<code>API</code>文档，<code>lombok</code>来简化类，不过这两者不是必须的，可用可不用。</p>
+<h2 id="一、参数校验"><a href="#一、参数校验" class="headerlink" title="一、参数校验"></a>一、参数校验</h2><p>一个接口一般对参数（请求数据）都会进行安全校验，参数校验的重要性自然不必多说，那么如何对参数进行校验就有讲究了。</p>
+<h2 id="二、业务层校验"><a href="#二、业务层校验" class="headerlink" title="二、业务层校验"></a>二、业务层校验</h2><p>首先我们来看一下最常见的做法，就是在业务层进行参数校验：</p>
 <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">public</span> String <span class="title">addUser</span><span class="params">(User user)</span> </span>&#123;</span><br><span class="line">    <span class="keyword">if</span> (user == <span class="keyword">null</span> || user.getId() == <span class="keyword">null</span> || user.getAccount() == <span class="keyword">null</span> || user.getPassword() == <span class="keyword">null</span> || user.getEmail() == <span class="keyword">null</span>) &#123;</span><br><span class="line">        <span class="keyword">return</span> <span class="string">&quot;对象或者对象字段不能为空&quot;</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">if</span> (StringUtils.isEmpty(user.getAccount()) || StringUtils.isEmpty(user.getPassword()) || StringUtils.isEmpty(user.getEmail())) &#123;</span><br><span class="line">        <span class="keyword">return</span> <span class="string">&quot;不能输入空字符串&quot;</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">if</span> (user.getAccount().length() &lt; <span class="number">6</span> || user.getAccount().length() &gt; <span class="number">11</span>) &#123;</span><br><span class="line">        <span class="keyword">return</span> <span class="string">&quot;账号长度必须是6-11个字符&quot;</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">if</span> (user.getPassword().length() &lt; <span class="number">6</span> || user.getPassword().length() &gt; <span class="number">16</span>) &#123;</span><br><span class="line">        <span class="keyword">return</span> <span class="string">&quot;密码长度必须是6-16个字符&quot;</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">if</span> (!Pattern.matches(<span class="string">&quot;^[a-zA-Z0-9_-]+@[a-zA-Z0-9_-]+(\\.[a-zA-Z0-9_-]+)+$&quot;</span>, user.getEmail())) &#123;</span><br><span class="line">        <span class="keyword">return</span> <span class="string">&quot;邮箱格式不正确&quot;</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="comment">// 参数校验完毕后这里就写上业务逻辑</span></span><br><span class="line">    <span class="keyword">return</span> <span class="string">&quot;success&quot;</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <p>这样做当然是没有什么错的，而且格式排版整齐也一目了然，不过这样太繁琐了，这还没有进行业务操作呢光是一个参数校验就已经这么多行代码，实在不够优雅。</p>
-<p>我们来改进一下，使用 <code>Spring Validator</code>  和 <code>Hibernate Validator</code>  这两套 <code>Validator</code>  来进行方便的参数校验！这两套 <code>Validator</code>  依赖包已经包含在前面所说的 <code>web</code>  依赖包里了，所以可以直接使用。<br>
-但是从 <code>springboot-2.3</code>  开始，校验包被独立成了一个 <code>starter</code>  组件<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL3NwcmluZy1wcm9qZWN0cy9zcHJpbmctYm9vdC93aWtpL1NwcmluZy1Cb290LTIuMy1SZWxlYXNlLU5vdGVzI3ZhbGlkYXRpb24tc3RhcnRlci1uby1sb25nZXItaW5jbHVkZWQtaW4td2ViLXN0YXJ0ZXJz">参见：validation-starter-no-longer-included-in-web-starters</span>，<br>
-所以需要引入如下依赖：</p>
+<p>我们来改进一下，使用<code>Spring Validator</code>和<code>Hibernate Validator</code>这两套<code>Validator</code>来进行方便的参数校验！这两套<code>Validator</code>依赖包已经包含在前面所说的<code>web</code>依赖包里了，所以可以直接使用。<br>但是从<code>springboot-2.3</code>开始，校验包被独立成了一个<code>starter</code>组件<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL3NwcmluZy1wcm9qZWN0cy9zcHJpbmctYm9vdC93aWtpL1NwcmluZy1Cb290LTIuMy1SZWxlYXNlLU5vdGVzI3ZhbGlkYXRpb24tc3RhcnRlci1uby1sb25nZXItaW5jbHVkZWQtaW4td2ViLXN0YXJ0ZXJz">参见：validation-starter-no-longer-included-in-web-starters</span>，<br>所以需要引入如下依赖：</p>
 <figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">&lt;!--校验组件--&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">dependency</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">groupId</span>&gt;</span>org.springframework.boot<span class="tag">&lt;/<span class="name">groupId</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>spring-boot-starter-validation<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">dependency</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
 <p>内置的校验有很多</p>
 <table>
 <thead>
@@ -197,14 +194,13 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
 <th>校验功能</th>
 </tr>
 </thead>
-<tbody>
-<tr>
+<tbody><tr>
 <td>@AssertFalse</td>
-<td>必须是 false</td>
+<td>必须是false</td>
 </tr>
 <tr>
 <td>@AssertTrue</td>
-<td>必须是 true</td>
+<td>必须是true</td>
 </tr>
 <tr>
 <td>@DecimalMax</td>
@@ -220,7 +216,7 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
 </tr>
 <tr>
 <td>@Email</td>
-<td>校验是否符合 Email 格式</td>
+<td>校验是否符合Email格式</td>
 </tr>
 <tr>
 <td>@Future</td>
@@ -240,27 +236,27 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
 </tr>
 <tr>
 <td>@Negative</td>
-<td>负数（不包括 0）</td>
+<td>负数（不包括0）</td>
 </tr>
 <tr>
 <td>@NegativeOrZero</td>
-<td>负数或 0</td>
+<td>负数或0</td>
 </tr>
 <tr>
 <td>@NotBlank</td>
-<td>不为 null 并且包含至少一个非空白字符</td>
+<td>不为null并且包含至少一个非空白字符</td>
 </tr>
 <tr>
 <td>@NotEmpty</td>
-<td>不为 null 并且不为空</td>
+<td>不为null并且不为空</td>
 </tr>
 <tr>
 <td>@NotNull</td>
-<td>不为 null</td>
+<td>不为null</td>
 </tr>
 <tr>
 <td>@Null</td>
-<td>为 null</td>
+<td>为null</td>
 </tr>
 <tr>
 <td>@Past</td>
@@ -276,146 +272,134 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
 </tr>
 <tr>
 <td>@PositiveOrZero</td>
-<td>正数或 0</td>
+<td>正数或0</td>
 </tr>
 <tr>
 <td>@Size</td>
 <td>校验容器的元素个数</td>
 </tr>
-</tbody>
-</table>
-<h2 id="三-validator-bindresult进行校验"><a class="markdownIt-Anchor" href="#三-validator-bindresult进行校验">#</a> 三、 <code>Validator</code>  +  <code>BindResult</code>  进行校验</h2>
-<p><code>Validator</code>  可以非常方便的制定校验规则，并自动帮你完成校验。首先在入参里需要校验的字段加上注解，每个注解对应不同的校验规则，并可制定校验失败后的信息：</p>
+</tbody></table>
+<h2 id="三、Validator-BindResult进行校验"><a href="#三、Validator-BindResult进行校验" class="headerlink" title="三、Validator + BindResult进行校验"></a>三、<code>Validator</code> + <code>BindResult</code>进行校验</h2><p><code>Validator</code>可以非常方便的制定校验规则，并自动帮你完成校验。首先在入参里需要校验的字段加上注解,每个注解对应不同的校验规则，并可制定校验失败后的信息：</p>
 <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">@Data</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">User</span> </span>&#123;</span><br><span class="line">    <span class="meta">@NotNull(message = &quot;用户id不能为空&quot;)</span></span><br><span class="line">    <span class="keyword">private</span> Long id;</span><br><span class="line"></span><br><span class="line">    <span class="meta">@NotNull(message = &quot;用户账号不能为空&quot;)</span></span><br><span class="line">    <span class="meta">@Size(min = 6, max = 11, message = &quot;账号长度必须是6-11个字符&quot;)</span></span><br><span class="line">    <span class="keyword">private</span> String account;</span><br><span class="line"></span><br><span class="line">    <span class="meta">@NotNull(message = &quot;用户密码不能为空&quot;)</span></span><br><span class="line">    <span class="meta">@Size(min = 6, max = 11, message = &quot;密码长度必须是6-16个字符&quot;)</span></span><br><span class="line">    <span class="keyword">private</span> String password;</span><br><span class="line"></span><br><span class="line">    <span class="meta">@NotNull(message = &quot;用户邮箱不能为空&quot;)</span></span><br><span class="line">    <span class="meta">@Email(message = &quot;邮箱格式不正确&quot;)</span></span><br><span class="line">    <span class="keyword">private</span> String email;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p>校验规则和错误提示信息配置完毕后，接下来只需要在接口需要校验的参数上加上 <code>@Valid</code>  注解，并添加 <code>BindResult</code>  参数即可方便完成验证：</p>
+<p>校验规则和错误提示信息配置完毕后，接下来只需要在接口需要校验的参数上加上<code>@Valid</code>注解，并添加<code>BindResult</code>参数即可方便完成验证：</p>
 <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">@RestController</span></span><br><span class="line"><span class="meta">@RequestMapping(&quot;user&quot;)</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">UserController</span> </span>&#123;</span><br><span class="line">    <span class="meta">@Autowired</span></span><br><span class="line">    <span class="keyword">private</span> UserService userService;</span><br><span class="line"></span><br><span class="line">    <span class="meta">@PostMapping(&quot;/addUser&quot;)</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> String <span class="title">addUser</span><span class="params">(<span class="meta">@RequestBody</span> <span class="meta">@Valid</span> User user, BindingResult bindingResult)</span> </span>&#123;</span><br><span class="line">        <span class="comment">// 如果有参数校验失败，会将错误信息封装成对象组装在BindingResult里</span></span><br><span class="line">        <span class="keyword">for</span> (ObjectError error : bindingResult.getAllErrors()) &#123;</span><br><span class="line">            <span class="keyword">return</span> error.getDefaultMessage();</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> userService.addUser(user);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p>这样当请求数据传递到接口的时候 <code>Validator</code>  就自动完成校验了，校验的结果就会封装到 <code>BindingResult</code>  中去，如果有错误信息我们就直接返回给前端，业务逻辑代码也根本没有执行下去。</p>
+<p>这样当请求数据传递到接口的时候<code>Validator</code>就自动完成校验了，校验的结果就会封装到<code>BindingResult</code>中去，如果有错误信息我们就直接返回给前端，业务逻辑代码也根本没有执行下去。</p>
 <p>此时，业务层里的校验代码就已经不需要了：</p>
 <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">public</span> String <span class="title">addUser</span><span class="params">(User user)</span> </span>&#123;</span><br><span class="line">     <span class="comment">// 直接编写业务逻辑</span></span><br><span class="line">     <span class="keyword">return</span> <span class="string">&quot;success&quot;</span>;</span><br><span class="line"> &#125;</span><br></pre></td></tr></table></figure>
-<p>现在可以看一下参数校验效果。我们故意给这个接口传递一个不符合校验规则的参数，先传递一个错误数据给接口，故意将 <code>password</code>  这个字段不满足校验条件：</p>
+
+<p>现在可以看一下参数校验效果。我们故意给这个接口传递一个不符合校验规则的参数，先传递一个错误数据给接口，故意将<code>password</code>这个字段不满足校验条件：</p>
 <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">    <span class="string">&quot;account&quot;</span>: <span class="string">&quot;12345678&quot;</span>,</span><br><span class="line">    <span class="string">&quot;email&quot;</span>: <span class="string">&quot;123@qq.com&quot;</span>,</span><br><span class="line">    <span class="string">&quot;id&quot;</span>: <span class="number">0</span>,</span><br><span class="line">    <span class="string">&quot;password&quot;</span>: <span class="string">&quot;123&quot;</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
 <p>再来看一下接口的响应数据：</p>
 <img data-src="/posts/f976ebe7/2022-02-19-14-08-48.png" class="">
-<p>这样是不是方便很多？不难看出使用 <code>Validator</code>  校验有如下几个好处：</p>
+
+<p>这样是不是方便很多？不难看出使用<code>Validator</code>校验有如下几个好处：</p>
 <ul>
-<li>
-<p>简化代码，之前业务层那么一大段校验代码都被省略掉了。</p>
+<li><p>简化代码，之前业务层那么一大段校验代码都被省略掉了。</p>
 </li>
-<li>
-<p>使用方便，那么多校验规则可以轻而易举的实现，比如邮箱格式验证，之前自己手写正则表达式要写那么一长串，还容易出错，用 <code>Validator</code>  直接一个注解搞定。（还有更多校验规则注解，可以自行去了解哦）</p>
+<li><p>使用方便，那么多校验规则可以轻而易举的实现，比如邮箱格式验证，之前自己手写正则表达式要写那么一长串，还容易出错，用<code>Validator</code>直接一个注解搞定。（还有更多校验规则注解，可以自行去了解哦）</p>
 </li>
-<li>
-<p>减少耦合度，使用 <code>Validator</code>  能够让业务层只关注业务逻辑，从基本的参数校验逻辑中脱离出来。</p>
+<li><p>减少耦合度，使用<code>Validator</code>能够让业务层只关注业务逻辑，从基本的参数校验逻辑中脱离出来。</p>
 </li>
 </ul>
-<p>使用 <code>Validator + BindingResult</code>  已经是非常方便实用的参数校验方式了，在实际开发中也有很多项目就是这么做的，不过这样还是不太方便，因为你每写一个接口都要添加一个 <code>BindingResult</code>  参数，然后再提取错误信息返回给前端。</p>
-<p>这样有点麻烦，并且重复代码很多（尽管可以将这个重复代码封装成方法）。我们能否去掉 <code>BindingResult</code>  这一步呢？当然是可以的！</p>
-<h2 id="validator-自动抛出异常"><a class="markdownIt-Anchor" href="#validator-自动抛出异常">#</a>  <code>Validator</code>  + 自动抛出异常</h2>
-<p>将 <code>BindingResult</code>  去掉：</p>
+<p>使用<code>Validator + BindingResult</code>已经是非常方便实用的参数校验方式了，在实际开发中也有很多项目就是这么做的，不过这样还是不太方便，因为你每写一个接口都要添加一个<code>BindingResult</code>参数，然后再提取错误信息返回给前端。</p>
+<p>这样有点麻烦，并且重复代码很多（尽管可以将这个重复代码封装成方法）。我们能否去掉<code>BindingResult</code>这一步呢？当然是可以的！</p>
+<h2 id="Validator-自动抛出异常"><a href="#Validator-自动抛出异常" class="headerlink" title="Validator + 自动抛出异常"></a><code>Validator</code> + 自动抛出异常</h2><p>将<code>BindingResult</code> 去掉：</p>
 <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">@PostMapping(&quot;/addUser&quot;)</span></span><br><span class="line"><span class="function"><span class="keyword">public</span> String <span class="title">addUser</span><span class="params">(<span class="meta">@RequestBody</span> <span class="meta">@Valid</span> User user)</span> </span>&#123;</span><br><span class="line">    <span class="keyword">return</span> <span class="string">&quot;sucess&quot;</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p>去掉之后会发生什么事情呢？直接来试验一下，还是按照之前一样故意传递一个不符合校验规则的参数给接口。此时我们观察控制台可以发现接口已经引发 <code>MethodArgumentNotValidException</code>  异常了：</p>
+<p>去掉之后会发生什么事情呢？直接来试验一下，还是按照之前一样故意传递一个不符合校验规则的参数给接口。此时我们观察控制台可以发现接口已经引发<code>MethodArgumentNotValidException</code>异常了：</p>
 <img data-src="/posts/f976ebe7/2022-02-19-14-09-00.png" class="">
-<p>其实这样就已经达到我们想要的效果了，参数校验不通过自然就不执行接下来的业务逻辑，去掉 <code>BindingResult</code>  后会自动引发异常，异常发生了自然而然就不会执行业务逻辑。也就是说，我们完全没必要添加相关 <code>BindingResult</code>  相关操作嘛。</p>
+
+<p>其实这样就已经达到我们想要的效果了，参数校验不通过自然就不执行接下来的业务逻辑，去掉<code>BindingResult</code>后会自动引发异常，异常发生了自然而然就不会执行业务逻辑。也就是说，我们完全没必要添加相关<code>BindingResult</code>相关操作嘛。</p>
 <p>不过事情还没有完，异常是引发了，可我们并没有编写返回错误信息的代码呀，那参数校验失败了会响应什么数据给前端呢？</p>
 <p>我们来看一下刚才异常发生后接口响应的数据：</p>
 <img data-src="/posts/f976ebe7/2022-02-19-14-09-15.png" class="">
+
+
 <p>没错，是直接将整个错误对象相关信息都响应给前端了！这样就很难受，不过解决这个问题也很简单，就是我们接下来要讲的全局异常处理！</p>
-<h2 id="五-全局异常处理"><a class="markdownIt-Anchor" href="#五-全局异常处理">#</a> 五、全局异常处理</h2>
-<p>参数校验失败会自动引发异常，我们当然不可能再去手动捕捉异常进行处理，不然还不如用之前 <code>BindingResult</code>  方式呢。又不想手动捕捉这个异常，又要对这个异常进行处理，那正好使用 <code>SpringBoot</code>  全局异常处理来达到一劳永逸的效果！</p>
-<h2 id="六-基本使用"><a class="markdownIt-Anchor" href="#六-基本使用">#</a> 六、基本使用</h2>
-<p>首先，我们需要新建一个类，在这个类上加上 <code>@ControllerAdvice</code>  或 <code>@RestControllerAdvice</code>  注解，这个类就配置成全局处理类了。（这个根据你的 <code>Controller</code>  层用的是 <code>@Controller</code>  还是 <code>@RestController</code>  来决定）</p>
-<p>然后在类中新建方法，在方法上加上 <code>@ExceptionHandler</code>  注解并指定你想处理的异常类型，接着在方法内编写对该异常的操作逻辑，就完成了对该异常的全局处理！</p>
-<p>我们现在就来演示一下对参数校验失败抛出的 <code>MethodArgumentNotValidException</code>  全局处理：</p>
+<h2 id="五、全局异常处理"><a href="#五、全局异常处理" class="headerlink" title="五、全局异常处理"></a>五、全局异常处理</h2><p>参数校验失败会自动引发异常，我们当然不可能再去手动捕捉异常进行处理，不然还不如用之前<code>BindingResult</code>方式呢。又不想手动捕捉这个异常，又要对这个异常进行处理，那正好使用<code>SpringBoot</code>全局异常处理来达到一劳永逸的效果！</p>
+<h2 id="六、基本使用"><a href="#六、基本使用" class="headerlink" title="六、基本使用"></a>六、基本使用</h2><p>首先，我们需要新建一个类，在这个类上加上<code>@ControllerAdvice</code>或<code>@RestControllerAdvice</code>注解，这个类就配置成全局处理类了。（这个根据你的<code>Controller</code>层用的是<code>@Controller</code>还是<code>@RestController</code>来决定）</p>
+<p>然后在类中新建方法，在方法上加上<code>@ExceptionHandler</code>注解并指定你想处理的异常类型，接着在方法内编写对该异常的操作逻辑，就完成了对该异常的全局处理！</p>
+<p>我们现在就来演示一下对参数校验失败抛出的<code>MethodArgumentNotValidException</code>全局处理：</p>
 <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">@RestControllerAdvice</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">ExceptionControllerAdvice</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">    <span class="meta">@ExceptionHandler(MethodArgumentNotValidException.class)</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> String <span class="title">MethodArgumentNotValidExceptionHandler</span><span class="params">(MethodArgumentNotValidException e)</span> </span>&#123;</span><br><span class="line">        <span class="comment">// 从异常对象中拿到ObjectError对象</span></span><br><span class="line">        ObjectError objectError = e.getBindingResult().getAllErrors().get(<span class="number">0</span>);</span><br><span class="line">        <span class="comment">// 然后提取错误提示信息进行返回</span></span><br><span class="line">        <span class="keyword">return</span> objectError.getDefaultMessage();</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <p>我们再来看下这次校验失败后的响应数据：</p>
 <img data-src="/posts/f976ebe7/2022-02-19-14-09-28.png" class="">
-<p>没错，这次返回的就是我们制定的错误提示信息！我们通过全局异常处理优雅的实现了我们想要的功能！以后我们再想写接口参数校验，就只需要在入参的成员变量上加上 <code>Validator</code>  校验规则注解，然后在参数上加上 <code>@Valid</code>  注解即可完成校验，校验失败会自动返回错误提示信息，无需任何其他代码！更多的校验思路： <code>SpringBoot</code>  实现通用的接口参数校验</p>
-<h2 id="七-自定义异常"><a class="markdownIt-Anchor" href="#七-自定义异常">#</a> 七、自定义异常</h2>
-<p>全局处理当然不会只能处理一种异常，用途也不仅仅是对一个参数校验方式进行优化。在实际开发中，如何对异常处理其实是一个很麻烦的事情。传统处理异常一般有以下烦恼：</p>
+
+
+<p>没错，这次返回的就是我们制定的错误提示信息！我们通过全局异常处理优雅的实现了我们想要的功能！以后我们再想写接口参数校验，就只需要在入参的成员变量上加上<code>Validator</code>校验规则注解，然后在参数上加上<code>@Valid</code>注解即可完成校验，校验失败会自动返回错误提示信息，无需任何其他代码！更多的校验思路：<code>SpringBoot</code>实现通用的接口参数校验</p>
+<h2 id="七、自定义异常"><a href="#七、自定义异常" class="headerlink" title="七、自定义异常"></a>七、自定义异常</h2><p>全局处理当然不会只能处理一种异常，用途也不仅仅是对一个参数校验方式进行优化。在实际开发中，如何对异常处理其实是一个很麻烦的事情。传统处理异常一般有以下烦恼：</p>
 <ul>
-<li>
-<p>是捕获异常 <code>(try…catch)</code>  还是抛出异常 <code>(throws)</code></p>
+<li><p>是捕获异常<code>(try…catch)</code>还是抛出异常<code>(throws)</code></p>
 </li>
-<li>
-<p>是在 <code>controller</code>  层做处理还是在 <code>service</code>  层处理又或是在 <code>dao</code>  层做处理</p>
+<li><p>是在<code>controller</code>层做处理还是在<code>service</code>层处理又或是在<code>dao</code>层做处理</p>
 </li>
-<li>
-<p>处理异常的方式是啥也不做，还是返回特定数据，如果返回又返回什么数据</p>
+<li><p>处理异常的方式是啥也不做，还是返回特定数据，如果返回又返回什么数据</p>
 </li>
-<li>
-<p>不是所有异常我们都能预先进行捕捉，如果发生了没有捕捉到的异常该怎么办？</p>
+<li><p>不是所有异常我们都能预先进行捕捉，如果发生了没有捕捉到的异常该怎么办？</p>
 </li>
 </ul>
 <p>以上这些问题都可以用全局异常处理来解决，全局异常处理也叫统一异常处理，全局和统一处理代表什么？代表规范！规范有了，很多问题就会迎刃而解！</p>
 <p>全局异常处理的基本使用方式大家都已经知道了，我们接下来更进一步的规范项目中的异常处理方式：自定义异常。</p>
-<p>在很多情况下，我们需要手动抛出异常，比如在业务层当有些条件并不符合业务逻辑，我这时候就可以手动抛出异常从而触发事务回滚。那手动抛出异常最简单的方式就是 <code>throw new RuntimeException(&quot;异常信息&quot;)</code>  了，不过使用自定义会更好一些：</p>
+<p>在很多情况下，我们需要手动抛出异常，比如在业务层当有些条件并不符合业务逻辑，我这时候就可以手动抛出异常从而触发事务回滚。那手动抛出异常最简单的方式就是<code>throw new RuntimeException(&quot;异常信息&quot;)</code>了，不过使用自定义会更好一些：</p>
 <ul>
-<li>
-<p>自定义异常可以携带更多的信息，不像这样只能携带一个字符串。</p>
+<li><p>自定义异常可以携带更多的信息，不像这样只能携带一个字符串。</p>
 </li>
-<li>
-<p>项目开发中经常是很多人负责不同的模块，使用自定义异常可以统一了对外异常展示的方式。</p>
+<li><p>项目开发中经常是很多人负责不同的模块，使用自定义异常可以统一了对外异常展示的方式。</p>
 </li>
-<li>
-<p>自定义异常语义更加清晰明了，一看就知道是项目中手动抛出的异常。</p>
+<li><p>自定义异常语义更加清晰明了，一看就知道是项目中手动抛出的异常。</p>
 </li>
 </ul>
 <p>我们现在就来开始写一个自定义异常：</p>
 <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">@Getter</span> <span class="comment">//只要getter方法，无需setter</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">APIException</span> <span class="keyword">extends</span> <span class="title">RuntimeException</span> </span>&#123;</span><br><span class="line">    <span class="keyword">private</span> <span class="keyword">int</span> code;</span><br><span class="line">    <span class="keyword">private</span> String msg;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="title">APIException</span><span class="params">()</span> </span>&#123;</span><br><span class="line">        <span class="keyword">this</span>(<span class="number">1001</span>, <span class="string">&quot;接口错误&quot;</span>);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="title">APIException</span><span class="params">(String msg)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">this</span>(<span class="number">1001</span>, msg);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="title">APIException</span><span class="params">(<span class="keyword">int</span> code, String msg)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">super</span>(msg);</span><br><span class="line">        <span class="keyword">this</span>.code = code;</span><br><span class="line">        <span class="keyword">this</span>.msg = msg;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
 <p>在刚才的全局异常处理类中记得添加对我们自定义异常的处理：</p>
 <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">@ExceptionHandler(APIException.class)</span></span><br><span class="line"><span class="function"><span class="keyword">public</span> String <span class="title">APIExceptionHandler</span><span class="params">(APIException e)</span> </span>&#123;</span><br><span class="line">    <span class="keyword">return</span> e.getMsg();</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p>这样就对异常的处理就比较规范了，当然还可以添加对 <code>Exception</code>  的处理，这样无论发生什么异常我们都能屏蔽掉然后响应数据给前端，不过建议最后项目上线时这样做，能够屏蔽掉错误信息暴露给前端，在开发中为了方便调试还是不要这样做。</p>
-<p>现在全局异常处理和自定义异常已经弄好了，不知道大家有没有发现一个问题，就是当我们抛出自定义异常的时候全局异常处理只响应了异常中的错误信息 <code>msg</code>  给前端，并没有将错误代码 <code>code</code>  返回。这就要引申出我们接下来要讲的东西了：数据统一响应</p>
-<h2 id="八-数据统一响应"><a class="markdownIt-Anchor" href="#八-数据统一响应">#</a> 八、数据统一响应</h2>
-<p>现在我们规范好了参数校验方式和异常处理方式，然而还没有规范响应数据！比如我要获取一个分页信息数据，获取成功了呢自然就返回的数据列表，获取失败了后台就会响应异常信息，即一个字符串，就是说前端开发者压根就不知道后端响应过来的数据会是啥样的！所以，统一响应数据是前后端规范中必须要做的！</p>
-<h2 id="九-自定义统一响应"><a class="markdownIt-Anchor" href="#九-自定义统一响应">#</a> 九、自定义统一响应</h2>
-<p>统一数据响应第一步肯定要做的就是我们自己自定义一个响应体类，无论后台是运行正常还是发生异常，响应给前端的数据格式是不变的！那么如何定义响应体呢？关于异常的设计：如何更优雅的设计异常</p>
-<p>可以参考我们自定义异常类，也来一个响应信息代码 <code>code</code>  和响应信息说明 <code>msg</code> ：</p>
+
+<p>这样就对异常的处理就比较规范了，当然还可以添加对<code>Exception</code>的处理，这样无论发生什么异常我们都能屏蔽掉然后响应数据给前端，不过建议最后项目上线时这样做，能够屏蔽掉错误信息暴露给前端，在开发中为了方便调试还是不要这样做。</p>
+<p>现在全局异常处理和自定义异常已经弄好了，不知道大家有没有发现一个问题，就是当我们抛出自定义异常的时候全局异常处理只响应了异常中的错误信息<code>msg</code>给前端，并没有将错误代码<code>code</code>返回。这就要引申出我们接下来要讲的东西了：数据统一响应</p>
+<h2 id="八、数据统一响应"><a href="#八、数据统一响应" class="headerlink" title="八、数据统一响应"></a>八、数据统一响应</h2><p>现在我们规范好了参数校验方式和异常处理方式，然而还没有规范响应数据！比如我要获取一个分页信息数据，获取成功了呢自然就返回的数据列表，获取失败了后台就会响应异常信息，即一个字符串，就是说前端开发者压根就不知道后端响应过来的数据会是啥样的！所以，统一响应数据是前后端规范中必须要做的！</p>
+<h2 id="九、自定义统一响应"><a href="#九、自定义统一响应" class="headerlink" title="九、自定义统一响应"></a>九、自定义统一响应</h2><p>统一数据响应第一步肯定要做的就是我们自己自定义一个响应体类，无论后台是运行正常还是发生异常，响应给前端的数据格式是不变的！那么如何定义响应体呢？关于异常的设计：如何更优雅的设计异常</p>
+<p>可以参考我们自定义异常类，也来一个响应信息代码<code>code</code>和响应信息说明<code>msg</code>：</p>
 <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">@Getter</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">ResultVO</span>&lt;<span class="title">T</span>&gt; </span>&#123;</span><br><span class="line">    <span class="comment">/**</span></span><br><span class="line"><span class="comment">     * 状态码，比如1000代表响应成功</span></span><br><span class="line"><span class="comment">     */</span></span><br><span class="line">    <span class="keyword">private</span> <span class="keyword">int</span> code;</span><br><span class="line">    <span class="comment">/**</span></span><br><span class="line"><span class="comment">     * 响应信息，用来说明响应情况</span></span><br><span class="line"><span class="comment">     */</span></span><br><span class="line">    <span class="keyword">private</span> String msg;</span><br><span class="line">    <span class="comment">/**</span></span><br><span class="line"><span class="comment">     * 响应的具体数据</span></span><br><span class="line"><span class="comment">     */</span></span><br><span class="line">    <span class="keyword">private</span> T data;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="title">ResultVO</span><span class="params">(T data)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">this</span>(<span class="number">1000</span>, <span class="string">&quot;success&quot;</span>, data);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="title">ResultVO</span><span class="params">(<span class="keyword">int</span> code, String msg, T data)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">this</span>.code = code;</span><br><span class="line">        <span class="keyword">this</span>.msg = msg;</span><br><span class="line">        <span class="keyword">this</span>.data = data;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <p>然后我们修改一下全局异常处理那的返回值：</p>
 <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">@ExceptionHandler(APIException.class)</span></span><br><span class="line"><span class="function"><span class="keyword">public</span> ResultVO&lt;String&gt; <span class="title">APIExceptionHandler</span><span class="params">(APIException e)</span> </span>&#123;</span><br><span class="line">    <span class="comment">// 注意哦，这里返回类型是自定义响应体</span></span><br><span class="line">    <span class="keyword">return</span> <span class="keyword">new</span> ResultVO&lt;&gt;(e.getCode(), <span class="string">&quot;响应失败&quot;</span>, e.getMsg());</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="meta">@ExceptionHandler(MethodArgumentNotValidException.class)</span></span><br><span class="line"><span class="function"><span class="keyword">public</span> ResultVO&lt;String&gt; <span class="title">MethodArgumentNotValidExceptionHandler</span><span class="params">(MethodArgumentNotValidException e)</span> </span>&#123;</span><br><span class="line">    ObjectError objectError = e.getBindingResult().getAllErrors().get(<span class="number">0</span>);</span><br><span class="line">    <span class="comment">// 注意哦，这里返回类型是自定义响应体</span></span><br><span class="line">    <span class="keyword">return</span> <span class="keyword">new</span> ResultVO&lt;&gt;(<span class="number">1001</span>, <span class="string">&quot;参数校验失败&quot;</span>, objectError.getDefaultMessage());</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <p>我们再来看一下此时如果发生异常了会响应什么数据给前端：</p>
 <p>OK，这个异常信息响应就非常好了，状态码和响应说明还有错误提示数据都返给了前端，并且是所有异常都会返回相同的格式！异常这里搞定了，别忘了我们到接口那也要修改返回类型，我们新增一个接口好来看看效果：</p>
 <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">@GetMapping(&quot;/getUser&quot;)</span></span><br><span class="line"><span class="function"><span class="keyword">public</span> ResultVO&lt;User&gt; <span class="title">getUser</span><span class="params">()</span> </span>&#123;</span><br><span class="line">    User user = <span class="keyword">new</span> User();</span><br><span class="line">    user.setId(<span class="number">1L</span>);</span><br><span class="line">    user.setAccount(<span class="string">&quot;12345678&quot;</span>);</span><br><span class="line">    user.setPassword(<span class="string">&quot;12345678&quot;</span>);</span><br><span class="line">    user.setEmail(<span class="string">&quot;123@qq.com&quot;</span>);</span><br><span class="line"></span><br><span class="line">    <span class="keyword">return</span> <span class="keyword">new</span> ResultVO&lt;&gt;(user);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
 <p>看一下如果响应正确返回的是什么效果：</p>
 <img data-src="/posts/f976ebe7/2022-02-19-14-09-48.png" class="">
+
 <p>这样无论是正确响应还是发生异常，响应数据的格式都是统一的，十分规范！</p>
-<p>数据格式是规范了，不过响应码 <code>code</code>  和响应信息 <code>msg</code>  还没有规范呀！大家发现没有，无论是正确响应，还是异常响应，响应码和响应信息是想怎么设置就怎么设置，要是 <code>10</code>  个开发人员对同一个类型的响应写 <code>10</code>  个不同的响应码，那这个统一响应体的格式规范就毫无意义！所以，必须要将响应码和响应信息给规范起来。</p>
-<h2 id="十-响应码枚举"><a class="markdownIt-Anchor" href="#十-响应码枚举">#</a> 十、响应码枚举</h2>
-<p>要规范响应体中的响应码和响应信息用枚举简直再恰当不过了，我们现在就来创建一个响应码枚举类：</p>
+<p>数据格式是规范了，不过响应码<code>code</code>和响应信息<code>msg</code>还没有规范呀！大家发现没有，无论是正确响应，还是异常响应，响应码和响应信息是想怎么设置就怎么设置，要是<code>10</code>个开发人员对同一个类型的响应写<code>10</code>个不同的响应码，那这个统一响应体的格式规范就毫无意义！所以，必须要将响应码和响应信息给规范起来。</p>
+<h2 id="十、响应码枚举"><a href="#十、响应码枚举" class="headerlink" title="十、响应码枚举"></a>十、响应码枚举</h2><p>要规范响应体中的响应码和响应信息用枚举简直再恰当不过了，我们现在就来创建一个响应码枚举类：</p>
 <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">@Getter</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">enum</span> <span class="title">ResultCode</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">    SUCCESS(<span class="number">1000</span>, <span class="string">&quot;操作成功&quot;</span>),</span><br><span class="line"></span><br><span class="line">    FAILED(<span class="number">1001</span>, <span class="string">&quot;响应失败&quot;</span>),</span><br><span class="line"></span><br><span class="line">    VALIDATE_FAILED(<span class="number">1002</span>, <span class="string">&quot;参数校验失败&quot;</span>),</span><br><span class="line"></span><br><span class="line">    ERROR(<span class="number">5000</span>, <span class="string">&quot;未知错误&quot;</span>);</span><br><span class="line"></span><br><span class="line">    <span class="keyword">private</span> <span class="keyword">int</span> code;</span><br><span class="line">    <span class="keyword">private</span> String msg;</span><br><span class="line"></span><br><span class="line">    ResultCode(<span class="keyword">int</span> code, String msg) &#123;</span><br><span class="line">        <span class="keyword">this</span>.code = code;</span><br><span class="line">        <span class="keyword">this</span>.msg = msg;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <p>然后修改响应体的构造方法，让其只准接受响应码枚举来设置响应码和响应信息：</p>
 <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">public</span> <span class="title">ResultVO</span><span class="params">(T data)</span> </span>&#123;</span><br><span class="line">    <span class="keyword">this</span>(ResultCode.SUCCESS, data);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">public</span> <span class="title">ResultVO</span><span class="params">(ResultCode resultCode, T data)</span> </span>&#123;</span><br><span class="line">    <span class="keyword">this</span>.code = resultCode.getCode();</span><br><span class="line">    <span class="keyword">this</span>.msg = resultCode.getMsg();</span><br><span class="line">    <span class="keyword">this</span>.data = data;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <p>然后同时修改全局异常处理的响应码设置方式：</p>
 <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">@ExceptionHandler(APIException.class)</span></span><br><span class="line"><span class="function"><span class="keyword">public</span> ResultVO&lt;String&gt; <span class="title">APIExceptionHandler</span><span class="params">(APIException e)</span> </span>&#123;</span><br><span class="line">    <span class="comment">// 注意哦，这里传递的响应码枚举</span></span><br><span class="line">    <span class="keyword">return</span> <span class="keyword">new</span> ResultVO&lt;&gt;(ResultCode.FAILED, e.getMsg());</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="meta">@ExceptionHandler(MethodArgumentNotValidException.class)</span></span><br><span class="line"><span class="function"><span class="keyword">public</span> ResultVO&lt;String&gt; <span class="title">MethodArgumentNotValidExceptionHandler</span><span class="params">(MethodArgumentNotValidException e)</span> </span>&#123;</span><br><span class="line">    ObjectError objectError = e.getBindingResult().getAllErrors().get(<span class="number">0</span>);</span><br><span class="line">    <span class="comment">// 注意哦，这里传递的响应码枚举</span></span><br><span class="line">    <span class="keyword">return</span> <span class="keyword">new</span> ResultVO&lt;&gt;(ResultCode.VALIDATE_FAILED, objectError.getDefaultMessage());</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p>这样响应码和响应信息只能是枚举规定的那几个，就真正做到了响应数据格式、响应码和响应信息规范化、统一化！这些可以参考： <code>Java</code>  项目构建基础：统一结果，统一异常，统一日志</p>
-<h2 id="十一-全局处理响应数据"><a class="markdownIt-Anchor" href="#十一-全局处理响应数据">#</a> 十一、全局处理响应数据</h2>
-<p>接口返回统一响应体 + 异常也返回统一响应体，其实这样已经很好了，但还是有可以优化的地方。要知道一个项目下来定义的接口搞个几百个太正常不过了，要是每一个接口返回数据时都要用响应体来包装一下好像有点麻烦，有没有办法省去这个包装过程呢？当然是有滴，还是要用到全局处理。</p>
-<p>首先，先创建一个类加上注解使其成为全局处理类。然后继承 <code>ResponseBodyAdvice</code>  接口重写其中的方法，即可对我们的 <code>controller</code>  进行增强操作，具体看代码和注释：</p>
+<p>这样响应码和响应信息只能是枚举规定的那几个，就真正做到了响应数据格式、响应码和响应信息规范化、统一化！这些可以参考：<code>Java</code>项目构建基础：统一结果，统一异常，统一日志</p>
+<h2 id="十一、全局处理响应数据"><a href="#十一、全局处理响应数据" class="headerlink" title="十一、全局处理响应数据"></a>十一、全局处理响应数据</h2><p>接口返回统一响应体 + 异常也返回统一响应体，其实这样已经很好了，但还是有可以优化的地方。要知道一个项目下来定义的接口搞个几百个太正常不过了，要是每一个接口返回数据时都要用响应体来包装一下好像有点麻烦，有没有办法省去这个包装过程呢？当然是有滴，还是要用到全局处理。</p>
+<p>首先，先创建一个类加上注解使其成为全局处理类。然后继承<code>ResponseBodyAdvice</code>接口重写其中的方法，即可对我们的<code>controller</code>进行增强操作，具体看代码和注释：</p>
 <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">@RestControllerAdvice(basePackages = &#123;&quot;com.cy.controller&quot;&#125;)</span> <span class="comment">// 注意哦，这里要加上需要扫描的包</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">ResponseControllerAdvice</span> <span class="keyword">implements</span> <span class="title">ResponseBodyAdvice</span>&lt;<span class="title">Object</span>&gt; </span>&#123;</span><br><span class="line">    <span class="comment">// supports方法是来给定条件判断是否该调用beforeBodyWrite，MethodParameter里面有各种数据，false就不调用</span></span><br><span class="line">    <span class="meta">@Override</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">boolean</span> <span class="title">supports</span><span class="params">(MethodParameter returnType, Class&lt;? extends HttpMessageConverter&lt;?&gt;&gt; aClass)</span> </span>&#123;</span><br><span class="line">        <span class="comment">// 如果接口返回的类型本身就是ResultVO那就没有必要进行额外的操作，返回false</span></span><br><span class="line">        <span class="keyword">return</span> !returnType.getGenericParameterType().equals(ResultVO.class);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="comment">/**</span></span><br><span class="line"><span class="comment">     * 响应结果拦截根据业务去封装返回体</span></span><br><span class="line"><span class="comment">     **/</span></span><br><span class="line">    <span class="meta">@Override</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> Object <span class="title">beforeBodyWrite</span><span class="params">(Object data, MethodParameter returnType, MediaType mediaType, Class&lt;? extends HttpMessageConverter&lt;?&gt;&gt; aClass, ServerHttpRequest request, ServerHttpResponse response)</span> </span>&#123;</span><br><span class="line">        <span class="comment">// String类型不能直接包装，所以要进行些特别的处理</span></span><br><span class="line">        <span class="keyword">if</span> (returnType.getGenericParameterType().equals(String.class)) &#123;</span><br><span class="line">            ObjectMapper objectMapper = <span class="keyword">new</span> ObjectMapper();</span><br><span class="line">            <span class="keyword">try</span> &#123;</span><br><span class="line">                <span class="comment">// 将数据包装在ResultVO里后，再转换为json字符串响应给前端</span></span><br><span class="line">                <span class="keyword">return</span> objectMapper.writeValueAsString(<span class="keyword">new</span> ResultVO&lt;&gt;(data));</span><br><span class="line">            &#125; <span class="keyword">catch</span> (JsonProcessingException e) &#123;</span><br><span class="line">                <span class="keyword">throw</span> <span class="keyword">new</span> APIException(<span class="string">&quot;返回String类型错误&quot;</span>);</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="comment">// 将原本的数据包装在ResultVO里</span></span><br><span class="line">        <span class="keyword">return</span> <span class="keyword">new</span> ResultVO&lt;&gt;(data);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p>重写的这两个方法是用来在 <code>controller</code>  将数据进行返回前进行增强操作， <code>supports</code>  方法要返回为 <code>true</code>  才会执行 <code>beforeBodyWrite</code>  方法，所以如果有些情况不需要进行增强操作可以在 <code>supports</code>  方法里进行判断。对返回数据进行真正的操作还是在 <code>beforeBodyWrite</code>  方法中，我们可以直接在该方法里包装数据，这样就不需要每个接口都进行数据包装了，省去了很多麻烦。</p>
+<p>重写的这两个方法是用来在<code>controller</code>将数据进行返回前进行增强操作，<code>supports</code>方法要返回为<code>true</code>才会执行<code>beforeBodyWrite</code>方法，所以如果有些情况不需要进行增强操作可以在<code>supports</code>方法里进行判断。对返回数据进行真正的操作还是在<code>beforeBodyWrite</code>方法中，我们可以直接在该方法里包装数据，这样就不需要每个接口都进行数据包装了，省去了很多麻烦。</p>
 <p>我们可以现在去掉接口的数据包装来看下效果：</p>
 <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">@GetMapping(&quot;/getUser&quot;)</span></span><br><span class="line"><span class="function"><span class="keyword">public</span> User <span class="title">getUser</span><span class="params">()</span> </span>&#123;</span><br><span class="line">    User user = <span class="keyword">new</span> User();</span><br><span class="line">    user.setId(<span class="number">1L</span>);</span><br><span class="line">    user.setAccount(<span class="string">&quot;12345678&quot;</span>);</span><br><span class="line">    user.setPassword(<span class="string">&quot;12345678&quot;</span>);</span><br><span class="line">    user.setEmail(<span class="string">&quot;123@qq.com&quot;</span>);</span><br><span class="line">    <span class="comment">// 注意哦，这里是直接返回的User类型，并没有用ResultVO进行包装</span></span><br><span class="line">    <span class="keyword">return</span> user;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <p>然后我们来看下响应数据：</p>
 <img data-src="/posts/f976ebe7/2022-02-19-14-10-03.png" class="">
+
 <p>成功对数据进行了包装！</p>
 <blockquote>
-<p>注意： <code>beforeBodyWrite</code>  方法里包装数据无法对 <code>String</code>  类型的数据直接进行强转，所以要进行特殊处理，这里不讲过多的细节，有兴趣可以自行深入了解。</p>
+<p>注意：<code>beforeBodyWrite</code>方法里包装数据无法对<code>String</code>类型的数据直接进行强转，所以要进行特殊处理，这里不讲过多的细节，有兴趣可以自行深入了解。</p>
 </blockquote>
-<h2 id="十二-总结"><a class="markdownIt-Anchor" href="#十二-总结">#</a> 十二、总结</h2>
-<p>自此整个后端接口基本体系就构建完毕了</p>
+<h2 id="十二、总结"><a href="#十二、总结" class="headerlink" title="十二、总结"></a>十二、总结</h2><p>自此整个后端接口基本体系就构建完毕了</p>
 <ul>
-<li>
-<p>通过 <code>Validator</code>  + 自动抛出异常来完成了方便的参数校验</p>
+<li><p>通过<code>Validator</code> + 自动抛出异常来完成了方便的参数校验</p>
 </li>
-<li>
-<p>通过全局异常处理 + 自定义异常完成了异常操作的规范</p>
+<li><p>通过全局异常处理 + 自定义异常完成了异常操作的规范</p>
 </li>
-<li>
-<p>通过数据统一响应完成了响应数据的规范</p>
+<li><p>通过数据统一响应完成了响应数据的规范</p>
 </li>
-<li>
-<p>多个方面组装非常优雅的完成了后端接口的协调，让开发人员有更多的经历注重业务逻辑代码，轻松构建后端接口</p>
+<li><p>多个方面组装非常优雅的完成了后端接口的协调，让开发人员有更多的经历注重业务逻辑代码，轻松构建后端接口</p>
 </li>
 </ul>
 
@@ -474,7 +458,7 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
     <div class="item left">
       
 
-  <a href="/posts/a80d0031/" itemprop="url" rel="prev" data-background-image="https:&#x2F;&#x2F;tva1.sinaimg.cn&#x2F;mw690&#x2F;6833939bly1gipeubcbajj20zk0m8h1h.jpg" title="动态规划">
+  <a href="/posts/a80d0031/" itemprop="url" rel="prev" data-background-image="https:&#x2F;&#x2F;tva2.sinaimg.cn&#x2F;mw690&#x2F;6833939bly1gipewkhf1zj20zk0m81kx.jpg" title="动态规划">
   <span class="type">Previous Post</span>
   <span class="category"><i class="ic i-flag"></i> 动态规划</span>
   <h3>动态规划</h3>
@@ -484,7 +468,7 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
     <div class="item right">
       
 
-  <a href="/posts/2f57a694/" itemprop="url" rel="next" data-background-image="https:&#x2F;&#x2F;tva1.sinaimg.cn&#x2F;mw690&#x2F;6833939bly1giph4lm9i7j20zk0m84qp.jpg" title="正则表达式">
+  <a href="/posts/2f57a694/" itemprop="url" rel="next" data-background-image="https:&#x2F;&#x2F;tva2.sinaimg.cn&#x2F;mw690&#x2F;6833939bly1giclil3m4ej20zk0m8tn8.jpg" title="正则表达式">
   <span class="type">Next Post</span>
   <span class="category"><i class="ic i-flag"></i> 正则表达式</span>
   <h3>正则表达式</h3>
@@ -506,7 +490,7 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
   <div class="panels">
     <div class="inner">
       <div class="contents panel pjax" data-title="Contents">
-          <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E7%94%A8springboot%E6%89%8B%E6%8A%8A%E6%89%8B%E6%95%99%E4%BD%A0%E5%86%99%E5%87%BA%E4%BC%98%E9%9B%85%E7%9A%84%E5%90%8E%E7%AB%AF%E6%8E%A5%E5%8F%A3"><span class="toc-number">1.</span> <span class="toc-text"> 用 SpringBoot  手把手教你写出优雅的后端接口</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%B8%80-%E5%8F%82%E6%95%B0%E6%A0%A1%E9%AA%8C"><span class="toc-number">1.1.</span> <span class="toc-text"> 一、参数校验</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BA%8C-%E4%B8%9A%E5%8A%A1%E5%B1%82%E6%A0%A1%E9%AA%8C"><span class="toc-number">1.2.</span> <span class="toc-text"> 二、业务层校验</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%B8%89-validator-bindresult%E8%BF%9B%E8%A1%8C%E6%A0%A1%E9%AA%8C"><span class="toc-number">1.3.</span> <span class="toc-text"> 三、 Validator  +  BindResult  进行校验</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#validator-%E8%87%AA%E5%8A%A8%E6%8A%9B%E5%87%BA%E5%BC%82%E5%B8%B8"><span class="toc-number">1.4.</span> <span class="toc-text">  Validator  + 自动抛出异常</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BA%94-%E5%85%A8%E5%B1%80%E5%BC%82%E5%B8%B8%E5%A4%84%E7%90%86"><span class="toc-number">1.5.</span> <span class="toc-text"> 五、全局异常处理</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%85%AD-%E5%9F%BA%E6%9C%AC%E4%BD%BF%E7%94%A8"><span class="toc-number">1.6.</span> <span class="toc-text"> 六、基本使用</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%B8%83-%E8%87%AA%E5%AE%9A%E4%B9%89%E5%BC%82%E5%B8%B8"><span class="toc-number">1.7.</span> <span class="toc-text"> 七、自定义异常</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%85%AB-%E6%95%B0%E6%8D%AE%E7%BB%9F%E4%B8%80%E5%93%8D%E5%BA%94"><span class="toc-number">1.8.</span> <span class="toc-text"> 八、数据统一响应</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%B9%9D-%E8%87%AA%E5%AE%9A%E4%B9%89%E7%BB%9F%E4%B8%80%E5%93%8D%E5%BA%94"><span class="toc-number">1.9.</span> <span class="toc-text"> 九、自定义统一响应</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%8D%81-%E5%93%8D%E5%BA%94%E7%A0%81%E6%9E%9A%E4%B8%BE"><span class="toc-number">1.10.</span> <span class="toc-text"> 十、响应码枚举</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%8D%81%E4%B8%80-%E5%85%A8%E5%B1%80%E5%A4%84%E7%90%86%E5%93%8D%E5%BA%94%E6%95%B0%E6%8D%AE"><span class="toc-number">1.11.</span> <span class="toc-text"> 十一、全局处理响应数据</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%8D%81%E4%BA%8C-%E6%80%BB%E7%BB%93"><span class="toc-number">1.12.</span> <span class="toc-text"> 十二、总结</span></a></li></ol></li></ol>
+          <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E7%94%A8SpringBoot%E6%89%8B%E6%8A%8A%E6%89%8B%E6%95%99%E4%BD%A0%E5%86%99%E5%87%BA%E4%BC%98%E9%9B%85%E7%9A%84%E5%90%8E%E7%AB%AF%E6%8E%A5%E5%8F%A3"><span class="toc-number">1.</span> <span class="toc-text">用SpringBoot手把手教你写出优雅的后端接口</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%B8%80%E3%80%81%E5%8F%82%E6%95%B0%E6%A0%A1%E9%AA%8C"><span class="toc-number">1.1.</span> <span class="toc-text">一、参数校验</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BA%8C%E3%80%81%E4%B8%9A%E5%8A%A1%E5%B1%82%E6%A0%A1%E9%AA%8C"><span class="toc-number">1.2.</span> <span class="toc-text">二、业务层校验</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%B8%89%E3%80%81Validator-BindResult%E8%BF%9B%E8%A1%8C%E6%A0%A1%E9%AA%8C"><span class="toc-number">1.3.</span> <span class="toc-text">三、Validator + BindResult进行校验</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Validator-%E8%87%AA%E5%8A%A8%E6%8A%9B%E5%87%BA%E5%BC%82%E5%B8%B8"><span class="toc-number">1.4.</span> <span class="toc-text">Validator + 自动抛出异常</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BA%94%E3%80%81%E5%85%A8%E5%B1%80%E5%BC%82%E5%B8%B8%E5%A4%84%E7%90%86"><span class="toc-number">1.5.</span> <span class="toc-text">五、全局异常处理</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%85%AD%E3%80%81%E5%9F%BA%E6%9C%AC%E4%BD%BF%E7%94%A8"><span class="toc-number">1.6.</span> <span class="toc-text">六、基本使用</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%B8%83%E3%80%81%E8%87%AA%E5%AE%9A%E4%B9%89%E5%BC%82%E5%B8%B8"><span class="toc-number">1.7.</span> <span class="toc-text">七、自定义异常</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%85%AB%E3%80%81%E6%95%B0%E6%8D%AE%E7%BB%9F%E4%B8%80%E5%93%8D%E5%BA%94"><span class="toc-number">1.8.</span> <span class="toc-text">八、数据统一响应</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%B9%9D%E3%80%81%E8%87%AA%E5%AE%9A%E4%B9%89%E7%BB%9F%E4%B8%80%E5%93%8D%E5%BA%94"><span class="toc-number">1.9.</span> <span class="toc-text">九、自定义统一响应</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%8D%81%E3%80%81%E5%93%8D%E5%BA%94%E7%A0%81%E6%9E%9A%E4%B8%BE"><span class="toc-number">1.10.</span> <span class="toc-text">十、响应码枚举</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%8D%81%E4%B8%80%E3%80%81%E5%85%A8%E5%B1%80%E5%A4%84%E7%90%86%E5%93%8D%E5%BA%94%E6%95%B0%E6%8D%AE"><span class="toc-number">1.11.</span> <span class="toc-text">十一、全局处理响应数据</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%8D%81%E4%BA%8C%E3%80%81%E6%80%BB%E7%BB%93"><span class="toc-number">1.12.</span> <span class="toc-text">十二、总结</span></a></li></ol></li></ol>
       </div>
       <div class="related panel pjax" data-title="Related">
         <ul>
@@ -617,7 +601,7 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
 <div class="breadcrumb">
 </div>
 
-    <span><a href="/posts/a72f470b/" title="关于JVM常用参数">关于JVM常用参数</a></span>
+    <span><a href="/posts/8da68a98/" title="Java运行调用Shell脚本">Java运行调用Shell脚本</a></span>
   </li>
 
       
@@ -626,27 +610,17 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
 <div class="breadcrumb">
 </div>
 
-    <span><a href="/posts/bf4d20ae/" title="写在最前面">写在最前面</a></span>
+    <span><a href="/posts/823298d2/" title="VsCode 如何Debug Shell">VsCode 如何Debug Shell</a></span>
   </li>
 
       
   <li class="item">
     
 <div class="breadcrumb">
-<a href="/categories/Hexo/" title="In Hexo">Hexo</a>
+<a href="/categories/SAP/" title="In SAP">SAP</a>
 </div>
 
-    <span><a href="/posts/575a6046/" title="Hexo-Next主题如何文章置顶">Hexo-Next主题如何文章置顶</a></span>
-  </li>
-
-      
-  <li class="item">
-    
-<div class="breadcrumb">
-<a href="/categories/IDEA/" title="In IDEA">IDEA</a>
-</div>
-
-    <span><a href="/posts/610bdf07/" title="IDEA快捷键">IDEA快捷键</a></span>
+    <span><a href="/posts/96b6e8a1/" title="simple self introduction">simple self introduction</a></span>
   </li>
 
       
@@ -655,7 +629,50 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
 <div class="breadcrumb">
 </div>
 
-    <span><a href="/posts/f35c5140/" title="JAVA-jar包运行及日志输出">JAVA-jar包运行及日志输出</a></span>
+    <span><a href="/posts/4da9c93/" title="Web-based design and analysis tools for CRISPR base editing 文献阅读">Web-based design and analysis tools for CRISPR base editing 文献阅读</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/Java%E9%9D%A2%E8%AF%95/" title="In Java面试">Java面试</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/Java%E9%9D%A2%E8%AF%95/%E4%BA%8C%E5%88%86%E6%9F%A5%E6%89%BE/" title="In 二分查找">二分查找</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/Java%E9%9D%A2%E8%AF%95/%E4%BA%8C%E5%88%86%E6%9F%A5%E6%89%BE/%E7%AE%97%E6%B3%95/" title="In 算法">算法</a>
+</div>
+
+    <span><a href="/posts/e8eb0481/" title="二分查找">二分查找</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+</div>
+
+    <span><a href="/posts/ac1ae082/" title="SpringBoot如何优雅的发邮件">SpringBoot如何优雅的发邮件</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/Java/" title="In Java">Java</a>
+</div>
+
+    <span><a href="/posts/fc16798c/" title="Java8遍历Map的三种方式">Java8遍历Map的三种方式</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/Ubuntu/" title="In Ubuntu">Ubuntu</a>
+</div>
+
+    <span><a href="/posts/6e65ed30/" title="ubuntu20无法安装vmtools解决">ubuntu20无法安装vmtools解决</a></span>
   </li>
 
       
@@ -664,54 +681,21 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
 <div class="breadcrumb">
 <a href="/categories/Java/" title="In Java">Java</a>
 <i class="ic i-angle-right"></i>
-<a href="/categories/Java/Tools/" title="In Tools">Tools</a>
-</div>
-
-    <span><a href="/posts/49b96938/" title="Java获取一天时间的起始">Java获取一天时间的起始</a></span>
-  </li>
-
-      
-  <li class="item">
-    
-<div class="breadcrumb">
-<a href="/categories/Java%E9%9D%A2%E8%AF%95/" title="In Java面试">Java面试</a>
+<a href="/categories/Java/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/" title="In 操作系统">操作系统</a>
 <i class="ic i-angle-right"></i>
-<a href="/categories/Java%E9%9D%A2%E8%AF%95/%E7%AE%97%E6%B3%95/" title="In 算法">算法</a>
+<a href="/categories/Java/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/Java%E9%9D%A2%E8%AF%95/" title="In Java面试">Java面试</a>
 </div>
 
-    <span><a href="/posts/a4ce31d2/" title="贪心算法">贪心算法</a></span>
+    <span><a href="/posts/166a1445/" title="位，字节， 字符">位，字节， 字符</a></span>
   </li>
 
       
   <li class="item">
     
 <div class="breadcrumb">
-<a href="/categories/Git/" title="In Git">Git</a>
 </div>
 
-    <span><a href="/posts/424eebf1/" title="关于在IDEA中回滚Git版本">关于在IDEA中回滚Git版本</a></span>
-  </li>
-
-      
-  <li class="item">
-    
-<div class="breadcrumb">
-<a href="/categories/Java%E9%9D%A2%E8%AF%95/" title="In Java面试">Java面试</a>
-<i class="ic i-angle-right"></i>
-<a href="/categories/Java%E9%9D%A2%E8%AF%95/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/" title="In 数据结构">数据结构</a>
-</div>
-
-    <span><a href="/posts/9f9a6182/" title="面试之旅关于数据结构">面试之旅关于数据结构</a></span>
-  </li>
-
-      
-  <li class="item">
-    
-<div class="breadcrumb">
-<a href="/categories/DDD/" title="In DDD">DDD</a>
-</div>
-
-    <span><a href="/posts/3fec5852/" title="DDD领域驱动设计">DDD领域驱动设计</a></span>
+    <span><a href="/posts/1599bffe/" title="归并排序">归并排序</a></span>
   </li>
 
   </ul>

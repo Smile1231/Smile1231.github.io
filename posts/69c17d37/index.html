@@ -117,12 +117,12 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
       </div>
       <div id="imgs" class="pjax">
         <ul>
-          <li class="item" data-background-image="https://tva1.sinaimg.cn/large/6833939bly1gipexoj0moj20zk0m8kgu.jpg"></li>
-          <li class="item" data-background-image="https://tva1.sinaimg.cn/large/6833939bly1gicitspjpbj20zk0m81ky.jpg"></li>
-          <li class="item" data-background-image="https://tva1.sinaimg.cn/large/6833939bly1giclhpw3lwj20zk0m8gvw.jpg"></li>
-          <li class="item" data-background-image="https://tva1.sinaimg.cn/large/6833939bly1gipey0a334j20zk0m8qpt.jpg"></li>
-          <li class="item" data-background-image="https://tva1.sinaimg.cn/large/6833939bly1gipewr8iypj20zk0m8b29.jpg"></li>
-          <li class="item" data-background-image="https://tva1.sinaimg.cn/large/6833939bly1gipesng5oej20zk0m87d4.jpg"></li>
+          <li class="item" data-background-image="https://tva2.sinaimg.cn/large/6833939bly1gipexe4oykj20zk0m87ji.jpg"></li>
+          <li class="item" data-background-image="https://tva2.sinaimg.cn/large/6833939bly1gipexj2jgzj20zk0m8b09.jpg"></li>
+          <li class="item" data-background-image="https://tva2.sinaimg.cn/large/6833939bly1gipeyvx1d4j20zk0m8hdt.jpg"></li>
+          <li class="item" data-background-image="https://tva2.sinaimg.cn/large/6833939bly1giclxxcb6rj20zk0m8b29.jpg"></li>
+          <li class="item" data-background-image="https://tva2.sinaimg.cn/large/6833939bly1gipeyhsblkj20zk0m81kx.jpg"></li>
+          <li class="item" data-background-image="https://tva2.sinaimg.cn/large/6833939bly1giph4fomxoj20zk0m8axp.jpg"></li>
         </ul>
       </div>
     </header>
@@ -173,15 +173,21 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
 
     <p>今天在处理一个问题时始终都没有头绪，主要场景是自己的方法中最后需要调用别人的方法进行回调，但是又同时处在一个大事务中，主要我做了以下场景来模拟</p>
 <span id="more"></span>
+
 <p>数据库表结构：</p>
 <img data-src="/posts/69c17d37/2022-02-10-23-42-40.png" class="">
+
 <p>测试代码：</p>
 <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">@SpringBootTest</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">StudentMapperTest</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">    <span class="meta">@Autowired</span></span><br><span class="line">    <span class="keyword">private</span> StudentDao studentDao;</span><br><span class="line"></span><br><span class="line">    <span class="meta">@Test</span></span><br><span class="line">    <span class="meta">@Transactional(rollbackFor = Exception.class)</span></span><br><span class="line">    <span class="meta">@Rollback(false)</span></span><br><span class="line">    <span class="function"><span class="keyword">void</span> <span class="title">context01</span><span class="params">()</span></span>&#123;</span><br><span class="line"></span><br><span class="line">        <span class="comment">//查询张三</span></span><br><span class="line">        LambdaUpdateWrapper&lt;Student&gt; updateWrapper0 = <span class="keyword">new</span> LambdaUpdateWrapper&lt;&gt;();</span><br><span class="line">        updateWrapper0.eq(Student::getName,<span class="string">&quot;张三&quot;</span>);</span><br><span class="line"></span><br><span class="line">        List&lt;Student&gt; students = studentDao.selectList(updateWrapper0);</span><br><span class="line"></span><br><span class="line">        <span class="comment">//对张三进行修改为张三改</span></span><br><span class="line">        LambdaUpdateWrapper&lt;Student&gt; updateWrapper = <span class="keyword">new</span> LambdaUpdateWrapper&lt;&gt;();</span><br><span class="line">        updateWrapper.eq(Student::getName,<span class="string">&quot;张三&quot;</span>)</span><br><span class="line">                .set(Student::getName,<span class="string">&quot;张三改&quot;</span>);</span><br><span class="line"></span><br><span class="line">        studentDao.update(Student.builder().build(), updateWrapper);</span><br><span class="line"></span><br><span class="line">        <span class="comment">//再度查询张三</span></span><br><span class="line">        LambdaUpdateWrapper&lt;Student&gt; updateWrapper1 = <span class="keyword">new</span> LambdaUpdateWrapper&lt;&gt;();</span><br><span class="line">        updateWrapper1.eq(Student::getName,<span class="string">&quot;张三&quot;</span>);</span><br><span class="line">        List&lt;Student&gt; students1 = studentDao.selectList(updateWrapper1);</span><br><span class="line"></span><br><span class="line">        <span class="comment">//尝试查询修改后的张三改</span></span><br><span class="line">        LambdaUpdateWrapper&lt;Student&gt; updateWrapper2 = <span class="keyword">new</span> LambdaUpdateWrapper&lt;&gt;();</span><br><span class="line">        updateWrapper2.eq(Student::getName,<span class="string">&quot;张三改&quot;</span>);</span><br><span class="line"></span><br><span class="line">        List&lt;Student&gt; students2 = studentDao.selectList(updateWrapper2);</span><br><span class="line"></span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p><code>debug</code>  结果：</p>
+
+<p><code>debug</code>结果：</p>
 <img data-src="/posts/69c17d37/2022-02-10-23-47-46.png" class="">
+
 <img data-src="/posts/69c17d37/2022-02-10-23-47-01.png" class="">
+
 <p><strong>我们可以得到虽然事务没有提交但是同一会话查询时依然是修改后的值，但是此时如果为多线程下，别的线程将不会读取到提交事物之前的结果，这就是数据库的隔离性问题</strong>，此时事务没有提交，数据库结果未改变</p>
 <img data-src="/posts/69c17d37/2022-02-10-23-50-42.png" class="">
+
 <p>当然，只有当程序正常运行结束之后，事务才会提交，数据库才会改变：</p>
 <img data-src="/posts/69c17d37/2022-02-10-23-51-07.png" class="">
 
@@ -239,7 +245,7 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
     <div class="item left">
       
 
-  <a href="/posts/52d9f7d3/" itemprop="url" rel="prev" data-background-image="https:&#x2F;&#x2F;tva1.sinaimg.cn&#x2F;mw690&#x2F;6833939bly1giciundwu5j20zk0m8n9e.jpg" title="Java面试必问--HashMap的底层">
+  <a href="/posts/52d9f7d3/" itemprop="url" rel="prev" data-background-image="https:&#x2F;&#x2F;tva2.sinaimg.cn&#x2F;mw690&#x2F;6833939bly1giciuv0socj20zk0m8qes.jpg" title="Java面试必问--HashMap的底层">
   <span class="type">Previous Post</span>
   <span class="category"><i class="ic i-flag"></i> HashMap</span>
   <h3>Java面试必问--HashMap的底层</h3>
@@ -249,7 +255,7 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
     <div class="item right">
       
 
-  <a href="/posts/b536fa7f/" itemprop="url" rel="next" data-background-image="https:&#x2F;&#x2F;tva1.sinaimg.cn&#x2F;mw690&#x2F;6833939bly1gicm0n457cj20zk0m8e81.jpg" title="关于junit测试类防止事务回滚">
+  <a href="/posts/b536fa7f/" itemprop="url" rel="next" data-background-image="https:&#x2F;&#x2F;tva2.sinaimg.cn&#x2F;mw690&#x2F;6833939bly1gipeyhsblkj20zk0m81kx.jpg" title="关于junit测试类防止事务回滚">
   <span class="type">Next Post</span>
   <span class="category"><i class="ic i-flag"></i> Java</span>
   <h3>关于junit测试类防止事务回滚</h3>
@@ -379,53 +385,60 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
   <li class="item">
     
 <div class="breadcrumb">
-<a href="/categories/SAP/" title="In SAP">SAP</a>
-</div>
-
-    <span><a href="/posts/ef55dc85/" title="CEST与北京时间转换表">CEST与北京时间转换表</a></span>
-  </li>
-
-      
-  <li class="item">
-    
-<div class="breadcrumb">
-</div>
-
-    <span><a href="/posts/823298d2/" title="VsCode 如何Debug Shell">VsCode 如何Debug Shell</a></span>
-  </li>
-
-      
-  <li class="item">
-    
-<div class="breadcrumb">
-<a href="/categories/SpringBoot/" title="In SpringBoot">SpringBoot</a>
+<a href="/categories/%E5%89%8D%E7%AB%AF/" title="In 前端">前端</a>
 <i class="ic i-angle-right"></i>
-<a href="/categories/SpringBoot/Java/" title="In Java">Java</a>
-</div>
-
-    <span><a href="/posts/f976ebe7/" title="SpringMvc中标准的后端接口格式">SpringMvc中标准的后端接口格式</a></span>
-  </li>
-
-      
-  <li class="item">
-    
-<div class="breadcrumb">
-<a href="/categories/Java%E9%9D%A2%E8%AF%95/" title="In Java面试">Java面试</a>
+<a href="/categories/%E5%89%8D%E7%AB%AF/JavaScript/" title="In JavaScript">JavaScript</a>
 <i class="ic i-angle-right"></i>
-<a href="/categories/Java%E9%9D%A2%E8%AF%95/Tools/" title="In Tools">Tools</a>
+<a href="/categories/%E5%89%8D%E7%AB%AF/JavaScript/Html/" title="In Html">Html</a>
 </div>
 
-    <span><a href="/posts/6714b4a9/" title="FastJson序列化使用">FastJson序列化使用</a></span>
+    <span><a href="/posts/7b604068/" title="Html页面插入地图">Html页面插入地图</a></span>
   </li>
 
       
   <li class="item">
     
 <div class="breadcrumb">
-<a href="/categories/Git/" title="In Git">Git</a>
+<a href="/categories/%E5%9F%BA%E5%9B%A0%E7%BC%96%E8%BE%91/" title="In 基因编辑">基因编辑</a>
 </div>
 
-    <span><a href="/posts/424eebf1/" title="关于在IDEA中回滚Git版本">关于在IDEA中回滚Git版本</a></span>
+    <span><a href="/posts/b7653deb/" title="什么是CRISPR&#x2F;Cas9">什么是CRISPR/Cas9</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/Java/" title="In Java">Java</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/Java/Stream/" title="In Stream">Stream</a>
+</div>
+
+    <span><a href="/posts/b1231c9f/" title="java stream中Collectors的用法">java stream中Collectors的用法</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/Java/" title="In Java">Java</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/Java/Java%E9%9D%A2%E8%AF%95/" title="In Java面试">Java面试</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/Java/Java%E9%9D%A2%E8%AF%95/SpringBoot/" title="In SpringBoot">SpringBoot</a>
+</div>
+
+    <span><a href="/posts/5e7baeeb/" title="过滤器和拦截器的区别">过滤器和拦截器的区别</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/Tools/" title="In Tools">Tools</a>
+</div>
+
+    <span><a href="/posts/ba83fda/" title="超级好用的StringJoiner">超级好用的StringJoiner</a></span>
   </li>
 
       
@@ -437,7 +450,7 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
 <a href="/categories/%E5%89%8D%E7%AB%AF/Vue/" title="In Vue">Vue</a>
 </div>
 
-    <span><a href="/posts/21d4b84b/" title="Vue3项目的创建">Vue3项目的创建</a></span>
+    <span><a href="/posts/e7e56598/" title="Vue属性介绍">Vue属性介绍</a></span>
   </li>
 
       
@@ -445,19 +458,21 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
     
 <div class="breadcrumb">
 <a href="/categories/Java/" title="In Java">Java</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/Java/Stream/" title="In Stream">Stream</a>
 </div>
 
-    <span><a href="/posts/1748805d/" title="java线程池与五种常用线程池策略使用与解析">java线程池与五种常用线程池策略使用与解析</a></span>
+    <span><a href="/posts/8b8fedea/" title="Stream流的介绍">Stream流的介绍</a></span>
   </li>
 
       
   <li class="item">
     
 <div class="breadcrumb">
-<a href="/categories/DDD/" title="In DDD">DDD</a>
+<a href="/categories/Shell/" title="In Shell">Shell</a>
 </div>
 
-    <span><a href="/posts/3fec5852/" title="DDD领域驱动设计">DDD领域驱动设计</a></span>
+    <span><a href="/posts/55b095e0/" title="The learning of Shell">The learning of Shell</a></span>
   </li>
 
       
@@ -466,17 +481,19 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
 <div class="breadcrumb">
 </div>
 
-    <span><a href="/posts/8da68a98/" title="Java运行调用Shell脚本">Java运行调用Shell脚本</a></span>
+    <span><a href="/posts/159c6098/" title="阻塞队列">阻塞队列</a></span>
   </li>
 
       
   <li class="item">
     
 <div class="breadcrumb">
-<a href="/categories/LeetCode/" title="In LeetCode">LeetCode</a>
+<a href="/categories/%E5%89%8D%E7%AB%AF/" title="In 前端">前端</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/%E5%89%8D%E7%AB%AF/Css/" title="In Css">Css</a>
 </div>
 
-    <span><a href="/posts/5d0c3fcc/" title="LeetCode172_阶乘后的0">LeetCode172_阶乘后的0</a></span>
+    <span><a href="/posts/7f59931c/" title="Css选择器">Css选择器</a></span>
   </li>
 
   </ul>

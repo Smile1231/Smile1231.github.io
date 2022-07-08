@@ -76,7 +76,7 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
       <i class="ic i-pen"></i>
     </span>
     <span class="text">Symbols count in article</span>
-    <span>876</span>
+    <span>873</span>
     <span class="text">words</span>
   </span>
   <span class="item" title="Reading time">
@@ -117,12 +117,12 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
       </div>
       <div id="imgs" class="pjax">
         <ul>
-          <li class="item" data-background-image="https://tva1.sinaimg.cn/large/6833939bly1gicit4jrvuj20zk0m8785.jpg"></li>
-          <li class="item" data-background-image="https://tva1.sinaimg.cn/large/6833939bly1giclip4jbpj20zk0m87cv.jpg"></li>
-          <li class="item" data-background-image="https://tva1.sinaimg.cn/large/6833939bly1gipesrnqv3j20zk0m8ava.jpg"></li>
-          <li class="item" data-background-image="https://tva1.sinaimg.cn/large/6833939bly1gipexj2jgzj20zk0m8b09.jpg"></li>
-          <li class="item" data-background-image="https://tva1.sinaimg.cn/large/6833939bly1giclh5u05ej20zk0m87df.jpg"></li>
-          <li class="item" data-background-image="https://tva1.sinaimg.cn/large/6833939bly1gipesx5fdwj20zk0m81kx.jpg"></li>
+          <li class="item" data-background-image="https://tva2.sinaimg.cn/large/6833939bly1gicljgocqbj20zk0m8e81.jpg"></li>
+          <li class="item" data-background-image="https://tva2.sinaimg.cn/large/6833939bly1gipey0a334j20zk0m8qpt.jpg"></li>
+          <li class="item" data-background-image="https://tva2.sinaimg.cn/large/6833939bly1gipeu7txpzj20zk0m81kx.jpg"></li>
+          <li class="item" data-background-image="https://tva2.sinaimg.cn/large/6833939bly1giciub8ja1j20zk0m81ky.jpg"></li>
+          <li class="item" data-background-image="https://tva2.sinaimg.cn/large/6833939bly1gicliierfjj20zk0m8npd.jpg"></li>
+          <li class="item" data-background-image="https://tva2.sinaimg.cn/large/6833939bly1gipesx5fdwj20zk0m81kx.jpg"></li>
         </ul>
       </div>
     </header>
@@ -166,44 +166,52 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
   <div class="body md" itemprop="articleBody">
     
 
-    <h2 id="nginx配置前端跨域"><a class="markdownIt-Anchor" href="#nginx配置前端跨域">#</a>  <code>nginx</code>  配置前端跨域</h2>
-<p>注意点： 如果使用 <code>nginx</code>  解决跨域在前端使用 <code>axios</code>  是不需要写后端全路径的，类似于：</p>
+    <h2 id="nginx配置前端跨域"><a href="#nginx配置前端跨域" class="headerlink" title="nginx配置前端跨域"></a><code>nginx</code>配置前端跨域</h2><p>注意点： 如果使用<code>nginx</code>解决跨域在前端使用<code>axios</code>是不需要写后端全路径的，类似于：</p>
 <figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//  原来我们需要写</span></span><br><span class="line">axios.defaults.baseURL = <span class="string">&#x27;http://localhost:9999/api&#x27;</span></span><br><span class="line"><span class="comment">// 现在改为</span></span><br><span class="line">axios.defaults.baseURL = <span class="string">&#x27;/api&#x27;</span></span><br></pre></td></tr></table></figure>
 <p>这边不改动</p>
 <span id="more"></span>
+
 <img data-src="/posts/7874a051/2022-07-05-23-34-01.png" class="">
-<p>因为如果使用了 <code>Nginx</code>  反向代理之后，部署服务器会有跨域的问题，如果仅仅只是后端处理，也不一定能行，需要在配置文件中进行代理， <code>docker</code>  中文件位置：</p>
+
+<p>因为如果使用了<code>Nginx</code>反向代理之后，部署服务器会有跨域的问题，如果仅仅只是后端处理，也不一定能行, 需要在配置文件中进行代理,<code>docker</code>中文件位置：</p>
 <img data-src="/posts/7874a051/2022-07-05-23-39-51.png" class="">
+
 <img data-src="/posts/7874a051/2022-07-05-23-40-29.png" class="">
+
 <figure class="highlight properties"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&lt;!--</span> <span class="string">解决跨域代理 --&gt;</span></span><br><span class="line"><span class="attr">location</span> <span class="string">/api/ &#123;</span></span><br><span class="line"><span class="attr">proxy_pass</span> <span class="string">http://58.198.178.163:9999/api/;</span></span><br><span class="line"><span class="attr">client_max_body_size</span> <span class="string">1024m;</span></span><br><span class="line"><span class="attr">&#125;</span></span><br><span class="line"><span class="meta">&lt;!--</span> <span class="string">解决404 --&gt;</span></span><br><span class="line"><span class="attr">error_page</span>  <span class="string">404              index.html;</span></span><br></pre></td></tr></table></figure>
-<p><strong>Tips：此处一定要注意的是， <code>proxy_pass</code>  所对应的地址一定要是真实 <code>ip</code> ，要不然就回报 <code>502</code>  错误，真的是个大坑，也是我自己的问题！！！</strong>：</p>
-<h2 id="nginx与vue打包成镜像"><a class="markdownIt-Anchor" href="#nginx与vue打包成镜像">#</a>  <code>Nginx</code>  与 <code>Vue</code>  打包成镜像</h2>
-<blockquote>
-<p><code>npm run build</code>  打包，生成 <code>dist</code>  文件夹</p>
+
+<p><strong>Tips：此处一定要注意的是，<code>proxy_pass</code> 所对应的地址一定要是真实<code>ip</code>，要不然就回报<code>502</code>错误，真的是个大坑，也是我自己的问题！！！</strong>： </p>
+<h2 id="Nginx与Vue打包成镜像"><a href="#Nginx与Vue打包成镜像" class="headerlink" title="Nginx与Vue打包成镜像"></a><code>Nginx</code>与<code>Vue</code>打包成镜像</h2><blockquote>
+<p><code>npm run build</code>打包,生成<code>dist</code>文件夹</p>
 </blockquote>
 <blockquote>
-<p>在 <code>dist</code>  统计目录下， <code>vim Dockerfile</code> , 在其中输入</p>
+<p>在<code>dist</code>统计目录下，<code>vim Dockerfile</code>,在其中输入</p>
 </blockquote>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">FROM nginx</span><br><span class="line"></span><br><span class="line">EXPOSE 80</span><br><span class="line"></span><br><span class="line">COPY /dist /usr/share/nginx/html</span><br><span class="line"></span><br><span class="line">ENTRYPOINT nginx -g <span class="string">&quot;daemon off;&quot;</span></span><br></pre></td></tr></table></figure>
+
 <blockquote>
 <p>打包命令:</p>
 </blockquote>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">docker build -t &lt;image_name&gt; .</span><br></pre></td></tr></table></figure>
+
 <blockquote>
-<p>查看镜像 ：  <code>docker images</code></p>
+<p>查看镜像 ： <code>docker images</code></p>
 </blockquote>
 <blockquote>
-<p>运行：  <code>docker run -d --name nginx_vue -p 8888:80 &lt;image_name&gt;</code></p>
+<p>运行： <code>docker run -d --name nginx_vue -p 8888:80 &lt;image_name&gt;</code></p>
 </blockquote>
 <blockquote>
 <p>进入容器：</p>
 </blockquote>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">docker <span class="built_in">exec</span> -it nginx_vue /bin/bash</span><br></pre></td></tr></table></figure>
+
 <blockquote>
-<p><code>nginx</code>  配置文件地址  <code>/etc/nginx/conf.d/default.conf</code></p>
+<p><code>nginx</code>配置文件地址 <code>/etc/nginx/conf.d/default.conf</code></p>
 </blockquote>
-<h2 id="nginx修改上传文件大小"><a class="markdownIt-Anchor" href="#nginx修改上传文件大小">#</a>  <code>Nginx</code>  修改上传文件大小</h2>
-<figure class="highlight properties"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">client_max_body_size</span>    <span class="string">1000m;</span></span><br></pre></td></tr></table></figure>
+<h2 id="Nginx修改上传文件大小"><a href="#Nginx修改上传文件大小" class="headerlink" title="Nginx修改上传文件大小"></a><code>Nginx</code>修改上传文件大小</h2><figure class="highlight properties"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">client_max_body_size</span>    <span class="string">1000m;</span></span><br></pre></td></tr></table></figure>
+
+
+
 
       <div class="tags">
           <a href="/tags/Java/" rel="tag"><i class="ic i-tag"></i> Java</a>
@@ -259,7 +267,7 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
     <div class="item left">
       
 
-  <a href="/posts/49a9ac1a/" itemprop="url" rel="prev" data-background-image="https:&#x2F;&#x2F;tva1.sinaimg.cn&#x2F;mw690&#x2F;6833939bly1giclfw2t96j20zk0m8x6p.jpg" title="Springboot优雅的实现重试">
+  <a href="/posts/49a9ac1a/" itemprop="url" rel="prev" data-background-image="https:&#x2F;&#x2F;tva2.sinaimg.cn&#x2F;mw690&#x2F;6833939bly1giclg5ms2rj20zk0m8u0x.jpg" title="Springboot优雅的实现重试">
   <span class="type">Previous Post</span>
   <span class="category"><i class="ic i-flag"></i> </span>
   <h3>Springboot优雅的实现重试</h3>
@@ -269,7 +277,7 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
     <div class="item right">
       
 
-  <a href="/posts/ac1ae082/" itemprop="url" rel="next" data-background-image="https:&#x2F;&#x2F;tva1.sinaimg.cn&#x2F;mw690&#x2F;6833939bly1gicitspjpbj20zk0m81ky.jpg" title="SpringBoot如何优雅的发邮件">
+  <a href="/posts/ac1ae082/" itemprop="url" rel="next" data-background-image="https:&#x2F;&#x2F;tva2.sinaimg.cn&#x2F;mw690&#x2F;6833939bly1giph4fomxoj20zk0m8axp.jpg" title="SpringBoot如何优雅的发邮件">
   <span class="type">Next Post</span>
   <span class="category"><i class="ic i-flag"></i> </span>
   <h3>SpringBoot如何优雅的发邮件</h3>
@@ -291,7 +299,7 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
   <div class="panels">
     <div class="inner">
       <div class="contents panel pjax" data-title="Contents">
-          <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#nginx%E9%85%8D%E7%BD%AE%E5%89%8D%E7%AB%AF%E8%B7%A8%E5%9F%9F"><span class="toc-number">1.</span> <span class="toc-text">  nginx  配置前端跨域</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#nginx%E4%B8%8Evue%E6%89%93%E5%8C%85%E6%88%90%E9%95%9C%E5%83%8F"><span class="toc-number">2.</span> <span class="toc-text">  Nginx  与 Vue  打包成镜像</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#nginx%E4%BF%AE%E6%94%B9%E4%B8%8A%E4%BC%A0%E6%96%87%E4%BB%B6%E5%A4%A7%E5%B0%8F"><span class="toc-number">3.</span> <span class="toc-text">  Nginx  修改上传文件大小</span></a></li></ol>
+          <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#nginx%E9%85%8D%E7%BD%AE%E5%89%8D%E7%AB%AF%E8%B7%A8%E5%9F%9F"><span class="toc-number">1.</span> <span class="toc-text">nginx配置前端跨域</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Nginx%E4%B8%8EVue%E6%89%93%E5%8C%85%E6%88%90%E9%95%9C%E5%83%8F"><span class="toc-number">2.</span> <span class="toc-text">Nginx与Vue打包成镜像</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Nginx%E4%BF%AE%E6%94%B9%E4%B8%8A%E4%BC%A0%E6%96%87%E4%BB%B6%E5%A4%A7%E5%B0%8F"><span class="toc-number">3.</span> <span class="toc-text">Nginx修改上传文件大小</span></a></li></ol>
       </div>
       <div class="related panel pjax" data-title="Related">
       </div>
@@ -399,50 +407,22 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
 <div class="breadcrumb">
 <a href="/categories/Java%E9%9D%A2%E8%AF%95/" title="In Java面试">Java面试</a>
 <i class="ic i-angle-right"></i>
-<a href="/categories/Java%E9%9D%A2%E8%AF%95/HashMap/" title="In HashMap">HashMap</a>
+<a href="/categories/Java%E9%9D%A2%E8%AF%95/Spring%E4%BA%8B%E5%8A%A1/" title="In Spring事务">Spring事务</a>
 </div>
 
-    <span><a href="/posts/52d9f7d3/" title="Java面试必问--HashMap的底层">Java面试必问--HashMap的底层</a></span>
+    <span><a href="/posts/7e4601e3/" title="面试之旅之关于Spring事务处理">面试之旅之关于Spring事务处理</a></span>
   </li>
 
       
   <li class="item">
     
 <div class="breadcrumb">
-<a href="/categories/%E5%89%8D%E7%AB%AF/" title="In 前端">前端</a>
+<a href="/categories/Hexo/" title="In Hexo">Hexo</a>
 <i class="ic i-angle-right"></i>
-<a href="/categories/%E5%89%8D%E7%AB%AF/Css/" title="In Css">Css</a>
+<a href="/categories/Hexo/Tools/" title="In Tools">Tools</a>
 </div>
 
-    <span><a href="/posts/2e6621e1/" title="DisPlay属性">DisPlay属性</a></span>
-  </li>
-
-      
-  <li class="item">
-    
-<div class="breadcrumb">
-<a href="/categories/Java/" title="In Java">Java</a>
-</div>
-
-    <span><a href="/posts/b536fa7f/" title="关于junit测试类防止事务回滚">关于junit测试类防止事务回滚</a></span>
-  </li>
-
-      
-  <li class="item">
-    
-<div class="breadcrumb">
-</div>
-
-    <span><a href="/posts/11faeb76/" title="Docker指令以及部署">Docker指令以及部署</a></span>
-  </li>
-
-      
-  <li class="item">
-    
-<div class="breadcrumb">
-</div>
-
-    <span><a href="/posts/1599bffe/" title="归并排序">归并排序</a></span>
+    <span><a href="/posts/45934af9/" title="使用vscode书写hexo博客粘贴图片解决方案">使用vscode书写hexo博客粘贴图片解决方案</a></span>
   </li>
 
       
@@ -451,20 +431,78 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
 <div class="breadcrumb">
 <a href="/categories/Java%E9%9D%A2%E8%AF%95/" title="In Java面试">Java面试</a>
 <i class="ic i-angle-right"></i>
-<a href="/categories/Java%E9%9D%A2%E8%AF%95/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/" title="In 操作系统">操作系统</a>
+<a href="/categories/Java%E9%9D%A2%E8%AF%95/%E5%BF%AB%E9%80%9F%E6%8E%92%E5%BA%8F/" title="In 快速排序">快速排序</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/Java%E9%9D%A2%E8%AF%95/%E5%BF%AB%E9%80%9F%E6%8E%92%E5%BA%8F/%E7%AE%97%E6%B3%95/" title="In 算法">算法</a>
 </div>
 
-    <span><a href="/posts/c7cf6e41/" title="面试之旅关于计算机网络">面试之旅关于计算机网络</a></span>
+    <span><a href="/posts/ff8068c0/" title="快速排序">快速排序</a></span>
   </li>
 
       
   <li class="item">
     
 <div class="breadcrumb">
-<a href="/categories/SAP/" title="In SAP">SAP</a>
+<a href="/categories/%E6%95%B0%E6%8D%AE%E5%BA%93/" title="In 数据库">数据库</a>
 </div>
 
-    <span><a href="/posts/ef55dc85/" title="CEST与北京时间转换表">CEST与北京时间转换表</a></span>
+    <span><a href="/posts/60f024c8/" title="关于sql执行计划">关于sql执行计划</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/%E5%89%8D%E7%AB%AF/" title="In 前端">前端</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/%E5%89%8D%E7%AB%AF/JavaScript/" title="In JavaScript">JavaScript</a>
+</div>
+
+    <span><a href="/posts/4aa00b9a/" title="Js中的some、find、findindex、includes、filter的使用">Js中的some、find、findindex、includes、filter的使用</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/Java%E9%9D%A2%E8%AF%95/" title="In Java面试">Java面试</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/Java%E9%9D%A2%E8%AF%95/%E9%80%89%E6%8B%A9%E6%8E%92%E5%BA%8F/" title="In 选择排序">选择排序</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/Java%E9%9D%A2%E8%AF%95/%E9%80%89%E6%8B%A9%E6%8E%92%E5%BA%8F/%E7%AE%97%E6%B3%95/" title="In 算法">算法</a>
+</div>
+
+    <span><a href="/posts/43d00a99/" title="选择排序">选择排序</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/Java/" title="In Java">Java</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/Java/Mybatis/" title="In Mybatis">Mybatis</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/Java/Mybatis/SpringBoot/" title="In SpringBoot">SpringBoot</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/Java/Mybatis/SpringBoot/%E5%88%86%E9%A1%B5%E6%9F%A5%E8%AF%A2/" title="In 分页查询">分页查询</a>
+</div>
+
+    <span><a href="/posts/2edf7887/" title="MybatisPlus实现分页查询">MybatisPlus实现分页查询</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/Java/" title="In Java">Java</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/Java/Java%E9%9D%A2%E8%AF%95/" title="In Java面试">Java面试</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/Java/Java%E9%9D%A2%E8%AF%95/SpringBoot/" title="In SpringBoot">SpringBoot</a>
+</div>
+
+    <span><a href="/posts/5e7baeeb/" title="过滤器和拦截器的区别">过滤器和拦截器的区别</a></span>
   </li>
 
       
@@ -483,22 +521,10 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
   <li class="item">
     
 <div class="breadcrumb">
-<a href="/categories/Java%E9%9D%A2%E8%AF%95/" title="In Java面试">Java面试</a>
-<i class="ic i-angle-right"></i>
-<a href="/categories/Java%E9%9D%A2%E8%AF%95/%E7%AE%97%E6%B3%95/" title="In 算法">算法</a>
+<a href="/categories/Shell/" title="In Shell">Shell</a>
 </div>
 
-    <span><a href="/posts/a4ce31d2/" title="贪心算法">贪心算法</a></span>
-  </li>
-
-      
-  <li class="item">
-    
-<div class="breadcrumb">
-<a href="/categories/%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F/" title="In 正则表达式">正则表达式</a>
-</div>
-
-    <span><a href="/posts/2f57a694/" title="正则表达式">正则表达式</a></span>
+    <span><a href="/posts/55b095e0/" title="The learning of Shell">The learning of Shell</a></span>
   </li>
 
   </ul>

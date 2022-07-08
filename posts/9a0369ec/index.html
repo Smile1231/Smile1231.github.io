@@ -76,7 +76,7 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
       <i class="ic i-pen"></i>
     </span>
     <span class="text">Symbols count in article</span>
-    <span>3.9k</span>
+    <span>3.8k</span>
     <span class="text">words</span>
   </span>
   <span class="item" title="Reading time">
@@ -84,7 +84,7 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
       <i class="ic i-clock"></i>
     </span>
     <span class="text">Reading time</span>
-    <span>4 mins.</span>
+    <span>3 mins.</span>
   </span>
 </div>
 
@@ -117,12 +117,12 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
       </div>
       <div id="imgs" class="pjax">
         <ul>
-          <li class="item" data-background-image="https://tva1.sinaimg.cn/large/6833939bly1gipexoj0moj20zk0m8kgu.jpg"></li>
-          <li class="item" data-background-image="https://tva1.sinaimg.cn/large/6833939bly1gicm07ih54j20zk0m84qp.jpg"></li>
-          <li class="item" data-background-image="https://tva1.sinaimg.cn/large/6833939bly1giciszlczyj20zk0m816d.jpg"></li>
-          <li class="item" data-background-image="https://tva1.sinaimg.cn/large/6833939bly1giclil3m4ej20zk0m8tn8.jpg"></li>
-          <li class="item" data-background-image="https://tva1.sinaimg.cn/large/6833939bly1gipexj2jgzj20zk0m8b09.jpg"></li>
-          <li class="item" data-background-image="https://tva1.sinaimg.cn/large/6833939bly1giclxp31goj20zk0m8qv5.jpg"></li>
+          <li class="item" data-background-image="https://tva2.sinaimg.cn/large/6833939bly1gipew8gmvyj20zk0m87wh.jpg"></li>
+          <li class="item" data-background-image="https://tva2.sinaimg.cn/large/6833939bly1gipexoj0moj20zk0m8kgu.jpg"></li>
+          <li class="item" data-background-image="https://tva2.sinaimg.cn/large/6833939bly1gipevuctzzj20zk0m84qp.jpg"></li>
+          <li class="item" data-background-image="https://tva2.sinaimg.cn/large/6833939bly1gipesx5fdwj20zk0m81kx.jpg"></li>
+          <li class="item" data-background-image="https://tva2.sinaimg.cn/large/6833939bly1gicli9lfebj20zk0m84qp.jpg"></li>
+          <li class="item" data-background-image="https://tva2.sinaimg.cn/large/6833939bly1giph4baakhj20zk0m8h5q.jpg"></li>
         </ul>
       </div>
     </header>
@@ -168,107 +168,97 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
   <div class="body md" itemprop="articleBody">
     
 
-    <h1 id="布隆过滤器"><a class="markdownIt-Anchor" href="#布隆过滤器">#</a> 布隆过滤器</h1>
-<h2 id="什么是布隆过滤器"><a class="markdownIt-Anchor" href="#什么是布隆过滤器">#</a> 什么是布隆过滤器</h2>
-<p>布隆过滤器（ <code>Bloom Filter</code> ），是 1970 年，由一个叫布隆的小伙子提出的，距今已经五十年了，和老哥一样老。</p>
-<p>它实际上是一个很长的二进制向量和一系列随机映射函数，二进制大家应该都清楚，存储的数据不是 <code>0</code>  就是 <code>1</code> ，默认是 <code>0</code> 。</p>
-<p>主要用于判断一个元素是否在一个集合中， <code>0</code>  代表不存在某个数据， <code>1</code>  代表存在某个数据。</p>
+    <h1 id="布隆过滤器"><a href="#布隆过滤器" class="headerlink" title="布隆过滤器"></a>布隆过滤器</h1><h2 id="什么是布隆过滤器"><a href="#什么是布隆过滤器" class="headerlink" title="什么是布隆过滤器"></a>什么是布隆过滤器</h2><p>布隆过滤器（<code>Bloom Filter</code>），是1970年，由一个叫布隆的小伙子提出的，距今已经五十年了，和老哥一样老。</p>
+<p>它实际上是一个很长的二进制向量和一系列随机映射函数，二进制大家应该都清楚，存储的数据不是<code>0</code>就是<code>1</code>，默认是<code>0</code>。</p>
+<p>主要用于判断一个元素是否在一个集合中，<code>0</code>代表不存在某个数据，<code>1</code>代表存在某个数据。</p>
 <p>懂了吗？作为暖男的老哥在给你们画张图来帮助理解：</p>
 <img data-src="/posts/9a0369ec/2022-01-26-22-56-13.png" class="">
 <span id="more"></span>
-<h2 id="布隆过滤器用途"><a class="markdownIt-Anchor" href="#布隆过滤器用途">#</a> 布隆过滤器用途</h2>
-<ul>
-<li>解决 <code>Redis</code>  缓存穿透（今天重点讲解）</li>
+
+<h2 id="布隆过滤器用途"><a href="#布隆过滤器用途" class="headerlink" title="布隆过滤器用途"></a>布隆过滤器用途</h2><ul>
+<li>解决<code>Redis</code>缓存穿透（今天重点讲解）</li>
 <li>在爬虫时，对爬虫网址进行过滤，已经存在布隆中的网址，不在爬取。</li>
 <li>垃圾邮件过滤，对每一个发送邮件的地址进行判断是否在布隆的黑名单中，如果在就判断为垃圾邮件。</li>
 </ul>
 <p>以上只是简单的用途举例，大家可以举一反三，灵活运用在工作中。</p>
-<h2 id="布隆过滤器原理"><a class="markdownIt-Anchor" href="#布隆过滤器原理">#</a> 布隆过滤器原理</h2>
-<blockquote>
+<h2 id="布隆过滤器原理"><a href="#布隆过滤器原理" class="headerlink" title="布隆过滤器原理"></a>布隆过滤器原理</h2><blockquote>
 <p>存入过程</p>
 </blockquote>
 <p>布隆过滤器上面说了，就是一个二进制数据的集合。当一个数据加入这个集合时，经历如下洗礼（这里有缺点，下面会讲）：</p>
-<p>通过 K 个哈希函数计算该数据，返回 K 个计算出的 hash 值<br>
-这些 K 个 hash 值映射到对应的 K 个二进制的数组下标<br>
-将 K 个下标对应的二进制数据改成 1。<br>
-例如，第一个哈希函数返回 x，第二个第三个哈希函数返回 y 与 z，那么： X、Y、Z 对应的二进制改成 1。</p>
+<p>通过K个哈希函数计算该数据，返回K个计算出的hash值<br>这些K个hash值映射到对应的K个二进制的数组下标<br>将K个下标对应的二进制数据改成1。<br>例如，第一个哈希函数返回x，第二个第三个哈希函数返回y与z，那么： X、Y、Z对应的二进制改成1。</p>
 <p>如图所示：</p>
 <img data-src="/posts/9a0369ec/2022-01-26-22-56-38.png" class="">
 <blockquote>
-<p>查询过程<br>
-布隆过滤器主要作用就是查询一个数据，在不在这个二进制的集合中，查询过程如下：</p>
+<p>查询过程<br>布隆过滤器主要作用就是查询一个数据，在不在这个二进制的集合中，查询过程如下：</p>
 </blockquote>
-<p>通过 <code>K</code>  个哈希函数计算该数据，对应计算出的 <code>K</code>  个 <code>hash</code>  值<br>
-通过 <code>hash</code>  值找到对应的二进制的数组下标<br>
-判断：如果存在一处位置的二进制数据是 <code>0</code> ，那么该数据不存在。如果都是 <code>1</code> ，该数据存在集合中。（这里有缺点，下面会讲）</p>
+<p>通过<code>K</code>个哈希函数计算该数据，对应计算出的<code>K</code>个<code>hash</code>值<br>通过<code>hash</code>值找到对应的二进制的数组下标<br>判断：如果存在一处位置的二进制数据是<code>0</code>，那么该数据不存在。如果都是<code>1</code>，该数据存在集合中。（这里有缺点，下面会讲）</p>
 <blockquote>
-<p>删除过程<br>
-一般不能删除布隆过滤器里的数据，这是一个缺点之一，我们下面会分析。</p>
+<p>删除过程<br>一般不能删除布隆过滤器里的数据，这是一个缺点之一，我们下面会分析。</p>
 </blockquote>
-<h2 id="布隆过滤器的优缺点"><a class="markdownIt-Anchor" href="#布隆过滤器的优缺点">#</a> 布隆过滤器的优缺点</h2>
-<blockquote>
-<p>优点<br>
-由于存储的是二进制数据，所以占用的空间很小<br>
-它的插入和查询速度是非常快的，时间复杂度是 <code>O（K）</code> ，可以联想一下 <code>HashMap</code>  的过程<br>
-保密性很好，因为本身不存储任何原始数据，只有二进制数据<br>
-缺点<br>
-这就要回到我们上面所说的那些缺点了。</p>
+<h2 id="布隆过滤器的优缺点"><a href="#布隆过滤器的优缺点" class="headerlink" title="布隆过滤器的优缺点"></a>布隆过滤器的优缺点</h2><blockquote>
+<p>优点<br>由于存储的是二进制数据，所以占用的空间很小<br>它的插入和查询速度是非常快的，时间复杂度是<code>O（K）</code>，可以联想一下<code>HashMap</code>的过程<br>保密性很好，因为本身不存储任何原始数据，只有二进制数据<br>缺点<br>这就要回到我们上面所说的那些缺点了。</p>
 </blockquote>
-<p>添加数据是通过计算数据的 <code>hash</code>  值，那么很有可能存在这种情况：两个不同的数据计算得到相同的 <code>hash</code>  值。</p>
+<p>添加数据是通过计算数据的<code>hash</code>值，那么很有可能存在这种情况：两个不同的数据计算得到相同的<code>hash</code>值。</p>
 <img data-src="/posts/9a0369ec/2022-01-26-22-56-49.png" class="">
-<p>例如图中的 “你好” 和 “hello”，假如最终算出 hash 值相同，那么他们会将同一个下标的二进制数据改为 1。</p>
-<p>这个时候，你就不知道下标为 2 的二进制，到底是代表 “你好” 还是 “hello”。</p>
-<h2 id="由此得出如下缺点"><a class="markdownIt-Anchor" href="#由此得出如下缺点">#</a> 由此得出如下缺点：</h2>
-<ol>
-<li>存在误判<br>
-假如上面的图没有存 <code>&quot;hello&quot;</code> ，只存了&quot; 你好 &quot;，那么用 <code>&quot;hello&quot;</code>  来查询的时候，会判断 <code>&quot;hello&quot;</code>  存在集合中。</li>
+<p>例如图中的“你好”和“hello”，假如最终算出hash值相同，那么他们会将同一个下标的二进制数据改为1。</p>
+<p>这个时候，你就不知道下标为2的二进制，到底是代表“你好”还是“hello”。</p>
+<h2 id="由此得出如下缺点："><a href="#由此得出如下缺点：" class="headerlink" title="由此得出如下缺点："></a>由此得出如下缺点：</h2><ol>
+<li>存在误判<br>假如上面的图没有存<code>&quot;hello&quot;</code>，只存了”你好”，那么用<code>&quot;hello&quot;</code>来查询的时候，会判断<code>&quot;hello&quot;</code>存在集合中。</li>
 </ol>
-<p>因为 “你好” 和 <code>“hello”</code>  的 <code>hash</code>  值是相同的，通过相同的 <code>hash</code>  值，找到的二进制数据也是一样的，都是 1。</p>
+<p>因为“你好”和<code>“hello”</code>的<code>hash</code>值是相同的，通过相同的<code>hash</code>值，找到的二进制数据也是一样的，都是1。</p>
 <ol start="2">
 <li>删除困难</li>
 </ol>
 <p>到这里我不说大家应该也明白为什么吧，作为你们的暖男老哥，还是讲一下吧。</p>
-<p>还是用上面的举例，因为 “你好” 和 <code>“hello”</code>  的 <code>hash</code>  值相同，对应的数组下标也是一样的。</p>
-<p>这时候老哥想去删除 “你好”，将下标为 <code>2</code>  里的二进制数据，由 1 改成了 <code>0</code> 。</p>
-<p>那么我们是不是连 <code>“hello”</code>  都一起删了呀。（ <code>0</code>  代表有这个数据， <code>1</code>  代表没有这个数据）</p>
-<h2 id="实现布隆过滤器"><a class="markdownIt-Anchor" href="#实现布隆过滤器">#</a> 实现布隆过滤器</h2>
-<blockquote>
+<p>还是用上面的举例，因为“你好”和<code>“hello”</code>的<code>hash</code>值相同，对应的数组下标也是一样的。</p>
+<p>这时候老哥想去删除“你好”，将下标为<code>2</code>里的二进制数据，由1改成了<code>0</code>。</p>
+<p>那么我们是不是连<code>“hello”</code>都一起删了呀。（<code>0</code>代表有这个数据，<code>1</code>代表没有这个数据）</p>
+<h2 id="实现布隆过滤器"><a href="#实现布隆过滤器" class="headerlink" title="实现布隆过滤器"></a>实现布隆过滤器</h2><blockquote>
 <p>引入依赖</p>
 </blockquote>
 <figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">dependency</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">groupId</span>&gt;</span>com.google.guava<span class="tag">&lt;/<span class="name">groupId</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>guava<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">version</span>&gt;</span>29.0-jre<span class="tag">&lt;/<span class="name">version</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">dependency</span>&gt;</span></span><br></pre></td></tr></table></figure>
 <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">BloomFilterCase</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">    <span class="comment">/**</span></span><br><span class="line"><span class="comment">     * 预计要插入多少数据</span></span><br><span class="line"><span class="comment">     */</span></span><br><span class="line">    <span class="keyword">private</span> <span class="keyword">static</span> <span class="keyword">int</span> size = <span class="number">1000000</span>;</span><br><span class="line"></span><br><span class="line">    <span class="comment">/**</span></span><br><span class="line"><span class="comment">     * 期望的误判率</span></span><br><span class="line"><span class="comment">     */</span></span><br><span class="line">    <span class="keyword">private</span> <span class="keyword">static</span> <span class="keyword">double</span> fpp = <span class="number">0.01</span>;</span><br><span class="line"></span><br><span class="line">    <span class="comment">/**</span></span><br><span class="line"><span class="comment">     * 布隆过滤器</span></span><br><span class="line"><span class="comment">     */</span></span><br><span class="line">    <span class="keyword">private</span> <span class="keyword">static</span> BloomFilter&lt;Integer&gt; bloomFilter = BloomFilter.create(Funnels.integerFunnel(),size,fpp);</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">        <span class="comment">//插入10万条样本数据</span></span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; size; i++) &#123;</span><br><span class="line">            bloomFilter.put(i);</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        <span class="comment">//用另外十万条测试数据,测试误判率</span></span><br><span class="line">        <span class="keyword">int</span> count = <span class="number">0</span>;</span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> i = size; i &lt; size + <span class="number">1000000</span>; i++) &#123;</span><br><span class="line">            <span class="keyword">if</span> (bloomFilter.mightContain(i))&#123;</span><br><span class="line">                count++;</span><br><span class="line">                System.out.println(i+<span class="string">&quot;误判了&quot;</span>);</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        System.out.println(<span class="string">&quot;总共误判了:&quot;</span> + count);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <img data-src="/posts/9a0369ec/2022-01-26-22-57-09.png" class="">
-<p><code>100</code>  万数据里有 <code>947</code>  个误判，约等于 <code>0.01%</code> ，也就是我们代码里设置的误判率： <code>fpp = 0.01。</code></p>
-<h2 id="深入分析代码"><a class="markdownIt-Anchor" href="#深入分析代码">#</a> 深入分析代码</h2>
-<p>核心 <code>BloomFilter.create</code>  方法</p>
+<p><code>100</code>万数据里有<code>947</code>个误判，约等于<code>0.01%</code>，也就是我们代码里设置的误判率：<code>fpp = 0.01。</code></p>
+<h2 id="深入分析代码"><a href="#深入分析代码" class="headerlink" title="深入分析代码"></a>深入分析代码</h2><p>核心<code>BloomFilter.create</code>方法</p>
 <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">@VisibleForTesting</span></span><br><span class="line">  <span class="keyword">static</span> &lt;T&gt; <span class="function">BloomFilter&lt;T&gt; <span class="title">create</span><span class="params">(</span></span></span><br><span class="line"><span class="params"><span class="function">      Funnel&lt;? <span class="keyword">super</span> T&gt; funnel, <span class="keyword">long</span> expectedInsertions, <span class="keyword">double</span> fpp, Strategy strategy)</span> </span>&#123;</span><br><span class="line">    。。。。</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <p>这里有四个参数：</p>
 <ul>
-<li><code>funnel</code> ：数据类型 (一般是调用 <code>Funnels</code>  工具类中的)</li>
-<li><code>expectedInsertions</code> ：期望插入的值的个数</li>
-<li><code>fpp</code> ：误判率 (默认值为 <code>0.03</code> )</li>
-<li><code>strategy</code> ：哈希算法</li>
+<li><code>funnel</code>：数据类型(一般是调用<code>Funnels</code>工具类中的)</li>
+<li><code>expectedInsertions</code>：期望插入的值的个数</li>
+<li><code>fpp</code>：误判率(默认值为<code>0.03</code>)</li>
+<li><code>strategy</code>：哈希算法</li>
 </ul>
-<p>我们重点讲一下 <code>fpp</code>  参数</p>
-<h3 id="情景总结"><a class="markdownIt-Anchor" href="#情景总结">#</a> 情景总结</h3>
-<ul>
-<li>误判率可以通过 <code>fpp</code>  参数进行调节</li>
-<li><code>fpp</code>  越小，需要的内存空间就越大： <code>0.0</code> 1 需要 <code>900</code>  多万位数， <code>0.03</code>  需要 <code>700</code>  多万位数。</li>
-<li><code>fpp</code>  越小，集合添加数据时，就需要更多的 <code>hash</code>  函数运算更多的 <code>hash</code>  值，去存储到对应的数组下标里。（忘了去看上面的布隆过滤存入数据的过程）</li>
+<p>我们重点讲一下<code>fpp</code>参数</p>
+<h3 id="情景总结"><a href="#情景总结" class="headerlink" title="情景总结"></a>情景总结</h3><ul>
+<li>误判率可以通过<code>fpp</code>参数进行调节</li>
+<li><code>fpp</code>越小，需要的内存空间就越大：<code>0.0</code>1需要<code>900</code>多万位数，<code>0.03</code>需要<code>700</code>多万位数。</li>
+<li><code>fpp</code>越小，集合添加数据时，就需要更多的<code>hash</code>函数运算更多的<code>hash</code>值，去存储到对应的数组下标里。（忘了去看上面的布隆过滤存入数据的过程）</li>
 </ul>
-<p>上面的 <code>numBits</code> ，表示存一百万个 <code>int</code>  类型数字，需要的位数为 <code>7298440</code> ， <code>700</code>  多万位。理论上存一百万个数，一个 <code>int</code>  是 <code>4</code>  字节 <code>32</code>  位，需要 <code>481000000=3200</code>  万位。如果使用 <code>HashMap</code>  去存，按 <code>HashMap50%</code>  的存储效率，需要 <code>6400</code>  万位。可以看出 <code>BloomFilter</code>  的存储空间很小，只有 <code>HashMap</code>  的 <code>1/10</code>  左右</p>
-<p>上面的 <code>numHashFunctions</code>  表示需要几个 <code>hash</code>  函数运算，去映射不同的下标存这些数字是否存在（ <code>0 </code> or <code> 1</code> ）。</p>
-<h2 id="解决redis缓存雪崩"><a class="markdownIt-Anchor" href="#解决redis缓存雪崩">#</a> 解决 <code>Redis</code>  缓存雪崩</h2>
-<p>上面使用 <code>Guava</code>  实现的布隆过滤器是把数据放在了本地内存中。分布式的场景中就不合适了，无法共享内存。</p>
-<p>我们还可以用 <code>Redis</code>  来实现布隆过滤器，这里使用 <code>Redis</code>  封装好的客户端工具 <code>Redisson</code> 。</p>
-<p>其底层是使用数据结构 <code>bitMap</code> ，大家就把它理解成上面说的二进制结构，由于篇幅原因， <code>bitmap</code>  不在这篇文章里讲</p>
+<p>上面的<code>numBits</code>，表示存一百万个<code>int</code>类型数字，需要的位数为<code>7298440</code>，<code>700</code>多万位。理论上存一百万个数，一个<code>int</code>是<code>4</code>字节<code>32</code>位，需要<code>481000000=3200</code>万位。如果使用<code>HashMap</code>去存，按<code>HashMap50%</code>的存储效率，需要<code>6400</code>万位。可以看出<code>BloomFilter</code>的存储空间很小，只有<code>HashMap</code>的<code>1/10</code>左右</p>
+<p>上面的<code>numHashFunctions</code>表示需要几个<code>hash</code>函数运算，去映射不同的下标存这些数字是否存在（<code>0 </code>or<code> 1</code>）。</p>
+<h2 id="解决Redis缓存雪崩"><a href="#解决Redis缓存雪崩" class="headerlink" title="解决Redis缓存雪崩"></a>解决<code>Redis</code>缓存雪崩</h2><p>上面使用<code>Guava</code>实现的布隆过滤器是把数据放在了本地内存中。分布式的场景中就不合适了，无法共享内存。</p>
+<p>我们还可以用<code>Redis</code>来实现布隆过滤器，这里使用<code>Redis</code>封装好的客户端工具<code>Redisson</code>。</p>
+<p>其底层是使用数据结构<code>bitMap</code>，大家就把它理解成上面说的二进制结构，由于篇幅原因，<code>bitmap</code>不在这篇文章里讲</p>
 <blockquote>
 <p>代码实现</p>
 </blockquote>
-<p><code>pom</code>  配置：</p>
+<p><code>pom</code>配置：</p>
 <figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">dependency</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">groupId</span>&gt;</span>org.redisson<span class="tag">&lt;/<span class="name">groupId</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>redisson-spring-boot-starter<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">version</span>&gt;</span>3.13.4<span class="tag">&lt;/<span class="name">version</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">dependency</span>&gt;</span></span><br></pre></td></tr></table></figure>
-<p><code>Java</code>  代码</p>
+
+<p><code>Java</code>代码</p>
 <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">RedissonBloomFilter</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">  <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">    Config config = <span class="keyword">new</span> Config();</span><br><span class="line">    config.useSingleServer().setAddress(<span class="string">&quot;redis://127.0.0.1:6379&quot;</span>);</span><br><span class="line">    config.useSingleServer().setPassword(<span class="string">&quot;1234&quot;</span>);</span><br><span class="line">    <span class="comment">//构造Redisson</span></span><br><span class="line">    RedissonClient redisson = Redisson.create(config);</span><br><span class="line"></span><br><span class="line">    RBloomFilter&lt;String&gt; bloomFilter = redisson.getBloomFilter(<span class="string">&quot;phoneList&quot;</span>);</span><br><span class="line">    <span class="comment">//初始化布隆过滤器：预计元素为100000000L,误差率为3%</span></span><br><span class="line">    bloomFilter.tryInit(<span class="number">100000000L</span>,<span class="number">0.03</span>);</span><br><span class="line">    <span class="comment">//将号码10086插入到布隆过滤器中</span></span><br><span class="line">    bloomFilter.add(<span class="string">&quot;10086&quot;</span>);</span><br><span class="line"></span><br><span class="line">    <span class="comment">//判断下面号码是否在布隆过滤器中</span></span><br><span class="line">    <span class="comment">//输出false</span></span><br><span class="line">    System.out.println(bloomFilter.contains(<span class="string">&quot;123456&quot;</span>));</span><br><span class="line">    <span class="comment">//输出true</span></span><br><span class="line">    System.out.println(bloomFilter.contains(<span class="string">&quot;10086&quot;</span>));</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+
+
+
+
+
+
+
+
+
+
 
   </div>
 
@@ -320,7 +310,7 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
     <div class="item left">
       
 
-  <a href="/posts/377b6f7d/" itemprop="url" rel="prev" data-background-image="https:&#x2F;&#x2F;tva1.sinaimg.cn&#x2F;mw690&#x2F;6833939bly1giph4lm9i7j20zk0m84qp.jpg" title="关于mysql中对Json类型字段进行筛选查询">
+  <a href="/posts/377b6f7d/" itemprop="url" rel="prev" data-background-image="https:&#x2F;&#x2F;tva2.sinaimg.cn&#x2F;mw690&#x2F;6833939bly1gipetv6p75j20zk0m8x6p.jpg" title="关于mysql中对Json类型字段进行筛选查询">
   <span class="type">Previous Post</span>
   <span class="category"><i class="ic i-flag"></i> 数据库</span>
   <h3>关于mysql中对Json类型字段进行筛选查询</h3>
@@ -330,7 +320,7 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
     <div class="item right">
       
 
-  <a href="/posts/ba83fda/" itemprop="url" rel="next" data-background-image="https:&#x2F;&#x2F;tva1.sinaimg.cn&#x2F;mw690&#x2F;6833939bly1giclh5u05ej20zk0m87df.jpg" title="超级好用的StringJoiner">
+  <a href="/posts/ba83fda/" itemprop="url" rel="next" data-background-image="https:&#x2F;&#x2F;tva2.sinaimg.cn&#x2F;mw690&#x2F;6833939bly1giclxfdlttj20zk0m8npd.jpg" title="超级好用的StringJoiner">
   <span class="type">Next Post</span>
   <span class="category"><i class="ic i-flag"></i> Tools</span>
   <h3>超级好用的StringJoiner</h3>
@@ -352,7 +342,7 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
   <div class="panels">
     <div class="inner">
       <div class="contents panel pjax" data-title="Contents">
-          <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%B8%83%E9%9A%86%E8%BF%87%E6%BB%A4%E5%99%A8"><span class="toc-number">1.</span> <span class="toc-text"> 布隆过滤器</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BB%80%E4%B9%88%E6%98%AF%E5%B8%83%E9%9A%86%E8%BF%87%E6%BB%A4%E5%99%A8"><span class="toc-number">1.1.</span> <span class="toc-text"> 什么是布隆过滤器</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%B8%83%E9%9A%86%E8%BF%87%E6%BB%A4%E5%99%A8%E7%94%A8%E9%80%94"><span class="toc-number">1.2.</span> <span class="toc-text"> 布隆过滤器用途</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%B8%83%E9%9A%86%E8%BF%87%E6%BB%A4%E5%99%A8%E5%8E%9F%E7%90%86"><span class="toc-number">1.3.</span> <span class="toc-text"> 布隆过滤器原理</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%B8%83%E9%9A%86%E8%BF%87%E6%BB%A4%E5%99%A8%E7%9A%84%E4%BC%98%E7%BC%BA%E7%82%B9"><span class="toc-number">1.4.</span> <span class="toc-text"> 布隆过滤器的优缺点</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%94%B1%E6%AD%A4%E5%BE%97%E5%87%BA%E5%A6%82%E4%B8%8B%E7%BC%BA%E7%82%B9"><span class="toc-number">1.5.</span> <span class="toc-text"> 由此得出如下缺点：</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%AE%9E%E7%8E%B0%E5%B8%83%E9%9A%86%E8%BF%87%E6%BB%A4%E5%99%A8"><span class="toc-number">1.6.</span> <span class="toc-text"> 实现布隆过滤器</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%B7%B1%E5%85%A5%E5%88%86%E6%9E%90%E4%BB%A3%E7%A0%81"><span class="toc-number">1.7.</span> <span class="toc-text"> 深入分析代码</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%83%85%E6%99%AF%E6%80%BB%E7%BB%93"><span class="toc-number">1.7.1.</span> <span class="toc-text"> 情景总结</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%A7%A3%E5%86%B3redis%E7%BC%93%E5%AD%98%E9%9B%AA%E5%B4%A9"><span class="toc-number">1.8.</span> <span class="toc-text"> 解决 Redis  缓存雪崩</span></a></li></ol></li></ol>
+          <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%B8%83%E9%9A%86%E8%BF%87%E6%BB%A4%E5%99%A8"><span class="toc-number">1.</span> <span class="toc-text">布隆过滤器</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BB%80%E4%B9%88%E6%98%AF%E5%B8%83%E9%9A%86%E8%BF%87%E6%BB%A4%E5%99%A8"><span class="toc-number">1.1.</span> <span class="toc-text">什么是布隆过滤器</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%B8%83%E9%9A%86%E8%BF%87%E6%BB%A4%E5%99%A8%E7%94%A8%E9%80%94"><span class="toc-number">1.2.</span> <span class="toc-text">布隆过滤器用途</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%B8%83%E9%9A%86%E8%BF%87%E6%BB%A4%E5%99%A8%E5%8E%9F%E7%90%86"><span class="toc-number">1.3.</span> <span class="toc-text">布隆过滤器原理</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%B8%83%E9%9A%86%E8%BF%87%E6%BB%A4%E5%99%A8%E7%9A%84%E4%BC%98%E7%BC%BA%E7%82%B9"><span class="toc-number">1.4.</span> <span class="toc-text">布隆过滤器的优缺点</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%94%B1%E6%AD%A4%E5%BE%97%E5%87%BA%E5%A6%82%E4%B8%8B%E7%BC%BA%E7%82%B9%EF%BC%9A"><span class="toc-number">1.5.</span> <span class="toc-text">由此得出如下缺点：</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%AE%9E%E7%8E%B0%E5%B8%83%E9%9A%86%E8%BF%87%E6%BB%A4%E5%99%A8"><span class="toc-number">1.6.</span> <span class="toc-text">实现布隆过滤器</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%B7%B1%E5%85%A5%E5%88%86%E6%9E%90%E4%BB%A3%E7%A0%81"><span class="toc-number">1.7.</span> <span class="toc-text">深入分析代码</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%83%85%E6%99%AF%E6%80%BB%E7%BB%93"><span class="toc-number">1.7.1.</span> <span class="toc-text">情景总结</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%A7%A3%E5%86%B3Redis%E7%BC%93%E5%AD%98%E9%9B%AA%E5%B4%A9"><span class="toc-number">1.8.</span> <span class="toc-text">解决Redis缓存雪崩</span></a></li></ol></li></ol>
       </div>
       <div class="related panel pjax" data-title="Related">
         <ul>
@@ -461,50 +451,9 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
   <li class="item">
     
 <div class="breadcrumb">
-<a href="/categories/%E5%89%8D%E7%AB%AF/" title="In 前端">前端</a>
-<i class="ic i-angle-right"></i>
-<a href="/categories/%E5%89%8D%E7%AB%AF/JavaScript/" title="In JavaScript">JavaScript</a>
-<i class="ic i-angle-right"></i>
-<a href="/categories/%E5%89%8D%E7%AB%AF/JavaScript/Html/" title="In Html">Html</a>
 </div>
 
-    <span><a href="/posts/7b604068/" title="Html页面插入地图">Html页面插入地图</a></span>
-  </li>
-
-      
-  <li class="item">
-    
-<div class="breadcrumb">
-<a href="/categories/%E6%95%B0%E6%8D%AE%E5%BA%93/" title="In 数据库">数据库</a>
-</div>
-
-    <span><a href="/posts/60f024c8/" title="关于sql执行计划">关于sql执行计划</a></span>
-  </li>
-
-      
-  <li class="item">
-    
-<div class="breadcrumb">
-<a href="/categories/%E5%89%8D%E7%AB%AF/" title="In 前端">前端</a>
-<i class="ic i-angle-right"></i>
-<a href="/categories/%E5%89%8D%E7%AB%AF/Css/" title="In Css">Css</a>
-</div>
-
-    <span><a href="/posts/54880bcd/" title="Css样式">Css样式</a></span>
-  </li>
-
-      
-  <li class="item">
-    
-<div class="breadcrumb">
-<a href="/categories/Java%E9%9D%A2%E8%AF%95/" title="In Java面试">Java面试</a>
-<i class="ic i-angle-right"></i>
-<a href="/categories/Java%E9%9D%A2%E8%AF%95/%E5%86%92%E6%B3%A1%E6%8E%92%E5%BA%8F/" title="In 冒泡排序">冒泡排序</a>
-<i class="ic i-angle-right"></i>
-<a href="/categories/Java%E9%9D%A2%E8%AF%95/%E5%86%92%E6%B3%A1%E6%8E%92%E5%BA%8F/%E7%AE%97%E6%B3%95/" title="In 算法">算法</a>
-</div>
-
-    <span><a href="/posts/14e6f1eb/" title="冒泡排序">冒泡排序</a></span>
+    <span><a href="/posts/11faeb76/" title="Docker指令以及部署">Docker指令以及部署</a></span>
   </li>
 
       
@@ -514,21 +463,58 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
 <a href="/categories/Java/" title="In Java">Java</a>
 <i class="ic i-angle-right"></i>
 <a href="/categories/Java/Java%E9%9D%A2%E8%AF%95/" title="In Java面试">Java面试</a>
+</div>
+
+    <span><a href="/posts/b42f0c87/" title="Cache、Cookie、Session、Token">Cache、Cookie、Session、Token</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/Java%E9%9D%A2%E8%AF%95/" title="In Java面试">Java面试</a>
 <i class="ic i-angle-right"></i>
-<a href="/categories/Java/Java%E9%9D%A2%E8%AF%95/SpringBoot/" title="In SpringBoot">SpringBoot</a>
+<a href="/categories/Java%E9%9D%A2%E8%AF%95/Mybatis/" title="In Mybatis">Mybatis</a>
 </div>
 
-    <span><a href="/posts/5e7baeeb/" title="过滤器和拦截器的区别">过滤器和拦截器的区别</a></span>
+    <span><a href="/posts/31d0fffb/" title="Mybatis中#号和$号的区别">Mybatis中#号和$号的区别</a></span>
   </li>
 
       
   <li class="item">
     
 <div class="breadcrumb">
-<a href="/categories/Shell/" title="In Shell">Shell</a>
 </div>
 
-    <span><a href="/posts/55b095e0/" title="The learning of Shell">The learning of Shell</a></span>
+    <span><a href="/posts/4a17b156/" title="Hello World">Hello World</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+</div>
+
+    <span><a href="/posts/a72f470b/" title="关于JVM常用参数">关于JVM常用参数</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+</div>
+
+    <span><a href="/posts/159c6098/" title="阻塞队列">阻塞队列</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/%E5%89%8D%E7%AB%AF/" title="In 前端">前端</a>
+</div>
+
+    <span><a href="/posts/7733848a/" title="文件上传前端小结">文件上传前端小结</a></span>
   </li>
 
       
@@ -538,27 +524,7 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
 <a href="/categories/Java/" title="In Java">Java</a>
 </div>
 
-    <span><a href="/posts/1c3390ab/" title="将Java数据输出为本地txt">将Java数据输出为本地txt</a></span>
-  </li>
-
-      
-  <li class="item">
-    
-<div class="breadcrumb">
-<a href="/categories/Java/" title="In Java">Java</a>
-</div>
-
-    <span><a href="/posts/96eb888f/" title="Java学习线路图">Java学习线路图</a></span>
-  </li>
-
-      
-  <li class="item">
-    
-<div class="breadcrumb">
-<a href="/categories/Java/" title="In Java">Java</a>
-</div>
-
-    <span><a href="/posts/405fde88/" title="关于Exception的处理细节">关于Exception的处理细节</a></span>
+    <span><a href="/posts/1748805d/" title="java线程池与五种常用线程池策略使用与解析">java线程池与五种常用线程池策略使用与解析</a></span>
   </li>
 
       
@@ -567,7 +533,21 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
 <div class="breadcrumb">
 </div>
 
-    <span><a href="/posts/5a74c6a6/" title="宝儿的大腿小腿围">宝儿的大腿小腿围</a></span>
+    <span><a href="/posts/a1926332/" title="Springboot+Vue二进制文件传输">Springboot+Vue二进制文件传输</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/Java%E9%9D%A2%E8%AF%95/" title="In Java面试">Java面试</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/Java%E9%9D%A2%E8%AF%95/%E5%BF%AB%E9%80%9F%E6%8E%92%E5%BA%8F/" title="In 快速排序">快速排序</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/Java%E9%9D%A2%E8%AF%95/%E5%BF%AB%E9%80%9F%E6%8E%92%E5%BA%8F/%E7%AE%97%E6%B3%95/" title="In 算法">算法</a>
+</div>
+
+    <span><a href="/posts/ff8068c0/" title="快速排序">快速排序</a></span>
   </li>
 
   </ul>

@@ -117,12 +117,12 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
       </div>
       <div id="imgs" class="pjax">
         <ul>
-          <li class="item" data-background-image="https://tva1.sinaimg.cn/large/6833939bly1giclfb3vzhj20zk0m8wny.jpg"></li>
-          <li class="item" data-background-image="https://tva1.sinaimg.cn/large/6833939bly1gipevuctzzj20zk0m84qp.jpg"></li>
-          <li class="item" data-background-image="https://tva1.sinaimg.cn/large/6833939bly1giclgrvbd6j20zk0m8qv5.jpg"></li>
-          <li class="item" data-background-image="https://tva1.sinaimg.cn/large/6833939bly1gicliierfjj20zk0m8npd.jpg"></li>
-          <li class="item" data-background-image="https://tva1.sinaimg.cn/large/6833939bly1giciuja1j1j20zk0m8kjl.jpg"></li>
-          <li class="item" data-background-image="https://tva1.sinaimg.cn/large/6833939bly1giph47e9vtj20zk0m8x6l.jpg"></li>
+          <li class="item" data-background-image="https://tva2.sinaimg.cn/large/6833939bly1giclh3brzpj20zk0m8ann.jpg"></li>
+          <li class="item" data-background-image="https://tva2.sinaimg.cn/large/6833939bly1gipeu7txpzj20zk0m81kx.jpg"></li>
+          <li class="item" data-background-image="https://tva2.sinaimg.cn/large/6833939bly1gipexbei4hj20zk0m8npd.jpg"></li>
+          <li class="item" data-background-image="https://tva2.sinaimg.cn/large/6833939bly1gicivghyooj20zk0m8dir.jpg"></li>
+          <li class="item" data-background-image="https://tva2.sinaimg.cn/large/6833939bly1gipew28b65j20zk0m8hdt.jpg"></li>
+          <li class="item" data-background-image="https://tva2.sinaimg.cn/large/6833939bly1gipetv6p75j20zk0m8x6p.jpg"></li>
         </ul>
       </div>
     </header>
@@ -171,222 +171,189 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
   <div class="body md" itemprop="articleBody">
     
 
-    <h1 id="vue属性"><a class="markdownIt-Anchor" href="#vue属性">#</a> Vue 属性</h1>
-<h2 id="创建vue实例"><a class="markdownIt-Anchor" href="#创建vue实例">#</a> 创建 Vue 实例</h2>
-<blockquote>
+    <h1 id="Vue属性"><a href="#Vue属性" class="headerlink" title="Vue属性"></a>Vue属性</h1><h2 id="创建Vue实例"><a href="#创建Vue实例" class="headerlink" title="创建Vue实例"></a>创建Vue实例</h2><blockquote>
 <p>每个 Vue 应用都是通过用 Vue 函数创建一个新的 Vue 实例开始的：</p>
 </blockquote>
 <figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> vm = <span class="keyword">new</span> Vue(&#123;</span><br><span class="line">  <span class="comment">// 选项</span></span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure>
-<h3 id="实例选项数据"><a class="markdownIt-Anchor" href="#实例选项数据">#</a> 实例选项 / 数据</h3>
-<h4 id="data"><a class="markdownIt-Anchor" href="#data">#</a> <strong>data</strong></h4>
-<ul>
-<li>类型： <code>Object</code>  |  <code>Function</code></li>
-<li>限制：组件的定义只接受  <code>function</code></li>
+<h3 id="实例选项-数据"><a href="#实例选项-数据" class="headerlink" title="实例选项/数据"></a>实例选项/数据</h3><h4 id="data"><a href="#data" class="headerlink" title="data"></a><strong>data</strong></h4><ul>
+<li>类型：<code>Object</code> | <code>Function</code></li>
+<li>限制：组件的定义只接受 <code>function</code></li>
 </ul>
 <p><strong>实例:</strong></p>
 <span id="more"></span>
+
 <figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> data = &#123; <span class="attr">a</span>: <span class="number">1</span> &#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">// 直接创建一个实例</span></span><br><span class="line"><span class="keyword">var</span> vm = <span class="keyword">new</span> Vue(&#123;</span><br><span class="line">  <span class="attr">data</span>: data</span><br><span class="line">&#125;)</span><br><span class="line">vm.a <span class="comment">// =&gt; 1</span></span><br><span class="line">vm.$data === data <span class="comment">// =&gt; true</span></span><br><span class="line"></span><br><span class="line"><span class="comment">// Vue.extend() 中 data 必须是函数</span></span><br><span class="line"><span class="keyword">var</span> Component = Vue.extend(&#123;</span><br><span class="line">  <span class="attr">data</span>: <span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</span><br><span class="line">    <span class="keyword">return</span> &#123; <span class="attr">a</span>: <span class="number">1</span> &#125;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure>
 <p>注意，如果你为 data property 使用了箭头函数，则 this 不会指向这个组件的实例，不过你仍然可以将其实例作为函数的第一个参数来访问</p>
 <figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">data: <span class="function"><span class="params">vm</span> =&gt;</span> (&#123; <span class="attr">a</span>: vm.myProp &#125;)</span><br></pre></td></tr></table></figure>
-<h4 id="props"><a class="markdownIt-Anchor" href="#props">#</a> <strong>props</strong></h4>
-<ul>
-<li>
-<p>类型： <code>Array&lt;string&gt; | Object</code></p>
+<h4 id="props"><a href="#props" class="headerlink" title="props"></a><strong>props</strong></h4><ul>
+<li><p>类型：<code>Array&lt;string&gt; | Object</code></p>
 </li>
-<li>
-<p>详细：<br>
- <code>props</code>  可以是数组或对象，用于接收来自父组件的数据。 <code>props</code>  可以是简单的数组，或者使用对象作为替代，对象允许配置高级选项，如类型检测、自定义验证和设置默认值。<br>
-你可以基于对象的语法使用以下选项：</p>
+<li><p>详细：<br><code>props</code> 可以是数组或对象，用于接收来自父组件的数据。<code>props</code> 可以是简单的数组，或者使用对象作为替代，对象允许配置高级选项，如类型检测、自定义验证和设置默认值。<br>你可以基于对象的语法使用以下选项：</p>
 <ul>
-<li><code>type</code> ：可以是下列原生构造函数中的一种： <code>String</code> 、 <code>Number</code> 、 <code>Boolean</code> 、 <code>Array</code> 、 <code>Object</code> 、 <code>Date</code> 、 <code>Function</code> 、 <code>Symbol</code> 、任何自定义构造函数、或上述内容组成的数组。会检查一个  <code>prop</code>  是否是给定的类型，否则抛出警告。``Prop` 类型的更多信息在此。</li>
-<li><code>default：any</code> <br>
- 为该  <code>prop</code>  指定一个默认值。如果该  <code>prop</code>  没有被传入，则换做用这个值。对象或数组的默认值必须从一个工厂函数返回。</li>
-<li><code>required：Boolean</code> <br>
- 定义该  <code>prop</code>  是否是必填项。在非生产环境中，如果这个值为  <code>truthy</code>  且该 prop 没有被传入的，则一个控制台警告将会被抛出。</li>
-<li><code>validator：Function</code> <br>
- 自定义验证函数会将该  <code>prop</code>  的值作为唯一的参数代入。在非生产环境下，如果该函数返回一个  <code>falsy</code>  的值 (也就是验证失败)，一个控制台警告将会被抛出。你可以在这里查阅更多  <code>prop</code>  验证的相关信息。</li>
+<li><code>type</code>：可以是下列原生构造函数中的一种：<code>String</code>、<code>Number</code>、<code>Boolean</code>、<code>Array</code>、<code>Object</code>、<code>Date</code>、<code>Function</code>、<code>Symbol</code>、任何自定义构造函数、或上述内容组成的数组。会检查一个 <code>prop</code> 是否是给定的类型，否则抛出警告。``Prop` 类型的更多信息在此。</li>
+<li><code>default：any</code><br>为该 <code>prop</code> 指定一个默认值。如果该 <code>prop</code> 没有被传入，则换做用这个值。对象或数组的默认值必须从一个工厂函数返回。</li>
+<li><code>required：Boolean</code><br>定义该 <code>prop</code> 是否是必填项。在非生产环境中，如果这个值为 <code>truthy</code> 且该 prop 没有被传入的，则一个控制台警告将会被抛出。</li>
+<li><code>validator：Function</code><br>自定义验证函数会将该 <code>prop</code> 的值作为唯一的参数代入。在非生产环境下，如果该函数返回一个 <code>falsy</code> 的值 (也就是验证失败)，一个控制台警告将会被抛出。你可以在这里查阅更多 <code>prop</code> 验证的相关信息。</li>
 </ul>
 </li>
 </ul>
 <p><strong>示例:</strong></p>
 <figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 简单语法</span></span><br><span class="line">Vue.component(<span class="string">&#x27;props-demo-simple&#x27;</span>, &#123;</span><br><span class="line">  <span class="attr">props</span>: [<span class="string">&#x27;size&#x27;</span>, <span class="string">&#x27;myMessage&#x27;</span>]</span><br><span class="line">&#125;)</span><br><span class="line"><span class="comment">// 对象语法，提供验证</span></span><br><span class="line">Vue.component(<span class="string">&#x27;props-demo-advanced&#x27;</span>, &#123;</span><br><span class="line">  <span class="attr">props</span>: &#123;</span><br><span class="line">    <span class="comment">// 检测类型</span></span><br><span class="line">    <span class="attr">height</span>: <span class="built_in">Number</span>,</span><br><span class="line">    <span class="comment">// 检测类型 + 其他验证</span></span><br><span class="line">    <span class="attr">age</span>: &#123;</span><br><span class="line">      <span class="attr">type</span>: <span class="built_in">Number</span>,</span><br><span class="line">      <span class="attr">default</span>: <span class="number">0</span>,</span><br><span class="line">      <span class="attr">required</span>: <span class="literal">true</span>,</span><br><span class="line">      <span class="attr">validator</span>: <span class="function"><span class="keyword">function</span> (<span class="params">value</span>) </span>&#123;</span><br><span class="line">        <span class="keyword">return</span> value &gt;= <span class="number">0</span></span><br><span class="line">      &#125;</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure>
-<h4 id="propsdata"><a class="markdownIt-Anchor" href="#propsdata">#</a> <strong>propsData</strong></h4>
-<ul>
-<li>类型： <code>&#123; [key: string]: any &#125;</code></li>
-<li>限制：只用于  <code>new</code>  创建的实例中。</li>
-<li>详细：创建实例时传递  <code>props</code> 。主要作用是方便测试。</li>
+<h4 id="propsData"><a href="#propsData" class="headerlink" title="propsData"></a><strong>propsData</strong></h4><ul>
+<li>类型：<code>&#123; [key: string]: any &#125;</code></li>
+<li>限制：只用于 <code>new</code> 创建的实例中。</li>
+<li>详细：创建实例时传递 <code>props</code>。主要作用是方便测试。</li>
 </ul>
 <p><strong>实例:</strong></p>
 <figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> Comp = Vue.extend(&#123;</span><br><span class="line">  <span class="attr">props</span>: [<span class="string">&#x27;msg&#x27;</span>],</span><br><span class="line">  <span class="attr">template</span>: <span class="string">&#x27;&lt;div&gt;&#123;&#123; msg &#125;&#125;&lt;/div&gt;&#x27;</span></span><br><span class="line">&#125;)</span><br><span class="line"></span><br><span class="line"><span class="keyword">var</span> vm = <span class="keyword">new</span> Comp(&#123;</span><br><span class="line">  <span class="attr">propsData</span>: &#123;</span><br><span class="line">    <span class="attr">msg</span>: <span class="string">&#x27;hello&#x27;</span></span><br><span class="line">  &#125;</span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure>
-<h4 id="computed"><a class="markdownIt-Anchor" href="#computed">#</a> <strong>computed</strong></h4>
-<ul>
-<li>类型： <code>&#123; [key: string]: Function | &#123; get: Function, set: Function &#125; &#125;</code></li>
-<li>详细：<br>
-计算属性将被混入到 <code>Vue</code>  实例中。所有  <code>getter</code>  和  <code>setter</code>  的  <code>this</code>  上下文自动地绑定为  <code>Vue</code>  实例。<br>
-注意如果你为一个计算属性使用了箭头函数，则  <code>this</code>  不会指向这个组件的实例，不过你仍然可以将其实例作为函数的第一个参数来访问。</li>
+
+<h4 id="computed"><a href="#computed" class="headerlink" title="computed"></a><strong>computed</strong></h4><ul>
+<li>类型：<code>&#123; [key: string]: Function | &#123; get: Function, set: Function &#125; &#125;</code></li>
+<li>详细：<br>计算属性将被混入到<code>Vue</code> 实例中。所有 <code>getter</code> 和 <code>setter</code> 的 <code>this</code> 上下文自动地绑定为 <code>Vue</code> 实例。<br>注意如果你为一个计算属性使用了箭头函数，则 <code>this</code> 不会指向这个组件的实例，不过你仍然可以将其实例作为函数的第一个参数来访问。</li>
 </ul>
 <figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">computed: &#123;</span><br><span class="line">  <span class="attr">aDouble</span>: <span class="function"><span class="params">vm</span> =&gt;</span> vm.a * <span class="number">2</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
 <p>计算属性的结果会被缓存，除非依赖的响应式 property 变化才会重新计算。注意，如果某个依赖 (比如非响应式 property) 在该实例范畴之外，则计算属性是<strong>不会被更新</strong>的。</p>
 <p><strong>示例：</strong></p>
 <figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> vm = <span class="keyword">new</span> Vue(&#123;</span><br><span class="line">  <span class="attr">data</span>: &#123; <span class="attr">a</span>: <span class="number">1</span> &#125;,</span><br><span class="line">  <span class="attr">computed</span>: &#123;</span><br><span class="line">    <span class="comment">// 仅读取</span></span><br><span class="line">    <span class="attr">aDouble</span>: <span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</span><br><span class="line">      <span class="keyword">return</span> <span class="built_in">this</span>.a * <span class="number">2</span></span><br><span class="line">    &#125;,</span><br><span class="line">    <span class="comment">// 读取和设置</span></span><br><span class="line">    <span class="attr">aPlus</span>: &#123;</span><br><span class="line">      <span class="attr">get</span>: <span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</span><br><span class="line">        <span class="keyword">return</span> <span class="built_in">this</span>.a + <span class="number">1</span></span><br><span class="line">      &#125;,</span><br><span class="line">      <span class="attr">set</span>: <span class="function"><span class="keyword">function</span> (<span class="params">v</span>) </span>&#123;</span><br><span class="line">        <span class="built_in">this</span>.a = v - <span class="number">1</span></span><br><span class="line">      &#125;</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;)</span><br><span class="line">vm.aPlus   <span class="comment">// =&gt; 2</span></span><br><span class="line">vm.aPlus = <span class="number">3</span></span><br><span class="line">vm.a       <span class="comment">// =&gt; 2</span></span><br><span class="line">vm.aDouble <span class="comment">// =&gt; 4</span></span><br></pre></td></tr></table></figure>
-<h4 id="methods"><a class="markdownIt-Anchor" href="#methods">#</a> <strong>methods</strong></h4>
-<ul>
-<li>类型： <code>&#123; [key: string]: Function &#125;</code></li>
-<li>详细：<br>
- <code>methods</code>  将被混入到  <code>Vue</code>  实例中。可以直接通过  <code>VM</code>  实例访问这些方法，或者在指令表达式中使用。方法中的  <code>this</code>  自动绑定为  <code>Vue</code>  实例。</li>
+<h4 id="methods"><a href="#methods" class="headerlink" title="methods"></a><strong>methods</strong></h4><ul>
+<li>类型：<code>&#123; [key: string]: Function &#125;</code></li>
+<li>详细：<br><code>methods</code> 将被混入到 <code>Vue</code> 实例中。可以直接通过 <code>VM</code> 实例访问这些方法，或者在指令表达式中使用。方法中的 <code>this</code> 自动绑定为 <code>Vue</code> 实例。</li>
 </ul>
 <blockquote>
-<p>注意，不应该使用箭头函数来定义 method 函数<br>
- (例如 plus: () =&gt; this.a++)。<br>
-理由是箭头函数绑定了父级作用域的上下文，所以 this 将不会按照期望指向 Vue 实例，this.a 将是 undefined。</p>
+<p>注意，不应该使用箭头函数来定义 method函数<br>(例如 plus: () =&gt; this.a++)。<br>理由是箭头函数绑定了父级作用域的上下文，所以 this 将不会按照期望指向 Vue 实例，this.a 将是 undefined。</p>
 </blockquote>
 <p><strong>实例:</strong></p>
 <figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> vm = <span class="keyword">new</span> Vue(&#123;</span><br><span class="line">  <span class="attr">data</span>: &#123; <span class="attr">a</span>: <span class="number">1</span> &#125;,</span><br><span class="line">  <span class="attr">methods</span>: &#123;</span><br><span class="line">    <span class="attr">plus</span>: <span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</span><br><span class="line">      <span class="built_in">this</span>.a++</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;)</span><br><span class="line">vm.plus()</span><br><span class="line">vm.a <span class="comment">// 2</span></span><br></pre></td></tr></table></figure>
-<h4 id="watch"><a class="markdownIt-Anchor" href="#watch">#</a> <strong>watch</strong></h4>
-<ul>
-<li>类型： <code>&#123; [key: string]: string | Function | Object | Array &#125;</code></li>
-<li>详细：一个对象，键是需要观察的表达式，值是对应回调函数。值也可以是方法名，或者包含选项的对象。 <code>Vue</code>  实例将会在实例化时调用  <code>$watch()</code> ，遍历  <code>watch</code>  对象的每一个  <code>property</code> 。</li>
+<h4 id="watch"><a href="#watch" class="headerlink" title="watch"></a><strong>watch</strong></h4><ul>
+<li>类型：<code>&#123; [key: string]: string | Function | Object | Array &#125;</code></li>
+<li>详细：一个对象，键是需要观察的表达式，值是对应回调函数。值也可以是方法名，或者包含选项的对象。<code>Vue</code> 实例将会在实例化时调用 <code>$watch()</code>，遍历 <code>watch</code> 对象的每一个 <code>property</code>。</li>
 </ul>
 <p><strong>实例</strong></p>
 <figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> vm = <span class="keyword">new</span> Vue(&#123;</span><br><span class="line">  <span class="attr">data</span>: &#123;</span><br><span class="line">    <span class="attr">a</span>: <span class="number">1</span>,</span><br><span class="line">    <span class="attr">b</span>: <span class="number">2</span>,</span><br><span class="line">    <span class="attr">c</span>: <span class="number">3</span>,</span><br><span class="line">    <span class="attr">d</span>: <span class="number">4</span>,</span><br><span class="line">    <span class="attr">e</span>: &#123;</span><br><span class="line">      <span class="attr">f</span>: &#123;</span><br><span class="line">        <span class="attr">g</span>: <span class="number">5</span></span><br><span class="line">      &#125;</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;,</span><br><span class="line">  <span class="attr">watch</span>: &#123;</span><br><span class="line">    <span class="attr">a</span>: <span class="function"><span class="keyword">function</span> (<span class="params">val, oldVal</span>) </span>&#123;</span><br><span class="line">      <span class="built_in">console</span>.log(<span class="string">&#x27;new: %s, old: %s&#x27;</span>, val, oldVal)</span><br><span class="line">    &#125;,</span><br><span class="line">    <span class="comment">// 方法名</span></span><br><span class="line">    <span class="attr">b</span>: <span class="string">&#x27;someMethod&#x27;</span>,</span><br><span class="line">    <span class="comment">// 该回调会在任何被侦听的对象的 property 改变时被调用，不论其被嵌套多深</span></span><br><span class="line">    <span class="attr">c</span>: &#123;</span><br><span class="line">      <span class="attr">handler</span>: <span class="function"><span class="keyword">function</span> (<span class="params">val, oldVal</span>) </span>&#123; <span class="comment">/* ... */</span> &#125;,</span><br><span class="line">      <span class="attr">deep</span>: <span class="literal">true</span></span><br><span class="line">    &#125;,</span><br><span class="line">    <span class="comment">// 该回调将会在侦听开始之后被立即调用</span></span><br><span class="line">    <span class="attr">d</span>: &#123;</span><br><span class="line">      <span class="attr">handler</span>: <span class="string">&#x27;someMethod&#x27;</span>,</span><br><span class="line">      <span class="attr">immediate</span>: <span class="literal">true</span></span><br><span class="line">    &#125;,</span><br><span class="line">    <span class="comment">// 你可以传入回调数组，它们会被逐一调用</span></span><br><span class="line">    <span class="attr">e</span>: [</span><br><span class="line">      <span class="string">&#x27;handle1&#x27;</span>,</span><br><span class="line">      <span class="function"><span class="keyword">function</span> <span class="title">handle2</span> (<span class="params">val, oldVal</span>) </span>&#123; <span class="comment">/* ... */</span> &#125;,</span><br><span class="line">      &#123;</span><br><span class="line">        <span class="attr">handler</span>: <span class="function"><span class="keyword">function</span> <span class="title">handle3</span> (<span class="params">val, oldVal</span>) </span>&#123; <span class="comment">/* ... */</span> &#125;,</span><br><span class="line">        <span class="comment">/* ... */</span></span><br><span class="line">      &#125;</span><br><span class="line">    ],</span><br><span class="line">    <span class="comment">// watch vm.e.f&#x27;s value: &#123;g: 5&#125;</span></span><br><span class="line">    <span class="string">&#x27;e.f&#x27;</span>: <span class="function"><span class="keyword">function</span> (<span class="params">val, oldVal</span>) </span>&#123; <span class="comment">/* ... */</span> &#125;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;)</span><br><span class="line">vm.a = <span class="number">2</span> <span class="comment">// =&gt; new: 2, old: 1</span></span><br></pre></td></tr></table></figure>
-<p><strong>注意，不应该使用箭头函数来定义  <code>watcher</code>  函数 (例如  <code>searchQuery: newValue =&gt; this.updateAutocomplete(newValue))</code> 。理由是箭头函数绑定了父级作用域的上下文，所以 this 将不会按照期望指向  <code>Vue</code>  实例， <code>this.updateAutocomplete</code>  将是  <code>undefined</code> 。</strong></p>
-<h3 id="实例选项dom"><a class="markdownIt-Anchor" href="#实例选项dom">#</a> 实例选项 / Dom</h3>
-<h4 id="el"><a class="markdownIt-Anchor" href="#el">#</a> <strong>el</strong></h4>
-<ul>
-<li>类型： <code>string | Element</code></li>
+
+<p><strong>注意，不应该使用箭头函数来定义 <code>watcher</code> 函数 (例如 <code>searchQuery: newValue =&gt; this.updateAutocomplete(newValue))</code>。理由是箭头函数绑定了父级作用域的上下文，所以 this 将不会按照期望指向 <code>Vue</code> 实例，<code>this.updateAutocomplete</code> 将是 <code>undefined</code>。</strong></p>
+<h3 id="实例选项-Dom"><a href="#实例选项-Dom" class="headerlink" title="实例选项/Dom"></a>实例选项/Dom</h3><h4 id="el"><a href="#el" class="headerlink" title="el"></a><strong>el</strong></h4><ul>
+<li>类型：<code>string | Element</code></li>
 <li>限制：只在用 new 创建实例时生效。</li>
-<li>详细：提供一个在页面上已存在的  <code>DOM</code>  元素作为  <code>Vue</code>  实例的挂载目标。可以是  <code>CSS</code>  选择器，也可以是一个  <code>HTMLElement</code>  实例。<br>
-在实例挂载之后，元素可以用  <code>vm.$el</code>  访问。<br>
-如果在实例化时存在这个选项，实例将立即进入编译过程，否则，需要显式调用  <code>vm.$mount()</code>  手动开启编译。</li>
+<li>详细：提供一个在页面上已存在的 <code>DOM</code> 元素作为 <code>Vue</code> 实例的挂载目标。可以是 <code>CSS</code> 选择器，也可以是一个 <code>HTMLElement</code> 实例。<br>在实例挂载之后，元素可以用 <code>vm.$el</code> 访问。<br>如果在实例化时存在这个选项，实例将立即进入编译过程，否则，需要显式调用 <code>vm.$mount()</code> 手动开启编译。</li>
 </ul>
 <blockquote>
 <p>提供的元素只能作为挂载点。不同于 Vue 1.x，所有的挂载元素会被 Vue 生成的 DOM 替换。因此不推荐挂载 root 实例到 html 或者 body 上。</p>
 </blockquote>
 <hr>
 如果 render 函数和 template property 都不存在，挂载 DOM 元素的 HTML 会被提取出来用作模板，此时，必须使用 Runtime + Compiler 构建的 Vue 库。
-<h4 id="template"><a class="markdownIt-Anchor" href="#template">#</a> <strong>template</strong></h4>
-<ul>
-<li>类型： <code>string</code></li>
-<li>详细：一个字符串模板作为  <code>Vue</code>  实例的标识使用。模板将会替换挂载的元素。挂载元素的内容都将被忽略，除非模板的内容有分发插槽。<br>
-如果值以 # 开始，则它将被用作选择符，并使用匹配元素的  <code>innerHTML</code>  作为模板。常用的技巧是用  <code>&lt;script type=&quot;x-template&quot;&gt;</code>  包含模板。</li>
+
+
+<h4 id="template"><a href="#template" class="headerlink" title="template"></a><strong>template</strong></h4><ul>
+<li>类型：<code>string</code></li>
+<li>详细：一个字符串模板作为 <code>Vue</code> 实例的标识使用。模板将会替换挂载的元素。挂载元素的内容都将被忽略，除非模板的内容有分发插槽。<br>如果值以 # 开始，则它将被用作选择符，并使用匹配元素的 <code>innerHTML</code> 作为模板。常用的技巧是用 <code>&lt;script type=&quot;x-template&quot;&gt;</code> 包含模板。</li>
 </ul>
 <p>出于安全考虑，你应该只使用你信任的 Vue 模板。避免使用其他人生成的内容作为你的模板。</p>
 <hr>
 如果 Vue 选项中包含渲染函数，该模板将被忽略。
-<h4 id="render"><a class="markdownIt-Anchor" href="#render">#</a> <strong>render</strong></h4>
-<ul>
+
+
+<h4 id="render"><a href="#render" class="headerlink" title="render"></a><strong>render</strong></h4><ul>
 <li>类型：(createElement: () =&gt; VNode) =&gt; VNode</li>
-<li>详细：字符串模板的代替方案，允许你发挥 JavaScript 最大的编程能力。该渲染函数接收一个  <code>createElement</code>  方法作为第一个参数用来创建  <code>VNode</code> 。</li>
+<li>详细：字符串模板的代替方案，允许你发挥 JavaScript 最大的编程能力。该渲染函数接收一个 <code>createElement</code> 方法作为第一个参数用来创建 <code>VNode</code>。</li>
 </ul>
 <blockquote>
 <p>如果组件是一个函数组件，渲染函数还会接收一个额外的 context 参数，为没有实例的函数组件提供上下文信息。</p>
 </blockquote>
 <hr>
 Vue 选项中的 render 函数若存在，则 Vue 构造函数不会从 template 选项或通过 el 选项指定的挂载元素中提取出的 HTML 模板编译渲染函数。
-<h4 id="rendererror"><a class="markdownIt-Anchor" href="#rendererror">#</a> <strong>renderError</strong></h4>
-<ul>
+
+<h4 id="renderError"><a href="#renderError" class="headerlink" title="renderError"></a><strong>renderError</strong></h4><ul>
 <li>类型：(createElement: () =&gt; VNode, error: Error) =&gt; VNode</li>
-<li>详细：<strong>只在开发者环境下工作。</strong><br>
-当  <code>render</code>  函数遭遇错误时，提供另外一种渲染输出。其错误将会作为第二个参数传递到  <code>renderError</code> 。这个功能配合  <code>hot-reload</code>  非常实用。</li>
+<li>详细：<strong>只在开发者环境下工作。</strong><br>当 <code>render</code> 函数遭遇错误时，提供另外一种渲染输出。其错误将会作为第二个参数传递到 <code>renderError</code>。这个功能配合 <code>hot-reload</code> 非常实用。</li>
 </ul>
 <p><strong>实例:</strong></p>
 <figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">new</span> Vue(&#123;</span><br><span class="line">  render (h) &#123;</span><br><span class="line">    <span class="keyword">throw</span> <span class="keyword">new</span> <span class="built_in">Error</span>(<span class="string">&#x27;oops&#x27;</span>)</span><br><span class="line">  &#125;,</span><br><span class="line">  renderError (h, err) &#123;</span><br><span class="line">    <span class="keyword">return</span> h(<span class="string">&#x27;pre&#x27;</span>, &#123; <span class="attr">style</span>: &#123; <span class="attr">color</span>: <span class="string">&#x27;red&#x27;</span> &#125;&#125;, err.stack)</span><br><span class="line">  &#125;</span><br><span class="line">&#125;).$mount(<span class="string">&#x27;#app&#x27;</span>)</span><br></pre></td></tr></table></figure>
-<h3 id="选项生命周期钩子"><a class="markdownIt-Anchor" href="#选项生命周期钩子">#</a> 选项 / 生命周期钩子</h3>
-<blockquote>
-<p>所有的生命周期钩子自动绑定  <code>this</code>  上下文到实例中，因此你可以访问数据，对  <code>property</code>  和方法进行运算。这意味着你不能使用箭头函数来定义一个生命周期方法 (例如  <code>created: () =&gt; this.fetchTodos())</code> 。这是因为箭头函数绑定了父上下文，因此  <code>this</code>  与你期待的  <code>Vue</code>  实例不同， <code>this.fetchTodos</code>  的行为未定义。</p>
+
+<h3 id="选项-生命周期钩子"><a href="#选项-生命周期钩子" class="headerlink" title="选项/生命周期钩子"></a>选项/生命周期钩子</h3><blockquote>
+<p>所有的生命周期钩子自动绑定 <code>this</code> 上下文到实例中，因此你可以访问数据，对 <code>property</code> 和方法进行运算。这意味着你不能使用箭头函数来定义一个生命周期方法 (例如 <code>created: () =&gt; this.fetchTodos())</code>。这是因为箭头函数绑定了父上下文，因此 <code>this</code> 与你期待的 <code>Vue</code> 实例不同，<code>this.fetchTodos</code> 的行为未定义。</p>
 </blockquote>
-<h4 id="beforecreate"><a class="markdownIt-Anchor" href="#beforecreate">#</a> <strong>beforeCreate</strong></h4>
-<ul>
-<li>类型： <code>Function</code></li>
-<li>详细：在实例初始化之后，数据观测  <code>(data observer)</code>  和  <code>event/watcher</code>  事件配置之前被调用。</li>
+<h4 id="beforeCreate"><a href="#beforeCreate" class="headerlink" title="beforeCreate"></a><strong>beforeCreate</strong></h4><ul>
+<li>类型：<code>Function</code></li>
+<li>详细：在实例初始化之后，数据观测 <code>(data observer)</code> 和 <code>event/watcher</code> 事件配置之前被调用。</li>
 </ul>
-<h4 id="created"><a class="markdownIt-Anchor" href="#created">#</a> <strong>created</strong></h4>
-<ul>
-<li>类型： <code>Function</code></li>
-<li>详细：在实例创建完成后被立即调用。在这一步，实例已完成以下的配置：数据观测  <code>(data observer)</code> ， <code>property</code>  和方法的运算， <code>watch/event</code>  事件回调。然而，挂载阶段还没开始， <code>$el property</code>  目前尚不可用。</li>
+<h4 id="created"><a href="#created" class="headerlink" title="created"></a><strong>created</strong></h4><ul>
+<li>类型：<code>Function</code></li>
+<li>详细：在实例创建完成后被立即调用。在这一步，实例已完成以下的配置：数据观测 <code>(data observer)</code>，<code>property</code> 和方法的运算，<code>watch/event</code> 事件回调。然而，挂载阶段还没开始，<code>$el property</code> 目前尚不可用。</li>
 </ul>
-<h4 id="beforemount"><a class="markdownIt-Anchor" href="#beforemount">#</a> <strong>beforeMount</strong></h4>
-<ul>
-<li>类型： <code>Function</code></li>
-<li>详细：在挂载开始之前被调用：相关的  <code>render</code>  函数首次被调用。<br>
-<strong>该钩子在服务器端渲染期间不被调用。</strong></li>
+<h4 id="beforeMount"><a href="#beforeMount" class="headerlink" title="beforeMount"></a><strong>beforeMount</strong></h4><ul>
+<li>类型：<code>Function</code></li>
+<li>详细：在挂载开始之前被调用：相关的 <code>render</code> 函数首次被调用。</li>
 </ul>
-<h4 id="mounted"><a class="markdownIt-Anchor" href="#mounted">#</a> <strong>mounted</strong></h4>
-<ul>
-<li>
-<p>类型： <code>Function</code></p>
+<p><strong>该钩子在服务器端渲染期间不被调用。</strong></p>
+<h4 id="mounted"><a href="#mounted" class="headerlink" title="mounted"></a><strong>mounted</strong></h4><ul>
+<li><p>类型：<code>Function</code></p>
 </li>
-<li>
-<p>详细：</p>
+<li><p>详细：</p>
 <ul>
-<li>
-<p>实例被挂载后调用，这时  <code>el</code>  被新创建的  <code>vm.$el</code>  替换了。如果根实例挂载到了一个文档内的元素上，当  <code>mounted</code>  被调用时  <code>vm.$el</code>  也在文档内。</p>
+<li><p>实例被挂载后调用，这时 <code>el</code> 被新创建的 <code>vm.$el</code> 替换了。如果根实例挂载到了一个文档内的元素上，当 <code>mounted</code> 被调用时 <code>vm.$el</code> 也在文档内。</p>
 </li>
-<li>
-<p>注意  <code>mounted</code>  不会保证所有的子组件也都一起被挂载。如果你希望等到整个视图都渲染完毕，可以在  <code>mounted</code>  内部使用  <code>vm.$nextTick：</code></p>
+<li><p>注意 <code>mounted</code> 不会保证所有的子组件也都一起被挂载。如果你希望等到整个视图都渲染完毕，可以在 <code>mounted</code> 内部使用 <code>vm.$nextTick：</code></p>
 </li>
 </ul>
 <figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">mounted: <span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</span><br><span class="line"><span class="built_in">this</span>.$nextTick(<span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</span><br><span class="line">  <span class="comment">// Code that will run only after the</span></span><br><span class="line">  <span class="comment">// entire view has been rendered</span></span><br><span class="line"> &#125;)</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-</li>
+<h3 id="选项-资源"><a href="#选项-资源" class="headerlink" title="选项/资源"></a><strong>选项/资源</strong></h3></li>
 </ul>
-<h3 id="选项资源"><a class="markdownIt-Anchor" href="#选项资源">#</a> <strong>选项 / 资源</strong></h3>
-<h4 id="component"><a class="markdownIt-Anchor" href="#component">#</a> <strong> <code>Component</code> </strong></h4>
-<blockquote>
+<h4 id="Component"><a href="#Component" class="headerlink" title="Component"></a><strong><code>Component</code></strong></h4><blockquote>
 <p>关于组件的使用补充:</p>
 </blockquote>
-<h5 id="实例"><a class="markdownIt-Anchor" href="#实例">#</a> <strong>实例:</strong></h5>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 定义一个名为 button-counter 的新组件</span></span><br><span class="line">Vue.component(<span class="string">&#x27;button-counter&#x27;</span>, &#123;</span><br><span class="line">  <span class="attr">data</span>: <span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</span><br><span class="line">    <span class="keyword">return</span> &#123;</span><br><span class="line">      <span class="attr">count</span>: <span class="number">0</span></span><br><span class="line">    &#125;</span><br><span class="line">  &#125;,</span><br><span class="line">  <span class="attr">template</span>: <span class="string">&#x27;&lt;button v-on:click=&quot;count++&quot;&gt;You clicked me &#123;&#123; count &#125;&#125; times.&lt;/button&gt;&#x27;</span></span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure>
-<p>组件是可复用的  <code>Vue</code>  实例，且带有一个名字：在这个例子中是  <code>&lt;button-counter&gt;</code> 。我们可以在一个通过  <code>new Vue</code>  创建的  <code>Vue</code>  根实例中，把这个组件作为自定义元素来使用：</p>
+<h5 id="实例"><a href="#实例" class="headerlink" title="实例:"></a><strong>实例:</strong></h5><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 定义一个名为 button-counter 的新组件</span></span><br><span class="line">Vue.component(<span class="string">&#x27;button-counter&#x27;</span>, &#123;</span><br><span class="line">  <span class="attr">data</span>: <span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</span><br><span class="line">    <span class="keyword">return</span> &#123;</span><br><span class="line">      <span class="attr">count</span>: <span class="number">0</span></span><br><span class="line">    &#125;</span><br><span class="line">  &#125;,</span><br><span class="line">  <span class="attr">template</span>: <span class="string">&#x27;&lt;button v-on:click=&quot;count++&quot;&gt;You clicked me &#123;&#123; count &#125;&#125; times.&lt;/button&gt;&#x27;</span></span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure>
+<p>组件是可复用的 <code>Vue</code> 实例，且带有一个名字：在这个例子中是 <code>&lt;button-counter&gt;</code>。我们可以在一个通过 <code>new Vue</code> 创建的 <code>Vue</code> 根实例中，把这个组件作为自定义元素来使用：</p>
 <figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">id</span>=<span class="string">&quot;components-demo&quot;</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">button-counter</span>&gt;</span><span class="tag">&lt;/<span class="name">button-counter</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure>
-<p><strong>因为组件是可复用的  <code>Vue</code>  实例，所以它们与  <code>new Vue</code>  接收相同的选项，例如  <code>data、computed、watch、methods</code>  以及生命周期钩子等。仅有的例外是像  <code>el</code>  这样根实例特有的选项。</strong></p>
-<h5 id="data-必须是一个函数"><a class="markdownIt-Anchor" href="#data-必须是一个函数">#</a> <strong><mark>data 必须是一个函数</mark></strong></h5>
-<p>当我们定义这个  <code>&lt;button-counter&gt;</code>  组件时，你可能会发现它的 data 并不是像这样直接提供一个对象：</p>
+<p><strong>因为组件是可复用的 <code>Vue</code> 实例，所以它们与 <code>new Vue</code> 接收相同的选项，例如 <code>data、computed、watch、methods</code> 以及生命周期钩子等。仅有的例外是像 <code>el</code> 这样根实例特有的选项。</strong></p>
+<h5 id="data-必须是一个函数"><a href="#data-必须是一个函数" class="headerlink" title="==data 必须是一个函数=="></a><strong>==data 必须是一个函数==</strong></h5><p>当我们定义这个 <code>&lt;button-counter&gt;</code> 组件时，你可能会发现它的 data 并不是像这样直接提供一个对象：</p>
 <figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">data: &#123;</span><br><span class="line">  <span class="attr">count</span>: <span class="number">0</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p>取而代之的是，<strong>一个组件的  <code>data</code>  选项必须是一个函数</strong>，因此每个实例可以维护一份被返回对象的独立的拷贝：</p>
+<p>取而代之的是，<strong>一个组件的 <code>data</code> 选项必须是一个函数</strong>，因此每个实例可以维护一份被返回对象的独立的拷贝：</p>
 <figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">data: <span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</span><br><span class="line">  <span class="keyword">return</span> &#123;</span><br><span class="line">    <span class="attr">count</span>: <span class="number">0</span></span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<h5 id="组件的组织"><a class="markdownIt-Anchor" href="#组件的组织">#</a> <strong>组件的组织</strong></h5>
-<p>通常一个应用会以一棵嵌套的组件树的形式来组织：</p>
+<h5 id="组件的组织"><a href="#组件的组织" class="headerlink" title="组件的组织"></a><strong>组件的组织</strong></h5><p>通常一个应用会以一棵嵌套的组件树的形式来组织：</p>
+
 
 <p>例如，你可能会有页头、侧边栏、内容区等组件，每个组件又包含了其它的像导航链接、博文之类的组件。</p>
-<p>为了能在模板中使用，这些组件必须先注册以便  <code>Vue</code>  能够识别。这里有两种组件的注册类型：<strong>全局注册</strong>和<strong>局部注册</strong>。至此，我们的组件都只是通过  <code>Vue.component</code>  全局注册的：</p>
+<p>为了能在模板中使用，这些组件必须先注册以便 <code>Vue</code> 能够识别。这里有两种组件的注册类型：<strong>全局注册</strong>和<strong>局部注册</strong>。至此，我们的组件都只是通过 <code>Vue.component</code> 全局注册的：</p>
 <figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">Vue.component(<span class="string">&#x27;my-component-name&#x27;</span>, &#123;</span><br><span class="line">  <span class="comment">// ... options ...</span></span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure>
-<p>全局注册的组件可以用在其被注册之后的任何 (通过  <code>new Vue</code> ) 新创建的  <code>Vue</code>  根实例，也包括其组件树中的所有子组件的模板中。</p>
-<p>到目前为止，关于组件注册你需要了解的就这些了，如果你阅读完本页内容并掌握了它的内容，我们会推荐你再回来把 **<a href="#zujianzhuce"> 组件注册</a> ** 读完。</p>
-<h5 id="span-idzujianzhuce组件注册span"><a class="markdownIt-Anchor" href="#span-idzujianzhuce组件注册span">#</a> <span id="zujianzhuce">组件注册</span></h5>
-<blockquote>
+<p>全局注册的组件可以用在其被注册之后的任何 (通过 <code>new Vue</code>) 新创建的 <code>Vue</code> 根实例，也包括其组件树中的所有子组件的模板中。</p>
+<p>到目前为止，关于组件注册你需要了解的就这些了，如果你阅读完本页内容并掌握了它的内容，我们会推荐你再回来把**<a href="#zujianzhuce">组件注册</a>**读完。</p>
+<h5 id="组件注册"><a href="#组件注册" class="headerlink" title="组件注册"></a><span id="zujianzhuce">组件注册</span></h5><blockquote>
 <p>全局注册略</p>
 </blockquote>
 <blockquote>
 <p>局部注册</p>
 </blockquote>
-<p>全局注册往往是不够理想的。比如，如果你使用一个像  <code>webpack</code>  这样的构建系统，全局注册所有的组件意味着即便你已经不再使用一个组件了，它仍然会被包含在你最终的构建结果中。这造成了用户下载的  <code>JavaScript</code>  的无谓的增加。</p>
-<p>在这些情况下，你可以通过一个普通的  <code>JavaScript</code>  对象来定义组件：</p>
+<p>全局注册往往是不够理想的。比如，如果你使用一个像 <code>webpack</code>这样的构建系统，全局注册所有的组件意味着即便你已经不再使用一个组件了，它仍然会被包含在你最终的构建结果中。这造成了用户下载的 <code>JavaScript</code> 的无谓的增加。</p>
+<p>在这些情况下，你可以通过一个普通的 <code>JavaScript</code> 对象来定义组件：</p>
 <figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> ComponentA = &#123; <span class="comment">/* ... */</span> &#125;</span><br><span class="line"><span class="keyword">var</span> ComponentB = &#123; <span class="comment">/* ... */</span> &#125;</span><br><span class="line"><span class="keyword">var</span> ComponentC = &#123; <span class="comment">/* ... */</span> &#125;</span><br></pre></td></tr></table></figure>
-<p>然后在  <code>components</code>  选项中定义你想要使用的组件：</p>
+<p>然后在 <code>components</code> 选项中定义你想要使用的组件：</p>
 <figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">new</span> Vue(&#123;</span><br><span class="line">  <span class="attr">el</span>: <span class="string">&#x27;#app&#x27;</span>,</span><br><span class="line">  <span class="attr">components</span>: &#123;</span><br><span class="line">    <span class="string">&#x27;component-a&#x27;</span>: ComponentA,</span><br><span class="line">    <span class="string">&#x27;component-b&#x27;</span>: ComponentB</span><br><span class="line">  &#125;</span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure>
-<p>对于  <code>components</code>  对象中的每个  <code>property</code>  来说，其  <code>property</code>  名就是自定义元素的名字，其  <code>property</code>  值就是这个组件的选项对象。</p>
-<p>注意<strong>局部注册的组件在其子组件中不可用</strong>。例如，如果你希望  <code>ComponentA</code>  在  <code>ComponentB</code>  中可用，则你需要这样写：</p>
+<p>对于 <code>components</code> 对象中的每个 <code>property</code> 来说，其 <code>property</code> 名就是自定义元素的名字，其 <code>property</code> 值就是这个组件的选项对象。</p>
+<p>注意<strong>局部注册的组件在其子组件中不可用</strong>。例如，如果你希望 <code>ComponentA</code> 在 <code>ComponentB</code> 中可用，则你需要这样写：</p>
 <figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> ComponentA = &#123; <span class="comment">/* ... */</span> &#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">var</span> ComponentB = &#123;</span><br><span class="line">  <span class="attr">components</span>: &#123;</span><br><span class="line">    <span class="string">&#x27;component-a&#x27;</span>: ComponentA</span><br><span class="line">  &#125;,</span><br><span class="line">  <span class="comment">// ...</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p>或者如果你通过  <code>Babel</code>  和  <code>webpack</code>  使用  <code>ES2015</code>  模块，那么代码看起来更像：</p>
+<p>或者如果你通过 <code>Babel</code> 和 <code>webpack</code> 使用 <code>ES2015</code> 模块，那么代码看起来更像：</p>
 <figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> ComponentA <span class="keyword">from</span> <span class="string">&#x27;./ComponentA.vue&#x27;</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">export</span> <span class="keyword">default</span> &#123;</span><br><span class="line">  <span class="attr">components</span>: &#123;</span><br><span class="line">    ComponentA</span><br><span class="line">  &#125;,</span><br><span class="line">  <span class="comment">// ...</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<h5 id="通过-prop-向子组件传递数据"><a class="markdownIt-Anchor" href="#通过-prop-向子组件传递数据">#</a> <strong>通过 Prop 向子组件传递数据</strong></h5>
-<p>早些时候，我们提到了创建一个博文组件的事情。问题是如果你不能向这个组件传递某一篇博文的标题或内容之类的我们想展示的数据的话，它是没有办法使用的。这也正是  <code>prop</code>  的由来。</p>
-<p><code>Prop</code>  是你可以在组件上注册的一些自定义  <code>attribute</code> 。当一个值传递给一个  <code>prop attribute</code>  的时候，它就变成了那个组件实例的一个  <code>property</code> 。为了给博文组件传递一个标题，我们可以用一个  <code>props</code>  选项将其包含在该组件可接受的  <code>prop</code>  列表中：</p>
+<h5 id="通过-Prop-向子组件传递数据"><a href="#通过-Prop-向子组件传递数据" class="headerlink" title="通过 Prop 向子组件传递数据"></a><strong>通过 Prop 向子组件传递数据</strong></h5><p>早些时候，我们提到了创建一个博文组件的事情。问题是如果你不能向这个组件传递某一篇博文的标题或内容之类的我们想展示的数据的话，它是没有办法使用的。这也正是 <code>prop</code> 的由来。</p>
+<p><code>Prop</code> 是你可以在组件上注册的一些自定义 <code>attribute</code>。当一个值传递给一个 <code>prop attribute</code> 的时候，它就变成了那个组件实例的一个 <code>property</code>。为了给博文组件传递一个标题，我们可以用一个 <code>props</code> 选项将其包含在该组件可接受的 <code>prop</code> 列表中：</p>
 <figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">Vue.component(<span class="string">&#x27;blog-post&#x27;</span>, &#123;</span><br><span class="line">  <span class="attr">props</span>: [<span class="string">&#x27;title&#x27;</span>],</span><br><span class="line">  <span class="attr">template</span>: <span class="string">&#x27;&lt;h3&gt;&#123;&#123; title &#125;&#125;&lt;/h3&gt;&#x27;</span></span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure>
-<p>一个组件默认可以拥有任意数量的 <code>prop</code> ，任何值都可以传递给任何  <code>prop</code> 。在上述模板中，你会发现我们能够在组件实例中访问这个值，就像访问  <code>data</code>  中的值一样。</p>
-<p>一个  <code>prop</code>  被注册之后，你就可以像这样把数据作为一个自定义  <code>attribute</code>  传递进来：</p>
+<p>一个组件默认可以拥有任意数量的<code>prop</code>，任何值都可以传递给任何 <code>prop</code>。在上述模板中，你会发现我们能够在组件实例中访问这个值，就像访问 <code>data</code> 中的值一样。</p>
+<p>一个 <code>prop</code> 被注册之后，你就可以像这样把数据作为一个自定义 <code>attribute</code> 传递进来：</p>
 <figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&lt;blog-post title=<span class="string">&quot;My journey with Vue&quot;</span>&gt;&lt;/blog-post&gt;</span><br><span class="line"><span class="xml"><span class="tag">&lt;<span class="name">blog-post</span> <span class="attr">title</span>=<span class="string">&quot;Blogging with Vue&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">blog-post</span>&gt;</span></span></span><br><span class="line"><span class="xml"><span class="tag">&lt;<span class="name">blog-post</span> <span class="attr">title</span>=<span class="string">&quot;Why Vue is so fun&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">blog-post</span>&gt;</span></span></span><br></pre></td></tr></table></figure>
 <p>结果:</p>
 
-<p>然而在一个典型的应用中，你可能在  <code>data</code>  里有一个博文的数组：</p>
+
+<p>然而在一个典型的应用中，你可能在 <code>data</code> 里有一个博文的数组：</p>
 <figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">new</span> Vue(&#123;</span><br><span class="line">  <span class="attr">el</span>: <span class="string">&#x27;#blog-post-demo&#x27;</span>,</span><br><span class="line">  <span class="attr">data</span>: &#123;</span><br><span class="line">    <span class="attr">posts</span>: [</span><br><span class="line">      &#123; <span class="attr">id</span>: <span class="number">1</span>, <span class="attr">title</span>: <span class="string">&#x27;My journey with Vue&#x27;</span> &#125;,</span><br><span class="line">      &#123; <span class="attr">id</span>: <span class="number">2</span>, <span class="attr">title</span>: <span class="string">&#x27;Blogging with Vue&#x27;</span> &#125;,</span><br><span class="line">      &#123; <span class="attr">id</span>: <span class="number">3</span>, <span class="attr">title</span>: <span class="string">&#x27;Why Vue is so fun&#x27;</span> &#125;</span><br><span class="line">    ]</span><br><span class="line">  &#125;</span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure>
 <p>并想要为每篇博文渲染一个组件：</p>
 <figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">&lt;blog-post</span><br><span class="line">  v-<span class="keyword">for</span>=<span class="string">&quot;post in posts&quot;</span></span><br><span class="line">  v-bind:key=<span class="string">&quot;post.id&quot;</span></span><br><span class="line">  v-bind:title=<span class="string">&quot;post.title&quot;</span></span><br><span class="line">&gt;&lt;/blog-post&gt;</span><br></pre></td></tr></table></figure>
-<p>看起来当组件变得越来越复杂的时候，我们的博文不只需要标题和内容，还需要发布日期、评论等等。为每个相关的信息定义一个  <code>prop</code>  会变得很麻烦：</p>
+
+<p>看起来当组件变得越来越复杂的时候，我们的博文不只需要标题和内容，还需要发布日期、评论等等。为每个相关的信息定义一个 <code>prop</code> 会变得很麻烦：</p>
 <figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">&lt;blog-post</span><br><span class="line">  v-<span class="keyword">for</span>=<span class="string">&quot;post in posts&quot;</span></span><br><span class="line">  v-bind:key=<span class="string">&quot;post.id&quot;</span></span><br><span class="line">  v-bind:title=<span class="string">&quot;post.title&quot;</span></span><br><span class="line">  v-bind:content=<span class="string">&quot;post.content&quot;</span></span><br><span class="line">  v-bind:publishedAt=<span class="string">&quot;post.publishedAt&quot;</span></span><br><span class="line">  v-bind:comments=<span class="string">&quot;post.comments&quot;</span></span><br><span class="line">&gt;&lt;/blog-post&gt;</span><br></pre></td></tr></table></figure>
-<p>所以是时候重构一下这个  <code>&lt;blog-post&gt;</code>  组件了，让它变成接受一个单独的  <code>post</code>   <code>prop</code> ：</p>
+<p>所以是时候重构一下这个 <code>&lt;blog-post&gt;</code> 组件了，让它变成接受一个单独的 <code>post</code> <code>prop</code>：</p>
 <figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line">&lt;blog-post</span><br><span class="line">  v-<span class="keyword">for</span>=<span class="string">&quot;post in posts&quot;</span></span><br><span class="line">  v-bind:key=<span class="string">&quot;post.id&quot;</span></span><br><span class="line">  v-bind:post=<span class="string">&quot;post&quot;</span></span><br><span class="line">&gt;&lt;/blog-post&gt;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">Vue.component(<span class="string">&#x27;blog-post&#x27;</span>, &#123;</span><br><span class="line">  <span class="attr">props</span>: [<span class="string">&#x27;post&#x27;</span>],</span><br><span class="line">  <span class="attr">template</span>: <span class="string">`</span></span><br><span class="line"><span class="string">    &lt;div class=&quot;blog-post&quot;&gt;</span></span><br><span class="line"><span class="string">      &lt;h3&gt;&#123;&#123; post.title &#125;&#125;&lt;/h3&gt;</span></span><br><span class="line"><span class="string">      &lt;div v-html=&quot;post.content&quot;&gt;&lt;/div&gt;</span></span><br><span class="line"><span class="string">    &lt;/div&gt;</span></span><br><span class="line"><span class="string">  `</span></span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure>
-<p><mark>现在，不论何时为  <code>post</code>  对象添加一个新的  <code>property</code> ，它都会自动地在  <code>&lt;blog-post&gt;</code>  内可用</mark>。</p>
+<p>==现在，不论何时为 <code>post</code> 对象添加一个新的 <code>property</code>，它都会自动地在 <code>&lt;blog-post&gt;</code> 内可用==。</p>
 
       <div class="tags">
           <a href="/tags/%E5%89%8D%E7%AB%AF/" rel="tag"><i class="ic i-tag"></i> 前端</a>
@@ -442,7 +409,7 @@ Vue 选项中的 render 函数若存在，则 Vue 构造函数不会从 template
     <div class="item left">
       
 
-  <a href="/posts/b5314c4/" itemprop="url" rel="prev" data-background-image="https:&#x2F;&#x2F;tva1.sinaimg.cn&#x2F;mw690&#x2F;6833939bly1giph4wqtg4j20zk0m8x6p.jpg" title="Vue2语法简介">
+  <a href="/posts/b5314c4/" itemprop="url" rel="prev" data-background-image="https:&#x2F;&#x2F;tva2.sinaimg.cn&#x2F;mw690&#x2F;6833939bly1giciuja1j1j20zk0m8kjl.jpg" title="Vue2语法简介">
   <span class="type">Previous Post</span>
   <span class="category"><i class="ic i-flag"></i> Vue</span>
   <h3>Vue2语法简介</h3>
@@ -452,7 +419,7 @@ Vue 选项中的 render 函数若存在，则 Vue 构造函数不会从 template
     <div class="item right">
       
 
-  <a href="/posts/21d4b84b/" itemprop="url" rel="next" data-background-image="https:&#x2F;&#x2F;tva1.sinaimg.cn&#x2F;mw690&#x2F;6833939bly1giclhtuo6nj20zk0m8ttm.jpg" title="Vue3项目的创建">
+  <a href="/posts/21d4b84b/" itemprop="url" rel="next" data-background-image="https:&#x2F;&#x2F;tva2.sinaimg.cn&#x2F;mw690&#x2F;6833939bly1giclxxcb6rj20zk0m8b29.jpg" title="Vue3项目的创建">
   <span class="type">Next Post</span>
   <span class="category"><i class="ic i-flag"></i> Vue</span>
   <h3>Vue3项目的创建</h3>
@@ -474,7 +441,7 @@ Vue 选项中的 render 函数若存在，则 Vue 构造函数不会从 template
   <div class="panels">
     <div class="inner">
       <div class="contents panel pjax" data-title="Contents">
-          <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#vue%E5%B1%9E%E6%80%A7"><span class="toc-number">1.</span> <span class="toc-text"> Vue 属性</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%88%9B%E5%BB%BAvue%E5%AE%9E%E4%BE%8B"><span class="toc-number">1.1.</span> <span class="toc-text"> 创建 Vue 实例</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%AE%9E%E4%BE%8B%E9%80%89%E9%A1%B9%E6%95%B0%E6%8D%AE"><span class="toc-number">1.1.1.</span> <span class="toc-text"> 实例选项 &#x2F; 数据</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#data"><span class="toc-number">1.1.1.1.</span> <span class="toc-text"> data</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#props"><span class="toc-number">1.1.1.2.</span> <span class="toc-text"> props</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#propsdata"><span class="toc-number">1.1.1.3.</span> <span class="toc-text"> propsData</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#computed"><span class="toc-number">1.1.1.4.</span> <span class="toc-text"> computed</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#methods"><span class="toc-number">1.1.1.5.</span> <span class="toc-text"> methods</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#watch"><span class="toc-number">1.1.1.6.</span> <span class="toc-text"> watch</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%AE%9E%E4%BE%8B%E9%80%89%E9%A1%B9dom"><span class="toc-number">1.1.2.</span> <span class="toc-text"> 实例选项 &#x2F; Dom</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#el"><span class="toc-number">1.1.2.1.</span> <span class="toc-text"> el</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#template"><span class="toc-number">1.1.2.2.</span> <span class="toc-text"> template</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#render"><span class="toc-number">1.1.2.3.</span> <span class="toc-text"> render</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#rendererror"><span class="toc-number">1.1.2.4.</span> <span class="toc-text"> renderError</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%80%89%E9%A1%B9%E7%94%9F%E5%91%BD%E5%91%A8%E6%9C%9F%E9%92%A9%E5%AD%90"><span class="toc-number">1.1.3.</span> <span class="toc-text"> 选项 &#x2F; 生命周期钩子</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#beforecreate"><span class="toc-number">1.1.3.1.</span> <span class="toc-text"> beforeCreate</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#created"><span class="toc-number">1.1.3.2.</span> <span class="toc-text"> created</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#beforemount"><span class="toc-number">1.1.3.3.</span> <span class="toc-text"> beforeMount</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#mounted"><span class="toc-number">1.1.3.4.</span> <span class="toc-text"> mounted</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%80%89%E9%A1%B9%E8%B5%84%E6%BA%90"><span class="toc-number">1.1.4.</span> <span class="toc-text"> 选项 &#x2F; 资源</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#component"><span class="toc-number">1.1.4.1.</span> <span class="toc-text">  Component </span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#%E5%AE%9E%E4%BE%8B"><span class="toc-number">1.1.4.1.1.</span> <span class="toc-text"> 实例:</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#data-%E5%BF%85%E9%A1%BB%E6%98%AF%E4%B8%80%E4%B8%AA%E5%87%BD%E6%95%B0"><span class="toc-number">1.1.4.1.2.</span> <span class="toc-text"> data 必须是一个函数</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#%E7%BB%84%E4%BB%B6%E7%9A%84%E7%BB%84%E7%BB%87"><span class="toc-number">1.1.4.1.3.</span> <span class="toc-text"> 组件的组织</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#span-idzujianzhuce%E7%BB%84%E4%BB%B6%E6%B3%A8%E5%86%8Cspan"><span class="toc-number">1.1.4.1.4.</span> <span class="toc-text"> 组件注册</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#%E9%80%9A%E8%BF%87-prop-%E5%90%91%E5%AD%90%E7%BB%84%E4%BB%B6%E4%BC%A0%E9%80%92%E6%95%B0%E6%8D%AE"><span class="toc-number">1.1.4.1.5.</span> <span class="toc-text"> 通过 Prop 向子组件传递数据</span></a></li></ol></li></ol></li></ol></li></ol></li></ol>
+          <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#Vue%E5%B1%9E%E6%80%A7"><span class="toc-number">1.</span> <span class="toc-text">Vue属性</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%88%9B%E5%BB%BAVue%E5%AE%9E%E4%BE%8B"><span class="toc-number">1.1.</span> <span class="toc-text">创建Vue实例</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%AE%9E%E4%BE%8B%E9%80%89%E9%A1%B9-%E6%95%B0%E6%8D%AE"><span class="toc-number">1.1.1.</span> <span class="toc-text">实例选项&#x2F;数据</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#data"><span class="toc-number">1.1.1.1.</span> <span class="toc-text">data</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#props"><span class="toc-number">1.1.1.2.</span> <span class="toc-text">props</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#propsData"><span class="toc-number">1.1.1.3.</span> <span class="toc-text">propsData</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#computed"><span class="toc-number">1.1.1.4.</span> <span class="toc-text">computed</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#methods"><span class="toc-number">1.1.1.5.</span> <span class="toc-text">methods</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#watch"><span class="toc-number">1.1.1.6.</span> <span class="toc-text">watch</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%AE%9E%E4%BE%8B%E9%80%89%E9%A1%B9-Dom"><span class="toc-number">1.1.2.</span> <span class="toc-text">实例选项&#x2F;Dom</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#el"><span class="toc-number">1.1.2.1.</span> <span class="toc-text">el</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#template"><span class="toc-number">1.1.2.2.</span> <span class="toc-text">template</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#render"><span class="toc-number">1.1.2.3.</span> <span class="toc-text">render</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#renderError"><span class="toc-number">1.1.2.4.</span> <span class="toc-text">renderError</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%80%89%E9%A1%B9-%E7%94%9F%E5%91%BD%E5%91%A8%E6%9C%9F%E9%92%A9%E5%AD%90"><span class="toc-number">1.1.3.</span> <span class="toc-text">选项&#x2F;生命周期钩子</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#beforeCreate"><span class="toc-number">1.1.3.1.</span> <span class="toc-text">beforeCreate</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#created"><span class="toc-number">1.1.3.2.</span> <span class="toc-text">created</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#beforeMount"><span class="toc-number">1.1.3.3.</span> <span class="toc-text">beforeMount</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#mounted"><span class="toc-number">1.1.3.4.</span> <span class="toc-text">mounted</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%80%89%E9%A1%B9-%E8%B5%84%E6%BA%90"><span class="toc-number">1.1.4.</span> <span class="toc-text">选项&#x2F;资源</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#Component"><span class="toc-number">1.1.4.1.</span> <span class="toc-text">Component</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#%E5%AE%9E%E4%BE%8B"><span class="toc-number">1.1.4.1.1.</span> <span class="toc-text">实例:</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#data-%E5%BF%85%E9%A1%BB%E6%98%AF%E4%B8%80%E4%B8%AA%E5%87%BD%E6%95%B0"><span class="toc-number">1.1.4.1.2.</span> <span class="toc-text">&#x3D;&#x3D;data 必须是一个函数&#x3D;&#x3D;</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#%E7%BB%84%E4%BB%B6%E7%9A%84%E7%BB%84%E7%BB%87"><span class="toc-number">1.1.4.1.3.</span> <span class="toc-text">组件的组织</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#%E7%BB%84%E4%BB%B6%E6%B3%A8%E5%86%8C"><span class="toc-number">1.1.4.1.4.</span> <span class="toc-text">组件注册</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#%E9%80%9A%E8%BF%87-Prop-%E5%90%91%E5%AD%90%E7%BB%84%E4%BB%B6%E4%BC%A0%E9%80%92%E6%95%B0%E6%8D%AE"><span class="toc-number">1.1.4.1.5.</span> <span class="toc-text">通过 Prop 向子组件传递数据</span></a></li></ol></li></ol></li></ol></li></ol></li></ol>
       </div>
       <div class="related panel pjax" data-title="Related">
         <ul>
@@ -583,6 +550,15 @@ Vue 选项中的 render 函数若存在，则 Vue 构造函数不会从 template
   <li class="item">
     
 <div class="breadcrumb">
+</div>
+
+    <span><a href="/posts/159c6098/" title="阻塞队列">阻塞队列</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
 <a href="/categories/Java/" title="In Java">Java</a>
 <i class="ic i-angle-right"></i>
 <a href="/categories/Java/Mybatis/" title="In Mybatis">Mybatis</a>
@@ -597,14 +573,10 @@ Vue 选项中的 render 函数若存在，则 Vue 构造函数不会从 template
   <li class="item">
     
 <div class="breadcrumb">
-<a href="/categories/%E5%89%8D%E7%AB%AF/" title="In 前端">前端</a>
-<i class="ic i-angle-right"></i>
-<a href="/categories/%E5%89%8D%E7%AB%AF/JavaScript/" title="In JavaScript">JavaScript</a>
-<i class="ic i-angle-right"></i>
-<a href="/categories/%E5%89%8D%E7%AB%AF/JavaScript/Html/" title="In Html">Html</a>
+<a href="/categories/%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F/" title="In 正则表达式">正则表达式</a>
 </div>
 
-    <span><a href="/posts/7b604068/" title="Html页面插入地图">Html页面插入地图</a></span>
+    <span><a href="/posts/2f57a694/" title="正则表达式">正则表达式</a></span>
   </li>
 
       
@@ -612,9 +584,35 @@ Vue 选项中的 render 函数若存在，则 Vue 构造函数不会从 template
     
 <div class="breadcrumb">
 <a href="/categories/Java%E9%9D%A2%E8%AF%95/" title="In Java面试">Java面试</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/Java%E9%9D%A2%E8%AF%95/Jvm/" title="In Jvm">Jvm</a>
 </div>
 
-    <span><a href="/posts/3eb5e557/" title="赛可出行面试">赛可出行面试</a></span>
+    <span><a href="/posts/57681474/" title="JVM简单原理">JVM简单原理</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/Java%E9%9D%A2%E8%AF%95/" title="In Java面试">Java面试</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/Java%E9%9D%A2%E8%AF%95/%E5%86%92%E6%B3%A1%E6%8E%92%E5%BA%8F/" title="In 冒泡排序">冒泡排序</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/Java%E9%9D%A2%E8%AF%95/%E5%86%92%E6%B3%A1%E6%8E%92%E5%BA%8F/%E7%AE%97%E6%B3%95/" title="In 算法">算法</a>
+</div>
+
+    <span><a href="/posts/14e6f1eb/" title="冒泡排序">冒泡排序</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/IDEA/" title="In IDEA">IDEA</a>
+</div>
+
+    <span><a href="/posts/579bb697/" title="IDEA小图标含义">IDEA小图标含义</a></span>
   </li>
 
       
@@ -624,16 +622,7 @@ Vue 选项中的 render 函数若存在，则 Vue 构造函数不会从 template
 <a href="/categories/Java/" title="In Java">Java</a>
 </div>
 
-    <span><a href="/posts/1c3390ab/" title="将Java数据输出为本地txt">将Java数据输出为本地txt</a></span>
-  </li>
-
-      
-  <li class="item">
-    
-<div class="breadcrumb">
-</div>
-
-    <span><a href="/posts/4da9c93/" title="Web-based design and analysis tools for CRISPR base editing 文献阅读">Web-based design and analysis tools for CRISPR base editing 文献阅读</a></span>
+    <span><a href="/posts/e18abc1d/" title="关于YAML中List存放Map">关于YAML中List存放Map</a></span>
   </li>
 
       
@@ -650,48 +639,22 @@ Vue 选项中的 render 函数若存在，则 Vue 构造函数不会从 template
   <li class="item">
     
 <div class="breadcrumb">
-<a href="/categories/%E5%89%8D%E7%AB%AF/" title="In 前端">前端</a>
+<a href="/categories/VSCODE/" title="In VSCODE">VSCODE</a>
 <i class="ic i-angle-right"></i>
-<a href="/categories/%E5%89%8D%E7%AB%AF/TypeScript/" title="In TypeScript">TypeScript</a>
-<i class="ic i-angle-right"></i>
-<a href="/categories/%E5%89%8D%E7%AB%AF/TypeScript/WebPack/" title="In WebPack">WebPack</a>
+<a href="/categories/VSCODE/%E5%BF%AB%E6%8D%B7%E9%94%AE/" title="In 快捷键">快捷键</a>
 </div>
 
-    <span><a href="/posts/ddb0d187/" title="TS配置Webpack">TS配置Webpack</a></span>
+    <span><a href="/posts/d199d651/" title="VsCode快捷键">VsCode快捷键</a></span>
   </li>
 
       
   <li class="item">
     
 <div class="breadcrumb">
-<a href="/categories/Java%E9%9D%A2%E8%AF%95/" title="In Java面试">Java面试</a>
-<i class="ic i-angle-right"></i>
-<a href="/categories/Java%E9%9D%A2%E8%AF%95/%E6%95%B0%E6%8D%AE%E5%BA%93/" title="In 数据库">数据库</a>
+<a href="/categories/Java/" title="In Java">Java</a>
 </div>
 
-    <span><a href="/posts/666b2933/" title="面试之旅关于数据库">面试之旅关于数据库</a></span>
-  </li>
-
-      
-  <li class="item">
-    
-<div class="breadcrumb">
-<a href="/categories/Ubuntu/" title="In Ubuntu">Ubuntu</a>
-<i class="ic i-angle-right"></i>
-<a href="/categories/Ubuntu/Mysql/" title="In Mysql">Mysql</a>
-</div>
-
-    <span><a href="/posts/31f95091/" title="Ubuntu中安装卸载Mysql数据库">Ubuntu中安装卸载Mysql数据库</a></span>
-  </li>
-
-      
-  <li class="item">
-    
-<div class="breadcrumb">
-<a href="/categories/DDD/" title="In DDD">DDD</a>
-</div>
-
-    <span><a href="/posts/3fec5852/" title="DDD领域驱动设计">DDD领域驱动设计</a></span>
+    <span><a href="/posts/1da18d70/" title="Java8内置四大函数式接口">Java8内置四大函数式接口</a></span>
   </li>
 
   </ul>

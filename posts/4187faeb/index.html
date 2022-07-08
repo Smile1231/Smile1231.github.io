@@ -117,12 +117,12 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
       </div>
       <div id="imgs" class="pjax">
         <ul>
-          <li class="item" data-background-image="https://tva1.sinaimg.cn/large/6833939bly1gipeuibk9fj20zk0m8ay2.jpg"></li>
-          <li class="item" data-background-image="https://tva1.sinaimg.cn/large/6833939bly1giclgrvbd6j20zk0m8qv5.jpg"></li>
-          <li class="item" data-background-image="https://tva1.sinaimg.cn/large/6833939bly1gipexj2jgzj20zk0m8b09.jpg"></li>
-          <li class="item" data-background-image="https://tva1.sinaimg.cn/large/6833939bly1gicmnywqgpj20zk0m8dwx.jpg"></li>
-          <li class="item" data-background-image="https://tva1.sinaimg.cn/large/6833939bly1giclfw2t96j20zk0m8x6p.jpg"></li>
-          <li class="item" data-background-image="https://tva1.sinaimg.cn/large/6833939bly1giclflwv2aj20zk0m84qp.jpg"></li>
+          <li class="item" data-background-image="https://tva2.sinaimg.cn/large/6833939bly1gipevuctzzj20zk0m84qp.jpg"></li>
+          <li class="item" data-background-image="https://tva2.sinaimg.cn/large/6833939bly1giclhnx9glj20zk0m8npd.jpg"></li>
+          <li class="item" data-background-image="https://tva2.sinaimg.cn/large/6833939bly1gipexbei4hj20zk0m8npd.jpg"></li>
+          <li class="item" data-background-image="https://tva2.sinaimg.cn/large/6833939bly1gipeybxm1pj20zk0m8niv.jpg"></li>
+          <li class="item" data-background-image="https://tva2.sinaimg.cn/large/6833939bly1gipesng5oej20zk0m87d4.jpg"></li>
+          <li class="item" data-background-image="https://tva2.sinaimg.cn/large/6833939bly1giclhpw3lwj20zk0m8gvw.jpg"></li>
         </ul>
       </div>
     </header>
@@ -169,15 +169,13 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
     
 
     <span id="more"></span>
-<p>面试官们好，我是今天的面试者，陈宜，你也可以称呼我的英文名 Darry，我今天面试的岗位是 java 开发，我于 2020 年在江苏理工学院毕业，目前已有两年经验，我有两份工作经历，第一家是在一家专门为医院开发系统的公司，由于公司不是很大，所以职责一般都是前后端都会开发，届时也有开发小程序的经验。这份工作中开发了很多医院的项目，类似于华山医院投诉管理系统，华山北院医技预约系统等等，华山医院主要是用来记录华山医院的一些客诉，然后后续投诉处理等等，医技预约系统是用来预约医院内部的各种检查：例如 CT 检查。前端主要是用的技术是 Vue + ElementUI ，后端为 SpringBoot 项目，ORM 都是使用的 mybatis 框架，都是比较简单的单体服务项目。第二那份工作就是我目前所在的企业：享道出行，该企业是一家互联网公司，产品为享道出行 app，我所在的部门为支付部门，所在的小组为结算小组，职位为 Java 开发，公司统一使用规范的分布式解决方案，注册中心使用 consul，配置中心为 Apollo，Rpc 框架为公司研制的 Krpc，和谷歌的 Grpc 类似，前后端规范都定义在 proto 文件中。 我主要负责的项目为公司的发票项目，该项目主要的难点在于业务的梳理以及开票流程的理解。       该项目涵盖了所有公司的发票业务：申请开票，进行开票，发送邮件。申请开票的来源有很多，有 app，渠道，以及 MIS 端，其中渠道端就是对接的外部渠道，类似于滴滴，高德等等。开票采用了接口 + job 的形式，以开票请求量最大的渠道开票来说，当开票请求请求到服务上时，一开始会做一些简单的参数验证，邮箱，电话等等 ，也会调用专门接口查询待开票列表 ， 其次将会对请求订单进行幂等验证和金额验证，特定的商户可能开票通道也会有所不同，最后对发票基本信息进行数据库存表，同时会返回对应的享道内部发票号，为一个异步行为，该发票号可以调用专门的接口查询发票信息，同时发票请求借口也使用 redis 做了防止重复点击。job 是整个开票的业务核心逻辑，首先筛选指定状态的发票进行开票，首先开票时会直接请求发票供应商接口，发票供应商也为一个异步开票流程，发票请求之后将需要轮询去查询发票是否开具成功，当发票成功开具之后，将会进行信息状态的更新，然后执行特定的后置处理器，主要事发票邮件的发送或者渠道的信息同步。整个开票逻辑的轮廓就是如此。同时我还负责了车司管项目的研发，该项目主要是负责享道签约合作公司对出租车司机的管理平台，我主要负责了与承包方案相关的接口开发，其中的难点在于定时修改承包方案时间点，从某个日期点生效的方案设计。另外也有一些其他服务的简单开发，对账服务的日清算周清算；羊刀平台的前后端开发等。在享道待的时间里，学到了很多，处理线上事件时正确的步骤以及方式，以及联调开发时单测的完整性等等。我想辞职的原因是因为公司于年初搬了新家，离我目前所在居住的地点车程过远，所以想找一份近一点的工作，以上就是我的个人介绍，谢谢你们的聆听！</p>
+
+<p>面试官们好，我是今天的面试者，陈宜，你也可以称呼我的英文名Darry，我今天面试的岗位是java开发，我于2020年在江苏理工学院毕业，目前已有两年经验，我有两份工作经历，第一家是在一家专门为医院开发系统的公司，由于公司不是很大，所以职责一般都是前后端都会开发，届时也有开发小程序的经验。这份工作中开发了很多医院的项目，类似于华山医院投诉管理系统，华山北院医技预约系统等等，华山医院主要是用来记录华山医院的一些客诉，然后后续投诉处理等等，医技预约系统是用来预约医院内部的各种检查：例如CT检查。前端主要是用的技术是Vue + ElementUI ，后端为SpringBoot项目，ORM都是使用的mybatis框架，都是比较简单的单体服务项目。第二那份工作就是我目前所在的企业：享道出行，该企业是一家互联网公司，产品为享道出行app，我所在的部门为支付部门，所在的小组为结算小组，职位为Java开发，公司统一使用规范的分布式解决方案，注册中心使用consul，配置中心为Apollo，Rpc框架为公司研制的Krpc，和谷歌的Grpc类似，前后端规范都定义在proto文件中。 我主要负责的项目为公司的发票项目，该项目主要的难点在于业务的梳理以及开票流程的理解。       该项目涵盖了所有公司的发票业务：申请开票，进行开票，发送邮件。申请开票的来源有很多，有app，渠道，以及MIS端，其中渠道端就是对接的外部渠道，类似于滴滴，高德等等。开票采用了接口+job的形式，以开票请求量最大的渠道开票来说，当开票请求请求到服务上时，一开始会做一些简单的参数验证，邮箱，电话等等 ，也会调用专门接口查询待开票列表 ， 其次将会对请求订单进行幂等验证和金额验证，特定的商户可能开票通道也会有所不同，最后对发票基本信息进行数据库存表，同时会返回对应的享道内部发票号，为一个异步行为，该发票号可以调用专门的接口查询发票信息，同时发票请求借口也使用redis做了防止重复点击。job是整个开票的业务核心逻辑，首先筛选指定状态的发票进行开票，首先开票时会直接请求发票供应商接口，发票供应商也为一个异步开票流程，发票请求之后将需要轮询去查询发票是否开具成功，当发票成功开具之后，将会进行信息状态的更新，然后执行特定的后置处理器，主要事发票邮件的发送或者渠道的信息同步。整个开票逻辑的轮廓就是如此。同时我还负责了车司管项目的研发，该项目主要是负责享道签约合作公司对出租车司机的管理平台，我主要负责了与承包方案相关的接口开发，其中的难点在于定时修改承包方案时间点，从某个日期点生效的方案设计。另外也有一些其他服务的简单开发，对账服务的日清算周清算；羊刀平台的前后端开发等。在享道待的时间里，学到了很多，处理线上事件时正确的步骤以及方式，以及联调开发时单测的完整性等等。我想辞职的原因是因为公司于年初搬了新家，离我目前所在居住的地点车程过远，所以想找一份近一点的工作，以上就是我的个人介绍，谢谢你们的聆听！</p>
 <p>Hello interviewers, I am today’s interviewee, Chen Yi, you can also call my English name Darry. The position I am interviewing for today is Java development. I graduated from Jiangsu university of Technology in 2020 and have two years of experience. , I have two work experiences.</p>
-<h2 id="第一份工作"><a class="markdownIt-Anchor" href="#第一份工作">#</a> 第一份工作</h2>
-<p>The first one is in a company that develops systems for hospitals. Since the company is not very large, the responsibility is generally that the front and back ends will be developed, and there will also be experience in developing mini programs at that time. In this job, many hospital projects have been developed, similar to Huashan Hospital Complaint Management System, Huashan North Hospital Medical Technology Reservation System, etc. Huashan Hospital is mainly used to record some customer complaints of Huashan Hospital, and then follow-up complaint handling, etc., The medical technology reservation system is used to book various examinations within the hospital: CT examination and so on. The front-end technology is mainly Vue + ElementUI, the back-end is the SpringBoot project, and the ORM is the mybatis framework, which is a relatively simple single service project.</p>
-<h2 id="第二份工作"><a class="markdownIt-Anchor" href="#第二份工作">#</a> 第二份工作</h2>
-<p>The second job is the company I am currently working for: Xiangdao Travel, an Internet company whose product is the Xiangdao Travel app, my department is the payment department, my team is the settlement team, and my position is Java development. The company uses standardized distributed solutions in a unified manner. The registration center uses consul, the configuration center is Apollo, and the Rpc framework is Krpc developed by the company, which is similar to Google’s Grpc. The front-end and back-end specifications are defined in the proto file.</p>
-<h1 id="发票"><a class="markdownIt-Anchor" href="#发票">#</a> 发票</h1>
-<p>The project I am mainly responsible for is the company’s invoicing project. The main difficulty of this project lies in the sorting out of the business and the understanding of the invoicing process. The project covers all the company’s invoicing business: apply for invoicing, do invoicing, send mail. There are many sources for invoicing applications, including apps, channels, and MIS, where the channel is the external channel for docking, similar to Didi, gaode, etc. Invoicing adopts the form of interface + job. Taking the channel with the largest amount of invoicing requests for this project, when the invoicing request is requested to the service, it will do some simple parameter verification at the beginning, such as email, telephone, etc., and will also call the special interface. Query the to-be-invoiced list, and then perform idempotent（美  [aɪˈdempətənt]） verification and amount verification on the requested order. Certain merchants may have different invoicing channels. Finally, perform a database table on the basic information of the invoice, and return the corresponding Xiangdao internal invoiceNO, which is an asynchronous behavior, the invoice number can call a special interface to query the invoice information, and the invoice request excuse also uses redis to prevent repeated clicks. Job is the core business logic of the entire invoicing business. First, the invoices in the special state are screened for invoicing. First, the invoice supplier interface will be directly requested when the invoice is issued. The invoice supplier is also an asynchronous invoicing process. After the issuance is successful, when the invoice is successfully issued, the information status will be updated, and then a specific post-processor will be executed, which is mainly responsible for the sending of the invoice email or the information synchronization of the channel. This is the outline of the entire billing logic.</p>
-<p>At the same time, I was also in charge of the research and development of the car driver management project. This project is mainly responsible for the management platform for taxi drivers by the contracted cooperative company of Xiangdao. I was mainly responsible for the interface development related to the contracting scheme. The difficulty lies in modifying the contracting scheme regularly. A time point, a scheme design that takes effect from a certain date point. In addition, there are also simple development of some other services, daily settlement and weekly settlement of account  services; front-end and back-end development of the Yangdao platform, etc. During the time I spent, I learned a lot, the correct steps and methods for handling online events, and the integrity of unit testing during joint debugging and development. The reason I want to resign is because the company moved to a new home at the beginning of the year, which is too far from where I currently live, so I want to find a closer job. The above is my personal introduction, thank you for listening!</p>
+<h2 id="第一份工作"><a href="#第一份工作" class="headerlink" title="第一份工作"></a>第一份工作</h2><p> The first one is in a company that develops systems for hospitals. Since the company is not very large, the responsibility is generally that the front and back ends will be developed, and there will also be experience in developing mini programs at that time. In this job, many hospital projects have been developed, similar to Huashan Hospital Complaint Management System, Huashan North Hospital Medical Technology Reservation System, etc. Huashan Hospital is mainly used to record some customer complaints of Huashan Hospital, and then follow-up complaint handling, etc., The medical technology reservation system is used to book various examinations within the hospital: CT examination and so on. The front-end technology is mainly Vue + ElementUI, the back-end is the SpringBoot project, and the ORM is the mybatis framework, which is a relatively simple single service project. </p>
+<h2 id="第二份工作"><a href="#第二份工作" class="headerlink" title="第二份工作"></a>第二份工作</h2><p> The second job is the company I am currently working for: Xiangdao Travel, an Internet company whose product is the Xiangdao Travel app, my department is the payment department, my team is the settlement team, and my position is Java development. The company uses standardized distributed solutions in a unified manner. The registration center uses consul, the configuration center is Apollo, and the Rpc framework is Krpc developed by the company, which is similar to Google’s Grpc. The front-end and back-end specifications are defined in the proto file.</p>
+<h1 id="发票"><a href="#发票" class="headerlink" title="发票"></a>发票</h1><p> The project I am mainly responsible for is the company’s invoicing project. The main difficulty of this project lies in the sorting out of the business and the understanding of the invoicing process. The project covers all the company’s invoicing business: apply for invoicing, do invoicing, send mail. There are many sources for invoicing applications, including apps, channels, and MIS, where the channel is the external channel for docking, similar to Didi, gaode, etc. Invoicing adopts the form of interface + job. Taking the channel with the largest amount of invoicing requests for this project, when the invoicing request is requested to the service, it will do some simple parameter verification at the beginning, such as email, telephone, etc., and will also call the special interface. Query the to-be-invoiced list, and then perform idempotent（美  [aɪˈdempətənt]） verification and amount verification on the requested order. Certain merchants may have different invoicing channels. Finally, perform a database table on the basic information of the invoice, and return the corresponding Xiangdao internal invoiceNO, which is an asynchronous behavior, the invoice number can call a special interface to query the invoice information, and the invoice request excuse also uses redis to prevent repeated clicks. Job is the core business logic of the entire invoicing business. First, the invoices in the special state are screened for invoicing. First, the invoice supplier interface will be directly requested when the invoice is issued. The invoice supplier is also an asynchronous invoicing process. After the issuance is successful, when the invoice is successfully issued, the information status will be updated, and then a specific post-processor will be executed, which is mainly responsible for the sending of the invoice email or the information synchronization of the channel. This is the outline of the entire billing logic. </p>
+<p> At the same time, I was also in charge of the research and development of the car driver management project. This project is mainly responsible for the management platform for taxi drivers by the contracted cooperative company of Xiangdao. I was mainly responsible for the interface development related to the contracting scheme. The difficulty lies in modifying the contracting scheme regularly. A time point, a scheme design that takes effect from a certain date point. In addition, there are also simple development of some other services, daily settlement and weekly settlement of account  services; front-end and back-end development of the Yangdao platform, etc. During the time I spent, I learned a lot, the correct steps and methods for handling online events, and the integrity of unit testing during joint debugging and development. The reason I want to resign is because the company moved to a new home at the beginning of the year, which is too far from where I currently live, so I want to find a closer job. The above is my personal introduction, thank you for listening!</p>
 
       <div class="tags">
           <a href="/tags/SAP/" rel="tag"><i class="ic i-tag"></i> SAP</a>
@@ -232,7 +230,7 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
     <div class="item left">
       
 
-  <a href="/posts/4da9c93/" itemprop="url" rel="prev" data-background-image="https:&#x2F;&#x2F;tva1.sinaimg.cn&#x2F;mw690&#x2F;6833939bly1gicis3attqj20zk0m8k7l.jpg" title="Web-based design and analysis tools for CRISPR base editing 文献阅读">
+  <a href="/posts/4da9c93/" itemprop="url" rel="prev" data-background-image="https:&#x2F;&#x2F;tva2.sinaimg.cn&#x2F;mw690&#x2F;6833939bly1gipexbei4hj20zk0m8npd.jpg" title="Web-based design and analysis tools for CRISPR base editing 文献阅读">
   <span class="type">Previous Post</span>
   <span class="category"><i class="ic i-flag"></i> </span>
   <h3>Web-based design and analysis tools for CRISPR base editing 文献阅读</h3>
@@ -242,7 +240,7 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
     <div class="item right">
       
 
-  <a href="/posts/d0966c4d/" itemprop="url" rel="next" data-background-image="https:&#x2F;&#x2F;tva1.sinaimg.cn&#x2F;mw690&#x2F;6833939bly1gicis081o9j20zk0m8dmr.jpg" title="工作难点">
+  <a href="/posts/d0966c4d/" itemprop="url" rel="next" data-background-image="https:&#x2F;&#x2F;tva2.sinaimg.cn&#x2F;mw690&#x2F;6833939bly1gicitspjpbj20zk0m81ky.jpg" title="工作难点">
   <span class="type">Next Post</span>
   <span class="category"><i class="ic i-flag"></i> </span>
   <h3>工作难点</h3>
@@ -264,7 +262,7 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
   <div class="panels">
     <div class="inner">
       <div class="contents panel pjax" data-title="Contents">
-          <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%AC%AC%E4%B8%80%E4%BB%BD%E5%B7%A5%E4%BD%9C"><span class="toc-number">1.</span> <span class="toc-text"> 第一份工作</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%AC%AC%E4%BA%8C%E4%BB%BD%E5%B7%A5%E4%BD%9C"><span class="toc-number">2.</span> <span class="toc-text"> 第二份工作</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%8F%91%E7%A5%A8"><span class="toc-number"></span> <span class="toc-text"> 发票</span></a>
+          <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%AC%AC%E4%B8%80%E4%BB%BD%E5%B7%A5%E4%BD%9C"><span class="toc-number">1.</span> <span class="toc-text">第一份工作</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%AC%AC%E4%BA%8C%E4%BB%BD%E5%B7%A5%E4%BD%9C"><span class="toc-number">2.</span> <span class="toc-text">第二份工作</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%8F%91%E7%A5%A8"><span class="toc-number"></span> <span class="toc-text">发票</span></a>
       </div>
       <div class="related panel pjax" data-title="Related">
         <ul>
@@ -374,40 +372,47 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
     
 <div class="breadcrumb">
 <a href="/categories/Java%E9%9D%A2%E8%AF%95/" title="In Java面试">Java面试</a>
+</div>
+
+    <span><a href="/posts/3b6bfba3/" title="如何保证接口的幂等性">如何保证接口的幂等性</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/Java%E9%9D%A2%E8%AF%95/" title="In Java面试">Java面试</a>
 <i class="ic i-angle-right"></i>
-<a href="/categories/Java%E9%9D%A2%E8%AF%95/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/" title="In 操作系统">操作系统</a>
+<a href="/categories/Java%E9%9D%A2%E8%AF%95/%E7%AE%97%E6%B3%95/" title="In 算法">算法</a>
 </div>
 
-    <span><a href="/posts/c7cf6e41/" title="面试之旅关于计算机网络">面试之旅关于计算机网络</a></span>
+    <span><a href="/posts/7474c898/" title="分治算法">分治算法</a></span>
   </li>
 
       
   <li class="item">
     
 <div class="breadcrumb">
-<a href="/categories/LeetCode/" title="In LeetCode">LeetCode</a>
+<a href="/categories/Java%E9%9D%A2%E8%AF%95/" title="In Java面试">Java面试</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/Java%E9%9D%A2%E8%AF%95/%E6%95%B0%E6%8D%AE%E5%BA%93/" title="In 数据库">数据库</a>
 </div>
 
-    <span><a href="/posts/5d0c3fcc/" title="LeetCode172_阶乘后的0">LeetCode172_阶乘后的0</a></span>
+    <span><a href="/posts/666b2933/" title="面试之旅关于数据库">面试之旅关于数据库</a></span>
   </li>
 
       
   <li class="item">
     
 <div class="breadcrumb">
+<a href="/categories/Java%E9%9D%A2%E8%AF%95/" title="In Java面试">Java面试</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/Java%E9%9D%A2%E8%AF%95/%E9%80%89%E6%8B%A9%E6%8E%92%E5%BA%8F/" title="In 选择排序">选择排序</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/Java%E9%9D%A2%E8%AF%95/%E9%80%89%E6%8B%A9%E6%8E%92%E5%BA%8F/%E7%AE%97%E6%B3%95/" title="In 算法">算法</a>
 </div>
 
-    <span><a href="/posts/e694a882/" title="Windows下如何查看某个端口被谁占用">Windows下如何查看某个端口被谁占用</a></span>
-  </li>
-
-      
-  <li class="item">
-    
-<div class="breadcrumb">
-<a href="/categories/Ubuntu/" title="In Ubuntu">Ubuntu</a>
-</div>
-
-    <span><a href="/posts/6e65ed30/" title="ubuntu20无法安装vmtools解决">ubuntu20无法安装vmtools解决</a></span>
+    <span><a href="/posts/43d00a99/" title="选择排序">选择排序</a></span>
   </li>
 
       
@@ -416,20 +421,32 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
 <div class="breadcrumb">
 <a href="/categories/Java/" title="In Java">Java</a>
 <i class="ic i-angle-right"></i>
-<a href="/categories/Java/Mysql/" title="In Mysql">Mysql</a>
+<a href="/categories/Java/Stream/" title="In Stream">Stream</a>
 </div>
 
-    <span><a href="/posts/69c17d37/" title="关于事务提交中踩坑">关于事务提交中踩坑</a></span>
+    <span><a href="/posts/8b8fedea/" title="Stream流的介绍">Stream流的介绍</a></span>
   </li>
 
       
   <li class="item">
     
 <div class="breadcrumb">
-<a href="/categories/%E5%89%8D%E7%AB%AF/" title="In 前端">前端</a>
+<a href="/categories/Java/" title="In Java">Java</a>
 </div>
 
-    <span><a href="/posts/e43580c1/" title="flex布局">flex布局</a></span>
+    <span><a href="/posts/b536fa7f/" title="关于junit测试类防止事务回滚">关于junit测试类防止事务回滚</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/Java%E9%9D%A2%E8%AF%95/" title="In Java面试">Java面试</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/Java%E9%9D%A2%E8%AF%95/Spring%E4%BA%8B%E5%8A%A1/" title="In Spring事务">Spring事务</a>
+</div>
+
+    <span><a href="/posts/7e4601e3/" title="面试之旅之关于Spring事务处理">面试之旅之关于Spring事务处理</a></span>
   </li>
 
       
@@ -441,21 +458,11 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
 <a href="/categories/Java/Mybatis/" title="In Mybatis">Mybatis</a>
 <i class="ic i-angle-right"></i>
 <a href="/categories/Java/Mybatis/SpringBoot/" title="In SpringBoot">SpringBoot</a>
-</div>
-
-    <span><a href="/posts/c112412d/" title="Mybatis封装成Map结果">Mybatis封装成Map结果</a></span>
-  </li>
-
-      
-  <li class="item">
-    
-<div class="breadcrumb">
-<a href="/categories/%E5%89%8D%E7%AB%AF/" title="In 前端">前端</a>
 <i class="ic i-angle-right"></i>
-<a href="/categories/%E5%89%8D%E7%AB%AF/Vue/" title="In Vue">Vue</a>
+<a href="/categories/Java/Mybatis/SpringBoot/%E5%88%86%E9%A1%B5%E6%9F%A5%E8%AF%A2/" title="In 分页查询">分页查询</a>
 </div>
 
-    <span><a href="/posts/b5314c4/" title="Vue2语法简介">Vue2语法简介</a></span>
+    <span><a href="/posts/2edf7887/" title="MybatisPlus实现分页查询">MybatisPlus实现分页查询</a></span>
   </li>
 
       
@@ -464,17 +471,19 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
 <div class="breadcrumb">
 </div>
 
-    <span><a href="/posts/49a9ac1a/" title="Springboot优雅的实现重试">Springboot优雅的实现重试</a></span>
+    <span><a href="/posts/f35c5140/" title="JAVA-jar包运行及日志输出">JAVA-jar包运行及日志输出</a></span>
   </li>
 
       
   <li class="item">
     
 <div class="breadcrumb">
-<a href="/categories/SAP/" title="In SAP">SAP</a>
+<a href="/categories/Ubuntu/" title="In Ubuntu">Ubuntu</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/Ubuntu/Mysql/" title="In Mysql">Mysql</a>
 </div>
 
-    <span><a href="/posts/96b6e8a1/" title="simple self introduction">simple self introduction</a></span>
+    <span><a href="/posts/31f95091/" title="Ubuntu中安装卸载Mysql数据库">Ubuntu中安装卸载Mysql数据库</a></span>
   </li>
 
   </ul>

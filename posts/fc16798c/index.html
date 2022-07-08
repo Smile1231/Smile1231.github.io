@@ -117,12 +117,12 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
       </div>
       <div id="imgs" class="pjax">
         <ul>
-          <li class="item" data-background-image="https://tva1.sinaimg.cn/large/6833939bly1gipewf5l51j20zk0m8b29.jpg"></li>
-          <li class="item" data-background-image="https://tva1.sinaimg.cn/large/6833939bly1gipew8gmvyj20zk0m87wh.jpg"></li>
-          <li class="item" data-background-image="https://tva1.sinaimg.cn/large/6833939bly1gicliierfjj20zk0m8npd.jpg"></li>
-          <li class="item" data-background-image="https://tva1.sinaimg.cn/large/6833939bly1gicitzannuj20zk0m8b29.jpg"></li>
-          <li class="item" data-background-image="https://tva1.sinaimg.cn/large/6833939bly1gipevo9j1jj20zk0m8e81.jpg"></li>
-          <li class="item" data-background-image="https://tva1.sinaimg.cn/large/6833939bly1giclh0m9pdj20zk0m8hdt.jpg"></li>
+          <li class="item" data-background-image="https://tva2.sinaimg.cn/large/6833939bly1gipetfk5zwj20zk0m8e81.jpg"></li>
+          <li class="item" data-background-image="https://tva2.sinaimg.cn/large/6833939bly1gicljitigmj20zk0m87fp.jpg"></li>
+          <li class="item" data-background-image="https://tva2.sinaimg.cn/large/6833939bly1gipevo9j1jj20zk0m8e81.jpg"></li>
+          <li class="item" data-background-image="https://tva2.sinaimg.cn/large/6833939bly1gipewkhf1zj20zk0m81kx.jpg"></li>
+          <li class="item" data-background-image="https://tva2.sinaimg.cn/large/6833939bly1giclhnx9glj20zk0m8npd.jpg"></li>
+          <li class="item" data-background-image="https://tva2.sinaimg.cn/large/6833939bly1gipeu7txpzj20zk0m81kx.jpg"></li>
         </ul>
       </div>
     </header>
@@ -168,28 +168,29 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
   <div class="body md" itemprop="articleBody">
     
 
-    <p>常见的 <code>Java8</code>  遍历 <code>Map</code>  的三种方式</p>
+    <p>常见的<code>Java8</code>遍历<code>Map</code>的三种方式</p>
 <ul>
-<li><code>for</code>  循环</li>
-<li><code>stream</code>  流的方式处理</li>
-<li><code>forEach</code>  方法遍历</li>
+<li><code>for</code>循环</li>
+<li><code>stream</code>流的方式处理</li>
+<li><code>forEach</code>方法遍历</li>
 </ul>
 <p><span class="exturl" data-url="aHR0cHM6Ly9qdWVqaW4uY24vcG9zdC82ODQ0OTAzOTI3MDk2Mjk1NDMy">转载</span></p>
-<p><code>Show me the code first!</code>  以下是代码，解释一下逻辑，原来的 <code>cookies</code>  数据结构为 <code>Map&lt;String, List&lt;HttpCookie&gt;&gt;</code> , 其中 <code>HttpCookie</code>  为 <code>cookie</code>  键值对，由于业务需要，我们需要将其转换成 <code>Map&lt;String, String&gt;</code>  才更方便处理，于是乎就有了以下代码。（我这里直接用了 <code>foreach</code>  循环，也可以用 <code>fori</code>  循环，例如 <code>for(int i = 0; i&lt; xx; i++)</code> ）</p>
+<p><code>Show me the code first!</code>以下是代码，解释一下逻辑，原来的<code>cookies</code>数据结构为<code>Map&lt;String, List&lt;HttpCookie&gt;&gt;</code>,其中<code>HttpCookie</code>为<code>cookie</code>键值对，由于业务需要，我们需要将其转换成<code>Map&lt;String, String&gt;</code>才更方便处理，于是乎就有了以下代码。（我这里直接用了<code>foreach</code>循环，也可以用<code>fori</code>循环，例如<code>for(int i = 0; i&lt; xx; i++)</code>）</p>
 <span id="more"></span>
-<h2 id="for循环遍历"><a class="markdownIt-Anchor" href="#for循环遍历">#</a>  <code>for</code>  循环遍历</h2>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 从request中获取原始的cookie</span></span><br><span class="line">MultiValueMap&lt;String, HttpCookie&gt; cookies = request.getCookies(); </span><br><span class="line">Map&lt;String, String&gt; cookieMap = <span class="keyword">new</span> HashMap&lt;&gt;(); <span class="comment">// 新建一个map，将cookie转入该map中</span></span><br><span class="line"><span class="keyword">for</span> (Map.Entry&lt;String, List&lt;HttpCookie&gt;&gt; itemList : cookies.entrySet()) &#123; <span class="comment">// 遍历原始的MultiValueMap</span></span><br><span class="line">	<span class="keyword">for</span> (HttpCookie item :itemList.getValue()) &#123; <span class="comment">// 遍历每个item中的List&lt;HttpCookie&gt;，其中的HttpCookie是我们需要的内容</span></span><br><span class="line">		cookieMap.put(item.getName(), item.getValue()); <span class="comment">// 存入内容</span></span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<h2 id="stream流的方式处理"><a class="markdownIt-Anchor" href="#stream流的方式处理">#</a>  <code>stream</code>  流的方式处理</h2>
-<p>在 <code>Java8</code>  中，我们可以使用流，将 <code>Collections</code>  或者数组转化成 <code>Stream</code> ，并用链式的调用更加逻辑更加清晰。</p>
+<h2 id="for循环遍历"><a href="#for循环遍历" class="headerlink" title="for循环遍历"></a><code>for</code>循环遍历</h2><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 从request中获取原始的cookie</span></span><br><span class="line">MultiValueMap&lt;String, HttpCookie&gt; cookies = request.getCookies(); </span><br><span class="line">Map&lt;String, String&gt; cookieMap = <span class="keyword">new</span> HashMap&lt;&gt;(); <span class="comment">// 新建一个map，将cookie转入该map中</span></span><br><span class="line"><span class="keyword">for</span> (Map.Entry&lt;String, List&lt;HttpCookie&gt;&gt; itemList : cookies.entrySet()) &#123; <span class="comment">// 遍历原始的MultiValueMap</span></span><br><span class="line">	<span class="keyword">for</span> (HttpCookie item :itemList.getValue()) &#123; <span class="comment">// 遍历每个item中的List&lt;HttpCookie&gt;，其中的HttpCookie是我们需要的内容</span></span><br><span class="line">		cookieMap.put(item.getName(), item.getValue()); <span class="comment">// 存入内容</span></span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h2 id="stream流的方式处理"><a href="#stream流的方式处理" class="headerlink" title="stream流的方式处理"></a><code>stream</code>流的方式处理</h2><p>在<code>Java8</code>中，我们可以使用流，将<code>Collections</code>或者数组转化成<code>Stream</code>，并用链式的调用更加逻辑更加清晰。</p>
 <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">MultiValueMap&lt;String, HttpCookie&gt; cookies = request.getCookies();</span><br><span class="line">Map&lt;String, String&gt; cookieMap = <span class="keyword">new</span> HashMap&lt;&gt;();</span><br><span class="line"></span><br><span class="line">cookies.entrySet() <span class="comment">// 获取entrySet</span></span><br><span class="line">	.stream() <span class="comment">// 将其转化成流</span></span><br><span class="line">	.map(Map.Entry&lt;String, List&lt;HttpCookie&gt;&gt;::getValue) <span class="comment">// MultiValueMap&lt;String, HttpCookie&gt; -&gt; List&lt;HttpCookie&gt;</span></span><br><span class="line">	.flatMap(List&lt;HttpCookie&gt;::stream) <span class="comment">// List&lt;HttpCookie&gt; -&gt; HttpCookie</span></span><br><span class="line">	.forEach(cookie -&gt; cookieMap.put(cookie.getName(), cookie.getValue())); <span class="comment">// 遍历，存入内容</span></span><br></pre></td></tr></table></figure>
-<h2 id="collection具有的foreach方法遍历"><a class="markdownIt-Anchor" href="#collection具有的foreach方法遍历">#</a>  <code>Collection</code>  具有的 <code>forEach</code>  方法遍历</h2>
-<h3 id="继续用stream处理"><a class="markdownIt-Anchor" href="#继续用stream处理">#</a> 继续用 <code>Stream</code>  处理</h3>
-<p>我们可以看到通过流的方法处理 <code>cookie</code>  的方法，接下来，我们接着用相同的方法来处理请求参数，请求参数原本的数据格式依然为 <code>MultiValueMap&lt;String, String&gt;</code> ，可以看做是 <code>Map&lt;String, List&lt;String&gt;&gt;</code> ，其中请求参数名（ <code>key</code> ）对应的值（ <code>value</code> ）可能为多行，我们需要将其处理成一行。</p>
+<h2 id="Collection具有的forEach方法遍历"><a href="#Collection具有的forEach方法遍历" class="headerlink" title="Collection具有的forEach方法遍历"></a><code>Collection</code>具有的<code>forEach</code>方法遍历</h2><h3 id="继续用Stream处理"><a href="#继续用Stream处理" class="headerlink" title="继续用Stream处理"></a>继续用<code>Stream</code>处理</h3><p>我们可以看到通过流的方法处理<code>cookie</code>的方法，接下来，我们接着用相同的方法来处理请求参数，请求参数原本的数据格式依然为<code>MultiValueMap&lt;String, String&gt;</code>，可以看做是<code>Map&lt;String, List&lt;String&gt;&gt;</code>，其中请求参数名（<code>key</code>）对应的值（<code>value</code>）可能为多行，我们需要将其处理成一行。</p>
 <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">MultiValueMap&lt;String, String&gt; params = request.getQueryParams();</span><br><span class="line">Map&lt;String, String&gt; paramMap = <span class="keyword">new</span> HashMap&lt;&gt;();</span><br><span class="line"></span><br><span class="line">params.entrySet()</span><br><span class="line">	.forEach(entry -&gt;</span><br><span class="line">		paramMap.put(</span><br><span class="line">			entry.getKey(), <span class="comment">// 将参数名写入Key</span></span><br><span class="line">			entry.getValue().stream().collect(Collectors.joining())) <span class="comment">// 参数值多行合并成一行写入value</span></span><br><span class="line">	);</span><br></pre></td></tr></table></figure>
-<p>大家可以看到，在处理参数值（ <code>value</code> ）的时候，值为 <code>List&lt;String&gt;</code>  数据结构，以上代码通过 <code>entry.getValue().stream().collect(Collectors.joining()))</code>  将其 <code>List</code>  先转化为 <code>Stream</code> ，再用流的 <code>collection</code>  方法，将其合并。这个 <code>Collectors</code>  还具有将 <code>toSet/toList/groupingBy</code>  等功能，大家可以自行研究，这里就是使用的是 <code>joining</code>  合并方法。</p>
-<h3 id="使用collection的foreach方法遍历map"><a class="markdownIt-Anchor" href="#使用collection的foreach方法遍历map">#</a> 使用 <code>Collection</code>  的 <code>forEach</code>  方法遍历 <code>Map</code></h3>
-<p>修改后的代码如下：</p>
+<p>大家可以看到，在处理参数值（<code>value</code>）的时候，值为<code>List&lt;String&gt;</code>数据结构，以上代码通过<code>entry.getValue().stream().collect(Collectors.joining()))</code>将其<code>List</code>先转化为<code>Stream</code>，再用流的<code>collection</code>方法，将其合并。这个<code>Collectors</code>还具有将<code>toSet/toList/groupingBy</code>等功能，大家可以自行研究，这里就是使用的是<code>joining</code>合并方法。</p>
+<h3 id="使用Collection的forEach方法遍历Map"><a href="#使用Collection的forEach方法遍历Map" class="headerlink" title="使用Collection的forEach方法遍历Map"></a>使用<code>Collection</code>的<code>forEach</code>方法遍历<code>Map</code></h3><p>修改后的代码如下：</p>
 <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">params.forEach((key, value) -&gt; paramMap.put(key, String.join(<span class="string">&quot; &quot;</span>, value)));</span><br></pre></td></tr></table></figure>
+
+
+
+
+
 
       <div class="tags">
           <a href="/tags/map/" rel="tag"><i class="ic i-tag"></i> map</a>
@@ -245,7 +246,7 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
     <div class="item left">
       
 
-  <a href="/posts/97604c34/" itemprop="url" rel="prev" data-background-image="https:&#x2F;&#x2F;tva1.sinaimg.cn&#x2F;mw690&#x2F;6833939bly1gicli3sbvtj20zk0m8x6p.jpg" title="获取指定集合要求中的mapkey值并重新返回map">
+  <a href="/posts/97604c34/" itemprop="url" rel="prev" data-background-image="https:&#x2F;&#x2F;tva2.sinaimg.cn&#x2F;mw690&#x2F;6833939bly1gipesx5fdwj20zk0m81kx.jpg" title="获取指定集合要求中的mapkey值并重新返回map">
   <span class="type">Previous Post</span>
   <span class="category"><i class="ic i-flag"></i> Java</span>
   <h3>获取指定集合要求中的mapkey值并重新返回map</h3>
@@ -255,7 +256,7 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
     <div class="item right">
       
 
-  <a href="/posts/96e2d97b/" itemprop="url" rel="next" data-background-image="https:&#x2F;&#x2F;tva1.sinaimg.cn&#x2F;mw690&#x2F;6833939bly1gicit4jrvuj20zk0m8785.jpg" title="mysql 获取当前日期及格式化">
+  <a href="/posts/96e2d97b/" itemprop="url" rel="next" data-background-image="https:&#x2F;&#x2F;tva2.sinaimg.cn&#x2F;mw690&#x2F;6833939bly1giclj9410cj20zk0m8h12.jpg" title="mysql 获取当前日期及格式化">
   <span class="type">Next Post</span>
   <span class="category"><i class="ic i-flag"></i> 数据库</span>
   <h3>mysql 获取当前日期及格式化</h3>
@@ -277,7 +278,7 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
   <div class="panels">
     <div class="inner">
       <div class="contents panel pjax" data-title="Contents">
-          <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#for%E5%BE%AA%E7%8E%AF%E9%81%8D%E5%8E%86"><span class="toc-number">1.</span> <span class="toc-text">  for  循环遍历</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#stream%E6%B5%81%E7%9A%84%E6%96%B9%E5%BC%8F%E5%A4%84%E7%90%86"><span class="toc-number">2.</span> <span class="toc-text">  stream  流的方式处理</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#collection%E5%85%B7%E6%9C%89%E7%9A%84foreach%E6%96%B9%E6%B3%95%E9%81%8D%E5%8E%86"><span class="toc-number">3.</span> <span class="toc-text">  Collection  具有的 forEach  方法遍历</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%BB%A7%E7%BB%AD%E7%94%A8stream%E5%A4%84%E7%90%86"><span class="toc-number">3.1.</span> <span class="toc-text"> 继续用 Stream  处理</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%BD%BF%E7%94%A8collection%E7%9A%84foreach%E6%96%B9%E6%B3%95%E9%81%8D%E5%8E%86map"><span class="toc-number">3.2.</span> <span class="toc-text"> 使用 Collection  的 forEach  方法遍历 Map</span></a></li></ol></li></ol>
+          <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#for%E5%BE%AA%E7%8E%AF%E9%81%8D%E5%8E%86"><span class="toc-number">1.</span> <span class="toc-text">for循环遍历</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#stream%E6%B5%81%E7%9A%84%E6%96%B9%E5%BC%8F%E5%A4%84%E7%90%86"><span class="toc-number">2.</span> <span class="toc-text">stream流的方式处理</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Collection%E5%85%B7%E6%9C%89%E7%9A%84forEach%E6%96%B9%E6%B3%95%E9%81%8D%E5%8E%86"><span class="toc-number">3.</span> <span class="toc-text">Collection具有的forEach方法遍历</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%BB%A7%E7%BB%AD%E7%94%A8Stream%E5%A4%84%E7%90%86"><span class="toc-number">3.1.</span> <span class="toc-text">继续用Stream处理</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%BD%BF%E7%94%A8Collection%E7%9A%84forEach%E6%96%B9%E6%B3%95%E9%81%8D%E5%8E%86Map"><span class="toc-number">3.2.</span> <span class="toc-text">使用Collection的forEach方法遍历Map</span></a></li></ol></li></ol>
       </div>
       <div class="related panel pjax" data-title="Related">
         <ul>
@@ -386,82 +387,12 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
   <li class="item">
     
 <div class="breadcrumb">
-<a href="/categories/Java/" title="In Java">Java</a>
-</div>
-
-    <span><a href="/posts/7a29d22a/" title="Java关于时间的轮子">Java关于时间的轮子</a></span>
-  </li>
-
-      
-  <li class="item">
-    
-<div class="breadcrumb">
-<a href="/categories/Java%E9%9D%A2%E8%AF%95/" title="In Java面试">Java面试</a>
+<a href="/categories/VSCODE/" title="In VSCODE">VSCODE</a>
 <i class="ic i-angle-right"></i>
-<a href="/categories/Java%E9%9D%A2%E8%AF%95/Spring%E4%BA%8B%E5%8A%A1/" title="In Spring事务">Spring事务</a>
+<a href="/categories/VSCODE/%E5%BF%AB%E6%8D%B7%E9%94%AE/" title="In 快捷键">快捷键</a>
 </div>
 
-    <span><a href="/posts/7e4601e3/" title="面试之旅之关于Spring事务处理">面试之旅之关于Spring事务处理</a></span>
-  </li>
-
-      
-  <li class="item">
-    
-<div class="breadcrumb">
-<a href="/categories/Java/" title="In Java">Java</a>
-</div>
-
-    <span><a href="/posts/bd76a990/" title="一图看懂Java中的PO,BO,VO,DTO,POJO,DAO,DO">一图看懂Java中的PO,BO,VO,DTO,POJO,DAO,DO</a></span>
-  </li>
-
-      
-  <li class="item">
-    
-<div class="breadcrumb">
-<a href="/categories/Java/" title="In Java">Java</a>
-</div>
-
-    <span><a href="/posts/405fde88/" title="关于Exception的处理细节">关于Exception的处理细节</a></span>
-  </li>
-
-      
-  <li class="item">
-    
-<div class="breadcrumb">
-<a href="/categories/%E5%89%8D%E7%AB%AF/" title="In 前端">前端</a>
-<i class="ic i-angle-right"></i>
-<a href="/categories/%E5%89%8D%E7%AB%AF/Vue/" title="In Vue">Vue</a>
-</div>
-
-    <span><a href="/posts/b5314c4/" title="Vue2语法简介">Vue2语法简介</a></span>
-  </li>
-
-      
-  <li class="item">
-    
-<div class="breadcrumb">
-</div>
-
-    <span><a href="/posts/d0edc1ed/" title="Linux常用命令">Linux常用命令</a></span>
-  </li>
-
-      
-  <li class="item">
-    
-<div class="breadcrumb">
-<a href="/categories/%E5%89%8D%E7%AB%AF/" title="In 前端">前端</a>
-</div>
-
-    <span><a href="/posts/e43580c1/" title="flex布局">flex布局</a></span>
-  </li>
-
-      
-  <li class="item">
-    
-<div class="breadcrumb">
-</div>
-
-    <span><a href="/posts/4a17b156/" title="Hello World">Hello World</a></span>
+    <span><a href="/posts/d199d651/" title="VsCode快捷键">VsCode快捷键</a></span>
   </li>
 
       
@@ -477,9 +408,90 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
   <li class="item">
     
 <div class="breadcrumb">
+<a href="/categories/Java/" title="In Java">Java</a>
 </div>
 
-    <span><a href="/posts/8da68a98/" title="Java运行调用Shell脚本">Java运行调用Shell脚本</a></span>
+    <span><a href="/posts/b536fa7f/" title="关于junit测试类防止事务回滚">关于junit测试类防止事务回滚</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/Hexo/" title="In Hexo">Hexo</a>
+</div>
+
+    <span><a href="/posts/5c2529f6/" title="Hexo中添加动态2d二次元人物模型">Hexo中添加动态2d二次元人物模型</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/Java%E9%9D%A2%E8%AF%95/" title="In Java面试">Java面试</a>
+</div>
+
+    <span><a href="/posts/a5258aa2/" title="Java面试小册子">Java面试小册子</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/%E5%89%8D%E7%AB%AF/" title="In 前端">前端</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/%E5%89%8D%E7%AB%AF/Css/" title="In Css">Css</a>
+</div>
+
+    <span><a href="/posts/7f59931c/" title="Css选择器">Css选择器</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/Java%E9%9D%A2%E8%AF%95/" title="In Java面试">Java面试</a>
+</div>
+
+    <span><a href="/posts/feb84842/" title="Java面试必问--ArrayList的底层">Java面试必问--ArrayList的底层</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/Java/" title="In Java">Java</a>
+</div>
+
+    <span><a href="/posts/7a29d22a/" title="Java关于时间的轮子">Java关于时间的轮子</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/Java/" title="In Java">Java</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/Java/Mybatis/" title="In Mybatis">Mybatis</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/Java/Mybatis/SpringBoot/" title="In SpringBoot">SpringBoot</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/Java/Mybatis/SpringBoot/%E5%88%86%E9%A1%B5%E6%9F%A5%E8%AF%A2/" title="In 分页查询">分页查询</a>
+</div>
+
+    <span><a href="/posts/2edf7887/" title="MybatisPlus实现分页查询">MybatisPlus实现分页查询</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/Java/" title="In Java">Java</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/Java/SpringBoot/" title="In SpringBoot">SpringBoot</a>
+</div>
+
+    <span><a href="/posts/a3dfcd98/" title="SpringBoot中常见的几种解决跨域的方式">SpringBoot中常见的几种解决跨域的方式</a></span>
   </li>
 
   </ul>

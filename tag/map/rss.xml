@@ -7,93 +7,93 @@
         <language>en</language>
         <pubDate>Thu, 16 Dec 2021 16:47:03 +0800</pubDate>
         <lastBuildDate>Thu, 16 Dec 2021 16:47:03 +0800</lastBuildDate>
+        <category>SAP</category>
         <category>生物信息</category>
         <category>基因编辑</category>
-        <category>SAP</category>
         <category>Java</category>
-        <category>Corn</category>
         <category>Cache</category>
         <category>Cookie</category>
         <category>Session</category>
         <category>Java面试</category>
+        <category>Corn</category>
         <category>前端</category>
         <category>Css</category>
+        <category>DisPlay属性</category>
         <category>DDD</category>
         <category>领域驱动设计</category>
-        <category>DisPlay属性</category>
-        <category>FastJson</category>
         <category>Docker</category>
+        <category>FastJson</category>
+        <category>JavaScript</category>
+        <category>Html</category>
         <category>blog</category>
         <category>hexo</category>
         <category>next</category>
         <category>IDEA</category>
         <category>SpringBoot</category>
-        <category>JavaScript</category>
-        <category>Html</category>
-        <category>Jvm</category>
         <category>函数式接口</category>
+        <category>Jvm</category>
         <category>map</category>
         <category>Stream流</category>
         <category>Assert</category>
+        <category>Springboot</category>
         <category>java</category>
         <category>calender</category>
-        <category>Springboot</category>
         <category>LeetCode</category>
         <category>算法</category>
         <category>递归</category>
+        <category>Linux</category>
         <category>Mybatis</category>
         <category>分页查询</category>
         <category>模糊查询</category>
-        <category>Linux</category>
-        <category>Spring</category>
         <category>Nginx</category>
-        <category>文件上传</category>
+        <category>Spring</category>
         <category>SrpingBoot</category>
+        <category>文件上传</category>
         <category>事务</category>
         <category>TypeScript</category>
         <category>WebPack</category>
         <category>master</category>
+        <category>UML</category>
         <category>Ubuntu</category>
         <category>Mysql</category>
         <category>VSCODE</category>
         <category>快捷键</category>
-        <category>UML</category>
         <category>Vue</category>
         <category>VsCode</category>
         <category>Shell</category>
+        <category>日期</category>
         <category>Stream</category>
         <category>线程池</category>
-        <category>日期</category>
         <category>ubuntu</category>
         <category>虚拟机</category>
+        <category>二分查找</category>
         <category>数据挖掘</category>
         <category>Hadoop</category>
         <category>操作系统</category>
         <category>EasyExcel</category>
-        <category>二分查找</category>
         <category>node</category>
         <category>JVM</category>
-        <category>junit</category>
-        <category>Hexo</category>
-        <category>数据库</category>
         <category>Yaml</category>
-        <category>冒泡排序</category>
+        <category>Hexo</category>
+        <category>junit</category>
+        <category>数据库</category>
+        <category>Mysql事务</category>
         <category>Git</category>
         <category>git,npm,node</category>
+        <category>冒泡排序</category>
         <category>动态规划</category>
-        <category>多线程</category>
-        <category>Mysql事务</category>
         <category>堆排序</category>
         <category>幂等性</category>
+        <category>多线程</category>
         <category>流</category>
         <category>归并排序</category>
-        <category>正则表达式</category>
         <category>快速排序</category>
+        <category>正则表达式</category>
         <category>直接插入排序</category>
+        <category>选择排序</category>
         <category>Java 面试</category>
         <category>数据结构</category>
         <category>阻塞队列</category>
-        <category>选择排序</category>
         <category>Spring事务</category>
         <category>JDK</category>
         <category>动态代理</category>
@@ -112,28 +112,29 @@
             <category>map</category>
             <category>Stream流</category>
             <pubDate>Thu, 16 Dec 2021 16:47:03 +0800</pubDate>
-            <description><![CDATA[ &lt;p&gt;常见的 &lt;code&gt;Java8&lt;/code&gt;  遍历 &lt;code&gt;Map&lt;/code&gt;  的三种方式&lt;/p&gt;
+            <description><![CDATA[ &lt;p&gt;常见的&lt;code&gt;Java8&lt;/code&gt;遍历&lt;code&gt;Map&lt;/code&gt;的三种方式&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;code&gt;for&lt;/code&gt;  循环&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;stream&lt;/code&gt;  流的方式处理&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;forEach&lt;/code&gt;  方法遍历&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;for&lt;/code&gt;循环&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;stream&lt;/code&gt;流的方式处理&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;forEach&lt;/code&gt;方法遍历&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9qdWVqaW4uY24vcG9zdC82ODQ0OTAzOTI3MDk2Mjk1NDMy&#34;&gt;转载&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;&lt;code&gt;Show me the code first!&lt;/code&gt;  以下是代码，解释一下逻辑，原来的 &lt;code&gt;cookies&lt;/code&gt;  数据结构为 &lt;code&gt;Map&amp;lt;String, List&amp;lt;HttpCookie&amp;gt;&amp;gt;&lt;/code&gt; , 其中 &lt;code&gt;HttpCookie&lt;/code&gt;  为 &lt;code&gt;cookie&lt;/code&gt;  键值对，由于业务需要，我们需要将其转换成 &lt;code&gt;Map&amp;lt;String, String&amp;gt;&lt;/code&gt;  才更方便处理，于是乎就有了以下代码。（我这里直接用了 &lt;code&gt;foreach&lt;/code&gt;  循环，也可以用 &lt;code&gt;fori&lt;/code&gt;  循环，例如 &lt;code&gt;for(int i = 0; i&amp;lt; xx; i++)&lt;/code&gt; ）&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;Show me the code first!&lt;/code&gt;以下是代码，解释一下逻辑，原来的&lt;code&gt;cookies&lt;/code&gt;数据结构为&lt;code&gt;Map&amp;lt;String, List&amp;lt;HttpCookie&amp;gt;&amp;gt;&lt;/code&gt;,其中&lt;code&gt;HttpCookie&lt;/code&gt;为&lt;code&gt;cookie&lt;/code&gt;键值对，由于业务需要，我们需要将其转换成&lt;code&gt;Map&amp;lt;String, String&amp;gt;&lt;/code&gt;才更方便处理，于是乎就有了以下代码。（我这里直接用了&lt;code&gt;foreach&lt;/code&gt;循环，也可以用&lt;code&gt;fori&lt;/code&gt;循环，例如&lt;code&gt;for(int i = 0; i&amp;lt; xx; i++)&lt;/code&gt;）&lt;/p&gt;
 &lt;span id=&#34;more&#34;&gt;&lt;/span&gt;
-&lt;h2 id=&#34;for循环遍历&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#for循环遍历&#34;&gt;#&lt;/a&gt;  &lt;code&gt;for&lt;/code&gt;  循环遍历&lt;/h2&gt;
-&lt;figure class=&#34;highlight java&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;8&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;// 从request中获取原始的cookie&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;MultiValueMap&amp;lt;String, HttpCookie&amp;gt; cookies = request.getCookies(); &lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;Map&amp;lt;String, String&amp;gt; cookieMap = &lt;span class=&#34;keyword&#34;&gt;new&lt;/span&gt; HashMap&amp;lt;&amp;gt;(); &lt;span class=&#34;comment&#34;&gt;// 新建一个map，将cookie转入该map中&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;for&lt;/span&gt; (Map.Entry&amp;lt;String, List&amp;lt;HttpCookie&amp;gt;&amp;gt; itemList : cookies.entrySet()) &amp;#123; &lt;span class=&#34;comment&#34;&gt;// 遍历原始的MultiValueMap&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;	&lt;span class=&#34;keyword&#34;&gt;for&lt;/span&gt; (HttpCookie item :itemList.getValue()) &amp;#123; &lt;span class=&#34;comment&#34;&gt;// 遍历每个item中的List&amp;lt;HttpCookie&amp;gt;，其中的HttpCookie是我们需要的内容&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;		cookieMap.put(item.getName(), item.getValue()); &lt;span class=&#34;comment&#34;&gt;// 存入内容&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;	&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;h2 id=&#34;stream流的方式处理&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#stream流的方式处理&#34;&gt;#&lt;/a&gt;  &lt;code&gt;stream&lt;/code&gt;  流的方式处理&lt;/h2&gt;
-&lt;p&gt;在 &lt;code&gt;Java8&lt;/code&gt;  中，我们可以使用流，将 &lt;code&gt;Collections&lt;/code&gt;  或者数组转化成 &lt;code&gt;Stream&lt;/code&gt; ，并用链式的调用更加逻辑更加清晰。&lt;/p&gt;
+&lt;h2 id=&#34;for循环遍历&#34;&gt;&lt;a href=&#34;#for循环遍历&#34; class=&#34;headerlink&#34; title=&#34;for循环遍历&#34;&gt;&lt;/a&gt;&lt;code&gt;for&lt;/code&gt;循环遍历&lt;/h2&gt;&lt;figure class=&#34;highlight java&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;8&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;// 从request中获取原始的cookie&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;MultiValueMap&amp;lt;String, HttpCookie&amp;gt; cookies = request.getCookies(); &lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;Map&amp;lt;String, String&amp;gt; cookieMap = &lt;span class=&#34;keyword&#34;&gt;new&lt;/span&gt; HashMap&amp;lt;&amp;gt;(); &lt;span class=&#34;comment&#34;&gt;// 新建一个map，将cookie转入该map中&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;for&lt;/span&gt; (Map.Entry&amp;lt;String, List&amp;lt;HttpCookie&amp;gt;&amp;gt; itemList : cookies.entrySet()) &amp;#123; &lt;span class=&#34;comment&#34;&gt;// 遍历原始的MultiValueMap&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;	&lt;span class=&#34;keyword&#34;&gt;for&lt;/span&gt; (HttpCookie item :itemList.getValue()) &amp;#123; &lt;span class=&#34;comment&#34;&gt;// 遍历每个item中的List&amp;lt;HttpCookie&amp;gt;，其中的HttpCookie是我们需要的内容&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;		cookieMap.put(item.getName(), item.getValue()); &lt;span class=&#34;comment&#34;&gt;// 存入内容&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;	&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+
+&lt;h2 id=&#34;stream流的方式处理&#34;&gt;&lt;a href=&#34;#stream流的方式处理&#34; class=&#34;headerlink&#34; title=&#34;stream流的方式处理&#34;&gt;&lt;/a&gt;&lt;code&gt;stream&lt;/code&gt;流的方式处理&lt;/h2&gt;&lt;p&gt;在&lt;code&gt;Java8&lt;/code&gt;中，我们可以使用流，将&lt;code&gt;Collections&lt;/code&gt;或者数组转化成&lt;code&gt;Stream&lt;/code&gt;，并用链式的调用更加逻辑更加清晰。&lt;/p&gt;
 &lt;figure class=&#34;highlight java&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;8&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;MultiValueMap&amp;lt;String, HttpCookie&amp;gt; cookies = request.getCookies();&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;Map&amp;lt;String, String&amp;gt; cookieMap = &lt;span class=&#34;keyword&#34;&gt;new&lt;/span&gt; HashMap&amp;lt;&amp;gt;();&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;cookies.entrySet() &lt;span class=&#34;comment&#34;&gt;// 获取entrySet&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;	.stream() &lt;span class=&#34;comment&#34;&gt;// 将其转化成流&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;	.map(Map.Entry&amp;lt;String, List&amp;lt;HttpCookie&amp;gt;&amp;gt;::getValue) &lt;span class=&#34;comment&#34;&gt;// MultiValueMap&amp;lt;String, HttpCookie&amp;gt; -&amp;gt; List&amp;lt;HttpCookie&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;	.flatMap(List&amp;lt;HttpCookie&amp;gt;::stream) &lt;span class=&#34;comment&#34;&gt;// List&amp;lt;HttpCookie&amp;gt; -&amp;gt; HttpCookie&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;	.forEach(cookie -&amp;gt; cookieMap.put(cookie.getName(), cookie.getValue())); &lt;span class=&#34;comment&#34;&gt;// 遍历，存入内容&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;h2 id=&#34;collection具有的foreach方法遍历&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#collection具有的foreach方法遍历&#34;&gt;#&lt;/a&gt;  &lt;code&gt;Collection&lt;/code&gt;  具有的 &lt;code&gt;forEach&lt;/code&gt;  方法遍历&lt;/h2&gt;
-&lt;h3 id=&#34;继续用stream处理&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#继续用stream处理&#34;&gt;#&lt;/a&gt; 继续用 &lt;code&gt;Stream&lt;/code&gt;  处理&lt;/h3&gt;
-&lt;p&gt;我们可以看到通过流的方法处理 &lt;code&gt;cookie&lt;/code&gt;  的方法，接下来，我们接着用相同的方法来处理请求参数，请求参数原本的数据格式依然为 &lt;code&gt;MultiValueMap&amp;lt;String, String&amp;gt;&lt;/code&gt; ，可以看做是 &lt;code&gt;Map&amp;lt;String, List&amp;lt;String&amp;gt;&amp;gt;&lt;/code&gt; ，其中请求参数名（ &lt;code&gt;key&lt;/code&gt; ）对应的值（ &lt;code&gt;value&lt;/code&gt; ）可能为多行，我们需要将其处理成一行。&lt;/p&gt;
+&lt;h2 id=&#34;Collection具有的forEach方法遍历&#34;&gt;&lt;a href=&#34;#Collection具有的forEach方法遍历&#34; class=&#34;headerlink&#34; title=&#34;Collection具有的forEach方法遍历&#34;&gt;&lt;/a&gt;&lt;code&gt;Collection&lt;/code&gt;具有的&lt;code&gt;forEach&lt;/code&gt;方法遍历&lt;/h2&gt;&lt;h3 id=&#34;继续用Stream处理&#34;&gt;&lt;a href=&#34;#继续用Stream处理&#34; class=&#34;headerlink&#34; title=&#34;继续用Stream处理&#34;&gt;&lt;/a&gt;继续用&lt;code&gt;Stream&lt;/code&gt;处理&lt;/h3&gt;&lt;p&gt;我们可以看到通过流的方法处理&lt;code&gt;cookie&lt;/code&gt;的方法，接下来，我们接着用相同的方法来处理请求参数，请求参数原本的数据格式依然为&lt;code&gt;MultiValueMap&amp;lt;String, String&amp;gt;&lt;/code&gt;，可以看做是&lt;code&gt;Map&amp;lt;String, List&amp;lt;String&amp;gt;&amp;gt;&lt;/code&gt;，其中请求参数名（&lt;code&gt;key&lt;/code&gt;）对应的值（&lt;code&gt;value&lt;/code&gt;）可能为多行，我们需要将其处理成一行。&lt;/p&gt;
 &lt;figure class=&#34;highlight java&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;9&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;MultiValueMap&amp;lt;String, String&amp;gt; params = request.getQueryParams();&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;Map&amp;lt;String, String&amp;gt; paramMap = &lt;span class=&#34;keyword&#34;&gt;new&lt;/span&gt; HashMap&amp;lt;&amp;gt;();&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;params.entrySet()&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;	.forEach(entry -&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;		paramMap.put(&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;			entry.getKey(), &lt;span class=&#34;comment&#34;&gt;// 将参数名写入Key&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;			entry.getValue().stream().collect(Collectors.joining())) &lt;span class=&#34;comment&#34;&gt;// 参数值多行合并成一行写入value&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;	);&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;p&gt;大家可以看到，在处理参数值（ &lt;code&gt;value&lt;/code&gt; ）的时候，值为 &lt;code&gt;List&amp;lt;String&amp;gt;&lt;/code&gt;  数据结构，以上代码通过 &lt;code&gt;entry.getValue().stream().collect(Collectors.joining()))&lt;/code&gt;  将其 &lt;code&gt;List&lt;/code&gt;  先转化为 &lt;code&gt;Stream&lt;/code&gt; ，再用流的 &lt;code&gt;collection&lt;/code&gt;  方法，将其合并。这个 &lt;code&gt;Collectors&lt;/code&gt;  还具有将 &lt;code&gt;toSet/toList/groupingBy&lt;/code&gt;  等功能，大家可以自行研究，这里就是使用的是 &lt;code&gt;joining&lt;/code&gt;  合并方法。&lt;/p&gt;
-&lt;h3 id=&#34;使用collection的foreach方法遍历map&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#使用collection的foreach方法遍历map&#34;&gt;#&lt;/a&gt; 使用 &lt;code&gt;Collection&lt;/code&gt;  的 &lt;code&gt;forEach&lt;/code&gt;  方法遍历 &lt;code&gt;Map&lt;/code&gt;&lt;/h3&gt;
-&lt;p&gt;修改后的代码如下：&lt;/p&gt;
+&lt;p&gt;大家可以看到，在处理参数值（&lt;code&gt;value&lt;/code&gt;）的时候，值为&lt;code&gt;List&amp;lt;String&amp;gt;&lt;/code&gt;数据结构，以上代码通过&lt;code&gt;entry.getValue().stream().collect(Collectors.joining()))&lt;/code&gt;将其&lt;code&gt;List&lt;/code&gt;先转化为&lt;code&gt;Stream&lt;/code&gt;，再用流的&lt;code&gt;collection&lt;/code&gt;方法，将其合并。这个&lt;code&gt;Collectors&lt;/code&gt;还具有将&lt;code&gt;toSet/toList/groupingBy&lt;/code&gt;等功能，大家可以自行研究，这里就是使用的是&lt;code&gt;joining&lt;/code&gt;合并方法。&lt;/p&gt;
+&lt;h3 id=&#34;使用Collection的forEach方法遍历Map&#34;&gt;&lt;a href=&#34;#使用Collection的forEach方法遍历Map&#34; class=&#34;headerlink&#34; title=&#34;使用Collection的forEach方法遍历Map&#34;&gt;&lt;/a&gt;使用&lt;code&gt;Collection&lt;/code&gt;的&lt;code&gt;forEach&lt;/code&gt;方法遍历&lt;code&gt;Map&lt;/code&gt;&lt;/h3&gt;&lt;p&gt;修改后的代码如下：&lt;/p&gt;
 &lt;figure class=&#34;highlight java&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;params.forEach((key, value) -&amp;gt; paramMap.put(key, String.join(&lt;span class=&#34;string&#34;&gt;&amp;quot; &amp;quot;&lt;/span&gt;, value)));&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+
+
+
+
+
  ]]></description>
         </item>
         <item>
@@ -143,9 +144,11 @@
             <category>map</category>
             <category>Stream流</category>
             <pubDate>Thu, 16 Dec 2021 16:21:02 +0800</pubDate>
-            <description><![CDATA[ &lt;p&gt;最近遇到一个很奇怪的诉求，进行分批处理时，所得到的是一个 &lt;code&gt;List&amp;lt;List&amp;lt;String&amp;gt;&amp;gt; partition = Lists.partition(list, 1000)&lt;/code&gt;  的分批 &lt;code&gt;List&lt;/code&gt; , 由于只是一个类似于 &lt;code&gt;Map&amp;lt;string,Object&amp;gt;&lt;/code&gt;  的 &lt;code&gt;key&lt;/code&gt;  值进行了分组，但是业务方法使用了后面的实体类，所以想将 &lt;code&gt;value&lt;/code&gt;  值保持和前面分组一致，同时 &lt;code&gt;map&lt;/code&gt;  的 &lt;code&gt;key&lt;/code&gt;  值变成 &lt;code&gt;Object&lt;/code&gt;  实体类的其他属性.&lt;/p&gt;
+            <description><![CDATA[ &lt;p&gt;最近遇到一个很奇怪的诉求,进行分批处理时,所得到的是一个&lt;code&gt;List&amp;lt;List&amp;lt;String&amp;gt;&amp;gt; partition = Lists.partition(list, 1000)&lt;/code&gt;的分批&lt;code&gt;List&lt;/code&gt;,由于只是一个类似于&lt;code&gt;Map&amp;lt;string,Object&amp;gt;&lt;/code&gt;的&lt;code&gt;key&lt;/code&gt;值进行了分组,但是业务方法使用了后面的实体类,所以想将&lt;code&gt;value&lt;/code&gt;值保持和前面分组一致,同时&lt;code&gt;map&lt;/code&gt;的&lt;code&gt;key&lt;/code&gt;值变成&lt;code&gt;Object&lt;/code&gt;实体类的其他属性.&lt;/p&gt;
 &lt;span id=&#34;more&#34;&gt;&lt;/span&gt;
+
 &lt;figure class=&#34;highlight java&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;8&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;//先根据某个值进行分类&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;List&amp;lt;List&amp;lt;String&amp;gt;&amp;gt; partition = Lists.partition(list, &lt;span class=&#34;number&#34;&gt;1000&lt;/span&gt;);&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;partition.forEach(m -&amp;gt;  &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;                    Map&amp;lt;String, DriverSettlement&amp;gt; driverSettlementMap = m.stream()&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;                            .map(driversMap::get).collect(Collectors.toMap(Student::getId, t -&amp;gt; t));&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;                    method(driverSettlementMap);&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;                &amp;#125;);&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;//这边的t-&amp;gt;t 表示本身&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+
  ]]></description>
         </item>
     </channel>

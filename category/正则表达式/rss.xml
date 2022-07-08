@@ -7,93 +7,93 @@
         <language>en</language>
         <pubDate>Sat, 19 Feb 2022 16:18:37 +0800</pubDate>
         <lastBuildDate>Sat, 19 Feb 2022 16:18:37 +0800</lastBuildDate>
+        <category>SAP</category>
         <category>生物信息</category>
         <category>基因编辑</category>
-        <category>SAP</category>
         <category>Java</category>
-        <category>Corn</category>
         <category>Cache</category>
         <category>Cookie</category>
         <category>Session</category>
         <category>Java面试</category>
+        <category>Corn</category>
         <category>前端</category>
         <category>Css</category>
+        <category>DisPlay属性</category>
         <category>DDD</category>
         <category>领域驱动设计</category>
-        <category>DisPlay属性</category>
-        <category>FastJson</category>
         <category>Docker</category>
+        <category>FastJson</category>
+        <category>JavaScript</category>
+        <category>Html</category>
         <category>blog</category>
         <category>hexo</category>
         <category>next</category>
         <category>IDEA</category>
         <category>SpringBoot</category>
-        <category>JavaScript</category>
-        <category>Html</category>
-        <category>Jvm</category>
         <category>函数式接口</category>
+        <category>Jvm</category>
         <category>map</category>
         <category>Stream流</category>
         <category>Assert</category>
+        <category>Springboot</category>
         <category>java</category>
         <category>calender</category>
-        <category>Springboot</category>
         <category>LeetCode</category>
         <category>算法</category>
         <category>递归</category>
+        <category>Linux</category>
         <category>Mybatis</category>
         <category>分页查询</category>
         <category>模糊查询</category>
-        <category>Linux</category>
-        <category>Spring</category>
         <category>Nginx</category>
-        <category>文件上传</category>
+        <category>Spring</category>
         <category>SrpingBoot</category>
+        <category>文件上传</category>
         <category>事务</category>
         <category>TypeScript</category>
         <category>WebPack</category>
         <category>master</category>
+        <category>UML</category>
         <category>Ubuntu</category>
         <category>Mysql</category>
         <category>VSCODE</category>
         <category>快捷键</category>
-        <category>UML</category>
         <category>Vue</category>
         <category>VsCode</category>
         <category>Shell</category>
+        <category>日期</category>
         <category>Stream</category>
         <category>线程池</category>
-        <category>日期</category>
         <category>ubuntu</category>
         <category>虚拟机</category>
+        <category>二分查找</category>
         <category>数据挖掘</category>
         <category>Hadoop</category>
         <category>操作系统</category>
         <category>EasyExcel</category>
-        <category>二分查找</category>
         <category>node</category>
         <category>JVM</category>
-        <category>junit</category>
-        <category>Hexo</category>
-        <category>数据库</category>
         <category>Yaml</category>
-        <category>冒泡排序</category>
+        <category>Hexo</category>
+        <category>junit</category>
+        <category>数据库</category>
+        <category>Mysql事务</category>
         <category>Git</category>
         <category>git,npm,node</category>
+        <category>冒泡排序</category>
         <category>动态规划</category>
-        <category>多线程</category>
-        <category>Mysql事务</category>
         <category>堆排序</category>
         <category>幂等性</category>
+        <category>多线程</category>
         <category>流</category>
         <category>归并排序</category>
-        <category>正则表达式</category>
         <category>快速排序</category>
+        <category>正则表达式</category>
         <category>直接插入排序</category>
+        <category>选择排序</category>
         <category>Java 面试</category>
         <category>数据结构</category>
         <category>阻塞队列</category>
-        <category>选择排序</category>
         <category>Spring事务</category>
         <category>JDK</category>
         <category>动态代理</category>
@@ -111,13 +111,12 @@
             <link>https://smile1231.github.io/posts/2f57a694/</link>
             <category>正则表达式</category>
             <pubDate>Sat, 19 Feb 2022 16:18:37 +0800</pubDate>
-            <description><![CDATA[ &lt;h1 id=&#34;正则表达式中的特殊字符&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#正则表达式中的特殊字符&#34;&gt;#&lt;/a&gt; 正则表达式中的特殊字符&lt;/h1&gt;
-&lt;h2 id=&#34;正则表达式中的特殊字符表示&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#正则表达式中的特殊字符表示&#34;&gt;#&lt;/a&gt; 正则表达式中的特殊字符（📖表示  &lt;code&gt;|&lt;/code&gt; ）&lt;/h2&gt;
-&lt;p&gt;正则真的太难学了: &lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9yZWdleG9uZS5jb20v&#34;&gt;https://regexone.com/&lt;/span&gt;   学习网站这不就来了&lt;/p&gt;
+            <description><![CDATA[ &lt;h1 id=&#34;正则表达式中的特殊字符&#34;&gt;&lt;a href=&#34;#正则表达式中的特殊字符&#34; class=&#34;headerlink&#34; title=&#34;正则表达式中的特殊字符&#34;&gt;&lt;/a&gt;正则表达式中的特殊字符&lt;/h1&gt;&lt;h2 id=&#34;正则表达式中的特殊字符（📖表示-）&#34;&gt;&lt;a href=&#34;#正则表达式中的特殊字符（📖表示-）&#34; class=&#34;headerlink&#34; title=&#34;正则表达式中的特殊字符（📖表示 |）&#34;&gt;&lt;/a&gt;正则表达式中的特殊字符（📖表示 &lt;code&gt;|&lt;/code&gt;）&lt;/h2&gt;&lt;p&gt;正则真的太难学了: &lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9yZWdleG9uZS5jb20v&#34;&gt;https://regexone.com/&lt;/span&gt;   学习网站这不就来了&lt;/p&gt;
 &lt;p&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly93d3cuY25ibG9ncy5jb20vbGFidWxhZG9uZy9wLzEyMzIwNDEzLmh0bWw=&#34;&gt; git + 正则 &lt;/span&gt;&lt;/p&gt;
 &lt;p&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly90b29sLm9zY2hpbmEubmV0L3VwbG9hZHMvYXBpZG9jcy9qcXVlcnkvcmVnZXhwLmh0bWw=&#34;&gt; 手册 &lt;/span&gt;&lt;/p&gt;
 &lt;p&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9yZWdleDEwMS5jb20vci9jTzhscXMvOQ==&#34;&gt; 好用的网站 &lt;/span&gt;&lt;/p&gt;
 &lt;span id=&#34;more&#34;&gt;&lt;/span&gt;
+
 &lt;table&gt;
 &lt;thead&gt;
 &lt;tr&gt;
@@ -125,132 +124,129 @@
 &lt;th&gt;含义&lt;/th&gt;
 &lt;/tr&gt;
 &lt;/thead&gt;
-&lt;tbody&gt;
-&lt;tr&gt;
+&lt;tbody&gt;&lt;tr&gt;
 &lt;td&gt;&lt;code&gt;\&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;依照下列规则匹配：在非特殊字符之前的反斜杠表示下一个字符是特殊字符，不能按照字面理解。例如，前面没有 &lt;code&gt;&amp;quot;\&amp;quot;&lt;/code&gt;  的  &lt;code&gt;&amp;quot;b&amp;quot;&lt;/code&gt;  通常匹配小写字母  &lt;code&gt;&amp;quot;b&amp;quot;&lt;/code&gt; ，即字符会被作为字面理解，无论它出现在哪里。但如果前面加了  &lt;code&gt;&amp;quot;\&amp;quot;&lt;/code&gt; ，它将不再匹配任何字符，而是表示一个字符边界。在特殊字符之前的反斜杠表示下一个字符不是特殊字符，应该按照字面理解。详情请参阅下文中的 “转义（Escaping）” 部分。如果你想将字符串传递给 RegExp 构造函数，不要忘记在字符串字面量中反斜杠是转义字符。所以为了在模式中添加一个反斜杠，你需要在字符串字面量中转义它。 &lt;code&gt;/[a-z]\s/i&lt;/code&gt;  和  &lt;code&gt;new RegExp(&amp;quot;[a-z]\\s&amp;quot;, &amp;quot;i&amp;quot;)&lt;/code&gt;  创建了相同的正则表达式：一个用于搜索后面紧跟着空白字符（ &lt;code&gt;\s&lt;/code&gt;  可看后文）并且在  &lt;code&gt;a-z&lt;/code&gt;  范围内的任意字符的表达式。为了通过字符串字面量给 RegExp 构造函数创建包含反斜杠的表达式，你需要在字符串级别和正则表达式级别都对它进行转义。例如  &lt;code&gt;/[a-z]:\\/i &lt;/code&gt; 和  &lt;code&gt;new RegExp(&amp;quot;[a-z]:\\\\&amp;quot;,&amp;quot;i&amp;quot;)&lt;/code&gt;  会创建相同的表达式，即匹配类似  &lt;code&gt;&amp;quot;C:\&amp;quot;&lt;/code&gt;  字符串。&lt;/td&gt;
+&lt;td&gt;依照下列规则匹配：在非特殊字符之前的反斜杠表示下一个字符是特殊字符，不能按照字面理解。例如，前面没有&lt;code&gt;&amp;quot;\&amp;quot;&lt;/code&gt;的 &lt;code&gt;&amp;quot;b&amp;quot;&lt;/code&gt; 通常匹配小写字母 &lt;code&gt;&amp;quot;b&amp;quot;&lt;/code&gt;，即字符会被作为字面理解，无论它出现在哪里。但如果前面加了 &lt;code&gt;&amp;quot;\&amp;quot;&lt;/code&gt;，它将不再匹配任何字符，而是表示一个字符边界。在特殊字符之前的反斜杠表示下一个字符不是特殊字符，应该按照字面理解。详情请参阅下文中的 “转义（Escaping）” 部分。如果你想将字符串传递给 RegExp 构造函数，不要忘记在字符串字面量中反斜杠是转义字符。所以为了在模式中添加一个反斜杠，你需要在字符串字面量中转义它。&lt;code&gt;/[a-z]\s/i&lt;/code&gt; 和 &lt;code&gt;new RegExp(&amp;quot;[a-z]\\s&amp;quot;, &amp;quot;i&amp;quot;)&lt;/code&gt; 创建了相同的正则表达式：一个用于搜索后面紧跟着空白字符（&lt;code&gt;\s&lt;/code&gt; 可看后文）并且在 &lt;code&gt;a-z&lt;/code&gt; 范围内的任意字符的表达式。为了通过字符串字面量给 RegExp 构造函数创建包含反斜杠的表达式，你需要在字符串级别和正则表达式级别都对它进行转义。例如 &lt;code&gt;/[a-z]:\\/i &lt;/code&gt;和 &lt;code&gt;new RegExp(&amp;quot;[a-z]:\\\\&amp;quot;,&amp;quot;i&amp;quot;)&lt;/code&gt; 会创建相同的表达式，即匹配类似 &lt;code&gt;&amp;quot;C:\&amp;quot;&lt;/code&gt; 字符串。&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
 &lt;td&gt;&lt;code&gt;^&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;匹配输入的开始。如果多行标志被设置为 &lt;code&gt; true&lt;/code&gt; ，那么也匹配换行符后紧跟的位置。例如， &lt;code&gt;/^A/&lt;/code&gt;  并不会匹配  &lt;code&gt;&amp;quot;an A&amp;quot; &lt;/code&gt; 中的  &lt;code&gt;&#39;A&#39;&lt;/code&gt; ，但是会匹配  &lt;code&gt;&amp;quot;An E&amp;quot; &lt;/code&gt; 中的 &lt;code&gt; &#39;A&#39;&lt;/code&gt; 。当  &lt;code&gt;&#39;^&#39; &lt;/code&gt; 作为第一个字符出现在一个字符集合模式时，它将会有不同的含义。反向字符集合 一节有详细介绍和示例。&lt;/td&gt;
+&lt;td&gt;匹配输入的开始。如果多行标志被设置为&lt;code&gt; true&lt;/code&gt;，那么也匹配换行符后紧跟的位置。例如，&lt;code&gt;/^A/&lt;/code&gt; 并不会匹配 &lt;code&gt;&amp;quot;an A&amp;quot; &lt;/code&gt;中的 &lt;code&gt;&amp;#39;A&amp;#39;&lt;/code&gt;，但是会匹配 &lt;code&gt;&amp;quot;An E&amp;quot; &lt;/code&gt;中的&lt;code&gt; &amp;#39;A&amp;#39;&lt;/code&gt;。当 &lt;code&gt;&amp;#39;^&amp;#39; &lt;/code&gt;作为第一个字符出现在一个字符集合模式时，它将会有不同的含义。反向字符集合 一节有详细介绍和示例。&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
 &lt;td&gt;&lt;code&gt;$&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;匹配输入的结束。如果多行标志被设置为 &lt;code&gt; true&lt;/code&gt; ，那么也匹配换行符前的位置。例如， &lt;code&gt;/t$/&lt;/code&gt;  并不会匹配  &lt;code&gt;&amp;quot;eater&amp;quot;&lt;/code&gt;  中的  &lt;code&gt;&#39;t&#39;&lt;/code&gt; ，但是会匹配  &lt;code&gt;&amp;quot;eat&amp;quot; &lt;/code&gt; 中的 &lt;code&gt;&#39;t&#39;&lt;/code&gt; 。&lt;/td&gt;
+&lt;td&gt;匹配输入的结束。如果多行标志被设置为&lt;code&gt; true&lt;/code&gt;，那么也匹配换行符前的位置。例如，&lt;code&gt;/t$/&lt;/code&gt; 并不会匹配 &lt;code&gt;&amp;quot;eater&amp;quot;&lt;/code&gt; 中的 &lt;code&gt;&amp;#39;t&amp;#39;&lt;/code&gt;，但是会匹配 &lt;code&gt;&amp;quot;eat&amp;quot; &lt;/code&gt;中的&lt;code&gt;&amp;#39;t&amp;#39;&lt;/code&gt;。&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
 &lt;td&gt;&lt;code&gt;*&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;匹配前一个表达式 &lt;code&gt; 0 次&lt;/code&gt; 或 &lt;code&gt;多次&lt;/code&gt; 。等价于  &lt;code&gt;&amp;#123;0,&amp;#125;&lt;/code&gt; 。例如， &lt;code&gt;/bo*/&lt;/code&gt;  会匹配  &lt;code&gt;&amp;quot;A ghost boooooed&amp;quot;&lt;/code&gt;  中的  &lt;code&gt;&#39;booooo&#39; &lt;/code&gt; 和  &lt;code&gt;&amp;quot;A bird warbled&amp;quot;&lt;/code&gt;  中的  &lt;code&gt;&#39;b&#39;&lt;/code&gt; ，但是在  &lt;code&gt;&amp;quot;A goat grunted&amp;quot;&lt;/code&gt;  中不会匹配任何内容。&lt;/td&gt;
+&lt;td&gt;匹配前一个表达式&lt;code&gt; 0 次&lt;/code&gt;或&lt;code&gt;多次&lt;/code&gt;。等价于 &lt;code&gt;&amp;#123;0,&amp;#125;&lt;/code&gt;。例如，&lt;code&gt;/bo*/&lt;/code&gt; 会匹配 &lt;code&gt;&amp;quot;A ghost boooooed&amp;quot;&lt;/code&gt; 中的 &lt;code&gt;&amp;#39;booooo&amp;#39; &lt;/code&gt;和 &lt;code&gt;&amp;quot;A bird warbled&amp;quot;&lt;/code&gt; 中的 &lt;code&gt;&amp;#39;b&amp;#39;&lt;/code&gt;，但是在 &lt;code&gt;&amp;quot;A goat grunted&amp;quot;&lt;/code&gt; 中不会匹配任何内容。&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
 &lt;td&gt;&lt;code&gt;+&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;匹配前面一个表达式  &lt;code&gt;1 次&lt;/code&gt; 或者 &lt;code&gt;多次&lt;/code&gt; 。等价于 &lt;code&gt; &amp;#123;1,&amp;#125;&lt;/code&gt; 。例如， &lt;code&gt;/a+/&lt;/code&gt;  会匹配  &lt;code&gt;&amp;quot;candy&amp;quot;&lt;/code&gt;  中的  &lt;code&gt;&#39;a&#39;&lt;/code&gt;  和 &lt;code&gt;&amp;quot;caaaaaaandy&amp;quot;&lt;/code&gt;  中所有的  &lt;code&gt;&#39;a&#39;&lt;/code&gt; ，但是在 &lt;code&gt;&amp;quot;cndy&amp;quot;&lt;/code&gt;  中不会匹配任何内容。&lt;/td&gt;
+&lt;td&gt;匹配前面一个表达式 &lt;code&gt;1 次&lt;/code&gt;或者&lt;code&gt;多次&lt;/code&gt;。等价于&lt;code&gt; &amp;#123;1,&amp;#125;&lt;/code&gt;。例如，&lt;code&gt;/a+/&lt;/code&gt; 会匹配 &lt;code&gt;&amp;quot;candy&amp;quot;&lt;/code&gt; 中的 &lt;code&gt;&amp;#39;a&amp;#39;&lt;/code&gt; 和&lt;code&gt;&amp;quot;caaaaaaandy&amp;quot;&lt;/code&gt;中所有的 &lt;code&gt;&amp;#39;a&amp;#39;&lt;/code&gt;，但是在&lt;code&gt;&amp;quot;cndy&amp;quot;&lt;/code&gt;中不会匹配任何内容。&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
 &lt;td&gt;&lt;code&gt;?&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;匹配前面一个表达式  &lt;code&gt;0 次&lt;/code&gt; 或者 &lt;code&gt; 1 次&lt;/code&gt; 。等价于 &lt;code&gt; &amp;#123;0,1&amp;#125;&lt;/code&gt; 。例如， &lt;code&gt;/e?le?/&lt;/code&gt;  匹配  &lt;code&gt;&amp;quot;angel&amp;quot;&lt;/code&gt;  中的  &lt;code&gt;&#39;el&#39;、&amp;quot;angle&amp;quot;&lt;/code&gt;  中的  &lt;code&gt;&#39;le&#39;&lt;/code&gt;  以及  &lt;code&gt;&amp;quot;oslo&#39;&lt;/code&gt;  中的  &lt;code&gt;&#39;l&#39;&lt;/code&gt; 。如果紧跟在任何量词  &lt;code&gt;*、 +、?&lt;/code&gt;  或  &lt;code&gt;&amp;#123;&amp;#125;&lt;/code&gt;  的后面，将会使量词变为非贪婪（匹配尽量少的字符），和缺省使用的贪婪模式（匹配尽可能多的字符）正好相反。例如，对  &lt;code&gt;&amp;quot;123abc&amp;quot;&lt;/code&gt;  使用  &lt;code&gt;/\d+/&lt;/code&gt;  将会匹配  &lt;code&gt;&amp;quot;123&amp;quot;&lt;/code&gt; ，而使用  &lt;code&gt;/\d+?/&lt;/code&gt;  则只会匹配到  &lt;code&gt;&amp;quot;1&amp;quot;&lt;/code&gt; 。还用于先行断言中，如本表的  &lt;code&gt;x(?=y)&lt;/code&gt;  和  &lt;code&gt;x(?!y)&lt;/code&gt;  条目所述。&lt;/td&gt;
+&lt;td&gt;匹配前面一个表达式 &lt;code&gt;0 次&lt;/code&gt;或者&lt;code&gt; 1 次&lt;/code&gt;。等价于&lt;code&gt; &amp;#123;0,1&amp;#125;&lt;/code&gt;。例如，&lt;code&gt;/e?le?/&lt;/code&gt; 匹配 &lt;code&gt;&amp;quot;angel&amp;quot;&lt;/code&gt; 中的 &lt;code&gt;&amp;#39;el&amp;#39;、&amp;quot;angle&amp;quot;&lt;/code&gt; 中的 &lt;code&gt;&amp;#39;le&amp;#39;&lt;/code&gt; 以及 &lt;code&gt;&amp;quot;oslo&amp;#39;&lt;/code&gt; 中的 &lt;code&gt;&amp;#39;l&amp;#39;&lt;/code&gt;。如果紧跟在任何量词 &lt;code&gt;*、 +、?&lt;/code&gt; 或 &lt;code&gt;&amp;#123;&amp;#125;&lt;/code&gt; 的后面，将会使量词变为非贪婪（匹配尽量少的字符），和缺省使用的贪婪模式（匹配尽可能多的字符）正好相反。例如，对 &lt;code&gt;&amp;quot;123abc&amp;quot;&lt;/code&gt; 使用 &lt;code&gt;/\d+/&lt;/code&gt; 将会匹配 &lt;code&gt;&amp;quot;123&amp;quot;&lt;/code&gt;，而使用 &lt;code&gt;/\d+?/&lt;/code&gt; 则只会匹配到 &lt;code&gt;&amp;quot;1&amp;quot;&lt;/code&gt;。还用于先行断言中，如本表的 &lt;code&gt;x(?=y)&lt;/code&gt; 和 &lt;code&gt;x(?!y)&lt;/code&gt; 条目所述。&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
-&lt;td&gt;&lt;code&gt;.	&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;小数点）默认匹配除换行符之外的任何单个字符。例如， &lt;code&gt;/.n/&lt;/code&gt;  将会匹配  &lt;code&gt;&amp;quot;nay, an apple is on the tree&amp;quot;&lt;/code&gt;  中的  &lt;code&gt;&#39;an&#39;&lt;/code&gt;  和  &lt;code&gt;&#39;on&#39;&lt;/code&gt; ，但是不会匹配  &lt;code&gt;&#39;nay&#39;&lt;/code&gt; 。如果  &lt;code&gt;s (&amp;quot;dotAll&amp;quot;) &lt;/code&gt; 标志位被设为  &lt;code&gt;true&lt;/code&gt; ，它也会匹配换行符。&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;.    &lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;小数点）默认匹配除换行符之外的任何单个字符。例如，&lt;code&gt;/.n/&lt;/code&gt; 将会匹配 &lt;code&gt;&amp;quot;nay, an apple is on the tree&amp;quot;&lt;/code&gt; 中的 &lt;code&gt;&amp;#39;an&amp;#39;&lt;/code&gt; 和 &lt;code&gt;&amp;#39;on&amp;#39;&lt;/code&gt;，但是不会匹配 &lt;code&gt;&amp;#39;nay&amp;#39;&lt;/code&gt;。如果 &lt;code&gt;s (&amp;quot;dotAll&amp;quot;) &lt;/code&gt;标志位被设为 &lt;code&gt;true&lt;/code&gt;，它也会匹配换行符。&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
 &lt;td&gt;&lt;code&gt;(x)&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;像下面的例子展示的那样，它会匹配  &lt;code&gt;&#39;x&#39;&lt;/code&gt;  并且记住匹配项。其中括号被称为捕获括号。模式  &lt;code&gt;/(foo) (bar) \1 \2/ &lt;/code&gt; 中的  &lt;code&gt;&#39;(foo)&#39;&lt;/code&gt;  和  &lt;code&gt;&#39;(bar)&#39;&lt;/code&gt;  匹配并记住字符串  &lt;code&gt;&amp;quot;foo bar foo bar&amp;quot;&lt;/code&gt;  中前两个单词。模式中的  &lt;code&gt;\1&lt;/code&gt;  和  &lt;code&gt;\2&lt;/code&gt;  表示第一个和第二个被捕获括号匹配的子字符串，即  &lt;code&gt;foo&lt;/code&gt;  和  &lt;code&gt;bar&lt;/code&gt; ，匹配了原字符串中的后两个单词。注意  &lt;code&gt;\1、\2、...、\n&lt;/code&gt;  是用在正则表达式的匹配环节，详情可以参阅后文的  &lt;code&gt;\n&lt;/code&gt;  条目。而在正则表达式的替换环节，则要使用像  &lt;code&gt;$1、$2、...、$n&lt;/code&gt;  这样的语法，例如， &lt;code&gt;&#39;bar foo&#39;.replace(/(...) (...)/, &#39;$2 $1&#39;)&lt;/code&gt; 。 &lt;code&gt;$&amp;amp;&lt;/code&gt;  表示整个用于匹配的原字符串。&lt;/td&gt;
+&lt;td&gt;像下面的例子展示的那样，它会匹配 &lt;code&gt;&amp;#39;x&amp;#39;&lt;/code&gt; 并且记住匹配项。其中括号被称为捕获括号。模式 &lt;code&gt;/(foo) (bar) \1 \2/ &lt;/code&gt;中的 &lt;code&gt;&amp;#39;(foo)&amp;#39;&lt;/code&gt; 和 &lt;code&gt;&amp;#39;(bar)&amp;#39;&lt;/code&gt; 匹配并记住字符串 &lt;code&gt;&amp;quot;foo bar foo bar&amp;quot;&lt;/code&gt; 中前两个单词。模式中的 &lt;code&gt;\1&lt;/code&gt; 和 &lt;code&gt;\2&lt;/code&gt; 表示第一个和第二个被捕获括号匹配的子字符串，即 &lt;code&gt;foo&lt;/code&gt; 和 &lt;code&gt;bar&lt;/code&gt;，匹配了原字符串中的后两个单词。注意 &lt;code&gt;\1、\2、...、\n&lt;/code&gt; 是用在正则表达式的匹配环节，详情可以参阅后文的 &lt;code&gt;\n&lt;/code&gt; 条目。而在正则表达式的替换环节，则要使用像 &lt;code&gt;$1、$2、...、$n&lt;/code&gt; 这样的语法，例如，&lt;code&gt;&amp;#39;bar foo&amp;#39;.replace(/(...) (...)/, &amp;#39;$2 $1&amp;#39;)&lt;/code&gt;。&lt;code&gt;$&amp;amp;&lt;/code&gt; 表示整个用于匹配的原字符串。&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
-&lt;td&gt;&lt;code&gt;(?:x)	&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;匹配  &lt;code&gt;&#39;x&#39;&lt;/code&gt;  但是不记住匹配项。这种括号叫作非捕获括号，使得你能够定义与正则表达式运算符一起使用的子表达式。看看这个例子  &lt;code&gt;/(?:foo)&amp;#123;1,2&amp;#125;/&lt;/code&gt; 。如果表达式是  &lt;code&gt;/foo&amp;#123;1,2&amp;#125;/，&amp;#123;1,2&amp;#125;&lt;/code&gt;  将只应用于  &lt;code&gt;&#39;foo&#39;&lt;/code&gt;  的最后一个字符  &lt;code&gt;&#39;o&#39;&lt;/code&gt; 。如果使用非捕获括号，则  &lt;code&gt;&amp;#123;1,2&amp;#125;&lt;/code&gt;  会应用于整个  &lt;code&gt;&#39;foo&#39;&lt;/code&gt;  单词。更多信息，可以参阅下文的  &lt;code&gt;Using parentheses&lt;/code&gt;  条目.&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;(?:x)    &lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;匹配 &lt;code&gt;&amp;#39;x&amp;#39;&lt;/code&gt; 但是不记住匹配项。这种括号叫作非捕获括号，使得你能够定义与正则表达式运算符一起使用的子表达式。看看这个例子 &lt;code&gt;/(?:foo)&amp;#123;1,2&amp;#125;/&lt;/code&gt;。如果表达式是 &lt;code&gt;/foo&amp;#123;1,2&amp;#125;/，&amp;#123;1,2&amp;#125;&lt;/code&gt; 将只应用于 &lt;code&gt;&amp;#39;foo&amp;#39;&lt;/code&gt; 的最后一个字符 &lt;code&gt;&amp;#39;o&amp;#39;&lt;/code&gt;。如果使用非捕获括号，则 &lt;code&gt;&amp;#123;1,2&amp;#125;&lt;/code&gt; 会应用于整个 &lt;code&gt;&amp;#39;foo&amp;#39;&lt;/code&gt; 单词。更多信息，可以参阅下文的 &lt;code&gt;Using parentheses&lt;/code&gt; 条目.&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
 &lt;td&gt;&lt;code&gt;x(?=y)&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;匹配 &lt;code&gt;&#39;x&#39;&lt;/code&gt;  仅仅当 &lt;code&gt;&#39;x&#39;&lt;/code&gt;  后面跟着 &lt;code&gt;&#39;y&#39;&lt;/code&gt; . 这种叫做先行断言。例如， &lt;code&gt;/Jack(?=Sprat)/&lt;/code&gt;  会匹配到 &lt;code&gt;&#39;Jack&#39;&lt;/code&gt;  仅当它后面跟着 ``‘Sprat’。/Jack (?=Sprat&lt;/td&gt;
-&lt;td&gt;Frost)/ &lt;code&gt;匹配&lt;/code&gt; ‘Jack’ &lt;code&gt;仅当它后面跟着&lt;/code&gt; ‘Sprat’ &lt;code&gt;或者是&lt;/code&gt; ‘Frost’ &lt;code&gt;。但是&lt;/code&gt; ‘Sprat’ &lt;code&gt;和&lt;/code&gt; ‘Frost’`` 都不是匹配结果的一部分。&lt;/td&gt;
+&lt;td&gt;匹配&lt;code&gt;&amp;#39;x&amp;#39;&lt;/code&gt;仅仅当&lt;code&gt;&amp;#39;x&amp;#39;&lt;/code&gt;后面跟着&lt;code&gt;&amp;#39;y&amp;#39;&lt;/code&gt;.这种叫做先行断言。例如，&lt;code&gt;/Jack(?=Sprat)/&lt;/code&gt;会匹配到&lt;code&gt;&amp;#39;Jack&amp;#39;&lt;/code&gt;仅当它后面跟着``’Sprat’。/Jack(?=Sprat&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
 &lt;td&gt;&lt;code&gt;(?&amp;lt;=y)x&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;匹配 &lt;code&gt;&#39;x&#39;&lt;/code&gt;  仅当 &lt;code&gt;&#39;x&#39;&lt;/code&gt;  前面是 &lt;code&gt;&#39;y&#39;&lt;/code&gt; . 这种叫做后行断言。例如， &lt;code&gt;/(?&amp;lt;=Jack)Sprat/&lt;/code&gt;  会匹配到 &lt;code&gt;&#39; Sprat &#39;&lt;/code&gt;  仅仅当它前面是 &lt;code&gt;&#39;Jack&#39;。/(?&amp;lt;=Jack📖Tom)Sprat/&lt;/code&gt;  匹配 &lt;code&gt;‘ Sprat ’&lt;/code&gt; 仅仅当它前面是 &lt;code&gt;Jack&lt;/code&gt;  或者是 &lt;code&gt;‘Tom’&lt;/code&gt; 。但是 &lt;code&gt;‘Jack’&lt;/code&gt; 和 &lt;code&gt;‘Tom’&lt;/code&gt; 都不是匹配结果的一部分。&lt;/td&gt;
+&lt;td&gt;匹配&lt;code&gt;&amp;#39;x&amp;#39;&lt;/code&gt;仅当&lt;code&gt;&amp;#39;x&amp;#39;&lt;/code&gt;前面是&lt;code&gt;&amp;#39;y&amp;#39;&lt;/code&gt;.这种叫做后行断言。例如，&lt;code&gt;/(?&amp;lt;=Jack)Sprat/&lt;/code&gt;会匹配到&lt;code&gt;&amp;#39; Sprat &amp;#39;&lt;/code&gt;仅仅当它前面是&lt;code&gt;&amp;#39;Jack&amp;#39;。/(?&amp;lt;=Jack📖Tom)Sprat/&lt;/code&gt;匹配&lt;code&gt;‘ Sprat ’&lt;/code&gt;仅仅当它前面是&lt;code&gt;Jack&lt;/code&gt;或者是&lt;code&gt;‘Tom’&lt;/code&gt;。但是&lt;code&gt;‘Jack’&lt;/code&gt;和&lt;code&gt;‘Tom’&lt;/code&gt;都不是匹配结果的一部分。&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
 &lt;td&gt;&lt;code&gt;x(?!y)&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;仅仅当 &lt;code&gt;&#39;x&#39;&lt;/code&gt;  后面不跟着 &lt;code&gt;&#39;y&#39;&lt;/code&gt;  时匹配 &lt;code&gt;&#39;x&#39;&lt;/code&gt; ，这被称为正向否定查找。例如，仅仅当这个数字后面没有跟小数点的时候， &lt;code&gt;/\d+(?!\.)/ &lt;/code&gt; 匹配一个数字。正则表达式 &lt;code&gt;/\d+(?!\.)/.exec(&amp;quot;3.141&amp;quot;)&lt;/code&gt;  匹配 &lt;code&gt;‘141’&lt;/code&gt; 而不是 &lt;code&gt;‘3.141’&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;仅仅当&lt;code&gt;&amp;#39;x&amp;#39;&lt;/code&gt;后面不跟着&lt;code&gt;&amp;#39;y&amp;#39;&lt;/code&gt;时匹配&lt;code&gt;&amp;#39;x&amp;#39;&lt;/code&gt;，这被称为正向否定查找。例如，仅仅当这个数字后面没有跟小数点的时候，&lt;code&gt;/\d+(?!\.)/ &lt;/code&gt;匹配一个数字。正则表达式&lt;code&gt;/\d+(?!\.)/.exec(&amp;quot;3.141&amp;quot;)&lt;/code&gt;匹配&lt;code&gt;‘141’&lt;/code&gt;而不是&lt;code&gt;‘3.141’&lt;/code&gt;&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
 &lt;td&gt;&lt;code&gt;(?&amp;lt;!y)x&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;仅仅当 &lt;code&gt;&#39;x&#39;&lt;/code&gt;  前面不是 &lt;code&gt;&#39;y&#39;&lt;/code&gt;  时匹配 &lt;code&gt;&#39;x&#39;&lt;/code&gt; ，这被称为反向否定查找。例如，仅仅当这个数字前面没有负号的时候， &lt;code&gt;/(?&amp;lt;!-)\d+/&lt;/code&gt;  匹配一个数字。 &lt;code&gt;/(?&amp;lt;!-)\d+/.exec(&#39;3&#39;)&lt;/code&gt;  匹配到  &lt;code&gt;&amp;quot;3&amp;quot;./(?&amp;lt;!-)\d+/.exec(&#39;-3&#39;) &lt;/code&gt; 因为这个数字前有负号，所以没有匹配到。&lt;/td&gt;
+&lt;td&gt;仅仅当&lt;code&gt;&amp;#39;x&amp;#39;&lt;/code&gt;前面不是&lt;code&gt;&amp;#39;y&amp;#39;&lt;/code&gt;时匹配&lt;code&gt;&amp;#39;x&amp;#39;&lt;/code&gt;，这被称为反向否定查找。例如, 仅仅当这个数字前面没有负号的时候，&lt;code&gt;/(?&amp;lt;!-)\d+/&lt;/code&gt; 匹配一个数字。&lt;code&gt;/(?&amp;lt;!-)\d+/.exec(&amp;#39;3&amp;#39;)&lt;/code&gt; 匹配到 &lt;code&gt;&amp;quot;3&amp;quot;./(?&amp;lt;!-)\d+/.exec(&amp;#39;-3&amp;#39;) &lt;/code&gt;因为这个数字前有负号，所以没有匹配到。&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
 &lt;td&gt;&lt;code&gt;x📖y&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;匹配 &lt;code&gt;‘x’&lt;/code&gt; 或者 &lt;code&gt;‘y’&lt;/code&gt; 。例如，``/green&lt;/td&gt;
-&lt;td&gt;red/ &lt;code&gt;匹配&lt;/code&gt;  “green apple” &lt;code&gt;中的&lt;/code&gt; ‘green’ &lt;code&gt;和&lt;/code&gt;  “red apple” &lt;code&gt;中的&lt;/code&gt; ‘red’``&lt;/td&gt;
+&lt;td&gt;匹配&lt;code&gt;‘x’&lt;/code&gt;或者&lt;code&gt;‘y’&lt;/code&gt;。例如，``/green&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
 &lt;td&gt;&lt;code&gt;&amp;#123;n&amp;#125;&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;&lt;code&gt;n&lt;/code&gt;  是一个正整数，匹配了前面一个字符刚好出现了  &lt;code&gt;n&lt;/code&gt;  次。比如， &lt;code&gt; /a&amp;#123;2&amp;#125;/&lt;/code&gt;  不会匹配 &lt;code&gt;“candy”&lt;/code&gt;  中的 &lt;code&gt;&#39;a&#39;&lt;/code&gt; , 但是会匹配 &lt;code&gt;“caandy”&lt;/code&gt;  中所有的  &lt;code&gt;a&lt;/code&gt; ，以及 &lt;code&gt;“caaandy”&lt;/code&gt;  中的前两个 &lt;code&gt;&#39;a&#39;&lt;/code&gt; 。&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;n&lt;/code&gt; 是一个正整数，匹配了前面一个字符刚好出现了 &lt;code&gt;n&lt;/code&gt; 次。比如，&lt;code&gt; /a&amp;#123;2&amp;#125;/&lt;/code&gt; 不会匹配&lt;code&gt;“candy”&lt;/code&gt;中的&lt;code&gt;&amp;#39;a&amp;#39;&lt;/code&gt;,但是会匹配&lt;code&gt;“caandy”&lt;/code&gt;中所有的 &lt;code&gt;a&lt;/code&gt;，以及&lt;code&gt;“caaandy”&lt;/code&gt;中的前两个&lt;code&gt;&amp;#39;a&amp;#39;&lt;/code&gt;。&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
 &lt;td&gt;&lt;code&gt;&amp;#123;n,&amp;#125;&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;&lt;code&gt;n&lt;/code&gt;  是一个正整数，匹配前一个字符至少出现了 &lt;code&gt;n&lt;/code&gt;  次。例如， &lt;code&gt;/a&amp;#123;2,&amp;#125;/ &lt;/code&gt; 匹配  &lt;code&gt;&amp;quot;aa&amp;quot;&lt;/code&gt; ,  &lt;code&gt;&amp;quot;aaaa&amp;quot;&lt;/code&gt;  和  &lt;code&gt;&amp;quot;aaaaa&amp;quot;&lt;/code&gt;  但是不匹配  &lt;code&gt;&amp;quot;a&amp;quot;&lt;/code&gt; 。&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;n&lt;/code&gt;是一个正整数，匹配前一个字符至少出现了&lt;code&gt;n&lt;/code&gt;次。例如, &lt;code&gt;/a&amp;#123;2,&amp;#125;/ &lt;/code&gt;匹配 &lt;code&gt;&amp;quot;aa&amp;quot;&lt;/code&gt;, &lt;code&gt;&amp;quot;aaaa&amp;quot;&lt;/code&gt; 和 &lt;code&gt;&amp;quot;aaaaa&amp;quot;&lt;/code&gt; 但是不匹配 &lt;code&gt;&amp;quot;a&amp;quot;&lt;/code&gt;。&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
-&lt;td&gt;&lt;code&gt;&amp;#123;n,m&amp;#125;	&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;&lt;code&gt;n&lt;/code&gt;  和  &lt;code&gt;m&lt;/code&gt;  都是整数。匹配前面的字符至少 &lt;code&gt;n&lt;/code&gt;  次，最多 &lt;code&gt;m&lt;/code&gt;  次。如果  &lt;code&gt;n&lt;/code&gt;  或者  &lt;code&gt;m&lt;/code&gt;  的值是 &lt;code&gt;0&lt;/code&gt; ， 这个值被忽略。例如， &lt;code&gt;/a&amp;#123;1, 3&amp;#125;/&lt;/code&gt;  并不匹配 &lt;code&gt;“cndy”&lt;/code&gt;  中的任意字符，匹配 &lt;code&gt;“candy”&lt;/code&gt;  中的 &lt;code&gt;a&lt;/code&gt; ，匹配 &lt;code&gt;“caandy”&lt;/code&gt;  中的前两个 &lt;code&gt;a&lt;/code&gt; ，也匹配 &lt;code&gt;“caaaaaaandy”&lt;/code&gt;  中的前三个 &lt;code&gt;a&lt;/code&gt; 。注意，当匹配 &lt;code&gt;”caaaaaaandy“&lt;/code&gt; 时，匹配的值是 &lt;code&gt;“aaa”&lt;/code&gt; ，即使原始的字符串中有更多的 &lt;code&gt;a&lt;/code&gt; 。&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;&amp;#123;n,m&amp;#125;    &lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;n&lt;/code&gt; 和 &lt;code&gt;m&lt;/code&gt; 都是整数。匹配前面的字符至少&lt;code&gt;n&lt;/code&gt;次，最多&lt;code&gt;m&lt;/code&gt;次。如果 &lt;code&gt;n&lt;/code&gt; 或者 &lt;code&gt;m&lt;/code&gt; 的值是&lt;code&gt;0&lt;/code&gt;， 这个值被忽略。例如，&lt;code&gt;/a&amp;#123;1, 3&amp;#125;/&lt;/code&gt; 并不匹配&lt;code&gt;“cndy”&lt;/code&gt;中的任意字符，匹配&lt;code&gt;“candy”&lt;/code&gt;中的&lt;code&gt;a&lt;/code&gt;，匹配&lt;code&gt;“caandy”&lt;/code&gt;中的前两个&lt;code&gt;a&lt;/code&gt;，也匹配&lt;code&gt;“caaaaaaandy”&lt;/code&gt;中的前三个&lt;code&gt;a&lt;/code&gt;。注意，当匹配&lt;code&gt;”caaaaaaandy“&lt;/code&gt;时，匹配的值是&lt;code&gt;“aaa”&lt;/code&gt;，即使原始的字符串中有更多的&lt;code&gt;a&lt;/code&gt;。&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
 &lt;td&gt;&lt;code&gt;[xyz]&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;一个字符集合。匹配方括号中的任意字符，包括转义序列。你可以使用破折号（ &lt;code&gt;-&lt;/code&gt; ）来指定一个字符范围。对于点 &lt;code&gt;（.）&lt;/code&gt; 和星号 &lt;code&gt;（*）&lt;/code&gt; 这样的特殊符号在一个字符集中没有特殊的意义。他们不必进行转义，不过转义也是起作用的。例如， &lt;code&gt;[abcd]&lt;/code&gt;  和 &lt;code&gt;[a-d]&lt;/code&gt;  是一样的。他们都匹配 &lt;code&gt;&amp;quot;brisket&amp;quot;&lt;/code&gt;  中的 &lt;code&gt;‘b’&lt;/code&gt; , 也都匹配 &lt;code&gt;“city”&lt;/code&gt;  中的 &lt;code&gt;‘c’&lt;/code&gt; 。 &lt;code&gt;/[a-z.]+/&lt;/code&gt;  和 &lt;code&gt;/[\w.]+/&lt;/code&gt;  与字符串 &lt;code&gt;“test.i.ng”&lt;/code&gt;  匹配。&lt;/td&gt;
+&lt;td&gt;一个字符集合。匹配方括号中的任意字符，包括转义序列。你可以使用破折号（&lt;code&gt;-&lt;/code&gt;）来指定一个字符范围。对于点&lt;code&gt;（.）&lt;/code&gt;和星号&lt;code&gt;（*）&lt;/code&gt;这样的特殊符号在一个字符集中没有特殊的意义。他们不必进行转义，不过转义也是起作用的。例如，&lt;code&gt;[abcd]&lt;/code&gt; 和&lt;code&gt;[a-d]&lt;/code&gt;是一样的。他们都匹配&lt;code&gt;&amp;quot;brisket&amp;quot;&lt;/code&gt;中的&lt;code&gt;‘b’&lt;/code&gt;,也都匹配&lt;code&gt;“city”&lt;/code&gt;中的&lt;code&gt;‘c’&lt;/code&gt;。&lt;code&gt;/[a-z.]+/&lt;/code&gt; 和&lt;code&gt;/[\w.]+/&lt;/code&gt;与字符串&lt;code&gt;“test.i.ng”&lt;/code&gt;匹配。&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
 &lt;td&gt;&lt;code&gt;[^xyz]&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;一个反向字符集。也就是说， 它匹配任何没有包含在方括号中的字符。你可以使用破折号（-）来指定一个字符范围。任何普通字符在这里都是起作用的。例如， &lt;code&gt;[^abc]&lt;/code&gt;  和  &lt;code&gt;[^a-c]&lt;/code&gt;  是一样的。他们匹配 &lt;code&gt;&amp;quot;brisket&amp;quot;&lt;/code&gt;  中的 &lt;code&gt;‘r’&lt;/code&gt; ，也匹配 &lt;code&gt;“chop”&lt;/code&gt;  中的 &lt;code&gt;‘h’&lt;/code&gt; 。&lt;/td&gt;
+&lt;td&gt;一个反向字符集。也就是说， 它匹配任何没有包含在方括号中的字符。你可以使用破折号（-）来指定一个字符范围。任何普通字符在这里都是起作用的。例如，&lt;code&gt;[^abc]&lt;/code&gt; 和 &lt;code&gt;[^a-c]&lt;/code&gt; 是一样的。他们匹配&lt;code&gt;&amp;quot;brisket&amp;quot;&lt;/code&gt;中的&lt;code&gt;‘r’&lt;/code&gt;，也匹配&lt;code&gt;“chop”&lt;/code&gt;中的&lt;code&gt;‘h’&lt;/code&gt;。&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
 &lt;td&gt;&lt;code&gt;[\b]&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;匹配一个退格 ( &lt;code&gt;U+0008&lt;/code&gt; )。（不要和 &lt;code&gt;\b&lt;/code&gt;  混淆了。）&lt;/td&gt;
+&lt;td&gt;匹配一个退格(&lt;code&gt;U+0008&lt;/code&gt;)。（不要和&lt;code&gt;\b&lt;/code&gt;混淆了。）&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
 &lt;td&gt;&lt;code&gt;\b&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;&lt;strong&gt;匹配一个词的边界&lt;/strong&gt;。一个词的边界就是一个词不被另外一个 “字” 字符跟随的位置或者前面跟其他 “字” 字符的位置，例如在字母和空格之间。注意，匹配中不包括匹配的字边界。换句话说，一个匹配的词的边界的内容的长度是 &lt;code&gt;0&lt;/code&gt; 。（不要和 &lt;code&gt;[\b]&lt;/code&gt;  混淆了）使用 &lt;code&gt;&amp;quot;moon&amp;quot;&lt;/code&gt;  举例： &lt;code&gt;/\bm/&lt;/code&gt;  匹配 &lt;code&gt;“moon”&lt;/code&gt;  中的 &lt;code&gt;‘m’&lt;/code&gt; ； &lt;code&gt;/oo\b/&lt;/code&gt;  并不匹配 &lt;code&gt;&amp;quot;moon&amp;quot;&lt;/code&gt;  中的 &lt;code&gt;&#39;oo&#39;&lt;/code&gt; ，因为 &lt;code&gt;&#39;oo&#39;&lt;/code&gt;  被一个 “字” 字符 &lt;code&gt;&#39;n&#39;&lt;/code&gt;  紧跟着。 &lt;code&gt;/oon\b/&lt;/code&gt;  匹配 &lt;code&gt;&amp;quot;moon&amp;quot;&lt;/code&gt;  中的 &lt;code&gt;&#39;oon&#39;&lt;/code&gt; ，因为 &lt;code&gt;&#39;oon&#39;&lt;/code&gt;  是这个字符串的结束部分。这样他没有被一个 “字” 字符紧着。 &lt;code&gt;/\w\b\w/&lt;/code&gt;  将不能匹配任何字符串，因为在一个单词中间的字符永远也不可能同时满足没有 “字” 字符跟随和有 “字” 字符跟随两种情况。注意:  &lt;code&gt;JavaScript&lt;/code&gt;  的正则表达式引擎将特定的字符集定义为 “字” 字符。不在该集合中的任何字符都被认为是一个断词。这组字符相当有限：它只包括大写和小写的罗马字母，十进制数字和下划线字符。不幸的是，重要的字符，例如 &lt;code&gt;“é”&lt;/code&gt;  或 &lt;code&gt;“ü”&lt;/code&gt; ，被视为断词。&lt;/td&gt;
+&lt;td&gt;&lt;strong&gt;匹配一个词的边界&lt;/strong&gt;。一个词的边界就是一个词不被另外一个“字”字符跟随的位置或者前面跟其他“字”字符的位置，例如在字母和空格之间。注意，匹配中不包括匹配的字边界。换句话说，一个匹配的词的边界的内容的长度是&lt;code&gt;0&lt;/code&gt;。（不要和&lt;code&gt;[\b]&lt;/code&gt;混淆了）使用&lt;code&gt;&amp;quot;moon&amp;quot;&lt;/code&gt;举例：&lt;code&gt;/\bm/&lt;/code&gt;匹配&lt;code&gt;“moon”&lt;/code&gt;中的&lt;code&gt;‘m’&lt;/code&gt;；&lt;code&gt;/oo\b/&lt;/code&gt;并不匹配&lt;code&gt;&amp;quot;moon&amp;quot;&lt;/code&gt;中的&lt;code&gt;&amp;#39;oo&amp;#39;&lt;/code&gt;，因为&lt;code&gt;&amp;#39;oo&amp;#39;&lt;/code&gt;被一个“字”字符&lt;code&gt;&amp;#39;n&amp;#39;&lt;/code&gt;紧跟着。&lt;code&gt;/oon\b/&lt;/code&gt;匹配&lt;code&gt;&amp;quot;moon&amp;quot;&lt;/code&gt;中的&lt;code&gt;&amp;#39;oon&amp;#39;&lt;/code&gt;，因为&lt;code&gt;&amp;#39;oon&amp;#39;&lt;/code&gt;是这个字符串的结束部分。这样他没有被一个“字”字符紧着。&lt;code&gt;/\w\b\w/&lt;/code&gt;将不能匹配任何字符串，因为在一个单词中间的字符永远也不可能同时满足没有“字”字符跟随和有“字”字符跟随两种情况。注意: &lt;code&gt;JavaScript&lt;/code&gt;的正则表达式引擎将特定的字符集定义为“字”字符。不在该集合中的任何字符都被认为是一个断词。这组字符相当有限：它只包括大写和小写的罗马字母，十进制数字和下划线字符。不幸的是，重要的字符，例如&lt;code&gt;“é”&lt;/code&gt;或&lt;code&gt;“ü”&lt;/code&gt;，被视为断词。&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
 &lt;td&gt;&lt;code&gt;\B&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;匹配一个非单词边界。匹配如下几种情况：字符串第一个字符为非 “字” 字符字符串最后一个字符为非 “字” 字符两个单词字符之间两个非单词字符之间空字符串例如， &lt;code&gt;/\B../&lt;/code&gt;  匹配 &lt;code&gt;&amp;quot;noonday&amp;quot;&lt;/code&gt;  中的 &lt;code&gt;&#39;oo&#39;&lt;/code&gt; , 而 &lt;code&gt;/y\B../&lt;/code&gt;  匹配 &lt;code&gt;&amp;quot;possibly yesterday&amp;quot;&lt;/code&gt;  中的 &lt;code&gt;’yes‘&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;匹配一个非单词边界。匹配如下几种情况：字符串第一个字符为非“字”字符字符串最后一个字符为非“字”字符两个单词字符之间两个非单词字符之间空字符串例如，&lt;code&gt;/\B../&lt;/code&gt;匹配&lt;code&gt;&amp;quot;noonday&amp;quot;&lt;/code&gt;中的&lt;code&gt;&amp;#39;oo&amp;#39;&lt;/code&gt;, 而&lt;code&gt;/y\B../&lt;/code&gt;匹配&lt;code&gt;&amp;quot;possibly yesterday&amp;quot;&lt;/code&gt;中的&lt;code&gt;’yes‘&lt;/code&gt;&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
 &lt;td&gt;&lt;code&gt;\cX&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;当 &lt;code&gt;X&lt;/code&gt;  是处于 &lt;code&gt;A&lt;/code&gt;  到 &lt;code&gt;Z&lt;/code&gt;  之间的字符的时候，匹配字符串中的一个控制符。例如， &lt;code&gt;/\cM/&lt;/code&gt;  匹配字符串中的  &lt;code&gt;control-M (U+000D)&lt;/code&gt; 。&lt;/td&gt;
+&lt;td&gt;当&lt;code&gt;X&lt;/code&gt;是处于&lt;code&gt;A&lt;/code&gt;到&lt;code&gt;Z&lt;/code&gt;之间的字符的时候，匹配字符串中的一个控制符。例如，&lt;code&gt;/\cM/&lt;/code&gt; 匹配字符串中的 &lt;code&gt;control-M (U+000D)&lt;/code&gt;。&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
 &lt;td&gt;&lt;code&gt;\d&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;匹配一个数字。等价于 [0-9]。例如，  &lt;code&gt;/\d/&lt;/code&gt;  或者  &lt;code&gt;/[0-9]/&lt;/code&gt;  匹配 &amp;quot; &lt;code&gt;B2 is the suite number.&lt;/code&gt; &amp;quot; 中的 &lt;code&gt;&#39;2&#39;&lt;/code&gt; 。&lt;/td&gt;
+&lt;td&gt;匹配一个数字。等价于[0-9]。例如， &lt;code&gt;/\d/&lt;/code&gt; 或者 &lt;code&gt;/[0-9]/&lt;/code&gt; 匹配”&lt;code&gt;B2 is the suite number.&lt;/code&gt;“中的&lt;code&gt;&amp;#39;2&amp;#39;&lt;/code&gt;。&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
 &lt;td&gt;&lt;code&gt;\D&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;匹配一个非数字字符。等价于 &lt;code&gt;[^0-9]&lt;/code&gt; 。例如，  &lt;code&gt;/\D/&lt;/code&gt;  或者  &lt;code&gt;/[^0-9]/&lt;/code&gt;  匹配 &amp;quot; &lt;code&gt;B2 is the suite number.&lt;/code&gt; &amp;quot; 中的’ &lt;code&gt;B&lt;/code&gt; ’ 。&lt;/td&gt;
+&lt;td&gt;匹配一个非数字字符。等价于&lt;code&gt;[^0-9]&lt;/code&gt;。例如， &lt;code&gt;/\D/&lt;/code&gt; 或者 &lt;code&gt;/[^0-9]/&lt;/code&gt; 匹配”&lt;code&gt;B2 is the suite number.&lt;/code&gt;“中的’&lt;code&gt;B&lt;/code&gt;‘ 。&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
 &lt;td&gt;&lt;code&gt;\f&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;匹配一个换页符  &lt;code&gt;(U+000C)&lt;/code&gt; 。&lt;/td&gt;
+&lt;td&gt;匹配一个换页符 &lt;code&gt;(U+000C)&lt;/code&gt;。&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
 &lt;td&gt;&lt;code&gt;\n&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;匹配一个换行符  &lt;code&gt;(U+000A)&lt;/code&gt; 。&lt;/td&gt;
+&lt;td&gt;匹配一个换行符 &lt;code&gt;(U+000A)&lt;/code&gt;。&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
 &lt;td&gt;&lt;code&gt;\r&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;匹配一个回车符  &lt;code&gt;(U+000D)&lt;/code&gt; 。&lt;/td&gt;
+&lt;td&gt;匹配一个回车符 &lt;code&gt;(U+000D)&lt;/code&gt;。&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
 &lt;td&gt;&lt;code&gt;\s&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;匹配一个空白字符，包括空格、制表符、换页符和换行符。等价于 &lt;code&gt;[ \f\n\r\t\v\u00a0\u1680\u180e\u2000-\u200a\u2028\u2029\u202f\u205f\u3000\ufeff]&lt;/code&gt; 。例如， &lt;code&gt;/\s\w*/&lt;/code&gt;  匹配 &amp;quot;foo bar.“中的’ bar’。经测试，\s 不匹配”\u180e&amp;quot;，在当前版本 Chrome (v80.0.3987.122) 和 Firefox (76.0.1) 控制台输入 /\s/.test (&amp;quot;\u180e&amp;quot;) 均返回 false。&lt;/td&gt;
+&lt;td&gt;匹配一个空白字符，包括空格、制表符、换页符和换行符。等价于&lt;code&gt;[ \f\n\r\t\v\u00a0\u1680\u180e\u2000-\u200a\u2028\u2029\u202f\u205f\u3000\ufeff]&lt;/code&gt;。例如, &lt;code&gt;/\s\w*/&lt;/code&gt; 匹配”foo bar.”中的’ bar’。经测试，\s不匹配”\u180e”，在当前版本Chrome(v80.0.3987.122)和Firefox(76.0.1)控制台输入/\s/.test(“\u180e”)均返回false。&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
 &lt;td&gt;&lt;code&gt;\S&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;匹配一个非空白字符。等价于  &lt;code&gt;[^\f\n\r\t\v\u00a0\u1680\u180e\u2000-\u200a\u2028\u2029\u202f\u205f\u3000\ufeff]&lt;/code&gt; 。例如， &lt;code&gt;/\S\w*/&lt;/code&gt;  匹配 &lt;code&gt;&amp;quot;foo bar.&amp;quot;&lt;/code&gt;  中的’foo’。&lt;/td&gt;
+&lt;td&gt;匹配一个非空白字符。等价于 &lt;code&gt;[^\f\n\r\t\v\u00a0\u1680\u180e\u2000-\u200a\u2028\u2029\u202f\u205f\u3000\ufeff]&lt;/code&gt;。例如，&lt;code&gt;/\S\w*/&lt;/code&gt; 匹配&lt;code&gt;&amp;quot;foo bar.&amp;quot;&lt;/code&gt;中的’foo’。&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
 &lt;td&gt;&lt;code&gt;\t&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;匹配一个水平制表符  &lt;code&gt;(U+0009&lt;/code&gt; )。&lt;/td&gt;
+&lt;td&gt;匹配一个水平制表符 &lt;code&gt;(U+0009&lt;/code&gt;)。&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
 &lt;td&gt;&lt;code&gt;\v&lt;/code&gt;&lt;/td&gt;
@@ -258,35 +254,38 @@
 &lt;/tr&gt;
 &lt;tr&gt;
 &lt;td&gt;&lt;code&gt;\w&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;匹配一个单字字符（字母、数字或者下划线）。等价于  &lt;code&gt;[A-Za-z0-9_]&lt;/code&gt; 。例如， &lt;code&gt;/\w/&lt;/code&gt;  匹配  &lt;code&gt;&amp;quot;apple,&amp;quot;&lt;/code&gt;  中的  &lt;code&gt;&#39;a&#39;，&amp;quot;$5.28,&amp;quot;&lt;/code&gt;  中的  &lt;code&gt;&#39;5&#39;&lt;/code&gt;  和  &lt;code&gt;&amp;quot;3D.&amp;quot;&lt;/code&gt;  中的  &lt;code&gt;&#39;3&#39;&lt;/code&gt; 。&lt;/td&gt;
+&lt;td&gt;匹配一个单字字符（字母、数字或者下划线）。等价于 &lt;code&gt;[A-Za-z0-9_]&lt;/code&gt;。例如, &lt;code&gt;/\w/&lt;/code&gt; 匹配 &lt;code&gt;&amp;quot;apple,&amp;quot;&lt;/code&gt; 中的 &lt;code&gt;&amp;#39;a&amp;#39;，&amp;quot;$5.28,&amp;quot;&lt;/code&gt;中的 &lt;code&gt;&amp;#39;5&amp;#39;&lt;/code&gt; 和 &lt;code&gt;&amp;quot;3D.&amp;quot;&lt;/code&gt; 中的 &lt;code&gt;&amp;#39;3&amp;#39;&lt;/code&gt;。&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
 &lt;td&gt;&lt;code&gt;\W&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;匹配一个非单字字符。等价于  &lt;code&gt;[^A-Za-z0-9_]&lt;/code&gt; 。例如， &lt;code&gt; /\W/&lt;/code&gt;  或者  &lt;code&gt;/[^A-Za-z0-9_]/&lt;/code&gt;  匹配  &lt;code&gt;&amp;quot;50%.&amp;quot;&lt;/code&gt;  中的  &lt;code&gt;&#39;%&#39;&lt;/code&gt; 。&lt;/td&gt;
+&lt;td&gt;匹配一个非单字字符。等价于 &lt;code&gt;[^A-Za-z0-9_]&lt;/code&gt;。例如,&lt;code&gt; /\W/&lt;/code&gt; 或者 &lt;code&gt;/[^A-Za-z0-9_]/&lt;/code&gt; 匹配 &lt;code&gt;&amp;quot;50%.&amp;quot;&lt;/code&gt; 中的 &lt;code&gt;&amp;#39;%&amp;#39;&lt;/code&gt;。&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
 &lt;td&gt;&lt;code&gt;\n&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;在正则表达式中，它返回最后的第 n 个子捕获匹配的子字符串 (捕获的数目以左括号计数)。比如  &lt;code&gt;/apple(,)\sorange\1/&lt;/code&gt;  匹配 &lt;code&gt;&amp;quot;apple, orange, cherry, peach.&amp;quot;&lt;/code&gt;  中的 &lt;code&gt;&#39;apple, orange,&#39;&lt;/code&gt;  。&lt;/td&gt;
+&lt;td&gt;在正则表达式中，它返回最后的第n个子捕获匹配的子字符串(捕获的数目以左括号计数)。比如 &lt;code&gt;/apple(,)\sorange\1/&lt;/code&gt; 匹配&lt;code&gt;&amp;quot;apple, orange, cherry, peach.&amp;quot;&lt;/code&gt;中的&lt;code&gt;&amp;#39;apple, orange,&amp;#39;&lt;/code&gt; 。&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
 &lt;td&gt;&lt;code&gt;\0&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;匹配 &lt;code&gt; NULL（U+0000）&lt;/code&gt; 字符， 不要在这后面跟其它小数，因为  &lt;code&gt;\0&amp;lt;digits&amp;gt;&lt;/code&gt;  是一个八进制转义序列。&lt;/td&gt;
+&lt;td&gt;匹配&lt;code&gt; NULL（U+0000）&lt;/code&gt;字符， 不要在这后面跟其它小数，因为 &lt;code&gt;\0&amp;lt;digits&amp;gt;&lt;/code&gt; 是一个八进制转义序列。&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
 &lt;td&gt;&lt;code&gt;\xhh&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;匹配一个两位十六进制数 &lt;code&gt;（\x00-\xFF）&lt;/code&gt; 表示的字符。&lt;/td&gt;
+&lt;td&gt;匹配一个两位十六进制数&lt;code&gt;（\x00-\xFF）&lt;/code&gt;表示的字符。&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
 &lt;td&gt;&lt;code&gt;\uhhhh&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;匹配一个四位十六进制数表示的  &lt;code&gt;UTF-16&lt;/code&gt;  代码单元。&lt;/td&gt;
+&lt;td&gt;匹配一个四位十六进制数表示的 &lt;code&gt;UTF-16&lt;/code&gt; 代码单元。&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
 &lt;td&gt;&lt;code&gt;\u&amp;#123;hhhh&amp;#125;或\u&amp;#123;hhhhh&amp;#125;&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;（仅当设置了 u 标志时）匹配一个十六进制数表示的  &lt;code&gt;Unicode&lt;/code&gt;  字符。&lt;/td&gt;
+&lt;td&gt;（仅当设置了u标志时）匹配一个十六进制数表示的 &lt;code&gt;Unicode&lt;/code&gt; 字符。&lt;/td&gt;
 &lt;/tr&gt;
-&lt;/tbody&gt;
-&lt;/table&gt;
+&lt;/tbody&gt;&lt;/table&gt;
 &lt;hr/&gt;
+
+
+
+
 &lt;table&gt;
 &lt;thead&gt;
 &lt;tr&gt;
@@ -294,8 +293,7 @@
 &lt;th&gt;可匹配&lt;/th&gt;
 &lt;/tr&gt;
 &lt;/thead&gt;
-&lt;tbody&gt;
-&lt;tr&gt;
+&lt;tbody&gt;&lt;tr&gt;
 &lt;td&gt;&lt;code&gt;\r, \n&lt;/code&gt;&lt;/td&gt;
 &lt;td&gt;代表回车和换行符&lt;/td&gt;
 &lt;/tr&gt;
@@ -305,10 +303,9 @@
 &lt;/tr&gt;
 &lt;tr&gt;
 &lt;td&gt;&lt;code&gt;\\&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;代表  &lt;code&gt;&amp;quot;\&amp;quot;&lt;/code&gt;  本身&lt;/td&gt;
+&lt;td&gt;代表 &lt;code&gt;&amp;quot;\&amp;quot;&lt;/code&gt; 本身&lt;/td&gt;
 &lt;/tr&gt;
-&lt;/tbody&gt;
-&lt;/table&gt;
+&lt;/tbody&gt;&lt;/table&gt;
  ]]></description>
         </item>
     </channel>

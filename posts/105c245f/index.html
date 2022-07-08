@@ -117,12 +117,12 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
       </div>
       <div id="imgs" class="pjax">
         <ul>
-          <li class="item" data-background-image="https://tva1.sinaimg.cn/large/6833939bly1gicm0fdw5cj20zk0m8hdt.jpg"></li>
-          <li class="item" data-background-image="https://tva1.sinaimg.cn/large/6833939bly1giclwuom7cj20zk0m8dvn.jpg"></li>
-          <li class="item" data-background-image="https://tva1.sinaimg.cn/large/6833939bly1gicljitigmj20zk0m87fp.jpg"></li>
-          <li class="item" data-background-image="https://tva1.sinaimg.cn/large/6833939bly1gicitspjpbj20zk0m81ky.jpg"></li>
-          <li class="item" data-background-image="https://tva1.sinaimg.cn/large/6833939bly1giciszlczyj20zk0m816d.jpg"></li>
-          <li class="item" data-background-image="https://tva1.sinaimg.cn/large/6833939bly1giph4fomxoj20zk0m8axp.jpg"></li>
+          <li class="item" data-background-image="https://tva2.sinaimg.cn/large/6833939bly1gipevuctzzj20zk0m84qp.jpg"></li>
+          <li class="item" data-background-image="https://tva2.sinaimg.cn/large/6833939bly1giciukx8a7j20zk0m8aio.jpg"></li>
+          <li class="item" data-background-image="https://tva2.sinaimg.cn/large/6833939bly1giclj61ylzj20zk0m8b29.jpg"></li>
+          <li class="item" data-background-image="https://tva2.sinaimg.cn/large/6833939bly1gipexe4oykj20zk0m87ji.jpg"></li>
+          <li class="item" data-background-image="https://tva2.sinaimg.cn/large/6833939bly1gicmnywqgpj20zk0m8dwx.jpg"></li>
+          <li class="item" data-background-image="https://tva2.sinaimg.cn/large/6833939bly1gipeybxm1pj20zk0m8niv.jpg"></li>
         </ul>
       </div>
     </header>
@@ -174,28 +174,28 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
   <div class="body md" itemprop="articleBody">
     
 
-    <h1 id="mybatis使用sql进行模糊查询"><a class="markdownIt-Anchor" href="#mybatis使用sql进行模糊查询">#</a>  <code>Mybatis</code>  使用 <code>Sql</code>  进行模糊查询</h1>
-<h2 id="方式一"><a class="markdownIt-Anchor" href="#方式一">#</a> 方式一</h2>
-<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">&lt;!-- 根据名称模糊查询 --&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">select</span> <span class="attr">id</span>=<span class="string">&quot;findByName&quot;</span> <span class="attr">resultType</span>=<span class="string">&quot;com.sc.domain.User&quot;</span> <span class="attr">parameterType</span>=<span class="string">&quot;String&quot;</span>&gt;</span></span><br><span class="line">    select * from user where username like #&#123;username&#125;</span><br><span class="line"><span class="tag">&lt;/<span class="name">select</span>&gt;</span></span><br></pre></td></tr></table></figure>
+    <h1 id="Mybatis使用Sql进行模糊查询"><a href="#Mybatis使用Sql进行模糊查询" class="headerlink" title="Mybatis使用Sql进行模糊查询"></a><code>Mybatis</code>使用<code>Sql</code>进行模糊查询</h1><h2 id="方式一"><a href="#方式一" class="headerlink" title="方式一"></a>方式一</h2><figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">&lt;!-- 根据名称模糊查询 --&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">select</span> <span class="attr">id</span>=<span class="string">&quot;findByName&quot;</span> <span class="attr">resultType</span>=<span class="string">&quot;com.sc.domain.User&quot;</span> <span class="attr">parameterType</span>=<span class="string">&quot;String&quot;</span>&gt;</span></span><br><span class="line">    select * from user where username like #&#123;username&#125;</span><br><span class="line"><span class="tag">&lt;/<span class="name">select</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
 <p>模糊查询的测试方法</p>
 <span id="more"></span>
+
 <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">List&lt;User&gt; users = userDao.findByName(<span class="string">&quot;%王%&quot;</span>);</span><br></pre></td></tr></table></figure>
+
 <img data-src="/posts/105c245f/2022-02-13-22-29-15.png" class="">
-<p>我们在配置文件中没有加入 <code>%</code>  来作为模糊查询的条件，所以在传入字符串实参时，就需要给定模糊查询的标<br>
-识 %。配置文件中的 <code>#&#123;username&#125;</code>  也只是一个占位符，所以  <code>SQL</code>  语句显示为 <code>“？”</code> 。</p>
-<h2 id="方式二"><a class="markdownIt-Anchor" href="#方式二">#</a> 方式二</h2>
-<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">select</span> <span class="attr">id</span>=<span class="string">&quot;findByName&quot;</span> <span class="attr">parameterType</span>=<span class="string">&quot;string&quot;</span> <span class="attr">resultType</span>=<span class="string">&quot;com.sc.domain.User&quot;</span>&gt;</span></span><br><span class="line"> select * from user where username like &#x27;%$&#123;value&#125;%&#x27;</span><br><span class="line"><span class="tag">&lt;/<span class="name">select</span>&gt;</span></span><br></pre></td></tr></table></figure>
-<p>我们在上面将原来的 <code>#&#123;&#125;</code>  占位符，改成了 <code>&#123;value&#125;</code> 。注意如果用模糊查询的这种写法，那么 <code>$&#123;value&#125;</code>  的写法就是固定的，不能写成其它名字。</p>
+
+<p>我们在配置文件中没有加入<code>%</code>来作为模糊查询的条件，所以在传入字符串实参时，就需要给定模糊查询的标<br>识%。配置文件中的<code>#&#123;username&#125;</code>也只是一个占位符，所以 <code>SQL</code> 语句显示为<code>“？”</code>。</p>
+<h2 id="方式二"><a href="#方式二" class="headerlink" title="方式二"></a>方式二</h2><figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">select</span> <span class="attr">id</span>=<span class="string">&quot;findByName&quot;</span> <span class="attr">parameterType</span>=<span class="string">&quot;string&quot;</span> <span class="attr">resultType</span>=<span class="string">&quot;com.sc.domain.User&quot;</span>&gt;</span></span><br><span class="line"> select * from user where username like &#x27;%$&#123;value&#125;%&#x27;</span><br><span class="line"><span class="tag">&lt;/<span class="name">select</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<p>我们在上面将原来的<code>#&#123;&#125;</code>占位符，改成了<code>&#123;value&#125;</code>。注意如果用模糊查询的这种写法，那么<code>$&#123;value&#125;</code>的写法就是固定的，不能写成其它名字。</p>
 <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//执行查询一个方法</span></span><br><span class="line">List&lt;User&gt; users = userDao.findByName(<span class="string">&quot;王&quot;</span>);</span><br></pre></td></tr></table></figure>
+
 <img data-src="/posts/105c245f/2022-02-13-22-29-25.png" class="">
-<p>可以发现，我们在程序代码中就不需要加入模糊查询的匹配符 % 了，这两种方式的实现效果是一样的，但执行<br>
-的语句是不一样的。</p>
-<h2 id="方式三"><a class="markdownIt-Anchor" href="#方式三">#</a> 方式三</h2>
-<p>说明：通过前两种写法，虽然可以解决模糊查询的问题，但是还是不好，因为通过 <code>%</code>  的方式会引发 <code>sql</code>  注入的问题，现在的期望是：既能够解决 <code>sql</code>  注入又能在配置文件中写 <code>%</code>  该如何实现呢，可以借助 <code>mysql</code>  的函数。</p>
-<p>修改  <code>SQL</code>  语句的配置，配置如下：</p>
+
+<p>可以发现，我们在程序代码中就不需要加入模糊查询的匹配符%了，这两种方式的实现效果是一样的，但执行<br>的语句是不一样的。</p>
+<h2 id="方式三"><a href="#方式三" class="headerlink" title="方式三"></a>方式三</h2><p>说明：通过前两种写法，虽然可以解决模糊查询的问题，但是还是不好，因为通过<code>%</code>的方式会引发<code>sql</code>注入的问题，现在的期望是：既能够解决<code>sql</code>注入又能在配置文件中写<code>%</code>该如何实现呢，可以借助<code>mysql</code>的函数。</p>
+<p>修改 <code>SQL</code> 语句的配置，配置如下：</p>
 <figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">select</span> <span class="attr">id</span>=<span class="string">&quot;findByName&quot;</span> <span class="attr">parameterType</span>=<span class="string">&quot;string&quot;</span> <span class="attr">resultType</span>=<span class="string">&quot;com.sc.domain.User&quot;</span>&gt;</span></span><br><span class="line"> select * from user where username like concat(&#x27;%&#x27;,#&#123;username&#125;,&#x27;%&#x27;)</span><br><span class="line"><span class="tag">&lt;/<span class="name">select</span>&gt;</span></span><br></pre></td></tr></table></figure>
-<p><code>*#&#123; &#125;</code>  是预编译处理， <code>MyBatis</code>  在处理 <code>#&#123; &#125;</code>  时，它会将 <code>sql</code>  中的 <code>#&#123; &#125;</code>  替换为 <code>？</code> ，然后调用 <code>PreparedStatement</code>  的 <code>set</code>  方法来赋值，传入字符串后，会在值两边加上单引号，使用占位符的方式提高效率，可以防止 <code>sql</code>  注入。<br>
- <code>$&#123;&#125;:</code>  表示拼接 <code>sql</code>  串，将接收到参数的内容不加任何修饰拼接在 <code>sql</code>  中，可能引发 <code>sql</code>  注入。</p>
+
+<p><code>*#&#123; &#125;</code>是预编译处理，<code>MyBatis</code>在处理<code>#&#123; &#125;</code>时，它会将<code>sql</code>中的<code>#&#123; &#125;</code>替换为<code>？</code>，然后调用<code>PreparedStatement</code>的<code>set</code>方法来赋值，传入字符串后，会在值两边加上单引号，使用占位符的方式提高效率，可以防止<code>sql</code>注入。<br><code>$&#123;&#125;:</code>表示拼接<code>sql</code>串，将接收到参数的内容不加任何修饰拼接在<code>sql</code>中，可能引发<code>sql</code>注入。</p>
 
       <div class="tags">
           <a href="/tags/Java/" rel="tag"><i class="ic i-tag"></i> Java</a>
@@ -253,7 +253,7 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
     <div class="item left">
       
 
-  <a href="/posts/b246d3ce/" itemprop="url" rel="prev" data-background-image="https:&#x2F;&#x2F;tva1.sinaimg.cn&#x2F;mw690&#x2F;6833939bly1giclhnx9glj20zk0m8npd.jpg" title="Java自带的好用的工具类">
+  <a href="/posts/b246d3ce/" itemprop="url" rel="prev" data-background-image="https:&#x2F;&#x2F;tva2.sinaimg.cn&#x2F;mw690&#x2F;6833939bly1gipeyhsblkj20zk0m81kx.jpg" title="Java自带的好用的工具类">
   <span class="type">Previous Post</span>
   <span class="category"><i class="ic i-flag"></i> Tools</span>
   <h3>Java自带的好用的工具类</h3>
@@ -263,7 +263,7 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
     <div class="item right">
       
 
-  <a href="/posts/31dc52e1/" itemprop="url" rel="next" data-background-image="https:&#x2F;&#x2F;tva1.sinaimg.cn&#x2F;mw690&#x2F;6833939bly1giclj9410cj20zk0m8h12.jpg" title="MyBatis之分页查询：MyBatis PageHelper">
+  <a href="/posts/31dc52e1/" itemprop="url" rel="next" data-background-image="https:&#x2F;&#x2F;tva2.sinaimg.cn&#x2F;mw690&#x2F;6833939bly1giclhnx9glj20zk0m8npd.jpg" title="MyBatis之分页查询：MyBatis PageHelper">
   <span class="type">Next Post</span>
   <span class="category"><i class="ic i-flag"></i> SpringBoot</span>
   <h3>MyBatis之分页查询：MyBatis PageHelper</h3>
@@ -285,7 +285,7 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
   <div class="panels">
     <div class="inner">
       <div class="contents panel pjax" data-title="Contents">
-          <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#mybatis%E4%BD%BF%E7%94%A8sql%E8%BF%9B%E8%A1%8C%E6%A8%A1%E7%B3%8A%E6%9F%A5%E8%AF%A2"><span class="toc-number">1.</span> <span class="toc-text">  Mybatis  使用 Sql  进行模糊查询</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%96%B9%E5%BC%8F%E4%B8%80"><span class="toc-number">1.1.</span> <span class="toc-text"> 方式一</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%96%B9%E5%BC%8F%E4%BA%8C"><span class="toc-number">1.2.</span> <span class="toc-text"> 方式二</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%96%B9%E5%BC%8F%E4%B8%89"><span class="toc-number">1.3.</span> <span class="toc-text"> 方式三</span></a></li></ol></li></ol>
+          <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#Mybatis%E4%BD%BF%E7%94%A8Sql%E8%BF%9B%E8%A1%8C%E6%A8%A1%E7%B3%8A%E6%9F%A5%E8%AF%A2"><span class="toc-number">1.</span> <span class="toc-text">Mybatis使用Sql进行模糊查询</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%96%B9%E5%BC%8F%E4%B8%80"><span class="toc-number">1.1.</span> <span class="toc-text">方式一</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%96%B9%E5%BC%8F%E4%BA%8C"><span class="toc-number">1.2.</span> <span class="toc-text">方式二</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%96%B9%E5%BC%8F%E4%B8%89"><span class="toc-number">1.3.</span> <span class="toc-text">方式三</span></a></li></ol></li></ol>
       </div>
       <div class="related panel pjax" data-title="Related">
         <ul>
@@ -394,10 +394,28 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
   <li class="item">
     
 <div class="breadcrumb">
-<a href="/categories/Hexo/" title="In Hexo">Hexo</a>
+<a href="/categories/Java/" title="In Java">Java</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/Java/%E5%A4%9A%E7%BA%BF%E7%A8%8B/" title="In 多线程">多线程</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/Java/%E5%A4%9A%E7%BA%BF%E7%A8%8B/Java%E9%9D%A2%E8%AF%95/" title="In Java面试">Java面试</a>
 </div>
 
-    <span><a href="/posts/575a6046/" title="Hexo-Next主题如何文章置顶">Hexo-Next主题如何文章置顶</a></span>
+    <span><a href="/posts/12fecb94/" title="多线程笔记">多线程笔记</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/Java/" title="In Java">Java</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/Java/Java%E9%9D%A2%E8%AF%95/" title="In Java面试">Java面试</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/Java/Java%E9%9D%A2%E8%AF%95/SpringBoot/" title="In SpringBoot">SpringBoot</a>
+</div>
+
+    <span><a href="/posts/5e7baeeb/" title="过滤器和拦截器的区别">过滤器和拦截器的区别</a></span>
   </li>
 
       
@@ -409,65 +427,29 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
 <a href="/categories/Java%E9%9D%A2%E8%AF%95/%E7%AE%97%E6%B3%95/" title="In 算法">算法</a>
 </div>
 
-    <span><a href="/posts/b9b9f7e7/" title="二叉树遍历">二叉树遍历</a></span>
+    <span><a href="/posts/a4ce31d2/" title="贪心算法">贪心算法</a></span>
   </li>
 
       
   <li class="item">
     
 <div class="breadcrumb">
+<a href="/categories/Java%E9%9D%A2%E8%AF%95/" title="In Java面试">Java面试</a>
 </div>
 
-    <span><a href="/posts/49a9ac1a/" title="Springboot优雅的实现重试">Springboot优雅的实现重试</a></span>
+    <span><a href="/posts/6b5f7afc/" title="面试之旅关于Java知识点">面试之旅关于Java知识点</a></span>
   </li>
 
       
   <li class="item">
     
 <div class="breadcrumb">
-<a href="/categories/SAP/" title="In SAP">SAP</a>
-</div>
-
-    <span><a href="/posts/4187faeb/" title="English self_introduction">English self_introduction</a></span>
-  </li>
-
-      
-  <li class="item">
-    
-<div class="breadcrumb">
-</div>
-
-    <span><a href="/posts/4da9c93/" title="Web-based design and analysis tools for CRISPR base editing 文献阅读">Web-based design and analysis tools for CRISPR base editing 文献阅读</a></span>
-  </li>
-
-      
-  <li class="item">
-    
-<div class="breadcrumb">
-</div>
-
-    <span><a href="/posts/7874a051/" title="Nginx踩坑之解决前后端跨域">Nginx踩坑之解决前后端跨域</a></span>
-  </li>
-
-      
-  <li class="item">
-    
-<div class="breadcrumb">
-</div>
-
-    <span><a href="/posts/bf4d20ae/" title="写在最前面">写在最前面</a></span>
-  </li>
-
-      
-  <li class="item">
-    
-<div class="breadcrumb">
-<a href="/categories/Java/" title="In Java">Java</a>
+<a href="/categories/VSCODE/" title="In VSCODE">VSCODE</a>
 <i class="ic i-angle-right"></i>
-<a href="/categories/Java/Java%E9%9D%A2%E8%AF%95/" title="In Java面试">Java面试</a>
+<a href="/categories/VSCODE/%E5%BF%AB%E6%8D%B7%E9%94%AE/" title="In 快捷键">快捷键</a>
 </div>
 
-    <span><a href="/posts/b42f0c87/" title="Cache、Cookie、Session、Token">Cache、Cookie、Session、Token</a></span>
+    <span><a href="/posts/d199d651/" title="VsCode快捷键">VsCode快捷键</a></span>
   </li>
 
       
@@ -488,7 +470,40 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
 <div class="breadcrumb">
 </div>
 
-    <span><a href="/posts/5a74c6a6/" title="宝儿的大腿小腿围">宝儿的大腿小腿围</a></span>
+    <span><a href="/posts/8da68a98/" title="Java运行调用Shell脚本">Java运行调用Shell脚本</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+</div>
+
+    <span><a href="/posts/159c6098/" title="阻塞队列">阻塞队列</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/LeetCode/" title="In LeetCode">LeetCode</a>
+</div>
+
+    <span><a href="/posts/5d0c3fcc/" title="LeetCode172_阶乘后的0">LeetCode172_阶乘后的0</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/Java%E9%9D%A2%E8%AF%95/" title="In Java面试">Java面试</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/Java%E9%9D%A2%E8%AF%95/%E5%A0%86%E6%8E%92%E5%BA%8F/" title="In 堆排序">堆排序</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/Java%E9%9D%A2%E8%AF%95/%E5%A0%86%E6%8E%92%E5%BA%8F/%E7%AE%97%E6%B3%95/" title="In 算法">算法</a>
+</div>
+
+    <span><a href="/posts/c2a5fdc5/" title="堆排序">堆排序</a></span>
   </li>
 
   </ul>

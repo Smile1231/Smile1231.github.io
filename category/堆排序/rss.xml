@@ -7,93 +7,93 @@
         <language>en</language>
         <pubDate>Sat, 12 Mar 2022 21:58:00 +0800</pubDate>
         <lastBuildDate>Sat, 12 Mar 2022 21:58:00 +0800</lastBuildDate>
+        <category>SAP</category>
         <category>生物信息</category>
         <category>基因编辑</category>
-        <category>SAP</category>
         <category>Java</category>
-        <category>Corn</category>
         <category>Cache</category>
         <category>Cookie</category>
         <category>Session</category>
         <category>Java面试</category>
+        <category>Corn</category>
         <category>前端</category>
         <category>Css</category>
+        <category>DisPlay属性</category>
         <category>DDD</category>
         <category>领域驱动设计</category>
-        <category>DisPlay属性</category>
-        <category>FastJson</category>
         <category>Docker</category>
+        <category>FastJson</category>
+        <category>JavaScript</category>
+        <category>Html</category>
         <category>blog</category>
         <category>hexo</category>
         <category>next</category>
         <category>IDEA</category>
         <category>SpringBoot</category>
-        <category>JavaScript</category>
-        <category>Html</category>
-        <category>Jvm</category>
         <category>函数式接口</category>
+        <category>Jvm</category>
         <category>map</category>
         <category>Stream流</category>
         <category>Assert</category>
+        <category>Springboot</category>
         <category>java</category>
         <category>calender</category>
-        <category>Springboot</category>
         <category>LeetCode</category>
         <category>算法</category>
         <category>递归</category>
+        <category>Linux</category>
         <category>Mybatis</category>
         <category>分页查询</category>
         <category>模糊查询</category>
-        <category>Linux</category>
-        <category>Spring</category>
         <category>Nginx</category>
-        <category>文件上传</category>
+        <category>Spring</category>
         <category>SrpingBoot</category>
+        <category>文件上传</category>
         <category>事务</category>
         <category>TypeScript</category>
         <category>WebPack</category>
         <category>master</category>
+        <category>UML</category>
         <category>Ubuntu</category>
         <category>Mysql</category>
         <category>VSCODE</category>
         <category>快捷键</category>
-        <category>UML</category>
         <category>Vue</category>
         <category>VsCode</category>
         <category>Shell</category>
+        <category>日期</category>
         <category>Stream</category>
         <category>线程池</category>
-        <category>日期</category>
         <category>ubuntu</category>
         <category>虚拟机</category>
+        <category>二分查找</category>
         <category>数据挖掘</category>
         <category>Hadoop</category>
         <category>操作系统</category>
         <category>EasyExcel</category>
-        <category>二分查找</category>
         <category>node</category>
         <category>JVM</category>
-        <category>junit</category>
-        <category>Hexo</category>
-        <category>数据库</category>
         <category>Yaml</category>
-        <category>冒泡排序</category>
+        <category>Hexo</category>
+        <category>junit</category>
+        <category>数据库</category>
+        <category>Mysql事务</category>
         <category>Git</category>
         <category>git,npm,node</category>
+        <category>冒泡排序</category>
         <category>动态规划</category>
-        <category>多线程</category>
-        <category>Mysql事务</category>
         <category>堆排序</category>
         <category>幂等性</category>
+        <category>多线程</category>
         <category>流</category>
         <category>归并排序</category>
-        <category>正则表达式</category>
         <category>快速排序</category>
+        <category>正则表达式</category>
         <category>直接插入排序</category>
+        <category>选择排序</category>
         <category>Java 面试</category>
         <category>数据结构</category>
         <category>阻塞队列</category>
-        <category>选择排序</category>
         <category>Spring事务</category>
         <category>JDK</category>
         <category>动态代理</category>
@@ -113,34 +113,29 @@
             <category>算法</category>
             <category>堆排序</category>
             <pubDate>Sat, 12 Mar 2022 21:58:00 +0800</pubDate>
-            <description><![CDATA[ &lt;h2 id=&#34;堆排序不稳定&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#堆排序不稳定&#34;&gt;#&lt;/a&gt; 堆排序（不稳定）&lt;/h2&gt;
-&lt;p&gt;个人感觉堆排序还是挺难的，虽然会有演示动画&lt;br&gt;
-&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9pdGltZXRyYXZlbGVyLmdpdGh1Yi5pby8yMDE3LzA3LzE4LyVFNSU4NSVBQiVFNSVBNCVBNyVFNiU4RSU5MiVFNSVCQSU4RiVFNyVBRSU5NyVFNiVCMyU5NSVFNiU4MCVCQiVFNyVCQiU5MyVFNCVCOCU4RWphdmElRTUlQUUlOUUlRTclOEUlQjAvIyVFNSU5QiU5QiVFMyU4MCU4MSVFNSVBMCU4NiVFNiU4RSU5MiVFNSVCQSU4RiVFRiVCQyU4OEhlYXAtU29ydCVFRiVCQyU4OQ==&#34;&gt;链接&lt;/span&gt;&lt;/p&gt;
+            <description><![CDATA[ &lt;h2 id=&#34;堆排序（不稳定）&#34;&gt;&lt;a href=&#34;#堆排序（不稳定）&#34; class=&#34;headerlink&#34; title=&#34;堆排序（不稳定）&#34;&gt;&lt;/a&gt;堆排序（不稳定）&lt;/h2&gt;&lt;p&gt;个人感觉堆排序还是挺难的，虽然会有演示动画&lt;br&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9pdGltZXRyYXZlbGVyLmdpdGh1Yi5pby8yMDE3LzA3LzE4LyVFNSU4NSVBQiVFNSVBNCVBNyVFNiU4RSU5MiVFNSVCQSU4RiVFNyVBRSU5NyVFNiVCMyU5NSVFNiU4MCVCQiVFNyVCQiU5MyVFNCVCOCU4RWphdmElRTUlQUUlOUUlRTclOEUlQjAvIyVFNSU5QiU5QiVFMyU4MCU4MSVFNSVBMCU4NiVFNiU4RSU5MiVFNSVCQSU4RiVFRiVCQyU4OEhlYXAtU29ydCVFRiVCQyU4OQ==&#34;&gt;链接&lt;/span&gt;&lt;/p&gt;
 &lt;p&gt;但是从代码层面就没有那么好的通俗&lt;/p&gt;
 &lt;span id=&#34;more&#34;&gt;&lt;/span&gt;
-&lt;p&gt;堆的含义就是：完全二叉树中任何一个非叶子节点的值均不大于（或不小于）其左，右孩子节点的值。由上述性质可知大顶堆的堆顶的关键字肯定是所有关键字中最大的，小顶堆的堆顶的关键字是所有关键字中最小的。因此我们可使用大顶堆进行升序排序，使用小顶堆进行降序排序。&lt;/p&gt;
-&lt;h3 id=&#34;1-基本思想&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#1-基本思想&#34;&gt;#&lt;/a&gt; 1、基本思想&lt;/h3&gt;
-&lt;p&gt;此处以大顶堆为例，堆排序的过程就是将待排序的序列构造成一个堆，选出堆中最大的移走，再把剩余的元素调整成堆，找出最大的再移走，重复直至有序。&lt;/p&gt;
-&lt;h3 id=&#34;2-算法描述&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#2-算法描述&#34;&gt;#&lt;/a&gt; 2、算法描述&lt;/h3&gt;
-&lt;p&gt;①. 先将初始序列 &lt;code&gt;K[1..n]&lt;/code&gt;  建成一个大顶堆，那么此时第一个元素 &lt;code&gt;K1&lt;/code&gt;  最大，此堆为初始的无序区.&lt;br&gt;
-②. 再将关键字最大的记录 &lt;code&gt;K1&lt;/code&gt;  (即堆顶，第一个元素) 和无序区的最后一个记录  &lt;code&gt;Kn&lt;/code&gt;  交换，由此得到新的无序区 &lt;code&gt;K[1..n−1]&lt;/code&gt;  和有序区 &lt;code&gt;K[n]&lt;/code&gt; , 且满足 &lt;code&gt;K[1..n−1].keys⩽K[n].key&lt;/code&gt; &lt;br&gt;
-③. 交换 &lt;code&gt;K1&lt;/code&gt;  和  &lt;code&gt;Kn&lt;/code&gt;  后，堆顶可能违反堆性质，因此需将 &lt;code&gt;K[1..n−1]&lt;/code&gt;  调整为堆。然后重复步骤②, 直到无序区只有一个元素时停止.&lt;/p&gt;
-&lt;h3 id=&#34;3-代码实现&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#3-代码实现&#34;&gt;#&lt;/a&gt; 3、代码实现&lt;/h3&gt;
-&lt;p&gt;从算法描述来看，堆排序需要两个过程，一是建立堆，二是堆顶与堆的最后一个元素交换位置。所以堆排序有两个函数组成。一是建堆函数，二是反复调用建堆函数以选择出剩余未排元素中最大的数来实现排序的函数。&lt;/p&gt;
+
+&lt;p&gt;堆的含义就是：完全二叉树中任何一个非叶子节点的值均不大于（或不小于）其左，右孩子节点的值。由上述性质可知大顶堆的堆顶的关键字肯定是所有关键字中最大的，小顶堆的堆顶的关键字是所有关键字中最小的。因此我们可使用大顶堆进行升序排序, 使用小顶堆进行降序排序。&lt;/p&gt;
+&lt;h3 id=&#34;1、基本思想&#34;&gt;&lt;a href=&#34;#1、基本思想&#34; class=&#34;headerlink&#34; title=&#34;1、基本思想&#34;&gt;&lt;/a&gt;1、基本思想&lt;/h3&gt;&lt;p&gt;此处以大顶堆为例，堆排序的过程就是将待排序的序列构造成一个堆，选出堆中最大的移走，再把剩余的元素调整成堆，找出最大的再移走，重复直至有序。&lt;/p&gt;
+&lt;h3 id=&#34;2、算法描述&#34;&gt;&lt;a href=&#34;#2、算法描述&#34; class=&#34;headerlink&#34; title=&#34;2、算法描述&#34;&gt;&lt;/a&gt;2、算法描述&lt;/h3&gt;&lt;p&gt;①. 先将初始序列&lt;code&gt;K[1..n]&lt;/code&gt;建成一个大顶堆, 那么此时第一个元素&lt;code&gt;K1&lt;/code&gt;最大, 此堆为初始的无序区.&lt;br&gt;②. 再将关键字最大的记录&lt;code&gt;K1&lt;/code&gt; (即堆顶, 第一个元素)和无序区的最后一个记录 &lt;code&gt;Kn&lt;/code&gt; 交换, 由此得到新的无序区&lt;code&gt;K[1..n−1]&lt;/code&gt;和有序区&lt;code&gt;K[n]&lt;/code&gt;, 且满足&lt;code&gt;K[1..n−1].keys⩽K[n].key&lt;/code&gt;&lt;br&gt;③. 交换&lt;code&gt;K1&lt;/code&gt; 和 &lt;code&gt;Kn&lt;/code&gt; 后, 堆顶可能违反堆性质, 因此需将&lt;code&gt;K[1..n−1]&lt;/code&gt;调整为堆. 然后重复步骤②, 直到无序区只有一个元素时停止.&lt;/p&gt;
+&lt;h3 id=&#34;3、代码实现&#34;&gt;&lt;a href=&#34;#3、代码实现&#34; class=&#34;headerlink&#34; title=&#34;3、代码实现&#34;&gt;&lt;/a&gt;3、代码实现&lt;/h3&gt;&lt;p&gt;从算法描述来看，堆排序需要两个过程，一是建立堆，二是堆顶与堆的最后一个元素交换位置。所以堆排序有两个函数组成。一是建堆函数，二是反复调用建堆函数以选择出剩余未排元素中最大的数来实现排序的函数。&lt;/p&gt;
 &lt;p&gt;总结起来就是定义了以下几种操作：&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;最大堆调整（ &lt;code&gt;Max_Heapify&lt;/code&gt; ）：将堆的末端子节点作调整，使得子节点永远小于父节点&lt;/li&gt;
-&lt;li&gt;创建最大堆（ &lt;code&gt;Build_Max_Heap&lt;/code&gt; ）：将堆所有数据重新排序&lt;/li&gt;
-&lt;li&gt;堆排序（ &lt;code&gt;HeapSort&lt;/code&gt; ）：移除位在第一个数据的根节点，并做最大堆调整的递归运算&lt;/li&gt;
+&lt;li&gt;最大堆调整（&lt;code&gt;Max_Heapify&lt;/code&gt;）：将堆的末端子节点作调整，使得子节点永远小于父节点&lt;/li&gt;
+&lt;li&gt;创建最大堆（&lt;code&gt;Build_Max_Heap&lt;/code&gt;）：将堆所有数据重新排序&lt;/li&gt;
+&lt;li&gt;堆排序（&lt;code&gt;HeapSort&lt;/code&gt;）：移除位在第一个数据的根节点，并做最大堆调整的递归运算&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;对于堆节点的访问：&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;父节点 i 的左子节点在位置： &lt;code&gt;(2*i+1);&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;父节点 i 的右子节点在位置： &lt;code&gt;(2*i+2);&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;子节点 i 的父节点在位置： &lt;code&gt;floor((i-1)/2);&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;父节点i的左子节点在位置：&lt;code&gt;(2*i+1);&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;父节点i的右子节点在位置：&lt;code&gt;(2*i+2);&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;子节点i的父节点在位置：&lt;code&gt;floor((i-1)/2);&lt;/code&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;figure class=&#34;highlight java&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;13&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;14&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;15&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;16&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;17&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;18&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;19&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;20&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;21&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;22&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;23&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;24&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;25&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;26&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;27&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;28&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;29&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;30&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;function&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;public&lt;/span&gt; &lt;span class=&#34;keyword&#34;&gt;static&lt;/span&gt; &lt;span class=&#34;keyword&#34;&gt;void&lt;/span&gt; &lt;span class=&#34;title&#34;&gt;heapSort&lt;/span&gt;&lt;span class=&#34;params&#34;&gt;(&lt;span class=&#34;keyword&#34;&gt;int&lt;/span&gt;[] arr)&lt;/span&gt;&lt;/span&gt;&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;keyword&#34;&gt;for&lt;/span&gt;(&lt;span class=&#34;keyword&#34;&gt;int&lt;/span&gt; i = arr.length; i &amp;gt; &lt;span class=&#34;number&#34;&gt;0&lt;/span&gt;; i--)&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        max_heapify(arr, i);&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        &lt;span class=&#34;keyword&#34;&gt;int&lt;/span&gt; temp = arr[&lt;span class=&#34;number&#34;&gt;0&lt;/span&gt;];      &lt;span class=&#34;comment&#34;&gt;//堆顶元素(第一个元素)与Kn交换&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        arr[&lt;span class=&#34;number&#34;&gt;0&lt;/span&gt;] = arr[i-&lt;span class=&#34;number&#34;&gt;1&lt;/span&gt;];&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        arr[i-&lt;span class=&#34;number&#34;&gt;1&lt;/span&gt;] = temp;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;function&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;private&lt;/span&gt; &lt;span class=&#34;keyword&#34;&gt;static&lt;/span&gt; &lt;span class=&#34;keyword&#34;&gt;void&lt;/span&gt; &lt;span class=&#34;title&#34;&gt;max_heapify&lt;/span&gt;&lt;span class=&#34;params&#34;&gt;(&lt;span class=&#34;keyword&#34;&gt;int&lt;/span&gt;[] arr, &lt;span class=&#34;keyword&#34;&gt;int&lt;/span&gt; limit)&lt;/span&gt;&lt;/span&gt;&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;keyword&#34;&gt;if&lt;/span&gt;(arr.length &amp;lt;= &lt;span class=&#34;number&#34;&gt;0&lt;/span&gt; || arr.length &amp;lt; limit) &lt;span class=&#34;keyword&#34;&gt;return&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;keyword&#34;&gt;int&lt;/span&gt; parentIdx = limit / &lt;span class=&#34;number&#34;&gt;2&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;keyword&#34;&gt;for&lt;/span&gt;(; parentIdx &amp;gt;= &lt;span class=&#34;number&#34;&gt;0&lt;/span&gt;; parentIdx--)&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        &lt;span class=&#34;keyword&#34;&gt;if&lt;/span&gt;(parentIdx * &lt;span class=&#34;number&#34;&gt;2&lt;/span&gt; &amp;gt;= limit)&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;            &lt;span class=&#34;keyword&#34;&gt;continue&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        &lt;span class=&#34;keyword&#34;&gt;int&lt;/span&gt; left = parentIdx * &lt;span class=&#34;number&#34;&gt;2&lt;/span&gt;;       &lt;span class=&#34;comment&#34;&gt;//左子节点位置&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        &lt;span class=&#34;keyword&#34;&gt;int&lt;/span&gt; right = (left + &lt;span class=&#34;number&#34;&gt;1&lt;/span&gt;) &amp;gt;= limit ? left : (left + &lt;span class=&#34;number&#34;&gt;1&lt;/span&gt;);    &lt;span class=&#34;comment&#34;&gt;//右子节点位置，如果没有右节点，默认为左节点位置&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        &lt;span class=&#34;keyword&#34;&gt;int&lt;/span&gt; maxChildId = arr[left] &amp;gt;= arr[right] ? left : right;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        &lt;span class=&#34;keyword&#34;&gt;if&lt;/span&gt;(arr[maxChildId] &amp;gt; arr[parentIdx])&amp;#123;   &lt;span class=&#34;comment&#34;&gt;//交换父节点与左右子节点中的最大值&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;            &lt;span class=&#34;keyword&#34;&gt;int&lt;/span&gt; temp = arr[parentIdx];&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;            arr[parentIdx] = arr[maxChildId];&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;            arr[maxChildId] = temp;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    System.out.println(&lt;span class=&#34;string&#34;&gt;&amp;quot;Max_Heapify: &amp;quot;&lt;/span&gt; + Arrays.toString(arr));&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;p&gt;Tips: 由于堆排序中初始化堆的过程比较次数较多，因此它不太适用于小序列。同时由于多次任意下标相互交换位置，相同元素之间原本相对的顺序被破坏了，因此，它是不稳定的排序.&lt;/p&gt;
+
+&lt;p&gt;Tips: 由于堆排序中初始化堆的过程比较次数较多, 因此它不太适用于小序列. 同时由于多次任意下标相互交换位置, 相同元素之间原本相对的顺序被破坏了, 因此, 它是不稳定的排序.&lt;/p&gt;
 &lt;p&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9pdGltZXRyYXZlbGVyLmdpdGh1Yi5pby8yMDE3LzA3LzE4LyVFNSU4NSVBQiVFNSVBNCVBNyVFNiU4RSU5MiVFNSVCQSU4RiVFNyVBRSU5NyVFNiVCMyU5NSVFNiU4MCVCQiVFNyVCQiU5MyVFNCVCOCU4RWphdmElRTUlQUUlOUUlRTclOEUlQjAv&#34;&gt;链接&lt;/span&gt;&lt;/p&gt;
  ]]></description>
         </item>

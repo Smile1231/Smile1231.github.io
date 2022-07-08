@@ -7,93 +7,93 @@
         <language>en</language>
         <pubDate>Sat, 12 Feb 2022 20:02:47 +0800</pubDate>
         <lastBuildDate>Sat, 12 Feb 2022 20:02:47 +0800</lastBuildDate>
+        <category>SAP</category>
         <category>生物信息</category>
         <category>基因编辑</category>
-        <category>SAP</category>
         <category>Java</category>
-        <category>Corn</category>
         <category>Cache</category>
         <category>Cookie</category>
         <category>Session</category>
         <category>Java面试</category>
+        <category>Corn</category>
         <category>前端</category>
         <category>Css</category>
+        <category>DisPlay属性</category>
         <category>DDD</category>
         <category>领域驱动设计</category>
-        <category>DisPlay属性</category>
-        <category>FastJson</category>
         <category>Docker</category>
+        <category>FastJson</category>
+        <category>JavaScript</category>
+        <category>Html</category>
         <category>blog</category>
         <category>hexo</category>
         <category>next</category>
         <category>IDEA</category>
         <category>SpringBoot</category>
-        <category>JavaScript</category>
-        <category>Html</category>
-        <category>Jvm</category>
         <category>函数式接口</category>
+        <category>Jvm</category>
         <category>map</category>
         <category>Stream流</category>
         <category>Assert</category>
+        <category>Springboot</category>
         <category>java</category>
         <category>calender</category>
-        <category>Springboot</category>
         <category>LeetCode</category>
         <category>算法</category>
         <category>递归</category>
+        <category>Linux</category>
         <category>Mybatis</category>
         <category>分页查询</category>
         <category>模糊查询</category>
-        <category>Linux</category>
-        <category>Spring</category>
         <category>Nginx</category>
-        <category>文件上传</category>
+        <category>Spring</category>
         <category>SrpingBoot</category>
+        <category>文件上传</category>
         <category>事务</category>
         <category>TypeScript</category>
         <category>WebPack</category>
         <category>master</category>
+        <category>UML</category>
         <category>Ubuntu</category>
         <category>Mysql</category>
         <category>VSCODE</category>
         <category>快捷键</category>
-        <category>UML</category>
         <category>Vue</category>
         <category>VsCode</category>
         <category>Shell</category>
+        <category>日期</category>
         <category>Stream</category>
         <category>线程池</category>
-        <category>日期</category>
         <category>ubuntu</category>
         <category>虚拟机</category>
+        <category>二分查找</category>
         <category>数据挖掘</category>
         <category>Hadoop</category>
         <category>操作系统</category>
         <category>EasyExcel</category>
-        <category>二分查找</category>
         <category>node</category>
         <category>JVM</category>
-        <category>junit</category>
-        <category>Hexo</category>
-        <category>数据库</category>
         <category>Yaml</category>
-        <category>冒泡排序</category>
+        <category>Hexo</category>
+        <category>junit</category>
+        <category>数据库</category>
+        <category>Mysql事务</category>
         <category>Git</category>
         <category>git,npm,node</category>
+        <category>冒泡排序</category>
         <category>动态规划</category>
-        <category>多线程</category>
-        <category>Mysql事务</category>
         <category>堆排序</category>
         <category>幂等性</category>
+        <category>多线程</category>
         <category>流</category>
         <category>归并排序</category>
-        <category>正则表达式</category>
         <category>快速排序</category>
+        <category>正则表达式</category>
         <category>直接插入排序</category>
+        <category>选择排序</category>
         <category>Java 面试</category>
         <category>数据结构</category>
         <category>阻塞队列</category>
-        <category>选择排序</category>
         <category>Spring事务</category>
         <category>JDK</category>
         <category>动态代理</category>
@@ -112,11 +112,8 @@
             <category>Java</category>
             <category>函数式接口</category>
             <pubDate>Sat, 12 Feb 2022 20:02:47 +0800</pubDate>
-            <description><![CDATA[ &lt;h1 id=&#34;java8内置函数式接口&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#java8内置函数式接口&#34;&gt;#&lt;/a&gt;  &lt;code&gt;Java8&lt;/code&gt;  内置函数式接口&lt;/h1&gt;
-&lt;h2 id=&#34;函数式接口有什么特点&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#函数式接口有什么特点&#34;&gt;#&lt;/a&gt; 函数式接口有什么特点？&lt;/h2&gt;
-&lt;p&gt;函数式接口只有一个方法，可以用注解 &lt;code&gt;@FunctionalInterface&lt;/code&gt;  表示，当加上这个注解之后就给这个接口加上了条件，一旦接口中出现多个方法就会出现问题。&lt;/p&gt;
-&lt;h2 id=&#34;核心内置函数有哪些&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#核心内置函数有哪些&#34;&gt;#&lt;/a&gt; 核心内置函数有哪些？&lt;/h2&gt;
-&lt;table&gt;
+            <description><![CDATA[ &lt;h1 id=&#34;Java8内置函数式接口&#34;&gt;&lt;a href=&#34;#Java8内置函数式接口&#34; class=&#34;headerlink&#34; title=&#34;Java8内置函数式接口&#34;&gt;&lt;/a&gt;&lt;code&gt;Java8&lt;/code&gt;内置函数式接口&lt;/h1&gt;&lt;h2 id=&#34;函数式接口有什么特点&#34;&gt;&lt;a href=&#34;#函数式接口有什么特点&#34; class=&#34;headerlink&#34; title=&#34;函数式接口有什么特点?&#34;&gt;&lt;/a&gt;函数式接口有什么特点?&lt;/h2&gt;&lt;p&gt;函数式接口只有一个方法，可以用注解&lt;code&gt;@FunctionalInterface&lt;/code&gt;表示，当加上这个注解之后就给这个接口加上了条件，一旦接口中出现多个方法就会出现问题。&lt;/p&gt;
+&lt;h2 id=&#34;核心内置函数有哪些？&#34;&gt;&lt;a href=&#34;#核心内置函数有哪些？&#34; class=&#34;headerlink&#34; title=&#34;核心内置函数有哪些？&#34;&gt;&lt;/a&gt;核心内置函数有哪些？&lt;/h2&gt;&lt;table&gt;
 &lt;thead&gt;
 &lt;tr&gt;
 &lt;th&gt;函数式接口&lt;/th&gt;
@@ -125,55 +122,55 @@
 &lt;th&gt;用途&lt;/th&gt;
 &lt;/tr&gt;
 &lt;/thead&gt;
-&lt;tbody&gt;
-&lt;tr&gt;
+&lt;tbody&gt;&lt;tr&gt;
 &lt;td&gt;Consumer&lt;/td&gt;
 &lt;td&gt;T&lt;/td&gt;
 &lt;td&gt;void&lt;/td&gt;
-&lt;td&gt;对类型 T 参数操作，无返回结果，包含方法 void accept (T t)&lt;/td&gt;
+&lt;td&gt;对类型T参数操作，无返回结果，包含方法 void accept(T t)&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
 &lt;td&gt;Supplier&lt;/td&gt;
 &lt;td&gt;无&lt;/td&gt;
 &lt;td&gt;T&lt;/td&gt;
-&lt;td&gt;返回 T 类型参数，方法时 T get ()&lt;/td&gt;
+&lt;td&gt;返回T类型参数，方法时 T get()&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
 &lt;td&gt;Function&lt;/td&gt;
 &lt;td&gt;T&lt;/td&gt;
 &lt;td&gt;R&lt;/td&gt;
-&lt;td&gt;对类型 T 参数操作，返回 R 类型参数，包含方法 R apply（T t）&lt;/td&gt;
+&lt;td&gt;对类型T参数操作，返回R类型参数，包含方法 R apply（T t）&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
 &lt;td&gt;Predicate&lt;/td&gt;
 &lt;td&gt;T&lt;/td&gt;
 &lt;td&gt;boolean&lt;/td&gt;
-&lt;td&gt;断言型接口，对类型 T 进行条件筛选操作，返回 boolean，包含方法 boolean test（T t）&lt;/td&gt;
+&lt;td&gt;断言型接口，对类型T进行条件筛选操作，返回boolean，包含方法 boolean test（T t）&lt;/td&gt;
 &lt;/tr&gt;
-&lt;/tbody&gt;
-&lt;/table&gt;
-&lt;h2 id=&#34;四大核心函数式接口&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#四大核心函数式接口&#34;&gt;#&lt;/a&gt; 四大核心函数式接口&lt;/h2&gt;
-&lt;span id=&#34;more&#34;&gt;&lt;/span&gt;
-&lt;h3 id=&#34;1-cousumert-消费型接口&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#1-cousumert-消费型接口&#34;&gt;#&lt;/a&gt; 1.  &lt;code&gt;Cousumer&amp;lt;T&amp;gt; &lt;/code&gt; 消费型接口&lt;/h3&gt;
-&lt;blockquote&gt;
-&lt;p&gt;&lt;code&gt;void accept(T t)&lt;/code&gt; ;&lt;/p&gt;
+&lt;/tbody&gt;&lt;/table&gt;
+&lt;h2 id=&#34;四大核心函数式接口&#34;&gt;&lt;a href=&#34;#四大核心函数式接口&#34; class=&#34;headerlink&#34; title=&#34;四大核心函数式接口&#34;&gt;&lt;/a&gt;四大核心函数式接口&lt;/h2&gt;&lt;span id=&#34;more&#34;&gt;&lt;/span&gt;
+
+&lt;h3 id=&#34;1-Cousumer-lt-T-gt-消费型接口&#34;&gt;&lt;a href=&#34;#1-Cousumer-lt-T-gt-消费型接口&#34; class=&#34;headerlink&#34; title=&#34;1. Cousumer&amp;lt;T&amp;gt; 消费型接口&#34;&gt;&lt;/a&gt;1. &lt;code&gt;Cousumer&amp;lt;T&amp;gt; &lt;/code&gt;消费型接口&lt;/h3&gt;&lt;blockquote&gt;
+&lt;p&gt;&lt;code&gt;void accept(T t)&lt;/code&gt;;&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;figure class=&#34;highlight java&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;8&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;//Consumer&amp;lt;T&amp;gt; 消费型接口&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;function&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;public&lt;/span&gt; &lt;span class=&#34;keyword&#34;&gt;void&lt;/span&gt; &lt;span class=&#34;title&#34;&gt;shooping&lt;/span&gt;&lt;span class=&#34;params&#34;&gt;(&lt;span class=&#34;keyword&#34;&gt;double&lt;/span&gt; money, Consumer&amp;lt;Double&amp;gt; consumer)&lt;/span&gt;&lt;/span&gt;&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    consumer.accept(money);&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;meta&#34;&gt;@Test&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;function&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;public&lt;/span&gt; &lt;span class=&#34;keyword&#34;&gt;void&lt;/span&gt; &lt;span class=&#34;title&#34;&gt;test&lt;/span&gt;&lt;span class=&#34;params&#34;&gt;()&lt;/span&gt;&lt;/span&gt;&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    shooping(&lt;span class=&#34;number&#34;&gt;100&lt;/span&gt;, money -&amp;gt; System.out.println(&lt;span class=&#34;string&#34;&gt;&amp;quot;消费金额￥:&amp;quot;&lt;/span&gt;+money));&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;h3 id=&#34;2-suppliert-供给型接口&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#2-suppliert-供给型接口&#34;&gt;#&lt;/a&gt; 2.  &lt;code&gt;Supplier&amp;lt;T&amp;gt;&lt;/code&gt;  供给型接口&lt;/h3&gt;
-&lt;blockquote&gt;
-&lt;p&gt;&lt;code&gt;T get()&lt;/code&gt; ;&lt;/p&gt;
+
+&lt;h3 id=&#34;2-Supplier-lt-T-gt-供给型接口&#34;&gt;&lt;a href=&#34;#2-Supplier-lt-T-gt-供给型接口&#34; class=&#34;headerlink&#34; title=&#34;2. Supplier&amp;lt;T&amp;gt; 供给型接口&#34;&gt;&lt;/a&gt;2. &lt;code&gt;Supplier&amp;lt;T&amp;gt;&lt;/code&gt; 供给型接口&lt;/h3&gt;&lt;blockquote&gt;
+&lt;p&gt;&lt;code&gt;T get()&lt;/code&gt;;&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;figure class=&#34;highlight java&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;10&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;//Supplier&amp;lt;T&amp;gt; 供给型接口&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;function&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;public&lt;/span&gt; Integer &lt;span class=&#34;title&#34;&gt;random&lt;/span&gt;&lt;span class=&#34;params&#34;&gt;(Supplier&amp;lt;Integer&amp;gt; supplier)&lt;/span&gt;&lt;/span&gt;&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;keyword&#34;&gt;return&lt;/span&gt; supplier.get();&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;meta&#34;&gt;@Test&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;function&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;public&lt;/span&gt; &lt;span class=&#34;keyword&#34;&gt;void&lt;/span&gt; &lt;span class=&#34;title&#34;&gt;test1&lt;/span&gt;&lt;span class=&#34;params&#34;&gt;()&lt;/span&gt;&lt;/span&gt;&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;keyword&#34;&gt;int&lt;/span&gt; number = random(() -&amp;gt; (&lt;span class=&#34;keyword&#34;&gt;int&lt;/span&gt;) (Math.random() * &lt;span class=&#34;number&#34;&gt;100&lt;/span&gt;));&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    System.out.println(number);&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;h3 id=&#34;3-functiont-r-函数式接口&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#3-functiont-r-函数式接口&#34;&gt;#&lt;/a&gt; 3.  &lt;code&gt;Function&amp;lt;T, R&amp;gt;&lt;/code&gt;  函数式接口&lt;/h3&gt;
-&lt;blockquote&gt;
-&lt;p&gt;&lt;code&gt;R apply(T t)&lt;/code&gt; ;&lt;/p&gt;
+
+&lt;h3 id=&#34;3-Function-lt-T-R-gt-函数式接口&#34;&gt;&lt;a href=&#34;#3-Function-lt-T-R-gt-函数式接口&#34; class=&#34;headerlink&#34; title=&#34;3. Function&amp;lt;T, R&amp;gt; 函数式接口&#34;&gt;&lt;/a&gt;3. &lt;code&gt;Function&amp;lt;T, R&amp;gt;&lt;/code&gt; 函数式接口&lt;/h3&gt;&lt;blockquote&gt;
+&lt;p&gt;&lt;code&gt;R apply(T t)&lt;/code&gt;;&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;figure class=&#34;highlight java&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;8&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;//Function&amp;lt;T, R&amp;gt; 函数式接口&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;function&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;public&lt;/span&gt; String &lt;span class=&#34;title&#34;&gt;str&lt;/span&gt;&lt;span class=&#34;params&#34;&gt;(String str, Function&amp;lt;String, String&amp;gt; function)&lt;/span&gt;&lt;/span&gt;&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;keyword&#34;&gt;return&lt;/span&gt; function.apply(str);&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;meta&#34;&gt;@Test&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;function&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;public&lt;/span&gt; &lt;span class=&#34;keyword&#34;&gt;void&lt;/span&gt; &lt;span class=&#34;title&#34;&gt;test2&lt;/span&gt;&lt;span class=&#34;params&#34;&gt;()&lt;/span&gt;&lt;/span&gt;&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    str(&lt;span class=&#34;string&#34;&gt;&amp;quot;Hello World!&amp;quot;&lt;/span&gt;, (str) -&amp;gt; str.toUpperCase());&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;h3 id=&#34;4-predicatet-断言型接口&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#4-predicatet-断言型接口&#34;&gt;#&lt;/a&gt; 4.  &lt;code&gt;Predicate&amp;lt;T&amp;gt;&lt;/code&gt;  断言型接口&lt;/h3&gt;
-&lt;blockquote&gt;
-&lt;p&gt;&lt;code&gt;booolean test(T t)&lt;/code&gt; ;&lt;/p&gt;
+
+&lt;h3 id=&#34;4-Predicate-lt-T-gt-断言型接口&#34;&gt;&lt;a href=&#34;#4-Predicate-lt-T-gt-断言型接口&#34; class=&#34;headerlink&#34; title=&#34;4. Predicate&amp;lt;T&amp;gt; 断言型接口&#34;&gt;&lt;/a&gt;4. &lt;code&gt;Predicate&amp;lt;T&amp;gt;&lt;/code&gt; 断言型接口&lt;/h3&gt;&lt;blockquote&gt;
+&lt;p&gt;&lt;code&gt;booolean test(T t)&lt;/code&gt;;&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;figure class=&#34;highlight java&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;13&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;14&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;15&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;16&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;17&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;//Predicate&amp;lt;T&amp;gt; 断言型接口&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;function&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;public&lt;/span&gt; List&amp;lt;Integer&amp;gt; &lt;span class=&#34;title&#34;&gt;filter&lt;/span&gt;&lt;span class=&#34;params&#34;&gt;(List&amp;lt;Integer&amp;gt; list, Predicate&amp;lt;Integer&amp;gt; predicate)&lt;/span&gt; &lt;/span&gt;&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    List&amp;lt;Integer&amp;gt; list1 = &lt;span class=&#34;keyword&#34;&gt;new&lt;/span&gt; ArrayList&amp;lt;&amp;gt;();&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;keyword&#34;&gt;for&lt;/span&gt; (Integer number : list) &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        list1.add(number);&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;keyword&#34;&gt;return&lt;/span&gt; list1;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;meta&#34;&gt;@Test&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;function&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;public&lt;/span&gt; &lt;span class=&#34;keyword&#34;&gt;void&lt;/span&gt; &lt;span class=&#34;title&#34;&gt;test3&lt;/span&gt;&lt;span class=&#34;params&#34;&gt;()&lt;/span&gt; &lt;/span&gt;&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    List&amp;lt;Integer&amp;gt; list = Arrays.asList(&lt;span class=&#34;number&#34;&gt;1&lt;/span&gt;, &lt;span class=&#34;number&#34;&gt;2&lt;/span&gt;, &lt;span class=&#34;number&#34;&gt;3&lt;/span&gt;, &lt;span class=&#34;number&#34;&gt;4&lt;/span&gt;, &lt;span class=&#34;number&#34;&gt;5&lt;/span&gt;, &lt;span class=&#34;number&#34;&gt;6&lt;/span&gt;);&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    List&amp;lt;Integer&amp;gt; filterList = filter(list, item -&amp;gt; item &amp;gt; &lt;span class=&#34;number&#34;&gt;3&lt;/span&gt;);&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;keyword&#34;&gt;for&lt;/span&gt; (Integer number: filterList) &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        System.out.println(number);&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+
+
+
  ]]></description>
         </item>
     </channel>

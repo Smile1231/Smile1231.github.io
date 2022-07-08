@@ -117,12 +117,12 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
       </div>
       <div id="imgs" class="pjax">
         <ul>
-          <li class="item" data-background-image="https://tva1.sinaimg.cn/large/6833939bly1giclxfdlttj20zk0m8npd.jpg"></li>
-          <li class="item" data-background-image="https://tva1.sinaimg.cn/large/6833939bly1giclh5u05ej20zk0m87df.jpg"></li>
-          <li class="item" data-background-image="https://tva1.sinaimg.cn/large/6833939bly1gicit31ffoj20zk0m8naf.jpg"></li>
-          <li class="item" data-background-image="https://tva1.sinaimg.cn/large/6833939bly1giciundwu5j20zk0m8n9e.jpg"></li>
-          <li class="item" data-background-image="https://tva1.sinaimg.cn/large/6833939bly1giclwuom7cj20zk0m8dvn.jpg"></li>
-          <li class="item" data-background-image="https://tva1.sinaimg.cn/large/6833939bly1giclj61ylzj20zk0m8b29.jpg"></li>
+          <li class="item" data-background-image="https://tva2.sinaimg.cn/large/6833939bly1gipesrnqv3j20zk0m8ava.jpg"></li>
+          <li class="item" data-background-image="https://tva2.sinaimg.cn/large/6833939bly1giph4baakhj20zk0m8h5q.jpg"></li>
+          <li class="item" data-background-image="https://tva2.sinaimg.cn/large/6833939bly1giclimtf7dj20zk0m8qav.jpg"></li>
+          <li class="item" data-background-image="https://tva2.sinaimg.cn/large/6833939bly1gicljgocqbj20zk0m8e81.jpg"></li>
+          <li class="item" data-background-image="https://tva2.sinaimg.cn/large/6833939bly1gipesx5fdwj20zk0m81kx.jpg"></li>
+          <li class="item" data-background-image="https://tva2.sinaimg.cn/large/6833939bly1giclhtuo6nj20zk0m8ttm.jpg"></li>
         </ul>
       </div>
     </header>
@@ -171,43 +171,32 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
   <div class="body md" itemprop="articleBody">
     
 
-    <h1 id="贪心算法"><a class="markdownIt-Anchor" href="#贪心算法">#</a> 贪心算法</h1>
-<h2 id="基本概念"><a class="markdownIt-Anchor" href="#基本概念">#</a> 基本概念</h2>
-<p>所谓贪心算法是指，在对问题求解时，总是做出<strong>在当前看来是最好的选择</strong>。也就是说，不从整体最优上加以考虑，他所做出的仅是在某种意义上的局部最优解。</p>
+    <h1 id="贪心算法"><a href="#贪心算法" class="headerlink" title="贪心算法"></a>贪心算法</h1><h2 id="基本概念"><a href="#基本概念" class="headerlink" title="基本概念"></a>基本概念</h2><p>所谓贪心算法是指，在对问题求解时，总是做出<strong>在当前看来是最好的选择</strong>。也就是说，不从整体最优上加以考虑，他所做出的仅是在某种意义上的局部最优解。</p>
 <p>贪心算法没有固定的算法框架，算法设计的关键是贪心策略的选择。必须注意的是，贪心算法不是对所有问题都能得到整体最优解，选择的贪心策略必须具备无后效性，即某个状态以后的过程不会影响以前的状态，只与当前状态有关。</p>
 <span id="more"></span>
+
 <p><strong>所以对所采用的贪心策略一定要仔细分析其是否满足无后效性。</strong></p>
-<h2 id="贪心算法的基本思路"><a class="markdownIt-Anchor" href="#贪心算法的基本思路">#</a> 贪心算法的基本思路</h2>
-<ol>
-<li>
-<p>建立数学模型来描述问题。</p>
+<h2 id="贪心算法的基本思路"><a href="#贪心算法的基本思路" class="headerlink" title="贪心算法的基本思路"></a>贪心算法的基本思路</h2><ol>
+<li><p>建立数学模型来描述问题。</p>
 </li>
-<li>
-<p>把求解的问题分成若干个子问题。</p>
+<li><p>把求解的问题分成若干个子问题。</p>
 </li>
-<li>
-<p>对每一子问题求解，得到子问题的局部最优解。</p>
+<li><p>对每一子问题求解，得到子问题的局部最优解。</p>
 </li>
-<li>
-<p>把子问题的解局部最优解合成原来解问题的一个解。</p>
+<li><p>把子问题的解局部最优解合成原来解问题的一个解。</p>
 </li>
 </ol>
-<h2 id="贪心算法的实现框架"><a class="markdownIt-Anchor" href="#贪心算法的实现框架">#</a> 贪心算法的实现框架</h2>
-<p>贪心算法适用的前提是：局部最优策略能导致产生全局最优解</p>
+<h2 id="贪心算法的实现框架"><a href="#贪心算法的实现框架" class="headerlink" title="贪心算法的实现框架"></a>贪心算法的实现框架</h2><p>贪心算法适用的前提是：局部最优策略能导致产生全局最优解</p>
 <p>实际上，贪心算法适用的情况很少。一般，对一个问题分析是否适用于贪心算法，可以先选择该问题下的几个实际数据进行分析，就可做出判断。</p>
 <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">从问题的某一初始解出发；</span><br><span class="line"><span class="keyword">while</span> （能朝给定总目标前进一步）</span><br><span class="line">&#123; </span><br><span class="line">        利用可行的决策，求出可行解的一个解元素;</span><br><span class="line">&#125;</span><br><span class="line">由所有解元素组合成问题的一个可行解;</span><br></pre></td></tr></table></figure>
-<h2 id="贪心策略的选择"><a class="markdownIt-Anchor" href="#贪心策略的选择">#</a> 贪心策略的选择</h2>
-<p>因为用贪心算法只能通过解局部最优解的策略来达到全局最优解，因此，一定要注意判断问题是否适合采用贪心算法策略，找到的解是否一定是问题的最优解。</p>
-<h2 id="经典例题"><a class="markdownIt-Anchor" href="#经典例题">#</a> 经典例题</h2>
-<p>下面是一个可以试用贪心算法解的题目，贪心解的确不错，可惜不是最优解。</p>
+<h2 id="贪心策略的选择"><a href="#贪心策略的选择" class="headerlink" title="贪心策略的选择"></a>贪心策略的选择</h2><p>因为用贪心算法只能通过解局部最优解的策略来达到全局最优解，因此，一定要注意判断问题是否适合采用贪心算法策略，找到的解是否一定是问题的最优解。</p>
+<h2 id="经典例题"><a href="#经典例题" class="headerlink" title="经典例题"></a>经典例题</h2><p>下面是一个可以试用贪心算法解的题目，贪心解的确不错，可惜不是最优解。</p>
 <blockquote>
-<p>[背包问题] 有一个背包，背包容量是 <code>M=150</code> 。有 <code>7</code>  个物品，物品可以分割成任意大小。要求尽可能让装入背包中的物品总价值最大，但不能超过总容量。</p>
+<p> [背包问题]有一个背包，背包容量是<code>M=150</code>。有<code>7</code>个物品，物品可以分割成任意大小。要求尽可能让装入背包中的物品总价值最大，但不能超过总容量。<br>  <figure class="highlight plaintext"><figcaption><span>A     B    C    D     E     F    G</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">重量 35   30   60   50   40   10   25</span><br><span class="line">价值 10   40   30   50   35   40   30</span><br></pre></td></tr></table></figure><br><strong>分析：</strong></p>
 </blockquote>
-  <figure class="highlight plaintext"><figcaption><span>A     B    C    D     E     F    G</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">重量 35   30   60   50   40   10   25</span><br><span class="line">价值 10   40   30   50   35   40   30</span><br></pre></td></tr></table></figure>
-<p><strong>分析：</strong></p>
 <figure class="highlight autohotkey"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">目标函数： `∑pi`最大（价值总和最大）</span><br><span class="line">约束条件是装入的物品总重量不超过背包容量：`∑wi&lt;=M( M=<span class="number">150</span>)`</span><br><span class="line">    （<span class="number">1</span>）根据贪心的策略，每次挑选价值最大的物品装入背包，得到的结果是否最优？</span><br><span class="line">    （<span class="number">2</span>）每次挑选所占重量最小的物品装入是否能得到最优解？</span><br><span class="line">    （<span class="number">3</span>）每次选取单位重量价值最大的物品，成为解本题的策略。</span><br></pre></td></tr></table></figure>
 <p>值得注意的是，贪心算法并不是完全不可以使用，贪心策略一旦经过证明成立后，它就是一种高效的算法。</p>
-<p>比如，求最小生成树的 <code>Prim</code>  算法和 <code>Kruskal</code>  算法都是漂亮的贪心算法。</p>
+<p>比如，求最小生成树的<code>Prim</code>算法和<code>Kruskal</code>算法都是漂亮的贪心算法。</p>
 <p>贪心算法还是很常见的算法之一，这是由于它简单易行，构造贪心策略不是很困难。</p>
 <p>可惜的是，它需要证明后才能真正运用到题目的算法中。</p>
 <p>一般来说，<strong>贪心算法的证明围绕着：整个问题的最优解一定由在贪心策略中存在的子问题的最优解得来的。</strong></p>
@@ -215,6 +204,10 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
 <p><strong>其实该情况是符合贪心策略的</strong>，因为该总情况不管先选哪两个都会把背包塞满，因为该题物品可以分割成任意大小，所以，就算空下一下，也可以将最后一个物品分割，放进去，它们的单位重量的价值是一样的，所以，最后背包最后重量相同，重量相同那么价值也相同。</p>
 <p><strong><font color='yellow'>所以采用第三种策略，代码如下：(不是最优解)</strong></p>
 <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> java.util.Arrays;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">GreedyPackage</span> </span>&#123;</span><br><span class="line">    <span class="keyword">private</span> <span class="keyword">int</span> MAX_WEIGHT = <span class="number">150</span>;</span><br><span class="line">    <span class="keyword">private</span> <span class="keyword">int</span>[] weights = <span class="keyword">new</span> <span class="keyword">int</span>[]&#123;<span class="number">35</span>, <span class="number">30</span>, <span class="number">60</span>, <span class="number">50</span>, <span class="number">40</span>, <span class="number">10</span>, <span class="number">25</span>&#125;;</span><br><span class="line">    <span class="keyword">private</span> <span class="keyword">int</span>[] values = <span class="keyword">new</span> <span class="keyword">int</span>[]&#123;<span class="number">10</span>, <span class="number">40</span>, <span class="number">30</span>, <span class="number">50</span>, <span class="number">35</span>, <span class="number">40</span>, <span class="number">30</span>&#125;;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">private</span> <span class="keyword">void</span> <span class="title">packageGreedy</span><span class="params">(<span class="keyword">int</span> capacity, <span class="keyword">int</span> weights[], <span class="keyword">int</span>[] values)</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">        <span class="keyword">int</span> n = weights.length;<span class="comment">//物品的数量</span></span><br><span class="line">        <span class="keyword">double</span>[] r = <span class="keyword">new</span> <span class="keyword">double</span>[n];<span class="comment">//性价比数组</span></span><br><span class="line">        <span class="keyword">int</span>[] index = <span class="keyword">new</span> <span class="keyword">int</span>[n];<span class="comment">//性价比排序物品的下标</span></span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; n; i++) &#123;</span><br><span class="line">            r[i] = (<span class="keyword">double</span>) values[i] / weights[i];</span><br><span class="line">            index[i] = i;<span class="comment">//默认排序</span></span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">double</span> temp = <span class="number">0</span>;<span class="comment">//对性价比进行排序</span></span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; n - <span class="number">1</span>; i++) &#123;</span><br><span class="line">            <span class="keyword">for</span> (<span class="keyword">int</span> j = i + <span class="number">1</span>; j &lt; n; j++) &#123;</span><br><span class="line">                <span class="comment">//降序，对性价比和对应下标进行排序</span></span><br><span class="line">                <span class="keyword">if</span> (r[i] &lt; r[j]) &#123;</span><br><span class="line">                    temp = r[i];</span><br><span class="line">                    r[i] = r[j];</span><br><span class="line">                    r[j] = temp;</span><br><span class="line">                    <span class="keyword">int</span> x = index[i];</span><br><span class="line">                    index[i] = index[j];</span><br><span class="line">                    index[j] = x;</span><br><span class="line">                &#125;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="comment">//排序好的重量和价值分别存到数组</span></span><br><span class="line">        <span class="keyword">int</span>[] w1 = <span class="keyword">new</span> <span class="keyword">int</span>[n];</span><br><span class="line">        <span class="keyword">int</span>[] v1 = <span class="keyword">new</span> <span class="keyword">int</span>[n];</span><br><span class="line">        <span class="comment">//排序好的重量和价值分别存到数组</span></span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; n; i++) &#123;</span><br><span class="line">            w1[i] = weights[index[i]];</span><br><span class="line">            v1[i] = values[index[i]];</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="comment">//用来装物品的数组</span></span><br><span class="line">        <span class="keyword">int</span>[] x = <span class="keyword">new</span> <span class="keyword">int</span>[n];</span><br><span class="line">        <span class="comment">//放入物品的最大价值</span></span><br><span class="line">        <span class="keyword">int</span> maxValue = <span class="number">0</span>;</span><br><span class="line">        <span class="comment">//放入物品的总重量</span></span><br><span class="line">        <span class="keyword">int</span> totalweights = <span class="number">0</span>;</span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; n; i++) &#123;</span><br><span class="line">            <span class="comment">//物品重量比包的总容量小，表示还可以装得下</span></span><br><span class="line">            <span class="keyword">if</span> (w1[i] &lt; capacity) &#123;</span><br><span class="line">                x[i] = <span class="number">1</span>;<span class="comment">//表示该物品被装了</span></span><br><span class="line">                maxValue += v1[i];</span><br><span class="line">                System.out.println(w1[i] + <span class="string">&quot;kg的物品被放进包包,价值：&quot;</span> + v1[i]);</span><br><span class="line">                totalweights += w1[i];</span><br><span class="line">                capacity = capacity - w1[i];</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        System.out.println(<span class="string">&quot;总共放入的物品数量：&quot;</span> + Arrays.toString(x));</span><br><span class="line">        System.out.println(<span class="string">&quot;总共放入的物品总重量&quot;</span> + totalweights);</span><br><span class="line">        System.out.println(<span class="string">&quot;放入物品的最大价值：&quot;</span> + maxValue);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">        GreedyPackage greedyPackage = <span class="keyword">new</span> GreedyPackage();</span><br><span class="line">        greedyPackage.packageGreedy(greedyPackage.MAX_WEIGHT, greedyPackage.weights, greedyPackage.values);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+
+
+
 
       <div class="tags">
           <a href="/tags/Java%E9%9D%A2%E8%AF%95/" rel="tag"><i class="ic i-tag"></i> Java面试</a>
@@ -270,7 +263,7 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
     <div class="item left">
       
 
-  <a href="/posts/7474c898/" itemprop="url" rel="prev" data-background-image="https:&#x2F;&#x2F;tva1.sinaimg.cn&#x2F;mw690&#x2F;6833939bly1giclhtuo6nj20zk0m8ttm.jpg" title="分治算法">
+  <a href="/posts/7474c898/" itemprop="url" rel="prev" data-background-image="https:&#x2F;&#x2F;tva2.sinaimg.cn&#x2F;mw690&#x2F;6833939bly1gipexw3o58j20zk0m8e81.jpg" title="分治算法">
   <span class="type">Previous Post</span>
   <span class="category"><i class="ic i-flag"></i> 算法</span>
   <h3>分治算法</h3>
@@ -280,7 +273,7 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
     <div class="item right">
       
 
-  <a href="/posts/a80d0031/" itemprop="url" rel="next" data-background-image="https:&#x2F;&#x2F;tva1.sinaimg.cn&#x2F;mw690&#x2F;6833939bly1giciub8ja1j20zk0m81ky.jpg" title="动态规划">
+  <a href="/posts/a80d0031/" itemprop="url" rel="next" data-background-image="https:&#x2F;&#x2F;tva2.sinaimg.cn&#x2F;mw690&#x2F;6833939bly1gicm07ih54j20zk0m84qp.jpg" title="动态规划">
   <span class="type">Next Post</span>
   <span class="category"><i class="ic i-flag"></i> 动态规划</span>
   <h3>动态规划</h3>
@@ -302,7 +295,7 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
   <div class="panels">
     <div class="inner">
       <div class="contents panel pjax" data-title="Contents">
-          <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E8%B4%AA%E5%BF%83%E7%AE%97%E6%B3%95"><span class="toc-number">1.</span> <span class="toc-text"> 贪心算法</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%9F%BA%E6%9C%AC%E6%A6%82%E5%BF%B5"><span class="toc-number">1.1.</span> <span class="toc-text"> 基本概念</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%B4%AA%E5%BF%83%E7%AE%97%E6%B3%95%E7%9A%84%E5%9F%BA%E6%9C%AC%E6%80%9D%E8%B7%AF"><span class="toc-number">1.2.</span> <span class="toc-text"> 贪心算法的基本思路</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%B4%AA%E5%BF%83%E7%AE%97%E6%B3%95%E7%9A%84%E5%AE%9E%E7%8E%B0%E6%A1%86%E6%9E%B6"><span class="toc-number">1.3.</span> <span class="toc-text"> 贪心算法的实现框架</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%B4%AA%E5%BF%83%E7%AD%96%E7%95%A5%E7%9A%84%E9%80%89%E6%8B%A9"><span class="toc-number">1.4.</span> <span class="toc-text"> 贪心策略的选择</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%BB%8F%E5%85%B8%E4%BE%8B%E9%A2%98"><span class="toc-number">1.5.</span> <span class="toc-text"> 经典例题</span></a></li></ol></li></ol>
+          <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E8%B4%AA%E5%BF%83%E7%AE%97%E6%B3%95"><span class="toc-number">1.</span> <span class="toc-text">贪心算法</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%9F%BA%E6%9C%AC%E6%A6%82%E5%BF%B5"><span class="toc-number">1.1.</span> <span class="toc-text">基本概念</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%B4%AA%E5%BF%83%E7%AE%97%E6%B3%95%E7%9A%84%E5%9F%BA%E6%9C%AC%E6%80%9D%E8%B7%AF"><span class="toc-number">1.2.</span> <span class="toc-text">贪心算法的基本思路</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%B4%AA%E5%BF%83%E7%AE%97%E6%B3%95%E7%9A%84%E5%AE%9E%E7%8E%B0%E6%A1%86%E6%9E%B6"><span class="toc-number">1.3.</span> <span class="toc-text">贪心算法的实现框架</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%B4%AA%E5%BF%83%E7%AD%96%E7%95%A5%E7%9A%84%E9%80%89%E6%8B%A9"><span class="toc-number">1.4.</span> <span class="toc-text">贪心策略的选择</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%BB%8F%E5%85%B8%E4%BE%8B%E9%A2%98"><span class="toc-number">1.5.</span> <span class="toc-text">经典例题</span></a></li></ol></li></ol>
       </div>
       <div class="related panel pjax" data-title="Related">
         <ul>
@@ -411,46 +404,54 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
   <li class="item">
     
 <div class="breadcrumb">
+<a href="/categories/Shell/" title="In Shell">Shell</a>
+</div>
+
+    <span><a href="/posts/55b095e0/" title="The learning of Shell">The learning of Shell</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/Java%E9%9D%A2%E8%AF%95/" title="In Java面试">Java面试</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/Java%E9%9D%A2%E8%AF%95/%E7%AE%97%E6%B3%95/" title="In 算法">算法</a>
+</div>
+
+    <span><a href="/posts/a4ce31d2/" title="贪心算法">贪心算法</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
 <a href="/categories/Java/" title="In Java">Java</a>
-<i class="ic i-angle-right"></i>
-<a href="/categories/Java/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/" title="In 操作系统">操作系统</a>
-<i class="ic i-angle-right"></i>
-<a href="/categories/Java/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/Java%E9%9D%A2%E8%AF%95/" title="In Java面试">Java面试</a>
 </div>
 
-    <span><a href="/posts/166a1445/" title="位，字节， 字符">位，字节， 字符</a></span>
+    <span><a href="/posts/1da18d70/" title="Java8内置四大函数式接口">Java8内置四大函数式接口</a></span>
   </li>
 
       
   <li class="item">
     
 <div class="breadcrumb">
-<a href="/categories/LeetCode/" title="In LeetCode">LeetCode</a>
+<a href="/categories/UML/" title="In UML">UML</a>
 </div>
 
-    <span><a href="/posts/4491edd3/" title="LeetCode07_整数反转">LeetCode07_整数反转</a></span>
+    <span><a href="/posts/f610585/" title="UML:类图关系总结">UML:类图关系总结</a></span>
   </li>
 
       
   <li class="item">
     
 <div class="breadcrumb">
-<a href="/categories/Mybtais/" title="In Mybtais">Mybtais</a>
-</div>
-
-    <span><a href="/posts/9aff665a/" title="mybatis中大于等于小于等于的写法">mybatis中大于等于小于等于的写法</a></span>
-  </li>
-
-      
-  <li class="item">
-    
-<div class="breadcrumb">
-<a href="/categories/VSCODE/" title="In VSCODE">VSCODE</a>
+<a href="/categories/Java%E9%9D%A2%E8%AF%95/" title="In Java面试">Java面试</a>
 <i class="ic i-angle-right"></i>
-<a href="/categories/VSCODE/%E5%BF%AB%E6%8D%B7%E9%94%AE/" title="In 快捷键">快捷键</a>
+<a href="/categories/Java%E9%9D%A2%E8%AF%95/HashMap/" title="In HashMap">HashMap</a>
 </div>
 
-    <span><a href="/posts/d199d651/" title="VsCode快捷键">VsCode快捷键</a></span>
+    <span><a href="/posts/52d9f7d3/" title="Java面试必问--HashMap的底层">Java面试必问--HashMap的底层</a></span>
   </li>
 
       
@@ -460,7 +461,7 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
 <a href="/categories/Java%E9%9D%A2%E8%AF%95/" title="In Java面试">Java面试</a>
 </div>
 
-    <span><a href="/posts/3b6bfba3/" title="如何保证接口的幂等性">如何保证接口的幂等性</a></span>
+    <span><a href="/posts/3eb5e557/" title="赛可出行面试">赛可出行面试</a></span>
   </li>
 
       
@@ -469,55 +470,40 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
 <div class="breadcrumb">
 </div>
 
-    <span><a href="/posts/11faeb76/" title="Docker指令以及部署">Docker指令以及部署</a></span>
+    <span><a href="/posts/a1926332/" title="Springboot+Vue二进制文件传输">Springboot+Vue二进制文件传输</a></span>
   </li>
 
       
   <li class="item">
     
 <div class="breadcrumb">
-<a href="/categories/Java/" title="In Java">Java</a>
+<a href="/categories/Java%E9%9D%A2%E8%AF%95/" title="In Java面试">Java面试</a>
 <i class="ic i-angle-right"></i>
-<a href="/categories/Java/Tools/" title="In Tools">Tools</a>
+<a href="/categories/Java%E9%9D%A2%E8%AF%95/%E5%86%92%E6%B3%A1%E6%8E%92%E5%BA%8F/" title="In 冒泡排序">冒泡排序</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/Java%E9%9D%A2%E8%AF%95/%E5%86%92%E6%B3%A1%E6%8E%92%E5%BA%8F/%E7%AE%97%E6%B3%95/" title="In 算法">算法</a>
 </div>
 
-    <span><a href="/posts/13370746/" title="使用EasyExcel读取excel文件为Java实体类">使用EasyExcel读取excel文件为Java实体类</a></span>
+    <span><a href="/posts/14e6f1eb/" title="冒泡排序">冒泡排序</a></span>
   </li>
 
       
   <li class="item">
     
 <div class="breadcrumb">
-<a href="/categories/Java/" title="In Java">Java</a>
-<i class="ic i-angle-right"></i>
-<a href="/categories/Java/Java%E9%9D%A2%E8%AF%95/" title="In Java面试">Java面试</a>
 </div>
 
-    <span><a href="/posts/f23f1351/" title="equals与&#x3D;&#x3D;区别">equals与==区别</a></span>
+    <span><a href="/posts/4a17b156/" title="Hello World">Hello World</a></span>
   </li>
 
       
   <li class="item">
     
 <div class="breadcrumb">
-<a href="/categories/%E5%89%8D%E7%AB%AF/" title="In 前端">前端</a>
-<i class="ic i-angle-right"></i>
-<a href="/categories/%E5%89%8D%E7%AB%AF/TypeScript/" title="In TypeScript">TypeScript</a>
-<i class="ic i-angle-right"></i>
-<a href="/categories/%E5%89%8D%E7%AB%AF/TypeScript/WebPack/" title="In WebPack">WebPack</a>
+<a href="/categories/SAP/" title="In SAP">SAP</a>
 </div>
 
-    <span><a href="/posts/ddb0d187/" title="TS配置Webpack">TS配置Webpack</a></span>
-  </li>
-
-      
-  <li class="item">
-    
-<div class="breadcrumb">
-<a href="/categories/Java/" title="In Java">Java</a>
-</div>
-
-    <span><a href="/posts/c3733521/" title="Java之assert关键字">Java之assert关键字</a></span>
+    <span><a href="/posts/4187faeb/" title="English self_introduction">English self_introduction</a></span>
   </li>
 
   </ul>
