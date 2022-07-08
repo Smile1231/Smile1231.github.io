@@ -117,12 +117,12 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
       </div>
       <div id="imgs" class="pjax">
         <ul>
-          <li class="item" data-background-image="https://tva2.sinaimg.cn/large/6833939bly1giclh0m9pdj20zk0m8hdt.jpg"></li>
-          <li class="item" data-background-image="https://tva2.sinaimg.cn/large/6833939bly1gipew28b65j20zk0m8hdt.jpg"></li>
-          <li class="item" data-background-image="https://tva2.sinaimg.cn/large/6833939bly1giclwrdwyaj20zk0m8are.jpg"></li>
-          <li class="item" data-background-image="https://tva2.sinaimg.cn/large/6833939bly1gicm07ih54j20zk0m84qp.jpg"></li>
-          <li class="item" data-background-image="https://tva2.sinaimg.cn/large/6833939bly1gicliwyw55j20zk0m8hdt.jpg"></li>
-          <li class="item" data-background-image="https://tva2.sinaimg.cn/large/6833939bly1giclimtf7dj20zk0m8qav.jpg"></li>
+          <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1giclfw2t96j20zk0m8x6p.jpg"></li>
+          <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1gipexe4oykj20zk0m87ji.jpg"></li>
+          <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1gipevarprfj20zk0m8npd.jpg"></li>
+          <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1gicli9lfebj20zk0m84qp.jpg"></li>
+          <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1gipey0a334j20zk0m8qpt.jpg"></li>
+          <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1gicitcxhpij20zk0m8hdt.jpg"></li>
         </ul>
       </div>
     </header>
@@ -168,8 +168,11 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
   <div class="body md" itemprop="articleBody">
     
 
-    <h1 id="Java8内置函数式接口"><a href="#Java8内置函数式接口" class="headerlink" title="Java8内置函数式接口"></a><code>Java8</code>内置函数式接口</h1><h2 id="函数式接口有什么特点"><a href="#函数式接口有什么特点" class="headerlink" title="函数式接口有什么特点?"></a>函数式接口有什么特点?</h2><p>函数式接口只有一个方法，可以用注解<code>@FunctionalInterface</code>表示，当加上这个注解之后就给这个接口加上了条件，一旦接口中出现多个方法就会出现问题。</p>
-<h2 id="核心内置函数有哪些？"><a href="#核心内置函数有哪些？" class="headerlink" title="核心内置函数有哪些？"></a>核心内置函数有哪些？</h2><table>
+    <h1 id="java8内置函数式接口"><a class="markdownIt-Anchor" href="#java8内置函数式接口">#</a>  <code>Java8</code>  内置函数式接口</h1>
+<h2 id="函数式接口有什么特点"><a class="markdownIt-Anchor" href="#函数式接口有什么特点">#</a> 函数式接口有什么特点？</h2>
+<p>函数式接口只有一个方法，可以用注解 <code>@FunctionalInterface</code>  表示，当加上这个注解之后就给这个接口加上了条件，一旦接口中出现多个方法就会出现问题。</p>
+<h2 id="核心内置函数有哪些"><a class="markdownIt-Anchor" href="#核心内置函数有哪些">#</a> 核心内置函数有哪些？</h2>
+<table>
 <thead>
 <tr>
 <th>函数式接口</th>
@@ -178,55 +181,55 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
 <th>用途</th>
 </tr>
 </thead>
-<tbody><tr>
+<tbody>
+<tr>
 <td>Consumer</td>
 <td>T</td>
 <td>void</td>
-<td>对类型T参数操作，无返回结果，包含方法 void accept(T t)</td>
+<td>对类型 T 参数操作，无返回结果，包含方法 void accept (T t)</td>
 </tr>
 <tr>
 <td>Supplier</td>
 <td>无</td>
 <td>T</td>
-<td>返回T类型参数，方法时 T get()</td>
+<td>返回 T 类型参数，方法时 T get ()</td>
 </tr>
 <tr>
 <td>Function</td>
 <td>T</td>
 <td>R</td>
-<td>对类型T参数操作，返回R类型参数，包含方法 R apply（T t）</td>
+<td>对类型 T 参数操作，返回 R 类型参数，包含方法 R apply（T t）</td>
 </tr>
 <tr>
 <td>Predicate</td>
 <td>T</td>
 <td>boolean</td>
-<td>断言型接口，对类型T进行条件筛选操作，返回boolean，包含方法 boolean test（T t）</td>
+<td>断言型接口，对类型 T 进行条件筛选操作，返回 boolean，包含方法 boolean test（T t）</td>
 </tr>
-</tbody></table>
-<h2 id="四大核心函数式接口"><a href="#四大核心函数式接口" class="headerlink" title="四大核心函数式接口"></a>四大核心函数式接口</h2><span id="more"></span>
-
-<h3 id="1-Cousumer-lt-T-gt-消费型接口"><a href="#1-Cousumer-lt-T-gt-消费型接口" class="headerlink" title="1. Cousumer&lt;T&gt; 消费型接口"></a>1. <code>Cousumer&lt;T&gt; </code>消费型接口</h3><blockquote>
-<p><code>void accept(T t)</code>;</p>
+</tbody>
+</table>
+<h2 id="四大核心函数式接口"><a class="markdownIt-Anchor" href="#四大核心函数式接口">#</a> 四大核心函数式接口</h2>
+<span id="more"></span>
+<h3 id="1-cousumert-消费型接口"><a class="markdownIt-Anchor" href="#1-cousumert-消费型接口">#</a> 1.  <code>Cousumer&lt;T&gt; </code> 消费型接口</h3>
+<blockquote>
+<p><code>void accept(T t)</code> ;</p>
 </blockquote>
 <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//Consumer&lt;T&gt; 消费型接口</span></span><br><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">shooping</span><span class="params">(<span class="keyword">double</span> money, Consumer&lt;Double&gt; consumer)</span></span>&#123;</span><br><span class="line">    consumer.accept(money);</span><br><span class="line">&#125;</span><br><span class="line"><span class="meta">@Test</span></span><br><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">test</span><span class="params">()</span></span>&#123;</span><br><span class="line">    shooping(<span class="number">100</span>, money -&gt; System.out.println(<span class="string">&quot;消费金额￥:&quot;</span>+money));</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<h3 id="2-Supplier-lt-T-gt-供给型接口"><a href="#2-Supplier-lt-T-gt-供给型接口" class="headerlink" title="2. Supplier&lt;T&gt; 供给型接口"></a>2. <code>Supplier&lt;T&gt;</code> 供给型接口</h3><blockquote>
-<p><code>T get()</code>;</p>
+<h3 id="2-suppliert-供给型接口"><a class="markdownIt-Anchor" href="#2-suppliert-供给型接口">#</a> 2.  <code>Supplier&lt;T&gt;</code>  供给型接口</h3>
+<blockquote>
+<p><code>T get()</code> ;</p>
 </blockquote>
 <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//Supplier&lt;T&gt; 供给型接口</span></span><br><span class="line"><span class="function"><span class="keyword">public</span> Integer <span class="title">random</span><span class="params">(Supplier&lt;Integer&gt; supplier)</span></span>&#123;</span><br><span class="line">    <span class="keyword">return</span> supplier.get();</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="meta">@Test</span></span><br><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">test1</span><span class="params">()</span></span>&#123;</span><br><span class="line">    <span class="keyword">int</span> number = random(() -&gt; (<span class="keyword">int</span>) (Math.random() * <span class="number">100</span>));</span><br><span class="line">    System.out.println(number);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<h3 id="3-Function-lt-T-R-gt-函数式接口"><a href="#3-Function-lt-T-R-gt-函数式接口" class="headerlink" title="3. Function&lt;T, R&gt; 函数式接口"></a>3. <code>Function&lt;T, R&gt;</code> 函数式接口</h3><blockquote>
-<p><code>R apply(T t)</code>;</p>
+<h3 id="3-functiont-r-函数式接口"><a class="markdownIt-Anchor" href="#3-functiont-r-函数式接口">#</a> 3.  <code>Function&lt;T, R&gt;</code>  函数式接口</h3>
+<blockquote>
+<p><code>R apply(T t)</code> ;</p>
 </blockquote>
 <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//Function&lt;T, R&gt; 函数式接口</span></span><br><span class="line"><span class="function"><span class="keyword">public</span> String <span class="title">str</span><span class="params">(String str, Function&lt;String, String&gt; function)</span></span>&#123;</span><br><span class="line">    <span class="keyword">return</span> function.apply(str);</span><br><span class="line">&#125;</span><br><span class="line"><span class="meta">@Test</span></span><br><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">test2</span><span class="params">()</span></span>&#123;</span><br><span class="line">    str(<span class="string">&quot;Hello World!&quot;</span>, (str) -&gt; str.toUpperCase());</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<h3 id="4-Predicate-lt-T-gt-断言型接口"><a href="#4-Predicate-lt-T-gt-断言型接口" class="headerlink" title="4. Predicate&lt;T&gt; 断言型接口"></a>4. <code>Predicate&lt;T&gt;</code> 断言型接口</h3><blockquote>
-<p><code>booolean test(T t)</code>;</p>
+<h3 id="4-predicatet-断言型接口"><a class="markdownIt-Anchor" href="#4-predicatet-断言型接口">#</a> 4.  <code>Predicate&lt;T&gt;</code>  断言型接口</h3>
+<blockquote>
+<p><code>booolean test(T t)</code> ;</p>
 </blockquote>
 <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//Predicate&lt;T&gt; 断言型接口</span></span><br><span class="line"><span class="function"><span class="keyword">public</span> List&lt;Integer&gt; <span class="title">filter</span><span class="params">(List&lt;Integer&gt; list, Predicate&lt;Integer&gt; predicate)</span> </span>&#123;</span><br><span class="line">    List&lt;Integer&gt; list1 = <span class="keyword">new</span> ArrayList&lt;&gt;();</span><br><span class="line">    <span class="keyword">for</span> (Integer number : list) &#123;</span><br><span class="line">        list1.add(number);</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> list1;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="meta">@Test</span></span><br><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">test3</span><span class="params">()</span> </span>&#123;</span><br><span class="line">    List&lt;Integer&gt; list = Arrays.asList(<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>, <span class="number">4</span>, <span class="number">5</span>, <span class="number">6</span>);</span><br><span class="line">    List&lt;Integer&gt; filterList = filter(list, item -&gt; item &gt; <span class="number">3</span>);</span><br><span class="line">    <span class="keyword">for</span> (Integer number: filterList) &#123;</span><br><span class="line">        System.out.println(number);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-
-
 
       <div class="tags">
           <a href="/tags/Java/" rel="tag"><i class="ic i-tag"></i> Java</a>
@@ -282,7 +285,7 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
     <div class="item left">
       
 
-  <a href="/posts/b536fa7f/" itemprop="url" rel="prev" data-background-image="https:&#x2F;&#x2F;tva2.sinaimg.cn&#x2F;mw690&#x2F;6833939bly1giclip4jbpj20zk0m87cv.jpg" title="关于junit测试类防止事务回滚">
+  <a href="/posts/b536fa7f/" itemprop="url" rel="prev" data-background-image="https:&#x2F;&#x2F;tva3.sinaimg.cn&#x2F;mw690&#x2F;6833939bly1giciuv0socj20zk0m8qes.jpg" title="关于junit测试类防止事务回滚">
   <span class="type">Previous Post</span>
   <span class="category"><i class="ic i-flag"></i> Java</span>
   <h3>关于junit测试类防止事务回滚</h3>
@@ -292,7 +295,7 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
     <div class="item right">
       
 
-  <a href="/posts/424eebf1/" itemprop="url" rel="next" data-background-image="https:&#x2F;&#x2F;tva2.sinaimg.cn&#x2F;mw690&#x2F;6833939bly1gipet4bz0yj20zk0m8e81.jpg" title="关于在IDEA中回滚Git版本">
+  <a href="/posts/424eebf1/" itemprop="url" rel="next" data-background-image="https:&#x2F;&#x2F;tva3.sinaimg.cn&#x2F;mw690&#x2F;6833939bly1gipesrnqv3j20zk0m8ava.jpg" title="关于在IDEA中回滚Git版本">
   <span class="type">Next Post</span>
   <span class="category"><i class="ic i-flag"></i> Git</span>
   <h3>关于在IDEA中回滚Git版本</h3>
@@ -314,7 +317,7 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
   <div class="panels">
     <div class="inner">
       <div class="contents panel pjax" data-title="Contents">
-          <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#Java8%E5%86%85%E7%BD%AE%E5%87%BD%E6%95%B0%E5%BC%8F%E6%8E%A5%E5%8F%A3"><span class="toc-number">1.</span> <span class="toc-text">Java8内置函数式接口</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%87%BD%E6%95%B0%E5%BC%8F%E6%8E%A5%E5%8F%A3%E6%9C%89%E4%BB%80%E4%B9%88%E7%89%B9%E7%82%B9"><span class="toc-number">1.1.</span> <span class="toc-text">函数式接口有什么特点?</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%A0%B8%E5%BF%83%E5%86%85%E7%BD%AE%E5%87%BD%E6%95%B0%E6%9C%89%E5%93%AA%E4%BA%9B%EF%BC%9F"><span class="toc-number">1.2.</span> <span class="toc-text">核心内置函数有哪些？</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%9B%9B%E5%A4%A7%E6%A0%B8%E5%BF%83%E5%87%BD%E6%95%B0%E5%BC%8F%E6%8E%A5%E5%8F%A3"><span class="toc-number">1.3.</span> <span class="toc-text">四大核心函数式接口</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-Cousumer-lt-T-gt-%E6%B6%88%E8%B4%B9%E5%9E%8B%E6%8E%A5%E5%8F%A3"><span class="toc-number">1.3.1.</span> <span class="toc-text">1. Cousumer&lt;T&gt; 消费型接口</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-Supplier-lt-T-gt-%E4%BE%9B%E7%BB%99%E5%9E%8B%E6%8E%A5%E5%8F%A3"><span class="toc-number">1.3.2.</span> <span class="toc-text">2. Supplier&lt;T&gt; 供给型接口</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-Function-lt-T-R-gt-%E5%87%BD%E6%95%B0%E5%BC%8F%E6%8E%A5%E5%8F%A3"><span class="toc-number">1.3.3.</span> <span class="toc-text">3. Function&lt;T, R&gt; 函数式接口</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#4-Predicate-lt-T-gt-%E6%96%AD%E8%A8%80%E5%9E%8B%E6%8E%A5%E5%8F%A3"><span class="toc-number">1.3.4.</span> <span class="toc-text">4. Predicate&lt;T&gt; 断言型接口</span></a></li></ol></li></ol></li></ol>
+          <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#java8%E5%86%85%E7%BD%AE%E5%87%BD%E6%95%B0%E5%BC%8F%E6%8E%A5%E5%8F%A3"><span class="toc-number">1.</span> <span class="toc-text">  Java8  内置函数式接口</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%87%BD%E6%95%B0%E5%BC%8F%E6%8E%A5%E5%8F%A3%E6%9C%89%E4%BB%80%E4%B9%88%E7%89%B9%E7%82%B9"><span class="toc-number">1.1.</span> <span class="toc-text"> 函数式接口有什么特点？</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%A0%B8%E5%BF%83%E5%86%85%E7%BD%AE%E5%87%BD%E6%95%B0%E6%9C%89%E5%93%AA%E4%BA%9B"><span class="toc-number">1.2.</span> <span class="toc-text"> 核心内置函数有哪些？</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%9B%9B%E5%A4%A7%E6%A0%B8%E5%BF%83%E5%87%BD%E6%95%B0%E5%BC%8F%E6%8E%A5%E5%8F%A3"><span class="toc-number">1.3.</span> <span class="toc-text"> 四大核心函数式接口</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-cousumert-%E6%B6%88%E8%B4%B9%E5%9E%8B%E6%8E%A5%E5%8F%A3"><span class="toc-number">1.3.1.</span> <span class="toc-text"> 1.  Cousumer&lt;T&gt;  消费型接口</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-suppliert-%E4%BE%9B%E7%BB%99%E5%9E%8B%E6%8E%A5%E5%8F%A3"><span class="toc-number">1.3.2.</span> <span class="toc-text"> 2.  Supplier&lt;T&gt;  供给型接口</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-functiont-r-%E5%87%BD%E6%95%B0%E5%BC%8F%E6%8E%A5%E5%8F%A3"><span class="toc-number">1.3.3.</span> <span class="toc-text"> 3.  Function&lt;T, R&gt;  函数式接口</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#4-predicatet-%E6%96%AD%E8%A8%80%E5%9E%8B%E6%8E%A5%E5%8F%A3"><span class="toc-number">1.3.4.</span> <span class="toc-text"> 4.  Predicate&lt;T&gt;  断言型接口</span></a></li></ol></li></ol></li></ol>
       </div>
       <div class="related panel pjax" data-title="Related">
         <ul>
@@ -423,93 +426,12 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
   <li class="item">
     
 <div class="breadcrumb">
-<a href="/categories/IDEA/" title="In IDEA">IDEA</a>
-</div>
-
-    <span><a href="/posts/579bb697/" title="IDEA小图标含义">IDEA小图标含义</a></span>
-  </li>
-
-      
-  <li class="item">
-    
-<div class="breadcrumb">
-<a href="/categories/Java/" title="In Java">Java</a>
-</div>
-
-    <span><a href="/posts/c3733521/" title="Java之assert关键字">Java之assert关键字</a></span>
-  </li>
-
-      
-  <li class="item">
-    
-<div class="breadcrumb">
 <a href="/categories/Java/" title="In Java">Java</a>
 <i class="ic i-angle-right"></i>
-<a href="/categories/Java/SpringBoot/" title="In SpringBoot">SpringBoot</a>
+<a href="/categories/Java/Mysql/" title="In Mysql">Mysql</a>
 </div>
 
-    <span><a href="/posts/a3dfcd98/" title="SpringBoot中常见的几种解决跨域的方式">SpringBoot中常见的几种解决跨域的方式</a></span>
-  </li>
-
-      
-  <li class="item">
-    
-<div class="breadcrumb">
-</div>
-
-    <span><a href="/posts/66edb7d2/" title="关于hexo使用shoka主题注意点">关于hexo使用shoka主题注意点</a></span>
-  </li>
-
-      
-  <li class="item">
-    
-<div class="breadcrumb">
-<a href="/categories/%E5%9F%BA%E5%9B%A0%E7%BC%96%E8%BE%91/" title="In 基因编辑">基因编辑</a>
-</div>
-
-    <span><a href="/posts/1f142005/" title="CRISPR-Cas9英文介绍">CRISPR-Cas9英文介绍</a></span>
-  </li>
-
-      
-  <li class="item">
-    
-<div class="breadcrumb">
-</div>
-
-    <span><a href="/posts/823298d2/" title="VsCode 如何Debug Shell">VsCode 如何Debug Shell</a></span>
-  </li>
-
-      
-  <li class="item">
-    
-<div class="breadcrumb">
-</div>
-
-    <span><a href="/posts/bf4d20ae/" title="写在最前面">写在最前面</a></span>
-  </li>
-
-      
-  <li class="item">
-    
-<div class="breadcrumb">
-<a href="/categories/%E5%89%8D%E7%AB%AF/" title="In 前端">前端</a>
-<i class="ic i-angle-right"></i>
-<a href="/categories/%E5%89%8D%E7%AB%AF/Css/" title="In Css">Css</a>
-</div>
-
-    <span><a href="/posts/54880bcd/" title="Css样式">Css样式</a></span>
-  </li>
-
-      
-  <li class="item">
-    
-<div class="breadcrumb">
-<a href="/categories/Java/" title="In Java">Java</a>
-<i class="ic i-angle-right"></i>
-<a href="/categories/Java/Java%E9%9D%A2%E8%AF%95/" title="In Java面试">Java面试</a>
-</div>
-
-    <span><a href="/posts/b42f0c87/" title="Cache、Cookie、Session、Token">Cache、Cookie、Session、Token</a></span>
+    <span><a href="/posts/69c17d37/" title="关于事务提交中踩坑">关于事务提交中踩坑</a></span>
   </li>
 
       
@@ -519,7 +441,100 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
 <a href="/categories/Hexo/" title="In Hexo">Hexo</a>
 </div>
 
-    <span><a href="/posts/5c2529f6/" title="Hexo中添加动态2d二次元人物模型">Hexo中添加动态2d二次元人物模型</a></span>
+    <span><a href="/posts/575a6046/" title="Hexo-Next主题如何文章置顶">Hexo-Next主题如何文章置顶</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/Java%E9%9D%A2%E8%AF%95/" title="In Java面试">Java面试</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/Java%E9%9D%A2%E8%AF%95/SpringBoot/" title="In SpringBoot">SpringBoot</a>
+</div>
+
+    <span><a href="/posts/20ac1950/" title="SpringBoot文件上传下载">SpringBoot文件上传下载</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/%E5%89%8D%E7%AB%AF/" title="In 前端">前端</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/%E5%89%8D%E7%AB%AF/JavaScript/" title="In JavaScript">JavaScript</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/%E5%89%8D%E7%AB%AF/JavaScript/Html/" title="In Html">Html</a>
+</div>
+
+    <span><a href="/posts/7b604068/" title="Html页面插入地图">Html页面插入地图</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F/" title="In 正则表达式">正则表达式</a>
+</div>
+
+    <span><a href="/posts/2f57a694/" title="正则表达式">正则表达式</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/Java%E9%9D%A2%E8%AF%95/" title="In Java面试">Java面试</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/Java%E9%9D%A2%E8%AF%95/%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92/" title="In 动态规划">动态规划</a>
+</div>
+
+    <span><a href="/posts/a80d0031/" title="动态规划">动态规划</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/Java/" title="In Java">Java</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/Java/Java%E9%9D%A2%E8%AF%95/" title="In Java面试">Java面试</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/Java/Java%E9%9D%A2%E8%AF%95/SpringBoot/" title="In SpringBoot">SpringBoot</a>
+</div>
+
+    <span><a href="/posts/5e7baeeb/" title="过滤器和拦截器的区别">过滤器和拦截器的区别</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/Java/" title="In Java">Java</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/Java/Stream/" title="In Stream">Stream</a>
+</div>
+
+    <span><a href="/posts/8b8fedea/" title="Stream流的介绍">Stream流的介绍</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/Java/" title="In Java">Java</a>
+</div>
+
+    <span><a href="/posts/b536fa7f/" title="关于junit测试类防止事务回滚">关于junit测试类防止事务回滚</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+</div>
+
+    <span><a href="/posts/dfdc2005/" title="JDK动态代理原理剖析(简洁版)">JDK动态代理原理剖析(简洁版)</a></span>
   </li>
 
   </ul>

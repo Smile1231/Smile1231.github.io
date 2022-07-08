@@ -14,87 +14,87 @@
         <category>Cookie</category>
         <category>Session</category>
         <category>Java面试</category>
+        <category>SAP</category>
+        <category>Corn</category>
         <category>前端</category>
         <category>Css</category>
-        <category>Corn</category>
-        <category>SAP</category>
         <category>DDD</category>
         <category>领域驱动设计</category>
+        <category>FastJson</category>
         <category>DisPlay属性</category>
         <category>Docker</category>
         <category>blog</category>
         <category>hexo</category>
         <category>next</category>
-        <category>FastJson</category>
-        <category>JavaScript</category>
-        <category>Html</category>
         <category>IDEA</category>
-        <category>函数式接口</category>
         <category>SpringBoot</category>
-        <category>Assert</category>
         <category>Jvm</category>
-        <category>Springboot</category>
         <category>map</category>
         <category>Stream流</category>
+        <category>函数式接口</category>
+        <category>Assert</category>
+        <category>JavaScript</category>
+        <category>Html</category>
+        <category>Springboot</category>
+        <category>java</category>
+        <category>calender</category>
         <category>LeetCode</category>
         <category>算法</category>
         <category>递归</category>
-        <category>java</category>
-        <category>calender</category>
         <category>Linux</category>
         <category>Mybatis</category>
-        <category>模糊查询</category>
         <category>分页查询</category>
+        <category>模糊查询</category>
         <category>Nginx</category>
         <category>Spring</category>
         <category>SrpingBoot</category>
         <category>文件上传</category>
         <category>TypeScript</category>
         <category>WebPack</category>
-        <category>Ubuntu</category>
-        <category>Mysql</category>
-        <category>事务</category>
         <category>UML</category>
+        <category>事务</category>
+        <category>VSCODE</category>
+        <category>快捷键</category>
         <category>master</category>
         <category>VsCode</category>
         <category>Shell</category>
-        <category>VSCODE</category>
-        <category>快捷键</category>
         <category>Vue</category>
         <category>Stream</category>
+        <category>Ubuntu</category>
+        <category>Mysql</category>
         <category>日期</category>
         <category>线程池</category>
         <category>ubuntu</category>
         <category>虚拟机</category>
         <category>二分查找</category>
-        <category>数据挖掘</category>
         <category>Hadoop</category>
-        <category>EasyExcel</category>
+        <category>数据挖掘</category>
         <category>操作系统</category>
         <category>node</category>
+        <category>EasyExcel</category>
         <category>JVM</category>
         <category>Hexo</category>
+        <category>数据库</category>
         <category>junit</category>
         <category>Yaml</category>
-        <category>数据库</category>
-        <category>Mysql事务</category>
         <category>Git</category>
         <category>git,npm,node</category>
+        <category>Mysql事务</category>
+        <category>冒泡排序</category>
         <category>动态规划</category>
+        <category>多线程</category>
         <category>堆排序</category>
         <category>幂等性</category>
-        <category>多线程</category>
-        <category>冒泡排序</category>
         <category>流</category>
         <category>归并排序</category>
-        <category>快速排序</category>
-        <category>直接插入排序</category>
         <category>正则表达式</category>
+        <category>直接插入排序</category>
+        <category>快速排序</category>
+        <category>Spring事务</category>
+        <category>选择排序</category>
         <category>Java 面试</category>
         <category>数据结构</category>
         <category>阻塞队列</category>
-        <category>Spring事务</category>
-        <category>选择排序</category>
         <category>JDK</category>
         <category>动态代理</category>
         <category>Date</category>
@@ -112,46 +112,73 @@
             <category>Java面试</category>
             <category>幂等性</category>
             <pubDate>Tue, 15 Feb 2022 21:36:39 +0800</pubDate>
-            <description><![CDATA[ &lt;h1 id=&#34;如何保证接口的幂等性&#34;&gt;&lt;a href=&#34;#如何保证接口的幂等性&#34; class=&#34;headerlink&#34; title=&#34;如何保证接口的幂等性&#34;&gt;&lt;/a&gt;&lt;strong&gt;如何保证接口的幂等性&lt;/strong&gt;&lt;/h1&gt;&lt;h2 id=&#34;什么是幂等性&#34;&gt;&lt;a href=&#34;#什么是幂等性&#34; class=&#34;headerlink&#34; title=&#34;什么是幂等性&#34;&gt;&lt;/a&gt;什么是幂等性&lt;/h2&gt;&lt;p&gt;幂等性是系统服务对外一种承诺，承诺只要调用接口成功，外部多次调用对系统的影响是一致的。声明为幂等的服务会认为外部调用失败是常态，并且失败之后必然会有重试。&lt;/p&gt;
+            <description><![CDATA[ &lt;h1 id=&#34;如何保证接口的幂等性&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#如何保证接口的幂等性&#34;&gt;#&lt;/a&gt; &lt;strong&gt;如何保证接口的幂等性&lt;/strong&gt;&lt;/h1&gt;
+&lt;h2 id=&#34;什么是幂等性&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#什么是幂等性&#34;&gt;#&lt;/a&gt; 什么是幂等性&lt;/h2&gt;
+&lt;p&gt;幂等性是系统服务对外一种承诺，承诺只要调用接口成功，外部多次调用对系统的影响是一致的。声明为幂等的服务会认为外部调用失败是常态，并且失败之后必然会有重试。&lt;/p&gt;
 &lt;span id=&#34;more&#34;&gt;&lt;/span&gt;
-
-&lt;h2 id=&#34;什么情况下需要幂等&#34;&gt;&lt;a href=&#34;#什么情况下需要幂等&#34; class=&#34;headerlink&#34; title=&#34;什么情况下需要幂等&#34;&gt;&lt;/a&gt;什么情况下需要幂等&lt;/h2&gt;&lt;p&gt;以&lt;code&gt;SQL&lt;/code&gt;为例：&lt;/p&gt;
+&lt;h2 id=&#34;什么情况下需要幂等&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#什么情况下需要幂等&#34;&gt;#&lt;/a&gt; 什么情况下需要幂等&lt;/h2&gt;
+&lt;p&gt;以 &lt;code&gt;SQL&lt;/code&gt;  为例：&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;p&gt;&lt;code&gt;SELECT col1 FROM tab1 WHER col2=2，&lt;/code&gt;无论执行多少次都不会改变状态，是天然的幂等。&lt;/p&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;SELECT col1 FROM tab1 WHER col2=2，&lt;/code&gt; 无论执行多少次都不会改变状态，是天然的幂等。&lt;/p&gt;
 &lt;/li&gt;
-&lt;li&gt;&lt;p&gt;&lt;code&gt;UPDATE tab1 SET col1=1 WHERE col2=2&lt;/code&gt;，无论执行成功多少次状态都是一致的，因此也是幂等操作。&lt;/p&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;UPDATE tab1 SET col1=1 WHERE col2=2&lt;/code&gt; ，无论执行成功多少次状态都是一致的，因此也是幂等操作。&lt;/p&gt;
 &lt;/li&gt;
-&lt;li&gt;&lt;p&gt;&lt;code&gt;UPDATE tab1 SET col1=col1+1 WHERE col2=2&lt;/code&gt;，每次执行的结果都会发生变化，这种不是幂等的。&lt;/p&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;UPDATE tab1 SET col1=col1+1 WHERE col2=2&lt;/code&gt; ，每次执行的结果都会发生变化，这种不是幂等的。&lt;/p&gt;
 &lt;/li&gt;
-&lt;li&gt;&lt;p&gt;&lt;code&gt;insert into user(userid,name) values(1,&amp;#39;a&amp;#39;)&lt;/code&gt; 如&lt;code&gt;userid&lt;/code&gt;为唯一主键，即重复操作上面的业务，只会插入一条用户数据，具备幂等性。&lt;br&gt;如&lt;code&gt;userid&lt;/code&gt;不是主键，可以重复，那上面业务多次操作，数据都会新增多条，不具备幂等性。&lt;/p&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;insert into user(userid,name) values(1,&#39;a&#39;)&lt;/code&gt;  如 &lt;code&gt;userid&lt;/code&gt;  为唯一主键，即重复操作上面的业务，只会插入一条用户数据，具备幂等性。&lt;br&gt;
+如 &lt;code&gt;userid&lt;/code&gt;  不是主键，可以重复，那上面业务多次操作，数据都会新增多条，不具备幂等性。&lt;/p&gt;
 &lt;/li&gt;
-&lt;li&gt;&lt;p&gt;&lt;code&gt;delete from user where userid=1&lt;/code&gt;，多次操作，结果一样，具备幂等性&lt;/p&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;delete from user where userid=1&lt;/code&gt; ，多次操作，结果一样，具备幂等性&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2 id=&#34;如何保证幂等&#34;&gt;&lt;a href=&#34;#如何保证幂等&#34; class=&#34;headerlink&#34; title=&#34;如何保证幂等&#34;&gt;&lt;/a&gt;如何保证幂等&lt;/h2&gt;&lt;ul&gt;
-&lt;li&gt;&lt;h3 id=&#34;token机制&#34;&gt;&lt;a href=&#34;#token机制&#34; class=&#34;headerlink&#34; title=&#34;token机制&#34;&gt;&lt;/a&gt;&lt;code&gt;token&lt;/code&gt;机制&lt;/h3&gt;&lt;ol&gt;
-&lt;li&gt;&lt;p&gt;服务端提供了发送&lt;code&gt;token&lt;/code&gt;的接口。我们在分析业务的时候，哪些业务是存在幂等问题的，就必须在执行业务前，先去获取&lt;code&gt;token&lt;/code&gt;，服务器会把&lt;code&gt;token&lt;/code&gt;保存到&lt;code&gt;redis&lt;/code&gt;中。&lt;/p&gt;
+&lt;h2 id=&#34;如何保证幂等&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#如何保证幂等&#34;&gt;#&lt;/a&gt; 如何保证幂等&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;h3 id=&#34;token机制&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#token机制&#34;&gt;#&lt;/a&gt;  &lt;code&gt;token&lt;/code&gt;  机制&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;服务端提供了发送 &lt;code&gt;token&lt;/code&gt;  的接口。我们在分析业务的时候，哪些业务是存在幂等问题的，就必须在执行业务前，先去获取 &lt;code&gt;token&lt;/code&gt; ，服务器会把 &lt;code&gt;token&lt;/code&gt;  保存到 &lt;code&gt;redis&lt;/code&gt;  中。&lt;/p&gt;
 &lt;/li&gt;
-&lt;li&gt;&lt;p&gt;然后调用业务接口请求时，把&lt;code&gt;token&lt;/code&gt;携带过去，一般放在请求头部。&lt;/p&gt;
+&lt;li&gt;
+&lt;p&gt;然后调用业务接口请求时，把 &lt;code&gt;token&lt;/code&gt;  携带过去，一般放在请求头部。&lt;/p&gt;
 &lt;/li&gt;
-&lt;li&gt;&lt;p&gt;服务器判断&lt;code&gt;token&lt;/code&gt;是否存在&lt;code&gt;redis&lt;/code&gt;中，存在表示第一次请求，然后删除&lt;code&gt;token&lt;/code&gt;,继续执行业务。&lt;/p&gt;
+&lt;li&gt;
+&lt;p&gt;服务器判断 &lt;code&gt;token&lt;/code&gt;  是否存在 &lt;code&gt;redis&lt;/code&gt;  中，存在表示第一次请求，然后删除 &lt;code&gt;token&lt;/code&gt; , 继续执行业务。&lt;/p&gt;
 &lt;/li&gt;
-&lt;li&gt;&lt;p&gt;如果判断&lt;code&gt;token&lt;/code&gt;不存在&lt;code&gt;redis&lt;/code&gt;中，就表示是重复操作，直接返回重复标记给&lt;code&gt;client&lt;/code&gt;，这样就保证了业务代码，不被重复执行。&lt;/p&gt;
-&lt;h4 id=&#34;关键点-先删除token，还是后删除token。&#34;&gt;&lt;a href=&#34;#关键点-先删除token，还是后删除token。&#34; class=&#34;headerlink&#34; title=&#34;关键点 先删除token，还是后删除token。&#34;&gt;&lt;/a&gt;&lt;strong&gt;关键点 先删除&lt;code&gt;token&lt;/code&gt;，还是后删除&lt;code&gt;token&lt;/code&gt;。&lt;/strong&gt;&lt;/h4&gt;&lt;p&gt;   后删除&lt;code&gt;token&lt;/code&gt;：如果进行业务处理成功后，删除&lt;code&gt;redis&lt;/code&gt;中的&lt;code&gt;token&lt;/code&gt;失败了，这样就导致了有可能会发生重复请求，因为&lt;code&gt;token&lt;/code&gt;没有被删除。这个问题其实是数据库和缓存&lt;code&gt;redis&lt;/code&gt;数据不一致问题，后续会写文章进行讲解。&lt;/p&gt;
-&lt;p&gt;   先删除&lt;code&gt;token&lt;/code&gt;：如果系统出现问题导致业务处理出现异常，业务处理没有成功，接口调用方也没有获取到明确的结果，然后进行重试，但&lt;code&gt;token&lt;/code&gt;已经删除掉了，服务端判断&lt;code&gt;token&lt;/code&gt;不存在，认为是重复请求，就直接返回了，无法进行业务处理了。&lt;/p&gt;
-&lt;p&gt;   先删除&lt;code&gt;token&lt;/code&gt;可以保证不会因为重复请求，业务数据出现问题。出现业务异常，可以让调用方配合处理一下，重新获取新的&lt;code&gt;token&lt;/code&gt;，再次由业务调用方发起重试请求就&lt;code&gt;ok&lt;/code&gt;了。&lt;/p&gt;
-&lt;h4 id=&#34;token机制缺点&#34;&gt;&lt;a href=&#34;#token机制缺点&#34; class=&#34;headerlink&#34; title=&#34;token机制缺点&#34;&gt;&lt;/a&gt;&lt;code&gt;token&lt;/code&gt;机制缺点&lt;/h4&gt;&lt;p&gt;   业务请求每次请求，都会有额外的请求（一次获取&lt;code&gt;token&lt;/code&gt;请求、判断&lt;code&gt;token&lt;/code&gt;是否存在的业务）。其实真实的生产环境中，1万请求也许只会存在&lt;code&gt;10&lt;/code&gt;个左右的请求会发生重试，为了这&lt;code&gt;10&lt;/code&gt;个请求，我们让&lt;code&gt;9990&lt;/code&gt;个请求都发生了额外的请求。&lt;/p&gt;
+&lt;li&gt;
+&lt;p&gt;如果判断 &lt;code&gt;token&lt;/code&gt;  不存在 &lt;code&gt;redis&lt;/code&gt;  中，就表示是重复操作，直接返回重复标记给 &lt;code&gt;client&lt;/code&gt; ，这样就保证了业务代码，不被重复执行。&lt;/p&gt;
+&lt;h4 id=&#34;关键点-先删除token还是后删除token&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#关键点-先删除token还是后删除token&#34;&gt;#&lt;/a&gt; &lt;strong&gt;关键点 先删除 &lt;code&gt;token&lt;/code&gt; ，还是后删除 &lt;code&gt;token&lt;/code&gt; 。&lt;/strong&gt;&lt;/h4&gt;
+&lt;p&gt;后删除 &lt;code&gt;token&lt;/code&gt; ：如果进行业务处理成功后，删除 &lt;code&gt;redis&lt;/code&gt;  中的 &lt;code&gt;token&lt;/code&gt;  失败了，这样就导致了有可能会发生重复请求，因为 &lt;code&gt;token&lt;/code&gt;  没有被删除。这个问题其实是数据库和缓存 &lt;code&gt;redis&lt;/code&gt;  数据不一致问题，后续会写文章进行讲解。&lt;/p&gt;
+&lt;p&gt;先删除 &lt;code&gt;token&lt;/code&gt; ：如果系统出现问题导致业务处理出现异常，业务处理没有成功，接口调用方也没有获取到明确的结果，然后进行重试，但 &lt;code&gt;token&lt;/code&gt;  已经删除掉了，服务端判断 &lt;code&gt;token&lt;/code&gt;  不存在，认为是重复请求，就直接返回了，无法进行业务处理了。&lt;/p&gt;
+&lt;p&gt;先删除 &lt;code&gt;token&lt;/code&gt;  可以保证不会因为重复请求，业务数据出现问题。出现业务异常，可以让调用方配合处理一下，重新获取新的 &lt;code&gt;token&lt;/code&gt; ，再次由业务调用方发起重试请求就 &lt;code&gt;ok&lt;/code&gt;  了。&lt;/p&gt;
+&lt;h4 id=&#34;token机制缺点&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#token机制缺点&#34;&gt;#&lt;/a&gt;  &lt;code&gt;token&lt;/code&gt;  机制缺点&lt;/h4&gt;
+&lt;p&gt;业务请求每次请求，都会有额外的请求（一次获取 &lt;code&gt;token&lt;/code&gt;  请求、判断 &lt;code&gt;token&lt;/code&gt;  是否存在的业务）。其实真实的生产环境中，1 万请求也许只会存在 &lt;code&gt;10&lt;/code&gt;  个左右的请求会发生重试，为了这 &lt;code&gt;10&lt;/code&gt;  个请求，我们让 &lt;code&gt;9990&lt;/code&gt;  个请求都发生了额外的请求。&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
 &lt;/li&gt;
-&lt;li&gt;&lt;h3 id=&#34;乐观锁机制&#34;&gt;&lt;a href=&#34;#乐观锁机制&#34; class=&#34;headerlink&#34; title=&#34;乐观锁机制&#34;&gt;&lt;/a&gt;乐观锁机制&lt;/h3&gt;&lt;p&gt;  这种方法适合在更新的场景中&lt;code&gt;update t_goods set count = count -1 , version = version + 1 where good_id=2 and version = 1&lt;/code&gt;&lt;br&gt;  根据&lt;code&gt;version&lt;/code&gt;版本，也就是在操作库存前先获取当前商品的&lt;code&gt;version&lt;/code&gt;版本号，然后操作的时候带上此&lt;code&gt;version&lt;/code&gt;号。我们梳理下，我们第一次操作库存时，得到&lt;code&gt;version&lt;/code&gt;为&lt;code&gt;1&lt;/code&gt;，调用库存服务&lt;code&gt;version&lt;/code&gt;变成了&lt;code&gt;2&lt;/code&gt;；但返回给订单服务出现了问题，订单服务又一次发起调用库存服务，当订单服务传如的&lt;code&gt;version&lt;/code&gt;还是&lt;code&gt;1&lt;/code&gt;，再执行上面的&lt;code&gt;sql&lt;/code&gt;语句时，就不会执行；因为&lt;code&gt;version&lt;/code&gt;已经变为&lt;code&gt;2&lt;/code&gt;了，&lt;code&gt;where&lt;/code&gt;条件就不成立。这样就保证了不管调用几次，只会真正的处理一次。&lt;br&gt;  乐观锁主要使用于处理读多写少的问题&lt;/p&gt;
+&lt;li&gt;
+&lt;h3 id=&#34;乐观锁机制&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#乐观锁机制&#34;&gt;#&lt;/a&gt; 乐观锁机制&lt;/h3&gt;
+&lt;p&gt;这种方法适合在更新的场景中 &lt;code&gt;update t_goods set count = count -1 , version = version + 1 where good_id=2 and version = 1&lt;/code&gt; &lt;br&gt;
+ 根据 &lt;code&gt;version&lt;/code&gt;  版本，也就是在操作库存前先获取当前商品的 &lt;code&gt;version&lt;/code&gt;  版本号，然后操作的时候带上此 &lt;code&gt;version&lt;/code&gt;  号。我们梳理下，我们第一次操作库存时，得到 &lt;code&gt;version&lt;/code&gt;  为 &lt;code&gt;1&lt;/code&gt; ，调用库存服务 &lt;code&gt;version&lt;/code&gt;  变成了 &lt;code&gt;2&lt;/code&gt; ；但返回给订单服务出现了问题，订单服务又一次发起调用库存服务，当订单服务传如的 &lt;code&gt;version&lt;/code&gt;  还是 &lt;code&gt;1&lt;/code&gt; ，再执行上面的 &lt;code&gt;sql&lt;/code&gt;  语句时，就不会执行；因为 &lt;code&gt;version&lt;/code&gt;  已经变为 &lt;code&gt;2&lt;/code&gt;  了， &lt;code&gt;where&lt;/code&gt;  条件就不成立。这样就保证了不管调用几次，只会真正的处理一次。&lt;br&gt;
+乐观锁主要使用于处理读多写少的问题&lt;/p&gt;
 &lt;/li&gt;
-&lt;li&gt;&lt;h3 id=&#34;唯一主键&#34;&gt;&lt;a href=&#34;#唯一主键&#34; class=&#34;headerlink&#34; title=&#34;唯一主键&#34;&gt;&lt;/a&gt;唯一主键&lt;/h3&gt;&lt;p&gt;  这个机制是利用了数据库的主键唯一约束的特性，解决了在&lt;code&gt;insert&lt;/code&gt;场景时幂等问题。但主键的要求不是自增的主键，这样就需要业务生成全局唯一的主键。&lt;/p&gt;
-&lt;p&gt;  如果是分库分表场景下，路由规则要保证相同请求下，落地在同一个数据库和同一表中，要不然数据库主键约束就不起效果了，因为是不同的数据库和表主键不相关。&lt;/p&gt;
+&lt;li&gt;
+&lt;h3 id=&#34;唯一主键&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#唯一主键&#34;&gt;#&lt;/a&gt; 唯一主键&lt;/h3&gt;
+&lt;p&gt;这个机制是利用了数据库的主键唯一约束的特性，解决了在 &lt;code&gt;insert&lt;/code&gt;  场景时幂等问题。但主键的要求不是自增的主键，这样就需要业务生成全局唯一的主键。&lt;/p&gt;
+&lt;p&gt;如果是分库分表场景下，路由规则要保证相同请求下，落地在同一个数据库和同一表中，要不然数据库主键约束就不起效果了，因为是不同的数据库和表主键不相关。&lt;/p&gt;
 &lt;/li&gt;
-&lt;li&gt;&lt;h3 id=&#34;防重表&#34;&gt;&lt;a href=&#34;#防重表&#34; class=&#34;headerlink&#34; title=&#34;防重表&#34;&gt;&lt;/a&gt;防重表&lt;/h3&gt;&lt;p&gt;  使用订单号&lt;code&gt;orderNo&lt;/code&gt;做为去重表的唯一索引，把唯一索引插入去重表，再进行业务操作，且他们在同一个事务中。这个保证了重复请求时，因为去重表有唯一约束，导致请求失败，避免了幂等问题。这里要注意的是，去重表和业务表应该在同一库中，这样就保证了在同一个事务，即使业务操作失败了，也会把去重表的数据回滚。这个很好的保证了数据一致性。&lt;/p&gt;
+&lt;li&gt;
+&lt;h3 id=&#34;防重表&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#防重表&#34;&gt;#&lt;/a&gt; 防重表&lt;/h3&gt;
+&lt;p&gt;使用订单号 &lt;code&gt;orderNo&lt;/code&gt;  做为去重表的唯一索引，把唯一索引插入去重表，再进行业务操作，且他们在同一个事务中。这个保证了重复请求时，因为去重表有唯一约束，导致请求失败，避免了幂等问题。这里要注意的是，去重表和业务表应该在同一库中，这样就保证了在同一个事务，即使业务操作失败了，也会把去重表的数据回滚。这个很好的保证了数据一致性。&lt;/p&gt;
 &lt;/li&gt;
-&lt;li&gt;&lt;h3 id=&#34;唯一ID&#34;&gt;&lt;a href=&#34;#唯一ID&#34; class=&#34;headerlink&#34; title=&#34;唯一ID&#34;&gt;&lt;/a&gt;唯一&lt;code&gt;ID&lt;/code&gt;&lt;/h3&gt;&lt;p&gt;  调用接口时，生成一个唯一&lt;code&gt;id&lt;/code&gt;，&lt;code&gt;redis&lt;/code&gt;将数据保存到集合中（去重），存在即处理过。&lt;/p&gt;
+&lt;li&gt;
+&lt;h3 id=&#34;唯一id&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#唯一id&#34;&gt;#&lt;/a&gt; 唯一 &lt;code&gt;ID&lt;/code&gt;&lt;/h3&gt;
+&lt;p&gt;调用接口时，生成一个唯一 &lt;code&gt;id&lt;/code&gt; ， &lt;code&gt;redis&lt;/code&gt;  将数据保存到集合中（去重），存在即处理过。&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
  ]]></description>

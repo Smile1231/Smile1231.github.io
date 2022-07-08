@@ -117,12 +117,12 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
       </div>
       <div id="imgs" class="pjax">
         <ul>
-          <li class="item" data-background-image="https://tva2.sinaimg.cn/large/6833939bly1gipeyvx1d4j20zk0m8hdt.jpg"></li>
-          <li class="item" data-background-image="https://tva2.sinaimg.cn/large/6833939bly1giclgrvbd6j20zk0m8qv5.jpg"></li>
-          <li class="item" data-background-image="https://tva2.sinaimg.cn/large/6833939bly1giclxxcb6rj20zk0m8b29.jpg"></li>
-          <li class="item" data-background-image="https://tva2.sinaimg.cn/large/6833939bly1gicitspjpbj20zk0m81ky.jpg"></li>
-          <li class="item" data-background-image="https://tva2.sinaimg.cn/large/6833939bly1gipeuv80yoj20zk0m8kjl.jpg"></li>
-          <li class="item" data-background-image="https://tva2.sinaimg.cn/large/6833939bly1gipetfk5zwj20zk0m8e81.jpg"></li>
+          <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1giciundwu5j20zk0m8n9e.jpg"></li>
+          <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1giph4baakhj20zk0m8h5q.jpg"></li>
+          <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1giclxxcb6rj20zk0m8b29.jpg"></li>
+          <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1gicli3sbvtj20zk0m8x6p.jpg"></li>
+          <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1gipex2cdtbj20zk0m8x6p.jpg"></li>
+          <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1giclfdu6exj20zk0m87hw.jpg"></li>
         </ul>
       </div>
     </header>
@@ -171,36 +171,38 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
   <div class="body md" itemprop="articleBody">
     
 
-    <h1 id="Vue3项目的创建"><a href="#Vue3项目的创建" class="headerlink" title="Vue3项目的创建"></a>Vue3项目的创建</h1><p>==一般来说,创建Vue项目有两种方式==</p>
-<h2 id="方法一-使用-vue-cli-创建"><a href="#方法一-使用-vue-cli-创建" class="headerlink" title="方法一:使用 vue-cli 创建"></a>方法一:使用 vue-cli 创建</h2><p><span class="exturl" data-url="aHR0cHM6Ly9jbGkudnVlanMub3JnL3poL2d1aWRlL2NyZWF0aW5nLWEtcHJvamVjdC5odG1sI3Z1ZS1jcmVhdGU=">Vue文档</span></p>
+    <h1 id="vue3项目的创建"><a class="markdownIt-Anchor" href="#vue3项目的创建">#</a> Vue3 项目的创建</h1>
+<p><mark>一般来说，创建 Vue 项目有两种方式</mark></p>
+<h2 id="方法一使用-vue-cli-创建"><a class="markdownIt-Anchor" href="#方法一使用-vue-cli-创建">#</a> 方法一：使用 vue-cli 创建</h2>
+<p><span class="exturl" data-url="aHR0cHM6Ly9jbGkudnVlanMub3JnL3poL2d1aWRlL2NyZWF0aW5nLWEtcHJvamVjdC5odG1sI3Z1ZS1jcmVhdGU=">Vue 文档</span></p>
 <span id="more"></span>
-
 <blockquote>
 <p>进入一个空的文件目录创建</p>
 </blockquote>
 
-
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">## 安装或者升级</span><br><span class="line">npm install -g @vue/cli</span><br><span class="line"></span><br><span class="line">## 保证 vue cli 版本在 4.5.0 以上</span><br><span class="line">vue --version</span><br><span class="line"></span><br><span class="line">## 创建项目</span><br><span class="line">vue create &lt;项目名&gt;</span><br><span class="line"></span><br><span class="line">## 进入项目 </span><br><span class="line">cd  &lt;项目名&gt;</span><br><span class="line"></span><br><span class="line">## 启动项目</span><br><span class="line">npm run serve</span><br></pre></td></tr></table></figure>
-
 <p><strong>然后的步骤</strong></p>
 <ul>
-<li><code>Please pick a preset</code> - 选择 <code>Manually select features</code></li>
-<li><code>Check the features needed for your project</code> - 选择上 <code>TypeScript</code> ，特别注意点空格是选择，点回车是下一步</li>
-<li><code>Choose a version of Vue.js that you want to start the project with</code> - 选择 <code>3.x</code> (<code>Preview</code>)</li>
-<li><code>Use class-style component syntax</code> - 直接回车</li>
-<li><code>Use Babel alongside TypeScript</code> - 直接回车</li>
-<li><code>Pick a linter / formatter config</code> - 直接回车</li>
-<li><code>Use history mode for router?</code> - 直接回车</li>
-<li><code>Pick a linter / formatter config</code> - 直接回车</li>
-<li><code>Pick additional lint features</code> - 直接回车</li>
-<li><code>Where do you prefer placing config for Babel, ESLint, etc.?</code> - 直接回车</li>
-<li><code>Save this as a preset for future projects?</code> - 直接回车</li>
+<li><code>Please pick a preset</code>  - 选择  <code>Manually select features</code></li>
+<li><code>Check the features needed for your project</code>  - 选择上  <code>TypeScript</code>  ，特别注意点空格是选择，点回车是下一步</li>
+<li><code>Choose a version of Vue.js that you want to start the project with</code>  - 选择  <code>3.x</code>  ( <code>Preview</code> )</li>
+<li><code>Use class-style component syntax</code>  - 直接回车</li>
+<li><code>Use Babel alongside TypeScript</code>  - 直接回车</li>
+<li><code>Pick a linter / formatter config</code>  - 直接回车</li>
+<li><code>Use history mode for router?</code>  - 直接回车</li>
+<li><code>Pick a linter / formatter config</code>  - 直接回车</li>
+<li><code>Pick additional lint features</code>  - 直接回车</li>
+<li><code>Where do you prefer placing config for Babel, ESLint, etc.?</code>  - 直接回车</li>
+<li><code>Save this as a preset for future projects?</code>  - 直接回车</li>
 </ul>
-<h2 id="方法二-使用-vite-创建"><a href="#方法二-使用-vite-创建" class="headerlink" title="方法二:使用 vite 创建"></a>方法二:使用 vite 创建</h2><p><span class="exturl" data-url="aHR0cHM6Ly92My5jbi52dWVqcy5vcmcvZ3VpZGUvaW5zdGFsbGF0aW9uLmh0bWw=">文档链接</span></p>
+<h2 id="方法二使用-vite-创建"><a class="markdownIt-Anchor" href="#方法二使用-vite-创建">#</a> 方法二：使用 vite 创建</h2>
+<p><span class="exturl" data-url="aHR0cHM6Ly92My5jbi52dWVqcy5vcmcvZ3VpZGUvaW5zdGFsbGF0aW9uLmh0bWw=">文档链接</span></p>
 <ul>
-<li><p><code>vite</code> 是一个由原生 ESM 驱动的 Web 开发构建工具。在开发环境下基于浏览器原生 ES imports 开发，</p>
+<li>
+<p><code>vite</code>  是一个由原生 ESM 驱动的 Web 开发构建工具。在开发环境下基于浏览器原生 ES imports 开发，</p>
 </li>
-<li><p>它做到了<strong>本地快速开发启动</strong>, 在生产环境下基于 <code>Rollup</code> 打包。</p>
+<li>
+<p>它做到了<strong>本地快速开发启动</strong>，在生产环境下基于  <code>Rollup</code>  打包。</p>
 <ul>
 <li>快速的冷启动，不需要等待打包操作；</li>
 <li>即时的热模块更新，替换性能和模块数量的解耦让更新飞起；</li>
@@ -209,14 +211,12 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
 </li>
 </ul>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">npm init vite-app &lt;project-name&gt;</span><br><span class="line">cd &lt;project-name&gt;</span><br><span class="line">npm install</span><br><span class="line">npm run dev</span><br></pre></td></tr></table></figure>
-
-
-<h2 id="使用Vue-Cli工程各目录介绍"><a href="#使用Vue-Cli工程各目录介绍" class="headerlink" title="使用Vue-Cli工程各目录介绍"></a>使用Vue-Cli工程各目录介绍</h2><h2 id="Vue修改端口号"><a href="#Vue修改端口号" class="headerlink" title="Vue修改端口号"></a><code>Vue</code>修改端口号</h2><p><code>package.json</code>文件下修改 <code>–port</code></p>
+<h2 id="使用vue-cli工程各目录介绍"><a class="markdownIt-Anchor" href="#使用vue-cli工程各目录介绍">#</a> 使用 Vue-Cli 工程各目录介绍</h2>
+<h2 id="vue修改端口号"><a class="markdownIt-Anchor" href="#vue修改端口号">#</a>  <code>Vue</code>  修改端口号</h2>
+<p><code>package.json</code>  文件下修改  <code>–port</code></p>
 <figure class="highlight json"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">&quot;scripts&quot;</span>: &#123;</span><br><span class="line">   <span class="attr">&quot;serve&quot;</span>: <span class="string">&quot;vue-cli-service serve --port 9991&quot;</span>,</span><br><span class="line"> &#125;</span><br></pre></td></tr></table></figure>
-<p><code>vue.config.js</code>文件下添加 (如果没有就在根目录下创建文件)</p>
+<p><code>vue.config.js</code>  文件下添加 (如果没有就在根目录下创建文件)</p>
 <figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">module</span>.exports = &#123;</span><br><span class="line">  <span class="attr">devServer</span>: &#123;</span><br><span class="line">    <span class="attr">port</span>: <span class="number">9991</span></span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-
 
       <div class="tags">
           <a href="/tags/%E5%89%8D%E7%AB%AF/" rel="tag"><i class="ic i-tag"></i> 前端</a>
@@ -272,7 +272,7 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
     <div class="item left">
       
 
-  <a href="/posts/e7e56598/" itemprop="url" rel="prev" data-background-image="https:&#x2F;&#x2F;tva2.sinaimg.cn&#x2F;mw690&#x2F;6833939bly1gipevgoki5j20zk0m84qp.jpg" title="Vue属性介绍">
+  <a href="/posts/e7e56598/" itemprop="url" rel="prev" data-background-image="https:&#x2F;&#x2F;tva3.sinaimg.cn&#x2F;mw690&#x2F;6833939bly1gicljitigmj20zk0m87fp.jpg" title="Vue属性介绍">
   <span class="type">Previous Post</span>
   <span class="category"><i class="ic i-flag"></i> Vue</span>
   <h3>Vue属性介绍</h3>
@@ -282,7 +282,7 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
     <div class="item right">
       
 
-  <a href="/posts/12fecb94/" itemprop="url" rel="next" data-background-image="https:&#x2F;&#x2F;tva2.sinaimg.cn&#x2F;mw690&#x2F;6833939bly1gipew28b65j20zk0m8hdt.jpg" title="多线程笔记">
+  <a href="/posts/12fecb94/" itemprop="url" rel="next" data-background-image="https:&#x2F;&#x2F;tva3.sinaimg.cn&#x2F;mw690&#x2F;6833939bly1gicm0n457cj20zk0m8e81.jpg" title="多线程笔记">
   <span class="type">Next Post</span>
   <span class="category"><i class="ic i-flag"></i> Java面试</span>
   <h3>多线程笔记</h3>
@@ -304,7 +304,7 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
   <div class="panels">
     <div class="inner">
       <div class="contents panel pjax" data-title="Contents">
-          <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#Vue3%E9%A1%B9%E7%9B%AE%E7%9A%84%E5%88%9B%E5%BB%BA"><span class="toc-number">1.</span> <span class="toc-text">Vue3项目的创建</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%96%B9%E6%B3%95%E4%B8%80-%E4%BD%BF%E7%94%A8-vue-cli-%E5%88%9B%E5%BB%BA"><span class="toc-number">1.1.</span> <span class="toc-text">方法一:使用 vue-cli 创建</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%96%B9%E6%B3%95%E4%BA%8C-%E4%BD%BF%E7%94%A8-vite-%E5%88%9B%E5%BB%BA"><span class="toc-number">1.2.</span> <span class="toc-text">方法二:使用 vite 创建</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BD%BF%E7%94%A8Vue-Cli%E5%B7%A5%E7%A8%8B%E5%90%84%E7%9B%AE%E5%BD%95%E4%BB%8B%E7%BB%8D"><span class="toc-number">1.3.</span> <span class="toc-text">使用Vue-Cli工程各目录介绍</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Vue%E4%BF%AE%E6%94%B9%E7%AB%AF%E5%8F%A3%E5%8F%B7"><span class="toc-number">1.4.</span> <span class="toc-text">Vue修改端口号</span></a></li></ol></li></ol>
+          <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#vue3%E9%A1%B9%E7%9B%AE%E7%9A%84%E5%88%9B%E5%BB%BA"><span class="toc-number">1.</span> <span class="toc-text"> Vue3 项目的创建</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%96%B9%E6%B3%95%E4%B8%80%E4%BD%BF%E7%94%A8-vue-cli-%E5%88%9B%E5%BB%BA"><span class="toc-number">1.1.</span> <span class="toc-text"> 方法一：使用 vue-cli 创建</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%96%B9%E6%B3%95%E4%BA%8C%E4%BD%BF%E7%94%A8-vite-%E5%88%9B%E5%BB%BA"><span class="toc-number">1.2.</span> <span class="toc-text"> 方法二：使用 vite 创建</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BD%BF%E7%94%A8vue-cli%E5%B7%A5%E7%A8%8B%E5%90%84%E7%9B%AE%E5%BD%95%E4%BB%8B%E7%BB%8D"><span class="toc-number">1.3.</span> <span class="toc-text"> 使用 Vue-Cli 工程各目录介绍</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#vue%E4%BF%AE%E6%94%B9%E7%AB%AF%E5%8F%A3%E5%8F%B7"><span class="toc-number">1.4.</span> <span class="toc-text">  Vue  修改端口号</span></a></li></ol></li></ol>
       </div>
       <div class="related panel pjax" data-title="Related">
         <ul>
@@ -415,10 +415,42 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
 <div class="breadcrumb">
 <a href="/categories/Java/" title="In Java">Java</a>
 <i class="ic i-angle-right"></i>
-<a href="/categories/Java/Java%E9%9D%A2%E8%AF%95/" title="In Java面试">Java面试</a>
+<a href="/categories/Java/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/" title="In 操作系统">操作系统</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/Java/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/Java%E9%9D%A2%E8%AF%95/" title="In Java面试">Java面试</a>
 </div>
 
-    <span><a href="/posts/f23f1351/" title="equals与&#x3D;&#x3D;区别">equals与==区别</a></span>
+    <span><a href="/posts/166a1445/" title="位，字节， 字符">位，字节， 字符</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+</div>
+
+    <span><a href="/posts/bf4d20ae/" title="写在最前面">写在最前面</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/%E5%89%8D%E7%AB%AF/" title="In 前端">前端</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/%E5%89%8D%E7%AB%AF/Vue/" title="In Vue">Vue</a>
+</div>
+
+    <span><a href="/posts/b5314c4/" title="Vue2语法简介">Vue2语法简介</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+</div>
+
+    <span><a href="/posts/afe5178f/" title="关于设置git以及npm代理">关于设置git以及npm代理</a></span>
   </li>
 
       
@@ -427,54 +459,29 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
 <div class="breadcrumb">
 <a href="/categories/Java%E9%9D%A2%E8%AF%95/" title="In Java面试">Java面试</a>
 <i class="ic i-angle-right"></i>
-<a href="/categories/Java%E9%9D%A2%E8%AF%95/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/" title="In 操作系统">操作系统</a>
+<a href="/categories/Java%E9%9D%A2%E8%AF%95/%E7%AE%97%E6%B3%95/" title="In 算法">算法</a>
 </div>
 
-    <span><a href="/posts/c7cf6e41/" title="面试之旅关于计算机网络">面试之旅关于计算机网络</a></span>
+    <span><a href="/posts/7474c898/" title="分治算法">分治算法</a></span>
   </li>
 
       
   <li class="item">
     
 <div class="breadcrumb">
-<a href="/categories/%E6%95%B0%E6%8D%AE%E5%BA%93/" title="In 数据库">数据库</a>
 </div>
 
-    <span><a href="/posts/377b6f7d/" title="关于mysql中对Json类型字段进行筛选查询">关于mysql中对Json类型字段进行筛选查询</a></span>
+    <span><a href="/posts/a72f470b/" title="关于JVM常用参数">关于JVM常用参数</a></span>
   </li>
 
       
   <li class="item">
     
 <div class="breadcrumb">
-<a href="/categories/VSCODE/" title="In VSCODE">VSCODE</a>
-<i class="ic i-angle-right"></i>
-<a href="/categories/VSCODE/%E5%BF%AB%E6%8D%B7%E9%94%AE/" title="In 快捷键">快捷键</a>
+<a href="/categories/%E5%A4%A7%E6%95%B0%E6%8D%AE/" title="In 大数据">大数据</a>
 </div>
 
-    <span><a href="/posts/d199d651/" title="VsCode快捷键">VsCode快捷键</a></span>
-  </li>
-
-      
-  <li class="item">
-    
-<div class="breadcrumb">
-<a href="/categories/Java%E9%9D%A2%E8%AF%95/" title="In Java面试">Java面试</a>
-<i class="ic i-angle-right"></i>
-<a href="/categories/Java%E9%9D%A2%E8%AF%95/Spring%E4%BA%8B%E5%8A%A1/" title="In Spring事务">Spring事务</a>
-</div>
-
-    <span><a href="/posts/7e4601e3/" title="面试之旅之关于Spring事务处理">面试之旅之关于Spring事务处理</a></span>
-  </li>
-
-      
-  <li class="item">
-    
-<div class="breadcrumb">
-<a href="/categories/%E6%95%B0%E6%8D%AE%E5%BA%93/" title="In 数据库">数据库</a>
-</div>
-
-    <span><a href="/posts/60f024c8/" title="关于sql执行计划">关于sql执行计划</a></span>
+    <span><a href="/posts/737c98ca/" title="什么是MapReduce">什么是MapReduce</a></span>
   </li>
 
       
@@ -486,41 +493,29 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
 <a href="/categories/%E5%89%8D%E7%AB%AF/Css/" title="In Css">Css</a>
 </div>
 
-    <span><a href="/posts/54880bcd/" title="Css样式">Css样式</a></span>
+    <span><a href="/posts/7f59931c/" title="Css选择器">Css选择器</a></span>
   </li>
 
       
   <li class="item">
     
 <div class="breadcrumb">
-<a href="/categories/Java/" title="In Java">Java</a>
+<a href="/categories/Java%E9%9D%A2%E8%AF%95/" title="In Java面试">Java面试</a>
 <i class="ic i-angle-right"></i>
-<a href="/categories/Java/Tools/" title="In Tools">Tools</a>
+<a href="/categories/Java%E9%9D%A2%E8%AF%95/Tools/" title="In Tools">Tools</a>
 </div>
 
-    <span><a href="/posts/b246d3ce/" title="Java自带的好用的工具类">Java自带的好用的工具类</a></span>
+    <span><a href="/posts/6714b4a9/" title="FastJson序列化使用">FastJson序列化使用</a></span>
   </li>
 
       
   <li class="item">
     
 <div class="breadcrumb">
-<a href="/categories/Java/" title="In Java">Java</a>
+<a href="/categories/%E6%95%B0%E6%8D%AE%E5%BA%93/" title="In 数据库">数据库</a>
 </div>
 
-    <span><a href="/posts/7a29d22a/" title="Java关于时间的轮子">Java关于时间的轮子</a></span>
-  </li>
-
-      
-  <li class="item">
-    
-<div class="breadcrumb">
-<a href="/categories/Java/" title="In Java">Java</a>
-<i class="ic i-angle-right"></i>
-<a href="/categories/Java/Stream/" title="In Stream">Stream</a>
-</div>
-
-    <span><a href="/posts/8b8fedea/" title="Stream流的介绍">Stream流的介绍</a></span>
+    <span><a href="/posts/388f5c14/" title="mysql日期加减">mysql日期加减</a></span>
   </li>
 
   </ul>

@@ -117,12 +117,12 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
       </div>
       <div id="imgs" class="pjax">
         <ul>
-          <li class="item" data-background-image="https://tva2.sinaimg.cn/large/6833939bly1giph4wqtg4j20zk0m8x6p.jpg"></li>
-          <li class="item" data-background-image="https://tva2.sinaimg.cn/large/6833939bly1gipet4bz0yj20zk0m8e81.jpg"></li>
-          <li class="item" data-background-image="https://tva2.sinaimg.cn/large/6833939bly1gipesrnqv3j20zk0m8ava.jpg"></li>
-          <li class="item" data-background-image="https://tva2.sinaimg.cn/large/6833939bly1giclwuom7cj20zk0m8dvn.jpg"></li>
-          <li class="item" data-background-image="https://tva2.sinaimg.cn/large/6833939bly1giclh5u05ej20zk0m87df.jpg"></li>
-          <li class="item" data-background-image="https://tva2.sinaimg.cn/large/6833939bly1giciusoyjnj219g0u0x56.jpg"></li>
+          <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1giciryrr3rj20zk0m8nhk.jpg"></li>
+          <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1gipexj2jgzj20zk0m8b09.jpg"></li>
+          <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1gipet8c1a2j20zk0m8kct.jpg"></li>
+          <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1gicm0n457cj20zk0m8e81.jpg"></li>
+          <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1gipetlbztpj20zk0m84qp.jpg"></li>
+          <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1gicm07ih54j20zk0m84qp.jpg"></li>
         </ul>
       </div>
     </header>
@@ -168,46 +168,73 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
   <div class="body md" itemprop="articleBody">
     
 
-    <h1 id="如何保证接口的幂等性"><a href="#如何保证接口的幂等性" class="headerlink" title="如何保证接口的幂等性"></a><strong>如何保证接口的幂等性</strong></h1><h2 id="什么是幂等性"><a href="#什么是幂等性" class="headerlink" title="什么是幂等性"></a>什么是幂等性</h2><p>幂等性是系统服务对外一种承诺，承诺只要调用接口成功，外部多次调用对系统的影响是一致的。声明为幂等的服务会认为外部调用失败是常态，并且失败之后必然会有重试。</p>
+    <h1 id="如何保证接口的幂等性"><a class="markdownIt-Anchor" href="#如何保证接口的幂等性">#</a> <strong>如何保证接口的幂等性</strong></h1>
+<h2 id="什么是幂等性"><a class="markdownIt-Anchor" href="#什么是幂等性">#</a> 什么是幂等性</h2>
+<p>幂等性是系统服务对外一种承诺，承诺只要调用接口成功，外部多次调用对系统的影响是一致的。声明为幂等的服务会认为外部调用失败是常态，并且失败之后必然会有重试。</p>
 <span id="more"></span>
-
-<h2 id="什么情况下需要幂等"><a href="#什么情况下需要幂等" class="headerlink" title="什么情况下需要幂等"></a>什么情况下需要幂等</h2><p>以<code>SQL</code>为例：</p>
+<h2 id="什么情况下需要幂等"><a class="markdownIt-Anchor" href="#什么情况下需要幂等">#</a> 什么情况下需要幂等</h2>
+<p>以 <code>SQL</code>  为例：</p>
 <ul>
-<li><p><code>SELECT col1 FROM tab1 WHER col2=2，</code>无论执行多少次都不会改变状态，是天然的幂等。</p>
+<li>
+<p><code>SELECT col1 FROM tab1 WHER col2=2，</code> 无论执行多少次都不会改变状态，是天然的幂等。</p>
 </li>
-<li><p><code>UPDATE tab1 SET col1=1 WHERE col2=2</code>，无论执行成功多少次状态都是一致的，因此也是幂等操作。</p>
+<li>
+<p><code>UPDATE tab1 SET col1=1 WHERE col2=2</code> ，无论执行成功多少次状态都是一致的，因此也是幂等操作。</p>
 </li>
-<li><p><code>UPDATE tab1 SET col1=col1+1 WHERE col2=2</code>，每次执行的结果都会发生变化，这种不是幂等的。</p>
+<li>
+<p><code>UPDATE tab1 SET col1=col1+1 WHERE col2=2</code> ，每次执行的结果都会发生变化，这种不是幂等的。</p>
 </li>
-<li><p><code>insert into user(userid,name) values(1,&#39;a&#39;)</code> 如<code>userid</code>为唯一主键，即重复操作上面的业务，只会插入一条用户数据，具备幂等性。<br>如<code>userid</code>不是主键，可以重复，那上面业务多次操作，数据都会新增多条，不具备幂等性。</p>
+<li>
+<p><code>insert into user(userid,name) values(1,'a')</code>  如 <code>userid</code>  为唯一主键，即重复操作上面的业务，只会插入一条用户数据，具备幂等性。<br>
+如 <code>userid</code>  不是主键，可以重复，那上面业务多次操作，数据都会新增多条，不具备幂等性。</p>
 </li>
-<li><p><code>delete from user where userid=1</code>，多次操作，结果一样，具备幂等性</p>
+<li>
+<p><code>delete from user where userid=1</code> ，多次操作，结果一样，具备幂等性</p>
 </li>
 </ul>
-<h2 id="如何保证幂等"><a href="#如何保证幂等" class="headerlink" title="如何保证幂等"></a>如何保证幂等</h2><ul>
-<li><h3 id="token机制"><a href="#token机制" class="headerlink" title="token机制"></a><code>token</code>机制</h3><ol>
-<li><p>服务端提供了发送<code>token</code>的接口。我们在分析业务的时候，哪些业务是存在幂等问题的，就必须在执行业务前，先去获取<code>token</code>，服务器会把<code>token</code>保存到<code>redis</code>中。</p>
+<h2 id="如何保证幂等"><a class="markdownIt-Anchor" href="#如何保证幂等">#</a> 如何保证幂等</h2>
+<ul>
+<li>
+<h3 id="token机制"><a class="markdownIt-Anchor" href="#token机制">#</a>  <code>token</code>  机制</h3>
+<ol>
+<li>
+<p>服务端提供了发送 <code>token</code>  的接口。我们在分析业务的时候，哪些业务是存在幂等问题的，就必须在执行业务前，先去获取 <code>token</code> ，服务器会把 <code>token</code>  保存到 <code>redis</code>  中。</p>
 </li>
-<li><p>然后调用业务接口请求时，把<code>token</code>携带过去，一般放在请求头部。</p>
+<li>
+<p>然后调用业务接口请求时，把 <code>token</code>  携带过去，一般放在请求头部。</p>
 </li>
-<li><p>服务器判断<code>token</code>是否存在<code>redis</code>中，存在表示第一次请求，然后删除<code>token</code>,继续执行业务。</p>
+<li>
+<p>服务器判断 <code>token</code>  是否存在 <code>redis</code>  中，存在表示第一次请求，然后删除 <code>token</code> , 继续执行业务。</p>
 </li>
-<li><p>如果判断<code>token</code>不存在<code>redis</code>中，就表示是重复操作，直接返回重复标记给<code>client</code>，这样就保证了业务代码，不被重复执行。</p>
-<h4 id="关键点-先删除token，还是后删除token。"><a href="#关键点-先删除token，还是后删除token。" class="headerlink" title="关键点 先删除token，还是后删除token。"></a><strong>关键点 先删除<code>token</code>，还是后删除<code>token</code>。</strong></h4><p>   后删除<code>token</code>：如果进行业务处理成功后，删除<code>redis</code>中的<code>token</code>失败了，这样就导致了有可能会发生重复请求，因为<code>token</code>没有被删除。这个问题其实是数据库和缓存<code>redis</code>数据不一致问题，后续会写文章进行讲解。</p>
-<p>   先删除<code>token</code>：如果系统出现问题导致业务处理出现异常，业务处理没有成功，接口调用方也没有获取到明确的结果，然后进行重试，但<code>token</code>已经删除掉了，服务端判断<code>token</code>不存在，认为是重复请求，就直接返回了，无法进行业务处理了。</p>
-<p>   先删除<code>token</code>可以保证不会因为重复请求，业务数据出现问题。出现业务异常，可以让调用方配合处理一下，重新获取新的<code>token</code>，再次由业务调用方发起重试请求就<code>ok</code>了。</p>
-<h4 id="token机制缺点"><a href="#token机制缺点" class="headerlink" title="token机制缺点"></a><code>token</code>机制缺点</h4><p>   业务请求每次请求，都会有额外的请求（一次获取<code>token</code>请求、判断<code>token</code>是否存在的业务）。其实真实的生产环境中，1万请求也许只会存在<code>10</code>个左右的请求会发生重试，为了这<code>10</code>个请求，我们让<code>9990</code>个请求都发生了额外的请求。</p>
+<li>
+<p>如果判断 <code>token</code>  不存在 <code>redis</code>  中，就表示是重复操作，直接返回重复标记给 <code>client</code> ，这样就保证了业务代码，不被重复执行。</p>
+<h4 id="关键点-先删除token还是后删除token"><a class="markdownIt-Anchor" href="#关键点-先删除token还是后删除token">#</a> <strong>关键点 先删除 <code>token</code> ，还是后删除 <code>token</code> 。</strong></h4>
+<p>后删除 <code>token</code> ：如果进行业务处理成功后，删除 <code>redis</code>  中的 <code>token</code>  失败了，这样就导致了有可能会发生重复请求，因为 <code>token</code>  没有被删除。这个问题其实是数据库和缓存 <code>redis</code>  数据不一致问题，后续会写文章进行讲解。</p>
+<p>先删除 <code>token</code> ：如果系统出现问题导致业务处理出现异常，业务处理没有成功，接口调用方也没有获取到明确的结果，然后进行重试，但 <code>token</code>  已经删除掉了，服务端判断 <code>token</code>  不存在，认为是重复请求，就直接返回了，无法进行业务处理了。</p>
+<p>先删除 <code>token</code>  可以保证不会因为重复请求，业务数据出现问题。出现业务异常，可以让调用方配合处理一下，重新获取新的 <code>token</code> ，再次由业务调用方发起重试请求就 <code>ok</code>  了。</p>
+<h4 id="token机制缺点"><a class="markdownIt-Anchor" href="#token机制缺点">#</a>  <code>token</code>  机制缺点</h4>
+<p>业务请求每次请求，都会有额外的请求（一次获取 <code>token</code>  请求、判断 <code>token</code>  是否存在的业务）。其实真实的生产环境中，1 万请求也许只会存在 <code>10</code>  个左右的请求会发生重试，为了这 <code>10</code>  个请求，我们让 <code>9990</code>  个请求都发生了额外的请求。</p>
 </li>
 </ol>
 </li>
-<li><h3 id="乐观锁机制"><a href="#乐观锁机制" class="headerlink" title="乐观锁机制"></a>乐观锁机制</h3><p>  这种方法适合在更新的场景中<code>update t_goods set count = count -1 , version = version + 1 where good_id=2 and version = 1</code><br>  根据<code>version</code>版本，也就是在操作库存前先获取当前商品的<code>version</code>版本号，然后操作的时候带上此<code>version</code>号。我们梳理下，我们第一次操作库存时，得到<code>version</code>为<code>1</code>，调用库存服务<code>version</code>变成了<code>2</code>；但返回给订单服务出现了问题，订单服务又一次发起调用库存服务，当订单服务传如的<code>version</code>还是<code>1</code>，再执行上面的<code>sql</code>语句时，就不会执行；因为<code>version</code>已经变为<code>2</code>了，<code>where</code>条件就不成立。这样就保证了不管调用几次，只会真正的处理一次。<br>  乐观锁主要使用于处理读多写少的问题</p>
+<li>
+<h3 id="乐观锁机制"><a class="markdownIt-Anchor" href="#乐观锁机制">#</a> 乐观锁机制</h3>
+<p>这种方法适合在更新的场景中 <code>update t_goods set count = count -1 , version = version + 1 where good_id=2 and version = 1</code> <br>
+ 根据 <code>version</code>  版本，也就是在操作库存前先获取当前商品的 <code>version</code>  版本号，然后操作的时候带上此 <code>version</code>  号。我们梳理下，我们第一次操作库存时，得到 <code>version</code>  为 <code>1</code> ，调用库存服务 <code>version</code>  变成了 <code>2</code> ；但返回给订单服务出现了问题，订单服务又一次发起调用库存服务，当订单服务传如的 <code>version</code>  还是 <code>1</code> ，再执行上面的 <code>sql</code>  语句时，就不会执行；因为 <code>version</code>  已经变为 <code>2</code>  了， <code>where</code>  条件就不成立。这样就保证了不管调用几次，只会真正的处理一次。<br>
+乐观锁主要使用于处理读多写少的问题</p>
 </li>
-<li><h3 id="唯一主键"><a href="#唯一主键" class="headerlink" title="唯一主键"></a>唯一主键</h3><p>  这个机制是利用了数据库的主键唯一约束的特性，解决了在<code>insert</code>场景时幂等问题。但主键的要求不是自增的主键，这样就需要业务生成全局唯一的主键。</p>
-<p>  如果是分库分表场景下，路由规则要保证相同请求下，落地在同一个数据库和同一表中，要不然数据库主键约束就不起效果了，因为是不同的数据库和表主键不相关。</p>
+<li>
+<h3 id="唯一主键"><a class="markdownIt-Anchor" href="#唯一主键">#</a> 唯一主键</h3>
+<p>这个机制是利用了数据库的主键唯一约束的特性，解决了在 <code>insert</code>  场景时幂等问题。但主键的要求不是自增的主键，这样就需要业务生成全局唯一的主键。</p>
+<p>如果是分库分表场景下，路由规则要保证相同请求下，落地在同一个数据库和同一表中，要不然数据库主键约束就不起效果了，因为是不同的数据库和表主键不相关。</p>
 </li>
-<li><h3 id="防重表"><a href="#防重表" class="headerlink" title="防重表"></a>防重表</h3><p>  使用订单号<code>orderNo</code>做为去重表的唯一索引，把唯一索引插入去重表，再进行业务操作，且他们在同一个事务中。这个保证了重复请求时，因为去重表有唯一约束，导致请求失败，避免了幂等问题。这里要注意的是，去重表和业务表应该在同一库中，这样就保证了在同一个事务，即使业务操作失败了，也会把去重表的数据回滚。这个很好的保证了数据一致性。</p>
+<li>
+<h3 id="防重表"><a class="markdownIt-Anchor" href="#防重表">#</a> 防重表</h3>
+<p>使用订单号 <code>orderNo</code>  做为去重表的唯一索引，把唯一索引插入去重表，再进行业务操作，且他们在同一个事务中。这个保证了重复请求时，因为去重表有唯一约束，导致请求失败，避免了幂等问题。这里要注意的是，去重表和业务表应该在同一库中，这样就保证了在同一个事务，即使业务操作失败了，也会把去重表的数据回滚。这个很好的保证了数据一致性。</p>
 </li>
-<li><h3 id="唯一ID"><a href="#唯一ID" class="headerlink" title="唯一ID"></a>唯一<code>ID</code></h3><p>  调用接口时，生成一个唯一<code>id</code>，<code>redis</code>将数据保存到集合中（去重），存在即处理过。</p>
+<li>
+<h3 id="唯一id"><a class="markdownIt-Anchor" href="#唯一id">#</a> 唯一 <code>ID</code></h3>
+<p>调用接口时，生成一个唯一 <code>id</code> ， <code>redis</code>  将数据保存到集合中（去重），存在即处理过。</p>
 </li>
 </ul>
 
@@ -265,7 +292,7 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
     <div class="item left">
       
 
-  <a href="/posts/59de1824/" itemprop="url" rel="prev" data-background-image="https:&#x2F;&#x2F;tva2.sinaimg.cn&#x2F;mw690&#x2F;6833939bly1gipev1x5e4j20zk0m8b29.jpg" title="spring中&#x2F;和&#x2F;*和&#x2F;**的区别">
+  <a href="/posts/59de1824/" itemprop="url" rel="prev" data-background-image="https:&#x2F;&#x2F;tva3.sinaimg.cn&#x2F;mw690&#x2F;6833939bly1giclxxcb6rj20zk0m8b29.jpg" title="spring中&#x2F;和&#x2F;*和&#x2F;**的区别">
   <span class="type">Previous Post</span>
   <span class="category"><i class="ic i-flag"></i> SpringBoot</span>
   <h3>spring中/和/*和/**的区别</h3>
@@ -275,7 +302,7 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
     <div class="item right">
       
 
-  <a href="/posts/3eb5e557/" itemprop="url" rel="next" data-background-image="https:&#x2F;&#x2F;tva2.sinaimg.cn&#x2F;mw690&#x2F;6833939bly1giclimtf7dj20zk0m8qav.jpg" title="赛可出行面试">
+  <a href="/posts/3eb5e557/" itemprop="url" rel="next" data-background-image="https:&#x2F;&#x2F;tva3.sinaimg.cn&#x2F;mw690&#x2F;6833939bly1giclh0m9pdj20zk0m8hdt.jpg" title="赛可出行面试">
   <span class="type">Next Post</span>
   <span class="category"><i class="ic i-flag"></i> Java面试</span>
   <h3>赛可出行面试</h3>
@@ -297,7 +324,7 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
   <div class="panels">
     <div class="inner">
       <div class="contents panel pjax" data-title="Contents">
-          <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%A6%82%E4%BD%95%E4%BF%9D%E8%AF%81%E6%8E%A5%E5%8F%A3%E7%9A%84%E5%B9%82%E7%AD%89%E6%80%A7"><span class="toc-number">1.</span> <span class="toc-text">如何保证接口的幂等性</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BB%80%E4%B9%88%E6%98%AF%E5%B9%82%E7%AD%89%E6%80%A7"><span class="toc-number">1.1.</span> <span class="toc-text">什么是幂等性</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BB%80%E4%B9%88%E6%83%85%E5%86%B5%E4%B8%8B%E9%9C%80%E8%A6%81%E5%B9%82%E7%AD%89"><span class="toc-number">1.2.</span> <span class="toc-text">什么情况下需要幂等</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%A6%82%E4%BD%95%E4%BF%9D%E8%AF%81%E5%B9%82%E7%AD%89"><span class="toc-number">1.3.</span> <span class="toc-text">如何保证幂等</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#token%E6%9C%BA%E5%88%B6"><span class="toc-number">1.3.1.</span> <span class="toc-text">token机制</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%85%B3%E9%94%AE%E7%82%B9-%E5%85%88%E5%88%A0%E9%99%A4token%EF%BC%8C%E8%BF%98%E6%98%AF%E5%90%8E%E5%88%A0%E9%99%A4token%E3%80%82"><span class="toc-number">1.3.1.1.</span> <span class="toc-text">关键点 先删除token，还是后删除token。</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#token%E6%9C%BA%E5%88%B6%E7%BC%BA%E7%82%B9"><span class="toc-number">1.3.1.2.</span> <span class="toc-text">token机制缺点</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%B9%90%E8%A7%82%E9%94%81%E6%9C%BA%E5%88%B6"><span class="toc-number">1.3.2.</span> <span class="toc-text">乐观锁机制</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%94%AF%E4%B8%80%E4%B8%BB%E9%94%AE"><span class="toc-number">1.3.3.</span> <span class="toc-text">唯一主键</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%98%B2%E9%87%8D%E8%A1%A8"><span class="toc-number">1.3.4.</span> <span class="toc-text">防重表</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%94%AF%E4%B8%80ID"><span class="toc-number">1.3.5.</span> <span class="toc-text">唯一ID</span></a></li></ol></li></ol></li></ol>
+          <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%A6%82%E4%BD%95%E4%BF%9D%E8%AF%81%E6%8E%A5%E5%8F%A3%E7%9A%84%E5%B9%82%E7%AD%89%E6%80%A7"><span class="toc-number">1.</span> <span class="toc-text"> 如何保证接口的幂等性</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BB%80%E4%B9%88%E6%98%AF%E5%B9%82%E7%AD%89%E6%80%A7"><span class="toc-number">1.1.</span> <span class="toc-text"> 什么是幂等性</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BB%80%E4%B9%88%E6%83%85%E5%86%B5%E4%B8%8B%E9%9C%80%E8%A6%81%E5%B9%82%E7%AD%89"><span class="toc-number">1.2.</span> <span class="toc-text"> 什么情况下需要幂等</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%A6%82%E4%BD%95%E4%BF%9D%E8%AF%81%E5%B9%82%E7%AD%89"><span class="toc-number">1.3.</span> <span class="toc-text"> 如何保证幂等</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#token%E6%9C%BA%E5%88%B6"><span class="toc-number">1.3.1.</span> <span class="toc-text">  token  机制</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%85%B3%E9%94%AE%E7%82%B9-%E5%85%88%E5%88%A0%E9%99%A4token%E8%BF%98%E6%98%AF%E5%90%8E%E5%88%A0%E9%99%A4token"><span class="toc-number">1.3.1.1.</span> <span class="toc-text"> 关键点 先删除 token ，还是后删除 token 。</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#token%E6%9C%BA%E5%88%B6%E7%BC%BA%E7%82%B9"><span class="toc-number">1.3.1.2.</span> <span class="toc-text">  token  机制缺点</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%B9%90%E8%A7%82%E9%94%81%E6%9C%BA%E5%88%B6"><span class="toc-number">1.3.2.</span> <span class="toc-text"> 乐观锁机制</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%94%AF%E4%B8%80%E4%B8%BB%E9%94%AE"><span class="toc-number">1.3.3.</span> <span class="toc-text"> 唯一主键</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%98%B2%E9%87%8D%E8%A1%A8"><span class="toc-number">1.3.4.</span> <span class="toc-text"> 防重表</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%94%AF%E4%B8%80id"><span class="toc-number">1.3.5.</span> <span class="toc-text"> 唯一 ID</span></a></li></ol></li></ol></li></ol>
       </div>
       <div class="related panel pjax" data-title="Related">
         <ul>
@@ -406,10 +433,22 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
   <li class="item">
     
 <div class="breadcrumb">
-<a href="/categories/LeetCode/" title="In LeetCode">LeetCode</a>
+<a href="/categories/Daily/" title="In Daily">Daily</a>
 </div>
 
-    <span><a href="/posts/4491edd3/" title="LeetCode07_整数反转">LeetCode07_整数反转</a></span>
+    <span><a href="/posts/9a0369ec/" title="布隆过滤器">布隆过滤器</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/Java/" title="In Java">Java</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/Java/Stream/" title="In Stream">Stream</a>
+</div>
+
+    <span><a href="/posts/8b8fedea/" title="Stream流的介绍">Stream流的介绍</a></span>
   </li>
 
       
@@ -418,10 +457,42 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
 <div class="breadcrumb">
 <a href="/categories/%E5%89%8D%E7%AB%AF/" title="In 前端">前端</a>
 <i class="ic i-angle-right"></i>
-<a href="/categories/%E5%89%8D%E7%AB%AF/Vue/" title="In Vue">Vue</a>
+<a href="/categories/%E5%89%8D%E7%AB%AF/Css/" title="In Css">Css</a>
 </div>
 
-    <span><a href="/posts/8408ed11/" title="Vue-Cli介绍以及使用">Vue-Cli介绍以及使用</a></span>
+    <span><a href="/posts/2e6621e1/" title="DisPlay属性">DisPlay属性</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/Java%E9%9D%A2%E8%AF%95/" title="In Java面试">Java面试</a>
+</div>
+
+    <span><a href="/posts/6b5f7afc/" title="面试之旅关于Java知识点">面试之旅关于Java知识点</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/Ubuntu/" title="In Ubuntu">Ubuntu</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/Ubuntu/Mysql/" title="In Mysql">Mysql</a>
+</div>
+
+    <span><a href="/posts/31f95091/" title="Ubuntu中安装卸载Mysql数据库">Ubuntu中安装卸载Mysql数据库</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/Java/" title="In Java">Java</a>
+</div>
+
+    <span><a href="/posts/97604c34/" title="获取指定集合要求中的mapkey值并重新返回map">获取指定集合要求中的mapkey值并重新返回map</a></span>
   </li>
 
       
@@ -430,45 +501,7 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
 <div class="breadcrumb">
 </div>
 
-    <span><a href="/posts/159c6098/" title="阻塞队列">阻塞队列</a></span>
-  </li>
-
-      
-  <li class="item">
-    
-<div class="breadcrumb">
-<a href="/categories/UML/" title="In UML">UML</a>
-</div>
-
-    <span><a href="/posts/f610585/" title="UML:类图关系总结">UML:类图关系总结</a></span>
-  </li>
-
-      
-  <li class="item">
-    
-<div class="breadcrumb">
-</div>
-
-    <span><a href="/posts/49a9ac1a/" title="Springboot优雅的实现重试">Springboot优雅的实现重试</a></span>
-  </li>
-
-      
-  <li class="item">
-    
-<div class="breadcrumb">
-<a href="/categories/Hexo/" title="In Hexo">Hexo</a>
-</div>
-
-    <span><a href="/posts/575a6046/" title="Hexo-Next主题如何文章置顶">Hexo-Next主题如何文章置顶</a></span>
-  </li>
-
-      
-  <li class="item">
-    
-<div class="breadcrumb">
-</div>
-
-    <span><a href="/posts/f35c5140/" title="JAVA-jar包运行及日志输出">JAVA-jar包运行及日志输出</a></span>
+    <span><a href="/posts/56be7cc9/" title="关于Linux排查问题命令">关于Linux排查问题命令</a></span>
   </li>
 
       
@@ -478,31 +511,29 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
 <a href="/categories/%E6%95%B0%E6%8D%AE%E5%BA%93/" title="In 数据库">数据库</a>
 </div>
 
-    <span><a href="/posts/388f5c14/" title="mysql日期加减">mysql日期加减</a></span>
+    <span><a href="/posts/96e2d97b/" title="mysql 获取当前日期及格式化">mysql 获取当前日期及格式化</a></span>
   </li>
 
       
   <li class="item">
     
 <div class="breadcrumb">
-<a href="/categories/Java/" title="In Java">Java</a>
+<a href="/categories/Hexo/" title="In Hexo">Hexo</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/Hexo/Tools/" title="In Tools">Tools</a>
 </div>
 
-    <span><a href="/posts/e18abc1d/" title="关于YAML中List存放Map">关于YAML中List存放Map</a></span>
+    <span><a href="/posts/45934af9/" title="使用vscode书写hexo博客粘贴图片解决方案">使用vscode书写hexo博客粘贴图片解决方案</a></span>
   </li>
 
       
   <li class="item">
     
 <div class="breadcrumb">
-<a href="/categories/Java/" title="In Java">Java</a>
-<i class="ic i-angle-right"></i>
-<a href="/categories/Java/Java%E9%9D%A2%E8%AF%95/" title="In Java面试">Java面试</a>
-<i class="ic i-angle-right"></i>
-<a href="/categories/Java/Java%E9%9D%A2%E8%AF%95/SpringBoot/" title="In SpringBoot">SpringBoot</a>
+<a href="/categories/Git/" title="In Git">Git</a>
 </div>
 
-    <span><a href="/posts/5e7baeeb/" title="过滤器和拦截器的区别">过滤器和拦截器的区别</a></span>
+    <span><a href="/posts/424eebf1/" title="关于在IDEA中回滚Git版本">关于在IDEA中回滚Git版本</a></span>
   </li>
 
   </ul>

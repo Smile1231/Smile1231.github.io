@@ -117,12 +117,12 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
       </div>
       <div id="imgs" class="pjax">
         <ul>
-          <li class="item" data-background-image="https://tva2.sinaimg.cn/large/6833939bly1giclhtuo6nj20zk0m8ttm.jpg"></li>
-          <li class="item" data-background-image="https://tva2.sinaimg.cn/large/6833939bly1gipew8gmvyj20zk0m87wh.jpg"></li>
-          <li class="item" data-background-image="https://tva2.sinaimg.cn/large/6833939bly1gicm0fdw5cj20zk0m8hdt.jpg"></li>
-          <li class="item" data-background-image="https://tva2.sinaimg.cn/large/6833939bly1gipexbei4hj20zk0m8npd.jpg"></li>
-          <li class="item" data-background-image="https://tva2.sinaimg.cn/large/6833939bly1giclg5ms2rj20zk0m8u0x.jpg"></li>
-          <li class="item" data-background-image="https://tva2.sinaimg.cn/large/6833939bly1gicitspjpbj20zk0m81ky.jpg"></li>
+          <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1gicitht3xtj20zk0m8k5v.jpg"></li>
+          <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1giclize41wj20zk0m87gk.jpg"></li>
+          <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1gicli3sbvtj20zk0m8x6p.jpg"></li>
+          <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1giciszlczyj20zk0m816d.jpg"></li>
+          <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1gipevarprfj20zk0m8npd.jpg"></li>
+          <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1gipeyhsblkj20zk0m81kx.jpg"></li>
         </ul>
       </div>
     </header>
@@ -177,27 +177,25 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
   <div class="body md" itemprop="articleBody">
     
 
-    <h1 id="MybatisPlus实现分页查询"><a href="#MybatisPlus实现分页查询" class="headerlink" title="MybatisPlus实现分页查询"></a><code>MybatisPlus</code>实现分页查询</h1><h2 id="分页区别"><a href="#分页区别" class="headerlink" title="分页区别"></a>分页区别</h2><p>分页查询每个人程序猿几乎都使用过，但是有部分同学不懂什么是物理分页和逻辑分页。</p>
-<p>物理分页：相当于执行了<code>limit</code>分页语句，返回部分数据。物理分页只返回部分数据占用内存小，能够获取数据库最新的状态，实施性比较强，一般适用于数据量比较大，数据更新比较频繁的场景。</p>
+    <h1 id="mybatisplus实现分页查询"><a class="markdownIt-Anchor" href="#mybatisplus实现分页查询">#</a>  <code>MybatisPlus</code>  实现分页查询</h1>
+<h2 id="分页区别"><a class="markdownIt-Anchor" href="#分页区别">#</a> 分页区别</h2>
+<p>分页查询每个人程序猿几乎都使用过，但是有部分同学不懂什么是物理分页和逻辑分页。</p>
+<p>物理分页：相当于执行了 <code>limit</code>  分页语句，返回部分数据。物理分页只返回部分数据占用内存小，能够获取数据库最新的状态，实施性比较强，一般适用于数据量比较大，数据更新比较频繁的场景。</p>
 <p>逻辑分页：一次性把全部的数据取出来，通过程序进行筛选数据。如果数据量大的情况下会消耗大量的内存，由于逻辑分页只需要读取数据库一次，不能获取数据库最新状态，实施性比较差，适用于数据量小，数据稳定的场合。</p>
-<p>那么MP中的物理分页怎么实现呢？ 往下看往下看</p>
+<p>那么 MP 中的物理分页怎么实现呢？ 往下看往下看</p>
 <span id="more"></span>
-
-<h2 id="配置"><a href="#配置" class="headerlink" title="配置"></a>配置</h2><p>需要新建一个<code>JavaConfig</code>类</p>
+<h2 id="配置"><a class="markdownIt-Anchor" href="#配置">#</a> 配置</h2>
+<p>需要新建一个 <code>JavaConfig</code>  类</p>
 <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">@Configuration</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">MyBatisPlusConfig</span> </span>&#123;</span><br><span class="line">    <span class="comment">/**</span></span><br><span class="line"><span class="comment">     * 分页插件</span></span><br><span class="line"><span class="comment">     * <span class="doctag">@return</span></span></span><br><span class="line"><span class="comment">     */</span></span><br><span class="line">    <span class="meta">@Bean</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> PaginationInterceptor <span class="title">paginationInterceptor</span><span class="params">()</span> </span>&#123;</span><br><span class="line">        <span class="keyword">return</span> <span class="keyword">new</span> PaginationInterceptor();</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<h2 id="具体分页实现"><a href="#具体分页实现" class="headerlink" title="具体分页实现"></a>具体分页实现</h2><p><code>MP</code>的<code>Wrapper</code>提供了两种分页查询的方式，源码如下：</p>
+<h2 id="具体分页实现"><a class="markdownIt-Anchor" href="#具体分页实现">#</a> 具体分页实现</h2>
+<p><code>MP</code>  的 <code>Wrapper</code>  提供了两种分页查询的方式，源码如下：</p>
 <img data-src="/posts/2edf7887/2022-02-13-22-35-05.png" class="">
-
 <p>可见两个分页方法参数都是一致的，只是返回参数略有不同，具体选择根据实际业务为准。</p>
 <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment">* 分页查询</span></span><br><span class="line"><span class="comment">*/</span></span><br><span class="line"><span class="meta">@Test</span></span><br><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">selectByPage</span><span class="params">()</span> </span>&#123;</span><br><span class="line">    QueryWrapper&lt;User&gt; wrapper = <span class="keyword">new</span> QueryWrapper();</span><br><span class="line">    wrapper.like(<span class="string">&quot;name&quot;</span>, <span class="string">&quot;雨&quot;</span>).lt(<span class="string">&quot;age&quot;</span>, <span class="number">40</span>);</span><br><span class="line"></span><br><span class="line">    Page&lt;User&gt; page = <span class="keyword">new</span> Page&lt;&gt;(<span class="number">1</span>,<span class="number">2</span>);</span><br><span class="line"></span><br><span class="line">    <span class="comment">//IPage&lt;User&gt; userIPage = userMapper.selectPage(page, wrapper);</span></span><br><span class="line"></span><br><span class="line">    IPage&lt;Map&lt;String, Object&gt;&gt; mapIPage = userMapper.selectMapsPage(page, wrapper);</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">    System.out.println(<span class="string">&quot;总页数&quot;</span>+mapIPage.getPages());</span><br><span class="line">    System.out.println(<span class="string">&quot;总记录数&quot;</span>+mapIPage.getTotal());</span><br><span class="line">    List&lt;Map&lt;String, Object&gt;&gt; records = mapIPage.getRecords();</span><br><span class="line">    records.forEach(System.out::println);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p>以上分页查询执行<code>sql</code>如下，先是查询了一次总记录数，然后在查询的数据。</p>
+<p>以上分页查询执行 <code>sql</code>  如下，先是查询了一次总记录数，然后在查询的数据。</p>
 <figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">DEBUG<span class="operator">=</span><span class="operator">=</span><span class="operator">&gt;</span>  Preparing: <span class="keyword">SELECT</span> <span class="built_in">COUNT</span>(<span class="number">1</span>) <span class="keyword">FROM</span> <span class="keyword">user</span> <span class="keyword">WHERE</span> name <span class="keyword">LIKE</span> ? <span class="keyword">AND</span> age <span class="operator">&lt;</span> ? </span><br><span class="line">DEBUG<span class="operator">=</span><span class="operator">=</span><span class="operator">&gt;</span> Parameters: <span class="operator">%</span>雨<span class="operator">%</span>(String), <span class="number">40</span>(<span class="type">Integer</span>)</span><br><span class="line">TRACE<span class="operator">&lt;=</span><span class="operator">=</span>    Columns: <span class="built_in">COUNT</span>(<span class="number">1</span>)</span><br><span class="line">TRACE<span class="operator">&lt;=</span><span class="operator">=</span>        <span class="type">Row</span>: <span class="number">2</span></span><br><span class="line">DEBUG<span class="operator">=</span><span class="operator">=</span><span class="operator">&gt;</span>  Preparing: <span class="keyword">SELECT</span> id,name,age,email,manager_id,create_time <span class="keyword">FROM</span> <span class="keyword">user</span> <span class="keyword">WHERE</span> name <span class="keyword">LIKE</span> ? <span class="keyword">AND</span> age <span class="operator">&lt;</span> ? LIMIT ?,? </span><br><span class="line">DEBUG<span class="operator">=</span><span class="operator">=</span><span class="operator">&gt;</span> Parameters: <span class="operator">%</span>雨<span class="operator">%</span>(String), <span class="number">40</span>(<span class="type">Integer</span>), <span class="number">0</span>(Long), <span class="number">2</span>(Long)</span><br><span class="line">TRACE<span class="operator">&lt;=</span><span class="operator">=</span>    Columns: id, name, age, email, manager_id, create_time</span><br><span class="line">TRACE<span class="operator">&lt;=</span><span class="operator">=</span>        <span class="type">Row</span>: <span class="number">2</span>, 张雨琪, <span class="number">31</span>, zjq<span class="variable">@baomidou</span>.com, <span class="number">1088248166370832385</span>, <span class="number">2021</span><span class="number">-01</span><span class="number">-14</span> <span class="number">09</span>:<span class="number">15</span>:<span class="number">15</span></span><br><span class="line">TRACE<span class="operator">&lt;=</span><span class="operator">=</span>        <span class="type">Row</span>: <span class="number">3</span>, 刘红雨, <span class="number">31</span>, lhm<span class="variable">@baomidou</span>.com, <span class="number">1088248166370832385</span>, <span class="number">2021</span><span class="number">-01</span><span class="number">-14</span> <span class="number">09</span>:<span class="number">48</span>:<span class="number">16</span></span><br><span class="line">DEBUG<span class="operator">&lt;=</span><span class="operator">=</span>      Total: <span class="number">2</span></span><br><span class="line">总页数<span class="number">1</span></span><br><span class="line">总记录数<span class="number">2</span></span><br></pre></td></tr></table></figure>
-<p>现在我们有需求只要查询数据即可， 不关心总记录数等，如果使用默认的方式就消耗不必要的性能。那么解决办法也是很简单的，只需要在创建<code>page</code>对象时传入第三个参数为<code>false</code>即可。</p>
+<p>现在我们有需求只要查询数据即可， 不关心总记录数等，如果使用默认的方式就消耗不必要的性能。那么解决办法也是很简单的，只需要在创建 <code>page</code>  对象时传入第三个参数为 <code>false</code>  即可。</p>
 <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Page&lt;User&gt; page = <span class="keyword">new</span> Page&lt;&gt;(<span class="number">1</span>,<span class="number">2</span>,<span class="keyword">false</span>);</span><br></pre></td></tr></table></figure>
-
-
-
-
 
       <div class="tags">
           <a href="/tags/Java/" rel="tag"><i class="ic i-tag"></i> Java</a>
@@ -255,7 +253,7 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
     <div class="item left">
       
 
-  <a href="/posts/31dc52e1/" itemprop="url" rel="prev" data-background-image="https:&#x2F;&#x2F;tva2.sinaimg.cn&#x2F;mw690&#x2F;6833939bly1giph4fomxoj20zk0m8axp.jpg" title="MyBatis之分页查询：MyBatis PageHelper">
+  <a href="/posts/31dc52e1/" itemprop="url" rel="prev" data-background-image="https:&#x2F;&#x2F;tva3.sinaimg.cn&#x2F;mw690&#x2F;6833939bly1giclflwv2aj20zk0m84qp.jpg" title="MyBatis之分页查询：MyBatis PageHelper">
   <span class="type">Previous Post</span>
   <span class="category"><i class="ic i-flag"></i> SpringBoot</span>
   <h3>MyBatis之分页查询：MyBatis PageHelper</h3>
@@ -265,7 +263,7 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
     <div class="item right">
       
 
-  <a href="/posts/c112412d/" itemprop="url" rel="next" data-background-image="https:&#x2F;&#x2F;tva2.sinaimg.cn&#x2F;mw690&#x2F;6833939bly1giclg5ms2rj20zk0m8u0x.jpg" title="Mybatis封装成Map结果">
+  <a href="/posts/c112412d/" itemprop="url" rel="next" data-background-image="https:&#x2F;&#x2F;tva3.sinaimg.cn&#x2F;mw690&#x2F;6833939bly1giclhfehz7j20zk0m8u0x.jpg" title="Mybatis封装成Map结果">
   <span class="type">Next Post</span>
   <span class="category"><i class="ic i-flag"></i> SpringBoot</span>
   <h3>Mybatis封装成Map结果</h3>
@@ -287,7 +285,7 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
   <div class="panels">
     <div class="inner">
       <div class="contents panel pjax" data-title="Contents">
-          <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#MybatisPlus%E5%AE%9E%E7%8E%B0%E5%88%86%E9%A1%B5%E6%9F%A5%E8%AF%A2"><span class="toc-number">1.</span> <span class="toc-text">MybatisPlus实现分页查询</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%88%86%E9%A1%B5%E5%8C%BA%E5%88%AB"><span class="toc-number">1.1.</span> <span class="toc-text">分页区别</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E9%85%8D%E7%BD%AE"><span class="toc-number">1.2.</span> <span class="toc-text">配置</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%85%B7%E4%BD%93%E5%88%86%E9%A1%B5%E5%AE%9E%E7%8E%B0"><span class="toc-number">1.3.</span> <span class="toc-text">具体分页实现</span></a></li></ol></li></ol>
+          <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#mybatisplus%E5%AE%9E%E7%8E%B0%E5%88%86%E9%A1%B5%E6%9F%A5%E8%AF%A2"><span class="toc-number">1.</span> <span class="toc-text">  MybatisPlus  实现分页查询</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%88%86%E9%A1%B5%E5%8C%BA%E5%88%AB"><span class="toc-number">1.1.</span> <span class="toc-text"> 分页区别</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E9%85%8D%E7%BD%AE"><span class="toc-number">1.2.</span> <span class="toc-text"> 配置</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%85%B7%E4%BD%93%E5%88%86%E9%A1%B5%E5%AE%9E%E7%8E%B0"><span class="toc-number">1.3.</span> <span class="toc-text"> 具体分页实现</span></a></li></ol></li></ol>
       </div>
       <div class="related panel pjax" data-title="Related">
         <ul>
@@ -396,73 +394,12 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
   <li class="item">
     
 <div class="breadcrumb">
-<a href="/categories/Java/" title="In Java">Java</a>
-</div>
-
-    <span><a href="/posts/60a1e80e/" title="java判断日期周几">java判断日期周几</a></span>
-  </li>
-
-      
-  <li class="item">
-    
-<div class="breadcrumb">
-<a href="/categories/Java%E9%9D%A2%E8%AF%95/" title="In Java面试">Java面试</a>
-</div>
-
-    <span><a href="/posts/a5258aa2/" title="Java面试小册子">Java面试小册子</a></span>
-  </li>
-
-      
-  <li class="item">
-    
-<div class="breadcrumb">
-<a href="/categories/SAP/" title="In SAP">SAP</a>
-</div>
-
-    <span><a href="/posts/ef55dc85/" title="CEST与北京时间转换表">CEST与北京时间转换表</a></span>
-  </li>
-
-      
-  <li class="item">
-    
-<div class="breadcrumb">
-</div>
-
-    <span><a href="/posts/ac1ae082/" title="SpringBoot如何优雅的发邮件">SpringBoot如何优雅的发邮件</a></span>
-  </li>
-
-      
-  <li class="item">
-    
-<div class="breadcrumb">
 <a href="/categories/Java%E9%9D%A2%E8%AF%95/" title="In Java面试">Java面试</a>
 <i class="ic i-angle-right"></i>
-<a href="/categories/Java%E9%9D%A2%E8%AF%95/Spring%E4%BA%8B%E5%8A%A1/" title="In Spring事务">Spring事务</a>
+<a href="/categories/Java%E9%9D%A2%E8%AF%95/Tools/" title="In Tools">Tools</a>
 </div>
 
-    <span><a href="/posts/7e4601e3/" title="面试之旅之关于Spring事务处理">面试之旅之关于Spring事务处理</a></span>
-  </li>
-
-      
-  <li class="item">
-    
-<div class="breadcrumb">
-<a href="/categories/DDD/" title="In DDD">DDD</a>
-</div>
-
-    <span><a href="/posts/3fec5852/" title="DDD领域驱动设计">DDD领域驱动设计</a></span>
-  </li>
-
-      
-  <li class="item">
-    
-<div class="breadcrumb">
-<a href="/categories/Java%E9%9D%A2%E8%AF%95/" title="In Java面试">Java面试</a>
-<i class="ic i-angle-right"></i>
-<a href="/categories/Java%E9%9D%A2%E8%AF%95/SpringBoot/" title="In SpringBoot">SpringBoot</a>
-</div>
-
-    <span><a href="/posts/eec4b728/" title="SpringBoot中如何优雅的使用多线程">SpringBoot中如何优雅的使用多线程</a></span>
+    <span><a href="/posts/6714b4a9/" title="FastJson序列化使用">FastJson序列化使用</a></span>
   </li>
 
       
@@ -470,13 +407,39 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
     
 <div class="breadcrumb">
 <a href="/categories/Java/" title="In Java">Java</a>
-<i class="ic i-angle-right"></i>
-<a href="/categories/Java/Mybatis/" title="In Mybatis">Mybatis</a>
-<i class="ic i-angle-right"></i>
-<a href="/categories/Java/Mybatis/SpringBoot/" title="In SpringBoot">SpringBoot</a>
 </div>
 
-    <span><a href="/posts/31dc52e1/" title="MyBatis之分页查询：MyBatis PageHelper">MyBatis之分页查询：MyBatis PageHelper</a></span>
+    <span><a href="/posts/b536fa7f/" title="关于junit测试类防止事务回滚">关于junit测试类防止事务回滚</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/Tools/" title="In Tools">Tools</a>
+</div>
+
+    <span><a href="/posts/ba83fda/" title="超级好用的StringJoiner">超级好用的StringJoiner</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/%E5%A4%A7%E6%95%B0%E6%8D%AE/" title="In 大数据">大数据</a>
+</div>
+
+    <span><a href="/posts/737c98ca/" title="什么是MapReduce">什么是MapReduce</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/Java/" title="In Java">Java</a>
+</div>
+
+    <span><a href="/posts/4ca5bfdf/" title="Spring手动回滚事务">Spring手动回滚事务</a></span>
   </li>
 
       
@@ -485,17 +448,59 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
 <div class="breadcrumb">
 </div>
 
-    <span><a href="/posts/afe5178f/" title="关于设置git以及npm代理">关于设置git以及npm代理</a></span>
+    <span><a href="/posts/159c6098/" title="阻塞队列">阻塞队列</a></span>
   </li>
 
       
   <li class="item">
     
 <div class="breadcrumb">
-<a href="/categories/IDEA/" title="In IDEA">IDEA</a>
+<a href="/categories/Java%E9%9D%A2%E8%AF%95/" title="In Java面试">Java面试</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/Java%E9%9D%A2%E8%AF%95/Jvm/" title="In Jvm">Jvm</a>
 </div>
 
-    <span><a href="/posts/579bb697/" title="IDEA小图标含义">IDEA小图标含义</a></span>
+    <span><a href="/posts/57681474/" title="JVM简单原理">JVM简单原理</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/Java%E9%9D%A2%E8%AF%95/" title="In Java面试">Java面试</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/Java%E9%9D%A2%E8%AF%95/%E7%9B%B4%E6%8E%A5%E6%8F%92%E5%85%A5%E6%8E%92%E5%BA%8F/" title="In 直接插入排序">直接插入排序</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/Java%E9%9D%A2%E8%AF%95/%E7%9B%B4%E6%8E%A5%E6%8F%92%E5%85%A5%E6%8E%92%E5%BA%8F/%E7%AE%97%E6%B3%95/" title="In 算法">算法</a>
+</div>
+
+    <span><a href="/posts/2b06d603/" title="直接插入排序">直接插入排序</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/Java%E9%9D%A2%E8%AF%95/" title="In Java面试">Java面试</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/Java%E9%9D%A2%E8%AF%95/%E5%BF%AB%E9%80%9F%E6%8E%92%E5%BA%8F/" title="In 快速排序">快速排序</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/Java%E9%9D%A2%E8%AF%95/%E5%BF%AB%E9%80%9F%E6%8E%92%E5%BA%8F/%E7%AE%97%E6%B3%95/" title="In 算法">算法</a>
+</div>
+
+    <span><a href="/posts/ff8068c0/" title="快速排序">快速排序</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/%E5%89%8D%E7%AB%AF/" title="In 前端">前端</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/%E5%89%8D%E7%AB%AF/JavaScript/" title="In JavaScript">JavaScript</a>
+</div>
+
+    <span><a href="/posts/4aa00b9a/" title="Js中的some、find、findindex、includes、filter的使用">Js中的some、find、findindex、includes、filter的使用</a></span>
   </li>
 
   </ul>

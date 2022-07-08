@@ -117,12 +117,12 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
       </div>
       <div id="imgs" class="pjax">
         <ul>
-          <li class="item" data-background-image="https://tva2.sinaimg.cn/large/6833939bly1gipevarprfj20zk0m8npd.jpg"></li>
-          <li class="item" data-background-image="https://tva2.sinaimg.cn/large/6833939bly1giclj9410cj20zk0m8h12.jpg"></li>
-          <li class="item" data-background-image="https://tva2.sinaimg.cn/large/6833939bly1gicliierfjj20zk0m8npd.jpg"></li>
-          <li class="item" data-background-image="https://tva2.sinaimg.cn/large/6833939bly1gipeun65urj20zk0m81ii.jpg"></li>
-          <li class="item" data-background-image="https://tva2.sinaimg.cn/large/6833939bly1gipexoj0moj20zk0m8kgu.jpg"></li>
-          <li class="item" data-background-image="https://tva2.sinaimg.cn/large/6833939bly1giph47e9vtj20zk0m8x6l.jpg"></li>
+          <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1giclflwv2aj20zk0m84qp.jpg"></li>
+          <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1gipetlbztpj20zk0m84qp.jpg"></li>
+          <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1giciundwu5j20zk0m8n9e.jpg"></li>
+          <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1giciukx8a7j20zk0m8aio.jpg"></li>
+          <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1gipexw3o58j20zk0m8e81.jpg"></li>
+          <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1giclhtuo6nj20zk0m8ttm.jpg"></li>
         </ul>
       </div>
     </header>
@@ -171,104 +171,92 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
   <div class="body md" itemprop="articleBody">
     
 
-    <h1 id="java-stream中Collectors的用法"><a href="#java-stream中Collectors的用法" class="headerlink" title="java stream中Collectors的用法"></a><code>java stream</code>中<code>Collectors</code>的用法</h1><ul>
-<li><a href="#java-stream%E4%B8%ADcollectors%E7%9A%84%E7%94%A8%E6%B3%95"><code>java stream</code>中<code>Collectors</code>的用法</a><ul>
+    <h1 id="java-stream中collectors的用法"><a class="markdownIt-Anchor" href="#java-stream中collectors的用法">#</a>  <code>java stream</code>  中 <code>Collectors</code>  的用法</h1>
+<ul>
+<li><a href="#java-stream%E4%B8%ADcollectors%E7%9A%84%E7%94%A8%E6%B3%95"> <code>java stream</code>  中 <code>Collectors</code>  的用法</a>
+<ul>
 <li><a href="#%E7%AE%80%E4%BB%8B"><span id="common">简介</span></a></li>
-<li><a href="#collectorstolist"><span id="toList"><code>Collectors.toList()</code></span></a></li>
-<li><a href="#collectorstoset"><span id="toSet"><code>Collectors.toSet()</code></span></a></li>
-<li><a href="#collectorstocollection"><span id="toColl"><code>Collectors.toCollection()</code></span></a></li>
-<li><a href="#collectorstomap"><span id="toMap"><code>Collectors.toMap()</code></span></a></li>
-<li><a href="#collectorscollectingandthen"><span id="toCollAndThen"><code>Collectors.collectingAndThen()</code></span></a></li>
-<li><a href="#collectorsjoining"><span id="join"><code>Collectors.joining()</code></span></a></li>
-<li><a href="#collectorscounting"><span id="count"><code>Collectors.counting()</code></span></a></li>
-<li><a href="#collectorssummarizingdoublelongint"><span id="sum"><code>Collectors.summarizingDouble/Long/Int()</code></span></a></li>
-<li><a href="#collectorsaveragingdoublelongint"><span id="average"><code>Collectors.averagingDouble/Long/Int()</code></span></a></li>
-<li><a href="#collectorssummingdoublelongint"><span id="summing"><code>Collectors.summingDouble/Long/Int()</code></span></a></li>
-<li><a href="#collectorsmaxbyminby"><span id="max"><code>Collectors.maxBy()/minBy()</code></span></a></li>
-<li><a href="#collectorsgroupingby"><span id="group"><code>Collectors.groupingBy()</code></span></a></li>
-<li><a href="#collectorspartitioningby"><span id="par"><code>Collectors.partitioningBy()</code></span></a></li>
+<li><a href="#collectorstolist"><span id="toList"> <code>Collectors.toList()</code> </span></a></li>
+<li><a href="#collectorstoset"><span id="toSet"> <code>Collectors.toSet()</code> </span></a></li>
+<li><a href="#collectorstocollection"><span id="toColl"> <code>Collectors.toCollection()</code> </span></a></li>
+<li><a href="#collectorstomap"><span id="toMap"> <code>Collectors.toMap()</code> </span></a></li>
+<li><a href="#collectorscollectingandthen"><span id="toCollAndThen"> <code>Collectors.collectingAndThen()</code> </span></a></li>
+<li><a href="#collectorsjoining"><span id="join"> <code>Collectors.joining()</code> </span></a></li>
+<li><a href="#collectorscounting"><span id="count"> <code>Collectors.counting()</code> </span></a></li>
+<li><a href="#collectorssummarizingdoublelongint"><span id="sum"> <code>Collectors.summarizingDouble/Long/Int()</code> </span></a></li>
+<li><a href="#collectorsaveragingdoublelongint"><span id="average"> <code>Collectors.averagingDouble/Long/Int()</code> </span></a></li>
+<li><a href="#collectorssummingdoublelongint"><span id="summing"> <code>Collectors.summingDouble/Long/Int()</code> </span></a></li>
+<li><a href="#collectorsmaxbyminby"><span id="max"> <code>Collectors.maxBy()/minBy()</code> </span></a></li>
+<li><a href="#collectorsgroupingby"><span id="group"> <code>Collectors.groupingBy()</code> </span></a></li>
+<li><a href="#collectorspartitioningby"><span id="par"> <code>Collectors.partitioningBy()</code> </span></a></li>
 </ul>
 </li>
 </ul>
 <span id="more"></span>
-
-<h2 id="简介"><a href="#简介" class="headerlink" title="简介"></a><span id="common">简介</span></h2><p>在<code>java stream</code>中，我们通常需要将处理后的<code>stream</code>转换成集合类，这个时候就需要用到<code>stream.collect</code>方法。<code>collect</code>方法需要传入一个<code>Collector</code>类型，要实现<code>Collector</code>还是很麻烦的，需要实现好几个接口。</p>
-<p>于是<code>java</code>提供了更简单的<code>Collectors</code>工具类来方便我们构建<code>Collector</code>。</p>
-<p>下面我们将会具体讲解<code>Collectors</code>的用法。</p>
-<p>假如我们有这样两个<code>list：</code></p>
+<h2 id="span-idcommon简介span"><a class="markdownIt-Anchor" href="#span-idcommon简介span">#</a> <span id="common">简介</span></h2>
+<p>在 <code>java stream</code>  中，我们通常需要将处理后的 <code>stream</code>  转换成集合类，这个时候就需要用到 <code>stream.collect</code>  方法。 <code>collect</code>  方法需要传入一个 <code>Collector</code>  类型，要实现 <code>Collector</code>  还是很麻烦的，需要实现好几个接口。</p>
+<p>于是 <code>java</code>  提供了更简单的 <code>Collectors</code>  工具类来方便我们构建 <code>Collector</code> 。</p>
+<p>下面我们将会具体讲解 <code>Collectors</code>  的用法。</p>
+<p>假如我们有这样两个 <code>list：</code></p>
 <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">List&lt;String&gt; list = Arrays.asList(<span class="string">&quot;jack&quot;</span>, <span class="string">&quot;bob&quot;</span>, <span class="string">&quot;alice&quot;</span>, <span class="string">&quot;mark&quot;</span>);</span><br><span class="line">List&lt;String&gt; duplicateList = Arrays.asList(<span class="string">&quot;jack&quot;</span>, <span class="string">&quot;jack&quot;</span>, <span class="string">&quot;alice&quot;</span>, <span class="string">&quot;mark&quot;</span>);</span><br></pre></td></tr></table></figure>
-<p>上面一个是无重复的<code>list</code>，一个是带重复数据的<code>list</code>。接下来的例子我们会用上面的两个<code>list</code>来讲解<code>Collectors</code>的用法。</p>
-<h2 id="Collectors-toList"><a href="#Collectors-toList" class="headerlink" title="Collectors.toList()"></a><span id="toList"><code>Collectors.toList()</code></span></h2><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">List&lt;String&gt; listResult = list.stream().collect(Collectors.toList());</span><br><span class="line">        log.info(<span class="string">&quot;&#123;&#125;&quot;</span>,listResult);</span><br></pre></td></tr></table></figure>
+<p>上面一个是无重复的 <code>list</code> ，一个是带重复数据的 <code>list</code> 。接下来的例子我们会用上面的两个 <code>list</code>  来讲解 <code>Collectors</code>  的用法。</p>
+<h2 id="span-idtolistcollectorstolistspan"><a class="markdownIt-Anchor" href="#span-idtolistcollectorstolistspan">#</a> <span id="toList"> <code>Collectors.toList()</code> </span></h2>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">List&lt;String&gt; listResult = list.stream().collect(Collectors.toList());</span><br><span class="line">        log.info(<span class="string">&quot;&#123;&#125;&quot;</span>,listResult);</span><br></pre></td></tr></table></figure>
 <img data-src="/posts/b1231c9f/2022-02-13-23-13-35.png" class="">
-
-<p>将<code>stream</code>转换为<code>list</code>。这里转换的<code>list</code>是<code>ArrayList</code>，如果想要转换成特定的<code>list</code>，需要使用<code>toCollection</code>方法。</p>
-<h2 id="Collectors-toSet"><a href="#Collectors-toSet" class="headerlink" title="Collectors.toSet()"></a><span id="toSet"><code>Collectors.toSet()</code></span></h2><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">Set&lt;String&gt; setResult = list.stream().collect(Collectors.toSet());</span><br><span class="line">        log.info(<span class="string">&quot;&#123;&#125;&quot;</span>,setResult);</span><br></pre></td></tr></table></figure>
-
+<p>将 <code>stream</code>  转换为 <code>list</code> 。这里转换的 <code>list</code>  是 <code>ArrayList</code> ，如果想要转换成特定的 <code>list</code> ，需要使用 <code>toCollection</code>  方法。</p>
+<h2 id="span-idtosetcollectorstosetspan"><a class="markdownIt-Anchor" href="#span-idtosetcollectorstosetspan">#</a> <span id="toSet"> <code>Collectors.toSet()</code> </span></h2>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">Set&lt;String&gt; setResult = list.stream().collect(Collectors.toSet());</span><br><span class="line">        log.info(<span class="string">&quot;&#123;&#125;&quot;</span>,setResult);</span><br></pre></td></tr></table></figure>
 <img data-src="/posts/b1231c9f/2022-02-13-23-13-55.png" class="">
-
-<h2 id="Collectors-toCollection"><a href="#Collectors-toCollection" class="headerlink" title="Collectors.toCollection()"></a><span id="toColl"><code>Collectors.toCollection()</code></span></h2><p>上面的<code>toMap,toSet</code>转换出来的都是特定的类型，如果我们需要自定义，则可以使用<code>toCollection()</code></p>
+<h2 id="span-idtocollcollectorstocollectionspan"><a class="markdownIt-Anchor" href="#span-idtocollcollectorstocollectionspan">#</a> <span id="toColl"> <code>Collectors.toCollection()</code> </span></h2>
+<p>上面的 <code>toMap,toSet</code>  转换出来的都是特定的类型，如果我们需要自定义，则可以使用 <code>toCollection()</code></p>
 <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">List&lt;String&gt; custListResult = list.stream().collect(Collectors.toCollection(LinkedList::<span class="keyword">new</span>));</span><br><span class="line">        log.info(<span class="string">&quot;&#123;&#125;&quot;</span>,custListResult);</span><br></pre></td></tr></table></figure>
-
 <img data-src="/posts/b1231c9f/2022-02-13-23-14-12.png" class="">
-
-<h2 id="Collectors-toMap"><a href="#Collectors-toMap" class="headerlink" title="Collectors.toMap()"></a><span id="toMap"><code>Collectors.toMap()</code></span></h2><p><code>toMap</code>接收两个参数，第一个参数是<code>keyMapper</code>，第二个参数是<code>valueMapper</code>:</p>
+<h2 id="span-idtomapcollectorstomapspan"><a class="markdownIt-Anchor" href="#span-idtomapcollectorstomapspan">#</a> <span id="toMap"> <code>Collectors.toMap()</code> </span></h2>
+<p><code>toMap</code>  接收两个参数，第一个参数是 <code>keyMapper</code> ，第二个参数是 <code>valueMapper</code> :</p>
 <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">Map&lt;String, Integer&gt; mapResult = list.stream()</span><br><span class="line">                .collect(Collectors.toMap(Function.identity(), String::length));</span><br><span class="line">        log.info(<span class="string">&quot;&#123;&#125;&quot;</span>,mapResult);</span><br></pre></td></tr></table></figure>
-<p>如果<code>stream</code>中有重复的值，则转换会报<code>IllegalStateException</code>异常：</p>
+<p>如果 <code>stream</code>  中有重复的值，则转换会报 <code>IllegalStateException</code>  异常：</p>
 <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">Map&lt;String, Integer&gt; duplicateMapResult = duplicateList.stream()</span><br><span class="line">                .collect(Collectors.toMap(Function.identity(), String::length));</span><br></pre></td></tr></table></figure>
-
 <img data-src="/posts/b1231c9f/2022-02-13-23-14-26.png" class="">
-
 <p>解决方案:</p>
 <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">Map&lt;String, Integer&gt; duplicateMapResult2 = duplicateList.stream()</span><br><span class="line">                .collect(Collectors.toMap(Function.identity(), String::length, (item, identicalItem) -&gt; item));</span><br><span class="line">        log.info(<span class="string">&quot;&#123;&#125;&quot;</span>,duplicateMapResult2);</span><br></pre></td></tr></table></figure>
-<p>在<code>toMap</code>中添加第三个参数<code>mergeFunction</code>，来解决冲突的问题。</p>
+<p>在 <code>toMap</code>  中添加第三个参数 <code>mergeFunction</code> ，来解决冲突的问题。</p>
 <img data-src="/posts/b1231c9f/2022-02-13-23-14-53.png" class="">
-
-<h2 id="Collectors-collectingAndThen"><a href="#Collectors-collectingAndThen" class="headerlink" title="Collectors.collectingAndThen()"></a><span id="toCollAndThen">Collectors.collectingAndThen()</span></h2><p><code>collectingAndThen</code>允许我们对生成的集合再做一次操作。</p>
+<h2 id="span-idtocollandthencollectorscollectingandthenspan"><a class="markdownIt-Anchor" href="#span-idtocollandthencollectorscollectingandthenspan">#</a> <span id="toCollAndThen">Collectors.collectingAndThen()</span></h2>
+<p><code>collectingAndThen</code>  允许我们对生成的集合再做一次操作。</p>
 <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">List&lt;String&gt; collectAndThenResult = list.stream()</span><br><span class="line">                .collect(Collectors.collectingAndThen(Collectors.toList(), l -&gt; &#123;<span class="keyword">return</span> <span class="keyword">new</span> ArrayList&lt;&gt;(l);&#125;));</span><br><span class="line">        log.info(<span class="string">&quot;&#123;&#125;&quot;</span>,collectAndThenResult);</span><br></pre></td></tr></table></figure>
-
 <img data-src="/posts/b1231c9f/2022-02-13-23-15-04.png" class="">
-
-<h2 id="Collectors-joining"><a href="#Collectors-joining" class="headerlink" title="Collectors.joining()"></a><span id="join"><code>Collectors.joining()</code></span></h2><p><code>Joining</code>用来连接<code>stream</code>中的元素：</p>
+<h2 id="span-idjoincollectorsjoiningspan"><a class="markdownIt-Anchor" href="#span-idjoincollectorsjoiningspan">#</a> <span id="join"> <code>Collectors.joining()</code> </span></h2>
+<p><code>Joining</code>  用来连接 <code>stream</code>  中的元素：</p>
 <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">String joinResult = list.stream().collect(Collectors.joining());</span><br><span class="line">        log.info(<span class="string">&quot;&#123;&#125;&quot;</span>,joinResult);</span><br><span class="line">        String joinResult1 = list.stream().collect(Collectors.joining(<span class="string">&quot; &quot;</span>));</span><br><span class="line">        log.info(<span class="string">&quot;&#123;&#125;&quot;</span>,joinResult1);</span><br><span class="line">        String joinResult2 = list.stream().collect(Collectors.joining(<span class="string">&quot; &quot;</span>, <span class="string">&quot;prefix&quot;</span>,<span class="string">&quot;suffix&quot;</span>));</span><br><span class="line">        log.info(<span class="string">&quot;&#123;&#125;&quot;</span>,joinResult2);</span><br></pre></td></tr></table></figure>
-
 <img data-src="/posts/b1231c9f/2022-02-13-23-15-15.png" class="">
-
 <p>可以不带参数，也可以带一个参数，也可以带三个参数，根据我们的需要进行选择。</p>
-<h2 id="Collectors-counting"><a href="#Collectors-counting" class="headerlink" title="Collectors.counting()"></a><span id="count"><code>Collectors.counting()</code></span></h2><p><code>counting</code>主要用来统计<code>stream</code>中元素的个数：</p>
+<h2 id="span-idcountcollectorscountingspan"><a class="markdownIt-Anchor" href="#span-idcountcollectorscountingspan">#</a> <span id="count"> <code>Collectors.counting()</code> </span></h2>
+<p><code>counting</code>  主要用来统计 <code>stream</code>  中元素的个数：</p>
 <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">Long countResult = list.stream().collect(Collectors.counting());</span><br><span class="line">        log.info(<span class="string">&quot;&#123;&#125;&quot;</span>,countResult);</span><br></pre></td></tr></table></figure>
-
-
 <img data-src="/posts/b1231c9f/2022-02-13-23-15-42.png" class="">
-
-<h2 id="Collectors-summarizingDouble-Long-Int"><a href="#Collectors-summarizingDouble-Long-Int" class="headerlink" title="Collectors.summarizingDouble/Long/Int()"></a><span id="sum"><code>Collectors.summarizingDouble/Long/Int()</code></span></h2><p><code>SummarizingDouble/Long/Int</code>为<code>stream</code>中的元素生成了统计信息，返回的结果是一个统计类：</p>
+<h2 id="span-idsumcollectorssummarizingdoublelongintspan"><a class="markdownIt-Anchor" href="#span-idsumcollectorssummarizingdoublelongintspan">#</a> <span id="sum"> <code>Collectors.summarizingDouble/Long/Int()</code> </span></h2>
+<p><code>SummarizingDouble/Long/Int</code>  为 <code>stream</code>  中的元素生成了统计信息，返回的结果是一个统计类：</p>
 <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">IntSummaryStatistics intResult = list.stream()</span><br><span class="line">                .collect(Collectors.summarizingInt(String::length));</span><br><span class="line">        log.info(<span class="string">&quot;&#123;&#125;&quot;</span>,intResult);</span><br></pre></td></tr></table></figure>
-
 <img data-src="/posts/b1231c9f/2022-02-13-23-16-28.png" class="">
-
-<h2 id="Collectors-averagingDouble-Long-Int"><a href="#Collectors-averagingDouble-Long-Int" class="headerlink" title="Collectors.averagingDouble/Long/Int()"></a><span id="average"><code>Collectors.averagingDouble/Long/Int()</code></span></h2><p><code>averagingDouble/Long/Int()</code>对<code>stream</code>中的元素做平均：</p>
+<h2 id="span-idaveragecollectorsaveragingdoublelongintspan"><a class="markdownIt-Anchor" href="#span-idaveragecollectorsaveragingdoublelongintspan">#</a> <span id="average"> <code>Collectors.averagingDouble/Long/Int()</code> </span></h2>
+<p><code>averagingDouble/Long/Int()</code>  对 <code>stream</code>  中的元素做平均：</p>
 <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">Double averageResult = list.stream().collect(Collectors.averagingInt(String::length));</span><br><span class="line">        log.info(<span class="string">&quot;&#123;&#125;&quot;</span>,averageResult);</span><br></pre></td></tr></table></figure>
-
 <img data-src="/posts/b1231c9f/2022-02-13-23-16-42.png" class="">
-
-<h2 id="Collectors-summingDouble-Long-Int"><a href="#Collectors-summingDouble-Long-Int" class="headerlink" title="Collectors.summingDouble/Long/Int()"></a><span id="summing"><code>Collectors.summingDouble/Long/Int()</code></span></h2><p><code>summingDouble/Long/Int()</code>对<code>stream</code>中的元素做<code>sum</code>操作：</p>
+<h2 id="span-idsummingcollectorssummingdoublelongintspan"><a class="markdownIt-Anchor" href="#span-idsummingcollectorssummingdoublelongintspan">#</a> <span id="summing"> <code>Collectors.summingDouble/Long/Int()</code> </span></h2>
+<p><code>summingDouble/Long/Int()</code>  对 <code>stream</code>  中的元素做 <code>sum</code>  操作：</p>
 <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">Double summingResult = list.stream().collect(Collectors.summingDouble(String::length));</span><br><span class="line">        log.info(<span class="string">&quot;&#123;&#125;&quot;</span>,summingResult);</span><br></pre></td></tr></table></figure>
-
 <img data-src="/posts/b1231c9f/2022-02-13-23-17-11.png" class="">
-
-<h2 id="Collectors-maxBy-minBy"><a href="#Collectors-maxBy-minBy" class="headerlink" title="Collectors.maxBy()/minBy()"></a><span id="max"><code>Collectors.maxBy()/minBy()</code></span></h2><p><code>maxBy()/minBy()</code>根据提供的<code>Comparator</code>，返回<code>stream</code>中的最大或者最小值：</p>
+<h2 id="span-idmaxcollectorsmaxbyminbyspan"><a class="markdownIt-Anchor" href="#span-idmaxcollectorsmaxbyminbyspan">#</a> <span id="max"> <code>Collectors.maxBy()/minBy()</code> </span></h2>
+<p><code>maxBy()/minBy()</code>  根据提供的 <code>Comparator</code> ，返回 <code>stream</code>  中的最大或者最小值：</p>
 <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">Optional&lt;String&gt; maxByResult = list.stream().collect(Collectors.maxBy(Comparator.naturalOrder()));</span><br><span class="line">        log.info(<span class="string">&quot;&#123;&#125;&quot;</span>,maxByResult);</span><br></pre></td></tr></table></figure>
-
 <img data-src="/posts/b1231c9f/2022-02-13-23-17-22.png" class="">
-
-<h2 id="Collectors-groupingBy"><a href="#Collectors-groupingBy" class="headerlink" title="Collectors.groupingBy()"></a><span id="group"><code>Collectors.groupingBy()</code></span></h2><p><code>GroupingBy</code>根据某些属性进行分组，并返回一个<code>Map</code>：</p>
+<h2 id="span-idgroupcollectorsgroupingbyspan"><a class="markdownIt-Anchor" href="#span-idgroupcollectorsgroupingbyspan">#</a> <span id="group"> <code>Collectors.groupingBy()</code> </span></h2>
+<p><code>GroupingBy</code>  根据某些属性进行分组，并返回一个 <code>Map</code> ：</p>
 <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">Map&lt;Integer, Set&lt;String&gt;&gt; groupByResult = list.stream()</span><br><span class="line">                .collect(Collectors.groupingBy(String::length, Collectors.toSet()));</span><br><span class="line">        log.info(<span class="string">&quot;&#123;&#125;&quot;</span>,groupByResult);</span><br></pre></td></tr></table></figure>
 <img data-src="/posts/b1231c9f/2022-02-13-23-17-31.png" class="">
-
-<h2 id="Collectors-partitioningBy"><a href="#Collectors-partitioningBy" class="headerlink" title="Collectors.partitioningBy()"></a><span id="par"><code>Collectors.partitioningBy()</code></span></h2><p><code>PartitioningBy</code>是一个特别的<code>groupingBy，PartitioningBy</code>返回一个<code>Map</code>，这个<code>Map</code>是以<code>boolean</code>值为<code>key</code>，从而将<code>stream</code>分成两部分，一部分是匹配<code>PartitioningBy</code>条件的，一部分是不满足条件的：</p>
+<h2 id="span-idparcollectorspartitioningbyspan"><a class="markdownIt-Anchor" href="#span-idparcollectorspartitioningbyspan">#</a> <span id="par"> <code>Collectors.partitioningBy()</code> </span></h2>
+<p><code>PartitioningBy</code>  是一个特别的 <code>groupingBy，PartitioningBy</code>  返回一个 <code>Map</code> ，这个 <code>Map</code>  是以 <code>boolean</code>  值为 <code>key</code> ，从而将 <code>stream</code>  分成两部分，一部分是匹配 <code>PartitioningBy</code>  条件的，一部分是不满足条件的：</p>
 <img data-src="/posts/b1231c9f/2022-02-13-23-17-39.png" class="">
-
-
-
 
       <div class="tags">
           <a href="/tags/Java/" rel="tag"><i class="ic i-tag"></i> Java</a>
@@ -324,7 +312,7 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
     <div class="item left">
       
 
-  <a href="/posts/8b8fedea/" itemprop="url" rel="prev" data-background-image="https:&#x2F;&#x2F;tva2.sinaimg.cn&#x2F;mw690&#x2F;6833939bly1giph4baakhj20zk0m8h5q.jpg" title="Stream流的介绍">
+  <a href="/posts/8b8fedea/" itemprop="url" rel="prev" data-background-image="https:&#x2F;&#x2F;tva3.sinaimg.cn&#x2F;mw690&#x2F;6833939bly1gipesrnqv3j20zk0m8ava.jpg" title="Stream流的介绍">
   <span class="type">Previous Post</span>
   <span class="category"><i class="ic i-flag"></i> Stream</span>
   <h3>Stream流的介绍</h3>
@@ -334,7 +322,7 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
     <div class="item right">
       
 
-  <a href="/posts/31f95091/" itemprop="url" rel="next" data-background-image="https:&#x2F;&#x2F;tva2.sinaimg.cn&#x2F;mw690&#x2F;6833939bly1gipetv6p75j20zk0m8x6p.jpg" title="Ubuntu中安装卸载Mysql数据库">
+  <a href="/posts/31f95091/" itemprop="url" rel="next" data-background-image="https:&#x2F;&#x2F;tva3.sinaimg.cn&#x2F;mw690&#x2F;6833939bly1gipesx5fdwj20zk0m81kx.jpg" title="Ubuntu中安装卸载Mysql数据库">
   <span class="type">Next Post</span>
   <span class="category"><i class="ic i-flag"></i> Mysql</span>
   <h3>Ubuntu中安装卸载Mysql数据库</h3>
@@ -356,7 +344,7 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
   <div class="panels">
     <div class="inner">
       <div class="contents panel pjax" data-title="Contents">
-          <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#java-stream%E4%B8%ADCollectors%E7%9A%84%E7%94%A8%E6%B3%95"><span class="toc-number">1.</span> <span class="toc-text">java stream中Collectors的用法</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%AE%80%E4%BB%8B"><span class="toc-number">1.1.</span> <span class="toc-text">简介</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Collectors-toList"><span class="toc-number">1.2.</span> <span class="toc-text">Collectors.toList()</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Collectors-toSet"><span class="toc-number">1.3.</span> <span class="toc-text">Collectors.toSet()</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Collectors-toCollection"><span class="toc-number">1.4.</span> <span class="toc-text">Collectors.toCollection()</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Collectors-toMap"><span class="toc-number">1.5.</span> <span class="toc-text">Collectors.toMap()</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Collectors-collectingAndThen"><span class="toc-number">1.6.</span> <span class="toc-text">Collectors.collectingAndThen()</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Collectors-joining"><span class="toc-number">1.7.</span> <span class="toc-text">Collectors.joining()</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Collectors-counting"><span class="toc-number">1.8.</span> <span class="toc-text">Collectors.counting()</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Collectors-summarizingDouble-Long-Int"><span class="toc-number">1.9.</span> <span class="toc-text">Collectors.summarizingDouble&#x2F;Long&#x2F;Int()</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Collectors-averagingDouble-Long-Int"><span class="toc-number">1.10.</span> <span class="toc-text">Collectors.averagingDouble&#x2F;Long&#x2F;Int()</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Collectors-summingDouble-Long-Int"><span class="toc-number">1.11.</span> <span class="toc-text">Collectors.summingDouble&#x2F;Long&#x2F;Int()</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Collectors-maxBy-minBy"><span class="toc-number">1.12.</span> <span class="toc-text">Collectors.maxBy()&#x2F;minBy()</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Collectors-groupingBy"><span class="toc-number">1.13.</span> <span class="toc-text">Collectors.groupingBy()</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Collectors-partitioningBy"><span class="toc-number">1.14.</span> <span class="toc-text">Collectors.partitioningBy()</span></a></li></ol></li></ol>
+          <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#java-stream%E4%B8%ADcollectors%E7%9A%84%E7%94%A8%E6%B3%95"><span class="toc-number">1.</span> <span class="toc-text">  java stream  中 Collectors  的用法</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#span-idcommon%E7%AE%80%E4%BB%8Bspan"><span class="toc-number">1.1.</span> <span class="toc-text"> 简介</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#span-idtolistcollectorstolistspan"><span class="toc-number">1.2.</span> <span class="toc-text">  Collectors.toList() </span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#span-idtosetcollectorstosetspan"><span class="toc-number">1.3.</span> <span class="toc-text">  Collectors.toSet() </span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#span-idtocollcollectorstocollectionspan"><span class="toc-number">1.4.</span> <span class="toc-text">  Collectors.toCollection() </span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#span-idtomapcollectorstomapspan"><span class="toc-number">1.5.</span> <span class="toc-text">  Collectors.toMap() </span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#span-idtocollandthencollectorscollectingandthenspan"><span class="toc-number">1.6.</span> <span class="toc-text"> Collectors.collectingAndThen()</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#span-idjoincollectorsjoiningspan"><span class="toc-number">1.7.</span> <span class="toc-text">  Collectors.joining() </span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#span-idcountcollectorscountingspan"><span class="toc-number">1.8.</span> <span class="toc-text">  Collectors.counting() </span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#span-idsumcollectorssummarizingdoublelongintspan"><span class="toc-number">1.9.</span> <span class="toc-text">  Collectors.summarizingDouble&#x2F;Long&#x2F;Int() </span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#span-idaveragecollectorsaveragingdoublelongintspan"><span class="toc-number">1.10.</span> <span class="toc-text">  Collectors.averagingDouble&#x2F;Long&#x2F;Int() </span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#span-idsummingcollectorssummingdoublelongintspan"><span class="toc-number">1.11.</span> <span class="toc-text">  Collectors.summingDouble&#x2F;Long&#x2F;Int() </span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#span-idmaxcollectorsmaxbyminbyspan"><span class="toc-number">1.12.</span> <span class="toc-text">  Collectors.maxBy()&#x2F;minBy() </span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#span-idgroupcollectorsgroupingbyspan"><span class="toc-number">1.13.</span> <span class="toc-text">  Collectors.groupingBy() </span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#span-idparcollectorspartitioningbyspan"><span class="toc-number">1.14.</span> <span class="toc-text">  Collectors.partitioningBy() </span></a></li></ol></li></ol>
       </div>
       <div class="related panel pjax" data-title="Related">
         <ul>
@@ -465,19 +453,28 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
   <li class="item">
     
 <div class="breadcrumb">
+<a href="/categories/Java%E9%9D%A2%E8%AF%95/" title="In Java面试">Java面试</a>
 </div>
 
-    <span><a href="/posts/a72f470b/" title="关于JVM常用参数">关于JVM常用参数</a></span>
+    <span><a href="/posts/3b6bfba3/" title="如何保证接口的幂等性">如何保证接口的幂等性</a></span>
   </li>
 
       
   <li class="item">
     
 <div class="breadcrumb">
-<a href="/categories/%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F/" title="In 正则表达式">正则表达式</a>
 </div>
 
-    <span><a href="/posts/2f57a694/" title="正则表达式">正则表达式</a></span>
+    <span><a href="/posts/afe5178f/" title="关于设置git以及npm代理">关于设置git以及npm代理</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+</div>
+
+    <span><a href="/posts/1599bffe/" title="归并排序">归并排序</a></span>
   </li>
 
       
@@ -494,14 +491,44 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
   <li class="item">
     
 <div class="breadcrumb">
-<a href="/categories/Java%E9%9D%A2%E8%AF%95/" title="In Java面试">Java面试</a>
+<a href="/categories/Java/" title="In Java">Java</a>
 <i class="ic i-angle-right"></i>
-<a href="/categories/Java%E9%9D%A2%E8%AF%95/%E7%9B%B4%E6%8E%A5%E6%8F%92%E5%85%A5%E6%8E%92%E5%BA%8F/" title="In 直接插入排序">直接插入排序</a>
-<i class="ic i-angle-right"></i>
-<a href="/categories/Java%E9%9D%A2%E8%AF%95/%E7%9B%B4%E6%8E%A5%E6%8F%92%E5%85%A5%E6%8E%92%E5%BA%8F/%E7%AE%97%E6%B3%95/" title="In 算法">算法</a>
+<a href="/categories/Java/Java%E9%9D%A2%E8%AF%95/" title="In Java面试">Java面试</a>
 </div>
 
-    <span><a href="/posts/2b06d603/" title="直接插入排序">直接插入排序</a></span>
+    <span><a href="/posts/f23f1351/" title="equals与&#x3D;&#x3D;区别">equals与==区别</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/Java%E9%9D%A2%E8%AF%95/" title="In Java面试">Java面试</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/Java%E9%9D%A2%E8%AF%95/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/" title="In 操作系统">操作系统</a>
+</div>
+
+    <span><a href="/posts/c7cf6e41/" title="面试之旅关于计算机网络">面试之旅关于计算机网络</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/%E5%A4%A7%E6%95%B0%E6%8D%AE/" title="In 大数据">大数据</a>
+</div>
+
+    <span><a href="/posts/737c98ca/" title="什么是MapReduce">什么是MapReduce</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F/" title="In 正则表达式">正则表达式</a>
+</div>
+
+    <span><a href="/posts/2f57a694/" title="正则表达式">正则表达式</a></span>
   </li>
 
       
@@ -511,31 +538,7 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
 <a href="/categories/Java/" title="In Java">Java</a>
 </div>
 
-    <span><a href="/posts/405fde88/" title="关于Exception的处理细节">关于Exception的处理细节</a></span>
-  </li>
-
-      
-  <li class="item">
-    
-<div class="breadcrumb">
-<a href="/categories/Java%E9%9D%A2%E8%AF%95/" title="In Java面试">Java面试</a>
-<i class="ic i-angle-right"></i>
-<a href="/categories/Java%E9%9D%A2%E8%AF%95/%E5%A0%86%E6%8E%92%E5%BA%8F/" title="In 堆排序">堆排序</a>
-<i class="ic i-angle-right"></i>
-<a href="/categories/Java%E9%9D%A2%E8%AF%95/%E5%A0%86%E6%8E%92%E5%BA%8F/%E7%AE%97%E6%B3%95/" title="In 算法">算法</a>
-</div>
-
-    <span><a href="/posts/c2a5fdc5/" title="堆排序">堆排序</a></span>
-  </li>
-
-      
-  <li class="item">
-    
-<div class="breadcrumb">
-<a href="/categories/Java%E9%9D%A2%E8%AF%95/" title="In Java面试">Java面试</a>
-</div>
-
-    <span><a href="/posts/6b5f7afc/" title="面试之旅关于Java知识点">面试之旅关于Java知识点</a></span>
+    <span><a href="/posts/e18abc1d/" title="关于YAML中List存放Map">关于YAML中List存放Map</a></span>
   </li>
 
       
@@ -544,33 +547,7 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
 <div class="breadcrumb">
 </div>
 
-    <span><a href="/posts/66edb7d2/" title="关于hexo使用shoka主题注意点">关于hexo使用shoka主题注意点</a></span>
-  </li>
-
-      
-  <li class="item">
-    
-<div class="breadcrumb">
-<a href="/categories/Java%E9%9D%A2%E8%AF%95/" title="In Java面试">Java面试</a>
-<i class="ic i-angle-right"></i>
-<a href="/categories/Java%E9%9D%A2%E8%AF%95/%E5%BF%AB%E9%80%9F%E6%8E%92%E5%BA%8F/" title="In 快速排序">快速排序</a>
-<i class="ic i-angle-right"></i>
-<a href="/categories/Java%E9%9D%A2%E8%AF%95/%E5%BF%AB%E9%80%9F%E6%8E%92%E5%BA%8F/%E7%AE%97%E6%B3%95/" title="In 算法">算法</a>
-</div>
-
-    <span><a href="/posts/ff8068c0/" title="快速排序">快速排序</a></span>
-  </li>
-
-      
-  <li class="item">
-    
-<div class="breadcrumb">
-<a href="/categories/Java%E9%9D%A2%E8%AF%95/" title="In Java面试">Java面试</a>
-<i class="ic i-angle-right"></i>
-<a href="/categories/Java%E9%9D%A2%E8%AF%95/HashMap/" title="In HashMap">HashMap</a>
-</div>
-
-    <span><a href="/posts/52d9f7d3/" title="Java面试必问--HashMap的底层">Java面试必问--HashMap的底层</a></span>
+    <span><a href="/posts/307637a3/" title="扫尾">扫尾</a></span>
   </li>
 
   </ul>

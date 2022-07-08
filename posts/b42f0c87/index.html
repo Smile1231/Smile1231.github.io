@@ -117,12 +117,12 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
       </div>
       <div id="imgs" class="pjax">
         <ul>
-          <li class="item" data-background-image="https://tva2.sinaimg.cn/large/6833939bly1giciukx8a7j20zk0m8aio.jpg"></li>
-          <li class="item" data-background-image="https://tva2.sinaimg.cn/large/6833939bly1gicli9lfebj20zk0m84qp.jpg"></li>
-          <li class="item" data-background-image="https://tva2.sinaimg.cn/large/6833939bly1giciub8ja1j20zk0m81ky.jpg"></li>
-          <li class="item" data-background-image="https://tva2.sinaimg.cn/large/6833939bly1gipew8gmvyj20zk0m87wh.jpg"></li>
-          <li class="item" data-background-image="https://tva2.sinaimg.cn/large/6833939bly1gicljitigmj20zk0m87fp.jpg"></li>
-          <li class="item" data-background-image="https://tva2.sinaimg.cn/large/6833939bly1gicit31ffoj20zk0m8naf.jpg"></li>
+          <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1giciuv0socj20zk0m8qes.jpg"></li>
+          <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1giclx29mstj20zk0m8hdt.jpg"></li>
+          <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1giclxp31goj20zk0m8qv5.jpg"></li>
+          <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1giclil3m4ej20zk0m8tn8.jpg"></li>
+          <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1gipey0a334j20zk0m8qpt.jpg"></li>
+          <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1gipexbei4hj20zk0m8npd.jpg"></li>
         </ul>
       </div>
     </header>
@@ -171,102 +171,142 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
   <div class="body md" itemprop="articleBody">
     
 
-    <h1 id="Cache、Cookie、Session、Token"><a href="#Cache、Cookie、Session、Token" class="headerlink" title="Cache、Cookie、Session、Token"></a><code>Cache、Cookie、Session、Token</code></h1><h2 id="协议是什么"><a href="#协议是什么" class="headerlink" title="协议是什么"></a>协议是什么</h2><p>在接口测试中，客户端发送的<code>request</code>至服务端反馈的<code>response</code>中传输的数据就是接口测试最重要的部分</p>
-<h2 id="Cache是什么"><a href="#Cache是什么" class="headerlink" title="Cache是什么"></a><code>Cache</code>是什么</h2><span id="more"></span>
-
+    <h1 id="cache-cookie-session-token"><a class="markdownIt-Anchor" href="#cache-cookie-session-token">#</a>  <code>Cache、Cookie、Session、Token</code></h1>
+<h2 id="协议是什么"><a class="markdownIt-Anchor" href="#协议是什么">#</a> 协议是什么</h2>
+<p>在接口测试中，客户端发送的 <code>request</code>  至服务端反馈的 <code>response</code>  中传输的数据就是接口测试最重要的部分</p>
+<h2 id="cache是什么"><a class="markdownIt-Anchor" href="#cache是什么">#</a>  <code>Cache</code>  是什么</h2>
+<span id="more"></span>
 <p>打开浏览器或者应用的时候，用户的等待时间叫做响应时间，打开速度影响到用户体验，提高反应速度的一个方法就是使用缓存策略，缓存策略能带来什么好处呢？</p>
 <ol>
-<li><p>减少延迟：因为网页请求指向的是更接近的客户端缓存，而不是资源服务器，所以花费的时间更短，提高用户体验</p>
+<li>
+<p>减少延迟：因为网页请求指向的是更接近的客户端缓存，而不是资源服务器，所以花费的时间更短，提高用户体验</p>
 </li>
-<li><p>降低网络负荷：因为缓存可以重复使用，节省带宽，降低网络负荷，也就可以更加节省用户的流量</p>
+<li>
+<p>降低网络负荷：因为缓存可以重复使用，节省带宽，降低网络负荷，也就可以更加节省用户的流量</p>
 </li>
 </ol>
 <blockquote>
 <p>缓存一般分为以下几种：</p>
 </blockquote>
 <ol>
-<li><p>浏览器缓存　　　　<br>（缓存在本地）</p>
+<li>
+<p>浏览器缓存　　　　<br>
+（缓存在本地）</p>
 </li>
-<li><p>代理缓存　　　　　<br>（缓存在网络路由，也就是共享缓存）</p>
+<li>
+<p>代理缓存　　　　　<br>
+（缓存在网络路由，也就是共享缓存）</p>
 </li>
-<li><p>网关缓存　　　　　<br>(缓存在CDN)</p>
+<li>
+<p>网关缓存　　　　　<br>
+(缓存在 CDN)</p>
 </li>
 </ol>
-<h2 id="缓存策略一般分两种情况："><a href="#缓存策略一般分两种情况：" class="headerlink" title="缓存策略一般分两种情况："></a>缓存策略一般分两种情况：</h2><ol>
-<li><p>强缓存　　　　(直接在本地缓存中读取资源)</p>
-</li>
-<li><p>协商缓存　　  (通过服务器告知是否能用本地缓存，先和服务器协商，如果可以，就从本地缓存中读取。如果不可以，就返回最新的资源)</p>
-</li>
-</ol>
-<h2 id="Cookie"><a href="#Cookie" class="headerlink" title="Cookie"></a><code>Cookie</code></h2><p><code>Cookie</code>的内容是保存一小段文本信息。组成一个通行证，用来处理客户端无状态协议的一种解决方案</p>
-<p><code>Cookie</code>使用原理如下：</p>
+<h2 id="缓存策略一般分两种情况"><a class="markdownIt-Anchor" href="#缓存策略一般分两种情况">#</a> 缓存策略一般分两种情况：</h2>
 <ol>
-<li><p>用户会提供信息提交给服务器</p>
+<li>
+<p>强缓存　　　　(直接在本地缓存中读取资源)</p>
 </li>
-<li><p>服务端向客户端回传相应数据的同时，也会发回<code>Cookie</code></p>
-</li>
-<li><p>客户端接收到服务器相应后，浏览器将<code>Cookie</code>保存在同一个位置</p>
-</li>
-<li><p>客户端向服务端发送请求的实话，会把<code>Cookie</code>再次发回服务端</p>
+<li>
+<p>协商缓存　　  (通过服务器告知是否能用本地缓存，先和服务器协商，如果可以，就从本地缓存中读取。如果不可以，就返回最新的资源)</p>
 </li>
 </ol>
-<h2 id="获取Cookie的途径"><a href="#获取Cookie的途径" class="headerlink" title="获取Cookie的途径"></a>获取<code>Cookie</code>的途径</h2><ol>
-<li><p>浏览器自带的开发工具或者抓包工具<code>（Fiddler,Charles）</code></p>
-</li>
-<li><p>本地获取（<code>ie</code>的路径为<code>C</code>盘<code>appdata/Microsoft/Windows/Cookies，Firefox位于C盘appdata/Mozilla/Firefox/Profiles，Charome位于C盘appdata/Goole/Chrome/User Date /Default）</code></p>
-</li>
-<li><p><code>js</code>代码查看(浏览器地址栏输入<code>Javascript:alert(document.cookie)</code>)</p>
-</li>
-</ol>
-<h2 id="Session是什么"><a href="#Session是什么" class="headerlink" title="Session是什么"></a><code>Session</code>是什么</h2><p><code>Session</code>是另外一种记录用户状态的机制，不同于<code>Cookie</code>的是<code>Session</code>是保存在服务器上，用来解决服务端对无状态协议</p>
-<p><code>Session</code>的传输步骤</p>
+<h2 id="cookie"><a class="markdownIt-Anchor" href="#cookie">#</a>  <code>Cookie</code></h2>
+<p><code>Cookie</code>  的内容是保存一小段文本信息。组成一个通行证，用来处理客户端无状态协议的一种解决方案</p>
+<p><code>Cookie</code>  使用原理如下：</p>
 <ol>
-<li><p>服务端创建<code>Session</code>，并创建唯一的<code>id</code></p>
+<li>
+<p>用户会提供信息提交给服务器</p>
 </li>
-<li><p>服务器将<code>id</code>发给客户端</p>
+<li>
+<p>服务端向客户端回传相应数据的同时，也会发回 <code>Cookie</code></p>
 </li>
-<li><p>客户端再次发送请求的实话带上<code>Session</code>的<code>id</code></p>
+<li>
+<p>客户端接收到服务器相应后，浏览器将 <code>Cookie</code>  保存在同一个位置</p>
 </li>
-<li><p>服务器接收到请求后根据<code>Seesion</code>的<code>id</code>找到相应的<code>Session</code>，完成相应</p>
+<li>
+<p>客户端向服务端发送请求的实话，会把 <code>Cookie</code>  再次发回服务端</p>
 </li>
 </ol>
-<h2 id="Session的传输媒介"><a href="#Session的传输媒介" class="headerlink" title="Session的传输媒介"></a><code>Session</code>的传输媒介</h2><ol>
-<li><p>通过<code>Cookie</code>传输</p>
+<h2 id="获取cookie的途径"><a class="markdownIt-Anchor" href="#获取cookie的途径">#</a> 获取 <code>Cookie</code>  的途径</h2>
+<ol>
+<li>
+<p>浏览器自带的开发工具或者抓包工具 <code>（Fiddler,Charles）</code></p>
 </li>
-<li><p>通过<code>URL</code>地址重写</p>
+<li>
+<p>本地获取（ <code>ie</code>  的路径为 <code>C</code>  盘 <code>appdata/Microsoft/Windows/Cookies，Firefox位于C盘appdata/Mozilla/Firefox/Profiles，Charome位于C盘appdata/Goole/Chrome/User Date /Default）</code></p>
+</li>
+<li>
+<p><code>js</code>  代码查看 (浏览器地址栏输入 <code>Javascript:alert(document.cookie)</code> )</p>
+</li>
+</ol>
+<h2 id="session是什么"><a class="markdownIt-Anchor" href="#session是什么">#</a>  <code>Session</code>  是什么</h2>
+<p><code>Session</code>  是另外一种记录用户状态的机制，不同于 <code>Cookie</code>  的是 <code>Session</code>  是保存在服务器上，用来解决服务端对无状态协议</p>
+<p><code>Session</code>  的传输步骤</p>
+<ol>
+<li>
+<p>服务端创建 <code>Session</code> ，并创建唯一的 <code>id</code></p>
+</li>
+<li>
+<p>服务器将 <code>id</code>  发给客户端</p>
+</li>
+<li>
+<p>客户端再次发送请求的实话带上 <code>Session</code>  的 <code>id</code></p>
+</li>
+<li>
+<p>服务器接收到请求后根据 <code>Seesion</code>  的 <code>id</code>  找到相应的 <code>Session</code> ，完成相应</p>
+</li>
+</ol>
+<h2 id="session的传输媒介"><a class="markdownIt-Anchor" href="#session的传输媒介">#</a>  <code>Session</code>  的传输媒介</h2>
+<ol>
+<li>
+<p>通过 <code>Cookie</code>  传输</p>
+</li>
+<li>
+<p>通过 <code>URL</code>  地址重写</p>
 </li>
 </ol>
 <blockquote>
-<p>很多同学不知道<code>Session</code>和<code>Cookie</code>的区别，那么我来大概讲解一下我理解的</p>
+<p>很多同学不知道 <code>Session</code>  和 <code>Cookie</code>  的区别，那么我来大概讲解一下我理解的</p>
 </blockquote>
 <ol>
-<li><p>存储位置不同：大多数情况<code>Cookie</code>存储在浏览器，<code>Session</code>存储在服务器</p>
+<li>
+<p>存储位置不同：大多数情况 <code>Cookie</code>  存储在浏览器， <code>Session</code>  存储在服务器</p>
 </li>
-<li><p>存储容量不同：单个<code>Cookie</code>保存的数据不得超过<code>4kb</code>，一个站点最多<code>20</code>个<code>Cookie</code>，<code>Session</code>一般情况下没有上限，不过建议不要存放太多东西影响性能</p>
+<li>
+<p>存储容量不同：单个 <code>Cookie</code>  保存的数据不得超过 <code>4kb</code> ，一个站点最多 <code>20</code>  个 <code>Cookie</code> ， <code>Session</code>  一般情况下没有上限，不过建议不要存放太多东西影响性能</p>
 </li>
-<li><p>存取方式不同：<code>Cookie</code>只能用<code>ASCII</code>字符串。通过编码方式获取<code>Unicode</code>字符或者<code>二进制</code>数据。不好存储复杂的信息，<code>Session</code>能存储任何类型的数据</p>
+<li>
+<p>存取方式不同： <code>Cookie</code>  只能用 <code>ASCII</code>  字符串。通过编码方式获取 <code>Unicode</code>  字符或者 <code>二进制</code> 数据。不好存储复杂的信息， <code>Session</code>  能存储任何类型的数据</p>
 </li>
-<li><p>隐私策略不同：<code>Cookie</code>放在客户端，可以进行<code>Cookie</code>欺骗，所以不安全。<code>Session</code>放在服务端，更加安全</p>
+<li>
+<p>隐私策略不同： <code>Cookie</code>  放在客户端，可以进行 <code>Cookie</code>  欺骗，所以不安全。 <code>Session</code>  放在服务端，更加安全</p>
 </li>
-<li><p>有效期不同：<code>Cookie</code>可以设置属性达到长期有效，<code>Session</code>依赖于<code>JSESSIONID</code>的<code>Cookie</code>，<code>Cookie JSESSIONID</code>的过期时间默认为<code>-1</code>，只需要关闭窗口<code>Session</code>就会失效，，就算不依赖<code>Cookie</code>，</p>
+<li>
+<p>有效期不同： <code>Cookie</code>  可以设置属性达到长期有效， <code>Session</code>  依赖于 <code>JSESSIONID</code>  的 <code>Cookie</code> ， <code>Cookie JSESSIONID</code>  的过期时间默认为 <code>-1</code> ，只需要关闭窗口 <code>Session</code>  就会失效，，就算不依赖 <code>Cookie</code> ，</p>
 </li>
 </ol>
 <blockquote>
-<p>用<code>UrL</code>重写也不能完成，如果<code>Session</code>超时时间过长，容易导致内存溢出</p>
+<p>用 <code>UrL</code>  重写也不能完成，如果 <code>Session</code>  超时时间过长，容易导致内存溢出</p>
 </blockquote>
 <ol start="6">
-<li>服务器压力不同：<code>Cookie</code>保存子本地。不存在服务端压力。<code>Session</code>保存在服务端，每个用户产生一个<code>Session</code>，并发过多非常占用内存</li>
+<li>服务器压力不同： <code>Cookie</code>  保存子本地。不存在服务端压力。 <code>Session</code>  保存在服务端，每个用户产生一个 <code>Session</code> ，并发过多非常占用内存</li>
 </ol>
-<p>7.浏览器支持不同：如果浏览器禁用<code>Cookie</code>，那么<code>Cookie</code>直接失效。<code>Session</code>比较好点。可以用<code>URL</code>重写</p>
-<p>8.跨域不同：<code>Cookie</code>支持跨域访问，<code>Session</code>不支持跨域</p>
-<h2 id="Token是什么："><a href="#Token是什么：" class="headerlink" title="Token是什么："></a><code>Token</code>是什么：</h2><ol>
-<li><p>当客户端第一次请求的实话，发送用户信息到服务端，服务器对用户信息使用<code>HSA256</code>算法以及密钥进行签名，再将这个签名和数据一次作为<code>Token</code>返回给客户端</p>
+<p>7. 浏览器支持不同：如果浏览器禁用 <code>Cookie</code> ，那么 <code>Cookie</code>  直接失效。 <code>Session</code>  比较好点。可以用 <code>URL</code>  重写</p>
+<p>8. 跨域不同： <code>Cookie</code>  支持跨域访问， <code>Session</code>  不支持跨域</p>
+<h2 id="token是什么"><a class="markdownIt-Anchor" href="#token是什么">#</a>  <code>Token</code>  是什么：</h2>
+<ol>
+<li>
+<p>当客户端第一次请求的实话，发送用户信息到服务端，服务器对用户信息使用 <code>HSA256</code>  算法以及密钥进行签名，再将这个签名和数据一次作为 <code>Token</code>  返回给客户端</p>
 </li>
-<li><p>服务端不保存<code>Token</code>，客户端保存<code>Token</code></p>
+<li>
+<p>服务端不保存 <code>Token</code> ，客户端保存 <code>Token</code></p>
 </li>
-<li><p>客户端再次请求的实话，将<code>Token</code>发送给服务端</p>
+<li>
+<p>客户端再次请求的实话，将 <code>Token</code>  发送给服务端</p>
 </li>
-<li><p>服务端同样用<code>HSA256</code>算法和同样的密钥对数据再一次计算签名，和<code>Token</code>中的签名做比较（如果相同，直接登录，不相同，登录失败）</p>
+<li>
+<p>服务端同样用 <code>HSA256</code>  算法和同样的密钥对数据再一次计算签名，和 <code>Token</code>  中的签名做比较（如果相同，直接登录，不相同，登录失败）</p>
 </li>
 </ol>
 
@@ -327,7 +367,7 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
     <div class="item left">
       
 
-  <a href="/posts/166a1445/" itemprop="url" rel="prev" data-background-image="https:&#x2F;&#x2F;tva2.sinaimg.cn&#x2F;mw690&#x2F;6833939bly1gicit4jrvuj20zk0m8785.jpg" title="位，字节， 字符">
+  <a href="/posts/166a1445/" itemprop="url" rel="prev" data-background-image="https:&#x2F;&#x2F;tva3.sinaimg.cn&#x2F;mw690&#x2F;6833939bly1giph4baakhj20zk0m8h5q.jpg" title="位，字节， 字符">
   <span class="type">Previous Post</span>
   <span class="category"><i class="ic i-flag"></i> Java面试</span>
   <h3>位，字节， 字符</h3>
@@ -337,7 +377,7 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
     <div class="item right">
       
 
-  <a href="/posts/f23f1351/" itemprop="url" rel="next" data-background-image="https:&#x2F;&#x2F;tva2.sinaimg.cn&#x2F;mw690&#x2F;6833939bly1gipesx5fdwj20zk0m81kx.jpg" title="equals与&#x3D;&#x3D;区别">
+  <a href="/posts/f23f1351/" itemprop="url" rel="next" data-background-image="https:&#x2F;&#x2F;tva3.sinaimg.cn&#x2F;mw690&#x2F;6833939bly1giclxxcb6rj20zk0m8b29.jpg" title="equals与&#x3D;&#x3D;区别">
   <span class="type">Next Post</span>
   <span class="category"><i class="ic i-flag"></i> Java面试</span>
   <h3>equals与==区别</h3>
@@ -359,7 +399,7 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
   <div class="panels">
     <div class="inner">
       <div class="contents panel pjax" data-title="Contents">
-          <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#Cache%E3%80%81Cookie%E3%80%81Session%E3%80%81Token"><span class="toc-number">1.</span> <span class="toc-text">Cache、Cookie、Session、Token</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%8D%8F%E8%AE%AE%E6%98%AF%E4%BB%80%E4%B9%88"><span class="toc-number">1.1.</span> <span class="toc-text">协议是什么</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Cache%E6%98%AF%E4%BB%80%E4%B9%88"><span class="toc-number">1.2.</span> <span class="toc-text">Cache是什么</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%BC%93%E5%AD%98%E7%AD%96%E7%95%A5%E4%B8%80%E8%88%AC%E5%88%86%E4%B8%A4%E7%A7%8D%E6%83%85%E5%86%B5%EF%BC%9A"><span class="toc-number">1.3.</span> <span class="toc-text">缓存策略一般分两种情况：</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Cookie"><span class="toc-number">1.4.</span> <span class="toc-text">Cookie</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%8E%B7%E5%8F%96Cookie%E7%9A%84%E9%80%94%E5%BE%84"><span class="toc-number">1.5.</span> <span class="toc-text">获取Cookie的途径</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Session%E6%98%AF%E4%BB%80%E4%B9%88"><span class="toc-number">1.6.</span> <span class="toc-text">Session是什么</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Session%E7%9A%84%E4%BC%A0%E8%BE%93%E5%AA%92%E4%BB%8B"><span class="toc-number">1.7.</span> <span class="toc-text">Session的传输媒介</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Token%E6%98%AF%E4%BB%80%E4%B9%88%EF%BC%9A"><span class="toc-number">1.8.</span> <span class="toc-text">Token是什么：</span></a></li></ol></li></ol>
+          <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#cache-cookie-session-token"><span class="toc-number">1.</span> <span class="toc-text">  Cache、Cookie、Session、Token</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%8D%8F%E8%AE%AE%E6%98%AF%E4%BB%80%E4%B9%88"><span class="toc-number">1.1.</span> <span class="toc-text"> 协议是什么</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#cache%E6%98%AF%E4%BB%80%E4%B9%88"><span class="toc-number">1.2.</span> <span class="toc-text">  Cache  是什么</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%BC%93%E5%AD%98%E7%AD%96%E7%95%A5%E4%B8%80%E8%88%AC%E5%88%86%E4%B8%A4%E7%A7%8D%E6%83%85%E5%86%B5"><span class="toc-number">1.3.</span> <span class="toc-text"> 缓存策略一般分两种情况：</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#cookie"><span class="toc-number">1.4.</span> <span class="toc-text">  Cookie</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%8E%B7%E5%8F%96cookie%E7%9A%84%E9%80%94%E5%BE%84"><span class="toc-number">1.5.</span> <span class="toc-text"> 获取 Cookie  的途径</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#session%E6%98%AF%E4%BB%80%E4%B9%88"><span class="toc-number">1.6.</span> <span class="toc-text">  Session  是什么</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#session%E7%9A%84%E4%BC%A0%E8%BE%93%E5%AA%92%E4%BB%8B"><span class="toc-number">1.7.</span> <span class="toc-text">  Session  的传输媒介</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#token%E6%98%AF%E4%BB%80%E4%B9%88"><span class="toc-number">1.8.</span> <span class="toc-text">  Token  是什么：</span></a></li></ol></li></ol>
       </div>
       <div class="related panel pjax" data-title="Related">
         <ul>
@@ -468,59 +508,9 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
   <li class="item">
     
 <div class="breadcrumb">
-<a href="/categories/Java/" title="In Java">Java</a>
 </div>
 
-    <span><a href="/posts/1748805d/" title="java线程池与五种常用线程池策略使用与解析">java线程池与五种常用线程池策略使用与解析</a></span>
-  </li>
-
-      
-  <li class="item">
-    
-<div class="breadcrumb">
-</div>
-
-    <span><a href="/posts/4a17b156/" title="Hello World">Hello World</a></span>
-  </li>
-
-      
-  <li class="item">
-    
-<div class="breadcrumb">
-<a href="/categories/%E5%9F%BA%E5%9B%A0%E7%BC%96%E8%BE%91/" title="In 基因编辑">基因编辑</a>
-</div>
-
-    <span><a href="/posts/1f142005/" title="CRISPR-Cas9英文介绍">CRISPR-Cas9英文介绍</a></span>
-  </li>
-
-      
-  <li class="item">
-    
-<div class="breadcrumb">
-</div>
-
-    <span><a href="/posts/49a9ac1a/" title="Springboot优雅的实现重试">Springboot优雅的实现重试</a></span>
-  </li>
-
-      
-  <li class="item">
-    
-<div class="breadcrumb">
-<a href="/categories/%E5%89%8D%E7%AB%AF/" title="In 前端">前端</a>
-<i class="ic i-angle-right"></i>
-<a href="/categories/%E5%89%8D%E7%AB%AF/Vue/" title="In Vue">Vue</a>
-</div>
-
-    <span><a href="/posts/b5314c4/" title="Vue2语法简介">Vue2语法简介</a></span>
-  </li>
-
-      
-  <li class="item">
-    
-<div class="breadcrumb">
-</div>
-
-    <span><a href="/posts/de5e33d7/" title="关于JDK中的Arrays.sort排序方法">关于JDK中的Arrays.sort排序方法</a></span>
+    <span><a href="/posts/159c6098/" title="阻塞队列">阻塞队列</a></span>
   </li>
 
       
@@ -530,16 +520,53 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
 <a href="/categories/%E6%95%B0%E6%8D%AE%E5%BA%93/" title="In 数据库">数据库</a>
 </div>
 
-    <span><a href="/posts/96e2d97b/" title="mysql 获取当前日期及格式化">mysql 获取当前日期及格式化</a></span>
+    <span><a href="/posts/388f5c14/" title="mysql日期加减">mysql日期加减</a></span>
   </li>
 
       
   <li class="item">
     
 <div class="breadcrumb">
+<a href="/categories/Java/" title="In Java">Java</a>
 </div>
 
-    <span><a href="/posts/7874a051/" title="Nginx踩坑之解决前后端跨域">Nginx踩坑之解决前后端跨域</a></span>
+    <span><a href="/posts/d6d1be75/" title="在Javadoc注释中引用方法">在Javadoc注释中引用方法</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/LeetCode/" title="In LeetCode">LeetCode</a>
+</div>
+
+    <span><a href="/posts/5d0c3fcc/" title="LeetCode172_阶乘后的0">LeetCode172_阶乘后的0</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/%E5%89%8D%E7%AB%AF/" title="In 前端">前端</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/%E5%89%8D%E7%AB%AF/TypeScript/" title="In TypeScript">TypeScript</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/%E5%89%8D%E7%AB%AF/TypeScript/WebPack/" title="In WebPack">WebPack</a>
+</div>
+
+    <span><a href="/posts/ddb0d187/" title="TS配置Webpack">TS配置Webpack</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/Java/" title="In Java">Java</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/Java/Stream/" title="In Stream">Stream</a>
+</div>
+
+    <span><a href="/posts/8b8fedea/" title="Stream流的介绍">Stream流的介绍</a></span>
   </li>
 
       
@@ -551,17 +578,39 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
 <a href="/categories/Java/Tools/" title="In Tools">Tools</a>
 </div>
 
-    <span><a href="/posts/817eab42/" title="java中产生指定范围内的随机数">java中产生指定范围内的随机数</a></span>
+    <span><a href="/posts/13370746/" title="使用EasyExcel读取excel文件为Java实体类">使用EasyExcel读取excel文件为Java实体类</a></span>
   </li>
 
       
   <li class="item">
     
 <div class="breadcrumb">
-<a href="/categories/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/" title="In 设计模式">设计模式</a>
+<a href="/categories/%E5%A4%A7%E6%95%B0%E6%8D%AE/" title="In 大数据">大数据</a>
 </div>
 
-    <span><a href="/posts/79c6d028/" title="23设计模式(更新中)">23设计模式(更新中)</a></span>
+    <span><a href="/posts/737c98ca/" title="什么是MapReduce">什么是MapReduce</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/%E5%89%8D%E7%AB%AF/" title="In 前端">前端</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/%E5%89%8D%E7%AB%AF/Css/" title="In Css">Css</a>
+</div>
+
+    <span><a href="/posts/54880bcd/" title="Css样式">Css样式</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/%E6%95%B0%E6%8D%AE%E5%BA%93/" title="In 数据库">数据库</a>
+</div>
+
+    <span><a href="/posts/96e2d97b/" title="mysql 获取当前日期及格式化">mysql 获取当前日期及格式化</a></span>
   </li>
 
   </ul>

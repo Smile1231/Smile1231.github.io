@@ -14,87 +14,87 @@
         <category>Cookie</category>
         <category>Session</category>
         <category>Java面试</category>
+        <category>SAP</category>
+        <category>Corn</category>
         <category>前端</category>
         <category>Css</category>
-        <category>Corn</category>
-        <category>SAP</category>
         <category>DDD</category>
         <category>领域驱动设计</category>
+        <category>FastJson</category>
         <category>DisPlay属性</category>
         <category>Docker</category>
         <category>blog</category>
         <category>hexo</category>
         <category>next</category>
-        <category>FastJson</category>
-        <category>JavaScript</category>
-        <category>Html</category>
         <category>IDEA</category>
-        <category>函数式接口</category>
         <category>SpringBoot</category>
-        <category>Assert</category>
         <category>Jvm</category>
-        <category>Springboot</category>
         <category>map</category>
         <category>Stream流</category>
+        <category>函数式接口</category>
+        <category>Assert</category>
+        <category>JavaScript</category>
+        <category>Html</category>
+        <category>Springboot</category>
+        <category>java</category>
+        <category>calender</category>
         <category>LeetCode</category>
         <category>算法</category>
         <category>递归</category>
-        <category>java</category>
-        <category>calender</category>
         <category>Linux</category>
         <category>Mybatis</category>
-        <category>模糊查询</category>
         <category>分页查询</category>
+        <category>模糊查询</category>
         <category>Nginx</category>
         <category>Spring</category>
         <category>SrpingBoot</category>
         <category>文件上传</category>
         <category>TypeScript</category>
         <category>WebPack</category>
-        <category>Ubuntu</category>
-        <category>Mysql</category>
-        <category>事务</category>
         <category>UML</category>
+        <category>事务</category>
+        <category>VSCODE</category>
+        <category>快捷键</category>
         <category>master</category>
         <category>VsCode</category>
         <category>Shell</category>
-        <category>VSCODE</category>
-        <category>快捷键</category>
         <category>Vue</category>
         <category>Stream</category>
+        <category>Ubuntu</category>
+        <category>Mysql</category>
         <category>日期</category>
         <category>线程池</category>
         <category>ubuntu</category>
         <category>虚拟机</category>
         <category>二分查找</category>
-        <category>数据挖掘</category>
         <category>Hadoop</category>
-        <category>EasyExcel</category>
+        <category>数据挖掘</category>
         <category>操作系统</category>
         <category>node</category>
+        <category>EasyExcel</category>
         <category>JVM</category>
         <category>Hexo</category>
+        <category>数据库</category>
         <category>junit</category>
         <category>Yaml</category>
-        <category>数据库</category>
-        <category>Mysql事务</category>
         <category>Git</category>
         <category>git,npm,node</category>
+        <category>Mysql事务</category>
+        <category>冒泡排序</category>
         <category>动态规划</category>
+        <category>多线程</category>
         <category>堆排序</category>
         <category>幂等性</category>
-        <category>多线程</category>
-        <category>冒泡排序</category>
         <category>流</category>
         <category>归并排序</category>
-        <category>快速排序</category>
-        <category>直接插入排序</category>
         <category>正则表达式</category>
+        <category>直接插入排序</category>
+        <category>快速排序</category>
+        <category>Spring事务</category>
+        <category>选择排序</category>
         <category>Java 面试</category>
         <category>数据结构</category>
         <category>阻塞队列</category>
-        <category>Spring事务</category>
-        <category>选择排序</category>
         <category>JDK</category>
         <category>动态代理</category>
         <category>Date</category>
@@ -112,36 +112,49 @@
             <category>Java面试</category>
             <category>Spring</category>
             <pubDate>Tue, 15 Feb 2022 22:34:55 +0800</pubDate>
-            <description><![CDATA[ &lt;h1 id=&#34;Spring-Bean的生命周期&#34;&gt;&lt;a href=&#34;#Spring-Bean的生命周期&#34; class=&#34;headerlink&#34; title=&#34;Spring Bean的生命周期&#34;&gt;&lt;/a&gt;&lt;code&gt;Spring Bean&lt;/code&gt;的生命周期&lt;/h1&gt;&lt;p&gt;大致流程：&lt;/p&gt;
-&lt;p&gt;本文将从以下两方面去帮助理解 &lt;code&gt;Bean&lt;/code&gt; 的生命周期：&lt;/p&gt;
+            <description><![CDATA[ &lt;h1 id=&#34;spring-bean的生命周期&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#spring-bean的生命周期&#34;&gt;#&lt;/a&gt;  &lt;code&gt;Spring Bean&lt;/code&gt;  的生命周期&lt;/h1&gt;
+&lt;p&gt;大致流程：&lt;/p&gt;
+&lt;p&gt;本文将从以下两方面去帮助理解  &lt;code&gt;Bean&lt;/code&gt;  的生命周期：&lt;/p&gt;
 &lt;span id=&#34;more&#34;&gt;&lt;/span&gt;
-
 &lt;ul&gt;
-&lt;li&gt;生命周期的概要流程：对 &lt;code&gt;Bean&lt;/code&gt; 的生命周期进行概括，并且结合代码来理解；&lt;/li&gt;
-&lt;li&gt;扩展点的作用：详细介绍 &lt;code&gt;Bean&lt;/code&gt; 生命周期中所涉及到的扩展点的作用。&lt;/li&gt;
+&lt;li&gt;生命周期的概要流程：对  &lt;code&gt;Bean&lt;/code&gt;  的生命周期进行概括，并且结合代码来理解；&lt;/li&gt;
+&lt;li&gt;扩展点的作用：详细介绍  &lt;code&gt;Bean&lt;/code&gt;  生命周期中所涉及到的扩展点的作用。&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2 id=&#34;生命周期的概要流程&#34;&gt;&lt;a href=&#34;#生命周期的概要流程&#34; class=&#34;headerlink&#34; title=&#34;生命周期的概要流程&#34;&gt;&lt;/a&gt;生命周期的概要流程&lt;/h2&gt;&lt;p&gt;&lt;code&gt;Bean&lt;/code&gt; 的生命周期概括起来就是 &lt;code&gt;4&lt;/code&gt; 个阶段：&lt;/p&gt;
+&lt;h2 id=&#34;生命周期的概要流程&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#生命周期的概要流程&#34;&gt;#&lt;/a&gt; 生命周期的概要流程&lt;/h2&gt;
+&lt;p&gt;&lt;code&gt;Bean&lt;/code&gt;  的生命周期概括起来就是  &lt;code&gt;4&lt;/code&gt;  个阶段：&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;实例化（&lt;code&gt;Instantiation&lt;/code&gt;）&lt;/li&gt;
-&lt;li&gt;属性赋值（&lt;code&gt;Populate&lt;/code&gt;）&lt;/li&gt;
-&lt;li&gt;初始化（&lt;code&gt;Initialization&lt;/code&gt;）&lt;/li&gt;
-&lt;li&gt;销毁（&lt;code&gt;Destruction&lt;/code&gt;）&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;实例化（ &lt;code&gt;Instantiation&lt;/code&gt; ）&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;属性赋值（ &lt;code&gt;Populate&lt;/code&gt; ）&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;初始化（ &lt;code&gt;Initialization&lt;/code&gt; ）&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;销毁（ &lt;code&gt;Destruction&lt;/code&gt; ）&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;实例化：第  &lt;code&gt;1&lt;/code&gt;  步，实例化一个  &lt;code&gt;bean&lt;/code&gt;  对象；&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;属性赋值：第  &lt;code&gt;2&lt;/code&gt;  步，为  &lt;code&gt;bean&lt;/code&gt;  设置相关属性和依赖；&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;初始化：第  &lt;code&gt;3~7&lt;/code&gt;  步，步骤较多，其中第  &lt;code&gt;5、6&lt;/code&gt;  步为初始化操作，第  &lt;code&gt;3、4&lt;/code&gt;  步为在初始化前执行，第  &lt;code&gt;7&lt;/code&gt;  步在初始化后执行，该阶段结束，才能被用户使用；&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;销毁：第  &lt;code&gt;8~10&lt;/code&gt;  步，第 &lt;code&gt;8&lt;/code&gt;  步不是真正意义上的销毁（还没使用呢），而是先在使用前注册了销毁的相关调用接口，为了后面第 &lt;code&gt;9、10&lt;/code&gt;  步真正销毁  &lt;code&gt;bean&lt;/code&gt;  时再执行相应的方法。&lt;/p&gt;
+&lt;/li&gt;
 &lt;/ul&gt;
-&lt;ul&gt;
-&lt;li&gt;实例化：第 &lt;code&gt;1&lt;/code&gt; 步，实例化一个 &lt;code&gt;bean&lt;/code&gt; 对象；&lt;/li&gt;
-&lt;li&gt;属性赋值：第 &lt;code&gt;2&lt;/code&gt; 步，为 &lt;code&gt;bean&lt;/code&gt; 设置相关属性和依赖；&lt;/li&gt;
-&lt;li&gt;初始化：第 &lt;code&gt;3~7&lt;/code&gt; 步，步骤较多，其中第 &lt;code&gt;5、6&lt;/code&gt; 步为初始化操作，第 &lt;code&gt;3、4&lt;/code&gt; 步为在初始化前执行，第 &lt;code&gt;7&lt;/code&gt; 步在初始化后执行，该阶段结束，才能被用户使用；&lt;/li&gt;
-&lt;li&gt;销毁：第 &lt;code&gt;8~10&lt;/code&gt;步，第&lt;code&gt;8&lt;/code&gt;步不是真正意义上的销毁（还没使用呢），而是先在使用前注册了销毁的相关调用接口，为了后面第&lt;code&gt;9、10&lt;/code&gt;步真正销毁 &lt;code&gt;bean&lt;/code&gt; 时再执行相应的方法。&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;下面我们结合代码来直观的看下，在 &lt;code&gt;doCreateBean()&lt;/code&gt; 方法中能看到依次执行了这 &lt;code&gt;4&lt;/code&gt; 个阶段：&lt;/p&gt;
+&lt;p&gt;下面我们结合代码来直观的看下，在  &lt;code&gt;doCreateBean()&lt;/code&gt;  方法中能看到依次执行了这  &lt;code&gt;4&lt;/code&gt;  个阶段：&lt;/p&gt;
 &lt;figure class=&#34;highlight java&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;13&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;14&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;15&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;16&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;17&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;18&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;19&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;20&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;21&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;22&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;23&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;24&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;25&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;// AbstractAutowireCapableBeanFactory.java&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;function&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;protected&lt;/span&gt; Object &lt;span class=&#34;title&#34;&gt;doCreateBean&lt;/span&gt;&lt;span class=&#34;params&#34;&gt;(&lt;span class=&#34;keyword&#34;&gt;final&lt;/span&gt; String beanName, &lt;span class=&#34;keyword&#34;&gt;final&lt;/span&gt; RootBeanDefinition mbd, &lt;span class=&#34;keyword&#34;&gt;final&lt;/span&gt; &lt;span class=&#34;meta&#34;&gt;@Nullable&lt;/span&gt; Object[] args)&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;function&#34;&gt;    &lt;span class=&#34;keyword&#34;&gt;throws&lt;/span&gt; BeanCreationException &lt;/span&gt;&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt; &lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;comment&#34;&gt;// 1. 实例化&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    BeanWrapper instanceWrapper = &lt;span class=&#34;keyword&#34;&gt;null&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;keyword&#34;&gt;if&lt;/span&gt; (instanceWrapper == &lt;span class=&#34;keyword&#34;&gt;null&lt;/span&gt;) &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        instanceWrapper = createBeanInstance(beanName, mbd, args);&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    Object exposedObject = bean;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;keyword&#34;&gt;try&lt;/span&gt; &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        &lt;span class=&#34;comment&#34;&gt;// 2. 属性赋值&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        populateBean(beanName, mbd, instanceWrapper);&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        &lt;span class=&#34;comment&#34;&gt;// 3. 初始化&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        exposedObject = initializeBean(beanName, exposedObject, mbd);&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt; &lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;comment&#34;&gt;// 4. 销毁-注册回调接口&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;keyword&#34;&gt;try&lt;/span&gt; &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        registerDisposableBeanIfNecessary(beanName, bean, mbd);&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt; &lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;keyword&#34;&gt;return&lt;/span&gt; exposedObject;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-
-&lt;p&gt;由于初始化包含了第 &lt;code&gt;3~7&lt;/code&gt;步，较复杂，所以我们进到 &lt;code&gt;initializeBean()&lt;/code&gt; 方法里具体看下其过程（注释的序号对应图中序号）：&lt;/p&gt;
+&lt;p&gt;由于初始化包含了第  &lt;code&gt;3~7&lt;/code&gt;  步，较复杂，所以我们进到  &lt;code&gt;initializeBean()&lt;/code&gt;  方法里具体看下其过程（注释的序号对应图中序号）：&lt;/p&gt;
 &lt;figure class=&#34;highlight java&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;13&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;14&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;15&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;16&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;17&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;18&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;19&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;20&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;21&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;22&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;23&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;24&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;25&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;26&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;27&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;28&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;29&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;30&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;31&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;32&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;33&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;34&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;35&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;36&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;37&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;38&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;39&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;40&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;41&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;42&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;43&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;44&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;45&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;46&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;47&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;48&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;49&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;50&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;51&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;52&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;53&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;54&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;55&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;56&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;57&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;58&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;59&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;60&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;61&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;62&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;63&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;64&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;65&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;66&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;67&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;68&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;69&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;70&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;71&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;72&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;73&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;// AbstractAutowireCapableBeanFactory.java&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;function&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;protected&lt;/span&gt; Object &lt;span class=&#34;title&#34;&gt;initializeBean&lt;/span&gt;&lt;span class=&#34;params&#34;&gt;(&lt;span class=&#34;keyword&#34;&gt;final&lt;/span&gt; String beanName, &lt;span class=&#34;keyword&#34;&gt;final&lt;/span&gt; Object bean, &lt;span class=&#34;meta&#34;&gt;@Nullable&lt;/span&gt; RootBeanDefinition mbd)&lt;/span&gt; &lt;/span&gt;&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;comment&#34;&gt;// 3. 检查 Aware 相关接口并设置相关依赖&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;keyword&#34;&gt;if&lt;/span&gt; (System.getSecurityManager() != &lt;span class=&#34;keyword&#34;&gt;null&lt;/span&gt;) &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        AccessController.doPrivileged((PrivilegedAction&amp;lt;Object&amp;gt;) () -&amp;gt; &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;            invokeAwareMethods(beanName, bean);&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;            &lt;span class=&#34;keyword&#34;&gt;return&lt;/span&gt; &lt;span class=&#34;keyword&#34;&gt;null&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        &amp;#125;, getAccessControlContext());&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;keyword&#34;&gt;else&lt;/span&gt; &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        invokeAwareMethods(beanName, bean);&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt; &lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;comment&#34;&gt;// 4. BeanPostProcessor 前置处理&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    Object wrappedBean = bean;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;keyword&#34;&gt;if&lt;/span&gt; (mbd == &lt;span class=&#34;keyword&#34;&gt;null&lt;/span&gt; || !mbd.isSynthetic()) &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        wrappedBean = applyBeanPostProcessorsBeforeInitialization(wrappedBean, beanName);&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt; &lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;comment&#34;&gt;// 5. 若实现 InitializingBean 接口，调用 afterPropertiesSet() 方法&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;comment&#34;&gt;// 6. 若配置自定义的 init-method方法，则执行&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;keyword&#34;&gt;try&lt;/span&gt; &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        invokeInitMethods(beanName, wrappedBean, mbd);&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;keyword&#34;&gt;catch&lt;/span&gt; (Throwable ex) &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        &lt;span class=&#34;keyword&#34;&gt;throw&lt;/span&gt; &lt;span class=&#34;keyword&#34;&gt;new&lt;/span&gt; BeanCreationException(&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;            (mbd != &lt;span class=&#34;keyword&#34;&gt;null&lt;/span&gt; ? mbd.getResourceDescription() : &lt;span class=&#34;keyword&#34;&gt;null&lt;/span&gt;),&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;            beanName, &lt;span class=&#34;string&#34;&gt;&amp;quot;Invocation of init method failed&amp;quot;&lt;/span&gt;, ex);&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;comment&#34;&gt;// 7. BeanPostProceesor 后置处理&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;keyword&#34;&gt;if&lt;/span&gt; (mbd == &lt;span class=&#34;keyword&#34;&gt;null&lt;/span&gt; || !mbd.isSynthetic()) &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        wrappedBean = applyBeanPostProcessorsAfterInitialization(wrappedBean, beanName);&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt; &lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;keyword&#34;&gt;return&lt;/span&gt; wrappedBean;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;```java&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;// AbstractAutowireCapableBeanFactory.java&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;function&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;protected&lt;/span&gt; Object &lt;span class=&#34;title&#34;&gt;initializeBean&lt;/span&gt;&lt;span class=&#34;params&#34;&gt;(&lt;span class=&#34;keyword&#34;&gt;final&lt;/span&gt; String beanName, &lt;span class=&#34;keyword&#34;&gt;final&lt;/span&gt; Object bean, &lt;span class=&#34;meta&#34;&gt;@Nullable&lt;/span&gt; RootBeanDefinition mbd)&lt;/span&gt; &lt;/span&gt;&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;comment&#34;&gt;// 3. 检查 Aware 相关接口并设置相关依赖&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;keyword&#34;&gt;if&lt;/span&gt; (System.getSecurityManager() != &lt;span class=&#34;keyword&#34;&gt;null&lt;/span&gt;) &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        AccessController.doPrivileged((PrivilegedAction&amp;lt;Object&amp;gt;) () -&amp;gt; &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;            invokeAwareMethods(beanName, bean);&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;            &lt;span class=&#34;keyword&#34;&gt;return&lt;/span&gt; &lt;span class=&#34;keyword&#34;&gt;null&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        &amp;#125;, getAccessControlContext());&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;keyword&#34;&gt;else&lt;/span&gt; &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        invokeAwareMethods(beanName, bean);&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt; &lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;comment&#34;&gt;// 4. BeanPostProcessor 前置处理&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    Object wrappedBean = bean;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;keyword&#34;&gt;if&lt;/span&gt; (mbd == &lt;span class=&#34;keyword&#34;&gt;null&lt;/span&gt; || !mbd.isSynthetic()) &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        wrappedBean = applyBeanPostProcessorsBeforeInitialization(wrappedBean, beanName);&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt; &lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;comment&#34;&gt;// 5. 若实现 InitializingBean 接口，调用 afterPropertiesSet() 方法&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;comment&#34;&gt;// 6. 若配置自定义的 init-method方法，则执行&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;keyword&#34;&gt;try&lt;/span&gt; &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        invokeInitMethods(beanName, wrappedBean, mbd);&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;keyword&#34;&gt;catch&lt;/span&gt; (Throwable ex) &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        &lt;span class=&#34;keyword&#34;&gt;throw&lt;/span&gt; &lt;span class=&#34;keyword&#34;&gt;new&lt;/span&gt; BeanCreationException(&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;            (mbd != &lt;span class=&#34;keyword&#34;&gt;null&lt;/span&gt; ? mbd.getResourceDescription() : &lt;span class=&#34;keyword&#34;&gt;null&lt;/span&gt;),&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;            beanName, &lt;span class=&#34;string&#34;&gt;&amp;quot;Invocation of init method failed&amp;quot;&lt;/span&gt;, ex);&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;comment&#34;&gt;// 7. BeanPostProceesor 后置处理&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;keyword&#34;&gt;if&lt;/span&gt; (mbd == &lt;span class=&#34;keyword&#34;&gt;null&lt;/span&gt; || !mbd.isSynthetic()) &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        wrappedBean = applyBeanPostProcessorsAfterInitialization(wrappedBean, beanName);&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt; &lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;keyword&#34;&gt;return&lt;/span&gt; wrappedBean;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-
-&lt;p&gt;在 &lt;code&gt;invokInitMethods()&lt;/code&gt; 方法中会检查 &lt;code&gt;InitializingBean&lt;/code&gt; 接口和 &lt;code&gt;init-method&lt;/code&gt; 方法，销毁的过程也与其类似：&lt;/p&gt;
+&lt;p&gt;在  &lt;code&gt;invokInitMethods()&lt;/code&gt;  方法中会检查  &lt;code&gt;InitializingBean&lt;/code&gt;  接口和  &lt;code&gt;init-method&lt;/code&gt;  方法，销毁的过程也与其类似：&lt;/p&gt;
 &lt;figure class=&#34;highlight java&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;13&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;14&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;15&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;16&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;17&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;18&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;19&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;20&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;21&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;22&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;23&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;24&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;25&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;26&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;27&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;// DisposableBeanAdapter.java&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;function&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;public&lt;/span&gt; &lt;span class=&#34;keyword&#34;&gt;void&lt;/span&gt; &lt;span class=&#34;title&#34;&gt;destroy&lt;/span&gt;&lt;span class=&#34;params&#34;&gt;()&lt;/span&gt; &lt;/span&gt;&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;comment&#34;&gt;// 9. 若实现 DisposableBean 接口，则执行 destory()方法&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;keyword&#34;&gt;if&lt;/span&gt; (&lt;span class=&#34;keyword&#34;&gt;this&lt;/span&gt;.invokeDisposableBean) &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        &lt;span class=&#34;keyword&#34;&gt;try&lt;/span&gt; &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;            &lt;span class=&#34;keyword&#34;&gt;if&lt;/span&gt; (System.getSecurityManager() != &lt;span class=&#34;keyword&#34;&gt;null&lt;/span&gt;) &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;                AccessController.doPrivileged((PrivilegedExceptionAction&amp;lt;Object&amp;gt;) () -&amp;gt; &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;                    ((DisposableBean) &lt;span class=&#34;keyword&#34;&gt;this&lt;/span&gt;.bean).destroy();&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;                    &lt;span class=&#34;keyword&#34;&gt;return&lt;/span&gt; &lt;span class=&#34;keyword&#34;&gt;null&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;                &amp;#125;, &lt;span class=&#34;keyword&#34;&gt;this&lt;/span&gt;.acc);&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;            &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;            &lt;span class=&#34;keyword&#34;&gt;else&lt;/span&gt; &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;                ((DisposableBean) &lt;span class=&#34;keyword&#34;&gt;this&lt;/span&gt;.bean).destroy();&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;            &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;	&lt;span class=&#34;comment&#34;&gt;// 10. 若配置自定义的 detory-method 方法，则执行&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;keyword&#34;&gt;if&lt;/span&gt; (&lt;span class=&#34;keyword&#34;&gt;this&lt;/span&gt;.destroyMethod != &lt;span class=&#34;keyword&#34;&gt;null&lt;/span&gt;) &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        invokeCustomDestroyMethod(&lt;span class=&#34;keyword&#34;&gt;this&lt;/span&gt;.destroyMethod);&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;keyword&#34;&gt;else&lt;/span&gt; &lt;span class=&#34;keyword&#34;&gt;if&lt;/span&gt; (&lt;span class=&#34;keyword&#34;&gt;this&lt;/span&gt;.destroyMethodName != &lt;span class=&#34;keyword&#34;&gt;null&lt;/span&gt;) &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        Method methodToInvoke = determineDestroyMethod(&lt;span class=&#34;keyword&#34;&gt;this&lt;/span&gt;.destroyMethodName);&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        &lt;span class=&#34;keyword&#34;&gt;if&lt;/span&gt; (methodToInvoke != &lt;span class=&#34;keyword&#34;&gt;null&lt;/span&gt;) &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;            invokeCustomDestroyMethod(ClassUtils.getInterfaceMethodIfPossible(methodToInvoke));&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;p&gt;从 &lt;code&gt;Spring&lt;/code&gt; 的源码我们可以直观的看到其执行过程，而我们记忆其过程便可以从这 &lt;code&gt;4&lt;/code&gt; 个阶段出发，实例化、属性赋值、初始化、销毁。其中细节较多的便是初始化，涉及了 &lt;code&gt;Aware、BeanPostProcessor、InitializingBean、init-method&lt;/code&gt; 的概念。&lt;/p&gt;
+&lt;p&gt;从  &lt;code&gt;Spring&lt;/code&gt;  的源码我们可以直观的看到其执行过程，而我们记忆其过程便可以从这  &lt;code&gt;4&lt;/code&gt;  个阶段出发，实例化、属性赋值、初始化、销毁。其中细节较多的便是初始化，涉及了  &lt;code&gt;Aware、BeanPostProcessor、InitializingBean、init-method&lt;/code&gt;  的概念。&lt;/p&gt;
 &lt;p&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3psMXpsMnpsMy9hcnRpY2xlL2RldGFpbHMvMTA1MDQ0OTU0&#34;&gt;拓展点讲解&lt;/span&gt;&lt;/p&gt;
  ]]></description>
         </item>

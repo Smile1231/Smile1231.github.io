@@ -117,12 +117,12 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
       </div>
       <div id="imgs" class="pjax">
         <ul>
-          <li class="item" data-background-image="https://tva2.sinaimg.cn/large/6833939bly1gicljitigmj20zk0m87fp.jpg"></li>
-          <li class="item" data-background-image="https://tva2.sinaimg.cn/large/6833939bly1gipetlbztpj20zk0m84qp.jpg"></li>
-          <li class="item" data-background-image="https://tva2.sinaimg.cn/large/6833939bly1gipeybxm1pj20zk0m8niv.jpg"></li>
-          <li class="item" data-background-image="https://tva2.sinaimg.cn/large/6833939bly1giph4wqtg4j20zk0m8x6p.jpg"></li>
-          <li class="item" data-background-image="https://tva2.sinaimg.cn/large/6833939bly1gipesx5fdwj20zk0m81kx.jpg"></li>
-          <li class="item" data-background-image="https://tva2.sinaimg.cn/large/6833939bly1gicit4jrvuj20zk0m8785.jpg"></li>
+          <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1gicliwyw55j20zk0m8hdt.jpg"></li>
+          <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1giclgrvbd6j20zk0m8qv5.jpg"></li>
+          <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1giclj61ylzj20zk0m8b29.jpg"></li>
+          <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1gipex2cdtbj20zk0m8x6p.jpg"></li>
+          <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1giciukx8a7j20zk0m8aio.jpg"></li>
+          <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1giclhtuo6nj20zk0m8ttm.jpg"></li>
         </ul>
       </div>
     </header>
@@ -178,37 +178,43 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
 <p>线程的实现方式</p>
 </blockquote>
 <ol>
-<li><p>继承Thread类</p>
+<li>
+<p>继承 Thread 类</p>
 </li>
-<li><p>实现Runnable接口</p>
+<li>
+<p>实现 Runnable 接口</p>
 </li>
-<li><p>使用Callable和Future</p>
+<li>
+<p>使用 Callable 和 Future</p>
 </li>
 </ol>
 <span id="more"></span>
-
 <blockquote>
-<p>Thread 类中的<code>start()</code> 和 <code>run() </code>方法有什么区别?</p>
+<p>Thread 类中的 <code>start()</code>  和  <code>run() </code> 方法有什么区别？</p>
 </blockquote>
 <ol>
-<li>start（）方法来启动线程，真正实现了多线程运行。这时无需等待run方法体代码执行完毕，可以直接继续执行下面的代码；通过调用Thread类的start()方法来启动一个线程， 这时此线程是处于就绪状态， 并没有运行。 然后通过此Thread类调用方法run()来完成其运行操作的， 这里方法run()称为线程体，它包含了要执行的这个线程的内容， Run方法运行结束， 此线程终止。然后CPU再调度其它线程。</li>
-<li>run（）方法当作普通方法的方式调用。程序还是要顺序执行，要等待run方法体执行完毕后，才可继续执行下面的代码； 程序中只有主线程——这一个线程， 其程序执行路径还是只有一条， 这样就没有达到写线程的目的。</li>
+<li>start（）方法来启动线程，真正实现了多线程运行。这时无需等待 run 方法体代码执行完毕，可以直接继续执行下面的代码；通过调用 Thread 类的 start () 方法来启动一个线程， 这时此线程是处于就绪状态， 并没有运行。 然后通过此 Thread 类调用方法 run () 来完成其运行操作的， 这里方法 run () 称为线程体，它包含了要执行的这个线程的内容， Run 方法运行结束， 此线程终止。然后 CPU 再调度其它线程。</li>
+<li>run（）方法当作普通方法的方式调用。程序还是要顺序执行，要等待 run 方法体执行完毕后，才可继续执行下面的代码； 程序中只有主线程 —— 这一个线程， 其程序执行路径还是只有一条， 这样就没有达到写线程的目的。</li>
 </ol>
 <blockquote>
-<p>线程<code>RUNNABLE</code>状态</p>
+<p>线程 <code>RUNNABLE</code>  状态</p>
 </blockquote>
-<p>线程对象通过start方法进入runnable状态，启动的线程不一定会立即得到执行，线程的运行与否要看cpu的调度，我们把这个中间状态叫可执行状态（RUNNABLE)。</p>
+<p>线程对象通过 start 方法进入 runnable 状态，启动的线程不一定会立即得到执行，线程的运行与否要看 cpu 的调度，我们把这个中间状态叫可执行状态（RUNNABLE)。</p>
 <blockquote>
-<p>线程的<code>BLOCKED</code>状态</p>
+<p>线程的 <code>BLOCKED</code>  状态</p>
 </blockquote>
 <p>线程正在等待获取锁。</p>
-<p>进入<code>BLOCKED</code>状态，比如调用了<code>sleep</code>,或者<code>wait</code>方法<br>进行某个阻塞的<code>io</code>操作，比如因网络数据的读写进入<code>BLOCKED</code>状态<br>获取某个锁资源，从而加入到该锁的阻塞队列中而进入<code>BLOCKED</code>状态</p>
+<p>进入 <code>BLOCKED</code>  状态，比如调用了 <code>sleep</code> , 或者 <code>wait</code>  方法<br>
+进行某个阻塞的 <code>io</code>  操作，比如因网络数据的读写进入 <code>BLOCKED</code>  状态<br>
+获取某个锁资源，从而加入到该锁的阻塞队列中而进入 <code>BLOCKED</code>  状态</p>
 <blockquote>
-<p>线程的<code>TERMINATED</code>状态</p>
+<p>线程的 <code>TERMINATED</code>  状态</p>
 </blockquote>
-<p>`TERMINATED``是一个线程的最终状态，在该状态下线程不会再切换到其他任何状态了，代表整个生命周期都结束了。</p>
-<p>下面几种情况会进入<code>TERMINATED</code>状态:</p>
-<p>线程运行正常结束，结束生命周期<br>线程运行出错意外结束<br><code>JVM Crash</code> 导致所有的线程都结束</p>
+<p>`TERMINATED`` 是一个线程的最终状态，在该状态下线程不会再切换到其他任何状态了，代表整个生命周期都结束了。</p>
+<p>下面几种情况会进入 <code>TERMINATED</code>  状态:</p>
+<p>线程运行正常结束，结束生命周期<br>
+线程运行出错意外结束<br>
+ <code>JVM Crash</code>  导致所有的线程都结束</p>
 <blockquote>
 <p>如何知道代码段被哪个线程调用？</p>
 </blockquote>
@@ -216,75 +222,76 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
 <blockquote>
 <p>停止线程</p>
 </blockquote>
-<p><code>run</code>方法执行完成，自然终止。</p>
-<p><code>stop()</code>方法，<code>suspend()</code>以及<code>resume()</code>都是过期作废方法，使用它们结果不可预期。</p>
-<p>大多数停止一个线程的操作使用<code>Thread.interrupt()</code>等于说给线程打一个停止的标记, 此方法不回去终止一个正在运行的线程，需要加入一个判断才能可以完成线程的停止。</p>
+<p><code>run</code>  方法执行完成，自然终止。</p>
+<p><code>stop()</code>  方法， <code>suspend()</code>  以及 <code>resume()</code>  都是过期作废方法，使用它们结果不可预期。</p>
+<p>大多数停止一个线程的操作使用 <code>Thread.interrupt()</code>  等于说给线程打一个停止的标记，此方法不回去终止一个正在运行的线程，需要加入一个判断才能可以完成线程的停止。</p>
 <blockquote>
-<p><code>interrupted</code> 和 <code>isInterrupted</code></p>
+<p><code>interrupted</code>  和  <code>isInterrupted</code></p>
 </blockquote>
-<p><code>interrupted</code> : 判断当前线程是否已经中断,会清除状态。</p>
-<p><code>isInterrupted</code> ：判断线程是否已经中断，不会清除状态。</p>
+<p><code>interrupted</code>  : 判断当前线程是否已经中断，会清除状态。</p>
+<p><code>isInterrupted</code>  ：判断线程是否已经中断，不会清除状态。</p>
 <blockquote>
 <p><code>yield</code></p>
 </blockquote>
-<p>放弃当前cpu资源，将它让给其他的任务占用cpu执行时间。但放弃的时间不确定，有可能刚刚放弃，马上又获得cpu时间片。</p>
+<p>放弃当前 cpu 资源，将它让给其他的任务占用 cpu 执行时间。但放弃的时间不确定，有可能刚刚放弃，马上又获得 cpu 时间片。</p>
 <blockquote>
 <p>线程的优先级</p>
 </blockquote>
-<p>在操作系统中，线程可以划分优先级，优先级较高的线程得到cpu资源比较多，也就是cpu有限执行优先级较高的线程对象中的任务，但是不能保证一定优先级高，就先执行。</p>
-<p>Java的优先级分为1～10个等级，数字越大优先级越高，默认优先级大小为5。超出范围则抛出：<code>java.lang.IllegalArgumentException</code>。</p>
+<p>在操作系统中，线程可以划分优先级，优先级较高的线程得到 cpu 资源比较多，也就是 cpu 有限执行优先级较高的线程对象中的任务，但是不能保证一定优先级高，就先执行。</p>
+<p>Java 的优先级分为 1～10 个等级，数字越大优先级越高，默认优先级大小为 5。超出范围则抛出： <code>java.lang.IllegalArgumentException</code> 。</p>
 <blockquote>
 <p>优先级继承特性</p>
 </blockquote>
-<p>线程的优先级具有继承性，比如<code>a</code>线程启动<code>b</code>线程，<code>b</code>线程与<code>a</code>优先级是一样的。</p>
+<p>线程的优先级具有继承性，比如 <code>a</code>  线程启动 <code>b</code>  线程， <code>b</code>  线程与 <code>a</code>  优先级是一样的。</p>
 <blockquote>
 <p>线程种类</p>
 </blockquote>
-<p><code>Java</code>线程有两种，一种是用户线程，一种是守护线程。</p>
+<p><code>Java</code>  线程有两种，一种是用户线程，一种是守护线程。</p>
 <blockquote>
 <p>守护线程的特点</p>
 </blockquote>
-<p>守护线程是一个比较特殊的线程，主要被用做程序中后台调度以及支持性工作。当<code>Java</code>虚拟机中不存在非守护线程时，守护线程才会随着<code>JVM</code>一同结束工作。</p>
+<p>守护线程是一个比较特殊的线程，主要被用做程序中后台调度以及支持性工作。当 <code>Java</code>  虚拟机中不存在非守护线程时，守护线程才会随着 <code>JVM</code>  一同结束工作。</p>
 <blockquote>
-<p><code>Java</code>中典型的守护线程</p>
+<p><code>Java</code>  中典型的守护线程</p>
 </blockquote>
-<p><code>GC</code>（垃圾回收器）</p>
+<p><code>GC</code> （垃圾回收器）</p>
 <blockquote>
-<p>如何设置守护线程<br><code>Thread.setDaemon(true)</code></p>
+<p>如何设置守护线程<br>
+ <code>Thread.setDaemon(true)</code></p>
 </blockquote>
-<p><code>PS:Daemon</code>属性需要再启动线程之前设置，不能再启动后设置。</p>
+<p><code>PS:Daemon</code>  属性需要再启动线程之前设置，不能再启动后设置。</p>
 <blockquote>
 <p>join</p>
 </blockquote>
-<p>join是指把指定的线程加入到当前线程，比如join某个线程a,会让当前线程b进入等待,直到a的生命周期结束，此期间b线程是处于blocked状态。</p>
+<p>join 是指把指定的线程加入到当前线程，比如 join 某个线程 a, 会让当前线程 b 进入等待，直到 a 的生命周期结束，此期间 b 线程是处于 blocked 状态。</p>
 <blockquote>
-<p>什么是synchronized?</p>
+<p>什么是 synchronized?</p>
 </blockquote>
-<p>synchronized关键字可以时间一个简单的策略来防止线程干扰和内存一致性错误，如果一个对象是对多个线程可见的，那么对该对想的所有读写都将通过同步的方式来进行。</p>
+<p>synchronized 关键字可以时间一个简单的策略来防止线程干扰和内存一致性错误，如果一个对象是对多个线程可见的，那么对该对想的所有读写都将通过同步的方式来进行。</p>
 <blockquote>
-<p>synchronized包括哪两个jvm重要的指令？</p>
+<p>synchronized 包括哪两个 jvm 重要的指令？</p>
 </blockquote>
 <p>monitor enter 和 monitor exit</p>
 <blockquote>
-<p>synchronized关键字用法?</p>
+<p>synchronized 关键字用法？</p>
 </blockquote>
 <p>可以用于对代码块或方法的修饰</p>
 <blockquote>
-<p>synchronized锁的是什么?</p>
+<p>synchronized 锁的是什么？</p>
 </blockquote>
 <p>普通同步方法 —————&gt; 锁的是当前实力对象。</p>
-<p>静态同步方法—————&gt; 锁的是当前类的Class对象。</p>
-<p>同步方法 块—————&gt; 锁的是synchonized括号里配置的对象。</p>
+<p>静态同步方法 —————&gt; 锁的是当前类的 Class 对象。</p>
+<p>同步方法 块 —————&gt; 锁的是 synchonized 括号里配置的对象。</p>
 <blockquote>
-<p>Java对象头</p>
+<p>Java 对象头</p>
 </blockquote>
-<p>synchronized用的锁是存在Java对象头里的。对象如果是数组类型，虚拟机用3个字宽(Word)存储对象头，如果对象是非数组类型，用2字宽存储对象头。</p>
-<p>Tips:32位虚拟机中一个字宽等于4字节。</p>
+<p>synchronized 用的锁是存在 Java 对象头里的。对象如果是数组类型，虚拟机用 3 个字宽 (Word) 存储对象头，如果对象是非数组类型，用 2 字宽存储对象头。</p>
+<p>Tips:32 位虚拟机中一个字宽等于 4 字节。</p>
 <blockquote>
-<p>volatile关键字</p>
+<p>volatile 关键字</p>
 </blockquote>
-<p>volatile 是轻量级的synchronized,它在多处理器开发中保证了共享变量的“可见性“。</p>
-<p>Java语言规范第3版对volatile定义如下，Java允许线程访问共享变量，为了保证共享变量能准确和一致的更新，线程应该确保排它锁单独获得这个变量。如果一个字段被声明为volatile,Java线程内存模型所有线程看到这个变量的值是一致的。</p>
+<p>volatile 是轻量级的 synchronized, 它在多处理器开发中保证了共享变量的 “可见性 “。</p>
+<p>Java 语言规范第 3 版对 volatile 定义如下，Java 允许线程访问共享变量，为了保证共享变量能准确和一致的更新，线程应该确保排它锁单独获得这个变量。如果一个字段被声明为 volatile,Java 线程内存模型所有线程看到这个变量的值是一致的。</p>
 <blockquote>
 <p>重入锁 ReentrantLock</p>
 </blockquote>
@@ -295,34 +302,36 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
 <p>重进入是指任意线程在获取到锁之后能够再次获锁而不被锁阻塞。</p>
 <p>该特性主要解决以下两个问题：</p>
 <ol>
-<li><p>锁需要去识别获取锁的线程是否为当前占据锁的线程，如果是则再次成功获取。</p>
+<li>
+<p>锁需要去识别获取锁的线程是否为当前占据锁的线程，如果是则再次成功获取。</p>
 </li>
-<li><p>所得最终释放。线程重复n次是获取了锁，随后在第n次释放该锁后，其他线程能够获取到该锁。</p>
+<li>
+<p>所得最终释放。线程重复 n 次是获取了锁，随后在第 n 次释放该锁后，其他线程能够获取到该锁。</p>
 </li>
 </ol>
 <blockquote>
-<p>ReentrantLock默认锁？</p>
+<p>ReentrantLock 默认锁？</p>
 </blockquote>
 <p>默认非公平锁</p>
 <blockquote>
 <p>公平锁和非公平锁的区别</p>
 </blockquote>
-<p>公平性与否针对获取锁来说的，如果一个锁是公平的，那么锁的获取顺序就应该符合请求的绝对时间顺序，也就是<code>FIFO</code>。</p>
+<p>公平性与否针对获取锁来说的，如果一个锁是公平的，那么锁的获取顺序就应该符合请求的绝对时间顺序，也就是 <code>FIFO</code> 。</p>
 <blockquote>
 <p>读写锁</p>
 </blockquote>
-<p>读写锁允许同一时刻多个读线程访问，但是写线程和其他写线程均被阻塞。读写锁维护一个读锁一个写锁，读写分离，并发性得到了提升。<br><code>Java</code>中提供读写锁的实现类是<code>ReentrantReadWriteLock</code>。</p>
+<p>读写锁允许同一时刻多个读线程访问，但是写线程和其他写线程均被阻塞。读写锁维护一个读锁一个写锁，读写分离，并发性得到了提升。<br>
+ <code>Java</code>  中提供读写锁的实现类是 <code>ReentrantReadWriteLock</code> 。</p>
 <blockquote>
-<p>Java并发容器，你知道几个？</p>
+<p>Java 并发容器，你知道几个？</p>
 </blockquote>
 <p>ConcurrentHashMap、CopyOnWriteArrayList 、CopyOnWriteArraySet 、ConcurrentLinkedQueue、</p>
 <p>ConcurrentLinkedDeque、ConcurrentSkipListMap、ConcurrentSkipListSet、ArrayBlockingQueue、</p>
 <p>LinkedBlockingQueue、LinkedBlockingDeque、PriorityBlockingQueue、SynchronousQueue、</p>
 <p>LinkedTransferQueue、DelayQueue</p>
 <blockquote>
-<p>Java里的阻塞的队列</p>
+<p>Java 里的阻塞的队列</p>
 </blockquote>
-
 
 <blockquote>
 <p>工作窃取算法</p>
@@ -332,62 +341,70 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
 <p>创建线程池参数有哪些，作用？</p>
 </blockquote>
 
-
 <ol>
-<li><p>corePoolSize:核心线程池大小，当提交一个任务时，线程池会创建一个线程来执行任务，即使其他空闲的核心线程能够执行新任务也会创建，等待需要执行的任务数大于线程核心大小就不会继续创建。</p>
+<li>
+<p>corePoolSize: 核心线程池大小，当提交一个任务时，线程池会创建一个线程来执行任务，即使其他空闲的核心线程能够执行新任务也会创建，等待需要执行的任务数大于线程核心大小就不会继续创建。</p>
 </li>
-<li><p>maximumPoolSize:线程池最大数，允许创建的最大线程数，如果队列满了，并且已经创建的线程数小于最大线程数，则会创建新的线程执行任务。如果是无界队列，这个参数基本没用。</p>
+<li>
+<p>maximumPoolSize: 线程池最大数，允许创建的最大线程数，如果队列满了，并且已经创建的线程数小于最大线程数，则会创建新的线程执行任务。如果是无界队列，这个参数基本没用。</p>
 </li>
-<li><p>keepAliveTime: 线程保持活动时间，线程池工作线程空闲后，保持存活的时间，所以如果任务很多，并且每个任务执行时间较短，可以调大时间，提高线程利用率。</p>
+<li>
+<p>keepAliveTime: 线程保持活动时间，线程池工作线程空闲后，保持存活的时间，所以如果任务很多，并且每个任务执行时间较短，可以调大时间，提高线程利用率。</p>
 </li>
-<li><p>unit: 线程保持活动时间单位，天（DAYS)、小时(HOURS)、分钟(MINUTES、毫秒MILLISECONDS)、微秒(MICROSECONDS)、纳秒(NANOSECONDS)</p>
+<li>
+<p>unit: 线程保持活动时间单位，天（DAYS)、小时 (HOURS)、分钟 (MINUTES、毫秒 MILLISECONDS)、微秒 (MICROSECONDS)、纳秒 (NANOSECONDS)</p>
 </li>
-<li><p>workQueue: 任务队列，保存等待执行的任务的阻塞队列。</p>
+<li>
+<p>workQueue: 任务队列，保存等待执行的任务的阻塞队列。</p>
 </li>
 </ol>
 <p>一般来说可以选择如下阻塞队列：</p>
-<p><code>ArrayBlockingQueue</code>:基于数组的有界阻塞队列。</p>
-<p><code>LinkedBlockingQueue</code>:基于链表的阻塞队列。</p>
-<p><code>SynchronizedQueue</code>:一个不存储元素的阻塞队列。</p>
-<p><code>PriorityBlockingQueue</code>:一个具有优先级的阻塞队列。</p>
+<p><code>ArrayBlockingQueue</code> : 基于数组的有界阻塞队列。</p>
+<p><code>LinkedBlockingQueue</code> : 基于链表的阻塞队列。</p>
+<p><code>SynchronizedQueue</code> : 一个不存储元素的阻塞队列。</p>
+<p><code>PriorityBlockingQueue</code> : 一个具有优先级的阻塞队列。</p>
 <blockquote>
 <p>向线程池提交任务</p>
 </blockquote>
-<p>可以使用<code>execute()</code>和<code>submit()</code> 两种方式提交任务。</p>
-<p><code>execute()</code>:无返回值，所以无法判断任务是否被执行成功。</p>
-<p><code>submit()</code>:用于提交需要有返回值的任务。线程池返回一个<code>future</code>类型的对象，通过这个<code>future</code>对象可以判断任务是否执行成功，并且可以通过<code>future的get()</code>来获取返回值，<code>get()</code>方法会阻塞当前线程知道任务完成。<code>get(long timeout,TimeUnit unit)</code>可以设置超市时间。</p>
+<p>可以使用 <code>execute()</code>  和 <code>submit()</code>  两种方式提交任务。</p>
+<p><code>execute()</code> : 无返回值，所以无法判断任务是否被执行成功。</p>
+<p><code>submit()</code> : 用于提交需要有返回值的任务。线程池返回一个 <code>future</code>  类型的对象，通过这个 <code>future</code>  对象可以判断任务是否执行成功，并且可以通过 <code>future的get()</code>  来获取返回值， <code>get()</code>  方法会阻塞当前线程知道任务完成。 <code>get(long timeout,TimeUnit unit)</code>  可以设置超市时间。</p>
 <blockquote>
 <p>关闭线程池</p>
 </blockquote>
-<p>可以通过shutdown()或shutdownNow()来关闭线程池。它们的原理是遍历线程池中的工作线程，然后逐个调用线程的interrupt来中断线程，所以无法响应终端的任务可以能永远无法停止。</p>
-<p>shutdownNow首先将线程池状态设置成STOP,然后尝试停止所有的正在执行或者暂停的线程，并返回等待执行任务的列表。</p>
-<p>shutdown只是将线程池的状态设置成shutdown状态，然后中断所有没有正在执行任务的线程。</p>
-<p>只要调用两者之一，isShutdown就会返回true,当所有任务都已关闭，isTerminaed就会返回true。</p>
-<p>一般来说调用shutdown方法来关闭线程池，如果任务不一定要执行完，可以直接调用shutdownNow方法。</p>
+<p>可以通过 shutdown () 或 shutdownNow () 来关闭线程池。它们的原理是遍历线程池中的工作线程，然后逐个调用线程的 interrupt 来中断线程，所以无法响应终端的任务可以能永远无法停止。</p>
+<p>shutdownNow 首先将线程池状态设置成 STOP, 然后尝试停止所有的正在执行或者暂停的线程，并返回等待执行任务的列表。</p>
+<p>shutdown 只是将线程池的状态设置成 shutdown 状态，然后中断所有没有正在执行任务的线程。</p>
+<p>只要调用两者之一，isShutdown 就会返回 true, 当所有任务都已关闭，isTerminaed 就会返回 true。</p>
+<p>一般来说调用 shutdown 方法来关闭线程池，如果任务不一定要执行完，可以直接调用 shutdownNow 方法。</p>
 <blockquote>
 <p>线程池如何合理设置</p>
 </blockquote>
 <p>配置线程池可以从以下几个方面考虑。</p>
 <ul>
-<li><p>任务是cpu密集型、IO密集型或者混合型</p>
-</li>
-<li><p>任务优先级，高中低。</p>
-</li>
-<li><p>任务时间执行长短。</p>
-</li>
-<li><p>任务依赖性：是否依赖其他系统资源。</p>
+<li>任务是 cpu 密集型、IO 密集型或者混合型</li>
+<li>任务优先级，高中低。</li>
+<li>任务时间执行长短。</li>
+<li>任务依赖性：是否依赖其他系统资源。
 <ul>
-<li><p>cpu密集型可以配置可能小的线程,比如 n + 1个线程。</p>
+<li>
+<p>cpu 密集型可以配置可能小的线程，比如 n + 1 个线程。</p>
 </li>
-<li><p>io密集型可以配置较多的线程，如 2n个线程。</p>
+<li>
+<p>io 密集型可以配置较多的线程，如 2n 个线程。</p>
 </li>
-<li><p>混合型可以拆成io密集型任务和cpu密集型任务，</p>
+<li>
+<p>混合型可以拆成 io 密集型任务和 cpu 密集型任务，</p>
 </li>
-<li><p>如果两个任务执行时间相差大，否-&gt;分解后执行吞吐量将高于串行执行吞吐量。<br>否-&gt;没必要分解。</p>
+<li>
+<p>如果两个任务执行时间相差大，否 -&gt; 分解后执行吞吐量将高于串行执行吞吐量。<br>
+否 -&gt; 没必要分解。</p>
 </li>
-<li><p>可以通过Runtime.getRuntime().availableProcessors()来获取cpu个数。</p>
+<li>
+<p>可以通过 Runtime.getRuntime ().availableProcessors () 来获取 cpu 个数。</p>
 </li>
-<li><p>建议使用有界队列，增加系统的预警能力和稳定性。</p>
+<li>
+<p>建议使用有界队列，增加系统的预警能力和稳定性。</p>
 </li>
 </ul>
 </li>
@@ -396,13 +413,17 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
 <p>JDK 内置的拒绝策略</p>
 </blockquote>
 <ul>
-<li><p>AbortPolicy 抛出异常。</p>
+<li>
+<p>AbortPolicy 抛出异常。</p>
 </li>
-<li><p>DiscardPolicy 直接静悄悄的丢弃这个任务，不触发任何动作。这个策略基本不会使用</p>
+<li>
+<p>DiscardPolicy 直接静悄悄的丢弃这个任务，不触发任何动作。这个策略基本不会使用</p>
 </li>
-<li><p>DiscardOldestPolicy 丢弃队列最前面（最旧）的任务，然后重新尝试执行任务（重复此过程）。</p>
+<li>
+<p>DiscardOldestPolicy 丢弃队列最前面（最旧）的任务，然后重新尝试执行任务（重复此过程）。</p>
 </li>
-<li><p>CallerRunsPolicy 由调用线程处理该任务 。</p>
+<li>
+<p>CallerRunsPolicy 由调用线程处理该任务 。</p>
 </li>
 </ul>
 
@@ -461,7 +482,7 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
     <div class="item left">
       
 
-  <a href="/posts/21d4b84b/" itemprop="url" rel="prev" data-background-image="https:&#x2F;&#x2F;tva2.sinaimg.cn&#x2F;mw690&#x2F;6833939bly1gicli3sbvtj20zk0m8x6p.jpg" title="Vue3项目的创建">
+  <a href="/posts/21d4b84b/" itemprop="url" rel="prev" data-background-image="https:&#x2F;&#x2F;tva3.sinaimg.cn&#x2F;mw690&#x2F;6833939bly1giclga70tsj20zk0m84mr.jpg" title="Vue3项目的创建">
   <span class="type">Previous Post</span>
   <span class="category"><i class="ic i-flag"></i> Vue</span>
   <h3>Vue3项目的创建</h3>
@@ -471,7 +492,7 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
     <div class="item right">
       
 
-  <a href="/posts/5e7baeeb/" itemprop="url" rel="next" data-background-image="https:&#x2F;&#x2F;tva2.sinaimg.cn&#x2F;mw690&#x2F;6833939bly1gipeyvx1d4j20zk0m8hdt.jpg" title="过滤器和拦截器的区别">
+  <a href="/posts/5e7baeeb/" itemprop="url" rel="next" data-background-image="https:&#x2F;&#x2F;tva3.sinaimg.cn&#x2F;mw690&#x2F;6833939bly1gipexbei4hj20zk0m8npd.jpg" title="过滤器和拦截器的区别">
   <span class="type">Next Post</span>
   <span class="category"><i class="ic i-flag"></i> SpringBoot</span>
   <h3>过滤器和拦截器的区别</h3>
@@ -601,10 +622,26 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
   <li class="item">
     
 <div class="breadcrumb">
-<a href="/categories/%E5%89%8D%E7%AB%AF/" title="In 前端">前端</a>
+<a href="/categories/Java/" title="In Java">Java</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/Java/Java%E9%9D%A2%E8%AF%95/" title="In Java面试">Java面试</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/Java/Java%E9%9D%A2%E8%AF%95/SpringBoot/" title="In SpringBoot">SpringBoot</a>
 </div>
 
-    <span><a href="/posts/7733848a/" title="文件上传前端小结">文件上传前端小结</a></span>
+    <span><a href="/posts/59de1824/" title="spring中&#x2F;和&#x2F;*和&#x2F;**的区别">spring中/和/*和/**的区别</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/Java/" title="In Java">Java</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/Java/Tools/" title="In Tools">Tools</a>
+</div>
+
+    <span><a href="/posts/13370746/" title="使用EasyExcel读取excel文件为Java实体类">使用EasyExcel读取excel文件为Java实体类</a></span>
   </li>
 
       
@@ -613,10 +650,20 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
 <div class="breadcrumb">
 <a href="/categories/%E5%89%8D%E7%AB%AF/" title="In 前端">前端</a>
 <i class="ic i-angle-right"></i>
-<a href="/categories/%E5%89%8D%E7%AB%AF/JavaScript/" title="In JavaScript">JavaScript</a>
+<a href="/categories/%E5%89%8D%E7%AB%AF/Vue/" title="In Vue">Vue</a>
 </div>
 
-    <span><a href="/posts/4aa00b9a/" title="Js中的some、find、findindex、includes、filter的使用">Js中的some、find、findindex、includes、filter的使用</a></span>
+    <span><a href="/posts/e7e56598/" title="Vue属性介绍">Vue属性介绍</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/LeetCode/" title="In LeetCode">LeetCode</a>
+</div>
+
+    <span><a href="/posts/4491edd3/" title="LeetCode07_整数反转">LeetCode07_整数反转</a></span>
   </li>
 
       
@@ -626,7 +673,17 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
 <a href="/categories/Java%E9%9D%A2%E8%AF%95/" title="In Java面试">Java面试</a>
 </div>
 
-    <span><a href="/posts/6b5f7afc/" title="面试之旅关于Java知识点">面试之旅关于Java知识点</a></span>
+    <span><a href="/posts/feb84842/" title="Java面试必问--ArrayList的底层">Java面试必问--ArrayList的底层</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/SAP/" title="In SAP">SAP</a>
+</div>
+
+    <span><a href="/posts/96b6e8a1/" title="simple self introduction">simple self introduction</a></span>
   </li>
 
       
@@ -643,50 +700,10 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
   <li class="item">
     
 <div class="breadcrumb">
-<a href="/categories/UML/" title="In UML">UML</a>
-</div>
-
-    <span><a href="/posts/f610585/" title="UML:类图关系总结">UML:类图关系总结</a></span>
-  </li>
-
-      
-  <li class="item">
-    
-<div class="breadcrumb">
-<a href="/categories/Java/" title="In Java">Java</a>
-</div>
-
-    <span><a href="/posts/91c18f7c/" title="关于Try-With-Source的使用以及注意点">关于Try-With-Source的使用以及注意点</a></span>
-  </li>
-
-      
-  <li class="item">
-    
-<div class="breadcrumb">
-<a href="/categories/Ubuntu/" title="In Ubuntu">Ubuntu</a>
-</div>
-
-    <span><a href="/posts/6e65ed30/" title="ubuntu20无法安装vmtools解决">ubuntu20无法安装vmtools解决</a></span>
-  </li>
-
-      
-  <li class="item">
-    
-<div class="breadcrumb">
-<a href="/categories/Java/" title="In Java">Java</a>
-</div>
-
-    <span><a href="/posts/1c3390ab/" title="将Java数据输出为本地txt">将Java数据输出为本地txt</a></span>
-  </li>
-
-      
-  <li class="item">
-    
-<div class="breadcrumb">
 <a href="/categories/IDEA/" title="In IDEA">IDEA</a>
 </div>
 
-    <span><a href="/posts/610bdf07/" title="IDEA快捷键">IDEA快捷键</a></span>
+    <span><a href="/posts/579bb697/" title="IDEA小图标含义">IDEA小图标含义</a></span>
   </li>
 
       
@@ -696,7 +713,17 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
 <a href="/categories/Java/" title="In Java">Java</a>
 </div>
 
-    <span><a href="/posts/7a29d22a/" title="Java关于时间的轮子">Java关于时间的轮子</a></span>
+    <span><a href="/posts/9dcbb5fa/" title="Corn表达式">Corn表达式</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/Hexo/" title="In Hexo">Hexo</a>
+</div>
+
+    <span><a href="/posts/575a6046/" title="Hexo-Next主题如何文章置顶">Hexo-Next主题如何文章置顶</a></span>
   </li>
 
   </ul>

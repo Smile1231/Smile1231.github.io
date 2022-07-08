@@ -14,87 +14,87 @@
         <category>Cookie</category>
         <category>Session</category>
         <category>Java面试</category>
+        <category>SAP</category>
+        <category>Corn</category>
         <category>前端</category>
         <category>Css</category>
-        <category>Corn</category>
-        <category>SAP</category>
         <category>DDD</category>
         <category>领域驱动设计</category>
+        <category>FastJson</category>
         <category>DisPlay属性</category>
         <category>Docker</category>
         <category>blog</category>
         <category>hexo</category>
         <category>next</category>
-        <category>FastJson</category>
-        <category>JavaScript</category>
-        <category>Html</category>
         <category>IDEA</category>
-        <category>函数式接口</category>
         <category>SpringBoot</category>
-        <category>Assert</category>
         <category>Jvm</category>
-        <category>Springboot</category>
         <category>map</category>
         <category>Stream流</category>
+        <category>函数式接口</category>
+        <category>Assert</category>
+        <category>JavaScript</category>
+        <category>Html</category>
+        <category>Springboot</category>
+        <category>java</category>
+        <category>calender</category>
         <category>LeetCode</category>
         <category>算法</category>
         <category>递归</category>
-        <category>java</category>
-        <category>calender</category>
         <category>Linux</category>
         <category>Mybatis</category>
-        <category>模糊查询</category>
         <category>分页查询</category>
+        <category>模糊查询</category>
         <category>Nginx</category>
         <category>Spring</category>
         <category>SrpingBoot</category>
         <category>文件上传</category>
         <category>TypeScript</category>
         <category>WebPack</category>
-        <category>Ubuntu</category>
-        <category>Mysql</category>
-        <category>事务</category>
         <category>UML</category>
+        <category>事务</category>
+        <category>VSCODE</category>
+        <category>快捷键</category>
         <category>master</category>
         <category>VsCode</category>
         <category>Shell</category>
-        <category>VSCODE</category>
-        <category>快捷键</category>
         <category>Vue</category>
         <category>Stream</category>
+        <category>Ubuntu</category>
+        <category>Mysql</category>
         <category>日期</category>
         <category>线程池</category>
         <category>ubuntu</category>
         <category>虚拟机</category>
         <category>二分查找</category>
-        <category>数据挖掘</category>
         <category>Hadoop</category>
-        <category>EasyExcel</category>
+        <category>数据挖掘</category>
         <category>操作系统</category>
         <category>node</category>
+        <category>EasyExcel</category>
         <category>JVM</category>
         <category>Hexo</category>
+        <category>数据库</category>
         <category>junit</category>
         <category>Yaml</category>
-        <category>数据库</category>
-        <category>Mysql事务</category>
         <category>Git</category>
         <category>git,npm,node</category>
+        <category>Mysql事务</category>
+        <category>冒泡排序</category>
         <category>动态规划</category>
+        <category>多线程</category>
         <category>堆排序</category>
         <category>幂等性</category>
-        <category>多线程</category>
-        <category>冒泡排序</category>
         <category>流</category>
         <category>归并排序</category>
-        <category>快速排序</category>
-        <category>直接插入排序</category>
         <category>正则表达式</category>
+        <category>直接插入排序</category>
+        <category>快速排序</category>
+        <category>Spring事务</category>
+        <category>选择排序</category>
         <category>Java 面试</category>
         <category>数据结构</category>
         <category>阻塞队列</category>
-        <category>Spring事务</category>
-        <category>选择排序</category>
         <category>JDK</category>
         <category>动态代理</category>
         <category>Date</category>
@@ -114,21 +114,15 @@
             <pubDate>Thu, 10 Feb 2022 23:38:00 +0800</pubDate>
             <description><![CDATA[ &lt;p&gt;今天在处理一个问题时始终都没有头绪，主要场景是自己的方法中最后需要调用别人的方法进行回调，但是又同时处在一个大事务中，主要我做了以下场景来模拟&lt;/p&gt;
 &lt;span id=&#34;more&#34;&gt;&lt;/span&gt;
-
 &lt;p&gt;数据库表结构：&lt;/p&gt;
 &lt;img data-src=&#34;/posts/69c17d37/2022-02-10-23-42-40.png&#34; class=&#34;&#34;&gt;
-
 &lt;p&gt;测试代码：&lt;/p&gt;
 &lt;figure class=&#34;highlight java&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;13&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;14&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;15&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;16&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;17&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;18&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;19&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;20&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;21&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;22&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;23&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;24&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;25&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;26&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;27&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;28&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;29&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;30&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;31&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;32&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;33&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;34&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;35&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;36&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;37&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;meta&#34;&gt;@SpringBootTest&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;public&lt;/span&gt; &lt;span class=&#34;class&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;class&lt;/span&gt; &lt;span class=&#34;title&#34;&gt;StudentMapperTest&lt;/span&gt; &lt;/span&gt;&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;meta&#34;&gt;@Autowired&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;keyword&#34;&gt;private&lt;/span&gt; StudentDao studentDao;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;meta&#34;&gt;@Test&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;meta&#34;&gt;@Transactional(rollbackFor = Exception.class)&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;meta&#34;&gt;@Rollback(false)&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;function&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;void&lt;/span&gt; &lt;span class=&#34;title&#34;&gt;context01&lt;/span&gt;&lt;span class=&#34;params&#34;&gt;()&lt;/span&gt;&lt;/span&gt;&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        &lt;span class=&#34;comment&#34;&gt;//查询张三&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        LambdaUpdateWrapper&amp;lt;Student&amp;gt; updateWrapper0 = &lt;span class=&#34;keyword&#34;&gt;new&lt;/span&gt; LambdaUpdateWrapper&amp;lt;&amp;gt;();&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        updateWrapper0.eq(Student::getName,&lt;span class=&#34;string&#34;&gt;&amp;quot;张三&amp;quot;&lt;/span&gt;);&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        List&amp;lt;Student&amp;gt; students = studentDao.selectList(updateWrapper0);&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        &lt;span class=&#34;comment&#34;&gt;//对张三进行修改为张三改&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        LambdaUpdateWrapper&amp;lt;Student&amp;gt; updateWrapper = &lt;span class=&#34;keyword&#34;&gt;new&lt;/span&gt; LambdaUpdateWrapper&amp;lt;&amp;gt;();&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        updateWrapper.eq(Student::getName,&lt;span class=&#34;string&#34;&gt;&amp;quot;张三&amp;quot;&lt;/span&gt;)&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;                .set(Student::getName,&lt;span class=&#34;string&#34;&gt;&amp;quot;张三改&amp;quot;&lt;/span&gt;);&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        studentDao.update(Student.builder().build(), updateWrapper);&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        &lt;span class=&#34;comment&#34;&gt;//再度查询张三&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        LambdaUpdateWrapper&amp;lt;Student&amp;gt; updateWrapper1 = &lt;span class=&#34;keyword&#34;&gt;new&lt;/span&gt; LambdaUpdateWrapper&amp;lt;&amp;gt;();&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        updateWrapper1.eq(Student::getName,&lt;span class=&#34;string&#34;&gt;&amp;quot;张三&amp;quot;&lt;/span&gt;);&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        List&amp;lt;Student&amp;gt; students1 = studentDao.selectList(updateWrapper1);&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        &lt;span class=&#34;comment&#34;&gt;//尝试查询修改后的张三改&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        LambdaUpdateWrapper&amp;lt;Student&amp;gt; updateWrapper2 = &lt;span class=&#34;keyword&#34;&gt;new&lt;/span&gt; LambdaUpdateWrapper&amp;lt;&amp;gt;();&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        updateWrapper2.eq(Student::getName,&lt;span class=&#34;string&#34;&gt;&amp;quot;张三改&amp;quot;&lt;/span&gt;);&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        List&amp;lt;Student&amp;gt; students2 = studentDao.selectList(updateWrapper2);&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-
-&lt;p&gt;&lt;code&gt;debug&lt;/code&gt;结果：&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;debug&lt;/code&gt;  结果：&lt;/p&gt;
 &lt;img data-src=&#34;/posts/69c17d37/2022-02-10-23-47-46.png&#34; class=&#34;&#34;&gt;
-
 &lt;img data-src=&#34;/posts/69c17d37/2022-02-10-23-47-01.png&#34; class=&#34;&#34;&gt;
-
 &lt;p&gt;&lt;strong&gt;我们可以得到虽然事务没有提交但是同一会话查询时依然是修改后的值，但是此时如果为多线程下，别的线程将不会读取到提交事物之前的结果，这就是数据库的隔离性问题&lt;/strong&gt;，此时事务没有提交，数据库结果未改变&lt;/p&gt;
 &lt;img data-src=&#34;/posts/69c17d37/2022-02-10-23-50-42.png&#34; class=&#34;&#34;&gt;
-
 &lt;p&gt;当然，只有当程序正常运行结束之后，事务才会提交，数据库才会改变：&lt;/p&gt;
 &lt;img data-src=&#34;/posts/69c17d37/2022-02-10-23-51-07.png&#34; class=&#34;&#34;&gt;
  ]]></description>

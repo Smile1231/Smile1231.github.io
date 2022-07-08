@@ -117,12 +117,12 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
       </div>
       <div id="imgs" class="pjax">
         <ul>
-          <li class="item" data-background-image="https://tva2.sinaimg.cn/large/6833939bly1gicli3sbvtj20zk0m8x6p.jpg"></li>
-          <li class="item" data-background-image="https://tva2.sinaimg.cn/large/6833939bly1giclj9410cj20zk0m8h12.jpg"></li>
-          <li class="item" data-background-image="https://tva2.sinaimg.cn/large/6833939bly1giclgrvbd6j20zk0m8qv5.jpg"></li>
-          <li class="item" data-background-image="https://tva2.sinaimg.cn/large/6833939bly1gicliierfjj20zk0m8npd.jpg"></li>
-          <li class="item" data-background-image="https://tva2.sinaimg.cn/large/6833939bly1gicliwyw55j20zk0m8hdt.jpg"></li>
-          <li class="item" data-background-image="https://tva2.sinaimg.cn/large/6833939bly1giclgi503lj20zk0m8hdt.jpg"></li>
+          <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1gipet8c1a2j20zk0m8kct.jpg"></li>
+          <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1gicitzannuj20zk0m8b29.jpg"></li>
+          <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1gicm0n457cj20zk0m8e81.jpg"></li>
+          <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1giciuja1j1j20zk0m8kjl.jpg"></li>
+          <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1giciryrr3rj20zk0m8nhk.jpg"></li>
+          <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1gipetfk5zwj20zk0m8e81.jpg"></li>
         </ul>
       </div>
     </header>
@@ -171,86 +171,102 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
   <div class="body md" itemprop="articleBody">
     
 
-    <h1 id="js中的some、find、findindex、includes、filter的使用"><a href="#js中的some、find、findindex、includes、filter的使用" class="headerlink" title="js中的some、find、findindex、includes、filter的使用"></a><code>js</code>中的<code>some、find、findindex、includes、filter</code>的使用</h1><blockquote>
-<p>类似于<code>foreach</code>的方法<br>为什么把这类方法归到一起讲，因为我在使用的过程中发现其实这些方法的用法和参数其实都是一样的，底层应该都是和<code>foreach</code>差不多，差别只是在于返回的东西不一样，那么再来看看这些方法的差别以及用法。</p>
+    <h1 id="js中的some-find-findindex-includes-filter的使用"><a class="markdownIt-Anchor" href="#js中的some-find-findindex-includes-filter的使用">#</a>  <code>js</code>  中的 <code>some、find、findindex、includes、filter</code>  的使用</h1>
+<blockquote>
+<p>类似于 <code>foreach</code>  的方法<br>
+为什么把这类方法归到一起讲，因为我在使用的过程中发现其实这些方法的用法和参数其实都是一样的，底层应该都是和 <code>foreach</code>  差不多，差别只是在于返回的东西不一样，那么再来看看这些方法的差别以及用法。</p>
 </blockquote>
 <ul>
-<li>语法<br><code>array.方法名(function(currentValue, index, arr),thisValue)</code></li>
+<li>语法<br>
+ <code>array.方法名(function(currentValue, index, arr),thisValue)</code></li>
 </ul>
 <span id="more"></span>
-
 <ul>
 <li>参数</li>
 </ul>
 <img data-src="/posts/4aa00b9a/2022-02-14-22-33-00.png" class="">
-
 <p>以上是这些方法共同的基本的语法以及参数</p>
 <p>那么再来看看这些方法的不同点</p>
-<h2 id="forEach"><a href="#forEach" class="headerlink" title="forEach()"></a><code>forEach()</code></h2><p><code>forEach()</code> 方法用于调用数组的每个元素，并将元素传递给回调函数。</p>
-<p>注意: <code>forEach()</code> 对于空数组是不会执行回调函数的。</p>
+<h2 id="foreach"><a class="markdownIt-Anchor" href="#foreach">#</a>  <code>forEach()</code></h2>
+<p><code>forEach()</code>  方法用于调用数组的每个元素，并将元素传递给回调函数。</p>
+<p>注意:  <code>forEach()</code>  对于空数组是不会执行回调函数的。</p>
 <blockquote>
-<p>也就是说 <code>forEach()</code> 这个方法是没有任何限制的，回调函数最终返回的值是完全由自己决定的，也就是说其实后面介绍到的所有的方法其实也都可以通过<code>forEach()</code>来实现相同的功能，只不过要自己写更多的代码量。<br><code>forEach()</code>可以通过<code>return</code>来提前退出循环，同时返回相应的值</p>
+<p>也就是说  <code>forEach()</code>  这个方法是没有任何限制的，回调函数最终返回的值是完全由自己决定的，也就是说其实后面介绍到的所有的方法其实也都可以通过 <code>forEach()</code>  来实现相同的功能，只不过要自己写更多的代码量。<br>
+ <code>forEach()</code>  可以通过 <code>return</code>  来提前退出循环，同时返回相应的值</p>
 </blockquote>
-<h2 id="map"><a href="#map" class="headerlink" title="map()"></a><code>map()</code></h2><p><code>map()</code> 方法返回一个新数组，数组中的元素为原始数组元素调用函数处理后的值。</p>
-<p><code>map()</code> 方法按照原始数组元素顺序依次处理元素。</p>
+<h2 id="map"><a class="markdownIt-Anchor" href="#map">#</a>  <code>map()</code></h2>
+<p><code>map()</code>  方法返回一个新数组，数组中的元素为原始数组元素调用函数处理后的值。</p>
+<p><code>map()</code>  方法按照原始数组元素顺序依次处理元素。</p>
 <ul>
-<li><p>注意： <code>map()</code> 不会对空数组进行检测。</p>
+<li>
+<p>注意：  <code>map()</code>  不会对空数组进行检测。</p>
 </li>
-<li><p>注意： <code>map()</code> 不会改变原始数组。</p>
+<li>
+<p>注意：  <code>map()</code>  不会改变原始数组。</p>
 </li>
 </ul>
 <blockquote>
-<p><code>map</code>和<code>foreach</code>很像，差别就在于<code>map</code>所得到的所有符合条件的结果都会通过一个数组来返回。在我们需要将结果放到一个数组中的时候直接使用<code>map</code>就会更加的方便。</p>
+<p><code>map</code>  和 <code>foreach</code>  很像，差别就在于 <code>map</code>  所得到的所有符合条件的结果都会通过一个数组来返回。在我们需要将结果放到一个数组中的时候直接使用 <code>map</code>  就会更加的方便。</p>
 </blockquote>
 <blockquote>
-<p>在<code>map()</code>中<code>return</code>无论如何都会返回一个数组，可以通过<code>return</code>来对原数组进行操作返回一个新数组</p>
+<p>在 <code>map()</code>  中 <code>return</code>  无论如何都会返回一个数组，可以通过 <code>return</code>  来对原数组进行操作返回一个新数组</p>
 </blockquote>
 <figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">    <span class="keyword">var</span> arr = [<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>, <span class="number">4</span>, <span class="number">5</span>, <span class="number">6</span>, <span class="number">7</span>, <span class="number">8</span>, <span class="number">9</span>];</span><br><span class="line">    <span class="built_in">console</span>.log(arr.map(<span class="function"><span class="params">item</span> =&gt;</span> &#123;</span><br><span class="line">    <span class="keyword">return</span> <span class="literal">true</span>;     <span class="comment">//[[true, true, true, true, true, true, true, true, true]]</span></span><br><span class="line">&#125;));</span><br><span class="line"></span><br><span class="line">    <span class="built_in">console</span>.log(arr.map(<span class="function"><span class="params">item</span> =&gt;</span> &#123;</span><br><span class="line">    <span class="keyword">return</span> item*<span class="number">2</span>;     <span class="comment">//[2, 4, 6, 8, 10, 12, 14, 16, 18]</span></span><br><span class="line">&#125;));</span><br></pre></td></tr></table></figure>
-<h2 id="some"><a href="#some" class="headerlink" title="some()"></a><code>some()</code></h2><p><code>some()</code> 方法用于检测数组中的元素是否满足指定条件（函数提供）。</p>
-<p><code>some()</code> 方法会依次执行数组的每个元素：</p>
-<p>如果有一个元素满足条件，则表达式返回<code>true</code> , 剩余的元素不会再执行检测。<br>如果没有满足条件的元素，则返回<code>false</code>。<br>注意： <code>some()</code> 不会对空数组进行检测。<br>注意： <code>some()</code> 不会改变原始数组。</p>
-<p>也就是说<code>some</code>并不一定会遍历完数组中全部的元素，当遍历到由符合条件的元素时就会返回<code>true</code>并终止，否则返回<code>false</code>，所以也就可以通过利用此特性来对数组中特定一部分的元素进行操作。</p>
+<h2 id="some"><a class="markdownIt-Anchor" href="#some">#</a>  <code>some()</code></h2>
+<p><code>some()</code>  方法用于检测数组中的元素是否满足指定条件（函数提供）。</p>
+<p><code>some()</code>  方法会依次执行数组的每个元素：</p>
+<p>如果有一个元素满足条件，则表达式返回 <code>true</code>  , 剩余的元素不会再执行检测。<br>
+如果没有满足条件的元素，则返回 <code>false</code> 。<br>
+注意：  <code>some()</code>  不会对空数组进行检测。<br>
+注意：  <code>some()</code>  不会改变原始数组。</p>
+<p>也就是说 <code>some</code>  并不一定会遍历完数组中全部的元素，当遍历到由符合条件的元素时就会返回 <code>true</code>  并终止，否则返回 <code>false</code> ，所以也就可以通过利用此特性来对数组中特定一部分的元素进行操作。</p>
 <figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> arr = [<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>, <span class="number">4</span>, <span class="number">5</span>, <span class="number">6</span>, <span class="number">7</span>, <span class="number">8</span>, <span class="number">9</span>];</span><br><span class="line"><span class="built_in">console</span>.log(arr.some(<span class="function"><span class="params">item</span> =&gt;</span> &#123;</span><br><span class="line">            <span class="comment">// 通过some可以对数组中符合要求的之前的元素进行操作</span></span><br><span class="line">            <span class="built_in">console</span>.log(item);</span><br><span class="line">            <span class="keyword">return</span> item &gt; <span class="number">5</span>;  <span class="comment">//可以通过return来设置返回值的条件</span></span><br><span class="line">&#125;));</span><br></pre></td></tr></table></figure>
-
 <p>示例：</p>
 <figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//读取缓存是否收藏</span></span><br><span class="line"><span class="comment">// || 意思为强转为 数组格式</span></span><br><span class="line"><span class="keyword">let</span> collect = wx.getStorageSync(<span class="string">&quot;collect&quot;</span>)||[];</span><br><span class="line"><span class="comment">// 使用 some 遍历数组 判断 是否有id的值相等，只要有一个相等的 ， isCollect 都为true</span></span><br><span class="line"><span class="keyword">let</span> isCollect = collect.some(<span class="function"><span class="params">v</span>=&gt;</span>v.id === <span class="built_in">this</span>.data.courseDetails.id);</span><br></pre></td></tr></table></figure>
-<p><strong>还有一个相对的方法叫做 <code>every()</code> ,条件时数组中所有的元素都满足条件。</strong></p>
-<h2 id="find"><a href="#find" class="headerlink" title="``find()"></a>``find()</h2><p><code>find()</code> 方法返回通过测试（函数内判断）的数组的第一个元素的值。</p>
-<p><code>find()</code> 方法为数组中的每个元素都调用一次函数执行：</p>
+<p><strong>还有一个相对的方法叫做  <code>every()</code>  , 条件时数组中所有的元素都满足条件。</strong></p>
+<h2 id="find"><a class="markdownIt-Anchor" href="#find">#</a> ``find()</h2>
+<p><code>find()</code>  方法返回通过测试（函数内判断）的数组的第一个元素的值。</p>
+<p><code>find()</code>  方法为数组中的每个元素都调用一次函数执行：</p>
 <ul>
-<li>当数组中的元素在测试条件时返回 <code>true</code> 时, <code>find()</code> 返回符合条件的元素，之后的值不会再调用执行函数。</li>
-<li>如果没有符合条件的元素返回 <code>undefined</code>  注意: <code>find()</code> 对于空数组，函数是不会执行的。</li>
+<li>
+<p>当数组中的元素在测试条件时返回  <code>true</code>  时， <code>find()</code>  返回符合条件的元素，之后的值不会再调用执行函数。</p>
+</li>
+<li>
+<p>如果没有符合条件的元素返回  <code>undefined</code></p>
+<p>注意:  <code>find()</code>  对于空数组，函数是不会执行的。</p>
+</li>
 </ul>
-<p>注意: <code>find()</code> 并没有改变数组的原始值。</p>
+<p>注意:  <code>find()</code>  并没有改变数组的原始值。</p>
 <figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> arr = [<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>, <span class="number">4</span>, <span class="number">5</span>, <span class="number">6</span>, <span class="number">7</span>, <span class="number">8</span>, <span class="number">9</span>];</span><br><span class="line"><span class="built_in">console</span>.log(arr.find(<span class="function"><span class="params">item</span> =&gt;</span> &#123;</span><br><span class="line">    <span class="comment">// 通过find也可以对数组中符合要求的之前的元素进行操作</span></span><br><span class="line">    <span class="built_in">console</span>.log(item);</span><br><span class="line">    <span class="keyword">return</span> item&gt;<span class="number">5</span>;</span><br><span class="line">&#125;));</span><br></pre></td></tr></table></figure>
-
-<h2 id="findIndex"><a href="#findIndex" class="headerlink" title="findIndex()"></a><code>findIndex()</code></h2><p><code>findIndex()</code> 方法返回传入一个测试条件（函数）符合条件的数组第一个元素位置。</p>
-<p><code>findIndex()</code> 方法为数组中的每个元素都调用一次函数执行：</p>
+<h2 id="findindex"><a class="markdownIt-Anchor" href="#findindex">#</a>  <code>findIndex()</code></h2>
+<p><code>findIndex()</code>  方法返回传入一个测试条件（函数）符合条件的数组第一个元素位置。</p>
+<p><code>findIndex()</code>  方法为数组中的每个元素都调用一次函数执行：</p>
 <ul>
-<li><p>当数组中的元素在测试条件时返回 <code>true</code> 时, <code>findIndex()</code> 返回符合条件的元素的索引位置，之后的值不会再调用执行函数。</p>
+<li>
+<p>当数组中的元素在测试条件时返回  <code>true</code>  时， <code>findIndex()</code>  返回符合条件的元素的索引位置，之后的值不会再调用执行函数。</p>
 </li>
-<li><p>如果没有符合条件的元素返回<code> -1</code></p>
-<p>  注意: <code>findIndex()</code> 对于空数组，函数是不会执行的。</p>
+<li>
+<p>如果没有符合条件的元素返回 <code> -1</code></p>
+<p>注意:  <code>findIndex()</code>  对于空数组，函数是不会执行的。</p>
 </li>
 </ul>
-<p>注意: <code>findIndex()</code> 并没有改变数组的原始值。</p>
+<p>注意:  <code>findIndex()</code>  并没有改变数组的原始值。</p>
 <blockquote>
-<p>与<code>find</code>方法类似，区别只在于这个方法返回的时元素在数组中的索引。</p>
+<p>与 <code>find</code>  方法类似，区别只在于这个方法返回的时元素在数组中的索引。</p>
 </blockquote>
 <figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> arr = [<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>, <span class="number">4</span>, <span class="number">5</span>, <span class="number">6</span>, <span class="number">7</span>, <span class="number">8</span>, <span class="number">9</span>];</span><br><span class="line"><span class="built_in">console</span>.log(arr.findIndex(<span class="function"><span class="params">item</span> =&gt;</span> &#123;</span><br><span class="line">    <span class="built_in">console</span>.log(item);</span><br><span class="line">    <span class="keyword">return</span> item&gt;<span class="number">5</span>;          </span><br><span class="line">&#125;));</span><br></pre></td></tr></table></figure>
-
 <p>示例：</p>
 <figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// || 意思为强转为 数组格式</span></span><br><span class="line"><span class="keyword">let</span> collect = wx.getStorageSync(<span class="string">&quot;collect&quot;</span>)||[];</span><br><span class="line"><span class="comment">// 使用findIndex遍历, 返回 数组中和 目标id 相等的 索引</span></span><br><span class="line"><span class="keyword">let</span> index = collect.findIndex(<span class="function"><span class="params">v</span>=&gt;</span>v.id === <span class="built_in">this</span>.data.courseDetails.id) ;</span><br></pre></td></tr></table></figure>
-
-<h2 id="filter"><a href="#filter" class="headerlink" title="filter()"></a><code>filter()</code></h2><p><code>filter()</code> 方法创建一个新的数组，新数组中的元素是通过检查指定数组中符合条件的所有元素。</p>
-<p>注意： <code>filter()</code> 不会对空数组进行检测。</p>
-<p>注意： <code>filter()</code> 不会改变原始数组。</p>
+<h2 id="filter"><a class="markdownIt-Anchor" href="#filter">#</a>  <code>filter()</code></h2>
+<p><code>filter()</code>  方法创建一个新的数组，新数组中的元素是通过检查指定数组中符合条件的所有元素。</p>
+<p>注意：  <code>filter()</code>  不会对空数组进行检测。</p>
+<p>注意：  <code>filter()</code>  不会改变原始数组。</p>
 <blockquote>
-<p>这个方法与<code>map</code>方法类似，<code>map</code>方法没有返回的条件，而这个方法可以直接通过<code>return</code>来设置过滤条件。</p>
+<p>这个方法与 <code>map</code>  方法类似， <code>map</code>  方法没有返回的条件，而这个方法可以直接通过 <code>return</code>  来设置过滤条件。</p>
 </blockquote>
 <figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> arr = [<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>, <span class="number">4</span>, <span class="number">5</span>, <span class="number">6</span>, <span class="number">7</span>, <span class="number">8</span>, <span class="number">9</span>];</span><br><span class="line"><span class="built_in">console</span>.log(arr.filter(<span class="function"><span class="params">item</span> =&gt;</span> &#123;</span><br><span class="line">    <span class="keyword">return</span> item &gt;<span class="number">2</span></span><br><span class="line">&#125;));</span><br></pre></td></tr></table></figure>
-
-<h2 id="includes"><a href="#includes" class="headerlink" title="includes()"></a><code>includes()</code></h2><p>这个方法是<code>es6</code>中新增的一个方法，可以用来判断一个数组或者是字符串中是否包含某一元素，如果是返回 <code>true</code>，否则<code>false</code>。</p>
+<h2 id="includes"><a class="markdownIt-Anchor" href="#includes">#</a>  <code>includes()</code></h2>
+<p>这个方法是 <code>es6</code>  中新增的一个方法，可以用来判断一个数组或者是字符串中是否包含某一元素，如果是返回  <code>true</code> ，否则 <code>false</code> 。</p>
 <p>语法:</p>
 <ul>
 <li><code>arr.includes(searchElement)</code></li>
@@ -258,9 +274,10 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
 </ul>
 <p>参数:</p>
 <ul>
-<li><code>searchElement</code> 必须。需要查找的元素值。</li>
-<li><code>fromIndex</code> 可选。从该索引处开始查找 <code>searchElement</code>。如果为负值，则按升序从 <code>array.length + fromIndex </code>的索引开始搜索。默认为<code> 0</code>。<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> arr = [<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>, <span class="number">4</span>, <span class="number">5</span>, <span class="number">6</span>, <span class="number">7</span>, <span class="number">8</span>, <span class="number">9</span>];</span><br><span class="line"><span class="built_in">console</span>.log(arr.includes(<span class="number">5</span>)); <span class="comment">//true</span></span><br></pre></td></tr></table></figure></li>
+<li><code>searchElement</code>  必须。需要查找的元素值。</li>
+<li><code>fromIndex</code>  可选。从该索引处开始查找  <code>searchElement</code> 。如果为负值，则按升序从  <code>array.length + fromIndex </code> 的索引开始搜索。默认为 <code> 0</code> 。</li>
 </ul>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> arr = [<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>, <span class="number">4</span>, <span class="number">5</span>, <span class="number">6</span>, <span class="number">7</span>, <span class="number">8</span>, <span class="number">9</span>];</span><br><span class="line"><span class="built_in">console</span>.log(arr.includes(<span class="number">5</span>)); <span class="comment">//true</span></span><br></pre></td></tr></table></figure>
 
       <div class="tags">
           <a href="/tags/%E5%89%8D%E7%AB%AF/" rel="tag"><i class="ic i-tag"></i> 前端</a>
@@ -316,7 +333,7 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
     <div class="item left">
       
 
-  <a href="/posts/2e6621e1/" itemprop="url" rel="prev" data-background-image="https:&#x2F;&#x2F;tva2.sinaimg.cn&#x2F;mw690&#x2F;6833939bly1gicis3attqj20zk0m8k7l.jpg" title="DisPlay属性">
+  <a href="/posts/2e6621e1/" itemprop="url" rel="prev" data-background-image="https:&#x2F;&#x2F;tva3.sinaimg.cn&#x2F;mw690&#x2F;6833939bly1giclhfehz7j20zk0m8u0x.jpg" title="DisPlay属性">
   <span class="type">Previous Post</span>
   <span class="category"><i class="ic i-flag"></i> Css</span>
   <h3>DisPlay属性</h3>
@@ -326,7 +343,7 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
     <div class="item right">
       
 
-  <a href="/posts/7b604068/" itemprop="url" rel="next" data-background-image="https:&#x2F;&#x2F;tva2.sinaimg.cn&#x2F;mw690&#x2F;6833939bly1gipey0a334j20zk0m8qpt.jpg" title="Html页面插入地图">
+  <a href="/posts/7b604068/" itemprop="url" rel="next" data-background-image="https:&#x2F;&#x2F;tva3.sinaimg.cn&#x2F;mw690&#x2F;6833939bly1gipey0a334j20zk0m8qpt.jpg" title="Html页面插入地图">
   <span class="type">Next Post</span>
   <span class="category"><i class="ic i-flag"></i> Html</span>
   <h3>Html页面插入地图</h3>
@@ -348,7 +365,7 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
   <div class="panels">
     <div class="inner">
       <div class="contents panel pjax" data-title="Contents">
-          <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#js%E4%B8%AD%E7%9A%84some%E3%80%81find%E3%80%81findindex%E3%80%81includes%E3%80%81filter%E7%9A%84%E4%BD%BF%E7%94%A8"><span class="toc-number">1.</span> <span class="toc-text">js中的some、find、findindex、includes、filter的使用</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#forEach"><span class="toc-number">1.1.</span> <span class="toc-text">forEach()</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#map"><span class="toc-number">1.2.</span> <span class="toc-text">map()</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#some"><span class="toc-number">1.3.</span> <span class="toc-text">some()</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#find"><span class="toc-number">1.4.</span> <span class="toc-text">&#96;&#96;find()</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#findIndex"><span class="toc-number">1.5.</span> <span class="toc-text">findIndex()</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#filter"><span class="toc-number">1.6.</span> <span class="toc-text">filter()</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#includes"><span class="toc-number">1.7.</span> <span class="toc-text">includes()</span></a></li></ol></li></ol>
+          <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#js%E4%B8%AD%E7%9A%84some-find-findindex-includes-filter%E7%9A%84%E4%BD%BF%E7%94%A8"><span class="toc-number">1.</span> <span class="toc-text">  js  中的 some、find、findindex、includes、filter  的使用</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#foreach"><span class="toc-number">1.1.</span> <span class="toc-text">  forEach()</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#map"><span class="toc-number">1.2.</span> <span class="toc-text">  map()</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#some"><span class="toc-number">1.3.</span> <span class="toc-text">  some()</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#find"><span class="toc-number">1.4.</span> <span class="toc-text"> &#96;&#96;find()</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#findindex"><span class="toc-number">1.5.</span> <span class="toc-text">  findIndex()</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#filter"><span class="toc-number">1.6.</span> <span class="toc-text">  filter()</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#includes"><span class="toc-number">1.7.</span> <span class="toc-text">  includes()</span></a></li></ol></li></ol>
       </div>
       <div class="related panel pjax" data-title="Related">
         <ul>
@@ -457,52 +474,22 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
   <li class="item">
     
 <div class="breadcrumb">
-<a href="/categories/%E5%89%8D%E7%AB%AF/" title="In 前端">前端</a>
-<i class="ic i-angle-right"></i>
-<a href="/categories/%E5%89%8D%E7%AB%AF/Vue/" title="In Vue">Vue</a>
-</div>
-
-    <span><a href="/posts/e7e56598/" title="Vue属性介绍">Vue属性介绍</a></span>
-  </li>
-
-      
-  <li class="item">
-    
-<div class="breadcrumb">
-</div>
-
-    <span><a href="/posts/56be7cc9/" title="关于Linux排查问题命令">关于Linux排查问题命令</a></span>
-  </li>
-
-      
-  <li class="item">
-    
-<div class="breadcrumb">
-</div>
-
-    <span><a href="/posts/ba003691/" title="Springboot工程项目.gitignore配置">Springboot工程项目.gitignore配置</a></span>
-  </li>
-
-      
-  <li class="item">
-    
-<div class="breadcrumb">
 <a href="/categories/Java/" title="In Java">Java</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/Java/Stream/" title="In Stream">Stream</a>
 </div>
 
-    <span><a href="/posts/4ca5bfdf/" title="Spring手动回滚事务">Spring手动回滚事务</a></span>
+    <span><a href="/posts/b1231c9f/" title="java stream中Collectors的用法">java stream中Collectors的用法</a></span>
   </li>
 
       
   <li class="item">
     
 <div class="breadcrumb">
-<a href="/categories/%E5%89%8D%E7%AB%AF/" title="In 前端">前端</a>
-<i class="ic i-angle-right"></i>
-<a href="/categories/%E5%89%8D%E7%AB%AF/Css/" title="In Css">Css</a>
+<a href="/categories/SAP/" title="In SAP">SAP</a>
 </div>
 
-    <span><a href="/posts/7f59931c/" title="Css选择器">Css选择器</a></span>
+    <span><a href="/posts/4187faeb/" title="English self_introduction">English self_introduction</a></span>
   </li>
 
       
@@ -513,6 +500,24 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
 </div>
 
     <span><a href="/posts/55b095e0/" title="The learning of Shell">The learning of Shell</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+</div>
+
+    <span><a href="/posts/66edb7d2/" title="关于hexo使用shoka主题注意点">关于hexo使用shoka主题注意点</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+</div>
+
+    <span><a href="/posts/dfdc2005/" title="JDK动态代理原理剖析(简洁版)">JDK动态代理原理剖析(简洁版)</a></span>
   </li>
 
       
@@ -535,24 +540,32 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
 <div class="breadcrumb">
 <a href="/categories/Java/" title="In Java">Java</a>
 <i class="ic i-angle-right"></i>
-<a href="/categories/Java/Mybatis/" title="In Mybatis">Mybatis</a>
-<i class="ic i-angle-right"></i>
-<a href="/categories/Java/Mybatis/SpringBoot/" title="In SpringBoot">SpringBoot</a>
-<i class="ic i-angle-right"></i>
-<a href="/categories/Java/Mybatis/SpringBoot/%E5%88%86%E9%A1%B5%E6%9F%A5%E8%AF%A2/" title="In 分页查询">分页查询</a>
+<a href="/categories/Java/Tools/" title="In Tools">Tools</a>
 </div>
 
-    <span><a href="/posts/2edf7887/" title="MybatisPlus实现分页查询">MybatisPlus实现分页查询</a></span>
+    <span><a href="/posts/49b96938/" title="Java获取一天时间的起始">Java获取一天时间的起始</a></span>
   </li>
 
       
   <li class="item">
     
 <div class="breadcrumb">
-<a href="/categories/%E5%9F%BA%E5%9B%A0%E7%BC%96%E8%BE%91/" title="In 基因编辑">基因编辑</a>
+<a href="/categories/Java/" title="In Java">Java</a>
 </div>
 
-    <span><a href="/posts/b7653deb/" title="什么是CRISPR&#x2F;Cas9">什么是CRISPR/Cas9</a></span>
+    <span><a href="/posts/1c3390ab/" title="将Java数据输出为本地txt">将Java数据输出为本地txt</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/Java%E9%9D%A2%E8%AF%95/" title="In Java面试">Java面试</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/Java%E9%9D%A2%E8%AF%95/Tools/" title="In Tools">Tools</a>
+</div>
+
+    <span><a href="/posts/6714b4a9/" title="FastJson序列化使用">FastJson序列化使用</a></span>
   </li>
 
       
@@ -561,7 +574,7 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
 <div class="breadcrumb">
 </div>
 
-    <span><a href="/posts/4a17b156/" title="Hello World">Hello World</a></span>
+    <span><a href="/posts/7874a051/" title="Nginx踩坑之解决前后端跨域">Nginx踩坑之解决前后端跨域</a></span>
   </li>
 
   </ul>

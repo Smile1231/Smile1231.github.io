@@ -117,12 +117,12 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
       </div>
       <div id="imgs" class="pjax">
         <ul>
-          <li class="item" data-background-image="https://tva2.sinaimg.cn/large/6833939bly1giph4wqtg4j20zk0m8x6p.jpg"></li>
-          <li class="item" data-background-image="https://tva2.sinaimg.cn/large/6833939bly1gipesx5fdwj20zk0m81kx.jpg"></li>
-          <li class="item" data-background-image="https://tva2.sinaimg.cn/large/6833939bly1gipet4bz0yj20zk0m8e81.jpg"></li>
-          <li class="item" data-background-image="https://tva2.sinaimg.cn/large/6833939bly1giclga70tsj20zk0m84mr.jpg"></li>
-          <li class="item" data-background-image="https://tva2.sinaimg.cn/large/6833939bly1giclflwv2aj20zk0m84qp.jpg"></li>
-          <li class="item" data-background-image="https://tva2.sinaimg.cn/large/6833939bly1gipeu1usa7j20zk0m8b29.jpg"></li>
+          <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1gipewr8iypj20zk0m8b29.jpg"></li>
+          <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1giph4wqtg4j20zk0m8x6p.jpg"></li>
+          <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1giclwuom7cj20zk0m8dvn.jpg"></li>
+          <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1gipey0a334j20zk0m8qpt.jpg"></li>
+          <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1gicitcxhpij20zk0m8hdt.jpg"></li>
+          <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1giclwrdwyaj20zk0m8are.jpg"></li>
         </ul>
       </div>
     </header>
@@ -169,18 +169,18 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
     
 
     <blockquote>
-<p><code>IP</code>地址</p>
+<p><code>IP</code>  地址</p>
 </blockquote>
-<p><code>IP</code>地址非常简单, 直接上代码:</p>
+<p><code>IP</code>  地址非常简单，直接上代码:</p>
 <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">try</span> &#123;</span><br><span class="line">    String result = InetAddress.getLocalHost().getHostAddress();</span><br><span class="line">&#125; <span class="keyword">catch</span> (UnknownHostException e) &#123;</span><br><span class="line">    LOGGER.error(<span class="string">&quot;获取IP失败&quot;</span>, e);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
 <span id="more"></span>
 <blockquote>
 <p>端口号</p>
 </blockquote>
 <p>获取端口号有四种方式:</p>
 <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">- `<span class="meta">@Value</span>`注解</span><br><span class="line">- `<span class="meta">@LocalServerPort</span>`注解</span><br><span class="line">- `Environment`</span><br><span class="line"></span><br><span class="line">我们将`<span class="meta">@Value</span>和<span class="meta">@LocalServerPort</span>`放在一起, 其实`<span class="meta">@LocalServerPort</span>`等价于`<span class="meta">@Value(&quot;$&#123;local.server.port&#125;&quot;)</span>`:</span><br><span class="line">```java</span><br><span class="line"><span class="meta">@Value(&quot;$&#123;server.port&#125;&quot;)</span></span><br><span class="line"><span class="keyword">int</span> serverPort;</span><br><span class="line"></span><br><span class="line"><span class="meta">@LocalServerPort</span></span><br><span class="line"><span class="keyword">int</span> localServerPort</span><br></pre></td></tr></table></figure>
-<p>这里要特别注意, 如果没有在配置文件中配置<code>local.server.port, @LocalServerPort</code>会为<code>null</code><br><code>Environment</code>本质和上述方法类似, 用它来读取配置属性:</p>
+<p>这里要特别注意，如果没有在配置文件中配置 <code>local.server.port, @LocalServerPort</code>  会为 <code>null</code> <br>
+ <code>Environment</code>  本质和上述方法类似，用它来读取配置属性:</p>
 <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">@Autowired</span></span><br><span class="line">Environment environment;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">int</span> <span class="title">getPort</span><span class="params">()</span> </span>&#123;</span><br><span class="line">    <span class="keyword">return</span> environment.getProperty(<span class="string">&quot;server.port&quot;</span>);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <p><span class="exturl" data-url="aHR0cHM6Ly9qdWVqaW4uY24vcG9zdC82OTY2OTIwMTQwNDYxOTY1MzIw">参考链接</span></p>
 
@@ -238,7 +238,7 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
     <div class="item left">
       
 
-  <a href="/posts/bd76a990/" itemprop="url" rel="prev" data-background-image="https:&#x2F;&#x2F;tva2.sinaimg.cn&#x2F;mw690&#x2F;6833939bly1gipeu7txpzj20zk0m81kx.jpg" title="一图看懂Java中的PO,BO,VO,DTO,POJO,DAO,DO">
+  <a href="/posts/bd76a990/" itemprop="url" rel="prev" data-background-image="https:&#x2F;&#x2F;tva3.sinaimg.cn&#x2F;mw690&#x2F;6833939bly1gipeudstjqj20zk0m8k3r.jpg" title="一图看懂Java中的PO,BO,VO,DTO,POJO,DAO,DO">
   <span class="type">Previous Post</span>
   <span class="category"><i class="ic i-flag"></i> Java</span>
   <h3>一图看懂Java中的PO,BO,VO,DTO,POJO,DAO,DO</h3>
@@ -248,7 +248,7 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
     <div class="item right">
       
 
-  <a href="/posts/378107f2/" itemprop="url" rel="next" data-background-image="https:&#x2F;&#x2F;tva2.sinaimg.cn&#x2F;mw690&#x2F;6833939bly1giclfw2t96j20zk0m8x6p.jpg" title="The Basic knowledge of Anaconda">
+  <a href="/posts/378107f2/" itemprop="url" rel="next" data-background-image="https:&#x2F;&#x2F;tva3.sinaimg.cn&#x2F;mw690&#x2F;6833939bly1giclffsa1cj20zk0m811l.jpg" title="The Basic knowledge of Anaconda">
   <span class="type">Next Post</span>
   <span class="category"><i class="ic i-flag"></i> master</span>
   <h3>The Basic knowledge of Anaconda</h3>
@@ -378,52 +378,58 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
   <li class="item">
     
 <div class="breadcrumb">
-</div>
-
-    <span><a href="/posts/d0edc1ed/" title="Linux常用命令">Linux常用命令</a></span>
-  </li>
-
-      
-  <li class="item">
-    
-<div class="breadcrumb">
-<a href="/categories/%E6%95%B0%E6%8D%AE%E5%BA%93/" title="In 数据库">数据库</a>
-</div>
-
-    <span><a href="/posts/60f024c8/" title="关于sql执行计划">关于sql执行计划</a></span>
-  </li>
-
-      
-  <li class="item">
-    
-<div class="breadcrumb">
 <a href="/categories/%E5%89%8D%E7%AB%AF/" title="In 前端">前端</a>
 <i class="ic i-angle-right"></i>
-<a href="/categories/%E5%89%8D%E7%AB%AF/Vue/" title="In Vue">Vue</a>
+<a href="/categories/%E5%89%8D%E7%AB%AF/JavaScript/" title="In JavaScript">JavaScript</a>
 </div>
 
-    <span><a href="/posts/21d4b84b/" title="Vue3项目的创建">Vue3项目的创建</a></span>
+    <span><a href="/posts/4aa00b9a/" title="Js中的some、find、findindex、includes、filter的使用">Js中的some、find、findindex、includes、filter的使用</a></span>
   </li>
 
       
   <li class="item">
     
 <div class="breadcrumb">
+<a href="/categories/DDD/" title="In DDD">DDD</a>
 </div>
 
-    <span><a href="/posts/ac1ae082/" title="SpringBoot如何优雅的发邮件">SpringBoot如何优雅的发邮件</a></span>
+    <span><a href="/posts/3fec5852/" title="DDD领域驱动设计">DDD领域驱动设计</a></span>
   </li>
 
       
   <li class="item">
     
 <div class="breadcrumb">
-<a href="/categories/%E5%89%8D%E7%AB%AF/" title="In 前端">前端</a>
+<a href="/categories/Java%E9%9D%A2%E8%AF%95/" title="In Java面试">Java面试</a>
+</div>
+
+    <span><a href="/posts/3eb5e557/" title="赛可出行面试">赛可出行面试</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/Java%E9%9D%A2%E8%AF%95/" title="In Java面试">Java面试</a>
 <i class="ic i-angle-right"></i>
-<a href="/categories/%E5%89%8D%E7%AB%AF/Css/" title="In Css">Css</a>
+<a href="/categories/Java%E9%9D%A2%E8%AF%95/%E4%BA%8C%E5%88%86%E6%9F%A5%E6%89%BE/" title="In 二分查找">二分查找</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/Java%E9%9D%A2%E8%AF%95/%E4%BA%8C%E5%88%86%E6%9F%A5%E6%89%BE/%E7%AE%97%E6%B3%95/" title="In 算法">算法</a>
 </div>
 
-    <span><a href="/posts/54880bcd/" title="Css样式">Css样式</a></span>
+    <span><a href="/posts/e8eb0481/" title="二分查找">二分查找</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/Java/" title="In Java">Java</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/Java/Mysql/" title="In Mysql">Mysql</a>
+</div>
+
+    <span><a href="/posts/69c17d37/" title="关于事务提交中踩坑">关于事务提交中踩坑</a></span>
   </li>
 
       
@@ -433,7 +439,7 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
 <a href="/categories/Java/" title="In Java">Java</a>
 </div>
 
-    <span><a href="/posts/96eb888f/" title="Java学习线路图">Java学习线路图</a></span>
+    <span><a href="/posts/c3733521/" title="Java之assert关键字">Java之assert关键字</a></span>
   </li>
 
       
@@ -442,36 +448,41 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
 <div class="breadcrumb">
 </div>
 
-    <span><a href="/posts/d0966c4d/" title="工作难点">工作难点</a></span>
+    <span><a href="/posts/ba003691/" title="Springboot工程项目.gitignore配置">Springboot工程项目.gitignore配置</a></span>
   </li>
 
       
   <li class="item">
     
 <div class="breadcrumb">
-<a href="/categories/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/" title="In 设计模式">设计模式</a>
+<a href="/categories/Java/" title="In Java">Java</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/Java/Mybatis/" title="In Mybatis">Mybatis</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/Java/Mybatis/SpringBoot/" title="In SpringBoot">SpringBoot</a>
 </div>
 
-    <span><a href="/posts/79c6d028/" title="23设计模式(更新中)">23设计模式(更新中)</a></span>
+    <span><a href="/posts/c112412d/" title="Mybatis封装成Map结果">Mybatis封装成Map结果</a></span>
   </li>
 
       
   <li class="item">
     
 <div class="breadcrumb">
+<a href="/categories/Java/" title="In Java">Java</a>
 </div>
 
-    <span><a href="/posts/7874a051/" title="Nginx踩坑之解决前后端跨域">Nginx踩坑之解决前后端跨域</a></span>
+    <span><a href="/posts/b536fa7f/" title="关于junit测试类防止事务回滚">关于junit测试类防止事务回滚</a></span>
   </li>
 
       
   <li class="item">
     
 <div class="breadcrumb">
-<a href="/categories/SAP/" title="In SAP">SAP</a>
+<a href="/categories/Java/" title="In Java">Java</a>
 </div>
 
-    <span><a href="/posts/96b6e8a1/" title="simple self introduction">simple self introduction</a></span>
+    <span><a href="/posts/4ca5bfdf/" title="Spring手动回滚事务">Spring手动回滚事务</a></span>
   </li>
 
   </ul>

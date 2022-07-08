@@ -14,87 +14,87 @@
         <category>Cookie</category>
         <category>Session</category>
         <category>Java面试</category>
+        <category>SAP</category>
+        <category>Corn</category>
         <category>前端</category>
         <category>Css</category>
-        <category>Corn</category>
-        <category>SAP</category>
         <category>DDD</category>
         <category>领域驱动设计</category>
+        <category>FastJson</category>
         <category>DisPlay属性</category>
         <category>Docker</category>
         <category>blog</category>
         <category>hexo</category>
         <category>next</category>
-        <category>FastJson</category>
-        <category>JavaScript</category>
-        <category>Html</category>
         <category>IDEA</category>
-        <category>函数式接口</category>
         <category>SpringBoot</category>
-        <category>Assert</category>
         <category>Jvm</category>
-        <category>Springboot</category>
         <category>map</category>
         <category>Stream流</category>
+        <category>函数式接口</category>
+        <category>Assert</category>
+        <category>JavaScript</category>
+        <category>Html</category>
+        <category>Springboot</category>
+        <category>java</category>
+        <category>calender</category>
         <category>LeetCode</category>
         <category>算法</category>
         <category>递归</category>
-        <category>java</category>
-        <category>calender</category>
         <category>Linux</category>
         <category>Mybatis</category>
-        <category>模糊查询</category>
         <category>分页查询</category>
+        <category>模糊查询</category>
         <category>Nginx</category>
         <category>Spring</category>
         <category>SrpingBoot</category>
         <category>文件上传</category>
         <category>TypeScript</category>
         <category>WebPack</category>
-        <category>Ubuntu</category>
-        <category>Mysql</category>
-        <category>事务</category>
         <category>UML</category>
+        <category>事务</category>
+        <category>VSCODE</category>
+        <category>快捷键</category>
         <category>master</category>
         <category>VsCode</category>
         <category>Shell</category>
-        <category>VSCODE</category>
-        <category>快捷键</category>
         <category>Vue</category>
         <category>Stream</category>
+        <category>Ubuntu</category>
+        <category>Mysql</category>
         <category>日期</category>
         <category>线程池</category>
         <category>ubuntu</category>
         <category>虚拟机</category>
         <category>二分查找</category>
-        <category>数据挖掘</category>
         <category>Hadoop</category>
-        <category>EasyExcel</category>
+        <category>数据挖掘</category>
         <category>操作系统</category>
         <category>node</category>
+        <category>EasyExcel</category>
         <category>JVM</category>
         <category>Hexo</category>
+        <category>数据库</category>
         <category>junit</category>
         <category>Yaml</category>
-        <category>数据库</category>
-        <category>Mysql事务</category>
         <category>Git</category>
         <category>git,npm,node</category>
+        <category>Mysql事务</category>
+        <category>冒泡排序</category>
         <category>动态规划</category>
+        <category>多线程</category>
         <category>堆排序</category>
         <category>幂等性</category>
-        <category>多线程</category>
-        <category>冒泡排序</category>
         <category>流</category>
         <category>归并排序</category>
-        <category>快速排序</category>
-        <category>直接插入排序</category>
         <category>正则表达式</category>
+        <category>直接插入排序</category>
+        <category>快速排序</category>
+        <category>Spring事务</category>
+        <category>选择排序</category>
         <category>Java 面试</category>
         <category>数据结构</category>
         <category>阻塞队列</category>
-        <category>Spring事务</category>
-        <category>选择排序</category>
         <category>JDK</category>
         <category>动态代理</category>
         <category>Date</category>
@@ -112,69 +112,70 @@
             <category>前端</category>
             <category>DisPlay属性</category>
             <pubDate>Mon, 14 Feb 2022 21:29:23 +0800</pubDate>
-            <description><![CDATA[ &lt;h1 id=&#34;Display属性&#34;&gt;&lt;a href=&#34;#Display属性&#34; class=&#34;headerlink&#34; title=&#34;Display属性&#34;&gt;&lt;/a&gt;Display属性&lt;/h1&gt;&lt;h2 id=&#34;display所有属性&#34;&gt;&lt;a href=&#34;#display所有属性&#34; class=&#34;headerlink&#34; title=&#34;display所有属性&#34;&gt;&lt;/a&gt;&lt;strong&gt;display所有属性&lt;/strong&gt;&lt;/h2&gt;&lt;figure class=&#34;highlight css&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;13&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;14&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;15&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;16&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;17&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;18&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;19&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;20&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;21&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;22&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;23&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;24&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;25&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;26&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;27&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;28&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;29&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;30&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;31&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;32&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;33&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;34&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;35&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;36&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;37&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;38&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;39&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;40&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;41&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;/* CSS 1 */&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;attribute&#34;&gt;display&lt;/span&gt;: none;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;attribute&#34;&gt;display&lt;/span&gt;: inline;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;attribute&#34;&gt;display&lt;/span&gt;: block;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;attribute&#34;&gt;display&lt;/span&gt;: list-item;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;/* CSS 2.1 */&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;attribute&#34;&gt;display&lt;/span&gt;: inline-block;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;attribute&#34;&gt;display&lt;/span&gt;: table;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;attribute&#34;&gt;display&lt;/span&gt;: inline-table;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;attribute&#34;&gt;display&lt;/span&gt;: table-cell;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;attribute&#34;&gt;display&lt;/span&gt;: table-column;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;attribute&#34;&gt;display&lt;/span&gt;: table-column-group;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;attribute&#34;&gt;display&lt;/span&gt;: table-footer-group;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;attribute&#34;&gt;display&lt;/span&gt;: table-header-group;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;attribute&#34;&gt;display&lt;/span&gt;: table-row;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;attribute&#34;&gt;display&lt;/span&gt;: table-row-group;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;attribute&#34;&gt;display&lt;/span&gt;: table-caption;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;/* CSS 2.1 */&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;/* CSS 3 */&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;attribute&#34;&gt;display&lt;/span&gt;: inline-list-item;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;attribute&#34;&gt;display&lt;/span&gt;: flex;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;attribute&#34;&gt;display&lt;/span&gt;: box;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;attribute&#34;&gt;display&lt;/span&gt;: inline-flex;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;attribute&#34;&gt;display&lt;/span&gt;: grid;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;attribute&#34;&gt;display&lt;/span&gt;: inline-grid;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;attribute&#34;&gt;display&lt;/span&gt;: ruby;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;attribute&#34;&gt;display&lt;/span&gt;: ruby-base;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;attribute&#34;&gt;display&lt;/span&gt;: ruby-text;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;attribute&#34;&gt;display&lt;/span&gt;: ruby-base-container;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;attribute&#34;&gt;display&lt;/span&gt;: ruby-text-container;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;/* CSS 3 */&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;/* Experimental values */&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;attribute&#34;&gt;display&lt;/span&gt;: contents;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;attribute&#34;&gt;display&lt;/span&gt;: run-in;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;/* Experimental values */&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;/* Global values */&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;attribute&#34;&gt;display&lt;/span&gt;: inherit;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;attribute&#34;&gt;display&lt;/span&gt;: initial;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;attribute&#34;&gt;display&lt;/span&gt;: unset;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-
+            <description><![CDATA[ &lt;h1 id=&#34;display属性&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#display属性&#34;&gt;#&lt;/a&gt; Display 属性&lt;/h1&gt;
+&lt;h2 id=&#34;display所有属性&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#display所有属性&#34;&gt;#&lt;/a&gt; &lt;strong&gt;display 所有属性&lt;/strong&gt;&lt;/h2&gt;
+&lt;figure class=&#34;highlight css&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;13&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;14&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;15&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;16&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;17&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;18&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;19&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;20&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;21&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;22&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;23&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;24&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;25&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;26&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;27&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;28&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;29&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;30&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;31&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;32&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;33&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;34&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;35&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;36&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;37&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;38&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;39&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;40&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;41&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;/* CSS 1 */&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;attribute&#34;&gt;display&lt;/span&gt;: none;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;attribute&#34;&gt;display&lt;/span&gt;: inline;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;attribute&#34;&gt;display&lt;/span&gt;: block;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;attribute&#34;&gt;display&lt;/span&gt;: list-item;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;/* CSS 2.1 */&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;attribute&#34;&gt;display&lt;/span&gt;: inline-block;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;attribute&#34;&gt;display&lt;/span&gt;: table;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;attribute&#34;&gt;display&lt;/span&gt;: inline-table;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;attribute&#34;&gt;display&lt;/span&gt;: table-cell;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;attribute&#34;&gt;display&lt;/span&gt;: table-column;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;attribute&#34;&gt;display&lt;/span&gt;: table-column-group;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;attribute&#34;&gt;display&lt;/span&gt;: table-footer-group;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;attribute&#34;&gt;display&lt;/span&gt;: table-header-group;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;attribute&#34;&gt;display&lt;/span&gt;: table-row;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;attribute&#34;&gt;display&lt;/span&gt;: table-row-group;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;attribute&#34;&gt;display&lt;/span&gt;: table-caption;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;/* CSS 2.1 */&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;/* CSS 3 */&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;attribute&#34;&gt;display&lt;/span&gt;: inline-list-item;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;attribute&#34;&gt;display&lt;/span&gt;: flex;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;attribute&#34;&gt;display&lt;/span&gt;: box;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;attribute&#34;&gt;display&lt;/span&gt;: inline-flex;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;attribute&#34;&gt;display&lt;/span&gt;: grid;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;attribute&#34;&gt;display&lt;/span&gt;: inline-grid;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;attribute&#34;&gt;display&lt;/span&gt;: ruby;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;attribute&#34;&gt;display&lt;/span&gt;: ruby-base;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;attribute&#34;&gt;display&lt;/span&gt;: ruby-text;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;attribute&#34;&gt;display&lt;/span&gt;: ruby-base-container;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;attribute&#34;&gt;display&lt;/span&gt;: ruby-text-container;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;/* CSS 3 */&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;/* Experimental values */&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;attribute&#34;&gt;display&lt;/span&gt;: contents;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;attribute&#34;&gt;display&lt;/span&gt;: run-in;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;/* Experimental values */&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;/* Global values */&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;attribute&#34;&gt;display&lt;/span&gt;: inherit;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;attribute&#34;&gt;display&lt;/span&gt;: initial;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;attribute&#34;&gt;display&lt;/span&gt;: unset;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
 &lt;span id=&#34;more&#34;&gt;&lt;/span&gt;
-&lt;p&gt;下面就display的重要属性进行讲解，并配合一些相关的例子&lt;/p&gt;
-&lt;h2 id=&#34;基本属性&#34;&gt;&lt;a href=&#34;#基本属性&#34; class=&#34;headerlink&#34; title=&#34;基本属性&#34;&gt;&lt;/a&gt;基本属性&lt;/h2&gt;&lt;h3 id=&#34;display-none&#34;&gt;&lt;a href=&#34;#display-none&#34; class=&#34;headerlink&#34; title=&#34;display: none&#34;&gt;&lt;/a&gt;display: none&lt;/h3&gt;&lt;p&gt;none 是 CSS 1 就提出来的属性，将元素设置为none的时候既不会占据空间，也无法显示，相当于该元素不存在。&lt;/p&gt;
+&lt;p&gt;下面就 display 的重要属性进行讲解，并配合一些相关的例子&lt;/p&gt;
+&lt;h2 id=&#34;基本属性&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#基本属性&#34;&gt;#&lt;/a&gt; 基本属性&lt;/h2&gt;
+&lt;h3 id=&#34;display-none&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#display-none&#34;&gt;#&lt;/a&gt; display: none&lt;/h3&gt;
+&lt;p&gt;none 是 CSS 1 就提出来的属性，将元素设置为 none 的时候既不会占据空间，也无法显示，相当于该元素不存在。&lt;/p&gt;
 &lt;p&gt;该属性可以用来改善重排与重绘，同时我也经常用它来做模态窗等效果。&lt;/p&gt;
-&lt;h3 id=&#34;display-inline&#34;&gt;&lt;a href=&#34;#display-inline&#34; class=&#34;headerlink&#34; title=&#34;display: inline&#34;&gt;&lt;/a&gt;display: inline&lt;/h3&gt;&lt;p&gt;inline也是 CSS 1 提出的属性，它主要用来设置行内元素属性，设置了该属性之后设置高度、宽度都无效，同时text-align属性设置也&lt;br&gt;无效，但是设置了line-height会让inline元素居中&lt;/p&gt;
-&lt;p&gt;同时从上图可以看到两个inline标签之间出现了奇怪的间隔，改间隔的原因是div换行产生的换行空白，解决办法&lt;/p&gt;
+&lt;h3 id=&#34;display-inline&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#display-inline&#34;&gt;#&lt;/a&gt; display: inline&lt;/h3&gt;
+&lt;p&gt;inline 也是 CSS 1 提出的属性，它主要用来设置行内元素属性，设置了该属性之后设置高度、宽度都无效，同时 text-align 属性设置也&lt;br&gt;
+无效，但是设置了 line-height 会让 inline 元素居中&lt;/p&gt;
+&lt;p&gt;同时从上图可以看到两个 inline 标签之间出现了奇怪的间隔，改间隔的原因是 div 换行产生的换行空白，解决办法&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;将两个inline标签写到一行&lt;/li&gt;
+&lt;li&gt;将两个 inline 标签写到一行&lt;/li&gt;
 &lt;/ul&gt;
 &lt;figure class=&#34;highlight js&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&amp;lt;body&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  &lt;span class=&#34;xml&#34;&gt;&lt;span class=&#34;tag&#34;&gt;&amp;lt;&lt;span class=&#34;name&#34;&gt;div&lt;/span&gt; &lt;span class=&#34;attr&#34;&gt;class&lt;/span&gt;=&lt;span class=&#34;string&#34;&gt;&amp;quot;test&amp;quot;&lt;/span&gt;&amp;gt;&lt;/span&gt;123&lt;span class=&#34;tag&#34;&gt;&amp;lt;/&lt;span class=&#34;name&#34;&gt;div&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;xml&#34;&gt;&lt;span class=&#34;tag&#34;&gt;&amp;lt;&lt;span class=&#34;name&#34;&gt;div&lt;/span&gt; &lt;span class=&#34;attr&#34;&gt;class&lt;/span&gt;=&lt;span class=&#34;string&#34;&gt;&amp;quot;test&amp;quot;&lt;/span&gt;&amp;gt;&lt;/span&gt;123&lt;span class=&#34;tag&#34;&gt;&amp;lt;/&lt;span class=&#34;name&#34;&gt;div&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;lt;/body&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
 &lt;ul&gt;
 &lt;li&gt;或者使用一点技巧&lt;/li&gt;
 &lt;/ul&gt;
 &lt;figure class=&#34;highlight js&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;13&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;14&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;15&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;16&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;17&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;18&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;19&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;20&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;21&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;22&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;23&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;24&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;25&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;26&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;27&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;28&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;29&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;30&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;31&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;32&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;33&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&amp;lt;!DOCTYPE html&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;xml&#34;&gt;&lt;span class=&#34;tag&#34;&gt;&amp;lt;&lt;span class=&#34;name&#34;&gt;html&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;xml&#34;&gt;&lt;span class=&#34;tag&#34;&gt;&amp;lt;&lt;span class=&#34;name&#34;&gt;head&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;xml&#34;&gt;  &lt;span class=&#34;tag&#34;&gt;&amp;lt;&lt;span class=&#34;name&#34;&gt;meta&lt;/span&gt; &lt;span class=&#34;attr&#34;&gt;charset&lt;/span&gt;=&lt;span class=&#34;string&#34;&gt;&amp;quot;utf-8&amp;quot;&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;xml&#34;&gt;  &lt;span class=&#34;tag&#34;&gt;&amp;lt;&lt;span class=&#34;name&#34;&gt;title&lt;/span&gt;&amp;gt;&lt;/span&gt;JS Bin&lt;span class=&#34;tag&#34;&gt;&amp;lt;/&lt;span class=&#34;name&#34;&gt;title&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;xml&#34;&gt;&lt;span class=&#34;tag&#34;&gt;&amp;lt;/&lt;span class=&#34;name&#34;&gt;head&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;xml&#34;&gt;&lt;span class=&#34;tag&#34;&gt;&amp;lt;&lt;span class=&#34;name&#34;&gt;body&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;xml&#34;&gt;  &lt;span class=&#34;tag&#34;&gt;&amp;lt;&lt;span class=&#34;name&#34;&gt;div&lt;/span&gt; &lt;span class=&#34;attr&#34;&gt;class&lt;/span&gt;=&lt;span class=&#34;string&#34;&gt;&amp;quot;main&amp;quot;&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;xml&#34;&gt;    &lt;span class=&#34;tag&#34;&gt;&amp;lt;&lt;span class=&#34;name&#34;&gt;div&lt;/span&gt; &lt;span class=&#34;attr&#34;&gt;class&lt;/span&gt;=&lt;span class=&#34;string&#34;&gt;&amp;quot;test&amp;quot;&lt;/span&gt;&amp;gt;&lt;/span&gt;zhan&lt;span class=&#34;tag&#34;&gt;&amp;lt;/&lt;span class=&#34;name&#34;&gt;div&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;xml&#34;&gt;    &lt;span class=&#34;tag&#34;&gt;&amp;lt;&lt;span class=&#34;name&#34;&gt;div&lt;/span&gt; &lt;span class=&#34;attr&#34;&gt;class&lt;/span&gt;=&lt;span class=&#34;string&#34;&gt;&amp;quot;test&amp;quot;&lt;/span&gt;&amp;gt;&lt;/span&gt;123&lt;span class=&#34;tag&#34;&gt;&amp;lt;/&lt;span class=&#34;name&#34;&gt;div&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;xml&#34;&gt;  &lt;span class=&#34;tag&#34;&gt;&amp;lt;/&lt;span class=&#34;name&#34;&gt;div&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;xml&#34;&gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;xml&#34;&gt;&lt;span class=&#34;tag&#34;&gt;&amp;lt;/&lt;span class=&#34;name&#34;&gt;body&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;xml&#34;&gt;&lt;span class=&#34;tag&#34;&gt;&amp;lt;/&lt;span class=&#34;name&#34;&gt;html&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;xml&#34;&gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;xml&#34;&gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;xml&#34;&gt;html&amp;#123;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;xml&#34;&gt;  -webkit-text-size-adjust:none;/* 使用webkit的私有属性，让字体大小不受设备终端的调整，可定义字体大小小于12px */&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;xml&#34;&gt;&amp;#125;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;xml&#34;&gt;.main&amp;#123;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;xml&#34;&gt;  font-size:0;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;xml&#34;&gt;  *word-spacing:-1px;/* 使用word-spacing 修复 IE6、7 中始终存在的 1px 空隙，减少单词间的空白（即字间隔） */&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;xml&#34;&gt;&amp;#125;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;xml&#34;&gt;.test&amp;#123;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;xml&#34;&gt;  display:inline;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;xml&#34;&gt;  width: 10000px;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;xml&#34;&gt;  height:10000px;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;xml&#34;&gt;  border:1px solid;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;xml&#34;&gt;  font-size:12px;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;xml&#34;&gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;xml&#34;&gt;  letter-spacing: normal;/* 设置字母、字间距为0 */ &lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;xml&#34;&gt;  word-spacing: normal; /* 设置单词、字段间距为0 */&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;xml&#34;&gt;&amp;#125;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;p&gt;实测chome49浏览器只用设置父元素的font-size为0即可。&lt;/p&gt;
+&lt;p&gt;实测 chome49 浏览器只用设置父元素的 font-size 为 0 即可。&lt;/p&gt;
 &lt;p&gt;&lt;code&gt;目前有很多原生的元素都是inline的，span、a、label、input、 img、 strong 和em就是典型的行内元素元素。 链接：http://www.css88.com/archives...&lt;/code&gt;&lt;/p&gt;
-&lt;h3 id=&#34;display-block&#34;&gt;&lt;a href=&#34;#display-block&#34; class=&#34;headerlink&#34; title=&#34;display: block&#34;&gt;&lt;/a&gt;display: block&lt;/h3&gt;&lt;p&gt;设置元素为块状元素，如果不指定宽高，默认会继承父元素的宽度，并且独占一行，即使宽度有剩余也会独占一行，高度一般以子元素撑开的高度为准，当然也可以自己设置宽度和高度。&lt;/p&gt;
+&lt;h3 id=&#34;display-block&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#display-block&#34;&gt;#&lt;/a&gt; display: block&lt;/h3&gt;
+&lt;p&gt;设置元素为块状元素，如果不指定宽高，默认会继承父元素的宽度，并且独占一行，即使宽度有剩余也会独占一行，高度一般以子元素撑开的高度为准，当然也可以自己设置宽度和高度。&lt;/p&gt;
 &lt;blockquote&gt;
-&lt;p&gt;在设计的过程中有时需要设计一个div宽高都是整个屏幕，整个时候宽度很好设置，可是高度一般很难设置，因为页面一般都是可以滚动的，所以高度一般可变，所以这个时候可以使用一个小技巧，如下。&lt;/p&gt;
+&lt;p&gt;在设计的过程中有时需要设计一个 div 宽高都是整个屏幕，整个时候宽度很好设置，可是高度一般很难设置，因为页面一般都是可以滚动的，所以高度一般可变，所以这个时候可以使用一个小技巧，如下。&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;figure class=&#34;highlight js&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;13&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;14&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;15&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;16&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;17&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;18&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;19&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;20&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;21&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;22&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;23&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;24&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;25&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&amp;lt;!DOCTYPE html&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;xml&#34;&gt;&lt;span class=&#34;tag&#34;&gt;&amp;lt;&lt;span class=&#34;name&#34;&gt;html&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;xml&#34;&gt;&lt;span class=&#34;tag&#34;&gt;&amp;lt;&lt;span class=&#34;name&#34;&gt;head&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;xml&#34;&gt;  &lt;span class=&#34;tag&#34;&gt;&amp;lt;&lt;span class=&#34;name&#34;&gt;meta&lt;/span&gt; &lt;span class=&#34;attr&#34;&gt;charset&lt;/span&gt;=&lt;span class=&#34;string&#34;&gt;&amp;quot;utf-8&amp;quot;&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;xml&#34;&gt;  &lt;span class=&#34;tag&#34;&gt;&amp;lt;&lt;span class=&#34;name&#34;&gt;title&lt;/span&gt;&amp;gt;&lt;/span&gt;JS Bin&lt;span class=&#34;tag&#34;&gt;&amp;lt;/&lt;span class=&#34;name&#34;&gt;title&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;xml&#34;&gt;&lt;span class=&#34;tag&#34;&gt;&amp;lt;/&lt;span class=&#34;name&#34;&gt;head&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;xml&#34;&gt;&lt;span class=&#34;tag&#34;&gt;&amp;lt;&lt;span class=&#34;name&#34;&gt;body&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;xml&#34;&gt;  &lt;span class=&#34;tag&#34;&gt;&amp;lt;&lt;span class=&#34;name&#34;&gt;div&lt;/span&gt; &lt;span class=&#34;attr&#34;&gt;class&lt;/span&gt;=&lt;span class=&#34;string&#34;&gt;&amp;quot;main&amp;quot;&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;xml&#34;&gt;  &lt;span class=&#34;tag&#34;&gt;&amp;lt;/&lt;span class=&#34;name&#34;&gt;div&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;xml&#34;&gt;&lt;span class=&#34;tag&#34;&gt;&amp;lt;/&lt;span class=&#34;name&#34;&gt;body&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;xml&#34;&gt;&lt;span class=&#34;tag&#34;&gt;&amp;lt;/&lt;span class=&#34;name&#34;&gt;html&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;xml&#34;&gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;xml&#34;&gt;html&amp;#123;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;xml&#34;&gt;  height: 100%;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;xml&#34;&gt;&amp;#125;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;xml&#34;&gt;body&amp;#123;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;xml&#34;&gt;  height: 100%;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;xml&#34;&gt;  padding: 0;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;xml&#34;&gt;  margin:0;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;xml&#34;&gt;&amp;#125;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;xml&#34;&gt;.main&amp;#123;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;xml&#34;&gt;  background: red;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;xml&#34;&gt;  width: 100%;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;xml&#34;&gt;  height: 100%;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;xml&#34;&gt;&amp;#125;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
 &lt;p&gt;&lt;code&gt;基本原理：div继承的是父元素body的高度，body是继承html的高度，html是继承的浏览器屏幕的高度。&lt;/code&gt;&lt;/p&gt;
-&lt;h3 id=&#34;display-list-item&#34;&gt;&lt;a href=&#34;#display-list-item&#34; class=&#34;headerlink&#34; title=&#34;display: list-item&#34;&gt;&lt;/a&gt;display: list-item&lt;/h3&gt;&lt;p&gt;此属性默认会把元素作为列表显示，要完全模仿列表的话还需要加上 list-style-position，list-style-type&lt;/p&gt;
+&lt;h3 id=&#34;display-list-item&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#display-list-item&#34;&gt;#&lt;/a&gt; display: list-item&lt;/h3&gt;
+&lt;p&gt;此属性默认会把元素作为列表显示，要完全模仿列表的话还需要加上 list-style-position，list-style-type&lt;/p&gt;
 &lt;figure class=&#34;highlight js&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;13&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;14&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&amp;lt;!DOCTYPE html&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;xml&#34;&gt;&lt;span class=&#34;tag&#34;&gt;&amp;lt;&lt;span class=&#34;name&#34;&gt;html&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;xml&#34;&gt;&lt;span class=&#34;tag&#34;&gt;&amp;lt;&lt;span class=&#34;name&#34;&gt;head&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;xml&#34;&gt;  &lt;span class=&#34;tag&#34;&gt;&amp;lt;&lt;span class=&#34;name&#34;&gt;meta&lt;/span&gt; &lt;span class=&#34;attr&#34;&gt;charset&lt;/span&gt;=&lt;span class=&#34;string&#34;&gt;&amp;quot;utf-8&amp;quot;&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;xml&#34;&gt;  &lt;span class=&#34;tag&#34;&gt;&amp;lt;&lt;span class=&#34;name&#34;&gt;title&lt;/span&gt;&amp;gt;&lt;/span&gt;JS Bin&lt;span class=&#34;tag&#34;&gt;&amp;lt;/&lt;span class=&#34;name&#34;&gt;title&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;xml&#34;&gt;&lt;span class=&#34;tag&#34;&gt;&amp;lt;/&lt;span class=&#34;name&#34;&gt;head&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;xml&#34;&gt;&lt;span class=&#34;tag&#34;&gt;&amp;lt;&lt;span class=&#34;name&#34;&gt;body&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;xml&#34;&gt;&lt;span class=&#34;tag&#34;&gt;&amp;lt;&lt;span class=&#34;name&#34;&gt;div&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;xml&#34;&gt;  &lt;span class=&#34;tag&#34;&gt;&amp;lt;&lt;span class=&#34;name&#34;&gt;span&lt;/span&gt;&amp;gt;&lt;/span&gt;111111&lt;span class=&#34;tag&#34;&gt;&amp;lt;/&lt;span class=&#34;name&#34;&gt;span&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;xml&#34;&gt;  &lt;span class=&#34;tag&#34;&gt;&amp;lt;&lt;span class=&#34;name&#34;&gt;span&lt;/span&gt;&amp;gt;&lt;/span&gt;222222&lt;span class=&#34;tag&#34;&gt;&amp;lt;/&lt;span class=&#34;name&#34;&gt;span&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;xml&#34;&gt;  &lt;span class=&#34;tag&#34;&gt;&amp;lt;&lt;span class=&#34;name&#34;&gt;span&lt;/span&gt;&amp;gt;&lt;/span&gt;333333&lt;span class=&#34;tag&#34;&gt;&amp;lt;/&lt;span class=&#34;name&#34;&gt;span&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;xml&#34;&gt;&lt;span class=&#34;tag&#34;&gt;&amp;lt;/&lt;span class=&#34;name&#34;&gt;div&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;xml&#34;&gt;&lt;span class=&#34;tag&#34;&gt;&amp;lt;/&lt;span class=&#34;name&#34;&gt;body&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;xml&#34;&gt;&lt;span class=&#34;tag&#34;&gt;&amp;lt;/&lt;span class=&#34;name&#34;&gt;html&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-
-
 &lt;figure class=&#34;highlight css&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;8&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;selector-tag&#34;&gt;div&lt;/span&gt;&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  &lt;span class=&#34;attribute&#34;&gt;padding-left&lt;/span&gt;:&lt;span class=&#34;number&#34;&gt;30px&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;selector-tag&#34;&gt;span&lt;/span&gt;&amp;#123; &lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  &lt;span class=&#34;attribute&#34;&gt;display&lt;/span&gt;:list-item;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  &lt;span class=&#34;attribute&#34;&gt;list-style&lt;/span&gt;:disc outside none;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
 &lt;p&gt;效果如下:&lt;/p&gt;
 
-
-
-&lt;p&gt;通过上面样式设置，就能仿出一个类似的列表，一定要在div上加padding，因为默认的列表之前的·在box外面&lt;/p&gt;
-&lt;h3 id=&#34;display-inline-block&#34;&gt;&lt;a href=&#34;#display-inline-block&#34; class=&#34;headerlink&#34; title=&#34;display: inline-block&#34;&gt;&lt;/a&gt;display: inline-block&lt;/h3&gt;&lt;p&gt;inline-block为 CSS 2.1 新增的属性。 &lt;strong&gt;inline-block既具有block的宽高特性又具有inline的同行元素特性。&lt;/strong&gt; 通过inline-block结合text-align: justify 还可以实现固定宽高的列表两端对齐布局，如下例子：&lt;/p&gt;
+&lt;p&gt;通过上面样式设置，就能仿出一个类似的列表，一定要在 div 上加 padding，因为默认的列表之前的・在 box 外面&lt;/p&gt;
+&lt;h3 id=&#34;display-inline-block&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#display-inline-block&#34;&gt;#&lt;/a&gt; display: inline-block&lt;/h3&gt;
+&lt;p&gt;inline-block 为 CSS 2.1 新增的属性。 &lt;strong&gt;inline-block 既具有 block 的宽高特性又具有 inline 的同行元素特性。&lt;/strong&gt; 通过 inline-block 结合 text-align: justify 还可以实现固定宽高的列表两端对齐布局，如下例子：&lt;/p&gt;
 &lt;figure class=&#34;highlight html&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;13&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;14&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;15&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;16&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;17&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;18&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;19&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;20&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;21&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;22&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;meta&#34;&gt;&amp;lt;!DOCTYPE &lt;span class=&#34;meta-keyword&#34;&gt;html&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;tag&#34;&gt;&amp;lt;&lt;span class=&#34;name&#34;&gt;html&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;tag&#34;&gt;&amp;lt;&lt;span class=&#34;name&#34;&gt;head&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  &lt;span class=&#34;tag&#34;&gt;&amp;lt;&lt;span class=&#34;name&#34;&gt;meta&lt;/span&gt; &lt;span class=&#34;attr&#34;&gt;charset&lt;/span&gt;=&lt;span class=&#34;string&#34;&gt;&amp;quot;utf-8&amp;quot;&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  &lt;span class=&#34;tag&#34;&gt;&amp;lt;&lt;span class=&#34;name&#34;&gt;title&lt;/span&gt;&amp;gt;&lt;/span&gt;JS Bin&lt;span class=&#34;tag&#34;&gt;&amp;lt;/&lt;span class=&#34;name&#34;&gt;title&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;tag&#34;&gt;&amp;lt;/&lt;span class=&#34;name&#34;&gt;head&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;tag&#34;&gt;&amp;lt;&lt;span class=&#34;name&#34;&gt;body&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;tag&#34;&gt;&amp;lt;&lt;span class=&#34;name&#34;&gt;div&lt;/span&gt; &lt;span class=&#34;attr&#34;&gt;class&lt;/span&gt;=&lt;span class=&#34;string&#34;&gt;&amp;quot;main&amp;quot;&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  &lt;span class=&#34;tag&#34;&gt;&amp;lt;&lt;span class=&#34;name&#34;&gt;div&lt;/span&gt; &lt;span class=&#34;attr&#34;&gt;class&lt;/span&gt;=&lt;span class=&#34;string&#34;&gt;&amp;quot;col col1&amp;quot;&lt;/span&gt;&amp;gt;&lt;/span&gt;111111&lt;span class=&#34;tag&#34;&gt;&amp;lt;/&lt;span class=&#34;name&#34;&gt;div&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  &lt;span class=&#34;tag&#34;&gt;&amp;lt;&lt;span class=&#34;name&#34;&gt;div&lt;/span&gt; &lt;span class=&#34;attr&#34;&gt;class&lt;/span&gt;=&lt;span class=&#34;string&#34;&gt;&amp;quot;col col2&amp;quot;&lt;/span&gt;&amp;gt;&lt;/span&gt;222222&lt;span class=&#34;tag&#34;&gt;&amp;lt;/&lt;span class=&#34;name&#34;&gt;div&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  &lt;span class=&#34;tag&#34;&gt;&amp;lt;&lt;span class=&#34;name&#34;&gt;div&lt;/span&gt; &lt;span class=&#34;attr&#34;&gt;class&lt;/span&gt;=&lt;span class=&#34;string&#34;&gt;&amp;quot;col col3&amp;quot;&lt;/span&gt;&amp;gt;&lt;/span&gt;333333&lt;span class=&#34;tag&#34;&gt;&amp;lt;/&lt;span class=&#34;name&#34;&gt;div&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  &lt;span class=&#34;tag&#34;&gt;&amp;lt;&lt;span class=&#34;name&#34;&gt;div&lt;/span&gt; &lt;span class=&#34;attr&#34;&gt;class&lt;/span&gt;=&lt;span class=&#34;string&#34;&gt;&amp;quot;col col1&amp;quot;&lt;/span&gt;&amp;gt;&lt;/span&gt;111111&lt;span class=&#34;tag&#34;&gt;&amp;lt;/&lt;span class=&#34;name&#34;&gt;div&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  &lt;span class=&#34;tag&#34;&gt;&amp;lt;&lt;span class=&#34;name&#34;&gt;div&lt;/span&gt; &lt;span class=&#34;attr&#34;&gt;class&lt;/span&gt;=&lt;span class=&#34;string&#34;&gt;&amp;quot;col col2&amp;quot;&lt;/span&gt;&amp;gt;&lt;/span&gt;222222&lt;span class=&#34;tag&#34;&gt;&amp;lt;/&lt;span class=&#34;name&#34;&gt;div&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  &lt;span class=&#34;tag&#34;&gt;&amp;lt;&lt;span class=&#34;name&#34;&gt;div&lt;/span&gt; &lt;span class=&#34;attr&#34;&gt;class&lt;/span&gt;=&lt;span class=&#34;string&#34;&gt;&amp;quot;col col3&amp;quot;&lt;/span&gt;&amp;gt;&lt;/span&gt;333333&lt;span class=&#34;tag&#34;&gt;&amp;lt;/&lt;span class=&#34;name&#34;&gt;div&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  &lt;span class=&#34;tag&#34;&gt;&amp;lt;&lt;span class=&#34;name&#34;&gt;div&lt;/span&gt; &lt;span class=&#34;attr&#34;&gt;class&lt;/span&gt;=&lt;span class=&#34;string&#34;&gt;&amp;quot;col fix&amp;quot;&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;span class=&#34;symbol&#34;&gt;&amp;amp;nbsp;&lt;/span&gt;&lt;span class=&#34;tag&#34;&gt;&amp;lt;/&lt;span class=&#34;name&#34;&gt;div&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  &lt;span class=&#34;tag&#34;&gt;&amp;lt;&lt;span class=&#34;name&#34;&gt;div&lt;/span&gt; &lt;span class=&#34;attr&#34;&gt;class&lt;/span&gt;=&lt;span class=&#34;string&#34;&gt;&amp;quot;col fix&amp;quot;&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;span class=&#34;symbol&#34;&gt;&amp;amp;nbsp;&lt;/span&gt;&lt;span class=&#34;tag&#34;&gt;&amp;lt;/&lt;span class=&#34;name&#34;&gt;div&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  &lt;span class=&#34;tag&#34;&gt;&amp;lt;&lt;span class=&#34;name&#34;&gt;div&lt;/span&gt; &lt;span class=&#34;attr&#34;&gt;class&lt;/span&gt;=&lt;span class=&#34;string&#34;&gt;&amp;quot;col fix&amp;quot;&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;span class=&#34;symbol&#34;&gt;&amp;amp;nbsp;&lt;/span&gt;&lt;span class=&#34;tag&#34;&gt;&amp;lt;/&lt;span class=&#34;name&#34;&gt;div&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  &lt;span class=&#34;tag&#34;&gt;&amp;lt;&lt;span class=&#34;name&#34;&gt;div&lt;/span&gt; &lt;span class=&#34;attr&#34;&gt;class&lt;/span&gt;=&lt;span class=&#34;string&#34;&gt;&amp;quot;col fix&amp;quot;&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;span class=&#34;symbol&#34;&gt;&amp;amp;nbsp;&lt;/span&gt;&lt;span class=&#34;tag&#34;&gt;&amp;lt;/&lt;span class=&#34;name&#34;&gt;div&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  &lt;span class=&#34;tag&#34;&gt;&amp;lt;&lt;span class=&#34;name&#34;&gt;div&lt;/span&gt; &lt;span class=&#34;attr&#34;&gt;class&lt;/span&gt;=&lt;span class=&#34;string&#34;&gt;&amp;quot;col fix&amp;quot;&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;span class=&#34;symbol&#34;&gt;&amp;amp;nbsp;&lt;/span&gt;&lt;span class=&#34;tag&#34;&gt;&amp;lt;/&lt;span class=&#34;name&#34;&gt;div&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;tag&#34;&gt;&amp;lt;/&lt;span class=&#34;name&#34;&gt;div&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;tag&#34;&gt;&amp;lt;/&lt;span class=&#34;name&#34;&gt;body&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;tag&#34;&gt;&amp;lt;/&lt;span class=&#34;name&#34;&gt;html&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-
-
 &lt;figure class=&#34;highlight css&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;13&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;14&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;15&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;16&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;17&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;18&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;19&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;20&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;21&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;22&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;23&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;24&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;25&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;26&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;27&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;28&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;29&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;30&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;31&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;selector-tag&#34;&gt;body&lt;/span&gt;&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  &lt;span class=&#34;attribute&#34;&gt;margin&lt;/span&gt;:&lt;span class=&#34;number&#34;&gt;0&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  &lt;span class=&#34;attribute&#34;&gt;padding&lt;/span&gt;:&lt;span class=&#34;number&#34;&gt;0&lt;/span&gt;; &lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;selector-class&#34;&gt;.main&lt;/span&gt;&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;//实现两端对齐文本效果。&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  &lt;span class=&#34;attribute&#34;&gt;text-align&lt;/span&gt;:justify;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;selector-class&#34;&gt;.col&lt;/span&gt;&amp;#123; &lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  &lt;span class=&#34;attribute&#34;&gt;display&lt;/span&gt;: inline-block;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  &lt;span class=&#34;attribute&#34;&gt;margin-top&lt;/span&gt;:&lt;span class=&#34;number&#34;&gt;10px&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  &lt;span class=&#34;attribute&#34;&gt;width&lt;/span&gt;:&lt;span class=&#34;number&#34;&gt;100px&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  &lt;span class=&#34;attribute&#34;&gt;height&lt;/span&gt;: &lt;span class=&#34;number&#34;&gt;100px&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  &lt;span class=&#34;attribute&#34;&gt;text-align&lt;/span&gt;: center;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  &lt;span class=&#34;attribute&#34;&gt;line-height&lt;/span&gt;: &lt;span class=&#34;number&#34;&gt;100px&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  &lt;span class=&#34;attribute&#34;&gt;color&lt;/span&gt;: &lt;span class=&#34;number&#34;&gt;#fff&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;selector-class&#34;&gt;.col1&lt;/span&gt;&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  &lt;span class=&#34;attribute&#34;&gt;background&lt;/span&gt;: red;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;selector-class&#34;&gt;.col2&lt;/span&gt;&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  &lt;span class=&#34;attribute&#34;&gt;background&lt;/span&gt;: green;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;selector-class&#34;&gt;.col3&lt;/span&gt;&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  &lt;span class=&#34;attribute&#34;&gt;background&lt;/span&gt;: blue;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;selector-class&#34;&gt;.fix&lt;/span&gt;&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  &lt;span class=&#34;attribute&#34;&gt;height&lt;/span&gt;:&lt;span class=&#34;number&#34;&gt;0&lt;/span&gt;; &lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  &lt;span class=&#34;attribute&#34;&gt;padding&lt;/span&gt;:&lt;span class=&#34;number&#34;&gt;0&lt;/span&gt;; &lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  &lt;span class=&#34;attribute&#34;&gt;overflow&lt;/span&gt;:hidden;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
 &lt;p&gt;效果:&lt;/p&gt;
 &lt;p&gt;&lt;img data-src=&#34;https://segmentfault.com/img/remote/1460000006047879&#34; alt=&#34;image&#34;&gt;&lt;/p&gt;
 &lt;p&gt;&lt;code&gt;text-align: justify 属性会使行内元素两端对齐，但是要求这些行内元素总宽度至少占满一行，所以在总宽度不足一行的时候这个属性没用，因此在最后需要加上一些占位符。&lt;/code&gt;&lt;/p&gt;
-&lt;p&gt;==Tip: inline-block会形成一个BFC==&lt;/p&gt;
-&lt;h3 id=&#34;display-table&#34;&gt;&lt;a href=&#34;#display-table&#34; class=&#34;headerlink&#34; title=&#34;display: table&#34;&gt;&lt;/a&gt;display: table&lt;/h3&gt;&lt;p&gt;table 此元素会作为块级表格来显示（类似table），表格前后带有换行符。CSS表格能够解决所有那些我们在使用绝对定位和浮动定位进行多列布局时所遇到的问题。例如，display:table的CSS声明能够让一个HTML元素和它的子节点像table元素一样。使用基于表格的CSS布局，使我们能够轻松定义一个单元格的边界、背景等样式， &lt;strong&gt;而不会产生因为使用了table那样的制表标签所导致的语义化问题。&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;利用table的特性，我们能够轻易的实现三栏布局，并且能够兼容IE8，如下是使用table属性，实现三栏布局的例子：&lt;/p&gt;
+&lt;p&gt;&lt;mark&gt;Tip: inline-block 会形成一个 BFC&lt;/mark&gt;&lt;/p&gt;
+&lt;h3 id=&#34;display-table&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#display-table&#34;&gt;#&lt;/a&gt; display: table&lt;/h3&gt;
+&lt;p&gt;table 此元素会作为块级表格来显示（类似 table），表格前后带有换行符。CSS 表格能够解决所有那些我们在使用绝对定位和浮动定位进行多列布局时所遇到的问题。例如，display:table 的 CSS 声明能够让一个 HTML 元素和它的子节点像 table 元素一样。使用基于表格的 CSS 布局，使我们能够轻松定义一个单元格的边界、背景等样式， &lt;strong&gt;而不会产生因为使用了 table 那样的制表标签所导致的语义化问题。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;利用 table 的特性，我们能够轻易的实现三栏布局，并且能够兼容 IE8，如下是使用 table 属性，实现三栏布局的例子：&lt;/p&gt;
 &lt;figure class=&#34;highlight html&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;13&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;14&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;15&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;16&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;17&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;18&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;19&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;20&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;21&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;meta&#34;&gt;&amp;lt;!DOCTYPE &lt;span class=&#34;meta-keyword&#34;&gt;html&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;tag&#34;&gt;&amp;lt;&lt;span class=&#34;name&#34;&gt;html&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;tag&#34;&gt;&amp;lt;&lt;span class=&#34;name&#34;&gt;head&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  &lt;span class=&#34;tag&#34;&gt;&amp;lt;&lt;span class=&#34;name&#34;&gt;meta&lt;/span&gt; &lt;span class=&#34;attr&#34;&gt;charset&lt;/span&gt;=&lt;span class=&#34;string&#34;&gt;&amp;quot;utf-8&amp;quot;&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  &lt;span class=&#34;tag&#34;&gt;&amp;lt;&lt;span class=&#34;name&#34;&gt;title&lt;/span&gt;&amp;gt;&lt;/span&gt;JS Bin&lt;span class=&#34;tag&#34;&gt;&amp;lt;/&lt;span class=&#34;name&#34;&gt;title&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;tag&#34;&gt;&amp;lt;/&lt;span class=&#34;name&#34;&gt;head&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;tag&#34;&gt;&amp;lt;&lt;span class=&#34;name&#34;&gt;body&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;tag&#34;&gt;&amp;lt;&lt;span class=&#34;name&#34;&gt;div&lt;/span&gt; &lt;span class=&#34;attr&#34;&gt;class&lt;/span&gt;=&lt;span class=&#34;string&#34;&gt;&amp;quot;main&amp;quot;&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  &lt;span class=&#34;tag&#34;&gt;&amp;lt;&lt;span class=&#34;name&#34;&gt;div&lt;/span&gt; &lt;span class=&#34;attr&#34;&gt;class&lt;/span&gt;=&lt;span class=&#34;string&#34;&gt;&amp;quot;tr tr1&amp;quot;&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;tag&#34;&gt;&amp;lt;&lt;span class=&#34;name&#34;&gt;div&lt;/span&gt; &lt;span class=&#34;attr&#34;&gt;class&lt;/span&gt;=&lt;span class=&#34;string&#34;&gt;&amp;quot;td&amp;quot;&lt;/span&gt;&amp;gt;&lt;/span&gt;head1&lt;span class=&#34;tag&#34;&gt;&amp;lt;/&lt;span class=&#34;name&#34;&gt;div&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;tag&#34;&gt;&amp;lt;&lt;span class=&#34;name&#34;&gt;div&lt;/span&gt; &lt;span class=&#34;attr&#34;&gt;class&lt;/span&gt;=&lt;span class=&#34;string&#34;&gt;&amp;quot;td&amp;quot;&lt;/span&gt;&amp;gt;&lt;/span&gt;head2&lt;span class=&#34;tag&#34;&gt;&amp;lt;/&lt;span class=&#34;name&#34;&gt;div&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;tag&#34;&gt;&amp;lt;&lt;span class=&#34;name&#34;&gt;div&lt;/span&gt; &lt;span class=&#34;attr&#34;&gt;class&lt;/span&gt;=&lt;span class=&#34;string&#34;&gt;&amp;quot;td&amp;quot;&lt;/span&gt;&amp;gt;&lt;/span&gt;head3&lt;span class=&#34;tag&#34;&gt;&amp;lt;/&lt;span class=&#34;name&#34;&gt;div&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  &lt;span class=&#34;tag&#34;&gt;&amp;lt;/&lt;span class=&#34;name&#34;&gt;div&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  &lt;span class=&#34;tag&#34;&gt;&amp;lt;&lt;span class=&#34;name&#34;&gt;div&lt;/span&gt; &lt;span class=&#34;attr&#34;&gt;class&lt;/span&gt;=&lt;span class=&#34;string&#34;&gt;&amp;quot;tr tr2&amp;quot;&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;tag&#34;&gt;&amp;lt;&lt;span class=&#34;name&#34;&gt;div&lt;/span&gt; &lt;span class=&#34;attr&#34;&gt;class&lt;/span&gt;=&lt;span class=&#34;string&#34;&gt;&amp;quot;td&amp;quot;&lt;/span&gt;&amp;gt;&lt;/span&gt;123&lt;span class=&#34;tag&#34;&gt;&amp;lt;/&lt;span class=&#34;name&#34;&gt;div&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;tag&#34;&gt;&amp;lt;&lt;span class=&#34;name&#34;&gt;div&lt;/span&gt; &lt;span class=&#34;attr&#34;&gt;class&lt;/span&gt;=&lt;span class=&#34;string&#34;&gt;&amp;quot;td&amp;quot;&lt;/span&gt;&amp;gt;&lt;/span&gt;123&lt;span class=&#34;tag&#34;&gt;&amp;lt;/&lt;span class=&#34;name&#34;&gt;div&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;tag&#34;&gt;&amp;lt;&lt;span class=&#34;name&#34;&gt;div&lt;/span&gt; &lt;span class=&#34;attr&#34;&gt;class&lt;/span&gt;=&lt;span class=&#34;string&#34;&gt;&amp;quot;td&amp;quot;&lt;/span&gt;&amp;gt;&lt;/span&gt;123&lt;span class=&#34;tag&#34;&gt;&amp;lt;/&lt;span class=&#34;name&#34;&gt;div&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  &lt;span class=&#34;tag&#34;&gt;&amp;lt;/&lt;span class=&#34;name&#34;&gt;div&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;tag&#34;&gt;&amp;lt;/&lt;span class=&#34;name&#34;&gt;div&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;tag&#34;&gt;&amp;lt;/&lt;span class=&#34;name&#34;&gt;body&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;tag&#34;&gt;&amp;lt;/&lt;span class=&#34;name&#34;&gt;html&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-
-
 &lt;figure class=&#34;highlight css&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;13&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;14&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;15&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;16&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;17&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;18&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;19&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;20&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;21&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;22&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;23&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;selector-class&#34;&gt;.main&lt;/span&gt;&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  &lt;span class=&#34;attribute&#34;&gt;display&lt;/span&gt;: table;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  &lt;span class=&#34;attribute&#34;&gt;width&lt;/span&gt;:&lt;span class=&#34;number&#34;&gt;100%&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  &lt;span class=&#34;attribute&#34;&gt;border-collapse&lt;/span&gt;: collapse;&lt;span class=&#34;comment&#34;&gt;/*为表格设置合并边框模型：*/&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;selector-class&#34;&gt;.tr&lt;/span&gt;&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  &lt;span class=&#34;attribute&#34;&gt;display&lt;/span&gt;: table-row;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  &lt;span class=&#34;attribute&#34;&gt;border-color&lt;/span&gt;: inherit;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;selector-class&#34;&gt;.tr1&lt;/span&gt; &lt;span class=&#34;selector-class&#34;&gt;.td&lt;/span&gt;&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  &lt;span class=&#34;attribute&#34;&gt;height&lt;/span&gt;:&lt;span class=&#34;number&#34;&gt;50px&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  &lt;span class=&#34;attribute&#34;&gt;vertical-align&lt;/span&gt;: middle;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;selector-class&#34;&gt;.td&lt;/span&gt;&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  &lt;span class=&#34;attribute&#34;&gt;display&lt;/span&gt;: table-cell;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  &lt;span class=&#34;attribute&#34;&gt;border&lt;/span&gt;: &lt;span class=&#34;number&#34;&gt;1px&lt;/span&gt; solid;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;selector-class&#34;&gt;.td&lt;/span&gt;&lt;span class=&#34;selector-pseudo&#34;&gt;:nth-of-type&lt;/span&gt;(&lt;span class=&#34;number&#34;&gt;1&lt;/span&gt;)&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  &lt;span class=&#34;attribute&#34;&gt;width&lt;/span&gt;: &lt;span class=&#34;number&#34;&gt;100px&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;selector-class&#34;&gt;.td&lt;/span&gt;&lt;span class=&#34;selector-pseudo&#34;&gt;:nth-of-type&lt;/span&gt;(&lt;span class=&#34;number&#34;&gt;3&lt;/span&gt;)&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  &lt;span class=&#34;attribute&#34;&gt;width&lt;/span&gt;: &lt;span class=&#34;number&#34;&gt;100px&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
 &lt;p&gt;效果:&lt;/p&gt;
 
-
-
-&lt;p&gt;&lt;strong&gt;CSS2.1表格模型中的元素，可能不会全部包含在除HTML之外的文档语言中。这时，那些“丢失”的元素会被模拟出来，从而使得表格模型能够正常工作。所有的表格元素将会自动在自身周围生成所需的匿名table对象，使其符合table/inline-table、table-row、table-cell的三层嵌套关系。&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;所以在一般情况下我们也可以不写外面的table-row元素以及table元素。&lt;/p&gt;
-&lt;h3 id=&#34;display-inline-list-item&#34;&gt;&lt;a href=&#34;#display-inline-list-item&#34; class=&#34;headerlink&#34; title=&#34;display: inline-list-item&#34;&gt;&lt;/a&gt;display: inline-list-item&lt;/h3&gt;&lt;p&gt;我在MDN上面看到有这个属性，但是我实际尝试发现这个属性是不能使用的，在 &lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cDovL2Nhbml1c2UuY29tLyNzZWFyY2g9aW4=&#34;&gt;http://caniuse.com/#search=in&lt;/span&gt;… 上面也没有找到这个元素的兼容性，所以应该是不能使用的，支持度全无。&lt;/p&gt;
-&lt;h3 id=&#34;display-flex-重要&#34;&gt;&lt;a href=&#34;#display-flex-重要&#34; class=&#34;headerlink&#34; title=&#34;display: flex(重要)&#34;&gt;&lt;/a&gt;&lt;strong&gt;display: flex(重要)&lt;/strong&gt;&lt;/h3&gt;&lt;p&gt;flex是一种弹性布局属性&lt;br&gt;&lt;strong&gt;注意，设为Flex布局以后，子元素的float、clear和vertical-align属性将失效。&lt;/strong&gt;&lt;br&gt;主要属性有两大类：容器属性和项目的属性&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;CSS2.1 表格模型中的元素，可能不会全部包含在除 HTML 之外的文档语言中。这时，那些 “丢失” 的元素会被模拟出来，从而使得表格模型能够正常工作。所有的表格元素将会自动在自身周围生成所需的匿名 table 对象，使其符合 table/inline-table、table-row、table-cell 的三层嵌套关系。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;所以在一般情况下我们也可以不写外面的 table-row 元素以及 table 元素。&lt;/p&gt;
+&lt;h3 id=&#34;display-inline-list-item&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#display-inline-list-item&#34;&gt;#&lt;/a&gt; display: inline-list-item&lt;/h3&gt;
+&lt;p&gt;我在 MDN 上面看到有这个属性，但是我实际尝试发现这个属性是不能使用的，在 &lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cDovL2Nhbml1c2UuY29tLyNzZWFyY2g9aW4=&#34;&gt;http://caniuse.com/#search=in&lt;/span&gt;… 上面也没有找到这个元素的兼容性，所以应该是不能使用的，支持度全无。&lt;/p&gt;
+&lt;h3 id=&#34;display-flex重要&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#display-flex重要&#34;&gt;#&lt;/a&gt; &lt;strong&gt;display: flex (重要)&lt;/strong&gt;&lt;/h3&gt;
+&lt;p&gt;flex 是一种弹性布局属性&lt;br&gt;
+&lt;strong&gt;注意，设为 Flex 布局以后，子元素的 float、clear 和 vertical-align 属性将失效。&lt;/strong&gt;&lt;br&gt;
+主要属性有两大类：容器属性和项目的属性&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;h4 id=&#34;容器属性&#34;&gt;&lt;a href=&#34;#容器属性&#34; class=&#34;headerlink&#34; title=&#34;容器属性&#34;&gt;&lt;/a&gt;容器属性&lt;/h4&gt;&lt;p&gt;值 |  解释&lt;/p&gt;
+&lt;li&gt;
+&lt;h4 id=&#34;容器属性&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#容器属性&#34;&gt;#&lt;/a&gt; 容器属性&lt;/h4&gt;
 &lt;/li&gt;
-&lt;li&gt;&lt;p&gt;–|—&lt;br&gt;flex-direction | 属性决定主轴的方向（即项目的排列方向）。&lt;br&gt;flex-wrap| 默认情况下，项目都排在一条线（又称”轴线”）上。flex-wrap属性定义，如果一条轴线排不下，如何换行。&lt;br&gt;flex-flow|属性是flex-direction属性和flex-wrap属性的简写形式，默认值为row nowrap。&lt;br&gt;justify-content|属性定义了项目在主轴上的对齐方式。&lt;br&gt;align-items |属性定义项目在交叉轴上如何对齐。&lt;br&gt;align-content| 属性定义了多根轴线的对齐方式。如果项目只有一根轴线，该属性不起作用。&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;h4 id=&#34;项目属性&#34;&gt;&lt;a href=&#34;#项目属性&#34; class=&#34;headerlink&#34; title=&#34;项目属性&#34;&gt;&lt;/a&gt;项目属性&lt;/h4&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;table&gt;
 &lt;thead&gt;
@@ -183,67 +184,208 @@
 &lt;th&gt;解释&lt;/th&gt;
 &lt;/tr&gt;
 &lt;/thead&gt;
-&lt;tbody&gt;&lt;tr&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;flex-direction&lt;/td&gt;
+&lt;td&gt;属性决定主轴的方向（即项目的排列方向）。&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;flex-wrap&lt;/td&gt;
+&lt;td&gt;默认情况下，项目都排在一条线（又称 &amp;quot;轴线&amp;quot;）上。flex-wrap 属性定义，如果一条轴线排不下，如何换行。&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;flex-flow&lt;/td&gt;
+&lt;td&gt;属性是 flex-direction 属性和 flex-wrap 属性的简写形式，默认值为 row nowrap。&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;justify-content&lt;/td&gt;
+&lt;td&gt;属性定义了项目在主轴上的对齐方式。&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;align-items&lt;/td&gt;
+&lt;td&gt;属性定义项目在交叉轴上如何对齐。&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;align-content&lt;/td&gt;
+&lt;td&gt;属性定义了多根轴线的对齐方式。如果项目只有一根轴线，该属性不起作用。&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;h4 id=&#34;项目属性&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#项目属性&#34;&gt;#&lt;/a&gt; 项目属性&lt;/h4&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;值&lt;/th&gt;
+&lt;th&gt;解释&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
 &lt;td&gt;order&lt;/td&gt;
-&lt;td&gt;定义项目的排列顺序。数值越小，排列越靠前，默认为0。&lt;/td&gt;
+&lt;td&gt;定义项目的排列顺序。数值越小，排列越靠前，默认为 0。&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
 &lt;td&gt;flex-grow&lt;/td&gt;
-&lt;td&gt;定义项目的放大比例，默认为0，即如果存在剩余空间，也不放大。&lt;/td&gt;
+&lt;td&gt;定义项目的放大比例，默认为 0，即如果存在剩余空间，也不放大。&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
 &lt;td&gt;flex-shrink&lt;/td&gt;
-&lt;td&gt;属性定义了项目的缩小比例，默认为1，即如果空间不足，该项目将缩小。&lt;/td&gt;
+&lt;td&gt;属性定义了项目的缩小比例，默认为 1，即如果空间不足，该项目将缩小。&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
 &lt;td&gt;flex-basis&lt;/td&gt;
-&lt;td&gt;属性定义了在分配多余空间之前，项目占据的主轴空间（main size）。浏览器根据这个属性，计算主轴是否有多余空间。它的默认值为auto，即项目的本来大小。&lt;/td&gt;
+&lt;td&gt;属性定义了在分配多余空间之前，项目占据的主轴空间（main size）。浏览器根据这个属性，计算主轴是否有多余空间。它的默认值为 auto，即项目的本来大小。&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
 &lt;td&gt;flex&lt;/td&gt;
-&lt;td&gt;属性是flex-grow, flex-shrink 和flex-basis的简写，默认值为0 1 auto。后两个属性可选。&lt;/td&gt;
+&lt;td&gt;属性是 flex-grow, flex-shrink 和 flex-basis 的简写，默认值为 0 1 auto。后两个属性可选。&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
 &lt;td&gt;align-self:&lt;/td&gt;
-&lt;td&gt;属性允许单个项目有与其他项目不一样的对齐方式，可覆盖align-items属性。默认值为auto，表示继承父元素的align-items属性，如果没有父元素，则等同于stretch。&lt;/td&gt;
+&lt;td&gt;属性允许单个项目有与其他项目不一样的对齐方式，可覆盖 align-items 属性。默认值为 auto，表示继承父元素的 align-items 属性，如果没有父元素，则等同于 stretch。&lt;/td&gt;
 &lt;/tr&gt;
-&lt;/tbody&gt;&lt;/table&gt;
-&lt;p&gt;以上关于flex的基础知识基本是从阮一峰老师那copy过来的，有兴趣的同学，可以到阮一峰老师的博客深入阅读&lt;/p&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;以上关于 flex 的基础知识基本是从阮一峰老师那 copy 过来的，有兴趣的同学，可以到阮一峰老师的博客深入阅读&lt;/p&gt;
 &lt;p&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cDovL3d3dy5ydWFueWlmZW5nLmNvbS9ibG8=&#34;&gt;http://www.ruanyifeng.com/blo&lt;/span&gt;…&lt;/p&gt;
 &lt;p&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cDovL3d3dy5ydWFueWlmZW5nLmNvbS9ibG8=&#34;&gt;http://www.ruanyifeng.com/blo&lt;/span&gt;…&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;h4 id=&#34;实例：实现一个固定宽度但内容可变的列表&#34;&gt;&lt;a href=&#34;#实例：实现一个固定宽度但内容可变的列表&#34; class=&#34;headerlink&#34; title=&#34;实例：实现一个固定宽度但内容可变的列表&#34;&gt;&lt;/a&gt;实例：实现一个固定宽度但内容可变的列表&lt;/h4&gt;目前我有一个需求，有一个列表页，左侧固定，右侧固定，总宽度固定，但是左侧的内容可能会增加，右侧的内容也可能会增加，要求平时一行展示，增加的时候两行展示，左侧两行，右侧还是一行，并且都居中。&lt;/li&gt;
+&lt;li&gt;
+&lt;h4 id=&#34;实例实现一个固定宽度但内容可变的列表&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#实例实现一个固定宽度但内容可变的列表&#34;&gt;#&lt;/a&gt; 实例：实现一个固定宽度但内容可变的列表&lt;/h4&gt;
+&lt;/li&gt;
 &lt;/ul&gt;
+&lt;p&gt;目前我有一个需求，有一个列表页，左侧固定，右侧固定，总宽度固定，但是左侧的内容可能会增加，右侧的内容也可能会增加，要求平时一行展示，增加的时候两行展示，左侧两行，右侧还是一行，并且都居中。&lt;/p&gt;
 &lt;p&gt;先上效果图，不然可能会迷糊：&lt;/p&gt;
-
-
 
 &lt;p&gt;为了实现上述效果，代码如下&lt;/p&gt;
 &lt;figure class=&#34;highlight html&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;13&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;14&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;15&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;16&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;17&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;18&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;19&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;20&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;21&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;22&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;23&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;24&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;25&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;26&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;27&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;28&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;29&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;meta&#34;&gt;&amp;lt;!DOCTYPE &lt;span class=&#34;meta-keyword&#34;&gt;html&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;tag&#34;&gt;&amp;lt;&lt;span class=&#34;name&#34;&gt;html&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;tag&#34;&gt;&amp;lt;&lt;span class=&#34;name&#34;&gt;head&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  &lt;span class=&#34;tag&#34;&gt;&amp;lt;&lt;span class=&#34;name&#34;&gt;meta&lt;/span&gt; &lt;span class=&#34;attr&#34;&gt;charset&lt;/span&gt;=&lt;span class=&#34;string&#34;&gt;&amp;quot;utf-8&amp;quot;&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  &lt;span class=&#34;tag&#34;&gt;&amp;lt;&lt;span class=&#34;name&#34;&gt;title&lt;/span&gt;&amp;gt;&lt;/span&gt;JS Bin&lt;span class=&#34;tag&#34;&gt;&amp;lt;/&lt;span class=&#34;name&#34;&gt;title&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;tag&#34;&gt;&amp;lt;/&lt;span class=&#34;name&#34;&gt;head&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;tag&#34;&gt;&amp;lt;&lt;span class=&#34;name&#34;&gt;body&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  &lt;span class=&#34;tag&#34;&gt;&amp;lt;&lt;span class=&#34;name&#34;&gt;div&lt;/span&gt; &lt;span class=&#34;attr&#34;&gt;class&lt;/span&gt;=&lt;span class=&#34;string&#34;&gt;&amp;quot;main&amp;quot;&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;tag&#34;&gt;&amp;lt;&lt;span class=&#34;name&#34;&gt;ul&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;      &lt;span class=&#34;tag&#34;&gt;&amp;lt;&lt;span class=&#34;name&#34;&gt;li&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        &lt;span class=&#34;tag&#34;&gt;&amp;lt;&lt;span class=&#34;name&#34;&gt;span&lt;/span&gt; &lt;span class=&#34;attr&#34;&gt;class&lt;/span&gt;=&lt;span class=&#34;string&#34;&gt;&amp;quot;col1&amp;quot;&lt;/span&gt;&amp;gt;&lt;/span&gt;累积的分为：123&lt;span class=&#34;tag&#34;&gt;&amp;lt;/&lt;span class=&#34;name&#34;&gt;span&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        &lt;span class=&#34;tag&#34;&gt;&amp;lt;&lt;span class=&#34;name&#34;&gt;div&lt;/span&gt; &lt;span class=&#34;attr&#34;&gt;class&lt;/span&gt;=&lt;span class=&#34;string&#34;&gt;&amp;quot;col2&amp;quot;&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;          &lt;span class=&#34;tag&#34;&gt;&amp;lt;&lt;span class=&#34;name&#34;&gt;span&lt;/span&gt;&amp;gt;&lt;/span&gt;123&lt;span class=&#34;tag&#34;&gt;&amp;lt;/&lt;span class=&#34;name&#34;&gt;span&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;          &lt;span class=&#34;tag&#34;&gt;&amp;lt;&lt;span class=&#34;name&#34;&gt;span&lt;/span&gt;&amp;gt;&lt;/span&gt;x 10&lt;span class=&#34;tag&#34;&gt;&amp;lt;/&lt;span class=&#34;name&#34;&gt;span&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;          &lt;span class=&#34;tag&#34;&gt;&amp;lt;&lt;span class=&#34;name&#34;&gt;button&lt;/span&gt;&amp;gt;&lt;/span&gt;submit&lt;span class=&#34;tag&#34;&gt;&amp;lt;/&lt;span class=&#34;name&#34;&gt;button&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        &lt;span class=&#34;tag&#34;&gt;&amp;lt;/&lt;span class=&#34;name&#34;&gt;div&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;      &lt;span class=&#34;tag&#34;&gt;&amp;lt;/&lt;span class=&#34;name&#34;&gt;li&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;      &lt;span class=&#34;tag&#34;&gt;&amp;lt;&lt;span class=&#34;name&#34;&gt;li&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        &lt;span class=&#34;tag&#34;&gt;&amp;lt;&lt;span class=&#34;name&#34;&gt;span&lt;/span&gt; &lt;span class=&#34;attr&#34;&gt;class&lt;/span&gt;=&lt;span class=&#34;string&#34;&gt;&amp;quot;col1&amp;quot;&lt;/span&gt;&amp;gt;&lt;/span&gt;累积的分为：1234&lt;span class=&#34;tag&#34;&gt;&amp;lt;/&lt;span class=&#34;name&#34;&gt;span&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        &lt;span class=&#34;tag&#34;&gt;&amp;lt;&lt;span class=&#34;name&#34;&gt;div&lt;/span&gt; &lt;span class=&#34;attr&#34;&gt;class&lt;/span&gt;=&lt;span class=&#34;string&#34;&gt;&amp;quot;col2&amp;quot;&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;          &lt;span class=&#34;tag&#34;&gt;&amp;lt;&lt;span class=&#34;name&#34;&gt;img&lt;/span&gt; &lt;span class=&#34;attr&#34;&gt;src&lt;/span&gt;=&lt;span class=&#34;string&#34;&gt;&amp;quot;http://7xltvd.com1.z0.glb.clouddn.com/css1.png&amp;quot;&lt;/span&gt; &lt;span class=&#34;attr&#34;&gt;alt&lt;/span&gt;=&lt;span class=&#34;string&#34;&gt;&amp;quot;&amp;quot;&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;          &lt;span class=&#34;tag&#34;&gt;&amp;lt;&lt;span class=&#34;name&#34;&gt;span&lt;/span&gt; &lt;span class=&#34;attr&#34;&gt;class&lt;/span&gt;=&lt;span class=&#34;string&#34;&gt;&amp;quot;col2-span&amp;quot;&lt;/span&gt;&amp;gt;&lt;/span&gt;x 10&lt;span class=&#34;tag&#34;&gt;&amp;lt;/&lt;span class=&#34;name&#34;&gt;span&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;          &lt;span class=&#34;tag&#34;&gt;&amp;lt;&lt;span class=&#34;name&#34;&gt;button&lt;/span&gt;&amp;gt;&lt;/span&gt;submit&lt;span class=&#34;tag&#34;&gt;&amp;lt;/&lt;span class=&#34;name&#34;&gt;button&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        &lt;span class=&#34;tag&#34;&gt;&amp;lt;/&lt;span class=&#34;name&#34;&gt;div&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;      &lt;span class=&#34;tag&#34;&gt;&amp;lt;/&lt;span class=&#34;name&#34;&gt;li&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;tag&#34;&gt;&amp;lt;/&lt;span class=&#34;name&#34;&gt;ul&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  &lt;span class=&#34;tag&#34;&gt;&amp;lt;/&lt;span class=&#34;name&#34;&gt;div&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;tag&#34;&gt;&amp;lt;/&lt;span class=&#34;name&#34;&gt;body&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;tag&#34;&gt;&amp;lt;/&lt;span class=&#34;name&#34;&gt;html&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-
 &lt;figure class=&#34;highlight css&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;13&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;14&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;15&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;16&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;17&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;18&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;19&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;20&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;21&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;22&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;23&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;24&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;25&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;26&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;27&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;28&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;29&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;30&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;31&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;32&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;33&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;34&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;35&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;36&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;37&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;38&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;39&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;selector-class&#34;&gt;.main&lt;/span&gt;&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  &lt;span class=&#34;attribute&#34;&gt;height&lt;/span&gt;: &lt;span class=&#34;number&#34;&gt;200px&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  &lt;span class=&#34;attribute&#34;&gt;width&lt;/span&gt;: &lt;span class=&#34;number&#34;&gt;300px&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  &lt;span class=&#34;attribute&#34;&gt;border&lt;/span&gt;: &lt;span class=&#34;number&#34;&gt;1px&lt;/span&gt; solid;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;selector-tag&#34;&gt;ul&lt;/span&gt;&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  &lt;span class=&#34;attribute&#34;&gt;padding&lt;/span&gt;: &lt;span class=&#34;number&#34;&gt;0px&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  &lt;span class=&#34;attribute&#34;&gt;margin-top&lt;/span&gt;: &lt;span class=&#34;number&#34;&gt;10px&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;selector-tag&#34;&gt;li&lt;/span&gt;&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  &lt;span class=&#34;attribute&#34;&gt;display&lt;/span&gt;: flex;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  &lt;span class=&#34;attribute&#34;&gt;justify-content&lt;/span&gt;: space-between;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  &lt;span class=&#34;attribute&#34;&gt;align-items&lt;/span&gt;: center;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  &lt;span class=&#34;attribute&#34;&gt;padding&lt;/span&gt;: &lt;span class=&#34;number&#34;&gt;10px&lt;/span&gt; &lt;span class=&#34;number&#34;&gt;0&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  &lt;span class=&#34;attribute&#34;&gt;margin-bottom&lt;/span&gt;: &lt;span class=&#34;number&#34;&gt;10px&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  &lt;span class=&#34;attribute&#34;&gt;border&lt;/span&gt;: &lt;span class=&#34;number&#34;&gt;1px&lt;/span&gt; solid;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;selector-tag&#34;&gt;button&lt;/span&gt;&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  &lt;span class=&#34;attribute&#34;&gt;height&lt;/span&gt;: &lt;span class=&#34;number&#34;&gt;20px&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  &lt;span class=&#34;attribute&#34;&gt;vertical-align&lt;/span&gt;: middle;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  &lt;span class=&#34;attribute&#34;&gt;border&lt;/span&gt;:&lt;span class=&#34;number&#34;&gt;0&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  &lt;span class=&#34;attribute&#34;&gt;background&lt;/span&gt;: green;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  &lt;span class=&#34;attribute&#34;&gt;outline&lt;/span&gt;:none;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;selector-tag&#34;&gt;img&lt;/span&gt;&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  &lt;span class=&#34;attribute&#34;&gt;width&lt;/span&gt;:&lt;span class=&#34;number&#34;&gt;30px&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  &lt;span class=&#34;attribute&#34;&gt;vertical-align&lt;/span&gt;: middle;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;selector-class&#34;&gt;.col2-span&lt;/span&gt;&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  &lt;span class=&#34;attribute&#34;&gt;vertical-align&lt;/span&gt;: middle;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;selector-class&#34;&gt;.col1&lt;/span&gt;&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  &lt;span class=&#34;attribute&#34;&gt;width&lt;/span&gt;: &lt;span class=&#34;number&#34;&gt;130px&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  &lt;span class=&#34;attribute&#34;&gt;padding-left&lt;/span&gt;:&lt;span class=&#34;number&#34;&gt;8px&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;selector-class&#34;&gt;.col2&lt;/span&gt;&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  &lt;span class=&#34;attribute&#34;&gt;padding-right&lt;/span&gt;: &lt;span class=&#34;number&#34;&gt;8px&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  &lt;span class=&#34;attribute&#34;&gt;vertical-align&lt;/span&gt;: middle;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;h3 id=&#34;display-webkit-box&#34;&gt;&lt;a href=&#34;#display-webkit-box&#34; class=&#34;headerlink&#34; title=&#34;display: -webkit-box&#34;&gt;&lt;/a&gt;display: -webkit-box&lt;/h3&gt;&lt;p&gt;由于某X5浏览器某些版本还不支持最新版的flex布局，所以为了保证良好的运行，建议还是使用display: box，box和flex布局的主要差别如下:&lt;/p&gt;
+&lt;h3 id=&#34;display-webkit-box&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#display-webkit-box&#34;&gt;#&lt;/a&gt; display: -webkit-box&lt;/h3&gt;
+&lt;p&gt;由于某 X5 浏览器某些版本还不支持最新版的 flex 布局，所以为了保证良好的运行，建议还是使用 display: box，box 和 flex 布局的主要差别如下:&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;h4 id=&#34;容器属性-1&#34;&gt;&lt;a href=&#34;#容器属性-1&#34; class=&#34;headerlink&#34; title=&#34;容器属性&#34;&gt;&lt;/a&gt;容器属性&lt;/h4&gt;值 | 解释&lt;/li&gt;
-&lt;li&gt;–|—:&lt;br&gt;display: box |该显示样式的新值可将此元素及其直系子代加入弹性框模型中。Flexbox 模型只适用于直系子代。&lt;br&gt;box-orient| 值：horizontal | vertical | inherit&lt;/li&gt;
+&lt;li&gt;
+&lt;h4 id=&#34;容器属性-2&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#容器属性-2&#34;&gt;#&lt;/a&gt; 容器属性&lt;/h4&gt;
+&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;框的子代是如何排列的？还有两个值：inline-axis（真正的默认值）和 block-axis，但是它们分别映射到水平和垂直方向。&lt;br&gt;值 | 解释&lt;br&gt;—|—&lt;br&gt;box-pack 值：start | end | center | justify&lt;/p&gt;
-&lt;p&gt;设置沿 box-orient 轴的框排列方式。因此，如果 box-orient 是水平方向，就会选择框的子代的水平排列方式，反之亦然。&lt;br&gt;值 | 解释&lt;br&gt;—|—&lt;br&gt;box-align | 值：start | end | center | baseline | stretch&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;值&lt;/th&gt;
+&lt;th style=&#34;text-align:right&#34;&gt;解释&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;display: box&lt;/td&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;该显示样式的新值可将此元素及其直系子代加入弹性框模型中。Flexbox 模型只适用于直系子代。&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;box-orient&lt;/td&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;值：horizontal&lt;/td&gt;
+&lt;td&gt;vertical&lt;/td&gt;
+&lt;td&gt;inherit&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;框的子代是如何排列的？还有两个值：inline-axis（真正的默认值）和 block-axis，但是它们分别映射到水平和垂直方向。&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;值&lt;/th&gt;
+&lt;th&gt;解释&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;box-pack 值：start&lt;/td&gt;
+&lt;td&gt;end&lt;/td&gt;
+&lt;td&gt;center&lt;/td&gt;
+&lt;td&gt;justify&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;设置沿 box-orient 轴的框排列方式。因此，如果 box-orient 是水平方向，就会选择框的子代的水平排列方式，反之亦然。&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;值&lt;/th&gt;
+&lt;th&gt;解释&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;box-align&lt;/td&gt;
+&lt;td&gt;值：start&lt;/td&gt;
+&lt;td&gt;end&lt;/td&gt;
+&lt;td&gt;center&lt;/td&gt;
+&lt;td&gt;baseline&lt;/td&gt;
+&lt;td&gt;stretch&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
 &lt;p&gt;基本上而言是 box-pack 的同级属性。设置框的子代在框中的排列方式。如果方向是水平的，该属性就会决定垂直排列，反之亦然。&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;h4 id=&#34;项目属性-1&#34;&gt;&lt;a href=&#34;#项目属性-1&#34; class=&#34;headerlink&#34; title=&#34;项目属性&#34;&gt;&lt;/a&gt;项目属性&lt;/h4&gt;值 | 解释&lt;/li&gt;
-&lt;li&gt;–|—&lt;br&gt;box-flex| 值：0 | 任意整数&lt;/li&gt;
+&lt;li&gt;
+&lt;h4 id=&#34;项目属性-2&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#项目属性-2&#34;&gt;#&lt;/a&gt; 项目属性&lt;/h4&gt;
+&lt;/li&gt;
 &lt;/ul&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;值&lt;/th&gt;
+&lt;th&gt;解释&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;box-flex&lt;/td&gt;
+&lt;td&gt;值：0&lt;/td&gt;
+&lt;td&gt;任意整数&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
 &lt;p&gt;该子代的弹性比。弹性比为 1 的子代占据父代框的空间是弹性比为 2 的同级属性的两倍。其默认值为 0，也就是不具有弹性。&lt;/p&gt;
-&lt;p&gt;用box改造上述例子&lt;br&gt;基本只修改了容器元素li的属性，如下所示:&lt;/p&gt;
+&lt;p&gt;用 box 改造上述例子&lt;br&gt;
+基本只修改了容器元素 li 的属性，如下所示:&lt;/p&gt;
 &lt;figure class=&#34;highlight css&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;9&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;selector-tag&#34;&gt;li&lt;/span&gt;&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  &lt;span class=&#34;attribute&#34;&gt;display&lt;/span&gt;: -webkit-box;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  -webkit-box-orient:horizontal;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  -webkit-box-pack: justify;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  -webkit-box-align: center;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  &lt;span class=&#34;attribute&#34;&gt;padding&lt;/span&gt;: &lt;span class=&#34;number&#34;&gt;10px&lt;/span&gt; &lt;span class=&#34;number&#34;&gt;0&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  &lt;span class=&#34;attribute&#34;&gt;margin-bottom&lt;/span&gt;: &lt;span class=&#34;number&#34;&gt;10px&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  &lt;span class=&#34;attribute&#34;&gt;border&lt;/span&gt;: &lt;span class=&#34;number&#34;&gt;1px&lt;/span&gt; solid;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;h3 id=&#34;display-inline-flex&#34;&gt;&lt;a href=&#34;#display-inline-flex&#34; class=&#34;headerlink&#34; title=&#34;display: inline-flex&#34;&gt;&lt;/a&gt;display: inline-flex&lt;/h3&gt;&lt;p&gt;我发现在chrome条件下设置了inline-flex，其子元素全部变成了inline模式，设置flex并没有什么用，不知道是不是我写的有问题，目前没找到这个属性的用法&lt;/p&gt;
+&lt;h3 id=&#34;display-inline-flex&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#display-inline-flex&#34;&gt;#&lt;/a&gt; display: inline-flex&lt;/h3&gt;
+&lt;p&gt;我发现在 chrome 条件下设置了 inline-flex，其子元素全部变成了 inline 模式，设置 flex 并没有什么用，不知道是不是我写的有问题，目前没找到这个属性的用法&lt;/p&gt;
 &lt;figure class=&#34;highlight xml&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;13&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;meta&#34;&gt;&amp;lt;!DOCTYPE &lt;span class=&#34;meta-keyword&#34;&gt;html&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;tag&#34;&gt;&amp;lt;&lt;span class=&#34;name&#34;&gt;html&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;tag&#34;&gt;&amp;lt;&lt;span class=&#34;name&#34;&gt;head&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  &lt;span class=&#34;tag&#34;&gt;&amp;lt;&lt;span class=&#34;name&#34;&gt;meta&lt;/span&gt; &lt;span class=&#34;attr&#34;&gt;charset&lt;/span&gt;=&lt;span class=&#34;string&#34;&gt;&amp;quot;utf-8&amp;quot;&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  &lt;span class=&#34;tag&#34;&gt;&amp;lt;&lt;span class=&#34;name&#34;&gt;title&lt;/span&gt;&amp;gt;&lt;/span&gt;JS Bin&lt;span class=&#34;tag&#34;&gt;&amp;lt;/&lt;span class=&#34;name&#34;&gt;title&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;tag&#34;&gt;&amp;lt;/&lt;span class=&#34;name&#34;&gt;head&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;tag&#34;&gt;&amp;lt;&lt;span class=&#34;name&#34;&gt;body&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  &lt;span class=&#34;tag&#34;&gt;&amp;lt;&lt;span class=&#34;name&#34;&gt;div&lt;/span&gt; &lt;span class=&#34;attr&#34;&gt;class&lt;/span&gt;=&lt;span class=&#34;string&#34;&gt;&amp;quot;main&amp;quot;&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;tag&#34;&gt;&amp;lt;&lt;span class=&#34;name&#34;&gt;div&lt;/span&gt; &lt;span class=&#34;attr&#34;&gt;class&lt;/span&gt;=&lt;span class=&#34;string&#34;&gt;&amp;quot;sp1&amp;quot;&lt;/span&gt;&amp;gt;&lt;/span&gt;123&lt;span class=&#34;tag&#34;&gt;&amp;lt;/&lt;span class=&#34;name&#34;&gt;div&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;tag&#34;&gt;&amp;lt;&lt;span class=&#34;name&#34;&gt;div&lt;/span&gt; &lt;span class=&#34;attr&#34;&gt;class&lt;/span&gt;=&lt;span class=&#34;string&#34;&gt;&amp;quot;sp1&amp;quot;&lt;/span&gt;&amp;gt;&lt;/span&gt;123&lt;span class=&#34;tag&#34;&gt;&amp;lt;/&lt;span class=&#34;name&#34;&gt;div&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  &lt;span class=&#34;tag&#34;&gt;&amp;lt;/&lt;span class=&#34;name&#34;&gt;div&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;tag&#34;&gt;&amp;lt;/&lt;span class=&#34;name&#34;&gt;body&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;tag&#34;&gt;&amp;lt;/&lt;span class=&#34;name&#34;&gt;html&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-
-
 &lt;figure class=&#34;highlight css&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;selector-class&#34;&gt;.main&lt;/span&gt;&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  &lt;span class=&#34;attribute&#34;&gt;display&lt;/span&gt;: -webkit-inline-flex;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  &lt;span class=&#34;attribute&#34;&gt;justify-content&lt;/span&gt;: center;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;selector-class&#34;&gt;.sp1&lt;/span&gt;&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  &lt;span class=&#34;attribute&#34;&gt;flex&lt;/span&gt;:&lt;span class=&#34;number&#34;&gt;1&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-
-&lt;h3 id=&#34;其他&#34;&gt;&lt;a href=&#34;#其他&#34; class=&#34;headerlink&#34; title=&#34;其他&#34;&gt;&lt;/a&gt;其他&lt;/h3&gt;&lt;p&gt;以下属性是实验性质的，支持度都很低，不建议使用，知道就行。&lt;br&gt;值 | 解释&lt;br&gt;—|—&lt;br&gt;run-in:| 此元素会根据上下文作为块级元素或内联元素显示；&lt;br&gt;grid | 栅格模型，类似block&lt;br&gt;inline-grid | 栅格模型，类似inline-block&lt;br&gt;ruby, ruby-base, ruby-text, ruby-base-container, ruby-text-container|&lt;br&gt;contents |&lt;/p&gt;
+&lt;h3 id=&#34;其他&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#其他&#34;&gt;#&lt;/a&gt; 其他&lt;/h3&gt;
+&lt;p&gt;以下属性是实验性质的，支持度都很低，不建议使用，知道就行。&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;值&lt;/th&gt;
+&lt;th&gt;解释&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;run-in:&lt;/td&gt;
+&lt;td&gt;此元素会根据上下文作为块级元素或内联元素显示；&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;grid&lt;/td&gt;
+&lt;td&gt;栅格模型，类似 block&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;inline-grid&lt;/td&gt;
+&lt;td&gt;栅格模型，类似 inline-block&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;ruby, ruby-base, ruby-text, ruby-base-container, ruby-text-container&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;contents&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
  ]]></description>
         </item>
         <item>
@@ -253,12 +395,12 @@
             <category>前端</category>
             <category>Css</category>
             <pubDate>Mon, 14 Feb 2022 21:29:08 +0800</pubDate>
-            <description><![CDATA[ &lt;h1 id=&#34;Css样式&#34;&gt;&lt;a href=&#34;#Css样式&#34; class=&#34;headerlink&#34; title=&#34;Css样式&#34;&gt;&lt;/a&gt;Css样式&lt;/h1&gt;&lt;p&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly93d3cucnVub29iLmNvbS9jc3NyZWYvY3NzLXJlZmVyZW5jZS5odG1s&#34;&gt;CSS菜鸟学习链接&lt;/span&gt;&lt;/p&gt;
+            <description><![CDATA[ &lt;h1 id=&#34;css样式&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#css样式&#34;&gt;#&lt;/a&gt; Css 样式&lt;/h1&gt;
+&lt;p&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly93d3cucnVub29iLmNvbS9jc3NyZWYvY3NzLXJlZmVyZW5jZS5odG1s&#34;&gt;CSS 菜鸟学习链接&lt;/span&gt;&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;&lt;strong&gt;opacity&lt;/strong&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;figure class=&#34;highlight css&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;透明度 &lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;value	规定不透明度。从 &lt;span class=&#34;number&#34;&gt;0.0&lt;/span&gt; （完全透明）到 &lt;span class=&#34;number&#34;&gt;1.0&lt;/span&gt;（完全不透明）。&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-
 &lt;blockquote&gt;
 &lt;p&gt;&lt;strong&gt;text-align&lt;/strong&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
@@ -269,7 +411,8 @@
 &lt;th&gt;解释&lt;/th&gt;
 &lt;/tr&gt;
 &lt;/thead&gt;
-&lt;tbody&gt;&lt;tr&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
 &lt;td&gt;left&lt;/td&gt;
 &lt;td&gt;把文本排列到左边。默认值：由浏览器决定。&lt;/td&gt;
 &lt;/tr&gt;
@@ -289,9 +432,9 @@
 &lt;td&gt;inherit&lt;/td&gt;
 &lt;td&gt;规定应该从父元素继承 text-align 属性的值。&lt;/td&gt;
 &lt;/tr&gt;
-&lt;/tbody&gt;&lt;/table&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
 &lt;span id=&#34;more&#34;&gt;&lt;/span&gt;
-
 &lt;blockquote&gt;
 &lt;p&gt;&lt;strong&gt;overflow&lt;/strong&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
@@ -303,7 +446,8 @@
 &lt;th&gt;描述&lt;/th&gt;
 &lt;/tr&gt;
 &lt;/thead&gt;
-&lt;tbody&gt;&lt;tr&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
 &lt;td&gt;visible&lt;/td&gt;
 &lt;td&gt;默认值。内容不会被修剪，会呈现在元素框之外。&lt;/td&gt;
 &lt;/tr&gt;
@@ -323,7 +467,8 @@
 &lt;td&gt;inherit&lt;/td&gt;
 &lt;td&gt;规定应该从父元素继承 overflow 属性的值。&lt;/td&gt;
 &lt;/tr&gt;
-&lt;/tbody&gt;&lt;/table&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
 &lt;blockquote&gt;
 &lt;p&gt;&lt;strong&gt;border-collapse&lt;/strong&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
@@ -335,7 +480,8 @@
 &lt;th&gt;说明&lt;/th&gt;
 &lt;/tr&gt;
 &lt;/thead&gt;
-&lt;tbody&gt;&lt;tr&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
 &lt;td&gt;collapse&lt;/td&gt;
 &lt;td&gt;如果可能，边框会合并为一个单一的边框。会忽略 border-spacing 和 empty-cells 属性&lt;/td&gt;
 &lt;/tr&gt;
@@ -347,7 +493,8 @@
 &lt;td&gt;inherit&lt;/td&gt;
 &lt;td&gt;规定应该从父元素继承 border-collapse 属性的值&lt;/td&gt;
 &lt;/tr&gt;
-&lt;/tbody&gt;&lt;/table&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
 &lt;blockquote&gt;
 &lt;p&gt;&lt;strong&gt;vertical-align&lt;/strong&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
@@ -360,7 +507,8 @@
 &lt;th&gt;描述&lt;/th&gt;
 &lt;/tr&gt;
 &lt;/thead&gt;
-&lt;tbody&gt;&lt;tr&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
 &lt;td&gt;baseline&lt;/td&gt;
 &lt;td&gt;默认。元素放置在父元素的基线上。&lt;/td&gt;
 &lt;/tr&gt;
@@ -404,13 +552,13 @@
 &lt;td&gt;inherit&lt;/td&gt;
 &lt;td&gt;规定应该从父元素继承 vertical-align 属性的值。&lt;/td&gt;
 &lt;/tr&gt;
-&lt;/tbody&gt;&lt;/table&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
 &lt;blockquote&gt;
 &lt;p&gt;&lt;strong&gt;border-color&lt;/strong&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;p&gt;例子&lt;/p&gt;
 &lt;figure class=&#34;highlight maxima&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;13&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;14&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;15&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;16&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;17&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;18&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;19&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;20&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;21&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;22&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;23&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;24&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;25&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;built_in&#34;&gt;border&lt;/span&gt;-&lt;span class=&#34;built_in&#34;&gt;color&lt;/span&gt;属性设置一个元素的四个边框颜色。此属性可以有一到四个值。&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;实例:&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;built_in&#34;&gt;border&lt;/span&gt;-&lt;span class=&#34;built_in&#34;&gt;color&lt;/span&gt;:红，绿，蓝,粉红色;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;上边框是红色&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;右边框是绿色&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;底部边框是蓝&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;左边框是粉红色&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;built_in&#34;&gt;border&lt;/span&gt;-&lt;span class=&#34;built_in&#34;&gt;color&lt;/span&gt;：红，绿，蓝;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;上边框是红色&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;左，右边框是绿色&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;底部边框是蓝&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;built_in&#34;&gt;border&lt;/span&gt;-&lt;span class=&#34;built_in&#34;&gt;color&lt;/span&gt;：红，绿;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;顶部和底部边框是红色&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;左右边框是绿色&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;built_in&#34;&gt;border&lt;/span&gt;-&lt;span class=&#34;built_in&#34;&gt;color&lt;/span&gt;：红色;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;所有四个边框是红色&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-
 &lt;table&gt;
 &lt;thead&gt;
 &lt;tr&gt;
@@ -418,9 +566,10 @@
 &lt;th&gt;说明&lt;/th&gt;
 &lt;/tr&gt;
 &lt;/thead&gt;
-&lt;tbody&gt;&lt;tr&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
 &lt;td&gt;color&lt;/td&gt;
-&lt;td&gt;指定背景颜色。在CSS颜色值查找颜色值的完整列表&lt;/td&gt;
+&lt;td&gt;指定背景颜色。在 CSS 颜色值查找颜色值的完整列表&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
 &lt;td&gt;transparent&lt;/td&gt;
@@ -430,7 +579,8 @@
 &lt;td&gt;inherit&lt;/td&gt;
 &lt;td&gt;指定边框的颜色，应该从父元素继承&lt;/td&gt;
 &lt;/tr&gt;
-&lt;/tbody&gt;&lt;/table&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
 &lt;blockquote&gt;
 &lt;p&gt;&lt;strong&gt;justify-content&lt;/strong&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
@@ -443,7 +593,8 @@
 &lt;th&gt;描述&lt;/th&gt;
 &lt;/tr&gt;
 &lt;/thead&gt;
-&lt;tbody&gt;&lt;tr&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
 &lt;td&gt;flex-start&lt;/td&gt;
 &lt;td&gt;默认值。项目位于容器的开头。&lt;/td&gt;
 &lt;/tr&gt;
@@ -471,7 +622,8 @@
 &lt;td&gt;inherit&lt;/td&gt;
 &lt;td&gt;从父元素继承该属性。请参阅 inherit。&lt;/td&gt;
 &lt;/tr&gt;
-&lt;/tbody&gt;&lt;/table&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
 &lt;blockquote&gt;
 &lt;p&gt;&lt;strong&gt;float&lt;/strong&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
@@ -482,7 +634,8 @@
 &lt;th&gt;描述&lt;/th&gt;
 &lt;/tr&gt;
 &lt;/thead&gt;
-&lt;tbody&gt;&lt;tr&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
 &lt;td&gt;left&lt;/td&gt;
 &lt;td&gt;元素向左浮动&lt;/td&gt;
 &lt;/tr&gt;
@@ -492,17 +645,17 @@
 &lt;/tr&gt;
 &lt;tr&gt;
 &lt;td&gt;none&lt;/td&gt;
-&lt;td&gt;默认值,元素不浮动,并会显示其在文本出现的位置&lt;/td&gt;
+&lt;td&gt;默认值，元素不浮动，并会显示其在文本出现的位置&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
 &lt;td&gt;inherit&lt;/td&gt;
 &lt;td&gt;规定应该从父元素中继承属性的值&lt;/td&gt;
 &lt;/tr&gt;
-&lt;/tbody&gt;&lt;/table&gt;
-&lt;p&gt;&lt;strong&gt;方便理解 ,上图&lt;/strong&gt;&lt;/p&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;&lt;strong&gt;方便理解，上图&lt;/strong&gt;&lt;/p&gt;
 &lt;img data-src=&#34;/posts/54880bcd/2022-02-14-22-24-03.png&#34; class=&#34;&#34;&gt;
-
-&lt;p&gt;==&lt;strong&gt;敲黑板最重要的是结合demo理解以下两句话&lt;/strong&gt;==&lt;/p&gt;
+&lt;p&gt;&lt;mark&gt;&lt;strong&gt;敲黑板最重要的是结合 demo 理解以下两句话&lt;/strong&gt;&lt;/mark&gt;&lt;/p&gt;
 &lt;p&gt;float:left 应该理解为：在自己本身的位置上脱离文档流，元素从包含框的右边缘向左移动，直到碰到包含框的左边缘或者其他浮动元素框停下，当空间不足以绘制自己则另起一行。&lt;/p&gt;
 &lt;p&gt;float:right 应该理解为：在自己本身的位置上脱离文档流， 元素从包含框的左边缘向右移动，直到碰到包含框的右边缘或者其他浮动元素的框停下，当空间不足以绘制自己则另起一行。&lt;/p&gt;
 &lt;blockquote&gt;
@@ -516,9 +669,10 @@
 &lt;th&gt;描述&lt;/th&gt;
 &lt;/tr&gt;
 &lt;/thead&gt;
-&lt;tbody&gt;&lt;tr&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
 &lt;td&gt;absolute&lt;/td&gt;
-&lt;td&gt;生成绝对定位的元素，相对于static定位以外的第一个父元素进行定位。元素的位置通过 “left”, “top”, “right” 以及 “bottom” 属性进行规定。&lt;/td&gt;
+&lt;td&gt;生成绝对定位的元素，相对于 static 定位以外的第一个父元素进行定位。元素的位置通过 “left”, “top”, “right” 以及 “bottom” 属性进行规定。&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
 &lt;td&gt;fixed&lt;/td&gt;
@@ -526,75 +680,72 @@
 &lt;/tr&gt;
 &lt;tr&gt;
 &lt;td&gt;relative&lt;/td&gt;
-&lt;td&gt;生成相对定位的元素，相对于其正常位置进行定位。因此，”left:20” 会向元素的 LEFT 位置添加 20 像素。&lt;/td&gt;
+&lt;td&gt;生成相对定位的元素，相对于其正常位置进行定位。因此，“left:20” 会向元素的 LEFT 位置添加 20 像素。&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
 &lt;td&gt;static&lt;/td&gt;
-&lt;td&gt;默认值。没有定位，元素出现在正常的流中（忽略 top, bottom, left, right或者z-index声明）。inherit    规定应该从父元素继承 position 属性的值。&lt;/td&gt;
+&lt;td&gt;默认值。没有定位，元素出现在正常的流中（忽略 top, bottom, left, right 或者 z-index 声明）。inherit	规定应该从父元素继承 position 属性的值。&lt;/td&gt;
 &lt;/tr&gt;
-&lt;/tbody&gt;&lt;/table&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
 &lt;blockquote&gt;
-&lt;p&gt;&lt;strong&gt;padding(内边距)&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;padding (内边距)&lt;/strong&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;p&gt;Padding属性，可以有一到四个值。&lt;/p&gt;
+&lt;p&gt;Padding 属性，可以有一到四个值。&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;p&gt;padding:25px 50px 75px 100px;&lt;/p&gt;
-&lt;p&gt;  上填充为25px &lt;/p&gt;
-&lt;p&gt;  右填充为50px&lt;/p&gt;
-&lt;p&gt;  下填充为75px&lt;/p&gt;
-&lt;p&gt;  左填充为100px&lt;/p&gt;
+&lt;li&gt;
+&lt;p&gt;padding:25px 50px 75px 100px;&lt;/p&gt;
+&lt;p&gt;上填充为 25px&lt;/p&gt;
+&lt;p&gt;右填充为 50px&lt;/p&gt;
+&lt;p&gt;下填充为 75px&lt;/p&gt;
+&lt;p&gt;左填充为 100px&lt;/p&gt;
 &lt;/li&gt;
-&lt;li&gt;&lt;p&gt;padding:25px 50px 75px;&lt;/p&gt;
-&lt;p&gt;  上填充为25px&lt;/p&gt;
-&lt;p&gt;  左右填充为50px&lt;/p&gt;
-&lt;p&gt;  下填充为75px&lt;/p&gt;
+&lt;li&gt;
+&lt;p&gt;padding:25px 50px 75px;&lt;/p&gt;
+&lt;p&gt;上填充为 25px&lt;/p&gt;
+&lt;p&gt;左右填充为 50px&lt;/p&gt;
+&lt;p&gt;下填充为 75px&lt;/p&gt;
 &lt;/li&gt;
-&lt;li&gt;&lt;p&gt;padding:25px 50px;&lt;/p&gt;
-&lt;p&gt; 上下填充为25px&lt;/p&gt;
-&lt;p&gt; 左右填充为50px&lt;/p&gt;
+&lt;li&gt;
+&lt;p&gt;padding:25px 50px;&lt;/p&gt;
+&lt;p&gt;上下填充为 25px&lt;/p&gt;
+&lt;p&gt;左右填充为 50px&lt;/p&gt;
 &lt;/li&gt;
-&lt;li&gt;&lt;p&gt;padding:25px;&lt;/p&gt;
-&lt;p&gt; 所有的填充都是25px&lt;/p&gt;
+&lt;li&gt;
+&lt;p&gt;padding:25px;&lt;/p&gt;
+&lt;p&gt;所有的填充都是 25px&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2 id=&#34;对齐弹性容器中的弹性项目&#34;&gt;&lt;a href=&#34;#对齐弹性容器中的弹性项目&#34; class=&#34;headerlink&#34; title=&#34;对齐弹性容器中的弹性项目&#34;&gt;&lt;/a&gt;对齐弹性容器中的弹性项目&lt;/h2&gt;
-
+&lt;h2 id=&#34;对齐弹性容器中的弹性项目&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#对齐弹性容器中的弹性项目&#34;&gt;#&lt;/a&gt; 对齐弹性容器中的弹性项目&lt;/h2&gt;
 
 &lt;ul&gt;
-&lt;li&gt;&lt;code&gt;justify-content&lt;/code&gt; - 控制主轴（横轴）上所有 &lt;code&gt;flex&lt;/code&gt; 项目的对齐。&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;align-items&lt;/code&gt; - 控制交叉轴（纵轴）上所有 &lt;code&gt;flex&lt;/code&gt; 项目的对齐。&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;align-self&lt;/code&gt; - 控制交叉轴（纵轴）上的单个 &lt;code&gt;flex&lt;/code&gt; 项目的对齐。&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;align-content&lt;/code&gt; - 控制“多条主轴”的 &lt;code&gt;flex&lt;/code&gt; 项目在交叉轴的对齐。&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;justify-content&lt;/code&gt;  - 控制主轴（横轴）上所有  &lt;code&gt;flex&lt;/code&gt;  项目的对齐。&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;align-items&lt;/code&gt;  - 控制交叉轴（纵轴）上所有  &lt;code&gt;flex&lt;/code&gt;  项目的对齐。&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;align-self&lt;/code&gt;  - 控制交叉轴（纵轴）上的单个  &lt;code&gt;flex&lt;/code&gt;  项目的对齐。&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;align-content&lt;/code&gt;  - 控制 “多条主轴” 的  &lt;code&gt;flex&lt;/code&gt;  项目在交叉轴的对齐。&lt;/li&gt;
 &lt;/ul&gt;
-
-
 
 &lt;blockquote&gt;
 &lt;p&gt;align-items&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;p&gt;&lt;code&gt;align-itema: flex-start&lt;/code&gt; — &lt;code&gt;flex&lt;/code&gt; 项目的开始端的对齐&lt;/p&gt;
-&lt;p&gt;&lt;code&gt;align-items: flex-end &lt;/code&gt; — &lt;code&gt;flex&lt;/code&gt;项目的结束端对齐&lt;/p&gt;
-&lt;p&gt;&lt;code&gt;align-items: center&lt;/code&gt; — &lt;code&gt;flex&lt;/code&gt; 项目居中对齐&lt;/p&gt;
-&lt;p&gt;&lt;code&gt;align-items: stretch&lt;/code&gt; — &lt;code&gt;flex&lt;/code&gt; 项目撑满 &lt;code&gt;flex&lt;/code&gt; 容器&lt;/p&gt;
-&lt;p&gt;&lt;code&gt;align-items: baseline&lt;/code&gt; — &lt;code&gt;flex&lt;/code&gt; 项目的基线对齐&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;align-itema: flex-start&lt;/code&gt;  —  &lt;code&gt;flex&lt;/code&gt;  项目的开始端的对齐&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;align-items: flex-end &lt;/code&gt;  —  &lt;code&gt;flex&lt;/code&gt;  项目的结束端对齐&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;align-items: center&lt;/code&gt;  —  &lt;code&gt;flex&lt;/code&gt;  项目居中对齐&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;align-items: stretch&lt;/code&gt;  —  &lt;code&gt;flex&lt;/code&gt;  项目撑满  &lt;code&gt;flex&lt;/code&gt;  容器&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;align-items: baseline&lt;/code&gt;  —  &lt;code&gt;flex&lt;/code&gt;  项目的基线对齐&lt;/p&gt;
 &lt;blockquote&gt;
-&lt;p&gt;&lt;code&gt;align-self&lt;/code&gt; 用于对齐单个&lt;code&gt;flex&lt;/code&gt; 子项&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;align-self&lt;/code&gt;  用于对齐单个 &lt;code&gt;flex&lt;/code&gt;  子项&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;p&gt;&lt;code&gt;align-items&lt;/code&gt; 属性是给所有 &lt;code&gt;flex&lt;/code&gt;项目统一设置 &lt;code&gt;align-self&lt;/code&gt; 的对齐属性。这意味着你能给单个 &lt;code&gt;flex&lt;/code&gt; 项目明确地声明 &lt;code&gt;align-self&lt;/code&gt; 属性。&lt;code&gt;align-self&lt;/code&gt; 拥有 &lt;code&gt;align-items&lt;/code&gt; 的所有属性值，另外还有一个 &lt;code&gt;auto&lt;/code&gt; 能重置自身的值为 &lt;code&gt;align-items&lt;/code&gt; 定义的值。&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;align-items&lt;/code&gt;  属性是给所有  &lt;code&gt;flex&lt;/code&gt;  项目统一设置  &lt;code&gt;align-self&lt;/code&gt;  的对齐属性。这意味着你能给单个  &lt;code&gt;flex&lt;/code&gt;  项目明确地声明  &lt;code&gt;align-self&lt;/code&gt;  属性。 &lt;code&gt;align-self&lt;/code&gt;  拥有  &lt;code&gt;align-items&lt;/code&gt;  的所有属性值，另外还有一个  &lt;code&gt;auto&lt;/code&gt;  能重置自身的值为  &lt;code&gt;align-items&lt;/code&gt;  定义的值。&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;改变主轴方向&lt;/p&gt;
 &lt;/blockquote&gt;
 
 
-
-
-
-
 &lt;blockquote&gt;
-&lt;p&gt;轴对齐内容—— &lt;code&gt;align-content&lt;/code&gt;属性&lt;/p&gt;
+&lt;p&gt;轴对齐内容 ——  &lt;code&gt;align-content&lt;/code&gt;  属性&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;figure class=&#34;highlight js&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;13&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;14&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;15&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;16&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;17&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;18&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;19&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;20&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;21&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;22&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;23&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;24&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;25&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;26&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;27&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;28&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;29&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;30&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;31&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;32&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;33&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;34&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;/*align-content不采用左右值 */&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;align-content: center;     &lt;span class=&#34;comment&#34;&gt;/* 将项目放置在中点 */&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;align-content: start;      &lt;span class=&#34;comment&#34;&gt;/* 最先放置项目 */&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;align-content: end;        &lt;span class=&#34;comment&#34;&gt;/* 最后放置项目 */&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;align-content: flex-start; &lt;span class=&#34;comment&#34;&gt;/* 从起始点开始放置flex元素 */&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;align-content: flex-end;   &lt;span class=&#34;comment&#34;&gt;/* 从终止点开始放置flex元素 */&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;/* 默认对齐 */&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;align-content: normal;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;/*基线对齐*/&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;align-content: baseline;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;align-content: first baseline;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;align-content: last baseline;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;/* 分布式对齐 */&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;align-content: space-between; &lt;span class=&#34;comment&#34;&gt;/* 均匀分布项目&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;                                 第一项与起始点齐平，&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;                                 最后一项与终止点齐平 */&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;align-content: space-around;  &lt;span class=&#34;comment&#34;&gt;/* 均匀分布项目&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;                                 项目在两端有一半大小的空间*/&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;align-content: space-evenly;  &lt;span class=&#34;comment&#34;&gt;/* 均匀分布项目&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;                                 项目周围有相等的空间 */&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;align-content: stretch;       &lt;span class=&#34;comment&#34;&gt;/* 均匀分布项目&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;                                 拉伸‘自动’-大小的项目以充满容器 */&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;/* 溢出对齐 */&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;align-content: safe center;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;align-content: unsafe center;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;/* 全局属性 */&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;align-content: inherit; &lt;span class=&#34;comment&#34;&gt;/* 继承 */&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;align-content: initial;  &lt;span class=&#34;comment&#34;&gt;/* 初始值 */&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;align-content: unset; &lt;span class=&#34;comment&#34;&gt;/* 未设置 */&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-
 &lt;blockquote&gt;
 &lt;p&gt;letter-spacing&lt;/p&gt;
 &lt;/blockquote&gt;
@@ -608,280 +759,283 @@
             <category>前端</category>
             <category>Css</category>
             <pubDate>Mon, 14 Feb 2022 21:28:34 +0800</pubDate>
-            <description><![CDATA[ &lt;h1 id=&#34;Css-选择器&#34;&gt;&lt;a href=&#34;#Css-选择器&#34; class=&#34;headerlink&#34; title=&#34;Css 选择器&#34;&gt;&lt;/a&gt;Css 选择器&lt;/h1&gt;&lt;table&gt;
+            <description><![CDATA[ &lt;h1 id=&#34;css-选择器&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#css-选择器&#34;&gt;#&lt;/a&gt; Css 选择器&lt;/h1&gt;
+&lt;table&gt;
 &lt;thead&gt;
 &lt;tr&gt;
 &lt;th&gt;选择器&lt;/th&gt;
-&lt;th align=&#34;center&#34;&gt;例子&lt;/th&gt;
-&lt;th align=&#34;center&#34;&gt;例子描述&lt;/th&gt;
-&lt;th align=&#34;right&#34;&gt;CSS&lt;/th&gt;
+&lt;th style=&#34;text-align:center&#34;&gt;例子&lt;/th&gt;
+&lt;th style=&#34;text-align:center&#34;&gt;例子描述&lt;/th&gt;
+&lt;th style=&#34;text-align:right&#34;&gt;CSS&lt;/th&gt;
 &lt;/tr&gt;
 &lt;/thead&gt;
-&lt;tbody&gt;&lt;tr&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
 &lt;td&gt;.class&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;.intro&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;选择 class=”intro” 的所有元素.&lt;/td&gt;
-&lt;td align=&#34;right&#34;&gt;1&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;.intro&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;选择 class=“intro” 的所有元素.&lt;/td&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;1&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
 &lt;td&gt;#id&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;#firstname&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;选择 id=”firstname” 的所有元素&lt;/td&gt;
-&lt;td align=&#34;right&#34;&gt;1&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;#firstname&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;选择 id=“firstname” 的所有元素&lt;/td&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;1&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
 &lt;td&gt;*&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;*&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;选择所有元素。&lt;/td&gt;
-&lt;td align=&#34;right&#34;&gt;2&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;*&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;选择所有元素。&lt;/td&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;2&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
 &lt;td&gt;element&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;p&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;选择所有 &lt;p&gt; 元素。&lt;/td&gt;
-&lt;td align=&#34;right&#34;&gt;1&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;p&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;选择所有 &lt;p&gt; 元素。&lt;/td&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;1&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
 &lt;td&gt;element,element&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;div,p&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;选择所有 &lt;div&gt; 元素和所有 &lt;p&gt; 元素。&lt;/td&gt;
-&lt;td align=&#34;right&#34;&gt;1&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;div,p&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;选择所有 &lt;div&gt; 元素和所有 &lt;p&gt; 元素。&lt;/td&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;1&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
 &lt;td&gt;element element&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;div p&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;选择 &lt;div&gt; 元素内部的所有 &lt;p&gt; 元素。&lt;/td&gt;
-&lt;td align=&#34;right&#34;&gt;1&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;div p&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;选择 &lt;div&gt; 元素内部的所有 &lt;p&gt; 元素。&lt;/td&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;1&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
 &lt;td&gt;element&amp;gt;element&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;div&amp;gt;p&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;选择父元素为 &lt;div&gt; 元素的所有 &lt;p&gt; 元素。&lt;/td&gt;
-&lt;td align=&#34;right&#34;&gt;2&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;div&amp;gt;p&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;选择父元素为 &lt;div&gt; 元素的所有 &lt;p&gt; 元素。&lt;/td&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;2&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
 &lt;td&gt;element+element&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;div+p&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;选择紧接在 &lt;div&gt; 元素之后的所有 &lt;p&gt; 元素。&lt;/td&gt;
-&lt;td align=&#34;right&#34;&gt;2&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;div+p&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;选择紧接在 &lt;div&gt; 元素之后的所有 &lt;p&gt; 元素。&lt;/td&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;2&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
 &lt;td&gt;[attribute]&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;[target]&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;选择带有 target 属性所有元素。&lt;/td&gt;
-&lt;td align=&#34;right&#34;&gt;2&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;[target]&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;选择带有 target 属性所有元素。&lt;/td&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;2&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
 &lt;td&gt;[attribute=value]&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;[target=_blank]&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;选择 target=”_blank” 的所有元素。&lt;/td&gt;
-&lt;td align=&#34;right&#34;&gt;2&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;[target=_blank]&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;选择 target=&amp;quot;_blank&amp;quot; 的所有元素。&lt;/td&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;2&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
 &lt;td&gt;[attribute~=value]&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;[title~=flower]&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;选择 title 属性包含单词 “flower” 的所有元素。&lt;/td&gt;
-&lt;td align=&#34;right&#34;&gt;2&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;[title~=flower]&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;选择 title 属性包含单词 “flower” 的所有元素。&lt;/td&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;2&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
 &lt;td&gt;[attribute=value]&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;[lang=en]&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;选择 lang 属性值以 “en” 开头的所有元素。&lt;/td&gt;
-&lt;td align=&#34;right&#34;&gt;2&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;[lang=en]&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;选择 lang 属性值以 “en” 开头的所有元素。&lt;/td&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;2&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
 &lt;td&gt;:link&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;a:link&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;选择所有未被访问的链接。&lt;/td&gt;
-&lt;td align=&#34;right&#34;&gt;1&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;a:link&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;选择所有未被访问的链接。&lt;/td&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;1&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
 &lt;td&gt;:visited&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;a:visited&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;选择所有已被访问的链接。&lt;/td&gt;
-&lt;td align=&#34;right&#34;&gt;1&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;a:visited&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;选择所有已被访问的链接。&lt;/td&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;1&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
 &lt;td&gt;:active&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;a:active&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;选择活动链接。&lt;/td&gt;
-&lt;td align=&#34;right&#34;&gt;1&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;a:active&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;选择活动链接。&lt;/td&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;1&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
 &lt;td&gt;:hover&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;a:hover&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;选择鼠标指针位于其上的链接。&lt;/td&gt;
-&lt;td align=&#34;right&#34;&gt;1&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;a:hover&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;选择鼠标指针位于其上的链接。&lt;/td&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;1&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
 &lt;td&gt;:focus&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;input:focus&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;选择获得焦点的 input 元素。&lt;/td&gt;
-&lt;td align=&#34;right&#34;&gt;2&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;input:focus&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;选择获得焦点的 input 元素。&lt;/td&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;2&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
 &lt;td&gt;:first-letter&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;p:first-letter&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;选择每个 &lt;p&gt; 元素的首字母。&lt;/td&gt;
-&lt;td align=&#34;right&#34;&gt;1&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;p:first-letter&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;选择每个 &lt;p&gt; 元素的首字母。&lt;/td&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;1&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
 &lt;td&gt;:first-line&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;p:first-line&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;选择每个 &lt;p&gt; 元素的首行。&lt;/td&gt;
-&lt;td align=&#34;right&#34;&gt;1&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;p:first-line&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;选择每个 &lt;p&gt; 元素的首行。&lt;/td&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;1&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
 &lt;td&gt;:first-child&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;p:first-child&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;选择属于父元素的第一个子元素的每个 &lt;p&gt; 元素。&lt;/td&gt;
-&lt;td align=&#34;right&#34;&gt;2&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;p:first-child&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;选择属于父元素的第一个子元素的每个 &lt;p&gt; 元素。&lt;/td&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;2&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
 &lt;td&gt;:before&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;p:before&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;在每个 &lt;p&gt; 元素的内容之前插入内容。&lt;/td&gt;
-&lt;td align=&#34;right&#34;&gt;2&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;p:before&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;在每个 &lt;p&gt; 元素的内容之前插入内容。&lt;/td&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;2&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
 &lt;td&gt;:after&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;p:after&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;在每个 &lt;p&gt; 元素的内容之后插入内容。&lt;/td&gt;
-&lt;td align=&#34;right&#34;&gt;2&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;p:after&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;在每个 &lt;p&gt; 元素的内容之后插入内容。&lt;/td&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;2&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
 &lt;td&gt;:lang(language)&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;p:lang(it)&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;选择带有以 “it” 开头的 lang 属性值的每个 &lt;p&gt; 元素。&lt;/td&gt;
-&lt;td align=&#34;right&#34;&gt;2&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;p:lang(it)&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;选择带有以 “it” 开头的 lang 属性值的每个 &lt;p&gt; 元素。&lt;/td&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;2&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
 &lt;td&gt;element1~element2&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;p~ul&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;选择前面有 &lt;p&gt; 元素的每个 &lt;ul&gt; 元素。&lt;/td&gt;
-&lt;td align=&#34;right&#34;&gt;3&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;p~ul&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;选择前面有 &lt;p&gt; 元素的每个 &lt;ul&gt; 元素。&lt;/td&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;3&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
 &lt;td&gt;[attribute^=value]&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;a[src^=”https”]&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;选择其 src 属性值以 “https” 开头的每个 &lt;a&gt; 元素。&lt;/td&gt;
-&lt;td align=&#34;right&#34;&gt;3&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;a[src^=“https”]&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;选择其 src 属性值以 “https” 开头的每个 &lt;a&gt; 元素。&lt;/td&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;3&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
 &lt;td&gt;[attribute$=value]&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;a[src$=”.pdf”]&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;选择其 src 属性以 “.pdf” 结尾的所有 &lt;a&gt; 元素。&lt;/td&gt;
-&lt;td align=&#34;right&#34;&gt;3&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;a[src$=&amp;quot;.pdf&amp;quot;]&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;选择其 src 属性以 “.pdf” 结尾的所有 &lt;a&gt; 元素。&lt;/td&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;3&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
 &lt;td&gt;[attribute*=value]&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;a[src*=”abc”]&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;选择其 src 属性中包含 “abc” 子串的每个 &lt;a&gt; 元素。&lt;/td&gt;
-&lt;td align=&#34;right&#34;&gt;3&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;a[src*=“abc”]&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;选择其 src 属性中包含 “abc” 子串的每个 &lt;a&gt; 元素。&lt;/td&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;3&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
 &lt;td&gt;:first-of-type&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;p:first-of-type&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;选择属于其父元素的首个 &lt;p&gt; 元素的每个 &lt;p&gt; 元素。&lt;/td&gt;
-&lt;td align=&#34;right&#34;&gt;3&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;p:first-of-type&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;选择属于其父元素的首个 &lt;p&gt; 元素的每个 &lt;p&gt; 元素。&lt;/td&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;3&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
 &lt;td&gt;:last-of-type&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;p:last-of-type&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;选择属于其父元素的最后 &lt;p&gt; 元素的每个 &lt;p&gt; 元素。&lt;/td&gt;
-&lt;td align=&#34;right&#34;&gt;3&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;p:last-of-type&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;选择属于其父元素的最后 &lt;p&gt; 元素的每个 &lt;p&gt; 元素。&lt;/td&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;3&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
 &lt;td&gt;:only-of-type&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;p:only-of-type&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;选择属于其父元素唯一的 &lt;p&gt; 元素的每个 &lt;p&gt; 元素。&lt;/td&gt;
-&lt;td align=&#34;right&#34;&gt;3&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;p:only-of-type&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;选择属于其父元素唯一的 &lt;p&gt; 元素的每个 &lt;p&gt; 元素。&lt;/td&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;3&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
 &lt;td&gt;:only-child&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;p:only-child&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;选择属于其父元素的唯一子元素的每个 &lt;p&gt; 元素。&lt;/td&gt;
-&lt;td align=&#34;right&#34;&gt;3&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;p:only-child&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;选择属于其父元素的唯一子元素的每个 &lt;p&gt; 元素。&lt;/td&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;3&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
 &lt;td&gt;:nth-child(n)&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;p:nth-child(2)&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;选择属于其父元素的第二个子元素的每个 &lt;p&gt; 元素。&lt;/td&gt;
-&lt;td align=&#34;right&#34;&gt;3&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;p:nth-child(2)&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;选择属于其父元素的第二个子元素的每个 &lt;p&gt; 元素。&lt;/td&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;3&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
 &lt;td&gt;:nth-last-child(n)&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;p:nth-last-child(2)&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;同上，从最后一个子元素开始计数。&lt;/td&gt;
-&lt;td align=&#34;right&#34;&gt;3&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;p:nth-last-child(2)&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;同上，从最后一个子元素开始计数。&lt;/td&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;3&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
 &lt;td&gt;:nth-of-type(n)&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;p:nth-of-type(2)&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;选择属于其父元素第二个 &lt;p&gt; 元素的每个 &lt;p&gt; 元素。&lt;/td&gt;
-&lt;td align=&#34;right&#34;&gt;3&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;p:nth-of-type(2)&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;选择属于其父元素第二个 &lt;p&gt; 元素的每个 &lt;p&gt; 元素。&lt;/td&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;3&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
 &lt;td&gt;:nth-last-of-type(n)&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;p:nth-last-of-type(2)&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;同上，但是从最后一个子元素开始计数。&lt;/td&gt;
-&lt;td align=&#34;right&#34;&gt;3&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;p:nth-last-of-type(2)&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;同上，但是从最后一个子元素开始计数。&lt;/td&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;3&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
 &lt;td&gt;:last-child&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;p:last-child&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;选择属于其父元素最后一个子元素每个 &lt;p&gt; 元素。&lt;/td&gt;
-&lt;td align=&#34;right&#34;&gt;3&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;p:last-child&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;选择属于其父元素最后一个子元素每个 &lt;p&gt; 元素。&lt;/td&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;3&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
 &lt;td&gt;:root&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;:root&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;选择文档的根元素。&lt;/td&gt;
-&lt;td align=&#34;right&#34;&gt;3&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;:root&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;选择文档的根元素。&lt;/td&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;3&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
 &lt;td&gt;:empty&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;p:empty&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;选择没有子元素的每个 &lt;p&gt; 元素（包括文本节点）。&lt;/td&gt;
-&lt;td align=&#34;right&#34;&gt;3&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;p:empty&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;选择没有子元素的每个 &lt;p&gt; 元素（包括文本节点）。&lt;/td&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;3&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
 &lt;td&gt;:target&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;#news:target&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;选择当前活动的 #news 元素。&lt;/td&gt;
-&lt;td align=&#34;right&#34;&gt;3&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;#news:target&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;选择当前活动的 #news 元素。&lt;/td&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;3&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
 &lt;td&gt;:enabled&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;input:enabled&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;选择每个启用的 input元素。&lt;/td&gt;
-&lt;td align=&#34;right&#34;&gt;3&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;input:enabled&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;选择每个启用的 input 元素。&lt;/td&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;3&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
 &lt;td&gt;:disabled&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;input:disabled&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;选择每个禁用的 input 元素&lt;/td&gt;
-&lt;td align=&#34;right&#34;&gt;3&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;input:disabled&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;选择每个禁用的 input 元素&lt;/td&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;3&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
 &lt;td&gt;:checked&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;input:checked&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;选择每个被选中的 input 元素。&lt;/td&gt;
-&lt;td align=&#34;right&#34;&gt;3&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;input:checked&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;选择每个被选中的 input 元素。&lt;/td&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;3&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
 &lt;td&gt;:not(selector)&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;:not(p)&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;选择非 p 元素的每个元素。&lt;/td&gt;
-&lt;td align=&#34;right&#34;&gt;3&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;:not§&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;选择非 p 元素的每个元素。&lt;/td&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;3&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
 &lt;td&gt;::selection&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;::selection&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;选择被用户选取的元素部分。&lt;/td&gt;
-&lt;td align=&#34;right&#34;&gt;3&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;::selection&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;选择被用户选取的元素部分。&lt;/td&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;3&lt;/td&gt;
 &lt;/tr&gt;
-&lt;/tbody&gt;&lt;/table&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
  ]]></description>
         </item>
     </channel>

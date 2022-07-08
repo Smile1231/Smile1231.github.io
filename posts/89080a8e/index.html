@@ -117,12 +117,12 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
       </div>
       <div id="imgs" class="pjax">
         <ul>
-          <li class="item" data-background-image="https://tva2.sinaimg.cn/large/6833939bly1giclgrvbd6j20zk0m8qv5.jpg"></li>
-          <li class="item" data-background-image="https://tva2.sinaimg.cn/large/6833939bly1gipew8gmvyj20zk0m87wh.jpg"></li>
-          <li class="item" data-background-image="https://tva2.sinaimg.cn/large/6833939bly1gicitht3xtj20zk0m8k5v.jpg"></li>
-          <li class="item" data-background-image="https://tva2.sinaimg.cn/large/6833939bly1giclffsa1cj20zk0m811l.jpg"></li>
-          <li class="item" data-background-image="https://tva2.sinaimg.cn/large/6833939bly1gipeyonbf9j20zk0m8e81.jpg"></li>
-          <li class="item" data-background-image="https://tva2.sinaimg.cn/large/6833939bly1gipesng5oej20zk0m87d4.jpg"></li>
+          <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1giclx6phq6j20zk0m8e36.jpg"></li>
+          <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1giciundwu5j20zk0m8n9e.jpg"></li>
+          <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1gicliwyw55j20zk0m8hdt.jpg"></li>
+          <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1gicivghyooj20zk0m8dir.jpg"></li>
+          <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1giclize41wj20zk0m87gk.jpg"></li>
+          <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1giciukx8a7j20zk0m8aio.jpg"></li>
         </ul>
       </div>
     </header>
@@ -171,36 +171,49 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
   <div class="body md" itemprop="articleBody">
     
 
-    <h1 id="Spring-Bean的生命周期"><a href="#Spring-Bean的生命周期" class="headerlink" title="Spring Bean的生命周期"></a><code>Spring Bean</code>的生命周期</h1><p>大致流程：</p>
-<p>本文将从以下两方面去帮助理解 <code>Bean</code> 的生命周期：</p>
+    <h1 id="spring-bean的生命周期"><a class="markdownIt-Anchor" href="#spring-bean的生命周期">#</a>  <code>Spring Bean</code>  的生命周期</h1>
+<p>大致流程：</p>
+<p>本文将从以下两方面去帮助理解  <code>Bean</code>  的生命周期：</p>
 <span id="more"></span>
-
 <ul>
-<li>生命周期的概要流程：对 <code>Bean</code> 的生命周期进行概括，并且结合代码来理解；</li>
-<li>扩展点的作用：详细介绍 <code>Bean</code> 生命周期中所涉及到的扩展点的作用。</li>
+<li>生命周期的概要流程：对  <code>Bean</code>  的生命周期进行概括，并且结合代码来理解；</li>
+<li>扩展点的作用：详细介绍  <code>Bean</code>  生命周期中所涉及到的扩展点的作用。</li>
 </ul>
-<h2 id="生命周期的概要流程"><a href="#生命周期的概要流程" class="headerlink" title="生命周期的概要流程"></a>生命周期的概要流程</h2><p><code>Bean</code> 的生命周期概括起来就是 <code>4</code> 个阶段：</p>
+<h2 id="生命周期的概要流程"><a class="markdownIt-Anchor" href="#生命周期的概要流程">#</a> 生命周期的概要流程</h2>
+<p><code>Bean</code>  的生命周期概括起来就是  <code>4</code>  个阶段：</p>
 <ul>
-<li>实例化（<code>Instantiation</code>）</li>
-<li>属性赋值（<code>Populate</code>）</li>
-<li>初始化（<code>Initialization</code>）</li>
-<li>销毁（<code>Destruction</code>）</li>
+<li>
+<p>实例化（ <code>Instantiation</code> ）</p>
+</li>
+<li>
+<p>属性赋值（ <code>Populate</code> ）</p>
+</li>
+<li>
+<p>初始化（ <code>Initialization</code> ）</p>
+</li>
+<li>
+<p>销毁（ <code>Destruction</code> ）</p>
+</li>
+<li>
+<p>实例化：第  <code>1</code>  步，实例化一个  <code>bean</code>  对象；</p>
+</li>
+<li>
+<p>属性赋值：第  <code>2</code>  步，为  <code>bean</code>  设置相关属性和依赖；</p>
+</li>
+<li>
+<p>初始化：第  <code>3~7</code>  步，步骤较多，其中第  <code>5、6</code>  步为初始化操作，第  <code>3、4</code>  步为在初始化前执行，第  <code>7</code>  步在初始化后执行，该阶段结束，才能被用户使用；</p>
+</li>
+<li>
+<p>销毁：第  <code>8~10</code>  步，第 <code>8</code>  步不是真正意义上的销毁（还没使用呢），而是先在使用前注册了销毁的相关调用接口，为了后面第 <code>9、10</code>  步真正销毁  <code>bean</code>  时再执行相应的方法。</p>
+</li>
 </ul>
-<ul>
-<li>实例化：第 <code>1</code> 步，实例化一个 <code>bean</code> 对象；</li>
-<li>属性赋值：第 <code>2</code> 步，为 <code>bean</code> 设置相关属性和依赖；</li>
-<li>初始化：第 <code>3~7</code> 步，步骤较多，其中第 <code>5、6</code> 步为初始化操作，第 <code>3、4</code> 步为在初始化前执行，第 <code>7</code> 步在初始化后执行，该阶段结束，才能被用户使用；</li>
-<li>销毁：第 <code>8~10</code>步，第<code>8</code>步不是真正意义上的销毁（还没使用呢），而是先在使用前注册了销毁的相关调用接口，为了后面第<code>9、10</code>步真正销毁 <code>bean</code> 时再执行相应的方法。</li>
-</ul>
-<p>下面我们结合代码来直观的看下，在 <code>doCreateBean()</code> 方法中能看到依次执行了这 <code>4</code> 个阶段：</p>
+<p>下面我们结合代码来直观的看下，在  <code>doCreateBean()</code>  方法中能看到依次执行了这  <code>4</code>  个阶段：</p>
 <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// AbstractAutowireCapableBeanFactory.java</span></span><br><span class="line"><span class="function"><span class="keyword">protected</span> Object <span class="title">doCreateBean</span><span class="params">(<span class="keyword">final</span> String beanName, <span class="keyword">final</span> RootBeanDefinition mbd, <span class="keyword">final</span> <span class="meta">@Nullable</span> Object[] args)</span></span></span><br><span class="line"><span class="function">    <span class="keyword">throws</span> BeanCreationException </span>&#123;</span><br><span class="line"> </span><br><span class="line">    <span class="comment">// 1. 实例化</span></span><br><span class="line">    BeanWrapper instanceWrapper = <span class="keyword">null</span>;</span><br><span class="line">    <span class="keyword">if</span> (instanceWrapper == <span class="keyword">null</span>) &#123;</span><br><span class="line">        instanceWrapper = createBeanInstance(beanName, mbd, args);</span><br><span class="line">    &#125;</span><br><span class="line">    </span><br><span class="line">    Object exposedObject = bean;</span><br><span class="line">    <span class="keyword">try</span> &#123;</span><br><span class="line">        <span class="comment">// 2. 属性赋值</span></span><br><span class="line">        populateBean(beanName, mbd, instanceWrapper);</span><br><span class="line">        <span class="comment">// 3. 初始化</span></span><br><span class="line">        exposedObject = initializeBean(beanName, exposedObject, mbd);</span><br><span class="line">    &#125;</span><br><span class="line"> </span><br><span class="line">    <span class="comment">// 4. 销毁-注册回调接口</span></span><br><span class="line">    <span class="keyword">try</span> &#123;</span><br><span class="line">        registerDisposableBeanIfNecessary(beanName, bean, mbd);</span><br><span class="line">    &#125;</span><br><span class="line"> </span><br><span class="line">    <span class="keyword">return</span> exposedObject;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<p>由于初始化包含了第 <code>3~7</code>步，较复杂，所以我们进到 <code>initializeBean()</code> 方法里具体看下其过程（注释的序号对应图中序号）：</p>
+<p>由于初始化包含了第  <code>3~7</code>  步，较复杂，所以我们进到  <code>initializeBean()</code>  方法里具体看下其过程（注释的序号对应图中序号）：</p>
 <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// AbstractAutowireCapableBeanFactory.java</span></span><br><span class="line"><span class="function"><span class="keyword">protected</span> Object <span class="title">initializeBean</span><span class="params">(<span class="keyword">final</span> String beanName, <span class="keyword">final</span> Object bean, <span class="meta">@Nullable</span> RootBeanDefinition mbd)</span> </span>&#123;</span><br><span class="line">    <span class="comment">// 3. 检查 Aware 相关接口并设置相关依赖</span></span><br><span class="line">    <span class="keyword">if</span> (System.getSecurityManager() != <span class="keyword">null</span>) &#123;</span><br><span class="line">        AccessController.doPrivileged((PrivilegedAction&lt;Object&gt;) () -&gt; &#123;</span><br><span class="line">            invokeAwareMethods(beanName, bean);</span><br><span class="line">            <span class="keyword">return</span> <span class="keyword">null</span>;</span><br><span class="line">        &#125;, getAccessControlContext());</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">else</span> &#123;</span><br><span class="line">        invokeAwareMethods(beanName, bean);</span><br><span class="line">    &#125;</span><br><span class="line"> </span><br><span class="line">    <span class="comment">// 4. BeanPostProcessor 前置处理</span></span><br><span class="line">    Object wrappedBean = bean;</span><br><span class="line">    <span class="keyword">if</span> (mbd == <span class="keyword">null</span> || !mbd.isSynthetic()) &#123;</span><br><span class="line">        wrappedBean = applyBeanPostProcessorsBeforeInitialization(wrappedBean, beanName);</span><br><span class="line">    &#125;</span><br><span class="line"> </span><br><span class="line">    <span class="comment">// 5. 若实现 InitializingBean 接口，调用 afterPropertiesSet() 方法</span></span><br><span class="line">    <span class="comment">// 6. 若配置自定义的 init-method方法，则执行</span></span><br><span class="line">    <span class="keyword">try</span> &#123;</span><br><span class="line">        invokeInitMethods(beanName, wrappedBean, mbd);</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">catch</span> (Throwable ex) &#123;</span><br><span class="line">        <span class="keyword">throw</span> <span class="keyword">new</span> BeanCreationException(</span><br><span class="line">            (mbd != <span class="keyword">null</span> ? mbd.getResourceDescription() : <span class="keyword">null</span>),</span><br><span class="line">            beanName, <span class="string">&quot;Invocation of init method failed&quot;</span>, ex);</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="comment">// 7. BeanPostProceesor 后置处理</span></span><br><span class="line">    <span class="keyword">if</span> (mbd == <span class="keyword">null</span> || !mbd.isSynthetic()) &#123;</span><br><span class="line">        wrappedBean = applyBeanPostProcessorsAfterInitialization(wrappedBean, beanName);</span><br><span class="line">    &#125;</span><br><span class="line"> </span><br><span class="line">    <span class="keyword">return</span> wrappedBean;</span><br><span class="line">&#125;</span><br><span class="line">```java</span><br><span class="line"><span class="comment">// AbstractAutowireCapableBeanFactory.java</span></span><br><span class="line"><span class="function"><span class="keyword">protected</span> Object <span class="title">initializeBean</span><span class="params">(<span class="keyword">final</span> String beanName, <span class="keyword">final</span> Object bean, <span class="meta">@Nullable</span> RootBeanDefinition mbd)</span> </span>&#123;</span><br><span class="line">    <span class="comment">// 3. 检查 Aware 相关接口并设置相关依赖</span></span><br><span class="line">    <span class="keyword">if</span> (System.getSecurityManager() != <span class="keyword">null</span>) &#123;</span><br><span class="line">        AccessController.doPrivileged((PrivilegedAction&lt;Object&gt;) () -&gt; &#123;</span><br><span class="line">            invokeAwareMethods(beanName, bean);</span><br><span class="line">            <span class="keyword">return</span> <span class="keyword">null</span>;</span><br><span class="line">        &#125;, getAccessControlContext());</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">else</span> &#123;</span><br><span class="line">        invokeAwareMethods(beanName, bean);</span><br><span class="line">    &#125;</span><br><span class="line"> </span><br><span class="line">    <span class="comment">// 4. BeanPostProcessor 前置处理</span></span><br><span class="line">    Object wrappedBean = bean;</span><br><span class="line">    <span class="keyword">if</span> (mbd == <span class="keyword">null</span> || !mbd.isSynthetic()) &#123;</span><br><span class="line">        wrappedBean = applyBeanPostProcessorsBeforeInitialization(wrappedBean, beanName);</span><br><span class="line">    &#125;</span><br><span class="line"> </span><br><span class="line">    <span class="comment">// 5. 若实现 InitializingBean 接口，调用 afterPropertiesSet() 方法</span></span><br><span class="line">    <span class="comment">// 6. 若配置自定义的 init-method方法，则执行</span></span><br><span class="line">    <span class="keyword">try</span> &#123;</span><br><span class="line">        invokeInitMethods(beanName, wrappedBean, mbd);</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">catch</span> (Throwable ex) &#123;</span><br><span class="line">        <span class="keyword">throw</span> <span class="keyword">new</span> BeanCreationException(</span><br><span class="line">            (mbd != <span class="keyword">null</span> ? mbd.getResourceDescription() : <span class="keyword">null</span>),</span><br><span class="line">            beanName, <span class="string">&quot;Invocation of init method failed&quot;</span>, ex);</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="comment">// 7. BeanPostProceesor 后置处理</span></span><br><span class="line">    <span class="keyword">if</span> (mbd == <span class="keyword">null</span> || !mbd.isSynthetic()) &#123;</span><br><span class="line">        wrappedBean = applyBeanPostProcessorsAfterInitialization(wrappedBean, beanName);</span><br><span class="line">    &#125;</span><br><span class="line"> </span><br><span class="line">    <span class="keyword">return</span> wrappedBean;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<p>在 <code>invokInitMethods()</code> 方法中会检查 <code>InitializingBean</code> 接口和 <code>init-method</code> 方法，销毁的过程也与其类似：</p>
+<p>在  <code>invokInitMethods()</code>  方法中会检查  <code>InitializingBean</code>  接口和  <code>init-method</code>  方法，销毁的过程也与其类似：</p>
 <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// DisposableBeanAdapter.java</span></span><br><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">destroy</span><span class="params">()</span> </span>&#123;</span><br><span class="line">    <span class="comment">// 9. 若实现 DisposableBean 接口，则执行 destory()方法</span></span><br><span class="line">    <span class="keyword">if</span> (<span class="keyword">this</span>.invokeDisposableBean) &#123;</span><br><span class="line">        <span class="keyword">try</span> &#123;</span><br><span class="line">            <span class="keyword">if</span> (System.getSecurityManager() != <span class="keyword">null</span>) &#123;</span><br><span class="line">                AccessController.doPrivileged((PrivilegedExceptionAction&lt;Object&gt;) () -&gt; &#123;</span><br><span class="line">                    ((DisposableBean) <span class="keyword">this</span>.bean).destroy();</span><br><span class="line">                    <span class="keyword">return</span> <span class="keyword">null</span>;</span><br><span class="line">                &#125;, <span class="keyword">this</span>.acc);</span><br><span class="line">            &#125;</span><br><span class="line">            <span class="keyword">else</span> &#123;</span><br><span class="line">                ((DisposableBean) <span class="keyword">this</span>.bean).destroy();</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    </span><br><span class="line">	<span class="comment">// 10. 若配置自定义的 detory-method 方法，则执行</span></span><br><span class="line">    <span class="keyword">if</span> (<span class="keyword">this</span>.destroyMethod != <span class="keyword">null</span>) &#123;</span><br><span class="line">        invokeCustomDestroyMethod(<span class="keyword">this</span>.destroyMethod);</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">else</span> <span class="keyword">if</span> (<span class="keyword">this</span>.destroyMethodName != <span class="keyword">null</span>) &#123;</span><br><span class="line">        Method methodToInvoke = determineDestroyMethod(<span class="keyword">this</span>.destroyMethodName);</span><br><span class="line">        <span class="keyword">if</span> (methodToInvoke != <span class="keyword">null</span>) &#123;</span><br><span class="line">            invokeCustomDestroyMethod(ClassUtils.getInterfaceMethodIfPossible(methodToInvoke));</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br></pre></td></tr></table></figure>
-<p>从 <code>Spring</code> 的源码我们可以直观的看到其执行过程，而我们记忆其过程便可以从这 <code>4</code> 个阶段出发，实例化、属性赋值、初始化、销毁。其中细节较多的便是初始化，涉及了 <code>Aware、BeanPostProcessor、InitializingBean、init-method</code> 的概念。</p>
+<p>从  <code>Spring</code>  的源码我们可以直观的看到其执行过程，而我们记忆其过程便可以从这  <code>4</code>  个阶段出发，实例化、属性赋值、初始化、销毁。其中细节较多的便是初始化，涉及了  <code>Aware、BeanPostProcessor、InitializingBean、init-method</code>  的概念。</p>
 <p><span class="exturl" data-url="aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3psMXpsMnpsMy9hcnRpY2xlL2RldGFpbHMvMTA1MDQ0OTU0">拓展点讲解</span></p>
 
       <div class="tags">
@@ -257,7 +270,7 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
     <div class="item left">
       
 
-  <a href="/posts/31d0fffb/" itemprop="url" rel="prev" data-background-image="https:&#x2F;&#x2F;tva2.sinaimg.cn&#x2F;mw690&#x2F;6833939bly1gipeuv80yoj20zk0m8kjl.jpg" title="Mybatis中#号和$号的区别">
+  <a href="/posts/31d0fffb/" itemprop="url" rel="prev" data-background-image="https:&#x2F;&#x2F;tva3.sinaimg.cn&#x2F;mw690&#x2F;6833939bly1gipesrnqv3j20zk0m8ava.jpg" title="Mybatis中#号和$号的区别">
   <span class="type">Previous Post</span>
   <span class="category"><i class="ic i-flag"></i> Mybatis</span>
   <h3>Mybatis中#号和$号的区别</h3>
@@ -267,7 +280,7 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
     <div class="item right">
       
 
-  <a href="/posts/eec4b728/" itemprop="url" rel="next" data-background-image="https:&#x2F;&#x2F;tva2.sinaimg.cn&#x2F;mw690&#x2F;6833939bly1gipetfk5zwj20zk0m8e81.jpg" title="SpringBoot中如何优雅的使用多线程">
+  <a href="/posts/eec4b728/" itemprop="url" rel="next" data-background-image="https:&#x2F;&#x2F;tva3.sinaimg.cn&#x2F;mw690&#x2F;6833939bly1giclhnx9glj20zk0m8npd.jpg" title="SpringBoot中如何优雅的使用多线程">
   <span class="type">Next Post</span>
   <span class="category"><i class="ic i-flag"></i> SpringBoot</span>
   <h3>SpringBoot中如何优雅的使用多线程</h3>
@@ -289,7 +302,7 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
   <div class="panels">
     <div class="inner">
       <div class="contents panel pjax" data-title="Contents">
-          <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#Spring-Bean%E7%9A%84%E7%94%9F%E5%91%BD%E5%91%A8%E6%9C%9F"><span class="toc-number">1.</span> <span class="toc-text">Spring Bean的生命周期</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%94%9F%E5%91%BD%E5%91%A8%E6%9C%9F%E7%9A%84%E6%A6%82%E8%A6%81%E6%B5%81%E7%A8%8B"><span class="toc-number">1.1.</span> <span class="toc-text">生命周期的概要流程</span></a></li></ol></li></ol>
+          <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#spring-bean%E7%9A%84%E7%94%9F%E5%91%BD%E5%91%A8%E6%9C%9F"><span class="toc-number">1.</span> <span class="toc-text">  Spring Bean  的生命周期</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%94%9F%E5%91%BD%E5%91%A8%E6%9C%9F%E7%9A%84%E6%A6%82%E8%A6%81%E6%B5%81%E7%A8%8B"><span class="toc-number">1.1.</span> <span class="toc-text"> 生命周期的概要流程</span></a></li></ol></li></ol>
       </div>
       <div class="related panel pjax" data-title="Related">
         <ul>
@@ -398,52 +411,12 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
   <li class="item">
     
 <div class="breadcrumb">
-<a href="/categories/Java/" title="In Java">Java</a>
-</div>
-
-    <span><a href="/posts/91c18f7c/" title="关于Try-With-Source的使用以及注意点">关于Try-With-Source的使用以及注意点</a></span>
-  </li>
-
-      
-  <li class="item">
-    
-<div class="breadcrumb">
-<a href="/categories/Java/" title="In Java">Java</a>
-</div>
-
-    <span><a href="/posts/7a29d22a/" title="Java关于时间的轮子">Java关于时间的轮子</a></span>
-  </li>
-
-      
-  <li class="item">
-    
-<div class="breadcrumb">
-<a href="/categories/Java/" title="In Java">Java</a>
+<a href="/categories/Java%E9%9D%A2%E8%AF%95/" title="In Java面试">Java面试</a>
 <i class="ic i-angle-right"></i>
-<a href="/categories/Java/Tools/" title="In Tools">Tools</a>
+<a href="/categories/Java%E9%9D%A2%E8%AF%95/Tools/" title="In Tools">Tools</a>
 </div>
 
-    <span><a href="/posts/b246d3ce/" title="Java自带的好用的工具类">Java自带的好用的工具类</a></span>
-  </li>
-
-      
-  <li class="item">
-    
-<div class="breadcrumb">
-<a href="/categories/Daily/" title="In Daily">Daily</a>
-</div>
-
-    <span><a href="/posts/9a0369ec/" title="布隆过滤器">布隆过滤器</a></span>
-  </li>
-
-      
-  <li class="item">
-    
-<div class="breadcrumb">
-<a href="/categories/Mybtais/" title="In Mybtais">Mybtais</a>
-</div>
-
-    <span><a href="/posts/9aff665a/" title="mybatis中大于等于小于等于的写法">mybatis中大于等于小于等于的写法</a></span>
+    <span><a href="/posts/6714b4a9/" title="FastJson序列化使用">FastJson序列化使用</a></span>
   </li>
 
       
@@ -452,7 +425,45 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
 <div class="breadcrumb">
 </div>
 
-    <span><a href="/posts/d0edc1ed/" title="Linux常用命令">Linux常用命令</a></span>
+    <span><a href="/posts/49a9ac1a/" title="Springboot优雅的实现重试">Springboot优雅的实现重试</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/%E6%95%B0%E6%8D%AE%E5%BA%93/" title="In 数据库">数据库</a>
+</div>
+
+    <span><a href="/posts/60f024c8/" title="关于sql执行计划">关于sql执行计划</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+</div>
+
+    <span><a href="/posts/823298d2/" title="VsCode 如何Debug Shell">VsCode 如何Debug Shell</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/Java/" title="In Java">Java</a>
+</div>
+
+    <span><a href="/posts/97604c34/" title="获取指定集合要求中的mapkey值并重新返回map">获取指定集合要求中的mapkey值并重新返回map</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+</div>
+
+    <span><a href="/posts/a1926332/" title="Springboot+Vue二进制文件传输">Springboot+Vue二进制文件传输</a></span>
   </li>
 
       
@@ -461,10 +472,10 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
 <div class="breadcrumb">
 <a href="/categories/Java%E9%9D%A2%E8%AF%95/" title="In Java面试">Java面试</a>
 <i class="ic i-angle-right"></i>
-<a href="/categories/Java%E9%9D%A2%E8%AF%95/%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92/" title="In 动态规划">动态规划</a>
+<a href="/categories/Java%E9%9D%A2%E8%AF%95/Jvm/" title="In Jvm">Jvm</a>
 </div>
 
-    <span><a href="/posts/a80d0031/" title="动态规划">动态规划</a></span>
+    <span><a href="/posts/57681474/" title="JVM简单原理">JVM简单原理</a></span>
   </li>
 
       
@@ -472,34 +483,31 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
     
 <div class="breadcrumb">
 <a href="/categories/Java/" title="In Java">Java</a>
-<i class="ic i-angle-right"></i>
-<a href="/categories/Java/Java%E9%9D%A2%E8%AF%95/" title="In Java面试">Java面试</a>
-<i class="ic i-angle-right"></i>
-<a href="/categories/Java/Java%E9%9D%A2%E8%AF%95/SpringBoot/" title="In SpringBoot">SpringBoot</a>
 </div>
 
-    <span><a href="/posts/5e7baeeb/" title="过滤器和拦截器的区别">过滤器和拦截器的区别</a></span>
+    <span><a href="/posts/1c3390ab/" title="将Java数据输出为本地txt">将Java数据输出为本地txt</a></span>
   </li>
 
       
   <li class="item">
     
 <div class="breadcrumb">
+<a href="/categories/%E5%89%8D%E7%AB%AF/" title="In 前端">前端</a>
 </div>
 
-    <span><a href="/posts/5a74c6a6/" title="宝儿的大腿小腿围">宝儿的大腿小腿围</a></span>
+    <span><a href="/posts/3eca6246/" title="使用npm时报python错误的解决方案">使用npm时报python错误的解决方案</a></span>
   </li>
 
       
   <li class="item">
     
 <div class="breadcrumb">
-<a href="/categories/Hexo/" title="In Hexo">Hexo</a>
+<a href="/categories/%E5%89%8D%E7%AB%AF/" title="In 前端">前端</a>
 <i class="ic i-angle-right"></i>
-<a href="/categories/Hexo/Tools/" title="In Tools">Tools</a>
+<a href="/categories/%E5%89%8D%E7%AB%AF/JavaScript/" title="In JavaScript">JavaScript</a>
 </div>
 
-    <span><a href="/posts/3d071a12/" title="使用hexo框架+next主题+githubPage搭建个人博客">使用hexo框架+next主题+githubPage搭建个人博客</a></span>
+    <span><a href="/posts/4aa00b9a/" title="Js中的some、find、findindex、includes、filter的使用">Js中的some、find、findindex、includes、filter的使用</a></span>
   </li>
 
   </ul>
