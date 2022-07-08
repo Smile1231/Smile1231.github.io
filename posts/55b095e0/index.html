@@ -1,320 +1,187 @@
+
+
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
-<meta name="theme-color" content="#222">
-<meta name="generator" content="Hexo 5.4.0">
-  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="/images/avatar.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="/images/avatar.png">
-  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+<meta name="theme-color" content="#FFF">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
 
-<link rel="stylesheet" href="/css/main.css">
+<link rel="icon" type="image/ico" sizes="32x32" href="/images/favicon.ico">
+  <meta http-equiv="Cache-Control" content="no-transform">
+  <meta http-equiv="Cache-Control" content="no-siteapp">
 
 
-<link rel="stylesheet" href="/lib/font-awesome/css/all.min.css">
-  <link rel="stylesheet" href="/lib/pace/pace-theme-mac-osx.min.css">
-  <script src="/lib/pace/pace.min.js"></script>
+<link rel="alternate" type="application/rss+xml" title="JIN MAO 's Blog" href="https://smile1231.github.io/rss.xml" />
+<link rel="alternate" type="application/atom+xml" title="JIN MAO 's Blog" href="https://smile1231.github.io/atom.xml" />
+<link rel="alternate" type="application/json" title="JIN MAO 's Blog" href="https://smile1231.github.io/feed.json" />
 
-<script id="hexo-configurations">
-    var NexT = window.NexT || {};
-    var CONFIG = {"hostname":"smile1231.github.io","root":"/","scheme":"Pisces","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":true,"show_result":true,"style":"mac"},"back2top":{"enable":true,"sidebar":false,"scrollpercent":true},"bookmark":{"enable":true,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":true,"lazyload":true,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
-  </script>
+<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Mulish:300,300italic,400,400italic,700,700italic%7CFredericka%20the%20Great:300,300italic,400,400italic,700,700italic%7CNoto%20Serif%20JP:300,300italic,400,400italic,700,700italic%7CNoto%20Serif%20SC:300,300italic,400,400italic,700,700italic%7CInconsolata:300,300italic,400,400italic,700,700italic&display=swap&subset=latin,latin-ext">
 
-  <meta name="description" content="Nowdays , i hava a task about how to use shell script ,so it is time to learn shell .  shell  入门   好用的工具网站">
-<meta property="og:type" content="article">
-<meta property="og:title" content="The learning of Shell">
-<meta property="og:url" content="https://smile1231.github.io/posts/55b095e0/index.html">
-<meta property="og:site_name" content="JIN MAO &#39;s Blog">
-<meta property="og:description" content="Nowdays , i hava a task about how to use shell script ,so it is time to learn shell .  shell  入门   好用的工具网站">
-<meta property="og:locale" content="en_US">
-<meta property="og:image" content="https://smile1231.github.io/posts/55b095e0/2022-05-13-00-07-09.png">
-<meta property="og:image" content="https://smile1231.github.io/posts/55b095e0/2022-05-13-20-25-50.png">
-<meta property="og:image" content="https://smile1231.github.io/posts/55b095e0/2022-05-13-20-26-18.png">
-<meta property="og:image" content="https://smile1231.github.io/posts/55b095e0/2022-05-13-20-26-42.png">
-<meta property="og:image" content="https://smile1231.github.io/posts/55b095e0/2022-05-13-20-27-00.png">
-<meta property="article:published_time" content="2022-05-10T15:35:17.000Z">
-<meta property="article:modified_time" content="2022-06-01T12:53:31.923Z">
-<meta property="article:author" content="JIN Mao">
-<meta property="article:tag" content="Shell">
-<meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="https://smile1231.github.io/posts/55b095e0/2022-05-13-00-07-09.png">
+<link rel="stylesheet" href="/css/app.css?v=0.2.5">
+
+  
+  <meta name="keywords" content="Shell" />
+
 
 <link rel="canonical" href="https://smile1231.github.io/posts/55b095e0/">
 
 
-<script id="page-configurations">
-  // https://hexo.io/docs/variables.html
-  CONFIG.page = {
-    sidebar: "",
-    isHome : false,
-    isPost : true,
-    lang   : 'en'
-  };
-</script>
 
-  <title>The learning of Shell | JIN MAO 's Blog</title>
-  
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-FWV5496QFL"></script>
-    <script>
-      if (CONFIG.hostname === location.hostname) {
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-        gtag('config', 'G-FWV5496QFL');
-      }
-    </script>
-
-
-
-
-
-
-  <noscript>
-  <style>
-  .use-motion .brand,
-  .use-motion .menu-item,
-  .sidebar-inner,
-  .use-motion .post-block,
-  .use-motion .pagination,
-  .use-motion .comments,
-  .use-motion .post-header,
-  .use-motion .post-body,
-  .use-motion .collection-header { opacity: initial; }
-
-  .use-motion .site-title,
-  .use-motion .site-subtitle {
-    opacity: initial;
-    top: initial;
-  }
-
-  .use-motion .logo-line-before i { left: initial; }
-  .use-motion .logo-line-after i { right: initial; }
-  </style>
-</noscript>
-
-<link rel="alternate" href="/atom.xml" title="JIN MAO 's Blog" type="application/atom+xml">
-</head>
-
+  <title>
+The learning of Shell - Shell |
+Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
+<meta name="generator" content="Hexo 5.4.0"></head>
 <body itemscope itemtype="http://schema.org/WebPage">
-  <div class="container use-motion">
-    <div class="headband"></div>
-      <!-- <a target="_blank" rel="noopener" href="https://github.com/Smile1231/StudyRepository"><img loading="lazy" width="149" height="149" src="https://github.blog/wp-content/uploads/2008/12/forkme_right_gray_6d6d6d.png?resize=149%2C149" class="attachment-full size-full" alt="Fork me on GitHub" data-recalc-dims="1"></a> -->
-    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
-      <div class="header-inner"><div class="site-brand-container">
-  <div class="site-nav-toggle">
-    <div class="toggle" aria-label="Toggle navigation bar">
-      <span class="toggle-line toggle-line-first"></span>
-      <span class="toggle-line toggle-line-middle"></span>
-      <span class="toggle-line toggle-line-last"></span>
+  <div id="loading">
+    <div class="cat">
+      <div class="body"></div>
+      <div class="head">
+        <div class="face"></div>
+      </div>
+      <div class="foot">
+        <div class="tummy-end"></div>
+        <div class="bottom"></div>
+        <div class="legs left"></div>
+        <div class="legs right"></div>
+      </div>
+      <div class="paw">
+        <div class="hands left"></div>
+        <div class="hands right"></div>
+      </div>
     </div>
   </div>
-
-  <div class="site-meta">
-
-    <a href="/" class="brand" rel="start">
-      <span class="logo-line-before"><i></i></span>
-      <h1 class="site-title">JIN MAO 's Blog</h1>
-      <span class="logo-line-after"><i></i></span>
-    </a>
-      <p class="site-subtitle" itemprop="description">got windy(起风了)</p>
-  </div>
-
-  <div class="site-nav-right">
-    <div class="toggle popup-trigger">
-        <i class="fa fa-search fa-fw fa-lg"></i>
-    </div>
-  </div>
+  <div id="container">
+    <header id="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="inner">
+        <div id="brand">
+          <div class="pjax">
+          
+  <h1 itemprop="name headline">The learning of Shell
+  </h1>
+  
+<div class="meta">
+  <span class="item" title="Created: 2022-05-10 23:35:17">
+    <span class="icon">
+      <i class="ic i-calendar"></i>
+    </span>
+    <span class="text">Posted on</span>
+    <time itemprop="dateCreated datePublished" datetime="2022-05-10T23:35:17+08:00">2022-05-10</time>
+  </span>
+  <span class="item" title="Symbols count in article">
+    <span class="icon">
+      <i class="ic i-pen"></i>
+    </span>
+    <span class="text">Symbols count in article</span>
+    <span>11k</span>
+    <span class="text">words</span>
+  </span>
+  <span class="item" title="Reading time">
+    <span class="icon">
+      <i class="ic i-clock"></i>
+    </span>
+    <span class="text">Reading time</span>
+    <span>10 mins.</span>
+  </span>
 </div>
 
 
-
-
-<nav class="site-nav">
-  <ul id="menu" class="main-menu menu">
-        <li class="menu-item menu-item-home">
-
-    <a href="/" rel="section"><i class="fa fa-home fa-fw"></i>Home</a>
-
-  </li>
-        <li class="menu-item menu-item-about">
-
-    <a href="/about/" rel="section"><i class="fa fa-user fa-fw"></i>About</a>
-
-  </li>
-        <li class="menu-item menu-item-tags">
-
-    <a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>Tags<span class="badge">97</span></a>
-
-  </li>
-        <li class="menu-item menu-item-categories">
-
-    <a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>Categories<span class="badge">70</span></a>
-
-  </li>
-        <li class="menu-item menu-item-archives">
-
-    <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>Archives<span class="badge">133</span></a>
-
-  </li>
-      <li class="menu-item menu-item-search">
-        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>Search
-        </a>
+          </div>
+        </div>
+        <nav id="nav">
+  <div class="inner">
+    <div class="toggle">
+      <div class="lines" aria-label="Toggle navigation bar">
+        <span class="line"></span>
+        <span class="line"></span>
+        <span class="line"></span>
+      </div>
+    </div>
+    <ul class="menu">
+      <li class="item title"><a href="/" rel="start">Jin Mao when to get rich ?</a></li>
+    </ul>
+    <ul class="right">
+      <li class="item theme">
+        <i class="ic i-sun"></i>
       </li>
-  </ul>
+      <li class="item search">
+        <i class="ic i-search"></i>
+      </li>
+    </ul>
+  </div>
 </nav>
 
-
-
-  <div class="search-pop-overlay">
-    <div class="popup search-popup">
-        <div class="search-header">
-  <span class="search-icon">
-    <i class="fa fa-search"></i>
-  </span>
-  <div class="search-input-container">
-    <input autocomplete="off" autocapitalize="off"
-           placeholder="Searching..." spellcheck="false"
-           type="search" class="search-input">
-  </div>
-  <span class="popup-btn-close">
-    <i class="fa fa-times-circle"></i>
-  </span>
-</div>
-<div id="search-result">
-  <div id="no-result">
-    <i class="fa fa-spinner fa-pulse fa-5x fa-fw"></i>
-  </div>
-</div>
-
-    </div>
-  </div>
-
-</div>
+      </div>
+      <div id="imgs" class="pjax">
+        <ul>
+          <li class="item" data-background-image="https://tva1.sinaimg.cn/large/6833939bly1gipexe4oykj20zk0m87ji.jpg"></li>
+          <li class="item" data-background-image="https://tva1.sinaimg.cn/large/6833939bly1giclh3brzpj20zk0m8ann.jpg"></li>
+          <li class="item" data-background-image="https://tva1.sinaimg.cn/large/6833939bly1giclhnx9glj20zk0m8npd.jpg"></li>
+          <li class="item" data-background-image="https://tva1.sinaimg.cn/large/6833939bly1gipex2cdtbj20zk0m8x6p.jpg"></li>
+          <li class="item" data-background-image="https://tva1.sinaimg.cn/large/6833939bly1giclga70tsj20zk0m84mr.jpg"></li>
+          <li class="item" data-background-image="https://tva1.sinaimg.cn/large/6833939bly1gicm07ih54j20zk0m84qp.jpg"></li>
+        </ul>
+      </div>
     </header>
-
-    
-  <div class="back-to-top">
-    <i class="fa fa-arrow-up"></i>
-    <span>0%</span>
-  </div>
-  <div class="reading-progress-bar"></div>
-  <a role="button" class="book-mark-link book-mark-link-fixed"></a>
-
-
-    <main class="main">
-      <div class="main-inner">
-        <div class="content-wrap">
+    <div id="waves">
+      <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+        <defs>
+          <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+        </defs>
+        <g class="parallax">
+          <use xlink:href="#gentle-wave" x="48" y="0" />
+          <use xlink:href="#gentle-wave" x="48" y="3" />
+          <use xlink:href="#gentle-wave" x="48" y="5" />
+          <use xlink:href="#gentle-wave" x="48" y="7" />
+        </g>
+      </svg>
+    </div>
+    <main>
+      <div class="inner">
+        <div id="main" class="pjax">
           
-
-            <div class="post-block animated fadeIn">
-              <h5 class="post-title" itemprop="name headline">
-                <a target="_blank" rel="noopener" href="https://github.com/smile1231" class="post-title-link" itemprop="url">Github Contribution Calendar</a>
-              </h5>
-              <div class="post-body animated fadeInDown" itemprop="articleBody">
-                <img style="width: 100%; margin-top: 30px;" src="https://ghchart.rshah.org/e77c8e/smile1231" alt="JinMao's Blue Github Chart" />
-              </div>
-            </div>
-          <div class="content post posts-expand">
-            
-
+  <div class="article wrap">
     
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
-    <link itemprop="mainEntityOfPage" href="https://smile1231.github.io/posts/55b095e0/">
+<div class="breadcrumb" itemscope itemtype="https://schema.org/BreadcrumbList">
+<i class="ic i-home"></i>
+<span><a href="/">Home</a></span><i class="ic i-angle-right"></i>
+<span  class="current" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem"><a href="/categories/Shell/" itemprop="item" rel="index" title="In Shell"><span itemprop="name">Shell</span></a>
+<meta itemprop="position" content="1" /></span>
+</div>
 
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.png">
-      <meta itemprop="name" content="JIN Mao">
-      <meta itemprop="description" content="">
-    </span>
+    <article itemscope itemtype="http://schema.org/Article" class="post block" lang="en">
+  <link itemprop="mainEntityOfPage" href="https://smile1231.github.io/posts/55b095e0/">
 
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="JIN MAO 's Blog">
-    </span>
-      <header class="post-header">
-        <h1 class="post-title" itemprop="name headline">
-          The learning of Shell
-        </h1>
-
-        <div class="post-meta">
-          
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">Posted on</span>
-
-              <time title="Created: 2022-05-10 23:35:17" itemprop="dateCreated datePublished" datetime="2022-05-10T23:35:17+08:00">2022-05-10</time>
-            </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="far fa-calendar-check"></i>
-                </span>
-                <span class="post-meta-item-text">Edited on</span>
-                <time title="Modified: 2022-06-01 20:53:31" itemprop="dateModified" datetime="2022-06-01T20:53:31+08:00">2022-06-01</time>
-              </span>
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-folder"></i>
-              </span>
-              <span class="post-meta-item-text">In</span>
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/Shell/" itemprop="url" rel="index"><span itemprop="name">Shell</span></a>
-                </span>
-            </span>
-
-          
-           <!-- <span class="post-meta-item" title="Views" id="busuanzi_container_page_pv" style="display: none;">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-eye"></i>
-              </span>
-              <span class="post-meta-item-text">Views: </span>
-              <span id="busuanzi_value_page_pv"></span>
-            </span> -->
-            <span>&emsp;</span><span class="post-meta-item-icon"><i class="fa fa-eye"></i></span>
-            <span class="post-meta-item-text">Views: </span>
-            <span id="busuanzi_value_page_pv"></span>
-  
-  <span class="post-meta-item">
-    
-      <span class="post-meta-item-icon">
-        <i class="far fa-comment"></i>
-      </span>
-      <span class="post-meta-item-text">Valine: </span>
-    
-    <a title="valine" href="/posts/55b095e0/#valine-comments" itemprop="discussionUrl">
-      <span class="post-comments-count valine-comment-count" data-xid="/posts/55b095e0/" itemprop="commentCount"></span>
-    </a>
+  <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <meta itemprop="image" content="/images/avatar.png">
+    <meta itemprop="name" content="JIN Mao">
+    <meta itemprop="description" content="got windy(起风了), ">
   </span>
-  
-  
 
-        </div>
-      </header>
+  <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+    <meta itemprop="name" content="JIN MAO 's Blog">
+  </span>
 
+  <div class="body md" itemprop="articleBody">
     
-    
-    
-    <div class="post-body" itemprop="articleBody">
 
-      
-        <p>Nowdays , i hava a task about how to use shell script ,so it is time to learn shell .</p>
-<p><a target="_blank" rel="noopener" href="https://www.cnblogs.com/jingmoxukong/p/7867397.html"> shell  入门 </a></p>
-<p><a target="_blank" rel="noopener" href="http://tool.rbtree.cn/"> 好用的工具网站 </a></p>
+    <p>Nowdays , i hava a task about how to use shell script ,so it is time to learn shell .</p>
+<p><span class="exturl" data-url="aHR0cHM6Ly93d3cuY25ibG9ncy5jb20vamluZ21veHVrb25nL3AvNzg2NzM5Ny5odG1s"> shell  入门 </span></p>
+<p><span class="exturl" data-url="aHR0cDovL3Rvb2wucmJ0cmVlLmNuLw=="> 好用的工具网站 </span></p>
 <span id="more"></span>
-
-<h2 id="ALL"><a href="#ALL" class="headerlink" title="ALL"></a><code>ALL</code></h2><p><a target="_blank" rel="noopener" href="https://www.runoob.com/linux/linux-command-manual.html">https://www.runoob.com/linux/linux-command-manual.html</a></p>
-<h2 id="zip和upzip"><a href="#zip和upzip" class="headerlink" title="zip和upzip"></a><code>zip</code>和<code>upzip</code></h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># zip命令的选项说明</span></span><br><span class="line"><span class="comment"># -A：调整可执行的自动解压缩文件。</span></span><br><span class="line"><span class="comment"># -b&lt;工作目录&gt;：指定暂时存放文件的目录。</span></span><br><span class="line"><span class="comment"># -c：替每个被压缩的文件加上注释。</span></span><br><span class="line"><span class="comment"># -d：从压缩文件内删除指定的文件。</span></span><br><span class="line"><span class="comment"># -D：压缩文件内不建立目录名称。</span></span><br><span class="line"><span class="comment"># -f：此参数的效果和指定&quot;-u&quot;参数类似，但不仅更新既有文件，如果某些文件原本不存在于压缩文件内，使用本参数会一并将其加入压缩文件中。</span></span><br><span class="line"><span class="comment"># -F：尝试修复已损坏的压缩文件。</span></span><br><span class="line"><span class="comment"># -g：将文件压缩后附加在既有的压缩文件之后，而非另行建立新的压缩文件。</span></span><br><span class="line"><span class="comment"># -h：在线帮助。</span></span><br><span class="line"><span class="comment"># -i&lt;范本样式&gt;：只压缩符合条件的文件。</span></span><br><span class="line"><span class="comment"># -j：只保存文件名称及其内容，而不存放任何目录名称。</span></span><br><span class="line"><span class="comment"># -J：删除压缩文件前面不必要的数据。</span></span><br><span class="line"><span class="comment"># -k：使用MS-DOS兼容格式的文件名称。</span></span><br><span class="line"><span class="comment"># -l：压缩文件时，把LF字符置换成LF+CR字符。</span></span><br><span class="line"><span class="comment"># -ll：压缩文件时，把LF+CR字符置换成LF字符。</span></span><br><span class="line"><span class="comment"># -L：显示版权信息。</span></span><br><span class="line"><span class="comment"># -m：将文件压缩并加入压缩文件后，删除原始文件，即把文件移到压缩文件中。</span></span><br><span class="line"><span class="comment"># -n&lt;字尾字符串&gt;：不压缩具有特定字尾字符串的文件。</span></span><br><span class="line"><span class="comment"># -o：以压缩文件内拥有最新更改时间的文件为准，将压缩文件的更改时间设成和该文件相同。</span></span><br><span class="line"><span class="comment"># -q：不显示指令执行过程。</span></span><br><span class="line"><span class="comment"># -r：递归处理，将指定目录下的所有文件和子目录一并处理。</span></span><br><span class="line"><span class="comment"># -S：包含系统和隐藏文件。</span></span><br><span class="line"><span class="comment"># -t&lt;日期时间&gt;：把压缩文件的日期设成指定的日期。</span></span><br><span class="line"><span class="comment"># -T：检查备份文件内的每个文件是否正确无误。</span></span><br><span class="line"><span class="comment"># -u：更换较新的文件到压缩文件内。</span></span><br><span class="line"><span class="comment"># -v：显示指令执行过程或显示版本信息。</span></span><br><span class="line"><span class="comment"># -V：保存VMS操作系统的文件属性。</span></span><br><span class="line"><span class="comment"># -w：在文件名称里假如版本编号，本参数仅在VMS操作系统下有效。</span></span><br><span class="line"><span class="comment"># -x&lt;范本样式&gt;：压缩时排除符合条件的文件。</span></span><br><span class="line"><span class="comment"># -X：不保存额外的文件属性。</span></span><br><span class="line"><span class="comment"># -y：直接保存符号连接，而非该连接所指向的文件，本参数仅在UNIX之类的系统下有效。</span></span><br><span class="line"><span class="comment"># -z：替压缩文件加上注释。</span></span><br><span class="line"><span class="comment"># -$：保存第一个被压缩文件所在磁盘的卷册名称。</span></span><br><span class="line"><span class="comment"># -&lt;压缩效率&gt;：压缩效率是一个介于1-9的数值。</span></span><br><span class="line"></span><br><span class="line"><span class="variable">$zip</span> -m new_zip_name old_filename</span><br><span class="line"></span><br></pre></td></tr></table></figure>
-
+<h2 id="all"><a class="markdownIt-Anchor" href="#all">#</a>  <code>ALL</code></h2>
+<p><span class="exturl" data-url="aHR0cHM6Ly93d3cucnVub29iLmNvbS9saW51eC9saW51eC1jb21tYW5kLW1hbnVhbC5odG1s">https://www.runoob.com/linux/linux-command-manual.html</span></p>
+<h2 id="zip和upzip"><a class="markdownIt-Anchor" href="#zip和upzip">#</a>  <code>zip</code>  和 <code>upzip</code></h2>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># zip命令的选项说明</span></span><br><span class="line"><span class="comment"># -A：调整可执行的自动解压缩文件。</span></span><br><span class="line"><span class="comment"># -b&lt;工作目录&gt;：指定暂时存放文件的目录。</span></span><br><span class="line"><span class="comment"># -c：替每个被压缩的文件加上注释。</span></span><br><span class="line"><span class="comment"># -d：从压缩文件内删除指定的文件。</span></span><br><span class="line"><span class="comment"># -D：压缩文件内不建立目录名称。</span></span><br><span class="line"><span class="comment"># -f：此参数的效果和指定&quot;-u&quot;参数类似，但不仅更新既有文件，如果某些文件原本不存在于压缩文件内，使用本参数会一并将其加入压缩文件中。</span></span><br><span class="line"><span class="comment"># -F：尝试修复已损坏的压缩文件。</span></span><br><span class="line"><span class="comment"># -g：将文件压缩后附加在既有的压缩文件之后，而非另行建立新的压缩文件。</span></span><br><span class="line"><span class="comment"># -h：在线帮助。</span></span><br><span class="line"><span class="comment"># -i&lt;范本样式&gt;：只压缩符合条件的文件。</span></span><br><span class="line"><span class="comment"># -j：只保存文件名称及其内容，而不存放任何目录名称。</span></span><br><span class="line"><span class="comment"># -J：删除压缩文件前面不必要的数据。</span></span><br><span class="line"><span class="comment"># -k：使用MS-DOS兼容格式的文件名称。</span></span><br><span class="line"><span class="comment"># -l：压缩文件时，把LF字符置换成LF+CR字符。</span></span><br><span class="line"><span class="comment"># -ll：压缩文件时，把LF+CR字符置换成LF字符。</span></span><br><span class="line"><span class="comment"># -L：显示版权信息。</span></span><br><span class="line"><span class="comment"># -m：将文件压缩并加入压缩文件后，删除原始文件，即把文件移到压缩文件中。</span></span><br><span class="line"><span class="comment"># -n&lt;字尾字符串&gt;：不压缩具有特定字尾字符串的文件。</span></span><br><span class="line"><span class="comment"># -o：以压缩文件内拥有最新更改时间的文件为准，将压缩文件的更改时间设成和该文件相同。</span></span><br><span class="line"><span class="comment"># -q：不显示指令执行过程。</span></span><br><span class="line"><span class="comment"># -r：递归处理，将指定目录下的所有文件和子目录一并处理。</span></span><br><span class="line"><span class="comment"># -S：包含系统和隐藏文件。</span></span><br><span class="line"><span class="comment"># -t&lt;日期时间&gt;：把压缩文件的日期设成指定的日期。</span></span><br><span class="line"><span class="comment"># -T：检查备份文件内的每个文件是否正确无误。</span></span><br><span class="line"><span class="comment"># -u：更换较新的文件到压缩文件内。</span></span><br><span class="line"><span class="comment"># -v：显示指令执行过程或显示版本信息。</span></span><br><span class="line"><span class="comment"># -V：保存VMS操作系统的文件属性。</span></span><br><span class="line"><span class="comment"># -w：在文件名称里假如版本编号，本参数仅在VMS操作系统下有效。</span></span><br><span class="line"><span class="comment"># -x&lt;范本样式&gt;：压缩时排除符合条件的文件。</span></span><br><span class="line"><span class="comment"># -X：不保存额外的文件属性。</span></span><br><span class="line"><span class="comment"># -y：直接保存符号连接，而非该连接所指向的文件，本参数仅在UNIX之类的系统下有效。</span></span><br><span class="line"><span class="comment"># -z：替压缩文件加上注释。</span></span><br><span class="line"><span class="comment"># -$：保存第一个被压缩文件所在磁盘的卷册名称。</span></span><br><span class="line"><span class="comment"># -&lt;压缩效率&gt;：压缩效率是一个介于1-9的数值。</span></span><br><span class="line"></span><br><span class="line"><span class="variable">$zip</span> -m new_zip_name old_filename</span><br><span class="line"></span><br></pre></td></tr></table></figure>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 解压到当前目录 如果文件已存在，会提示是否替换，可以使用 -o 或 -n 参数简化交互；</span></span><br><span class="line"><span class="variable">$unzip</span> test.zip</span><br><span class="line"></span><br><span class="line"><span class="comment"># 解压到指定目录 解压后的文件路径:/&#123;targetPath&#125;/test</span></span><br><span class="line"><span class="variable">$unzip</span> -d &#123;targetPath&#125; test.zip </span><br><span class="line"></span><br><span class="line"><span class="comment"># 不覆盖已经存在的文件</span></span><br><span class="line"><span class="variable">$unzip</span> -n test.zip</span><br><span class="line"></span><br><span class="line"><span class="comment">#强制覆盖已经存在的文件</span></span><br><span class="line"><span class="variable">$unzip</span> -o test.zip</span><br><span class="line"></span><br><span class="line"><span class="comment">#查看压缩包中的文件列表</span></span><br><span class="line"><span class="comment"># 文件大小、时间、文件名称 不进行解压缩</span></span><br><span class="line"><span class="variable">$unzip</span> -l test.zip</span><br><span class="line"></span><br><span class="line"><span class="comment"># 查看压缩包中的文件信息【更详细】 </span></span><br><span class="line"><span class="comment"># 文件大小、压缩比、日期、文件名称</span></span><br><span class="line"><span class="variable">$unzip</span> -v test.zip</span><br><span class="line"></span><br><span class="line"><span class="comment"># 检查压缩包是否损坏</span></span><br><span class="line"><span class="variable">$unzip</span> -t test.zip</span><br><span class="line"></span><br><span class="line"><span class="comment"># 显示压缩文件的备注</span></span><br><span class="line"><span class="variable">$unzip</span> -z test.zip</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="comment"># 执行解压不显示任何信息</span></span><br><span class="line"><span class="variable">$unzip</span> -q test.zip</span><br><span class="line"><span class="variable">$unzip</span> -oq test.zip <span class="comment"># 静默解压没有任何提示</span></span><br><span class="line"></span><br></pre></td></tr></table></figure>
-
-<h2 id="Bash-shell脚本打印出正在执行的命令"><a href="#Bash-shell脚本打印出正在执行的命令" class="headerlink" title="Bash shell脚本打印出正在执行的命令"></a><code>Bash shell</code>脚本打印出正在执行的命令</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 默认情况下，bash脚本不会打印执行的每个命令，这个有时候不太方面。</span></span><br><span class="line"><span class="comment"># 如下的方法可以让bash脚本打印出执行的命令：</span></span><br><span class="line">1） 在脚本里添加 </span><br><span class="line">    <span class="built_in">set</span> -v 或者</span><br><span class="line">    <span class="comment">#!/bin/bash -v</span></span><br><span class="line"></span><br><span class="line">    以加 <span class="built_in">set</span> -v 最好。</span><br><span class="line"></span><br><span class="line">    <span class="built_in">set</span> -v  和 <span class="built_in">set</span> -o verbose  是一样的</span><br><span class="line"></span><br><span class="line">2) 添加</span><br><span class="line">    <span class="built_in">set</span> -x </span><br><span class="line"></span><br><span class="line">    或者</span><br><span class="line">    <span class="comment">#!/bin/bash -x</span></span><br><span class="line"></span><br></pre></td></tr></table></figure>
-
-<h2 id="sed指令"><a href="#sed指令" class="headerlink" title="sed指令"></a><code>sed</code>指令</h2><p><a target="_blank" rel="noopener" href="http://c.biancheng.net/view/4028.html"> 参考地址 </a></p>
-<p><code>sed</code> 命令的基本格式如下：<code>sed [选项] [脚本命令] 文件名</code></p>
+<h2 id="bash-shell脚本打印出正在执行的命令"><a class="markdownIt-Anchor" href="#bash-shell脚本打印出正在执行的命令">#</a>  <code>Bash shell</code>  脚本打印出正在执行的命令</h2>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 默认情况下，bash脚本不会打印执行的每个命令，这个有时候不太方面。</span></span><br><span class="line"><span class="comment"># 如下的方法可以让bash脚本打印出执行的命令：</span></span><br><span class="line">1） 在脚本里添加 </span><br><span class="line">    <span class="built_in">set</span> -v 或者</span><br><span class="line">    <span class="comment">#!/bin/bash -v</span></span><br><span class="line"></span><br><span class="line">    以加 <span class="built_in">set</span> -v 最好。</span><br><span class="line"></span><br><span class="line">    <span class="built_in">set</span> -v  和 <span class="built_in">set</span> -o verbose  是一样的</span><br><span class="line"></span><br><span class="line">2) 添加</span><br><span class="line">    <span class="built_in">set</span> -x </span><br><span class="line"></span><br><span class="line">    或者</span><br><span class="line">    <span class="comment">#!/bin/bash -x</span></span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<h2 id="sed指令"><a class="markdownIt-Anchor" href="#sed指令">#</a>  <code>sed</code>  指令</h2>
+<p><span class="exturl" data-url="aHR0cDovL2MuYmlhbmNoZW5nLm5ldC92aWV3LzQwMjguaHRtbA=="> 参考地址 </span></p>
+<p><code>sed</code>  命令的基本格式如下： <code>sed [选项] [脚本命令] 文件名</code></p>
 <p>该命令常用的选项及含义:</p>
 <table>
 <thead>
@@ -323,48 +190,52 @@
 <th>含义</th>
 </tr>
 </thead>
-<tbody><tr>
+<tbody>
+<tr>
 <td><code>-e</code></td>
-<td>脚本命令    该选项会将其后跟的脚本命令添加到已有的命令中。</td>
+<td>脚本命令	该选项会将其后跟的脚本命令添加到已有的命令中。</td>
 </tr>
 <tr>
 <td><code>-f</code></td>
-<td>脚本命令文件    该选项会将其后文件中的脚本命令添加到已有的命令中。</td>
+<td>脚本命令文件	该选项会将其后文件中的脚本命令添加到已有的命令中。</td>
 </tr>
 <tr>
 <td><code>-n</code></td>
-<td>默认情况下，<code>sed</code> 会在所有的脚本指定执行完毕后，会自动输出处理后的内容，而该选项会屏蔽启动输出，需使用 <code>print</code> 命令来完成输出。</td>
+<td>默认情况下， <code>sed</code>  会在所有的脚本指定执行完毕后，会自动输出处理后的内容，而该选项会屏蔽启动输出，需使用  <code>print</code>  命令来完成输出。</td>
 </tr>
 <tr>
 <td><code>-i</code></td>
 <td>此选项会直接修改源文件，要慎用。</td>
 </tr>
-</tbody></table>
-<h3 id="sed-s-替换脚本命令"><a href="#sed-s-替换脚本命令" class="headerlink" title="sed s 替换脚本命令"></a><code>sed s </code>替换脚本命令</h3><p>此命令的基本格式为：</p>
+</tbody>
+</table>
+<h3 id="sed-s-替换脚本命令"><a class="markdownIt-Anchor" href="#sed-s-替换脚本命令">#</a>  <code>sed s </code> 替换脚本命令</h3>
+<p>此命令的基本格式为：</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 其中，address 表示指定要操作的具体行，pattern 指的是需要替换的内容，replacement 指的是要替换的新内容。</span></span><br><span class="line">[address]s/pattern/replacement/flags</span><br></pre></td></tr></table></figure>
-<p>其中<code>flag</code>:</p>
+<p>其中 <code>flag</code> :</p>
 <table>
 <thead>
 <tr>
-<th><code>flags</code> 标记</th>
+<th><code>flags</code>  标记</th>
 <th>功能</th>
 </tr>
 </thead>
-<tbody><tr>
+<tbody>
+<tr>
 <td><code>n</code></td>
-<td><code>1~512</code> 之间的数字，表示指定要替换的字符串出现第几次时才进行替换，例如，一行中有 <code>3</code> 个 <code>A</code>，但用户只想替换第二个 <code>A</code>，这是就用到这个标记；</td>
+<td><code>1~512</code>  之间的数字，表示指定要替换的字符串出现第几次时才进行替换，例如，一行中有  <code>3</code>  个  <code>A</code> ，但用户只想替换第二个  <code>A</code> ，这是就用到这个标记；</td>
 </tr>
 <tr>
 <td><code>g</code></td>
-<td>对数据中所有匹配到的内容进行替换，如果没有 <code>g</code>，则只会在第一次匹配成功时做替换操作。例如，一行数据中有 <code>3</code> 个 <code>A</code>，则只会替换第一个 <code>A</code>；</td>
+<td>对数据中所有匹配到的内容进行替换，如果没有  <code>g</code> ，则只会在第一次匹配成功时做替换操作。例如，一行数据中有  <code>3</code>  个  <code>A</code> ，则只会替换第一个  <code>A</code> ；</td>
 </tr>
 <tr>
 <td><code>p</code></td>
-<td>会打印与替换命令中指定的模式匹配的行。此标记通常与 <code>-n</code> 选项一起使用。</td>
+<td>会打印与替换命令中指定的模式匹配的行。此标记通常与  <code>-n</code>  选项一起使用。</td>
 </tr>
 <tr>
 <td><code>w file</code></td>
-<td>将缓冲区中的内容写到指定的 <code>file</code> 文件中；</td>
+<td>将缓冲区中的内容写到指定的  <code>file</code>  文件中；</td>
 </tr>
 <tr>
 <td><code>&amp;</code></td>
@@ -372,96 +243,117 @@
 </tr>
 <tr>
 <td><code>\n</code></td>
-<td>匹配第 <code>n</code> 个子串，该子串之前在 <code>pattern</code> 中用 () 指定。</td>
+<td>匹配第  <code>n</code>  个子串，该子串之前在  <code>pattern</code>  中用 () 指定。</td>
 </tr>
 <tr>
 <td><code>\</code></td>
-<td>转义（转义替换部分包含：<code>&amp;、\</code> 等）。</td>
+<td>转义（转义替换部分包含： <code>&amp;、\</code>  等）。</td>
 </tr>
-</tbody></table>
+</tbody>
+</table>
 <blockquote>
-<p><code>tips</code>  – 需要转义的一些字符:</p>
+<p><code>tips</code>   – 需要转义的一些字符:</p>
 </blockquote>
 <img data-src="/posts/55b095e0/2022-05-13-00-07-09.png" class="">
-
 <ol>
-<li><p>比如，可以指定 <code>sed</code> 用新文本替换第几处模式匹配的地方：</p>
+<li>
+<p>比如，可以指定  <code>sed</code>  用新文本替换第几处模式匹配的地方：</p>
  <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="variable">$sed</span> <span class="string">&#x27;s/test/trial/2&#x27;</span> data4.txt</span><br><span class="line">This is a <span class="built_in">test</span> of the trial script.</span><br><span class="line">This is the second <span class="built_in">test</span> of the trial script.</span><br></pre></td></tr></table></figure>
-<p> 可以看到，使用数字 <code>2</code> 作为标记的结果就是，<code>sed</code> 编辑器只替换每行中第 <code>2</code> 次出现的匹配模式。</p>
+<p>可以看到，使用数字  <code>2</code>  作为标记的结果就是， <code>sed</code>  编辑器只替换每行中第  <code>2</code>  次出现的匹配模式。</p>
 </li>
-<li><p>如果要用新文件替换所有匹配的字符串，可以使用 <code>g</code> 标记：</p>
- <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="variable">$sed</span> <span class="string">&#x27;s/test/trial/g&#x27;</span> data4.txt</span><br><span class="line">This is a trial of the trial script.</span><br><span class="line">This is the second trial of the trial script.</span><br></pre></td></tr></table></figure></li>
-<li><p>我们知道，<code>-n</code> 选项会禁止 <code>sed</code> 输出，但 <code>p</code> 标记会输出修改过的行，将二者匹配使用的效果就是只输出被替换命令修改过的行，例如：</p>
- <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="variable">$cat</span> data5.txt</span><br><span class="line">This is a <span class="built_in">test</span> line.</span><br><span class="line">This is a different line.</span><br><span class="line"><span class="variable">$sed</span> -n <span class="string">&#x27;s/test/trial/p&#x27;</span> data5.txt</span><br><span class="line">This is a trial line.</span><br></pre></td></tr></table></figure></li>
-<li><p><code>w</code> 标记会将匹配后的结果保存到指定文件中，比如：</p>
- <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="variable">$sed</span> <span class="string">&#x27;s/test/trial/w test.txt&#x27;</span> data5.txt</span><br><span class="line">This is a trial line.</span><br><span class="line">This is a different line.</span><br><span class="line"><span class="variable">$#cat</span> test.txt</span><br><span class="line">This is a trial line.</span><br></pre></td></tr></table></figure></li>
-<li><p>在使用 <code>s</code> 脚本命令时，替换类似文件路径的字符串会比较麻烦，需要将路径中的正斜线进行转义，例如：</p>
+<li>
+<p>如果要用新文件替换所有匹配的字符串，可以使用  <code>g</code>  标记：</p>
+ <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="variable">$sed</span> <span class="string">&#x27;s/test/trial/g&#x27;</span> data4.txt</span><br><span class="line">This is a trial of the trial script.</span><br><span class="line">This is the second trial of the trial script.</span><br></pre></td></tr></table></figure>
+</li>
+<li>
+<p>我们知道， <code>-n</code>  选项会禁止  <code>sed</code>  输出，但  <code>p</code>  标记会输出修改过的行，将二者匹配使用的效果就是只输出被替换命令修改过的行，例如：</p>
+ <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="variable">$cat</span> data5.txt</span><br><span class="line">This is a <span class="built_in">test</span> line.</span><br><span class="line">This is a different line.</span><br><span class="line"><span class="variable">$sed</span> -n <span class="string">&#x27;s/test/trial/p&#x27;</span> data5.txt</span><br><span class="line">This is a trial line.</span><br></pre></td></tr></table></figure>
+</li>
+<li>
+<p><code>w</code>  标记会将匹配后的结果保存到指定文件中，比如：</p>
+ <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="variable">$sed</span> <span class="string">&#x27;s/test/trial/w test.txt&#x27;</span> data5.txt</span><br><span class="line">This is a trial line.</span><br><span class="line">This is a different line.</span><br><span class="line"><span class="variable">$#cat</span> test.txt</span><br><span class="line">This is a trial line.</span><br></pre></td></tr></table></figure>
+</li>
+<li>
+<p>在使用  <code>s</code>  脚本命令时，替换类似文件路径的字符串会比较麻烦，需要将路径中的正斜线进行转义，例如：</p>
  <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sed <span class="string">&#x27;s/\/bin\/bash/\/bin\/csh/&#x27;</span> /etc/passwd</span><br></pre></td></tr></table></figure>
-<h3 id="sed-d-替换脚本命令"><a href="#sed-d-替换脚本命令" class="headerlink" title="sed d 替换脚本命令"></a><code>sed d</code> 替换脚本命令</h3><p>此命令的基本格式为：<code>[address]d</code></p>
 </li>
 </ol>
-<p>如果需要删除文本中的特定行，可以用 <code>d</code> 脚本命令，它会删除指定行中的所有内容。但使用该命令时要特别小心，如果你忘记指定具体行的话，文件中的所有内容都会被删除，举个例子：</p>
+<h3 id="sed-d-替换脚本命令"><a class="markdownIt-Anchor" href="#sed-d-替换脚本命令">#</a>  <code>sed d</code>  替换脚本命令</h3>
+<p>此命令的基本格式为： <code>[address]d</code></p>
+<p>如果需要删除文本中的特定行，可以用  <code>d</code>  脚本命令，它会删除指定行中的所有内容。但使用该命令时要特别小心，如果你忘记指定具体行的话，文件中的所有内容都会被删除，举个例子：</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="variable">$cat</span> data1.txt</span><br><span class="line">The quick brown fox jumps over the lazy dog</span><br><span class="line">The quick brown fox jumps over the lazy dog</span><br><span class="line">The quick brown fox jumps over the lazy dog</span><br><span class="line">The quick brown fox jumps over the lazy dog</span><br><span class="line"><span class="variable">$sed</span> <span class="string">&#x27;d&#x27;</span> data1.txt</span><br><span class="line"><span class="comment">#什么也不输出，证明成了空文件</span></span><br></pre></td></tr></table></figure>
-
 <ol>
-<li><p>通过行号指定，比如删除 <code>data6.txt</code> 文件内容中的第 <code>3</code> 行：</p>
- <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="variable">$cat</span> data6.txt</span><br><span class="line">This is line number 1.</span><br><span class="line">This is line number 2.</span><br><span class="line">This is line number 3.</span><br><span class="line">This is line number 4.</span><br><span class="line"><span class="variable">$sed</span> <span class="string">&#x27;3d&#x27;</span> data6.txt</span><br><span class="line">This is line number 1.</span><br><span class="line">This is line number 2.</span><br><span class="line">This is line number 4.</span><br></pre></td></tr></table></figure></li>
-<li><p>或者通过特定行区间指定，比如删除 <code>data6.txt</code> 文件内容中的第 <code>2、3</code> 行：</p>
- <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="variable">$sed</span> <span class="string">&#x27;2,3d&#x27;</span> data6.txt</span><br><span class="line">This is line number 1.</span><br><span class="line">This is line number 4.</span><br></pre></td></tr></table></figure></li>
-<li><p>也可以使用两个文本模式来删除某个区间内的行，但这么做时要小心，你指定的第一个模式会“打开”行删除功能，第二个模式会“关闭”行删除功能，因此，<code>sed</code> 会删除两个指定行之间的所有行（包括指定的行），例如：</p>
- <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="variable">$sed</span> <span class="string">&#x27;/1/,/3/d&#x27;</span> data6.txt</span><br><span class="line"><span class="comment">#删除第 1~3 行的文本数据</span></span><br><span class="line">This is line number 4.</span><br></pre></td></tr></table></figure></li>
-<li><p>或者通过特殊的文件结尾字符，比如删除 <code>data6.txt</code> 文件内容中第 <code>3</code> 行开始的所有的内容：</p>
- <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="variable">$sed</span> <span class="string">&#x27;3,$d&#x27;</span> data6.txt</span><br><span class="line">This is line number 1.</span><br><span class="line">This is line number 2.</span><br></pre></td></tr></table></figure></li>
+<li>
+<p>通过行号指定，比如删除  <code>data6.txt</code>  文件内容中的第  <code>3</code>  行：</p>
+ <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="variable">$cat</span> data6.txt</span><br><span class="line">This is line number 1.</span><br><span class="line">This is line number 2.</span><br><span class="line">This is line number 3.</span><br><span class="line">This is line number 4.</span><br><span class="line"><span class="variable">$sed</span> <span class="string">&#x27;3d&#x27;</span> data6.txt</span><br><span class="line">This is line number 1.</span><br><span class="line">This is line number 2.</span><br><span class="line">This is line number 4.</span><br></pre></td></tr></table></figure>
+</li>
+<li>
+<p>或者通过特定行区间指定，比如删除  <code>data6.txt</code>  文件内容中的第  <code>2、3</code>  行：</p>
+ <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="variable">$sed</span> <span class="string">&#x27;2,3d&#x27;</span> data6.txt</span><br><span class="line">This is line number 1.</span><br><span class="line">This is line number 4.</span><br></pre></td></tr></table></figure>
+</li>
+<li>
+<p>也可以使用两个文本模式来删除某个区间内的行，但这么做时要小心，你指定的第一个模式会 “打开” 行删除功能，第二个模式会 “关闭” 行删除功能，因此， <code>sed</code>  会删除两个指定行之间的所有行（包括指定的行），例如：</p>
+ <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="variable">$sed</span> <span class="string">&#x27;/1/,/3/d&#x27;</span> data6.txt</span><br><span class="line"><span class="comment">#删除第 1~3 行的文本数据</span></span><br><span class="line">This is line number 4.</span><br></pre></td></tr></table></figure>
+</li>
+<li>
+<p>或者通过特殊的文件结尾字符，比如删除  <code>data6.txt</code>  文件内容中第  <code>3</code>  行开始的所有的内容：</p>
+ <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="variable">$sed</span> <span class="string">&#x27;3,$d&#x27;</span> data6.txt</span><br><span class="line">This is line number 1.</span><br><span class="line">This is line number 2.</span><br></pre></td></tr></table></figure>
+</li>
 </ol>
-<p>在此强调，在默认情况下 <code>sed</code> 并不会修改原始文件，这里被删除的行只是从 <code>sed</code> 的输出中消失了，原始文件没做任何改变。</p>
-<p><a target="_blank" rel="noopener" href="http://c.biancheng.net/view/4028.html"> 完整版参考地址 </a></p>
-<h2 id="Grep指令"><a href="#Grep指令" class="headerlink" title="Grep指令"></a><code>Grep</code>指令</h2><p><a target="_blank" rel="noopener" href="https://www.runoob.com/linux/linux-comm-grep.html"> 菜鸟链接 </a></p>
-<h2 id="awk指令"><a href="#awk指令" class="headerlink" title="awk指令"></a><code>awk</code>指令</h2><p><a target="_blank" rel="noopener" href="https://www.runoob.com/linux/linux-comm-awk.html"> 菜鸟链接 </a></p>
-<p><a target="_blank" rel="noopener" href="https://www.cnblogs.com/ggjucheng/archive/2013/01/13/2858470.html"> good 1 </a></p>
-<h2 id="cut指令"><a href="#cut指令" class="headerlink" title="cut指令"></a><code>cut</code>指令</h2><p><a target="_blank" rel="noopener" href="https://www.runoob.com/linux/linux-comm-cut.html"> 菜鸟链接 </a></p>
-<p><a target="_blank" rel="noopener" href="https://www.cnblogs.com/along21/p/10366886.html"> 三剑客链接 </a></p>
-<h2 id="JSON格式化工具jq指令"><a href="#JSON格式化工具jq指令" class="headerlink" title="JSON格式化工具jq指令"></a><code>JSON</code>格式化工具<code>jq</code>指令</h2><p><a target="_blank" rel="noopener" href="https://www.cnblogs.com/kevingrace/p/7565371.html"> 参考链接 </a></p>
-<h2 id="awk内置函数-split-substr-length-gsub"><a href="#awk内置函数-split-substr-length-gsub" class="headerlink" title="awk内置函数(split/substr/length/gsub)"></a><code>awk</code>内置函数<code>(split/substr/length/gsub)</code></h2><p>一、<code>split</code> 初始化和类型强制</p>
-<p><code>awk</code>的内建函数<code>split</code>允许你把一个字符串分隔为单词并存储在数组中。你可以自己定义域分隔符或者使用现在<code>FS(域分隔符)</code>的值。<br>格式：</p>
+<p>在此强调，在默认情况下  <code>sed</code>  并不会修改原始文件，这里被删除的行只是从  <code>sed</code>  的输出中消失了，原始文件没做任何改变。</p>
+<p><span class="exturl" data-url="aHR0cDovL2MuYmlhbmNoZW5nLm5ldC92aWV3LzQwMjguaHRtbA=="> 完整版参考地址 </span></p>
+<h2 id="grep指令"><a class="markdownIt-Anchor" href="#grep指令">#</a>  <code>Grep</code>  指令</h2>
+<p><span class="exturl" data-url="aHR0cHM6Ly93d3cucnVub29iLmNvbS9saW51eC9saW51eC1jb21tLWdyZXAuaHRtbA=="> 菜鸟链接 </span></p>
+<h2 id="awk指令"><a class="markdownIt-Anchor" href="#awk指令">#</a>  <code>awk</code>  指令</h2>
+<p><span class="exturl" data-url="aHR0cHM6Ly93d3cucnVub29iLmNvbS9saW51eC9saW51eC1jb21tLWF3ay5odG1s"> 菜鸟链接 </span></p>
+<p><span class="exturl" data-url="aHR0cHM6Ly93d3cuY25ibG9ncy5jb20vZ2dqdWNoZW5nL2FyY2hpdmUvMjAxMy8wMS8xMy8yODU4NDcwLmh0bWw="> good 1 </span></p>
+<h2 id="cut指令"><a class="markdownIt-Anchor" href="#cut指令">#</a>  <code>cut</code>  指令</h2>
+<p><span class="exturl" data-url="aHR0cHM6Ly93d3cucnVub29iLmNvbS9saW51eC9saW51eC1jb21tLWN1dC5odG1s"> 菜鸟链接 </span></p>
+<p><span class="exturl" data-url="aHR0cHM6Ly93d3cuY25ibG9ncy5jb20vYWxvbmcyMS9wLzEwMzY2ODg2Lmh0bWw="> 三剑客链接 </span></p>
+<h2 id="json格式化工具jq指令"><a class="markdownIt-Anchor" href="#json格式化工具jq指令">#</a>  <code>JSON</code>  格式化工具 <code>jq</code>  指令</h2>
+<p><span class="exturl" data-url="aHR0cHM6Ly93d3cuY25ibG9ncy5jb20va2V2aW5ncmFjZS9wLzc1NjUzNzEuaHRtbA=="> 参考链接 </span></p>
+<h2 id="awk内置函数splitsubstrlengthgsub"><a class="markdownIt-Anchor" href="#awk内置函数splitsubstrlengthgsub">#</a>  <code>awk</code>  内置函数 <code>(split/substr/length/gsub)</code></h2>
+<p>一、 <code>split</code>  初始化和类型强制</p>
+<p><code>awk</code>  的内建函数 <code>split</code>  允许你把一个字符串分隔为单词并存储在数组中。你可以自己定义域分隔符或者使用现在 <code>FS(域分隔符)</code>  的值。<br>
+格式：</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">split (string, array, field separator)</span><br><span class="line">split (string, array) –&gt;如果第三个参数没有提供，awk就默认使用当前FS值。</span><br></pre></td></tr></table></figure>
 <blockquote>
 <p>例子：</p>
 </blockquote>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#!/bin/bash  </span></span><br><span class="line">time=<span class="string">&quot;12:34:56&quot;</span>  </span><br><span class="line">out=`<span class="built_in">echo</span> <span class="variable">$time</span> | awk <span class="string">&#x27;&#123;split($0,a,&quot;:&quot;);print a[1],a[2],a[3]&#125;&#x27;</span>`  </span><br><span class="line"><span class="built_in">echo</span> <span class="variable">$out</span>  </span><br><span class="line"><span class="comment">#输出：</span></span><br><span class="line"><span class="comment">#12 34 56  </span></span><br></pre></td></tr></table></figure>
-
-<p>计算指定范围内的和(计算每个人<code>1</code>月份的工资之和)：</p>
+<p>计算指定范围内的和 (计算每个人 <code>1</code>  月份的工资之和)：</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># test.txt:</span></span><br><span class="line"><span class="comment"># Tom　　  2012-12-11      car     53000  </span></span><br><span class="line"><span class="comment"># John　　 2013-01-13      bike    41000  </span></span><br><span class="line"><span class="comment"># vivi    2013-01-18      car     42800  </span></span><br><span class="line"><span class="comment"># Tom　　  2013-01-20      car     32500  </span></span><br><span class="line"><span class="comment"># John　　 2013-01-28      bike    63500  </span></span><br><span class="line"></span><br><span class="line"><span class="comment">#`awk`处理命令：</span></span><br><span class="line"></span><br><span class="line">awk <span class="string">&#x27;&#123;split($2,a,&quot;-&quot;);if(a[2]==01)&#123;b[$1]=b[$1]+$4&#125;&#125;END&#123;for(i in b)print i,b[i]&#125;&#x27;</span> test.txt   </span><br><span class="line"><span class="comment">#输出结果：</span></span><br><span class="line"><span class="comment"># Tom　　 32500  </span></span><br><span class="line"><span class="comment"># vivi 42800  </span></span><br><span class="line"><span class="comment"># John　　 104500  </span></span><br></pre></td></tr></table></figure>
-
-<p>二、<code>substr</code> 截取字符串</p>
-<p>返回从起始位置起，指定长度之子字符串；若未指定长度，则返回从起始位置到字符串末尾的子字符串。<br>格式：</p>
+<p>二、 <code>substr</code>  截取字符串</p>
+<p>返回从起始位置起，指定长度之子字符串；若未指定长度，则返回从起始位置到字符串末尾的子字符串。<br>
+格式：</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">substr(s,p) 返回字符串s中从p开始的后缀部分</span><br><span class="line">substr(s,p,n) 返回字符串s中从p开始长度为n的后缀部分</span><br></pre></td></tr></table></figure>
 <blockquote>
 <p>例子：</p>
 </blockquote>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">echo</span> <span class="string">&quot;abc&quot;</span> | awk <span class="string">&#x27;&#123;print substr($0,2,2)&#125;&#x27;</span>  </span><br><span class="line"><span class="comment">#输出结果：</span></span><br><span class="line"><span class="comment"># bc  </span></span><br><span class="line"><span class="comment"># 解释：</span></span><br><span class="line"><span class="comment"># awk -F &#x27;,&#x27; &#x27;&#123;print substr($3,6)&#125;&#x27;    ---&gt;  表示是从第3个字段里的第6个字符开始，一直到设定的分隔符&quot;,&quot;结束.</span></span><br><span class="line"><span class="comment"># substr($3,10,8)  ---&gt;  表示是从第3个字段里的第10个字符开始，截取8个字符结束.</span></span><br><span class="line"><span class="comment"># substr($3,6)     ---&gt;  表示是从第3个字段里的第6个字符开始，一直到结尾</span></span><br></pre></td></tr></table></figure>
-<p>三、<code>length</code> 字符串长度</p>
-<p><code>length</code>函数返回没有参数的字符串的长度。<code>length</code>函数返回整个记录中的字符数。</p>
+<p>三、 <code>length</code>  字符串长度</p>
+<p><code>length</code>  函数返回没有参数的字符串的长度。 <code>length</code>  函数返回整个记录中的字符数。</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">echo</span> <span class="string">&quot;abc&quot;</span> | awk <span class="string">&#x27;&#123;print length&#125;&#x27;</span>   </span><br><span class="line"><span class="comment"># 结果：</span></span><br><span class="line"><span class="comment"># 3  </span></span><br></pre></td></tr></table></figure>
-
-
-<p>四、<code>gsub</code>函数</p>
-<p>gsub函数则使得在所有正则表达式被匹配的时候都发生替换。<code>gsub(regular expression, subsitution string, target string);简称 gsub（r,s,t)</code>。</p>
-<p>举例：把一个文件里面所有包含 <code>abc</code> 的行里面的 <code>abc</code> 替换成 <code>def</code>，然后输出第一列和第三列</p>
+<p>四、 <code>gsub</code>  函数</p>
+<p>gsub 函数则使得在所有正则表达式被匹配的时候都发生替换。 <code>gsub(regular expression, subsitution string, target string);简称 gsub（r,s,t)</code> 。</p>
+<p>举例：把一个文件里面所有包含  <code>abc</code>  的行里面的  <code>abc</code>  替换成  <code>def</code> ，然后输出第一列和第三列</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">echo</span> <span class="string">&quot;abc cde abr&quot;</span> | awk <span class="string">&#x27;$0 ~ /abc/ &#123;gsub(&quot;abc&quot;,&quot;def&quot;,$0); print $1, $3&#125;&#x27;</span>  </span><br><span class="line"><span class="comment"># 输出结果：</span></span><br><span class="line"><span class="comment"># def abr </span></span><br></pre></td></tr></table></figure>
-
-<h2 id="Linux-shell-将字符串分割成数组"><a href="#Linux-shell-将字符串分割成数组" class="headerlink" title="Linux shell 将字符串分割成数组"></a><code>Linux shell</code> 将字符串分割成数组</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">a=<span class="string">&quot;one,two,three,four&quot;</span></span><br><span class="line"><span class="comment"># 要将$a分割开，可以这样：</span></span><br><span class="line"></span><br><span class="line">OLD_IFS=<span class="string">&quot;<span class="variable">$IFS</span>&quot;</span></span><br><span class="line">IFS=<span class="string">&quot;,&quot;</span></span><br><span class="line">arr=(<span class="variable">$a</span>)</span><br><span class="line">IFS=<span class="string">&quot;<span class="variable">$OLD_IFS</span>&quot;</span></span><br><span class="line"><span class="keyword">for</span> s <span class="keyword">in</span> <span class="variable">$&#123;arr[@]&#125;</span></span><br><span class="line"><span class="keyword">do</span></span><br><span class="line"><span class="built_in">echo</span> <span class="string">&quot;<span class="variable">$s</span>&quot;</span></span><br><span class="line"><span class="keyword">done</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># arr=($a)用于将字符串$a分割到数组$arr $&#123;arr[0]&#125; $&#123;arr[1]&#125; ... 分别存储分割后的数组第1 2 ... 项 ，$&#123;arr[@]&#125;存储整个数组。变量$IFS存储着分隔符，这里我们将其设为逗号 &quot;,&quot; OLD_IFS用于备份默认的分隔符，使用完后将之恢复默认。</span></span><br></pre></td></tr></table></figure>
-
-<h2 id="linux截取中间字符串-shell截取指定字符串之间的内容"><a href="#linux截取中间字符串-shell截取指定字符串之间的内容" class="headerlink" title="linux截取中间字符串,shell截取指定字符串之间的内容"></a><code>linux</code>截取中间字符串,<code>shell</code>截取指定字符串之间的内容</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#!/bin/bash</span></span><br><span class="line"></span><br><span class="line"><span class="comment">#截取字符串</span></span><br><span class="line"><span class="comment">#path=ss/usr/share/src/root/home/admin</span></span><br><span class="line">path=ss/usr/share/src/root/home/admin/src/add</span><br><span class="line"><span class="built_in">echo</span> <span class="variable">$path</span></span><br><span class="line"><span class="built_in">echo</span> <span class="variable">$&#123;path%src*&#125;</span> <span class="comment">#从右向左截取第一个 src 后的字符串</span></span><br><span class="line"><span class="built_in">echo</span> <span class="variable">$&#123;path&#125;</span></span><br><span class="line"><span class="built_in">echo</span> <span class="variable">$&#123;path%/*&#125;</span>从右向左截取 第一个 / 后的字符串</span><br><span class="line"><span class="built_in">echo</span> <span class="variable">$&#123;path%%/*&#125;</span>从右向左截取 最后一个 / 后的字符串</span><br><span class="line"><span class="built_in">echo</span> <span class="variable">$&#123;path#*/&#125;</span>从左向右截取第一个 / 后的字符串</span><br><span class="line"><span class="built_in">echo</span> <span class="variable">$&#123;path##*/&#125;</span>从左向右截取最后一个 / 后的字符串</span><br><span class="line"><span class="built_in">echo</span> <span class="variable">$&#123;path:3&#125;</span></span><br><span class="line"><span class="built_in">echo</span> <span class="variable">$&#123;path:6:60&#125;</span>截取变量path从前三个字符串</span><br><span class="line"><span class="built_in">echo</span> <span class="variable">$&#123;#path&#125;</span>计算 path变量 一共有几个字符串</span><br><span class="line"><span class="built_in">echo</span> <span class="variable">$&#123;path/root/kyo&#125;</span>把path变量里的第一个root字符串，替换为 kyo字符串</span><br><span class="line"><span class="built_in">echo</span> <span class="variable">$&#123;path//s/m&#125;</span>把path变量里的所有的s字符，替换为 m 字符</span><br><span class="line"><span class="built_in">echo</span> <span class="variable">$&#123;path&#125;</span></span><br></pre></td></tr></table></figure>
-
-<h2 id="Shell环境生成UUID"><a href="#Shell环境生成UUID" class="headerlink" title="Shell环境生成UUID"></a><code>Shell</code>环境生成<code>UUID</code></h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">UUID=$(uuidgen |sed <span class="string">&#x27;s/-//g&#x27;</span>)</span><br><span class="line"><span class="built_in">echo</span> <span class="variable">$UUID</span></span><br><span class="line"><span class="comment"># 918c61bd48914f0e8fb1295208b6e87e</span></span><br></pre></td></tr></table></figure>
-<h2 id="Shell中-各种含义"><a href="#Shell中-各种含义" class="headerlink" title="Shell中$ 各种含义"></a><code>Shell</code>中<code>$</code> 各种含义</h2><table>
+<h2 id="linux-shell-将字符串分割成数组"><a class="markdownIt-Anchor" href="#linux-shell-将字符串分割成数组">#</a>  <code>Linux shell</code>  将字符串分割成数组</h2>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">a=<span class="string">&quot;one,two,three,four&quot;</span></span><br><span class="line"><span class="comment"># 要将$a分割开，可以这样：</span></span><br><span class="line"></span><br><span class="line">OLD_IFS=<span class="string">&quot;<span class="variable">$IFS</span>&quot;</span></span><br><span class="line">IFS=<span class="string">&quot;,&quot;</span></span><br><span class="line">arr=(<span class="variable">$a</span>)</span><br><span class="line">IFS=<span class="string">&quot;<span class="variable">$OLD_IFS</span>&quot;</span></span><br><span class="line"><span class="keyword">for</span> s <span class="keyword">in</span> <span class="variable">$&#123;arr[@]&#125;</span></span><br><span class="line"><span class="keyword">do</span></span><br><span class="line"><span class="built_in">echo</span> <span class="string">&quot;<span class="variable">$s</span>&quot;</span></span><br><span class="line"><span class="keyword">done</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># arr=($a)用于将字符串$a分割到数组$arr $&#123;arr[0]&#125; $&#123;arr[1]&#125; ... 分别存储分割后的数组第1 2 ... 项 ，$&#123;arr[@]&#125;存储整个数组。变量$IFS存储着分隔符，这里我们将其设为逗号 &quot;,&quot; OLD_IFS用于备份默认的分隔符，使用完后将之恢复默认。</span></span><br></pre></td></tr></table></figure>
+<h2 id="linux截取中间字符串shell截取指定字符串之间的内容"><a class="markdownIt-Anchor" href="#linux截取中间字符串shell截取指定字符串之间的内容">#</a>  <code>linux</code>  截取中间字符串， <code>shell</code>  截取指定字符串之间的内容</h2>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#!/bin/bash</span></span><br><span class="line"></span><br><span class="line"><span class="comment">#截取字符串</span></span><br><span class="line"><span class="comment">#path=ss/usr/share/src/root/home/admin</span></span><br><span class="line">path=ss/usr/share/src/root/home/admin/src/add</span><br><span class="line"><span class="built_in">echo</span> <span class="variable">$path</span></span><br><span class="line"><span class="built_in">echo</span> <span class="variable">$&#123;path%src*&#125;</span> <span class="comment">#从右向左截取第一个 src 后的字符串</span></span><br><span class="line"><span class="built_in">echo</span> <span class="variable">$&#123;path&#125;</span></span><br><span class="line"><span class="built_in">echo</span> <span class="variable">$&#123;path%/*&#125;</span>从右向左截取 第一个 / 后的字符串</span><br><span class="line"><span class="built_in">echo</span> <span class="variable">$&#123;path%%/*&#125;</span>从右向左截取 最后一个 / 后的字符串</span><br><span class="line"><span class="built_in">echo</span> <span class="variable">$&#123;path#*/&#125;</span>从左向右截取第一个 / 后的字符串</span><br><span class="line"><span class="built_in">echo</span> <span class="variable">$&#123;path##*/&#125;</span>从左向右截取最后一个 / 后的字符串</span><br><span class="line"><span class="built_in">echo</span> <span class="variable">$&#123;path:3&#125;</span></span><br><span class="line"><span class="built_in">echo</span> <span class="variable">$&#123;path:6:60&#125;</span>截取变量path从前三个字符串</span><br><span class="line"><span class="built_in">echo</span> <span class="variable">$&#123;#path&#125;</span>计算 path变量 一共有几个字符串</span><br><span class="line"><span class="built_in">echo</span> <span class="variable">$&#123;path/root/kyo&#125;</span>把path变量里的第一个root字符串，替换为 kyo字符串</span><br><span class="line"><span class="built_in">echo</span> <span class="variable">$&#123;path//s/m&#125;</span>把path变量里的所有的s字符，替换为 m 字符</span><br><span class="line"><span class="built_in">echo</span> <span class="variable">$&#123;path&#125;</span></span><br></pre></td></tr></table></figure>
+<h2 id="shell环境生成uuid"><a class="markdownIt-Anchor" href="#shell环境生成uuid">#</a>  <code>Shell</code>  环境生成 <code>UUID</code></h2>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">UUID=$(uuidgen |sed <span class="string">&#x27;s/-//g&#x27;</span>)</span><br><span class="line"><span class="built_in">echo</span> <span class="variable">$UUID</span></span><br><span class="line"><span class="comment"># 918c61bd48914f0e8fb1295208b6e87e</span></span><br></pre></td></tr></table></figure>
+<h2 id="shell中-各种含义"><a class="markdownIt-Anchor" href="#shell中-各种含义">#</a>  <code>Shell</code>  中 <code>$</code>  各种含义</h2>
+<table>
 <thead>
 <tr>
 <th>符 号</th>
 <th>含 义</th>
 </tr>
 </thead>
-<tbody><tr>
+<tbody>
+<tr>
 <td><code>$0</code></td>
 <td>脚本名</td>
 </tr>
@@ -471,31 +363,31 @@
 </tr>
 <tr>
 <td><code>$n</code></td>
-<td>传递给脚本的参数值，<code>$1</code>第<code>1</code>参数、<code>$2</code>第<code>2</code>参数</td>
+<td>传递给脚本的参数值， <code>$1</code>  第 <code>1</code>  参数、 <code>$2</code>  第 <code>2</code>  参数</td>
 </tr>
 <tr>
 <td><code>$?</code></td>
-<td>上次退出的状态（返回值），<code>0</code>没有错误，<code>1</code>错误</td>
+<td>上次退出的状态（返回值）， <code>0</code>  没有错误， <code>1</code>  错误</td>
 </tr>
 <tr>
 <td><code>$*</code></td>
-<td>所有参数列表。<code>&quot;$*&quot;</code>时，是<code>&quot;$1 $2 … $n&quot;</code>的形式</td>
+<td>所有参数列表。 <code>&quot;$*&quot;</code>  时，是 <code>&quot;$1 $2 … $n&quot;</code>  的形式</td>
 </tr>
 <tr>
 <td><code>$@</code></td>
-<td>所有参数列表。<code>&quot;$@&quot;</code>时，是<code>&quot;$1&quot; &quot;$2&quot; … &quot;$n&quot; </code>的形式</td>
+<td>所有参数列表。 <code>&quot;$@&quot;</code>  时，是 <code>&quot;$1&quot; &quot;$2&quot; … &quot;$n&quot; </code> 的形式</td>
 </tr>
 <tr>
 <td><code>$$</code></td>
-<td>当前进程的编号<code>（ProcessID）</code></td>
+<td>当前进程的编号 <code>（ProcessID）</code></td>
 </tr>
 <tr>
 <td><code>$!</code></td>
-<td><code>shell</code>最后运行的后台<code>Process</code>的<code>PID</code></td>
+<td><code>shell</code>  最后运行的后台 <code>Process</code>  的 <code>PID</code></td>
 </tr>
 <tr>
 <td><code>$var</code></td>
-<td>变量，会与后面的连接，如<code>$var_a</code>，会当做变量<code>var_a</code></td>
+<td>变量，会与后面的连接，如 <code>$var_a</code> ，会当做变量 <code>var_a</code></td>
 </tr>
 <tr>
 <td><code>$&#123;var&#125;</code></td>
@@ -503,7 +395,7 @@
 </tr>
 <tr>
 <td><code>$()</code></td>
-<td>与<code>(反引号)类似，里面执行完再返回值，</code>所有<code>shell</code>通用</td>
+<td>与 <code>(反引号)类似，里面执行完再返回值，</code> 所有 <code>shell</code>  通用</td>
 </tr>
 <tr>
 <td><code>$[]</code></td>
@@ -511,19 +403,21 @@
 </tr>
 <tr>
 <td><code>$(())</code></td>
-<td>可进行算术运算和逻辑运算，不支持浮点和字符串。里面的变量可以省略<code>$</code></td>
+<td>可进行算术运算和逻辑运算，不支持浮点和字符串。里面的变量可以省略 <code>$</code></td>
 </tr>
-</tbody></table>
-<h2 id="linux-下shell中if的“-e，-d，-f”是什么意思"><a href="#linux-下shell中if的“-e，-d，-f”是什么意思" class="headerlink" title="linux 下shell中if的“-e，-d，-f”是什么意思"></a><code>linux</code> 下<code>shell</code>中<code>if</code>的<code>“-e，-d，-f”</code>是什么意思</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br></pre></td><td class="code"><pre><span class="line">文件表达式</span><br><span class="line">-e filename 如果 filename存在，则为真</span><br><span class="line">-d filename 如果 filename为目录，则为真 </span><br><span class="line">-f filename 如果 filename为常规文件，则为真</span><br><span class="line">-L filename 如果 filename为符号链接，则为真</span><br><span class="line">-r filename 如果 filename可读，则为真 </span><br><span class="line">-w filename 如果 filename可写，则为真 </span><br><span class="line">-x filename 如果 filename可执行，则为真</span><br><span class="line">-s filename 如果文件长度不为0，则为真</span><br><span class="line">-h filename 如果文件是软链接，则为真</span><br><span class="line">filename1 -nt filename2 如果 filename1比 filename2新，则为真。</span><br><span class="line">filename1 -ot filename2 如果 filename1比 filename2旧，则为真。</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">整数变量表达式</span><br><span class="line">-eq 等于</span><br><span class="line">-ne 不等于</span><br><span class="line">-gt 大于</span><br><span class="line">-ge 大于等于</span><br><span class="line">-lt 小于</span><br><span class="line">-le 小于等于</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">字符串变量表达式</span><br><span class="line">If  [ <span class="variable">$a</span> = <span class="variable">$b</span> ]                 如果string1等于string2，则为真</span><br><span class="line">                                字符串允许使用赋值号做等号</span><br><span class="line"><span class="keyword">if</span>  [ <span class="variable">$string1</span> !=  <span class="variable">$string2</span> ]   如果string1不等于string2，则为真       </span><br><span class="line"><span class="keyword">if</span>  [ -n <span class="variable">$string</span>  ]             如果string 非空(非0），返回0(<span class="literal">true</span>)  </span><br><span class="line"><span class="keyword">if</span>  [ -z <span class="variable">$string</span>  ]             如果string 为空，则为真</span><br><span class="line"><span class="keyword">if</span>  [ <span class="variable">$sting</span> ]                  如果string 非空，返回0 (和-n类似) </span><br><span class="line"></span><br><span class="line"></span><br><span class="line">    逻辑非 !                   条件表达式的相反</span><br><span class="line"><span class="keyword">if</span> [ ! 表达式 ]</span><br><span class="line"><span class="keyword">if</span> [ ! -d <span class="variable">$num</span> ]               如果不存在目录<span class="variable">$num</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">    逻辑与 –a                   条件表达式的并列</span><br><span class="line"><span class="keyword">if</span> [ 表达式1  –a  表达式2 ]</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">    逻辑或 -o                   条件表达式的或</span><br><span class="line"><span class="keyword">if</span> [ 表达式1  –o 表达式2 ]</span><br></pre></td></tr></table></figure>
-
-<h2 id="shell获取文件扩展名"><a href="#shell获取文件扩展名" class="headerlink" title="shell获取文件扩展名"></a><code>shell</code>获取文件扩展名</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line">basename example.tar.a.b.c.gz .c.gz</span><br><span class="line"><span class="comment"># =&gt; example.tar.a.b</span></span><br><span class="line"> </span><br><span class="line">FILE=<span class="string">&quot;example.tar.gz&quot;</span></span><br><span class="line"> </span><br><span class="line"><span class="built_in">echo</span> <span class="string">&quot;<span class="variable">$&#123;FILE%%.*&#125;</span>&quot;</span>     取头   example </span><br><span class="line"><span class="comment"># =&gt; example</span></span><br><span class="line"> </span><br><span class="line"><span class="built_in">echo</span> <span class="string">&quot;<span class="variable">$&#123;FILE%.*&#125;</span>&quot;</span>      去尾   example.tar.a.b.c</span><br><span class="line"><span class="comment"># =&gt; example.tar</span></span><br><span class="line"> </span><br><span class="line"><span class="built_in">echo</span> <span class="string">&quot;<span class="variable">$&#123;FILE#*.&#125;</span>&quot;</span>      去头   tar.a.b.c.gz</span><br><span class="line"><span class="comment"># =&gt; tar.gz</span></span><br><span class="line"> </span><br><span class="line"><span class="built_in">echo</span> <span class="string">&quot;<span class="variable">$&#123;FILE##*.&#125;</span>&quot;</span>     取尾   gz</span><br><span class="line"><span class="comment"># =&gt; gz</span></span><br><span class="line"> </span><br><span class="line"><span class="comment"># 在bash中可以这么写</span></span><br><span class="line">filename=$(basename <span class="string">&quot;<span class="variable">$fullfile</span>&quot;</span>)   </span><br><span class="line">extension=<span class="string">&quot;<span class="variable">$&#123;filename##*.&#125;</span>&quot;</span></span><br><span class="line">filename=<span class="string">&quot;<span class="variable">$&#123;filename%.*&#125;</span>&quot;</span></span><br></pre></td></tr></table></figure>
-
-<h2 id="Linux-shell-中获取当前目录的方法"><a href="#Linux-shell-中获取当前目录的方法" class="headerlink" title="Linux shell 中获取当前目录的方法"></a><code>Linux shell</code> 中获取当前目录的方法</h2><blockquote>
+</tbody>
+</table>
+<h2 id="linux-下shell中if的-e-d-f是什么意思"><a class="markdownIt-Anchor" href="#linux-下shell中if的-e-d-f是什么意思">#</a>  <code>linux</code>  下 <code>shell</code>  中 <code>if</code>  的 <code>“-e，-d，-f”</code>  是什么意思</h2>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br></pre></td><td class="code"><pre><span class="line">文件表达式</span><br><span class="line">-e filename 如果 filename存在，则为真</span><br><span class="line">-d filename 如果 filename为目录，则为真 </span><br><span class="line">-f filename 如果 filename为常规文件，则为真</span><br><span class="line">-L filename 如果 filename为符号链接，则为真</span><br><span class="line">-r filename 如果 filename可读，则为真 </span><br><span class="line">-w filename 如果 filename可写，则为真 </span><br><span class="line">-x filename 如果 filename可执行，则为真</span><br><span class="line">-s filename 如果文件长度不为0，则为真</span><br><span class="line">-h filename 如果文件是软链接，则为真</span><br><span class="line">filename1 -nt filename2 如果 filename1比 filename2新，则为真。</span><br><span class="line">filename1 -ot filename2 如果 filename1比 filename2旧，则为真。</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">整数变量表达式</span><br><span class="line">-eq 等于</span><br><span class="line">-ne 不等于</span><br><span class="line">-gt 大于</span><br><span class="line">-ge 大于等于</span><br><span class="line">-lt 小于</span><br><span class="line">-le 小于等于</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">字符串变量表达式</span><br><span class="line">If  [ <span class="variable">$a</span> = <span class="variable">$b</span> ]                 如果string1等于string2，则为真</span><br><span class="line">                                字符串允许使用赋值号做等号</span><br><span class="line"><span class="keyword">if</span>  [ <span class="variable">$string1</span> !=  <span class="variable">$string2</span> ]   如果string1不等于string2，则为真       </span><br><span class="line"><span class="keyword">if</span>  [ -n <span class="variable">$string</span>  ]             如果string 非空(非0），返回0(<span class="literal">true</span>)  </span><br><span class="line"><span class="keyword">if</span>  [ -z <span class="variable">$string</span>  ]             如果string 为空，则为真</span><br><span class="line"><span class="keyword">if</span>  [ <span class="variable">$sting</span> ]                  如果string 非空，返回0 (和-n类似) </span><br><span class="line"></span><br><span class="line"></span><br><span class="line">    逻辑非 !                   条件表达式的相反</span><br><span class="line"><span class="keyword">if</span> [ ! 表达式 ]</span><br><span class="line"><span class="keyword">if</span> [ ! -d <span class="variable">$num</span> ]               如果不存在目录<span class="variable">$num</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">    逻辑与 –a                   条件表达式的并列</span><br><span class="line"><span class="keyword">if</span> [ 表达式1  –a  表达式2 ]</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">    逻辑或 -o                   条件表达式的或</span><br><span class="line"><span class="keyword">if</span> [ 表达式1  –o 表达式2 ]</span><br></pre></td></tr></table></figure>
+<h2 id="shell获取文件扩展名"><a class="markdownIt-Anchor" href="#shell获取文件扩展名">#</a>  <code>shell</code>  获取文件扩展名</h2>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line">basename example.tar.a.b.c.gz .c.gz</span><br><span class="line"><span class="comment"># =&gt; example.tar.a.b</span></span><br><span class="line"> </span><br><span class="line">FILE=<span class="string">&quot;example.tar.gz&quot;</span></span><br><span class="line"> </span><br><span class="line"><span class="built_in">echo</span> <span class="string">&quot;<span class="variable">$&#123;FILE%%.*&#125;</span>&quot;</span>     取头   example </span><br><span class="line"><span class="comment"># =&gt; example</span></span><br><span class="line"> </span><br><span class="line"><span class="built_in">echo</span> <span class="string">&quot;<span class="variable">$&#123;FILE%.*&#125;</span>&quot;</span>      去尾   example.tar.a.b.c</span><br><span class="line"><span class="comment"># =&gt; example.tar</span></span><br><span class="line"> </span><br><span class="line"><span class="built_in">echo</span> <span class="string">&quot;<span class="variable">$&#123;FILE#*.&#125;</span>&quot;</span>      去头   tar.a.b.c.gz</span><br><span class="line"><span class="comment"># =&gt; tar.gz</span></span><br><span class="line"> </span><br><span class="line"><span class="built_in">echo</span> <span class="string">&quot;<span class="variable">$&#123;FILE##*.&#125;</span>&quot;</span>     取尾   gz</span><br><span class="line"><span class="comment"># =&gt; gz</span></span><br><span class="line"> </span><br><span class="line"><span class="comment"># 在bash中可以这么写</span></span><br><span class="line">filename=$(basename <span class="string">&quot;<span class="variable">$fullfile</span>&quot;</span>)   </span><br><span class="line">extension=<span class="string">&quot;<span class="variable">$&#123;filename##*.&#125;</span>&quot;</span></span><br><span class="line">filename=<span class="string">&quot;<span class="variable">$&#123;filename%.*&#125;</span>&quot;</span></span><br></pre></td></tr></table></figure>
+<h2 id="linux-shell-中获取当前目录的方法"><a class="markdownIt-Anchor" href="#linux-shell-中获取当前目录的方法">#</a>  <code>Linux shell</code>  中获取当前目录的方法</h2>
+<blockquote>
 <p>当前目录</p>
 </blockquote>
-<p>每当你在终端进行操作时，你都会有一个当前工作目录。 使用pwd来判定当前目录在文件系统内的确切位置。</p>
+<p>每当你在终端进行操作时，你都会有一个当前工作目录。 使用 pwd 来判定当前目录在文件系统内的确切位置。</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="variable">$pwd</span></span><br><span class="line">/root</span><br></pre></td></tr></table></figure>
-<p>在<code>shell</code>中也可以使用<code>pwd</code>来获取当前目录，并赋值给变量。</p>
+<p>在 <code>shell</code>  中也可以使用 <code>pwd</code>  来获取当前目录，并赋值给变量。</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#!/bin/bash</span></span><br><span class="line">CRTDIR=$(<span class="built_in">pwd</span>)</span><br></pre></td></tr></table></figure>
 <blockquote>
 <p>工作目录</p>
@@ -534,501 +428,398 @@
 <p>复杂点的工作目录获取</p>
 </blockquote>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">PRG=<span class="string">&quot;<span class="variable">$0</span>&quot;</span></span><br><span class="line"><span class="keyword">while</span> [ -h <span class="string">&quot;<span class="variable">$PRG</span>&quot;</span> ] ; <span class="keyword">do</span></span><br><span class="line">  ls=`ls -ld <span class="string">&quot;<span class="variable">$PRG</span>&quot;</span>`</span><br><span class="line">  link=`expr <span class="string">&quot;<span class="variable">$ls</span>&quot;</span> : <span class="string">&#x27;.*-&gt; \(.*\)$&#x27;</span>`</span><br><span class="line">  <span class="keyword">if</span> expr <span class="string">&quot;<span class="variable">$link</span>&quot;</span> : <span class="string">&#x27;/.*&#x27;</span> &gt; /dev/null; <span class="keyword">then</span></span><br><span class="line">    PRG=<span class="string">&quot;<span class="variable">$link</span>&quot;</span></span><br><span class="line">  <span class="keyword">else</span></span><br><span class="line">    PRG=`dirname <span class="string">&quot;<span class="variable">$PRG</span>&quot;</span>`/<span class="string">&quot;<span class="variable">$link</span>&quot;</span></span><br><span class="line">  <span class="keyword">fi</span></span><br><span class="line"><span class="keyword">done</span></span><br><span class="line">PRGDIR=$(<span class="built_in">cd</span> $(dirname <span class="variable">$PRG</span>); <span class="built_in">pwd</span>)</span><br></pre></td></tr></table></figure>
-<h2 id="Linux-Shell获取文件夹下的文件名"><a href="#Linux-Shell获取文件夹下的文件名" class="headerlink" title="Linux Shell获取文件夹下的文件名"></a><code>Linux Shell</code>获取文件夹下的文件名</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#!/bin/bash</span></span><br><span class="line"><span class="comment"># get all filename in specified path</span></span><br><span class="line">path=<span class="variable">$1</span></span><br><span class="line">files=$(ls <span class="variable">$path</span>)</span><br><span class="line"><span class="keyword">for</span> filename <span class="keyword">in</span> <span class="variable">$files</span></span><br><span class="line"><span class="keyword">do</span></span><br><span class="line">   <span class="built_in">echo</span> <span class="variable">$filename</span> &gt;&gt; filename.txt</span><br><span class="line"><span class="keyword">done</span></span><br></pre></td></tr></table></figure>
-
-<h2 id="shell获取目录下所有文件夹的名称并输出"><a href="#shell获取目录下所有文件夹的名称并输出" class="headerlink" title="shell获取目录下所有文件夹的名称并输出"></a><code>shell</code>获取目录下所有文件夹的名称并输出</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#!/bin/bash</span></span><br><span class="line"><span class="comment">#方法一 </span></span><br><span class="line">dir=$(ls -l /usr/ |awk <span class="string">&#x27;/^d/ &#123;print $NF&#125;&#x27;</span>)</span><br><span class="line">or i <span class="keyword">in</span> <span class="variable">$dir</span></span><br><span class="line"><span class="keyword">do</span></span><br><span class="line">    <span class="built_in">echo</span> <span class="variable">$i</span></span><br><span class="line"><span class="keyword">done</span>   </span><br><span class="line"><span class="comment">#######</span></span><br><span class="line"><span class="comment">#方法二</span></span><br><span class="line"><span class="keyword">for</span> dir <span class="keyword">in</span> $(ls /usr/)</span><br><span class="line"><span class="keyword">do</span></span><br><span class="line">    [ -d <span class="variable">$dir</span> ] &amp;&amp; <span class="built_in">echo</span> <span class="variable">$dir</span></span><br><span class="line"><span class="keyword">done</span>        </span><br><span class="line"><span class="comment">##方法三</span></span><br><span class="line">ls -l /usr/ |awk <span class="string">&#x27;/^d/ &#123;print $NF&#125;&#x27;</span>   <span class="comment">## 其实同方法一，直接就可以显示不用for循环</span></span><br></pre></td></tr></table></figure>
-
-
-<h2 id="常用-Linux-jq命令语法整理"><a href="#常用-Linux-jq命令语法整理" class="headerlink" title="常用 Linux jq命令语法整理"></a>常用 <code>Linux jq</code>命令语法整理</h2><p><a target="_blank" rel="noopener" href="https://blog.csdn.net/Cheat1173010256/article/details/118230562#:~:text=JQ%20%E6%98%AF%E4%B8%80%E4%B8%AA%20%E5%91%BD%E4%BB%A4%20%E8%A1%8C%E5%B7%A5%E5%85%B7%EF%BC%8C%E4%B8%BB%E8%A6%81%E7%94%A8%E4%BA%8E%E5%A4%84%E7%90%86json%E6%96%87%E6%9C%AC%E3%80%82%20%E8%AF%AD%E6%B3%95,%E5%BE%88%E7%AE%80%E5%8D%95%EF%BC%8C%E5%A6%82%E4%B8%8B%EF%BC%9A%20jq%20%5Boptions...%5D%20filter%20%5Bfiles...%5D">参考链接</a></p>
+<h2 id="linux-shell获取文件夹下的文件名"><a class="markdownIt-Anchor" href="#linux-shell获取文件夹下的文件名">#</a>  <code>Linux Shell</code>  获取文件夹下的文件名</h2>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#!/bin/bash</span></span><br><span class="line"><span class="comment"># get all filename in specified path</span></span><br><span class="line">path=<span class="variable">$1</span></span><br><span class="line">files=$(ls <span class="variable">$path</span>)</span><br><span class="line"><span class="keyword">for</span> filename <span class="keyword">in</span> <span class="variable">$files</span></span><br><span class="line"><span class="keyword">do</span></span><br><span class="line">   <span class="built_in">echo</span> <span class="variable">$filename</span> &gt;&gt; filename.txt</span><br><span class="line"><span class="keyword">done</span></span><br></pre></td></tr></table></figure>
+<h2 id="shell获取目录下所有文件夹的名称并输出"><a class="markdownIt-Anchor" href="#shell获取目录下所有文件夹的名称并输出">#</a>  <code>shell</code>  获取目录下所有文件夹的名称并输出</h2>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#!/bin/bash</span></span><br><span class="line"><span class="comment">#方法一 </span></span><br><span class="line">dir=$(ls -l /usr/ |awk <span class="string">&#x27;/^d/ &#123;print $NF&#125;&#x27;</span>)</span><br><span class="line">or i <span class="keyword">in</span> <span class="variable">$dir</span></span><br><span class="line"><span class="keyword">do</span></span><br><span class="line">    <span class="built_in">echo</span> <span class="variable">$i</span></span><br><span class="line"><span class="keyword">done</span>   </span><br><span class="line"><span class="comment">#######</span></span><br><span class="line"><span class="comment">#方法二</span></span><br><span class="line"><span class="keyword">for</span> dir <span class="keyword">in</span> $(ls /usr/)</span><br><span class="line"><span class="keyword">do</span></span><br><span class="line">    [ -d <span class="variable">$dir</span> ] &amp;&amp; <span class="built_in">echo</span> <span class="variable">$dir</span></span><br><span class="line"><span class="keyword">done</span>        </span><br><span class="line"><span class="comment">##方法三</span></span><br><span class="line">ls -l /usr/ |awk <span class="string">&#x27;/^d/ &#123;print $NF&#125;&#x27;</span>   <span class="comment">## 其实同方法一，直接就可以显示不用for循环</span></span><br></pre></td></tr></table></figure>
+<h2 id="常用-linux-jq命令语法整理"><a class="markdownIt-Anchor" href="#常用-linux-jq命令语法整理">#</a> 常用  <code>Linux jq</code>  命令语法整理</h2>
+<p><span class="exturl" data-url="aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L0NoZWF0MTE3MzAxMDI1Ni9hcnRpY2xlL2RldGFpbHMvMTE4MjMwNTYyIzp+OnRleHQ9SlElMjAlRTYlOTglQUYlRTQlQjglODAlRTQlQjglQUElMjAlRTUlOTElQkQlRTQlQkIlQTQlMjAlRTglQTElOEMlRTUlQjclQTUlRTUlODUlQjclRUYlQkMlOEMlRTQlQjglQkIlRTglQTYlODElRTclOTQlQTglRTQlQkElOEUlRTUlQTQlODQlRTclOTAlODZqc29uJUU2JTk2JTg3JUU2JTlDJUFDJUUzJTgwJTgyJTIwJUU4JUFGJUFEJUU2JUIzJTk1LCVFNSVCRSU4OCVFNyVBRSU4MCVFNSU4RCU5NSVFRiVCQyU4QyVFNSVBNiU4MiVFNCVCOCU4QiVFRiVCQyU5QSUyMGpxJTIwJTVCb3B0aW9ucy4uLiU1RCUyMGZpbHRlciUyMCU1QmZpbGVzLi4uJTVE">参考链接</span></p>
 <img data-src="/posts/55b095e0/2022-05-13-20-25-50.png" class="">
-
 <img data-src="/posts/55b095e0/2022-05-13-20-26-18.png" class="">
-
 <img data-src="/posts/55b095e0/2022-05-13-20-26-42.png" class="">
-
 <img data-src="/posts/55b095e0/2022-05-13-20-27-00.png" class="">
-
-
-<h2 id="shell脚本中整数型变量自增（加1）的实现方式"><a href="#shell脚本中整数型变量自增（加1）的实现方式" class="headerlink" title="shell脚本中整数型变量自增（加1）的实现方式"></a><code>shell</code>脚本中整数型变量自增（加<code>1</code>）的实现方式</h2><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#</span><span class="bash">!/bin/sh</span></span><br><span class="line"><span class="meta">#</span><span class="bash">本脚本测试shell脚本中整型变量自增 加1的几种方法</span></span><br><span class="line"><span class="meta"> </span></span><br><span class="line"><span class="meta">#</span><span class="bash">定义整型变量</span></span><br><span class="line">a=1</span><br><span class="line">echo $a</span><br><span class="line"><span class="meta"> </span></span><br><span class="line"><span class="meta">#</span><span class="bash">第一种整型变量自增方式</span></span><br><span class="line">a=$(($a+1))</span><br><span class="line">echo $a</span><br><span class="line"><span class="meta"> </span></span><br><span class="line"><span class="meta">#</span><span class="bash">第二种整型变量自增方式</span></span><br><span class="line">a=$[$a+1]</span><br><span class="line">echo $a</span><br><span class="line"><span class="meta"> </span></span><br><span class="line"><span class="meta">#</span><span class="bash">第三种整型变量自增方式</span></span><br><span class="line">a=`expr $a + 1`</span><br><span class="line">echo $a</span><br><span class="line"><span class="meta"> </span></span><br><span class="line"><span class="meta">#</span><span class="bash">第四种整型变量自增方式</span></span><br><span class="line">let a++</span><br><span class="line">echo $a</span><br><span class="line"><span class="meta"> </span></span><br><span class="line"><span class="meta">#</span><span class="bash">第五种整型变量自增方式</span></span><br><span class="line">let a+=1</span><br><span class="line">echo $a</span><br><span class="line"><span class="meta"> </span></span><br><span class="line"><span class="meta">#</span><span class="bash">第六种整型变量自增方式</span></span><br><span class="line">((a++))</span><br><span class="line">echo $a</span><br></pre></td></tr></table></figure>
-
-<h2 id="shell判断一个变量是否为空"><a href="#shell判断一个变量是否为空" class="headerlink" title="shell判断一个变量是否为空"></a><code>shell</code>判断一个变量是否为空</h2><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br></pre></td><td class="code"><pre><span class="line">[ ! $a ] &amp;&amp; echo &quot;a is null&quot; </span><br><span class="line"><span class="meta"></span></span><br><span class="line"><span class="meta"></span></span><br><span class="line"><span class="meta">#</span><span class="bash">!/bin/sh</span> </span><br><span class="line">a= </span><br><span class="line">if [ ! -n &quot;$a&quot; ]; then </span><br><span class="line">echo &quot;IS NULL&quot; </span><br><span class="line">else </span><br><span class="line">echo &quot;NOT NULL&quot; </span><br><span class="line">fi</span><br><span class="line"><span class="meta"></span></span><br><span class="line"><span class="meta">#</span><span class="bash">!/bin/sh</span> </span><br><span class="line">a= </span><br><span class="line">if [ ! $a ]; then</span><br><span class="line">echo &quot;IS NULL&quot; </span><br><span class="line">else </span><br><span class="line">echo &quot;NOT NULL&quot; </span><br><span class="line">fi</span><br><span class="line"><span class="meta"></span></span><br><span class="line"><span class="meta">#</span><span class="bash">!/bin/sh</span> </span><br><span class="line">a= </span><br><span class="line">if test -z &quot;$a&quot; then </span><br><span class="line">echo &quot;a is not set!&quot; </span><br><span class="line">else </span><br><span class="line">echo &quot;a is set !&quot; </span><br><span class="line">fi</span><br><span class="line"><span class="meta"></span></span><br><span class="line"><span class="meta">#</span><span class="bash">!/bin/sh</span> </span><br><span class="line">a= </span><br><span class="line">if [ &quot;$a&quot; = &quot;&quot; ]; then </span><br><span class="line">echo &quot;a is not set!&quot; </span><br><span class="line">else </span><br><span class="line">echo &quot;a is set !&quot; </span><br><span class="line">fi</span><br></pre></td></tr></table></figure>
-
-<h2 id="输出到文件"><a href="#输出到文件" class="headerlink" title="输出到文件"></a>输出到文件</h2><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#</span><span class="bash">两种方法：</span></span><br><span class="line"><span class="meta">2&gt;</span><span class="bash">&amp;1 | tee mylog.log</span></span><br><span class="line"><span class="meta">&gt;</span><span class="bash"> test.txt</span></span><br><span class="line"><span class="meta">#</span><span class="bash">举例：</span></span><br><span class="line">------------------------------------------------------------</span><br><span class="line">sh batchjob.sh 2&gt;&amp;1 | tee mylog.log</span><br><span class="line">ls * &gt; test.txt</span><br><span class="line">-------------------------------------------------------------</span><br><span class="line">find ./ -name &quot;*.xml&quot; &gt; result.txt</span><br><span class="line">find ./ -name &quot;*.xml&quot; 2&gt;&amp;1 | tee mylog.log</span><br></pre></td></tr></table></figure>
-
-<h2 id="Shell-实现多线程（多任务）"><a href="#Shell-实现多线程（多任务）" class="headerlink" title="Shell 实现多线程（多任务）"></a><code>Shell</code> 实现多线程（多任务）</h2><ol>
-<li>命令结尾添加：<code>&amp;</code></li>
-<li>解决主线程提前退出问题，添加 <code>wait</code></li>
-<li>控制后台执行数（线程数），<code>mkfifo</code></li>
+<h2 id="shell脚本中整数型变量自增加1的实现方式"><a class="markdownIt-Anchor" href="#shell脚本中整数型变量自增加1的实现方式">#</a>  <code>shell</code>  脚本中整数型变量自增（加 <code>1</code> ）的实现方式</h2>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#</span><span class="bash">!/bin/sh</span></span><br><span class="line"><span class="meta">#</span><span class="bash">本脚本测试shell脚本中整型变量自增 加1的几种方法</span></span><br><span class="line"><span class="meta"> </span></span><br><span class="line"><span class="meta">#</span><span class="bash">定义整型变量</span></span><br><span class="line">a=1</span><br><span class="line">echo $a</span><br><span class="line"><span class="meta"> </span></span><br><span class="line"><span class="meta">#</span><span class="bash">第一种整型变量自增方式</span></span><br><span class="line">a=$(($a+1))</span><br><span class="line">echo $a</span><br><span class="line"><span class="meta"> </span></span><br><span class="line"><span class="meta">#</span><span class="bash">第二种整型变量自增方式</span></span><br><span class="line">a=$[$a+1]</span><br><span class="line">echo $a</span><br><span class="line"><span class="meta"> </span></span><br><span class="line"><span class="meta">#</span><span class="bash">第三种整型变量自增方式</span></span><br><span class="line">a=`expr $a + 1`</span><br><span class="line">echo $a</span><br><span class="line"><span class="meta"> </span></span><br><span class="line"><span class="meta">#</span><span class="bash">第四种整型变量自增方式</span></span><br><span class="line">let a++</span><br><span class="line">echo $a</span><br><span class="line"><span class="meta"> </span></span><br><span class="line"><span class="meta">#</span><span class="bash">第五种整型变量自增方式</span></span><br><span class="line">let a+=1</span><br><span class="line">echo $a</span><br><span class="line"><span class="meta"> </span></span><br><span class="line"><span class="meta">#</span><span class="bash">第六种整型变量自增方式</span></span><br><span class="line">((a++))</span><br><span class="line">echo $a</span><br></pre></td></tr></table></figure>
+<h2 id="shell判断一个变量是否为空"><a class="markdownIt-Anchor" href="#shell判断一个变量是否为空">#</a>  <code>shell</code>  判断一个变量是否为空</h2>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br></pre></td><td class="code"><pre><span class="line">[ ! $a ] &amp;&amp; echo &quot;a is null&quot; </span><br><span class="line"><span class="meta"></span></span><br><span class="line"><span class="meta"></span></span><br><span class="line"><span class="meta">#</span><span class="bash">!/bin/sh</span> </span><br><span class="line">a= </span><br><span class="line">if [ ! -n &quot;$a&quot; ]; then </span><br><span class="line">echo &quot;IS NULL&quot; </span><br><span class="line">else </span><br><span class="line">echo &quot;NOT NULL&quot; </span><br><span class="line">fi</span><br><span class="line"><span class="meta"></span></span><br><span class="line"><span class="meta">#</span><span class="bash">!/bin/sh</span> </span><br><span class="line">a= </span><br><span class="line">if [ ! $a ]; then</span><br><span class="line">echo &quot;IS NULL&quot; </span><br><span class="line">else </span><br><span class="line">echo &quot;NOT NULL&quot; </span><br><span class="line">fi</span><br><span class="line"><span class="meta"></span></span><br><span class="line"><span class="meta">#</span><span class="bash">!/bin/sh</span> </span><br><span class="line">a= </span><br><span class="line">if test -z &quot;$a&quot; then </span><br><span class="line">echo &quot;a is not set!&quot; </span><br><span class="line">else </span><br><span class="line">echo &quot;a is set !&quot; </span><br><span class="line">fi</span><br><span class="line"><span class="meta"></span></span><br><span class="line"><span class="meta">#</span><span class="bash">!/bin/sh</span> </span><br><span class="line">a= </span><br><span class="line">if [ &quot;$a&quot; = &quot;&quot; ]; then </span><br><span class="line">echo &quot;a is not set!&quot; </span><br><span class="line">else </span><br><span class="line">echo &quot;a is set !&quot; </span><br><span class="line">fi</span><br></pre></td></tr></table></figure>
+<h2 id="输出到文件"><a class="markdownIt-Anchor" href="#输出到文件">#</a> 输出到文件</h2>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#</span><span class="bash">两种方法：</span></span><br><span class="line"><span class="meta">2&gt;</span><span class="bash">&amp;1 | tee mylog.log</span></span><br><span class="line"><span class="meta">&gt;</span><span class="bash"> test.txt</span></span><br><span class="line"><span class="meta">#</span><span class="bash">举例：</span></span><br><span class="line">------------------------------------------------------------</span><br><span class="line">sh batchjob.sh 2&gt;&amp;1 | tee mylog.log</span><br><span class="line">ls * &gt; test.txt</span><br><span class="line">-------------------------------------------------------------</span><br><span class="line">find ./ -name &quot;*.xml&quot; &gt; result.txt</span><br><span class="line">find ./ -name &quot;*.xml&quot; 2&gt;&amp;1 | tee mylog.log</span><br></pre></td></tr></table></figure>
+<h2 id="shell-实现多线程多任务"><a class="markdownIt-Anchor" href="#shell-实现多线程多任务">#</a>  <code>Shell</code>  实现多线程（多任务）</h2>
+<ol>
+<li>命令结尾添加： <code>&amp;</code></li>
+<li>解决主线程提前退出问题，添加  <code>wait</code></li>
+<li>控制后台执行数（线程数）， <code>mkfifo</code></li>
 </ol>
-<p><a target="_blank" rel="noopener" href="https://www.cnblogs.com/zhengbin/p/9513762.html">https://www.cnblogs.com/zhengbin/p/9513762.html</a></p>
+<p><span class="exturl" data-url="aHR0cHM6Ly93d3cuY25ibG9ncy5jb20vemhlbmdiaW4vcC85NTEzNzYyLmh0bWw=">https://www.cnblogs.com/zhengbin/p/9513762.html</span></p>
 
-
-      <div>
-        
-          <div>
-    
-        <div style="text-align:center;color: #636363;font-size:14px;letter-spacing: 10px">This article is over<i class="fa fa-bell"></i>thank you for reading</div>
-    
-</div>
-        
+      <div class="tags">
+          <a href="/tags/Shell/" rel="tag"><i class="ic i-tag"></i> Shell</a>
       </div>
-    </div>
+  </div>
 
-    
-    
-    
+   <footer>
+
+    <div class="meta">
+  <span class="item">
+    <span class="icon">
+      <i class="ic i-calendar-check"></i>
+    </span>
+    <span class="text">Edited on</span>
+    <time title="Modified: 2022-06-01 20:53:31" itemprop="dateModified" datetime="2022-06-01T20:53:31+08:00">2022-06-01</time>
+  </span>
+  <span id="posts/55b095e0/" class="item leancloud_visitors" data-flag-title="The learning of Shell" title="Views">
+      <span class="icon">
+        <i class="ic i-eye"></i>
+      </span>
+      <span class="text">Views</span>
+      <span class="leancloud-visitors-count"></span>
+      <span class="text">times</span>
+  </span>
+</div>
+
       
-  <div class="popular-posts-header">Related Posts</div>
-  <ul class="popular-posts">
-    <li class="popular-posts-item">
-      <div class="popular-posts-title"><a href="/posts/823298d2/" rel="bookmark">VsCode 如何Debug Shell</a></div>
-    </li>
-  </ul>
 
-        
-
-<div>
-<ul class="post-copyright">
-  <li class="post-copyright-author">
-    <strong>Post author:  </strong>JIN Mao
+<div id="copyright">
+<ul>
+  <li class="author">
+    <strong>Post author:  </strong>JIN Mao <i class="ic i-at"><em>@</em></i>JIN MAO 's Blog
   </li>
-  <li class="post-copyright-link">
+  <li class="link">
     <strong>Post link: </strong>
     <a href="https://smile1231.github.io/posts/55b095e0/" title="The learning of Shell">https://smile1231.github.io/posts/55b095e0/</a>
   </li>
-  <li class="post-copyright-license">
-    <strong>Copyright Notice:  </strong>All articles in this blog are licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/en" rel="noopener" target="_blank"><i class="fab fa-fw fa-creative-commons"></i>BY-NC-SA</a> unless stating additionally.
+  <li class="license">
+    <strong>Copyright Notice:  </strong>All articles in this blog are licensed under <span class="exturl" data-url="aHR0cHM6Ly9jcmVhdGl2ZWNvbW1vbnMub3JnL2xpY2Vuc2VzL2J5LW5jLXNhLzQuMC9kZWVkLnpo"><i class="ic i-creative-commons"><em>(CC)</em></i>BY-NC-SA</span> unless stating additionally.
   </li>
 </ul>
 </div>
 
+  </footer>
 
-      <footer class="post-footer">
-          
-          <div class="post-tags">
-              <a href="/tags/Shell/" rel="tag"><i class="fa fa-tag"></i> Shell</a>
-          </div>
+</article>
 
-        
-  <div class="post-widgets">
-    <div class="wp_rating">
-      <div id="wpac-rating"></div>
-    </div>
   </div>
+  
 
+<div class="post-nav">
+    <div class="item left">
+      
 
-        
-    <div class="post-nav">
-      <div class="post-nav-item">
-    <a href="/posts/ef55dc85/" rel="prev" title="CEST与北京时间转换表">
-      <i class="fa fa-chevron-left"></i> CEST与北京时间转换表
-    </a></div>
-      <div class="post-nav-item">
-    <a href="/posts/7733848a/" rel="next" title="文件上传前端小结">
-      文件上传前端小结 <i class="fa fa-chevron-right"></i>
-    </a></div>
+  <a href="/posts/ef55dc85/" itemprop="url" rel="prev" data-background-image="https:&#x2F;&#x2F;tva1.sinaimg.cn&#x2F;mw690&#x2F;6833939bly1gipeyvx1d4j20zk0m8hdt.jpg" title="CEST与北京时间转换表">
+  <span class="type">Previous Post</span>
+  <span class="category"><i class="ic i-flag"></i> SAP</span>
+  <h3>CEST与北京时间转换表</h3>
+  </a>
+
     </div>
-      </footer>
-    
-  </article>
+    <div class="item right">
+      
+
+  <a href="/posts/7733848a/" itemprop="url" rel="next" data-background-image="https:&#x2F;&#x2F;tva1.sinaimg.cn&#x2F;mw690&#x2F;6833939bly1giclhnx9glj20zk0m8npd.jpg" title="文件上传前端小结">
+  <span class="type">Next Post</span>
+  <span class="category"><i class="ic i-flag"></i> 前端</span>
+  <h3>文件上传前端小结</h3>
+  </a>
+
+    </div>
+</div>
+
   
-  
-  
+  <div class="wrap" id="comments"></div>
 
-
-
-          </div>
-          
-    <div class="comments" id="valine-comments"></div>
-
-<script>
-  window.addEventListener('tabs:register', () => {
-    let { activeClass } = CONFIG.comments;
-    if (CONFIG.comments.storage) {
-      activeClass = localStorage.getItem('comments_active') || activeClass;
-    }
-    if (activeClass) {
-      let activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
-      if (activeTab) {
-        activeTab.click();
-      }
-    }
-  });
-  if (CONFIG.comments.storage) {
-    window.addEventListener('tabs:click', event => {
-      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
-      let commentClass = event.target.classList[1];
-      localStorage.setItem('comments_active', commentClass);
-    });
-  }
-</script>
 
         </div>
+        <div id="sidebar">
           
+
+<div class="inner">
+
+  <div class="panels">
+    <div class="inner">
+      <div class="contents panel pjax" data-title="Contents">
+          <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#all"><span class="toc-number">1.</span> <span class="toc-text">  ALL</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#zip%E5%92%8Cupzip"><span class="toc-number">2.</span> <span class="toc-text">  zip  和 upzip</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#bash-shell%E8%84%9A%E6%9C%AC%E6%89%93%E5%8D%B0%E5%87%BA%E6%AD%A3%E5%9C%A8%E6%89%A7%E8%A1%8C%E7%9A%84%E5%91%BD%E4%BB%A4"><span class="toc-number">3.</span> <span class="toc-text">  Bash shell  脚本打印出正在执行的命令</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#sed%E6%8C%87%E4%BB%A4"><span class="toc-number">4.</span> <span class="toc-text">  sed  指令</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#sed-s-%E6%9B%BF%E6%8D%A2%E8%84%9A%E6%9C%AC%E5%91%BD%E4%BB%A4"><span class="toc-number">4.1.</span> <span class="toc-text">  sed s  替换脚本命令</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#sed-d-%E6%9B%BF%E6%8D%A2%E8%84%9A%E6%9C%AC%E5%91%BD%E4%BB%A4"><span class="toc-number">4.2.</span> <span class="toc-text">  sed d  替换脚本命令</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#grep%E6%8C%87%E4%BB%A4"><span class="toc-number">5.</span> <span class="toc-text">  Grep  指令</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#awk%E6%8C%87%E4%BB%A4"><span class="toc-number">6.</span> <span class="toc-text">  awk  指令</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#cut%E6%8C%87%E4%BB%A4"><span class="toc-number">7.</span> <span class="toc-text">  cut  指令</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#json%E6%A0%BC%E5%BC%8F%E5%8C%96%E5%B7%A5%E5%85%B7jq%E6%8C%87%E4%BB%A4"><span class="toc-number">8.</span> <span class="toc-text">  JSON  格式化工具 jq  指令</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#awk%E5%86%85%E7%BD%AE%E5%87%BD%E6%95%B0splitsubstrlengthgsub"><span class="toc-number">9.</span> <span class="toc-text">  awk  内置函数 (split&#x2F;substr&#x2F;length&#x2F;gsub)</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#linux-shell-%E5%B0%86%E5%AD%97%E7%AC%A6%E4%B8%B2%E5%88%86%E5%89%B2%E6%88%90%E6%95%B0%E7%BB%84"><span class="toc-number">10.</span> <span class="toc-text">  Linux shell  将字符串分割成数组</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#linux%E6%88%AA%E5%8F%96%E4%B8%AD%E9%97%B4%E5%AD%97%E7%AC%A6%E4%B8%B2shell%E6%88%AA%E5%8F%96%E6%8C%87%E5%AE%9A%E5%AD%97%E7%AC%A6%E4%B8%B2%E4%B9%8B%E9%97%B4%E7%9A%84%E5%86%85%E5%AE%B9"><span class="toc-number">11.</span> <span class="toc-text">  linux  截取中间字符串， shell  截取指定字符串之间的内容</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#shell%E7%8E%AF%E5%A2%83%E7%94%9F%E6%88%90uuid"><span class="toc-number">12.</span> <span class="toc-text">  Shell  环境生成 UUID</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#shell%E4%B8%AD-%E5%90%84%E7%A7%8D%E5%90%AB%E4%B9%89"><span class="toc-number">13.</span> <span class="toc-text">  Shell  中 $  各种含义</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#linux-%E4%B8%8Bshell%E4%B8%ADif%E7%9A%84-e-d-f%E6%98%AF%E4%BB%80%E4%B9%88%E6%84%8F%E6%80%9D"><span class="toc-number">14.</span> <span class="toc-text">  linux  下 shell  中 if  的 “-e，-d，-f”  是什么意思</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#shell%E8%8E%B7%E5%8F%96%E6%96%87%E4%BB%B6%E6%89%A9%E5%B1%95%E5%90%8D"><span class="toc-number">15.</span> <span class="toc-text">  shell  获取文件扩展名</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#linux-shell-%E4%B8%AD%E8%8E%B7%E5%8F%96%E5%BD%93%E5%89%8D%E7%9B%AE%E5%BD%95%E7%9A%84%E6%96%B9%E6%B3%95"><span class="toc-number">16.</span> <span class="toc-text">  Linux shell  中获取当前目录的方法</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#linux-shell%E8%8E%B7%E5%8F%96%E6%96%87%E4%BB%B6%E5%A4%B9%E4%B8%8B%E7%9A%84%E6%96%87%E4%BB%B6%E5%90%8D"><span class="toc-number">17.</span> <span class="toc-text">  Linux Shell  获取文件夹下的文件名</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#shell%E8%8E%B7%E5%8F%96%E7%9B%AE%E5%BD%95%E4%B8%8B%E6%89%80%E6%9C%89%E6%96%87%E4%BB%B6%E5%A4%B9%E7%9A%84%E5%90%8D%E7%A7%B0%E5%B9%B6%E8%BE%93%E5%87%BA"><span class="toc-number">18.</span> <span class="toc-text">  shell  获取目录下所有文件夹的名称并输出</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%B8%B8%E7%94%A8-linux-jq%E5%91%BD%E4%BB%A4%E8%AF%AD%E6%B3%95%E6%95%B4%E7%90%86"><span class="toc-number">19.</span> <span class="toc-text"> 常用  Linux jq  命令语法整理</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#shell%E8%84%9A%E6%9C%AC%E4%B8%AD%E6%95%B4%E6%95%B0%E5%9E%8B%E5%8F%98%E9%87%8F%E8%87%AA%E5%A2%9E%E5%8A%A01%E7%9A%84%E5%AE%9E%E7%8E%B0%E6%96%B9%E5%BC%8F"><span class="toc-number">20.</span> <span class="toc-text">  shell  脚本中整数型变量自增（加 1 ）的实现方式</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#shell%E5%88%A4%E6%96%AD%E4%B8%80%E4%B8%AA%E5%8F%98%E9%87%8F%E6%98%AF%E5%90%A6%E4%B8%BA%E7%A9%BA"><span class="toc-number">21.</span> <span class="toc-text">  shell  判断一个变量是否为空</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%BE%93%E5%87%BA%E5%88%B0%E6%96%87%E4%BB%B6"><span class="toc-number">22.</span> <span class="toc-text"> 输出到文件</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#shell-%E5%AE%9E%E7%8E%B0%E5%A4%9A%E7%BA%BF%E7%A8%8B%E5%A4%9A%E4%BB%BB%E5%8A%A1"><span class="toc-number">23.</span> <span class="toc-text">  Shell  实现多线程（多任务）</span></a></li></ol>
+      </div>
+      <div class="related panel pjax" data-title="Related">
+        <ul>
+          <li class="active"><a href="/posts/55b095e0/" rel="bookmark" title="The learning of Shell">The learning of Shell</a></li>
+        </ul>
+      </div>
+      <div class="overview panel" data-title="Overview">
+        <div class="author" itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <img class="image" itemprop="image" alt="JIN Mao"
+      data-src="/images/avatar.png">
+  <p class="name" itemprop="name">JIN Mao</p>
+  <div class="description" itemprop="description"></div>
+</div>
+
+<nav class="state">
+    <div class="item posts">
+      <a href="/archives/">
+        <span class="count">134</span>
+        <span class="name">posts</span>
+      </a>
+    </div>
+    <div class="item categories">
+      <a href="/categories/">
+        <span class="count">70</span>
+        <span class="name">categories</span>
+      </a>
+    </div>
+    <div class="item tags">
+      <a href="/tags/">
+        <span class="count">98</span>
+        <span class="name">tags</span>
+      </a>
+    </div>
+</nav>
+
+<div class="social">
+      <span class="exturl item github" data-url="aHR0cHM6Ly9naXRodWIuY29tL3NtaWxlMTIzMQ==" title="https:&#x2F;&#x2F;github.com&#x2F;smile1231"><i class="ic i-github"></i></span>
+</div>
+
+<ul class="menu">
   
-  <div class="toggle sidebar-toggle">
-    <span class="toggle-line toggle-line-first"></span>
-    <span class="toggle-line toggle-line-middle"></span>
-    <span class="toggle-line toggle-line-last"></span>
+    
+  <li class="item">
+    <a href="/" rel="section"><i class="ic i-home"></i>Home</a>
+  </li>
+
+    
+  <li class="item">
+    <a href="/about/" rel="section"><i class="ic i-user"></i>About</a>
+  </li>
+
+        
+  <li class="item dropdown">
+      <a href="javascript:void(0);"><i class="ic i-feather"></i>Posts</a>
+    <ul class="submenu">
+
+        
+  <li class="item">
+    <a href="/archives/" rel="section"><i class="ic i-list-alt"></i>Archives</a>
+  </li>
+
+        
+  <li class="item">
+    <a href="/categories/" rel="section"><i class="ic i-th"></i>Categories</a>
+  </li>
+
+        
+  <li class="item">
+    <a href="/tags/" rel="section"><i class="ic i-tags"></i>Tags</a>
+  </li>
+
+  </ul>
+
+</ul>
+
+      </div>
+    </div>
   </div>
 
-  <aside class="sidebar">
-    <div class="sidebar-inner">
-    
-    
-    <!-- 霓虹灯时钟 -->
-    <div>
-    <svg style="height: 60px;">
-        <text id="time" text-anchor="middle" x="36%" y="80%" class="words words-1"></text>
-        <text id="time" text-anchor="middle" x="36%" y="80%" class="words words-2"></text>
-        <text id="time" text-anchor="middle" x="36%" y="80%" class="words words-3"></text>
-        <text id="time" text-anchor="middle" x="36%" y="80%" class="words words-4"></text>
-    </svg>
-</div>
-
-<script>
-function showtime(){
-    var noatime = new Date();
-    var h = noatime.getHours(),
-        m = noatime.getMinutes(),
-        s = noatime.getSeconds();
-    h=checktime(h);
-    m=checktime(m);
-    s=checktime(s);
-  return h+":"+m+":"+s;
-}
-
-function checktime(x){
-  if(x<10){
-    x="0"+x;
-  }
-  return x;
-}
-
-var div1=document.getElementsByTagName("text");
-setInterval(function(){
-  for (var i in div1){
-      div1[i].innerHTML=showtime();
-  }
-},1000);
-</script>
-
-<style>
-.words{
-    font-size: 50px;
-    font-weight: bold;
-    text-transform: uppercase;
-    fill: none;
-    stroke-width: 3px;
-    stroke-dasharray: 35,125;
-    animation-name: drawing;
-    animation-duration: 6s;
-    animation-iteration-count: infinite;
-    animation-timing-function: linear;
-}
-.words-1{
-    stroke: deepskyblue;
-    text-shadow: 0 0 15px deepskyblue;
-    animation-delay: -1.5s;
-}
-.words-2{
-    stroke: lightseagreen;
-    text-shadow: 0 0 15px lightseagreen;
-    animation-delay: -3s;
-}
-.words-3{
-    stroke: orange;
-    text-shadow: 0 0 15px orange;
-    animation-delay: -4.5s;
-}
-.words-4{
-    stroke: purple;
-    text-shadow: 0 0 15px purple;
-    animation-delay: -6s;
-}
-@keyframes drawing {
-    100%{
-        stroke-dashoffset: -160
-    }
-}
-</style>
-
-    
-      <!-- 起风了 -->
-      <!-- <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=86 src="//music.163.com/outchain/player?type=2&id=1901069794&auto=1&height=66"></iframe> -->
-      <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=86 src="//music.163.com/outchain/player?type=2&id=1927119724&auto=1&height=66"></iframe>
-
-      <ul class="sidebar-nav motion-element">
-        <li class="sidebar-nav-toc">
-          Table of Contents
-        </li>
-        <li class="sidebar-nav-overview">
-          Overview
-        </li>
-      </ul>
-
-      <!--noindex-->
-      <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#ALL"><span class="nav-number">1.</span> <span class="nav-text">ALL</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#zip%E5%92%8Cupzip"><span class="nav-number">2.</span> <span class="nav-text">zip和upzip</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Bash-shell%E8%84%9A%E6%9C%AC%E6%89%93%E5%8D%B0%E5%87%BA%E6%AD%A3%E5%9C%A8%E6%89%A7%E8%A1%8C%E7%9A%84%E5%91%BD%E4%BB%A4"><span class="nav-number">3.</span> <span class="nav-text">Bash shell脚本打印出正在执行的命令</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#sed%E6%8C%87%E4%BB%A4"><span class="nav-number">4.</span> <span class="nav-text">sed指令</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#sed-s-%E6%9B%BF%E6%8D%A2%E8%84%9A%E6%9C%AC%E5%91%BD%E4%BB%A4"><span class="nav-number">4.1.</span> <span class="nav-text">sed s 替换脚本命令</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#sed-d-%E6%9B%BF%E6%8D%A2%E8%84%9A%E6%9C%AC%E5%91%BD%E4%BB%A4"><span class="nav-number">4.2.</span> <span class="nav-text">sed d 替换脚本命令</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Grep%E6%8C%87%E4%BB%A4"><span class="nav-number">5.</span> <span class="nav-text">Grep指令</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#awk%E6%8C%87%E4%BB%A4"><span class="nav-number">6.</span> <span class="nav-text">awk指令</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#cut%E6%8C%87%E4%BB%A4"><span class="nav-number">7.</span> <span class="nav-text">cut指令</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#JSON%E6%A0%BC%E5%BC%8F%E5%8C%96%E5%B7%A5%E5%85%B7jq%E6%8C%87%E4%BB%A4"><span class="nav-number">8.</span> <span class="nav-text">JSON格式化工具jq指令</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#awk%E5%86%85%E7%BD%AE%E5%87%BD%E6%95%B0-split-substr-length-gsub"><span class="nav-number">9.</span> <span class="nav-text">awk内置函数(split&#x2F;substr&#x2F;length&#x2F;gsub)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Linux-shell-%E5%B0%86%E5%AD%97%E7%AC%A6%E4%B8%B2%E5%88%86%E5%89%B2%E6%88%90%E6%95%B0%E7%BB%84"><span class="nav-number">10.</span> <span class="nav-text">Linux shell 将字符串分割成数组</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#linux%E6%88%AA%E5%8F%96%E4%B8%AD%E9%97%B4%E5%AD%97%E7%AC%A6%E4%B8%B2-shell%E6%88%AA%E5%8F%96%E6%8C%87%E5%AE%9A%E5%AD%97%E7%AC%A6%E4%B8%B2%E4%B9%8B%E9%97%B4%E7%9A%84%E5%86%85%E5%AE%B9"><span class="nav-number">11.</span> <span class="nav-text">linux截取中间字符串,shell截取指定字符串之间的内容</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Shell%E7%8E%AF%E5%A2%83%E7%94%9F%E6%88%90UUID"><span class="nav-number">12.</span> <span class="nav-text">Shell环境生成UUID</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Shell%E4%B8%AD-%E5%90%84%E7%A7%8D%E5%90%AB%E4%B9%89"><span class="nav-number">13.</span> <span class="nav-text">Shell中$ 各种含义</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#linux-%E4%B8%8Bshell%E4%B8%ADif%E7%9A%84%E2%80%9C-e%EF%BC%8C-d%EF%BC%8C-f%E2%80%9D%E6%98%AF%E4%BB%80%E4%B9%88%E6%84%8F%E6%80%9D"><span class="nav-number">14.</span> <span class="nav-text">linux 下shell中if的“-e，-d，-f”是什么意思</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#shell%E8%8E%B7%E5%8F%96%E6%96%87%E4%BB%B6%E6%89%A9%E5%B1%95%E5%90%8D"><span class="nav-number">15.</span> <span class="nav-text">shell获取文件扩展名</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Linux-shell-%E4%B8%AD%E8%8E%B7%E5%8F%96%E5%BD%93%E5%89%8D%E7%9B%AE%E5%BD%95%E7%9A%84%E6%96%B9%E6%B3%95"><span class="nav-number">16.</span> <span class="nav-text">Linux shell 中获取当前目录的方法</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Linux-Shell%E8%8E%B7%E5%8F%96%E6%96%87%E4%BB%B6%E5%A4%B9%E4%B8%8B%E7%9A%84%E6%96%87%E4%BB%B6%E5%90%8D"><span class="nav-number">17.</span> <span class="nav-text">Linux Shell获取文件夹下的文件名</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#shell%E8%8E%B7%E5%8F%96%E7%9B%AE%E5%BD%95%E4%B8%8B%E6%89%80%E6%9C%89%E6%96%87%E4%BB%B6%E5%A4%B9%E7%9A%84%E5%90%8D%E7%A7%B0%E5%B9%B6%E8%BE%93%E5%87%BA"><span class="nav-number">18.</span> <span class="nav-text">shell获取目录下所有文件夹的名称并输出</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%B8%B8%E7%94%A8-Linux-jq%E5%91%BD%E4%BB%A4%E8%AF%AD%E6%B3%95%E6%95%B4%E7%90%86"><span class="nav-number">19.</span> <span class="nav-text">常用 Linux jq命令语法整理</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#shell%E8%84%9A%E6%9C%AC%E4%B8%AD%E6%95%B4%E6%95%B0%E5%9E%8B%E5%8F%98%E9%87%8F%E8%87%AA%E5%A2%9E%EF%BC%88%E5%8A%A01%EF%BC%89%E7%9A%84%E5%AE%9E%E7%8E%B0%E6%96%B9%E5%BC%8F"><span class="nav-number">20.</span> <span class="nav-text">shell脚本中整数型变量自增（加1）的实现方式</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#shell%E5%88%A4%E6%96%AD%E4%B8%80%E4%B8%AA%E5%8F%98%E9%87%8F%E6%98%AF%E5%90%A6%E4%B8%BA%E7%A9%BA"><span class="nav-number">21.</span> <span class="nav-text">shell判断一个变量是否为空</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E8%BE%93%E5%87%BA%E5%88%B0%E6%96%87%E4%BB%B6"><span class="nav-number">22.</span> <span class="nav-text">输出到文件</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Shell-%E5%AE%9E%E7%8E%B0%E5%A4%9A%E7%BA%BF%E7%A8%8B%EF%BC%88%E5%A4%9A%E4%BB%BB%E5%8A%A1%EF%BC%89"><span class="nav-number">23.</span> <span class="nav-text">Shell 实现多线程（多任务）</span></a></li></ol></div>
-      </div>
-      <!--/noindex-->
-
-      <div class="site-overview-wrap sidebar-panel">
-        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
-    <img class="site-author-image" itemprop="image" alt="JIN Mao"
-      src="/images/avatar.png">
-  <p class="site-author-name" itemprop="name">JIN Mao</p>
-  <div class="site-description" itemprop="description"></div>
-</div>
-<div class="site-state-wrap motion-element">
-  <nav class="site-state">
-      <div class="site-state-item site-state-posts">
-          <a href="/archives/">
-        
-          <span class="site-state-item-count">133</span>
-          <span class="site-state-item-name">posts</span>
-        </a>
-      </div>
-      <div class="site-state-item site-state-categories">
-            <a href="/categories/">
-          
-        <span class="site-state-item-count">70</span>
-        <span class="site-state-item-name">categories</span></a>
-      </div>
-      <div class="site-state-item site-state-tags">
-            <a href="/tags/">
-          
-        <span class="site-state-item-count">97</span>
-        <span class="site-state-item-name">tags</span></a>
-      </div>
-  </nav>
+  <ul id="quick">
+    <li class="prev pjax">
+        <a href="/posts/ef55dc85/" rel="prev" title="Previous Post"><i class="ic i-chevron-left"></i></a>
+    </li>
+    <li class="up"><i class="ic i-arrow-up"></i></li>
+    <li class="down"><i class="ic i-arrow-down"></i></li>
+    <li class="next pjax">
+        <a href="/posts/7733848a/" rel="next" title="Next Post"><i class="ic i-chevron-right"></i></a>
+    </li>
+    <li class="percent"></li>
+  </ul>
 </div>
 
 
-
-      </div>
-
-  
-
-    </div>
-
-
-  </aside>
-  <div id="sidebar-dimmer"></div>
-
-
+        </div>
+        <div class="dimmer"></div>
       </div>
     </main>
-
-    <footer class="footer">
-      <div class="footer-inner">
-        
-
-        
-
-<div class="copyright">
-  
-  &copy; 
-  <span itemprop="copyrightYear">2022</span>
-  <span class="with-love">
-    <i class="fa fa-heart"></i>
-  </span>
-  <span class="author" itemprop="copyrightHolder">JIN Mao</span>
+    <footer id="footer">
+      <div class="inner">
+        <div class="widgets">
+          
+<div class="rpost pjax">
+  <h2>Random Posts</h2>
+  <ul>
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/%E5%89%8D%E7%AB%AF/" title="In 前端">前端</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/%E5%89%8D%E7%AB%AF/JavaScript/" title="In JavaScript">JavaScript</a>
 </div>
-  <!--添加运行时间-->
-  <span id="sitetime"></span>
-  <script language=javascript>
-    function siteTime(){
-      window.setTimeout("siteTime()", 1000);
-      var seconds = 1000;
-      var minutes = seconds * 60;
-      var hours = minutes * 60;
-      var days = hours * 24;
-      var years = days * 365;
-      var today = new Date();
-      var todayYear = today.getFullYear();
-      var todayMonth = today.getMonth()+1;
-      var todayDate = today.getDate();
-      var todayHour = today.getHours();
-      var todayMinute = today.getMinutes();
-      var todaySecond = today.getSeconds();
-      /* 
-        Date.UTC() -- 返回date对象距世界标准时间(UTC)1970年1月1日午夜之间的毫秒数(时间戳)
-        year - 作为date对象的年份，为4位年份值
-        month - 0-11之间的整数，做为date对象的月份
-        day - 1-31之间的整数，做为date对象的天数
-        hours - 0(午夜24点)-23之间的整数，做为date对象的小时数
-        minutes - 0-59之间的整数，做为date对象的分钟数
-        seconds - 0-59之间的整数，做为date对象的秒数
-        microseconds - 0-999之间的整数，做为date对象的毫秒数
-      */
-      var t1 = Date.UTC(2021,11,11,00,00,00); //北京时间2018-2-13 00:00:00
-      var t2 = Date.UTC(todayYear,todayMonth,todayDate,todayHour,todayMinute,todaySecond);
-      var diff = t2-t1;
-      var diffYears = Math.floor(diff/years);
-      var diffDays = Math.floor((diff/days)-diffYears*365);
-      var diffHours = Math.floor((diff-(diffYears*365+diffDays)*days)/hours);
-      var diffMinutes = Math.floor((diff-(diffYears*365+diffDays)*days-diffHours*hours)/minutes);
-      var diffSeconds = Math.floor((diff-(diffYears*365+diffDays)*days-diffHours*hours-diffMinutes*minutes)/seconds);
-      document.getElementById("sitetime").innerHTML=" This blog is up and running "+/*diffYears+" Year "+*/diffDays+" Days "+diffHours+" Hours "+diffMinutes+" Minutes "+diffSeconds+" Seconds";
-    }
-    siteTime();
-  </script>
-  <!--// 添加运行时间-->
 
+    <span><a href="/posts/4aa00b9a/" title="Js中的some、find、findindex、includes、filter的使用">Js中的some、find、findindex、includes、filter的使用</a></span>
+  </li>
 
-<!--
-  <div class="powered-by">Powered by <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> & <a href="https://pisces.theme-next.org/" class="theme-link" rel="noopener" target="_blank">NexT.Pisces</a>
-  </div>
--->
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/Java/" title="In Java">Java</a>
+</div>
 
+    <span><a href="/posts/d6d1be75/" title="在Javadoc注释中引用方法">在Javadoc注释中引用方法</a></span>
+  </li>
 
-        
-<div class="busuanzi-count">
-  <script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/Java%E9%9D%A2%E8%AF%95/" title="In Java面试">Java面试</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/Java%E9%9D%A2%E8%AF%95/Tools/" title="In Tools">Tools</a>
+</div>
 
+    <span><a href="/posts/6714b4a9/" title="FastJson序列化使用">FastJson序列化使用</a></span>
+  </li>
 
-  <span class="site-uv" title="Total Visitors">
-    My <span id="busuanzi_value_site_uv"></span>th Friend, 
-  </span>
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/SpringBoot/" title="In SpringBoot">SpringBoot</a>
+</div>
 
-  <span class="site-pv" title="Total Views">
-    After  <span id="busuanzi_value_site_pv"></span> times of looking back, I met you 。
-  </span>
-  <!--
-    <span class="post-meta-item" id="busuanzi_container_site_uv" >
-      <span class="post-meta-item-icon">
-        <i class="fa fa-user"></i>
-      </span>
-      <span class="site-uv" title="Total Visitors">
-        <span id="busuanzi_value_site_uv"></span>
-      </span>
+    <span><a href="/posts/67f40b37/" title="Spring Boot 获取服务IP地址和端口号">Spring Boot 获取服务IP地址和端口号</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/Java%E9%9D%A2%E8%AF%95/" title="In Java面试">Java面试</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/Java%E9%9D%A2%E8%AF%95/%E5%BF%AB%E9%80%9F%E6%8E%92%E5%BA%8F/" title="In 快速排序">快速排序</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/Java%E9%9D%A2%E8%AF%95/%E5%BF%AB%E9%80%9F%E6%8E%92%E5%BA%8F/%E7%AE%97%E6%B3%95/" title="In 算法">算法</a>
+</div>
+
+    <span><a href="/posts/ff8068c0/" title="快速排序">快速排序</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/%E5%A4%A7%E6%95%B0%E6%8D%AE/" title="In 大数据">大数据</a>
+</div>
+
+    <span><a href="/posts/737c98ca/" title="什么是MapReduce">什么是MapReduce</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/Java%E9%9D%A2%E8%AF%95/" title="In Java面试">Java面试</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/Java%E9%9D%A2%E8%AF%95/%E5%86%92%E6%B3%A1%E6%8E%92%E5%BA%8F/" title="In 冒泡排序">冒泡排序</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/Java%E9%9D%A2%E8%AF%95/%E5%86%92%E6%B3%A1%E6%8E%92%E5%BA%8F/%E7%AE%97%E6%B3%95/" title="In 算法">算法</a>
+</div>
+
+    <span><a href="/posts/14e6f1eb/" title="冒泡排序">冒泡排序</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+</div>
+
+    <span><a href="/posts/49a9ac1a/" title="Springboot优雅的实现重试">Springboot优雅的实现重试</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/Java/" title="In Java">Java</a>
+</div>
+
+    <span><a href="/posts/1c3390ab/" title="将Java数据输出为本地txt">将Java数据输出为本地txt</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+</div>
+
+    <span><a href="/posts/4da9c93/" title="Web-based design and analysis tools for CRISPR base editing 文献阅读">Web-based design and analysis tools for CRISPR base editing 文献阅读</a></span>
+  </li>
+
+  </ul>
+</div>
+<div>
+  <h2>Recent Comments</h2>
+  <ul class="leancloud-recent-comment"></ul>
+</div>
+
+        </div>
+        <div class="status">
+  <div class="copyright">
+    
+    &copy; 2021 – 
+    <span itemprop="copyrightYear">2022</span>
+    <span class="with-love">
+      <i class="ic i-sakura rotate"></i>
     </span>
+    <span class="author" itemprop="copyrightHolder">JIN Mao @ Jin Mao when to get rich ?</span>
+  </div>
+  <div class="count">
+    <span class="post-meta-item-icon">
+      <i class="ic i-chart-area"></i>
+    </span>
+    <span title="Symbols count total">557k words</span>
+
     <span class="post-meta-divider">|</span>
-    <span class="post-meta-item" id="busuanzi_container_site_pv">
-      <span class="post-meta-item-icon">
-        <i class="fa fa-eye"></i>
-      </span>
-      <span class="site-pv" title="Total Views">
-        <span id="busuanzi_value_site_pv"></span>
-      </span>
-    </span>-->
+    <span class="post-meta-item-icon">
+      <i class="ic i-coffee"></i>
+    </span>
+    <span title="Reading time total">8:26</span>
+  </div>
 </div>
-
-
-
-
-
-
-
 
       </div>
     </footer>
   </div>
-
-  
-  <script src="/lib/anime.min.js"></script>
-  <script src="//cdn.jsdelivr.net/npm/medium-zoom@1/dist/medium-zoom.min.js"></script>
-  <script src="//cdn.jsdelivr.net/npm/lozad@1/dist/lozad.min.js"></script>
-  <script src="/lib/velocity/velocity.min.js"></script>
-  <script src="/lib/velocity/velocity.ui.min.js"></script>
-
-<script src="/js/utils.js"></script>
-
-<script src="/js/motion.js"></script>
-
-
-<script src="/js/schemes/pisces.js"></script>
-
-
-<script src="/js/next-boot.js"></script>
-
-<script src="/js/bookmark.js"></script>
-
-
-  <script defer src="/lib/three/three.min.js"></script>
-    <script defer src="/lib/three/canvas_lines.min.js"></script>
-
-
-  
-
-
-
-  <script>
-  if (CONFIG.page.isPost) {
-    wpac_init = window.wpac_init || [];
-    wpac_init.push({
-      widget: 'Rating',
-      id    : ,
-      el    : 'wpac-rating',
-      color : 'fc6423'
-    });
-    (function() {
-      if ('WIDGETPACK_LOADED' in window) return;
-      WIDGETPACK_LOADED = true;
-      var mc = document.createElement('script');
-      mc.type = 'text/javascript';
-      mc.async = true;
-      mc.src = '//embed.widgetpack.com/widget.js';
-      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(mc, s.nextSibling);
-    })();
-  }
-  </script>
-
-  
-<script src="/js/local-search.js"></script>
-
-
-
-
-
-
-
-
-
-
-
-
-
-  
-
-  
-
-
-<script>
-NexT.utils.loadComments(document.querySelector('#valine-comments'), () => {
-  NexT.utils.getScript('//unpkg.com/valine/dist/Valine.min.js', () => {
-    var GUEST = ['nick', 'mail', 'link'];
-    var guest = 'nick,mail,link';
-    guest = guest.split(',').filter(item => {
-      return GUEST.includes(item);
-    });
-    new Valine({
-      el         : '#valine-comments',
-      verify     : true,
-      notify     : true,
-      appId      : 'J2bQH6GquIhMurLQc9NYgXWJ-gzGzoHsz',
-      appKey     : 'mbmntmQLrVScI2O7gV6zBej5',
-      placeholder: "Just go go",
-      avatar     : 'mm',
-      meta       : guest,
-      pageSize   : '10' || 10,
-      visitor    : false,
-      lang       : 'en' || 'zh-cn',
-      path       : location.pathname,
-      recordIP   : true,
-      serverURLs : ''
-    });
-  }, window.Valine);
-});
+<script data-config type="text/javascript">
+  var LOCAL = {
+    path: 'posts/55b095e0/',
+    favicon: {
+      show: "You're welcome",
+      hide: "Wait for you"
+    },
+    search : {
+      placeholder: "Search for Posts",
+      empty: "We didn't find any results for the search: ${query}",
+      stats: "${hits} results found in ${time} ms"
+    },
+    valine: true,fancybox: true,
+    copyright: 'Copied to clipboard successfully! <br> All articles in this blog are licensed under <i class="ic i-creative-commons"></i>BY-NC-SA.',
+    ignores : [
+      function(uri) {
+        return uri.includes('#');
+      },
+      function(uri) {
+        return new RegExp(LOCAL.path+"$").test(uri);
+      }
+    ]
+  };
 </script>
 
+<script src="https://cdn.polyfill.io/v2/polyfill.js"></script>
 
-  
-  <script type="text/javascript" src="/js/cursor/love.js"></script>
+<script src="//cdn.jsdelivr.net/combine/npm/pace-js@1.0.2/pace.min.js,npm/pjax@0.2.8/pjax.min.js,npm/whatwg-fetch@3.4.0/dist/fetch.umd.min.js,npm/animejs@3.2.0/lib/anime.min.js,npm/algoliasearch@4/dist/algoliasearch-lite.umd.js,npm/instantsearch.js@4/dist/instantsearch.production.min.js,npm/lozad@1/dist/lozad.min.js,npm/quicklink@2/dist/quicklink.umd.js"></script>
+
+<script src="/js/app.js?v=0.2.5"></script>
 
 
 
-  
-<script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"model":{"jsonPath":"/live2dw/assets/shizuku.model.json"},"display":{"position":"left","width":200,"height":400},"mobile":{"show":false},"log":false,"pluginJsPath":"lib/","pluginModelPath":"assets/","pluginRootPath":"live2dw/","tagMode":false});</script></body>
+
+</body>
 </html>

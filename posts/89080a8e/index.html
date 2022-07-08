@@ -1,817 +1,593 @@
+
+
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
-<meta name="theme-color" content="#222">
-<meta name="generator" content="Hexo 5.4.0">
-  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="/images/avatar.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="/images/avatar.png">
-  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+<meta name="theme-color" content="#FFF">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
 
-<link rel="stylesheet" href="/css/main.css">
+<link rel="icon" type="image/ico" sizes="32x32" href="/images/favicon.ico">
+  <meta http-equiv="Cache-Control" content="no-transform">
+  <meta http-equiv="Cache-Control" content="no-siteapp">
 
 
-<link rel="stylesheet" href="/lib/font-awesome/css/all.min.css">
-  <link rel="stylesheet" href="/lib/pace/pace-theme-mac-osx.min.css">
-  <script src="/lib/pace/pace.min.js"></script>
+<link rel="alternate" type="application/rss+xml" title="JIN MAO 's Blog" href="https://smile1231.github.io/rss.xml" />
+<link rel="alternate" type="application/atom+xml" title="JIN MAO 's Blog" href="https://smile1231.github.io/atom.xml" />
+<link rel="alternate" type="application/json" title="JIN MAO 's Blog" href="https://smile1231.github.io/feed.json" />
 
-<script id="hexo-configurations">
-    var NexT = window.NexT || {};
-    var CONFIG = {"hostname":"smile1231.github.io","root":"/","scheme":"Pisces","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":true,"show_result":true,"style":"mac"},"back2top":{"enable":true,"sidebar":false,"scrollpercent":true},"bookmark":{"enable":true,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":true,"lazyload":true,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
-  </script>
+<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Mulish:300,300italic,400,400italic,700,700italic%7CFredericka%20the%20Great:300,300italic,400,400italic,700,700italic%7CNoto%20Serif%20JP:300,300italic,400,400italic,700,700italic%7CNoto%20Serif%20SC:300,300italic,400,400italic,700,700italic%7CInconsolata:300,300italic,400,400italic,700,700italic&display=swap&subset=latin,latin-ext">
 
-  <meta name="description" content="Spring Bean的生命周期大致流程： 本文将从以下两方面去帮助理解 Bean 的生命周期：">
-<meta property="og:type" content="article">
-<meta property="og:title" content="Spring Bean的生命周期">
-<meta property="og:url" content="https://smile1231.github.io/posts/89080a8e/index.html">
-<meta property="og:site_name" content="JIN MAO &#39;s Blog">
-<meta property="og:description" content="Spring Bean的生命周期大致流程： 本文将从以下两方面去帮助理解 Bean 的生命周期：">
-<meta property="og:locale" content="en_US">
-<meta property="article:published_time" content="2022-02-15T14:34:55.000Z">
-<meta property="article:modified_time" content="2022-02-16T12:59:00.238Z">
-<meta property="article:author" content="JIN Mao">
-<meta property="article:tag" content="Java面试">
-<meta property="article:tag" content="Spring">
-<meta name="twitter:card" content="summary">
+<link rel="stylesheet" href="/css/app.css?v=0.2.5">
+
+  
+  <meta name="keywords" content="Java面试,Spring" />
+
 
 <link rel="canonical" href="https://smile1231.github.io/posts/89080a8e/">
 
 
-<script id="page-configurations">
-  // https://hexo.io/docs/variables.html
-  CONFIG.page = {
-    sidebar: "",
-    isHome : false,
-    isPost : true,
-    lang   : 'en'
-  };
-</script>
 
-  <title>Spring Bean的生命周期 | JIN MAO 's Blog</title>
-  
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-FWV5496QFL"></script>
-    <script>
-      if (CONFIG.hostname === location.hostname) {
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-        gtag('config', 'G-FWV5496QFL');
-      }
-    </script>
-
-
-
-
-
-
-  <noscript>
-  <style>
-  .use-motion .brand,
-  .use-motion .menu-item,
-  .sidebar-inner,
-  .use-motion .post-block,
-  .use-motion .pagination,
-  .use-motion .comments,
-  .use-motion .post-header,
-  .use-motion .post-body,
-  .use-motion .collection-header { opacity: initial; }
-
-  .use-motion .site-title,
-  .use-motion .site-subtitle {
-    opacity: initial;
-    top: initial;
-  }
-
-  .use-motion .logo-line-before i { left: initial; }
-  .use-motion .logo-line-after i { right: initial; }
-  </style>
-</noscript>
-
-<link rel="alternate" href="/atom.xml" title="JIN MAO 's Blog" type="application/atom+xml">
-</head>
-
+  <title>
+Spring Bean的生命周期 - Spring - Java面试 |
+Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
+<meta name="generator" content="Hexo 5.4.0"></head>
 <body itemscope itemtype="http://schema.org/WebPage">
-  <div class="container use-motion">
-    <div class="headband"></div>
-      <!-- <a target="_blank" rel="noopener" href="https://github.com/Smile1231/StudyRepository"><img loading="lazy" width="149" height="149" src="https://github.blog/wp-content/uploads/2008/12/forkme_right_gray_6d6d6d.png?resize=149%2C149" class="attachment-full size-full" alt="Fork me on GitHub" data-recalc-dims="1"></a> -->
-    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
-      <div class="header-inner"><div class="site-brand-container">
-  <div class="site-nav-toggle">
-    <div class="toggle" aria-label="Toggle navigation bar">
-      <span class="toggle-line toggle-line-first"></span>
-      <span class="toggle-line toggle-line-middle"></span>
-      <span class="toggle-line toggle-line-last"></span>
-    </div>
-  </div>
-
-  <div class="site-meta">
-
-    <a href="/" class="brand" rel="start">
-      <span class="logo-line-before"><i></i></span>
-      <h1 class="site-title">JIN MAO 's Blog</h1>
-      <span class="logo-line-after"><i></i></span>
-    </a>
-      <p class="site-subtitle" itemprop="description">got windy(起风了)</p>
-  </div>
-
-  <div class="site-nav-right">
-    <div class="toggle popup-trigger">
-        <i class="fa fa-search fa-fw fa-lg"></i>
-    </div>
-  </div>
-</div>
-
-
-
-
-<nav class="site-nav">
-  <ul id="menu" class="main-menu menu">
-        <li class="menu-item menu-item-home">
-
-    <a href="/" rel="section"><i class="fa fa-home fa-fw"></i>Home</a>
-
-  </li>
-        <li class="menu-item menu-item-about">
-
-    <a href="/about/" rel="section"><i class="fa fa-user fa-fw"></i>About</a>
-
-  </li>
-        <li class="menu-item menu-item-tags">
-
-    <a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>Tags<span class="badge">97</span></a>
-
-  </li>
-        <li class="menu-item menu-item-categories">
-
-    <a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>Categories<span class="badge">70</span></a>
-
-  </li>
-        <li class="menu-item menu-item-archives">
-
-    <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>Archives<span class="badge">133</span></a>
-
-  </li>
-      <li class="menu-item menu-item-search">
-        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>Search
-        </a>
-      </li>
-  </ul>
-</nav>
-
-
-
-  <div class="search-pop-overlay">
-    <div class="popup search-popup">
-        <div class="search-header">
-  <span class="search-icon">
-    <i class="fa fa-search"></i>
-  </span>
-  <div class="search-input-container">
-    <input autocomplete="off" autocapitalize="off"
-           placeholder="Searching..." spellcheck="false"
-           type="search" class="search-input">
-  </div>
-  <span class="popup-btn-close">
-    <i class="fa fa-times-circle"></i>
-  </span>
-</div>
-<div id="search-result">
-  <div id="no-result">
-    <i class="fa fa-spinner fa-pulse fa-5x fa-fw"></i>
-  </div>
-</div>
-
-    </div>
-  </div>
-
-</div>
-    </header>
-
-    
-  <div class="back-to-top">
-    <i class="fa fa-arrow-up"></i>
-    <span>0%</span>
-  </div>
-  <div class="reading-progress-bar"></div>
-  <a role="button" class="book-mark-link book-mark-link-fixed"></a>
-
-
-    <main class="main">
-      <div class="main-inner">
-        <div class="content-wrap">
-          
-
-            <div class="post-block animated fadeIn">
-              <h5 class="post-title" itemprop="name headline">
-                <a target="_blank" rel="noopener" href="https://github.com/smile1231" class="post-title-link" itemprop="url">Github Contribution Calendar</a>
-              </h5>
-              <div class="post-body animated fadeInDown" itemprop="articleBody">
-                <img style="width: 100%; margin-top: 30px;" src="https://ghchart.rshah.org/e77c8e/smile1231" alt="JinMao's Blue Github Chart" />
-              </div>
-            </div>
-          <div class="content post posts-expand">
-            
-
-    
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
-    <link itemprop="mainEntityOfPage" href="https://smile1231.github.io/posts/89080a8e/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.png">
-      <meta itemprop="name" content="JIN Mao">
-      <meta itemprop="description" content="">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="JIN MAO 's Blog">
-    </span>
-      <header class="post-header">
-        <h1 class="post-title" itemprop="name headline">
-          Spring Bean的生命周期
-        </h1>
-
-        <div class="post-meta">
-          
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">Posted on</span>
-
-              <time title="Created: 2022-02-15 22:34:55" itemprop="dateCreated datePublished" datetime="2022-02-15T22:34:55+08:00">2022-02-15</time>
-            </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="far fa-calendar-check"></i>
-                </span>
-                <span class="post-meta-item-text">Edited on</span>
-                <time title="Modified: 2022-02-16 20:59:00" itemprop="dateModified" datetime="2022-02-16T20:59:00+08:00">2022-02-16</time>
-              </span>
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-folder"></i>
-              </span>
-              <span class="post-meta-item-text">In</span>
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/Java%E9%9D%A2%E8%AF%95/" itemprop="url" rel="index"><span itemprop="name">Java面试</span></a>
-                </span>
-                  , 
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/Java%E9%9D%A2%E8%AF%95/Spring/" itemprop="url" rel="index"><span itemprop="name">Spring</span></a>
-                </span>
-            </span>
-
-          
-           <!-- <span class="post-meta-item" title="Views" id="busuanzi_container_page_pv" style="display: none;">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-eye"></i>
-              </span>
-              <span class="post-meta-item-text">Views: </span>
-              <span id="busuanzi_value_page_pv"></span>
-            </span> -->
-            <span>&emsp;</span><span class="post-meta-item-icon"><i class="fa fa-eye"></i></span>
-            <span class="post-meta-item-text">Views: </span>
-            <span id="busuanzi_value_page_pv"></span>
-  
-  <span class="post-meta-item">
-    
-      <span class="post-meta-item-icon">
-        <i class="far fa-comment"></i>
-      </span>
-      <span class="post-meta-item-text">Valine: </span>
-    
-    <a title="valine" href="/posts/89080a8e/#valine-comments" itemprop="discussionUrl">
-      <span class="post-comments-count valine-comment-count" data-xid="/posts/89080a8e/" itemprop="commentCount"></span>
-    </a>
-  </span>
-  
-  
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-        <h1 id="Spring-Bean的生命周期"><a href="#Spring-Bean的生命周期" class="headerlink" title="Spring Bean的生命周期"></a><code>Spring Bean</code>的生命周期</h1><p>大致流程：</p>
-<p>本文将从以下两方面去帮助理解 <code>Bean</code> 的生命周期：</p>
-<span id="more"></span>
-
-<ul>
-<li>生命周期的概要流程：对 <code>Bean</code> 的生命周期进行概括，并且结合代码来理解；</li>
-<li>扩展点的作用：详细介绍 <code>Bean</code> 生命周期中所涉及到的扩展点的作用。</li>
-</ul>
-<h2 id="生命周期的概要流程"><a href="#生命周期的概要流程" class="headerlink" title="生命周期的概要流程"></a>生命周期的概要流程</h2><p><code>Bean</code> 的生命周期概括起来就是 <code>4</code> 个阶段：</p>
-<ul>
-<li>实例化（<code>Instantiation</code>）</li>
-<li>属性赋值（<code>Populate</code>）</li>
-<li>初始化（<code>Initialization</code>）</li>
-<li>销毁（<code>Destruction</code>）</li>
-</ul>
-<ul>
-<li>实例化：第 <code>1</code> 步，实例化一个 <code>bean</code> 对象；</li>
-<li>属性赋值：第 <code>2</code> 步，为 <code>bean</code> 设置相关属性和依赖；</li>
-<li>初始化：第 <code>3~7</code> 步，步骤较多，其中第 <code>5、6</code> 步为初始化操作，第 <code>3、4</code> 步为在初始化前执行，第 <code>7</code> 步在初始化后执行，该阶段结束，才能被用户使用；</li>
-<li>销毁：第 <code>8~10</code>步，第<code>8</code>步不是真正意义上的销毁（还没使用呢），而是先在使用前注册了销毁的相关调用接口，为了后面第<code>9、10</code>步真正销毁 <code>bean</code> 时再执行相应的方法。</li>
-</ul>
-<p>下面我们结合代码来直观的看下，在 <code>doCreateBean()</code> 方法中能看到依次执行了这 <code>4</code> 个阶段：</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// AbstractAutowireCapableBeanFactory.java</span></span><br><span class="line"><span class="function"><span class="keyword">protected</span> Object <span class="title">doCreateBean</span><span class="params">(<span class="keyword">final</span> String beanName, <span class="keyword">final</span> RootBeanDefinition mbd, <span class="keyword">final</span> <span class="meta">@Nullable</span> Object[] args)</span></span></span><br><span class="line"><span class="function">    <span class="keyword">throws</span> BeanCreationException </span>&#123;</span><br><span class="line"> </span><br><span class="line">    <span class="comment">// 1. 实例化</span></span><br><span class="line">    BeanWrapper instanceWrapper = <span class="keyword">null</span>;</span><br><span class="line">    <span class="keyword">if</span> (instanceWrapper == <span class="keyword">null</span>) &#123;</span><br><span class="line">        instanceWrapper = createBeanInstance(beanName, mbd, args);</span><br><span class="line">    &#125;</span><br><span class="line">    </span><br><span class="line">    Object exposedObject = bean;</span><br><span class="line">    <span class="keyword">try</span> &#123;</span><br><span class="line">        <span class="comment">// 2. 属性赋值</span></span><br><span class="line">        populateBean(beanName, mbd, instanceWrapper);</span><br><span class="line">        <span class="comment">// 3. 初始化</span></span><br><span class="line">        exposedObject = initializeBean(beanName, exposedObject, mbd);</span><br><span class="line">    &#125;</span><br><span class="line"> </span><br><span class="line">    <span class="comment">// 4. 销毁-注册回调接口</span></span><br><span class="line">    <span class="keyword">try</span> &#123;</span><br><span class="line">        registerDisposableBeanIfNecessary(beanName, bean, mbd);</span><br><span class="line">    &#125;</span><br><span class="line"> </span><br><span class="line">    <span class="keyword">return</span> exposedObject;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<p>由于初始化包含了第 <code>3~7</code>步，较复杂，所以我们进到 <code>initializeBean()</code> 方法里具体看下其过程（注释的序号对应图中序号）：</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// AbstractAutowireCapableBeanFactory.java</span></span><br><span class="line"><span class="function"><span class="keyword">protected</span> Object <span class="title">initializeBean</span><span class="params">(<span class="keyword">final</span> String beanName, <span class="keyword">final</span> Object bean, <span class="meta">@Nullable</span> RootBeanDefinition mbd)</span> </span>&#123;</span><br><span class="line">    <span class="comment">// 3. 检查 Aware 相关接口并设置相关依赖</span></span><br><span class="line">    <span class="keyword">if</span> (System.getSecurityManager() != <span class="keyword">null</span>) &#123;</span><br><span class="line">        AccessController.doPrivileged((PrivilegedAction&lt;Object&gt;) () -&gt; &#123;</span><br><span class="line">            invokeAwareMethods(beanName, bean);</span><br><span class="line">            <span class="keyword">return</span> <span class="keyword">null</span>;</span><br><span class="line">        &#125;, getAccessControlContext());</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">else</span> &#123;</span><br><span class="line">        invokeAwareMethods(beanName, bean);</span><br><span class="line">    &#125;</span><br><span class="line"> </span><br><span class="line">    <span class="comment">// 4. BeanPostProcessor 前置处理</span></span><br><span class="line">    Object wrappedBean = bean;</span><br><span class="line">    <span class="keyword">if</span> (mbd == <span class="keyword">null</span> || !mbd.isSynthetic()) &#123;</span><br><span class="line">        wrappedBean = applyBeanPostProcessorsBeforeInitialization(wrappedBean, beanName);</span><br><span class="line">    &#125;</span><br><span class="line"> </span><br><span class="line">    <span class="comment">// 5. 若实现 InitializingBean 接口，调用 afterPropertiesSet() 方法</span></span><br><span class="line">    <span class="comment">// 6. 若配置自定义的 init-method方法，则执行</span></span><br><span class="line">    <span class="keyword">try</span> &#123;</span><br><span class="line">        invokeInitMethods(beanName, wrappedBean, mbd);</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">catch</span> (Throwable ex) &#123;</span><br><span class="line">        <span class="keyword">throw</span> <span class="keyword">new</span> BeanCreationException(</span><br><span class="line">            (mbd != <span class="keyword">null</span> ? mbd.getResourceDescription() : <span class="keyword">null</span>),</span><br><span class="line">            beanName, <span class="string">&quot;Invocation of init method failed&quot;</span>, ex);</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="comment">// 7. BeanPostProceesor 后置处理</span></span><br><span class="line">    <span class="keyword">if</span> (mbd == <span class="keyword">null</span> || !mbd.isSynthetic()) &#123;</span><br><span class="line">        wrappedBean = applyBeanPostProcessorsAfterInitialization(wrappedBean, beanName);</span><br><span class="line">    &#125;</span><br><span class="line"> </span><br><span class="line">    <span class="keyword">return</span> wrappedBean;</span><br><span class="line">&#125;</span><br><span class="line">```java</span><br><span class="line"><span class="comment">// AbstractAutowireCapableBeanFactory.java</span></span><br><span class="line"><span class="function"><span class="keyword">protected</span> Object <span class="title">initializeBean</span><span class="params">(<span class="keyword">final</span> String beanName, <span class="keyword">final</span> Object bean, <span class="meta">@Nullable</span> RootBeanDefinition mbd)</span> </span>&#123;</span><br><span class="line">    <span class="comment">// 3. 检查 Aware 相关接口并设置相关依赖</span></span><br><span class="line">    <span class="keyword">if</span> (System.getSecurityManager() != <span class="keyword">null</span>) &#123;</span><br><span class="line">        AccessController.doPrivileged((PrivilegedAction&lt;Object&gt;) () -&gt; &#123;</span><br><span class="line">            invokeAwareMethods(beanName, bean);</span><br><span class="line">            <span class="keyword">return</span> <span class="keyword">null</span>;</span><br><span class="line">        &#125;, getAccessControlContext());</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">else</span> &#123;</span><br><span class="line">        invokeAwareMethods(beanName, bean);</span><br><span class="line">    &#125;</span><br><span class="line"> </span><br><span class="line">    <span class="comment">// 4. BeanPostProcessor 前置处理</span></span><br><span class="line">    Object wrappedBean = bean;</span><br><span class="line">    <span class="keyword">if</span> (mbd == <span class="keyword">null</span> || !mbd.isSynthetic()) &#123;</span><br><span class="line">        wrappedBean = applyBeanPostProcessorsBeforeInitialization(wrappedBean, beanName);</span><br><span class="line">    &#125;</span><br><span class="line"> </span><br><span class="line">    <span class="comment">// 5. 若实现 InitializingBean 接口，调用 afterPropertiesSet() 方法</span></span><br><span class="line">    <span class="comment">// 6. 若配置自定义的 init-method方法，则执行</span></span><br><span class="line">    <span class="keyword">try</span> &#123;</span><br><span class="line">        invokeInitMethods(beanName, wrappedBean, mbd);</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">catch</span> (Throwable ex) &#123;</span><br><span class="line">        <span class="keyword">throw</span> <span class="keyword">new</span> BeanCreationException(</span><br><span class="line">            (mbd != <span class="keyword">null</span> ? mbd.getResourceDescription() : <span class="keyword">null</span>),</span><br><span class="line">            beanName, <span class="string">&quot;Invocation of init method failed&quot;</span>, ex);</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="comment">// 7. BeanPostProceesor 后置处理</span></span><br><span class="line">    <span class="keyword">if</span> (mbd == <span class="keyword">null</span> || !mbd.isSynthetic()) &#123;</span><br><span class="line">        wrappedBean = applyBeanPostProcessorsAfterInitialization(wrappedBean, beanName);</span><br><span class="line">    &#125;</span><br><span class="line"> </span><br><span class="line">    <span class="keyword">return</span> wrappedBean;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<p>在 <code>invokInitMethods()</code> 方法中会检查 <code>InitializingBean</code> 接口和 <code>init-method</code> 方法，销毁的过程也与其类似：</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// DisposableBeanAdapter.java</span></span><br><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">destroy</span><span class="params">()</span> </span>&#123;</span><br><span class="line">    <span class="comment">// 9. 若实现 DisposableBean 接口，则执行 destory()方法</span></span><br><span class="line">    <span class="keyword">if</span> (<span class="keyword">this</span>.invokeDisposableBean) &#123;</span><br><span class="line">        <span class="keyword">try</span> &#123;</span><br><span class="line">            <span class="keyword">if</span> (System.getSecurityManager() != <span class="keyword">null</span>) &#123;</span><br><span class="line">                AccessController.doPrivileged((PrivilegedExceptionAction&lt;Object&gt;) () -&gt; &#123;</span><br><span class="line">                    ((DisposableBean) <span class="keyword">this</span>.bean).destroy();</span><br><span class="line">                    <span class="keyword">return</span> <span class="keyword">null</span>;</span><br><span class="line">                &#125;, <span class="keyword">this</span>.acc);</span><br><span class="line">            &#125;</span><br><span class="line">            <span class="keyword">else</span> &#123;</span><br><span class="line">                ((DisposableBean) <span class="keyword">this</span>.bean).destroy();</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    </span><br><span class="line">	<span class="comment">// 10. 若配置自定义的 detory-method 方法，则执行</span></span><br><span class="line">    <span class="keyword">if</span> (<span class="keyword">this</span>.destroyMethod != <span class="keyword">null</span>) &#123;</span><br><span class="line">        invokeCustomDestroyMethod(<span class="keyword">this</span>.destroyMethod);</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">else</span> <span class="keyword">if</span> (<span class="keyword">this</span>.destroyMethodName != <span class="keyword">null</span>) &#123;</span><br><span class="line">        Method methodToInvoke = determineDestroyMethod(<span class="keyword">this</span>.destroyMethodName);</span><br><span class="line">        <span class="keyword">if</span> (methodToInvoke != <span class="keyword">null</span>) &#123;</span><br><span class="line">            invokeCustomDestroyMethod(ClassUtils.getInterfaceMethodIfPossible(methodToInvoke));</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br></pre></td></tr></table></figure>
-<p>从 <code>Spring</code> 的源码我们可以直观的看到其执行过程，而我们记忆其过程便可以从这 <code>4</code> 个阶段出发，实例化、属性赋值、初始化、销毁。其中细节较多的便是初始化，涉及了 <code>Aware、BeanPostProcessor、InitializingBean、init-method</code> 的概念。</p>
-<p><a target="_blank" rel="noopener" href="https://blog.csdn.net/zl1zl2zl3/article/details/105044954">拓展点讲解</a></p>
-
-
-      <div>
-        
-          <div>
-    
-        <div style="text-align:center;color: #636363;font-size:14px;letter-spacing: 10px">This article is over<i class="fa fa-bell"></i>thank you for reading</div>
-    
-</div>
-        
+  <div id="loading">
+    <div class="cat">
+      <div class="body"></div>
+      <div class="head">
+        <div class="face"></div>
+      </div>
+      <div class="foot">
+        <div class="tummy-end"></div>
+        <div class="bottom"></div>
+        <div class="legs left"></div>
+        <div class="legs right"></div>
+      </div>
+      <div class="paw">
+        <div class="hands left"></div>
+        <div class="hands right"></div>
       </div>
     </div>
+  </div>
+  <div id="container">
+    <header id="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="inner">
+        <div id="brand">
+          <div class="pjax">
+          
+  <h1 itemprop="name headline">Spring Bean的生命周期
+  </h1>
+  
+<div class="meta">
+  <span class="item" title="Created: 2022-02-15 22:34:55">
+    <span class="icon">
+      <i class="ic i-calendar"></i>
+    </span>
+    <span class="text">Posted on</span>
+    <time itemprop="dateCreated datePublished" datetime="2022-02-15T22:34:55+08:00">2022-02-15</time>
+  </span>
+  <span class="item" title="Symbols count in article">
+    <span class="icon">
+      <i class="ic i-pen"></i>
+    </span>
+    <span class="text">Symbols count in article</span>
+    <span>4.4k</span>
+    <span class="text">words</span>
+  </span>
+  <span class="item" title="Reading time">
+    <span class="icon">
+      <i class="ic i-clock"></i>
+    </span>
+    <span class="text">Reading time</span>
+    <span>4 mins.</span>
+  </span>
+</div>
 
+
+          </div>
+        </div>
+        <nav id="nav">
+  <div class="inner">
+    <div class="toggle">
+      <div class="lines" aria-label="Toggle navigation bar">
+        <span class="line"></span>
+        <span class="line"></span>
+        <span class="line"></span>
+      </div>
+    </div>
+    <ul class="menu">
+      <li class="item title"><a href="/" rel="start">Jin Mao when to get rich ?</a></li>
+    </ul>
+    <ul class="right">
+      <li class="item theme">
+        <i class="ic i-sun"></i>
+      </li>
+      <li class="item search">
+        <i class="ic i-search"></i>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+      </div>
+      <div id="imgs" class="pjax">
+        <ul>
+          <li class="item" data-background-image="https://tva1.sinaimg.cn/large/6833939bly1gicmnywqgpj20zk0m8dwx.jpg"></li>
+          <li class="item" data-background-image="https://tva1.sinaimg.cn/large/6833939bly1giciszlczyj20zk0m816d.jpg"></li>
+          <li class="item" data-background-image="https://tva1.sinaimg.cn/large/6833939bly1giph4lm9i7j20zk0m84qp.jpg"></li>
+          <li class="item" data-background-image="https://tva1.sinaimg.cn/large/6833939bly1giclimtf7dj20zk0m8qav.jpg"></li>
+          <li class="item" data-background-image="https://tva1.sinaimg.cn/large/6833939bly1gipeybxm1pj20zk0m8niv.jpg"></li>
+          <li class="item" data-background-image="https://tva1.sinaimg.cn/large/6833939bly1gicm07ih54j20zk0m84qp.jpg"></li>
+        </ul>
+      </div>
+    </header>
+    <div id="waves">
+      <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+        <defs>
+          <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+        </defs>
+        <g class="parallax">
+          <use xlink:href="#gentle-wave" x="48" y="0" />
+          <use xlink:href="#gentle-wave" x="48" y="3" />
+          <use xlink:href="#gentle-wave" x="48" y="5" />
+          <use xlink:href="#gentle-wave" x="48" y="7" />
+        </g>
+      </svg>
+    </div>
+    <main>
+      <div class="inner">
+        <div id="main" class="pjax">
+          
+  <div class="article wrap">
     
+<div class="breadcrumb" itemscope itemtype="https://schema.org/BreadcrumbList">
+<i class="ic i-home"></i>
+<span><a href="/">Home</a></span><i class="ic i-angle-right"></i>
+<span  itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem"><a href="/categories/Java%E9%9D%A2%E8%AF%95/" itemprop="item" rel="index" title="In Java面试"><span itemprop="name">Java面试</span></a>
+<meta itemprop="position" content="1" /></span>
+<i class="ic i-angle-right"></i>
+<span  class="current" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem"><a href="/categories/Java%E9%9D%A2%E8%AF%95/Spring/" itemprop="item" rel="index" title="In Spring"><span itemprop="name">Spring</span></a>
+<meta itemprop="position" content="2" /></span>
+</div>
+
+    <article itemscope itemtype="http://schema.org/Article" class="post block" lang="en">
+  <link itemprop="mainEntityOfPage" href="https://smile1231.github.io/posts/89080a8e/">
+
+  <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <meta itemprop="image" content="/images/avatar.png">
+    <meta itemprop="name" content="JIN Mao">
+    <meta itemprop="description" content="got windy(起风了), ">
+  </span>
+
+  <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+    <meta itemprop="name" content="JIN MAO 's Blog">
+  </span>
+
+  <div class="body md" itemprop="articleBody">
     
-    
+
+    <h1 id="spring-bean的生命周期"><a class="markdownIt-Anchor" href="#spring-bean的生命周期">#</a>  <code>Spring Bean</code>  的生命周期</h1>
+<p>大致流程：</p>
+<p>本文将从以下两方面去帮助理解  <code>Bean</code>  的生命周期：</p>
+<span id="more"></span>
+<ul>
+<li>生命周期的概要流程：对  <code>Bean</code>  的生命周期进行概括，并且结合代码来理解；</li>
+<li>扩展点的作用：详细介绍  <code>Bean</code>  生命周期中所涉及到的扩展点的作用。</li>
+</ul>
+<h2 id="生命周期的概要流程"><a class="markdownIt-Anchor" href="#生命周期的概要流程">#</a> 生命周期的概要流程</h2>
+<p><code>Bean</code>  的生命周期概括起来就是  <code>4</code>  个阶段：</p>
+<ul>
+<li>
+<p>实例化（ <code>Instantiation</code> ）</p>
+</li>
+<li>
+<p>属性赋值（ <code>Populate</code> ）</p>
+</li>
+<li>
+<p>初始化（ <code>Initialization</code> ）</p>
+</li>
+<li>
+<p>销毁（ <code>Destruction</code> ）</p>
+</li>
+<li>
+<p>实例化：第  <code>1</code>  步，实例化一个  <code>bean</code>  对象；</p>
+</li>
+<li>
+<p>属性赋值：第  <code>2</code>  步，为  <code>bean</code>  设置相关属性和依赖；</p>
+</li>
+<li>
+<p>初始化：第  <code>3~7</code>  步，步骤较多，其中第  <code>5、6</code>  步为初始化操作，第  <code>3、4</code>  步为在初始化前执行，第  <code>7</code>  步在初始化后执行，该阶段结束，才能被用户使用；</p>
+</li>
+<li>
+<p>销毁：第  <code>8~10</code>  步，第 <code>8</code>  步不是真正意义上的销毁（还没使用呢），而是先在使用前注册了销毁的相关调用接口，为了后面第 <code>9、10</code>  步真正销毁  <code>bean</code>  时再执行相应的方法。</p>
+</li>
+</ul>
+<p>下面我们结合代码来直观的看下，在  <code>doCreateBean()</code>  方法中能看到依次执行了这  <code>4</code>  个阶段：</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// AbstractAutowireCapableBeanFactory.java</span></span><br><span class="line"><span class="function"><span class="keyword">protected</span> Object <span class="title">doCreateBean</span><span class="params">(<span class="keyword">final</span> String beanName, <span class="keyword">final</span> RootBeanDefinition mbd, <span class="keyword">final</span> <span class="meta">@Nullable</span> Object[] args)</span></span></span><br><span class="line"><span class="function">    <span class="keyword">throws</span> BeanCreationException </span>&#123;</span><br><span class="line"> </span><br><span class="line">    <span class="comment">// 1. 实例化</span></span><br><span class="line">    BeanWrapper instanceWrapper = <span class="keyword">null</span>;</span><br><span class="line">    <span class="keyword">if</span> (instanceWrapper == <span class="keyword">null</span>) &#123;</span><br><span class="line">        instanceWrapper = createBeanInstance(beanName, mbd, args);</span><br><span class="line">    &#125;</span><br><span class="line">    </span><br><span class="line">    Object exposedObject = bean;</span><br><span class="line">    <span class="keyword">try</span> &#123;</span><br><span class="line">        <span class="comment">// 2. 属性赋值</span></span><br><span class="line">        populateBean(beanName, mbd, instanceWrapper);</span><br><span class="line">        <span class="comment">// 3. 初始化</span></span><br><span class="line">        exposedObject = initializeBean(beanName, exposedObject, mbd);</span><br><span class="line">    &#125;</span><br><span class="line"> </span><br><span class="line">    <span class="comment">// 4. 销毁-注册回调接口</span></span><br><span class="line">    <span class="keyword">try</span> &#123;</span><br><span class="line">        registerDisposableBeanIfNecessary(beanName, bean, mbd);</span><br><span class="line">    &#125;</span><br><span class="line"> </span><br><span class="line">    <span class="keyword">return</span> exposedObject;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>由于初始化包含了第  <code>3~7</code>  步，较复杂，所以我们进到  <code>initializeBean()</code>  方法里具体看下其过程（注释的序号对应图中序号）：</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// AbstractAutowireCapableBeanFactory.java</span></span><br><span class="line"><span class="function"><span class="keyword">protected</span> Object <span class="title">initializeBean</span><span class="params">(<span class="keyword">final</span> String beanName, <span class="keyword">final</span> Object bean, <span class="meta">@Nullable</span> RootBeanDefinition mbd)</span> </span>&#123;</span><br><span class="line">    <span class="comment">// 3. 检查 Aware 相关接口并设置相关依赖</span></span><br><span class="line">    <span class="keyword">if</span> (System.getSecurityManager() != <span class="keyword">null</span>) &#123;</span><br><span class="line">        AccessController.doPrivileged((PrivilegedAction&lt;Object&gt;) () -&gt; &#123;</span><br><span class="line">            invokeAwareMethods(beanName, bean);</span><br><span class="line">            <span class="keyword">return</span> <span class="keyword">null</span>;</span><br><span class="line">        &#125;, getAccessControlContext());</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">else</span> &#123;</span><br><span class="line">        invokeAwareMethods(beanName, bean);</span><br><span class="line">    &#125;</span><br><span class="line"> </span><br><span class="line">    <span class="comment">// 4. BeanPostProcessor 前置处理</span></span><br><span class="line">    Object wrappedBean = bean;</span><br><span class="line">    <span class="keyword">if</span> (mbd == <span class="keyword">null</span> || !mbd.isSynthetic()) &#123;</span><br><span class="line">        wrappedBean = applyBeanPostProcessorsBeforeInitialization(wrappedBean, beanName);</span><br><span class="line">    &#125;</span><br><span class="line"> </span><br><span class="line">    <span class="comment">// 5. 若实现 InitializingBean 接口，调用 afterPropertiesSet() 方法</span></span><br><span class="line">    <span class="comment">// 6. 若配置自定义的 init-method方法，则执行</span></span><br><span class="line">    <span class="keyword">try</span> &#123;</span><br><span class="line">        invokeInitMethods(beanName, wrappedBean, mbd);</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">catch</span> (Throwable ex) &#123;</span><br><span class="line">        <span class="keyword">throw</span> <span class="keyword">new</span> BeanCreationException(</span><br><span class="line">            (mbd != <span class="keyword">null</span> ? mbd.getResourceDescription() : <span class="keyword">null</span>),</span><br><span class="line">            beanName, <span class="string">&quot;Invocation of init method failed&quot;</span>, ex);</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="comment">// 7. BeanPostProceesor 后置处理</span></span><br><span class="line">    <span class="keyword">if</span> (mbd == <span class="keyword">null</span> || !mbd.isSynthetic()) &#123;</span><br><span class="line">        wrappedBean = applyBeanPostProcessorsAfterInitialization(wrappedBean, beanName);</span><br><span class="line">    &#125;</span><br><span class="line"> </span><br><span class="line">    <span class="keyword">return</span> wrappedBean;</span><br><span class="line">&#125;</span><br><span class="line">```java</span><br><span class="line"><span class="comment">// AbstractAutowireCapableBeanFactory.java</span></span><br><span class="line"><span class="function"><span class="keyword">protected</span> Object <span class="title">initializeBean</span><span class="params">(<span class="keyword">final</span> String beanName, <span class="keyword">final</span> Object bean, <span class="meta">@Nullable</span> RootBeanDefinition mbd)</span> </span>&#123;</span><br><span class="line">    <span class="comment">// 3. 检查 Aware 相关接口并设置相关依赖</span></span><br><span class="line">    <span class="keyword">if</span> (System.getSecurityManager() != <span class="keyword">null</span>) &#123;</span><br><span class="line">        AccessController.doPrivileged((PrivilegedAction&lt;Object&gt;) () -&gt; &#123;</span><br><span class="line">            invokeAwareMethods(beanName, bean);</span><br><span class="line">            <span class="keyword">return</span> <span class="keyword">null</span>;</span><br><span class="line">        &#125;, getAccessControlContext());</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">else</span> &#123;</span><br><span class="line">        invokeAwareMethods(beanName, bean);</span><br><span class="line">    &#125;</span><br><span class="line"> </span><br><span class="line">    <span class="comment">// 4. BeanPostProcessor 前置处理</span></span><br><span class="line">    Object wrappedBean = bean;</span><br><span class="line">    <span class="keyword">if</span> (mbd == <span class="keyword">null</span> || !mbd.isSynthetic()) &#123;</span><br><span class="line">        wrappedBean = applyBeanPostProcessorsBeforeInitialization(wrappedBean, beanName);</span><br><span class="line">    &#125;</span><br><span class="line"> </span><br><span class="line">    <span class="comment">// 5. 若实现 InitializingBean 接口，调用 afterPropertiesSet() 方法</span></span><br><span class="line">    <span class="comment">// 6. 若配置自定义的 init-method方法，则执行</span></span><br><span class="line">    <span class="keyword">try</span> &#123;</span><br><span class="line">        invokeInitMethods(beanName, wrappedBean, mbd);</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">catch</span> (Throwable ex) &#123;</span><br><span class="line">        <span class="keyword">throw</span> <span class="keyword">new</span> BeanCreationException(</span><br><span class="line">            (mbd != <span class="keyword">null</span> ? mbd.getResourceDescription() : <span class="keyword">null</span>),</span><br><span class="line">            beanName, <span class="string">&quot;Invocation of init method failed&quot;</span>, ex);</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="comment">// 7. BeanPostProceesor 后置处理</span></span><br><span class="line">    <span class="keyword">if</span> (mbd == <span class="keyword">null</span> || !mbd.isSynthetic()) &#123;</span><br><span class="line">        wrappedBean = applyBeanPostProcessorsAfterInitialization(wrappedBean, beanName);</span><br><span class="line">    &#125;</span><br><span class="line"> </span><br><span class="line">    <span class="keyword">return</span> wrappedBean;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>在  <code>invokInitMethods()</code>  方法中会检查  <code>InitializingBean</code>  接口和  <code>init-method</code>  方法，销毁的过程也与其类似：</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// DisposableBeanAdapter.java</span></span><br><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">destroy</span><span class="params">()</span> </span>&#123;</span><br><span class="line">    <span class="comment">// 9. 若实现 DisposableBean 接口，则执行 destory()方法</span></span><br><span class="line">    <span class="keyword">if</span> (<span class="keyword">this</span>.invokeDisposableBean) &#123;</span><br><span class="line">        <span class="keyword">try</span> &#123;</span><br><span class="line">            <span class="keyword">if</span> (System.getSecurityManager() != <span class="keyword">null</span>) &#123;</span><br><span class="line">                AccessController.doPrivileged((PrivilegedExceptionAction&lt;Object&gt;) () -&gt; &#123;</span><br><span class="line">                    ((DisposableBean) <span class="keyword">this</span>.bean).destroy();</span><br><span class="line">                    <span class="keyword">return</span> <span class="keyword">null</span>;</span><br><span class="line">                &#125;, <span class="keyword">this</span>.acc);</span><br><span class="line">            &#125;</span><br><span class="line">            <span class="keyword">else</span> &#123;</span><br><span class="line">                ((DisposableBean) <span class="keyword">this</span>.bean).destroy();</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    </span><br><span class="line">	<span class="comment">// 10. 若配置自定义的 detory-method 方法，则执行</span></span><br><span class="line">    <span class="keyword">if</span> (<span class="keyword">this</span>.destroyMethod != <span class="keyword">null</span>) &#123;</span><br><span class="line">        invokeCustomDestroyMethod(<span class="keyword">this</span>.destroyMethod);</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">else</span> <span class="keyword">if</span> (<span class="keyword">this</span>.destroyMethodName != <span class="keyword">null</span>) &#123;</span><br><span class="line">        Method methodToInvoke = determineDestroyMethod(<span class="keyword">this</span>.destroyMethodName);</span><br><span class="line">        <span class="keyword">if</span> (methodToInvoke != <span class="keyword">null</span>) &#123;</span><br><span class="line">            invokeCustomDestroyMethod(ClassUtils.getInterfaceMethodIfPossible(methodToInvoke));</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br></pre></td></tr></table></figure>
+<p>从  <code>Spring</code>  的源码我们可以直观的看到其执行过程，而我们记忆其过程便可以从这  <code>4</code>  个阶段出发，实例化、属性赋值、初始化、销毁。其中细节较多的便是初始化，涉及了  <code>Aware、BeanPostProcessor、InitializingBean、init-method</code>  的概念。</p>
+<p><span class="exturl" data-url="aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3psMXpsMnpsMy9hcnRpY2xlL2RldGFpbHMvMTA1MDQ0OTU0">拓展点讲解</span></p>
+
+      <div class="tags">
+          <a href="/tags/Java%E9%9D%A2%E8%AF%95/" rel="tag"><i class="ic i-tag"></i> Java面试</a>
+          <a href="/tags/Spring/" rel="tag"><i class="ic i-tag"></i> Spring</a>
+      </div>
+  </div>
+
+   <footer>
+
+    <div class="meta">
+  <span class="item">
+    <span class="icon">
+      <i class="ic i-calendar-check"></i>
+    </span>
+    <span class="text">Edited on</span>
+    <time title="Modified: 2022-02-16 20:59:00" itemprop="dateModified" datetime="2022-02-16T20:59:00+08:00">2022-02-16</time>
+  </span>
+  <span id="posts/89080a8e/" class="item leancloud_visitors" data-flag-title="Spring Bean的生命周期" title="Views">
+      <span class="icon">
+        <i class="ic i-eye"></i>
+      </span>
+      <span class="text">Views</span>
+      <span class="leancloud-visitors-count"></span>
+      <span class="text">times</span>
+  </span>
+</div>
+
       
-  <div class="popular-posts-header">Related Posts</div>
-  <ul class="popular-posts">
-    <li class="popular-posts-item">
-      <div class="popular-posts-title"><a href="/posts/dfdc2005/" rel="bookmark">JDK动态代理原理剖析(简洁版)</a></div>
-    </li>
-    <li class="popular-posts-item">
-      <div class="popular-posts-title"><a href="/posts/56be7cc9/" rel="bookmark">关于Linux排查问题命令</a></div>
-    </li>
-    <li class="popular-posts-item">
-      <div class="popular-posts-title"><a href="/posts/a72f470b/" rel="bookmark">关于JVM常用参数</a></div>
-    </li>
-    <li class="popular-posts-item">
-      <div class="popular-posts-title"><a href="/posts/de5e33d7/" rel="bookmark">关于JDK中的Arrays.sort排序方法</a></div>
-    </li>
-    <li class="popular-posts-item">
-      <div class="popular-posts-title"><a href="/posts/1599bffe/" rel="bookmark">归并排序</a></div>
-    </li>
-  </ul>
 
-        
-
-<div>
-<ul class="post-copyright">
-  <li class="post-copyright-author">
-    <strong>Post author:  </strong>JIN Mao
+<div id="copyright">
+<ul>
+  <li class="author">
+    <strong>Post author:  </strong>JIN Mao <i class="ic i-at"><em>@</em></i>JIN MAO 's Blog
   </li>
-  <li class="post-copyright-link">
+  <li class="link">
     <strong>Post link: </strong>
     <a href="https://smile1231.github.io/posts/89080a8e/" title="Spring Bean的生命周期">https://smile1231.github.io/posts/89080a8e/</a>
   </li>
-  <li class="post-copyright-license">
-    <strong>Copyright Notice:  </strong>All articles in this blog are licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/en" rel="noopener" target="_blank"><i class="fab fa-fw fa-creative-commons"></i>BY-NC-SA</a> unless stating additionally.
+  <li class="license">
+    <strong>Copyright Notice:  </strong>All articles in this blog are licensed under <span class="exturl" data-url="aHR0cHM6Ly9jcmVhdGl2ZWNvbW1vbnMub3JnL2xpY2Vuc2VzL2J5LW5jLXNhLzQuMC9kZWVkLnpo"><i class="ic i-creative-commons"><em>(CC)</em></i>BY-NC-SA</span> unless stating additionally.
   </li>
 </ul>
 </div>
 
+  </footer>
 
-      <footer class="post-footer">
-          
-          <div class="post-tags">
-              <a href="/tags/Java%E9%9D%A2%E8%AF%95/" rel="tag"><i class="fa fa-tag"></i> Java面试</a>
-              <a href="/tags/Spring/" rel="tag"><i class="fa fa-tag"></i> Spring</a>
-          </div>
+</article>
 
-        
-  <div class="post-widgets">
-    <div class="wp_rating">
-      <div id="wpac-rating"></div>
-    </div>
   </div>
+  
 
+<div class="post-nav">
+    <div class="item left">
+      
 
-        
-    <div class="post-nav">
-      <div class="post-nav-item">
-    <a href="/posts/31d0fffb/" rel="prev" title="Mybatis中#号和$号的区别">
-      <i class="fa fa-chevron-left"></i> Mybatis中#号和$号的区别
-    </a></div>
-      <div class="post-nav-item">
-    <a href="/posts/eec4b728/" rel="next" title="SpringBoot中如何优雅的使用多线程">
-      SpringBoot中如何优雅的使用多线程 <i class="fa fa-chevron-right"></i>
-    </a></div>
+  <a href="/posts/31d0fffb/" itemprop="url" rel="prev" data-background-image="https:&#x2F;&#x2F;tva1.sinaimg.cn&#x2F;mw690&#x2F;6833939bly1giclhpw3lwj20zk0m8gvw.jpg" title="Mybatis中#号和$号的区别">
+  <span class="type">Previous Post</span>
+  <span class="category"><i class="ic i-flag"></i> Mybatis</span>
+  <h3>Mybatis中#号和$号的区别</h3>
+  </a>
+
     </div>
-      </footer>
-    
-  </article>
+    <div class="item right">
+      
+
+  <a href="/posts/eec4b728/" itemprop="url" rel="next" data-background-image="https:&#x2F;&#x2F;tva1.sinaimg.cn&#x2F;mw690&#x2F;6833939bly1giclg5ms2rj20zk0m8u0x.jpg" title="SpringBoot中如何优雅的使用多线程">
+  <span class="type">Next Post</span>
+  <span class="category"><i class="ic i-flag"></i> SpringBoot</span>
+  <h3>SpringBoot中如何优雅的使用多线程</h3>
+  </a>
+
+    </div>
+</div>
+
   
-  
-  
+  <div class="wrap" id="comments"></div>
 
-
-
-          </div>
-          
-    <div class="comments" id="valine-comments"></div>
-
-<script>
-  window.addEventListener('tabs:register', () => {
-    let { activeClass } = CONFIG.comments;
-    if (CONFIG.comments.storage) {
-      activeClass = localStorage.getItem('comments_active') || activeClass;
-    }
-    if (activeClass) {
-      let activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
-      if (activeTab) {
-        activeTab.click();
-      }
-    }
-  });
-  if (CONFIG.comments.storage) {
-    window.addEventListener('tabs:click', event => {
-      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
-      let commentClass = event.target.classList[1];
-      localStorage.setItem('comments_active', commentClass);
-    });
-  }
-</script>
 
         </div>
+        <div id="sidebar">
           
+
+<div class="inner">
+
+  <div class="panels">
+    <div class="inner">
+      <div class="contents panel pjax" data-title="Contents">
+          <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#spring-bean%E7%9A%84%E7%94%9F%E5%91%BD%E5%91%A8%E6%9C%9F"><span class="toc-number">1.</span> <span class="toc-text">  Spring Bean  的生命周期</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%94%9F%E5%91%BD%E5%91%A8%E6%9C%9F%E7%9A%84%E6%A6%82%E8%A6%81%E6%B5%81%E7%A8%8B"><span class="toc-number">1.1.</span> <span class="toc-text"> 生命周期的概要流程</span></a></li></ol></li></ol>
+      </div>
+      <div class="related panel pjax" data-title="Related">
+        <ul>
+          <li class="active"><a href="/posts/89080a8e/" rel="bookmark" title="Spring Bean的生命周期">Spring Bean的生命周期</a></li>
+        </ul>
+      </div>
+      <div class="overview panel" data-title="Overview">
+        <div class="author" itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <img class="image" itemprop="image" alt="JIN Mao"
+      data-src="/images/avatar.png">
+  <p class="name" itemprop="name">JIN Mao</p>
+  <div class="description" itemprop="description"></div>
+</div>
+
+<nav class="state">
+    <div class="item posts">
+      <a href="/archives/">
+        <span class="count">134</span>
+        <span class="name">posts</span>
+      </a>
+    </div>
+    <div class="item categories">
+      <a href="/categories/">
+        <span class="count">70</span>
+        <span class="name">categories</span>
+      </a>
+    </div>
+    <div class="item tags">
+      <a href="/tags/">
+        <span class="count">98</span>
+        <span class="name">tags</span>
+      </a>
+    </div>
+</nav>
+
+<div class="social">
+      <span class="exturl item github" data-url="aHR0cHM6Ly9naXRodWIuY29tL3NtaWxlMTIzMQ==" title="https:&#x2F;&#x2F;github.com&#x2F;smile1231"><i class="ic i-github"></i></span>
+</div>
+
+<ul class="menu">
   
-  <div class="toggle sidebar-toggle">
-    <span class="toggle-line toggle-line-first"></span>
-    <span class="toggle-line toggle-line-middle"></span>
-    <span class="toggle-line toggle-line-last"></span>
+    
+  <li class="item">
+    <a href="/" rel="section"><i class="ic i-home"></i>Home</a>
+  </li>
+
+    
+  <li class="item">
+    <a href="/about/" rel="section"><i class="ic i-user"></i>About</a>
+  </li>
+
+        
+  <li class="item dropdown">
+      <a href="javascript:void(0);"><i class="ic i-feather"></i>Posts</a>
+    <ul class="submenu">
+
+        
+  <li class="item">
+    <a href="/archives/" rel="section"><i class="ic i-list-alt"></i>Archives</a>
+  </li>
+
+        
+  <li class="item">
+    <a href="/categories/" rel="section"><i class="ic i-th"></i>Categories</a>
+  </li>
+
+        
+  <li class="item">
+    <a href="/tags/" rel="section"><i class="ic i-tags"></i>Tags</a>
+  </li>
+
+  </ul>
+
+</ul>
+
+      </div>
+    </div>
   </div>
 
-  <aside class="sidebar">
-    <div class="sidebar-inner">
-    
-    
-    <!-- 霓虹灯时钟 -->
-    <div>
-    <svg style="height: 60px;">
-        <text id="time" text-anchor="middle" x="36%" y="80%" class="words words-1"></text>
-        <text id="time" text-anchor="middle" x="36%" y="80%" class="words words-2"></text>
-        <text id="time" text-anchor="middle" x="36%" y="80%" class="words words-3"></text>
-        <text id="time" text-anchor="middle" x="36%" y="80%" class="words words-4"></text>
-    </svg>
-</div>
-
-<script>
-function showtime(){
-    var noatime = new Date();
-    var h = noatime.getHours(),
-        m = noatime.getMinutes(),
-        s = noatime.getSeconds();
-    h=checktime(h);
-    m=checktime(m);
-    s=checktime(s);
-  return h+":"+m+":"+s;
-}
-
-function checktime(x){
-  if(x<10){
-    x="0"+x;
-  }
-  return x;
-}
-
-var div1=document.getElementsByTagName("text");
-setInterval(function(){
-  for (var i in div1){
-      div1[i].innerHTML=showtime();
-  }
-},1000);
-</script>
-
-<style>
-.words{
-    font-size: 50px;
-    font-weight: bold;
-    text-transform: uppercase;
-    fill: none;
-    stroke-width: 3px;
-    stroke-dasharray: 35,125;
-    animation-name: drawing;
-    animation-duration: 6s;
-    animation-iteration-count: infinite;
-    animation-timing-function: linear;
-}
-.words-1{
-    stroke: deepskyblue;
-    text-shadow: 0 0 15px deepskyblue;
-    animation-delay: -1.5s;
-}
-.words-2{
-    stroke: lightseagreen;
-    text-shadow: 0 0 15px lightseagreen;
-    animation-delay: -3s;
-}
-.words-3{
-    stroke: orange;
-    text-shadow: 0 0 15px orange;
-    animation-delay: -4.5s;
-}
-.words-4{
-    stroke: purple;
-    text-shadow: 0 0 15px purple;
-    animation-delay: -6s;
-}
-@keyframes drawing {
-    100%{
-        stroke-dashoffset: -160
-    }
-}
-</style>
-
-    
-      <!-- 起风了 -->
-      <!-- <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=86 src="//music.163.com/outchain/player?type=2&id=1901069794&auto=1&height=66"></iframe> -->
-      <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=86 src="//music.163.com/outchain/player?type=2&id=1927119724&auto=1&height=66"></iframe>
-
-      <ul class="sidebar-nav motion-element">
-        <li class="sidebar-nav-toc">
-          Table of Contents
-        </li>
-        <li class="sidebar-nav-overview">
-          Overview
-        </li>
-      </ul>
-
-      <!--noindex-->
-      <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Spring-Bean%E7%9A%84%E7%94%9F%E5%91%BD%E5%91%A8%E6%9C%9F"><span class="nav-number">1.</span> <span class="nav-text">Spring Bean的生命周期</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%94%9F%E5%91%BD%E5%91%A8%E6%9C%9F%E7%9A%84%E6%A6%82%E8%A6%81%E6%B5%81%E7%A8%8B"><span class="nav-number">1.1.</span> <span class="nav-text">生命周期的概要流程</span></a></li></ol></li></ol></div>
-      </div>
-      <!--/noindex-->
-
-      <div class="site-overview-wrap sidebar-panel">
-        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
-    <img class="site-author-image" itemprop="image" alt="JIN Mao"
-      src="/images/avatar.png">
-  <p class="site-author-name" itemprop="name">JIN Mao</p>
-  <div class="site-description" itemprop="description"></div>
-</div>
-<div class="site-state-wrap motion-element">
-  <nav class="site-state">
-      <div class="site-state-item site-state-posts">
-          <a href="/archives/">
-        
-          <span class="site-state-item-count">133</span>
-          <span class="site-state-item-name">posts</span>
-        </a>
-      </div>
-      <div class="site-state-item site-state-categories">
-            <a href="/categories/">
-          
-        <span class="site-state-item-count">70</span>
-        <span class="site-state-item-name">categories</span></a>
-      </div>
-      <div class="site-state-item site-state-tags">
-            <a href="/tags/">
-          
-        <span class="site-state-item-count">97</span>
-        <span class="site-state-item-name">tags</span></a>
-      </div>
-  </nav>
+  <ul id="quick">
+    <li class="prev pjax">
+        <a href="/posts/31d0fffb/" rel="prev" title="Previous Post"><i class="ic i-chevron-left"></i></a>
+    </li>
+    <li class="up"><i class="ic i-arrow-up"></i></li>
+    <li class="down"><i class="ic i-arrow-down"></i></li>
+    <li class="next pjax">
+        <a href="/posts/eec4b728/" rel="next" title="Next Post"><i class="ic i-chevron-right"></i></a>
+    </li>
+    <li class="percent"></li>
+  </ul>
 </div>
 
 
-
-      </div>
-
-  
-
-    </div>
-
-
-  </aside>
-  <div id="sidebar-dimmer"></div>
-
-
+        </div>
+        <div class="dimmer"></div>
       </div>
     </main>
-
-    <footer class="footer">
-      <div class="footer-inner">
-        
-
-        
-
-<div class="copyright">
-  
-  &copy; 
-  <span itemprop="copyrightYear">2022</span>
-  <span class="with-love">
-    <i class="fa fa-heart"></i>
-  </span>
-  <span class="author" itemprop="copyrightHolder">JIN Mao</span>
+    <footer id="footer">
+      <div class="inner">
+        <div class="widgets">
+          
+<div class="rpost pjax">
+  <h2>Random Posts</h2>
+  <ul>
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/LeetCode/" title="In LeetCode">LeetCode</a>
 </div>
-  <!--添加运行时间-->
-  <span id="sitetime"></span>
-  <script language=javascript>
-    function siteTime(){
-      window.setTimeout("siteTime()", 1000);
-      var seconds = 1000;
-      var minutes = seconds * 60;
-      var hours = minutes * 60;
-      var days = hours * 24;
-      var years = days * 365;
-      var today = new Date();
-      var todayYear = today.getFullYear();
-      var todayMonth = today.getMonth()+1;
-      var todayDate = today.getDate();
-      var todayHour = today.getHours();
-      var todayMinute = today.getMinutes();
-      var todaySecond = today.getSeconds();
-      /* 
-        Date.UTC() -- 返回date对象距世界标准时间(UTC)1970年1月1日午夜之间的毫秒数(时间戳)
-        year - 作为date对象的年份，为4位年份值
-        month - 0-11之间的整数，做为date对象的月份
-        day - 1-31之间的整数，做为date对象的天数
-        hours - 0(午夜24点)-23之间的整数，做为date对象的小时数
-        minutes - 0-59之间的整数，做为date对象的分钟数
-        seconds - 0-59之间的整数，做为date对象的秒数
-        microseconds - 0-999之间的整数，做为date对象的毫秒数
-      */
-      var t1 = Date.UTC(2021,11,11,00,00,00); //北京时间2018-2-13 00:00:00
-      var t2 = Date.UTC(todayYear,todayMonth,todayDate,todayHour,todayMinute,todaySecond);
-      var diff = t2-t1;
-      var diffYears = Math.floor(diff/years);
-      var diffDays = Math.floor((diff/days)-diffYears*365);
-      var diffHours = Math.floor((diff-(diffYears*365+diffDays)*days)/hours);
-      var diffMinutes = Math.floor((diff-(diffYears*365+diffDays)*days-diffHours*hours)/minutes);
-      var diffSeconds = Math.floor((diff-(diffYears*365+diffDays)*days-diffHours*hours-diffMinutes*minutes)/seconds);
-      document.getElementById("sitetime").innerHTML=" This blog is up and running "+/*diffYears+" Year "+*/diffDays+" Days "+diffHours+" Hours "+diffMinutes+" Minutes "+diffSeconds+" Seconds";
-    }
-    siteTime();
-  </script>
-  <!--// 添加运行时间-->
 
+    <span><a href="/posts/4491edd3/" title="LeetCode07_整数反转">LeetCode07_整数反转</a></span>
+  </li>
 
-<!--
-  <div class="powered-by">Powered by <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> & <a href="https://pisces.theme-next.org/" class="theme-link" rel="noopener" target="_blank">NexT.Pisces</a>
-  </div>
--->
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/Java/" title="In Java">Java</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/Java/Mybatis/" title="In Mybatis">Mybatis</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/Java/Mybatis/SpringBoot/" title="In SpringBoot">SpringBoot</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/Java/Mybatis/SpringBoot/%E5%88%86%E9%A1%B5%E6%9F%A5%E8%AF%A2/" title="In 分页查询">分页查询</a>
+</div>
 
+    <span><a href="/posts/2edf7887/" title="MybatisPlus实现分页查询">MybatisPlus实现分页查询</a></span>
+  </li>
 
-        
-<div class="busuanzi-count">
-  <script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/Java/" title="In Java">Java</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/Java/Mysql/" title="In Mysql">Mysql</a>
+</div>
 
+    <span><a href="/posts/69c17d37/" title="关于事务提交中踩坑">关于事务提交中踩坑</a></span>
+  </li>
 
-  <span class="site-uv" title="Total Visitors">
-    My <span id="busuanzi_value_site_uv"></span>th Friend, 
-  </span>
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/Java%E9%9D%A2%E8%AF%95/" title="In Java面试">Java面试</a>
+</div>
 
-  <span class="site-pv" title="Total Views">
-    After  <span id="busuanzi_value_site_pv"></span> times of looking back, I met you 。
-  </span>
-  <!--
-    <span class="post-meta-item" id="busuanzi_container_site_uv" >
-      <span class="post-meta-item-icon">
-        <i class="fa fa-user"></i>
-      </span>
-      <span class="site-uv" title="Total Visitors">
-        <span id="busuanzi_value_site_uv"></span>
-      </span>
+    <span><a href="/posts/3eb5e557/" title="赛可出行面试">赛可出行面试</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/Java%E9%9D%A2%E8%AF%95/" title="In Java面试">Java面试</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/Java%E9%9D%A2%E8%AF%95/Spring/" title="In Spring">Spring</a>
+</div>
+
+    <span><a href="/posts/89080a8e/" title="Spring Bean的生命周期">Spring Bean的生命周期</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+</div>
+
+    <span><a href="/posts/4da9c93/" title="Web-based design and analysis tools for CRISPR base editing 文献阅读">Web-based design and analysis tools for CRISPR base editing 文献阅读</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/Java%E9%9D%A2%E8%AF%95/" title="In Java面试">Java面试</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/Java%E9%9D%A2%E8%AF%95/%E5%BF%AB%E9%80%9F%E6%8E%92%E5%BA%8F/" title="In 快速排序">快速排序</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/Java%E9%9D%A2%E8%AF%95/%E5%BF%AB%E9%80%9F%E6%8E%92%E5%BA%8F/%E7%AE%97%E6%B3%95/" title="In 算法">算法</a>
+</div>
+
+    <span><a href="/posts/ff8068c0/" title="快速排序">快速排序</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/Java/" title="In Java">Java</a>
+</div>
+
+    <span><a href="/posts/60a1e80e/" title="java判断日期周几">java判断日期周几</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F/" title="In 正则表达式">正则表达式</a>
+</div>
+
+    <span><a href="/posts/2f57a694/" title="正则表达式">正则表达式</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/Java%E9%9D%A2%E8%AF%95/" title="In Java面试">Java面试</a>
+</div>
+
+    <span><a href="/posts/a5258aa2/" title="Java面试小册子">Java面试小册子</a></span>
+  </li>
+
+  </ul>
+</div>
+<div>
+  <h2>Recent Comments</h2>
+  <ul class="leancloud-recent-comment"></ul>
+</div>
+
+        </div>
+        <div class="status">
+  <div class="copyright">
+    
+    &copy; 2021 – 
+    <span itemprop="copyrightYear">2022</span>
+    <span class="with-love">
+      <i class="ic i-sakura rotate"></i>
     </span>
+    <span class="author" itemprop="copyrightHolder">JIN Mao @ Jin Mao when to get rich ?</span>
+  </div>
+  <div class="count">
+    <span class="post-meta-item-icon">
+      <i class="ic i-chart-area"></i>
+    </span>
+    <span title="Symbols count total">557k words</span>
+
     <span class="post-meta-divider">|</span>
-    <span class="post-meta-item" id="busuanzi_container_site_pv">
-      <span class="post-meta-item-icon">
-        <i class="fa fa-eye"></i>
-      </span>
-      <span class="site-pv" title="Total Views">
-        <span id="busuanzi_value_site_pv"></span>
-      </span>
-    </span>-->
+    <span class="post-meta-item-icon">
+      <i class="ic i-coffee"></i>
+    </span>
+    <span title="Reading time total">8:26</span>
+  </div>
 </div>
-
-
-
-
-
-
-
 
       </div>
     </footer>
   </div>
-
-  
-  <script src="/lib/anime.min.js"></script>
-  <script src="//cdn.jsdelivr.net/npm/medium-zoom@1/dist/medium-zoom.min.js"></script>
-  <script src="//cdn.jsdelivr.net/npm/lozad@1/dist/lozad.min.js"></script>
-  <script src="/lib/velocity/velocity.min.js"></script>
-  <script src="/lib/velocity/velocity.ui.min.js"></script>
-
-<script src="/js/utils.js"></script>
-
-<script src="/js/motion.js"></script>
-
-
-<script src="/js/schemes/pisces.js"></script>
-
-
-<script src="/js/next-boot.js"></script>
-
-<script src="/js/bookmark.js"></script>
-
-
-  <script defer src="/lib/three/three.min.js"></script>
-    <script defer src="/lib/three/canvas_lines.min.js"></script>
-
-
-  
-
-
-
-  <script>
-  if (CONFIG.page.isPost) {
-    wpac_init = window.wpac_init || [];
-    wpac_init.push({
-      widget: 'Rating',
-      id    : ,
-      el    : 'wpac-rating',
-      color : 'fc6423'
-    });
-    (function() {
-      if ('WIDGETPACK_LOADED' in window) return;
-      WIDGETPACK_LOADED = true;
-      var mc = document.createElement('script');
-      mc.type = 'text/javascript';
-      mc.async = true;
-      mc.src = '//embed.widgetpack.com/widget.js';
-      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(mc, s.nextSibling);
-    })();
-  }
-  </script>
-
-  
-<script src="/js/local-search.js"></script>
-
-
-
-
-
-
-
-
-
-
-
-
-
-  
-
-  
-
-
-<script>
-NexT.utils.loadComments(document.querySelector('#valine-comments'), () => {
-  NexT.utils.getScript('//unpkg.com/valine/dist/Valine.min.js', () => {
-    var GUEST = ['nick', 'mail', 'link'];
-    var guest = 'nick,mail,link';
-    guest = guest.split(',').filter(item => {
-      return GUEST.includes(item);
-    });
-    new Valine({
-      el         : '#valine-comments',
-      verify     : true,
-      notify     : true,
-      appId      : 'J2bQH6GquIhMurLQc9NYgXWJ-gzGzoHsz',
-      appKey     : 'mbmntmQLrVScI2O7gV6zBej5',
-      placeholder: "Just go go",
-      avatar     : 'mm',
-      meta       : guest,
-      pageSize   : '10' || 10,
-      visitor    : false,
-      lang       : 'en' || 'zh-cn',
-      path       : location.pathname,
-      recordIP   : true,
-      serverURLs : ''
-    });
-  }, window.Valine);
-});
+<script data-config type="text/javascript">
+  var LOCAL = {
+    path: 'posts/89080a8e/',
+    favicon: {
+      show: "You're welcome",
+      hide: "Wait for you"
+    },
+    search : {
+      placeholder: "Search for Posts",
+      empty: "We didn't find any results for the search: ${query}",
+      stats: "${hits} results found in ${time} ms"
+    },
+    valine: true,fancybox: true,
+    copyright: 'Copied to clipboard successfully! <br> All articles in this blog are licensed under <i class="ic i-creative-commons"></i>BY-NC-SA.',
+    ignores : [
+      function(uri) {
+        return uri.includes('#');
+      },
+      function(uri) {
+        return new RegExp(LOCAL.path+"$").test(uri);
+      }
+    ]
+  };
 </script>
 
+<script src="https://cdn.polyfill.io/v2/polyfill.js"></script>
 
-  
-  <script type="text/javascript" src="/js/cursor/love.js"></script>
+<script src="//cdn.jsdelivr.net/combine/npm/pace-js@1.0.2/pace.min.js,npm/pjax@0.2.8/pjax.min.js,npm/whatwg-fetch@3.4.0/dist/fetch.umd.min.js,npm/animejs@3.2.0/lib/anime.min.js,npm/algoliasearch@4/dist/algoliasearch-lite.umd.js,npm/instantsearch.js@4/dist/instantsearch.production.min.js,npm/lozad@1/dist/lozad.min.js,npm/quicklink@2/dist/quicklink.umd.js"></script>
+
+<script src="/js/app.js?v=0.2.5"></script>
 
 
 
-  
-<script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"model":{"jsonPath":"/live2dw/assets/shizuku.model.json"},"display":{"position":"left","width":200,"height":400},"mobile":{"show":false},"log":false,"pluginJsPath":"lib/","pluginModelPath":"assets/","pluginRootPath":"live2dw/","tagMode":false});</script></body>
+
+</body>
 </html>

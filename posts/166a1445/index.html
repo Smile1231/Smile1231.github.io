@@ -1,862 +1,620 @@
+
+
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
-<meta name="theme-color" content="#222">
-<meta name="generator" content="Hexo 5.4.0">
-  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="/images/avatar.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="/images/avatar.png">
-  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+<meta name="theme-color" content="#FFF">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
 
-<link rel="stylesheet" href="/css/main.css">
+<link rel="icon" type="image/ico" sizes="32x32" href="/images/favicon.ico">
+  <meta http-equiv="Cache-Control" content="no-transform">
+  <meta http-equiv="Cache-Control" content="no-siteapp">
 
 
-<link rel="stylesheet" href="/lib/font-awesome/css/all.min.css">
-  <link rel="stylesheet" href="/lib/pace/pace-theme-mac-osx.min.css">
-  <script src="/lib/pace/pace.min.js"></script>
+<link rel="alternate" type="application/rss+xml" title="JIN MAO 's Blog" href="https://smile1231.github.io/rss.xml" />
+<link rel="alternate" type="application/atom+xml" title="JIN MAO 's Blog" href="https://smile1231.github.io/atom.xml" />
+<link rel="alternate" type="application/json" title="JIN MAO 's Blog" href="https://smile1231.github.io/feed.json" />
 
-<script id="hexo-configurations">
-    var NexT = window.NexT || {};
-    var CONFIG = {"hostname":"smile1231.github.io","root":"/","scheme":"Pisces","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":true,"show_result":true,"style":"mac"},"back2top":{"enable":true,"sidebar":false,"scrollpercent":true},"bookmark":{"enable":true,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":true,"lazyload":true,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
-  </script>
+<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Mulish:300,300italic,400,400italic,700,700italic%7CFredericka%20the%20Great:300,300italic,400,400italic,700,700italic%7CNoto%20Serif%20JP:300,300italic,400,400italic,700,700italic%7CNoto%20Serif%20SC:300,300italic,400,400italic,700,700italic%7CInconsolata:300,300italic,400,400italic,700,700italic&display=swap&subset=latin,latin-ext">
 
-  <meta name="description" content="位，字节， 字符1. 位 数据存储的最小单位。每个二进制数字0或者1就是1个位,比特为 bit ，简称 b">
-<meta property="og:type" content="article">
-<meta property="og:title" content="位，字节， 字符">
-<meta property="og:url" content="https://smile1231.github.io/posts/166a1445/index.html">
-<meta property="og:site_name" content="JIN MAO &#39;s Blog">
-<meta property="og:description" content="位，字节， 字符1. 位 数据存储的最小单位。每个二进制数字0或者1就是1个位,比特为 bit ，简称 b">
-<meta property="og:locale" content="en_US">
-<meta property="article:published_time" content="2022-02-15T13:37:36.000Z">
-<meta property="article:modified_time" content="2022-02-15T16:17:58.438Z">
-<meta property="article:author" content="JIN Mao">
-<meta property="article:tag" content="Java">
-<meta property="article:tag" content="Java面试">
-<meta property="article:tag" content="操作系统">
-<meta name="twitter:card" content="summary">
+<link rel="stylesheet" href="/css/app.css?v=0.2.5">
+
+  
+  <meta name="keywords" content="Java,操作系统,Java面试" />
+
 
 <link rel="canonical" href="https://smile1231.github.io/posts/166a1445/">
 
 
-<script id="page-configurations">
-  // https://hexo.io/docs/variables.html
-  CONFIG.page = {
-    sidebar: "",
-    isHome : false,
-    isPost : true,
-    lang   : 'en'
-  };
-</script>
 
-  <title>位，字节， 字符 | JIN MAO 's Blog</title>
-  
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-FWV5496QFL"></script>
-    <script>
-      if (CONFIG.hostname === location.hostname) {
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-        gtag('config', 'G-FWV5496QFL');
-      }
-    </script>
-
-
-
-
-
-
-  <noscript>
-  <style>
-  .use-motion .brand,
-  .use-motion .menu-item,
-  .sidebar-inner,
-  .use-motion .post-block,
-  .use-motion .pagination,
-  .use-motion .comments,
-  .use-motion .post-header,
-  .use-motion .post-body,
-  .use-motion .collection-header { opacity: initial; }
-
-  .use-motion .site-title,
-  .use-motion .site-subtitle {
-    opacity: initial;
-    top: initial;
-  }
-
-  .use-motion .logo-line-before i { left: initial; }
-  .use-motion .logo-line-after i { right: initial; }
-  </style>
-</noscript>
-
-<link rel="alternate" href="/atom.xml" title="JIN MAO 's Blog" type="application/atom+xml">
-</head>
-
+  <title>
+位，字节， 字符 - Java面试 - 操作系统 - Java |
+Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
+<meta name="generator" content="Hexo 5.4.0"></head>
 <body itemscope itemtype="http://schema.org/WebPage">
-  <div class="container use-motion">
-    <div class="headband"></div>
-      <!-- <a target="_blank" rel="noopener" href="https://github.com/Smile1231/StudyRepository"><img loading="lazy" width="149" height="149" src="https://github.blog/wp-content/uploads/2008/12/forkme_right_gray_6d6d6d.png?resize=149%2C149" class="attachment-full size-full" alt="Fork me on GitHub" data-recalc-dims="1"></a> -->
-    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
-      <div class="header-inner"><div class="site-brand-container">
-  <div class="site-nav-toggle">
-    <div class="toggle" aria-label="Toggle navigation bar">
-      <span class="toggle-line toggle-line-first"></span>
-      <span class="toggle-line toggle-line-middle"></span>
-      <span class="toggle-line toggle-line-last"></span>
+  <div id="loading">
+    <div class="cat">
+      <div class="body"></div>
+      <div class="head">
+        <div class="face"></div>
+      </div>
+      <div class="foot">
+        <div class="tummy-end"></div>
+        <div class="bottom"></div>
+        <div class="legs left"></div>
+        <div class="legs right"></div>
+      </div>
+      <div class="paw">
+        <div class="hands left"></div>
+        <div class="hands right"></div>
+      </div>
     </div>
   </div>
-
-  <div class="site-meta">
-
-    <a href="/" class="brand" rel="start">
-      <span class="logo-line-before"><i></i></span>
-      <h1 class="site-title">JIN MAO 's Blog</h1>
-      <span class="logo-line-after"><i></i></span>
-    </a>
-      <p class="site-subtitle" itemprop="description">got windy(起风了)</p>
-  </div>
-
-  <div class="site-nav-right">
-    <div class="toggle popup-trigger">
-        <i class="fa fa-search fa-fw fa-lg"></i>
-    </div>
-  </div>
+  <div id="container">
+    <header id="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="inner">
+        <div id="brand">
+          <div class="pjax">
+          
+  <h1 itemprop="name headline">位，字节， 字符
+  </h1>
+  
+<div class="meta">
+  <span class="item" title="Created: 2022-02-15 21:37:36">
+    <span class="icon">
+      <i class="ic i-calendar"></i>
+    </span>
+    <span class="text">Posted on</span>
+    <time itemprop="dateCreated datePublished" datetime="2022-02-15T21:37:36+08:00">2022-02-15</time>
+  </span>
+  <span class="item" title="Symbols count in article">
+    <span class="icon">
+      <i class="ic i-pen"></i>
+    </span>
+    <span class="text">Symbols count in article</span>
+    <span>4.9k</span>
+    <span class="text">words</span>
+  </span>
+  <span class="item" title="Reading time">
+    <span class="icon">
+      <i class="ic i-clock"></i>
+    </span>
+    <span class="text">Reading time</span>
+    <span>4 mins.</span>
+  </span>
 </div>
 
 
-
-
-<nav class="site-nav">
-  <ul id="menu" class="main-menu menu">
-        <li class="menu-item menu-item-home">
-
-    <a href="/" rel="section"><i class="fa fa-home fa-fw"></i>Home</a>
-
-  </li>
-        <li class="menu-item menu-item-about">
-
-    <a href="/about/" rel="section"><i class="fa fa-user fa-fw"></i>About</a>
-
-  </li>
-        <li class="menu-item menu-item-tags">
-
-    <a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>Tags<span class="badge">97</span></a>
-
-  </li>
-        <li class="menu-item menu-item-categories">
-
-    <a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>Categories<span class="badge">70</span></a>
-
-  </li>
-        <li class="menu-item menu-item-archives">
-
-    <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>Archives<span class="badge">133</span></a>
-
-  </li>
-      <li class="menu-item menu-item-search">
-        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>Search
-        </a>
+          </div>
+        </div>
+        <nav id="nav">
+  <div class="inner">
+    <div class="toggle">
+      <div class="lines" aria-label="Toggle navigation bar">
+        <span class="line"></span>
+        <span class="line"></span>
+        <span class="line"></span>
+      </div>
+    </div>
+    <ul class="menu">
+      <li class="item title"><a href="/" rel="start">Jin Mao when to get rich ?</a></li>
+    </ul>
+    <ul class="right">
+      <li class="item theme">
+        <i class="ic i-sun"></i>
       </li>
-  </ul>
+      <li class="item search">
+        <i class="ic i-search"></i>
+      </li>
+    </ul>
+  </div>
 </nav>
 
-
-
-  <div class="search-pop-overlay">
-    <div class="popup search-popup">
-        <div class="search-header">
-  <span class="search-icon">
-    <i class="fa fa-search"></i>
-  </span>
-  <div class="search-input-container">
-    <input autocomplete="off" autocapitalize="off"
-           placeholder="Searching..." spellcheck="false"
-           type="search" class="search-input">
-  </div>
-  <span class="popup-btn-close">
-    <i class="fa fa-times-circle"></i>
-  </span>
-</div>
-<div id="search-result">
-  <div id="no-result">
-    <i class="fa fa-spinner fa-pulse fa-5x fa-fw"></i>
-  </div>
-</div>
-
-    </div>
-  </div>
-
-</div>
+      </div>
+      <div id="imgs" class="pjax">
+        <ul>
+          <li class="item" data-background-image="https://tva1.sinaimg.cn/large/6833939bly1gipew28b65j20zk0m8hdt.jpg"></li>
+          <li class="item" data-background-image="https://tva1.sinaimg.cn/large/6833939bly1giclffsa1cj20zk0m811l.jpg"></li>
+          <li class="item" data-background-image="https://tva1.sinaimg.cn/large/6833939bly1gipesrnqv3j20zk0m8ava.jpg"></li>
+          <li class="item" data-background-image="https://tva1.sinaimg.cn/large/6833939bly1gicitzannuj20zk0m8b29.jpg"></li>
+          <li class="item" data-background-image="https://tva1.sinaimg.cn/large/6833939bly1gicivghyooj20zk0m8dir.jpg"></li>
+          <li class="item" data-background-image="https://tva1.sinaimg.cn/large/6833939bly1gipeu7txpzj20zk0m81kx.jpg"></li>
+        </ul>
+      </div>
     </header>
-
-    
-  <div class="back-to-top">
-    <i class="fa fa-arrow-up"></i>
-    <span>0%</span>
-  </div>
-  <div class="reading-progress-bar"></div>
-  <a role="button" class="book-mark-link book-mark-link-fixed"></a>
-
-
-    <main class="main">
-      <div class="main-inner">
-        <div class="content-wrap">
+    <div id="waves">
+      <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+        <defs>
+          <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+        </defs>
+        <g class="parallax">
+          <use xlink:href="#gentle-wave" x="48" y="0" />
+          <use xlink:href="#gentle-wave" x="48" y="3" />
+          <use xlink:href="#gentle-wave" x="48" y="5" />
+          <use xlink:href="#gentle-wave" x="48" y="7" />
+        </g>
+      </svg>
+    </div>
+    <main>
+      <div class="inner">
+        <div id="main" class="pjax">
           
-
-            <div class="post-block animated fadeIn">
-              <h5 class="post-title" itemprop="name headline">
-                <a target="_blank" rel="noopener" href="https://github.com/smile1231" class="post-title-link" itemprop="url">Github Contribution Calendar</a>
-              </h5>
-              <div class="post-body animated fadeInDown" itemprop="articleBody">
-                <img style="width: 100%; margin-top: 30px;" src="https://ghchart.rshah.org/e77c8e/smile1231" alt="JinMao's Blue Github Chart" />
-              </div>
-            </div>
-          <div class="content post posts-expand">
-            
-
+  <div class="article wrap">
     
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
-    <link itemprop="mainEntityOfPage" href="https://smile1231.github.io/posts/166a1445/">
+<div class="breadcrumb" itemscope itemtype="https://schema.org/BreadcrumbList">
+<i class="ic i-home"></i>
+<span><a href="/">Home</a></span><i class="ic i-angle-right"></i>
+<span  itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem"><a href="/categories/Java/" itemprop="item" rel="index" title="In Java"><span itemprop="name">Java</span></a>
+<meta itemprop="position" content="1" /></span>
+<i class="ic i-angle-right"></i>
+<span  itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem"><a href="/categories/Java/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/" itemprop="item" rel="index" title="In 操作系统"><span itemprop="name">操作系统</span></a>
+<meta itemprop="position" content="2" /></span>
+<i class="ic i-angle-right"></i>
+<span  class="current" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem"><a href="/categories/Java/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/Java%E9%9D%A2%E8%AF%95/" itemprop="item" rel="index" title="In Java面试"><span itemprop="name">Java面试</span></a>
+<meta itemprop="position" content="3" /></span>
+</div>
 
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.png">
-      <meta itemprop="name" content="JIN Mao">
-      <meta itemprop="description" content="">
-    </span>
+    <article itemscope itemtype="http://schema.org/Article" class="post block" lang="en">
+  <link itemprop="mainEntityOfPage" href="https://smile1231.github.io/posts/166a1445/">
 
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="JIN MAO 's Blog">
-    </span>
-      <header class="post-header">
-        <h1 class="post-title" itemprop="name headline">
-          位，字节， 字符
-        </h1>
-
-        <div class="post-meta">
-          
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">Posted on</span>
-
-              <time title="Created: 2022-02-15 21:37:36" itemprop="dateCreated datePublished" datetime="2022-02-15T21:37:36+08:00">2022-02-15</time>
-            </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="far fa-calendar-check"></i>
-                </span>
-                <span class="post-meta-item-text">Edited on</span>
-                <time title="Modified: 2022-02-16 00:17:58" itemprop="dateModified" datetime="2022-02-16T00:17:58+08:00">2022-02-16</time>
-              </span>
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-folder"></i>
-              </span>
-              <span class="post-meta-item-text">In</span>
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/Java/" itemprop="url" rel="index"><span itemprop="name">Java</span></a>
-                </span>
-                  , 
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/Java/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/" itemprop="url" rel="index"><span itemprop="name">操作系统</span></a>
-                </span>
-                  , 
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/Java/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/Java%E9%9D%A2%E8%AF%95/" itemprop="url" rel="index"><span itemprop="name">Java面试</span></a>
-                </span>
-            </span>
-
-          
-           <!-- <span class="post-meta-item" title="Views" id="busuanzi_container_page_pv" style="display: none;">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-eye"></i>
-              </span>
-              <span class="post-meta-item-text">Views: </span>
-              <span id="busuanzi_value_page_pv"></span>
-            </span> -->
-            <span>&emsp;</span><span class="post-meta-item-icon"><i class="fa fa-eye"></i></span>
-            <span class="post-meta-item-text">Views: </span>
-            <span id="busuanzi_value_page_pv"></span>
-  
-  <span class="post-meta-item">
-    
-      <span class="post-meta-item-icon">
-        <i class="far fa-comment"></i>
-      </span>
-      <span class="post-meta-item-text">Valine: </span>
-    
-    <a title="valine" href="/posts/166a1445/#valine-comments" itemprop="discussionUrl">
-      <span class="post-comments-count valine-comment-count" data-xid="/posts/166a1445/" itemprop="commentCount"></span>
-    </a>
+  <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <meta itemprop="image" content="/images/avatar.png">
+    <meta itemprop="name" content="JIN Mao">
+    <meta itemprop="description" content="got windy(起风了), ">
   </span>
-  
-  
 
-        </div>
-      </header>
+  <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+    <meta itemprop="name" content="JIN MAO 's Blog">
+  </span>
 
+  <div class="body md" itemprop="articleBody">
     
-    
-    
-    <div class="post-body" itemprop="articleBody">
 
-      
-        <h2 id="位，字节，-字符"><a href="#位，字节，-字符" class="headerlink" title="位，字节， 字符"></a>位，字节， 字符</h2><h3 id="1-位"><a href="#1-位" class="headerlink" title="1. 位"></a>1. 位</h3><pre><code> 数据存储的最小单位。每个二进制数字0或者1就是1个位,比特为 bit ，简称 b
- 
+    <h2 id="位字节-字符"><a class="markdownIt-Anchor" href="#位字节-字符">#</a> 位，字节， 字符</h2>
+<h3 id="1-位"><a class="markdownIt-Anchor" href="#1-位">#</a> 1. 位</h3>
+<pre><code> 数据存储的最小单位。每个二进制数字0或者1就是1个位,比特为 bit ，简称 b
 </code></pre>
 <span id="more"></span>
-
-<h3 id="2-字节"><a href="#2-字节" class="headerlink" title="2. 字节"></a>2. 字节</h3><pre><code> 8个位构成一个字节；即：1 byte (字节)= 8 bit(位)；
+<h3 id="2-字节"><a class="markdownIt-Anchor" href="#2-字节">#</a> 2. 字节</h3>
+<pre><code> 8个位构成一个字节；即：1 byte (字节)= 8 bit(位)；
  Byte(字节)，简称B。byte是基本数据类型，Byte是byte的包装类
 </code></pre>
-<p>     <code>1 KB</code> = <code>1024 B</code>(字节)；</p>
-<p>     <code>1 MB</code> = <code>1024 KB</code>;  (<code>2^20 B</code>)</p>
-<p>     <code>1 GB</code> = <code>1024 MB</code>;  (<code>2^20 KB</code>)</p>
-<p>     <code>1 TB</code> = <code>1024 GB</code>;  (<code>2^30 KB</code>)</p>
-<h3 id="3-字符"><a href="#3-字符" class="headerlink" title="3.字符"></a>3.字符</h3><p> <code>a、A、中、+、*、の......</code>均表示一个字符；</p>
-<p> 字符(汉字和汉字标点符号都算字符)</p>
+<p><code>1 KB</code>  =  <code>1024 B</code>  (字节)；</p>
+<p><code>1 MB</code>  =  <code>1024 KB</code> ;  ( <code>2^20 B</code> )</p>
+<p><code>1 GB</code>  =  <code>1024 MB</code> ;  ( <code>2^20 KB</code> )</p>
+<p><code>1 TB</code>  =  <code>1024 GB</code> ;  ( <code>2^30 KB</code> )</p>
+<h3 id="3字符"><a class="markdownIt-Anchor" href="#3字符">#</a> 3. 字符</h3>
+<p><code>a、A、中、+、*、の......</code>  均表示一个字符；</p>
+<p>字符 (汉字和汉字标点符号都算字符)</p>
 <pre><code> 一般 utf-8 编码下，一个汉字 字符 占用 3 个 字节；
 
  一般 gbk 编码下，一个汉字  字符  占用 2 个 字节；
 </code></pre>
-<h3 id="4-字符集"><a href="#4-字符集" class="headerlink" title="4.字符集"></a>4.字符集</h3><pre><code> 即各种各个字符的集合，也就是说哪些汉字，字母（A、b、c）和符号（空格、引号..）会被收入标准中；
+<h3 id="4字符集"><a class="markdownIt-Anchor" href="#4字符集">#</a> 4. 字符集</h3>
+<pre><code> 即各种各个字符的集合，也就是说哪些汉字，字母（A、b、c）和符号（空格、引号..）会被收入标准中；
 </code></pre>
-<h3 id="5-编码"><a href="#5-编码" class="headerlink" title="5.编码"></a>5.编码</h3><blockquote>
-<p><code>ASCII</code>码：一个英文字母（不分大小写）占<code>一个字节</code>的空间，一个中文汉字占<code>两个字节</code>的空间。一个二进制数字序列，在计算机中作为一个数字单元，一般为8位二进制数，换算为十进制。最小值<code>-128</code>，最大值<code>127</code>。如一个<code>ASCII</code>码就是<code>一个字节</code>,<code>0~127</code>(总共有<code>128</code>个<code>ASCII</code>码)。</p>
+<h3 id="5编码"><a class="markdownIt-Anchor" href="#5编码">#</a> 5. 编码</h3>
+<blockquote>
+<p><code>ASCII</code>  码：一个英文字母（不分大小写）占 <code>一个字节</code> 的空间，一个中文汉字占 <code>两个字节</code> 的空间。一个二进制数字序列，在计算机中作为一个数字单元，一般为 8 位二进制数，换算为十进制。最小值 <code>-128</code> ，最大值 <code>127</code> 。如一个 <code>ASCII</code>  码就是 <code>一个字节</code> ， <code>0~127</code>  (总共有 <code>128</code>  个 <code>ASCII</code>  码)。</p>
 </blockquote>
 <blockquote>
-<p><code>UTF-8</code>编码：一个<code>英文字符</code>等于<code>一个字节</code>，一个<code>中文（含繁体）</code>等于<code>三个字节</code>。<code>中文标点</code>占<code>三个字节</code>，英文标点占<code>一个字节</code></p>
+<p><code>UTF-8</code>  编码：一个 <code>英文字符</code> 等于 <code>一个字节</code> ，一个 <code>中文（含繁体）</code> 等于 <code>三个字节</code> 。 <code>中文标点</code> 占 <code>三个字节</code> ，英文标点占 <code>一个字节</code></p>
 </blockquote>
 <blockquote>
-<p><code>Unicode</code>编码：一个<code>英文</code>等于<code>两个字节</code>，一个<code>中文</code>（含繁体）等于<code>两个字节</code>。<code>中文标点</code>占<code>两个字节</code>，<code>英文标点</code>占<code>两个字节</code></p>
+<p><code>Unicode</code>  编码：一个 <code>英文</code> 等于 <code>两个字节</code> ，一个 <code>中文</code> （含繁体）等于 <code>两个字节</code> 。 <code>中文标点</code> 占 <code>两个字节</code> ， <code>英文标点</code> 占 <code>两个字节</code></p>
 </blockquote>
-<h2 id="基本数据类型范围"><a href="#基本数据类型范围" class="headerlink" title="基本数据类型范围"></a>基本数据类型范围</h2><p>在<code>JAVA</code>中一共有八种基本数据类型，他们分别是：<code>byte、short、int、long、float、double、char、boolean</code></p>
+<h2 id="基本数据类型范围"><a class="markdownIt-Anchor" href="#基本数据类型范围">#</a> 基本数据类型范围</h2>
+<p>在 <code>JAVA</code>  中一共有八种基本数据类型，他们分别是： <code>byte、short、int、long、float、double、char、boolean</code></p>
 <ul>
-<li><code>byte</code>的取值范围为 <code>-128</code> ~ <code>127</code>, 占用<code>一个</code>字节(<code>-2^7</code> 到 <code>(2^7)-1</code> )</li>
-<li><code>short</code> 的取值范围为 <code>-32768</code> ～ <code>32767</code>， 占用 <code>两个</code> 字节 (<code>-2^15</code> 到 <code>(2^31)-1</code>)</li>
-<li><code>int</code> 的取值范围为 <code>-2147483648</code><del><code>2147483647</code>(<code>-2^31</code></del><code>(2^31)-1</code>) , 占用<code>四个个</code>字节</li>
-<li><code>long</code>的取值范围为（<code>-9223372036854774808</code> ~ <code>9223372036854774807</code>）, 占用<code>8个字节</code>（<code>-2^63</code> 到 <code>(2^63)-1</code>）</li>
+<li><code>byte</code>  的取值范围为  <code>-128</code>  ~  <code>127</code> , 占用 <code>一个</code> 字节 ( <code>-2^7</code>  到  <code>(2^7)-1</code>  )</li>
+<li><code>short</code>  的取值范围为  <code>-32768</code>  ～  <code>32767</code> ， 占用  <code>两个</code>  字节 ( <code>-2^15</code>  到  <code>(2^31)-1</code> )</li>
+<li><code>int</code>  的取值范围为  <code>-2147483648</code> <sub>``2147483647``(``-2^31``</sub> <code>(2^31)-1</code> ) , 占用 <code>四个个</code> 字节</li>
+<li><code>long</code>  的取值范围为（ <code>-9223372036854774808</code>  ~  <code>9223372036854774807</code> ）, 占用 <code>8个字节</code> （ <code>-2^63</code>  到  <code>(2^63)-1</code> ）</li>
 </ul>
-<p>可以看到<code>byte</code>和<code>short</code>的取值范围比较小，而<code>long</code>的取值范围太大，占用的空间多，基本上<code>int</code>可以满足我们的日常的计算了，而且<code>int</code>也是使用的最多的整型类型了。 在通常情况下，如果<code>JAVA</code>中出现了一个整数数字比如<code>35</code>，那么这个数字就是<code>int</code>型的，如果我们希望它是<code>byte</code>型的，可以在数据后加上大写的 <code>B</code>：<code>35B</code>，表示它是<code>byte</code>型的. 同样的<code>35S</code>表示<code>short</code>型，<code>35L</code>表示<code>long</code>型的，表示<code>int</code>我们可以什么都不用加，但是如果要表示<code>long</code>型的，就一定要在数据后面加<code>“L”</code>。</p>
-<p>浮点型 <code>float</code>和<code>double</code>是表示浮点型的数据类型，他们之间的区别在于他们的精确度不同</p>
+<p>可以看到 <code>byte</code>  和 <code>short</code>  的取值范围比较小，而 <code>long</code>  的取值范围太大，占用的空间多，基本上 <code>int</code>  可以满足我们的日常的计算了，而且 <code>int</code>  也是使用的最多的整型类型了。 在通常情况下，如果 <code>JAVA</code>  中出现了一个整数数字比如 <code>35</code> ，那么这个数字就是 <code>int</code>  型的，如果我们希望它是 <code>byte</code>  型的，可以在数据后加上大写的  <code>B</code> ： <code>35B</code> ，表示它是 <code>byte</code>  型的。同样的 <code>35S</code>  表示 <code>short</code>  型， <code>35L</code>  表示 <code>long</code>  型的，表示 <code>int</code>  我们可以什么都不用加，但是如果要表示 <code>long</code>  型的，就一定要在数据后面加 <code>“L”</code> 。</p>
+<p>浮点型  <code>float</code>  和 <code>double</code>  是表示浮点型的数据类型，他们之间的区别在于他们的精确度不同</p>
 <ul>
-<li><code>float</code> <code>3.402823e+38 ~ 1.401298e-45</code>（<code>e+38</code>表示是乘以<code>10</code>的<code>38</code>次方，同样，<code>e-45</code>表示乘以<code>10</code>的负<code>45</code>次方）, 占用<code>4个字节 </code></li>
-<li><code>double</code> <code>1.797693e+308 ~ 4.9000000e-324</code> 占用<code>8个字节</code> . <code>double</code>型比<code>float</code>型存储范围更大，精度更高，所以通常的浮点型的数据在不声明的情况下都是<code>double</code>型的，如果要表示一个数据是<code>float</code>型的，可以在数据后面加上<code>“F”</code>。 浮点型的数据是不能完全精确的，所以有的时候在计算的时候可能会在小数点最后几位出现浮动，这是正常的。</li>
-<li><code>boolean</code>型（布尔型） 这个类型只有两个值，<code>true</code>和<code>false</code>（真和非真） <code>boolean t = true</code>； <code>boolean f = false；</code></li>
-<li><code>char</code>型（文本型） 用于存放字符的数据类型，占用<code>2个字节</code>，采用<code>unicode</code>编码，它的前<code>128字节</code>编码与<code>ASCII</code>兼容 字符的存储范围在<code>\u0000~\uFFFF</code>，在定义字符型的数据时候要注意加<code>&#39; &#39;</code>，比如<code> &#39;1&#39;</code>表示字符<code>&#39;1&#39;</code>而不是数值<code>1</code><ul>
-<li><code>char c = &#39; 1 &#39;</code>; 我们试着输出<code>c</code>看看，<code>System.out.println(c)</code>;</li>
-<li>结果就是<code>1</code></li>
-<li>而如果我们这样输出呢<code>System.out.println(c+0)</code>; 结果却变成了<code>49</code>。 如果我们这样定义<code>c</code>看看 <code>char c = &#39; \u0031 &#39;</code>;</li>
-<li>输出的结果仍然是<code>1</code>，</li>
-<li>这是因为字符<code>&#39;1&#39;</code>对应着unicode编码就是<code>\u0031</code>, <code>char c1 = &#39;h&#39;</code>,<code>c2 = &#39;e&#39;</code>,<code>c3=&#39;l&#39;</code>,<code>c4=&#39;l&#39;</code>,<code>c5 = &#39;o&#39;</code>;</li>
-<li><code> System.out.print(c1);</code> <code>System.out.print(c2);</code> <code>System.out.print(c3);</code> <code>System.out.print(c4);</code> <code>Sytem.out.print(c5);</code></li>
+<li>
+<p><code>float</code>   <code>3.402823e+38 ~ 1.401298e-45</code> （ <code>e+38</code>  表示是乘以 <code>10</code>  的 <code>38</code>  次方，同样， <code>e-45</code>  表示乘以 <code>10</code>  的负 <code>45</code>  次方）, 占用 <code>4个字节 </code></p>
+</li>
+<li>
+<p><code>double</code>   <code>1.797693e+308 ~ 4.9000000e-324</code>  占用 <code>8个字节</code>  .  <code>double</code>  型比 <code>float</code>  型存储范围更大，精度更高，所以通常的浮点型的数据在不声明的情况下都是 <code>double</code>  型的，如果要表示一个数据是 <code>float</code>  型的，可以在数据后面加上 <code>“F”</code> 。 浮点型的数据是不能完全精确的，所以有的时候在计算的时候可能会在小数点最后几位出现浮动，这是正常的。</p>
+</li>
+<li>
+<p><code>boolean</code>  型（布尔型） 这个类型只有两个值， <code>true</code>  和 <code>false</code> （真和非真）  <code>boolean t = true</code> ；  <code>boolean f = false；</code></p>
+</li>
+<li>
+<p><code>char</code>  型（文本型） 用于存放字符的数据类型，占用 <code>2个字节</code> ，采用 <code>unicode</code>  编码，它的前 <code>128字节</code> 编码与 <code>ASCII</code>  兼容 字符的存储范围在 <code>\u0000~\uFFFF</code> ，在定义字符型的数据时候要注意加 <code>' '</code> ，比如 <code> '1'</code>  表示字符 <code>'1'</code>  而不是数值 <code>1</code></p>
+<ul>
+<li><code>char c = ' 1 '</code> ; 我们试着输出 <code>c</code>  看看， <code>System.out.println(c)</code> ;</li>
+<li>结果就是 <code>1</code></li>
+<li>而如果我们这样输出呢 <code>System.out.println(c+0)</code> ; 结果却变成了 <code>49</code> 。 如果我们这样定义 <code>c</code>  看看  <code>char c = ' \u0031 '</code> ;</li>
+<li>输出的结果仍然是 <code>1</code> ，</li>
+<li>这是因为字符 <code>'1'</code>  对应着 unicode 编码就是 <code>\u0031</code> ,  <code>char c1 = 'h'</code> , <code>c2 = 'e'</code> , <code>c3='l'</code> , <code>c4='l'</code> , <code>c5 = 'o'</code> ;</li>
+<li><code> System.out.print(c1);</code>   <code>System.out.print(c2);</code>   <code>System.out.print(c3);</code>   <code>System.out.print(c4);</code>   <code>Sytem.out.print(c5);</code></li>
 </ul>
 </li>
 </ul>
 <p>示例：</p>
 <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">PrimitiveTypeTest</span> </span>&#123;  </span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;  </span><br><span class="line">        <span class="comment">// byte  </span></span><br><span class="line">        System.out.println(<span class="string">&quot;基本类型：byte 二进制位数：&quot;</span> + Byte.SIZE);  </span><br><span class="line">        System.out.println(<span class="string">&quot;包装类：java.lang.Byte&quot;</span>);  </span><br><span class="line">        System.out.println(<span class="string">&quot;最小值：Byte.MIN_VALUE=&quot;</span> + Byte.MIN_VALUE);  </span><br><span class="line">        System.out.println(<span class="string">&quot;最大值：Byte.MAX_VALUE=&quot;</span> + Byte.MAX_VALUE);  </span><br><span class="line">        System.out.println();  </span><br><span class="line">  </span><br><span class="line">        <span class="comment">// short  </span></span><br><span class="line">        System.out.println(<span class="string">&quot;基本类型：short 二进制位数：&quot;</span> + Short.SIZE);  </span><br><span class="line">        System.out.println(<span class="string">&quot;包装类：java.lang.Short&quot;</span>);  </span><br><span class="line">        System.out.println(<span class="string">&quot;最小值：Short.MIN_VALUE=&quot;</span> + Short.MIN_VALUE);  </span><br><span class="line">        System.out.println(<span class="string">&quot;最大值：Short.MAX_VALUE=&quot;</span> + Short.MAX_VALUE);  </span><br><span class="line">        System.out.println();  </span><br><span class="line">  </span><br><span class="line">        <span class="comment">// int  </span></span><br><span class="line">        System.out.println(<span class="string">&quot;基本类型：int 二进制位数：&quot;</span> + Integer.SIZE);  </span><br><span class="line">        System.out.println(<span class="string">&quot;包装类：java.lang.Integer&quot;</span>);  </span><br><span class="line">        System.out.println(<span class="string">&quot;最小值：Integer.MIN_VALUE=&quot;</span> + Integer.MIN_VALUE);  </span><br><span class="line">        System.out.println(<span class="string">&quot;最大值：Integer.MAX_VALUE=&quot;</span> + Integer.MAX_VALUE);  </span><br><span class="line">        System.out.println();  </span><br><span class="line">  </span><br><span class="line">        <span class="comment">// long  </span></span><br><span class="line">        System.out.println(<span class="string">&quot;基本类型：long 二进制位数：&quot;</span> + Long.SIZE);  </span><br><span class="line">        System.out.println(<span class="string">&quot;包装类：java.lang.Long&quot;</span>);  </span><br><span class="line">        System.out.println(<span class="string">&quot;最小值：Long.MIN_VALUE=&quot;</span> + Long.MIN_VALUE);  </span><br><span class="line">        System.out.println(<span class="string">&quot;最大值：Long.MAX_VALUE=&quot;</span> + Long.MAX_VALUE);  </span><br><span class="line">        System.out.println();  </span><br><span class="line">  </span><br><span class="line">        <span class="comment">// float  </span></span><br><span class="line">        System.out.println(<span class="string">&quot;基本类型：float 二进制位数：&quot;</span> + Float.SIZE);  </span><br><span class="line">        System.out.println(<span class="string">&quot;包装类：java.lang.Float&quot;</span>);  </span><br><span class="line">        System.out.println(<span class="string">&quot;最小值：Float.MIN_VALUE=&quot;</span> + Float.MIN_VALUE);  </span><br><span class="line">        System.out.println(<span class="string">&quot;最大值：Float.MAX_VALUE=&quot;</span> + Float.MAX_VALUE);  </span><br><span class="line">        System.out.println();  </span><br><span class="line">  </span><br><span class="line">        <span class="comment">// double  </span></span><br><span class="line">        System.out.println(<span class="string">&quot;基本类型：double 二进制位数：&quot;</span> + Double.SIZE);  </span><br><span class="line">        System.out.println(<span class="string">&quot;包装类：java.lang.Double&quot;</span>);  </span><br><span class="line">        System.out.println(<span class="string">&quot;最小值：Double.MIN_VALUE=&quot;</span> + Double.MIN_VALUE);  </span><br><span class="line">        System.out.println(<span class="string">&quot;最大值：Double.MAX_VALUE=&quot;</span> + Double.MAX_VALUE);  </span><br><span class="line">        System.out.println();  </span><br><span class="line">  </span><br><span class="line">        <span class="comment">// char  </span></span><br><span class="line">        System.out.println(<span class="string">&quot;基本类型：char 二进制位数：&quot;</span> + Character.SIZE);  </span><br><span class="line">        System.out.println(<span class="string">&quot;包装类：java.lang.Character&quot;</span>);  </span><br><span class="line">        <span class="comment">// 以数值形式而不是字符形式将Character.MIN_VALUE输出到控制台  </span></span><br><span class="line">        System.out.println(<span class="string">&quot;最小值：Character.MIN_VALUE=&quot;</span>  </span><br><span class="line">                + (<span class="keyword">int</span>) Character.MIN_VALUE);  </span><br><span class="line">        <span class="comment">// 以数值形式而不是字符形式将Character.MAX_VALUE输出到控制台  </span></span><br><span class="line">        System.out.println(<span class="string">&quot;最大值：Character.MAX_VALUE=&quot;</span>  </span><br><span class="line">                + (<span class="keyword">int</span>) Character.MAX_VALUE);  </span><br><span class="line">    &#125;  </span><br><span class="line">&#125;  </span><br></pre></td></tr></table></figure>
-
 <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br></pre></td><td class="code"><pre><span class="line">基本类型：<span class="keyword">byte</span> 二进制位数：<span class="number">8</span></span><br><span class="line">包装类：java.lang.Byte</span><br><span class="line">最小值：Byte.MIN_VALUE=-<span class="number">128</span></span><br><span class="line">最大值：Byte.MAX_VALUE=<span class="number">127</span></span><br><span class="line"></span><br><span class="line">基本类型：<span class="keyword">short</span> 二进制位数：<span class="number">16</span></span><br><span class="line">包装类：java.lang.Short</span><br><span class="line">最小值：Short.MIN_VALUE=-<span class="number">32768</span></span><br><span class="line">最大值：Short.MAX_VALUE=<span class="number">32767</span></span><br><span class="line"></span><br><span class="line">基本类型：<span class="keyword">int</span> 二进制位数：<span class="number">32</span></span><br><span class="line">包装类：java.lang.Integer</span><br><span class="line">最小值：Integer.MIN_VALUE=-<span class="number">2147483648</span></span><br><span class="line">最大值：Integer.MAX_VALUE=<span class="number">2147483647</span></span><br><span class="line"></span><br><span class="line">基本类型：<span class="keyword">long</span> 二进制位数：<span class="number">64</span></span><br><span class="line">包装类：java.lang.Long</span><br><span class="line">最小值：Long.MIN_VALUE=-<span class="number">9223372036854775808</span></span><br><span class="line">最大值：Long.MAX_VALUE=<span class="number">9223372036854775807</span></span><br><span class="line"></span><br><span class="line">基本类型：<span class="keyword">float</span> 二进制位数：<span class="number">32</span></span><br><span class="line">包装类：java.lang.Float</span><br><span class="line">最小值：Float.MIN_VALUE=<span class="number">1.4E-45</span></span><br><span class="line">最大值：Float.MAX_VALUE=<span class="number">3.4028235E38</span></span><br><span class="line"></span><br><span class="line">基本类型：<span class="keyword">double</span> 二进制位数：<span class="number">64</span></span><br><span class="line">包装类：java.lang.Double</span><br><span class="line">最小值：Double.MIN_VALUE=<span class="number">4.9E-324</span></span><br><span class="line">最大值：Double.MAX_VALUE=<span class="number">1.7976931348623157E308</span></span><br><span class="line"></span><br><span class="line">基本类型：<span class="keyword">char</span> 二进制位数：<span class="number">16</span></span><br><span class="line">包装类：java.lang.Character</span><br><span class="line">最小值：Character.MIN_VALUE=<span class="number">0</span></span><br><span class="line">最大值：Character.MAX_VALUE=<span class="number">65535</span></span><br></pre></td></tr></table></figure>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      <div>
-        
-          <div>
-    
-        <div style="text-align:center;color: #636363;font-size:14px;letter-spacing: 10px">This article is over<i class="fa fa-bell"></i>thank you for reading</div>
-    
-</div>
-        
+      <div class="tags">
+          <a href="/tags/Java/" rel="tag"><i class="ic i-tag"></i> Java</a>
+          <a href="/tags/Java%E9%9D%A2%E8%AF%95/" rel="tag"><i class="ic i-tag"></i> Java面试</a>
+          <a href="/tags/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/" rel="tag"><i class="ic i-tag"></i> 操作系统</a>
       </div>
-    </div>
+  </div>
 
-    
-    
-    
+   <footer>
+
+    <div class="meta">
+  <span class="item">
+    <span class="icon">
+      <i class="ic i-calendar-check"></i>
+    </span>
+    <span class="text">Edited on</span>
+    <time title="Modified: 2022-02-16 00:17:58" itemprop="dateModified" datetime="2022-02-16T00:17:58+08:00">2022-02-16</time>
+  </span>
+  <span id="posts/166a1445/" class="item leancloud_visitors" data-flag-title="位，字节， 字符" title="Views">
+      <span class="icon">
+        <i class="ic i-eye"></i>
+      </span>
+      <span class="text">Views</span>
+      <span class="leancloud-visitors-count"></span>
+      <span class="text">times</span>
+  </span>
+</div>
+
       
-  <div class="popular-posts-header">Related Posts</div>
-  <ul class="popular-posts">
-    <li class="popular-posts-item">
-      <div class="popular-posts-title"><a href="/posts/f23f1351/" rel="bookmark">equals与==区别</a></div>
-    </li>
-    <li class="popular-posts-item">
-      <div class="popular-posts-title"><a href="/posts/b42f0c87/" rel="bookmark">Cache、Cookie、Session、Token</a></div>
-    </li>
-    <li class="popular-posts-item">
-      <div class="popular-posts-title"><a href="/posts/59de1824/" rel="bookmark">spring中/和/*和/**的区别</a></div>
-    </li>
-    <li class="popular-posts-item">
-      <div class="popular-posts-title"><a href="/posts/5e7baeeb/" rel="bookmark">过滤器和拦截器的区别</a></div>
-    </li>
-    <li class="popular-posts-item">
-      <div class="popular-posts-title"><a href="/posts/12fecb94/" rel="bookmark">多线程笔记</a></div>
-    </li>
-  </ul>
 
-        
-
-<div>
-<ul class="post-copyright">
-  <li class="post-copyright-author">
-    <strong>Post author:  </strong>JIN Mao
+<div id="copyright">
+<ul>
+  <li class="author">
+    <strong>Post author:  </strong>JIN Mao <i class="ic i-at"><em>@</em></i>JIN MAO 's Blog
   </li>
-  <li class="post-copyright-link">
+  <li class="link">
     <strong>Post link: </strong>
     <a href="https://smile1231.github.io/posts/166a1445/" title="位，字节， 字符">https://smile1231.github.io/posts/166a1445/</a>
   </li>
-  <li class="post-copyright-license">
-    <strong>Copyright Notice:  </strong>All articles in this blog are licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/en" rel="noopener" target="_blank"><i class="fab fa-fw fa-creative-commons"></i>BY-NC-SA</a> unless stating additionally.
+  <li class="license">
+    <strong>Copyright Notice:  </strong>All articles in this blog are licensed under <span class="exturl" data-url="aHR0cHM6Ly9jcmVhdGl2ZWNvbW1vbnMub3JnL2xpY2Vuc2VzL2J5LW5jLXNhLzQuMC9kZWVkLnpo"><i class="ic i-creative-commons"><em>(CC)</em></i>BY-NC-SA</span> unless stating additionally.
   </li>
 </ul>
 </div>
 
+  </footer>
 
-      <footer class="post-footer">
-          
-          <div class="post-tags">
-              <a href="/tags/Java/" rel="tag"><i class="fa fa-tag"></i> Java</a>
-              <a href="/tags/Java%E9%9D%A2%E8%AF%95/" rel="tag"><i class="fa fa-tag"></i> Java面试</a>
-              <a href="/tags/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/" rel="tag"><i class="fa fa-tag"></i> 操作系统</a>
-          </div>
+</article>
 
-        
-  <div class="post-widgets">
-    <div class="wp_rating">
-      <div id="wpac-rating"></div>
-    </div>
   </div>
+  
 
+<div class="post-nav">
+    <div class="item left">
+      
 
-        
-    <div class="post-nav">
-      <div class="post-nav-item">
-    <a href="/posts/3eb5e557/" rel="prev" title="赛可出行面试">
-      <i class="fa fa-chevron-left"></i> 赛可出行面试
-    </a></div>
-      <div class="post-nav-item">
-    <a href="/posts/b42f0c87/" rel="next" title="Cache、Cookie、Session、Token">
-      Cache、Cookie、Session、Token <i class="fa fa-chevron-right"></i>
-    </a></div>
+  <a href="/posts/3eb5e557/" itemprop="url" rel="prev" data-background-image="https:&#x2F;&#x2F;tva1.sinaimg.cn&#x2F;mw690&#x2F;6833939bly1giclize41wj20zk0m87gk.jpg" title="赛可出行面试">
+  <span class="type">Previous Post</span>
+  <span class="category"><i class="ic i-flag"></i> Java面试</span>
+  <h3>赛可出行面试</h3>
+  </a>
+
     </div>
-      </footer>
-    
-  </article>
+    <div class="item right">
+      
+
+  <a href="/posts/b42f0c87/" itemprop="url" rel="next" data-background-image="https:&#x2F;&#x2F;tva1.sinaimg.cn&#x2F;mw690&#x2F;6833939bly1giclhtuo6nj20zk0m8ttm.jpg" title="Cache、Cookie、Session、Token">
+  <span class="type">Next Post</span>
+  <span class="category"><i class="ic i-flag"></i> Java面试</span>
+  <h3>Cache、Cookie、Session、Token</h3>
+  </a>
+
+    </div>
+</div>
+
   
-  
-  
+  <div class="wrap" id="comments"></div>
 
-
-
-          </div>
-          
-    <div class="comments" id="valine-comments"></div>
-
-<script>
-  window.addEventListener('tabs:register', () => {
-    let { activeClass } = CONFIG.comments;
-    if (CONFIG.comments.storage) {
-      activeClass = localStorage.getItem('comments_active') || activeClass;
-    }
-    if (activeClass) {
-      let activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
-      if (activeTab) {
-        activeTab.click();
-      }
-    }
-  });
-  if (CONFIG.comments.storage) {
-    window.addEventListener('tabs:click', event => {
-      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
-      let commentClass = event.target.classList[1];
-      localStorage.setItem('comments_active', commentClass);
-    });
-  }
-</script>
 
         </div>
+        <div id="sidebar">
           
+
+<div class="inner">
+
+  <div class="panels">
+    <div class="inner">
+      <div class="contents panel pjax" data-title="Contents">
+          <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BD%8D%E5%AD%97%E8%8A%82-%E5%AD%97%E7%AC%A6"><span class="toc-number">1.</span> <span class="toc-text"> 位，字节， 字符</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-%E4%BD%8D"><span class="toc-number">1.1.</span> <span class="toc-text"> 1. 位</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-%E5%AD%97%E8%8A%82"><span class="toc-number">1.2.</span> <span class="toc-text"> 2. 字节</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3%E5%AD%97%E7%AC%A6"><span class="toc-number">1.3.</span> <span class="toc-text"> 3. 字符</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#4%E5%AD%97%E7%AC%A6%E9%9B%86"><span class="toc-number">1.4.</span> <span class="toc-text"> 4. 字符集</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#5%E7%BC%96%E7%A0%81"><span class="toc-number">1.5.</span> <span class="toc-text"> 5. 编码</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%9F%BA%E6%9C%AC%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B%E8%8C%83%E5%9B%B4"><span class="toc-number">2.</span> <span class="toc-text"> 基本数据类型范围</span></a></li></ol>
+      </div>
+      <div class="related panel pjax" data-title="Related">
+        <ul>
+          <li class="active"><a href="/posts/166a1445/" rel="bookmark" title="位，字节， 字符">位，字节， 字符</a></li>
+        </ul>
+      </div>
+      <div class="overview panel" data-title="Overview">
+        <div class="author" itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <img class="image" itemprop="image" alt="JIN Mao"
+      data-src="/images/avatar.png">
+  <p class="name" itemprop="name">JIN Mao</p>
+  <div class="description" itemprop="description"></div>
+</div>
+
+<nav class="state">
+    <div class="item posts">
+      <a href="/archives/">
+        <span class="count">134</span>
+        <span class="name">posts</span>
+      </a>
+    </div>
+    <div class="item categories">
+      <a href="/categories/">
+        <span class="count">70</span>
+        <span class="name">categories</span>
+      </a>
+    </div>
+    <div class="item tags">
+      <a href="/tags/">
+        <span class="count">98</span>
+        <span class="name">tags</span>
+      </a>
+    </div>
+</nav>
+
+<div class="social">
+      <span class="exturl item github" data-url="aHR0cHM6Ly9naXRodWIuY29tL3NtaWxlMTIzMQ==" title="https:&#x2F;&#x2F;github.com&#x2F;smile1231"><i class="ic i-github"></i></span>
+</div>
+
+<ul class="menu">
   
-  <div class="toggle sidebar-toggle">
-    <span class="toggle-line toggle-line-first"></span>
-    <span class="toggle-line toggle-line-middle"></span>
-    <span class="toggle-line toggle-line-last"></span>
+    
+  <li class="item">
+    <a href="/" rel="section"><i class="ic i-home"></i>Home</a>
+  </li>
+
+    
+  <li class="item">
+    <a href="/about/" rel="section"><i class="ic i-user"></i>About</a>
+  </li>
+
+        
+  <li class="item dropdown">
+      <a href="javascript:void(0);"><i class="ic i-feather"></i>Posts</a>
+    <ul class="submenu">
+
+        
+  <li class="item">
+    <a href="/archives/" rel="section"><i class="ic i-list-alt"></i>Archives</a>
+  </li>
+
+        
+  <li class="item">
+    <a href="/categories/" rel="section"><i class="ic i-th"></i>Categories</a>
+  </li>
+
+        
+  <li class="item">
+    <a href="/tags/" rel="section"><i class="ic i-tags"></i>Tags</a>
+  </li>
+
+  </ul>
+
+</ul>
+
+      </div>
+    </div>
   </div>
 
-  <aside class="sidebar">
-    <div class="sidebar-inner">
-    
-    
-    <!-- 霓虹灯时钟 -->
-    <div>
-    <svg style="height: 60px;">
-        <text id="time" text-anchor="middle" x="36%" y="80%" class="words words-1"></text>
-        <text id="time" text-anchor="middle" x="36%" y="80%" class="words words-2"></text>
-        <text id="time" text-anchor="middle" x="36%" y="80%" class="words words-3"></text>
-        <text id="time" text-anchor="middle" x="36%" y="80%" class="words words-4"></text>
-    </svg>
-</div>
-
-<script>
-function showtime(){
-    var noatime = new Date();
-    var h = noatime.getHours(),
-        m = noatime.getMinutes(),
-        s = noatime.getSeconds();
-    h=checktime(h);
-    m=checktime(m);
-    s=checktime(s);
-  return h+":"+m+":"+s;
-}
-
-function checktime(x){
-  if(x<10){
-    x="0"+x;
-  }
-  return x;
-}
-
-var div1=document.getElementsByTagName("text");
-setInterval(function(){
-  for (var i in div1){
-      div1[i].innerHTML=showtime();
-  }
-},1000);
-</script>
-
-<style>
-.words{
-    font-size: 50px;
-    font-weight: bold;
-    text-transform: uppercase;
-    fill: none;
-    stroke-width: 3px;
-    stroke-dasharray: 35,125;
-    animation-name: drawing;
-    animation-duration: 6s;
-    animation-iteration-count: infinite;
-    animation-timing-function: linear;
-}
-.words-1{
-    stroke: deepskyblue;
-    text-shadow: 0 0 15px deepskyblue;
-    animation-delay: -1.5s;
-}
-.words-2{
-    stroke: lightseagreen;
-    text-shadow: 0 0 15px lightseagreen;
-    animation-delay: -3s;
-}
-.words-3{
-    stroke: orange;
-    text-shadow: 0 0 15px orange;
-    animation-delay: -4.5s;
-}
-.words-4{
-    stroke: purple;
-    text-shadow: 0 0 15px purple;
-    animation-delay: -6s;
-}
-@keyframes drawing {
-    100%{
-        stroke-dashoffset: -160
-    }
-}
-</style>
-
-    
-      <!-- 起风了 -->
-      <!-- <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=86 src="//music.163.com/outchain/player?type=2&id=1901069794&auto=1&height=66"></iframe> -->
-      <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=86 src="//music.163.com/outchain/player?type=2&id=1927119724&auto=1&height=66"></iframe>
-
-      <ul class="sidebar-nav motion-element">
-        <li class="sidebar-nav-toc">
-          Table of Contents
-        </li>
-        <li class="sidebar-nav-overview">
-          Overview
-        </li>
-      </ul>
-
-      <!--noindex-->
-      <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%BD%8D%EF%BC%8C%E5%AD%97%E8%8A%82%EF%BC%8C-%E5%AD%97%E7%AC%A6"><span class="nav-number">1.</span> <span class="nav-text">位，字节， 字符</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-%E4%BD%8D"><span class="nav-number">1.1.</span> <span class="nav-text">1. 位</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-%E5%AD%97%E8%8A%82"><span class="nav-number">1.2.</span> <span class="nav-text">2. 字节</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-%E5%AD%97%E7%AC%A6"><span class="nav-number">1.3.</span> <span class="nav-text">3.字符</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#4-%E5%AD%97%E7%AC%A6%E9%9B%86"><span class="nav-number">1.4.</span> <span class="nav-text">4.字符集</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#5-%E7%BC%96%E7%A0%81"><span class="nav-number">1.5.</span> <span class="nav-text">5.编码</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%9F%BA%E6%9C%AC%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B%E8%8C%83%E5%9B%B4"><span class="nav-number">2.</span> <span class="nav-text">基本数据类型范围</span></a></li></ol></div>
-      </div>
-      <!--/noindex-->
-
-      <div class="site-overview-wrap sidebar-panel">
-        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
-    <img class="site-author-image" itemprop="image" alt="JIN Mao"
-      src="/images/avatar.png">
-  <p class="site-author-name" itemprop="name">JIN Mao</p>
-  <div class="site-description" itemprop="description"></div>
-</div>
-<div class="site-state-wrap motion-element">
-  <nav class="site-state">
-      <div class="site-state-item site-state-posts">
-          <a href="/archives/">
-        
-          <span class="site-state-item-count">133</span>
-          <span class="site-state-item-name">posts</span>
-        </a>
-      </div>
-      <div class="site-state-item site-state-categories">
-            <a href="/categories/">
-          
-        <span class="site-state-item-count">70</span>
-        <span class="site-state-item-name">categories</span></a>
-      </div>
-      <div class="site-state-item site-state-tags">
-            <a href="/tags/">
-          
-        <span class="site-state-item-count">97</span>
-        <span class="site-state-item-name">tags</span></a>
-      </div>
-  </nav>
+  <ul id="quick">
+    <li class="prev pjax">
+        <a href="/posts/3eb5e557/" rel="prev" title="Previous Post"><i class="ic i-chevron-left"></i></a>
+    </li>
+    <li class="up"><i class="ic i-arrow-up"></i></li>
+    <li class="down"><i class="ic i-arrow-down"></i></li>
+    <li class="next pjax">
+        <a href="/posts/b42f0c87/" rel="next" title="Next Post"><i class="ic i-chevron-right"></i></a>
+    </li>
+    <li class="percent"></li>
+  </ul>
 </div>
 
 
-
-      </div>
-
-  
-
-    </div>
-
-
-  </aside>
-  <div id="sidebar-dimmer"></div>
-
-
+        </div>
+        <div class="dimmer"></div>
       </div>
     </main>
-
-    <footer class="footer">
-      <div class="footer-inner">
-        
-
-        
-
-<div class="copyright">
-  
-  &copy; 
-  <span itemprop="copyrightYear">2022</span>
-  <span class="with-love">
-    <i class="fa fa-heart"></i>
-  </span>
-  <span class="author" itemprop="copyrightHolder">JIN Mao</span>
+    <footer id="footer">
+      <div class="inner">
+        <div class="widgets">
+          
+<div class="rpost pjax">
+  <h2>Random Posts</h2>
+  <ul>
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/%E5%A4%A7%E6%95%B0%E6%8D%AE/" title="In 大数据">大数据</a>
 </div>
-  <!--添加运行时间-->
-  <span id="sitetime"></span>
-  <script language=javascript>
-    function siteTime(){
-      window.setTimeout("siteTime()", 1000);
-      var seconds = 1000;
-      var minutes = seconds * 60;
-      var hours = minutes * 60;
-      var days = hours * 24;
-      var years = days * 365;
-      var today = new Date();
-      var todayYear = today.getFullYear();
-      var todayMonth = today.getMonth()+1;
-      var todayDate = today.getDate();
-      var todayHour = today.getHours();
-      var todayMinute = today.getMinutes();
-      var todaySecond = today.getSeconds();
-      /* 
-        Date.UTC() -- 返回date对象距世界标准时间(UTC)1970年1月1日午夜之间的毫秒数(时间戳)
-        year - 作为date对象的年份，为4位年份值
-        month - 0-11之间的整数，做为date对象的月份
-        day - 1-31之间的整数，做为date对象的天数
-        hours - 0(午夜24点)-23之间的整数，做为date对象的小时数
-        minutes - 0-59之间的整数，做为date对象的分钟数
-        seconds - 0-59之间的整数，做为date对象的秒数
-        microseconds - 0-999之间的整数，做为date对象的毫秒数
-      */
-      var t1 = Date.UTC(2021,11,11,00,00,00); //北京时间2018-2-13 00:00:00
-      var t2 = Date.UTC(todayYear,todayMonth,todayDate,todayHour,todayMinute,todaySecond);
-      var diff = t2-t1;
-      var diffYears = Math.floor(diff/years);
-      var diffDays = Math.floor((diff/days)-diffYears*365);
-      var diffHours = Math.floor((diff-(diffYears*365+diffDays)*days)/hours);
-      var diffMinutes = Math.floor((diff-(diffYears*365+diffDays)*days-diffHours*hours)/minutes);
-      var diffSeconds = Math.floor((diff-(diffYears*365+diffDays)*days-diffHours*hours-diffMinutes*minutes)/seconds);
-      document.getElementById("sitetime").innerHTML=" This blog is up and running "+/*diffYears+" Year "+*/diffDays+" Days "+diffHours+" Hours "+diffMinutes+" Minutes "+diffSeconds+" Seconds";
-    }
-    siteTime();
-  </script>
-  <!--// 添加运行时间-->
 
+    <span><a href="/posts/737c98ca/" title="什么是MapReduce">什么是MapReduce</a></span>
+  </li>
 
-<!--
-  <div class="powered-by">Powered by <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> & <a href="https://pisces.theme-next.org/" class="theme-link" rel="noopener" target="_blank">NexT.Pisces</a>
-  </div>
--->
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/SpringBoot/" title="In SpringBoot">SpringBoot</a>
+</div>
 
+    <span><a href="/posts/67f40b37/" title="Spring Boot 获取服务IP地址和端口号">Spring Boot 获取服务IP地址和端口号</a></span>
+  </li>
 
-        
-<div class="busuanzi-count">
-  <script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/Java%E9%9D%A2%E8%AF%95/" title="In Java面试">Java面试</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/Java%E9%9D%A2%E8%AF%95/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/" title="In 操作系统">操作系统</a>
+</div>
 
+    <span><a href="/posts/4847d2e5/" title="面试之旅关于操作系统">面试之旅关于操作系统</a></span>
+  </li>
 
-  <span class="site-uv" title="Total Visitors">
-    My <span id="busuanzi_value_site_uv"></span>th Friend, 
-  </span>
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/%E6%95%B0%E6%8D%AE%E5%BA%93/" title="In 数据库">数据库</a>
+</div>
 
-  <span class="site-pv" title="Total Views">
-    After  <span id="busuanzi_value_site_pv"></span> times of looking back, I met you 。
-  </span>
-  <!--
-    <span class="post-meta-item" id="busuanzi_container_site_uv" >
-      <span class="post-meta-item-icon">
-        <i class="fa fa-user"></i>
-      </span>
-      <span class="site-uv" title="Total Visitors">
-        <span id="busuanzi_value_site_uv"></span>
-      </span>
+    <span><a href="/posts/60f024c8/" title="关于sql执行计划">关于sql执行计划</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/Java%E9%9D%A2%E8%AF%95/" title="In Java面试">Java面试</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/Java%E9%9D%A2%E8%AF%95/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/" title="In 数据结构">数据结构</a>
+</div>
+
+    <span><a href="/posts/9f9a6182/" title="面试之旅关于数据结构">面试之旅关于数据结构</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/Java%E9%9D%A2%E8%AF%95/" title="In Java面试">Java面试</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/Java%E9%9D%A2%E8%AF%95/%E7%AE%97%E6%B3%95/" title="In 算法">算法</a>
+</div>
+
+    <span><a href="/posts/b9b9f7e7/" title="二叉树遍历">二叉树遍历</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/Ubuntu/" title="In Ubuntu">Ubuntu</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/Ubuntu/Mysql/" title="In Mysql">Mysql</a>
+</div>
+
+    <span><a href="/posts/31f95091/" title="Ubuntu中安装卸载Mysql数据库">Ubuntu中安装卸载Mysql数据库</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/Java/" title="In Java">Java</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/Java/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/" title="In 操作系统">操作系统</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/Java/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/Java%E9%9D%A2%E8%AF%95/" title="In Java面试">Java面试</a>
+</div>
+
+    <span><a href="/posts/166a1445/" title="位，字节， 字符">位，字节， 字符</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/Java%E9%9D%A2%E8%AF%95/" title="In Java面试">Java面试</a>
+</div>
+
+    <span><a href="/posts/3eb5e557/" title="赛可出行面试">赛可出行面试</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/Ubuntu/" title="In Ubuntu">Ubuntu</a>
+</div>
+
+    <span><a href="/posts/6e65ed30/" title="ubuntu20无法安装vmtools解决">ubuntu20无法安装vmtools解决</a></span>
+  </li>
+
+  </ul>
+</div>
+<div>
+  <h2>Recent Comments</h2>
+  <ul class="leancloud-recent-comment"></ul>
+</div>
+
+        </div>
+        <div class="status">
+  <div class="copyright">
+    
+    &copy; 2021 – 
+    <span itemprop="copyrightYear">2022</span>
+    <span class="with-love">
+      <i class="ic i-sakura rotate"></i>
     </span>
+    <span class="author" itemprop="copyrightHolder">JIN Mao @ Jin Mao when to get rich ?</span>
+  </div>
+  <div class="count">
+    <span class="post-meta-item-icon">
+      <i class="ic i-chart-area"></i>
+    </span>
+    <span title="Symbols count total">557k words</span>
+
     <span class="post-meta-divider">|</span>
-    <span class="post-meta-item" id="busuanzi_container_site_pv">
-      <span class="post-meta-item-icon">
-        <i class="fa fa-eye"></i>
-      </span>
-      <span class="site-pv" title="Total Views">
-        <span id="busuanzi_value_site_pv"></span>
-      </span>
-    </span>-->
+    <span class="post-meta-item-icon">
+      <i class="ic i-coffee"></i>
+    </span>
+    <span title="Reading time total">8:26</span>
+  </div>
 </div>
-
-
-
-
-
-
-
 
       </div>
     </footer>
   </div>
-
-  
-  <script src="/lib/anime.min.js"></script>
-  <script src="//cdn.jsdelivr.net/npm/medium-zoom@1/dist/medium-zoom.min.js"></script>
-  <script src="//cdn.jsdelivr.net/npm/lozad@1/dist/lozad.min.js"></script>
-  <script src="/lib/velocity/velocity.min.js"></script>
-  <script src="/lib/velocity/velocity.ui.min.js"></script>
-
-<script src="/js/utils.js"></script>
-
-<script src="/js/motion.js"></script>
-
-
-<script src="/js/schemes/pisces.js"></script>
-
-
-<script src="/js/next-boot.js"></script>
-
-<script src="/js/bookmark.js"></script>
-
-
-  <script defer src="/lib/three/three.min.js"></script>
-    <script defer src="/lib/three/canvas_lines.min.js"></script>
-
-
-  
-
-
-
-  <script>
-  if (CONFIG.page.isPost) {
-    wpac_init = window.wpac_init || [];
-    wpac_init.push({
-      widget: 'Rating',
-      id    : ,
-      el    : 'wpac-rating',
-      color : 'fc6423'
-    });
-    (function() {
-      if ('WIDGETPACK_LOADED' in window) return;
-      WIDGETPACK_LOADED = true;
-      var mc = document.createElement('script');
-      mc.type = 'text/javascript';
-      mc.async = true;
-      mc.src = '//embed.widgetpack.com/widget.js';
-      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(mc, s.nextSibling);
-    })();
-  }
-  </script>
-
-  
-<script src="/js/local-search.js"></script>
-
-
-
-
-
-
-
-
-
-
-
-
-
-  
-
-  
-
-
-<script>
-NexT.utils.loadComments(document.querySelector('#valine-comments'), () => {
-  NexT.utils.getScript('//unpkg.com/valine/dist/Valine.min.js', () => {
-    var GUEST = ['nick', 'mail', 'link'];
-    var guest = 'nick,mail,link';
-    guest = guest.split(',').filter(item => {
-      return GUEST.includes(item);
-    });
-    new Valine({
-      el         : '#valine-comments',
-      verify     : true,
-      notify     : true,
-      appId      : 'J2bQH6GquIhMurLQc9NYgXWJ-gzGzoHsz',
-      appKey     : 'mbmntmQLrVScI2O7gV6zBej5',
-      placeholder: "Just go go",
-      avatar     : 'mm',
-      meta       : guest,
-      pageSize   : '10' || 10,
-      visitor    : false,
-      lang       : 'en' || 'zh-cn',
-      path       : location.pathname,
-      recordIP   : true,
-      serverURLs : ''
-    });
-  }, window.Valine);
-});
+<script data-config type="text/javascript">
+  var LOCAL = {
+    path: 'posts/166a1445/',
+    favicon: {
+      show: "You're welcome",
+      hide: "Wait for you"
+    },
+    search : {
+      placeholder: "Search for Posts",
+      empty: "We didn't find any results for the search: ${query}",
+      stats: "${hits} results found in ${time} ms"
+    },
+    valine: true,fancybox: true,
+    copyright: 'Copied to clipboard successfully! <br> All articles in this blog are licensed under <i class="ic i-creative-commons"></i>BY-NC-SA.',
+    ignores : [
+      function(uri) {
+        return uri.includes('#');
+      },
+      function(uri) {
+        return new RegExp(LOCAL.path+"$").test(uri);
+      }
+    ]
+  };
 </script>
 
+<script src="https://cdn.polyfill.io/v2/polyfill.js"></script>
 
-  
-  <script type="text/javascript" src="/js/cursor/love.js"></script>
+<script src="//cdn.jsdelivr.net/combine/npm/pace-js@1.0.2/pace.min.js,npm/pjax@0.2.8/pjax.min.js,npm/whatwg-fetch@3.4.0/dist/fetch.umd.min.js,npm/animejs@3.2.0/lib/anime.min.js,npm/algoliasearch@4/dist/algoliasearch-lite.umd.js,npm/instantsearch.js@4/dist/instantsearch.production.min.js,npm/lozad@1/dist/lozad.min.js,npm/quicklink@2/dist/quicklink.umd.js"></script>
+
+<script src="/js/app.js?v=0.2.5"></script>
 
 
 
-  
-<script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"model":{"jsonPath":"/live2dw/assets/shizuku.model.json"},"display":{"position":"left","width":200,"height":400},"mobile":{"show":false},"log":false,"pluginJsPath":"lib/","pluginModelPath":"assets/","pluginRootPath":"live2dw/","tagMode":false});</script></body>
+
+</body>
 </html>

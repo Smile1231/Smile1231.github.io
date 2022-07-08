@@ -1,0 +1,155 @@
+<?xml version="1.0"?>
+<rss version="2.0">
+    <channel>
+        <title>JIN MAO &#39;s Blog • Posts by &#34;master&#34; tag</title>
+        <link>https://smile1231.github.io</link>
+        <description></description>
+        <language>en</language>
+        <pubDate>Mon, 23 May 2022 16:16:39 +0800</pubDate>
+        <lastBuildDate>Mon, 23 May 2022 16:16:39 +0800</lastBuildDate>
+        <category>生物信息</category>
+        <category>基因编辑</category>
+        <category>SAP</category>
+        <category>Java</category>
+        <category>Corn</category>
+        <category>Cache</category>
+        <category>Cookie</category>
+        <category>Session</category>
+        <category>Java面试</category>
+        <category>前端</category>
+        <category>Css</category>
+        <category>DDD</category>
+        <category>领域驱动设计</category>
+        <category>DisPlay属性</category>
+        <category>FastJson</category>
+        <category>Docker</category>
+        <category>blog</category>
+        <category>hexo</category>
+        <category>next</category>
+        <category>IDEA</category>
+        <category>SpringBoot</category>
+        <category>JavaScript</category>
+        <category>Html</category>
+        <category>Jvm</category>
+        <category>函数式接口</category>
+        <category>map</category>
+        <category>Stream流</category>
+        <category>Assert</category>
+        <category>java</category>
+        <category>calender</category>
+        <category>Springboot</category>
+        <category>LeetCode</category>
+        <category>算法</category>
+        <category>递归</category>
+        <category>Mybatis</category>
+        <category>分页查询</category>
+        <category>模糊查询</category>
+        <category>Linux</category>
+        <category>Spring</category>
+        <category>Nginx</category>
+        <category>文件上传</category>
+        <category>SrpingBoot</category>
+        <category>事务</category>
+        <category>TypeScript</category>
+        <category>WebPack</category>
+        <category>master</category>
+        <category>Ubuntu</category>
+        <category>Mysql</category>
+        <category>VSCODE</category>
+        <category>快捷键</category>
+        <category>UML</category>
+        <category>Vue</category>
+        <category>VsCode</category>
+        <category>Shell</category>
+        <category>Stream</category>
+        <category>线程池</category>
+        <category>日期</category>
+        <category>ubuntu</category>
+        <category>虚拟机</category>
+        <category>数据挖掘</category>
+        <category>Hadoop</category>
+        <category>操作系统</category>
+        <category>EasyExcel</category>
+        <category>二分查找</category>
+        <category>node</category>
+        <category>JVM</category>
+        <category>junit</category>
+        <category>Hexo</category>
+        <category>数据库</category>
+        <category>Yaml</category>
+        <category>冒泡排序</category>
+        <category>Git</category>
+        <category>git,npm,node</category>
+        <category>动态规划</category>
+        <category>多线程</category>
+        <category>Mysql事务</category>
+        <category>堆排序</category>
+        <category>幂等性</category>
+        <category>流</category>
+        <category>归并排序</category>
+        <category>正则表达式</category>
+        <category>快速排序</category>
+        <category>直接插入排序</category>
+        <category>Java 面试</category>
+        <category>数据结构</category>
+        <category>阻塞队列</category>
+        <category>选择排序</category>
+        <category>Spring事务</category>
+        <category>JDK</category>
+        <category>动态代理</category>
+        <category>Date</category>
+        <category>ArrayList</category>
+        <category>接口</category>
+        <category>SpringMvc</category>
+        <category>排序</category>
+        <category>执行计划</category>
+        <category>HashMap</category>
+        <category>设计模式</category>
+        <item>
+            <guid isPermalink="true">https://smile1231.github.io/posts/378107f2/</guid>
+            <title>The Basic knowledge of Anaconda</title>
+            <link>https://smile1231.github.io/posts/378107f2/</link>
+            <category>master</category>
+            <pubDate>Mon, 23 May 2022 16:16:39 +0800</pubDate>
+            <description><![CDATA[ &lt;h1 id=&#34;anaconda基本学习&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#anaconda基本学习&#34;&gt;#&lt;/a&gt;  &lt;code&gt;Anaconda&lt;/code&gt;  基本学习&lt;/h1&gt;
+&lt;p&gt;&lt;code&gt;conda&lt;/code&gt;  中想要安装的包，可以在这个网站搜索查询： &lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9hbmFjb25kYS5vcmcvc2VhcmNoP3E9ZmFzdHEtam9pbg==&#34;&gt;https://anaconda.org/search?q=fastq-join&lt;/span&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;官网下载  &lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9saW5rLmppYW5zaHUuY29tLz90PWh0dHBzJTNBJTJGJTJGd3d3LmFuYWNvbmRhLmNvbSUyRmRvd25sb2FkJTJG&#34;&gt;链接&lt;/span&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;此处不多说&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;环境变量的配置 (windows)&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;需要注意的是， &lt;code&gt;AnaConda&lt;/code&gt;  需要配置三个路径的环境变量&lt;/p&gt;
+&lt;span id=&#34;more&#34;&gt;&lt;/span&gt;
+&lt;img data-src=&#34;/posts/378107f2/2022-05-23-16-19-09.png&#34; class=&#34;&#34;&gt;
+&lt;p&gt;根据自己的安装目录为准&lt;/p&gt;
+&lt;p&gt;此时在 &lt;code&gt;windows&lt;/code&gt;  中的 &lt;code&gt;cmd&lt;/code&gt;  中输入 &lt;code&gt;conda&lt;/code&gt;  命令&lt;/p&gt;
+&lt;img data-src=&#34;/posts/378107f2/2022-05-23-16-19-17.png&#34; class=&#34;&#34;&gt;
+&lt;p&gt;说明安装完毕，就可以投入使用了&lt;/p&gt;
+&lt;h2 id=&#34;conda的基本指令&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#conda的基本指令&#34;&gt;#&lt;/a&gt;  &lt;code&gt;Conda&lt;/code&gt;  的基本指令&lt;/h2&gt;
+&lt;h3 id=&#34;环境管理&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#环境管理&#34;&gt;#&lt;/a&gt; 环境管理&lt;/h3&gt;
+&lt;figure class=&#34;highlight python&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;13&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;14&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;15&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;16&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;17&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;18&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;19&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;20&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;21&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;22&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;23&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;24&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;25&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;26&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;27&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;28&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;29&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;30&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;31&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;32&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;33&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;34&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;# 升级conda&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;conda update conda&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;conda update anaconda&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;conda update anaconda-navigator    &lt;span class=&#34;comment&#34;&gt;#update最新版本的anaconda-navigator&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;conda update xxx   &lt;span class=&#34;comment&#34;&gt;#更新xxx文件包&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;conda --version &lt;span class=&#34;comment&#34;&gt;#获取版本号&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;conda update --&lt;span class=&#34;built_in&#34;&gt;help&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;conda remove --&lt;span class=&#34;built_in&#34;&gt;help&lt;/span&gt;  &lt;span class=&#34;comment&#34;&gt;#查看某一命令的帮助，如update命令及remove命令&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;conda env -h &lt;span class=&#34;comment&#34;&gt;# 查看环境管理的全部命令帮助&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;conda create --name your_env_name &lt;span class=&#34;comment&#34;&gt;#创建环境 --name可以省略为-n&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;conda create --n your_env_name python=&lt;span class=&#34;number&#34;&gt;3.7&lt;/span&gt;&lt;span class=&#34;comment&#34;&gt;#创建制定python版本的环境&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;conda create --name your_env_name numpy scipy&lt;span class=&#34;comment&#34;&gt;#创建包含某些包的环境&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;conda info --envs&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;conda env &lt;span class=&#34;built_in&#34;&gt;list&lt;/span&gt;  &lt;span class=&#34;comment&#34;&gt;#列举当前所有环境&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;#进入某个环境&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;activate your_env_name&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;#退出当前环境&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;deactivate &lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;#复制某个环境&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;conda create --name new_env_name --clone old_env_name &lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;#删除某个环境&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;conda remove --name your_env_name --&lt;span class=&#34;built_in&#34;&gt;all&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;h3 id=&#34;分享环境&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#分享环境&#34;&gt;#&lt;/a&gt; 分享环境&lt;/h3&gt;
+&lt;figure class=&#34;highlight python&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;10&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;# 如果你想把你当前的环境配置与别人分享，这样ta可以快速建立一个与你一模一样的环境（同一个版本的python及各种包）来共同开发/进行新的实验。一个分享环境的快速方法就是给ta一个你的环境的.yml文件。&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;#首先通过activate target_env要分享的环境target_env，然后输入下面的命令会在当前工作目录下生成一个environment.yml文件，&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;conda env export &amp;gt; environment.yml&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;#小伙伴拿到environment.yml文件后，将该文件放在工作目录下，可以通过以下命令从该文件创建环境&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;conda env create -f environment.yml&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;&lt;code&gt;yml&lt;/code&gt;  是这样的&lt;/p&gt;
+&lt;img data-src=&#34;/posts/378107f2/2022-05-23-16-19-29.png&#34; class=&#34;&#34;&gt;
+&lt;h3 id=&#34;包管理&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#包管理&#34;&gt;#&lt;/a&gt; 包管理&lt;/h3&gt;
+&lt;p&gt;列举当前活跃环境下的所有包&lt;/p&gt;
+&lt;figure class=&#34;highlight bat&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;conda list&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;列举一个非当前活跃环境下的所有包&lt;/p&gt;
+&lt;figure class=&#34;highlight bat&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;conda list -n your_env_name&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;为指定环境安装某个包&lt;/p&gt;
+&lt;figure class=&#34;highlight bat&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;conda install -n env_name package_name&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;h1 id=&#34;搭载vscode使用junpyter&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#搭载vscode使用junpyter&#34;&gt;#&lt;/a&gt; 搭载 &lt;code&gt;VsCode&lt;/code&gt;  使用 &lt;code&gt;junpyter&lt;/code&gt;&lt;/h1&gt;
+&lt;p&gt;安装 &lt;code&gt;VsCode&lt;/code&gt;  插件&lt;/p&gt;
+&lt;img data-src=&#34;/posts/378107f2/2022-05-23-16-19-42.png&#34; class=&#34;&#34;&gt;
+&lt;p&gt;这个时候就具备使用 &lt;code&gt;Jupyter&lt;/code&gt;  的条件了，因为 &lt;code&gt;Python&lt;/code&gt;  插件内部也安装了 &lt;code&gt;Jupyter&lt;/code&gt;  插件，此时 &lt;code&gt;Ctrl+Shift+P&lt;/code&gt;  弹出&lt;/p&gt;
+&lt;img data-src=&#34;/posts/378107f2/2022-05-23-16-19-49.png&#34; class=&#34;&#34;&gt;
+&lt;p&gt;新建一个 &lt;code&gt;Jupyter&lt;/code&gt;  就可以使用了&lt;/p&gt;
+&lt;img data-src=&#34;/posts/378107f2/2022-05-23-16-19-55.png&#34; class=&#34;&#34;&gt;
+&lt;p&gt;如果报错，一般重启一下 VSCode 就能够使用，喜欢使用主要是因为 &lt;code&gt;Jupyter&lt;/code&gt;  可以一行一行的执行，嘻嘻&lt;/p&gt;
+ ]]></description>
+        </item>
+    </channel>
+</rss>

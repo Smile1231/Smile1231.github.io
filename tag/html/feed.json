@@ -1,0 +1,20 @@
+{
+    "version": "https://jsonfeed.org/version/1",
+    "title": "JIN MAO 's Blog • All posts by \"html\" tag",
+    "description": "",
+    "home_page_url": "https://smile1231.github.io",
+    "items": [
+        {
+            "id": "https://smile1231.github.io/posts/7b604068/",
+            "url": "https://smile1231.github.io/posts/7b604068/",
+            "title": "Html页面插入地图",
+            "date_published": "2022-02-14T14:11:32.000Z",
+            "content_html": "<h1 id=\"html页面插入百度谷歌地图react中插入百度地图\"><a class=\"markdownIt-Anchor\" href=\"#html页面插入百度谷歌地图react中插入百度地图\">#</a>  <code>html</code>  页面插入百度谷歌地图， <code>react</code>  中插入百度地图</h1>\n<h2 id=\"google地图\"><a class=\"markdownIt-Anchor\" href=\"#google地图\">#</a>  <code>Google</code>  地图</h2>\n<ol>\n<li>在谷歌地图中  <code>http://www.google.cn/maps/</code></li>\n</ol>\n<p>输入地址，搜索到指定地点之后，点击 “共享” 按钮</p>\n<span id=\"more\"></span>\n<img data-src=\"/posts/7b604068/2022-02-14-22-35-40.png\" class=\"\">\n<ol start=\"2\">\n<li>然后使用嵌入地图</li>\n</ol>\n<img data-src=\"/posts/7b604068/2022-02-14-22-35-49.png\" class=\"\">\n<ol start=\"3\">\n<li>将复制的 <code>HTML</code>  代码粘贴到相应位置，根据自己需求修改宽高</li>\n</ol>\n<figure class=\"highlight html\"><table><tr><td class=\"gutter\"><pre><span class=\"line\">1</span><br><span class=\"line\">2</span><br><span class=\"line\">3</span><br></pre></td><td class=\"code\"><pre><span class=\"line\"><span class=\"tag\">&lt;<span class=\"name\">div</span> <span class=\"attr\">class</span>=<span class=\"string\">&quot;contact-map&quot;</span>&gt;</span>   </span><br><span class=\"line\">    <span class=\"tag\">&lt;<span class=\"name\">iframe</span> <span class=\"attr\">class</span>=<span class=\"string\">&quot;contact-map-size&quot;</span> <span class=\"attr\">src</span>=<span class=\"string\">&quot;https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3392.8449822382095!2d119.92011513973418!3d31.747432000000007!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x35b46cf8c886febb%3A0x54a85cdf7ef32ab9!2z5rGf6IuP55CG5bel5a2m6Zmi55S15rCU5L-h5oGv5bel56iL5a2m6Zmi!5e0!3m2!1szh-CN!2sus!4v1617931666774!5m2!1szh-CN!2sus&quot;</span>   <span class=\"attr\">allowfullscreen</span>=<span class=\"string\">&quot;&quot;</span> <span class=\"attr\">loading</span>=<span class=\"string\">&quot;lazy&quot;</span>&gt;</span><span class=\"tag\">&lt;/<span class=\"name\">iframe</span>&gt;</span></span><br><span class=\"line\"><span class=\"tag\">&lt;/<span class=\"name\">div</span>&gt;</span></span><br></pre></td></tr></table></figure>\n",
+            "tags": [
+                "前端",
+                "JavaScript",
+                "Html"
+            ]
+        }
+    ]
+}

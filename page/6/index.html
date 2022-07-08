@@ -1,501 +1,203 @@
+
+
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
-<meta name="theme-color" content="#222">
-<meta name="generator" content="Hexo 5.4.0">
-  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="/images/avatar.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="/images/avatar.png">
-  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+<meta name="theme-color" content="#FFF">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
 
-<link rel="stylesheet" href="/css/main.css">
+<link rel="icon" type="image/ico" sizes="32x32" href="/images/favicon.ico">
+  <meta http-equiv="Cache-Control" content="no-transform">
+  <meta http-equiv="Cache-Control" content="no-siteapp">
 
 
-<link rel="stylesheet" href="/lib/font-awesome/css/all.min.css">
-  <link rel="stylesheet" href="/lib/pace/pace-theme-mac-osx.min.css">
-  <script src="/lib/pace/pace.min.js"></script>
+<link rel="alternate" type="application/rss+xml" title="JIN MAO 's Blog" href="https://smile1231.github.io/rss.xml" />
+<link rel="alternate" type="application/atom+xml" title="JIN MAO 's Blog" href="https://smile1231.github.io/atom.xml" />
+<link rel="alternate" type="application/json" title="JIN MAO 's Blog" href="https://smile1231.github.io/feed.json" />
 
-<script id="hexo-configurations">
-    var NexT = window.NexT || {};
-    var CONFIG = {"hostname":"smile1231.github.io","root":"/","scheme":"Pisces","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":true,"show_result":true,"style":"mac"},"back2top":{"enable":true,"sidebar":false,"scrollpercent":true},"bookmark":{"enable":true,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":true,"lazyload":true,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
-  </script>
+<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Mulish:300,300italic,400,400italic,700,700italic%7CFredericka%20the%20Great:300,300italic,400,400italic,700,700italic%7CNoto%20Serif%20JP:300,300italic,400,400italic,700,700italic%7CNoto%20Serif%20SC:300,300italic,400,400italic,700,700italic%7CInconsolata:300,300italic,400,400italic,700,700italic&display=swap&subset=latin,latin-ext">
 
-  <meta property="og:type" content="website">
-<meta property="og:title" content="JIN MAO &#39;s Blog">
-<meta property="og:url" content="https://smile1231.github.io/page/6/index.html">
-<meta property="og:site_name" content="JIN MAO &#39;s Blog">
-<meta property="og:locale" content="en_US">
-<meta property="article:author" content="JIN Mao">
-<meta property="article:tag" content="Java,算法,数据挖掘">
-<meta name="twitter:card" content="summary">
+<link rel="stylesheet" href="/css/app.css?v=0.2.5">
+
+  
 
 <link rel="canonical" href="https://smile1231.github.io/page/6/">
 
 
-<script id="page-configurations">
-  // https://hexo.io/docs/variables.html
-  CONFIG.page = {
-    sidebar: "",
-    isHome : true,
-    isPost : false,
-    lang   : 'en'
-  };
-</script>
 
-  <title>JIN MAO 's Blog</title>
-  
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-FWV5496QFL"></script>
-    <script>
-      if (CONFIG.hostname === location.hostname) {
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-        gtag('config', 'G-FWV5496QFL');
-      }
-    </script>
-
-
-
-
-
-
-  <noscript>
-  <style>
-  .use-motion .brand,
-  .use-motion .menu-item,
-  .sidebar-inner,
-  .use-motion .post-block,
-  .use-motion .pagination,
-  .use-motion .comments,
-  .use-motion .post-header,
-  .use-motion .post-body,
-  .use-motion .collection-header { opacity: initial; }
-
-  .use-motion .site-title,
-  .use-motion .site-subtitle {
-    opacity: initial;
-    top: initial;
-  }
-
-  .use-motion .logo-line-before i { left: initial; }
-  .use-motion .logo-line-after i { right: initial; }
-  </style>
-</noscript>
-
-<link rel="alternate" href="/atom.xml" title="JIN MAO 's Blog" type="application/atom+xml">
-</head>
-
+  <title>Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
+<meta name="generator" content="Hexo 5.4.0"></head>
 <body itemscope itemtype="http://schema.org/WebPage">
-  <div class="container use-motion">
-    <div class="headband"></div>
-      <!-- <a target="_blank" rel="noopener" href="https://github.com/Smile1231/StudyRepository"><img loading="lazy" width="149" height="149" src="https://github.blog/wp-content/uploads/2008/12/forkme_right_gray_6d6d6d.png?resize=149%2C149" class="attachment-full size-full" alt="Fork me on GitHub" data-recalc-dims="1"></a> -->
-    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
-      <div class="header-inner"><div class="site-brand-container">
-  <div class="site-nav-toggle">
-    <div class="toggle" aria-label="Toggle navigation bar">
-      <span class="toggle-line toggle-line-first"></span>
-      <span class="toggle-line toggle-line-middle"></span>
-      <span class="toggle-line toggle-line-last"></span>
+  <div id="loading">
+    <div class="cat">
+      <div class="body"></div>
+      <div class="head">
+        <div class="face"></div>
+      </div>
+      <div class="foot">
+        <div class="tummy-end"></div>
+        <div class="bottom"></div>
+        <div class="legs left"></div>
+        <div class="legs right"></div>
+      </div>
+      <div class="paw">
+        <div class="hands left"></div>
+        <div class="hands right"></div>
+      </div>
     </div>
   </div>
-
-  <div class="site-meta">
-
-    <a href="/" class="brand" rel="start">
-      <span class="logo-line-before"><i></i></span>
-      <h1 class="site-title">JIN MAO 's Blog</h1>
-      <span class="logo-line-after"><i></i></span>
-    </a>
-      <p class="site-subtitle" itemprop="description">got windy(起风了)</p>
-  </div>
-
-  <div class="site-nav-right">
-    <div class="toggle popup-trigger">
-        <i class="fa fa-search fa-fw fa-lg"></i>
+  <div id="container">
+    <header id="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="inner">
+        <div id="brand">
+          <div class="pjax">
+          
+            <a href="/" class="logo" rel="start"><p class="artboard">Jin Mao when to get rich ?</p>
+              <h1 itemprop="name headline" class="title">JIN MAO 's Blog</h1>
+            </a>
+            <p class="meta" itemprop="description">= got windy(起风了) =</p>
+          
+          </div>
+        </div>
+        <nav id="nav">
+  <div class="inner">
+    <div class="toggle">
+      <div class="lines" aria-label="Toggle navigation bar">
+        <span class="line"></span>
+        <span class="line"></span>
+        <span class="line"></span>
+      </div>
     </div>
-  </div>
-</div>
-
-
-
-
-<nav class="site-nav">
-  <ul id="menu" class="main-menu menu">
-        <li class="menu-item menu-item-home">
-
-    <a href="/" rel="section"><i class="fa fa-home fa-fw"></i>Home</a>
-
-  </li>
-        <li class="menu-item menu-item-about">
-
-    <a href="/about/" rel="section"><i class="fa fa-user fa-fw"></i>About</a>
-
-  </li>
-        <li class="menu-item menu-item-tags">
-
-    <a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>Tags<span class="badge">97</span></a>
-
-  </li>
-        <li class="menu-item menu-item-categories">
-
-    <a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>Categories<span class="badge">70</span></a>
-
-  </li>
-        <li class="menu-item menu-item-archives">
-
-    <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>Archives<span class="badge">133</span></a>
-
-  </li>
-      <li class="menu-item menu-item-search">
-        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>Search
-        </a>
+    <ul class="menu">
+      <li class="item title"><a href="/" rel="start">Jin Mao when to get rich ?</a></li>
+    </ul>
+    <ul class="right">
+      <li class="item theme">
+        <i class="ic i-sun"></i>
       </li>
-  </ul>
+      <li class="item search">
+        <i class="ic i-search"></i>
+      </li>
+    </ul>
+  </div>
 </nav>
 
-
-
-  <div class="search-pop-overlay">
-    <div class="popup search-popup">
-        <div class="search-header">
-  <span class="search-icon">
-    <i class="fa fa-search"></i>
-  </span>
-  <div class="search-input-container">
-    <input autocomplete="off" autocapitalize="off"
-           placeholder="Searching..." spellcheck="false"
-           type="search" class="search-input">
-  </div>
-  <span class="popup-btn-close">
-    <i class="fa fa-times-circle"></i>
-  </span>
-</div>
-<div id="search-result">
-  <div id="no-result">
-    <i class="fa fa-spinner fa-pulse fa-5x fa-fw"></i>
-  </div>
-</div>
-
-    </div>
-  </div>
-
-</div>
+      </div>
+      <div id="imgs" class="pjax">
+        <ul>
+          <li class="item" data-background-image="https://tva1.sinaimg.cn/large/6833939bly1giclg5ms2rj20zk0m8u0x.jpg"></li>
+          <li class="item" data-background-image="https://tva1.sinaimg.cn/large/6833939bly1gicmnywqgpj20zk0m8dwx.jpg"></li>
+          <li class="item" data-background-image="https://tva1.sinaimg.cn/large/6833939bly1giciusoyjnj219g0u0x56.jpg"></li>
+          <li class="item" data-background-image="https://tva1.sinaimg.cn/large/6833939bly1giclhtuo6nj20zk0m8ttm.jpg"></li>
+          <li class="item" data-background-image="https://tva1.sinaimg.cn/large/6833939bly1giclhfehz7j20zk0m8u0x.jpg"></li>
+          <li class="item" data-background-image="https://tva1.sinaimg.cn/large/6833939bly1gipeuibk9fj20zk0m8ay2.jpg"></li>
+        </ul>
+      </div>
     </header>
-
-    
-  <div class="back-to-top">
-    <i class="fa fa-arrow-up"></i>
-    <span>0%</span>
+    <div id="waves">
+      <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+        <defs>
+          <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+        </defs>
+        <g class="parallax">
+          <use xlink:href="#gentle-wave" x="48" y="0" />
+          <use xlink:href="#gentle-wave" x="48" y="3" />
+          <use xlink:href="#gentle-wave" x="48" y="5" />
+          <use xlink:href="#gentle-wave" x="48" y="7" />
+        </g>
+      </svg>
+    </div>
+    <main>
+      <div class="inner">
+        <div id="main" class="pjax">
+          
+  <div class="index wrap">
+    <div class="segments posts">
+        
+<article class="item">
+  <div class="cover">
+    <a href="/posts/57681474/" itemprop="url" title="JVM简单原理"><img data-src="https://tva1.sinaimg.cn/mw690/6833939bly1giciryrr3rj20zk0m8nhk.jpg"></a>
   </div>
-  <div class="reading-progress-bar"></div>
-  <a role="button" class="book-mark-link book-mark-link-fixed"></a>
-
-
-    <main class="main">
-      <div class="main-inner">
-        <div class="content-wrap">
-          
-
-            <div class="post-block animated fadeIn">
-              <h5 class="post-title" itemprop="name headline">
-                <a target="_blank" rel="noopener" href="https://github.com/smile1231" class="post-title-link" itemprop="url">Github Contribution Calendar</a>
-              </h5>
-              <div class="post-body animated fadeInDown" itemprop="articleBody">
-                <img style="width: 100%; margin-top: 30px;" src="https://ghchart.rshah.org/e77c8e/smile1231" alt="JinMao's Blue Github Chart" />
-              </div>
-            </div>
-          <div class="content index posts-expand">
-            
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
-    <link itemprop="mainEntityOfPage" href="https://smile1231.github.io/posts/31d0fffb/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.png">
-      <meta itemprop="name" content="JIN Mao">
-      <meta itemprop="description" content="">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="JIN MAO 's Blog">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/posts/31d0fffb/" class="post-title-link" itemprop="url">Mybatis中#号和$号的区别</a>
-        </h2>
-
-        <div class="post-meta">
-          
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">Posted on</span>
-
-              <time title="Created: 2022-02-15 22:33:42" itemprop="dateCreated datePublished" datetime="2022-02-15T22:33:42+08:00">2022-02-15</time>
-            </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="far fa-calendar-check"></i>
-                </span>
-                <span class="post-meta-item-text">Edited on</span>
-                <time title="Modified: 2022-02-16 20:53:22" itemprop="dateModified" datetime="2022-02-16T20:53:22+08:00">2022-02-16</time>
-              </span>
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-folder"></i>
-              </span>
-              <span class="post-meta-item-text">In</span>
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/Java%E9%9D%A2%E8%AF%95/" itemprop="url" rel="index"><span itemprop="name">Java面试</span></a>
-                </span>
-                  , 
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/Java%E9%9D%A2%E8%AF%95/Mybatis/" itemprop="url" rel="index"><span itemprop="name">Mybatis</span></a>
-                </span>
-            </span>
-
-          
-  
-  <span class="post-meta-item">
+  <div class="info">
     
-      <span class="post-meta-item-icon">
-        <i class="far fa-comment"></i>
-      </span>
-      <span class="post-meta-item-text">Valine: </span>
-    
-    <a title="valine" href="/posts/31d0fffb/#valine-comments" itemprop="discussionUrl">
-      <span class="post-comments-count valine-comment-count" data-xid="/posts/31d0fffb/" itemprop="commentCount"></span>
-    </a>
+<div class="meta">
+  <span class="item" title="Created: 2022-02-15 22:33:11">
+    <span class="icon">
+      <i class="ic i-calendar"></i>
+    </span>
+    <time itemprop="dateCreated datePublished" datetime="2022-02-15T22:33:11+08:00">2022-02-15</time>
   </span>
-  
-  
+  <span class="item" title="Symbols count in article">
+    <span class="icon">
+      <i class="ic i-pen"></i>
+    </span>
+    <span>2.3k</span>
+    <span class="text">words</span>
+  </span>
+  <span class="item" title="Reading time">
+    <span class="icon">
+      <i class="ic i-clock"></i>
+    </span>
+    <span>2 mins.</span>
+  </span>
+</div>
 
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
+    <h3><a href="/posts/57681474/" itemprop="url" title="JVM简单原理">JVM简单原理</a></h3>
+    <div class="excerpt">
+        <h1 id="jvm原理的第一次接触"><a class="markdownIt-Anchor" href="#jvm原理的第一次接触">#</a>  <code>Jvm</code>  原理的第一次接触</h1>
+<h2 id="jvm内存结构"><a class="markdownIt-Anchor" href="#jvm内存结构">#</a>  <code>JVM</code>  内存结构</h2>
       
-          <h1 id="Mybatis中-号和-号的区别"><a href="#Mybatis中-号和-号的区别" class="headerlink" title="Mybatis中#号和$号的区别"></a><code>Mybatis</code>中<code>#</code>号和<code>$</code>号的区别</h1><h2 id="默认会用引号将参数引起来"><a href="#默认会用引号将参数引起来" class="headerlink" title="#{} 默认会用引号将参数引起来"></a><code>#&#123;&#125;</code> 默认会用引号将参数引起来</h2><h2 id="单纯替代"><a href="#单纯替代" class="headerlink" title="${}单纯替代"></a><code>$&#123;&#125;</code>单纯替代</h2><p>示例：</p>
-          <!--noindex-->
-            <div class="post-button">
-              <a class="btn" href="/posts/31d0fffb/#more" rel="contents">
-                Read more &raquo;
-              </a>
-            </div>
-          <!--/noindex-->
-        
-      
-
-      <div>
-        
-      </div>
     </div>
-
-    
-    
-    
-      
-
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
-    <link itemprop="mainEntityOfPage" href="https://smile1231.github.io/posts/57681474/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.png">
-      <meta itemprop="name" content="JIN Mao">
-      <meta itemprop="description" content="">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="JIN MAO 's Blog">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/posts/57681474/" class="post-title-link" itemprop="url">JVM简单原理</a>
-        </h2>
-
-        <div class="post-meta">
-          
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">Posted on</span>
-
-              <time title="Created: 2022-02-15 22:33:11" itemprop="dateCreated datePublished" datetime="2022-02-15T22:33:11+08:00">2022-02-15</time>
-            </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="far fa-calendar-check"></i>
-                </span>
-                <span class="post-meta-item-text">Edited on</span>
-                <time title="Modified: 2022-02-16 20:52:01" itemprop="dateModified" datetime="2022-02-16T20:52:01+08:00">2022-02-16</time>
-              </span>
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-folder"></i>
-              </span>
-              <span class="post-meta-item-text">In</span>
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/Java%E9%9D%A2%E8%AF%95/" itemprop="url" rel="index"><span itemprop="name">Java面试</span></a>
-                </span>
-                  , 
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/Java%E9%9D%A2%E8%AF%95/Jvm/" itemprop="url" rel="index"><span itemprop="name">Jvm</span></a>
-                </span>
-            </span>
-
-          
-  
-  <span class="post-meta-item">
-    
-      <span class="post-meta-item-icon">
-        <i class="far fa-comment"></i>
+    <div class="meta footer">
+      <span>
+        <a href="/categories/Java%E9%9D%A2%E8%AF%95/Jvm/" itemprop="url" title="Jvm"><i class="ic i-flag"></i>Jvm</a>
       </span>
-      <span class="post-meta-item-text">Valine: </span>
-    
-    <a title="valine" href="/posts/57681474/#valine-comments" itemprop="discussionUrl">
-      <span class="post-comments-count valine-comment-count" data-xid="/posts/57681474/" itemprop="commentCount"></span>
-    </a>
-  </span>
-  
-  
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <h1 id="Jvm原理的第一次接触"><a href="#Jvm原理的第一次接触" class="headerlink" title="Jvm原理的第一次接触"></a><code>Jvm</code>原理的第一次接触</h1><h2 id="JVM内存结构"><a href="#JVM内存结构" class="headerlink" title="JVM内存结构"></a><code>JVM</code>内存结构</h2>
-          <!--noindex-->
-            <div class="post-button">
-              <a class="btn" href="/posts/57681474/#more" rel="contents">
-                Read more &raquo;
-              </a>
-            </div>
-          <!--/noindex-->
-        
-      
-
-      <div>
-        
-      </div>
     </div>
+    <a href="/posts/57681474/" itemprop="url" title="JVM简单原理" class="btn">more...</a>
+  </div>
+</article>
 
+        
+<article class="item">
+  <div class="cover">
+    <a href="/posts/a5258aa2/" itemprop="url" title="Java面试小册子"><img data-src="https://tva1.sinaimg.cn/mw690/6833939bly1gipeu7txpzj20zk0m81kx.jpg"></a>
+  </div>
+  <div class="info">
     
-    
-    
-      
-
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
-    <link itemprop="mainEntityOfPage" href="https://smile1231.github.io/posts/a5258aa2/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.png">
-      <meta itemprop="name" content="JIN Mao">
-      <meta itemprop="description" content="">
+<div class="meta">
+  <span class="item" title="Created: 2022-02-15 22:32:35">
+    <span class="icon">
+      <i class="ic i-calendar"></i>
     </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="JIN MAO 's Blog">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/posts/a5258aa2/" class="post-title-link" itemprop="url">Java面试小册子</a>
-        </h2>
-
-        <div class="post-meta">
-          
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">Posted on</span>
-
-              <time title="Created: 2022-02-15 22:32:35" itemprop="dateCreated datePublished" datetime="2022-02-15T22:32:35+08:00">2022-02-15</time>
-            </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="far fa-calendar-check"></i>
-                </span>
-                <span class="post-meta-item-text">Edited on</span>
-                <time title="Modified: 2022-02-16 00:31:34" itemprop="dateModified" datetime="2022-02-16T00:31:34+08:00">2022-02-16</time>
-              </span>
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-folder"></i>
-              </span>
-              <span class="post-meta-item-text">In</span>
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/Java%E9%9D%A2%E8%AF%95/" itemprop="url" rel="index"><span itemprop="name">Java面试</span></a>
-                </span>
-            </span>
-
-          
-  
-  <span class="post-meta-item">
-    
-      <span class="post-meta-item-icon">
-        <i class="far fa-comment"></i>
-      </span>
-      <span class="post-meta-item-text">Valine: </span>
-    
-    <a title="valine" href="/posts/a5258aa2/#valine-comments" itemprop="discussionUrl">
-      <span class="post-comments-count valine-comment-count" data-xid="/posts/a5258aa2/" itemprop="commentCount"></span>
-    </a>
+    <time itemprop="dateCreated datePublished" datetime="2022-02-15T22:32:35+08:00">2022-02-15</time>
   </span>
-  
-  
+  <span class="item" title="Symbols count in article">
+    <span class="icon">
+      <i class="ic i-pen"></i>
+    </span>
+    <span>49k</span>
+    <span class="text">words</span>
+  </span>
+  <span class="item" title="Reading time">
+    <span class="icon">
+      <i class="ic i-clock"></i>
+    </span>
+    <span>45 mins.</span>
+  </span>
+</div>
 
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <h2 id="问题手册："><a href="#问题手册：" class="headerlink" title="问题手册："></a>问题手册：</h2><p>现在开始做最完整的总结。</p>
-<h3 id="一：JAVA基础相关"><a href="#一：JAVA基础相关" class="headerlink" title="一：JAVA基础相关"></a>一：JAVA基础相关</h3><ol>
-<li><p><strong>Object的九大方法.</strong></p>
+    <h3><a href="/posts/a5258aa2/" itemprop="url" title="Java面试小册子">Java面试小册子</a></h3>
+    <div class="excerpt">
+        <h2 id="问题手册"><a class="markdownIt-Anchor" href="#问题手册">#</a> 问题手册：</h2>
+<p>现在开始做最完整的总结。</p>
+<h3 id="一java基础相关"><a class="markdownIt-Anchor" href="#一java基础相关">#</a> 一：JAVA 基础相关</h3>
+<ol>
+<li>
+<p><strong>Object 的九大方法.</strong></p>
 <p>九大方法分别是:</p>
 <ul>
 <li><code>clone()</code></li>
@@ -510,1172 +212,698 @@
 </ul>
 </li>
 </ol>
-          <!--noindex-->
-            <div class="post-button">
-              <a class="btn" href="/posts/a5258aa2/#more" rel="contents">
-                Read more &raquo;
-              </a>
-            </div>
-          <!--/noindex-->
-        
       
-
-      <div>
-        
-      </div>
     </div>
-
-    
-    
-    
-      
-
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
-    <link itemprop="mainEntityOfPage" href="https://smile1231.github.io/posts/6714b4a9/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.png">
-      <meta itemprop="name" content="JIN Mao">
-      <meta itemprop="description" content="">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="JIN MAO 's Blog">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/posts/6714b4a9/" class="post-title-link" itemprop="url">FastJson序列化使用</a>
-        </h2>
-
-        <div class="post-meta">
-          
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">Posted on</span>
-
-              <time title="Created: 2022-02-15 22:29:52" itemprop="dateCreated datePublished" datetime="2022-02-15T22:29:52+08:00">2022-02-15</time>
-            </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="far fa-calendar-check"></i>
-                </span>
-                <span class="post-meta-item-text">Edited on</span>
-                <time title="Modified: 2022-02-16 00:24:23" itemprop="dateModified" datetime="2022-02-16T00:24:23+08:00">2022-02-16</time>
-              </span>
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-folder"></i>
-              </span>
-              <span class="post-meta-item-text">In</span>
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/Java%E9%9D%A2%E8%AF%95/" itemprop="url" rel="index"><span itemprop="name">Java面试</span></a>
-                </span>
-                  , 
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/Java%E9%9D%A2%E8%AF%95/Tools/" itemprop="url" rel="index"><span itemprop="name">Tools</span></a>
-                </span>
-            </span>
-
-          
-  
-  <span class="post-meta-item">
-    
-      <span class="post-meta-item-icon">
-        <i class="far fa-comment"></i>
+    <div class="meta footer">
+      <span>
+        <a href="/categories/Java%E9%9D%A2%E8%AF%95/" itemprop="url" title="Java面试"><i class="ic i-flag"></i>Java面试</a>
       </span>
-      <span class="post-meta-item-text">Valine: </span>
-    
-    <a title="valine" href="/posts/6714b4a9/#valine-comments" itemprop="discussionUrl">
-      <span class="post-comments-count valine-comment-count" data-xid="/posts/6714b4a9/" itemprop="commentCount"></span>
-    </a>
-  </span>
-  
-  
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <h2 id="需要导入依赖"><a href="#需要导入依赖" class="headerlink" title="需要导入依赖"></a>需要导入依赖</h2><figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"> <span class="comment">&lt;!--fastJson--&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">dependency</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">groupId</span>&gt;</span>com.alibaba<span class="tag">&lt;/<span class="name">groupId</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>fastjson<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">version</span>&gt;</span>1.2.75<span class="tag">&lt;/<span class="name">version</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">dependency</span>&gt;</span></span><br></pre></td></tr></table></figure>
-          <!--noindex-->
-            <div class="post-button">
-              <a class="btn" href="/posts/6714b4a9/#more" rel="contents">
-                Read more &raquo;
-              </a>
-            </div>
-          <!--/noindex-->
-        
-      
-
-      <div>
-        
-      </div>
     </div>
+    <a href="/posts/a5258aa2/" itemprop="url" title="Java面试小册子" class="btn">more...</a>
+  </div>
+</article>
 
+        
+<article class="item">
+  <div class="cover">
+    <a href="/posts/6714b4a9/" itemprop="url" title="FastJson序列化使用"><img data-src="https://tva1.sinaimg.cn/mw690/6833939bly1giclxxcb6rj20zk0m8b29.jpg"></a>
+  </div>
+  <div class="info">
     
-    
-    
-      
-
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
-    <link itemprop="mainEntityOfPage" href="https://smile1231.github.io/posts/f23f1351/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.png">
-      <meta itemprop="name" content="JIN Mao">
-      <meta itemprop="description" content="">
+<div class="meta">
+  <span class="item" title="Created: 2022-02-15 22:29:52">
+    <span class="icon">
+      <i class="ic i-calendar"></i>
     </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="JIN MAO 's Blog">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/posts/f23f1351/" class="post-title-link" itemprop="url">equals与==区别</a>
-        </h2>
-
-        <div class="post-meta">
-          
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">Posted on</span>
-
-              <time title="Created: 2022-02-15 22:27:23" itemprop="dateCreated datePublished" datetime="2022-02-15T22:27:23+08:00">2022-02-15</time>
-            </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="far fa-calendar-check"></i>
-                </span>
-                <span class="post-meta-item-text">Edited on</span>
-                <time title="Modified: 2022-02-16 00:18:27" itemprop="dateModified" datetime="2022-02-16T00:18:27+08:00">2022-02-16</time>
-              </span>
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-folder"></i>
-              </span>
-              <span class="post-meta-item-text">In</span>
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/Java/" itemprop="url" rel="index"><span itemprop="name">Java</span></a>
-                </span>
-                  , 
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/Java/Java%E9%9D%A2%E8%AF%95/" itemprop="url" rel="index"><span itemprop="name">Java面试</span></a>
-                </span>
-            </span>
-
-          
-  
-  <span class="post-meta-item">
-    
-      <span class="post-meta-item-icon">
-        <i class="far fa-comment"></i>
-      </span>
-      <span class="post-meta-item-text">Valine: </span>
-    
-    <a title="valine" href="/posts/f23f1351/#valine-comments" itemprop="discussionUrl">
-      <span class="post-comments-count valine-comment-count" data-xid="/posts/f23f1351/" itemprop="commentCount"></span>
-    </a>
+    <time itemprop="dateCreated datePublished" datetime="2022-02-15T22:29:52+08:00">2022-02-15</time>
   </span>
-  
-  
+  <span class="item" title="Symbols count in article">
+    <span class="icon">
+      <i class="ic i-pen"></i>
+    </span>
+    <span>995</span>
+    <span class="text">words</span>
+  </span>
+  <span class="item" title="Reading time">
+    <span class="icon">
+      <i class="ic i-clock"></i>
+    </span>
+    <span>1 mins.</span>
+  </span>
+</div>
 
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
+    <h3><a href="/posts/6714b4a9/" itemprop="url" title="FastJson序列化使用">FastJson序列化使用</a></h3>
+    <div class="excerpt">
+        <h2 id="需要导入依赖"><a class="markdownIt-Anchor" href="#需要导入依赖">#</a> 需要导入依赖</h2>
+<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"> <span class="comment">&lt;!--fastJson--&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">dependency</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">groupId</span>&gt;</span>com.alibaba<span class="tag">&lt;/<span class="name">groupId</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>fastjson<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">version</span>&gt;</span>1.2.75<span class="tag">&lt;/<span class="name">version</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">dependency</span>&gt;</span></span><br></pre></td></tr></table></figure>
       
-          <h1 id="equals与-区别"><a href="#equals与-区别" class="headerlink" title="equals与 ==区别"></a><code>equals</code>与 <code>==</code>区别</h1><p><code>Java</code>中数据类型分两种：</p>
+    </div>
+    <div class="meta footer">
+      <span>
+        <a href="/categories/Java%E9%9D%A2%E8%AF%95/Tools/" itemprop="url" title="Tools"><i class="ic i-flag"></i>Tools</a>
+      </span>
+    </div>
+    <a href="/posts/6714b4a9/" itemprop="url" title="FastJson序列化使用" class="btn">more...</a>
+  </div>
+</article>
+
+        
+<article class="item">
+  <div class="cover">
+    <a href="/posts/f23f1351/" itemprop="url" title="equals与&#x3D;&#x3D;区别"><img data-src="https://tva1.sinaimg.cn/mw690/6833939bly1gipetfk5zwj20zk0m8e81.jpg"></a>
+  </div>
+  <div class="info">
+    
+<div class="meta">
+  <span class="item" title="Created: 2022-02-15 22:27:23">
+    <span class="icon">
+      <i class="ic i-calendar"></i>
+    </span>
+    <time itemprop="dateCreated datePublished" datetime="2022-02-15T22:27:23+08:00">2022-02-15</time>
+  </span>
+  <span class="item" title="Symbols count in article">
+    <span class="icon">
+      <i class="ic i-pen"></i>
+    </span>
+    <span>2.2k</span>
+    <span class="text">words</span>
+  </span>
+  <span class="item" title="Reading time">
+    <span class="icon">
+      <i class="ic i-clock"></i>
+    </span>
+    <span>2 mins.</span>
+  </span>
+</div>
+
+    <h3><a href="/posts/f23f1351/" itemprop="url" title="equals与&#x3D;&#x3D;区别">equals与==区别</a></h3>
+    <div class="excerpt">
+        <h1 id="equals与-区别"><a class="markdownIt-Anchor" href="#equals与-区别">#</a>  <code>equals</code>  与  <code>==</code>  区别</h1>
+<p><code>Java</code>  中数据类型分两种：</p>
 <ol>
-<li>基本类型：<code>long,int,byte,float,double</code></li>
-<li>对象类型：<code>Long,Integer,Byte,Float,Double</code>其它一切<code>java</code>提供的，或者你自己创建的类。</li>
+<li>基本类型： <code>long,int,byte,float,double</code></li>
+<li>对象类型： <code>Long,Integer,Byte,Float,Double</code>  其它一切 <code>java</code>  提供的，或者你自己创建的类。</li>
 </ol>
-          <!--noindex-->
-            <div class="post-button">
-              <a class="btn" href="/posts/f23f1351/#more" rel="contents">
-                Read more &raquo;
-              </a>
-            </div>
-          <!--/noindex-->
-        
       
-
-      <div>
-        
-      </div>
     </div>
-
-    
-    
-    
-      
-
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
-    <link itemprop="mainEntityOfPage" href="https://smile1231.github.io/posts/b42f0c87/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.png">
-      <meta itemprop="name" content="JIN Mao">
-      <meta itemprop="description" content="">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="JIN MAO 's Blog">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/posts/b42f0c87/" class="post-title-link" itemprop="url">Cache、Cookie、Session、Token</a>
-        </h2>
-
-        <div class="post-meta">
-          
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">Posted on</span>
-
-              <time title="Created: 2022-02-15 21:37:52" itemprop="dateCreated datePublished" datetime="2022-02-15T21:37:52+08:00">2022-02-15</time>
-            </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="far fa-calendar-check"></i>
-                </span>
-                <span class="post-meta-item-text">Edited on</span>
-                <time title="Modified: 2022-02-16 00:18:08" itemprop="dateModified" datetime="2022-02-16T00:18:08+08:00">2022-02-16</time>
-              </span>
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-folder"></i>
-              </span>
-              <span class="post-meta-item-text">In</span>
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/Java/" itemprop="url" rel="index"><span itemprop="name">Java</span></a>
-                </span>
-                  , 
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/Java/Java%E9%9D%A2%E8%AF%95/" itemprop="url" rel="index"><span itemprop="name">Java面试</span></a>
-                </span>
-            </span>
-
-          
-  
-  <span class="post-meta-item">
-    
-      <span class="post-meta-item-icon">
-        <i class="far fa-comment"></i>
+    <div class="meta footer">
+      <span>
+        <a href="/categories/Java/Java%E9%9D%A2%E8%AF%95/" itemprop="url" title="Java面试"><i class="ic i-flag"></i>Java面试</a>
       </span>
-      <span class="post-meta-item-text">Valine: </span>
-    
-    <a title="valine" href="/posts/b42f0c87/#valine-comments" itemprop="discussionUrl">
-      <span class="post-comments-count valine-comment-count" data-xid="/posts/b42f0c87/" itemprop="commentCount"></span>
-    </a>
-  </span>
-  
-  
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <h1 id="Cache、Cookie、Session、Token"><a href="#Cache、Cookie、Session、Token" class="headerlink" title="Cache、Cookie、Session、Token"></a><code>Cache、Cookie、Session、Token</code></h1><h2 id="协议是什么"><a href="#协议是什么" class="headerlink" title="协议是什么"></a>协议是什么</h2><p>在接口测试中，客户端发送的<code>request</code>至服务端反馈的<code>response</code>中传输的数据就是接口测试最重要的部分</p>
-<h2 id="Cache是什么"><a href="#Cache是什么" class="headerlink" title="Cache是什么"></a><code>Cache</code>是什么</h2>
-          <!--noindex-->
-            <div class="post-button">
-              <a class="btn" href="/posts/b42f0c87/#more" rel="contents">
-                Read more &raquo;
-              </a>
-            </div>
-          <!--/noindex-->
-        
-      
-
-      <div>
-        
-      </div>
     </div>
+    <a href="/posts/f23f1351/" itemprop="url" title="equals与&#x3D;&#x3D;区别" class="btn">more...</a>
+  </div>
+</article>
 
+        
+<article class="item">
+  <div class="cover">
+    <a href="/posts/b42f0c87/" itemprop="url" title="Cache、Cookie、Session、Token"><img data-src="https://tva1.sinaimg.cn/mw690/6833939bly1gicm0n457cj20zk0m8e81.jpg"></a>
+  </div>
+  <div class="info">
     
-    
-    
-      
-
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
-    <link itemprop="mainEntityOfPage" href="https://smile1231.github.io/posts/166a1445/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.png">
-      <meta itemprop="name" content="JIN Mao">
-      <meta itemprop="description" content="">
+<div class="meta">
+  <span class="item" title="Created: 2022-02-15 21:37:52">
+    <span class="icon">
+      <i class="ic i-calendar"></i>
     </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="JIN MAO 's Blog">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/posts/166a1445/" class="post-title-link" itemprop="url">位，字节， 字符</a>
-        </h2>
-
-        <div class="post-meta">
-          
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">Posted on</span>
-
-              <time title="Created: 2022-02-15 21:37:36" itemprop="dateCreated datePublished" datetime="2022-02-15T21:37:36+08:00">2022-02-15</time>
-            </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="far fa-calendar-check"></i>
-                </span>
-                <span class="post-meta-item-text">Edited on</span>
-                <time title="Modified: 2022-02-16 00:17:58" itemprop="dateModified" datetime="2022-02-16T00:17:58+08:00">2022-02-16</time>
-              </span>
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-folder"></i>
-              </span>
-              <span class="post-meta-item-text">In</span>
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/Java/" itemprop="url" rel="index"><span itemprop="name">Java</span></a>
-                </span>
-                  , 
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/Java/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/" itemprop="url" rel="index"><span itemprop="name">操作系统</span></a>
-                </span>
-                  , 
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/Java/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/Java%E9%9D%A2%E8%AF%95/" itemprop="url" rel="index"><span itemprop="name">Java面试</span></a>
-                </span>
-            </span>
-
-          
-  
-  <span class="post-meta-item">
-    
-      <span class="post-meta-item-icon">
-        <i class="far fa-comment"></i>
-      </span>
-      <span class="post-meta-item-text">Valine: </span>
-    
-    <a title="valine" href="/posts/166a1445/#valine-comments" itemprop="discussionUrl">
-      <span class="post-comments-count valine-comment-count" data-xid="/posts/166a1445/" itemprop="commentCount"></span>
-    </a>
+    <time itemprop="dateCreated datePublished" datetime="2022-02-15T21:37:52+08:00">2022-02-15</time>
   </span>
-  
-  
+  <span class="item" title="Symbols count in article">
+    <span class="icon">
+      <i class="ic i-pen"></i>
+    </span>
+    <span>1.8k</span>
+    <span class="text">words</span>
+  </span>
+  <span class="item" title="Reading time">
+    <span class="icon">
+      <i class="ic i-clock"></i>
+    </span>
+    <span>2 mins.</span>
+  </span>
+</div>
 
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
+    <h3><a href="/posts/b42f0c87/" itemprop="url" title="Cache、Cookie、Session、Token">Cache、Cookie、Session、Token</a></h3>
+    <div class="excerpt">
+        <h1 id="cache-cookie-session-token"><a class="markdownIt-Anchor" href="#cache-cookie-session-token">#</a>  <code>Cache、Cookie、Session、Token</code></h1>
+<h2 id="协议是什么"><a class="markdownIt-Anchor" href="#协议是什么">#</a> 协议是什么</h2>
+<p>在接口测试中，客户端发送的 <code>request</code>  至服务端反馈的 <code>response</code>  中传输的数据就是接口测试最重要的部分</p>
+<h2 id="cache是什么"><a class="markdownIt-Anchor" href="#cache是什么">#</a>  <code>Cache</code>  是什么</h2>
       
-          <h2 id="位，字节，-字符"><a href="#位，字节，-字符" class="headerlink" title="位，字节， 字符"></a>位，字节， 字符</h2><h3 id="1-位"><a href="#1-位" class="headerlink" title="1. 位"></a>1. 位</h3><pre><code> 数据存储的最小单位。每个二进制数字0或者1就是1个位,比特为 bit ，简称 b
- 
+    </div>
+    <div class="meta footer">
+      <span>
+        <a href="/categories/Java/Java%E9%9D%A2%E8%AF%95/" itemprop="url" title="Java面试"><i class="ic i-flag"></i>Java面试</a>
+      </span>
+    </div>
+    <a href="/posts/b42f0c87/" itemprop="url" title="Cache、Cookie、Session、Token" class="btn">more...</a>
+  </div>
+</article>
+
+        
+<article class="item">
+  <div class="cover">
+    <a href="/posts/166a1445/" itemprop="url" title="位，字节， 字符"><img data-src="https://tva1.sinaimg.cn/mw690/6833939bly1gipeubcbajj20zk0m8h1h.jpg"></a>
+  </div>
+  <div class="info">
+    
+<div class="meta">
+  <span class="item" title="Created: 2022-02-15 21:37:36">
+    <span class="icon">
+      <i class="ic i-calendar"></i>
+    </span>
+    <time itemprop="dateCreated datePublished" datetime="2022-02-15T21:37:36+08:00">2022-02-15</time>
+  </span>
+  <span class="item" title="Symbols count in article">
+    <span class="icon">
+      <i class="ic i-pen"></i>
+    </span>
+    <span>4.9k</span>
+    <span class="text">words</span>
+  </span>
+  <span class="item" title="Reading time">
+    <span class="icon">
+      <i class="ic i-clock"></i>
+    </span>
+    <span>4 mins.</span>
+  </span>
+</div>
+
+    <h3><a href="/posts/166a1445/" itemprop="url" title="位，字节， 字符">位，字节， 字符</a></h3>
+    <div class="excerpt">
+        <h2 id="位字节-字符"><a class="markdownIt-Anchor" href="#位字节-字符">#</a> 位，字节， 字符</h2>
+<h3 id="1-位"><a class="markdownIt-Anchor" href="#1-位">#</a> 1. 位</h3>
+<pre><code> 数据存储的最小单位。每个二进制数字0或者1就是1个位,比特为 bit ，简称 b
 </code></pre>
-          <!--noindex-->
-            <div class="post-button">
-              <a class="btn" href="/posts/166a1445/#more" rel="contents">
-                Read more &raquo;
-              </a>
-            </div>
-          <!--/noindex-->
-        
       
-
-      <div>
-        
-      </div>
     </div>
-
-    
-    
-    
-      
-
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
-    <link itemprop="mainEntityOfPage" href="https://smile1231.github.io/posts/3eb5e557/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.png">
-      <meta itemprop="name" content="JIN Mao">
-      <meta itemprop="description" content="">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="JIN MAO 's Blog">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/posts/3eb5e557/" class="post-title-link" itemprop="url">赛可出行面试</a>
-        </h2>
-
-        <div class="post-meta">
-          
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">Posted on</span>
-
-              <time title="Created: 2022-02-15 21:37:19" itemprop="dateCreated datePublished" datetime="2022-02-15T21:37:19+08:00">2022-02-15</time>
-            </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="far fa-calendar-check"></i>
-                </span>
-                <span class="post-meta-item-text">Edited on</span>
-                <time title="Modified: 2022-02-16 00:09:07" itemprop="dateModified" datetime="2022-02-16T00:09:07+08:00">2022-02-16</time>
-              </span>
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-folder"></i>
-              </span>
-              <span class="post-meta-item-text">In</span>
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/Java%E9%9D%A2%E8%AF%95/" itemprop="url" rel="index"><span itemprop="name">Java面试</span></a>
-                </span>
-            </span>
-
-          
-  
-  <span class="post-meta-item">
-    
-      <span class="post-meta-item-icon">
-        <i class="far fa-comment"></i>
+    <div class="meta footer">
+      <span>
+        <a href="/categories/Java/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/Java%E9%9D%A2%E8%AF%95/" itemprop="url" title="Java面试"><i class="ic i-flag"></i>Java面试</a>
       </span>
-      <span class="post-meta-item-text">Valine: </span>
+    </div>
+    <a href="/posts/166a1445/" itemprop="url" title="位，字节， 字符" class="btn">more...</a>
+  </div>
+</article>
+
+        
+<article class="item">
+  <div class="cover">
+    <a href="/posts/3eb5e557/" itemprop="url" title="赛可出行面试"><img data-src="https://tva1.sinaimg.cn/mw690/6833939bly1giclhtuo6nj20zk0m8ttm.jpg"></a>
+  </div>
+  <div class="info">
     
-    <a title="valine" href="/posts/3eb5e557/#valine-comments" itemprop="discussionUrl">
-      <span class="post-comments-count valine-comment-count" data-xid="/posts/3eb5e557/" itemprop="commentCount"></span>
-    </a>
+<div class="meta">
+  <span class="item" title="Created: 2022-02-15 21:37:19">
+    <span class="icon">
+      <i class="ic i-calendar"></i>
+    </span>
+    <time itemprop="dateCreated datePublished" datetime="2022-02-15T21:37:19+08:00">2022-02-15</time>
   </span>
-  
-  
+  <span class="item" title="Symbols count in article">
+    <span class="icon">
+      <i class="ic i-pen"></i>
+    </span>
+    <span>41k</span>
+    <span class="text">words</span>
+  </span>
+  <span class="item" title="Reading time">
+    <span class="icon">
+      <i class="ic i-clock"></i>
+    </span>
+    <span>37 mins.</span>
+  </span>
+</div>
 
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <p>以下为本人面试经历汇总。。</p>
-<h1 id="在平时使用mysql时，需要有哪些注意点"><a href="#在平时使用mysql时，需要有哪些注意点" class="headerlink" title="在平时使用mysql时，需要有哪些注意点"></a>在平时使用<code>mysql</code>时，需要有哪些注意点</h1><ul>
-<li>数据库的范式  第一范式要求最低，只要求表中字段不可用在拆分。<br>  第二范式在第一范式的基础上要求每条记录由主键唯一区分，记录中所有属性都依赖于主键。<br>  第三范式在第二范式的基础上，要求所有属性必须直接依赖主键，不允许间接依赖。<br>  一般说来，数据库只需满足第三范式就可以了。</li>
+    <h3><a href="/posts/3eb5e557/" itemprop="url" title="赛可出行面试">赛可出行面试</a></h3>
+    <div class="excerpt">
+        <p>以下为本人面试经历汇总。。</p>
+<h1 id="在平时使用mysql时需要有哪些注意点"><a class="markdownIt-Anchor" href="#在平时使用mysql时需要有哪些注意点">#</a> 在平时使用 <code>mysql</code>  时，需要有哪些注意点</h1>
+<ul>
+<li>
+<p>数据库的范式</p>
+<p>第一范式要求最低，只要求表中字段不可用在拆分。<br>
+第二范式在第一范式的基础上要求每条记录由主键唯一区分，记录中所有属性都依赖于主键。<br>
+第三范式在第二范式的基础上，要求所有属性必须直接依赖主键，不允许间接依赖。<br>
+一般说来，数据库只需满足第三范式就可以了。</p>
+</li>
 </ul>
-          <!--noindex-->
-            <div class="post-button">
-              <a class="btn" href="/posts/3eb5e557/#more" rel="contents">
-                Read more &raquo;
-              </a>
-            </div>
-          <!--/noindex-->
-        
       
-
-      <div>
-        
-      </div>
     </div>
-
-    
-    
-    
-      
-
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
-    <link itemprop="mainEntityOfPage" href="https://smile1231.github.io/posts/3b6bfba3/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.png">
-      <meta itemprop="name" content="JIN Mao">
-      <meta itemprop="description" content="">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="JIN MAO 's Blog">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/posts/3b6bfba3/" class="post-title-link" itemprop="url">如何保证接口的幂等性</a>
-        </h2>
-
-        <div class="post-meta">
-          
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">Posted on</span>
-              
-
-              <time title="Created: 2022-02-15 21:36:39 / Modified: 23:18:32" itemprop="dateCreated datePublished" datetime="2022-02-15T21:36:39+08:00">2022-02-15</time>
-            </span>
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-folder"></i>
-              </span>
-              <span class="post-meta-item-text">In</span>
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/Java%E9%9D%A2%E8%AF%95/" itemprop="url" rel="index"><span itemprop="name">Java面试</span></a>
-                </span>
-            </span>
-
-          
-  
-  <span class="post-meta-item">
-    
-      <span class="post-meta-item-icon">
-        <i class="far fa-comment"></i>
+    <div class="meta footer">
+      <span>
+        <a href="/categories/Java%E9%9D%A2%E8%AF%95/" itemprop="url" title="Java面试"><i class="ic i-flag"></i>Java面试</a>
       </span>
-      <span class="post-meta-item-text">Valine: </span>
-    
-    <a title="valine" href="/posts/3b6bfba3/#valine-comments" itemprop="discussionUrl">
-      <span class="post-comments-count valine-comment-count" data-xid="/posts/3b6bfba3/" itemprop="commentCount"></span>
-    </a>
-  </span>
-  
-  
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <h1 id="如何保证接口的幂等性"><a href="#如何保证接口的幂等性" class="headerlink" title="如何保证接口的幂等性"></a><strong>如何保证接口的幂等性</strong></h1><h2 id="什么是幂等性"><a href="#什么是幂等性" class="headerlink" title="什么是幂等性"></a>什么是幂等性</h2><p>幂等性是系统服务对外一种承诺，承诺只要调用接口成功，外部多次调用对系统的影响是一致的。声明为幂等的服务会认为外部调用失败是常态，并且失败之后必然会有重试。</p>
-          <!--noindex-->
-            <div class="post-button">
-              <a class="btn" href="/posts/3b6bfba3/#more" rel="contents">
-                Read more &raquo;
-              </a>
-            </div>
-          <!--/noindex-->
-        
-      
-
-      <div>
-        
-      </div>
     </div>
+    <a href="/posts/3eb5e557/" itemprop="url" title="赛可出行面试" class="btn">more...</a>
+  </div>
+</article>
 
+        
+<article class="item">
+  <div class="cover">
+    <a href="/posts/3b6bfba3/" itemprop="url" title="如何保证接口的幂等性"><img data-src="https://tva1.sinaimg.cn/mw690/6833939bly1gicm0fdw5cj20zk0m8hdt.jpg"></a>
+  </div>
+  <div class="info">
     
-    
-    
-      
-
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
-    <link itemprop="mainEntityOfPage" href="https://smile1231.github.io/posts/59de1824/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.png">
-      <meta itemprop="name" content="JIN Mao">
-      <meta itemprop="description" content="">
+<div class="meta">
+  <span class="item" title="Created: 2022-02-15 21:36:39">
+    <span class="icon">
+      <i class="ic i-calendar"></i>
     </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="JIN MAO 's Blog">
+    <time itemprop="dateCreated datePublished" datetime="2022-02-15T21:36:39+08:00">2022-02-15</time>
+  </span>
+  <span class="item" title="Symbols count in article">
+    <span class="icon">
+      <i class="ic i-pen"></i>
     </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/posts/59de1824/" class="post-title-link" itemprop="url">spring中/和/*和/**的区别</a>
-        </h2>
+    <span>1.8k</span>
+    <span class="text">words</span>
+  </span>
+  <span class="item" title="Reading time">
+    <span class="icon">
+      <i class="ic i-clock"></i>
+    </span>
+    <span>2 mins.</span>
+  </span>
+</div>
 
-        <div class="post-meta">
-          
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">Posted on</span>
-              
-
-              <time title="Created: 2022-02-15 21:35:15 / Modified: 23:04:38" itemprop="dateCreated datePublished" datetime="2022-02-15T21:35:15+08:00">2022-02-15</time>
-            </span>
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-folder"></i>
-              </span>
-              <span class="post-meta-item-text">In</span>
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/Java/" itemprop="url" rel="index"><span itemprop="name">Java</span></a>
-                </span>
-                  , 
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/Java/Java%E9%9D%A2%E8%AF%95/" itemprop="url" rel="index"><span itemprop="name">Java面试</span></a>
-                </span>
-                  , 
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/Java/Java%E9%9D%A2%E8%AF%95/SpringBoot/" itemprop="url" rel="index"><span itemprop="name">SpringBoot</span></a>
-                </span>
-            </span>
-
-          
-  
-  <span class="post-meta-item">
-    
-      <span class="post-meta-item-icon">
-        <i class="far fa-comment"></i>
+    <h3><a href="/posts/3b6bfba3/" itemprop="url" title="如何保证接口的幂等性">如何保证接口的幂等性</a></h3>
+    <div class="excerpt">
+        <h1 id="如何保证接口的幂等性"><a class="markdownIt-Anchor" href="#如何保证接口的幂等性">#</a> <strong>如何保证接口的幂等性</strong></h1>
+<h2 id="什么是幂等性"><a class="markdownIt-Anchor" href="#什么是幂等性">#</a> 什么是幂等性</h2>
+<p>幂等性是系统服务对外一种承诺，承诺只要调用接口成功，外部多次调用对系统的影响是一致的。声明为幂等的服务会认为外部调用失败是常态，并且失败之后必然会有重试。</p>
+      
+    </div>
+    <div class="meta footer">
+      <span>
+        <a href="/categories/Java%E9%9D%A2%E8%AF%95/" itemprop="url" title="Java面试"><i class="ic i-flag"></i>Java面试</a>
       </span>
-      <span class="post-meta-item-text">Valine: </span>
+    </div>
+    <a href="/posts/3b6bfba3/" itemprop="url" title="如何保证接口的幂等性" class="btn">more...</a>
+  </div>
+</article>
+
+        
+<article class="item">
+  <div class="cover">
+    <a href="/posts/59de1824/" itemprop="url" title="spring中&#x2F;和&#x2F;*和&#x2F;**的区别"><img data-src="https://tva1.sinaimg.cn/mw690/6833939bly1gicli3sbvtj20zk0m8x6p.jpg"></a>
+  </div>
+  <div class="info">
     
-    <a title="valine" href="/posts/59de1824/#valine-comments" itemprop="discussionUrl">
-      <span class="post-comments-count valine-comment-count" data-xid="/posts/59de1824/" itemprop="commentCount"></span>
-    </a>
+<div class="meta">
+  <span class="item" title="Created: 2022-02-15 21:35:15">
+    <span class="icon">
+      <i class="ic i-calendar"></i>
+    </span>
+    <time itemprop="dateCreated datePublished" datetime="2022-02-15T21:35:15+08:00">2022-02-15</time>
   </span>
-  
-  
+  <span class="item" title="Symbols count in article">
+    <span class="icon">
+      <i class="ic i-pen"></i>
+    </span>
+    <span>760</span>
+    <span class="text">words</span>
+  </span>
+  <span class="item" title="Reading time">
+    <span class="icon">
+      <i class="ic i-clock"></i>
+    </span>
+    <span>1 mins.</span>
+  </span>
+</div>
 
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
+    <h3><a href="/posts/59de1824/" itemprop="url" title="spring中&#x2F;和&#x2F;*和&#x2F;**的区别">spring中/和/*和/**的区别</a></h3>
+    <div class="excerpt">
+        <h1 id="spring中和和的区别"><a class="markdownIt-Anchor" href="#spring中和和的区别">#</a> spring 中 <code>/</code>  和 <code>/*</code>  和 <code>/**</code>  的区别</h1>
+<h2 id="和-区别"><a class="markdownIt-Anchor" href="#和-区别">#</a>  <code>/</code>  和  <code>/*</code>  区别</h2>
+<figure class="highlight awk"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">/ 拦截所有请求 包括静态资源和动态请求 但是不拦截jsp</span><br><span class="line">/* 拦截所有请求 包括静态资源和动态请求 也拦截jsp</span><br><span class="line">区别就在于<span class="regexp">/ 不拦截jsp /</span>*拦截jsp</span><br></pre></td></tr></table></figure>
       
-          <h1 id="spring中-和-和-的区别"><a href="#spring中-和-和-的区别" class="headerlink" title="spring中/和/*和/**的区别"></a>spring中<code>/</code>和<code>/*</code>和<code>/**</code>的区别</h1><h2 id="和-区别"><a href="#和-区别" class="headerlink" title="/ 和 /*区别"></a><code>/</code> 和 <code>/*</code>区别</h2><figure class="highlight awk"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">/ 拦截所有请求 包括静态资源和动态请求 但是不拦截jsp</span><br><span class="line">/* 拦截所有请求 包括静态资源和动态请求 也拦截jsp</span><br><span class="line">区别就在于<span class="regexp">/ 不拦截jsp /</span>*拦截jsp</span><br></pre></td></tr></table></figure>
-          <!--noindex-->
-            <div class="post-button">
-              <a class="btn" href="/posts/59de1824/#more" rel="contents">
-                Read more &raquo;
-              </a>
-            </div>
-          <!--/noindex-->
-        
-      
+    </div>
+    <div class="meta footer">
+      <span>
+        <a href="/categories/Java/Java%E9%9D%A2%E8%AF%95/SpringBoot/" itemprop="url" title="SpringBoot"><i class="ic i-flag"></i>SpringBoot</a>
+      </span>
+    </div>
+    <a href="/posts/59de1824/" itemprop="url" title="spring中&#x2F;和&#x2F;*和&#x2F;**的区别" class="btn">more...</a>
+  </div>
+</article>
 
-      <div>
         
-      </div>
+<article class="item">
+  <div class="cover">
+    <a href="/posts/5e7baeeb/" itemprop="url" title="过滤器和拦截器的区别"><img data-src="https://tva1.sinaimg.cn/mw690/6833939bly1gipesx5fdwj20zk0m81kx.jpg"></a>
+  </div>
+  <div class="info">
+    
+<div class="meta">
+  <span class="item" title="Created: 2022-02-15 21:34:17">
+    <span class="icon">
+      <i class="ic i-calendar"></i>
+    </span>
+    <time itemprop="dateCreated datePublished" datetime="2022-02-15T21:34:17+08:00">2022-02-15</time>
+  </span>
+  <span class="item" title="Symbols count in article">
+    <span class="icon">
+      <i class="ic i-pen"></i>
+    </span>
+    <span>4.5k</span>
+    <span class="text">words</span>
+  </span>
+  <span class="item" title="Reading time">
+    <span class="icon">
+      <i class="ic i-clock"></i>
+    </span>
+    <span>4 mins.</span>
+  </span>
+</div>
+
+    <h3><a href="/posts/5e7baeeb/" itemprop="url" title="过滤器和拦截器的区别">过滤器和拦截器的区别</a></h3>
+    <div class="excerpt">
+        <h1 id="过滤器和拦截器的区别"><a class="markdownIt-Anchor" href="#过滤器和拦截器的区别">#</a> 过滤器和拦截器的区别</h1>
+<img src="/posts/5e7baeeb/2022-02-15-22-48-46.png" class="">
+<ol>
+<li>
+<p>过滤器和拦截器触发时机不一样，过滤器是在请求进入容器后，但请求进入 <code>servlet</code>  之前进行预处理的。请求结束返回也是，是在 <code>servlet</code>  处理完后，返回给前端之前。</p>
+</li>
+<li>
+<p>拦截器可以获取 <code>IOC</code>  容器中的各个 <code>bean</code> ，而过滤器就不行，因为拦截器是 <code>spring</code>  提供并管理的， <code>spring</code>  的功能可以被拦截器使用，在拦截器里注入一个 <code>service</code> ，可以调用业务逻辑。而过滤器是 <code>JavaEE</code>  标准，只需依赖 <code>servlet api</code>  ，不需要依赖 <code>spring</code> 。</p>
+</li>
+</ol>
+      
+    </div>
+    <div class="meta footer">
+      <span>
+        <a href="/categories/Java/Java%E9%9D%A2%E8%AF%95/SpringBoot/" itemprop="url" title="SpringBoot"><i class="ic i-flag"></i>SpringBoot</a>
+      </span>
+    </div>
+    <a href="/posts/5e7baeeb/" itemprop="url" title="过滤器和拦截器的区别" class="btn">more...</a>
+  </div>
+</article>
+
     </div>
 
-    
-    
-    
-      
-
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
+  </div>
 
   
   <nav class="pagination">
-    <a class="extend prev" rel="prev" href="/page/5/"><i class="fa fa-angle-left" aria-label="Previous page"></i></a><a class="page-number" href="/">1</a><span class="space">&hellip;</span><a class="page-number" href="/page/3/">3</a><a class="page-number" href="/page/4/">4</a><a class="page-number" href="/page/5/">5</a><span class="page-number current">6</span><a class="page-number" href="/page/7/">7</a><a class="page-number" href="/page/8/">8</a><a class="page-number" href="/page/9/">9</a><span class="space">&hellip;</span><a class="page-number" href="/page/14/">14</a><a class="extend next" rel="next" href="/page/7/"><i class="fa fa-angle-right" aria-label="Next page"></i></a>
+    <div class="inner">
+    <a class="extend prev" rel="prev" href="/page/5/"><i class="ic i-angle-left" aria-label="Previous page"></i></a><a class="page-number" href="/">1</a><span class="space">&hellip;</span><a class="page-number" href="/page/5/">5</a><span class="page-number current">6</span><a class="page-number" href="/page/7/">7</a><span class="space">&hellip;</span><a class="page-number" href="/page/14/">14</a><a class="extend next" rel="next" href="/page/7/"><i class="ic i-angle-right" aria-label="Next page"></i></a>
+    </div>
   </nav>
 
 
-
-          </div>
-          
-
-<script>
-  window.addEventListener('tabs:register', () => {
-    let { activeClass } = CONFIG.comments;
-    if (CONFIG.comments.storage) {
-      activeClass = localStorage.getItem('comments_active') || activeClass;
-    }
-    if (activeClass) {
-      let activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
-      if (activeTab) {
-        activeTab.click();
-      }
-    }
-  });
-  if (CONFIG.comments.storage) {
-    window.addEventListener('tabs:click', event => {
-      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
-      let commentClass = event.target.classList[1];
-      localStorage.setItem('comments_active', commentClass);
-    });
-  }
-</script>
 
         </div>
+        <div id="sidebar">
           
+<div class="inner">
+
+  <div class="panels">
+    <div class="inner">
+      <div class="contents panel pjax" data-title="Contents">
+      </div>
+      <div class="related panel pjax" data-title="Related">
+      </div>
+      <div class="overview panel" data-title="Overview">
+        <div class="author" itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <img class="image" itemprop="image" alt="JIN Mao"
+      data-src="/images/avatar.png">
+  <p class="name" itemprop="name">JIN Mao</p>
+  <div class="description" itemprop="description"></div>
+</div>
+
+<nav class="state">
+    <div class="item posts">
+      <a href="/archives/">
+        <span class="count">134</span>
+        <span class="name">posts</span>
+      </a>
+    </div>
+    <div class="item categories">
+      <a href="/categories/">
+        <span class="count">70</span>
+        <span class="name">categories</span>
+      </a>
+    </div>
+    <div class="item tags">
+      <a href="/tags/">
+        <span class="count">98</span>
+        <span class="name">tags</span>
+      </a>
+    </div>
+</nav>
+
+<div class="social">
+      <span class="exturl item github" data-url="aHR0cHM6Ly9naXRodWIuY29tL3NtaWxlMTIzMQ==" title="https:&#x2F;&#x2F;github.com&#x2F;smile1231"><i class="ic i-github"></i></span>
+</div>
+
+<ul class="menu">
   
-  <div class="toggle sidebar-toggle">
-    <span class="toggle-line toggle-line-first"></span>
-    <span class="toggle-line toggle-line-middle"></span>
-    <span class="toggle-line toggle-line-last"></span>
+    
+  <li class="item">
+    <a href="/" rel="section"><i class="ic i-home"></i>Home</a>
+  </li>
+
+    
+  <li class="item">
+    <a href="/about/" rel="section"><i class="ic i-user"></i>About</a>
+  </li>
+
+        
+  <li class="item dropdown">
+      <a href="javascript:void(0);"><i class="ic i-feather"></i>Posts</a>
+    <ul class="submenu">
+
+        
+  <li class="item">
+    <a href="/archives/" rel="section"><i class="ic i-list-alt"></i>Archives</a>
+  </li>
+
+        
+  <li class="item">
+    <a href="/categories/" rel="section"><i class="ic i-th"></i>Categories</a>
+  </li>
+
+        
+  <li class="item">
+    <a href="/tags/" rel="section"><i class="ic i-tags"></i>Tags</a>
+  </li>
+
+  </ul>
+
+</ul>
+
+      </div>
+    </div>
   </div>
 
-  <aside class="sidebar">
-    <div class="sidebar-inner">
-    
-    
-    <!-- 霓虹灯时钟 -->
-    <div>
-    <svg style="height: 60px;">
-        <text id="time" text-anchor="middle" x="36%" y="80%" class="words words-1"></text>
-        <text id="time" text-anchor="middle" x="36%" y="80%" class="words words-2"></text>
-        <text id="time" text-anchor="middle" x="36%" y="80%" class="words words-3"></text>
-        <text id="time" text-anchor="middle" x="36%" y="80%" class="words words-4"></text>
-    </svg>
+  <ul id="quick">
+    <li class="prev pjax">
+        <a href="/page/5/" rel="prev" title="Previous Post"><i class="ic i-chevron-left"></i></a>
+    </li>
+    <li class="up"><i class="ic i-arrow-up"></i></li>
+    <li class="down"><i class="ic i-arrow-down"></i></li>
+    <li class="next pjax">
+        <a href="/page/7/" rel="next" title="Next Post"><i class="ic i-chevron-right"></i></a>
+    </li>
+    <li class="percent"></li>
+  </ul>
 </div>
 
-<script>
-function showtime(){
-    var noatime = new Date();
-    var h = noatime.getHours(),
-        m = noatime.getMinutes(),
-        s = noatime.getSeconds();
-    h=checktime(h);
-    m=checktime(m);
-    s=checktime(s);
-  return h+":"+m+":"+s;
-}
-
-function checktime(x){
-  if(x<10){
-    x="0"+x;
-  }
-  return x;
-}
-
-var div1=document.getElementsByTagName("text");
-setInterval(function(){
-  for (var i in div1){
-      div1[i].innerHTML=showtime();
-  }
-},1000);
-</script>
-
-<style>
-.words{
-    font-size: 50px;
-    font-weight: bold;
-    text-transform: uppercase;
-    fill: none;
-    stroke-width: 3px;
-    stroke-dasharray: 35,125;
-    animation-name: drawing;
-    animation-duration: 6s;
-    animation-iteration-count: infinite;
-    animation-timing-function: linear;
-}
-.words-1{
-    stroke: deepskyblue;
-    text-shadow: 0 0 15px deepskyblue;
-    animation-delay: -1.5s;
-}
-.words-2{
-    stroke: lightseagreen;
-    text-shadow: 0 0 15px lightseagreen;
-    animation-delay: -3s;
-}
-.words-3{
-    stroke: orange;
-    text-shadow: 0 0 15px orange;
-    animation-delay: -4.5s;
-}
-.words-4{
-    stroke: purple;
-    text-shadow: 0 0 15px purple;
-    animation-delay: -6s;
-}
-@keyframes drawing {
-    100%{
-        stroke-dashoffset: -160
-    }
-}
-</style>
-
-    
-      <!-- 起风了 -->
-      <!-- <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=86 src="//music.163.com/outchain/player?type=2&id=1901069794&auto=1&height=66"></iframe> -->
-      <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=86 src="//music.163.com/outchain/player?type=2&id=1927119724&auto=1&height=66"></iframe>
-
-      <ul class="sidebar-nav motion-element">
-        <li class="sidebar-nav-toc">
-          Table of Contents
-        </li>
-        <li class="sidebar-nav-overview">
-          Overview
-        </li>
-      </ul>
-
-      <!--noindex-->
-      <div class="post-toc-wrap sidebar-panel">
-      </div>
-      <!--/noindex-->
-
-      <div class="site-overview-wrap sidebar-panel">
-        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
-    <img class="site-author-image" itemprop="image" alt="JIN Mao"
-      src="/images/avatar.png">
-  <p class="site-author-name" itemprop="name">JIN Mao</p>
-  <div class="site-description" itemprop="description"></div>
-</div>
-<div class="site-state-wrap motion-element">
-  <nav class="site-state">
-      <div class="site-state-item site-state-posts">
-          <a href="/archives/">
-        
-          <span class="site-state-item-count">133</span>
-          <span class="site-state-item-name">posts</span>
-        </a>
-      </div>
-      <div class="site-state-item site-state-categories">
-            <a href="/categories/">
-          
-        <span class="site-state-item-count">70</span>
-        <span class="site-state-item-name">categories</span></a>
-      </div>
-      <div class="site-state-item site-state-tags">
-            <a href="/tags/">
-          
-        <span class="site-state-item-count">97</span>
-        <span class="site-state-item-name">tags</span></a>
-      </div>
-  </nav>
-</div>
-
-
-
-      </div>
-
-  
-
-    </div>
-
-
-  </aside>
-  <div id="sidebar-dimmer"></div>
-
-
+        </div>
+        <div class="dimmer"></div>
       </div>
     </main>
-
-    <footer class="footer">
-      <div class="footer-inner">
-        
-
-        
-
-<div class="copyright">
-  
-  &copy; 
-  <span itemprop="copyrightYear">2022</span>
-  <span class="with-love">
-    <i class="fa fa-heart"></i>
-  </span>
-  <span class="author" itemprop="copyrightHolder">JIN Mao</span>
+    <footer id="footer">
+      <div class="inner">
+        <div class="widgets">
+          
+<div class="rpost pjax">
+  <h2>Random Posts</h2>
+  <ul>
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/Java/" title="In Java">Java</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/Java/Tools/" title="In Tools">Tools</a>
 </div>
-  <!--添加运行时间-->
-  <span id="sitetime"></span>
-  <script language=javascript>
-    function siteTime(){
-      window.setTimeout("siteTime()", 1000);
-      var seconds = 1000;
-      var minutes = seconds * 60;
-      var hours = minutes * 60;
-      var days = hours * 24;
-      var years = days * 365;
-      var today = new Date();
-      var todayYear = today.getFullYear();
-      var todayMonth = today.getMonth()+1;
-      var todayDate = today.getDate();
-      var todayHour = today.getHours();
-      var todayMinute = today.getMinutes();
-      var todaySecond = today.getSeconds();
-      /* 
-        Date.UTC() -- 返回date对象距世界标准时间(UTC)1970年1月1日午夜之间的毫秒数(时间戳)
-        year - 作为date对象的年份，为4位年份值
-        month - 0-11之间的整数，做为date对象的月份
-        day - 1-31之间的整数，做为date对象的天数
-        hours - 0(午夜24点)-23之间的整数，做为date对象的小时数
-        minutes - 0-59之间的整数，做为date对象的分钟数
-        seconds - 0-59之间的整数，做为date对象的秒数
-        microseconds - 0-999之间的整数，做为date对象的毫秒数
-      */
-      var t1 = Date.UTC(2021,11,11,00,00,00); //北京时间2018-2-13 00:00:00
-      var t2 = Date.UTC(todayYear,todayMonth,todayDate,todayHour,todayMinute,todaySecond);
-      var diff = t2-t1;
-      var diffYears = Math.floor(diff/years);
-      var diffDays = Math.floor((diff/days)-diffYears*365);
-      var diffHours = Math.floor((diff-(diffYears*365+diffDays)*days)/hours);
-      var diffMinutes = Math.floor((diff-(diffYears*365+diffDays)*days-diffHours*hours)/minutes);
-      var diffSeconds = Math.floor((diff-(diffYears*365+diffDays)*days-diffHours*hours-diffMinutes*minutes)/seconds);
-      document.getElementById("sitetime").innerHTML=" This blog is up and running "+/*diffYears+" Year "+*/diffDays+" Days "+diffHours+" Hours "+diffMinutes+" Minutes "+diffSeconds+" Seconds";
-    }
-    siteTime();
-  </script>
-  <!--// 添加运行时间-->
 
+    <span><a href="/posts/13370746/" title="使用EasyExcel读取excel文件为Java实体类">使用EasyExcel读取excel文件为Java实体类</a></span>
+  </li>
 
-<!--
-  <div class="powered-by">Powered by <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> & <a href="https://pisces.theme-next.org/" class="theme-link" rel="noopener" target="_blank">NexT.Pisces</a>
-  </div>
--->
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/Java/" title="In Java">Java</a>
+</div>
 
+    <span><a href="/posts/c3733521/" title="Java之assert关键字">Java之assert关键字</a></span>
+  </li>
 
-        
-<div class="busuanzi-count">
-  <script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/Java/" title="In Java">Java</a>
+</div>
 
+    <span><a href="/posts/91c18f7c/" title="关于Try-With-Source的使用以及注意点">关于Try-With-Source的使用以及注意点</a></span>
+  </li>
 
-  <span class="site-uv" title="Total Visitors">
-    My <span id="busuanzi_value_site_uv"></span>th Friend, 
-  </span>
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/Java%E9%9D%A2%E8%AF%95/" title="In Java面试">Java面试</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/Java%E9%9D%A2%E8%AF%95/%E9%80%89%E6%8B%A9%E6%8E%92%E5%BA%8F/" title="In 选择排序">选择排序</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/Java%E9%9D%A2%E8%AF%95/%E9%80%89%E6%8B%A9%E6%8E%92%E5%BA%8F/%E7%AE%97%E6%B3%95/" title="In 算法">算法</a>
+</div>
 
-  <span class="site-pv" title="Total Views">
-    After  <span id="busuanzi_value_site_pv"></span> times of looking back, I met you 。
-  </span>
-  <!--
-    <span class="post-meta-item" id="busuanzi_container_site_uv" >
-      <span class="post-meta-item-icon">
-        <i class="fa fa-user"></i>
-      </span>
-      <span class="site-uv" title="Total Visitors">
-        <span id="busuanzi_value_site_uv"></span>
-      </span>
+    <span><a href="/posts/43d00a99/" title="选择排序">选择排序</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/%E5%89%8D%E7%AB%AF/" title="In 前端">前端</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/%E5%89%8D%E7%AB%AF/Vue/" title="In Vue">Vue</a>
+</div>
+
+    <span><a href="/posts/e7e56598/" title="Vue属性介绍">Vue属性介绍</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/%E5%89%8D%E7%AB%AF/" title="In 前端">前端</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/%E5%89%8D%E7%AB%AF/Vue/" title="In Vue">Vue</a>
+</div>
+
+    <span><a href="/posts/8408ed11/" title="Vue-Cli介绍以及使用">Vue-Cli介绍以及使用</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/Mybtais/" title="In Mybtais">Mybtais</a>
+</div>
+
+    <span><a href="/posts/9aff665a/" title="mybatis中大于等于小于等于的写法">mybatis中大于等于小于等于的写法</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/Java/" title="In Java">Java</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/Java/Mysql/" title="In Mysql">Mysql</a>
+</div>
+
+    <span><a href="/posts/69c17d37/" title="关于事务提交中踩坑">关于事务提交中踩坑</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/Java%E9%9D%A2%E8%AF%95/" title="In Java面试">Java面试</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/Java%E9%9D%A2%E8%AF%95/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/" title="In 操作系统">操作系统</a>
+</div>
+
+    <span><a href="/posts/4847d2e5/" title="面试之旅关于操作系统">面试之旅关于操作系统</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+</div>
+
+    <span><a href="/posts/e694a882/" title="Windows下如何查看某个端口被谁占用">Windows下如何查看某个端口被谁占用</a></span>
+  </li>
+
+  </ul>
+</div>
+<div>
+  <h2>Recent Comments</h2>
+  <ul class="leancloud-recent-comment"></ul>
+</div>
+
+        </div>
+        <div class="status">
+  <div class="copyright">
+    
+    &copy; 2021 – 
+    <span itemprop="copyrightYear">2022</span>
+    <span class="with-love">
+      <i class="ic i-sakura rotate"></i>
     </span>
+    <span class="author" itemprop="copyrightHolder">JIN Mao @ Jin Mao when to get rich ?</span>
+  </div>
+  <div class="count">
+    <span class="post-meta-item-icon">
+      <i class="ic i-chart-area"></i>
+    </span>
+    <span title="Symbols count total">557k words</span>
+
     <span class="post-meta-divider">|</span>
-    <span class="post-meta-item" id="busuanzi_container_site_pv">
-      <span class="post-meta-item-icon">
-        <i class="fa fa-eye"></i>
-      </span>
-      <span class="site-pv" title="Total Views">
-        <span id="busuanzi_value_site_pv"></span>
-      </span>
-    </span>-->
+    <span class="post-meta-item-icon">
+      <i class="ic i-coffee"></i>
+    </span>
+    <span title="Reading time total">8:26</span>
+  </div>
 </div>
-
-
-
-
-
-
-
 
       </div>
     </footer>
   </div>
-
-  
-  <script src="/lib/anime.min.js"></script>
-  <script src="//cdn.jsdelivr.net/npm/medium-zoom@1/dist/medium-zoom.min.js"></script>
-  <script src="//cdn.jsdelivr.net/npm/lozad@1/dist/lozad.min.js"></script>
-  <script src="/lib/velocity/velocity.min.js"></script>
-  <script src="/lib/velocity/velocity.ui.min.js"></script>
-
-<script src="/js/utils.js"></script>
-
-<script src="/js/motion.js"></script>
-
-
-<script src="/js/schemes/pisces.js"></script>
-
-
-<script src="/js/next-boot.js"></script>
-
-<script src="/js/bookmark.js"></script>
-
-
-  <script defer src="/lib/three/three.min.js"></script>
-    <script defer src="/lib/three/canvas_lines.min.js"></script>
-
-
-  
-
-
-
-  <script>
-  if (CONFIG.page.isPost) {
-    wpac_init = window.wpac_init || [];
-    wpac_init.push({
-      widget: 'Rating',
-      id    : ,
-      el    : 'wpac-rating',
-      color : 'fc6423'
-    });
-    (function() {
-      if ('WIDGETPACK_LOADED' in window) return;
-      WIDGETPACK_LOADED = true;
-      var mc = document.createElement('script');
-      mc.type = 'text/javascript';
-      mc.async = true;
-      mc.src = '//embed.widgetpack.com/widget.js';
-      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(mc, s.nextSibling);
-    })();
-  }
-  </script>
-
-  
-<script src="/js/local-search.js"></script>
-
-
-
-
-
-
-
-
-
-
-
-
-
-  
-
-  
-
-
-<script>
-NexT.utils.loadComments(document.querySelector('#valine-comments'), () => {
-  NexT.utils.getScript('//unpkg.com/valine/dist/Valine.min.js', () => {
-    var GUEST = ['nick', 'mail', 'link'];
-    var guest = 'nick,mail,link';
-    guest = guest.split(',').filter(item => {
-      return GUEST.includes(item);
-    });
-    new Valine({
-      el         : '#valine-comments',
-      verify     : true,
-      notify     : true,
-      appId      : 'J2bQH6GquIhMurLQc9NYgXWJ-gzGzoHsz',
-      appKey     : 'mbmntmQLrVScI2O7gV6zBej5',
-      placeholder: "Just go go",
-      avatar     : 'mm',
-      meta       : guest,
-      pageSize   : '10' || 10,
-      visitor    : false,
-      lang       : 'en' || 'zh-cn',
-      path       : location.pathname,
-      recordIP   : true,
-      serverURLs : ''
-    });
-  }, window.Valine);
-});
+<script data-config type="text/javascript">
+  var LOCAL = {
+    path: 'page/6/',
+    favicon: {
+      show: "You're welcome",
+      hide: "Wait for you"
+    },
+    search : {
+      placeholder: "Search for Posts",
+      empty: "We didn't find any results for the search: ${query}",
+      stats: "${hits} results found in ${time} ms"
+    },
+    valine: true,fancybox: true,
+    copyright: 'Copied to clipboard successfully! <br> All articles in this blog are licensed under <i class="ic i-creative-commons"></i>BY-NC-SA.',
+    ignores : [
+      function(uri) {
+        return uri.includes('#');
+      },
+      function(uri) {
+        return new RegExp(LOCAL.path+"$").test(uri);
+      }
+    ]
+  };
 </script>
 
+<script src="https://cdn.polyfill.io/v2/polyfill.js"></script>
 
-  
-  <script type="text/javascript" src="/js/cursor/love.js"></script>
+<script src="//cdn.jsdelivr.net/combine/npm/pace-js@1.0.2/pace.min.js,npm/pjax@0.2.8/pjax.min.js,npm/whatwg-fetch@3.4.0/dist/fetch.umd.min.js,npm/animejs@3.2.0/lib/anime.min.js,npm/algoliasearch@4/dist/algoliasearch-lite.umd.js,npm/instantsearch.js@4/dist/instantsearch.production.min.js,npm/lozad@1/dist/lozad.min.js,npm/quicklink@2/dist/quicklink.umd.js"></script>
+
+<script src="/js/app.js?v=0.2.5"></script>
 
 
 
-  
-<script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"model":{"jsonPath":"/live2dw/assets/shizuku.model.json"},"display":{"position":"left","width":200,"height":400},"mobile":{"show":false},"log":false,"pluginJsPath":"lib/","pluginModelPath":"assets/","pluginRootPath":"live2dw/","tagMode":false});</script></body>
+
+</body>
 </html>

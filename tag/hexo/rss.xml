@@ -1,0 +1,197 @@
+<?xml version="1.0"?>
+<rss version="2.0">
+    <channel>
+        <title>JIN MAO &#39;s Blog • Posts by &#34;hexo&#34; tag</title>
+        <link>https://smile1231.github.io</link>
+        <description></description>
+        <language>en</language>
+        <pubDate>Fri, 08 Jul 2022 09:57:07 +0800</pubDate>
+        <lastBuildDate>Fri, 08 Jul 2022 09:57:07 +0800</lastBuildDate>
+        <category>生物信息</category>
+        <category>基因编辑</category>
+        <category>SAP</category>
+        <category>Java</category>
+        <category>Corn</category>
+        <category>Cache</category>
+        <category>Cookie</category>
+        <category>Session</category>
+        <category>Java面试</category>
+        <category>前端</category>
+        <category>Css</category>
+        <category>DDD</category>
+        <category>领域驱动设计</category>
+        <category>DisPlay属性</category>
+        <category>FastJson</category>
+        <category>Docker</category>
+        <category>blog</category>
+        <category>hexo</category>
+        <category>next</category>
+        <category>IDEA</category>
+        <category>SpringBoot</category>
+        <category>JavaScript</category>
+        <category>Html</category>
+        <category>Jvm</category>
+        <category>函数式接口</category>
+        <category>map</category>
+        <category>Stream流</category>
+        <category>Assert</category>
+        <category>java</category>
+        <category>calender</category>
+        <category>Springboot</category>
+        <category>LeetCode</category>
+        <category>算法</category>
+        <category>递归</category>
+        <category>Mybatis</category>
+        <category>分页查询</category>
+        <category>模糊查询</category>
+        <category>Linux</category>
+        <category>Spring</category>
+        <category>Nginx</category>
+        <category>文件上传</category>
+        <category>SrpingBoot</category>
+        <category>事务</category>
+        <category>TypeScript</category>
+        <category>WebPack</category>
+        <category>master</category>
+        <category>Ubuntu</category>
+        <category>Mysql</category>
+        <category>VSCODE</category>
+        <category>快捷键</category>
+        <category>UML</category>
+        <category>Vue</category>
+        <category>VsCode</category>
+        <category>Shell</category>
+        <category>Stream</category>
+        <category>线程池</category>
+        <category>日期</category>
+        <category>ubuntu</category>
+        <category>虚拟机</category>
+        <category>数据挖掘</category>
+        <category>Hadoop</category>
+        <category>操作系统</category>
+        <category>EasyExcel</category>
+        <category>二分查找</category>
+        <category>node</category>
+        <category>JVM</category>
+        <category>junit</category>
+        <category>Hexo</category>
+        <category>数据库</category>
+        <category>Yaml</category>
+        <category>冒泡排序</category>
+        <category>Git</category>
+        <category>git,npm,node</category>
+        <category>动态规划</category>
+        <category>多线程</category>
+        <category>Mysql事务</category>
+        <category>堆排序</category>
+        <category>幂等性</category>
+        <category>流</category>
+        <category>归并排序</category>
+        <category>正则表达式</category>
+        <category>快速排序</category>
+        <category>直接插入排序</category>
+        <category>Java 面试</category>
+        <category>数据结构</category>
+        <category>阻塞队列</category>
+        <category>选择排序</category>
+        <category>Spring事务</category>
+        <category>JDK</category>
+        <category>动态代理</category>
+        <category>Date</category>
+        <category>ArrayList</category>
+        <category>接口</category>
+        <category>SpringMvc</category>
+        <category>排序</category>
+        <category>执行计划</category>
+        <category>HashMap</category>
+        <category>设计模式</category>
+        <item>
+            <guid isPermalink="true">https://smile1231.github.io/posts/66edb7d2/</guid>
+            <title>关于hexo使用shoka主题注意点</title>
+            <link>https://smile1231.github.io/posts/66edb7d2/</link>
+            <category>Hexo</category>
+            <pubDate>Fri, 08 Jul 2022 09:57:07 +0800</pubDate>
+            <description><![CDATA[ &lt;p&gt;最近发现了一个特比好看的主题，叫  &lt;code&gt;shaoka&lt;/code&gt;  , &lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9naXRodWIuY29tL2FtZWhpbWUvaGV4by10aGVtZS1zaG9rYQ==&#34;&gt;github 地址&lt;/span&gt;，效果图不出意外的话应该就是我现在使用的这个 &lt;code&gt;theme&lt;/code&gt;  了，同时博主也很贴心了贴了一些简单的&lt;a href=&#34;https://shoka.lostyu.me/computer-science/note/theme-shoka-doc/dependents/&#34;&gt; &lt;code&gt;wiki&lt;/code&gt;  文档&lt;/a&gt;，&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly93d3cucmV2ZXJzZXNhY2xlLmNvbS9IZXhvLVNob2thJUU0JUI4JUJCJUU5JUEyJTk4JUU1JThBJTlGJUU4JTgzJUJEJUU0JUJCJThCJUU3JUJCJThEJUU4JUExJUE1JUU1JTg1JTg1JUU3JTgyJUI5Lw==&#34;&gt;补充功能介绍点&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;可能我这个主题还是会有一点问题，目前有的大坑的话就是关于界面搜索功能的失效，参照上面的补充功能介绍点注册一个&lt;a href=&#34;https://www.algolia.com/&#34;&gt; &lt;code&gt;algolia&lt;/code&gt; &lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;需要注意的是，在 &lt;code&gt;root&lt;/code&gt;  的 &lt;code&gt;_config.yml&lt;/code&gt;  文件中需要输入一些配置信息，由于我之前 &lt;code&gt;appId&lt;/code&gt;  一直写的是 &lt;code&gt;applicaitonId&lt;/code&gt; , 因为有些博客是这个，可能是老版本吧。&lt;/p&gt;
+&lt;figure class=&#34;highlight yml&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;13&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;14&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;attr&#34;&gt;algolia:&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;   &lt;span class=&#34;attr&#34;&gt;appId:&lt;/span&gt; &lt;span class=&#34;string&#34;&gt;&amp;quot;Application ID对应码&amp;quot;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;   &lt;span class=&#34;attr&#34;&gt;apiKey:&lt;/span&gt; &lt;span class=&#34;string&#34;&gt;&amp;quot;API Keys页面的All API Keys中刚刚新建的API key的对应码&amp;quot;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;   &lt;span class=&#34;attr&#34;&gt;adminApiKey:&lt;/span&gt; &lt;span class=&#34;string&#34;&gt;&amp;quot;Admin API Key对应码&amp;quot;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;   &lt;span class=&#34;attr&#34;&gt;chunkSize:&lt;/span&gt; &lt;span class=&#34;number&#34;&gt;5000&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;   &lt;span class=&#34;attr&#34;&gt;indexName:&lt;/span&gt; &lt;span class=&#34;string&#34;&gt;&amp;quot;你填写的Indices部分&amp;quot;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;   &lt;span class=&#34;attr&#34;&gt;fields:&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;     &lt;span class=&#34;bullet&#34;&gt;-&lt;/span&gt; &lt;span class=&#34;string&#34;&gt;title&lt;/span&gt; &lt;span class=&#34;comment&#34;&gt;#必须配置&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;     &lt;span class=&#34;bullet&#34;&gt;-&lt;/span&gt; &lt;span class=&#34;string&#34;&gt;path&lt;/span&gt; &lt;span class=&#34;comment&#34;&gt;#必须配置&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;     &lt;span class=&#34;bullet&#34;&gt;-&lt;/span&gt; &lt;span class=&#34;string&#34;&gt;categories&lt;/span&gt; &lt;span class=&#34;comment&#34;&gt;#推荐配置&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;     &lt;span class=&#34;bullet&#34;&gt;-&lt;/span&gt; &lt;span class=&#34;string&#34;&gt;content:strip:truncate,0,4000&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;     &lt;span class=&#34;bullet&#34;&gt;-&lt;/span&gt; &lt;span class=&#34;string&#34;&gt;gallery&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;     &lt;span class=&#34;bullet&#34;&gt;-&lt;/span&gt; &lt;span class=&#34;string&#34;&gt;photos&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;     &lt;span class=&#34;bullet&#34;&gt;-&lt;/span&gt; &lt;span class=&#34;string&#34;&gt;tags&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;在 &lt;code&gt;theme&lt;/code&gt;  的 &lt;code&gt;_config.yml&lt;/code&gt;  文件中，加入或者修改以下配置，目前版本的 &lt;code&gt;search&lt;/code&gt;  如果不配置，会报一个 &lt;code&gt;hits&lt;/code&gt;  的错误&lt;/p&gt;
+&lt;figure class=&#34;highlight yml&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;13&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;14&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;15&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;# Algolia Search&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;# For more information: https://www.algolia.com&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;attr&#34;&gt;search:&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  &lt;span class=&#34;attr&#34;&gt;enable:&lt;/span&gt; &lt;span class=&#34;literal&#34;&gt;false&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  &lt;span class=&#34;attr&#34;&gt;hits:&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;attr&#34;&gt;per_page:&lt;/span&gt; &lt;span class=&#34;number&#34;&gt;10&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;attr&#34;&gt;algolia_search:&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  &lt;span class=&#34;attr&#34;&gt;enable:&lt;/span&gt; &lt;span class=&#34;literal&#34;&gt;true&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  &lt;span class=&#34;attr&#34;&gt;hits:&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;attr&#34;&gt;per_page:&lt;/span&gt; &lt;span class=&#34;number&#34;&gt;10&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  &lt;span class=&#34;attr&#34;&gt;labels:&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;attr&#34;&gt;input_placeholder:&lt;/span&gt; &lt;span class=&#34;string&#34;&gt;Search&lt;/span&gt; &lt;span class=&#34;string&#34;&gt;for&lt;/span&gt; &lt;span class=&#34;string&#34;&gt;Something&lt;/span&gt; &lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;attr&#34;&gt;hits_empty:&lt;/span&gt; &lt;span class=&#34;string&#34;&gt;&amp;quot;We didn&amp;#x27;t find any results for the search: $&amp;#123;query&amp;#125;&amp;quot;&lt;/span&gt; &lt;span class=&#34;comment&#34;&gt;# if there are no result&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;attr&#34;&gt;hits_stats:&lt;/span&gt; &lt;span class=&#34;string&#34;&gt;&amp;quot;$&amp;#123;hits&amp;#125; results found in $&amp;#123;time&amp;#125; ms&amp;quot;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+ ]]></description>
+        </item>
+        <item>
+            <guid isPermalink="true">https://smile1231.github.io/posts/45934af9/</guid>
+            <title>使用vscode书写hexo博客粘贴图片解决方案</title>
+            <link>https://smile1231.github.io/posts/45934af9/</link>
+            <category>blog</category>
+            <category>hexo</category>
+            <category>next</category>
+            <pubDate>Wed, 17 Nov 2021 14:22:03 +0800</pubDate>
+            <description><![CDATA[ &lt;p&gt;以前都是在 &lt;code&gt;Vscode&lt;/code&gt;  中写一些 &lt;code&gt;MarkDown&lt;/code&gt;  文档，然后上传到 &lt;code&gt;GitHub&lt;/code&gt;  上做好目录供阅读使用:&lt;/p&gt;
+&lt;img data-src=&#34;/posts/45934af9/2021-11-17-14-35-44.png&#34; class=&#34;&#34;&gt;
+&lt;p&gt;如今搭建好了 &lt;code&gt;Blog&lt;/code&gt; , 图片粘贴也是必不可少的，翻阅大量网站资料，目前本人是采用的如下方式:&lt;/p&gt;
+&lt;span id=&#34;more&#34;&gt;&lt;/span&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;修改 &lt;code&gt;hexo&lt;/code&gt;  配置文件:  &lt;code&gt;post_asset_folder: true&lt;/code&gt; , 开启之后，生成新的 &lt;code&gt;post&lt;/code&gt;  时，会在 &lt;code&gt;source/_posts/&lt;/code&gt;  下创建一个同名文件夹&lt;/p&gt;
+ &lt;img data-src=&#34;/posts/45934af9/2021-11-17-14-41-29.png&#34; class=&#34;&#34;&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;下载插件: &lt;code&gt;paste image&lt;/code&gt;  &lt;img data-src=&#34;/posts/45934af9/2021-11-17-14-47-25.png&#34; class=&#34;&#34;&gt;&lt;br&gt;
+这个插件用来在 md 文档中粘贴图片，默认会在文档的同级目录下新建一个图片文件，并在 &lt;code&gt;md&lt;/code&gt;  中插入一行相对路径的图片代码。迎合上述 &lt;code&gt;hexo&lt;/code&gt;  的新图片插入方式，可以在 &lt;code&gt;vscode&lt;/code&gt;  的 &lt;code&gt;user-settings&lt;/code&gt;  里新增两条配置:&lt;/p&gt;
+&lt;img data-src=&#34;/posts/45934af9/2021-11-17-14-49-06.png&#34; class=&#34;&#34;&gt; 
+&lt;img data-src=&#34;/posts/45934af9/2021-11-17-14-49-20.png&#34; class=&#34;&#34;&gt; 
+&lt;img data-src=&#34;/posts/45934af9/2021-11-17-14-49-44.png&#34; class=&#34;&#34;&gt; 
+&lt;img data-src=&#34;/posts/45934af9/2021-11-17-14-50-14.png&#34; class=&#34;&#34;&gt;
+&lt;figure class=&#34;highlight json&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;string&#34;&gt;&amp;quot;pasteImage.path&amp;quot;&lt;/span&gt;: &lt;span class=&#34;string&#34;&gt;&amp;quot;$&amp;#123;currentFileNameWithoutExt&amp;#125;/&amp;quot;&lt;/span&gt;,&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;string&#34;&gt;&amp;quot;pasteImage.insertPattern&amp;quot;&lt;/span&gt;: &lt;span class=&#34;string&#34;&gt;&amp;quot;&amp;#123;% asset_img $&amp;#123;imageFileName&amp;#125; %&amp;#125;&amp;quot;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;这样以来，粘贴的图片就会保存到 md 文档的同名文件夹下，文档中将插入 &lt;code&gt;hexo asset&lt;/code&gt;  语法的代码。然后再复制或者剪切之后的图片，使用快捷键.( &lt;code&gt;windows&lt;/code&gt;  是 &lt;code&gt;ctrl+Alt+V&lt;/code&gt; , &lt;code&gt;Mac&lt;/code&gt;  是 &lt;code&gt;Command+option+V&lt;/code&gt; ), 但是 &lt;code&gt;hexo clean -&amp;gt; hexo g -&amp;gt; hexo s&lt;/code&gt;  之后图片就可以正常显示了&lt;/p&gt;
+&lt;img data-src=&#34;/posts/45934af9/2021-11-17-15-16-19.png&#34; class=&#34;&#34;&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;(以下的步骤需要修改到 &lt;code&gt;markdown&lt;/code&gt;  源码，慎重考虑), 由于重新新建一个文件夹的特殊性，所以需要略微修改&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;下载预览插件:  &lt;code&gt;Markdown Preview Enhanced&lt;/code&gt;&lt;img data-src=&#34;/posts/45934af9/2021-11-17-15-01-16.png&#34; class=&#34;&#34;&gt;
+&lt;/li&gt;
+&lt;li&gt;现在就要利用这个功能来解决一个问题： &lt;code&gt;vscode&lt;/code&gt;  内无法预览代码的图片。 &lt;code&gt;ctrl+shift+P&lt;/code&gt;  输入 &lt;code&gt;Markdown Preview Enhanced: Extend Parser&lt;/code&gt;  调出插件的 &lt;code&gt;parse.js&lt;/code&gt;  文件，修改其中的 &lt;code&gt;onWillParseMarkdown&lt;/code&gt;  方法：&lt;/li&gt;
+&lt;/ul&gt;
+ &lt;figure class=&#34;highlight js&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;13&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;14&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;15&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;16&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;built_in&#34;&gt;module&lt;/span&gt;.exports = &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt; &lt;span class=&#34;attr&#34;&gt;onWillParseMarkdown&lt;/span&gt;: &lt;span class=&#34;function&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;function&lt;/span&gt;(&lt;span class=&#34;params&#34;&gt;markdown&lt;/span&gt;) &lt;/span&gt;&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;   &lt;span class=&#34;keyword&#34;&gt;return&lt;/span&gt; &lt;span class=&#34;keyword&#34;&gt;new&lt;/span&gt; &lt;span class=&#34;built_in&#34;&gt;Promise&lt;/span&gt;(&lt;span class=&#34;function&#34;&gt;(&lt;span class=&#34;params&#34;&gt;resolve, reject&lt;/span&gt;)=&amp;gt;&lt;/span&gt; &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;     &lt;span class=&#34;comment&#34;&gt;//markdown参数打印出来是整个文件的内容&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;     &lt;span class=&#34;keyword&#34;&gt;var&lt;/span&gt; a = markdown.split(&lt;span class=&#34;string&#34;&gt;&amp;quot;\n&amp;quot;&lt;/span&gt;);&lt;span class=&#34;comment&#34;&gt;//通过下面第一张图片内容通过换行符进行切割&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;     &lt;span class=&#34;keyword&#34;&gt;var&lt;/span&gt; b = a[&lt;span class=&#34;number&#34;&gt;1&lt;/span&gt;].substring(&lt;span class=&#34;number&#34;&gt;6&lt;/span&gt;); &lt;span class=&#34;comment&#34;&gt;//获取到title行字符,然后再去除空格即可获得图片的路径&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;     markdown = markdown.replace(&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;       &lt;span class=&#34;comment&#34;&gt;//以下为代码，注释是因为markdown语法会渲染出错，但是是正确代码&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;     &lt;span class=&#34;comment&#34;&gt;//  /\&amp;#123;%\s*asset_img\s*(.*)\s*%\&amp;#125;/g,&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;      &lt;span class=&#34;comment&#34;&gt;// (whole, content) =&amp;gt; (&amp;#x27;{% asset_img &amp;#x27;+content+&amp;#x27;)&amp;#x27;  %}&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;     )&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;     &lt;span class=&#34;keyword&#34;&gt;return&lt;/span&gt; resolve(markdown)&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;   &amp;#125;)&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt; &amp;#125;,&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt; ...&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+ &lt;img data-src=&#34;/posts/45934af9/2021-11-17-18-00-53.png&#34; class=&#34;&#34;&gt;
+&lt;p&gt;尝试过后，图片的预览功能就能实现啦.&lt;/p&gt;
+ &lt;img data-src=&#34;/posts/45934af9/2021-11-17-18-03-07.png&#34; class=&#34;&#34;&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;参考链接 (图片重写预览功能有错误，本文已经修正):&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9saW5iZWkudG9wL3ZzY29kZSVFNyVCQyU5NiVFNSU4NiU5OW1kLw==&#34;&gt;https://linbei.top/vscode 编写 md/&lt;/span&gt;&lt;/p&gt;
+ ]]></description>
+        </item>
+        <item>
+            <guid isPermalink="true">https://smile1231.github.io/posts/575a6046/</guid>
+            <title>Hexo-Next主题如何文章置顶</title>
+            <link>https://smile1231.github.io/posts/575a6046/</link>
+            <category>blog</category>
+            <category>hexo</category>
+            <category>next</category>
+            <pubDate>Wed, 17 Nov 2021 11:06:14 +0800</pubDate>
+            <description><![CDATA[ &lt;h1 id=&#34;文章置顶&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#文章置顶&#34;&gt;#&lt;/a&gt; 文章置顶&lt;/h1&gt;
+&lt;p&gt;&lt;code&gt;Hexo&lt;/code&gt;  本身并没有内置文章置顶功能，因此需要自行安装。不过  &lt;code&gt;Hexo&lt;/code&gt;  本身有一个对文章排序的组件，也就是在站点配置文件内的  &lt;code&gt;index_generator&lt;/code&gt;  选项，置顶功能其实就是每次排序的时候，把其中的置顶文章排在最前，本质上是一个排序组件， &lt;code&gt;Hexo&lt;/code&gt;  默认的是  &lt;code&gt;hexo-generator-index&lt;/code&gt; ，所以先卸载再重新安装一个可以置顶的排序组件：&lt;/p&gt;
+&lt;span id=&#34;more&#34;&gt;&lt;/span&gt;
+&lt;figure class=&#34;highlight plaintext&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;# 先卸载&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;npm uninstall --save hexo-generator-index&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;# 再安装&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;npm install --save hexo-generator-index-pin-top&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;从插件名字上就能看得出来支持置顶了。该插件的  &lt;code&gt;GitHub&lt;/code&gt;  地址：&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9naXRodWIuY29tL25ldGNhbi9oZXhvLWdlbmVyYXRvci1pbmRleC1waW4tdG9w&#34;&gt;hexo-generator-index-pin-top&lt;/span&gt;。插件安装完之后，只需要在文章头部信息栏内设置  &lt;code&gt;top&lt;/code&gt;  属性即可：&lt;/p&gt;
+&lt;figure class=&#34;highlight markdown&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;---&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;title: 写在最前面&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;hide: false&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;section&#34;&gt;top: true&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;section&#34;&gt;---&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;这样这篇文章就具有置顶效果了。不过，仅仅只是这么做，文章虽然确实置顶了，但是从文章列表上来看，和普通的文章没什么不同。如果不特意去对比文章发布时间，可能会以为只是最新的文章而已。例如一些说明、通知之类的，为了能有个比较突出的标志，可以在  &lt;code&gt;next/layout/_macro/post.swig&lt;/code&gt;  文件中找到以下位置并添加代码：&lt;/p&gt;
+&lt;figure class=&#34;highlight html&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&amp;#123;% if post.top %&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;tag&#34;&gt;&amp;lt;&lt;span class=&#34;name&#34;&gt;i&lt;/span&gt; &lt;span class=&#34;attr&#34;&gt;class&lt;/span&gt;=&lt;span class=&#34;string&#34;&gt;&amp;quot;fa fa-thumb-tack&amp;quot;&lt;/span&gt; &lt;span class=&#34;attr&#34;&gt;style&lt;/span&gt;=&lt;span class=&#34;string&#34;&gt;&amp;quot;color: #EB6D39&amp;quot;&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;span class=&#34;tag&#34;&gt;&amp;lt;/&lt;span class=&#34;name&#34;&gt;i&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;tag&#34;&gt;&amp;lt;&lt;span class=&#34;name&#34;&gt;font&lt;/span&gt; &lt;span class=&#34;attr&#34;&gt;color&lt;/span&gt;=&lt;span class=&#34;string&#34;&gt;#FFFF00&lt;/span&gt;	&amp;gt;&lt;/span&gt;置顶&lt;span class=&#34;tag&#34;&gt;&amp;lt;/&lt;span class=&#34;name&#34;&gt;font&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;tag&#34;&gt;&amp;lt;&lt;span class=&#34;name&#34;&gt;span&lt;/span&gt; &lt;span class=&#34;attr&#34;&gt;class&lt;/span&gt;=&lt;span class=&#34;string&#34;&gt;&amp;quot;post-meta-divider&amp;quot;&lt;/span&gt;&amp;gt;&lt;/span&gt;|&lt;span class=&#34;tag&#34;&gt;&amp;lt;/&lt;span class=&#34;name&#34;&gt;span&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;#123;% endif %&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;img data-src=&#34;/posts/575a6046/2021-11-17-13-47-07.png&#34; class=&#34;&#34;&gt;
+&lt;p&gt;效果如下:&lt;/p&gt;
+&lt;img data-src=&#34;/posts/575a6046/2021-11-17-13-54-56.png&#34; class=&#34;&#34;&gt;
+&lt;h2 id=&#34;关于在hexo中的小图标&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#关于在hexo中的小图标&#34;&gt;#&lt;/a&gt; 关于在 &lt;code&gt;Hexo&lt;/code&gt;  中的小图标&lt;/h2&gt;
+&lt;p&gt;使用 &lt;code&gt;Hexo&lt;/code&gt;  搭建的 &lt;code&gt;Blog&lt;/code&gt;  中，都是从专门的图标库中获取:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9mb250YXdlc29tZS5jb20vaWNvbnM/ZD1nYWxsZXJ5&#34;&gt;国外地址&lt;/span&gt;&lt;/li&gt;
+&lt;li&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9mb250YXdlc29tZS5kYXNoZ2FtZS5jb20v&#34;&gt;国内地址&lt;/span&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;例如在主题的配置文件 &lt;code&gt;_config.yml&lt;/code&gt;  中&lt;/p&gt;
+&lt;img data-src=&#34;/posts/575a6046/2021-11-17-14-01-18.png&#34; class=&#34;&#34;&gt;
+&lt;p&gt;都是使用的图标库中的图标&lt;/p&gt;
+ ]]></description>
+        </item>
+    </channel>
+</rss>

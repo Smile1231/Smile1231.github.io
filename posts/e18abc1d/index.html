@@ -1,333 +1,215 @@
+
+
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
-<meta name="theme-color" content="#222">
-<meta name="generator" content="Hexo 5.4.0">
-  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="/images/avatar.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="/images/avatar.png">
-  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+<meta name="theme-color" content="#FFF">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
 
-<link rel="stylesheet" href="/css/main.css">
+<link rel="icon" type="image/ico" sizes="32x32" href="/images/favicon.ico">
+  <meta http-equiv="Cache-Control" content="no-transform">
+  <meta http-equiv="Cache-Control" content="no-siteapp">
 
 
-<link rel="stylesheet" href="/lib/font-awesome/css/all.min.css">
-  <link rel="stylesheet" href="/lib/pace/pace-theme-mac-osx.min.css">
-  <script src="/lib/pace/pace.min.js"></script>
+<link rel="alternate" type="application/rss+xml" title="JIN MAO 's Blog" href="https://smile1231.github.io/rss.xml" />
+<link rel="alternate" type="application/atom+xml" title="JIN MAO 's Blog" href="https://smile1231.github.io/atom.xml" />
+<link rel="alternate" type="application/json" title="JIN MAO 's Blog" href="https://smile1231.github.io/feed.json" />
 
-<script id="hexo-configurations">
-    var NexT = window.NexT || {};
-    var CONFIG = {"hostname":"smile1231.github.io","root":"/","scheme":"Pisces","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":true,"show_result":true,"style":"mac"},"back2top":{"enable":true,"sidebar":false,"scrollpercent":true},"bookmark":{"enable":true,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":true,"lazyload":true,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
-  </script>
+<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Mulish:300,300italic,400,400italic,700,700italic%7CFredericka%20the%20Great:300,300italic,400,400italic,700,700italic%7CNoto%20Serif%20JP:300,300italic,400,400italic,700,700italic%7CNoto%20Serif%20SC:300,300italic,400,400italic,700,700italic%7CInconsolata:300,300italic,400,400italic,700,700italic&display=swap&subset=latin,latin-ext">
 
-  <meta name="description" content="关于YAML中List存放MapYAML如何书写 YAML语法  1234大小写敏感使用缩进表示层级关系缩进时不允许使用Tab键，只允许使用空格。缩进的空格数目不重要，只要相同层级的元素左侧对齐即可  支持的数据结构  123对象：键值对的集合，又称为映射（mapping）&#x2F; 哈希（hashes） &#x2F; 字典（dictionary）数组：一组按次序排列的值，又称为序列（sequence） &#x2F; 列表（">
-<meta property="og:type" content="article">
-<meta property="og:title" content="关于YAML中List存放Map">
-<meta property="og:url" content="https://smile1231.github.io/posts/e18abc1d/index.html">
-<meta property="og:site_name" content="JIN MAO &#39;s Blog">
-<meta property="og:description" content="关于YAML中List存放MapYAML如何书写 YAML语法  1234大小写敏感使用缩进表示层级关系缩进时不允许使用Tab键，只允许使用空格。缩进的空格数目不重要，只要相同层级的元素左侧对齐即可  支持的数据结构  123对象：键值对的集合，又称为映射（mapping）&#x2F; 哈希（hashes） &#x2F; 字典（dictionary）数组：一组按次序排列的值，又称为序列（sequence） &#x2F; 列表（">
-<meta property="og:locale" content="en_US">
-<meta property="article:published_time" content="2022-02-13T13:27:41.000Z">
-<meta property="article:modified_time" content="2022-02-13T14:06:28.579Z">
-<meta property="article:author" content="JIN Mao">
-<meta property="article:tag" content="Java">
-<meta property="article:tag" content="Yaml">
-<meta name="twitter:card" content="summary">
+<link rel="stylesheet" href="/css/app.css?v=0.2.5">
+
+  
+  <meta name="keywords" content="Java,Yaml" />
+
 
 <link rel="canonical" href="https://smile1231.github.io/posts/e18abc1d/">
 
 
-<script id="page-configurations">
-  // https://hexo.io/docs/variables.html
-  CONFIG.page = {
-    sidebar: "",
-    isHome : false,
-    isPost : true,
-    lang   : 'en'
-  };
-</script>
 
-  <title>关于YAML中List存放Map | JIN MAO 's Blog</title>
-  
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-FWV5496QFL"></script>
-    <script>
-      if (CONFIG.hostname === location.hostname) {
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-        gtag('config', 'G-FWV5496QFL');
-      }
-    </script>
-
-
-
-
-
-
-  <noscript>
-  <style>
-  .use-motion .brand,
-  .use-motion .menu-item,
-  .sidebar-inner,
-  .use-motion .post-block,
-  .use-motion .pagination,
-  .use-motion .comments,
-  .use-motion .post-header,
-  .use-motion .post-body,
-  .use-motion .collection-header { opacity: initial; }
-
-  .use-motion .site-title,
-  .use-motion .site-subtitle {
-    opacity: initial;
-    top: initial;
-  }
-
-  .use-motion .logo-line-before i { left: initial; }
-  .use-motion .logo-line-after i { right: initial; }
-  </style>
-</noscript>
-
-<link rel="alternate" href="/atom.xml" title="JIN MAO 's Blog" type="application/atom+xml">
-</head>
-
+  <title>
+关于YAML中List存放Map - Java |
+Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
+<meta name="generator" content="Hexo 5.4.0"></head>
 <body itemscope itemtype="http://schema.org/WebPage">
-  <div class="container use-motion">
-    <div class="headband"></div>
-      <!-- <a target="_blank" rel="noopener" href="https://github.com/Smile1231/StudyRepository"><img loading="lazy" width="149" height="149" src="https://github.blog/wp-content/uploads/2008/12/forkme_right_gray_6d6d6d.png?resize=149%2C149" class="attachment-full size-full" alt="Fork me on GitHub" data-recalc-dims="1"></a> -->
-    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
-      <div class="header-inner"><div class="site-brand-container">
-  <div class="site-nav-toggle">
-    <div class="toggle" aria-label="Toggle navigation bar">
-      <span class="toggle-line toggle-line-first"></span>
-      <span class="toggle-line toggle-line-middle"></span>
-      <span class="toggle-line toggle-line-last"></span>
+  <div id="loading">
+    <div class="cat">
+      <div class="body"></div>
+      <div class="head">
+        <div class="face"></div>
+      </div>
+      <div class="foot">
+        <div class="tummy-end"></div>
+        <div class="bottom"></div>
+        <div class="legs left"></div>
+        <div class="legs right"></div>
+      </div>
+      <div class="paw">
+        <div class="hands left"></div>
+        <div class="hands right"></div>
+      </div>
     </div>
   </div>
-
-  <div class="site-meta">
-
-    <a href="/" class="brand" rel="start">
-      <span class="logo-line-before"><i></i></span>
-      <h1 class="site-title">JIN MAO 's Blog</h1>
-      <span class="logo-line-after"><i></i></span>
-    </a>
-      <p class="site-subtitle" itemprop="description">got windy(起风了)</p>
-  </div>
-
-  <div class="site-nav-right">
-    <div class="toggle popup-trigger">
-        <i class="fa fa-search fa-fw fa-lg"></i>
-    </div>
-  </div>
+  <div id="container">
+    <header id="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="inner">
+        <div id="brand">
+          <div class="pjax">
+          
+  <h1 itemprop="name headline">关于YAML中List存放Map
+  </h1>
+  
+<div class="meta">
+  <span class="item" title="Created: 2022-02-13 21:27:41">
+    <span class="icon">
+      <i class="ic i-calendar"></i>
+    </span>
+    <span class="text">Posted on</span>
+    <time itemprop="dateCreated datePublished" datetime="2022-02-13T21:27:41+08:00">2022-02-13</time>
+  </span>
+  <span class="item" title="Symbols count in article">
+    <span class="icon">
+      <i class="ic i-pen"></i>
+    </span>
+    <span class="text">Symbols count in article</span>
+    <span>2.6k</span>
+    <span class="text">words</span>
+  </span>
+  <span class="item" title="Reading time">
+    <span class="icon">
+      <i class="ic i-clock"></i>
+    </span>
+    <span class="text">Reading time</span>
+    <span>2 mins.</span>
+  </span>
 </div>
 
 
-
-
-<nav class="site-nav">
-  <ul id="menu" class="main-menu menu">
-        <li class="menu-item menu-item-home">
-
-    <a href="/" rel="section"><i class="fa fa-home fa-fw"></i>Home</a>
-
-  </li>
-        <li class="menu-item menu-item-about">
-
-    <a href="/about/" rel="section"><i class="fa fa-user fa-fw"></i>About</a>
-
-  </li>
-        <li class="menu-item menu-item-tags">
-
-    <a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>Tags<span class="badge">97</span></a>
-
-  </li>
-        <li class="menu-item menu-item-categories">
-
-    <a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>Categories<span class="badge">70</span></a>
-
-  </li>
-        <li class="menu-item menu-item-archives">
-
-    <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>Archives<span class="badge">133</span></a>
-
-  </li>
-      <li class="menu-item menu-item-search">
-        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>Search
-        </a>
+          </div>
+        </div>
+        <nav id="nav">
+  <div class="inner">
+    <div class="toggle">
+      <div class="lines" aria-label="Toggle navigation bar">
+        <span class="line"></span>
+        <span class="line"></span>
+        <span class="line"></span>
+      </div>
+    </div>
+    <ul class="menu">
+      <li class="item title"><a href="/" rel="start">Jin Mao when to get rich ?</a></li>
+    </ul>
+    <ul class="right">
+      <li class="item theme">
+        <i class="ic i-sun"></i>
       </li>
-  </ul>
+      <li class="item search">
+        <i class="ic i-search"></i>
+      </li>
+    </ul>
+  </div>
 </nav>
 
-
-
-  <div class="search-pop-overlay">
-    <div class="popup search-popup">
-        <div class="search-header">
-  <span class="search-icon">
-    <i class="fa fa-search"></i>
-  </span>
-  <div class="search-input-container">
-    <input autocomplete="off" autocapitalize="off"
-           placeholder="Searching..." spellcheck="false"
-           type="search" class="search-input">
-  </div>
-  <span class="popup-btn-close">
-    <i class="fa fa-times-circle"></i>
-  </span>
-</div>
-<div id="search-result">
-  <div id="no-result">
-    <i class="fa fa-spinner fa-pulse fa-5x fa-fw"></i>
-  </div>
-</div>
-
-    </div>
-  </div>
-
-</div>
+      </div>
+      <div id="imgs" class="pjax">
+        <ul>
+          <li class="item" data-background-image="https://tva1.sinaimg.cn/large/6833939bly1giclhfehz7j20zk0m8u0x.jpg"></li>
+          <li class="item" data-background-image="https://tva1.sinaimg.cn/large/6833939bly1giclh0m9pdj20zk0m8hdt.jpg"></li>
+          <li class="item" data-background-image="https://tva1.sinaimg.cn/large/6833939bly1giclip4jbpj20zk0m87cv.jpg"></li>
+          <li class="item" data-background-image="https://tva1.sinaimg.cn/large/6833939bly1gipeyonbf9j20zk0m8e81.jpg"></li>
+          <li class="item" data-background-image="https://tva1.sinaimg.cn/large/6833939bly1gicitcxhpij20zk0m8hdt.jpg"></li>
+          <li class="item" data-background-image="https://tva1.sinaimg.cn/large/6833939bly1gipeyvx1d4j20zk0m8hdt.jpg"></li>
+        </ul>
+      </div>
     </header>
-
-    
-  <div class="back-to-top">
-    <i class="fa fa-arrow-up"></i>
-    <span>0%</span>
-  </div>
-  <div class="reading-progress-bar"></div>
-  <a role="button" class="book-mark-link book-mark-link-fixed"></a>
-
-
-    <main class="main">
-      <div class="main-inner">
-        <div class="content-wrap">
+    <div id="waves">
+      <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+        <defs>
+          <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+        </defs>
+        <g class="parallax">
+          <use xlink:href="#gentle-wave" x="48" y="0" />
+          <use xlink:href="#gentle-wave" x="48" y="3" />
+          <use xlink:href="#gentle-wave" x="48" y="5" />
+          <use xlink:href="#gentle-wave" x="48" y="7" />
+        </g>
+      </svg>
+    </div>
+    <main>
+      <div class="inner">
+        <div id="main" class="pjax">
           
-
-            <div class="post-block animated fadeIn">
-              <h5 class="post-title" itemprop="name headline">
-                <a target="_blank" rel="noopener" href="https://github.com/smile1231" class="post-title-link" itemprop="url">Github Contribution Calendar</a>
-              </h5>
-              <div class="post-body animated fadeInDown" itemprop="articleBody">
-                <img style="width: 100%; margin-top: 30px;" src="https://ghchart.rshah.org/e77c8e/smile1231" alt="JinMao's Blue Github Chart" />
-              </div>
-            </div>
-          <div class="content post posts-expand">
-            
-
+  <div class="article wrap">
     
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
-    <link itemprop="mainEntityOfPage" href="https://smile1231.github.io/posts/e18abc1d/">
+<div class="breadcrumb" itemscope itemtype="https://schema.org/BreadcrumbList">
+<i class="ic i-home"></i>
+<span><a href="/">Home</a></span><i class="ic i-angle-right"></i>
+<span  class="current" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem"><a href="/categories/Java/" itemprop="item" rel="index" title="In Java"><span itemprop="name">Java</span></a>
+<meta itemprop="position" content="1" /></span>
+</div>
 
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.png">
-      <meta itemprop="name" content="JIN Mao">
-      <meta itemprop="description" content="">
-    </span>
+    <article itemscope itemtype="http://schema.org/Article" class="post block" lang="en">
+  <link itemprop="mainEntityOfPage" href="https://smile1231.github.io/posts/e18abc1d/">
 
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="JIN MAO 's Blog">
-    </span>
-      <header class="post-header">
-        <h1 class="post-title" itemprop="name headline">
-          关于YAML中List存放Map
-        </h1>
-
-        <div class="post-meta">
-          
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">Posted on</span>
-              
-
-              <time title="Created: 2022-02-13 21:27:41 / Modified: 22:06:28" itemprop="dateCreated datePublished" datetime="2022-02-13T21:27:41+08:00">2022-02-13</time>
-            </span>
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-folder"></i>
-              </span>
-              <span class="post-meta-item-text">In</span>
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/Java/" itemprop="url" rel="index"><span itemprop="name">Java</span></a>
-                </span>
-            </span>
-
-          
-           <!-- <span class="post-meta-item" title="Views" id="busuanzi_container_page_pv" style="display: none;">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-eye"></i>
-              </span>
-              <span class="post-meta-item-text">Views: </span>
-              <span id="busuanzi_value_page_pv"></span>
-            </span> -->
-            <span>&emsp;</span><span class="post-meta-item-icon"><i class="fa fa-eye"></i></span>
-            <span class="post-meta-item-text">Views: </span>
-            <span id="busuanzi_value_page_pv"></span>
-  
-  <span class="post-meta-item">
-    
-      <span class="post-meta-item-icon">
-        <i class="far fa-comment"></i>
-      </span>
-      <span class="post-meta-item-text">Valine: </span>
-    
-    <a title="valine" href="/posts/e18abc1d/#valine-comments" itemprop="discussionUrl">
-      <span class="post-comments-count valine-comment-count" data-xid="/posts/e18abc1d/" itemprop="commentCount"></span>
-    </a>
+  <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <meta itemprop="image" content="/images/avatar.png">
+    <meta itemprop="name" content="JIN Mao">
+    <meta itemprop="description" content="got windy(起风了), ">
   </span>
-  
-  
 
-        </div>
-      </header>
+  <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+    <meta itemprop="name" content="JIN MAO 's Blog">
+  </span>
 
+  <div class="body md" itemprop="articleBody">
     
-    
-    
-    <div class="post-body" itemprop="articleBody">
 
-      
-        <h1 id="关于YAML中List存放Map"><a href="#关于YAML中List存放Map" class="headerlink" title="关于YAML中List存放Map"></a>关于<code>YAML</code>中<code>List</code>存放<code>Map</code></h1><h2 id="YAML如何书写"><a href="#YAML如何书写" class="headerlink" title="YAML如何书写"></a><code>YAML</code>如何书写</h2><blockquote>
-<p><code>YAML</code>语法</p>
+    <h1 id="关于yaml中list存放map"><a class="markdownIt-Anchor" href="#关于yaml中list存放map">#</a> 关于 <code>YAML</code>  中 <code>List</code>  存放 <code>Map</code></h1>
+<h2 id="yaml如何书写"><a class="markdownIt-Anchor" href="#yaml如何书写">#</a>  <code>YAML</code>  如何书写</h2>
+<blockquote>
+<p><code>YAML</code>  语法</p>
 </blockquote>
 <figure class="highlight arcade"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">大小写敏感</span><br><span class="line">使用缩进表示层级关系</span><br><span class="line">缩进时不允许使用<span class="literal">Tab</span>键，只允许使用空格。</span><br><span class="line">缩进的空格数目不重要，只要相同层级的元素左侧对齐即可</span><br></pre></td></tr></table></figure>
 <blockquote>
 <p>支持的数据结构</p>
 </blockquote>
 <figure class="highlight pgsql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">对象：键值对的集合，又称为映射（<span class="keyword">mapping</span>）/ 哈希（hashes） / 字典（<span class="keyword">dictionary</span>）</span><br><span class="line">数组：一组按次序排列的值，又称为序列（<span class="keyword">sequence</span>） / 列表（list）</span><br><span class="line">基本类型：单个的、不可再分的值</span><br></pre></td></tr></table></figure>
-
 <span id="more"></span>
 <blockquote>
 <p>基本语法</p>
 </blockquote>
 <ul>
-<li><code>k:</code>(空格)<code>v：</code>表示一对键值对</li>
-<li><code>v:</code>包含上面举的数据</li>
-<li><code>k;string</code>类型</li>
+<li><code>k:</code> (空格) <code>v：</code> 表示一对键值对</li>
+<li><code>v:</code>  包含上面举的数据</li>
+<li><code>k;string</code>  类型</li>
 </ul>
 <blockquote>
-<p><code>value</code>的使用说明</p>
+<p><code>value</code>  的使用说明</p>
 </blockquote>
 <ul>
-<li><p>基本类型：数字，字符串，布尔</p>
+<li>
+<p>基本类型：数字，字符串，布尔</p>
 <ul>
-<li><code>k: v：</code>字面直接来写；</li>
+<li><code>k: v：</code> 字面直接来写；</li>
 <li>字符串默认不用加上单引号或者双引号；</li>
 </ul>
 </li>
-<li><p><code>&quot;&quot;</code>：双引号:不会转义字符串里面的特殊字符；</p>
+<li>
+<p><code>&quot;&quot;</code> ：双引号：不会转义字符串里面的特殊字符；</p>
 <ul>
 <li>特殊字符会作为本身想表示的意思；</li>
-<li>如 ：<code>name: &quot;zhangsan \n lisi&quot;：</code>输出；<code>zhangsan</code> 换行 <code>lisi</code></li>
+<li>如 ： <code>name: &quot;zhangsan \n lisi&quot;：</code> 输出； <code>zhangsan</code>  换行  <code>lisi</code></li>
 </ul>
 </li>
-<li><p><code>&#39;&#39;</code>：单引号:转义特殊字符</p>
+<li>
+<p><code>''</code> ：单引号：转义特殊字符</p>
 <ul>
 <li>特殊字符终只是一个普通的字符串数据 ，</li>
-<li>如： <code>name: ‘zhangsan \n lisi’：输出；zhangsan \n lisi </code></li>
+<li>如：  <code>name: ‘zhangsan \n lisi’：输出；zhangsan \n lisi </code></li>
 </ul>
 </li>
 </ul>
@@ -335,521 +217,402 @@
 <p>对象、Map（属性和值）（键值对）：</p>
 </blockquote>
 <figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"> <span class="attr">k:</span> <span class="string">v：在下一行来写对象的属性和值的关系；注意缩进对象还是k:</span> <span class="string">v的方式</span></span><br><span class="line"></span><br><span class="line"><span class="attr">friends:</span> </span><br><span class="line"> 	<span class="attr">lastName:</span> <span class="string">zhangsan</span>          </span><br><span class="line"> 	<span class="attr">age:</span> <span class="number">20</span></span><br><span class="line"> <span class="comment">## 行内写法：friends: &#123;lastName: zhangsan,age: 18&#125;</span></span><br></pre></td></tr></table></figure>
-
 <blockquote>
-<p>数组（<code>List、Set</code>）：</p>
+<p>数组（ <code>List、Set</code> ）：</p>
 </blockquote>
-<p>用- 值表示数组中的一个元素</p>
+<p>用 - 值表示数组中的一个元素</p>
 <figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"> <span class="attr">pets:</span>  </span><br><span class="line">	<span class="string">‐</span> <span class="string">cat</span>  </span><br><span class="line">	<span class="string">‐</span> <span class="string">dog</span>  </span><br><span class="line">	<span class="string">‐</span> <span class="string">pig</span></span><br><span class="line"><span class="comment"># 行内写法 pets: [cat,dog,pig]</span></span><br></pre></td></tr></table></figure>
-
-<h2 id="yml的使用"><a href="#yml的使用" class="headerlink" title="yml的使用"></a><code>yml</code>的使用</h2><ul>
-<li><p>简单类型使用 <code>@Value</code></p>
+<h2 id="yml的使用"><a class="markdownIt-Anchor" href="#yml的使用">#</a>  <code>yml</code>  的使用</h2>
+<ul>
+<li>
+<p>简单类型使用  <code>@Value</code></p>
 </li>
-<li><p>复杂类型使用 ：<code>@ConfigurationProperties</code></p>
+<li>
+<p>复杂类型使用 ： <code>@ConfigurationProperties</code></p>
 <ol>
-<li>如果说，我们只是在某个业务逻辑中需要获取一下配置文件中的某项值，使用<code>@Value；</code> </li>
-<li>如果说，我们专门编写了一个javaBean来和配置文件进行映射，我们就直接使用<code>@ConﬁgurationProperties；</code></li>
+<li>如果说，我们只是在某个业务逻辑中需要获取一下配置文件中的某项值，使用 <code>@Value；</code></li>
+<li>如果说，我们专门编写了一个 javaBean 来和配置文件进行映射，我们就直接使用 <code>@ConﬁgurationProperties；</code></li>
 </ol>
 </li>
 </ul>
-<p><code>yml</code>文件：</p>
+<p><code>yml</code>  文件：</p>
 <figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">spring:</span></span><br><span class="line">  <span class="attr">test:</span> <span class="string">小猪</span></span><br><span class="line">  <span class="comment">#list&lt;map&gt;</span></span><br><span class="line">  <span class="attr">testList:</span></span><br><span class="line">    <span class="bullet">-</span></span><br><span class="line">      <span class="attr">name:</span> <span class="string">小王</span></span><br><span class="line">      <span class="attr">age:</span> <span class="number">12</span></span><br><span class="line">    <span class="bullet">-</span></span><br><span class="line">      <span class="attr">name:</span> <span class="string">小李</span></span><br><span class="line">      <span class="attr">age:</span> <span class="number">13</span></span><br><span class="line">  <span class="comment"># map&lt;String,String&gt;</span></span><br><span class="line">  <span class="attr">testMap:</span></span><br><span class="line">    <span class="attr">name:</span> <span class="string">小朱</span></span><br><span class="line">    <span class="attr">age:</span> <span class="number">14</span></span><br><span class="line"><span class="attr">testname:</span> <span class="string">小明</span></span><br></pre></td></tr></table></figure>
-<h2 id="使用-Value"><a href="#使用-Value" class="headerlink" title="使用@Value"></a>使用<code>@Value</code></h2><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment">* value 的使用</span></span><br><span class="line"><span class="comment">*/</span></span><br><span class="line"><span class="meta">@Component</span></span><br><span class="line"><span class="meta">@Data</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">ValueTest</span> </span>&#123;</span><br><span class="line">     <span class="comment">// 直接赋值</span></span><br><span class="line"></span><br><span class="line">     <span class="meta">@Value(&quot;小李&quot;)</span></span><br><span class="line">     <span class="keyword">private</span>  String name;</span><br><span class="line"></span><br><span class="line">     <span class="meta">@Value(&quot;1&quot;)</span></span><br><span class="line">     <span class="keyword">private</span> <span class="keyword">int</span> num;</span><br><span class="line"></span><br><span class="line">     <span class="comment">//读取配置文件的信息</span></span><br><span class="line">     <span class="meta">@Value(&quot;$&#123;spring.testMap.name&#125;&quot;)</span></span><br><span class="line">     <span class="keyword">private</span> String name2;</span><br><span class="line"></span><br><span class="line">     <span class="meta">@Value(&quot;$&#123;spring.test&#125;&quot;)</span></span><br><span class="line">     <span class="keyword">private</span> String name1;</span><br><span class="line">     <span class="comment">//报错</span></span><br><span class="line">     <span class="comment">//@Value(&quot;$&#123;spring.testMap&#125;&quot;)</span></span><br><span class="line">     <span class="keyword">private</span> Map&lt;String,String&gt; map;</span><br><span class="line"></span><br><span class="line">     <span class="comment">//使用SpEL</span></span><br><span class="line">     <span class="meta">@Value(&quot;#&#123;1+1&#125;&quot;)</span></span><br><span class="line">     <span class="keyword">private</span> <span class="keyword">int</span> num1;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p>进行测试<code>Test</code>:</p>
+<h2 id="使用value"><a class="markdownIt-Anchor" href="#使用value">#</a> 使用 <code>@Value</code></h2>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment">* value 的使用</span></span><br><span class="line"><span class="comment">*/</span></span><br><span class="line"><span class="meta">@Component</span></span><br><span class="line"><span class="meta">@Data</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">ValueTest</span> </span>&#123;</span><br><span class="line">     <span class="comment">// 直接赋值</span></span><br><span class="line"></span><br><span class="line">     <span class="meta">@Value(&quot;小李&quot;)</span></span><br><span class="line">     <span class="keyword">private</span>  String name;</span><br><span class="line"></span><br><span class="line">     <span class="meta">@Value(&quot;1&quot;)</span></span><br><span class="line">     <span class="keyword">private</span> <span class="keyword">int</span> num;</span><br><span class="line"></span><br><span class="line">     <span class="comment">//读取配置文件的信息</span></span><br><span class="line">     <span class="meta">@Value(&quot;$&#123;spring.testMap.name&#125;&quot;)</span></span><br><span class="line">     <span class="keyword">private</span> String name2;</span><br><span class="line"></span><br><span class="line">     <span class="meta">@Value(&quot;$&#123;spring.test&#125;&quot;)</span></span><br><span class="line">     <span class="keyword">private</span> String name1;</span><br><span class="line">     <span class="comment">//报错</span></span><br><span class="line">     <span class="comment">//@Value(&quot;$&#123;spring.testMap&#125;&quot;)</span></span><br><span class="line">     <span class="keyword">private</span> Map&lt;String,String&gt; map;</span><br><span class="line"></span><br><span class="line">     <span class="comment">//使用SpEL</span></span><br><span class="line">     <span class="meta">@Value(&quot;#&#123;1+1&#125;&quot;)</span></span><br><span class="line">     <span class="keyword">private</span> <span class="keyword">int</span> num1;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>进行测试 <code>Test</code> :</p>
 <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">@Autowired</span></span><br><span class="line"><span class="keyword">private</span> ValueTest valueTest;</span><br><span class="line"><span class="meta">@Test</span></span><br><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">test111</span><span class="params">()</span></span>&#123;</span><br><span class="line">     System.out.println(valueTest);</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">// ValueTest&#123;name=&#x27;小李&#x27;, num=1, name2=&#x27;小朱&#x27;, name1=&#x27;小猪&#x27;, map=null, num1=2&#125;</span></span><br></pre></td></tr></table></figure>
-<h2 id="使用-ConfigurationProperties"><a href="#使用-ConfigurationProperties" class="headerlink" title="使用@ConfigurationProperties"></a>使用<code>@ConfigurationProperties</code></h2><figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">dependency</span>&gt;</span>         </span><br><span class="line">     <span class="tag">&lt;<span class="name">groupId</span>&gt;</span>org.springframework.boot<span class="tag">&lt;/<span class="name">groupId</span>&gt;</span>              					</span><br><span class="line">     <span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>spring‐boot‐configuration‐processor<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span>              </span><br><span class="line">     <span class="tag">&lt;<span class="name">optional</span>&gt;</span>true<span class="tag">&lt;/<span class="name">optional</span>&gt;</span>              </span><br><span class="line"><span class="tag">&lt;/<span class="name">dependency</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<h2 id="使用configurationproperties"><a class="markdownIt-Anchor" href="#使用configurationproperties">#</a> 使用 <code>@ConfigurationProperties</code></h2>
+<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">dependency</span>&gt;</span>         </span><br><span class="line">     <span class="tag">&lt;<span class="name">groupId</span>&gt;</span>org.springframework.boot<span class="tag">&lt;/<span class="name">groupId</span>&gt;</span>              					</span><br><span class="line">     <span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>spring‐boot‐configuration‐processor<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span>              </span><br><span class="line">     <span class="tag">&lt;<span class="name">optional</span>&gt;</span>true<span class="tag">&lt;/<span class="name">optional</span>&gt;</span>              </span><br><span class="line"><span class="tag">&lt;/<span class="name">dependency</span>&gt;</span></span><br></pre></td></tr></table></figure>
 <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">@Data</span></span><br><span class="line"><span class="meta">@Component</span></span><br><span class="line"><span class="meta">@ConfigurationProperties(prefix = &quot;spring&quot;)</span></span><br><span class="line"><span class="meta">@Validated</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">TestConfigurationProperties</span> </span>&#123;</span><br><span class="line">    <span class="keyword">private</span> List&lt;Map&gt; testList;</span><br><span class="line">    <span class="keyword">private</span> Map&lt;String,String&gt; testMap;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">private</span> String name;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">private</span> String test;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"><span class="meta">@Autowired</span></span><br><span class="line">    <span class="keyword">private</span> TestConfigurationProperties testConfigurationProperties;</span><br><span class="line"></span><br><span class="line">    <span class="meta">@Test</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">test8</span><span class="params">()</span></span>&#123;</span><br><span class="line">        System.out.println(testConfigurationProperties.getTestMap());</span><br><span class="line">        System.out.println(testConfigurationProperties.getTestList());</span><br><span class="line">        System.out.println(testConfigurationProperties.getName());</span><br><span class="line">        System.out.println(testConfigurationProperties.getTest());</span><br><span class="line"></span><br><span class="line">    &#125;</span><br><span class="line"><span class="comment">//&#123;name=小朱, age=14&#125;</span></span><br><span class="line"><span class="comment">//[&#123;name=小王, age=12&#125;, &#123;name=小李, age=13&#125;]</span></span><br><span class="line"><span class="comment">//null</span></span><br><span class="line"><span class="comment">//小猪</span></span><br></pre></td></tr></table></figure>
 
-
-
-
-
-
-
-
-
-
-
-      <div>
-        
-          <div>
-    
-        <div style="text-align:center;color: #636363;font-size:14px;letter-spacing: 10px">This article is over<i class="fa fa-bell"></i>thank you for reading</div>
-    
-</div>
-        
+      <div class="tags">
+          <a href="/tags/Java/" rel="tag"><i class="ic i-tag"></i> Java</a>
+          <a href="/tags/Yaml/" rel="tag"><i class="ic i-tag"></i> Yaml</a>
       </div>
-    </div>
+  </div>
 
-    
-    
-    
+   <footer>
+
+    <div class="meta">
+  <span class="item">
+    <span class="icon">
+      <i class="ic i-calendar-check"></i>
+    </span>
+    <span class="text">Edited on</span>
+    <time title="Modified: 2022-02-13 22:06:28" itemprop="dateModified" datetime="2022-02-13T22:06:28+08:00">2022-02-13</time>
+  </span>
+  <span id="posts/e18abc1d/" class="item leancloud_visitors" data-flag-title="关于YAML中List存放Map" title="Views">
+      <span class="icon">
+        <i class="ic i-eye"></i>
+      </span>
+      <span class="text">Views</span>
+      <span class="leancloud-visitors-count"></span>
+      <span class="text">times</span>
+  </span>
+</div>
+
       
-  <div class="popular-posts-header">Related Posts</div>
-  <ul class="popular-posts">
-    <li class="popular-posts-item">
-      <div class="popular-posts-title"><a href="/posts/7874a051/" rel="bookmark">Nginx踩坑之解决前后端跨域</a></div>
-    </li>
-    <li class="popular-posts-item">
-      <div class="popular-posts-title"><a href="/posts/11faeb76/" rel="bookmark">Docker指令以及部署</a></div>
-    </li>
-    <li class="popular-posts-item">
-      <div class="popular-posts-title"><a href="/posts/ba003691/" rel="bookmark">Springboot工程项目.gitignore配置</a></div>
-    </li>
-    <li class="popular-posts-item">
-      <div class="popular-posts-title"><a href="/posts/8da68a98/" rel="bookmark">Java运行调用Shell脚本</a></div>
-    </li>
-    <li class="popular-posts-item">
-      <div class="popular-posts-title"><a href="/posts/67f40b37/" rel="bookmark">Spring Boot 获取服务IP地址和端口号</a></div>
-    </li>
-  </ul>
 
-        
-
-<div>
-<ul class="post-copyright">
-  <li class="post-copyright-author">
-    <strong>Post author:  </strong>JIN Mao
+<div id="copyright">
+<ul>
+  <li class="author">
+    <strong>Post author:  </strong>JIN Mao <i class="ic i-at"><em>@</em></i>JIN MAO 's Blog
   </li>
-  <li class="post-copyright-link">
+  <li class="link">
     <strong>Post link: </strong>
     <a href="https://smile1231.github.io/posts/e18abc1d/" title="关于YAML中List存放Map">https://smile1231.github.io/posts/e18abc1d/</a>
   </li>
-  <li class="post-copyright-license">
-    <strong>Copyright Notice:  </strong>All articles in this blog are licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/en" rel="noopener" target="_blank"><i class="fab fa-fw fa-creative-commons"></i>BY-NC-SA</a> unless stating additionally.
+  <li class="license">
+    <strong>Copyright Notice:  </strong>All articles in this blog are licensed under <span class="exturl" data-url="aHR0cHM6Ly9jcmVhdGl2ZWNvbW1vbnMub3JnL2xpY2Vuc2VzL2J5LW5jLXNhLzQuMC9kZWVkLnpo"><i class="ic i-creative-commons"><em>(CC)</em></i>BY-NC-SA</span> unless stating additionally.
   </li>
 </ul>
 </div>
 
+  </footer>
 
-      <footer class="post-footer">
-          
-          <div class="post-tags">
-              <a href="/tags/Java/" rel="tag"><i class="fa fa-tag"></i> Java</a>
-              <a href="/tags/Yaml/" rel="tag"><i class="fa fa-tag"></i> Yaml</a>
-          </div>
+</article>
 
-        
-  <div class="post-widgets">
-    <div class="wp_rating">
-      <div id="wpac-rating"></div>
-    </div>
   </div>
+  
 
+<div class="post-nav">
+    <div class="item left">
+      
 
-        
-    <div class="post-nav">
-      <div class="post-nav-item">
-    <a href="/posts/91c18f7c/" rel="prev" title="关于Try-With-Source的使用以及注意点">
-      <i class="fa fa-chevron-left"></i> 关于Try-With-Source的使用以及注意点
-    </a></div>
-      <div class="post-nav-item">
-    <a href="/posts/c3733521/" rel="next" title="Java之assert关键字">
-      Java之assert关键字 <i class="fa fa-chevron-right"></i>
-    </a></div>
+  <a href="/posts/91c18f7c/" itemprop="url" rel="prev" data-background-image="https:&#x2F;&#x2F;tva1.sinaimg.cn&#x2F;mw690&#x2F;6833939bly1giclhnx9glj20zk0m8npd.jpg" title="关于Try-With-Source的使用以及注意点">
+  <span class="type">Previous Post</span>
+  <span class="category"><i class="ic i-flag"></i> Java</span>
+  <h3>关于Try-With-Source的使用以及注意点</h3>
+  </a>
+
     </div>
-      </footer>
-    
-  </article>
+    <div class="item right">
+      
+
+  <a href="/posts/c3733521/" itemprop="url" rel="next" data-background-image="https:&#x2F;&#x2F;tva1.sinaimg.cn&#x2F;mw690&#x2F;6833939bly1gipey0a334j20zk0m8qpt.jpg" title="Java之assert关键字">
+  <span class="type">Next Post</span>
+  <span class="category"><i class="ic i-flag"></i> Java</span>
+  <h3>Java之assert关键字</h3>
+  </a>
+
+    </div>
+</div>
+
   
-  
-  
+  <div class="wrap" id="comments"></div>
 
-
-
-          </div>
-          
-    <div class="comments" id="valine-comments"></div>
-
-<script>
-  window.addEventListener('tabs:register', () => {
-    let { activeClass } = CONFIG.comments;
-    if (CONFIG.comments.storage) {
-      activeClass = localStorage.getItem('comments_active') || activeClass;
-    }
-    if (activeClass) {
-      let activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
-      if (activeTab) {
-        activeTab.click();
-      }
-    }
-  });
-  if (CONFIG.comments.storage) {
-    window.addEventListener('tabs:click', event => {
-      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
-      let commentClass = event.target.classList[1];
-      localStorage.setItem('comments_active', commentClass);
-    });
-  }
-</script>
 
         </div>
+        <div id="sidebar">
           
+
+<div class="inner">
+
+  <div class="panels">
+    <div class="inner">
+      <div class="contents panel pjax" data-title="Contents">
+          <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%85%B3%E4%BA%8Eyaml%E4%B8%ADlist%E5%AD%98%E6%94%BEmap"><span class="toc-number">1.</span> <span class="toc-text"> 关于 YAML  中 List  存放 Map</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#yaml%E5%A6%82%E4%BD%95%E4%B9%A6%E5%86%99"><span class="toc-number">1.1.</span> <span class="toc-text">  YAML  如何书写</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#yml%E7%9A%84%E4%BD%BF%E7%94%A8"><span class="toc-number">1.2.</span> <span class="toc-text">  yml  的使用</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BD%BF%E7%94%A8value"><span class="toc-number">1.3.</span> <span class="toc-text"> 使用 @Value</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BD%BF%E7%94%A8configurationproperties"><span class="toc-number">1.4.</span> <span class="toc-text"> 使用 @ConfigurationProperties</span></a></li></ol></li></ol>
+      </div>
+      <div class="related panel pjax" data-title="Related">
+        <ul>
+          <li><a href="/posts/7a29d22a/" rel="bookmark" title="Java关于时间的轮子">Java关于时间的轮子</a></li><li><a href="/posts/60a1e80e/" rel="bookmark" title="java判断日期周几">java判断日期周几</a></li><li><a href="/posts/13370746/" rel="bookmark" title="使用EasyExcel读取excel文件为Java实体类">使用EasyExcel读取excel文件为Java实体类</a></li><li><a href="/posts/97604c34/" rel="bookmark" title="获取指定集合要求中的mapkey值并重新返回map">获取指定集合要求中的mapkey值并重新返回map</a></li><li><a href="/posts/fc16798c/" rel="bookmark" title="Java8遍历Map的三种方式">Java8遍历Map的三种方式</a></li><li><a href="/posts/49b96938/" rel="bookmark" title="Java获取一天时间的起始">Java获取一天时间的起始</a></li><li><a href="/posts/1c3390ab/" rel="bookmark" title="将Java数据输出为本地txt">将Java数据输出为本地txt</a></li><li><a href="/posts/4ca5bfdf/" rel="bookmark" title="Spring手动回滚事务">Spring手动回滚事务</a></li><li><a href="/posts/1748805d/" rel="bookmark" title="java线程池与五种常用线程池策略使用与解析">java线程池与五种常用线程池策略使用与解析</a></li><li><a href="/posts/817eab42/" rel="bookmark" title="java中产生指定范围内的随机数">java中产生指定范围内的随机数</a></li><li><a href="/posts/69c17d37/" rel="bookmark" title="关于事务提交中踩坑">关于事务提交中踩坑</a></li><li><a href="/posts/b536fa7f/" rel="bookmark" title="关于junit测试类防止事务回滚">关于junit测试类防止事务回滚</a></li><li><a href="/posts/1da18d70/" rel="bookmark" title="Java8内置四大函数式接口">Java8内置四大函数式接口</a></li><li><a href="/posts/405fde88/" rel="bookmark" title="关于Exception的处理细节">关于Exception的处理细节</a></li><li><a href="/posts/91c18f7c/" rel="bookmark" title="关于Try-With-Source的使用以及注意点">关于Try-With-Source的使用以及注意点</a></li><li class="active"><a href="/posts/e18abc1d/" rel="bookmark" title="关于YAML中List存放Map">关于YAML中List存放Map</a></li><li><a href="/posts/c3733521/" rel="bookmark" title="Java之assert关键字">Java之assert关键字</a></li><li><a href="/posts/9dcbb5fa/" rel="bookmark" title="Corn表达式">Corn表达式</a></li><li><a href="/posts/96eb888f/" rel="bookmark" title="Java学习线路图">Java学习线路图</a></li><li><a href="/posts/b246d3ce/" rel="bookmark" title="Java自带的好用的工具类">Java自带的好用的工具类</a></li><li><a href="/posts/105c245f/" rel="bookmark" title="Mybatis使用Sql进行模糊查询">Mybatis使用Sql进行模糊查询</a></li><li><a href="/posts/31dc52e1/" rel="bookmark" title="MyBatis之分页查询：MyBatis PageHelper">MyBatis之分页查询：MyBatis PageHelper</a></li><li><a href="/posts/2edf7887/" rel="bookmark" title="MybatisPlus实现分页查询">MybatisPlus实现分页查询</a></li><li><a href="/posts/c112412d/" rel="bookmark" title="Mybatis封装成Map结果">Mybatis封装成Map结果</a></li><li><a href="/posts/a3dfcd98/" rel="bookmark" title="SpringBoot中常见的几种解决跨域的方式">SpringBoot中常见的几种解决跨域的方式</a></li><li><a href="/posts/8b8fedea/" rel="bookmark" title="Stream流的介绍">Stream流的介绍</a></li><li><a href="/posts/b1231c9f/" rel="bookmark" title="java stream中Collectors的用法">java stream中Collectors的用法</a></li><li><a href="/posts/12fecb94/" rel="bookmark" title="多线程笔记">多线程笔记</a></li><li><a href="/posts/5e7baeeb/" rel="bookmark" title="过滤器和拦截器的区别">过滤器和拦截器的区别</a></li><li><a href="/posts/59de1824/" rel="bookmark" title="spring中/和/*和/**的区别">spring中/和/*和/**的区别</a></li><li><a href="/posts/166a1445/" rel="bookmark" title="位，字节， 字符">位，字节， 字符</a></li><li><a href="/posts/b42f0c87/" rel="bookmark" title="Cache、Cookie、Session、Token">Cache、Cookie、Session、Token</a></li><li><a href="/posts/f23f1351/" rel="bookmark" title="equals与==区别">equals与==区别</a></li><li><a href="/posts/d6d1be75/" rel="bookmark" title="在Javadoc注释中引用方法">在Javadoc注释中引用方法</a></li><li><a href="/posts/bd76a990/" rel="bookmark" title="一图看懂Java中的PO,BO,VO,DTO,POJO,DAO,DO">一图看懂Java中的PO,BO,VO,DTO,POJO,DAO,DO</a></li>
+        </ul>
+      </div>
+      <div class="overview panel" data-title="Overview">
+        <div class="author" itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <img class="image" itemprop="image" alt="JIN Mao"
+      data-src="/images/avatar.png">
+  <p class="name" itemprop="name">JIN Mao</p>
+  <div class="description" itemprop="description"></div>
+</div>
+
+<nav class="state">
+    <div class="item posts">
+      <a href="/archives/">
+        <span class="count">134</span>
+        <span class="name">posts</span>
+      </a>
+    </div>
+    <div class="item categories">
+      <a href="/categories/">
+        <span class="count">70</span>
+        <span class="name">categories</span>
+      </a>
+    </div>
+    <div class="item tags">
+      <a href="/tags/">
+        <span class="count">98</span>
+        <span class="name">tags</span>
+      </a>
+    </div>
+</nav>
+
+<div class="social">
+      <span class="exturl item github" data-url="aHR0cHM6Ly9naXRodWIuY29tL3NtaWxlMTIzMQ==" title="https:&#x2F;&#x2F;github.com&#x2F;smile1231"><i class="ic i-github"></i></span>
+</div>
+
+<ul class="menu">
   
-  <div class="toggle sidebar-toggle">
-    <span class="toggle-line toggle-line-first"></span>
-    <span class="toggle-line toggle-line-middle"></span>
-    <span class="toggle-line toggle-line-last"></span>
+    
+  <li class="item">
+    <a href="/" rel="section"><i class="ic i-home"></i>Home</a>
+  </li>
+
+    
+  <li class="item">
+    <a href="/about/" rel="section"><i class="ic i-user"></i>About</a>
+  </li>
+
+        
+  <li class="item dropdown">
+      <a href="javascript:void(0);"><i class="ic i-feather"></i>Posts</a>
+    <ul class="submenu">
+
+        
+  <li class="item">
+    <a href="/archives/" rel="section"><i class="ic i-list-alt"></i>Archives</a>
+  </li>
+
+        
+  <li class="item">
+    <a href="/categories/" rel="section"><i class="ic i-th"></i>Categories</a>
+  </li>
+
+        
+  <li class="item">
+    <a href="/tags/" rel="section"><i class="ic i-tags"></i>Tags</a>
+  </li>
+
+  </ul>
+
+</ul>
+
+      </div>
+    </div>
   </div>
 
-  <aside class="sidebar">
-    <div class="sidebar-inner">
-    
-    
-    <!-- 霓虹灯时钟 -->
-    <div>
-    <svg style="height: 60px;">
-        <text id="time" text-anchor="middle" x="36%" y="80%" class="words words-1"></text>
-        <text id="time" text-anchor="middle" x="36%" y="80%" class="words words-2"></text>
-        <text id="time" text-anchor="middle" x="36%" y="80%" class="words words-3"></text>
-        <text id="time" text-anchor="middle" x="36%" y="80%" class="words words-4"></text>
-    </svg>
-</div>
-
-<script>
-function showtime(){
-    var noatime = new Date();
-    var h = noatime.getHours(),
-        m = noatime.getMinutes(),
-        s = noatime.getSeconds();
-    h=checktime(h);
-    m=checktime(m);
-    s=checktime(s);
-  return h+":"+m+":"+s;
-}
-
-function checktime(x){
-  if(x<10){
-    x="0"+x;
-  }
-  return x;
-}
-
-var div1=document.getElementsByTagName("text");
-setInterval(function(){
-  for (var i in div1){
-      div1[i].innerHTML=showtime();
-  }
-},1000);
-</script>
-
-<style>
-.words{
-    font-size: 50px;
-    font-weight: bold;
-    text-transform: uppercase;
-    fill: none;
-    stroke-width: 3px;
-    stroke-dasharray: 35,125;
-    animation-name: drawing;
-    animation-duration: 6s;
-    animation-iteration-count: infinite;
-    animation-timing-function: linear;
-}
-.words-1{
-    stroke: deepskyblue;
-    text-shadow: 0 0 15px deepskyblue;
-    animation-delay: -1.5s;
-}
-.words-2{
-    stroke: lightseagreen;
-    text-shadow: 0 0 15px lightseagreen;
-    animation-delay: -3s;
-}
-.words-3{
-    stroke: orange;
-    text-shadow: 0 0 15px orange;
-    animation-delay: -4.5s;
-}
-.words-4{
-    stroke: purple;
-    text-shadow: 0 0 15px purple;
-    animation-delay: -6s;
-}
-@keyframes drawing {
-    100%{
-        stroke-dashoffset: -160
-    }
-}
-</style>
-
-    
-      <!-- 起风了 -->
-      <!-- <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=86 src="//music.163.com/outchain/player?type=2&id=1901069794&auto=1&height=66"></iframe> -->
-      <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=86 src="//music.163.com/outchain/player?type=2&id=1927119724&auto=1&height=66"></iframe>
-
-      <ul class="sidebar-nav motion-element">
-        <li class="sidebar-nav-toc">
-          Table of Contents
-        </li>
-        <li class="sidebar-nav-overview">
-          Overview
-        </li>
-      </ul>
-
-      <!--noindex-->
-      <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#%E5%85%B3%E4%BA%8EYAML%E4%B8%ADList%E5%AD%98%E6%94%BEMap"><span class="nav-number">1.</span> <span class="nav-text">关于YAML中List存放Map</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#YAML%E5%A6%82%E4%BD%95%E4%B9%A6%E5%86%99"><span class="nav-number">1.1.</span> <span class="nav-text">YAML如何书写</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#yml%E7%9A%84%E4%BD%BF%E7%94%A8"><span class="nav-number">1.2.</span> <span class="nav-text">yml的使用</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%BD%BF%E7%94%A8-Value"><span class="nav-number">1.3.</span> <span class="nav-text">使用@Value</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%BD%BF%E7%94%A8-ConfigurationProperties"><span class="nav-number">1.4.</span> <span class="nav-text">使用@ConfigurationProperties</span></a></li></ol></li></ol></div>
-      </div>
-      <!--/noindex-->
-
-      <div class="site-overview-wrap sidebar-panel">
-        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
-    <img class="site-author-image" itemprop="image" alt="JIN Mao"
-      src="/images/avatar.png">
-  <p class="site-author-name" itemprop="name">JIN Mao</p>
-  <div class="site-description" itemprop="description"></div>
-</div>
-<div class="site-state-wrap motion-element">
-  <nav class="site-state">
-      <div class="site-state-item site-state-posts">
-          <a href="/archives/">
-        
-          <span class="site-state-item-count">133</span>
-          <span class="site-state-item-name">posts</span>
-        </a>
-      </div>
-      <div class="site-state-item site-state-categories">
-            <a href="/categories/">
-          
-        <span class="site-state-item-count">70</span>
-        <span class="site-state-item-name">categories</span></a>
-      </div>
-      <div class="site-state-item site-state-tags">
-            <a href="/tags/">
-          
-        <span class="site-state-item-count">97</span>
-        <span class="site-state-item-name">tags</span></a>
-      </div>
-  </nav>
+  <ul id="quick">
+    <li class="prev pjax">
+        <a href="/posts/91c18f7c/" rel="prev" title="Previous Post"><i class="ic i-chevron-left"></i></a>
+    </li>
+    <li class="up"><i class="ic i-arrow-up"></i></li>
+    <li class="down"><i class="ic i-arrow-down"></i></li>
+    <li class="next pjax">
+        <a href="/posts/c3733521/" rel="next" title="Next Post"><i class="ic i-chevron-right"></i></a>
+    </li>
+    <li class="percent"></li>
+  </ul>
 </div>
 
 
-
-      </div>
-
-  
-
-    </div>
-
-
-  </aside>
-  <div id="sidebar-dimmer"></div>
-
-
+        </div>
+        <div class="dimmer"></div>
       </div>
     </main>
-
-    <footer class="footer">
-      <div class="footer-inner">
-        
-
-        
-
-<div class="copyright">
-  
-  &copy; 
-  <span itemprop="copyrightYear">2022</span>
-  <span class="with-love">
-    <i class="fa fa-heart"></i>
-  </span>
-  <span class="author" itemprop="copyrightHolder">JIN Mao</span>
+    <footer id="footer">
+      <div class="inner">
+        <div class="widgets">
+          
+<div class="rpost pjax">
+  <h2>Random Posts</h2>
+  <ul>
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/Ubuntu/" title="In Ubuntu">Ubuntu</a>
 </div>
-  <!--添加运行时间-->
-  <span id="sitetime"></span>
-  <script language=javascript>
-    function siteTime(){
-      window.setTimeout("siteTime()", 1000);
-      var seconds = 1000;
-      var minutes = seconds * 60;
-      var hours = minutes * 60;
-      var days = hours * 24;
-      var years = days * 365;
-      var today = new Date();
-      var todayYear = today.getFullYear();
-      var todayMonth = today.getMonth()+1;
-      var todayDate = today.getDate();
-      var todayHour = today.getHours();
-      var todayMinute = today.getMinutes();
-      var todaySecond = today.getSeconds();
-      /* 
-        Date.UTC() -- 返回date对象距世界标准时间(UTC)1970年1月1日午夜之间的毫秒数(时间戳)
-        year - 作为date对象的年份，为4位年份值
-        month - 0-11之间的整数，做为date对象的月份
-        day - 1-31之间的整数，做为date对象的天数
-        hours - 0(午夜24点)-23之间的整数，做为date对象的小时数
-        minutes - 0-59之间的整数，做为date对象的分钟数
-        seconds - 0-59之间的整数，做为date对象的秒数
-        microseconds - 0-999之间的整数，做为date对象的毫秒数
-      */
-      var t1 = Date.UTC(2021,11,11,00,00,00); //北京时间2018-2-13 00:00:00
-      var t2 = Date.UTC(todayYear,todayMonth,todayDate,todayHour,todayMinute,todaySecond);
-      var diff = t2-t1;
-      var diffYears = Math.floor(diff/years);
-      var diffDays = Math.floor((diff/days)-diffYears*365);
-      var diffHours = Math.floor((diff-(diffYears*365+diffDays)*days)/hours);
-      var diffMinutes = Math.floor((diff-(diffYears*365+diffDays)*days-diffHours*hours)/minutes);
-      var diffSeconds = Math.floor((diff-(diffYears*365+diffDays)*days-diffHours*hours-diffMinutes*minutes)/seconds);
-      document.getElementById("sitetime").innerHTML=" This blog is up and running "+/*diffYears+" Year "+*/diffDays+" Days "+diffHours+" Hours "+diffMinutes+" Minutes "+diffSeconds+" Seconds";
-    }
-    siteTime();
-  </script>
-  <!--// 添加运行时间-->
 
+    <span><a href="/posts/6e65ed30/" title="ubuntu20无法安装vmtools解决">ubuntu20无法安装vmtools解决</a></span>
+  </li>
 
-<!--
-  <div class="powered-by">Powered by <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> & <a href="https://pisces.theme-next.org/" class="theme-link" rel="noopener" target="_blank">NexT.Pisces</a>
-  </div>
--->
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/Java/" title="In Java">Java</a>
+</div>
 
+    <span><a href="/posts/c3733521/" title="Java之assert关键字">Java之assert关键字</a></span>
+  </li>
 
-        
-<div class="busuanzi-count">
-  <script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/Java/" title="In Java">Java</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/Java/Tools/" title="In Tools">Tools</a>
+</div>
 
+    <span><a href="/posts/b246d3ce/" title="Java自带的好用的工具类">Java自带的好用的工具类</a></span>
+  </li>
 
-  <span class="site-uv" title="Total Visitors">
-    My <span id="busuanzi_value_site_uv"></span>th Friend, 
-  </span>
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+</div>
 
-  <span class="site-pv" title="Total Views">
-    After  <span id="busuanzi_value_site_pv"></span> times of looking back, I met you 。
-  </span>
-  <!--
-    <span class="post-meta-item" id="busuanzi_container_site_uv" >
-      <span class="post-meta-item-icon">
-        <i class="fa fa-user"></i>
-      </span>
-      <span class="site-uv" title="Total Visitors">
-        <span id="busuanzi_value_site_uv"></span>
-      </span>
+    <span><a href="/posts/8da68a98/" title="Java运行调用Shell脚本">Java运行调用Shell脚本</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/%E5%89%8D%E7%AB%AF/" title="In 前端">前端</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/%E5%89%8D%E7%AB%AF/Css/" title="In Css">Css</a>
+</div>
+
+    <span><a href="/posts/2e6621e1/" title="DisPlay属性">DisPlay属性</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+</div>
+
+    <span><a href="/posts/66edb7d2/" title="关于hexo使用shoka主题注意点">关于hexo使用shoka主题注意点</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/Java%E9%9D%A2%E8%AF%95/" title="In Java面试">Java面试</a>
+</div>
+
+    <span><a href="/posts/3eb5e557/" title="赛可出行面试">赛可出行面试</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/Java/" title="In Java">Java</a>
+</div>
+
+    <span><a href="/posts/fc16798c/" title="Java8遍历Map的三种方式">Java8遍历Map的三种方式</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/%E5%89%8D%E7%AB%AF/" title="In 前端">前端</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/%E5%89%8D%E7%AB%AF/TypeScript/" title="In TypeScript">TypeScript</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/%E5%89%8D%E7%AB%AF/TypeScript/WebPack/" title="In WebPack">WebPack</a>
+</div>
+
+    <span><a href="/posts/ddb0d187/" title="TS配置Webpack">TS配置Webpack</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/Java%E9%9D%A2%E8%AF%95/" title="In Java面试">Java面试</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/Java%E9%9D%A2%E8%AF%95/Spring%E4%BA%8B%E5%8A%A1/" title="In Spring事务">Spring事务</a>
+</div>
+
+    <span><a href="/posts/7e4601e3/" title="面试之旅之关于Spring事务处理">面试之旅之关于Spring事务处理</a></span>
+  </li>
+
+  </ul>
+</div>
+<div>
+  <h2>Recent Comments</h2>
+  <ul class="leancloud-recent-comment"></ul>
+</div>
+
+        </div>
+        <div class="status">
+  <div class="copyright">
+    
+    &copy; 2021 – 
+    <span itemprop="copyrightYear">2022</span>
+    <span class="with-love">
+      <i class="ic i-sakura rotate"></i>
     </span>
+    <span class="author" itemprop="copyrightHolder">JIN Mao @ Jin Mao when to get rich ?</span>
+  </div>
+  <div class="count">
+    <span class="post-meta-item-icon">
+      <i class="ic i-chart-area"></i>
+    </span>
+    <span title="Symbols count total">557k words</span>
+
     <span class="post-meta-divider">|</span>
-    <span class="post-meta-item" id="busuanzi_container_site_pv">
-      <span class="post-meta-item-icon">
-        <i class="fa fa-eye"></i>
-      </span>
-      <span class="site-pv" title="Total Views">
-        <span id="busuanzi_value_site_pv"></span>
-      </span>
-    </span>-->
+    <span class="post-meta-item-icon">
+      <i class="ic i-coffee"></i>
+    </span>
+    <span title="Reading time total">8:26</span>
+  </div>
 </div>
-
-
-
-
-
-
-
 
       </div>
     </footer>
   </div>
-
-  
-  <script src="/lib/anime.min.js"></script>
-  <script src="//cdn.jsdelivr.net/npm/medium-zoom@1/dist/medium-zoom.min.js"></script>
-  <script src="//cdn.jsdelivr.net/npm/lozad@1/dist/lozad.min.js"></script>
-  <script src="/lib/velocity/velocity.min.js"></script>
-  <script src="/lib/velocity/velocity.ui.min.js"></script>
-
-<script src="/js/utils.js"></script>
-
-<script src="/js/motion.js"></script>
-
-
-<script src="/js/schemes/pisces.js"></script>
-
-
-<script src="/js/next-boot.js"></script>
-
-<script src="/js/bookmark.js"></script>
-
-
-  <script defer src="/lib/three/three.min.js"></script>
-    <script defer src="/lib/three/canvas_lines.min.js"></script>
-
-
-  
-
-
-
-  <script>
-  if (CONFIG.page.isPost) {
-    wpac_init = window.wpac_init || [];
-    wpac_init.push({
-      widget: 'Rating',
-      id    : ,
-      el    : 'wpac-rating',
-      color : 'fc6423'
-    });
-    (function() {
-      if ('WIDGETPACK_LOADED' in window) return;
-      WIDGETPACK_LOADED = true;
-      var mc = document.createElement('script');
-      mc.type = 'text/javascript';
-      mc.async = true;
-      mc.src = '//embed.widgetpack.com/widget.js';
-      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(mc, s.nextSibling);
-    })();
-  }
-  </script>
-
-  
-<script src="/js/local-search.js"></script>
-
-
-
-
-
-
-
-
-
-
-
-
-
-  
-
-  
-
-
-<script>
-NexT.utils.loadComments(document.querySelector('#valine-comments'), () => {
-  NexT.utils.getScript('//unpkg.com/valine/dist/Valine.min.js', () => {
-    var GUEST = ['nick', 'mail', 'link'];
-    var guest = 'nick,mail,link';
-    guest = guest.split(',').filter(item => {
-      return GUEST.includes(item);
-    });
-    new Valine({
-      el         : '#valine-comments',
-      verify     : true,
-      notify     : true,
-      appId      : 'J2bQH6GquIhMurLQc9NYgXWJ-gzGzoHsz',
-      appKey     : 'mbmntmQLrVScI2O7gV6zBej5',
-      placeholder: "Just go go",
-      avatar     : 'mm',
-      meta       : guest,
-      pageSize   : '10' || 10,
-      visitor    : false,
-      lang       : 'en' || 'zh-cn',
-      path       : location.pathname,
-      recordIP   : true,
-      serverURLs : ''
-    });
-  }, window.Valine);
-});
+<script data-config type="text/javascript">
+  var LOCAL = {
+    path: 'posts/e18abc1d/',
+    favicon: {
+      show: "You're welcome",
+      hide: "Wait for you"
+    },
+    search : {
+      placeholder: "Search for Posts",
+      empty: "We didn't find any results for the search: ${query}",
+      stats: "${hits} results found in ${time} ms"
+    },
+    valine: true,fancybox: true,
+    copyright: 'Copied to clipboard successfully! <br> All articles in this blog are licensed under <i class="ic i-creative-commons"></i>BY-NC-SA.',
+    ignores : [
+      function(uri) {
+        return uri.includes('#');
+      },
+      function(uri) {
+        return new RegExp(LOCAL.path+"$").test(uri);
+      }
+    ]
+  };
 </script>
 
+<script src="https://cdn.polyfill.io/v2/polyfill.js"></script>
 
-  
-  <script type="text/javascript" src="/js/cursor/love.js"></script>
+<script src="//cdn.jsdelivr.net/combine/npm/pace-js@1.0.2/pace.min.js,npm/pjax@0.2.8/pjax.min.js,npm/whatwg-fetch@3.4.0/dist/fetch.umd.min.js,npm/animejs@3.2.0/lib/anime.min.js,npm/algoliasearch@4/dist/algoliasearch-lite.umd.js,npm/instantsearch.js@4/dist/instantsearch.production.min.js,npm/lozad@1/dist/lozad.min.js,npm/quicklink@2/dist/quicklink.umd.js"></script>
+
+<script src="/js/app.js?v=0.2.5"></script>
 
 
 
-  
-<script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"model":{"jsonPath":"/live2dw/assets/shizuku.model.json"},"display":{"position":"left","width":200,"height":400},"mobile":{"show":false},"log":false,"pluginJsPath":"lib/","pluginModelPath":"assets/","pluginRootPath":"live2dw/","tagMode":false});</script></body>
+
+</body>
 </html>

@@ -1,0 +1,259 @@
+<?xml version="1.0"?>
+<rss version="2.0">
+    <channel>
+        <title>JIN MAO &#39;s Blog • Posts by &#34;sap&#34; category</title>
+        <link>https://smile1231.github.io</link>
+        <description></description>
+        <language>en</language>
+        <pubDate>Fri, 29 Apr 2022 21:41:49 +0800</pubDate>
+        <lastBuildDate>Fri, 29 Apr 2022 21:41:49 +0800</lastBuildDate>
+        <category>生物信息</category>
+        <category>基因编辑</category>
+        <category>SAP</category>
+        <category>Java</category>
+        <category>Corn</category>
+        <category>Cache</category>
+        <category>Cookie</category>
+        <category>Session</category>
+        <category>Java面试</category>
+        <category>前端</category>
+        <category>Css</category>
+        <category>DDD</category>
+        <category>领域驱动设计</category>
+        <category>DisPlay属性</category>
+        <category>FastJson</category>
+        <category>Docker</category>
+        <category>blog</category>
+        <category>hexo</category>
+        <category>next</category>
+        <category>IDEA</category>
+        <category>SpringBoot</category>
+        <category>JavaScript</category>
+        <category>Html</category>
+        <category>Jvm</category>
+        <category>函数式接口</category>
+        <category>map</category>
+        <category>Stream流</category>
+        <category>Assert</category>
+        <category>java</category>
+        <category>calender</category>
+        <category>Springboot</category>
+        <category>LeetCode</category>
+        <category>算法</category>
+        <category>递归</category>
+        <category>Mybatis</category>
+        <category>分页查询</category>
+        <category>模糊查询</category>
+        <category>Linux</category>
+        <category>Spring</category>
+        <category>Nginx</category>
+        <category>文件上传</category>
+        <category>SrpingBoot</category>
+        <category>事务</category>
+        <category>TypeScript</category>
+        <category>WebPack</category>
+        <category>master</category>
+        <category>Ubuntu</category>
+        <category>Mysql</category>
+        <category>VSCODE</category>
+        <category>快捷键</category>
+        <category>UML</category>
+        <category>Vue</category>
+        <category>VsCode</category>
+        <category>Shell</category>
+        <category>Stream</category>
+        <category>线程池</category>
+        <category>日期</category>
+        <category>ubuntu</category>
+        <category>虚拟机</category>
+        <category>数据挖掘</category>
+        <category>Hadoop</category>
+        <category>操作系统</category>
+        <category>EasyExcel</category>
+        <category>二分查找</category>
+        <category>node</category>
+        <category>JVM</category>
+        <category>junit</category>
+        <category>Hexo</category>
+        <category>数据库</category>
+        <category>Yaml</category>
+        <category>冒泡排序</category>
+        <category>Git</category>
+        <category>git,npm,node</category>
+        <category>动态规划</category>
+        <category>多线程</category>
+        <category>Mysql事务</category>
+        <category>堆排序</category>
+        <category>幂等性</category>
+        <category>流</category>
+        <category>归并排序</category>
+        <category>正则表达式</category>
+        <category>快速排序</category>
+        <category>直接插入排序</category>
+        <category>Java 面试</category>
+        <category>数据结构</category>
+        <category>阻塞队列</category>
+        <category>选择排序</category>
+        <category>Spring事务</category>
+        <category>JDK</category>
+        <category>动态代理</category>
+        <category>Date</category>
+        <category>ArrayList</category>
+        <category>接口</category>
+        <category>SpringMvc</category>
+        <category>排序</category>
+        <category>执行计划</category>
+        <category>HashMap</category>
+        <category>设计模式</category>
+        <item>
+            <guid isPermalink="true">https://smile1231.github.io/posts/ef55dc85/</guid>
+            <title>CEST与北京时间转换表</title>
+            <link>https://smile1231.github.io/posts/ef55dc85/</link>
+            <category>SAP</category>
+            <pubDate>Fri, 29 Apr 2022 21:41:49 +0800</pubDate>
+            <description><![CDATA[ &lt;p&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9kYXRldGltZTM2MC5jb20vY24vY2V0LWJlaWppbmctdGltZS8=&#34;&gt;参考链接&lt;/span&gt;&lt;/p&gt;
+&lt;span id=&#34;more&#34;&gt;&lt;/span&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;中欧夏令时间 (CEST)&lt;/th&gt;
+&lt;th&gt;北京时间 (Beijing)&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;00:00&lt;/td&gt;
+&lt;td&gt;06:00&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;01:00&lt;/td&gt;
+&lt;td&gt;07:00&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;02:00&lt;/td&gt;
+&lt;td&gt;08:00&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;03:00&lt;/td&gt;
+&lt;td&gt;09:00&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;04:00&lt;/td&gt;
+&lt;td&gt;10:00&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;05:00&lt;/td&gt;
+&lt;td&gt;11:00&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;06:00&lt;/td&gt;
+&lt;td&gt;12:00&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;07:00&lt;/td&gt;
+&lt;td&gt;13:00&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;08:00&lt;/td&gt;
+&lt;td&gt;14:00&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;09:00&lt;/td&gt;
+&lt;td&gt;15:00&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;10:00&lt;/td&gt;
+&lt;td&gt;16:00&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;11:00&lt;/td&gt;
+&lt;td&gt;17:00&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;12:00&lt;/td&gt;
+&lt;td&gt;18:00&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;13:00&lt;/td&gt;
+&lt;td&gt;19:00&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;14:00&lt;/td&gt;
+&lt;td&gt;20:00&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;15:00&lt;/td&gt;
+&lt;td&gt;21:00&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;16:00&lt;/td&gt;
+&lt;td&gt;22:00&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;17:00&lt;/td&gt;
+&lt;td&gt;23:00&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;18:00&lt;/td&gt;
+&lt;td&gt;00:00+1 天&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;19:00&lt;/td&gt;
+&lt;td&gt;01:00+1 天&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;20:00&lt;/td&gt;
+&lt;td&gt;02:00+1 天&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;21:00&lt;/td&gt;
+&lt;td&gt;03:00+1 天&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;22:00&lt;/td&gt;
+&lt;td&gt;04:00+1 天&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;23:00&lt;/td&gt;
+&lt;td&gt;05:00+1 天&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+ ]]></description>
+        </item>
+        <item>
+            <guid isPermalink="true">https://smile1231.github.io/posts/96b6e8a1/</guid>
+            <title>simple self introduction</title>
+            <link>https://smile1231.github.io/posts/96b6e8a1/</link>
+            <category>SAP</category>
+            <pubDate>Thu, 28 Apr 2022 17:33:16 +0800</pubDate>
+            <description><![CDATA[ &lt;p&gt;哈哈，今天要当着印度的同事和德国的同事来介绍自己，初中作文来啦！&lt;/p&gt;
+&lt;span id=&#34;more&#34;&gt;&lt;/span&gt;
+&lt;p&gt;这是一次简单的自我介绍&lt;/p&gt;
+&lt;p&gt;hello，大家好，我是 Team C 最近新入职的同事，Darry，我将会花几分钟时间简单的介绍自己以便你们认识我。首先，我将会打开我的摄像头，这可能和我的 ppt 中照片有差别，哈哈，可能头发会有一些长并且凌乱，因为我太久没有出门了。 同时呢，很高兴在 SAP 这个大家庭和大家认识并有机会一起工作，我来自中国的江苏省泰州市，可能是一所不太出名的城市，他是我们前任国家主席的故乡，因此我也感觉很荣幸。 我出生于 1997 年，我于 2016 年 - 2020 年就读于  ，目前我正在华东师范大学攻读硕士学位，我本硕所读专业都为计算机科学与技术。在来到 SAP 之前，我曾在上汽集团的子公司工作了一段时间，主要是做一些关于 Java 开发相关的工作，由于工作年限并不是很久，所以以后可能会有很多的问题来请教你们，希望不要拒绝我哦。同时呢，也希望自己和大家在 SAP 都能够愉快的工作，一起提升自己。&lt;/p&gt;
+&lt;p&gt;关于我平时呢，特别喜欢打篮球，然后大学期间也是学院篮球队的一员，希望以后也能有机会一起打篮球，此外呢，我也喜欢弹弹吉他，听听音乐，平时也会在朋友圈发一些视频，如果可以的话，大家也可以来我的朋友圈一起听听音乐。接下来，我也愿意分享一下一次比赛的绝杀时刻。&lt;/p&gt;
+&lt;p&gt;This is a brief self-introduction&lt;/p&gt;
+&lt;p&gt;Hello, everyone, my name is Darry, the newest member of Team C, and I will take a few minutes to briefly introduce myself so you can get to know me. First, I will turn on my camera, which may be different from the photos in my ppt, haha, maybe the hair will be a little long and messy, because I haven’t been out for a long time. At the same time, I am very happy to meet everyone in the SAP family and have the opportunity to work together. I am from Taizhou City, Jiangsu Province, China, which may be a less famous city. He is the hometown of our former president, so I am also I feel honored. I was born in 1997, I studied in 2016-2020 in jiangsu , I am currently studying for a master’s degree at East China Normal University, and my undergraduate and master’s majors are computer science and technology. Before coming to SAP, I worked in SAIC Group for a period of time, mainly doing some work related to Java development. Since my working experience is not long, I may have many questions to ask you in the future. I hope Don’t reject me. At the same time, I also hope that myself and everyone can work happily in SAP and improve themselves together.&lt;/p&gt;
+&lt;p&gt;As for me, I especially like playing basketball, and then I was a member of the college basketball team during college. I hope to have the opportunity to play basketball together in the future. Besides, I also like to play the guitar, listen to music, and usually hang out with friends. Circle some videos, if possible, you can also come to my circle of friends to listen to music together. Next, I am also willing to share the lore moment of a game.&lt;/p&gt;
+ ]]></description>
+        </item>
+        <item>
+            <guid isPermalink="true">https://smile1231.github.io/posts/4187faeb/</guid>
+            <title>English self_introduction</title>
+            <link>https://smile1231.github.io/posts/4187faeb/</link>
+            <category>SAP</category>
+            <pubDate>Thu, 24 Mar 2022 16:56:54 +0800</pubDate>
+            <description><![CDATA[ &lt;span id=&#34;more&#34;&gt;&lt;/span&gt;
+&lt;p&gt;面试官们好，我是今天的面试者，陈宜，你也可以称呼我的英文名 Darry，我今天面试的岗位是 java 开发，我于 2020 年在江苏理工学院毕业，目前已有两年经验，我有两份工作经历，第一家是在一家专门为医院开发系统的公司，由于公司不是很大，所以职责一般都是前后端都会开发，届时也有开发小程序的经验。这份工作中开发了很多医院的项目，类似于华山医院投诉管理系统，华山北院医技预约系统等等，华山医院主要是用来记录华山医院的一些客诉，然后后续投诉处理等等，医技预约系统是用来预约医院内部的各种检查：例如 CT 检查。前端主要是用的技术是 Vue + ElementUI ，后端为 SpringBoot 项目，ORM 都是使用的 mybatis 框架，都是比较简单的单体服务项目。第二那份工作就是我目前所在的企业：享道出行，该企业是一家互联网公司，产品为享道出行 app，我所在的部门为支付部门，所在的小组为结算小组，职位为 Java 开发，公司统一使用规范的分布式解决方案，注册中心使用 consul，配置中心为 Apollo，Rpc 框架为公司研制的 Krpc，和谷歌的 Grpc 类似，前后端规范都定义在 proto 文件中。 我主要负责的项目为公司的发票项目，该项目主要的难点在于业务的梳理以及开票流程的理解。       该项目涵盖了所有公司的发票业务：申请开票，进行开票，发送邮件。申请开票的来源有很多，有 app，渠道，以及 MIS 端，其中渠道端就是对接的外部渠道，类似于滴滴，高德等等。开票采用了接口 + job 的形式，以开票请求量最大的渠道开票来说，当开票请求请求到服务上时，一开始会做一些简单的参数验证，邮箱，电话等等 ，也会调用专门接口查询待开票列表 ， 其次将会对请求订单进行幂等验证和金额验证，特定的商户可能开票通道也会有所不同，最后对发票基本信息进行数据库存表，同时会返回对应的享道内部发票号，为一个异步行为，该发票号可以调用专门的接口查询发票信息，同时发票请求借口也使用 redis 做了防止重复点击。job 是整个开票的业务核心逻辑，首先筛选指定状态的发票进行开票，首先开票时会直接请求发票供应商接口，发票供应商也为一个异步开票流程，发票请求之后将需要轮询去查询发票是否开具成功，当发票成功开具之后，将会进行信息状态的更新，然后执行特定的后置处理器，主要事发票邮件的发送或者渠道的信息同步。整个开票逻辑的轮廓就是如此。同时我还负责了车司管项目的研发，该项目主要是负责享道签约合作公司对出租车司机的管理平台，我主要负责了与承包方案相关的接口开发，其中的难点在于定时修改承包方案时间点，从某个日期点生效的方案设计。另外也有一些其他服务的简单开发，对账服务的日清算周清算；羊刀平台的前后端开发等。在享道待的时间里，学到了很多，处理线上事件时正确的步骤以及方式，以及联调开发时单测的完整性等等。我想辞职的原因是因为公司于年初搬了新家，离我目前所在居住的地点车程过远，所以想找一份近一点的工作，以上就是我的个人介绍，谢谢你们的聆听！&lt;/p&gt;
+&lt;p&gt;Hello interviewers, I am today’s interviewee, Chen Yi, you can also call my English name Darry. The position I am interviewing for today is Java development. I graduated from Jiangsu university of Technology in 2020 and have two years of experience. , I have two work experiences.&lt;/p&gt;
+&lt;h2 id=&#34;第一份工作&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#第一份工作&#34;&gt;#&lt;/a&gt; 第一份工作&lt;/h2&gt;
+&lt;p&gt;The first one is in a company that develops systems for hospitals. Since the company is not very large, the responsibility is generally that the front and back ends will be developed, and there will also be experience in developing mini programs at that time. In this job, many hospital projects have been developed, similar to Huashan Hospital Complaint Management System, Huashan North Hospital Medical Technology Reservation System, etc. Huashan Hospital is mainly used to record some customer complaints of Huashan Hospital, and then follow-up complaint handling, etc., The medical technology reservation system is used to book various examinations within the hospital: CT examination and so on. The front-end technology is mainly Vue + ElementUI, the back-end is the SpringBoot project, and the ORM is the mybatis framework, which is a relatively simple single service project.&lt;/p&gt;
+&lt;h2 id=&#34;第二份工作&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#第二份工作&#34;&gt;#&lt;/a&gt; 第二份工作&lt;/h2&gt;
+&lt;p&gt;The second job is the company I am currently working for: Xiangdao Travel, an Internet company whose product is the Xiangdao Travel app, my department is the payment department, my team is the settlement team, and my position is Java development. The company uses standardized distributed solutions in a unified manner. The registration center uses consul, the configuration center is Apollo, and the Rpc framework is Krpc developed by the company, which is similar to Google’s Grpc. The front-end and back-end specifications are defined in the proto file.&lt;/p&gt;
+&lt;h1 id=&#34;发票&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#发票&#34;&gt;#&lt;/a&gt; 发票&lt;/h1&gt;
+&lt;p&gt;The project I am mainly responsible for is the company’s invoicing project. The main difficulty of this project lies in the sorting out of the business and the understanding of the invoicing process. The project covers all the company’s invoicing business: apply for invoicing, do invoicing, send mail. There are many sources for invoicing applications, including apps, channels, and MIS, where the channel is the external channel for docking, similar to Didi, gaode, etc. Invoicing adopts the form of interface + job. Taking the channel with the largest amount of invoicing requests for this project, when the invoicing request is requested to the service, it will do some simple parameter verification at the beginning, such as email, telephone, etc., and will also call the special interface. Query the to-be-invoiced list, and then perform idempotent（美  [aɪˈdempətənt]） verification and amount verification on the requested order. Certain merchants may have different invoicing channels. Finally, perform a database table on the basic information of the invoice, and return the corresponding Xiangdao internal invoiceNO, which is an asynchronous behavior, the invoice number can call a special interface to query the invoice information, and the invoice request excuse also uses redis to prevent repeated clicks. Job is the core business logic of the entire invoicing business. First, the invoices in the special state are screened for invoicing. First, the invoice supplier interface will be directly requested when the invoice is issued. The invoice supplier is also an asynchronous invoicing process. After the issuance is successful, when the invoice is successfully issued, the information status will be updated, and then a specific post-processor will be executed, which is mainly responsible for the sending of the invoice email or the information synchronization of the channel. This is the outline of the entire billing logic.&lt;/p&gt;
+&lt;p&gt;At the same time, I was also in charge of the research and development of the car driver management project. This project is mainly responsible for the management platform for taxi drivers by the contracted cooperative company of Xiangdao. I was mainly responsible for the interface development related to the contracting scheme. The difficulty lies in modifying the contracting scheme regularly. A time point, a scheme design that takes effect from a certain date point. In addition, there are also simple development of some other services, daily settlement and weekly settlement of account  services; front-end and back-end development of the Yangdao platform, etc. During the time I spent, I learned a lot, the correct steps and methods for handling online events, and the integrity of unit testing during joint debugging and development. The reason I want to resign is because the company moved to a new home at the beginning of the year, which is too far from where I currently live, so I want to find a closer job. The above is my personal introduction, thank you for listening!&lt;/p&gt;
+ ]]></description>
+        </item>
+    </channel>
+</rss>

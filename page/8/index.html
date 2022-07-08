@@ -1,1967 +1,953 @@
+
+
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
-<meta name="theme-color" content="#222">
-<meta name="generator" content="Hexo 5.4.0">
-  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="/images/avatar.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="/images/avatar.png">
-  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+<meta name="theme-color" content="#FFF">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
 
-<link rel="stylesheet" href="/css/main.css">
+<link rel="icon" type="image/ico" sizes="32x32" href="/images/favicon.ico">
+  <meta http-equiv="Cache-Control" content="no-transform">
+  <meta http-equiv="Cache-Control" content="no-siteapp">
 
 
-<link rel="stylesheet" href="/lib/font-awesome/css/all.min.css">
-  <link rel="stylesheet" href="/lib/pace/pace-theme-mac-osx.min.css">
-  <script src="/lib/pace/pace.min.js"></script>
+<link rel="alternate" type="application/rss+xml" title="JIN MAO 's Blog" href="https://smile1231.github.io/rss.xml" />
+<link rel="alternate" type="application/atom+xml" title="JIN MAO 's Blog" href="https://smile1231.github.io/atom.xml" />
+<link rel="alternate" type="application/json" title="JIN MAO 's Blog" href="https://smile1231.github.io/feed.json" />
 
-<script id="hexo-configurations">
-    var NexT = window.NexT || {};
-    var CONFIG = {"hostname":"smile1231.github.io","root":"/","scheme":"Pisces","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":true,"show_result":true,"style":"mac"},"back2top":{"enable":true,"sidebar":false,"scrollpercent":true},"bookmark":{"enable":true,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":true,"lazyload":true,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
-  </script>
+<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Mulish:300,300italic,400,400italic,700,700italic%7CFredericka%20the%20Great:300,300italic,400,400italic,700,700italic%7CNoto%20Serif%20JP:300,300italic,400,400italic,700,700italic%7CNoto%20Serif%20SC:300,300italic,400,400italic,700,700italic%7CInconsolata:300,300italic,400,400italic,700,700italic&display=swap&subset=latin,latin-ext">
 
-  <meta property="og:type" content="website">
-<meta property="og:title" content="JIN MAO &#39;s Blog">
-<meta property="og:url" content="https://smile1231.github.io/page/8/index.html">
-<meta property="og:site_name" content="JIN MAO &#39;s Blog">
-<meta property="og:locale" content="en_US">
-<meta property="article:author" content="JIN Mao">
-<meta property="article:tag" content="Java,算法,数据挖掘">
-<meta name="twitter:card" content="summary">
+<link rel="stylesheet" href="/css/app.css?v=0.2.5">
+
+  
 
 <link rel="canonical" href="https://smile1231.github.io/page/8/">
 
 
-<script id="page-configurations">
-  // https://hexo.io/docs/variables.html
-  CONFIG.page = {
-    sidebar: "",
-    isHome : true,
-    isPost : false,
-    lang   : 'en'
-  };
-</script>
 
-  <title>JIN MAO 's Blog</title>
-  
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-FWV5496QFL"></script>
-    <script>
-      if (CONFIG.hostname === location.hostname) {
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-        gtag('config', 'G-FWV5496QFL');
-      }
-    </script>
-
-
-
-
-
-
-  <noscript>
-  <style>
-  .use-motion .brand,
-  .use-motion .menu-item,
-  .sidebar-inner,
-  .use-motion .post-block,
-  .use-motion .pagination,
-  .use-motion .comments,
-  .use-motion .post-header,
-  .use-motion .post-body,
-  .use-motion .collection-header { opacity: initial; }
-
-  .use-motion .site-title,
-  .use-motion .site-subtitle {
-    opacity: initial;
-    top: initial;
-  }
-
-  .use-motion .logo-line-before i { left: initial; }
-  .use-motion .logo-line-after i { right: initial; }
-  </style>
-</noscript>
-
-<link rel="alternate" href="/atom.xml" title="JIN MAO 's Blog" type="application/atom+xml">
-</head>
-
+  <title>Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
+<meta name="generator" content="Hexo 5.4.0"></head>
 <body itemscope itemtype="http://schema.org/WebPage">
-  <div class="container use-motion">
-    <div class="headband"></div>
-      <!-- <a target="_blank" rel="noopener" href="https://github.com/Smile1231/StudyRepository"><img loading="lazy" width="149" height="149" src="https://github.blog/wp-content/uploads/2008/12/forkme_right_gray_6d6d6d.png?resize=149%2C149" class="attachment-full size-full" alt="Fork me on GitHub" data-recalc-dims="1"></a> -->
-    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
-      <div class="header-inner"><div class="site-brand-container">
-  <div class="site-nav-toggle">
-    <div class="toggle" aria-label="Toggle navigation bar">
-      <span class="toggle-line toggle-line-first"></span>
-      <span class="toggle-line toggle-line-middle"></span>
-      <span class="toggle-line toggle-line-last"></span>
+  <div id="loading">
+    <div class="cat">
+      <div class="body"></div>
+      <div class="head">
+        <div class="face"></div>
+      </div>
+      <div class="foot">
+        <div class="tummy-end"></div>
+        <div class="bottom"></div>
+        <div class="legs left"></div>
+        <div class="legs right"></div>
+      </div>
+      <div class="paw">
+        <div class="hands left"></div>
+        <div class="hands right"></div>
+      </div>
     </div>
   </div>
-
-  <div class="site-meta">
-
-    <a href="/" class="brand" rel="start">
-      <span class="logo-line-before"><i></i></span>
-      <h1 class="site-title">JIN MAO 's Blog</h1>
-      <span class="logo-line-after"><i></i></span>
-    </a>
-      <p class="site-subtitle" itemprop="description">got windy(起风了)</p>
-  </div>
-
-  <div class="site-nav-right">
-    <div class="toggle popup-trigger">
-        <i class="fa fa-search fa-fw fa-lg"></i>
+  <div id="container">
+    <header id="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="inner">
+        <div id="brand">
+          <div class="pjax">
+          
+            <a href="/" class="logo" rel="start"><p class="artboard">Jin Mao when to get rich ?</p>
+              <h1 itemprop="name headline" class="title">JIN MAO 's Blog</h1>
+            </a>
+            <p class="meta" itemprop="description">= got windy(起风了) =</p>
+          
+          </div>
+        </div>
+        <nav id="nav">
+  <div class="inner">
+    <div class="toggle">
+      <div class="lines" aria-label="Toggle navigation bar">
+        <span class="line"></span>
+        <span class="line"></span>
+        <span class="line"></span>
+      </div>
     </div>
-  </div>
-</div>
-
-
-
-
-<nav class="site-nav">
-  <ul id="menu" class="main-menu menu">
-        <li class="menu-item menu-item-home">
-
-    <a href="/" rel="section"><i class="fa fa-home fa-fw"></i>Home</a>
-
-  </li>
-        <li class="menu-item menu-item-about">
-
-    <a href="/about/" rel="section"><i class="fa fa-user fa-fw"></i>About</a>
-
-  </li>
-        <li class="menu-item menu-item-tags">
-
-    <a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>Tags<span class="badge">97</span></a>
-
-  </li>
-        <li class="menu-item menu-item-categories">
-
-    <a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>Categories<span class="badge">70</span></a>
-
-  </li>
-        <li class="menu-item menu-item-archives">
-
-    <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>Archives<span class="badge">133</span></a>
-
-  </li>
-      <li class="menu-item menu-item-search">
-        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>Search
-        </a>
+    <ul class="menu">
+      <li class="item title"><a href="/" rel="start">Jin Mao when to get rich ?</a></li>
+    </ul>
+    <ul class="right">
+      <li class="item theme">
+        <i class="ic i-sun"></i>
       </li>
-  </ul>
+      <li class="item search">
+        <i class="ic i-search"></i>
+      </li>
+    </ul>
+  </div>
 </nav>
 
-
-
-  <div class="search-pop-overlay">
-    <div class="popup search-popup">
-        <div class="search-header">
-  <span class="search-icon">
-    <i class="fa fa-search"></i>
-  </span>
-  <div class="search-input-container">
-    <input autocomplete="off" autocapitalize="off"
-           placeholder="Searching..." spellcheck="false"
-           type="search" class="search-input">
-  </div>
-  <span class="popup-btn-close">
-    <i class="fa fa-times-circle"></i>
-  </span>
-</div>
-<div id="search-result">
-  <div id="no-result">
-    <i class="fa fa-spinner fa-pulse fa-5x fa-fw"></i>
-  </div>
-</div>
-
-    </div>
-  </div>
-
-</div>
+      </div>
+      <div id="imgs" class="pjax">
+        <ul>
+          <li class="item" data-background-image="https://tva1.sinaimg.cn/large/6833939bly1giclwuom7cj20zk0m8dvn.jpg"></li>
+          <li class="item" data-background-image="https://tva1.sinaimg.cn/large/6833939bly1gicitspjpbj20zk0m81ky.jpg"></li>
+          <li class="item" data-background-image="https://tva1.sinaimg.cn/large/6833939bly1giclgi503lj20zk0m8hdt.jpg"></li>
+          <li class="item" data-background-image="https://tva1.sinaimg.cn/large/6833939bly1gicliwyw55j20zk0m8hdt.jpg"></li>
+          <li class="item" data-background-image="https://tva1.sinaimg.cn/large/6833939bly1giclx29mstj20zk0m8hdt.jpg"></li>
+          <li class="item" data-background-image="https://tva1.sinaimg.cn/large/6833939bly1gicli3sbvtj20zk0m8x6p.jpg"></li>
+        </ul>
+      </div>
     </header>
-
-    
-  <div class="back-to-top">
-    <i class="fa fa-arrow-up"></i>
-    <span>0%</span>
+    <div id="waves">
+      <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+        <defs>
+          <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+        </defs>
+        <g class="parallax">
+          <use xlink:href="#gentle-wave" x="48" y="0" />
+          <use xlink:href="#gentle-wave" x="48" y="3" />
+          <use xlink:href="#gentle-wave" x="48" y="5" />
+          <use xlink:href="#gentle-wave" x="48" y="7" />
+        </g>
+      </svg>
+    </div>
+    <main>
+      <div class="inner">
+        <div id="main" class="pjax">
+          
+  <div class="index wrap">
+    <div class="segments posts">
+        
+<article class="item">
+  <div class="cover">
+    <a href="/posts/7f59931c/" itemprop="url" title="Css选择器"><img data-src="https://tva1.sinaimg.cn/mw690/6833939bly1giclx6phq6j20zk0m8e36.jpg"></a>
   </div>
-  <div class="reading-progress-bar"></div>
-  <a role="button" class="book-mark-link book-mark-link-fixed"></a>
-
-
-    <main class="main">
-      <div class="main-inner">
-        <div class="content-wrap">
-          
-
-            <div class="post-block animated fadeIn">
-              <h5 class="post-title" itemprop="name headline">
-                <a target="_blank" rel="noopener" href="https://github.com/smile1231" class="post-title-link" itemprop="url">Github Contribution Calendar</a>
-              </h5>
-              <div class="post-body animated fadeInDown" itemprop="articleBody">
-                <img style="width: 100%; margin-top: 30px;" src="https://ghchart.rshah.org/e77c8e/smile1231" alt="JinMao's Blue Github Chart" />
-              </div>
-            </div>
-          <div class="content index posts-expand">
-            
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
-    <link itemprop="mainEntityOfPage" href="https://smile1231.github.io/posts/54880bcd/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.png">
-      <meta itemprop="name" content="JIN Mao">
-      <meta itemprop="description" content="">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="JIN MAO 's Blog">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/posts/54880bcd/" class="post-title-link" itemprop="url">Css样式</a>
-        </h2>
-
-        <div class="post-meta">
-          
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">Posted on</span>
-              
-
-              <time title="Created: 2022-02-14 21:29:08 / Modified: 22:24:06" itemprop="dateCreated datePublished" datetime="2022-02-14T21:29:08+08:00">2022-02-14</time>
-            </span>
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-folder"></i>
-              </span>
-              <span class="post-meta-item-text">In</span>
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/%E5%89%8D%E7%AB%AF/" itemprop="url" rel="index"><span itemprop="name">前端</span></a>
-                </span>
-                  , 
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/%E5%89%8D%E7%AB%AF/Css/" itemprop="url" rel="index"><span itemprop="name">Css</span></a>
-                </span>
-            </span>
-
-          
-  
-  <span class="post-meta-item">
+  <div class="info">
     
-      <span class="post-meta-item-icon">
-        <i class="far fa-comment"></i>
-      </span>
-      <span class="post-meta-item-text">Valine: </span>
-    
-    <a title="valine" href="/posts/54880bcd/#valine-comments" itemprop="discussionUrl">
-      <span class="post-comments-count valine-comment-count" data-xid="/posts/54880bcd/" itemprop="commentCount"></span>
-    </a>
+<div class="meta">
+  <span class="item" title="Created: 2022-02-14 21:28:34">
+    <span class="icon">
+      <i class="ic i-calendar"></i>
+    </span>
+    <time itemprop="dateCreated datePublished" datetime="2022-02-14T21:28:34+08:00">2022-02-14</time>
   </span>
-  
-  
+  <span class="item" title="Symbols count in article">
+    <span class="icon">
+      <i class="ic i-pen"></i>
+    </span>
+    <span>1.8k</span>
+    <span class="text">words</span>
+  </span>
+  <span class="item" title="Reading time">
+    <span class="icon">
+      <i class="ic i-clock"></i>
+    </span>
+    <span>2 mins.</span>
+  </span>
+</div>
 
-        </div>
-      </header>
+    <h3><a href="/posts/7f59931c/" itemprop="url" title="Css选择器">Css选择器</a></h3>
+    <div class="excerpt">
+        # Css 选择器
 
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
+选择器
+例子
+例子描述
+CSS
 
-      
-          <h1 id="Css样式"><a href="#Css样式" class="headerlink" title="Css样式"></a>Css样式</h1><p><a target="_blank" rel="noopener" href="https://www.runoob.com/cssref/css-reference.html">CSS菜鸟学习链接</a></p>
-<blockquote>
-<p><strong>opacity</strong></p>
-</blockquote>
-<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">透明度 </span><br><span class="line">value	规定不透明度。从 <span class="number">0.0</span> （完全透明）到 <span class="number">1.0</span>（完全不透明）。</span><br></pre></td></tr></table></figure>
+.class
+.intro
+选择 class=“intro” 的所有元素.
+1
 
-<blockquote>
-<p><strong>text-align</strong></p>
-</blockquote>
-<table>
-<thead>
-<tr>
-<th>value</th>
-<th>解释</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>left</td>
-<td>把文本排列到左边。默认值：由浏览器决定。</td>
-</tr>
-<tr>
-<td>right</td>
-<td>把文本排列到右边。</td>
-</tr>
-<tr>
-<td>center</td>
-<td>把文本排列到中间。</td>
-</tr>
-<tr>
-<td>justify</td>
-<td>实现两端对齐文本效果。</td>
-</tr>
-<tr>
-<td>inherit</td>
-<td>规定应该从父元素继承 text-align 属性的值。</td>
-</tr>
-</tbody></table>
-          <!--noindex-->
-            <div class="post-button">
-              <a class="btn" href="/posts/54880bcd/#more" rel="contents">
-                Read more &raquo;
-              </a>
-            </div>
-          <!--/noindex-->
-        
-      
+#id
+#firstname
+选择 id=“firstname” 的所有元素
+1
 
-      <div>
-        
-      </div>
+*
+*
+选择所有元素。
+2
+
+element
+p
+选择所有 元素。
+1
+
+element,element
+div,p
+选择所有 元素和所有 元素。
+1
+
+element element
+div p
+选择 元素内部的所有 元素。
+1
+
+element&amp;gt;element
+div&amp;gt;p
+选择父元素为 元素的所有...
     </div>
-
-    
-    
-    
-      
-
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
-    <link itemprop="mainEntityOfPage" href="https://smile1231.github.io/posts/7f59931c/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.png">
-      <meta itemprop="name" content="JIN Mao">
-      <meta itemprop="description" content="">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="JIN MAO 's Blog">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/posts/7f59931c/" class="post-title-link" itemprop="url">Css选择器</a>
-        </h2>
-
-        <div class="post-meta">
-          
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">Posted on</span>
-              
-
-              <time title="Created: 2022-02-14 21:28:34 / Modified: 22:22:25" itemprop="dateCreated datePublished" datetime="2022-02-14T21:28:34+08:00">2022-02-14</time>
-            </span>
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-folder"></i>
-              </span>
-              <span class="post-meta-item-text">In</span>
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/%E5%89%8D%E7%AB%AF/" itemprop="url" rel="index"><span itemprop="name">前端</span></a>
-                </span>
-                  , 
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/%E5%89%8D%E7%AB%AF/Css/" itemprop="url" rel="index"><span itemprop="name">Css</span></a>
-                </span>
-            </span>
-
-          
-  
-  <span class="post-meta-item">
-    
-      <span class="post-meta-item-icon">
-        <i class="far fa-comment"></i>
+    <div class="meta footer">
+      <span>
+        <a href="/categories/%E5%89%8D%E7%AB%AF/Css/" itemprop="url" title="Css"><i class="ic i-flag"></i>Css</a>
       </span>
-      <span class="post-meta-item-text">Valine: </span>
-    
-    <a title="valine" href="/posts/7f59931c/#valine-comments" itemprop="discussionUrl">
-      <span class="post-comments-count valine-comment-count" data-xid="/posts/7f59931c/" itemprop="commentCount"></span>
-    </a>
-  </span>
-  
-  
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <h1 id="Css-选择器"><a href="#Css-选择器" class="headerlink" title="Css 选择器"></a>Css 选择器</h1><table>
-<thead>
-<tr>
-<th>选择器</th>
-<th align="center">例子</th>
-<th align="center">例子描述</th>
-<th align="right">CSS</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>.class</td>
-<td align="center">.intro</td>
-<td align="center">选择 class=”intro” 的所有元素.</td>
-<td align="right">1</td>
-</tr>
-<tr>
-<td>#id</td>
-<td align="center">#firstname</td>
-<td align="center">选择 id=”firstname” 的所有元素</td>
-<td align="right">1</td>
-</tr>
-<tr>
-<td>*</td>
-<td align="center">*</td>
-<td align="center">选择所有元素。</td>
-<td align="right">2</td>
-</tr>
-<tr>
-<td>element</td>
-<td align="center">p</td>
-<td align="center">选择所有 <p> 元素。</td>
-<td align="right">1</td>
-</tr>
-<tr>
-<td>element,element</td>
-<td align="center">div,p</td>
-<td align="center">选择所有 <div> 元素和所有 <p> 元素。</td>
-<td align="right">1</td>
-</tr>
-<tr>
-<td>element element</td>
-<td align="center">div p</td>
-<td align="center">选择 <div> 元素内部的所有 <p> 元素。</td>
-<td align="right">1</td>
-</tr>
-<tr>
-<td>element&gt;element</td>
-<td align="center">div&gt;p</td>
-<td align="center">选择父元素为 <div> 元素的所有 <p> 元素。</td>
-<td align="right">2</td>
-</tr>
-<tr>
-<td>element+element</td>
-<td align="center">div+p</td>
-<td align="center">选择紧接在 <div> 元素之后的所有 <p> 元素。</td>
-<td align="right">2</td>
-</tr>
-<tr>
-<td>[attribute]</td>
-<td align="center">[target]</td>
-<td align="center">选择带有 target 属性所有元素。</td>
-<td align="right">2</td>
-</tr>
-<tr>
-<td>[attribute=value]</td>
-<td align="center">[target=_blank]</td>
-<td align="center">选择 target=”_blank” 的所有元素。</td>
-<td align="right">2</td>
-</tr>
-<tr>
-<td>[attribute~=value]</td>
-<td align="center">[title~=flower]</td>
-<td align="center">选择 title 属性包含单词 “flower” 的所有元素。</td>
-<td align="right">2</td>
-</tr>
-<tr>
-<td>[attribute=value]</td>
-<td align="center">[lang=en]</td>
-<td align="center">选择 lang 属性值以 “en” 开头的所有元素。</td>
-<td align="right">2</td>
-</tr>
-<tr>
-<td>:link</td>
-<td align="center">a:link</td>
-<td align="center">选择所有未被访问的链接。</td>
-<td align="right">1</td>
-</tr>
-<tr>
-<td>:visited</td>
-<td align="center">a:visited</td>
-<td align="center">选择所有已被访问的链接。</td>
-<td align="right">1</td>
-</tr>
-<tr>
-<td>:active</td>
-<td align="center">a:active</td>
-<td align="center">选择活动链接。</td>
-<td align="right">1</td>
-</tr>
-<tr>
-<td>:hover</td>
-<td align="center">a:hover</td>
-<td align="center">选择鼠标指针位于其上的链接。</td>
-<td align="right">1</td>
-</tr>
-<tr>
-<td>:focus</td>
-<td align="center">input:focus</td>
-<td align="center">选择获得焦点的 input 元素。</td>
-<td align="right">2</td>
-</tr>
-<tr>
-<td>:first-letter</td>
-<td align="center">p:first-letter</td>
-<td align="center">选择每个 <p> 元素的首字母。</td>
-<td align="right">1</td>
-</tr>
-<tr>
-<td>:first-line</td>
-<td align="center">p:first-line</td>
-<td align="center">选择每个 <p> 元素的首行。</td>
-<td align="right">1</td>
-</tr>
-<tr>
-<td>:first-child</td>
-<td align="center">p:first-child</td>
-<td align="center">选择属于父元素的第一个子元素的每个 <p> 元素。</td>
-<td align="right">2</td>
-</tr>
-<tr>
-<td>:before</td>
-<td align="center">p:before</td>
-<td align="center">在每个 <p> 元素的内容之前插入内容。</td>
-<td align="right">2</td>
-</tr>
-<tr>
-<td>:after</td>
-<td align="center">p:after</td>
-<td align="center">在每个 <p> 元素的内容之后插入内容。</td>
-<td align="right">2</td>
-</tr>
-<tr>
-<td>:lang(language)</td>
-<td align="center">p:lang(it)</td>
-<td align="center">选择带有以 “it” 开头的 lang 属性值的每个 <p> 元素。</td>
-<td align="right">2</td>
-</tr>
-<tr>
-<td>element1~element2</td>
-<td align="center">p~ul</td>
-<td align="center">选择前面有 <p> 元素的每个 <ul> 元素。</td>
-<td align="right">3</td>
-</tr>
-<tr>
-<td>[attribute^=value]</td>
-<td align="center">a[src^=”https”]</td>
-<td align="center">选择其 src 属性值以 “https” 开头的每个 <a> 元素。</td>
-<td align="right">3</td>
-</tr>
-<tr>
-<td>[attribute$=value]</td>
-<td align="center">a[src$=”.pdf”]</td>
-<td align="center">选择其 src 属性以 “.pdf” 结尾的所有 <a> 元素。</td>
-<td align="right">3</td>
-</tr>
-<tr>
-<td>[attribute*=value]</td>
-<td align="center">a[src*=”abc”]</td>
-<td align="center">选择其 src 属性中包含 “abc” 子串的每个 <a> 元素。</td>
-<td align="right">3</td>
-</tr>
-<tr>
-<td>:first-of-type</td>
-<td align="center">p:first-of-type</td>
-<td align="center">选择属于其父元素的首个 <p> 元素的每个 <p> 元素。</td>
-<td align="right">3</td>
-</tr>
-<tr>
-<td>:last-of-type</td>
-<td align="center">p:last-of-type</td>
-<td align="center">选择属于其父元素的最后 <p> 元素的每个 <p> 元素。</td>
-<td align="right">3</td>
-</tr>
-<tr>
-<td>:only-of-type</td>
-<td align="center">p:only-of-type</td>
-<td align="center">选择属于其父元素唯一的 <p> 元素的每个 <p> 元素。</td>
-<td align="right">3</td>
-</tr>
-<tr>
-<td>:only-child</td>
-<td align="center">p:only-child</td>
-<td align="center">选择属于其父元素的唯一子元素的每个 <p> 元素。</td>
-<td align="right">3</td>
-</tr>
-<tr>
-<td>:nth-child(n)</td>
-<td align="center">p:nth-child(2)</td>
-<td align="center">选择属于其父元素的第二个子元素的每个 <p> 元素。</td>
-<td align="right">3</td>
-</tr>
-<tr>
-<td>:nth-last-child(n)</td>
-<td align="center">p:nth-last-child(2)</td>
-<td align="center">同上，从最后一个子元素开始计数。</td>
-<td align="right">3</td>
-</tr>
-<tr>
-<td>:nth-of-type(n)</td>
-<td align="center">p:nth-of-type(2)</td>
-<td align="center">选择属于其父元素第二个 <p> 元素的每个 <p> 元素。</td>
-<td align="right">3</td>
-</tr>
-<tr>
-<td>:nth-last-of-type(n)</td>
-<td align="center">p:nth-last-of-type(2)</td>
-<td align="center">同上，但是从最后一个子元素开始计数。</td>
-<td align="right">3</td>
-</tr>
-<tr>
-<td>:last-child</td>
-<td align="center">p:last-child</td>
-<td align="center">选择属于其父元素最后一个子元素每个 <p> 元素。</td>
-<td align="right">3</td>
-</tr>
-<tr>
-<td>:root</td>
-<td align="center">:root</td>
-<td align="center">选择文档的根元素。</td>
-<td align="right">3</td>
-</tr>
-<tr>
-<td>:empty</td>
-<td align="center">p:empty</td>
-<td align="center">选择没有子元素的每个 <p> 元素（包括文本节点）。</td>
-<td align="right">3</td>
-</tr>
-<tr>
-<td>:target</td>
-<td align="center">#news:target</td>
-<td align="center">选择当前活动的 #news 元素。</td>
-<td align="right">3</td>
-</tr>
-<tr>
-<td>:enabled</td>
-<td align="center">input:enabled</td>
-<td align="center">选择每个启用的 input元素。</td>
-<td align="right">3</td>
-</tr>
-<tr>
-<td>:disabled</td>
-<td align="center">input:disabled</td>
-<td align="center">选择每个禁用的 input 元素</td>
-<td align="right">3</td>
-</tr>
-<tr>
-<td>:checked</td>
-<td align="center">input:checked</td>
-<td align="center">选择每个被选中的 input 元素。</td>
-<td align="right">3</td>
-</tr>
-<tr>
-<td>:not(selector)</td>
-<td align="center">:not(p)</td>
-<td align="center">选择非 p 元素的每个元素。</td>
-<td align="right">3</td>
-</tr>
-<tr>
-<td>::selection</td>
-<td align="center">::selection</td>
-<td align="center">选择被用户选取的元素部分。</td>
-<td align="right">3</td>
-</tr>
-</tbody></table>
-
-      
-
-      <div>
-        
-      </div>
     </div>
+    <a href="/posts/7f59931c/" itemprop="url" title="Css选择器" class="btn">more...</a>
+  </div>
+</article>
 
+        
+<article class="item">
+  <div class="cover">
+    <a href="/posts/d199d651/" itemprop="url" title="VsCode快捷键"><img data-src="https://tva1.sinaimg.cn/mw690/6833939bly1gipevo9j1jj20zk0m8e81.jpg"></a>
+  </div>
+  <div class="info">
     
-    
-    
-      
-
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
-    <link itemprop="mainEntityOfPage" href="https://smile1231.github.io/posts/d199d651/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.png">
-      <meta itemprop="name" content="JIN Mao">
-      <meta itemprop="description" content="">
+<div class="meta">
+  <span class="item" title="Created: 2022-02-13 21:52:23">
+    <span class="icon">
+      <i class="ic i-calendar"></i>
     </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="JIN MAO 's Blog">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/posts/d199d651/" class="post-title-link" itemprop="url">VsCode快捷键</a>
-        </h2>
-
-        <div class="post-meta">
-          
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">Posted on</span>
-              
-
-              <time title="Created: 2022-02-13 21:52:23 / Modified: 23:26:25" itemprop="dateCreated datePublished" datetime="2022-02-13T21:52:23+08:00">2022-02-13</time>
-            </span>
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-folder"></i>
-              </span>
-              <span class="post-meta-item-text">In</span>
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/VSCODE/" itemprop="url" rel="index"><span itemprop="name">VSCODE</span></a>
-                </span>
-                  , 
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/VSCODE/%E5%BF%AB%E6%8D%B7%E9%94%AE/" itemprop="url" rel="index"><span itemprop="name">快捷键</span></a>
-                </span>
-            </span>
-
-          
-  
-  <span class="post-meta-item">
-    
-      <span class="post-meta-item-icon">
-        <i class="far fa-comment"></i>
-      </span>
-      <span class="post-meta-item-text">Valine: </span>
-    
-    <a title="valine" href="/posts/d199d651/#valine-comments" itemprop="discussionUrl">
-      <span class="post-comments-count valine-comment-count" data-xid="/posts/d199d651/" itemprop="commentCount"></span>
-    </a>
+    <time itemprop="dateCreated datePublished" datetime="2022-02-13T21:52:23+08:00">2022-02-13</time>
   </span>
-  
-  
+  <span class="item" title="Symbols count in article">
+    <span class="icon">
+      <i class="ic i-pen"></i>
+    </span>
+    <span>627</span>
+    <span class="text">words</span>
+  </span>
+  <span class="item" title="Reading time">
+    <span class="icon">
+      <i class="ic i-clock"></i>
+    </span>
+    <span>1 mins.</span>
+  </span>
+</div>
 
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <h1 id="VsCode快捷键"><a href="#VsCode快捷键" class="headerlink" title="VsCode快捷键"></a><code>VsCode</code>快捷键</h1><ul>
-<li><code>VS Code</code>中代码格式化<ul>
+    <h3><a href="/posts/d199d651/" itemprop="url" title="VsCode快捷键">VsCode快捷键</a></h3>
+    <div class="excerpt">
+        <h1 id="vscode快捷键"><a class="markdownIt-Anchor" href="#vscode快捷键">#</a>  <code>VsCode</code>  快捷键</h1>
+<ul>
+<li><code>VS Code</code>  中代码格式化
+<ul>
 <li><code>Windows Shift + Alt + F</code></li>
-<li>在<code>Mac</code>上<code>Shift + Option + F</code></li>
+<li>在 <code>Mac</code>  上 <code>Shift + Option + F</code></li>
 </ul>
 </li>
-<li>一行优化显示<ul>
+<li>一行优化显示
+<ul>
 <li><code>Alt + Z </code></li>
 </ul>
 </li>
 </ul>
-<h1 id="IDEA常用"><a href="#IDEA常用" class="headerlink" title="IDEA常用"></a><code>IDEA</code>常用</h1><ul>
-<li><code>Ctrl + Z</code> 撤销 （必备）</li>
-<li><code>Ctrl + Shift + Z</code> 恢复 （必备）
-          <!--noindex-->
-            <div class="post-button">
-              <a class="btn" href="/posts/d199d651/#more" rel="contents">
-                Read more &raquo;
-              </a>
-            </div>
-          <!--/noindex-->
-        
+<h1 id="idea常用"><a class="markdownIt-Anchor" href="#idea常用">#</a>  <code>IDEA</code>  常用</h1>
+<ul>
+<li><code>Ctrl + Z</code>  撤销 （必备）</li>
+<li><code>Ctrl + Shift + Z</code>  恢复 （必备）</li>
+</ul>
       
-
-      <div>
-        
-      </div>
     </div>
-
-    
-    
-    
-      
-
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
-    <link itemprop="mainEntityOfPage" href="https://smile1231.github.io/posts/f610585/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.png">
-      <meta itemprop="name" content="JIN Mao">
-      <meta itemprop="description" content="">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="JIN MAO 's Blog">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/posts/f610585/" class="post-title-link" itemprop="url">UML:类图关系总结</a>
-        </h2>
-
-        <div class="post-meta">
-          
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">Posted on</span>
-              
-
-              <time title="Created: 2022-02-13 21:52:04 / Modified: 23:27:57" itemprop="dateCreated datePublished" datetime="2022-02-13T21:52:04+08:00">2022-02-13</time>
-            </span>
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-folder"></i>
-              </span>
-              <span class="post-meta-item-text">In</span>
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/UML/" itemprop="url" rel="index"><span itemprop="name">UML</span></a>
-                </span>
-            </span>
-
-          
-  
-  <span class="post-meta-item">
-    
-      <span class="post-meta-item-icon">
-        <i class="far fa-comment"></i>
+    <div class="meta footer">
+      <span>
+        <a href="/categories/VSCODE/%E5%BF%AB%E6%8D%B7%E9%94%AE/" itemprop="url" title="快捷键"><i class="ic i-flag"></i>快捷键</a>
       </span>
-      <span class="post-meta-item-text">Valine: </span>
-    
-    <a title="valine" href="/posts/f610585/#valine-comments" itemprop="discussionUrl">
-      <span class="post-comments-count valine-comment-count" data-xid="/posts/f610585/" itemprop="commentCount"></span>
-    </a>
-  </span>
-  
-  
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <h1 id="UML-类图关系总结"><a href="#UML-类图关系总结" class="headerlink" title="UML:类图关系总结"></a><code>UML</code>:类图关系总结</h1><p>UML类图几种关系的总结，泛化 = 实现 &gt; 组合 &gt; 聚合 &gt; 关联 &gt; 依赖<br>在UML类图中，常见的有以下几种关系: <code>泛化（Generalization）</code>, <code>实现（Realization）</code>，<code>关联（Association)</code>，<code>聚合（Aggregation）</code>，<code>组合(Composition)</code>，<code>依赖(Dependency)</code></p>
-          <!--noindex-->
-            <div class="post-button">
-              <a class="btn" href="/posts/f610585/#more" rel="contents">
-                Read more &raquo;
-              </a>
-            </div>
-          <!--/noindex-->
-        
-      
-
-      <div>
-        
-      </div>
     </div>
+    <a href="/posts/d199d651/" itemprop="url" title="VsCode快捷键" class="btn">more...</a>
+  </div>
+</article>
 
+        
+<article class="item">
+  <div class="cover">
+    <a href="/posts/f610585/" itemprop="url" title="UML:类图关系总结"><img data-src="https://tva1.sinaimg.cn/mw690/6833939bly1giph4baakhj20zk0m8h5q.jpg"></a>
+  </div>
+  <div class="info">
     
-    
-    
-      
-
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
-    <link itemprop="mainEntityOfPage" href="https://smile1231.github.io/posts/31f95091/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.png">
-      <meta itemprop="name" content="JIN Mao">
-      <meta itemprop="description" content="">
+<div class="meta">
+  <span class="item" title="Created: 2022-02-13 21:52:04">
+    <span class="icon">
+      <i class="ic i-calendar"></i>
     </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="JIN MAO 's Blog">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/posts/31f95091/" class="post-title-link" itemprop="url">Ubuntu中安装卸载Mysql数据库</a>
-        </h2>
-
-        <div class="post-meta">
-          
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">Posted on</span>
-              
-
-              <time title="Created: 2022-02-13 21:49:51 / Modified: 23:23:15" itemprop="dateCreated datePublished" datetime="2022-02-13T21:49:51+08:00">2022-02-13</time>
-            </span>
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-folder"></i>
-              </span>
-              <span class="post-meta-item-text">In</span>
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/Ubuntu/" itemprop="url" rel="index"><span itemprop="name">Ubuntu</span></a>
-                </span>
-                  , 
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/Ubuntu/Mysql/" itemprop="url" rel="index"><span itemprop="name">Mysql</span></a>
-                </span>
-            </span>
-
-          
-  
-  <span class="post-meta-item">
-    
-      <span class="post-meta-item-icon">
-        <i class="far fa-comment"></i>
-      </span>
-      <span class="post-meta-item-text">Valine: </span>
-    
-    <a title="valine" href="/posts/31f95091/#valine-comments" itemprop="discussionUrl">
-      <span class="post-comments-count valine-comment-count" data-xid="/posts/31f95091/" itemprop="commentCount"></span>
-    </a>
+    <time itemprop="dateCreated datePublished" datetime="2022-02-13T21:52:04+08:00">2022-02-13</time>
   </span>
-  
-  
+  <span class="item" title="Symbols count in article">
+    <span class="icon">
+      <i class="ic i-pen"></i>
+    </span>
+    <span>886</span>
+    <span class="text">words</span>
+  </span>
+  <span class="item" title="Reading time">
+    <span class="icon">
+      <i class="ic i-clock"></i>
+    </span>
+    <span>1 mins.</span>
+  </span>
+</div>
 
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
+    <h3><a href="/posts/f610585/" itemprop="url" title="UML:类图关系总结">UML:类图关系总结</a></h3>
+    <div class="excerpt">
+        <h1 id="uml类图关系总结"><a class="markdownIt-Anchor" href="#uml类图关系总结">#</a>  <code>UML</code> : 类图关系总结</h1>
+<p>UML 类图几种关系的总结，泛化 = 实现 &gt; 组合 &gt; 聚合 &gt; 关联 &gt; 依赖<br>
+在 UML 类图中，常见的有以下几种关系:  <code>泛化（Generalization）</code> ,  <code>实现（Realization）</code> ， <code>关联（Association)</code> ， <code>聚合（Aggregation）</code> ， <code>组合(Composition)</code> ， <code>依赖(Dependency)</code></p>
       
-          <h1 id="Ubuntu中安装卸载Mysql数据库"><a href="#Ubuntu中安装卸载Mysql数据库" class="headerlink" title="Ubuntu中安装卸载Mysql数据库"></a><code>Ubuntu</code>中安装卸载<code>Mysql</code>数据库</h1><blockquote>
-<p>启动<code>Mysql</code></p>
+    </div>
+    <div class="meta footer">
+      <span>
+        <a href="/categories/UML/" itemprop="url" title="UML"><i class="ic i-flag"></i>UML</a>
+      </span>
+    </div>
+    <a href="/posts/f610585/" itemprop="url" title="UML:类图关系总结" class="btn">more...</a>
+  </div>
+</article>
+
+        
+<article class="item">
+  <div class="cover">
+    <a href="/posts/31f95091/" itemprop="url" title="Ubuntu中安装卸载Mysql数据库"><img data-src="https://tva1.sinaimg.cn/mw690/6833939bly1gipewr8iypj20zk0m8b29.jpg"></a>
+  </div>
+  <div class="info">
+    
+<div class="meta">
+  <span class="item" title="Created: 2022-02-13 21:49:51">
+    <span class="icon">
+      <i class="ic i-calendar"></i>
+    </span>
+    <time itemprop="dateCreated datePublished" datetime="2022-02-13T21:49:51+08:00">2022-02-13</time>
+  </span>
+  <span class="item" title="Symbols count in article">
+    <span class="icon">
+      <i class="ic i-pen"></i>
+    </span>
+    <span>2.5k</span>
+    <span class="text">words</span>
+  </span>
+  <span class="item" title="Reading time">
+    <span class="icon">
+      <i class="ic i-clock"></i>
+    </span>
+    <span>2 mins.</span>
+  </span>
+</div>
+
+    <h3><a href="/posts/31f95091/" itemprop="url" title="Ubuntu中安装卸载Mysql数据库">Ubuntu中安装卸载Mysql数据库</a></h3>
+    <div class="excerpt">
+        <h1 id="ubuntu中安装卸载mysql数据库"><a class="markdownIt-Anchor" href="#ubuntu中安装卸载mysql数据库">#</a>  <code>Ubuntu</code>  中安装卸载 <code>Mysql</code>  数据库</h1>
+<blockquote>
+<p>启动 <code>Mysql</code></p>
 </blockquote>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">service mysql start</span><br></pre></td></tr></table></figure>
 <blockquote>
-<p>关闭<code>Mysql</code></p>
+<p>关闭 <code>Mysql</code></p>
 </blockquote>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">service mysql stop</span><br></pre></td></tr></table></figure>
-          <!--noindex-->
-            <div class="post-button">
-              <a class="btn" href="/posts/31f95091/#more" rel="contents">
-                Read more &raquo;
-              </a>
-            </div>
-          <!--/noindex-->
-        
       
-
-      <div>
-        
-      </div>
     </div>
-
-    
-    
-    
-      
-
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
-    <link itemprop="mainEntityOfPage" href="https://smile1231.github.io/posts/b1231c9f/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.png">
-      <meta itemprop="name" content="JIN Mao">
-      <meta itemprop="description" content="">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="JIN MAO 's Blog">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/posts/b1231c9f/" class="post-title-link" itemprop="url">java stream中Collectors的用法</a>
-        </h2>
-
-        <div class="post-meta">
-          
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">Posted on</span>
-              
-
-              <time title="Created: 2022-02-13 21:48:00 / Modified: 23:17:40" itemprop="dateCreated datePublished" datetime="2022-02-13T21:48:00+08:00">2022-02-13</time>
-            </span>
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-folder"></i>
-              </span>
-              <span class="post-meta-item-text">In</span>
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/Java/" itemprop="url" rel="index"><span itemprop="name">Java</span></a>
-                </span>
-                  , 
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/Java/Stream/" itemprop="url" rel="index"><span itemprop="name">Stream</span></a>
-                </span>
-            </span>
-
-          
-  
-  <span class="post-meta-item">
-    
-      <span class="post-meta-item-icon">
-        <i class="far fa-comment"></i>
+    <div class="meta footer">
+      <span>
+        <a href="/categories/Ubuntu/Mysql/" itemprop="url" title="Mysql"><i class="ic i-flag"></i>Mysql</a>
       </span>
-      <span class="post-meta-item-text">Valine: </span>
+    </div>
+    <a href="/posts/31f95091/" itemprop="url" title="Ubuntu中安装卸载Mysql数据库" class="btn">more...</a>
+  </div>
+</article>
+
+        
+<article class="item">
+  <div class="cover">
+    <a href="/posts/b1231c9f/" itemprop="url" title="java stream中Collectors的用法"><img data-src="https://tva1.sinaimg.cn/mw690/6833939bly1gipevgoki5j20zk0m84qp.jpg"></a>
+  </div>
+  <div class="info">
     
-    <a title="valine" href="/posts/b1231c9f/#valine-comments" itemprop="discussionUrl">
-      <span class="post-comments-count valine-comment-count" data-xid="/posts/b1231c9f/" itemprop="commentCount"></span>
-    </a>
+<div class="meta">
+  <span class="item" title="Created: 2022-02-13 21:48:00">
+    <span class="icon">
+      <i class="ic i-calendar"></i>
+    </span>
+    <time itemprop="dateCreated datePublished" datetime="2022-02-13T21:48:00+08:00">2022-02-13</time>
   </span>
-  
-  
+  <span class="item" title="Symbols count in article">
+    <span class="icon">
+      <i class="ic i-pen"></i>
+    </span>
+    <span>4.3k</span>
+    <span class="text">words</span>
+  </span>
+  <span class="item" title="Reading time">
+    <span class="icon">
+      <i class="ic i-clock"></i>
+    </span>
+    <span>4 mins.</span>
+  </span>
+</div>
 
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <h1 id="java-stream中Collectors的用法"><a href="#java-stream中Collectors的用法" class="headerlink" title="java stream中Collectors的用法"></a><code>java stream</code>中<code>Collectors</code>的用法</h1><ul>
-<li><a href="#java-stream%E4%B8%ADcollectors%E7%9A%84%E7%94%A8%E6%B3%95"><code>java stream</code>中<code>Collectors</code>的用法</a><ul>
+    <h3><a href="/posts/b1231c9f/" itemprop="url" title="java stream中Collectors的用法">java stream中Collectors的用法</a></h3>
+    <div class="excerpt">
+        <h1 id="java-stream中collectors的用法"><a class="markdownIt-Anchor" href="#java-stream中collectors的用法">#</a>  <code>java stream</code>  中 <code>Collectors</code>  的用法</h1>
+<ul>
+<li><a href="#java-stream%E4%B8%ADcollectors%E7%9A%84%E7%94%A8%E6%B3%95"> <code>java stream</code>  中 <code>Collectors</code>  的用法</a>
+<ul>
 <li><a href="#%E7%AE%80%E4%BB%8B"><span id="common">简介</span></a></li>
-<li><a href="#collectorstolist"><span id="toList"><code>Collectors.toList()</code></span></a></li>
-<li><a href="#collectorstoset"><span id="toSet"><code>Collectors.toSet()</code></span></a></li>
-<li><a href="#collectorstocollection"><span id="toColl"><code>Collectors.toCollection()</code></span></a></li>
-<li><a href="#collectorstomap"><span id="toMap"><code>Collectors.toMap()</code></span></a></li>
-<li><a href="#collectorscollectingandthen"><span id="toCollAndThen"><code>Collectors.collectingAndThen()</code></span></a></li>
-<li><a href="#collectorsjoining"><span id="join"><code>Collectors.joining()</code></span></a></li>
-<li><a href="#collectorscounting"><span id="count"><code>Collectors.counting()</code></span></a></li>
-<li><a href="#collectorssummarizingdoublelongint"><span id="sum"><code>Collectors.summarizingDouble/Long/Int()</code></span></a></li>
-<li><a href="#collectorsaveragingdoublelongint"><span id="average"><code>Collectors.averagingDouble/Long/Int()</code></span></a></li>
-<li><a href="#collectorssummingdoublelongint"><span id="summing"><code>Collectors.summingDouble/Long/Int()</code></span></a></li>
-<li><a href="#collectorsmaxbyminby"><span id="max"><code>Collectors.maxBy()/minBy()</code></span></a></li>
-<li><a href="#collectorsgroupingby"><span id="group"><code>Collectors.groupingBy()</code></span></a></li>
-<li><a href="#collectorspartitioningby"><span id="par"><code>Collectors.partitioningBy()</code></span></a></li>
+<li><a href="#collectorstolist"><span id="toList"> <code>Collectors.toList()</code> </span></a></li>
+<li><a href="#collectorstoset"><span id="toSet"> <code>Collectors.toSet()</code> </span></a></li>
+<li><a href="#collectorstocollection"><span id="toColl"> <code>Collectors.toCollection()</code> </span></a></li>
+<li><a href="#collectorstomap"><span id="toMap"> <code>Collectors.toMap()</code> </span></a></li>
+<li><a href="#collectorscollectingandthen"><span id="toCollAndThen"> <code>Collectors.collectingAndThen()</code> </span></a></li>
+<li><a href="#collectorsjoining"><span id="join"> <code>Collectors.joining()</code> </span></a></li>
+<li><a href="#collectorscounting"><span id="count"> <code>Collectors.counting()</code> </span></a></li>
+<li><a href="#collectorssummarizingdoublelongint"><span id="sum"> <code>Collectors.summarizingDouble/Long/Int()</code> </span></a></li>
+<li><a href="#collectorsaveragingdoublelongint"><span id="average"> <code>Collectors.averagingDouble/Long/Int()</code> </span></a></li>
+<li><a href="#collectorssummingdoublelongint"><span id="summing"> <code>Collectors.summingDouble/Long/Int()</code> </span></a></li>
+<li><a href="#collectorsmaxbyminby"><span id="max"> <code>Collectors.maxBy()/minBy()</code> </span></a></li>
+<li><a href="#collectorsgroupingby"><span id="group"> <code>Collectors.groupingBy()</code> </span></a></li>
+<li><a href="#collectorspartitioningby"><span id="par"> <code>Collectors.partitioningBy()</code> </span></a></li>
 </ul>
 </li>
 </ul>
-          <!--noindex-->
-            <div class="post-button">
-              <a class="btn" href="/posts/b1231c9f/#more" rel="contents">
-                Read more &raquo;
-              </a>
-            </div>
-          <!--/noindex-->
-        
       
-
-      <div>
-        
-      </div>
     </div>
-
-    
-    
-    
-      
-
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
-    <link itemprop="mainEntityOfPage" href="https://smile1231.github.io/posts/8b8fedea/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.png">
-      <meta itemprop="name" content="JIN Mao">
-      <meta itemprop="description" content="">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="JIN MAO 's Blog">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/posts/8b8fedea/" class="post-title-link" itemprop="url">Stream流的介绍</a>
-        </h2>
-
-        <div class="post-meta">
-          
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">Posted on</span>
-              
-
-              <time title="Created: 2022-02-13 21:43:58 / Modified: 23:01:20" itemprop="dateCreated datePublished" datetime="2022-02-13T21:43:58+08:00">2022-02-13</time>
-            </span>
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-folder"></i>
-              </span>
-              <span class="post-meta-item-text">In</span>
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/Java/" itemprop="url" rel="index"><span itemprop="name">Java</span></a>
-                </span>
-                  , 
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/Java/Stream/" itemprop="url" rel="index"><span itemprop="name">Stream</span></a>
-                </span>
-            </span>
-
-          
-  
-  <span class="post-meta-item">
-    
-      <span class="post-meta-item-icon">
-        <i class="far fa-comment"></i>
+    <div class="meta footer">
+      <span>
+        <a href="/categories/Java/Stream/" itemprop="url" title="Stream"><i class="ic i-flag"></i>Stream</a>
       </span>
-      <span class="post-meta-item-text">Valine: </span>
-    
-    <a title="valine" href="/posts/8b8fedea/#valine-comments" itemprop="discussionUrl">
-      <span class="post-comments-count valine-comment-count" data-xid="/posts/8b8fedea/" itemprop="commentCount"></span>
-    </a>
-  </span>
-  
-  
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <h1 id="Stream-流的介绍"><a href="#Stream-流的介绍" class="headerlink" title="Stream 流的介绍"></a><code>Stream</code> 流的介绍</h1><h2 id="1-1-java8-stream介绍"><a href="#1-1-java8-stream介绍" class="headerlink" title="1.1 java8 stream介绍"></a>1.1 <code>java8 stream</code>介绍</h2><p>　　<code>java8</code>新增了<code>stream</code>流的特性，能够让用户以函数式的方式、更为简单的操纵集合等数据结构，并实现了用户无感知的并行计算。</p>
-<h2 id="1-2-从零开始实现一个stream流"><a href="#1-2-从零开始实现一个stream流" class="headerlink" title="1.2 从零开始实现一个stream流"></a>1.2 从零开始实现一个<code>stream</code>流</h2><p>　　相信很多人在使用过<code>java8</code>的<code>streamAPI</code>接口之后，都会对其实现原理感到好奇，但往往在看到<code>jdk</code>的<code>stream</code>源码后却被其复杂的抽象、封装给弄糊涂了，而无法很好的理解其背后的原理。究其原因，是因为<code>jdk</code>的<code>stream</code>源码是高度工程化的代码，工程化的代码为了效率和满足各式各样的需求，会将代码实现的极其复杂，不易理解。</p>
-<p>　　在这里，我们将抛开<code>jdk</code>的实现思路，从零开始实现一个<code>stream</code>流。</p>
-<p>　　我们的<code>stream</code>流同样拥有惰性求值，函数式编程接口等特性，并兼容<code>jdk</code>的<code>Collection</code>等数据结构(但不支持并行计算 <code>orz</code>)。</p>
-<p>　　相信在亲手实现一个<code>stream</code>流的框架之后，大家能更好的理解流计算的原理。</p>
-          <!--noindex-->
-            <div class="post-button">
-              <a class="btn" href="/posts/8b8fedea/#more" rel="contents">
-                Read more &raquo;
-              </a>
-            </div>
-          <!--/noindex-->
-        
-      
-
-      <div>
-        
-      </div>
     </div>
+    <a href="/posts/b1231c9f/" itemprop="url" title="java stream中Collectors的用法" class="btn">more...</a>
+  </div>
+</article>
 
+        
+<article class="item">
+  <div class="cover">
+    <a href="/posts/8b8fedea/" itemprop="url" title="Stream流的介绍"><img data-src="https://tva1.sinaimg.cn/mw690/6833939bly1gipet8c1a2j20zk0m8kct.jpg"></a>
+  </div>
+  <div class="info">
     
-    
-    
-      
-
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
-    <link itemprop="mainEntityOfPage" href="https://smile1231.github.io/posts/a3dfcd98/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.png">
-      <meta itemprop="name" content="JIN Mao">
-      <meta itemprop="description" content="">
+<div class="meta">
+  <span class="item" title="Created: 2022-02-13 21:43:58">
+    <span class="icon">
+      <i class="ic i-calendar"></i>
     </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="JIN MAO 's Blog">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/posts/a3dfcd98/" class="post-title-link" itemprop="url">SpringBoot中常见的几种解决跨域的方式</a>
-        </h2>
-
-        <div class="post-meta">
-          
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">Posted on</span>
-              
-
-              <time title="Created: 2022-02-13 21:43:13 / Modified: 22:56:46" itemprop="dateCreated datePublished" datetime="2022-02-13T21:43:13+08:00">2022-02-13</time>
-            </span>
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-folder"></i>
-              </span>
-              <span class="post-meta-item-text">In</span>
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/Java/" itemprop="url" rel="index"><span itemprop="name">Java</span></a>
-                </span>
-                  , 
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/Java/SpringBoot/" itemprop="url" rel="index"><span itemprop="name">SpringBoot</span></a>
-                </span>
-            </span>
-
-          
-  
-  <span class="post-meta-item">
-    
-      <span class="post-meta-item-icon">
-        <i class="far fa-comment"></i>
-      </span>
-      <span class="post-meta-item-text">Valine: </span>
-    
-    <a title="valine" href="/posts/a3dfcd98/#valine-comments" itemprop="discussionUrl">
-      <span class="post-comments-count valine-comment-count" data-xid="/posts/a3dfcd98/" itemprop="commentCount"></span>
-    </a>
+    <time itemprop="dateCreated datePublished" datetime="2022-02-13T21:43:58+08:00">2022-02-13</time>
   </span>
-  
-  
+  <span class="item" title="Symbols count in article">
+    <span class="icon">
+      <i class="ic i-pen"></i>
+    </span>
+    <span>19k</span>
+    <span class="text">words</span>
+  </span>
+  <span class="item" title="Reading time">
+    <span class="icon">
+      <i class="ic i-clock"></i>
+    </span>
+    <span>17 mins.</span>
+  </span>
+</div>
 
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
+    <h3><a href="/posts/8b8fedea/" itemprop="url" title="Stream流的介绍">Stream流的介绍</a></h3>
+    <div class="excerpt">
+        <h1 id="stream-流的介绍"><a class="markdownIt-Anchor" href="#stream-流的介绍">#</a>  <code>Stream</code>  流的介绍</h1>
+<h2 id="11-java8-stream介绍"><a class="markdownIt-Anchor" href="#11-java8-stream介绍">#</a> 1.1  <code>java8 stream</code>  介绍</h2>
+<p><code>java8</code>  新增了 <code>stream</code>  流的特性，能够让用户以函数式的方式、更为简单的操纵集合等数据结构，并实现了用户无感知的并行计算。</p>
+<h2 id="12-从零开始实现一个stream流"><a class="markdownIt-Anchor" href="#12-从零开始实现一个stream流">#</a> 1.2 从零开始实现一个 <code>stream</code>  流</h2>
+<p>相信很多人在使用过 <code>java8</code>  的 <code>streamAPI</code>  接口之后，都会对其实现原理感到好奇，但往往在看到 <code>jdk</code>  的 <code>stream</code>  源码后却被其复杂的抽象、封装给弄糊涂了，而无法很好的理解其背后的原理。究其原因，是因为 <code>jdk</code>  的 <code>stream</code>  源码是高度工程化的代码，工程化的代码为了效率和满足各式各样的需求，会将代码实现的极其复杂，不易理解。</p>
+<p>在这里，我们将抛开 <code>jdk</code>  的实现思路，从零开始实现一个 <code>stream</code>  流。</p>
+<p>我们的 <code>stream</code>  流同样拥有惰性求值，函数式编程接口等特性，并兼容 <code>jdk</code>  的 <code>Collection</code>  等数据结构 (但不支持并行计算  <code>orz</code> )。</p>
+<p>相信在亲手实现一个 <code>stream</code>  流的框架之后，大家能更好的理解流计算的原理。</p>
       
-          <h1 id="SpringBoot中常见的几种解决跨域的方式"><a href="#SpringBoot中常见的几种解决跨域的方式" class="headerlink" title="SpringBoot中常见的几种解决跨域的方式"></a><code>SpringBoot</code>中常见的几种解决跨域的方式</h1><h2 id="一、为什么会出现跨域问题"><a href="#一、为什么会出现跨域问题" class="headerlink" title="一、为什么会出现跨域问题"></a>一、为什么会出现跨域问题</h2><p>出于浏览器的同源策略限制。同源策略（<code>Sameoriginpolicy</code>）是一种约定，它是浏览器最核心也最基本的安全功能，如果缺少了同源策略，则浏览器的正常功能可能都会受到影响。可以说<code>Web</code>是构建在同源策略基础之上的，浏览器只是针对同源策略的一种实现。</p>
-<p>同源策略会阻止一个域的<code>javascript</code>脚本和另外一个域的内容进行交互。所谓同源（即指在同一个域）就是两个页面具有相同的协议（<code>protocol</code>），主机（<code>host</code>）和端口号（<code>port</code>）</p>
-          <!--noindex-->
-            <div class="post-button">
-              <a class="btn" href="/posts/a3dfcd98/#more" rel="contents">
-                Read more &raquo;
-              </a>
-            </div>
-          <!--/noindex-->
-        
-      
-
-      <div>
-        
-      </div>
     </div>
-
-    
-    
-    
-      
-
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
-    <link itemprop="mainEntityOfPage" href="https://smile1231.github.io/posts/c112412d/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.png">
-      <meta itemprop="name" content="JIN Mao">
-      <meta itemprop="description" content="">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="JIN MAO 's Blog">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/posts/c112412d/" class="post-title-link" itemprop="url">Mybatis封装成Map结果</a>
-        </h2>
-
-        <div class="post-meta">
-          
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">Posted on</span>
-              
-
-              <time title="Created: 2022-02-13 21:42:17 / Modified: 22:45:32" itemprop="dateCreated datePublished" datetime="2022-02-13T21:42:17+08:00">2022-02-13</time>
-            </span>
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-folder"></i>
-              </span>
-              <span class="post-meta-item-text">In</span>
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/Java/" itemprop="url" rel="index"><span itemprop="name">Java</span></a>
-                </span>
-                  , 
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/Java/Mybatis/" itemprop="url" rel="index"><span itemprop="name">Mybatis</span></a>
-                </span>
-                  , 
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/Java/Mybatis/SpringBoot/" itemprop="url" rel="index"><span itemprop="name">SpringBoot</span></a>
-                </span>
-            </span>
-
-          
-  
-  <span class="post-meta-item">
-    
-      <span class="post-meta-item-icon">
-        <i class="far fa-comment"></i>
+    <div class="meta footer">
+      <span>
+        <a href="/categories/Java/Stream/" itemprop="url" title="Stream"><i class="ic i-flag"></i>Stream</a>
       </span>
-      <span class="post-meta-item-text">Valine: </span>
-    
-    <a title="valine" href="/posts/c112412d/#valine-comments" itemprop="discussionUrl">
-      <span class="post-comments-count valine-comment-count" data-xid="/posts/c112412d/" itemprop="commentCount"></span>
-    </a>
-  </span>
-  
-  
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <h1 id="Mybatis封装成Map结果"><a href="#Mybatis封装成Map结果" class="headerlink" title="Mybatis封装成Map结果"></a><code>Mybatis</code>封装成<code>Map</code>结果</h1><h2 id="Dao层"><a href="#Dao层" class="headerlink" title="Dao层"></a><code>Dao</code>层</h2><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">@MapKey(&quot;cityCode&quot;)</span></span><br><span class="line"><span class="function">Map&lt;String,InvoiceSubjectRuleCity&gt; <span class="title">bulkSelectRuleCityByRuleIdList</span><span class="params">(<span class="meta">@Param(&quot;ruleIdList&quot;)</span> List&lt;Long&gt; ruleIdList)</span></span>;</span><br></pre></td></tr></table></figure>
-          <!--noindex-->
-            <div class="post-button">
-              <a class="btn" href="/posts/c112412d/#more" rel="contents">
-                Read more &raquo;
-              </a>
-            </div>
-          <!--/noindex-->
-        
-      
-
-      <div>
-        
-      </div>
     </div>
+    <a href="/posts/8b8fedea/" itemprop="url" title="Stream流的介绍" class="btn">more...</a>
+  </div>
+</article>
 
+        
+<article class="item">
+  <div class="cover">
+    <a href="/posts/a3dfcd98/" itemprop="url" title="SpringBoot中常见的几种解决跨域的方式"><img data-src="https://tva1.sinaimg.cn/mw690/6833939bly1giclx6phq6j20zk0m8e36.jpg"></a>
+  </div>
+  <div class="info">
     
-    
-    
-      
-
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
-    <link itemprop="mainEntityOfPage" href="https://smile1231.github.io/posts/2edf7887/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.png">
-      <meta itemprop="name" content="JIN Mao">
-      <meta itemprop="description" content="">
+<div class="meta">
+  <span class="item" title="Created: 2022-02-13 21:43:13">
+    <span class="icon">
+      <i class="ic i-calendar"></i>
     </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="JIN MAO 's Blog">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/posts/2edf7887/" class="post-title-link" itemprop="url">MybatisPlus实现分页查询</a>
-        </h2>
-
-        <div class="post-meta">
-          
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">Posted on</span>
-              
-
-              <time title="Created: 2022-02-13 21:41:49 / Modified: 22:37:05" itemprop="dateCreated datePublished" datetime="2022-02-13T21:41:49+08:00">2022-02-13</time>
-            </span>
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-folder"></i>
-              </span>
-              <span class="post-meta-item-text">In</span>
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/Java/" itemprop="url" rel="index"><span itemprop="name">Java</span></a>
-                </span>
-                  , 
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/Java/Mybatis/" itemprop="url" rel="index"><span itemprop="name">Mybatis</span></a>
-                </span>
-                  , 
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/Java/Mybatis/SpringBoot/" itemprop="url" rel="index"><span itemprop="name">SpringBoot</span></a>
-                </span>
-                  , 
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/Java/Mybatis/SpringBoot/%E5%88%86%E9%A1%B5%E6%9F%A5%E8%AF%A2/" itemprop="url" rel="index"><span itemprop="name">分页查询</span></a>
-                </span>
-            </span>
-
-          
-  
-  <span class="post-meta-item">
-    
-      <span class="post-meta-item-icon">
-        <i class="far fa-comment"></i>
-      </span>
-      <span class="post-meta-item-text">Valine: </span>
-    
-    <a title="valine" href="/posts/2edf7887/#valine-comments" itemprop="discussionUrl">
-      <span class="post-comments-count valine-comment-count" data-xid="/posts/2edf7887/" itemprop="commentCount"></span>
-    </a>
+    <time itemprop="dateCreated datePublished" datetime="2022-02-13T21:43:13+08:00">2022-02-13</time>
   </span>
-  
-  
+  <span class="item" title="Symbols count in article">
+    <span class="icon">
+      <i class="ic i-pen"></i>
+    </span>
+    <span>4.2k</span>
+    <span class="text">words</span>
+  </span>
+  <span class="item" title="Reading time">
+    <span class="icon">
+      <i class="ic i-clock"></i>
+    </span>
+    <span>4 mins.</span>
+  </span>
+</div>
 
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
+    <h3><a href="/posts/a3dfcd98/" itemprop="url" title="SpringBoot中常见的几种解决跨域的方式">SpringBoot中常见的几种解决跨域的方式</a></h3>
+    <div class="excerpt">
+        <h1 id="springboot中常见的几种解决跨域的方式"><a class="markdownIt-Anchor" href="#springboot中常见的几种解决跨域的方式">#</a>  <code>SpringBoot</code>  中常见的几种解决跨域的方式</h1>
+<h2 id="一-为什么会出现跨域问题"><a class="markdownIt-Anchor" href="#一-为什么会出现跨域问题">#</a> 一、为什么会出现跨域问题</h2>
+<p>出于浏览器的同源策略限制。同源策略（ <code>Sameoriginpolicy</code> ）是一种约定，它是浏览器最核心也最基本的安全功能，如果缺少了同源策略，则浏览器的正常功能可能都会受到影响。可以说 <code>Web</code>  是构建在同源策略基础之上的，浏览器只是针对同源策略的一种实现。</p>
+<p>同源策略会阻止一个域的 <code>javascript</code>  脚本和另外一个域的内容进行交互。所谓同源（即指在同一个域）就是两个页面具有相同的协议（ <code>protocol</code> ），主机（ <code>host</code> ）和端口号（ <code>port</code> ）</p>
       
-          <h1 id="MybatisPlus实现分页查询"><a href="#MybatisPlus实现分页查询" class="headerlink" title="MybatisPlus实现分页查询"></a><code>MybatisPlus</code>实现分页查询</h1><h2 id="分页区别"><a href="#分页区别" class="headerlink" title="分页区别"></a>分页区别</h2><p>分页查询每个人程序猿几乎都使用过，但是有部分同学不懂什么是物理分页和逻辑分页。</p>
-<p>物理分页：相当于执行了<code>limit</code>分页语句，返回部分数据。物理分页只返回部分数据占用内存小，能够获取数据库最新的状态，实施性比较强，一般适用于数据量比较大，数据更新比较频繁的场景。</p>
+    </div>
+    <div class="meta footer">
+      <span>
+        <a href="/categories/Java/SpringBoot/" itemprop="url" title="SpringBoot"><i class="ic i-flag"></i>SpringBoot</a>
+      </span>
+    </div>
+    <a href="/posts/a3dfcd98/" itemprop="url" title="SpringBoot中常见的几种解决跨域的方式" class="btn">more...</a>
+  </div>
+</article>
+
+        
+<article class="item">
+  <div class="cover">
+    <a href="/posts/c112412d/" itemprop="url" title="Mybatis封装成Map结果"><img data-src="https://tva1.sinaimg.cn/mw690/6833939bly1giclh5u05ej20zk0m87df.jpg"></a>
+  </div>
+  <div class="info">
+    
+<div class="meta">
+  <span class="item" title="Created: 2022-02-13 21:42:17">
+    <span class="icon">
+      <i class="ic i-calendar"></i>
+    </span>
+    <time itemprop="dateCreated datePublished" datetime="2022-02-13T21:42:17+08:00">2022-02-13</time>
+  </span>
+  <span class="item" title="Symbols count in article">
+    <span class="icon">
+      <i class="ic i-pen"></i>
+    </span>
+    <span>603</span>
+    <span class="text">words</span>
+  </span>
+  <span class="item" title="Reading time">
+    <span class="icon">
+      <i class="ic i-clock"></i>
+    </span>
+    <span>1 mins.</span>
+  </span>
+</div>
+
+    <h3><a href="/posts/c112412d/" itemprop="url" title="Mybatis封装成Map结果">Mybatis封装成Map结果</a></h3>
+    <div class="excerpt">
+        <h1 id="mybatis封装成map结果"><a class="markdownIt-Anchor" href="#mybatis封装成map结果">#</a>  <code>Mybatis</code>  封装成 <code>Map</code>  结果</h1>
+<h2 id="dao层"><a class="markdownIt-Anchor" href="#dao层">#</a>  <code>Dao</code>  层</h2>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">@MapKey(&quot;cityCode&quot;)</span></span><br><span class="line"><span class="function">Map&lt;String,InvoiceSubjectRuleCity&gt; <span class="title">bulkSelectRuleCityByRuleIdList</span><span class="params">(<span class="meta">@Param(&quot;ruleIdList&quot;)</span> List&lt;Long&gt; ruleIdList)</span></span>;</span><br></pre></td></tr></table></figure>
+      
+    </div>
+    <div class="meta footer">
+      <span>
+        <a href="/categories/Java/Mybatis/SpringBoot/" itemprop="url" title="SpringBoot"><i class="ic i-flag"></i>SpringBoot</a>
+      </span>
+    </div>
+    <a href="/posts/c112412d/" itemprop="url" title="Mybatis封装成Map结果" class="btn">more...</a>
+  </div>
+</article>
+
+        
+<article class="item">
+  <div class="cover">
+    <a href="/posts/2edf7887/" itemprop="url" title="MybatisPlus实现分页查询"><img data-src="https://tva1.sinaimg.cn/mw690/6833939bly1giph4wqtg4j20zk0m8x6p.jpg"></a>
+  </div>
+  <div class="info">
+    
+<div class="meta">
+  <span class="item" title="Created: 2022-02-13 21:41:49">
+    <span class="icon">
+      <i class="ic i-calendar"></i>
+    </span>
+    <time itemprop="dateCreated datePublished" datetime="2022-02-13T21:41:49+08:00">2022-02-13</time>
+  </span>
+  <span class="item" title="Symbols count in article">
+    <span class="icon">
+      <i class="ic i-pen"></i>
+    </span>
+    <span>1.9k</span>
+    <span class="text">words</span>
+  </span>
+  <span class="item" title="Reading time">
+    <span class="icon">
+      <i class="ic i-clock"></i>
+    </span>
+    <span>2 mins.</span>
+  </span>
+</div>
+
+    <h3><a href="/posts/2edf7887/" itemprop="url" title="MybatisPlus实现分页查询">MybatisPlus实现分页查询</a></h3>
+    <div class="excerpt">
+        <h1 id="mybatisplus实现分页查询"><a class="markdownIt-Anchor" href="#mybatisplus实现分页查询">#</a>  <code>MybatisPlus</code>  实现分页查询</h1>
+<h2 id="分页区别"><a class="markdownIt-Anchor" href="#分页区别">#</a> 分页区别</h2>
+<p>分页查询每个人程序猿几乎都使用过，但是有部分同学不懂什么是物理分页和逻辑分页。</p>
+<p>物理分页：相当于执行了 <code>limit</code>  分页语句，返回部分数据。物理分页只返回部分数据占用内存小，能够获取数据库最新的状态，实施性比较强，一般适用于数据量比较大，数据更新比较频繁的场景。</p>
 <p>逻辑分页：一次性把全部的数据取出来，通过程序进行筛选数据。如果数据量大的情况下会消耗大量的内存，由于逻辑分页只需要读取数据库一次，不能获取数据库最新状态，实施性比较差，适用于数据量小，数据稳定的场合。</p>
-<p>那么MP中的物理分页怎么实现呢？ 往下看往下看</p>
-          <!--noindex-->
-            <div class="post-button">
-              <a class="btn" href="/posts/2edf7887/#more" rel="contents">
-                Read more &raquo;
-              </a>
-            </div>
-          <!--/noindex-->
-        
+<p>那么 MP 中的物理分页怎么实现呢？ 往下看往下看</p>
       
+    </div>
+    <div class="meta footer">
+      <span>
+        <a href="/categories/Java/Mybatis/SpringBoot/%E5%88%86%E9%A1%B5%E6%9F%A5%E8%AF%A2/" itemprop="url" title="分页查询"><i class="ic i-flag"></i>分页查询</a>
+      </span>
+    </div>
+    <a href="/posts/2edf7887/" itemprop="url" title="MybatisPlus实现分页查询" class="btn">more...</a>
+  </div>
+</article>
 
-      <div>
         
-      </div>
+<article class="item">
+  <div class="cover">
+    <a href="/posts/31dc52e1/" itemprop="url" title="MyBatis之分页查询：MyBatis PageHelper"><img data-src="https://tva1.sinaimg.cn/mw690/6833939bly1gipevuctzzj20zk0m84qp.jpg"></a>
+  </div>
+  <div class="info">
+    
+<div class="meta">
+  <span class="item" title="Created: 2022-02-13 21:40:27">
+    <span class="icon">
+      <i class="ic i-calendar"></i>
+    </span>
+    <time itemprop="dateCreated datePublished" datetime="2022-02-13T21:40:27+08:00">2022-02-13</time>
+  </span>
+  <span class="item" title="Symbols count in article">
+    <span class="icon">
+      <i class="ic i-pen"></i>
+    </span>
+    <span>2.4k</span>
+    <span class="text">words</span>
+  </span>
+  <span class="item" title="Reading time">
+    <span class="icon">
+      <i class="ic i-clock"></i>
+    </span>
+    <span>2 mins.</span>
+  </span>
+</div>
+
+    <h3><a href="/posts/31dc52e1/" itemprop="url" title="MyBatis之分页查询：MyBatis PageHelper">MyBatis之分页查询：MyBatis PageHelper</a></h3>
+    <div class="excerpt">
+        <h1 id="mybatis之分页查询mybatis-pagehelper"><a class="markdownIt-Anchor" href="#mybatis之分页查询mybatis-pagehelper">#</a>  <code>MyBatis</code>  之分页查询： <code>MyBatis PageHelper</code></h1>
+<h2 id="1-添加依赖"><a class="markdownIt-Anchor" href="#1-添加依赖">#</a> 1. 添加依赖</h2>
+<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">&lt;!--MyBatis 分页插件: MyBatis PageHelper--&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">dependency</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">groupId</span>&gt;</span>com.github.pagehelper<span class="tag">&lt;/<span class="name">groupId</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>pagehelper-spring-boot-starter<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">version</span>&gt;</span>1.2.5<span class="tag">&lt;/<span class="name">version</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">dependency</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<h2 id="2-添加配置"><a class="markdownIt-Anchor" href="#2-添加配置">#</a> 2. 添加配置</h2>
+      
+    </div>
+    <div class="meta footer">
+      <span>
+        <a href="/categories/Java/Mybatis/SpringBoot/" itemprop="url" title="SpringBoot"><i class="ic i-flag"></i>SpringBoot</a>
+      </span>
+    </div>
+    <a href="/posts/31dc52e1/" itemprop="url" title="MyBatis之分页查询：MyBatis PageHelper" class="btn">more...</a>
+  </div>
+</article>
+
     </div>
 
-    
-    
-    
-      
-
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
+  </div>
 
   
   <nav class="pagination">
-    <a class="extend prev" rel="prev" href="/page/7/"><i class="fa fa-angle-left" aria-label="Previous page"></i></a><a class="page-number" href="/">1</a><span class="space">&hellip;</span><a class="page-number" href="/page/5/">5</a><a class="page-number" href="/page/6/">6</a><a class="page-number" href="/page/7/">7</a><span class="page-number current">8</span><a class="page-number" href="/page/9/">9</a><a class="page-number" href="/page/10/">10</a><a class="page-number" href="/page/11/">11</a><span class="space">&hellip;</span><a class="page-number" href="/page/14/">14</a><a class="extend next" rel="next" href="/page/9/"><i class="fa fa-angle-right" aria-label="Next page"></i></a>
+    <div class="inner">
+    <a class="extend prev" rel="prev" href="/page/7/"><i class="ic i-angle-left" aria-label="Previous page"></i></a><a class="page-number" href="/">1</a><span class="space">&hellip;</span><a class="page-number" href="/page/7/">7</a><span class="page-number current">8</span><a class="page-number" href="/page/9/">9</a><span class="space">&hellip;</span><a class="page-number" href="/page/14/">14</a><a class="extend next" rel="next" href="/page/9/"><i class="ic i-angle-right" aria-label="Next page"></i></a>
+    </div>
   </nav>
 
 
-
-          </div>
-          
-
-<script>
-  window.addEventListener('tabs:register', () => {
-    let { activeClass } = CONFIG.comments;
-    if (CONFIG.comments.storage) {
-      activeClass = localStorage.getItem('comments_active') || activeClass;
-    }
-    if (activeClass) {
-      let activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
-      if (activeTab) {
-        activeTab.click();
-      }
-    }
-  });
-  if (CONFIG.comments.storage) {
-    window.addEventListener('tabs:click', event => {
-      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
-      let commentClass = event.target.classList[1];
-      localStorage.setItem('comments_active', commentClass);
-    });
-  }
-</script>
 
         </div>
+        <div id="sidebar">
           
+<div class="inner">
+
+  <div class="panels">
+    <div class="inner">
+      <div class="contents panel pjax" data-title="Contents">
+      </div>
+      <div class="related panel pjax" data-title="Related">
+      </div>
+      <div class="overview panel" data-title="Overview">
+        <div class="author" itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <img class="image" itemprop="image" alt="JIN Mao"
+      data-src="/images/avatar.png">
+  <p class="name" itemprop="name">JIN Mao</p>
+  <div class="description" itemprop="description"></div>
+</div>
+
+<nav class="state">
+    <div class="item posts">
+      <a href="/archives/">
+        <span class="count">134</span>
+        <span class="name">posts</span>
+      </a>
+    </div>
+    <div class="item categories">
+      <a href="/categories/">
+        <span class="count">70</span>
+        <span class="name">categories</span>
+      </a>
+    </div>
+    <div class="item tags">
+      <a href="/tags/">
+        <span class="count">98</span>
+        <span class="name">tags</span>
+      </a>
+    </div>
+</nav>
+
+<div class="social">
+      <span class="exturl item github" data-url="aHR0cHM6Ly9naXRodWIuY29tL3NtaWxlMTIzMQ==" title="https:&#x2F;&#x2F;github.com&#x2F;smile1231"><i class="ic i-github"></i></span>
+</div>
+
+<ul class="menu">
   
-  <div class="toggle sidebar-toggle">
-    <span class="toggle-line toggle-line-first"></span>
-    <span class="toggle-line toggle-line-middle"></span>
-    <span class="toggle-line toggle-line-last"></span>
+    
+  <li class="item">
+    <a href="/" rel="section"><i class="ic i-home"></i>Home</a>
+  </li>
+
+    
+  <li class="item">
+    <a href="/about/" rel="section"><i class="ic i-user"></i>About</a>
+  </li>
+
+        
+  <li class="item dropdown">
+      <a href="javascript:void(0);"><i class="ic i-feather"></i>Posts</a>
+    <ul class="submenu">
+
+        
+  <li class="item">
+    <a href="/archives/" rel="section"><i class="ic i-list-alt"></i>Archives</a>
+  </li>
+
+        
+  <li class="item">
+    <a href="/categories/" rel="section"><i class="ic i-th"></i>Categories</a>
+  </li>
+
+        
+  <li class="item">
+    <a href="/tags/" rel="section"><i class="ic i-tags"></i>Tags</a>
+  </li>
+
+  </ul>
+
+</ul>
+
+      </div>
+    </div>
   </div>
 
-  <aside class="sidebar">
-    <div class="sidebar-inner">
-    
-    
-    <!-- 霓虹灯时钟 -->
-    <div>
-    <svg style="height: 60px;">
-        <text id="time" text-anchor="middle" x="36%" y="80%" class="words words-1"></text>
-        <text id="time" text-anchor="middle" x="36%" y="80%" class="words words-2"></text>
-        <text id="time" text-anchor="middle" x="36%" y="80%" class="words words-3"></text>
-        <text id="time" text-anchor="middle" x="36%" y="80%" class="words words-4"></text>
-    </svg>
+  <ul id="quick">
+    <li class="prev pjax">
+        <a href="/page/7/" rel="prev" title="Previous Post"><i class="ic i-chevron-left"></i></a>
+    </li>
+    <li class="up"><i class="ic i-arrow-up"></i></li>
+    <li class="down"><i class="ic i-arrow-down"></i></li>
+    <li class="next pjax">
+        <a href="/page/9/" rel="next" title="Next Post"><i class="ic i-chevron-right"></i></a>
+    </li>
+    <li class="percent"></li>
+  </ul>
 </div>
 
-<script>
-function showtime(){
-    var noatime = new Date();
-    var h = noatime.getHours(),
-        m = noatime.getMinutes(),
-        s = noatime.getSeconds();
-    h=checktime(h);
-    m=checktime(m);
-    s=checktime(s);
-  return h+":"+m+":"+s;
-}
-
-function checktime(x){
-  if(x<10){
-    x="0"+x;
-  }
-  return x;
-}
-
-var div1=document.getElementsByTagName("text");
-setInterval(function(){
-  for (var i in div1){
-      div1[i].innerHTML=showtime();
-  }
-},1000);
-</script>
-
-<style>
-.words{
-    font-size: 50px;
-    font-weight: bold;
-    text-transform: uppercase;
-    fill: none;
-    stroke-width: 3px;
-    stroke-dasharray: 35,125;
-    animation-name: drawing;
-    animation-duration: 6s;
-    animation-iteration-count: infinite;
-    animation-timing-function: linear;
-}
-.words-1{
-    stroke: deepskyblue;
-    text-shadow: 0 0 15px deepskyblue;
-    animation-delay: -1.5s;
-}
-.words-2{
-    stroke: lightseagreen;
-    text-shadow: 0 0 15px lightseagreen;
-    animation-delay: -3s;
-}
-.words-3{
-    stroke: orange;
-    text-shadow: 0 0 15px orange;
-    animation-delay: -4.5s;
-}
-.words-4{
-    stroke: purple;
-    text-shadow: 0 0 15px purple;
-    animation-delay: -6s;
-}
-@keyframes drawing {
-    100%{
-        stroke-dashoffset: -160
-    }
-}
-</style>
-
-    
-      <!-- 起风了 -->
-      <!-- <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=86 src="//music.163.com/outchain/player?type=2&id=1901069794&auto=1&height=66"></iframe> -->
-      <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=86 src="//music.163.com/outchain/player?type=2&id=1927119724&auto=1&height=66"></iframe>
-
-      <ul class="sidebar-nav motion-element">
-        <li class="sidebar-nav-toc">
-          Table of Contents
-        </li>
-        <li class="sidebar-nav-overview">
-          Overview
-        </li>
-      </ul>
-
-      <!--noindex-->
-      <div class="post-toc-wrap sidebar-panel">
-      </div>
-      <!--/noindex-->
-
-      <div class="site-overview-wrap sidebar-panel">
-        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
-    <img class="site-author-image" itemprop="image" alt="JIN Mao"
-      src="/images/avatar.png">
-  <p class="site-author-name" itemprop="name">JIN Mao</p>
-  <div class="site-description" itemprop="description"></div>
-</div>
-<div class="site-state-wrap motion-element">
-  <nav class="site-state">
-      <div class="site-state-item site-state-posts">
-          <a href="/archives/">
-        
-          <span class="site-state-item-count">133</span>
-          <span class="site-state-item-name">posts</span>
-        </a>
-      </div>
-      <div class="site-state-item site-state-categories">
-            <a href="/categories/">
-          
-        <span class="site-state-item-count">70</span>
-        <span class="site-state-item-name">categories</span></a>
-      </div>
-      <div class="site-state-item site-state-tags">
-            <a href="/tags/">
-          
-        <span class="site-state-item-count">97</span>
-        <span class="site-state-item-name">tags</span></a>
-      </div>
-  </nav>
-</div>
-
-
-
-      </div>
-
-  
-
-    </div>
-
-
-  </aside>
-  <div id="sidebar-dimmer"></div>
-
-
+        </div>
+        <div class="dimmer"></div>
       </div>
     </main>
-
-    <footer class="footer">
-      <div class="footer-inner">
-        
-
-        
-
-<div class="copyright">
-  
-  &copy; 
-  <span itemprop="copyrightYear">2022</span>
-  <span class="with-love">
-    <i class="fa fa-heart"></i>
-  </span>
-  <span class="author" itemprop="copyrightHolder">JIN Mao</span>
+    <footer id="footer">
+      <div class="inner">
+        <div class="widgets">
+          
+<div class="rpost pjax">
+  <h2>Random Posts</h2>
+  <ul>
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/Java/" title="In Java">Java</a>
 </div>
-  <!--添加运行时间-->
-  <span id="sitetime"></span>
-  <script language=javascript>
-    function siteTime(){
-      window.setTimeout("siteTime()", 1000);
-      var seconds = 1000;
-      var minutes = seconds * 60;
-      var hours = minutes * 60;
-      var days = hours * 24;
-      var years = days * 365;
-      var today = new Date();
-      var todayYear = today.getFullYear();
-      var todayMonth = today.getMonth()+1;
-      var todayDate = today.getDate();
-      var todayHour = today.getHours();
-      var todayMinute = today.getMinutes();
-      var todaySecond = today.getSeconds();
-      /* 
-        Date.UTC() -- 返回date对象距世界标准时间(UTC)1970年1月1日午夜之间的毫秒数(时间戳)
-        year - 作为date对象的年份，为4位年份值
-        month - 0-11之间的整数，做为date对象的月份
-        day - 1-31之间的整数，做为date对象的天数
-        hours - 0(午夜24点)-23之间的整数，做为date对象的小时数
-        minutes - 0-59之间的整数，做为date对象的分钟数
-        seconds - 0-59之间的整数，做为date对象的秒数
-        microseconds - 0-999之间的整数，做为date对象的毫秒数
-      */
-      var t1 = Date.UTC(2021,11,11,00,00,00); //北京时间2018-2-13 00:00:00
-      var t2 = Date.UTC(todayYear,todayMonth,todayDate,todayHour,todayMinute,todaySecond);
-      var diff = t2-t1;
-      var diffYears = Math.floor(diff/years);
-      var diffDays = Math.floor((diff/days)-diffYears*365);
-      var diffHours = Math.floor((diff-(diffYears*365+diffDays)*days)/hours);
-      var diffMinutes = Math.floor((diff-(diffYears*365+diffDays)*days-diffHours*hours)/minutes);
-      var diffSeconds = Math.floor((diff-(diffYears*365+diffDays)*days-diffHours*hours-diffMinutes*minutes)/seconds);
-      document.getElementById("sitetime").innerHTML=" This blog is up and running "+/*diffYears+" Year "+*/diffDays+" Days "+diffHours+" Hours "+diffMinutes+" Minutes "+diffSeconds+" Seconds";
-    }
-    siteTime();
-  </script>
-  <!--// 添加运行时间-->
 
+    <span><a href="/posts/1da18d70/" title="Java8内置四大函数式接口">Java8内置四大函数式接口</a></span>
+  </li>
 
-<!--
-  <div class="powered-by">Powered by <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> & <a href="https://pisces.theme-next.org/" class="theme-link" rel="noopener" target="_blank">NexT.Pisces</a>
-  </div>
--->
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/Java%E9%9D%A2%E8%AF%95/" title="In Java面试">Java面试</a>
+</div>
 
+    <span><a href="/posts/feb84842/" title="Java面试必问--ArrayList的底层">Java面试必问--ArrayList的底层</a></span>
+  </li>
 
-        
-<div class="busuanzi-count">
-  <script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/%E5%89%8D%E7%AB%AF/" title="In 前端">前端</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/%E5%89%8D%E7%AB%AF/JavaScript/" title="In JavaScript">JavaScript</a>
+</div>
 
+    <span><a href="/posts/4aa00b9a/" title="Js中的some、find、findindex、includes、filter的使用">Js中的some、find、findindex、includes、filter的使用</a></span>
+  </li>
 
-  <span class="site-uv" title="Total Visitors">
-    My <span id="busuanzi_value_site_uv"></span>th Friend, 
-  </span>
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+</div>
 
-  <span class="site-pv" title="Total Views">
-    After  <span id="busuanzi_value_site_pv"></span> times of looking back, I met you 。
-  </span>
-  <!--
-    <span class="post-meta-item" id="busuanzi_container_site_uv" >
-      <span class="post-meta-item-icon">
-        <i class="fa fa-user"></i>
-      </span>
-      <span class="site-uv" title="Total Visitors">
-        <span id="busuanzi_value_site_uv"></span>
-      </span>
+    <span><a href="/posts/bf4d20ae/" title="写在最前面">写在最前面</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/Java%E9%9D%A2%E8%AF%95/" title="In Java面试">Java面试</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/Java%E9%9D%A2%E8%AF%95/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/" title="In 操作系统">操作系统</a>
+</div>
+
+    <span><a href="/posts/c7cf6e41/" title="面试之旅关于计算机网络">面试之旅关于计算机网络</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+</div>
+
+    <span><a href="/posts/5a74c6a6/" title="宝儿的大腿小腿围">宝儿的大腿小腿围</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/Java%E9%9D%A2%E8%AF%95/" title="In Java面试">Java面试</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/Java%E9%9D%A2%E8%AF%95/%E7%AE%97%E6%B3%95/" title="In 算法">算法</a>
+</div>
+
+    <span><a href="/posts/7474c898/" title="分治算法">分治算法</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/SAP/" title="In SAP">SAP</a>
+</div>
+
+    <span><a href="/posts/96b6e8a1/" title="simple self introduction">simple self introduction</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/Daily/" title="In Daily">Daily</a>
+</div>
+
+    <span><a href="/posts/9a0369ec/" title="布隆过滤器">布隆过滤器</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/Java/" title="In Java">Java</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/Java/Mysql/" title="In Mysql">Mysql</a>
+</div>
+
+    <span><a href="/posts/69c17d37/" title="关于事务提交中踩坑">关于事务提交中踩坑</a></span>
+  </li>
+
+  </ul>
+</div>
+<div>
+  <h2>Recent Comments</h2>
+  <ul class="leancloud-recent-comment"></ul>
+</div>
+
+        </div>
+        <div class="status">
+  <div class="copyright">
+    
+    &copy; 2021 – 
+    <span itemprop="copyrightYear">2022</span>
+    <span class="with-love">
+      <i class="ic i-sakura rotate"></i>
     </span>
+    <span class="author" itemprop="copyrightHolder">JIN Mao @ Jin Mao when to get rich ?</span>
+  </div>
+  <div class="count">
+    <span class="post-meta-item-icon">
+      <i class="ic i-chart-area"></i>
+    </span>
+    <span title="Symbols count total">557k words</span>
+
     <span class="post-meta-divider">|</span>
-    <span class="post-meta-item" id="busuanzi_container_site_pv">
-      <span class="post-meta-item-icon">
-        <i class="fa fa-eye"></i>
-      </span>
-      <span class="site-pv" title="Total Views">
-        <span id="busuanzi_value_site_pv"></span>
-      </span>
-    </span>-->
+    <span class="post-meta-item-icon">
+      <i class="ic i-coffee"></i>
+    </span>
+    <span title="Reading time total">8:26</span>
+  </div>
 </div>
-
-
-
-
-
-
-
 
       </div>
     </footer>
   </div>
-
-  
-  <script src="/lib/anime.min.js"></script>
-  <script src="//cdn.jsdelivr.net/npm/medium-zoom@1/dist/medium-zoom.min.js"></script>
-  <script src="//cdn.jsdelivr.net/npm/lozad@1/dist/lozad.min.js"></script>
-  <script src="/lib/velocity/velocity.min.js"></script>
-  <script src="/lib/velocity/velocity.ui.min.js"></script>
-
-<script src="/js/utils.js"></script>
-
-<script src="/js/motion.js"></script>
-
-
-<script src="/js/schemes/pisces.js"></script>
-
-
-<script src="/js/next-boot.js"></script>
-
-<script src="/js/bookmark.js"></script>
-
-
-  <script defer src="/lib/three/three.min.js"></script>
-    <script defer src="/lib/three/canvas_lines.min.js"></script>
-
-
-  
-
-
-
-  <script>
-  if (CONFIG.page.isPost) {
-    wpac_init = window.wpac_init || [];
-    wpac_init.push({
-      widget: 'Rating',
-      id    : ,
-      el    : 'wpac-rating',
-      color : 'fc6423'
-    });
-    (function() {
-      if ('WIDGETPACK_LOADED' in window) return;
-      WIDGETPACK_LOADED = true;
-      var mc = document.createElement('script');
-      mc.type = 'text/javascript';
-      mc.async = true;
-      mc.src = '//embed.widgetpack.com/widget.js';
-      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(mc, s.nextSibling);
-    })();
-  }
-  </script>
-
-  
-<script src="/js/local-search.js"></script>
-
-
-
-
-
-
-
-
-
-
-
-
-
-  
-
-  
-
-
-<script>
-NexT.utils.loadComments(document.querySelector('#valine-comments'), () => {
-  NexT.utils.getScript('//unpkg.com/valine/dist/Valine.min.js', () => {
-    var GUEST = ['nick', 'mail', 'link'];
-    var guest = 'nick,mail,link';
-    guest = guest.split(',').filter(item => {
-      return GUEST.includes(item);
-    });
-    new Valine({
-      el         : '#valine-comments',
-      verify     : true,
-      notify     : true,
-      appId      : 'J2bQH6GquIhMurLQc9NYgXWJ-gzGzoHsz',
-      appKey     : 'mbmntmQLrVScI2O7gV6zBej5',
-      placeholder: "Just go go",
-      avatar     : 'mm',
-      meta       : guest,
-      pageSize   : '10' || 10,
-      visitor    : false,
-      lang       : 'en' || 'zh-cn',
-      path       : location.pathname,
-      recordIP   : true,
-      serverURLs : ''
-    });
-  }, window.Valine);
-});
+<script data-config type="text/javascript">
+  var LOCAL = {
+    path: 'page/8/',
+    favicon: {
+      show: "You're welcome",
+      hide: "Wait for you"
+    },
+    search : {
+      placeholder: "Search for Posts",
+      empty: "We didn't find any results for the search: ${query}",
+      stats: "${hits} results found in ${time} ms"
+    },
+    valine: true,fancybox: true,
+    copyright: 'Copied to clipboard successfully! <br> All articles in this blog are licensed under <i class="ic i-creative-commons"></i>BY-NC-SA.',
+    ignores : [
+      function(uri) {
+        return uri.includes('#');
+      },
+      function(uri) {
+        return new RegExp(LOCAL.path+"$").test(uri);
+      }
+    ]
+  };
 </script>
 
+<script src="https://cdn.polyfill.io/v2/polyfill.js"></script>
 
-  
-  <script type="text/javascript" src="/js/cursor/love.js"></script>
+<script src="//cdn.jsdelivr.net/combine/npm/pace-js@1.0.2/pace.min.js,npm/pjax@0.2.8/pjax.min.js,npm/whatwg-fetch@3.4.0/dist/fetch.umd.min.js,npm/animejs@3.2.0/lib/anime.min.js,npm/algoliasearch@4/dist/algoliasearch-lite.umd.js,npm/instantsearch.js@4/dist/instantsearch.production.min.js,npm/lozad@1/dist/lozad.min.js,npm/quicklink@2/dist/quicklink.umd.js"></script>
+
+<script src="/js/app.js?v=0.2.5"></script>
 
 
 
-  
-<script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"model":{"jsonPath":"/live2dw/assets/shizuku.model.json"},"display":{"position":"left","width":200,"height":400},"mobile":{"show":false},"log":false,"pluginJsPath":"lib/","pluginModelPath":"assets/","pluginRootPath":"live2dw/","tagMode":false});</script></body>
+
+</body>
 </html>

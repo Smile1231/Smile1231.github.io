@@ -1,364 +1,240 @@
+
+
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
-<meta name="theme-color" content="#222">
-<meta name="generator" content="Hexo 5.4.0">
-  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="/images/avatar.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="/images/avatar.png">
-  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+<meta name="theme-color" content="#FFF">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
 
-<link rel="stylesheet" href="/css/main.css">
+<link rel="icon" type="image/ico" sizes="32x32" href="/images/favicon.ico">
+  <meta http-equiv="Cache-Control" content="no-transform">
+  <meta http-equiv="Cache-Control" content="no-siteapp">
 
 
-<link rel="stylesheet" href="/lib/font-awesome/css/all.min.css">
-  <link rel="stylesheet" href="/lib/pace/pace-theme-mac-osx.min.css">
-  <script src="/lib/pace/pace.min.js"></script>
+<link rel="alternate" type="application/rss+xml" title="JIN MAO 's Blog" href="https://smile1231.github.io/rss.xml" />
+<link rel="alternate" type="application/atom+xml" title="JIN MAO 's Blog" href="https://smile1231.github.io/atom.xml" />
+<link rel="alternate" type="application/json" title="JIN MAO 's Blog" href="https://smile1231.github.io/feed.json" />
 
-<script id="hexo-configurations">
-    var NexT = window.NexT || {};
-    var CONFIG = {"hostname":"smile1231.github.io","root":"/","scheme":"Pisces","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":true,"show_result":true,"style":"mac"},"back2top":{"enable":true,"sidebar":false,"scrollpercent":true},"bookmark":{"enable":true,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":true,"lazyload":true,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
-  </script>
+<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Mulish:300,300italic,400,400italic,700,700italic%7CFredericka%20the%20Great:300,300italic,400,400italic,700,700italic%7CNoto%20Serif%20JP:300,300italic,400,400italic,700,700italic%7CNoto%20Serif%20SC:300,300italic,400,400italic,700,700italic%7CInconsolata:300,300italic,400,400italic,700,700italic&display=swap&subset=latin,latin-ext">
 
-  <meta name="description" content="Display属性display所有属性1234567891011121314151617181920212223242526272829303132333435363738394041&#x2F;* CSS 1 *&#x2F;display: none;display: inline;display: block;display: list-item;&#x2F;* CSS 2.1 *&#x2F;display: inline-blo">
-<meta property="og:type" content="article">
-<meta property="og:title" content="DisPlay属性">
-<meta property="og:url" content="https://smile1231.github.io/posts/2e6621e1/index.html">
-<meta property="og:site_name" content="JIN MAO &#39;s Blog">
-<meta property="og:description" content="Display属性display所有属性1234567891011121314151617181920212223242526272829303132333435363738394041&#x2F;* CSS 1 *&#x2F;display: none;display: inline;display: block;display: list-item;&#x2F;* CSS 2.1 *&#x2F;display: inline-blo">
-<meta property="og:locale" content="en_US">
-<meta property="og:image" content="https://segmentfault.com/img/remote/1460000006047879">
-<meta property="article:published_time" content="2022-02-14T13:29:23.000Z">
-<meta property="article:modified_time" content="2022-02-14T14:26:03.359Z">
-<meta property="article:author" content="JIN Mao">
-<meta property="article:tag" content="前端">
-<meta property="article:tag" content="DisPlay属性">
-<meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="https://segmentfault.com/img/remote/1460000006047879">
+<link rel="stylesheet" href="/css/app.css?v=0.2.5">
+
+  
+  <meta name="keywords" content="前端,DisPlay属性" />
+
 
 <link rel="canonical" href="https://smile1231.github.io/posts/2e6621e1/">
 
 
-<script id="page-configurations">
-  // https://hexo.io/docs/variables.html
-  CONFIG.page = {
-    sidebar: "",
-    isHome : false,
-    isPost : true,
-    lang   : 'en'
-  };
-</script>
 
-  <title>DisPlay属性 | JIN MAO 's Blog</title>
-  
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-FWV5496QFL"></script>
-    <script>
-      if (CONFIG.hostname === location.hostname) {
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-        gtag('config', 'G-FWV5496QFL');
-      }
-    </script>
-
-
-
-
-
-
-  <noscript>
-  <style>
-  .use-motion .brand,
-  .use-motion .menu-item,
-  .sidebar-inner,
-  .use-motion .post-block,
-  .use-motion .pagination,
-  .use-motion .comments,
-  .use-motion .post-header,
-  .use-motion .post-body,
-  .use-motion .collection-header { opacity: initial; }
-
-  .use-motion .site-title,
-  .use-motion .site-subtitle {
-    opacity: initial;
-    top: initial;
-  }
-
-  .use-motion .logo-line-before i { left: initial; }
-  .use-motion .logo-line-after i { right: initial; }
-  </style>
-</noscript>
-
-<link rel="alternate" href="/atom.xml" title="JIN MAO 's Blog" type="application/atom+xml">
-</head>
-
+  <title>
+DisPlay属性 - Css - 前端 |
+Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
+<meta name="generator" content="Hexo 5.4.0"></head>
 <body itemscope itemtype="http://schema.org/WebPage">
-  <div class="container use-motion">
-    <div class="headband"></div>
-      <!-- <a target="_blank" rel="noopener" href="https://github.com/Smile1231/StudyRepository"><img loading="lazy" width="149" height="149" src="https://github.blog/wp-content/uploads/2008/12/forkme_right_gray_6d6d6d.png?resize=149%2C149" class="attachment-full size-full" alt="Fork me on GitHub" data-recalc-dims="1"></a> -->
-    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
-      <div class="header-inner"><div class="site-brand-container">
-  <div class="site-nav-toggle">
-    <div class="toggle" aria-label="Toggle navigation bar">
-      <span class="toggle-line toggle-line-first"></span>
-      <span class="toggle-line toggle-line-middle"></span>
-      <span class="toggle-line toggle-line-last"></span>
+  <div id="loading">
+    <div class="cat">
+      <div class="body"></div>
+      <div class="head">
+        <div class="face"></div>
+      </div>
+      <div class="foot">
+        <div class="tummy-end"></div>
+        <div class="bottom"></div>
+        <div class="legs left"></div>
+        <div class="legs right"></div>
+      </div>
+      <div class="paw">
+        <div class="hands left"></div>
+        <div class="hands right"></div>
+      </div>
     </div>
   </div>
-
-  <div class="site-meta">
-
-    <a href="/" class="brand" rel="start">
-      <span class="logo-line-before"><i></i></span>
-      <h1 class="site-title">JIN MAO 's Blog</h1>
-      <span class="logo-line-after"><i></i></span>
-    </a>
-      <p class="site-subtitle" itemprop="description">got windy(起风了)</p>
-  </div>
-
-  <div class="site-nav-right">
-    <div class="toggle popup-trigger">
-        <i class="fa fa-search fa-fw fa-lg"></i>
-    </div>
-  </div>
+  <div id="container">
+    <header id="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="inner">
+        <div id="brand">
+          <div class="pjax">
+          
+  <h1 itemprop="name headline">DisPlay属性
+  </h1>
+  
+<div class="meta">
+  <span class="item" title="Created: 2022-02-14 21:29:23">
+    <span class="icon">
+      <i class="ic i-calendar"></i>
+    </span>
+    <span class="text">Posted on</span>
+    <time itemprop="dateCreated datePublished" datetime="2022-02-14T21:29:23+08:00">2022-02-14</time>
+  </span>
+  <span class="item" title="Symbols count in article">
+    <span class="icon">
+      <i class="ic i-pen"></i>
+    </span>
+    <span class="text">Symbols count in article</span>
+    <span>10k</span>
+    <span class="text">words</span>
+  </span>
+  <span class="item" title="Reading time">
+    <span class="icon">
+      <i class="ic i-clock"></i>
+    </span>
+    <span class="text">Reading time</span>
+    <span>9 mins.</span>
+  </span>
 </div>
 
 
-
-
-<nav class="site-nav">
-  <ul id="menu" class="main-menu menu">
-        <li class="menu-item menu-item-home">
-
-    <a href="/" rel="section"><i class="fa fa-home fa-fw"></i>Home</a>
-
-  </li>
-        <li class="menu-item menu-item-about">
-
-    <a href="/about/" rel="section"><i class="fa fa-user fa-fw"></i>About</a>
-
-  </li>
-        <li class="menu-item menu-item-tags">
-
-    <a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>Tags<span class="badge">97</span></a>
-
-  </li>
-        <li class="menu-item menu-item-categories">
-
-    <a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>Categories<span class="badge">70</span></a>
-
-  </li>
-        <li class="menu-item menu-item-archives">
-
-    <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>Archives<span class="badge">133</span></a>
-
-  </li>
-      <li class="menu-item menu-item-search">
-        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>Search
-        </a>
+          </div>
+        </div>
+        <nav id="nav">
+  <div class="inner">
+    <div class="toggle">
+      <div class="lines" aria-label="Toggle navigation bar">
+        <span class="line"></span>
+        <span class="line"></span>
+        <span class="line"></span>
+      </div>
+    </div>
+    <ul class="menu">
+      <li class="item title"><a href="/" rel="start">Jin Mao when to get rich ?</a></li>
+    </ul>
+    <ul class="right">
+      <li class="item theme">
+        <i class="ic i-sun"></i>
       </li>
-  </ul>
+      <li class="item search">
+        <i class="ic i-search"></i>
+      </li>
+    </ul>
+  </div>
 </nav>
 
-
-
-  <div class="search-pop-overlay">
-    <div class="popup search-popup">
-        <div class="search-header">
-  <span class="search-icon">
-    <i class="fa fa-search"></i>
-  </span>
-  <div class="search-input-container">
-    <input autocomplete="off" autocapitalize="off"
-           placeholder="Searching..." spellcheck="false"
-           type="search" class="search-input">
-  </div>
-  <span class="popup-btn-close">
-    <i class="fa fa-times-circle"></i>
-  </span>
-</div>
-<div id="search-result">
-  <div id="no-result">
-    <i class="fa fa-spinner fa-pulse fa-5x fa-fw"></i>
-  </div>
-</div>
-
-    </div>
-  </div>
-
-</div>
+      </div>
+      <div id="imgs" class="pjax">
+        <ul>
+          <li class="item" data-background-image="https://tva1.sinaimg.cn/large/6833939bly1gipeuv80yoj20zk0m8kjl.jpg"></li>
+          <li class="item" data-background-image="https://tva1.sinaimg.cn/large/6833939bly1gipew8gmvyj20zk0m87wh.jpg"></li>
+          <li class="item" data-background-image="https://tva1.sinaimg.cn/large/6833939bly1gicitht3xtj20zk0m8k5v.jpg"></li>
+          <li class="item" data-background-image="https://tva1.sinaimg.cn/large/6833939bly1gipeyhsblkj20zk0m81kx.jpg"></li>
+          <li class="item" data-background-image="https://tva1.sinaimg.cn/large/6833939bly1giclffsa1cj20zk0m811l.jpg"></li>
+          <li class="item" data-background-image="https://tva1.sinaimg.cn/large/6833939bly1gipevarprfj20zk0m8npd.jpg"></li>
+        </ul>
+      </div>
     </header>
-
-    
-  <div class="back-to-top">
-    <i class="fa fa-arrow-up"></i>
-    <span>0%</span>
-  </div>
-  <div class="reading-progress-bar"></div>
-  <a role="button" class="book-mark-link book-mark-link-fixed"></a>
-
-
-    <main class="main">
-      <div class="main-inner">
-        <div class="content-wrap">
+    <div id="waves">
+      <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+        <defs>
+          <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+        </defs>
+        <g class="parallax">
+          <use xlink:href="#gentle-wave" x="48" y="0" />
+          <use xlink:href="#gentle-wave" x="48" y="3" />
+          <use xlink:href="#gentle-wave" x="48" y="5" />
+          <use xlink:href="#gentle-wave" x="48" y="7" />
+        </g>
+      </svg>
+    </div>
+    <main>
+      <div class="inner">
+        <div id="main" class="pjax">
           
-
-            <div class="post-block animated fadeIn">
-              <h5 class="post-title" itemprop="name headline">
-                <a target="_blank" rel="noopener" href="https://github.com/smile1231" class="post-title-link" itemprop="url">Github Contribution Calendar</a>
-              </h5>
-              <div class="post-body animated fadeInDown" itemprop="articleBody">
-                <img style="width: 100%; margin-top: 30px;" src="https://ghchart.rshah.org/e77c8e/smile1231" alt="JinMao's Blue Github Chart" />
-              </div>
-            </div>
-          <div class="content post posts-expand">
-            
-
+  <div class="article wrap">
     
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
-    <link itemprop="mainEntityOfPage" href="https://smile1231.github.io/posts/2e6621e1/">
+<div class="breadcrumb" itemscope itemtype="https://schema.org/BreadcrumbList">
+<i class="ic i-home"></i>
+<span><a href="/">Home</a></span><i class="ic i-angle-right"></i>
+<span  itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem"><a href="/categories/%E5%89%8D%E7%AB%AF/" itemprop="item" rel="index" title="In 前端"><span itemprop="name">前端</span></a>
+<meta itemprop="position" content="1" /></span>
+<i class="ic i-angle-right"></i>
+<span  class="current" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem"><a href="/categories/%E5%89%8D%E7%AB%AF/Css/" itemprop="item" rel="index" title="In Css"><span itemprop="name">Css</span></a>
+<meta itemprop="position" content="2" /></span>
+</div>
 
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.png">
-      <meta itemprop="name" content="JIN Mao">
-      <meta itemprop="description" content="">
-    </span>
+    <article itemscope itemtype="http://schema.org/Article" class="post block" lang="en">
+  <link itemprop="mainEntityOfPage" href="https://smile1231.github.io/posts/2e6621e1/">
 
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="JIN MAO 's Blog">
-    </span>
-      <header class="post-header">
-        <h1 class="post-title" itemprop="name headline">
-          DisPlay属性
-        </h1>
-
-        <div class="post-meta">
-          
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">Posted on</span>
-              
-
-              <time title="Created: 2022-02-14 21:29:23 / Modified: 22:26:03" itemprop="dateCreated datePublished" datetime="2022-02-14T21:29:23+08:00">2022-02-14</time>
-            </span>
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-folder"></i>
-              </span>
-              <span class="post-meta-item-text">In</span>
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/%E5%89%8D%E7%AB%AF/" itemprop="url" rel="index"><span itemprop="name">前端</span></a>
-                </span>
-                  , 
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/%E5%89%8D%E7%AB%AF/Css/" itemprop="url" rel="index"><span itemprop="name">Css</span></a>
-                </span>
-            </span>
-
-          
-           <!-- <span class="post-meta-item" title="Views" id="busuanzi_container_page_pv" style="display: none;">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-eye"></i>
-              </span>
-              <span class="post-meta-item-text">Views: </span>
-              <span id="busuanzi_value_page_pv"></span>
-            </span> -->
-            <span>&emsp;</span><span class="post-meta-item-icon"><i class="fa fa-eye"></i></span>
-            <span class="post-meta-item-text">Views: </span>
-            <span id="busuanzi_value_page_pv"></span>
-  
-  <span class="post-meta-item">
-    
-      <span class="post-meta-item-icon">
-        <i class="far fa-comment"></i>
-      </span>
-      <span class="post-meta-item-text">Valine: </span>
-    
-    <a title="valine" href="/posts/2e6621e1/#valine-comments" itemprop="discussionUrl">
-      <span class="post-comments-count valine-comment-count" data-xid="/posts/2e6621e1/" itemprop="commentCount"></span>
-    </a>
+  <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <meta itemprop="image" content="/images/avatar.png">
+    <meta itemprop="name" content="JIN Mao">
+    <meta itemprop="description" content="got windy(起风了), ">
   </span>
-  
-  
 
-        </div>
-      </header>
+  <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+    <meta itemprop="name" content="JIN MAO 's Blog">
+  </span>
 
+  <div class="body md" itemprop="articleBody">
     
-    
-    
-    <div class="post-body" itemprop="articleBody">
 
-      
-        <h1 id="Display属性"><a href="#Display属性" class="headerlink" title="Display属性"></a>Display属性</h1><h2 id="display所有属性"><a href="#display所有属性" class="headerlink" title="display所有属性"></a><strong>display所有属性</strong></h2><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/* CSS 1 */</span></span><br><span class="line"><span class="attribute">display</span>: none;</span><br><span class="line"><span class="attribute">display</span>: inline;</span><br><span class="line"><span class="attribute">display</span>: block;</span><br><span class="line"><span class="attribute">display</span>: list-item;</span><br><span class="line"><span class="comment">/* CSS 2.1 */</span></span><br><span class="line"><span class="attribute">display</span>: inline-block;</span><br><span class="line"><span class="attribute">display</span>: table;</span><br><span class="line"><span class="attribute">display</span>: inline-table;</span><br><span class="line"><span class="attribute">display</span>: table-cell;</span><br><span class="line"><span class="attribute">display</span>: table-column;</span><br><span class="line"><span class="attribute">display</span>: table-column-group;</span><br><span class="line"><span class="attribute">display</span>: table-footer-group;</span><br><span class="line"><span class="attribute">display</span>: table-header-group;</span><br><span class="line"><span class="attribute">display</span>: table-row;</span><br><span class="line"><span class="attribute">display</span>: table-row-group;</span><br><span class="line"><span class="attribute">display</span>: table-caption;</span><br><span class="line"><span class="comment">/* CSS 2.1 */</span></span><br><span class="line"><span class="comment">/* CSS 3 */</span></span><br><span class="line"><span class="attribute">display</span>: inline-list-item;</span><br><span class="line"><span class="attribute">display</span>: flex;</span><br><span class="line"><span class="attribute">display</span>: box;</span><br><span class="line"><span class="attribute">display</span>: inline-flex;</span><br><span class="line"></span><br><span class="line"><span class="attribute">display</span>: grid;</span><br><span class="line"><span class="attribute">display</span>: inline-grid;</span><br><span class="line"><span class="attribute">display</span>: ruby;</span><br><span class="line"><span class="attribute">display</span>: ruby-base;</span><br><span class="line"><span class="attribute">display</span>: ruby-text;</span><br><span class="line"><span class="attribute">display</span>: ruby-base-container;</span><br><span class="line"><span class="attribute">display</span>: ruby-text-container;</span><br><span class="line"><span class="comment">/* CSS 3 */</span></span><br><span class="line"><span class="comment">/* Experimental values */</span></span><br><span class="line"><span class="attribute">display</span>: contents;</span><br><span class="line"><span class="attribute">display</span>: run-in;</span><br><span class="line"><span class="comment">/* Experimental values */</span></span><br><span class="line"><span class="comment">/* Global values */</span></span><br><span class="line"><span class="attribute">display</span>: inherit;</span><br><span class="line"><span class="attribute">display</span>: initial;</span><br><span class="line"><span class="attribute">display</span>: unset;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
-
+    <h1 id="display属性"><a class="markdownIt-Anchor" href="#display属性">#</a> Display 属性</h1>
+<h2 id="display所有属性"><a class="markdownIt-Anchor" href="#display所有属性">#</a> <strong>display 所有属性</strong></h2>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/* CSS 1 */</span></span><br><span class="line"><span class="attribute">display</span>: none;</span><br><span class="line"><span class="attribute">display</span>: inline;</span><br><span class="line"><span class="attribute">display</span>: block;</span><br><span class="line"><span class="attribute">display</span>: list-item;</span><br><span class="line"><span class="comment">/* CSS 2.1 */</span></span><br><span class="line"><span class="attribute">display</span>: inline-block;</span><br><span class="line"><span class="attribute">display</span>: table;</span><br><span class="line"><span class="attribute">display</span>: inline-table;</span><br><span class="line"><span class="attribute">display</span>: table-cell;</span><br><span class="line"><span class="attribute">display</span>: table-column;</span><br><span class="line"><span class="attribute">display</span>: table-column-group;</span><br><span class="line"><span class="attribute">display</span>: table-footer-group;</span><br><span class="line"><span class="attribute">display</span>: table-header-group;</span><br><span class="line"><span class="attribute">display</span>: table-row;</span><br><span class="line"><span class="attribute">display</span>: table-row-group;</span><br><span class="line"><span class="attribute">display</span>: table-caption;</span><br><span class="line"><span class="comment">/* CSS 2.1 */</span></span><br><span class="line"><span class="comment">/* CSS 3 */</span></span><br><span class="line"><span class="attribute">display</span>: inline-list-item;</span><br><span class="line"><span class="attribute">display</span>: flex;</span><br><span class="line"><span class="attribute">display</span>: box;</span><br><span class="line"><span class="attribute">display</span>: inline-flex;</span><br><span class="line"></span><br><span class="line"><span class="attribute">display</span>: grid;</span><br><span class="line"><span class="attribute">display</span>: inline-grid;</span><br><span class="line"><span class="attribute">display</span>: ruby;</span><br><span class="line"><span class="attribute">display</span>: ruby-base;</span><br><span class="line"><span class="attribute">display</span>: ruby-text;</span><br><span class="line"><span class="attribute">display</span>: ruby-base-container;</span><br><span class="line"><span class="attribute">display</span>: ruby-text-container;</span><br><span class="line"><span class="comment">/* CSS 3 */</span></span><br><span class="line"><span class="comment">/* Experimental values */</span></span><br><span class="line"><span class="attribute">display</span>: contents;</span><br><span class="line"><span class="attribute">display</span>: run-in;</span><br><span class="line"><span class="comment">/* Experimental values */</span></span><br><span class="line"><span class="comment">/* Global values */</span></span><br><span class="line"><span class="attribute">display</span>: inherit;</span><br><span class="line"><span class="attribute">display</span>: initial;</span><br><span class="line"><span class="attribute">display</span>: unset;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
 <span id="more"></span>
-<p>下面就display的重要属性进行讲解，并配合一些相关的例子</p>
-<h2 id="基本属性"><a href="#基本属性" class="headerlink" title="基本属性"></a>基本属性</h2><h3 id="display-none"><a href="#display-none" class="headerlink" title="display: none"></a>display: none</h3><p>none 是 CSS 1 就提出来的属性，将元素设置为none的时候既不会占据空间，也无法显示，相当于该元素不存在。</p>
+<p>下面就 display 的重要属性进行讲解，并配合一些相关的例子</p>
+<h2 id="基本属性"><a class="markdownIt-Anchor" href="#基本属性">#</a> 基本属性</h2>
+<h3 id="display-none"><a class="markdownIt-Anchor" href="#display-none">#</a> display: none</h3>
+<p>none 是 CSS 1 就提出来的属性，将元素设置为 none 的时候既不会占据空间，也无法显示，相当于该元素不存在。</p>
 <p>该属性可以用来改善重排与重绘，同时我也经常用它来做模态窗等效果。</p>
-<h3 id="display-inline"><a href="#display-inline" class="headerlink" title="display: inline"></a>display: inline</h3><p>inline也是 CSS 1 提出的属性，它主要用来设置行内元素属性，设置了该属性之后设置高度、宽度都无效，同时text-align属性设置也<br>无效，但是设置了line-height会让inline元素居中</p>
-<p>同时从上图可以看到两个inline标签之间出现了奇怪的间隔，改间隔的原因是div换行产生的换行空白，解决办法</p>
+<h3 id="display-inline"><a class="markdownIt-Anchor" href="#display-inline">#</a> display: inline</h3>
+<p>inline 也是 CSS 1 提出的属性，它主要用来设置行内元素属性，设置了该属性之后设置高度、宽度都无效，同时 text-align 属性设置也<br>
+无效，但是设置了 line-height 会让 inline 元素居中</p>
+<p>同时从上图可以看到两个 inline 标签之间出现了奇怪的间隔，改间隔的原因是 div 换行产生的换行空白，解决办法</p>
 <ul>
-<li>将两个inline标签写到一行</li>
+<li>将两个 inline 标签写到一行</li>
 </ul>
 <figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&lt;body&gt;</span><br><span class="line">  <span class="xml"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;test&quot;</span>&gt;</span>123<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><span class="xml"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;test&quot;</span>&gt;</span>123<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span></span><br><span class="line">&lt;/body&gt;</span><br></pre></td></tr></table></figure>
 <ul>
 <li>或者使用一点技巧</li>
 </ul>
 <figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br></pre></td><td class="code"><pre><span class="line">&lt;!DOCTYPE html&gt;</span><br><span class="line"><span class="xml"><span class="tag">&lt;<span class="name">html</span>&gt;</span></span></span><br><span class="line"><span class="xml"><span class="tag">&lt;<span class="name">head</span>&gt;</span></span></span><br><span class="line"><span class="xml">  <span class="tag">&lt;<span class="name">meta</span> <span class="attr">charset</span>=<span class="string">&quot;utf-8&quot;</span>&gt;</span></span></span><br><span class="line"><span class="xml">  <span class="tag">&lt;<span class="name">title</span>&gt;</span>JS Bin<span class="tag">&lt;/<span class="name">title</span>&gt;</span></span></span><br><span class="line"><span class="xml"><span class="tag">&lt;/<span class="name">head</span>&gt;</span></span></span><br><span class="line"><span class="xml"><span class="tag">&lt;<span class="name">body</span>&gt;</span></span></span><br><span class="line"><span class="xml">  <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;main&quot;</span>&gt;</span></span></span><br><span class="line"><span class="xml">    <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;test&quot;</span>&gt;</span>zhan<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span></span><br><span class="line"><span class="xml">    <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;test&quot;</span>&gt;</span>123<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span></span><br><span class="line"><span class="xml">  <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span></span><br><span class="line"><span class="xml"></span></span><br><span class="line"><span class="xml"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></span></span><br><span class="line"><span class="xml"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></span></span><br><span class="line"><span class="xml"></span></span><br><span class="line"><span class="xml"></span></span><br><span class="line"><span class="xml">html&#123;</span></span><br><span class="line"><span class="xml">  -webkit-text-size-adjust:none;/* 使用webkit的私有属性，让字体大小不受设备终端的调整，可定义字体大小小于12px */</span></span><br><span class="line"><span class="xml">&#125;</span></span><br><span class="line"><span class="xml">.main&#123;</span></span><br><span class="line"><span class="xml">  font-size:0;</span></span><br><span class="line"><span class="xml">  *word-spacing:-1px;/* 使用word-spacing 修复 IE6、7 中始终存在的 1px 空隙，减少单词间的空白（即字间隔） */</span></span><br><span class="line"><span class="xml">&#125;</span></span><br><span class="line"><span class="xml">.test&#123;</span></span><br><span class="line"><span class="xml">  display:inline;</span></span><br><span class="line"><span class="xml">  width: 10000px;</span></span><br><span class="line"><span class="xml">  height:10000px;</span></span><br><span class="line"><span class="xml">  border:1px solid;</span></span><br><span class="line"><span class="xml">  font-size:12px;</span></span><br><span class="line"><span class="xml"></span></span><br><span class="line"><span class="xml">  letter-spacing: normal;/* 设置字母、字间距为0 */ </span></span><br><span class="line"><span class="xml">  word-spacing: normal; /* 设置单词、字段间距为0 */</span></span><br><span class="line"><span class="xml">&#125;</span></span><br></pre></td></tr></table></figure>
-<p>实测chome49浏览器只用设置父元素的font-size为0即可。</p>
+<p>实测 chome49 浏览器只用设置父元素的 font-size 为 0 即可。</p>
 <p><code>目前有很多原生的元素都是inline的，span、a、label、input、 img、 strong 和em就是典型的行内元素元素。 链接：http://www.css88.com/archives...</code></p>
-<h3 id="display-block"><a href="#display-block" class="headerlink" title="display: block"></a>display: block</h3><p>设置元素为块状元素，如果不指定宽高，默认会继承父元素的宽度，并且独占一行，即使宽度有剩余也会独占一行，高度一般以子元素撑开的高度为准，当然也可以自己设置宽度和高度。</p>
+<h3 id="display-block"><a class="markdownIt-Anchor" href="#display-block">#</a> display: block</h3>
+<p>设置元素为块状元素，如果不指定宽高，默认会继承父元素的宽度，并且独占一行，即使宽度有剩余也会独占一行，高度一般以子元素撑开的高度为准，当然也可以自己设置宽度和高度。</p>
 <blockquote>
-<p>在设计的过程中有时需要设计一个div宽高都是整个屏幕，整个时候宽度很好设置，可是高度一般很难设置，因为页面一般都是可以滚动的，所以高度一般可变，所以这个时候可以使用一个小技巧，如下。</p>
+<p>在设计的过程中有时需要设计一个 div 宽高都是整个屏幕，整个时候宽度很好设置，可是高度一般很难设置，因为页面一般都是可以滚动的，所以高度一般可变，所以这个时候可以使用一个小技巧，如下。</p>
 </blockquote>
 <figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br></pre></td><td class="code"><pre><span class="line">&lt;!DOCTYPE html&gt;</span><br><span class="line"><span class="xml"><span class="tag">&lt;<span class="name">html</span>&gt;</span></span></span><br><span class="line"><span class="xml"><span class="tag">&lt;<span class="name">head</span>&gt;</span></span></span><br><span class="line"><span class="xml">  <span class="tag">&lt;<span class="name">meta</span> <span class="attr">charset</span>=<span class="string">&quot;utf-8&quot;</span>&gt;</span></span></span><br><span class="line"><span class="xml">  <span class="tag">&lt;<span class="name">title</span>&gt;</span>JS Bin<span class="tag">&lt;/<span class="name">title</span>&gt;</span></span></span><br><span class="line"><span class="xml"><span class="tag">&lt;/<span class="name">head</span>&gt;</span></span></span><br><span class="line"><span class="xml"><span class="tag">&lt;<span class="name">body</span>&gt;</span></span></span><br><span class="line"><span class="xml">  <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;main&quot;</span>&gt;</span></span></span><br><span class="line"><span class="xml">  <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span></span><br><span class="line"><span class="xml"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></span></span><br><span class="line"><span class="xml"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></span></span><br><span class="line"><span class="xml"></span></span><br><span class="line"><span class="xml">html&#123;</span></span><br><span class="line"><span class="xml">  height: 100%;</span></span><br><span class="line"><span class="xml">&#125;</span></span><br><span class="line"><span class="xml">body&#123;</span></span><br><span class="line"><span class="xml">  height: 100%;</span></span><br><span class="line"><span class="xml">  padding: 0;</span></span><br><span class="line"><span class="xml">  margin:0;</span></span><br><span class="line"><span class="xml">&#125;</span></span><br><span class="line"><span class="xml">.main&#123;</span></span><br><span class="line"><span class="xml">  background: red;</span></span><br><span class="line"><span class="xml">  width: 100%;</span></span><br><span class="line"><span class="xml">  height: 100%;</span></span><br><span class="line"><span class="xml">&#125;</span></span><br></pre></td></tr></table></figure>
 <p><code>基本原理：div继承的是父元素body的高度，body是继承html的高度，html是继承的浏览器屏幕的高度。</code></p>
-<h3 id="display-list-item"><a href="#display-list-item" class="headerlink" title="display: list-item"></a>display: list-item</h3><p>此属性默认会把元素作为列表显示，要完全模仿列表的话还需要加上 list-style-position，list-style-type</p>
+<h3 id="display-list-item"><a class="markdownIt-Anchor" href="#display-list-item">#</a> display: list-item</h3>
+<p>此属性默认会把元素作为列表显示，要完全模仿列表的话还需要加上 list-style-position，list-style-type</p>
 <figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">&lt;!DOCTYPE html&gt;</span><br><span class="line"><span class="xml"><span class="tag">&lt;<span class="name">html</span>&gt;</span></span></span><br><span class="line"><span class="xml"><span class="tag">&lt;<span class="name">head</span>&gt;</span></span></span><br><span class="line"><span class="xml">  <span class="tag">&lt;<span class="name">meta</span> <span class="attr">charset</span>=<span class="string">&quot;utf-8&quot;</span>&gt;</span></span></span><br><span class="line"><span class="xml">  <span class="tag">&lt;<span class="name">title</span>&gt;</span>JS Bin<span class="tag">&lt;/<span class="name">title</span>&gt;</span></span></span><br><span class="line"><span class="xml"><span class="tag">&lt;/<span class="name">head</span>&gt;</span></span></span><br><span class="line"><span class="xml"><span class="tag">&lt;<span class="name">body</span>&gt;</span></span></span><br><span class="line"><span class="xml"><span class="tag">&lt;<span class="name">div</span>&gt;</span></span></span><br><span class="line"><span class="xml">  <span class="tag">&lt;<span class="name">span</span>&gt;</span>111111<span class="tag">&lt;/<span class="name">span</span>&gt;</span></span></span><br><span class="line"><span class="xml">  <span class="tag">&lt;<span class="name">span</span>&gt;</span>222222<span class="tag">&lt;/<span class="name">span</span>&gt;</span></span></span><br><span class="line"><span class="xml">  <span class="tag">&lt;<span class="name">span</span>&gt;</span>333333<span class="tag">&lt;/<span class="name">span</span>&gt;</span></span></span><br><span class="line"><span class="xml"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span></span><br><span class="line"><span class="xml"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></span></span><br><span class="line"><span class="xml"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></span></span><br></pre></td></tr></table></figure>
-
-
 <figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">div</span>&#123;</span><br><span class="line">  <span class="attribute">padding-left</span>:<span class="number">30px</span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="selector-tag">span</span>&#123; </span><br><span class="line">  <span class="attribute">display</span>:list-item;</span><br><span class="line">  <span class="attribute">list-style</span>:disc outside none;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <p>效果如下:</p>
 
-
-
-<p>通过上面样式设置，就能仿出一个类似的列表，一定要在div上加padding，因为默认的列表之前的·在box外面</p>
-<h3 id="display-inline-block"><a href="#display-inline-block" class="headerlink" title="display: inline-block"></a>display: inline-block</h3><p>inline-block为 CSS 2.1 新增的属性。 <strong>inline-block既具有block的宽高特性又具有inline的同行元素特性。</strong> 通过inline-block结合text-align: justify 还可以实现固定宽高的列表两端对齐布局，如下例子：</p>
+<p>通过上面样式设置，就能仿出一个类似的列表，一定要在 div 上加 padding，因为默认的列表之前的・在 box 外面</p>
+<h3 id="display-inline-block"><a class="markdownIt-Anchor" href="#display-inline-block">#</a> display: inline-block</h3>
+<p>inline-block 为 CSS 2.1 新增的属性。 <strong>inline-block 既具有 block 的宽高特性又具有 inline 的同行元素特性。</strong> 通过 inline-block 结合 text-align: justify 还可以实现固定宽高的列表两端对齐布局，如下例子：</p>
 <figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&lt;!DOCTYPE <span class="meta-keyword">html</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">html</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">head</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">meta</span> <span class="attr">charset</span>=<span class="string">&quot;utf-8&quot;</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">title</span>&gt;</span>JS Bin<span class="tag">&lt;/<span class="name">title</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">head</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;main&quot;</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;col col1&quot;</span>&gt;</span>111111<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;col col2&quot;</span>&gt;</span>222222<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;col col3&quot;</span>&gt;</span>333333<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;col col1&quot;</span>&gt;</span>111111<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;col col2&quot;</span>&gt;</span>222222<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;col col3&quot;</span>&gt;</span>333333<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;col fix&quot;</span>&gt;</span><span class="symbol">&amp;nbsp;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;col fix&quot;</span>&gt;</span><span class="symbol">&amp;nbsp;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;col fix&quot;</span>&gt;</span><span class="symbol">&amp;nbsp;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;col fix&quot;</span>&gt;</span><span class="symbol">&amp;nbsp;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;col fix&quot;</span>&gt;</span><span class="symbol">&amp;nbsp;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></span><br></pre></td></tr></table></figure>
-
-
 <figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">body</span>&#123;</span><br><span class="line">  <span class="attribute">margin</span>:<span class="number">0</span>;</span><br><span class="line">  <span class="attribute">padding</span>:<span class="number">0</span>; </span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-class">.main</span>&#123;</span><br><span class="line">//实现两端对齐文本效果。</span><br><span class="line">  <span class="attribute">text-align</span>:justify;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-class">.col</span>&#123; </span><br><span class="line">  <span class="attribute">display</span>: inline-block;</span><br><span class="line">  <span class="attribute">margin-top</span>:<span class="number">10px</span>;</span><br><span class="line">  <span class="attribute">width</span>:<span class="number">100px</span>;</span><br><span class="line">  <span class="attribute">height</span>: <span class="number">100px</span>;</span><br><span class="line">  <span class="attribute">text-align</span>: center;</span><br><span class="line">  <span class="attribute">line-height</span>: <span class="number">100px</span>;</span><br><span class="line">  <span class="attribute">color</span>: <span class="number">#fff</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-class">.col1</span>&#123;</span><br><span class="line">  <span class="attribute">background</span>: red;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-class">.col2</span>&#123;</span><br><span class="line">  <span class="attribute">background</span>: green;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-class">.col3</span>&#123;</span><br><span class="line">  <span class="attribute">background</span>: blue;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-class">.fix</span>&#123;</span><br><span class="line">  <span class="attribute">height</span>:<span class="number">0</span>; </span><br><span class="line">  <span class="attribute">padding</span>:<span class="number">0</span>; </span><br><span class="line">  <span class="attribute">overflow</span>:hidden;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <p>效果:</p>
 <p><img data-src="https://segmentfault.com/img/remote/1460000006047879" alt="image"></p>
 <p><code>text-align: justify 属性会使行内元素两端对齐，但是要求这些行内元素总宽度至少占满一行，所以在总宽度不足一行的时候这个属性没用，因此在最后需要加上一些占位符。</code></p>
-<p>==Tip: inline-block会形成一个BFC==</p>
-<h3 id="display-table"><a href="#display-table" class="headerlink" title="display: table"></a>display: table</h3><p>table 此元素会作为块级表格来显示（类似table），表格前后带有换行符。CSS表格能够解决所有那些我们在使用绝对定位和浮动定位进行多列布局时所遇到的问题。例如，display:table的CSS声明能够让一个HTML元素和它的子节点像table元素一样。使用基于表格的CSS布局，使我们能够轻松定义一个单元格的边界、背景等样式， <strong>而不会产生因为使用了table那样的制表标签所导致的语义化问题。</strong></p>
-<p>利用table的特性，我们能够轻易的实现三栏布局，并且能够兼容IE8，如下是使用table属性，实现三栏布局的例子：</p>
+<p><mark>Tip: inline-block 会形成一个 BFC</mark></p>
+<h3 id="display-table"><a class="markdownIt-Anchor" href="#display-table">#</a> display: table</h3>
+<p>table 此元素会作为块级表格来显示（类似 table），表格前后带有换行符。CSS 表格能够解决所有那些我们在使用绝对定位和浮动定位进行多列布局时所遇到的问题。例如，display:table 的 CSS 声明能够让一个 HTML 元素和它的子节点像 table 元素一样。使用基于表格的 CSS 布局，使我们能够轻松定义一个单元格的边界、背景等样式， <strong>而不会产生因为使用了 table 那样的制表标签所导致的语义化问题。</strong></p>
+<p>利用 table 的特性，我们能够轻易的实现三栏布局，并且能够兼容 IE8，如下是使用 table 属性，实现三栏布局的例子：</p>
 <figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&lt;!DOCTYPE <span class="meta-keyword">html</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">html</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">head</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">meta</span> <span class="attr">charset</span>=<span class="string">&quot;utf-8&quot;</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">title</span>&gt;</span>JS Bin<span class="tag">&lt;/<span class="name">title</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">head</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;main&quot;</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;tr tr1&quot;</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;td&quot;</span>&gt;</span>head1<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;td&quot;</span>&gt;</span>head2<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;td&quot;</span>&gt;</span>head3<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;tr tr2&quot;</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;td&quot;</span>&gt;</span>123<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;td&quot;</span>&gt;</span>123<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;td&quot;</span>&gt;</span>123<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></span><br></pre></td></tr></table></figure>
-
-
 <figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.main</span>&#123;</span><br><span class="line">  <span class="attribute">display</span>: table;</span><br><span class="line">  <span class="attribute">width</span>:<span class="number">100%</span>;</span><br><span class="line">  <span class="attribute">border-collapse</span>: collapse;<span class="comment">/*为表格设置合并边框模型：*/</span></span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-class">.tr</span>&#123;</span><br><span class="line">  <span class="attribute">display</span>: table-row;</span><br><span class="line">  <span class="attribute">border-color</span>: inherit;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-class">.tr1</span> <span class="selector-class">.td</span>&#123;</span><br><span class="line">  <span class="attribute">height</span>:<span class="number">50px</span>;</span><br><span class="line">  <span class="attribute">vertical-align</span>: middle;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-class">.td</span>&#123;</span><br><span class="line">  <span class="attribute">display</span>: table-cell;</span><br><span class="line">  <span class="attribute">border</span>: <span class="number">1px</span> solid;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-class">.td</span><span class="selector-pseudo">:nth-of-type</span>(<span class="number">1</span>)&#123;</span><br><span class="line">  <span class="attribute">width</span>: <span class="number">100px</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-class">.td</span><span class="selector-pseudo">:nth-of-type</span>(<span class="number">3</span>)&#123;</span><br><span class="line">  <span class="attribute">width</span>: <span class="number">100px</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <p>效果:</p>
 
-
-
-<p><strong>CSS2.1表格模型中的元素，可能不会全部包含在除HTML之外的文档语言中。这时，那些“丢失”的元素会被模拟出来，从而使得表格模型能够正常工作。所有的表格元素将会自动在自身周围生成所需的匿名table对象，使其符合table/inline-table、table-row、table-cell的三层嵌套关系。</strong></p>
-<p>所以在一般情况下我们也可以不写外面的table-row元素以及table元素。</p>
-<h3 id="display-inline-list-item"><a href="#display-inline-list-item" class="headerlink" title="display: inline-list-item"></a>display: inline-list-item</h3><p>我在MDN上面看到有这个属性，但是我实际尝试发现这个属性是不能使用的，在 <a target="_blank" rel="noopener" href="http://caniuse.com/#search=in">http://caniuse.com/#search=in</a>… 上面也没有找到这个元素的兼容性，所以应该是不能使用的，支持度全无。</p>
-<h3 id="display-flex-重要"><a href="#display-flex-重要" class="headerlink" title="display: flex(重要)"></a><strong>display: flex(重要)</strong></h3><p>flex是一种弹性布局属性<br><strong>注意，设为Flex布局以后，子元素的float、clear和vertical-align属性将失效。</strong><br>主要属性有两大类：容器属性和项目的属性</p>
+<p><strong>CSS2.1 表格模型中的元素，可能不会全部包含在除 HTML 之外的文档语言中。这时，那些 “丢失” 的元素会被模拟出来，从而使得表格模型能够正常工作。所有的表格元素将会自动在自身周围生成所需的匿名 table 对象，使其符合 table/inline-table、table-row、table-cell 的三层嵌套关系。</strong></p>
+<p>所以在一般情况下我们也可以不写外面的 table-row 元素以及 table 元素。</p>
+<h3 id="display-inline-list-item"><a class="markdownIt-Anchor" href="#display-inline-list-item">#</a> display: inline-list-item</h3>
+<p>我在 MDN 上面看到有这个属性，但是我实际尝试发现这个属性是不能使用的，在 <span class="exturl" data-url="aHR0cDovL2Nhbml1c2UuY29tLyNzZWFyY2g9aW4=">http://caniuse.com/#search=in</span>… 上面也没有找到这个元素的兼容性，所以应该是不能使用的，支持度全无。</p>
+<h3 id="display-flex重要"><a class="markdownIt-Anchor" href="#display-flex重要">#</a> <strong>display: flex (重要)</strong></h3>
+<p>flex 是一种弹性布局属性<br>
+<strong>注意，设为 Flex 布局以后，子元素的 float、clear 和 vertical-align 属性将失效。</strong><br>
+主要属性有两大类：容器属性和项目的属性</p>
 <ul>
-<li><h4 id="容器属性"><a href="#容器属性" class="headerlink" title="容器属性"></a>容器属性</h4><p>值 |  解释</p>
+<li>
+<h4 id="容器属性"><a class="markdownIt-Anchor" href="#容器属性">#</a> 容器属性</h4>
 </li>
-<li><p>–|—<br>flex-direction | 属性决定主轴的方向（即项目的排列方向）。<br>flex-wrap| 默认情况下，项目都排在一条线（又称”轴线”）上。flex-wrap属性定义，如果一条轴线排不下，如何换行。<br>flex-flow|属性是flex-direction属性和flex-wrap属性的简写形式，默认值为row nowrap。<br>justify-content|属性定义了项目在主轴上的对齐方式。<br>align-items |属性定义项目在交叉轴上如何对齐。<br>align-content| 属性定义了多根轴线的对齐方式。如果项目只有一根轴线，该属性不起作用。</p>
-</li>
-<li><h4 id="项目属性"><a href="#项目属性" class="headerlink" title="项目属性"></a>项目属性</h4></li>
 </ul>
 <table>
 <thead>
@@ -367,548 +243,578 @@
 <th>解释</th>
 </tr>
 </thead>
-<tbody><tr>
+<tbody>
+<tr>
+<td>flex-direction</td>
+<td>属性决定主轴的方向（即项目的排列方向）。</td>
+</tr>
+<tr>
+<td>flex-wrap</td>
+<td>默认情况下，项目都排在一条线（又称 &quot;轴线&quot;）上。flex-wrap 属性定义，如果一条轴线排不下，如何换行。</td>
+</tr>
+<tr>
+<td>flex-flow</td>
+<td>属性是 flex-direction 属性和 flex-wrap 属性的简写形式，默认值为 row nowrap。</td>
+</tr>
+<tr>
+<td>justify-content</td>
+<td>属性定义了项目在主轴上的对齐方式。</td>
+</tr>
+<tr>
+<td>align-items</td>
+<td>属性定义项目在交叉轴上如何对齐。</td>
+</tr>
+<tr>
+<td>align-content</td>
+<td>属性定义了多根轴线的对齐方式。如果项目只有一根轴线，该属性不起作用。</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>
+<h4 id="项目属性"><a class="markdownIt-Anchor" href="#项目属性">#</a> 项目属性</h4>
+</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>值</th>
+<th>解释</th>
+</tr>
+</thead>
+<tbody>
+<tr>
 <td>order</td>
-<td>定义项目的排列顺序。数值越小，排列越靠前，默认为0。</td>
+<td>定义项目的排列顺序。数值越小，排列越靠前，默认为 0。</td>
 </tr>
 <tr>
 <td>flex-grow</td>
-<td>定义项目的放大比例，默认为0，即如果存在剩余空间，也不放大。</td>
+<td>定义项目的放大比例，默认为 0，即如果存在剩余空间，也不放大。</td>
 </tr>
 <tr>
 <td>flex-shrink</td>
-<td>属性定义了项目的缩小比例，默认为1，即如果空间不足，该项目将缩小。</td>
+<td>属性定义了项目的缩小比例，默认为 1，即如果空间不足，该项目将缩小。</td>
 </tr>
 <tr>
 <td>flex-basis</td>
-<td>属性定义了在分配多余空间之前，项目占据的主轴空间（main size）。浏览器根据这个属性，计算主轴是否有多余空间。它的默认值为auto，即项目的本来大小。</td>
+<td>属性定义了在分配多余空间之前，项目占据的主轴空间（main size）。浏览器根据这个属性，计算主轴是否有多余空间。它的默认值为 auto，即项目的本来大小。</td>
 </tr>
 <tr>
 <td>flex</td>
-<td>属性是flex-grow, flex-shrink 和flex-basis的简写，默认值为0 1 auto。后两个属性可选。</td>
+<td>属性是 flex-grow, flex-shrink 和 flex-basis 的简写，默认值为 0 1 auto。后两个属性可选。</td>
 </tr>
 <tr>
 <td>align-self:</td>
-<td>属性允许单个项目有与其他项目不一样的对齐方式，可覆盖align-items属性。默认值为auto，表示继承父元素的align-items属性，如果没有父元素，则等同于stretch。</td>
+<td>属性允许单个项目有与其他项目不一样的对齐方式，可覆盖 align-items 属性。默认值为 auto，表示继承父元素的 align-items 属性，如果没有父元素，则等同于 stretch。</td>
 </tr>
-</tbody></table>
-<p>以上关于flex的基础知识基本是从阮一峰老师那copy过来的，有兴趣的同学，可以到阮一峰老师的博客深入阅读</p>
-<p><a target="_blank" rel="noopener" href="http://www.ruanyifeng.com/blo">http://www.ruanyifeng.com/blo</a>…</p>
-<p><a target="_blank" rel="noopener" href="http://www.ruanyifeng.com/blo">http://www.ruanyifeng.com/blo</a>…</p>
+</tbody>
+</table>
+<p>以上关于 flex 的基础知识基本是从阮一峰老师那 copy 过来的，有兴趣的同学，可以到阮一峰老师的博客深入阅读</p>
+<p><span class="exturl" data-url="aHR0cDovL3d3dy5ydWFueWlmZW5nLmNvbS9ibG8=">http://www.ruanyifeng.com/blo</span>…</p>
+<p><span class="exturl" data-url="aHR0cDovL3d3dy5ydWFueWlmZW5nLmNvbS9ibG8=">http://www.ruanyifeng.com/blo</span>…</p>
 <ul>
-<li><h4 id="实例：实现一个固定宽度但内容可变的列表"><a href="#实例：实现一个固定宽度但内容可变的列表" class="headerlink" title="实例：实现一个固定宽度但内容可变的列表"></a>实例：实现一个固定宽度但内容可变的列表</h4>目前我有一个需求，有一个列表页，左侧固定，右侧固定，总宽度固定，但是左侧的内容可能会增加，右侧的内容也可能会增加，要求平时一行展示，增加的时候两行展示，左侧两行，右侧还是一行，并且都居中。</li>
+<li>
+<h4 id="实例实现一个固定宽度但内容可变的列表"><a class="markdownIt-Anchor" href="#实例实现一个固定宽度但内容可变的列表">#</a> 实例：实现一个固定宽度但内容可变的列表</h4>
+</li>
 </ul>
+<p>目前我有一个需求，有一个列表页，左侧固定，右侧固定，总宽度固定，但是左侧的内容可能会增加，右侧的内容也可能会增加，要求平时一行展示，增加的时候两行展示，左侧两行，右侧还是一行，并且都居中。</p>
 <p>先上效果图，不然可能会迷糊：</p>
-
-
 
 <p>为了实现上述效果，代码如下</p>
 <figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&lt;!DOCTYPE <span class="meta-keyword">html</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">html</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">head</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">meta</span> <span class="attr">charset</span>=<span class="string">&quot;utf-8&quot;</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">title</span>&gt;</span>JS Bin<span class="tag">&lt;/<span class="name">title</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">head</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;main&quot;</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">ul</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;<span class="name">li</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">span</span> <span class="attr">class</span>=<span class="string">&quot;col1&quot;</span>&gt;</span>累积的分为：123<span class="tag">&lt;/<span class="name">span</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;col2&quot;</span>&gt;</span></span><br><span class="line">          <span class="tag">&lt;<span class="name">span</span>&gt;</span>123<span class="tag">&lt;/<span class="name">span</span>&gt;</span></span><br><span class="line">          <span class="tag">&lt;<span class="name">span</span>&gt;</span>x 10<span class="tag">&lt;/<span class="name">span</span>&gt;</span></span><br><span class="line">          <span class="tag">&lt;<span class="name">button</span>&gt;</span>submit<span class="tag">&lt;/<span class="name">button</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;<span class="name">li</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">span</span> <span class="attr">class</span>=<span class="string">&quot;col1&quot;</span>&gt;</span>累积的分为：1234<span class="tag">&lt;/<span class="name">span</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;col2&quot;</span>&gt;</span></span><br><span class="line">          <span class="tag">&lt;<span class="name">img</span> <span class="attr">src</span>=<span class="string">&quot;http://7xltvd.com1.z0.glb.clouddn.com/css1.png&quot;</span> <span class="attr">alt</span>=<span class="string">&quot;&quot;</span>&gt;</span></span><br><span class="line">          <span class="tag">&lt;<span class="name">span</span> <span class="attr">class</span>=<span class="string">&quot;col2-span&quot;</span>&gt;</span>x 10<span class="tag">&lt;/<span class="name">span</span>&gt;</span></span><br><span class="line">          <span class="tag">&lt;<span class="name">button</span>&gt;</span>submit<span class="tag">&lt;/<span class="name">button</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">ul</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></span><br></pre></td></tr></table></figure>
-
 <figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.main</span>&#123;</span><br><span class="line">  <span class="attribute">height</span>: <span class="number">200px</span>;</span><br><span class="line">  <span class="attribute">width</span>: <span class="number">300px</span>;</span><br><span class="line">  <span class="attribute">border</span>: <span class="number">1px</span> solid;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-tag">ul</span>&#123;</span><br><span class="line">  <span class="attribute">padding</span>: <span class="number">0px</span>;</span><br><span class="line">  <span class="attribute">margin-top</span>: <span class="number">10px</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-tag">li</span>&#123;</span><br><span class="line">  <span class="attribute">display</span>: flex;</span><br><span class="line">  <span class="attribute">justify-content</span>: space-between;</span><br><span class="line">  <span class="attribute">align-items</span>: center;</span><br><span class="line">  <span class="attribute">padding</span>: <span class="number">10px</span> <span class="number">0</span>;</span><br><span class="line">  <span class="attribute">margin-bottom</span>: <span class="number">10px</span>;</span><br><span class="line">  <span class="attribute">border</span>: <span class="number">1px</span> solid;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-tag">button</span>&#123;</span><br><span class="line">  <span class="attribute">height</span>: <span class="number">20px</span>;</span><br><span class="line">  <span class="attribute">vertical-align</span>: middle;</span><br><span class="line">  <span class="attribute">border</span>:<span class="number">0</span>;</span><br><span class="line">  <span class="attribute">background</span>: green;</span><br><span class="line">  <span class="attribute">outline</span>:none;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-tag">img</span>&#123;</span><br><span class="line">  <span class="attribute">width</span>:<span class="number">30px</span>;</span><br><span class="line">  <span class="attribute">vertical-align</span>: middle;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-class">.col2-span</span>&#123;</span><br><span class="line">  <span class="attribute">vertical-align</span>: middle;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-class">.col1</span>&#123;</span><br><span class="line">  <span class="attribute">width</span>: <span class="number">130px</span>;</span><br><span class="line">  <span class="attribute">padding-left</span>:<span class="number">8px</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-class">.col2</span>&#123;</span><br><span class="line">  <span class="attribute">padding-right</span>: <span class="number">8px</span>;</span><br><span class="line">  <span class="attribute">vertical-align</span>: middle;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<h3 id="display-webkit-box"><a href="#display-webkit-box" class="headerlink" title="display: -webkit-box"></a>display: -webkit-box</h3><p>由于某X5浏览器某些版本还不支持最新版的flex布局，所以为了保证良好的运行，建议还是使用display: box，box和flex布局的主要差别如下:</p>
+<h3 id="display-webkit-box"><a class="markdownIt-Anchor" href="#display-webkit-box">#</a> display: -webkit-box</h3>
+<p>由于某 X5 浏览器某些版本还不支持最新版的 flex 布局，所以为了保证良好的运行，建议还是使用 display: box，box 和 flex 布局的主要差别如下:</p>
 <ul>
-<li><h4 id="容器属性-1"><a href="#容器属性-1" class="headerlink" title="容器属性"></a>容器属性</h4>值 | 解释</li>
-<li>–|—:<br>display: box |该显示样式的新值可将此元素及其直系子代加入弹性框模型中。Flexbox 模型只适用于直系子代。<br>box-orient| 值：horizontal | vertical | inherit</li>
+<li>
+<h4 id="容器属性-2"><a class="markdownIt-Anchor" href="#容器属性-2">#</a> 容器属性</h4>
+</li>
 </ul>
-<p>框的子代是如何排列的？还有两个值：inline-axis（真正的默认值）和 block-axis，但是它们分别映射到水平和垂直方向。<br>值 | 解释<br>—|—<br>box-pack 值：start | end | center | justify</p>
-<p>设置沿 box-orient 轴的框排列方式。因此，如果 box-orient 是水平方向，就会选择框的子代的水平排列方式，反之亦然。<br>值 | 解释<br>—|—<br>box-align | 值：start | end | center | baseline | stretch</p>
+<table>
+<thead>
+<tr>
+<th>值</th>
+<th style="text-align:right">解释</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>display: box</td>
+<td style="text-align:right">该显示样式的新值可将此元素及其直系子代加入弹性框模型中。Flexbox 模型只适用于直系子代。</td>
+</tr>
+<tr>
+<td>box-orient</td>
+<td style="text-align:right">值：horizontal</td>
+<td>vertical</td>
+<td>inherit</td>
+</tr>
+</tbody>
+</table>
+<p>框的子代是如何排列的？还有两个值：inline-axis（真正的默认值）和 block-axis，但是它们分别映射到水平和垂直方向。</p>
+<table>
+<thead>
+<tr>
+<th>值</th>
+<th>解释</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>box-pack 值：start</td>
+<td>end</td>
+<td>center</td>
+<td>justify</td>
+</tr>
+</tbody>
+</table>
+<p>设置沿 box-orient 轴的框排列方式。因此，如果 box-orient 是水平方向，就会选择框的子代的水平排列方式，反之亦然。</p>
+<table>
+<thead>
+<tr>
+<th>值</th>
+<th>解释</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>box-align</td>
+<td>值：start</td>
+<td>end</td>
+<td>center</td>
+<td>baseline</td>
+<td>stretch</td>
+</tr>
+</tbody>
+</table>
 <p>基本上而言是 box-pack 的同级属性。设置框的子代在框中的排列方式。如果方向是水平的，该属性就会决定垂直排列，反之亦然。</p>
 <ul>
-<li><h4 id="项目属性-1"><a href="#项目属性-1" class="headerlink" title="项目属性"></a>项目属性</h4>值 | 解释</li>
-<li>–|—<br>box-flex| 值：0 | 任意整数</li>
+<li>
+<h4 id="项目属性-2"><a class="markdownIt-Anchor" href="#项目属性-2">#</a> 项目属性</h4>
+</li>
 </ul>
+<table>
+<thead>
+<tr>
+<th>值</th>
+<th>解释</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>box-flex</td>
+<td>值：0</td>
+<td>任意整数</td>
+</tr>
+</tbody>
+</table>
 <p>该子代的弹性比。弹性比为 1 的子代占据父代框的空间是弹性比为 2 的同级属性的两倍。其默认值为 0，也就是不具有弹性。</p>
-<p>用box改造上述例子<br>基本只修改了容器元素li的属性，如下所示:</p>
+<p>用 box 改造上述例子<br>
+基本只修改了容器元素 li 的属性，如下所示:</p>
 <figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">li</span>&#123;</span><br><span class="line">  <span class="attribute">display</span>: -webkit-box;</span><br><span class="line">  -webkit-box-orient:horizontal;</span><br><span class="line">  -webkit-box-pack: justify;</span><br><span class="line">  -webkit-box-align: center;</span><br><span class="line">  <span class="attribute">padding</span>: <span class="number">10px</span> <span class="number">0</span>;</span><br><span class="line">  <span class="attribute">margin-bottom</span>: <span class="number">10px</span>;</span><br><span class="line">  <span class="attribute">border</span>: <span class="number">1px</span> solid;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<h3 id="display-inline-flex"><a href="#display-inline-flex" class="headerlink" title="display: inline-flex"></a>display: inline-flex</h3><p>我发现在chrome条件下设置了inline-flex，其子元素全部变成了inline模式，设置flex并没有什么用，不知道是不是我写的有问题，目前没找到这个属性的用法</p>
+<h3 id="display-inline-flex"><a class="markdownIt-Anchor" href="#display-inline-flex">#</a> display: inline-flex</h3>
+<p>我发现在 chrome 条件下设置了 inline-flex，其子元素全部变成了 inline 模式，设置 flex 并没有什么用，不知道是不是我写的有问题，目前没找到这个属性的用法</p>
 <figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&lt;!DOCTYPE <span class="meta-keyword">html</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">html</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">head</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">meta</span> <span class="attr">charset</span>=<span class="string">&quot;utf-8&quot;</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">title</span>&gt;</span>JS Bin<span class="tag">&lt;/<span class="name">title</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">head</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;main&quot;</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;sp1&quot;</span>&gt;</span>123<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;sp1&quot;</span>&gt;</span>123<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></span><br></pre></td></tr></table></figure>
-
-
 <figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.main</span>&#123;</span><br><span class="line">  <span class="attribute">display</span>: -webkit-inline-flex;</span><br><span class="line">  <span class="attribute">justify-content</span>: center;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-class">.sp1</span>&#123;</span><br><span class="line">  <span class="attribute">flex</span>:<span class="number">1</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h3 id="其他"><a class="markdownIt-Anchor" href="#其他">#</a> 其他</h3>
+<p>以下属性是实验性质的，支持度都很低，不建议使用，知道就行。</p>
+<table>
+<thead>
+<tr>
+<th>值</th>
+<th>解释</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>run-in:</td>
+<td>此元素会根据上下文作为块级元素或内联元素显示；</td>
+</tr>
+<tr>
+<td>grid</td>
+<td>栅格模型，类似 block</td>
+</tr>
+<tr>
+<td>inline-grid</td>
+<td>栅格模型，类似 inline-block</td>
+</tr>
+<tr>
+<td>ruby, ruby-base, ruby-text, ruby-base-container, ruby-text-container</td>
+</tr>
+<tr>
+<td>contents</td>
+</tr>
+</tbody>
+</table>
 
-<h3 id="其他"><a href="#其他" class="headerlink" title="其他"></a>其他</h3><p>以下属性是实验性质的，支持度都很低，不建议使用，知道就行。<br>值 | 解释<br>—|—<br>run-in:| 此元素会根据上下文作为块级元素或内联元素显示；<br>grid | 栅格模型，类似block<br>inline-grid | 栅格模型，类似inline-block<br>ruby, ruby-base, ruby-text, ruby-base-container, ruby-text-container|<br>contents |</p>
-
-
-      <div>
-        
-          <div>
-    
-        <div style="text-align:center;color: #636363;font-size:14px;letter-spacing: 10px">This article is over<i class="fa fa-bell"></i>thank you for reading</div>
-    
-</div>
-        
+      <div class="tags">
+          <a href="/tags/%E5%89%8D%E7%AB%AF/" rel="tag"><i class="ic i-tag"></i> 前端</a>
+          <a href="/tags/DisPlay%E5%B1%9E%E6%80%A7/" rel="tag"><i class="ic i-tag"></i> DisPlay属性</a>
       </div>
-    </div>
+  </div>
 
-    
-    
-    
+   <footer>
+
+    <div class="meta">
+  <span class="item">
+    <span class="icon">
+      <i class="ic i-calendar-check"></i>
+    </span>
+    <span class="text">Edited on</span>
+    <time title="Modified: 2022-02-14 22:26:03" itemprop="dateModified" datetime="2022-02-14T22:26:03+08:00">2022-02-14</time>
+  </span>
+  <span id="posts/2e6621e1/" class="item leancloud_visitors" data-flag-title="DisPlay属性" title="Views">
+      <span class="icon">
+        <i class="ic i-eye"></i>
+      </span>
+      <span class="text">Views</span>
+      <span class="leancloud-visitors-count"></span>
+      <span class="text">times</span>
+  </span>
+</div>
+
       
-  <div class="popular-posts-header">Related Posts</div>
-  <ul class="popular-posts">
-    <li class="popular-posts-item">
-      <div class="popular-posts-title"><a href="/posts/7733848a/" rel="bookmark">文件上传前端小结</a></div>
-    </li>
-    <li class="popular-posts-item">
-      <div class="popular-posts-title"><a href="/posts/21d4b84b/" rel="bookmark">Vue3项目的创建</a></div>
-    </li>
-    <li class="popular-posts-item">
-      <div class="popular-posts-title"><a href="/posts/e7e56598/" rel="bookmark">Vue属性介绍</a></div>
-    </li>
-    <li class="popular-posts-item">
-      <div class="popular-posts-title"><a href="/posts/b5314c4/" rel="bookmark">Vue2语法简介</a></div>
-    </li>
-    <li class="popular-posts-item">
-      <div class="popular-posts-title"><a href="/posts/8408ed11/" rel="bookmark">Vue-Cli介绍以及使用</a></div>
-    </li>
-  </ul>
 
-        
-
-<div>
-<ul class="post-copyright">
-  <li class="post-copyright-author">
-    <strong>Post author:  </strong>JIN Mao
+<div id="copyright">
+<ul>
+  <li class="author">
+    <strong>Post author:  </strong>JIN Mao <i class="ic i-at"><em>@</em></i>JIN MAO 's Blog
   </li>
-  <li class="post-copyright-link">
+  <li class="link">
     <strong>Post link: </strong>
     <a href="https://smile1231.github.io/posts/2e6621e1/" title="DisPlay属性">https://smile1231.github.io/posts/2e6621e1/</a>
   </li>
-  <li class="post-copyright-license">
-    <strong>Copyright Notice:  </strong>All articles in this blog are licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/en" rel="noopener" target="_blank"><i class="fab fa-fw fa-creative-commons"></i>BY-NC-SA</a> unless stating additionally.
+  <li class="license">
+    <strong>Copyright Notice:  </strong>All articles in this blog are licensed under <span class="exturl" data-url="aHR0cHM6Ly9jcmVhdGl2ZWNvbW1vbnMub3JnL2xpY2Vuc2VzL2J5LW5jLXNhLzQuMC9kZWVkLnpo"><i class="ic i-creative-commons"><em>(CC)</em></i>BY-NC-SA</span> unless stating additionally.
   </li>
 </ul>
 </div>
 
+  </footer>
 
-      <footer class="post-footer">
-          
-          <div class="post-tags">
-              <a href="/tags/%E5%89%8D%E7%AB%AF/" rel="tag"><i class="fa fa-tag"></i> 前端</a>
-              <a href="/tags/DisPlay%E5%B1%9E%E6%80%A7/" rel="tag"><i class="fa fa-tag"></i> DisPlay属性</a>
-          </div>
+</article>
 
-        
-  <div class="post-widgets">
-    <div class="wp_rating">
-      <div id="wpac-rating"></div>
-    </div>
   </div>
+  
 
+<div class="post-nav">
+    <div class="item left">
+      
 
-        
-    <div class="post-nav">
-      <div class="post-nav-item">
-    <a href="/posts/54880bcd/" rel="prev" title="Css样式">
-      <i class="fa fa-chevron-left"></i> Css样式
-    </a></div>
-      <div class="post-nav-item">
-    <a href="/posts/4aa00b9a/" rel="next" title="Js中的some、find、findindex、includes、filter的使用">
-      Js中的some、find、findindex、includes、filter的使用 <i class="fa fa-chevron-right"></i>
-    </a></div>
+  <a href="/posts/54880bcd/" itemprop="url" rel="prev" data-background-image="https:&#x2F;&#x2F;tva1.sinaimg.cn&#x2F;mw690&#x2F;6833939bly1gipetv6p75j20zk0m8x6p.jpg" title="Css样式">
+  <span class="type">Previous Post</span>
+  <span class="category"><i class="ic i-flag"></i> Css</span>
+  <h3>Css样式</h3>
+  </a>
+
     </div>
-      </footer>
-    
-  </article>
+    <div class="item right">
+      
+
+  <a href="/posts/4aa00b9a/" itemprop="url" rel="next" data-background-image="https:&#x2F;&#x2F;tva1.sinaimg.cn&#x2F;mw690&#x2F;6833939bly1gipexw3o58j20zk0m8e81.jpg" title="Js中的some、find、findindex、includes、filter的使用">
+  <span class="type">Next Post</span>
+  <span class="category"><i class="ic i-flag"></i> JavaScript</span>
+  <h3>Js中的some、find、findindex、includes、filter的使用</h3>
+  </a>
+
+    </div>
+</div>
+
   
-  
-  
+  <div class="wrap" id="comments"></div>
 
-
-
-          </div>
-          
-    <div class="comments" id="valine-comments"></div>
-
-<script>
-  window.addEventListener('tabs:register', () => {
-    let { activeClass } = CONFIG.comments;
-    if (CONFIG.comments.storage) {
-      activeClass = localStorage.getItem('comments_active') || activeClass;
-    }
-    if (activeClass) {
-      let activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
-      if (activeTab) {
-        activeTab.click();
-      }
-    }
-  });
-  if (CONFIG.comments.storage) {
-    window.addEventListener('tabs:click', event => {
-      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
-      let commentClass = event.target.classList[1];
-      localStorage.setItem('comments_active', commentClass);
-    });
-  }
-</script>
 
         </div>
+        <div id="sidebar">
           
+
+<div class="inner">
+
+  <div class="panels">
+    <div class="inner">
+      <div class="contents panel pjax" data-title="Contents">
+          <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#display%E5%B1%9E%E6%80%A7"><span class="toc-number">1.</span> <span class="toc-text"> Display 属性</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#display%E6%89%80%E6%9C%89%E5%B1%9E%E6%80%A7"><span class="toc-number">1.1.</span> <span class="toc-text"> display 所有属性</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%9F%BA%E6%9C%AC%E5%B1%9E%E6%80%A7"><span class="toc-number">1.2.</span> <span class="toc-text"> 基本属性</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#display-none"><span class="toc-number">1.2.1.</span> <span class="toc-text"> display: none</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#display-inline"><span class="toc-number">1.2.2.</span> <span class="toc-text"> display: inline</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#display-block"><span class="toc-number">1.2.3.</span> <span class="toc-text"> display: block</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#display-list-item"><span class="toc-number">1.2.4.</span> <span class="toc-text"> display: list-item</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#display-inline-block"><span class="toc-number">1.2.5.</span> <span class="toc-text"> display: inline-block</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#display-table"><span class="toc-number">1.2.6.</span> <span class="toc-text"> display: table</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#display-inline-list-item"><span class="toc-number">1.2.7.</span> <span class="toc-text"> display: inline-list-item</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#display-flex%E9%87%8D%E8%A6%81"><span class="toc-number">1.2.8.</span> <span class="toc-text"> display: flex (重要)</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%AE%B9%E5%99%A8%E5%B1%9E%E6%80%A7"><span class="toc-number">1.2.8.1.</span> <span class="toc-text"> 容器属性</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E9%A1%B9%E7%9B%AE%E5%B1%9E%E6%80%A7"><span class="toc-number">1.2.8.2.</span> <span class="toc-text"> 项目属性</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%AE%9E%E4%BE%8B%E5%AE%9E%E7%8E%B0%E4%B8%80%E4%B8%AA%E5%9B%BA%E5%AE%9A%E5%AE%BD%E5%BA%A6%E4%BD%86%E5%86%85%E5%AE%B9%E5%8F%AF%E5%8F%98%E7%9A%84%E5%88%97%E8%A1%A8"><span class="toc-number">1.2.8.3.</span> <span class="toc-text"> 实例：实现一个固定宽度但内容可变的列表</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#display-webkit-box"><span class="toc-number">1.2.9.</span> <span class="toc-text"> display: -webkit-box</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%AE%B9%E5%99%A8%E5%B1%9E%E6%80%A7-2"><span class="toc-number">1.2.9.1.</span> <span class="toc-text"> 容器属性</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E9%A1%B9%E7%9B%AE%E5%B1%9E%E6%80%A7-2"><span class="toc-number">1.2.9.2.</span> <span class="toc-text"> 项目属性</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#display-inline-flex"><span class="toc-number">1.2.10.</span> <span class="toc-text"> display: inline-flex</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%85%B6%E4%BB%96"><span class="toc-number">1.2.11.</span> <span class="toc-text"> 其他</span></a></li></ol></li></ol></li></ol>
+      </div>
+      <div class="related panel pjax" data-title="Related">
+        <ul>
+          <li><a href="/posts/7f59931c/" rel="bookmark" title="Css选择器">Css选择器</a></li><li><a href="/posts/54880bcd/" rel="bookmark" title="Css样式">Css样式</a></li><li class="active"><a href="/posts/2e6621e1/" rel="bookmark" title="DisPlay属性">DisPlay属性</a></li>
+        </ul>
+      </div>
+      <div class="overview panel" data-title="Overview">
+        <div class="author" itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <img class="image" itemprop="image" alt="JIN Mao"
+      data-src="/images/avatar.png">
+  <p class="name" itemprop="name">JIN Mao</p>
+  <div class="description" itemprop="description"></div>
+</div>
+
+<nav class="state">
+    <div class="item posts">
+      <a href="/archives/">
+        <span class="count">134</span>
+        <span class="name">posts</span>
+      </a>
+    </div>
+    <div class="item categories">
+      <a href="/categories/">
+        <span class="count">70</span>
+        <span class="name">categories</span>
+      </a>
+    </div>
+    <div class="item tags">
+      <a href="/tags/">
+        <span class="count">98</span>
+        <span class="name">tags</span>
+      </a>
+    </div>
+</nav>
+
+<div class="social">
+      <span class="exturl item github" data-url="aHR0cHM6Ly9naXRodWIuY29tL3NtaWxlMTIzMQ==" title="https:&#x2F;&#x2F;github.com&#x2F;smile1231"><i class="ic i-github"></i></span>
+</div>
+
+<ul class="menu">
   
-  <div class="toggle sidebar-toggle">
-    <span class="toggle-line toggle-line-first"></span>
-    <span class="toggle-line toggle-line-middle"></span>
-    <span class="toggle-line toggle-line-last"></span>
+    
+  <li class="item">
+    <a href="/" rel="section"><i class="ic i-home"></i>Home</a>
+  </li>
+
+    
+  <li class="item">
+    <a href="/about/" rel="section"><i class="ic i-user"></i>About</a>
+  </li>
+
+        
+  <li class="item dropdown">
+      <a href="javascript:void(0);"><i class="ic i-feather"></i>Posts</a>
+    <ul class="submenu">
+
+        
+  <li class="item">
+    <a href="/archives/" rel="section"><i class="ic i-list-alt"></i>Archives</a>
+  </li>
+
+        
+  <li class="item">
+    <a href="/categories/" rel="section"><i class="ic i-th"></i>Categories</a>
+  </li>
+
+        
+  <li class="item">
+    <a href="/tags/" rel="section"><i class="ic i-tags"></i>Tags</a>
+  </li>
+
+  </ul>
+
+</ul>
+
+      </div>
+    </div>
   </div>
 
-  <aside class="sidebar">
-    <div class="sidebar-inner">
-    
-    
-    <!-- 霓虹灯时钟 -->
-    <div>
-    <svg style="height: 60px;">
-        <text id="time" text-anchor="middle" x="36%" y="80%" class="words words-1"></text>
-        <text id="time" text-anchor="middle" x="36%" y="80%" class="words words-2"></text>
-        <text id="time" text-anchor="middle" x="36%" y="80%" class="words words-3"></text>
-        <text id="time" text-anchor="middle" x="36%" y="80%" class="words words-4"></text>
-    </svg>
-</div>
-
-<script>
-function showtime(){
-    var noatime = new Date();
-    var h = noatime.getHours(),
-        m = noatime.getMinutes(),
-        s = noatime.getSeconds();
-    h=checktime(h);
-    m=checktime(m);
-    s=checktime(s);
-  return h+":"+m+":"+s;
-}
-
-function checktime(x){
-  if(x<10){
-    x="0"+x;
-  }
-  return x;
-}
-
-var div1=document.getElementsByTagName("text");
-setInterval(function(){
-  for (var i in div1){
-      div1[i].innerHTML=showtime();
-  }
-},1000);
-</script>
-
-<style>
-.words{
-    font-size: 50px;
-    font-weight: bold;
-    text-transform: uppercase;
-    fill: none;
-    stroke-width: 3px;
-    stroke-dasharray: 35,125;
-    animation-name: drawing;
-    animation-duration: 6s;
-    animation-iteration-count: infinite;
-    animation-timing-function: linear;
-}
-.words-1{
-    stroke: deepskyblue;
-    text-shadow: 0 0 15px deepskyblue;
-    animation-delay: -1.5s;
-}
-.words-2{
-    stroke: lightseagreen;
-    text-shadow: 0 0 15px lightseagreen;
-    animation-delay: -3s;
-}
-.words-3{
-    stroke: orange;
-    text-shadow: 0 0 15px orange;
-    animation-delay: -4.5s;
-}
-.words-4{
-    stroke: purple;
-    text-shadow: 0 0 15px purple;
-    animation-delay: -6s;
-}
-@keyframes drawing {
-    100%{
-        stroke-dashoffset: -160
-    }
-}
-</style>
-
-    
-      <!-- 起风了 -->
-      <!-- <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=86 src="//music.163.com/outchain/player?type=2&id=1901069794&auto=1&height=66"></iframe> -->
-      <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=86 src="//music.163.com/outchain/player?type=2&id=1927119724&auto=1&height=66"></iframe>
-
-      <ul class="sidebar-nav motion-element">
-        <li class="sidebar-nav-toc">
-          Table of Contents
-        </li>
-        <li class="sidebar-nav-overview">
-          Overview
-        </li>
-      </ul>
-
-      <!--noindex-->
-      <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Display%E5%B1%9E%E6%80%A7"><span class="nav-number">1.</span> <span class="nav-text">Display属性</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#display%E6%89%80%E6%9C%89%E5%B1%9E%E6%80%A7"><span class="nav-number">1.1.</span> <span class="nav-text">display所有属性</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%9F%BA%E6%9C%AC%E5%B1%9E%E6%80%A7"><span class="nav-number">1.2.</span> <span class="nav-text">基本属性</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#display-none"><span class="nav-number">1.2.1.</span> <span class="nav-text">display: none</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#display-inline"><span class="nav-number">1.2.2.</span> <span class="nav-text">display: inline</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#display-block"><span class="nav-number">1.2.3.</span> <span class="nav-text">display: block</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#display-list-item"><span class="nav-number">1.2.4.</span> <span class="nav-text">display: list-item</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#display-inline-block"><span class="nav-number">1.2.5.</span> <span class="nav-text">display: inline-block</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#display-table"><span class="nav-number">1.2.6.</span> <span class="nav-text">display: table</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#display-inline-list-item"><span class="nav-number">1.2.7.</span> <span class="nav-text">display: inline-list-item</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#display-flex-%E9%87%8D%E8%A6%81"><span class="nav-number">1.2.8.</span> <span class="nav-text">display: flex(重要)</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%AE%B9%E5%99%A8%E5%B1%9E%E6%80%A7"><span class="nav-number">1.2.8.1.</span> <span class="nav-text">容器属性</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E9%A1%B9%E7%9B%AE%E5%B1%9E%E6%80%A7"><span class="nav-number">1.2.8.2.</span> <span class="nav-text">项目属性</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%AE%9E%E4%BE%8B%EF%BC%9A%E5%AE%9E%E7%8E%B0%E4%B8%80%E4%B8%AA%E5%9B%BA%E5%AE%9A%E5%AE%BD%E5%BA%A6%E4%BD%86%E5%86%85%E5%AE%B9%E5%8F%AF%E5%8F%98%E7%9A%84%E5%88%97%E8%A1%A8"><span class="nav-number">1.2.8.3.</span> <span class="nav-text">实例：实现一个固定宽度但内容可变的列表</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#display-webkit-box"><span class="nav-number">1.2.9.</span> <span class="nav-text">display: -webkit-box</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%AE%B9%E5%99%A8%E5%B1%9E%E6%80%A7-1"><span class="nav-number">1.2.9.1.</span> <span class="nav-text">容器属性</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E9%A1%B9%E7%9B%AE%E5%B1%9E%E6%80%A7-1"><span class="nav-number">1.2.9.2.</span> <span class="nav-text">项目属性</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#display-inline-flex"><span class="nav-number">1.2.10.</span> <span class="nav-text">display: inline-flex</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%85%B6%E4%BB%96"><span class="nav-number">1.2.11.</span> <span class="nav-text">其他</span></a></li></ol></li></ol></li></ol></div>
-      </div>
-      <!--/noindex-->
-
-      <div class="site-overview-wrap sidebar-panel">
-        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
-    <img class="site-author-image" itemprop="image" alt="JIN Mao"
-      src="/images/avatar.png">
-  <p class="site-author-name" itemprop="name">JIN Mao</p>
-  <div class="site-description" itemprop="description"></div>
-</div>
-<div class="site-state-wrap motion-element">
-  <nav class="site-state">
-      <div class="site-state-item site-state-posts">
-          <a href="/archives/">
-        
-          <span class="site-state-item-count">133</span>
-          <span class="site-state-item-name">posts</span>
-        </a>
-      </div>
-      <div class="site-state-item site-state-categories">
-            <a href="/categories/">
-          
-        <span class="site-state-item-count">70</span>
-        <span class="site-state-item-name">categories</span></a>
-      </div>
-      <div class="site-state-item site-state-tags">
-            <a href="/tags/">
-          
-        <span class="site-state-item-count">97</span>
-        <span class="site-state-item-name">tags</span></a>
-      </div>
-  </nav>
+  <ul id="quick">
+    <li class="prev pjax">
+        <a href="/posts/54880bcd/" rel="prev" title="Previous Post"><i class="ic i-chevron-left"></i></a>
+    </li>
+    <li class="up"><i class="ic i-arrow-up"></i></li>
+    <li class="down"><i class="ic i-arrow-down"></i></li>
+    <li class="next pjax">
+        <a href="/posts/4aa00b9a/" rel="next" title="Next Post"><i class="ic i-chevron-right"></i></a>
+    </li>
+    <li class="percent"></li>
+  </ul>
 </div>
 
 
-
-      </div>
-
-  
-
-    </div>
-
-
-  </aside>
-  <div id="sidebar-dimmer"></div>
-
-
+        </div>
+        <div class="dimmer"></div>
       </div>
     </main>
-
-    <footer class="footer">
-      <div class="footer-inner">
-        
-
-        
-
-<div class="copyright">
-  
-  &copy; 
-  <span itemprop="copyrightYear">2022</span>
-  <span class="with-love">
-    <i class="fa fa-heart"></i>
-  </span>
-  <span class="author" itemprop="copyrightHolder">JIN Mao</span>
+    <footer id="footer">
+      <div class="inner">
+        <div class="widgets">
+          
+<div class="rpost pjax">
+  <h2>Random Posts</h2>
+  <ul>
+      
+  <li class="item">
+    
+<div class="breadcrumb">
 </div>
-  <!--添加运行时间-->
-  <span id="sitetime"></span>
-  <script language=javascript>
-    function siteTime(){
-      window.setTimeout("siteTime()", 1000);
-      var seconds = 1000;
-      var minutes = seconds * 60;
-      var hours = minutes * 60;
-      var days = hours * 24;
-      var years = days * 365;
-      var today = new Date();
-      var todayYear = today.getFullYear();
-      var todayMonth = today.getMonth()+1;
-      var todayDate = today.getDate();
-      var todayHour = today.getHours();
-      var todayMinute = today.getMinutes();
-      var todaySecond = today.getSeconds();
-      /* 
-        Date.UTC() -- 返回date对象距世界标准时间(UTC)1970年1月1日午夜之间的毫秒数(时间戳)
-        year - 作为date对象的年份，为4位年份值
-        month - 0-11之间的整数，做为date对象的月份
-        day - 1-31之间的整数，做为date对象的天数
-        hours - 0(午夜24点)-23之间的整数，做为date对象的小时数
-        minutes - 0-59之间的整数，做为date对象的分钟数
-        seconds - 0-59之间的整数，做为date对象的秒数
-        microseconds - 0-999之间的整数，做为date对象的毫秒数
-      */
-      var t1 = Date.UTC(2021,11,11,00,00,00); //北京时间2018-2-13 00:00:00
-      var t2 = Date.UTC(todayYear,todayMonth,todayDate,todayHour,todayMinute,todaySecond);
-      var diff = t2-t1;
-      var diffYears = Math.floor(diff/years);
-      var diffDays = Math.floor((diff/days)-diffYears*365);
-      var diffHours = Math.floor((diff-(diffYears*365+diffDays)*days)/hours);
-      var diffMinutes = Math.floor((diff-(diffYears*365+diffDays)*days-diffHours*hours)/minutes);
-      var diffSeconds = Math.floor((diff-(diffYears*365+diffDays)*days-diffHours*hours-diffMinutes*minutes)/seconds);
-      document.getElementById("sitetime").innerHTML=" This blog is up and running "+/*diffYears+" Year "+*/diffDays+" Days "+diffHours+" Hours "+diffMinutes+" Minutes "+diffSeconds+" Seconds";
-    }
-    siteTime();
-  </script>
-  <!--// 添加运行时间-->
 
+    <span><a href="/posts/7874a051/" title="Nginx踩坑之解决前后端跨域">Nginx踩坑之解决前后端跨域</a></span>
+  </li>
 
-<!--
-  <div class="powered-by">Powered by <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> & <a href="https://pisces.theme-next.org/" class="theme-link" rel="noopener" target="_blank">NexT.Pisces</a>
-  </div>
--->
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F/" title="In 正则表达式">正则表达式</a>
+</div>
 
+    <span><a href="/posts/2f57a694/" title="正则表达式">正则表达式</a></span>
+  </li>
 
-        
-<div class="busuanzi-count">
-  <script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/Java%E9%9D%A2%E8%AF%95/" title="In Java面试">Java面试</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/Java%E9%9D%A2%E8%AF%95/Tools/" title="In Tools">Tools</a>
+</div>
 
+    <span><a href="/posts/6714b4a9/" title="FastJson序列化使用">FastJson序列化使用</a></span>
+  </li>
 
-  <span class="site-uv" title="Total Visitors">
-    My <span id="busuanzi_value_site_uv"></span>th Friend, 
-  </span>
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+</div>
 
-  <span class="site-pv" title="Total Views">
-    After  <span id="busuanzi_value_site_pv"></span> times of looking back, I met you 。
-  </span>
-  <!--
-    <span class="post-meta-item" id="busuanzi_container_site_uv" >
-      <span class="post-meta-item-icon">
-        <i class="fa fa-user"></i>
-      </span>
-      <span class="site-uv" title="Total Visitors">
-        <span id="busuanzi_value_site_uv"></span>
-      </span>
+    <span><a href="/posts/66edb7d2/" title="关于hexo使用shoka主题注意点">关于hexo使用shoka主题注意点</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/%E5%89%8D%E7%AB%AF/" title="In 前端">前端</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/%E5%89%8D%E7%AB%AF/Css/" title="In Css">Css</a>
+</div>
+
+    <span><a href="/posts/2e6621e1/" title="DisPlay属性">DisPlay属性</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/Java/" title="In Java">Java</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/Java/Mybatis/" title="In Mybatis">Mybatis</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/Java/Mybatis/SpringBoot/" title="In SpringBoot">SpringBoot</a>
+</div>
+
+    <span><a href="/posts/105c245f/" title="Mybatis使用Sql进行模糊查询">Mybatis使用Sql进行模糊查询</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/Java/" title="In Java">Java</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/Java/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/" title="In 操作系统">操作系统</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/Java/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/Java%E9%9D%A2%E8%AF%95/" title="In Java面试">Java面试</a>
+</div>
+
+    <span><a href="/posts/166a1445/" title="位，字节， 字符">位，字节， 字符</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+</div>
+
+    <span><a href="/posts/307637a3/" title="扫尾">扫尾</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+</div>
+
+    <span><a href="/posts/d0966c4d/" title="工作难点">工作难点</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/Hexo/" title="In Hexo">Hexo</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/Hexo/Tools/" title="In Tools">Tools</a>
+</div>
+
+    <span><a href="/posts/45934af9/" title="使用vscode书写hexo博客粘贴图片解决方案">使用vscode书写hexo博客粘贴图片解决方案</a></span>
+  </li>
+
+  </ul>
+</div>
+<div>
+  <h2>Recent Comments</h2>
+  <ul class="leancloud-recent-comment"></ul>
+</div>
+
+        </div>
+        <div class="status">
+  <div class="copyright">
+    
+    &copy; 2021 – 
+    <span itemprop="copyrightYear">2022</span>
+    <span class="with-love">
+      <i class="ic i-sakura rotate"></i>
     </span>
+    <span class="author" itemprop="copyrightHolder">JIN Mao @ Jin Mao when to get rich ?</span>
+  </div>
+  <div class="count">
+    <span class="post-meta-item-icon">
+      <i class="ic i-chart-area"></i>
+    </span>
+    <span title="Symbols count total">557k words</span>
+
     <span class="post-meta-divider">|</span>
-    <span class="post-meta-item" id="busuanzi_container_site_pv">
-      <span class="post-meta-item-icon">
-        <i class="fa fa-eye"></i>
-      </span>
-      <span class="site-pv" title="Total Views">
-        <span id="busuanzi_value_site_pv"></span>
-      </span>
-    </span>-->
+    <span class="post-meta-item-icon">
+      <i class="ic i-coffee"></i>
+    </span>
+    <span title="Reading time total">8:26</span>
+  </div>
 </div>
-
-
-
-
-
-
-
 
       </div>
     </footer>
   </div>
-
-  
-  <script src="/lib/anime.min.js"></script>
-  <script src="//cdn.jsdelivr.net/npm/medium-zoom@1/dist/medium-zoom.min.js"></script>
-  <script src="//cdn.jsdelivr.net/npm/lozad@1/dist/lozad.min.js"></script>
-  <script src="/lib/velocity/velocity.min.js"></script>
-  <script src="/lib/velocity/velocity.ui.min.js"></script>
-
-<script src="/js/utils.js"></script>
-
-<script src="/js/motion.js"></script>
-
-
-<script src="/js/schemes/pisces.js"></script>
-
-
-<script src="/js/next-boot.js"></script>
-
-<script src="/js/bookmark.js"></script>
-
-
-  <script defer src="/lib/three/three.min.js"></script>
-    <script defer src="/lib/three/canvas_lines.min.js"></script>
-
-
-  
-
-
-
-  <script>
-  if (CONFIG.page.isPost) {
-    wpac_init = window.wpac_init || [];
-    wpac_init.push({
-      widget: 'Rating',
-      id    : ,
-      el    : 'wpac-rating',
-      color : 'fc6423'
-    });
-    (function() {
-      if ('WIDGETPACK_LOADED' in window) return;
-      WIDGETPACK_LOADED = true;
-      var mc = document.createElement('script');
-      mc.type = 'text/javascript';
-      mc.async = true;
-      mc.src = '//embed.widgetpack.com/widget.js';
-      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(mc, s.nextSibling);
-    })();
-  }
-  </script>
-
-  
-<script src="/js/local-search.js"></script>
-
-
-
-
-
-
-
-
-
-
-
-
-
-  
-
-  
-
-
-<script>
-NexT.utils.loadComments(document.querySelector('#valine-comments'), () => {
-  NexT.utils.getScript('//unpkg.com/valine/dist/Valine.min.js', () => {
-    var GUEST = ['nick', 'mail', 'link'];
-    var guest = 'nick,mail,link';
-    guest = guest.split(',').filter(item => {
-      return GUEST.includes(item);
-    });
-    new Valine({
-      el         : '#valine-comments',
-      verify     : true,
-      notify     : true,
-      appId      : 'J2bQH6GquIhMurLQc9NYgXWJ-gzGzoHsz',
-      appKey     : 'mbmntmQLrVScI2O7gV6zBej5',
-      placeholder: "Just go go",
-      avatar     : 'mm',
-      meta       : guest,
-      pageSize   : '10' || 10,
-      visitor    : false,
-      lang       : 'en' || 'zh-cn',
-      path       : location.pathname,
-      recordIP   : true,
-      serverURLs : ''
-    });
-  }, window.Valine);
-});
+<script data-config type="text/javascript">
+  var LOCAL = {
+    path: 'posts/2e6621e1/',
+    favicon: {
+      show: "You're welcome",
+      hide: "Wait for you"
+    },
+    search : {
+      placeholder: "Search for Posts",
+      empty: "We didn't find any results for the search: ${query}",
+      stats: "${hits} results found in ${time} ms"
+    },
+    valine: true,fancybox: true,
+    copyright: 'Copied to clipboard successfully! <br> All articles in this blog are licensed under <i class="ic i-creative-commons"></i>BY-NC-SA.',
+    ignores : [
+      function(uri) {
+        return uri.includes('#');
+      },
+      function(uri) {
+        return new RegExp(LOCAL.path+"$").test(uri);
+      }
+    ]
+  };
 </script>
 
+<script src="https://cdn.polyfill.io/v2/polyfill.js"></script>
 
-  
-  <script type="text/javascript" src="/js/cursor/love.js"></script>
+<script src="//cdn.jsdelivr.net/combine/npm/pace-js@1.0.2/pace.min.js,npm/pjax@0.2.8/pjax.min.js,npm/whatwg-fetch@3.4.0/dist/fetch.umd.min.js,npm/animejs@3.2.0/lib/anime.min.js,npm/algoliasearch@4/dist/algoliasearch-lite.umd.js,npm/instantsearch.js@4/dist/instantsearch.production.min.js,npm/lozad@1/dist/lozad.min.js,npm/quicklink@2/dist/quicklink.umd.js"></script>
+
+<script src="/js/app.js?v=0.2.5"></script>
 
 
 
-  
-<script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"model":{"jsonPath":"/live2dw/assets/shizuku.model.json"},"display":{"position":"left","width":200,"height":400},"mobile":{"show":false},"log":false,"pluginJsPath":"lib/","pluginModelPath":"assets/","pluginRootPath":"live2dw/","tagMode":false});</script></body>
+
+</body>
 </html>

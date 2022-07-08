@@ -1,868 +1,632 @@
+
+
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
-<meta name="theme-color" content="#222">
-<meta name="generator" content="Hexo 5.4.0">
-  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="/images/avatar.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="/images/avatar.png">
-  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+<meta name="theme-color" content="#FFF">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
 
-<link rel="stylesheet" href="/css/main.css">
+<link rel="icon" type="image/ico" sizes="32x32" href="/images/favicon.ico">
+  <meta http-equiv="Cache-Control" content="no-transform">
+  <meta http-equiv="Cache-Control" content="no-siteapp">
 
 
-<link rel="stylesheet" href="/lib/font-awesome/css/all.min.css">
-  <link rel="stylesheet" href="/lib/pace/pace-theme-mac-osx.min.css">
-  <script src="/lib/pace/pace.min.js"></script>
+<link rel="alternate" type="application/rss+xml" title="JIN MAO 's Blog" href="https://smile1231.github.io/rss.xml" />
+<link rel="alternate" type="application/atom+xml" title="JIN MAO 's Blog" href="https://smile1231.github.io/atom.xml" />
+<link rel="alternate" type="application/json" title="JIN MAO 's Blog" href="https://smile1231.github.io/feed.json" />
 
-<script id="hexo-configurations">
-    var NexT = window.NexT || {};
-    var CONFIG = {"hostname":"smile1231.github.io","root":"/","scheme":"Pisces","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":true,"show_result":true,"style":"mac"},"back2top":{"enable":true,"sidebar":false,"scrollpercent":true},"bookmark":{"enable":true,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":true,"lazyload":true,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
-  </script>
+<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Mulish:300,300italic,400,400italic,700,700italic%7CFredericka%20the%20Great:300,300italic,400,400italic,700,700italic%7CNoto%20Serif%20JP:300,300italic,400,400italic,700,700italic%7CNoto%20Serif%20SC:300,300italic,400,400italic,700,700italic%7CInconsolata:300,300italic,400,400italic,700,700italic&display=swap&subset=latin,latin-ext">
 
-  <meta name="description" content="分治算法定义将原问题划分成n个规模较小，并且结构与原问题相似的子问题，递归地解决这些子问题，然后再合并其结果，就得到原问题的解 分治策略“分而治之”，大问题能够拆成相似的小问题，记住这些小问题需要具有相似性。而后将小问题的每个解合成为大问题的解。所以说大问题如何拆，小问题如何合并才是这个算法最主要的一个思想。实际上很多算法如贪心算法，动态规划等等都是要求把大问题拆成小问题。而分治算法的重要一点就是">
-<meta property="og:type" content="article">
-<meta property="og:title" content="分治算法">
-<meta property="og:url" content="https://smile1231.github.io/posts/7474c898/index.html">
-<meta property="og:site_name" content="JIN MAO &#39;s Blog">
-<meta property="og:description" content="分治算法定义将原问题划分成n个规模较小，并且结构与原问题相似的子问题，递归地解决这些子问题，然后再合并其结果，就得到原问题的解 分治策略“分而治之”，大问题能够拆成相似的小问题，记住这些小问题需要具有相似性。而后将小问题的每个解合成为大问题的解。所以说大问题如何拆，小问题如何合并才是这个算法最主要的一个思想。实际上很多算法如贪心算法，动态规划等等都是要求把大问题拆成小问题。而分治算法的重要一点就是">
-<meta property="og:locale" content="en_US">
-<meta property="og:image" content="https://smile1231.github.io/posts/7474c898/2022-02-17-23-08-53.png">
-<meta property="og:image" content="https://smile1231.github.io/posts/7474c898/2022-02-17-23-09-01.png">
-<meta property="og:image" content="https://smile1231.github.io/posts/7474c898/2022-02-17-23-09-17.png">
-<meta property="og:image" content="https://smile1231.github.io/posts/7474c898/2022-02-17-23-09-30.png">
-<meta property="og:image" content="https://smile1231.github.io/posts/7474c898/2022-02-17-23-09-51.png">
-<meta property="article:published_time" content="2022-02-17T14:57:48.000Z">
-<meta property="article:modified_time" content="2022-02-17T15:09:54.889Z">
-<meta property="article:author" content="JIN Mao">
-<meta property="article:tag" content="Java面试">
-<meta property="article:tag" content="算法">
-<meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="https://smile1231.github.io/posts/7474c898/2022-02-17-23-08-53.png">
+<link rel="stylesheet" href="/css/app.css?v=0.2.5">
+
+  
+  <meta name="keywords" content="Java面试,算法" />
+
 
 <link rel="canonical" href="https://smile1231.github.io/posts/7474c898/">
 
 
-<script id="page-configurations">
-  // https://hexo.io/docs/variables.html
-  CONFIG.page = {
-    sidebar: "",
-    isHome : false,
-    isPost : true,
-    lang   : 'en'
-  };
-</script>
 
-  <title>分治算法 | JIN MAO 's Blog</title>
-  
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-FWV5496QFL"></script>
-    <script>
-      if (CONFIG.hostname === location.hostname) {
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-        gtag('config', 'G-FWV5496QFL');
-      }
-    </script>
-
-
-
-
-
-
-  <noscript>
-  <style>
-  .use-motion .brand,
-  .use-motion .menu-item,
-  .sidebar-inner,
-  .use-motion .post-block,
-  .use-motion .pagination,
-  .use-motion .comments,
-  .use-motion .post-header,
-  .use-motion .post-body,
-  .use-motion .collection-header { opacity: initial; }
-
-  .use-motion .site-title,
-  .use-motion .site-subtitle {
-    opacity: initial;
-    top: initial;
-  }
-
-  .use-motion .logo-line-before i { left: initial; }
-  .use-motion .logo-line-after i { right: initial; }
-  </style>
-</noscript>
-
-<link rel="alternate" href="/atom.xml" title="JIN MAO 's Blog" type="application/atom+xml">
-</head>
-
+  <title>
+分治算法 - 算法 - Java面试 |
+Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
+<meta name="generator" content="Hexo 5.4.0"></head>
 <body itemscope itemtype="http://schema.org/WebPage">
-  <div class="container use-motion">
-    <div class="headband"></div>
-      <!-- <a target="_blank" rel="noopener" href="https://github.com/Smile1231/StudyRepository"><img loading="lazy" width="149" height="149" src="https://github.blog/wp-content/uploads/2008/12/forkme_right_gray_6d6d6d.png?resize=149%2C149" class="attachment-full size-full" alt="Fork me on GitHub" data-recalc-dims="1"></a> -->
-    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
-      <div class="header-inner"><div class="site-brand-container">
-  <div class="site-nav-toggle">
-    <div class="toggle" aria-label="Toggle navigation bar">
-      <span class="toggle-line toggle-line-first"></span>
-      <span class="toggle-line toggle-line-middle"></span>
-      <span class="toggle-line toggle-line-last"></span>
+  <div id="loading">
+    <div class="cat">
+      <div class="body"></div>
+      <div class="head">
+        <div class="face"></div>
+      </div>
+      <div class="foot">
+        <div class="tummy-end"></div>
+        <div class="bottom"></div>
+        <div class="legs left"></div>
+        <div class="legs right"></div>
+      </div>
+      <div class="paw">
+        <div class="hands left"></div>
+        <div class="hands right"></div>
+      </div>
     </div>
   </div>
-
-  <div class="site-meta">
-
-    <a href="/" class="brand" rel="start">
-      <span class="logo-line-before"><i></i></span>
-      <h1 class="site-title">JIN MAO 's Blog</h1>
-      <span class="logo-line-after"><i></i></span>
-    </a>
-      <p class="site-subtitle" itemprop="description">got windy(起风了)</p>
-  </div>
-
-  <div class="site-nav-right">
-    <div class="toggle popup-trigger">
-        <i class="fa fa-search fa-fw fa-lg"></i>
-    </div>
-  </div>
+  <div id="container">
+    <header id="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="inner">
+        <div id="brand">
+          <div class="pjax">
+          
+  <h1 itemprop="name headline">分治算法
+  </h1>
+  
+<div class="meta">
+  <span class="item" title="Created: 2022-02-17 22:57:48">
+    <span class="icon">
+      <i class="ic i-calendar"></i>
+    </span>
+    <span class="text">Posted on</span>
+    <time itemprop="dateCreated datePublished" datetime="2022-02-17T22:57:48+08:00">2022-02-17</time>
+  </span>
+  <span class="item" title="Symbols count in article">
+    <span class="icon">
+      <i class="ic i-pen"></i>
+    </span>
+    <span class="text">Symbols count in article</span>
+    <span>6k</span>
+    <span class="text">words</span>
+  </span>
+  <span class="item" title="Reading time">
+    <span class="icon">
+      <i class="ic i-clock"></i>
+    </span>
+    <span class="text">Reading time</span>
+    <span>5 mins.</span>
+  </span>
 </div>
 
 
-
-
-<nav class="site-nav">
-  <ul id="menu" class="main-menu menu">
-        <li class="menu-item menu-item-home">
-
-    <a href="/" rel="section"><i class="fa fa-home fa-fw"></i>Home</a>
-
-  </li>
-        <li class="menu-item menu-item-about">
-
-    <a href="/about/" rel="section"><i class="fa fa-user fa-fw"></i>About</a>
-
-  </li>
-        <li class="menu-item menu-item-tags">
-
-    <a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>Tags<span class="badge">97</span></a>
-
-  </li>
-        <li class="menu-item menu-item-categories">
-
-    <a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>Categories<span class="badge">70</span></a>
-
-  </li>
-        <li class="menu-item menu-item-archives">
-
-    <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>Archives<span class="badge">133</span></a>
-
-  </li>
-      <li class="menu-item menu-item-search">
-        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>Search
-        </a>
+          </div>
+        </div>
+        <nav id="nav">
+  <div class="inner">
+    <div class="toggle">
+      <div class="lines" aria-label="Toggle navigation bar">
+        <span class="line"></span>
+        <span class="line"></span>
+        <span class="line"></span>
+      </div>
+    </div>
+    <ul class="menu">
+      <li class="item title"><a href="/" rel="start">Jin Mao when to get rich ?</a></li>
+    </ul>
+    <ul class="right">
+      <li class="item theme">
+        <i class="ic i-sun"></i>
       </li>
-  </ul>
+      <li class="item search">
+        <i class="ic i-search"></i>
+      </li>
+    </ul>
+  </div>
 </nav>
 
-
-
-  <div class="search-pop-overlay">
-    <div class="popup search-popup">
-        <div class="search-header">
-  <span class="search-icon">
-    <i class="fa fa-search"></i>
-  </span>
-  <div class="search-input-container">
-    <input autocomplete="off" autocapitalize="off"
-           placeholder="Searching..." spellcheck="false"
-           type="search" class="search-input">
-  </div>
-  <span class="popup-btn-close">
-    <i class="fa fa-times-circle"></i>
-  </span>
-</div>
-<div id="search-result">
-  <div id="no-result">
-    <i class="fa fa-spinner fa-pulse fa-5x fa-fw"></i>
-  </div>
-</div>
-
-    </div>
-  </div>
-
-</div>
+      </div>
+      <div id="imgs" class="pjax">
+        <ul>
+          <li class="item" data-background-image="https://tva1.sinaimg.cn/large/6833939bly1gipew28b65j20zk0m8hdt.jpg"></li>
+          <li class="item" data-background-image="https://tva1.sinaimg.cn/large/6833939bly1gicliwyw55j20zk0m8hdt.jpg"></li>
+          <li class="item" data-background-image="https://tva1.sinaimg.cn/large/6833939bly1gipeuv80yoj20zk0m8kjl.jpg"></li>
+          <li class="item" data-background-image="https://tva1.sinaimg.cn/large/6833939bly1giclx6phq6j20zk0m8e36.jpg"></li>
+          <li class="item" data-background-image="https://tva1.sinaimg.cn/large/6833939bly1gicljitigmj20zk0m87fp.jpg"></li>
+          <li class="item" data-background-image="https://tva1.sinaimg.cn/large/6833939bly1giph4wqtg4j20zk0m8x6p.jpg"></li>
+        </ul>
+      </div>
     </header>
-
-    
-  <div class="back-to-top">
-    <i class="fa fa-arrow-up"></i>
-    <span>0%</span>
-  </div>
-  <div class="reading-progress-bar"></div>
-  <a role="button" class="book-mark-link book-mark-link-fixed"></a>
-
-
-    <main class="main">
-      <div class="main-inner">
-        <div class="content-wrap">
+    <div id="waves">
+      <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+        <defs>
+          <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+        </defs>
+        <g class="parallax">
+          <use xlink:href="#gentle-wave" x="48" y="0" />
+          <use xlink:href="#gentle-wave" x="48" y="3" />
+          <use xlink:href="#gentle-wave" x="48" y="5" />
+          <use xlink:href="#gentle-wave" x="48" y="7" />
+        </g>
+      </svg>
+    </div>
+    <main>
+      <div class="inner">
+        <div id="main" class="pjax">
           
-
-            <div class="post-block animated fadeIn">
-              <h5 class="post-title" itemprop="name headline">
-                <a target="_blank" rel="noopener" href="https://github.com/smile1231" class="post-title-link" itemprop="url">Github Contribution Calendar</a>
-              </h5>
-              <div class="post-body animated fadeInDown" itemprop="articleBody">
-                <img style="width: 100%; margin-top: 30px;" src="https://ghchart.rshah.org/e77c8e/smile1231" alt="JinMao's Blue Github Chart" />
-              </div>
-            </div>
-          <div class="content post posts-expand">
-            
-
+  <div class="article wrap">
     
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
-    <link itemprop="mainEntityOfPage" href="https://smile1231.github.io/posts/7474c898/">
+<div class="breadcrumb" itemscope itemtype="https://schema.org/BreadcrumbList">
+<i class="ic i-home"></i>
+<span><a href="/">Home</a></span><i class="ic i-angle-right"></i>
+<span  itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem"><a href="/categories/Java%E9%9D%A2%E8%AF%95/" itemprop="item" rel="index" title="In Java面试"><span itemprop="name">Java面试</span></a>
+<meta itemprop="position" content="1" /></span>
+<i class="ic i-angle-right"></i>
+<span  class="current" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem"><a href="/categories/Java%E9%9D%A2%E8%AF%95/%E7%AE%97%E6%B3%95/" itemprop="item" rel="index" title="In 算法"><span itemprop="name">算法</span></a>
+<meta itemprop="position" content="2" /></span>
+</div>
 
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.png">
-      <meta itemprop="name" content="JIN Mao">
-      <meta itemprop="description" content="">
-    </span>
+    <article itemscope itemtype="http://schema.org/Article" class="post block" lang="en">
+  <link itemprop="mainEntityOfPage" href="https://smile1231.github.io/posts/7474c898/">
 
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="JIN MAO 's Blog">
-    </span>
-      <header class="post-header">
-        <h1 class="post-title" itemprop="name headline">
-          分治算法
-        </h1>
-
-        <div class="post-meta">
-          
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">Posted on</span>
-              
-
-              <time title="Created: 2022-02-17 22:57:48 / Modified: 23:09:54" itemprop="dateCreated datePublished" datetime="2022-02-17T22:57:48+08:00">2022-02-17</time>
-            </span>
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-folder"></i>
-              </span>
-              <span class="post-meta-item-text">In</span>
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/Java%E9%9D%A2%E8%AF%95/" itemprop="url" rel="index"><span itemprop="name">Java面试</span></a>
-                </span>
-                  , 
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/Java%E9%9D%A2%E8%AF%95/%E7%AE%97%E6%B3%95/" itemprop="url" rel="index"><span itemprop="name">算法</span></a>
-                </span>
-            </span>
-
-          
-           <!-- <span class="post-meta-item" title="Views" id="busuanzi_container_page_pv" style="display: none;">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-eye"></i>
-              </span>
-              <span class="post-meta-item-text">Views: </span>
-              <span id="busuanzi_value_page_pv"></span>
-            </span> -->
-            <span>&emsp;</span><span class="post-meta-item-icon"><i class="fa fa-eye"></i></span>
-            <span class="post-meta-item-text">Views: </span>
-            <span id="busuanzi_value_page_pv"></span>
-  
-  <span class="post-meta-item">
-    
-      <span class="post-meta-item-icon">
-        <i class="far fa-comment"></i>
-      </span>
-      <span class="post-meta-item-text">Valine: </span>
-    
-    <a title="valine" href="/posts/7474c898/#valine-comments" itemprop="discussionUrl">
-      <span class="post-comments-count valine-comment-count" data-xid="/posts/7474c898/" itemprop="commentCount"></span>
-    </a>
+  <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <meta itemprop="image" content="/images/avatar.png">
+    <meta itemprop="name" content="JIN Mao">
+    <meta itemprop="description" content="got windy(起风了), ">
   </span>
-  
-  
 
-        </div>
-      </header>
+  <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+    <meta itemprop="name" content="JIN MAO 's Blog">
+  </span>
 
+  <div class="body md" itemprop="articleBody">
     
-    
-    
-    <div class="post-body" itemprop="articleBody">
 
-      
-        <h1 id="分治算法"><a href="#分治算法" class="headerlink" title="分治算法"></a>分治算法</h1><h2 id="定义"><a href="#定义" class="headerlink" title="定义"></a>定义</h2><p>将原问题划分成<code>n</code>个规模较小，并且结构与原问题相似的子问题，递归地解决这些子问题，然后再合并其结果，就得到原问题的解</p>
-<h2 id="分治策略"><a href="#分治策略" class="headerlink" title="分治策略"></a>分治策略</h2><p>“分而治之”，大问题能够拆成相似的小问题，记住这些小问题需要具有相似性。而后将小问题的每个解合成为大问题的解。所以说大问题如何拆，小问题如何合并才是这个算法最主要的一个思想。实际上很多算法如贪心算法，动态规划等等都是要求把大问题拆成小问题。而分治算法的重要一点就是要适用于能够重新把小问题的解合并为大问题的解。</p>
+    <h1 id="分治算法"><a class="markdownIt-Anchor" href="#分治算法">#</a> 分治算法</h1>
+<h2 id="定义"><a class="markdownIt-Anchor" href="#定义">#</a> 定义</h2>
+<p>将原问题划分成 <code>n</code>  个规模较小，并且结构与原问题相似的子问题，递归地解决这些子问题，然后再合并其结果，就得到原问题的解</p>
+<h2 id="分治策略"><a class="markdownIt-Anchor" href="#分治策略">#</a> 分治策略</h2>
+<p>“分而治之”，大问题能够拆成相似的小问题，记住这些小问题需要具有相似性。而后将小问题的每个解合成为大问题的解。所以说大问题如何拆，小问题如何合并才是这个算法最主要的一个思想。实际上很多算法如贪心算法，动态规划等等都是要求把大问题拆成小问题。而分治算法的重要一点就是要适用于能够重新把小问题的解合并为大问题的解。</p>
 <span id="more"></span>
-
-<h2 id="使用分治算法的前提条件"><a href="#使用分治算法的前提条件" class="headerlink" title="使用分治算法的前提条件"></a>使用分治算法的前提条件</h2><ul>
+<h2 id="使用分治算法的前提条件"><a class="markdownIt-Anchor" href="#使用分治算法的前提条件">#</a> 使用分治算法的前提条件</h2>
+<ul>
 <li>原问题与分解成的小问题具有相同的模式；</li>
 <li>原问题分解成的子问题可以独立求解，子问题之间没有相关性，<strong>这一点是分治算法跟动态规划的明显区别；</strong></li>
 <li>具有分解终止条件，也就是说，当问题足够小时，可以直接求解；</li>
 <li>可以将子问题合并成原问题，而这个合并操作的复杂度不能太高，否则就起不到减小算法总体复杂度的效果了</li>
 </ul>
-<h2 id="每一次递归都会涉及三个操作"><a href="#每一次递归都会涉及三个操作" class="headerlink" title="每一次递归都会涉及三个操作"></a>每一次递归都会涉及三个操作</h2><ul>
+<h2 id="每一次递归都会涉及三个操作"><a class="markdownIt-Anchor" href="#每一次递归都会涉及三个操作">#</a> 每一次递归都会涉及三个操作</h2>
+<ul>
 <li><strong>分解</strong>：将原问题分解成一系列子问题；</li>
 <li><strong>解决</strong>：递归地求解各个子问题，若子问题足够小，则直接求解；</li>
 <li><strong>合并</strong>：将子问题的结果合并成原问题</li>
 </ul>
-<h2 id="分治法适用条件"><a href="#分治法适用条件" class="headerlink" title="分治法适用条件"></a>分治法适用条件</h2><ol>
-<li><p>该问题的规模缩小到一定程度就可以很容易解决；</p>
+<h2 id="分治法适用条件"><a class="markdownIt-Anchor" href="#分治法适用条件">#</a> 分治法适用条件</h2>
+<ol>
+<li>
+<p>该问题的规模缩小到一定程度就可以很容易解决；</p>
 </li>
-<li><p>该问题可以分解为若干个规模较小的相同问题，这里注意是最优子结构性质；</p>
+<li>
+<p>该问题可以分解为若干个规模较小的相同问题，这里注意是最优子结构性质；</p>
 </li>
-<li><p>利用该问题分解出的子问题的解可以合并为该问题的解；</p>
+<li>
+<p>利用该问题分解出的子问题的解可以合并为该问题的解；</p>
 </li>
-<li><p>该问题所分解出的各个子问题是相互独立的，即子问题之间不包含公共子问题；</p>
+<li>
+<p>该问题所分解出的各个子问题是相互独立的，即子问题之间不包含公共子问题；</p>
 </li>
 </ol>
-<p>　　<strong>对于很多算法而言，第一条往往是必要的，因为数据量一旦大起来，问题往往复杂度上升的特别快。这里就需要将这个大问题分解为小问题。小问题处理起来更加方便。第二、三条的才是分治思想的核心，因为很多时候我们会采用递归的方式进行解决，所以在大问题分解为小问题的时候需要保证小问题之间的相同性。单单分解为小问题之后还不能算完成，必须要能够将小问题的解合并为这个问题的最终解才能算真正用到了分治的思想。最后一条也是最关键的，各个子问题之间必须要保证独立性，即不互相影响。如果相互之间有影响，这时候我们采用的是动态规划就更加好一点。</strong></p>
-<h2 id="经典例题"><a href="#经典例题" class="headerlink" title="经典例题"></a>经典例题</h2><p>其实算法的思想不用讲太多，能够化为几句话是最好的，下面就举几个例子来看看分治算法：</p>
+<p><strong>对于很多算法而言，第一条往往是必要的，因为数据量一旦大起来，问题往往复杂度上升的特别快。这里就需要将这个大问题分解为小问题。小问题处理起来更加方便。第二、三条的才是分治思想的核心，因为很多时候我们会采用递归的方式进行解决，所以在大问题分解为小问题的时候需要保证小问题之间的相同性。单单分解为小问题之后还不能算完成，必须要能够将小问题的解合并为这个问题的最终解才能算真正用到了分治的思想。最后一条也是最关键的，各个子问题之间必须要保证独立性，即不互相影响。如果相互之间有影响，这时候我们采用的是动态规划就更加好一点。</strong></p>
+<h2 id="经典例题"><a class="markdownIt-Anchor" href="#经典例题">#</a> 经典例题</h2>
+<p>其实算法的思想不用讲太多，能够化为几句话是最好的，下面就举几个例子来看看分治算法：</p>
 <blockquote>
-<p>例题一：二分查找，给定一个按照升序排好的数组<code>array</code>，要在这个数组中找出一个特定的元素<code>x</code>；<br>当我们遇到一个问题，完全可以在心里问自己下面四个问题：</p>
+<p>例题一：二分查找，给定一个按照升序排好的数组 <code>array</code> ，要在这个数组中找出一个特定的元素 <code>x</code> ；<br>
+当我们遇到一个问题，完全可以在心里问自己下面四个问题：</p>
 </blockquote>
-<p>　　1、当前问题能不能切分？</p>
-<p>　　答：能切分，因为数组按照升序来排列。所以当x大于某个元素array[mid]时，x一定在array[mid]的右边。以此再来切分。每次切一半</p>
-<p>　　2、分解出来的子问题相同吗？</p>
-<p>　　答：相同，每个子问题的数据集都是父问题的1/2倍。并且每次只比较子问题的中间的数据</p>
-<p>　　3、子问题的解能合并为父问题的解吗？</p>
-<p>　　答：不需要合并，子问题的解即为父问题的解。</p>
-<p>　　4、子问题之间相互独立吗？</p>
-<p>　　答：独立，子问题只是判断，不需要和父问题有很强的关联性（这里可以参考一下动态规划算法，就能理解子问题之间怎么判断是独立的）</p>
-<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><p>分治算法只是一种思想，不是一个具体的套路，只能说在碰见具体问题时我们能够从这个思路去思考，切分问题？合并问题？子问题之间影响关联大不大？这些都是具体问题具体考虑。还有很多很多题目是用了分治算法。也可以多刷刷题</p>
-<h2 id="循环赛日常表"><a href="#循环赛日常表" class="headerlink" title="循环赛日常表"></a>循环赛日常表</h2><p>设有<code>n=2^k</code>个运动员，要进行网球循环赛。现在要设计一个满足以下要求的比赛日程表</p>
-<p>（1）每个选手必须与其他<code>n-1</code>个选手各赛一场</p>
+<p>1、当前问题能不能切分？</p>
+<p>答：能切分，因为数组按照升序来排列。所以当 x 大于某个元素 array [mid] 时，x 一定在 array [mid] 的右边。以此再来切分。每次切一半</p>
+<p>2、分解出来的子问题相同吗？</p>
+<p>答：相同，每个子问题的数据集都是父问题的 1/2 倍。并且每次只比较子问题的中间的数据</p>
+<p>3、子问题的解能合并为父问题的解吗？</p>
+<p>答：不需要合并，子问题的解即为父问题的解。</p>
+<p>4、子问题之间相互独立吗？</p>
+<p>答：独立，子问题只是判断，不需要和父问题有很强的关联性（这里可以参考一下动态规划算法，就能理解子问题之间怎么判断是独立的）</p>
+<h2 id="总结"><a class="markdownIt-Anchor" href="#总结">#</a> 总结</h2>
+<p>分治算法只是一种思想，不是一个具体的套路，只能说在碰见具体问题时我们能够从这个思路去思考，切分问题？合并问题？子问题之间影响关联大不大？这些都是具体问题具体考虑。还有很多很多题目是用了分治算法。也可以多刷刷题</p>
+<h2 id="循环赛日常表"><a class="markdownIt-Anchor" href="#循环赛日常表">#</a> 循环赛日常表</h2>
+<p>设有 <code>n=2^k</code>  个运动员，要进行网球循环赛。现在要设计一个满足以下要求的比赛日程表</p>
+<p>（1）每个选手必须与其他 <code>n-1</code>  个选手各赛一场</p>
 <p>（2）每个选手一天只能赛一次</p>
-<p>（3）循环赛一共进行<code>n-1</code>天</p>
-<p>将比赛日程表设计成<code>n</code>行<code>n</code>列，表中除了第一列，其他<code>n-1</code>列才是我们要的，数组下标行列都从<code>0</code>开始，第i行j列代表第<code>（i+1）</code>位选手在第j天的对手：</p>
+<p>（3）循环赛一共进行 <code>n-1</code>  天</p>
+<p>将比赛日程表设计成 <code>n</code>  行 <code>n</code>  列，表中除了第一列，其他 <code>n-1</code>  列才是我们要的，数组下标行列都从 <code>0</code>  开始，第 i 行 j 列代表第 <code>（i+1）</code> 位选手在第 j 天的对手：</p>
 <img data-src="/posts/7474c898/2022-02-17-23-08-53.png" class="">
-
-<p>以8个选手为例子</p>
+<p>以 8 个选手为例子</p>
 <img data-src="/posts/7474c898/2022-02-17-23-09-01.png" class="">
-
-<p>①我们先初始化第一行各个数为<code>1~8</code>（<code>2~8</code>为：第<code>1</code>天 — 第<code>7</code>天）；</p>
-<p>②因为是递归，那么要填8x8的左下角和右下角，分别需要知道它的右上角和左上角</p>
-<p>③而<code>8x8</code>的盒子它的左上角是一个<code>4x4</code>的盒子，要填<code>4x4</code>的左下角和右下角，也分别需要知道它的右上角和左上角</p>
-<p>④现在递归到<code>4x4</code>的盒子的左上角，是一个<code>2x2</code>的盒子，它不需要递归了，直接沿对角线填左下角和右下角的数字，也就是上面的图②</p>
-<p>⑤可以看到，经过上面的②③步，我们左上角4x4的盒子，它的·右上角和左上角已经知道了，那就可以沿对角线填它的左下角和右下角了，所以出现了图④</p>
+<p>①我们先初始化第一行各个数为 <code>1~8</code> （ <code>2~8</code>  为：第 <code>1</code>  天 — 第 <code>7</code>  天）；</p>
+<p>②因为是递归，那么要填 8x8 的左下角和右下角，分别需要知道它的右上角和左上角</p>
+<p>③而 <code>8x8</code>  的盒子它的左上角是一个 <code>4x4</code>  的盒子，要填 <code>4x4</code>  的左下角和右下角，也分别需要知道它的右上角和左上角</p>
+<p>④现在递归到 <code>4x4</code>  的盒子的左上角，是一个 <code>2x2</code>  的盒子，它不需要递归了，直接沿对角线填左下角和右下角的数字，也就是上面的图②</p>
+<p>⑤可以看到，经过上面的②③步，我们左上角 4x4 的盒子，它的・右上角和左上角已经知道了，那就可以沿对角线填它的左下角和右下角了，所以出现了图④</p>
 <p>⑥其他的依次类推</p>
 <p>通俗易懂地讲，就是<strong>如果你想填一个大的，你得先得出它左上角和右上角两个盒子 ， 再沿对角线分别抄到右下角和左下角。 而为了得出它左上角和右上角，就需要递归了</strong></p>
 <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">SportsSchedule</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">scheduleTable</span><span class="params">(<span class="keyword">int</span>[][] table, <span class="keyword">int</span> n)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">if</span> (n == <span class="number">1</span>) &#123;</span><br><span class="line">            table[<span class="number">0</span>][<span class="number">0</span>] = <span class="number">1</span>;</span><br><span class="line">        &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">        <span class="comment">/* 填充左上区域矩阵</span></span><br><span class="line"><span class="comment">            n值的变化：8  4  2  1</span></span><br><span class="line"><span class="comment">            m值的变化：4  2  1  1  */</span></span><br><span class="line">            <span class="keyword">int</span> m = n / <span class="number">2</span>;</span><br><span class="line">            scheduleTable(table, m);</span><br><span class="line">            <span class="comment">//填充右上区域矩阵</span></span><br><span class="line">            <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; m; i++) &#123;</span><br><span class="line">                <span class="keyword">for</span> (<span class="keyword">int</span> j = m; j &lt; n; j++) &#123;</span><br><span class="line">                    table[i][j] = table[i][j - m] + m;</span><br><span class="line">                &#125;</span><br><span class="line">            &#125;</span><br><span class="line">            <span class="comment">//填充左下区域矩阵</span></span><br><span class="line">            <span class="keyword">for</span> (<span class="keyword">int</span> i = m; i &lt; n; i++) &#123;</span><br><span class="line">                <span class="keyword">for</span> (<span class="keyword">int</span> j = <span class="number">0</span>; j &lt; m; j++) &#123;</span><br><span class="line">                    table[i][j] = table[i - m][j] + m;</span><br><span class="line">                &#125;</span><br><span class="line">            &#125;</span><br><span class="line">            <span class="comment">//填充右下区域矩阵</span></span><br><span class="line">            <span class="keyword">for</span> (<span class="keyword">int</span> i = m; i &lt; n; i++) &#123;</span><br><span class="line">                <span class="keyword">for</span> (<span class="keyword">int</span> j = m; j &lt; n; j++) &#123;</span><br><span class="line">                    table[i][j] = table[i - m][j - m];</span><br><span class="line">                &#125;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">int</span>[][] table = <span class="keyword">new</span> <span class="keyword">int</span>[<span class="number">8</span>][<span class="number">8</span>];</span><br><span class="line">        <span class="keyword">int</span> n = <span class="number">8</span>;</span><br><span class="line">        SportsSchedule schedule = <span class="keyword">new</span> SportsSchedule();</span><br><span class="line">        schedule.scheduleTable(table, n);</span><br><span class="line">        <span class="keyword">int</span> c = <span class="number">0</span>;</span><br><span class="line">        <span class="comment">//打印二维数组</span></span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; n; i++) &#123;</span><br><span class="line">            <span class="keyword">for</span> (<span class="keyword">int</span> j = <span class="number">0</span>; j &lt; n; j++) &#123;</span><br><span class="line">                System.out.print(table[i][j] + <span class="string">&quot; &quot;</span>);</span><br><span class="line">                c++;<span class="comment">//每打印一个数，c++</span></span><br><span class="line">                <span class="keyword">if</span> (c % n == <span class="number">0</span>) &#123;<span class="comment">//说明打印一行了</span></span><br><span class="line">                    System.out.println();<span class="comment">//换行</span></span><br><span class="line">                &#125;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<h2 id="L型骨牌棋盘覆盖"><a href="#L型骨牌棋盘覆盖" class="headerlink" title="L型骨牌棋盘覆盖"></a><code>L</code>型骨牌棋盘覆盖</h2><h3 id="问题描述"><a href="#问题描述" class="headerlink" title="问题描述"></a>问题描述</h3><p>在一个<code>2^k×2^k </code>个方格组成的棋盘中，恰有一个方格与其他方格不同，称该方格为一特殊方格（特殊点），且称该棋盘为一特殊棋盘。在棋盘覆盖问题中，要用图示的4种不同形态的L型骨牌覆盖给定的特殊棋盘上除特殊方格以外的所有方格，且任何<code>2</code>个<code>L</code>型骨牌不得重叠覆盖。</p>
+<h2 id="l型骨牌棋盘覆盖"><a class="markdownIt-Anchor" href="#l型骨牌棋盘覆盖">#</a>  <code>L</code>  型骨牌棋盘覆盖</h2>
+<h3 id="问题描述"><a class="markdownIt-Anchor" href="#问题描述">#</a> 问题描述</h3>
+<p>在一个 <code>2^k×2^k </code> 个方格组成的棋盘中，恰有一个方格与其他方格不同，称该方格为一特殊方格（特殊点），且称该棋盘为一特殊棋盘。在棋盘覆盖问题中，要用图示的 4 种不同形态的 L 型骨牌覆盖给定的特殊棋盘上除特殊方格以外的所有方格，且任何 <code>2</code>  个 <code>L</code>  型骨牌不得重叠覆盖。</p>
 <img data-src="/posts/7474c898/2022-02-17-23-09-17.png" class="">
-
-<h3 id="解题思路"><a href="#解题思路" class="headerlink" title="解题思路"></a>解题思路</h3><blockquote>
-<p>分析 </p>
+<h3 id="解题思路"><a class="markdownIt-Anchor" href="#解题思路">#</a> 解题思路</h3>
+<blockquote>
+<p>分析</p>
 </blockquote>
-<p>当<code>k&gt;0</code>时，将<code>2^k×2^k</code> 棋盘分割为<code>4</code>个<code>2^k-1×2^k-1</code> 子棋盘<code>(a)</code>所示。特殊方格必位于<code>4</code>个较小子棋盘之一中，其余<code>3</code>个子棋盘中无特殊方格。为了将这<code>3</code>个无特殊方格的子棋盘转化为特殊棋盘，可以用一个<code>L</code>型骨牌覆盖这<code>3</code>个较小棋盘的会合处，如 <code>(b)</code>所示，从而将原问题转化为<code>4</code>个较小规模的棋盘覆盖问题。递归地使用这种分割，直至棋盘简化为棋盘<code>1×1</code>。</p>
+<p>当 <code>k&gt;0</code>  时，将 <code>2^k×2^k</code>  棋盘分割为 <code>4</code>  个 <code>2^k-1×2^k-1</code>  子棋盘 <code>(a)</code>  所示。特殊方格必位于 <code>4</code>  个较小子棋盘之一中，其余 <code>3</code>  个子棋盘中无特殊方格。为了将这 <code>3</code>  个无特殊方格的子棋盘转化为特殊棋盘，可以用一个 <code>L</code>  型骨牌覆盖这 <code>3</code>  个较小棋盘的会合处，如  <code>(b)</code>  所示，从而将原问题转化为 <code>4</code>  个较小规模的棋盘覆盖问题。递归地使用这种分割，直至棋盘简化为棋盘 <code>1×1</code> 。</p>
 <img data-src="/posts/7474c898/2022-02-17-23-09-30.png" class="">
-
 <blockquote>
 <p>实现：</p>
 </blockquote>
-<p>每次都对分割后的四个小方块进行判断，判断特殊方格是否在里面。这里的判断的方法是每次先记录下整个大方块的左上角方格的行列坐标，然后再与特殊方格坐标进行比较，就可以知道特殊方格是否在该块中。如果特殊方块在里面，这直接递归下去求即可，如果不在，这根据分割的四个方块的不同位置，把右下角、左下角、右上角或者左上角的方格标记为特殊方块，然后继续递归。在递归函数里，还要有一个变量subSize来记录边的方格数，每次对方块进行划分时，边的方格数都会减半，这个变量是为了方便判断特殊方格的位置。</p>
+<p>每次都对分割后的四个小方块进行判断，判断特殊方格是否在里面。这里的判断的方法是每次先记录下整个大方块的左上角方格的行列坐标，然后再与特殊方格坐标进行比较，就可以知道特殊方格是否在该块中。如果特殊方块在里面，这直接递归下去求即可，如果不在，这根据分割的四个方块的不同位置，把右下角、左下角、右上角或者左上角的方格标记为特殊方块，然后继续递归。在递归函数里，还要有一个变量 subSize 来记录边的方格数，每次对方块进行划分时，边的方格数都会减半，这个变量是为了方便判断特殊方格的位置。</p>
 <blockquote>
-<p> 覆盖步骤如图：</p>
+<p>覆盖步骤如图：</p>
 </blockquote>
 <img data-src="/posts/7474c898/2022-02-17-23-09-51.png" class="">
-
 <blockquote>
-<p> 代码实现:</p>
+<p>代码实现:</p>
 </blockquote>
 <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">package</span> cn.itcast.recursion;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">ChessBoradProblem</span> </span>&#123;</span><br><span class="line">    <span class="keyword">private</span> <span class="keyword">int</span>[][] board;<span class="comment">//棋盘</span></span><br><span class="line">    <span class="keyword">private</span> <span class="keyword">int</span> specialRow;<span class="comment">//特殊点行下标</span></span><br><span class="line">    <span class="keyword">private</span> <span class="keyword">int</span> specialCol;<span class="comment">//特殊点列下标</span></span><br><span class="line">    <span class="keyword">private</span> <span class="keyword">int</span> size;<span class="comment">//矩阵大小</span></span><br><span class="line">    <span class="keyword">private</span> <span class="keyword">int</span> type = <span class="number">0</span>;<span class="comment">//骨牌类型，1,2,3,4  因为是用数字表示的，所以用int</span></span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="title">ChessBoradProblem</span><span class="params">(<span class="keyword">int</span> specialRow, <span class="keyword">int</span> specialCol, <span class="keyword">int</span> size)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">this</span>.specialRow = specialRow;</span><br><span class="line">        <span class="keyword">this</span>.specialCol = specialCol;</span><br><span class="line">        <span class="keyword">this</span>.size = size;</span><br><span class="line">        board = <span class="keyword">new</span> <span class="keyword">int</span>[size][size];</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="comment">/**</span></span><br><span class="line"><span class="comment">     * <span class="doctag">@param</span> specialRow 特殊点的行下标</span></span><br><span class="line"><span class="comment">     * <span class="doctag">@param</span> specialCol 特殊点的列下标</span></span><br><span class="line"><span class="comment">     * <span class="doctag">@param</span> leftRow    分割成4个后每个矩阵的左边的起点行下标</span></span><br><span class="line"><span class="comment">     * <span class="doctag">@param</span> leftCol    分割成4个后每个矩阵的左边起点列下标</span></span><br><span class="line"><span class="comment">     * <span class="doctag">@param</span> size       矩阵的宽或者高</span></span><br><span class="line"><span class="comment">     */</span></span><br><span class="line"></span><br><span class="line">    <span class="comment">//相对于四个方格中右上的方格，左边起点的leftRow不一定是0了</span></span><br><span class="line">    <span class="function"><span class="keyword">private</span> <span class="keyword">void</span> <span class="title">ChessBoard</span><span class="params">(<span class="keyword">int</span> specialRow, <span class="keyword">int</span> specialCol, <span class="keyword">int</span> leftRow, <span class="keyword">int</span> leftCol, <span class="keyword">int</span> size)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">if</span> (size == <span class="number">1</span>) &#123;</span><br><span class="line">            <span class="keyword">return</span>;</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        <span class="keyword">int</span> subSize = size / <span class="number">2</span>;</span><br><span class="line">        type = type % <span class="number">4</span> + <span class="number">1</span>;<span class="comment">//不断+1，超过4就取模</span></span><br><span class="line">        <span class="keyword">int</span> n = type;</span><br><span class="line"></span><br><span class="line">        <span class="comment">//假设特殊点在左上角，然后行和列都小于一半</span></span><br><span class="line">        <span class="keyword">if</span> (specialRow &lt; leftRow + subSize &amp;&amp; specialCol &lt; leftCol + subSize) &#123;</span><br><span class="line">            ChessBoard(specialRow, specialCol, leftRow, leftCol, subSize);</span><br><span class="line">        &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">            <span class="comment">//不在左上角，左上角矩阵的右下角就是特殊点</span></span><br><span class="line">            board[leftRow + subSize - <span class="number">1</span>][leftCol + subSize - <span class="number">1</span>] = n;</span><br><span class="line">            ChessBoard(leftRow + subSize - <span class="number">1</span>, leftRow + subSize - <span class="number">1</span>, leftRow, leftCol, subSize);</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        <span class="comment">//特殊点在右上方，行小于一半，列大于一半</span></span><br><span class="line">        <span class="keyword">if</span> (specialRow &lt; leftRow + subSize &amp;&amp; specialCol &gt;= leftCol + subSize) &#123;</span><br><span class="line">            ChessBoard(specialRow, specialCol, leftRow, leftCol + subSize, subSize);</span><br><span class="line">        &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">            board[leftRow + subSize - <span class="number">1</span>][leftCol + subSize] = n;</span><br><span class="line">            ChessBoard(leftRow + subSize - <span class="number">1</span>, leftCol + subSize, leftRow, leftCol + subSize, subSize);</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        <span class="comment">//特殊点在左下方</span></span><br><span class="line">        <span class="keyword">if</span> (specialRow &gt;= leftRow + subSize &amp;&amp; specialCol &lt; leftCol + subSize) &#123;</span><br><span class="line">            ChessBoard(specialRow, specialCol, leftRow + subSize, leftCol, subSize);</span><br><span class="line">        &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">            board[leftRow + subSize][leftCol + subSize - <span class="number">1</span>] = n;</span><br><span class="line">            ChessBoard(leftRow + subSize, leftCol + subSize - <span class="number">1</span>, leftRow + subSize, leftCol, subSize);</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        <span class="comment">//特殊点在右下方</span></span><br><span class="line">        <span class="keyword">if</span> (specialRow &gt;= leftRow + subSize &amp;&amp; specialCol &gt;= leftCol + subSize) &#123;</span><br><span class="line">            ChessBoard(specialRow, specialCol, leftRow + subSize, leftCol + subSize, subSize);</span><br><span class="line">        &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">            board[leftRow + subSize][leftCol + subSize] = n;</span><br><span class="line">            ChessBoard(leftRow + subSize, leftCol + subSize, leftRow + subSize, leftCol + subSize, subSize);</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">printBoard</span><span class="params">(<span class="keyword">int</span> specialRow, <span class="keyword">int</span> specialCol, <span class="keyword">int</span> size)</span> </span>&#123;</span><br><span class="line">        ChessBoard(specialRow, specialCol, <span class="number">0</span>, <span class="number">0</span>, size);</span><br><span class="line">        printResult();</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">private</span> <span class="keyword">void</span> <span class="title">printResult</span><span class="params">()</span> </span>&#123;</span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; size; i++) &#123;</span><br><span class="line">            <span class="keyword">for</span> (<span class="keyword">int</span> j = <span class="number">0</span>; j &lt; size; j++) &#123;</span><br><span class="line">                System.out.print(board[i][j] + <span class="string">&quot; &quot;</span>);<span class="comment">//注意：print</span></span><br><span class="line">            &#125;</span><br><span class="line">            System.out.println();</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">int</span> N = <span class="number">4</span>;<span class="comment">//矩阵大小</span></span><br><span class="line">        <span class="comment">//选取特殊点</span></span><br><span class="line">        <span class="keyword">int</span> specialRow = <span class="number">0</span>;</span><br><span class="line">        <span class="keyword">int</span> specialCol = <span class="number">1</span>;</span><br><span class="line">        ChessBoradProblem boradProblem = <span class="keyword">new</span> ChessBoradProblem(specialRow, specialCol, N);</span><br><span class="line">        boradProblem.printBoard(specialRow, specialCol, N);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
-
-
-
-      <div>
-        
-          <div>
-    
-        <div style="text-align:center;color: #636363;font-size:14px;letter-spacing: 10px">This article is over<i class="fa fa-bell"></i>thank you for reading</div>
-    
-</div>
-        
+      <div class="tags">
+          <a href="/tags/Java%E9%9D%A2%E8%AF%95/" rel="tag"><i class="ic i-tag"></i> Java面试</a>
+          <a href="/tags/%E7%AE%97%E6%B3%95/" rel="tag"><i class="ic i-tag"></i> 算法</a>
       </div>
-    </div>
+  </div>
 
-    
-    
-    
+   <footer>
+
+    <div class="meta">
+  <span class="item">
+    <span class="icon">
+      <i class="ic i-calendar-check"></i>
+    </span>
+    <span class="text">Edited on</span>
+    <time title="Modified: 2022-02-17 23:09:54" itemprop="dateModified" datetime="2022-02-17T23:09:54+08:00">2022-02-17</time>
+  </span>
+  <span id="posts/7474c898/" class="item leancloud_visitors" data-flag-title="分治算法" title="Views">
+      <span class="icon">
+        <i class="ic i-eye"></i>
+      </span>
+      <span class="text">Views</span>
+      <span class="leancloud-visitors-count"></span>
+      <span class="text">times</span>
+  </span>
+</div>
+
       
-  <div class="popular-posts-header">Related Posts</div>
-  <ul class="popular-posts">
-    <li class="popular-posts-item">
-      <div class="popular-posts-title"><a href="/posts/de5e33d7/" rel="bookmark">关于JDK中的Arrays.sort排序方法</a></div>
-    </li>
-    <li class="popular-posts-item">
-      <div class="popular-posts-title"><a href="/posts/1599bffe/" rel="bookmark">归并排序</a></div>
-    </li>
-    <li class="popular-posts-item">
-      <div class="popular-posts-title"><a href="/posts/14e6f1eb/" rel="bookmark">冒泡排序</a></div>
-    </li>
-    <li class="popular-posts-item">
-      <div class="popular-posts-title"><a href="/posts/c2a5fdc5/" rel="bookmark">堆排序</a></div>
-    </li>
-    <li class="popular-posts-item">
-      <div class="popular-posts-title"><a href="/posts/43d00a99/" rel="bookmark">选择排序</a></div>
-    </li>
-  </ul>
 
-        
-
-<div>
-<ul class="post-copyright">
-  <li class="post-copyright-author">
-    <strong>Post author:  </strong>JIN Mao
+<div id="copyright">
+<ul>
+  <li class="author">
+    <strong>Post author:  </strong>JIN Mao <i class="ic i-at"><em>@</em></i>JIN MAO 's Blog
   </li>
-  <li class="post-copyright-link">
+  <li class="link">
     <strong>Post link: </strong>
     <a href="https://smile1231.github.io/posts/7474c898/" title="分治算法">https://smile1231.github.io/posts/7474c898/</a>
   </li>
-  <li class="post-copyright-license">
-    <strong>Copyright Notice:  </strong>All articles in this blog are licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/en" rel="noopener" target="_blank"><i class="fab fa-fw fa-creative-commons"></i>BY-NC-SA</a> unless stating additionally.
+  <li class="license">
+    <strong>Copyright Notice:  </strong>All articles in this blog are licensed under <span class="exturl" data-url="aHR0cHM6Ly9jcmVhdGl2ZWNvbW1vbnMub3JnL2xpY2Vuc2VzL2J5LW5jLXNhLzQuMC9kZWVkLnpo"><i class="ic i-creative-commons"><em>(CC)</em></i>BY-NC-SA</span> unless stating additionally.
   </li>
 </ul>
 </div>
 
+  </footer>
 
-      <footer class="post-footer">
-          
-          <div class="post-tags">
-              <a href="/tags/Java%E9%9D%A2%E8%AF%95/" rel="tag"><i class="fa fa-tag"></i> Java面试</a>
-              <a href="/tags/%E7%AE%97%E6%B3%95/" rel="tag"><i class="fa fa-tag"></i> 算法</a>
-          </div>
+</article>
 
-        
-  <div class="post-widgets">
-    <div class="wp_rating">
-      <div id="wpac-rating"></div>
-    </div>
   </div>
+  
 
+<div class="post-nav">
+    <div class="item left">
+      
 
-        
-    <div class="post-nav">
-      <div class="post-nav-item">
-    <a href="/posts/b9b9f7e7/" rel="prev" title="二叉树遍历">
-      <i class="fa fa-chevron-left"></i> 二叉树遍历
-    </a></div>
-      <div class="post-nav-item">
-    <a href="/posts/a4ce31d2/" rel="next" title="贪心算法">
-      贪心算法 <i class="fa fa-chevron-right"></i>
-    </a></div>
+  <a href="/posts/b9b9f7e7/" itemprop="url" rel="prev" data-background-image="https:&#x2F;&#x2F;tva1.sinaimg.cn&#x2F;mw690&#x2F;6833939bly1gipexoj0moj20zk0m8kgu.jpg" title="二叉树遍历">
+  <span class="type">Previous Post</span>
+  <span class="category"><i class="ic i-flag"></i> 算法</span>
+  <h3>二叉树遍历</h3>
+  </a>
+
     </div>
-      </footer>
-    
-  </article>
+    <div class="item right">
+      
+
+  <a href="/posts/a4ce31d2/" itemprop="url" rel="next" data-background-image="https:&#x2F;&#x2F;tva1.sinaimg.cn&#x2F;mw690&#x2F;6833939bly1gipew8gmvyj20zk0m87wh.jpg" title="贪心算法">
+  <span class="type">Next Post</span>
+  <span class="category"><i class="ic i-flag"></i> 算法</span>
+  <h3>贪心算法</h3>
+  </a>
+
+    </div>
+</div>
+
   
-  
-  
+  <div class="wrap" id="comments"></div>
 
-
-
-          </div>
-          
-    <div class="comments" id="valine-comments"></div>
-
-<script>
-  window.addEventListener('tabs:register', () => {
-    let { activeClass } = CONFIG.comments;
-    if (CONFIG.comments.storage) {
-      activeClass = localStorage.getItem('comments_active') || activeClass;
-    }
-    if (activeClass) {
-      let activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
-      if (activeTab) {
-        activeTab.click();
-      }
-    }
-  });
-  if (CONFIG.comments.storage) {
-    window.addEventListener('tabs:click', event => {
-      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
-      let commentClass = event.target.classList[1];
-      localStorage.setItem('comments_active', commentClass);
-    });
-  }
-</script>
 
         </div>
+        <div id="sidebar">
           
+
+<div class="inner">
+
+  <div class="panels">
+    <div class="inner">
+      <div class="contents panel pjax" data-title="Contents">
+          <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%88%86%E6%B2%BB%E7%AE%97%E6%B3%95"><span class="toc-number">1.</span> <span class="toc-text"> 分治算法</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%AE%9A%E4%B9%89"><span class="toc-number">1.1.</span> <span class="toc-text"> 定义</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%88%86%E6%B2%BB%E7%AD%96%E7%95%A5"><span class="toc-number">1.2.</span> <span class="toc-text"> 分治策略</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BD%BF%E7%94%A8%E5%88%86%E6%B2%BB%E7%AE%97%E6%B3%95%E7%9A%84%E5%89%8D%E6%8F%90%E6%9D%A1%E4%BB%B6"><span class="toc-number">1.3.</span> <span class="toc-text"> 使用分治算法的前提条件</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%AF%8F%E4%B8%80%E6%AC%A1%E9%80%92%E5%BD%92%E9%83%BD%E4%BC%9A%E6%B6%89%E5%8F%8A%E4%B8%89%E4%B8%AA%E6%93%8D%E4%BD%9C"><span class="toc-number">1.4.</span> <span class="toc-text"> 每一次递归都会涉及三个操作</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%88%86%E6%B2%BB%E6%B3%95%E9%80%82%E7%94%A8%E6%9D%A1%E4%BB%B6"><span class="toc-number">1.5.</span> <span class="toc-text"> 分治法适用条件</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%BB%8F%E5%85%B8%E4%BE%8B%E9%A2%98"><span class="toc-number">1.6.</span> <span class="toc-text"> 经典例题</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%80%BB%E7%BB%93"><span class="toc-number">1.7.</span> <span class="toc-text"> 总结</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%BE%AA%E7%8E%AF%E8%B5%9B%E6%97%A5%E5%B8%B8%E8%A1%A8"><span class="toc-number">1.8.</span> <span class="toc-text"> 循环赛日常表</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#l%E5%9E%8B%E9%AA%A8%E7%89%8C%E6%A3%8B%E7%9B%98%E8%A6%86%E7%9B%96"><span class="toc-number">1.9.</span> <span class="toc-text">  L  型骨牌棋盘覆盖</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%97%AE%E9%A2%98%E6%8F%8F%E8%BF%B0"><span class="toc-number">1.9.1.</span> <span class="toc-text"> 问题描述</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%A7%A3%E9%A2%98%E6%80%9D%E8%B7%AF"><span class="toc-number">1.9.2.</span> <span class="toc-text"> 解题思路</span></a></li></ol></li></ol></li></ol>
+      </div>
+      <div class="related panel pjax" data-title="Related">
+        <ul>
+          <li><a href="/posts/b9b9f7e7/" rel="bookmark" title="二叉树遍历">二叉树遍历</a></li><li class="active"><a href="/posts/7474c898/" rel="bookmark" title="分治算法">分治算法</a></li><li><a href="/posts/a4ce31d2/" rel="bookmark" title="贪心算法">贪心算法</a></li>
+        </ul>
+      </div>
+      <div class="overview panel" data-title="Overview">
+        <div class="author" itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <img class="image" itemprop="image" alt="JIN Mao"
+      data-src="/images/avatar.png">
+  <p class="name" itemprop="name">JIN Mao</p>
+  <div class="description" itemprop="description"></div>
+</div>
+
+<nav class="state">
+    <div class="item posts">
+      <a href="/archives/">
+        <span class="count">134</span>
+        <span class="name">posts</span>
+      </a>
+    </div>
+    <div class="item categories">
+      <a href="/categories/">
+        <span class="count">70</span>
+        <span class="name">categories</span>
+      </a>
+    </div>
+    <div class="item tags">
+      <a href="/tags/">
+        <span class="count">98</span>
+        <span class="name">tags</span>
+      </a>
+    </div>
+</nav>
+
+<div class="social">
+      <span class="exturl item github" data-url="aHR0cHM6Ly9naXRodWIuY29tL3NtaWxlMTIzMQ==" title="https:&#x2F;&#x2F;github.com&#x2F;smile1231"><i class="ic i-github"></i></span>
+</div>
+
+<ul class="menu">
   
-  <div class="toggle sidebar-toggle">
-    <span class="toggle-line toggle-line-first"></span>
-    <span class="toggle-line toggle-line-middle"></span>
-    <span class="toggle-line toggle-line-last"></span>
+    
+  <li class="item">
+    <a href="/" rel="section"><i class="ic i-home"></i>Home</a>
+  </li>
+
+    
+  <li class="item">
+    <a href="/about/" rel="section"><i class="ic i-user"></i>About</a>
+  </li>
+
+        
+  <li class="item dropdown">
+      <a href="javascript:void(0);"><i class="ic i-feather"></i>Posts</a>
+    <ul class="submenu">
+
+        
+  <li class="item">
+    <a href="/archives/" rel="section"><i class="ic i-list-alt"></i>Archives</a>
+  </li>
+
+        
+  <li class="item">
+    <a href="/categories/" rel="section"><i class="ic i-th"></i>Categories</a>
+  </li>
+
+        
+  <li class="item">
+    <a href="/tags/" rel="section"><i class="ic i-tags"></i>Tags</a>
+  </li>
+
+  </ul>
+
+</ul>
+
+      </div>
+    </div>
   </div>
 
-  <aside class="sidebar">
-    <div class="sidebar-inner">
-    
-    
-    <!-- 霓虹灯时钟 -->
-    <div>
-    <svg style="height: 60px;">
-        <text id="time" text-anchor="middle" x="36%" y="80%" class="words words-1"></text>
-        <text id="time" text-anchor="middle" x="36%" y="80%" class="words words-2"></text>
-        <text id="time" text-anchor="middle" x="36%" y="80%" class="words words-3"></text>
-        <text id="time" text-anchor="middle" x="36%" y="80%" class="words words-4"></text>
-    </svg>
-</div>
-
-<script>
-function showtime(){
-    var noatime = new Date();
-    var h = noatime.getHours(),
-        m = noatime.getMinutes(),
-        s = noatime.getSeconds();
-    h=checktime(h);
-    m=checktime(m);
-    s=checktime(s);
-  return h+":"+m+":"+s;
-}
-
-function checktime(x){
-  if(x<10){
-    x="0"+x;
-  }
-  return x;
-}
-
-var div1=document.getElementsByTagName("text");
-setInterval(function(){
-  for (var i in div1){
-      div1[i].innerHTML=showtime();
-  }
-},1000);
-</script>
-
-<style>
-.words{
-    font-size: 50px;
-    font-weight: bold;
-    text-transform: uppercase;
-    fill: none;
-    stroke-width: 3px;
-    stroke-dasharray: 35,125;
-    animation-name: drawing;
-    animation-duration: 6s;
-    animation-iteration-count: infinite;
-    animation-timing-function: linear;
-}
-.words-1{
-    stroke: deepskyblue;
-    text-shadow: 0 0 15px deepskyblue;
-    animation-delay: -1.5s;
-}
-.words-2{
-    stroke: lightseagreen;
-    text-shadow: 0 0 15px lightseagreen;
-    animation-delay: -3s;
-}
-.words-3{
-    stroke: orange;
-    text-shadow: 0 0 15px orange;
-    animation-delay: -4.5s;
-}
-.words-4{
-    stroke: purple;
-    text-shadow: 0 0 15px purple;
-    animation-delay: -6s;
-}
-@keyframes drawing {
-    100%{
-        stroke-dashoffset: -160
-    }
-}
-</style>
-
-    
-      <!-- 起风了 -->
-      <!-- <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=86 src="//music.163.com/outchain/player?type=2&id=1901069794&auto=1&height=66"></iframe> -->
-      <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=86 src="//music.163.com/outchain/player?type=2&id=1927119724&auto=1&height=66"></iframe>
-
-      <ul class="sidebar-nav motion-element">
-        <li class="sidebar-nav-toc">
-          Table of Contents
-        </li>
-        <li class="sidebar-nav-overview">
-          Overview
-        </li>
-      </ul>
-
-      <!--noindex-->
-      <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#%E5%88%86%E6%B2%BB%E7%AE%97%E6%B3%95"><span class="nav-number">1.</span> <span class="nav-text">分治算法</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%AE%9A%E4%B9%89"><span class="nav-number">1.1.</span> <span class="nav-text">定义</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%88%86%E6%B2%BB%E7%AD%96%E7%95%A5"><span class="nav-number">1.2.</span> <span class="nav-text">分治策略</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%BD%BF%E7%94%A8%E5%88%86%E6%B2%BB%E7%AE%97%E6%B3%95%E7%9A%84%E5%89%8D%E6%8F%90%E6%9D%A1%E4%BB%B6"><span class="nav-number">1.3.</span> <span class="nav-text">使用分治算法的前提条件</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%AF%8F%E4%B8%80%E6%AC%A1%E9%80%92%E5%BD%92%E9%83%BD%E4%BC%9A%E6%B6%89%E5%8F%8A%E4%B8%89%E4%B8%AA%E6%93%8D%E4%BD%9C"><span class="nav-number">1.4.</span> <span class="nav-text">每一次递归都会涉及三个操作</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%88%86%E6%B2%BB%E6%B3%95%E9%80%82%E7%94%A8%E6%9D%A1%E4%BB%B6"><span class="nav-number">1.5.</span> <span class="nav-text">分治法适用条件</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%BB%8F%E5%85%B8%E4%BE%8B%E9%A2%98"><span class="nav-number">1.6.</span> <span class="nav-text">经典例题</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%80%BB%E7%BB%93"><span class="nav-number">1.7.</span> <span class="nav-text">总结</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%BE%AA%E7%8E%AF%E8%B5%9B%E6%97%A5%E5%B8%B8%E8%A1%A8"><span class="nav-number">1.8.</span> <span class="nav-text">循环赛日常表</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#L%E5%9E%8B%E9%AA%A8%E7%89%8C%E6%A3%8B%E7%9B%98%E8%A6%86%E7%9B%96"><span class="nav-number">1.9.</span> <span class="nav-text">L型骨牌棋盘覆盖</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E9%97%AE%E9%A2%98%E6%8F%8F%E8%BF%B0"><span class="nav-number">1.9.1.</span> <span class="nav-text">问题描述</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E8%A7%A3%E9%A2%98%E6%80%9D%E8%B7%AF"><span class="nav-number">1.9.2.</span> <span class="nav-text">解题思路</span></a></li></ol></li></ol></li></ol></div>
-      </div>
-      <!--/noindex-->
-
-      <div class="site-overview-wrap sidebar-panel">
-        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
-    <img class="site-author-image" itemprop="image" alt="JIN Mao"
-      src="/images/avatar.png">
-  <p class="site-author-name" itemprop="name">JIN Mao</p>
-  <div class="site-description" itemprop="description"></div>
-</div>
-<div class="site-state-wrap motion-element">
-  <nav class="site-state">
-      <div class="site-state-item site-state-posts">
-          <a href="/archives/">
-        
-          <span class="site-state-item-count">133</span>
-          <span class="site-state-item-name">posts</span>
-        </a>
-      </div>
-      <div class="site-state-item site-state-categories">
-            <a href="/categories/">
-          
-        <span class="site-state-item-count">70</span>
-        <span class="site-state-item-name">categories</span></a>
-      </div>
-      <div class="site-state-item site-state-tags">
-            <a href="/tags/">
-          
-        <span class="site-state-item-count">97</span>
-        <span class="site-state-item-name">tags</span></a>
-      </div>
-  </nav>
+  <ul id="quick">
+    <li class="prev pjax">
+        <a href="/posts/b9b9f7e7/" rel="prev" title="Previous Post"><i class="ic i-chevron-left"></i></a>
+    </li>
+    <li class="up"><i class="ic i-arrow-up"></i></li>
+    <li class="down"><i class="ic i-arrow-down"></i></li>
+    <li class="next pjax">
+        <a href="/posts/a4ce31d2/" rel="next" title="Next Post"><i class="ic i-chevron-right"></i></a>
+    </li>
+    <li class="percent"></li>
+  </ul>
 </div>
 
 
-
-      </div>
-
-  
-
-    </div>
-
-
-  </aside>
-  <div id="sidebar-dimmer"></div>
-
-
+        </div>
+        <div class="dimmer"></div>
       </div>
     </main>
-
-    <footer class="footer">
-      <div class="footer-inner">
-        
-
-        
-
-<div class="copyright">
-  
-  &copy; 
-  <span itemprop="copyrightYear">2022</span>
-  <span class="with-love">
-    <i class="fa fa-heart"></i>
-  </span>
-  <span class="author" itemprop="copyrightHolder">JIN Mao</span>
+    <footer id="footer">
+      <div class="inner">
+        <div class="widgets">
+          
+<div class="rpost pjax">
+  <h2>Random Posts</h2>
+  <ul>
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/Java/" title="In Java">Java</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/Java/Stream/" title="In Stream">Stream</a>
 </div>
-  <!--添加运行时间-->
-  <span id="sitetime"></span>
-  <script language=javascript>
-    function siteTime(){
-      window.setTimeout("siteTime()", 1000);
-      var seconds = 1000;
-      var minutes = seconds * 60;
-      var hours = minutes * 60;
-      var days = hours * 24;
-      var years = days * 365;
-      var today = new Date();
-      var todayYear = today.getFullYear();
-      var todayMonth = today.getMonth()+1;
-      var todayDate = today.getDate();
-      var todayHour = today.getHours();
-      var todayMinute = today.getMinutes();
-      var todaySecond = today.getSeconds();
-      /* 
-        Date.UTC() -- 返回date对象距世界标准时间(UTC)1970年1月1日午夜之间的毫秒数(时间戳)
-        year - 作为date对象的年份，为4位年份值
-        month - 0-11之间的整数，做为date对象的月份
-        day - 1-31之间的整数，做为date对象的天数
-        hours - 0(午夜24点)-23之间的整数，做为date对象的小时数
-        minutes - 0-59之间的整数，做为date对象的分钟数
-        seconds - 0-59之间的整数，做为date对象的秒数
-        microseconds - 0-999之间的整数，做为date对象的毫秒数
-      */
-      var t1 = Date.UTC(2021,11,11,00,00,00); //北京时间2018-2-13 00:00:00
-      var t2 = Date.UTC(todayYear,todayMonth,todayDate,todayHour,todayMinute,todaySecond);
-      var diff = t2-t1;
-      var diffYears = Math.floor(diff/years);
-      var diffDays = Math.floor((diff/days)-diffYears*365);
-      var diffHours = Math.floor((diff-(diffYears*365+diffDays)*days)/hours);
-      var diffMinutes = Math.floor((diff-(diffYears*365+diffDays)*days-diffHours*hours)/minutes);
-      var diffSeconds = Math.floor((diff-(diffYears*365+diffDays)*days-diffHours*hours-diffMinutes*minutes)/seconds);
-      document.getElementById("sitetime").innerHTML=" This blog is up and running "+/*diffYears+" Year "+*/diffDays+" Days "+diffHours+" Hours "+diffMinutes+" Minutes "+diffSeconds+" Seconds";
-    }
-    siteTime();
-  </script>
-  <!--// 添加运行时间-->
 
+    <span><a href="/posts/8b8fedea/" title="Stream流的介绍">Stream流的介绍</a></span>
+  </li>
 
-<!--
-  <div class="powered-by">Powered by <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> & <a href="https://pisces.theme-next.org/" class="theme-link" rel="noopener" target="_blank">NexT.Pisces</a>
-  </div>
--->
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/Java/" title="In Java">Java</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/Java/Mybatis/" title="In Mybatis">Mybatis</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/Java/Mybatis/SpringBoot/" title="In SpringBoot">SpringBoot</a>
+</div>
 
+    <span><a href="/posts/c112412d/" title="Mybatis封装成Map结果">Mybatis封装成Map结果</a></span>
+  </li>
 
-        
-<div class="busuanzi-count">
-  <script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/Java/" title="In Java">Java</a>
+</div>
 
+    <span><a href="/posts/9dcbb5fa/" title="Corn表达式">Corn表达式</a></span>
+  </li>
 
-  <span class="site-uv" title="Total Visitors">
-    My <span id="busuanzi_value_site_uv"></span>th Friend, 
-  </span>
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/Java%E9%9D%A2%E8%AF%95/" title="In Java面试">Java面试</a>
+</div>
 
-  <span class="site-pv" title="Total Views">
-    After  <span id="busuanzi_value_site_pv"></span> times of looking back, I met you 。
-  </span>
-  <!--
-    <span class="post-meta-item" id="busuanzi_container_site_uv" >
-      <span class="post-meta-item-icon">
-        <i class="fa fa-user"></i>
-      </span>
-      <span class="site-uv" title="Total Visitors">
-        <span id="busuanzi_value_site_uv"></span>
-      </span>
+    <span><a href="/posts/feb84842/" title="Java面试必问--ArrayList的底层">Java面试必问--ArrayList的底层</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+</div>
+
+    <span><a href="/posts/56be7cc9/" title="关于Linux排查问题命令">关于Linux排查问题命令</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/SAP/" title="In SAP">SAP</a>
+</div>
+
+    <span><a href="/posts/4187faeb/" title="English self_introduction">English self_introduction</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/Java%E9%9D%A2%E8%AF%95/" title="In Java面试">Java面试</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/Java%E9%9D%A2%E8%AF%95/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/" title="In 操作系统">操作系统</a>
+</div>
+
+    <span><a href="/posts/c7cf6e41/" title="面试之旅关于计算机网络">面试之旅关于计算机网络</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/%E5%9F%BA%E5%9B%A0%E7%BC%96%E8%BE%91/" title="In 基因编辑">基因编辑</a>
+</div>
+
+    <span><a href="/posts/1f142005/" title="CRISPR-Cas9英文介绍">CRISPR-Cas9英文介绍</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/Java/" title="In Java">Java</a>
+</div>
+
+    <span><a href="/posts/96eb888f/" title="Java学习线路图">Java学习线路图</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+</div>
+
+    <span><a href="/posts/2dc35ee/" title="多线程分批处理方案">多线程分批处理方案</a></span>
+  </li>
+
+  </ul>
+</div>
+<div>
+  <h2>Recent Comments</h2>
+  <ul class="leancloud-recent-comment"></ul>
+</div>
+
+        </div>
+        <div class="status">
+  <div class="copyright">
+    
+    &copy; 2021 – 
+    <span itemprop="copyrightYear">2022</span>
+    <span class="with-love">
+      <i class="ic i-sakura rotate"></i>
     </span>
+    <span class="author" itemprop="copyrightHolder">JIN Mao @ Jin Mao when to get rich ?</span>
+  </div>
+  <div class="count">
+    <span class="post-meta-item-icon">
+      <i class="ic i-chart-area"></i>
+    </span>
+    <span title="Symbols count total">557k words</span>
+
     <span class="post-meta-divider">|</span>
-    <span class="post-meta-item" id="busuanzi_container_site_pv">
-      <span class="post-meta-item-icon">
-        <i class="fa fa-eye"></i>
-      </span>
-      <span class="site-pv" title="Total Views">
-        <span id="busuanzi_value_site_pv"></span>
-      </span>
-    </span>-->
+    <span class="post-meta-item-icon">
+      <i class="ic i-coffee"></i>
+    </span>
+    <span title="Reading time total">8:26</span>
+  </div>
 </div>
-
-
-
-
-
-
-
 
       </div>
     </footer>
   </div>
-
-  
-  <script src="/lib/anime.min.js"></script>
-  <script src="//cdn.jsdelivr.net/npm/medium-zoom@1/dist/medium-zoom.min.js"></script>
-  <script src="//cdn.jsdelivr.net/npm/lozad@1/dist/lozad.min.js"></script>
-  <script src="/lib/velocity/velocity.min.js"></script>
-  <script src="/lib/velocity/velocity.ui.min.js"></script>
-
-<script src="/js/utils.js"></script>
-
-<script src="/js/motion.js"></script>
-
-
-<script src="/js/schemes/pisces.js"></script>
-
-
-<script src="/js/next-boot.js"></script>
-
-<script src="/js/bookmark.js"></script>
-
-
-  <script defer src="/lib/three/three.min.js"></script>
-    <script defer src="/lib/three/canvas_lines.min.js"></script>
-
-
-  
-
-
-
-  <script>
-  if (CONFIG.page.isPost) {
-    wpac_init = window.wpac_init || [];
-    wpac_init.push({
-      widget: 'Rating',
-      id    : ,
-      el    : 'wpac-rating',
-      color : 'fc6423'
-    });
-    (function() {
-      if ('WIDGETPACK_LOADED' in window) return;
-      WIDGETPACK_LOADED = true;
-      var mc = document.createElement('script');
-      mc.type = 'text/javascript';
-      mc.async = true;
-      mc.src = '//embed.widgetpack.com/widget.js';
-      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(mc, s.nextSibling);
-    })();
-  }
-  </script>
-
-  
-<script src="/js/local-search.js"></script>
-
-
-
-
-
-
-
-
-
-
-
-
-
-  
-
-  
-
-
-<script>
-NexT.utils.loadComments(document.querySelector('#valine-comments'), () => {
-  NexT.utils.getScript('//unpkg.com/valine/dist/Valine.min.js', () => {
-    var GUEST = ['nick', 'mail', 'link'];
-    var guest = 'nick,mail,link';
-    guest = guest.split(',').filter(item => {
-      return GUEST.includes(item);
-    });
-    new Valine({
-      el         : '#valine-comments',
-      verify     : true,
-      notify     : true,
-      appId      : 'J2bQH6GquIhMurLQc9NYgXWJ-gzGzoHsz',
-      appKey     : 'mbmntmQLrVScI2O7gV6zBej5',
-      placeholder: "Just go go",
-      avatar     : 'mm',
-      meta       : guest,
-      pageSize   : '10' || 10,
-      visitor    : false,
-      lang       : 'en' || 'zh-cn',
-      path       : location.pathname,
-      recordIP   : true,
-      serverURLs : ''
-    });
-  }, window.Valine);
-});
+<script data-config type="text/javascript">
+  var LOCAL = {
+    path: 'posts/7474c898/',
+    favicon: {
+      show: "You're welcome",
+      hide: "Wait for you"
+    },
+    search : {
+      placeholder: "Search for Posts",
+      empty: "We didn't find any results for the search: ${query}",
+      stats: "${hits} results found in ${time} ms"
+    },
+    valine: true,fancybox: true,
+    copyright: 'Copied to clipboard successfully! <br> All articles in this blog are licensed under <i class="ic i-creative-commons"></i>BY-NC-SA.',
+    ignores : [
+      function(uri) {
+        return uri.includes('#');
+      },
+      function(uri) {
+        return new RegExp(LOCAL.path+"$").test(uri);
+      }
+    ]
+  };
 </script>
 
+<script src="https://cdn.polyfill.io/v2/polyfill.js"></script>
 
-  
-  <script type="text/javascript" src="/js/cursor/love.js"></script>
+<script src="//cdn.jsdelivr.net/combine/npm/pace-js@1.0.2/pace.min.js,npm/pjax@0.2.8/pjax.min.js,npm/whatwg-fetch@3.4.0/dist/fetch.umd.min.js,npm/animejs@3.2.0/lib/anime.min.js,npm/algoliasearch@4/dist/algoliasearch-lite.umd.js,npm/instantsearch.js@4/dist/instantsearch.production.min.js,npm/lozad@1/dist/lozad.min.js,npm/quicklink@2/dist/quicklink.umd.js"></script>
+
+<script src="/js/app.js?v=0.2.5"></script>
 
 
 
-  
-<script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"model":{"jsonPath":"/live2dw/assets/shizuku.model.json"},"display":{"position":"left","width":200,"height":400},"mobile":{"show":false},"log":false,"pluginJsPath":"lib/","pluginModelPath":"assets/","pluginRootPath":"live2dw/","tagMode":false});</script></body>
+
+</body>
 </html>

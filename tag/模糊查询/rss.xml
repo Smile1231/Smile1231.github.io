@@ -1,0 +1,142 @@
+<?xml version="1.0"?>
+<rss version="2.0">
+    <channel>
+        <title>JIN MAO &#39;s Blog • Posts by &#34;模糊查询&#34; tag</title>
+        <link>https://smile1231.github.io</link>
+        <description></description>
+        <language>en</language>
+        <pubDate>Sun, 13 Feb 2022 21:39:52 +0800</pubDate>
+        <lastBuildDate>Sun, 13 Feb 2022 21:39:52 +0800</lastBuildDate>
+        <category>生物信息</category>
+        <category>基因编辑</category>
+        <category>SAP</category>
+        <category>Java</category>
+        <category>Corn</category>
+        <category>Cache</category>
+        <category>Cookie</category>
+        <category>Session</category>
+        <category>Java面试</category>
+        <category>前端</category>
+        <category>Css</category>
+        <category>DDD</category>
+        <category>领域驱动设计</category>
+        <category>DisPlay属性</category>
+        <category>FastJson</category>
+        <category>Docker</category>
+        <category>blog</category>
+        <category>hexo</category>
+        <category>next</category>
+        <category>IDEA</category>
+        <category>SpringBoot</category>
+        <category>JavaScript</category>
+        <category>Html</category>
+        <category>Jvm</category>
+        <category>函数式接口</category>
+        <category>map</category>
+        <category>Stream流</category>
+        <category>Assert</category>
+        <category>java</category>
+        <category>calender</category>
+        <category>Springboot</category>
+        <category>LeetCode</category>
+        <category>算法</category>
+        <category>递归</category>
+        <category>Mybatis</category>
+        <category>分页查询</category>
+        <category>模糊查询</category>
+        <category>Linux</category>
+        <category>Spring</category>
+        <category>Nginx</category>
+        <category>文件上传</category>
+        <category>SrpingBoot</category>
+        <category>事务</category>
+        <category>TypeScript</category>
+        <category>WebPack</category>
+        <category>master</category>
+        <category>Ubuntu</category>
+        <category>Mysql</category>
+        <category>VSCODE</category>
+        <category>快捷键</category>
+        <category>UML</category>
+        <category>Vue</category>
+        <category>VsCode</category>
+        <category>Shell</category>
+        <category>Stream</category>
+        <category>线程池</category>
+        <category>日期</category>
+        <category>ubuntu</category>
+        <category>虚拟机</category>
+        <category>数据挖掘</category>
+        <category>Hadoop</category>
+        <category>操作系统</category>
+        <category>EasyExcel</category>
+        <category>二分查找</category>
+        <category>node</category>
+        <category>JVM</category>
+        <category>junit</category>
+        <category>Hexo</category>
+        <category>数据库</category>
+        <category>Yaml</category>
+        <category>冒泡排序</category>
+        <category>Git</category>
+        <category>git,npm,node</category>
+        <category>动态规划</category>
+        <category>多线程</category>
+        <category>Mysql事务</category>
+        <category>堆排序</category>
+        <category>幂等性</category>
+        <category>流</category>
+        <category>归并排序</category>
+        <category>正则表达式</category>
+        <category>快速排序</category>
+        <category>直接插入排序</category>
+        <category>Java 面试</category>
+        <category>数据结构</category>
+        <category>阻塞队列</category>
+        <category>选择排序</category>
+        <category>Spring事务</category>
+        <category>JDK</category>
+        <category>动态代理</category>
+        <category>Date</category>
+        <category>ArrayList</category>
+        <category>接口</category>
+        <category>SpringMvc</category>
+        <category>排序</category>
+        <category>执行计划</category>
+        <category>HashMap</category>
+        <category>设计模式</category>
+        <item>
+            <guid isPermalink="true">https://smile1231.github.io/posts/105c245f/</guid>
+            <title>Mybatis使用Sql进行模糊查询</title>
+            <link>https://smile1231.github.io/posts/105c245f/</link>
+            <category>Java</category>
+            <category>SpringBoot</category>
+            <category>Mybatis</category>
+            <category>模糊查询</category>
+            <pubDate>Sun, 13 Feb 2022 21:39:52 +0800</pubDate>
+            <description><![CDATA[ &lt;h1 id=&#34;mybatis使用sql进行模糊查询&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#mybatis使用sql进行模糊查询&#34;&gt;#&lt;/a&gt;  &lt;code&gt;Mybatis&lt;/code&gt;  使用 &lt;code&gt;Sql&lt;/code&gt;  进行模糊查询&lt;/h1&gt;
+&lt;h2 id=&#34;方式一&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#方式一&#34;&gt;#&lt;/a&gt; 方式一&lt;/h2&gt;
+&lt;figure class=&#34;highlight xml&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;&amp;lt;!-- 根据名称模糊查询 --&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;tag&#34;&gt;&amp;lt;&lt;span class=&#34;name&#34;&gt;select&lt;/span&gt; &lt;span class=&#34;attr&#34;&gt;id&lt;/span&gt;=&lt;span class=&#34;string&#34;&gt;&amp;quot;findByName&amp;quot;&lt;/span&gt; &lt;span class=&#34;attr&#34;&gt;resultType&lt;/span&gt;=&lt;span class=&#34;string&#34;&gt;&amp;quot;com.sc.domain.User&amp;quot;&lt;/span&gt; &lt;span class=&#34;attr&#34;&gt;parameterType&lt;/span&gt;=&lt;span class=&#34;string&#34;&gt;&amp;quot;String&amp;quot;&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    select * from user where username like #&amp;#123;username&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;tag&#34;&gt;&amp;lt;/&lt;span class=&#34;name&#34;&gt;select&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;模糊查询的测试方法&lt;/p&gt;
+&lt;span id=&#34;more&#34;&gt;&lt;/span&gt;
+&lt;figure class=&#34;highlight java&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;List&amp;lt;User&amp;gt; users = userDao.findByName(&lt;span class=&#34;string&#34;&gt;&amp;quot;%王%&amp;quot;&lt;/span&gt;);&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;img data-src=&#34;/posts/105c245f/2022-02-13-22-29-15.png&#34; class=&#34;&#34;&gt;
+&lt;p&gt;我们在配置文件中没有加入 &lt;code&gt;%&lt;/code&gt;  来作为模糊查询的条件，所以在传入字符串实参时，就需要给定模糊查询的标&lt;br&gt;
+识 %。配置文件中的 &lt;code&gt;#&amp;#123;username&amp;#125;&lt;/code&gt;  也只是一个占位符，所以  &lt;code&gt;SQL&lt;/code&gt;  语句显示为 &lt;code&gt;“？”&lt;/code&gt; 。&lt;/p&gt;
+&lt;h2 id=&#34;方式二&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#方式二&#34;&gt;#&lt;/a&gt; 方式二&lt;/h2&gt;
+&lt;figure class=&#34;highlight xml&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;tag&#34;&gt;&amp;lt;&lt;span class=&#34;name&#34;&gt;select&lt;/span&gt; &lt;span class=&#34;attr&#34;&gt;id&lt;/span&gt;=&lt;span class=&#34;string&#34;&gt;&amp;quot;findByName&amp;quot;&lt;/span&gt; &lt;span class=&#34;attr&#34;&gt;parameterType&lt;/span&gt;=&lt;span class=&#34;string&#34;&gt;&amp;quot;string&amp;quot;&lt;/span&gt; &lt;span class=&#34;attr&#34;&gt;resultType&lt;/span&gt;=&lt;span class=&#34;string&#34;&gt;&amp;quot;com.sc.domain.User&amp;quot;&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt; select * from user where username like &amp;#x27;%$&amp;#123;value&amp;#125;%&amp;#x27;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;tag&#34;&gt;&amp;lt;/&lt;span class=&#34;name&#34;&gt;select&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;我们在上面将原来的 &lt;code&gt;#&amp;#123;&amp;#125;&lt;/code&gt;  占位符，改成了 &lt;code&gt;&amp;#123;value&amp;#125;&lt;/code&gt; 。注意如果用模糊查询的这种写法，那么 &lt;code&gt;$&amp;#123;value&amp;#125;&lt;/code&gt;  的写法就是固定的，不能写成其它名字。&lt;/p&gt;
+&lt;figure class=&#34;highlight java&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;//执行查询一个方法&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;List&amp;lt;User&amp;gt; users = userDao.findByName(&lt;span class=&#34;string&#34;&gt;&amp;quot;王&amp;quot;&lt;/span&gt;);&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;img data-src=&#34;/posts/105c245f/2022-02-13-22-29-25.png&#34; class=&#34;&#34;&gt;
+&lt;p&gt;可以发现，我们在程序代码中就不需要加入模糊查询的匹配符 % 了，这两种方式的实现效果是一样的，但执行&lt;br&gt;
+的语句是不一样的。&lt;/p&gt;
+&lt;h2 id=&#34;方式三&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#方式三&#34;&gt;#&lt;/a&gt; 方式三&lt;/h2&gt;
+&lt;p&gt;说明：通过前两种写法，虽然可以解决模糊查询的问题，但是还是不好，因为通过 &lt;code&gt;%&lt;/code&gt;  的方式会引发 &lt;code&gt;sql&lt;/code&gt;  注入的问题，现在的期望是：既能够解决 &lt;code&gt;sql&lt;/code&gt;  注入又能在配置文件中写 &lt;code&gt;%&lt;/code&gt;  该如何实现呢，可以借助 &lt;code&gt;mysql&lt;/code&gt;  的函数。&lt;/p&gt;
+&lt;p&gt;修改  &lt;code&gt;SQL&lt;/code&gt;  语句的配置，配置如下：&lt;/p&gt;
+&lt;figure class=&#34;highlight xml&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;tag&#34;&gt;&amp;lt;&lt;span class=&#34;name&#34;&gt;select&lt;/span&gt; &lt;span class=&#34;attr&#34;&gt;id&lt;/span&gt;=&lt;span class=&#34;string&#34;&gt;&amp;quot;findByName&amp;quot;&lt;/span&gt; &lt;span class=&#34;attr&#34;&gt;parameterType&lt;/span&gt;=&lt;span class=&#34;string&#34;&gt;&amp;quot;string&amp;quot;&lt;/span&gt; &lt;span class=&#34;attr&#34;&gt;resultType&lt;/span&gt;=&lt;span class=&#34;string&#34;&gt;&amp;quot;com.sc.domain.User&amp;quot;&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt; select * from user where username like concat(&amp;#x27;%&amp;#x27;,#&amp;#123;username&amp;#125;,&amp;#x27;%&amp;#x27;)&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;tag&#34;&gt;&amp;lt;/&lt;span class=&#34;name&#34;&gt;select&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;&lt;code&gt;*#&amp;#123; &amp;#125;&lt;/code&gt;  是预编译处理， &lt;code&gt;MyBatis&lt;/code&gt;  在处理 &lt;code&gt;#&amp;#123; &amp;#125;&lt;/code&gt;  时，它会将 &lt;code&gt;sql&lt;/code&gt;  中的 &lt;code&gt;#&amp;#123; &amp;#125;&lt;/code&gt;  替换为 &lt;code&gt;？&lt;/code&gt; ，然后调用 &lt;code&gt;PreparedStatement&lt;/code&gt;  的 &lt;code&gt;set&lt;/code&gt;  方法来赋值，传入字符串后，会在值两边加上单引号，使用占位符的方式提高效率，可以防止 &lt;code&gt;sql&lt;/code&gt;  注入。&lt;br&gt;
+ &lt;code&gt;$&amp;#123;&amp;#125;:&lt;/code&gt;  表示拼接 &lt;code&gt;sql&lt;/code&gt;  串，将接收到参数的内容不加任何修饰拼接在 &lt;code&gt;sql&lt;/code&gt;  中，可能引发 &lt;code&gt;sql&lt;/code&gt;  注入。&lt;/p&gt;
+ ]]></description>
+        </item>
+    </channel>
+</rss>

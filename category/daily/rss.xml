@@ -1,0 +1,217 @@
+<?xml version="1.0"?>
+<rss version="2.0">
+    <channel>
+        <title>JIN MAO &#39;s Blog • Posts by &#34;daily&#34; category</title>
+        <link>https://smile1231.github.io</link>
+        <description></description>
+        <language>en</language>
+        <pubDate>Wed, 26 Jan 2022 22:53:19 +0800</pubDate>
+        <lastBuildDate>Wed, 26 Jan 2022 22:53:19 +0800</lastBuildDate>
+        <category>生物信息</category>
+        <category>基因编辑</category>
+        <category>SAP</category>
+        <category>Java</category>
+        <category>Corn</category>
+        <category>Cache</category>
+        <category>Cookie</category>
+        <category>Session</category>
+        <category>Java面试</category>
+        <category>前端</category>
+        <category>Css</category>
+        <category>DDD</category>
+        <category>领域驱动设计</category>
+        <category>DisPlay属性</category>
+        <category>FastJson</category>
+        <category>Docker</category>
+        <category>blog</category>
+        <category>hexo</category>
+        <category>next</category>
+        <category>IDEA</category>
+        <category>SpringBoot</category>
+        <category>JavaScript</category>
+        <category>Html</category>
+        <category>Jvm</category>
+        <category>函数式接口</category>
+        <category>map</category>
+        <category>Stream流</category>
+        <category>Assert</category>
+        <category>java</category>
+        <category>calender</category>
+        <category>Springboot</category>
+        <category>LeetCode</category>
+        <category>算法</category>
+        <category>递归</category>
+        <category>Mybatis</category>
+        <category>分页查询</category>
+        <category>模糊查询</category>
+        <category>Linux</category>
+        <category>Spring</category>
+        <category>Nginx</category>
+        <category>文件上传</category>
+        <category>SrpingBoot</category>
+        <category>事务</category>
+        <category>TypeScript</category>
+        <category>WebPack</category>
+        <category>master</category>
+        <category>Ubuntu</category>
+        <category>Mysql</category>
+        <category>VSCODE</category>
+        <category>快捷键</category>
+        <category>UML</category>
+        <category>Vue</category>
+        <category>VsCode</category>
+        <category>Shell</category>
+        <category>Stream</category>
+        <category>线程池</category>
+        <category>日期</category>
+        <category>ubuntu</category>
+        <category>虚拟机</category>
+        <category>数据挖掘</category>
+        <category>Hadoop</category>
+        <category>操作系统</category>
+        <category>EasyExcel</category>
+        <category>二分查找</category>
+        <category>node</category>
+        <category>JVM</category>
+        <category>junit</category>
+        <category>Hexo</category>
+        <category>数据库</category>
+        <category>Yaml</category>
+        <category>冒泡排序</category>
+        <category>Git</category>
+        <category>git,npm,node</category>
+        <category>动态规划</category>
+        <category>多线程</category>
+        <category>Mysql事务</category>
+        <category>堆排序</category>
+        <category>幂等性</category>
+        <category>流</category>
+        <category>归并排序</category>
+        <category>正则表达式</category>
+        <category>快速排序</category>
+        <category>直接插入排序</category>
+        <category>Java 面试</category>
+        <category>数据结构</category>
+        <category>阻塞队列</category>
+        <category>选择排序</category>
+        <category>Spring事务</category>
+        <category>JDK</category>
+        <category>动态代理</category>
+        <category>Date</category>
+        <category>ArrayList</category>
+        <category>接口</category>
+        <category>SpringMvc</category>
+        <category>排序</category>
+        <category>执行计划</category>
+        <category>HashMap</category>
+        <category>设计模式</category>
+        <item>
+            <guid isPermalink="true">https://smile1231.github.io/posts/9a0369ec/</guid>
+            <title>布隆过滤器</title>
+            <link>https://smile1231.github.io/posts/9a0369ec/</link>
+            <pubDate>Wed, 26 Jan 2022 22:53:19 +0800</pubDate>
+            <description><![CDATA[ &lt;h1 id=&#34;布隆过滤器&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#布隆过滤器&#34;&gt;#&lt;/a&gt; 布隆过滤器&lt;/h1&gt;
+&lt;h2 id=&#34;什么是布隆过滤器&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#什么是布隆过滤器&#34;&gt;#&lt;/a&gt; 什么是布隆过滤器&lt;/h2&gt;
+&lt;p&gt;布隆过滤器（ &lt;code&gt;Bloom Filter&lt;/code&gt; ），是 1970 年，由一个叫布隆的小伙子提出的，距今已经五十年了，和老哥一样老。&lt;/p&gt;
+&lt;p&gt;它实际上是一个很长的二进制向量和一系列随机映射函数，二进制大家应该都清楚，存储的数据不是 &lt;code&gt;0&lt;/code&gt;  就是 &lt;code&gt;1&lt;/code&gt; ，默认是 &lt;code&gt;0&lt;/code&gt; 。&lt;/p&gt;
+&lt;p&gt;主要用于判断一个元素是否在一个集合中， &lt;code&gt;0&lt;/code&gt;  代表不存在某个数据， &lt;code&gt;1&lt;/code&gt;  代表存在某个数据。&lt;/p&gt;
+&lt;p&gt;懂了吗？作为暖男的老哥在给你们画张图来帮助理解：&lt;/p&gt;
+&lt;img data-src=&#34;/posts/9a0369ec/2022-01-26-22-56-13.png&#34; class=&#34;&#34;&gt;
+&lt;span id=&#34;more&#34;&gt;&lt;/span&gt;
+&lt;h2 id=&#34;布隆过滤器用途&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#布隆过滤器用途&#34;&gt;#&lt;/a&gt; 布隆过滤器用途&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;解决 &lt;code&gt;Redis&lt;/code&gt;  缓存穿透（今天重点讲解）&lt;/li&gt;
+&lt;li&gt;在爬虫时，对爬虫网址进行过滤，已经存在布隆中的网址，不在爬取。&lt;/li&gt;
+&lt;li&gt;垃圾邮件过滤，对每一个发送邮件的地址进行判断是否在布隆的黑名单中，如果在就判断为垃圾邮件。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;以上只是简单的用途举例，大家可以举一反三，灵活运用在工作中。&lt;/p&gt;
+&lt;h2 id=&#34;布隆过滤器原理&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#布隆过滤器原理&#34;&gt;#&lt;/a&gt; 布隆过滤器原理&lt;/h2&gt;
+&lt;blockquote&gt;
+&lt;p&gt;存入过程&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;布隆过滤器上面说了，就是一个二进制数据的集合。当一个数据加入这个集合时，经历如下洗礼（这里有缺点，下面会讲）：&lt;/p&gt;
+&lt;p&gt;通过 K 个哈希函数计算该数据，返回 K 个计算出的 hash 值&lt;br&gt;
+这些 K 个 hash 值映射到对应的 K 个二进制的数组下标&lt;br&gt;
+将 K 个下标对应的二进制数据改成 1。&lt;br&gt;
+例如，第一个哈希函数返回 x，第二个第三个哈希函数返回 y 与 z，那么： X、Y、Z 对应的二进制改成 1。&lt;/p&gt;
+&lt;p&gt;如图所示：&lt;/p&gt;
+&lt;img data-src=&#34;/posts/9a0369ec/2022-01-26-22-56-38.png&#34; class=&#34;&#34;&gt;
+&lt;blockquote&gt;
+&lt;p&gt;查询过程&lt;br&gt;
+布隆过滤器主要作用就是查询一个数据，在不在这个二进制的集合中，查询过程如下：&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;通过 &lt;code&gt;K&lt;/code&gt;  个哈希函数计算该数据，对应计算出的 &lt;code&gt;K&lt;/code&gt;  个 &lt;code&gt;hash&lt;/code&gt;  值&lt;br&gt;
+通过 &lt;code&gt;hash&lt;/code&gt;  值找到对应的二进制的数组下标&lt;br&gt;
+判断：如果存在一处位置的二进制数据是 &lt;code&gt;0&lt;/code&gt; ，那么该数据不存在。如果都是 &lt;code&gt;1&lt;/code&gt; ，该数据存在集合中。（这里有缺点，下面会讲）&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;删除过程&lt;br&gt;
+一般不能删除布隆过滤器里的数据，这是一个缺点之一，我们下面会分析。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&#34;布隆过滤器的优缺点&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#布隆过滤器的优缺点&#34;&gt;#&lt;/a&gt; 布隆过滤器的优缺点&lt;/h2&gt;
+&lt;blockquote&gt;
+&lt;p&gt;优点&lt;br&gt;
+由于存储的是二进制数据，所以占用的空间很小&lt;br&gt;
+它的插入和查询速度是非常快的，时间复杂度是 &lt;code&gt;O（K）&lt;/code&gt; ，可以联想一下 &lt;code&gt;HashMap&lt;/code&gt;  的过程&lt;br&gt;
+保密性很好，因为本身不存储任何原始数据，只有二进制数据&lt;br&gt;
+缺点&lt;br&gt;
+这就要回到我们上面所说的那些缺点了。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;添加数据是通过计算数据的 &lt;code&gt;hash&lt;/code&gt;  值，那么很有可能存在这种情况：两个不同的数据计算得到相同的 &lt;code&gt;hash&lt;/code&gt;  值。&lt;/p&gt;
+&lt;img data-src=&#34;/posts/9a0369ec/2022-01-26-22-56-49.png&#34; class=&#34;&#34;&gt;
+&lt;p&gt;例如图中的 “你好” 和 “hello”，假如最终算出 hash 值相同，那么他们会将同一个下标的二进制数据改为 1。&lt;/p&gt;
+&lt;p&gt;这个时候，你就不知道下标为 2 的二进制，到底是代表 “你好” 还是 “hello”。&lt;/p&gt;
+&lt;h2 id=&#34;由此得出如下缺点&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#由此得出如下缺点&#34;&gt;#&lt;/a&gt; 由此得出如下缺点：&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;存在误判&lt;br&gt;
+假如上面的图没有存 &lt;code&gt;&amp;quot;hello&amp;quot;&lt;/code&gt; ，只存了&amp;quot; 你好 &amp;quot;，那么用 &lt;code&gt;&amp;quot;hello&amp;quot;&lt;/code&gt;  来查询的时候，会判断 &lt;code&gt;&amp;quot;hello&amp;quot;&lt;/code&gt;  存在集合中。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;因为 “你好” 和 &lt;code&gt;“hello”&lt;/code&gt;  的 &lt;code&gt;hash&lt;/code&gt;  值是相同的，通过相同的 &lt;code&gt;hash&lt;/code&gt;  值，找到的二进制数据也是一样的，都是 1。&lt;/p&gt;
+&lt;ol start=&#34;2&#34;&gt;
+&lt;li&gt;删除困难&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;到这里我不说大家应该也明白为什么吧，作为你们的暖男老哥，还是讲一下吧。&lt;/p&gt;
+&lt;p&gt;还是用上面的举例，因为 “你好” 和 &lt;code&gt;“hello”&lt;/code&gt;  的 &lt;code&gt;hash&lt;/code&gt;  值相同，对应的数组下标也是一样的。&lt;/p&gt;
+&lt;p&gt;这时候老哥想去删除 “你好”，将下标为 &lt;code&gt;2&lt;/code&gt;  里的二进制数据，由 1 改成了 &lt;code&gt;0&lt;/code&gt; 。&lt;/p&gt;
+&lt;p&gt;那么我们是不是连 &lt;code&gt;“hello”&lt;/code&gt;  都一起删了呀。（ &lt;code&gt;0&lt;/code&gt;  代表有这个数据， &lt;code&gt;1&lt;/code&gt;  代表没有这个数据）&lt;/p&gt;
+&lt;h2 id=&#34;实现布隆过滤器&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#实现布隆过滤器&#34;&gt;#&lt;/a&gt; 实现布隆过滤器&lt;/h2&gt;
+&lt;blockquote&gt;
+&lt;p&gt;引入依赖&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;figure class=&#34;highlight xml&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;tag&#34;&gt;&amp;lt;&lt;span class=&#34;name&#34;&gt;dependency&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  &lt;span class=&#34;tag&#34;&gt;&amp;lt;&lt;span class=&#34;name&#34;&gt;groupId&lt;/span&gt;&amp;gt;&lt;/span&gt;com.google.guava&lt;span class=&#34;tag&#34;&gt;&amp;lt;/&lt;span class=&#34;name&#34;&gt;groupId&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  &lt;span class=&#34;tag&#34;&gt;&amp;lt;&lt;span class=&#34;name&#34;&gt;artifactId&lt;/span&gt;&amp;gt;&lt;/span&gt;guava&lt;span class=&#34;tag&#34;&gt;&amp;lt;/&lt;span class=&#34;name&#34;&gt;artifactId&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  &lt;span class=&#34;tag&#34;&gt;&amp;lt;&lt;span class=&#34;name&#34;&gt;version&lt;/span&gt;&amp;gt;&lt;/span&gt;29.0-jre&lt;span class=&#34;tag&#34;&gt;&amp;lt;/&lt;span class=&#34;name&#34;&gt;version&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;tag&#34;&gt;&amp;lt;/&lt;span class=&#34;name&#34;&gt;dependency&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;figure class=&#34;highlight java&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;13&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;14&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;15&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;16&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;17&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;18&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;19&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;20&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;21&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;22&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;23&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;24&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;25&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;26&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;27&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;28&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;29&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;30&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;31&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;32&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;33&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;34&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;35&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;36&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;37&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;38&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;public&lt;/span&gt; &lt;span class=&#34;class&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;class&lt;/span&gt; &lt;span class=&#34;title&#34;&gt;BloomFilterCase&lt;/span&gt; &lt;/span&gt;&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;comment&#34;&gt;/**&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;     * 预计要插入多少数据&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;     */&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;keyword&#34;&gt;private&lt;/span&gt; &lt;span class=&#34;keyword&#34;&gt;static&lt;/span&gt; &lt;span class=&#34;keyword&#34;&gt;int&lt;/span&gt; size = &lt;span class=&#34;number&#34;&gt;1000000&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;comment&#34;&gt;/**&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;     * 期望的误判率&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;     */&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;keyword&#34;&gt;private&lt;/span&gt; &lt;span class=&#34;keyword&#34;&gt;static&lt;/span&gt; &lt;span class=&#34;keyword&#34;&gt;double&lt;/span&gt; fpp = &lt;span class=&#34;number&#34;&gt;0.01&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;comment&#34;&gt;/**&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;     * 布隆过滤器&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;     */&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;keyword&#34;&gt;private&lt;/span&gt; &lt;span class=&#34;keyword&#34;&gt;static&lt;/span&gt; BloomFilter&amp;lt;Integer&amp;gt; bloomFilter = BloomFilter.create(Funnels.integerFunnel(),size,fpp);&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;function&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;public&lt;/span&gt; &lt;span class=&#34;keyword&#34;&gt;static&lt;/span&gt; &lt;span class=&#34;keyword&#34;&gt;void&lt;/span&gt; &lt;span class=&#34;title&#34;&gt;main&lt;/span&gt;&lt;span class=&#34;params&#34;&gt;(String[] args)&lt;/span&gt; &lt;/span&gt;&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        &lt;span class=&#34;comment&#34;&gt;//插入10万条样本数据&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        &lt;span class=&#34;keyword&#34;&gt;for&lt;/span&gt; (&lt;span class=&#34;keyword&#34;&gt;int&lt;/span&gt; i = &lt;span class=&#34;number&#34;&gt;0&lt;/span&gt;; i &amp;lt; size; i++) &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;            bloomFilter.put(i);&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        &lt;span class=&#34;comment&#34;&gt;//用另外十万条测试数据,测试误判率&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        &lt;span class=&#34;keyword&#34;&gt;int&lt;/span&gt; count = &lt;span class=&#34;number&#34;&gt;0&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        &lt;span class=&#34;keyword&#34;&gt;for&lt;/span&gt; (&lt;span class=&#34;keyword&#34;&gt;int&lt;/span&gt; i = size; i &amp;lt; size + &lt;span class=&#34;number&#34;&gt;1000000&lt;/span&gt;; i++) &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;            &lt;span class=&#34;keyword&#34;&gt;if&lt;/span&gt; (bloomFilter.mightContain(i))&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;                count++;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;                System.out.println(i+&lt;span class=&#34;string&#34;&gt;&amp;quot;误判了&amp;quot;&lt;/span&gt;);&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;            &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        System.out.println(&lt;span class=&#34;string&#34;&gt;&amp;quot;总共误判了:&amp;quot;&lt;/span&gt; + count);&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;img data-src=&#34;/posts/9a0369ec/2022-01-26-22-57-09.png&#34; class=&#34;&#34;&gt;
+&lt;p&gt;&lt;code&gt;100&lt;/code&gt;  万数据里有 &lt;code&gt;947&lt;/code&gt;  个误判，约等于 &lt;code&gt;0.01%&lt;/code&gt; ，也就是我们代码里设置的误判率： &lt;code&gt;fpp = 0.01。&lt;/code&gt;&lt;/p&gt;
+&lt;h2 id=&#34;深入分析代码&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#深入分析代码&#34;&gt;#&lt;/a&gt; 深入分析代码&lt;/h2&gt;
+&lt;p&gt;核心 &lt;code&gt;BloomFilter.create&lt;/code&gt;  方法&lt;/p&gt;
+&lt;figure class=&#34;highlight java&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;meta&#34;&gt;@VisibleForTesting&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  &lt;span class=&#34;keyword&#34;&gt;static&lt;/span&gt; &amp;lt;T&amp;gt; &lt;span class=&#34;function&#34;&gt;BloomFilter&amp;lt;T&amp;gt; &lt;span class=&#34;title&#34;&gt;create&lt;/span&gt;&lt;span class=&#34;params&#34;&gt;(&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;params&#34;&gt;&lt;span class=&#34;function&#34;&gt;      Funnel&amp;lt;? &lt;span class=&#34;keyword&#34;&gt;super&lt;/span&gt; T&amp;gt; funnel, &lt;span class=&#34;keyword&#34;&gt;long&lt;/span&gt; expectedInsertions, &lt;span class=&#34;keyword&#34;&gt;double&lt;/span&gt; fpp, Strategy strategy)&lt;/span&gt; &lt;/span&gt;&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    。。。。&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;这里有四个参数：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;funnel&lt;/code&gt; ：数据类型 (一般是调用 &lt;code&gt;Funnels&lt;/code&gt;  工具类中的)&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;expectedInsertions&lt;/code&gt; ：期望插入的值的个数&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;fpp&lt;/code&gt; ：误判率 (默认值为 &lt;code&gt;0.03&lt;/code&gt; )&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;strategy&lt;/code&gt; ：哈希算法&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;我们重点讲一下 &lt;code&gt;fpp&lt;/code&gt;  参数&lt;/p&gt;
+&lt;h3 id=&#34;情景总结&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#情景总结&#34;&gt;#&lt;/a&gt; 情景总结&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;误判率可以通过 &lt;code&gt;fpp&lt;/code&gt;  参数进行调节&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;fpp&lt;/code&gt;  越小，需要的内存空间就越大： &lt;code&gt;0.0&lt;/code&gt; 1 需要 &lt;code&gt;900&lt;/code&gt;  多万位数， &lt;code&gt;0.03&lt;/code&gt;  需要 &lt;code&gt;700&lt;/code&gt;  多万位数。&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;fpp&lt;/code&gt;  越小，集合添加数据时，就需要更多的 &lt;code&gt;hash&lt;/code&gt;  函数运算更多的 &lt;code&gt;hash&lt;/code&gt;  值，去存储到对应的数组下标里。（忘了去看上面的布隆过滤存入数据的过程）&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;上面的 &lt;code&gt;numBits&lt;/code&gt; ，表示存一百万个 &lt;code&gt;int&lt;/code&gt;  类型数字，需要的位数为 &lt;code&gt;7298440&lt;/code&gt; ， &lt;code&gt;700&lt;/code&gt;  多万位。理论上存一百万个数，一个 &lt;code&gt;int&lt;/code&gt;  是 &lt;code&gt;4&lt;/code&gt;  字节 &lt;code&gt;32&lt;/code&gt;  位，需要 &lt;code&gt;481000000=3200&lt;/code&gt;  万位。如果使用 &lt;code&gt;HashMap&lt;/code&gt;  去存，按 &lt;code&gt;HashMap50%&lt;/code&gt;  的存储效率，需要 &lt;code&gt;6400&lt;/code&gt;  万位。可以看出 &lt;code&gt;BloomFilter&lt;/code&gt;  的存储空间很小，只有 &lt;code&gt;HashMap&lt;/code&gt;  的 &lt;code&gt;1/10&lt;/code&gt;  左右&lt;/p&gt;
+&lt;p&gt;上面的 &lt;code&gt;numHashFunctions&lt;/code&gt;  表示需要几个 &lt;code&gt;hash&lt;/code&gt;  函数运算，去映射不同的下标存这些数字是否存在（ &lt;code&gt;0 &lt;/code&gt; or &lt;code&gt; 1&lt;/code&gt; ）。&lt;/p&gt;
+&lt;h2 id=&#34;解决redis缓存雪崩&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#解决redis缓存雪崩&#34;&gt;#&lt;/a&gt; 解决 &lt;code&gt;Redis&lt;/code&gt;  缓存雪崩&lt;/h2&gt;
+&lt;p&gt;上面使用 &lt;code&gt;Guava&lt;/code&gt;  实现的布隆过滤器是把数据放在了本地内存中。分布式的场景中就不合适了，无法共享内存。&lt;/p&gt;
+&lt;p&gt;我们还可以用 &lt;code&gt;Redis&lt;/code&gt;  来实现布隆过滤器，这里使用 &lt;code&gt;Redis&lt;/code&gt;  封装好的客户端工具 &lt;code&gt;Redisson&lt;/code&gt; 。&lt;/p&gt;
+&lt;p&gt;其底层是使用数据结构 &lt;code&gt;bitMap&lt;/code&gt; ，大家就把它理解成上面说的二进制结构，由于篇幅原因， &lt;code&gt;bitmap&lt;/code&gt;  不在这篇文章里讲&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;代码实现&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;code&gt;pom&lt;/code&gt;  配置：&lt;/p&gt;
+&lt;figure class=&#34;highlight xml&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;tag&#34;&gt;&amp;lt;&lt;span class=&#34;name&#34;&gt;dependency&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  &lt;span class=&#34;tag&#34;&gt;&amp;lt;&lt;span class=&#34;name&#34;&gt;groupId&lt;/span&gt;&amp;gt;&lt;/span&gt;org.redisson&lt;span class=&#34;tag&#34;&gt;&amp;lt;/&lt;span class=&#34;name&#34;&gt;groupId&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  &lt;span class=&#34;tag&#34;&gt;&amp;lt;&lt;span class=&#34;name&#34;&gt;artifactId&lt;/span&gt;&amp;gt;&lt;/span&gt;redisson-spring-boot-starter&lt;span class=&#34;tag&#34;&gt;&amp;lt;/&lt;span class=&#34;name&#34;&gt;artifactId&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  &lt;span class=&#34;tag&#34;&gt;&amp;lt;&lt;span class=&#34;name&#34;&gt;version&lt;/span&gt;&amp;gt;&lt;/span&gt;3.13.4&lt;span class=&#34;tag&#34;&gt;&amp;lt;/&lt;span class=&#34;name&#34;&gt;version&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;tag&#34;&gt;&amp;lt;/&lt;span class=&#34;name&#34;&gt;dependency&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;&lt;code&gt;Java&lt;/code&gt;  代码&lt;/p&gt;
+&lt;figure class=&#34;highlight java&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;13&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;14&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;15&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;16&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;17&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;18&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;19&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;20&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;21&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;22&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;public&lt;/span&gt; &lt;span class=&#34;class&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;class&lt;/span&gt; &lt;span class=&#34;title&#34;&gt;RedissonBloomFilter&lt;/span&gt; &lt;/span&gt;&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  &lt;span class=&#34;function&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;public&lt;/span&gt; &lt;span class=&#34;keyword&#34;&gt;static&lt;/span&gt; &lt;span class=&#34;keyword&#34;&gt;void&lt;/span&gt; &lt;span class=&#34;title&#34;&gt;main&lt;/span&gt;&lt;span class=&#34;params&#34;&gt;(String[] args)&lt;/span&gt; &lt;/span&gt;&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    Config config = &lt;span class=&#34;keyword&#34;&gt;new&lt;/span&gt; Config();&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    config.useSingleServer().setAddress(&lt;span class=&#34;string&#34;&gt;&amp;quot;redis://127.0.0.1:6379&amp;quot;&lt;/span&gt;);&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    config.useSingleServer().setPassword(&lt;span class=&#34;string&#34;&gt;&amp;quot;1234&amp;quot;&lt;/span&gt;);&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;comment&#34;&gt;//构造Redisson&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    RedissonClient redisson = Redisson.create(config);&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    RBloomFilter&amp;lt;String&amp;gt; bloomFilter = redisson.getBloomFilter(&lt;span class=&#34;string&#34;&gt;&amp;quot;phoneList&amp;quot;&lt;/span&gt;);&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;comment&#34;&gt;//初始化布隆过滤器：预计元素为100000000L,误差率为3%&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    bloomFilter.tryInit(&lt;span class=&#34;number&#34;&gt;100000000L&lt;/span&gt;,&lt;span class=&#34;number&#34;&gt;0.03&lt;/span&gt;);&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;comment&#34;&gt;//将号码10086插入到布隆过滤器中&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    bloomFilter.add(&lt;span class=&#34;string&#34;&gt;&amp;quot;10086&amp;quot;&lt;/span&gt;);&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;comment&#34;&gt;//判断下面号码是否在布隆过滤器中&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;comment&#34;&gt;//输出false&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    System.out.println(bloomFilter.contains(&lt;span class=&#34;string&#34;&gt;&amp;quot;123456&amp;quot;&lt;/span&gt;));&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;comment&#34;&gt;//输出true&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    System.out.println(bloomFilter.contains(&lt;span class=&#34;string&#34;&gt;&amp;quot;10086&amp;quot;&lt;/span&gt;));&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+ ]]></description>
+        </item>
+    </channel>
+</rss>
