@@ -117,12 +117,12 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
       </div>
       <div id="imgs" class="pjax">
         <ul>
-          <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1giclil3m4ej20zk0m8tn8.jpg"></li>
-          <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1gipev1x5e4j20zk0m8b29.jpg"></li>
-          <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1gicli3sbvtj20zk0m8x6p.jpg"></li>
-          <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1gipesrnqv3j20zk0m8ava.jpg"></li>
-          <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1gicljitigmj20zk0m87fp.jpg"></li>
-          <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1giclh0m9pdj20zk0m8hdt.jpg"></li>
+          <li class="item" data-background-image="https://tva1.sinaimg.cn/large/6833939bly1giclga70tsj20zk0m84mr.jpg"></li>
+          <li class="item" data-background-image="https://tva1.sinaimg.cn/large/6833939bly1gipevo9j1jj20zk0m8e81.jpg"></li>
+          <li class="item" data-background-image="https://tva1.sinaimg.cn/large/6833939bly1gipewkhf1zj20zk0m81kx.jpg"></li>
+          <li class="item" data-background-image="https://tva1.sinaimg.cn/large/6833939bly1giclhtuo6nj20zk0m8ttm.jpg"></li>
+          <li class="item" data-background-image="https://tva1.sinaimg.cn/large/6833939bly1giclil3m4ej20zk0m8tn8.jpg"></li>
+          <li class="item" data-background-image="https://tva1.sinaimg.cn/large/6833939bly1giclfw2t96j20zk0m8x6p.jpg"></li>
         </ul>
       </div>
     </header>
@@ -171,75 +171,83 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
   <div class="body md" itemprop="articleBody">
     
 
-    <h1 id="二叉树遍历（前序、中序、后序、层次遍历）"><a href="#二叉树遍历（前序、中序、后序、层次遍历）" class="headerlink" title="二叉树遍历（前序、中序、后序、层次遍历）"></a>二叉树遍历（前序、中序、后序、层次遍历）</h1><p>二叉树是一种非常重要的数据结构，很多其它数据结构都是基于二叉树的基础演变而来的。对于二叉树，有深度遍历和广度遍历，深度遍历有前序、中序以及后序三种遍历方法，广度遍历即我们平常所说的层次遍历。因为树的定义本身就是递归定义，因此采用递归的方法去实现树的三种遍历不仅容易理解而且代码很简洁，而对于广度遍历来说，需要其他数据结构的支撑，比如堆了。所以，对于一段代码来说，可读性有时候要比代码本身的效率要重要的多。</p>
+    <h1 id="二叉树遍历前序-中序-后序-层次遍历"><a class="markdownIt-Anchor" href="#二叉树遍历前序-中序-后序-层次遍历">#</a> 二叉树遍历（前序、中序、后序、层次遍历）</h1>
+<p>二叉树是一种非常重要的数据结构，很多其它数据结构都是基于二叉树的基础演变而来的。对于二叉树，有深度遍历和广度遍历，深度遍历有前序、中序以及后序三种遍历方法，广度遍历即我们平常所说的层次遍历。因为树的定义本身就是递归定义，因此采用递归的方法去实现树的三种遍历不仅容易理解而且代码很简洁，而对于广度遍历来说，需要其他数据结构的支撑，比如堆了。所以，对于一段代码来说，可读性有时候要比代码本身的效率要重要的多。</p>
 <p>四种主要的遍历思想为：</p>
 <span id="more"></span>
-
 <p>前序遍历：根结点 —&gt; 左子树 —&gt; 右子树</p>
-<p>中序遍历：左子树—&gt; 根结点 —&gt; 右子树</p>
+<p>中序遍历：左子树 —&gt; 根结点 —&gt; 右子树</p>
 <p>后序遍历：左子树 —&gt; 右子树 —&gt; 根结点</p>
 <p>层次遍历：只需按层次遍历即可</p>
 <p>例如，求下面二叉树的各种遍历</p>
 <img data-src="/posts/b9b9f7e7/2022-02-17-22-57-21.png" class="">
-
 <figure class="highlight tap"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">前序遍历：1 <span class="number"> 2 </span><span class="number"> 4 </span><span class="number"> 5 </span><span class="number"> 7 </span><span class="number"> 8 </span><span class="number"> 3 </span><span class="number"> 6 </span></span><br><span class="line"></span><br><span class="line">中序遍历：4 <span class="number"> 2 </span><span class="number"> 7 </span><span class="number"> 5 </span><span class="number"> 8 </span><span class="number"> 1 </span><span class="number"> 3 </span> 6</span><br><span class="line"></span><br><span class="line">后序遍历：4 <span class="number"> 7 </span><span class="number"> 8 </span><span class="number"> 5 </span><span class="number"> 2 </span><span class="number"> 6 </span><span class="number"> 3 </span> 1</span><br><span class="line"></span><br><span class="line">层次遍历：1 <span class="number"> 2 </span><span class="number"> 3 </span><span class="number"> 4 </span><span class="number"> 5 </span><span class="number"> 6 </span><span class="number"> 7 </span> 8</span><br></pre></td></tr></table></figure>
-<h2 id="1-前序遍历"><a href="#1-前序遍历" class="headerlink" title="1. 前序遍历"></a>1. 前序遍历</h2><ol>
-<li><p>根据上文提到的遍历思路, <code>根结点 ---&gt; 左子树 ---&gt; 右子树</code>，很容易写出递归版本：</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">   <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">preOrderTraverse1</span><span class="params">(TreeNode root)</span> </span>&#123;</span><br><span class="line">	<span class="keyword">if</span> (root != <span class="keyword">null</span>) &#123;</span><br><span class="line">		System.out.print(root.val+<span class="string">&quot;  &quot;</span>);</span><br><span class="line">		preOrderTraverse1(root.left);</span><br><span class="line">		preOrderTraverse1(root.right);</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></li>
-<li><p>现在讨论非递归的版本：</p>
-<p> 根据前序遍历的顺序，优先访问根结点，然后在访问左子树和右子树。所以，对于任意结点<code>node</code>，第一部分即直接访问之，之后在判断左子树是否为空，不为空时即重复上面的步骤，直到其为空。若为空，则需要访问右子树。注意，在访问过左孩子之后，需要反过来访问其右孩子，所以，需要<strong>栈</strong>这种数据结构的支持。对于任意一个结点<code>node</code>，具体步骤如下：</p>
-<p> a) 访问之，并把结点<code>node</code>入栈，当前结点置为左孩子；</p>
-<p> b) 判断结点<code>node</code>是否为空，若为空，则取出栈顶结点并出栈，将右孩子置为当前结点；否则重复<code>a)</code> 步直到当前结点为空或者栈为空（可以发现栈中的结点就是为了访问右孩子才存储的）</p>
-<p> 代码如下:</p>
- <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">preOrderTraverse2</span><span class="params">(TreeNode root)</span> </span>&#123;</span><br><span class="line">	LinkedList&lt;TreeNode&gt; stack = <span class="keyword">new</span> LinkedList&lt;&gt;();</span><br><span class="line">	TreeNode pNode = root;</span><br><span class="line">	<span class="keyword">while</span> (pNode != <span class="keyword">null</span> || !stack.isEmpty()) &#123;</span><br><span class="line">		<span class="keyword">if</span> (pNode != <span class="keyword">null</span>) &#123;</span><br><span class="line">			System.out.print(pNode.val+<span class="string">&quot;  &quot;</span>);</span><br><span class="line">			stack.push(pNode);</span><br><span class="line">			pNode = pNode.left;</span><br><span class="line">		&#125; <span class="keyword">else</span> &#123; <span class="comment">//pNode == null &amp;&amp; !stack.isEmpty()</span></span><br><span class="line">			TreeNode node = stack.pop();</span><br><span class="line">			pNode = node.right;</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></li>
-</ol>
-<h2 id="2-中序遍历"><a href="#2-中序遍历" class="headerlink" title="2. 中序遍历"></a>2. 中序遍历</h2><ol>
-<li><p>根据上文提到的遍历思路：<code>左子树 ---&gt; 根结点 ---&gt; 右子树</code>，很容易写出递归版本：</p>
- <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">inOrderTraverse1</span><span class="params">(TreeNode root)</span> </span>&#123;</span><br><span class="line">	<span class="keyword">if</span> (root != <span class="keyword">null</span>) &#123;</span><br><span class="line">		inOrderTraverse1(root.left);</span><br><span class="line">		System.out.print(root.val+<span class="string">&quot;  &quot;</span>);</span><br><span class="line">		inOrderTraverse1(root.right);</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></li>
-<li><p>非递归实现，有了上面前序的解释，中序也就比较简单了，相同的道理。只不过访问的顺序移到出栈时。代码如下：</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">   <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">inOrderTraverse2</span><span class="params">(TreeNode root)</span> </span>&#123;</span><br><span class="line">	LinkedList&lt;TreeNode&gt; stack = <span class="keyword">new</span> LinkedList&lt;&gt;();</span><br><span class="line">	TreeNode pNode = root;</span><br><span class="line">	<span class="keyword">while</span> (pNode != <span class="keyword">null</span> || !stack.isEmpty()) &#123;</span><br><span class="line">		<span class="keyword">if</span> (pNode != <span class="keyword">null</span>) &#123;</span><br><span class="line">			stack.push(pNode);</span><br><span class="line">			pNode = pNode.left;</span><br><span class="line">		&#125; <span class="keyword">else</span> &#123; <span class="comment">//pNode == null &amp;&amp; !stack.isEmpty()</span></span><br><span class="line">			TreeNode node = stack.pop();</span><br><span class="line">			System.out.print(node.val+<span class="string">&quot;  &quot;</span>);</span><br><span class="line">			pNode = node.right;</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<h2 id="3-后续遍历"><a href="#3-后续遍历" class="headerlink" title="3. 后续遍历"></a>3. 后续遍历</h2></li>
-<li><p>根据上文提到的遍历思路：<code>左子树 ---&gt; 右子树 ---&gt; 根结点</code>，很容易写出递归版本：</p>
- <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">postOrderTraverse1</span><span class="params">(TreeNode root)</span> </span>&#123;</span><br><span class="line">	<span class="keyword">if</span> (root != <span class="keyword">null</span>) &#123;</span><br><span class="line">		postOrderTraverse1(root.left);</span><br><span class="line">		postOrderTraverse1(root.right);</span><br><span class="line">		System.out.print(root.val+<span class="string">&quot;  &quot;</span>);</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></li>
-</ol>
-<h2 id="4-层次遍历"><a href="#4-层次遍历" class="headerlink" title="4. 层次遍历"></a>4. 层次遍历</h2><p>层次遍历的代码比较简单，只需要一个队列即可，先在队列中加入根结点。之后对于任意一个结点来说，在其出队列的时候，访问之。同时如果左孩子和右孩子有不为空的，入队列。代码如下：</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">levelTraverse</span><span class="params">(TreeNode root)</span> </span>&#123;</span><br><span class="line">    <span class="keyword">if</span> (root == <span class="keyword">null</span>) &#123;</span><br><span class="line">        <span class="keyword">return</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    LinkedList&lt;TreeNode&gt; queue = <span class="keyword">new</span> LinkedList&lt;&gt;();</span><br><span class="line">    queue.offer(root);</span><br><span class="line">    <span class="keyword">while</span> (!queue.isEmpty()) &#123;</span><br><span class="line">        TreeNode node = queue.poll();</span><br><span class="line">        System.out.print(node.val+<span class="string">&quot;  &quot;</span>);</span><br><span class="line">        <span class="keyword">if</span> (node.left != <span class="keyword">null</span>) &#123;</span><br><span class="line">            queue.offer(node.left);</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">if</span> (node.right != <span class="keyword">null</span>) &#123;</span><br><span class="line">            queue.offer(node.right);</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<h1 id="二叉树的深度优先遍历（DFS）与广度优先遍历（BFS）"><a href="#二叉树的深度优先遍历（DFS）与广度优先遍历（BFS）" class="headerlink" title="二叉树的深度优先遍历（DFS）与广度优先遍历（BFS）"></a>二叉树的深度优先遍历（<code>DFS</code>）与广度优先遍历（<code>BFS</code>）</h1><p>二叉树的深度优先遍历（<code>DFS</code>）与广度优先遍历（<code>BFS</code>）</p>
-<ul>
-<li><p><strong>深度优先遍历</strong>：从根节点出发，沿着左子树方向进行纵向遍历，直到找到叶子节点为止。然后回溯到前一个节点，进行右子树节点的遍历，直到遍历完所有可达节点为止。</p>
+<h2 id="1-前序遍历"><a class="markdownIt-Anchor" href="#1-前序遍历">#</a> 1. 前序遍历</h2>
+<ol>
+<li>
+<p>根据上文提到的遍历思路， <code>根结点 ---&gt; 左子树 ---&gt; 右子树</code> ，很容易写出递归版本：</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">   <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">preOrderTraverse1</span><span class="params">(TreeNode root)</span> </span>&#123;</span><br><span class="line">	<span class="keyword">if</span> (root != <span class="keyword">null</span>) &#123;</span><br><span class="line">		System.out.print(root.val+<span class="string">&quot;  &quot;</span>);</span><br><span class="line">		preOrderTraverse1(root.left);</span><br><span class="line">		preOrderTraverse1(root.right);</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 </li>
-<li><p><strong>广度优先遍历</strong>：从根节点出发，在横向遍历二叉树层段节点的基础上纵向遍历二叉树的层次。</p>
+<li>
+<p>现在讨论非递归的版本：</p>
+<p>根据前序遍历的顺序，优先访问根结点，然后在访问左子树和右子树。所以，对于任意结点 <code>node</code> ，第一部分即直接访问之，之后在判断左子树是否为空，不为空时即重复上面的步骤，直到其为空。若为空，则需要访问右子树。注意，在访问过左孩子之后，需要反过来访问其右孩子，所以，需要<strong>栈</strong>这种数据结构的支持。对于任意一个结点 <code>node</code> ，具体步骤如下：</p>
+<p>a) 访问之，并把结点 <code>node</code>  入栈，当前结点置为左孩子；</p>
+<p>b) 判断结点 <code>node</code>  是否为空，若为空，则取出栈顶结点并出栈，将右孩子置为当前结点；否则重复 <code>a)</code>  步直到当前结点为空或者栈为空（可以发现栈中的结点就是为了访问右孩子才存储的）</p>
+<p>代码如下:</p>
+ <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">preOrderTraverse2</span><span class="params">(TreeNode root)</span> </span>&#123;</span><br><span class="line">	LinkedList&lt;TreeNode&gt; stack = <span class="keyword">new</span> LinkedList&lt;&gt;();</span><br><span class="line">	TreeNode pNode = root;</span><br><span class="line">	<span class="keyword">while</span> (pNode != <span class="keyword">null</span> || !stack.isEmpty()) &#123;</span><br><span class="line">		<span class="keyword">if</span> (pNode != <span class="keyword">null</span>) &#123;</span><br><span class="line">			System.out.print(pNode.val+<span class="string">&quot;  &quot;</span>);</span><br><span class="line">			stack.push(pNode);</span><br><span class="line">			pNode = pNode.left;</span><br><span class="line">		&#125; <span class="keyword">else</span> &#123; <span class="comment">//pNode == null &amp;&amp; !stack.isEmpty()</span></span><br><span class="line">			TreeNode node = stack.pop();</span><br><span class="line">			pNode = node.right;</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+</li>
+</ol>
+<h2 id="2-中序遍历"><a class="markdownIt-Anchor" href="#2-中序遍历">#</a> 2. 中序遍历</h2>
+<ol>
+<li>根据上文提到的遍历思路： <code>左子树 ---&gt; 根结点 ---&gt; 右子树</code> ，很容易写出递归版本： <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">inOrderTraverse1</span><span class="params">(TreeNode root)</span> </span>&#123;</span><br><span class="line">	<span class="keyword">if</span> (root != <span class="keyword">null</span>) &#123;</span><br><span class="line">		inOrderTraverse1(root.left);</span><br><span class="line">		System.out.print(root.val+<span class="string">&quot;  &quot;</span>);</span><br><span class="line">		inOrderTraverse1(root.right);</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+</li>
+<li>非递归实现，有了上面前序的解释，中序也就比较简单了，相同的道理。只不过访问的顺序移到出栈时。代码如下：<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">   <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">inOrderTraverse2</span><span class="params">(TreeNode root)</span> </span>&#123;</span><br><span class="line">	LinkedList&lt;TreeNode&gt; stack = <span class="keyword">new</span> LinkedList&lt;&gt;();</span><br><span class="line">	TreeNode pNode = root;</span><br><span class="line">	<span class="keyword">while</span> (pNode != <span class="keyword">null</span> || !stack.isEmpty()) &#123;</span><br><span class="line">		<span class="keyword">if</span> (pNode != <span class="keyword">null</span>) &#123;</span><br><span class="line">			stack.push(pNode);</span><br><span class="line">			pNode = pNode.left;</span><br><span class="line">		&#125; <span class="keyword">else</span> &#123; <span class="comment">//pNode == null &amp;&amp; !stack.isEmpty()</span></span><br><span class="line">			TreeNode node = stack.pop();</span><br><span class="line">			System.out.print(node.val+<span class="string">&quot;  &quot;</span>);</span><br><span class="line">			pNode = node.right;</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+</li>
+</ol>
+<h2 id="3-后续遍历"><a class="markdownIt-Anchor" href="#3-后续遍历">#</a> 3. 后续遍历</h2>
+<ol>
+<li>根据上文提到的遍历思路： <code>左子树 ---&gt; 右子树 ---&gt; 根结点</code> ，很容易写出递归版本： <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">postOrderTraverse1</span><span class="params">(TreeNode root)</span> </span>&#123;</span><br><span class="line">	<span class="keyword">if</span> (root != <span class="keyword">null</span>) &#123;</span><br><span class="line">		postOrderTraverse1(root.left);</span><br><span class="line">		postOrderTraverse1(root.right);</span><br><span class="line">		System.out.print(root.val+<span class="string">&quot;  &quot;</span>);</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+</li>
+</ol>
+<h2 id="4-层次遍历"><a class="markdownIt-Anchor" href="#4-层次遍历">#</a> 4. 层次遍历</h2>
+<p>层次遍历的代码比较简单，只需要一个队列即可，先在队列中加入根结点。之后对于任意一个结点来说，在其出队列的时候，访问之。同时如果左孩子和右孩子有不为空的，入队列。代码如下：</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">levelTraverse</span><span class="params">(TreeNode root)</span> </span>&#123;</span><br><span class="line">    <span class="keyword">if</span> (root == <span class="keyword">null</span>) &#123;</span><br><span class="line">        <span class="keyword">return</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    LinkedList&lt;TreeNode&gt; queue = <span class="keyword">new</span> LinkedList&lt;&gt;();</span><br><span class="line">    queue.offer(root);</span><br><span class="line">    <span class="keyword">while</span> (!queue.isEmpty()) &#123;</span><br><span class="line">        TreeNode node = queue.poll();</span><br><span class="line">        System.out.print(node.val+<span class="string">&quot;  &quot;</span>);</span><br><span class="line">        <span class="keyword">if</span> (node.left != <span class="keyword">null</span>) &#123;</span><br><span class="line">            queue.offer(node.left);</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">if</span> (node.right != <span class="keyword">null</span>) &#123;</span><br><span class="line">            queue.offer(node.right);</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h1 id="二叉树的深度优先遍历dfs与广度优先遍历bfs"><a class="markdownIt-Anchor" href="#二叉树的深度优先遍历dfs与广度优先遍历bfs">#</a> 二叉树的深度优先遍历（ <code>DFS</code> ）与广度优先遍历（ <code>BFS</code> ）</h1>
+<p>二叉树的深度优先遍历（ <code>DFS</code> ）与广度优先遍历（ <code>BFS</code> ）</p>
+<ul>
+<li>
+<p><strong>深度优先遍历</strong>：从根节点出发，沿着左子树方向进行纵向遍历，直到找到叶子节点为止。然后回溯到前一个节点，进行右子树节点的遍历，直到遍历完所有可达节点为止。</p>
+</li>
+<li>
+<p><strong>广度优先遍历</strong>：从根节点出发，在横向遍历二叉树层段节点的基础上纵向遍历二叉树的层次。</p>
 </li>
 </ul>
 <img data-src="/posts/b9b9f7e7/2022-02-17-23-00-13.png" class="">
-
-
 <figure class="highlight avrasm"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="symbol">DFS:</span>ABDECFG</span><br><span class="line"></span><br><span class="line"><span class="symbol">BFS:</span>ABCDEFG</span><br></pre></td></tr></table></figure>
-
 <ul>
-<li><p><code>DFS</code>实现：</p>
-<p>  数据结构：栈</p>
-<p>  父节点入栈，父节点出栈，先右子节点入栈，后左子节点入栈。递归遍历全部节点即可</p>
+<li>
+<p><code>DFS</code>  实现：</p>
+<p>数据结构：栈</p>
+<p>父节点入栈，父节点出栈，先右子节点入栈，后左子节点入栈。递归遍历全部节点即可</p>
 </li>
-<li><p><code>BFS</code>实现：</p>
-<p>  数据结构：队列</p>
-<p>  父节点入队，父节点出队列，先左子节点入队，后右子节点入队。递归遍历全部节点即可</p>
+<li>
+<p><code>BFS</code>  实现：</p>
+<p>数据结构：队列</p>
+<p>父节点入队，父节点出队列，先左子节点入队，后右子节点入队。递归遍历全部节点即可</p>
 </li>
 </ul>
 <img data-src="/posts/b9b9f7e7/2022-02-17-23-00-38.png" class="">
-
 <p>深度优先搜索的步骤为：</p>
 <figure class="highlight tap"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line">（1）、首先节点<span class="number"> 1 </span>进栈，节点1在栈顶；</span><br><span class="line"></span><br><span class="line">（2）、然后节点1出栈，访问节点1，节点1的孩子节点3进栈，节点2进栈；</span><br><span class="line"></span><br><span class="line">（3）、节点2在栈顶，然后节点2出栈，访问节点2</span><br><span class="line"></span><br><span class="line">（4）、节点2的孩子节点5进栈，节点4进栈</span><br><span class="line"></span><br><span class="line">（5）、节点4在栈顶，节点4出栈，访问节点4，</span><br><span class="line"></span><br><span class="line">（6）、节点4左右孩子为空，然后节点5在栈顶，节点5出栈，访问节点5；</span><br><span class="line"></span><br><span class="line">（7）、节点5左右孩子为空，然后节点3在站顶，节点3出栈，访问节点3；</span><br><span class="line"></span><br><span class="line">（8）、节点3的孩子节点7进栈，节点6进栈</span><br><span class="line"></span><br><span class="line">（9）、节点6在栈顶，节点6出栈，访问节点6；</span><br><span class="line"></span><br><span class="line">（10）、节点6的孩子为空，这个时候节点7在栈顶，节点7出栈，访问节点7</span><br><span class="line"></span><br><span class="line">（11）、节点7的左右孩子为空，此时栈为空，遍历结束。</span><br></pre></td></tr></table></figure>
-<p>广度优先遍历：广度优先遍历是连通图的一种遍历策略，因为它的思想是从一个顶点V0开始，辐射状地优先遍历其周围较广的区域故得名。</p>
-<p>根据广度优先遍历的特点我们利用Java数据结构队列Queue来实现。</p>
+<p>广度优先遍历：广度优先遍历是连通图的一种遍历策略，因为它的思想是从一个顶点 V0 开始，辐射状地优先遍历其周围较广的区域故得名。</p>
+<p>根据广度优先遍历的特点我们利用 Java 数据结构队列 Queue 来实现。</p>
 <p>广度优先搜索的步骤为：</p>
 <figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">（1）、节点1进队，节点1出队，访问节点1</span><br><span class="line"></span><br><span class="line">（2）、节点1的孩子节点2进队，节点3进队。</span><br><span class="line"></span><br><span class="line">（3）、节点2出队，访问节点2，节点2的孩子节点4进队，节点5进队；</span><br><span class="line"></span><br><span class="line">（4）、节点3出队，访问节点3，节点3的孩子节点6进队，节点7进队；</span><br><span class="line"></span><br><span class="line">（5）、节点4出队，访问节点4，节点4没有孩子节点。</span><br><span class="line"></span><br><span class="line">（6）、节点5出队，访问节点5，节点5没有孩子节点。</span><br><span class="line"></span><br><span class="line">（7）、节点6出队，访问节点6，节点6没有孩子节点。</span><br><span class="line"></span><br><span class="line">（8）、节点7出队，访问节点7，节点7没有孩子节点，结束。</span><br></pre></td></tr></table></figure>
-
-<h2 id="5-深度优先遍历"><a href="#5-深度优先遍历" class="headerlink" title="5. 深度优先遍历"></a>5. 深度优先遍历</h2><p>其实深度遍历就是上面的前序、中序和后序。但是为了保证与广度优先遍历相照应，也写在这。代码也比较好理解，其实就是前序遍历，代码如下：</p>
+<h2 id="5-深度优先遍历"><a class="markdownIt-Anchor" href="#5-深度优先遍历">#</a> 5. 深度优先遍历</h2>
+<p>其实深度遍历就是上面的前序、中序和后序。但是为了保证与广度优先遍历相照应，也写在这。代码也比较好理解，其实就是前序遍历，代码如下：</p>
 <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">depthOrderTraverse</span><span class="params">(TreeNode root)</span> </span>&#123;</span><br><span class="line">    <span class="keyword">if</span> (root == <span class="keyword">null</span>) &#123;</span><br><span class="line">        <span class="keyword">return</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    LinkedList&lt;TreeNode&gt; stack = <span class="keyword">new</span> LinkedList&lt;&gt;();</span><br><span class="line">    stack.push(root);</span><br><span class="line">    <span class="keyword">while</span> (!stack.isEmpty()) &#123;</span><br><span class="line">        TreeNode node = stack.pop();</span><br><span class="line">        System.out.print(node.val+<span class="string">&quot;  &quot;</span>);</span><br><span class="line">        <span class="keyword">if</span> (node.right != <span class="keyword">null</span>) &#123;</span><br><span class="line">            stack.push(node.right);</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">if</span> (node.left != <span class="keyword">null</span>) &#123;</span><br><span class="line">            stack.push(node.left);</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<h2 id="6-广度优先遍历"><a href="#6-广度优先遍历" class="headerlink" title="6. 广度优先遍历"></a>6. 广度优先遍历</h2><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">depthFirstSearch</span><span class="params">(TreeNode nodeHead)</span> </span>&#123;</span><br><span class="line">    <span class="keyword">if</span>(nodeHead==<span class="keyword">null</span>) &#123;</span><br><span class="line">        <span class="keyword">return</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    Stack&lt;TreeNode&gt; myStack=<span class="keyword">new</span> Stack&lt;&gt;();</span><br><span class="line">    myStack.add(nodeHead);</span><br><span class="line">    <span class="keyword">while</span>(!myStack.isEmpty()) &#123;</span><br><span class="line">        TreeNode node=myStack.pop();    <span class="comment">//弹出栈顶元素</span></span><br><span class="line">        System.out.print(node.data+<span class="string">&quot; &quot;</span>);</span><br><span class="line">        <span class="keyword">if</span>(node.rightNode!=<span class="keyword">null</span>) &#123;</span><br><span class="line">            myStack.push(node.rightNode);    <span class="comment">//深度优先遍历，先遍历左边，后遍历右边,栈先进后出</span></span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">if</span>(node.leftNode!=<span class="keyword">null</span>) &#123;</span><br><span class="line">            myStack.push(node.leftNode);</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-
+<h2 id="6-广度优先遍历"><a class="markdownIt-Anchor" href="#6-广度优先遍历">#</a> 6. 广度优先遍历</h2>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">depthFirstSearch</span><span class="params">(TreeNode nodeHead)</span> </span>&#123;</span><br><span class="line">    <span class="keyword">if</span>(nodeHead==<span class="keyword">null</span>) &#123;</span><br><span class="line">        <span class="keyword">return</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    Stack&lt;TreeNode&gt; myStack=<span class="keyword">new</span> Stack&lt;&gt;();</span><br><span class="line">    myStack.add(nodeHead);</span><br><span class="line">    <span class="keyword">while</span>(!myStack.isEmpty()) &#123;</span><br><span class="line">        TreeNode node=myStack.pop();    <span class="comment">//弹出栈顶元素</span></span><br><span class="line">        System.out.print(node.data+<span class="string">&quot; &quot;</span>);</span><br><span class="line">        <span class="keyword">if</span>(node.rightNode!=<span class="keyword">null</span>) &#123;</span><br><span class="line">            myStack.push(node.rightNode);    <span class="comment">//深度优先遍历，先遍历左边，后遍历右边,栈先进后出</span></span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">if</span>(node.leftNode!=<span class="keyword">null</span>) &#123;</span><br><span class="line">            myStack.push(node.leftNode);</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
       <div class="tags">
           <a href="/tags/Java%E9%9D%A2%E8%AF%95/" rel="tag"><i class="ic i-tag"></i> Java面试</a>
@@ -295,7 +303,7 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
     <div class="item left">
       
 
-  <a href="/posts/7e4601e3/" itemprop="url" rel="prev" data-background-image="https:&#x2F;&#x2F;tva3.sinaimg.cn&#x2F;mw690&#x2F;6833939bly1gicitf0kl1j20zk0m87fe.jpg" title="面试之旅之关于Spring事务处理">
+  <a href="/posts/7e4601e3/" itemprop="url" rel="prev" data-background-image="https:&#x2F;&#x2F;tva1.sinaimg.cn&#x2F;mw690&#x2F;6833939bly1giclize41wj20zk0m87gk.jpg" title="面试之旅之关于Spring事务处理">
   <span class="type">Previous Post</span>
   <span class="category"><i class="ic i-flag"></i> Spring事务</span>
   <h3>面试之旅之关于Spring事务处理</h3>
@@ -305,7 +313,7 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
     <div class="item right">
       
 
-  <a href="/posts/7474c898/" itemprop="url" rel="next" data-background-image="https:&#x2F;&#x2F;tva3.sinaimg.cn&#x2F;mw690&#x2F;6833939bly1gicis081o9j20zk0m8dmr.jpg" title="分治算法">
+  <a href="/posts/7474c898/" itemprop="url" rel="next" data-background-image="https:&#x2F;&#x2F;tva1.sinaimg.cn&#x2F;mw690&#x2F;6833939bly1gipexe4oykj20zk0m87ji.jpg" title="分治算法">
   <span class="type">Next Post</span>
   <span class="category"><i class="ic i-flag"></i> 算法</span>
   <h3>分治算法</h3>
@@ -327,7 +335,7 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
   <div class="panels">
     <div class="inner">
       <div class="contents panel pjax" data-title="Contents">
-          <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E4%BA%8C%E5%8F%89%E6%A0%91%E9%81%8D%E5%8E%86%EF%BC%88%E5%89%8D%E5%BA%8F%E3%80%81%E4%B8%AD%E5%BA%8F%E3%80%81%E5%90%8E%E5%BA%8F%E3%80%81%E5%B1%82%E6%AC%A1%E9%81%8D%E5%8E%86%EF%BC%89"><span class="toc-number">1.</span> <span class="toc-text">二叉树遍历（前序、中序、后序、层次遍历）</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#1-%E5%89%8D%E5%BA%8F%E9%81%8D%E5%8E%86"><span class="toc-number">1.1.</span> <span class="toc-text">1. 前序遍历</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2-%E4%B8%AD%E5%BA%8F%E9%81%8D%E5%8E%86"><span class="toc-number">1.2.</span> <span class="toc-text">2. 中序遍历</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#3-%E5%90%8E%E7%BB%AD%E9%81%8D%E5%8E%86"><span class="toc-number">1.3.</span> <span class="toc-text">3. 后续遍历</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#4-%E5%B1%82%E6%AC%A1%E9%81%8D%E5%8E%86"><span class="toc-number">1.4.</span> <span class="toc-text">4. 层次遍历</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E4%BA%8C%E5%8F%89%E6%A0%91%E7%9A%84%E6%B7%B1%E5%BA%A6%E4%BC%98%E5%85%88%E9%81%8D%E5%8E%86%EF%BC%88DFS%EF%BC%89%E4%B8%8E%E5%B9%BF%E5%BA%A6%E4%BC%98%E5%85%88%E9%81%8D%E5%8E%86%EF%BC%88BFS%EF%BC%89"><span class="toc-number">2.</span> <span class="toc-text">二叉树的深度优先遍历（DFS）与广度优先遍历（BFS）</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#5-%E6%B7%B1%E5%BA%A6%E4%BC%98%E5%85%88%E9%81%8D%E5%8E%86"><span class="toc-number">2.1.</span> <span class="toc-text">5. 深度优先遍历</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#6-%E5%B9%BF%E5%BA%A6%E4%BC%98%E5%85%88%E9%81%8D%E5%8E%86"><span class="toc-number">2.2.</span> <span class="toc-text">6. 广度优先遍历</span></a></li></ol></li></ol>
+          <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E4%BA%8C%E5%8F%89%E6%A0%91%E9%81%8D%E5%8E%86%E5%89%8D%E5%BA%8F-%E4%B8%AD%E5%BA%8F-%E5%90%8E%E5%BA%8F-%E5%B1%82%E6%AC%A1%E9%81%8D%E5%8E%86"><span class="toc-number">1.</span> <span class="toc-text"> 二叉树遍历（前序、中序、后序、层次遍历）</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#1-%E5%89%8D%E5%BA%8F%E9%81%8D%E5%8E%86"><span class="toc-number">1.1.</span> <span class="toc-text"> 1. 前序遍历</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2-%E4%B8%AD%E5%BA%8F%E9%81%8D%E5%8E%86"><span class="toc-number">1.2.</span> <span class="toc-text"> 2. 中序遍历</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#3-%E5%90%8E%E7%BB%AD%E9%81%8D%E5%8E%86"><span class="toc-number">1.3.</span> <span class="toc-text"> 3. 后续遍历</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#4-%E5%B1%82%E6%AC%A1%E9%81%8D%E5%8E%86"><span class="toc-number">1.4.</span> <span class="toc-text"> 4. 层次遍历</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E4%BA%8C%E5%8F%89%E6%A0%91%E7%9A%84%E6%B7%B1%E5%BA%A6%E4%BC%98%E5%85%88%E9%81%8D%E5%8E%86dfs%E4%B8%8E%E5%B9%BF%E5%BA%A6%E4%BC%98%E5%85%88%E9%81%8D%E5%8E%86bfs"><span class="toc-number">2.</span> <span class="toc-text"> 二叉树的深度优先遍历（ DFS ）与广度优先遍历（ BFS ）</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#5-%E6%B7%B1%E5%BA%A6%E4%BC%98%E5%85%88%E9%81%8D%E5%8E%86"><span class="toc-number">2.1.</span> <span class="toc-text"> 5. 深度优先遍历</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#6-%E5%B9%BF%E5%BA%A6%E4%BC%98%E5%85%88%E9%81%8D%E5%8E%86"><span class="toc-number">2.2.</span> <span class="toc-text"> 6. 广度优先遍历</span></a></li></ol></li></ol>
       </div>
       <div class="related panel pjax" data-title="Related">
         <ul>
@@ -345,19 +353,19 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
 <nav class="state">
     <div class="item posts">
       <a href="/archives/">
-        <span class="count">135</span>
+        <span class="count">136</span>
         <span class="name">posts</span>
       </a>
     </div>
     <div class="item categories">
       <a href="/categories/">
-        <span class="count">70</span>
+        <span class="count">71</span>
         <span class="name">categories</span>
       </a>
     </div>
     <div class="item tags">
       <a href="/tags/">
-        <span class="count">99</span>
+        <span class="count">101</span>
         <span class="name">tags</span>
       </a>
     </div>
@@ -436,36 +444,6 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
   <li class="item">
     
 <div class="breadcrumb">
-<a href="/categories/SAP/" title="In SAP">SAP</a>
-</div>
-
-    <span><a href="/posts/ef55dc85/" title="CEST与北京时间转换表">CEST与北京时间转换表</a></span>
-  </li>
-
-      
-  <li class="item">
-    
-<div class="breadcrumb">
-<a href="/categories/Java/" title="In Java">Java</a>
-</div>
-
-    <span><a href="/posts/91c18f7c/" title="关于Try-With-Source的使用以及注意点">关于Try-With-Source的使用以及注意点</a></span>
-  </li>
-
-      
-  <li class="item">
-    
-<div class="breadcrumb">
-<a href="/categories/Ubuntu/" title="In Ubuntu">Ubuntu</a>
-</div>
-
-    <span><a href="/posts/6e65ed30/" title="ubuntu20无法安装vmtools解决">ubuntu20无法安装vmtools解决</a></span>
-  </li>
-
-      
-  <li class="item">
-    
-<div class="breadcrumb">
 </div>
 
     <span><a href="/posts/a1926332/" title="Springboot+Vue二进制文件传输">Springboot+Vue二进制文件传输</a></span>
@@ -475,31 +453,34 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
   <li class="item">
     
 <div class="breadcrumb">
-<a href="/categories/SpringBoot/" title="In SpringBoot">SpringBoot</a>
-</div>
-
-    <span><a href="/posts/67f40b37/" title="Spring Boot 获取服务IP地址和端口号">Spring Boot 获取服务IP地址和端口号</a></span>
-  </li>
-
-      
-  <li class="item">
-    
-<div class="breadcrumb">
-<a href="/categories/Java%E9%9D%A2%E8%AF%95/" title="In Java面试">Java面试</a>
+<a href="/categories/Java/" title="In Java">Java</a>
 <i class="ic i-angle-right"></i>
-<a href="/categories/Java%E9%9D%A2%E8%AF%95/%E6%95%B0%E6%8D%AE%E5%BA%93/" title="In 数据库">数据库</a>
+<a href="/categories/Java/%E5%A4%9A%E7%BA%BF%E7%A8%8B/" title="In 多线程">多线程</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/Java/%E5%A4%9A%E7%BA%BF%E7%A8%8B/Java%E9%9D%A2%E8%AF%95/" title="In Java面试">Java面试</a>
 </div>
 
-    <span><a href="/posts/666b2933/" title="面试之旅关于数据库">面试之旅关于数据库</a></span>
+    <span><a href="/posts/12fecb94/" title="多线程笔记">多线程笔记</a></span>
   </li>
 
       
   <li class="item">
     
 <div class="breadcrumb">
+<a href="/categories/LeetCode/" title="In LeetCode">LeetCode</a>
 </div>
 
-    <span><a href="/posts/d0966c4d/" title="工作难点">工作难点</a></span>
+    <span><a href="/posts/5d0c3fcc/" title="LeetCode172_阶乘后的0">LeetCode172_阶乘后的0</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/SAP/" title="In SAP">SAP</a>
+</div>
+
+    <span><a href="/posts/96b6e8a1/" title="simple self introduction">simple self introduction</a></span>
   </li>
 
       
@@ -507,9 +488,57 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
     
 <div class="breadcrumb">
 <a href="/categories/Java/" title="In Java">Java</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/Java/SpringBoot/" title="In SpringBoot">SpringBoot</a>
 </div>
 
-    <span><a href="/posts/97604c34/" title="获取指定集合要求中的mapkey值并重新返回map">获取指定集合要求中的mapkey值并重新返回map</a></span>
+    <span><a href="/posts/a3dfcd98/" title="SpringBoot中常见的几种解决跨域的方式">SpringBoot中常见的几种解决跨域的方式</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/%E6%95%B0%E6%8D%AE%E5%BA%93/" title="In 数据库">数据库</a>
+</div>
+
+    <span><a href="/posts/96e2d97b/" title="mysql 获取当前日期及格式化">mysql 获取当前日期及格式化</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/%E5%89%8D%E7%AB%AF/" title="In 前端">前端</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/%E5%89%8D%E7%AB%AF/Css/" title="In Css">Css</a>
+</div>
+
+    <span><a href="/posts/2e6621e1/" title="DisPlay属性">DisPlay属性</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/%E5%89%8D%E7%AB%AF/" title="In 前端">前端</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/%E5%89%8D%E7%AB%AF/JavaScript/" title="In JavaScript">JavaScript</a>
+</div>
+
+    <span><a href="/posts/4aa00b9a/" title="Js中的some、find、findindex、includes、filter的使用">Js中的some、find、findindex、includes、filter的使用</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/Hexo/" title="In Hexo">Hexo</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/Hexo/Tools/" title="In Tools">Tools</a>
+</div>
+
+    <span><a href="/posts/3d071a12/" title="使用hexo框架+next主题+githubPage搭建个人博客">使用hexo框架+next主题+githubPage搭建个人博客</a></span>
   </li>
 
       
@@ -517,21 +546,11 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
     
 <div class="breadcrumb">
 <a href="/categories/Java%E9%9D%A2%E8%AF%95/" title="In Java面试">Java面试</a>
-</div>
-
-    <span><a href="/posts/6b5f7afc/" title="面试之旅关于Java知识点">面试之旅关于Java知识点</a></span>
-  </li>
-
-      
-  <li class="item">
-    
-<div class="breadcrumb">
-<a href="/categories/SpringBoot/" title="In SpringBoot">SpringBoot</a>
 <i class="ic i-angle-right"></i>
-<a href="/categories/SpringBoot/Java/" title="In Java">Java</a>
+<a href="/categories/Java%E9%9D%A2%E8%AF%95/Tools/" title="In Tools">Tools</a>
 </div>
 
-    <span><a href="/posts/f976ebe7/" title="SpringMvc中标准的后端接口格式">SpringMvc中标准的后端接口格式</a></span>
+    <span><a href="/posts/6714b4a9/" title="FastJson序列化使用">FastJson序列化使用</a></span>
   </li>
 
   </ul>
@@ -556,13 +575,13 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
     <span class="post-meta-item-icon">
       <i class="ic i-chart-area"></i>
     </span>
-    <span title="Symbols count total">558k words</span>
+    <span title="Symbols count total">561k words</span>
 
     <span class="post-meta-divider">|</span>
     <span class="post-meta-item-icon">
       <i class="ic i-coffee"></i>
     </span>
-    <span title="Reading time total">8:27</span>
+    <span title="Reading time total">8:30</span>
   </div>
 </div>
 

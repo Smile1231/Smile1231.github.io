@@ -7,52 +7,54 @@
         <language>en</language>
         <pubDate>Tue, 05 Jul 2022 23:17:40 +0800</pubDate>
         <lastBuildDate>Tue, 05 Jul 2022 23:17:40 +0800</lastBuildDate>
-        <category>SAP</category>
-        <category>生物信息</category>
-        <category>基因编辑</category>
         <category>Java</category>
-        <category>Corn</category>
         <category>Cache</category>
         <category>Cookie</category>
         <category>Session</category>
         <category>Java面试</category>
+        <category>SAP</category>
+        <category>Corn</category>
+        <category>生物信息</category>
+        <category>基因编辑</category>
+        <category>前端</category>
+        <category>Css</category>
         <category>Docker</category>
         <category>DDD</category>
         <category>领域驱动设计</category>
+        <category>FastJson</category>
         <category>blog</category>
         <category>hexo</category>
         <category>next</category>
-        <category>前端</category>
-        <category>Css</category>
-        <category>JavaScript</category>
-        <category>Html</category>
-        <category>FastJson</category>
         <category>DisPlay属性</category>
         <category>IDEA</category>
         <category>SpringBoot</category>
+        <category>JavaScript</category>
+        <category>Html</category>
         <category>函数式接口</category>
-        <category>Jvm</category>
         <category>Assert</category>
         <category>map</category>
         <category>Stream流</category>
+        <category>Jvm</category>
         <category>java</category>
         <category>calender</category>
+        <category>Springboot</category>
         <category>LeetCode</category>
         <category>算法</category>
         <category>递归</category>
+        <category>Linux</category>
         <category>Mybatis</category>
         <category>分页查询</category>
-        <category>Linux</category>
-        <category>Springboot</category>
         <category>模糊查询</category>
-        <category>Nginx</category>
-        <category>Spring</category>
-        <category>SrpingBoot</category>
         <category>文件上传</category>
+        <category>SrpingBoot</category>
+        <category>Spring</category>
         <category>事务</category>
-        <category>master</category>
         <category>TypeScript</category>
         <category>WebPack</category>
+        <category>Nginx</category>
+        <category>master</category>
+        <category>Jenkins</category>
+        <category>Groovy</category>
         <category>UML</category>
         <category>Ubuntu</category>
         <category>Mysql</category>
@@ -67,35 +69,35 @@
         <category>ubuntu</category>
         <category>虚拟机</category>
         <category>二分查找</category>
-        <category>Hadoop</category>
         <category>数据挖掘</category>
+        <category>操作系统</category>
         <category>EasyExcel</category>
         <category>node</category>
-        <category>JVM</category>
-        <category>操作系统</category>
+        <category>Hadoop</category>
         <category>Yaml</category>
-        <category>Hexo</category>
         <category>junit</category>
+        <category>JVM</category>
+        <category>Hexo</category>
         <category>数据库</category>
-        <category>Mysql事务</category>
-        <category>git,npm,node</category>
-        <category>冒泡排序</category>
         <category>Git</category>
+        <category>Mysql事务</category>
+        <category>冒泡排序</category>
+        <category>git,npm,node</category>
         <category>动态规划</category>
         <category>堆排序</category>
-        <category>幂等性</category>
-        <category>多线程</category>
         <category>Google</category>
+        <category>幂等性</category>
         <category>流</category>
         <category>归并排序</category>
-        <category>正则表达式</category>
         <category>快速排序</category>
+        <category>多线程</category>
         <category>直接插入排序</category>
+        <category>正则表达式</category>
+        <category>Spring事务</category>
+        <category>选择排序</category>
         <category>Java 面试</category>
         <category>数据结构</category>
         <category>阻塞队列</category>
-        <category>选择排序</category>
-        <category>Spring事务</category>
         <category>JDK</category>
         <category>动态代理</category>
         <category>Date</category>
@@ -113,52 +115,44 @@
             <category>Java</category>
             <category>Nginx</category>
             <pubDate>Tue, 05 Jul 2022 23:17:40 +0800</pubDate>
-            <description><![CDATA[ &lt;h2 id=&#34;nginx配置前端跨域&#34;&gt;&lt;a href=&#34;#nginx配置前端跨域&#34; class=&#34;headerlink&#34; title=&#34;nginx配置前端跨域&#34;&gt;&lt;/a&gt;&lt;code&gt;nginx&lt;/code&gt;配置前端跨域&lt;/h2&gt;&lt;p&gt;注意点： 如果使用&lt;code&gt;nginx&lt;/code&gt;解决跨域在前端使用&lt;code&gt;axios&lt;/code&gt;是不需要写后端全路径的，类似于：&lt;/p&gt;
+            <description><![CDATA[ &lt;h2 id=&#34;nginx配置前端跨域&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#nginx配置前端跨域&#34;&gt;#&lt;/a&gt;  &lt;code&gt;nginx&lt;/code&gt;  配置前端跨域&lt;/h2&gt;
+&lt;p&gt;注意点： 如果使用 &lt;code&gt;nginx&lt;/code&gt;  解决跨域在前端使用 &lt;code&gt;axios&lt;/code&gt;  是不需要写后端全路径的，类似于：&lt;/p&gt;
 &lt;figure class=&#34;highlight js&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;//  原来我们需要写&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;axios.defaults.baseURL = &lt;span class=&#34;string&#34;&gt;&amp;#x27;http://localhost:9999/api&amp;#x27;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;// 现在改为&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;axios.defaults.baseURL = &lt;span class=&#34;string&#34;&gt;&amp;#x27;/api&amp;#x27;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
 &lt;p&gt;这边不改动&lt;/p&gt;
 &lt;span id=&#34;more&#34;&gt;&lt;/span&gt;
-
 &lt;img data-src=&#34;/posts/7874a051/2022-07-05-23-34-01.png&#34; class=&#34;&#34;&gt;
-
-&lt;p&gt;因为如果使用了&lt;code&gt;Nginx&lt;/code&gt;反向代理之后，部署服务器会有跨域的问题，如果仅仅只是后端处理，也不一定能行, 需要在配置文件中进行代理,&lt;code&gt;docker&lt;/code&gt;中文件位置：&lt;/p&gt;
+&lt;p&gt;因为如果使用了 &lt;code&gt;Nginx&lt;/code&gt;  反向代理之后，部署服务器会有跨域的问题，如果仅仅只是后端处理，也不一定能行，需要在配置文件中进行代理， &lt;code&gt;docker&lt;/code&gt;  中文件位置：&lt;/p&gt;
 &lt;img data-src=&#34;/posts/7874a051/2022-07-05-23-39-51.png&#34; class=&#34;&#34;&gt;
-
 &lt;img data-src=&#34;/posts/7874a051/2022-07-05-23-40-29.png&#34; class=&#34;&#34;&gt;
-
 &lt;figure class=&#34;highlight properties&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;meta&#34;&gt;&amp;lt;!--&lt;/span&gt; &lt;span class=&#34;string&#34;&gt;解决跨域代理 --&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;attr&#34;&gt;location&lt;/span&gt; &lt;span class=&#34;string&#34;&gt;/api/ &amp;#123;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;attr&#34;&gt;proxy_pass&lt;/span&gt; &lt;span class=&#34;string&#34;&gt;http://58.198.178.163:9999/api/;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;attr&#34;&gt;client_max_body_size&lt;/span&gt; &lt;span class=&#34;string&#34;&gt;1024m;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;attr&#34;&gt;&amp;#125;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;meta&#34;&gt;&amp;lt;!--&lt;/span&gt; &lt;span class=&#34;string&#34;&gt;解决404 --&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;attr&#34;&gt;error_page&lt;/span&gt;  &lt;span class=&#34;string&#34;&gt;404              index.html;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-
-&lt;p&gt;&lt;strong&gt;Tips：此处一定要注意的是，&lt;code&gt;proxy_pass&lt;/code&gt; 所对应的地址一定要是真实&lt;code&gt;ip&lt;/code&gt;，要不然就回报&lt;code&gt;502&lt;/code&gt;错误，真的是个大坑，也是我自己的问题！！！&lt;/strong&gt;： &lt;/p&gt;
-&lt;h2 id=&#34;Nginx与Vue打包成镜像&#34;&gt;&lt;a href=&#34;#Nginx与Vue打包成镜像&#34; class=&#34;headerlink&#34; title=&#34;Nginx与Vue打包成镜像&#34;&gt;&lt;/a&gt;&lt;code&gt;Nginx&lt;/code&gt;与&lt;code&gt;Vue&lt;/code&gt;打包成镜像&lt;/h2&gt;&lt;blockquote&gt;
-&lt;p&gt;&lt;code&gt;npm run build&lt;/code&gt;打包,生成&lt;code&gt;dist&lt;/code&gt;文件夹&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Tips：此处一定要注意的是， &lt;code&gt;proxy_pass&lt;/code&gt;  所对应的地址一定要是真实 &lt;code&gt;ip&lt;/code&gt; ，要不然就回报 &lt;code&gt;502&lt;/code&gt;  错误，真的是个大坑，也是我自己的问题！！！&lt;/strong&gt;：&lt;/p&gt;
+&lt;h2 id=&#34;nginx与vue打包成镜像&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#nginx与vue打包成镜像&#34;&gt;#&lt;/a&gt;  &lt;code&gt;Nginx&lt;/code&gt;  与 &lt;code&gt;Vue&lt;/code&gt;  打包成镜像&lt;/h2&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;code&gt;npm run build&lt;/code&gt;  打包，生成 &lt;code&gt;dist&lt;/code&gt;  文件夹&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;blockquote&gt;
-&lt;p&gt;在&lt;code&gt;dist&lt;/code&gt;统计目录下，&lt;code&gt;vim Dockerfile&lt;/code&gt;,在其中输入&lt;/p&gt;
+&lt;p&gt;在 &lt;code&gt;dist&lt;/code&gt;  统计目录下， &lt;code&gt;vim Dockerfile&lt;/code&gt; , 在其中输入&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;FROM nginx&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;EXPOSE 80&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;COPY /dist /usr/share/nginx/html&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;ENTRYPOINT nginx -g &lt;span class=&#34;string&#34;&gt;&amp;quot;daemon off;&amp;quot;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-
 &lt;blockquote&gt;
 &lt;p&gt;打包命令:&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;docker build -t &amp;lt;image_name&amp;gt; .&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-
 &lt;blockquote&gt;
-&lt;p&gt;查看镜像 ： &lt;code&gt;docker images&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;查看镜像 ：  &lt;code&gt;docker images&lt;/code&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;blockquote&gt;
-&lt;p&gt;运行： &lt;code&gt;docker run -d --name nginx_vue -p 8888:80 &amp;lt;image_name&amp;gt;&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;运行：  &lt;code&gt;docker run -d --name nginx_vue -p 8888:80 &amp;lt;image_name&amp;gt;&lt;/code&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;blockquote&gt;
 &lt;p&gt;进入容器：&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;docker &lt;span class=&#34;built_in&#34;&gt;exec&lt;/span&gt; -it nginx_vue /bin/bash&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-
 &lt;blockquote&gt;
-&lt;p&gt;&lt;code&gt;nginx&lt;/code&gt;配置文件地址 &lt;code&gt;/etc/nginx/conf.d/default.conf&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;nginx&lt;/code&gt;  配置文件地址  &lt;code&gt;/etc/nginx/conf.d/default.conf&lt;/code&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;h2 id=&#34;Nginx修改上传文件大小&#34;&gt;&lt;a href=&#34;#Nginx修改上传文件大小&#34; class=&#34;headerlink&#34; title=&#34;Nginx修改上传文件大小&#34;&gt;&lt;/a&gt;&lt;code&gt;Nginx&lt;/code&gt;修改上传文件大小&lt;/h2&gt;&lt;figure class=&#34;highlight properties&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;attr&#34;&gt;client_max_body_size&lt;/span&gt;    &lt;span class=&#34;string&#34;&gt;1000m;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-
-
-
+&lt;h2 id=&#34;nginx修改上传文件大小&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#nginx修改上传文件大小&#34;&gt;#&lt;/a&gt;  &lt;code&gt;Nginx&lt;/code&gt;  修改上传文件大小&lt;/h2&gt;
+&lt;figure class=&#34;highlight properties&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;attr&#34;&gt;client_max_body_size&lt;/span&gt;    &lt;span class=&#34;string&#34;&gt;1000m;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
  ]]></description>
         </item>
     </channel>

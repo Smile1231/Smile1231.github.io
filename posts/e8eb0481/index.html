@@ -76,7 +76,7 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
       <i class="ic i-pen"></i>
     </span>
     <span class="text">Symbols count in article</span>
-    <span>910</span>
+    <span>913</span>
     <span class="text">words</span>
   </span>
   <span class="item" title="Reading time">
@@ -117,12 +117,12 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
       </div>
       <div id="imgs" class="pjax">
         <ul>
-          <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1giclize41wj20zk0m87gk.jpg"></li>
-          <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1gicis3attqj20zk0m8k7l.jpg"></li>
-          <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1gicljitigmj20zk0m87fp.jpg"></li>
-          <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1giclhfehz7j20zk0m8u0x.jpg"></li>
-          <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1gipeu7txpzj20zk0m81kx.jpg"></li>
-          <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1giclwuom7cj20zk0m8dvn.jpg"></li>
+          <li class="item" data-background-image="https://tva1.sinaimg.cn/large/6833939bly1gicljgocqbj20zk0m8e81.jpg"></li>
+          <li class="item" data-background-image="https://tva1.sinaimg.cn/large/6833939bly1giclg5ms2rj20zk0m8u0x.jpg"></li>
+          <li class="item" data-background-image="https://tva1.sinaimg.cn/large/6833939bly1gipeyvx1d4j20zk0m8hdt.jpg"></li>
+          <li class="item" data-background-image="https://tva1.sinaimg.cn/large/6833939bly1giph4baakhj20zk0m8h5q.jpg"></li>
+          <li class="item" data-background-image="https://tva1.sinaimg.cn/large/6833939bly1gipeu7txpzj20zk0m81kx.jpg"></li>
+          <li class="item" data-background-image="https://tva1.sinaimg.cn/large/6833939bly1giclh5u05ej20zk0m87df.jpg"></li>
         </ul>
       </div>
     </header>
@@ -174,14 +174,18 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
   <div class="body md" itemprop="articleBody">
     
 
-    <h1 id="二分查找"><a href="#二分查找" class="headerlink" title="二分查找"></a>二分查找</h1><p>二分查找（<code>binary search</code>），也称作折半查找（<code>half-interval search</code>），每次划分一半进行下一步搜索，所以时间复杂度无非就是<code>while</code>循环的次数！</p>
+    <h1 id="二分查找"><a class="markdownIt-Anchor" href="#二分查找">#</a> 二分查找</h1>
+<p>二分查找（ <code>binary search</code> ），也称作折半查找（ <code>half-interval search</code> ），每次划分一半进行下一步搜索，所以时间复杂度无非就是 <code>while</code>  循环的次数！</p>
 <span id="more"></span>
-
 <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//二分查找 Java 实现 （升序数组）</span></span><br><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">int</span> <span class="title">binarySearch</span><span class="params">(Integer[] srcArray, <span class="keyword">int</span> des)</span> </span>&#123;</span><br><span class="line">    <span class="keyword">int</span> low = <span class="number">0</span>;</span><br><span class="line">    <span class="keyword">int</span> high = srcArray.length - <span class="number">1</span>;</span><br><span class="line"> </span><br><span class="line">    <span class="keyword">while</span> ((low &lt;= high) &amp;&amp; (low &lt;= srcArray.length - <span class="number">1</span>)</span><br><span class="line">            &amp;&amp; (high &lt;= srcArray.length - <span class="number">1</span>)) &#123;</span><br><span class="line">            <span class="comment">// &gt;&gt; 右移符号 表示除以 2</span></span><br><span class="line">        <span class="keyword">int</span> middle = (high + low) &gt;&gt; <span class="number">1</span>;</span><br><span class="line">        <span class="keyword">if</span> (des == srcArray[middle]) &#123;</span><br><span class="line">            <span class="keyword">return</span> middle;</span><br><span class="line">        <span class="comment">// 如果要查找的值 小于最中间的值 就算选择 左边的区间</span></span><br><span class="line">        &#125; <span class="keyword">else</span> <span class="keyword">if</span> (des &lt; srcArray[middle]) &#123;</span><br><span class="line">            high = middle - <span class="number">1</span>;</span><br><span class="line">        &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">            low = middle + <span class="number">1</span>;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> -<span class="number">1</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<h2 id="时间复杂度"><a href="#时间复杂度" class="headerlink" title="时间复杂度"></a>时间复杂度</h2><p>比如：总共有<code>n</code>个元素，每次查找的区间大小就是<code>n，n/2，n/4，…，n/2^k</code>（接下来操作元素的剩余个数），其中<code>k</code>就是循环的次数。<br>由于<code>n/2^k</code>取整后<code>&gt;=1</code>，即令<code>n/2^k=1</code>，<br>可得<code>k=log2n</code>,（是以<code>2</code>为底，<code>n</code>的对数），所以时间复杂度可以表示<code>O()=O(log2n)</code></p>
-<h2 id="二分查找的缺点"><a href="#二分查找的缺点" class="headerlink" title="二分查找的缺点"></a>二分查找的缺点</h2><p>虽然二分查找的效率高，但是要将表按关键字排序。而排序本身是一种很费时的运算。既使采用高效率的排序方法也要花费<code>O(nlgn)</code>的时间。</p>
-<p>　　二分查找只适用顺序存储结构。为保持表的有序性，在顺序结构里插入和删除都必须移动大量的结点。因此，二分查找特别适用于那种一经建立就很少改动、而又经常需要查找的线性表。</p>
-<p>　　对那些查找少而又经常需要改动的线性表，可采用链表作存储结构，进行顺序查找。链表上无法实现二分查找。</p>
+<h2 id="时间复杂度"><a class="markdownIt-Anchor" href="#时间复杂度">#</a> 时间复杂度</h2>
+<p>比如：总共有 <code>n</code>  个元素，每次查找的区间大小就是 <code>n，n/2，n/4，…，n/2^k</code> （接下来操作元素的剩余个数），其中 <code>k</code>  就是循环的次数。<br>
+由于 <code>n/2^k</code>  取整后 <code>&gt;=1</code> ，即令 <code>n/2^k=1</code> ，<br>
+可得 <code>k=log2n</code> ,（是以 <code>2</code>  为底， <code>n</code>  的对数），所以时间复杂度可以表示 <code>O()=O(log2n)</code></p>
+<h2 id="二分查找的缺点"><a class="markdownIt-Anchor" href="#二分查找的缺点">#</a> 二分查找的缺点</h2>
+<p>虽然二分查找的效率高，但是要将表按关键字排序。而排序本身是一种很费时的运算。既使采用高效率的排序方法也要花费 <code>O(nlgn)</code>  的时间。</p>
+<p>二分查找只适用顺序存储结构。为保持表的有序性，在顺序结构里插入和删除都必须移动大量的结点。因此，二分查找特别适用于那种一经建立就很少改动、而又经常需要查找的线性表。</p>
+<p>对那些查找少而又经常需要改动的线性表，可采用链表作存储结构，进行顺序查找。链表上无法实现二分查找。</p>
 
       <div class="tags">
           <a href="/tags/Java%E9%9D%A2%E8%AF%95/" rel="tag"><i class="ic i-tag"></i> Java面试</a>
@@ -238,7 +242,7 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
     <div class="item left">
       
 
-  <a href="/posts/20ac1950/" itemprop="url" rel="prev" data-background-image="https:&#x2F;&#x2F;tva3.sinaimg.cn&#x2F;mw690&#x2F;6833939bly1gicivghyooj20zk0m8dir.jpg" title="SpringBoot文件上传下载">
+  <a href="/posts/20ac1950/" itemprop="url" rel="prev" data-background-image="https:&#x2F;&#x2F;tva1.sinaimg.cn&#x2F;mw690&#x2F;6833939bly1gicitcxhpij20zk0m8hdt.jpg" title="SpringBoot文件上传下载">
   <span class="type">Previous Post</span>
   <span class="category"><i class="ic i-flag"></i> SpringBoot</span>
   <h3>SpringBoot文件上传下载</h3>
@@ -248,7 +252,7 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
     <div class="item right">
       
 
-  <a href="/posts/4847d2e5/" itemprop="url" rel="next" data-background-image="https:&#x2F;&#x2F;tva3.sinaimg.cn&#x2F;mw690&#x2F;6833939bly1giclgi503lj20zk0m8hdt.jpg" title="面试之旅关于操作系统">
+  <a href="/posts/4847d2e5/" itemprop="url" rel="next" data-background-image="https:&#x2F;&#x2F;tva1.sinaimg.cn&#x2F;mw690&#x2F;6833939bly1giciuv0socj20zk0m8qes.jpg" title="面试之旅关于操作系统">
   <span class="type">Next Post</span>
   <span class="category"><i class="ic i-flag"></i> 操作系统</span>
   <h3>面试之旅关于操作系统</h3>
@@ -270,7 +274,7 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
   <div class="panels">
     <div class="inner">
       <div class="contents panel pjax" data-title="Contents">
-          <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E4%BA%8C%E5%88%86%E6%9F%A5%E6%89%BE"><span class="toc-number">1.</span> <span class="toc-text">二分查找</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%97%B6%E9%97%B4%E5%A4%8D%E6%9D%82%E5%BA%A6"><span class="toc-number">1.1.</span> <span class="toc-text">时间复杂度</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BA%8C%E5%88%86%E6%9F%A5%E6%89%BE%E7%9A%84%E7%BC%BA%E7%82%B9"><span class="toc-number">1.2.</span> <span class="toc-text">二分查找的缺点</span></a></li></ol></li></ol>
+          <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E4%BA%8C%E5%88%86%E6%9F%A5%E6%89%BE"><span class="toc-number">1.</span> <span class="toc-text"> 二分查找</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%97%B6%E9%97%B4%E5%A4%8D%E6%9D%82%E5%BA%A6"><span class="toc-number">1.1.</span> <span class="toc-text"> 时间复杂度</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BA%8C%E5%88%86%E6%9F%A5%E6%89%BE%E7%9A%84%E7%BC%BA%E7%82%B9"><span class="toc-number">1.2.</span> <span class="toc-text"> 二分查找的缺点</span></a></li></ol></li></ol>
       </div>
       <div class="related panel pjax" data-title="Related">
         <ul>
@@ -288,19 +292,19 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
 <nav class="state">
     <div class="item posts">
       <a href="/archives/">
-        <span class="count">135</span>
+        <span class="count">136</span>
         <span class="name">posts</span>
       </a>
     </div>
     <div class="item categories">
       <a href="/categories/">
-        <span class="count">70</span>
+        <span class="count">71</span>
         <span class="name">categories</span>
       </a>
     </div>
     <div class="item tags">
       <a href="/tags/">
-        <span class="count">99</span>
+        <span class="count">101</span>
         <span class="name">tags</span>
       </a>
     </div>
@@ -379,52 +383,22 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
   <li class="item">
     
 <div class="breadcrumb">
-</div>
-
-    <span><a href="/posts/de5e33d7/" title="关于JDK中的Arrays.sort排序方法">关于JDK中的Arrays.sort排序方法</a></span>
-  </li>
-
-      
-  <li class="item">
-    
-<div class="breadcrumb">
-<a href="/categories/Mybtais/" title="In Mybtais">Mybtais</a>
-</div>
-
-    <span><a href="/posts/9aff665a/" title="mybatis中大于等于小于等于的写法">mybatis中大于等于小于等于的写法</a></span>
-  </li>
-
-      
-  <li class="item">
-    
-<div class="breadcrumb">
-<a href="/categories/%E5%89%8D%E7%AB%AF/" title="In 前端">前端</a>
-</div>
-
-    <span><a href="/posts/3eca6246/" title="使用npm时报python错误的解决方案">使用npm时报python错误的解决方案</a></span>
-  </li>
-
-      
-  <li class="item">
-    
-<div class="breadcrumb">
-<a href="/categories/Java%E9%9D%A2%E8%AF%95/" title="In Java面试">Java面试</a>
+<a href="/categories/Java/" title="In Java">Java</a>
 <i class="ic i-angle-right"></i>
-<a href="/categories/Java%E9%9D%A2%E8%AF%95/%E5%A0%86%E6%8E%92%E5%BA%8F/" title="In 堆排序">堆排序</a>
-<i class="ic i-angle-right"></i>
-<a href="/categories/Java%E9%9D%A2%E8%AF%95/%E5%A0%86%E6%8E%92%E5%BA%8F/%E7%AE%97%E6%B3%95/" title="In 算法">算法</a>
+<a href="/categories/Java/Tools/" title="In Tools">Tools</a>
 </div>
 
-    <span><a href="/posts/c2a5fdc5/" title="堆排序">堆排序</a></span>
+    <span><a href="/posts/817eab42/" title="java中产生指定范围内的随机数">java中产生指定范围内的随机数</a></span>
   </li>
 
       
   <li class="item">
     
 <div class="breadcrumb">
+<a href="/categories/SAP/" title="In SAP">SAP</a>
 </div>
 
-    <span><a href="/posts/3c59e6c8/" title="如何让自己的博客被Google以及百度收录">如何让自己的博客被Google以及百度收录</a></span>
+    <span><a href="/posts/96b6e8a1/" title="simple self introduction">simple self introduction</a></span>
   </li>
 
       
@@ -441,12 +415,58 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
   <li class="item">
     
 <div class="breadcrumb">
-<a href="/categories/Java/" title="In Java">Java</a>
-<i class="ic i-angle-right"></i>
-<a href="/categories/Java/Stream/" title="In Stream">Stream</a>
 </div>
 
-    <span><a href="/posts/b1231c9f/" title="java stream中Collectors的用法">java stream中Collectors的用法</a></span>
+    <span><a href="/posts/d0966c4d/" title="工作难点">工作难点</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/IDEA/" title="In IDEA">IDEA</a>
+</div>
+
+    <span><a href="/posts/579bb697/" title="IDEA小图标含义">IDEA小图标含义</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/Java%E9%9D%A2%E8%AF%95/" title="In Java面试">Java面试</a>
+</div>
+
+    <span><a href="/posts/feb84842/" title="Java面试必问--ArrayList的底层">Java面试必问--ArrayList的底层</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+</div>
+
+    <span><a href="/posts/56be7cc9/" title="关于Linux排查问题命令">关于Linux排查问题命令</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/Java/" title="In Java">Java</a>
+</div>
+
+    <span><a href="/posts/d6d1be75/" title="在Javadoc注释中引用方法">在Javadoc注释中引用方法</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/Java%E9%9D%A2%E8%AF%95/" title="In Java面试">Java面试</a>
+</div>
+
+    <span><a href="/posts/6b5f7afc/" title="面试之旅关于Java知识点">面试之旅关于Java知识点</a></span>
   </li>
 
       
@@ -459,26 +479,6 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
 </div>
 
     <span><a href="/posts/eec4b728/" title="SpringBoot中如何优雅的使用多线程">SpringBoot中如何优雅的使用多线程</a></span>
-  </li>
-
-      
-  <li class="item">
-    
-<div class="breadcrumb">
-<a href="/categories/Java/" title="In Java">Java</a>
-</div>
-
-    <span><a href="/posts/405fde88/" title="关于Exception的处理细节">关于Exception的处理细节</a></span>
-  </li>
-
-      
-  <li class="item">
-    
-<div class="breadcrumb">
-<a href="/categories/%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F/" title="In 正则表达式">正则表达式</a>
-</div>
-
-    <span><a href="/posts/2f57a694/" title="正则表达式">正则表达式</a></span>
   </li>
 
   </ul>
@@ -503,13 +503,13 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
     <span class="post-meta-item-icon">
       <i class="ic i-chart-area"></i>
     </span>
-    <span title="Symbols count total">558k words</span>
+    <span title="Symbols count total">561k words</span>
 
     <span class="post-meta-divider">|</span>
     <span class="post-meta-item-icon">
       <i class="ic i-coffee"></i>
     </span>
-    <span title="Reading time total">8:27</span>
+    <span title="Reading time total">8:30</span>
   </div>
 </div>
 

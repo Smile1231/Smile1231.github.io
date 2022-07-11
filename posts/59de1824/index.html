@@ -76,7 +76,7 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
       <i class="ic i-pen"></i>
     </span>
     <span class="text">Symbols count in article</span>
-    <span>756</span>
+    <span>760</span>
     <span class="text">words</span>
   </span>
   <span class="item" title="Reading time">
@@ -117,12 +117,12 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
       </div>
       <div id="imgs" class="pjax">
         <ul>
-          <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1giclflwv2aj20zk0m84qp.jpg"></li>
-          <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1giclx6phq6j20zk0m8e36.jpg"></li>
-          <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1gipeuv80yoj20zk0m8kjl.jpg"></li>
-          <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1giclj9410cj20zk0m8h12.jpg"></li>
-          <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1gicm07ih54j20zk0m84qp.jpg"></li>
-          <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1gipetlbztpj20zk0m84qp.jpg"></li>
+          <li class="item" data-background-image="https://tva1.sinaimg.cn/large/6833939bly1gipetfk5zwj20zk0m8e81.jpg"></li>
+          <li class="item" data-background-image="https://tva1.sinaimg.cn/large/6833939bly1gicli9lfebj20zk0m84qp.jpg"></li>
+          <li class="item" data-background-image="https://tva1.sinaimg.cn/large/6833939bly1gipew28b65j20zk0m8hdt.jpg"></li>
+          <li class="item" data-background-image="https://tva1.sinaimg.cn/large/6833939bly1gipet8c1a2j20zk0m8kct.jpg"></li>
+          <li class="item" data-background-image="https://tva1.sinaimg.cn/large/6833939bly1gicljitigmj20zk0m87fp.jpg"></li>
+          <li class="item" data-background-image="https://tva1.sinaimg.cn/large/6833939bly1gicliwyw55j20zk0m8hdt.jpg"></li>
         </ul>
       </div>
     </header>
@@ -174,34 +174,33 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
   <div class="body md" itemprop="articleBody">
     
 
-    <h1 id="spring中-和-和-的区别"><a href="#spring中-和-和-的区别" class="headerlink" title="spring中/和/*和/**的区别"></a>spring中<code>/</code>和<code>/*</code>和<code>/**</code>的区别</h1><h2 id="和-区别"><a href="#和-区别" class="headerlink" title="/ 和 /*区别"></a><code>/</code> 和 <code>/*</code>区别</h2><figure class="highlight awk"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">/ 拦截所有请求 包括静态资源和动态请求 但是不拦截jsp</span><br><span class="line">/* 拦截所有请求 包括静态资源和动态请求 也拦截jsp</span><br><span class="line">区别就在于<span class="regexp">/ 不拦截jsp /</span>*拦截jsp</span><br></pre></td></tr></table></figure>
-
+    <h1 id="spring中和和的区别"><a class="markdownIt-Anchor" href="#spring中和和的区别">#</a> spring 中 <code>/</code>  和 <code>/*</code>  和 <code>/**</code>  的区别</h1>
+<h2 id="和-区别"><a class="markdownIt-Anchor" href="#和-区别">#</a>  <code>/</code>  和  <code>/*</code>  区别</h2>
+<figure class="highlight awk"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">/ 拦截所有请求 包括静态资源和动态请求 但是不拦截jsp</span><br><span class="line">/* 拦截所有请求 包括静态资源和动态请求 也拦截jsp</span><br><span class="line">区别就在于<span class="regexp">/ 不拦截jsp /</span>*拦截jsp</span><br></pre></td></tr></table></figure>
 <span id="more"></span>
-
-<h2 id="和-区别-1"><a href="#和-区别-1" class="headerlink" title="/* 和 /** 区别"></a><code>/*</code> 和 <code>/**</code> 区别</h2><figure class="highlight asciidoc"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">/<span class="strong">** 的意思是所有文件夹及里面的子文件夹</span></span><br><span class="line"><span class="strong">/*</span> 是所有文件夹，不含子文件夹</span><br></pre></td></tr></table></figure>
-<h2 id="注意点案例"><a href="#注意点案例" class="headerlink" title="注意点案例"></a>注意点案例</h2><p>理解下面的案例有助于理解如何使用</p>
-<p>场景：当我在客户端调用<code>URL</code>：<code>/user/list</code>然后返回<code>user.jsp</code>视图，</p>
+<h2 id="和-区别-2"><a class="markdownIt-Anchor" href="#和-区别-2">#</a>  <code>/*</code>  和  <code>/**</code>  区别</h2>
+<figure class="highlight asciidoc"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">/<span class="strong">** 的意思是所有文件夹及里面的子文件夹</span></span><br><span class="line"><span class="strong">/*</span> 是所有文件夹，不含子文件夹</span><br></pre></td></tr></table></figure>
+<h2 id="注意点案例"><a class="markdownIt-Anchor" href="#注意点案例">#</a> 注意点案例</h2>
+<p>理解下面的案例有助于理解如何使用</p>
+<p>场景：当我在客户端调用 <code>URL</code> ： <code>/user/list</code>  然后返回 <code>user.jsp</code>  视图，</p>
 <ul>
-<li>当配置的是<code>/</code>：<code>DispathcherServlet</code>拿到这个请求然后返回对应的<code>controller</code>，然后依据<code>Dispather Type</code>为<code>Forward</code>类型转发到<code>user.jsp</code>视图，即就是请求<code>user.jsp</code>视图(<code>/user/user.jsp</code>)，此时<code>Dispather</code>没有拦截<code>/user/user.jsp</code>,因为此时你配置的是默认的<code>/</code>，就顺利的交给<code>ModleAndView</code>去处理显示了。</li>
-<li>当配置的是<code>/*</code>：<code>DispathcherServlet</code>拿到这个请求然后返回对应的<code>controller</code>，然后通过<code>Dispather Type</code>通过<code>Forward</code>转发到<code>user.jsp</code>视图，即就是请求<code>user.jsp</code>视图(<code>/user/user.jsp</code>)，此时<code>Dispather</code>已经拦截<code>/user/user.jsp</code>，<code>Dispatcher</code>会把他当作<code>Controller</code>去匹配，没有匹配到就会报<code>404</code>错误。</li>
+<li>当配置的是 <code>/</code> ： <code>DispathcherServlet</code>  拿到这个请求然后返回对应的 <code>controller</code> ，然后依据 <code>Dispather Type</code>  为 <code>Forward</code>  类型转发到 <code>user.jsp</code>  视图，即就是请求 <code>user.jsp</code>  视图 ( <code>/user/user.jsp</code> )，此时 <code>Dispather</code>  没有拦截 <code>/user/user.jsp</code> , 因为此时你配置的是默认的 <code>/</code> ，就顺利的交给 <code>ModleAndView</code>  去处理显示了。</li>
+<li>当配置的是 <code>/*</code> ： <code>DispathcherServlet</code>  拿到这个请求然后返回对应的 <code>controller</code> ，然后通过 <code>Dispather Type</code>  通过 <code>Forward</code>  转发到 <code>user.jsp</code>  视图，即就是请求 <code>user.jsp</code>  视图 ( <code>/user/user.jsp</code> )，此时 <code>Dispather</code>  已经拦截 <code>/user/user.jsp</code> ， <code>Dispatcher</code>  会把他当作 <code>Controller</code>  去匹配，没有匹配到就会报 <code>404</code>  错误。</li>
 </ul>
-<p>在springboot中建了一个过滤器，测试</p>
+<p>在 springboot 中建了一个过滤器，测试</p>
 
+<p>当请求为 <code>/user/login</code>  的时候可以被拦截，当为 <code>/page/login.html</code>  页面的时候不拦截</p>
 
-
-
-<p>当请求为<code>/user/login</code>的时候可以被拦截，当为<code>/page/login.html</code>页面的时候不拦截</p>
-
-
-
-<p> 当请求为<code>/user/login</code>的时候可以被拦截，当为<code>/page/login.html</code>页面的时候也会被拦截</p>
+<p>当请求为 <code>/user/login</code>  的时候可以被拦截，当为 <code>/page/login.html</code>  页面的时候也会被拦截</p>
 <ul>
-<li><p><code>/</code>不会拦截页面，只会拦截路径。</p>
+<li>
+<p><code>/</code>  不会拦截页面，只会拦截路径。</p>
 </li>
-<li><p><code>/*</code> 会路径和页面</p>
+<li>
+<p><code>/*</code>  会路径和页面</p>
 </li>
 </ul>
-<p><strong>结论：在配置视图的时候尽量用<code>/</code>这种方式。</strong></p>
+<p><strong>结论：在配置视图的时候尽量用 <code>/</code>  这种方式。</strong></p>
 
       <div class="tags">
           <a href="/tags/Java/" rel="tag"><i class="ic i-tag"></i> Java</a>
@@ -258,7 +257,7 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
     <div class="item left">
       
 
-  <a href="/posts/5e7baeeb/" itemprop="url" rel="prev" data-background-image="https:&#x2F;&#x2F;tva3.sinaimg.cn&#x2F;mw690&#x2F;6833939bly1giciryrr3rj20zk0m8nhk.jpg" title="过滤器和拦截器的区别">
+  <a href="/posts/5e7baeeb/" itemprop="url" rel="prev" data-background-image="https:&#x2F;&#x2F;tva1.sinaimg.cn&#x2F;mw690&#x2F;6833939bly1giclhtuo6nj20zk0m8ttm.jpg" title="过滤器和拦截器的区别">
   <span class="type">Previous Post</span>
   <span class="category"><i class="ic i-flag"></i> SpringBoot</span>
   <h3>过滤器和拦截器的区别</h3>
@@ -268,7 +267,7 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
     <div class="item right">
       
 
-  <a href="/posts/3b6bfba3/" itemprop="url" rel="next" data-background-image="https:&#x2F;&#x2F;tva3.sinaimg.cn&#x2F;mw690&#x2F;6833939bly1gipewr8iypj20zk0m8b29.jpg" title="如何保证接口的幂等性">
+  <a href="/posts/3b6bfba3/" itemprop="url" rel="next" data-background-image="https:&#x2F;&#x2F;tva1.sinaimg.cn&#x2F;mw690&#x2F;6833939bly1gipet8c1a2j20zk0m8kct.jpg" title="如何保证接口的幂等性">
   <span class="type">Next Post</span>
   <span class="category"><i class="ic i-flag"></i> Java面试</span>
   <h3>如何保证接口的幂等性</h3>
@@ -290,7 +289,7 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
   <div class="panels">
     <div class="inner">
       <div class="contents panel pjax" data-title="Contents">
-          <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#spring%E4%B8%AD-%E5%92%8C-%E5%92%8C-%E7%9A%84%E5%8C%BA%E5%88%AB"><span class="toc-number">1.</span> <span class="toc-text">spring中&#x2F;和&#x2F;*和&#x2F;**的区别</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%92%8C-%E5%8C%BA%E5%88%AB"><span class="toc-number">1.1.</span> <span class="toc-text">&#x2F; 和 &#x2F;*区别</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%92%8C-%E5%8C%BA%E5%88%AB-1"><span class="toc-number">1.2.</span> <span class="toc-text">&#x2F;* 和 &#x2F;** 区别</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%B3%A8%E6%84%8F%E7%82%B9%E6%A1%88%E4%BE%8B"><span class="toc-number">1.3.</span> <span class="toc-text">注意点案例</span></a></li></ol></li></ol>
+          <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#spring%E4%B8%AD%E5%92%8C%E5%92%8C%E7%9A%84%E5%8C%BA%E5%88%AB"><span class="toc-number">1.</span> <span class="toc-text"> spring 中 &#x2F;  和 &#x2F;*  和 &#x2F;**  的区别</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%92%8C-%E5%8C%BA%E5%88%AB"><span class="toc-number">1.1.</span> <span class="toc-text">  &#x2F;  和  &#x2F;*  区别</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%92%8C-%E5%8C%BA%E5%88%AB-2"><span class="toc-number">1.2.</span> <span class="toc-text">  &#x2F;*  和  &#x2F;**  区别</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%B3%A8%E6%84%8F%E7%82%B9%E6%A1%88%E4%BE%8B"><span class="toc-number">1.3.</span> <span class="toc-text"> 注意点案例</span></a></li></ol></li></ol>
       </div>
       <div class="related panel pjax" data-title="Related">
         <ul>
@@ -308,19 +307,19 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
 <nav class="state">
     <div class="item posts">
       <a href="/archives/">
-        <span class="count">135</span>
+        <span class="count">136</span>
         <span class="name">posts</span>
       </a>
     </div>
     <div class="item categories">
       <a href="/categories/">
-        <span class="count">70</span>
+        <span class="count">71</span>
         <span class="name">categories</span>
       </a>
     </div>
     <div class="item tags">
       <a href="/tags/">
-        <span class="count">99</span>
+        <span class="count">101</span>
         <span class="name">tags</span>
       </a>
     </div>
@@ -399,95 +398,9 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
   <li class="item">
     
 <div class="breadcrumb">
-<a href="/categories/Java%E9%9D%A2%E8%AF%95/" title="In Java面试">Java面试</a>
-<i class="ic i-angle-right"></i>
-<a href="/categories/Java%E9%9D%A2%E8%AF%95/Jvm/" title="In Jvm">Jvm</a>
-</div>
-
-    <span><a href="/posts/57681474/" title="JVM简单原理">JVM简单原理</a></span>
-  </li>
-
-      
-  <li class="item">
-    
-<div class="breadcrumb">
-<a href="/categories/Java/" title="In Java">Java</a>
-<i class="ic i-angle-right"></i>
-<a href="/categories/Java/Java%E9%9D%A2%E8%AF%95/" title="In Java面试">Java面试</a>
-</div>
-
-    <span><a href="/posts/f23f1351/" title="equals与&#x3D;&#x3D;区别">equals与==区别</a></span>
-  </li>
-
-      
-  <li class="item">
-    
-<div class="breadcrumb">
-</div>
-
-    <span><a href="/posts/a72f470b/" title="关于JVM常用参数">关于JVM常用参数</a></span>
-  </li>
-
-      
-  <li class="item">
-    
-<div class="breadcrumb">
-<a href="/categories/Java/" title="In Java">Java</a>
-</div>
-
-    <span><a href="/posts/1c3390ab/" title="将Java数据输出为本地txt">将Java数据输出为本地txt</a></span>
-  </li>
-
-      
-  <li class="item">
-    
-<div class="breadcrumb">
-</div>
-
-    <span><a href="/posts/56be7cc9/" title="关于Linux排查问题命令">关于Linux排查问题命令</a></span>
-  </li>
-
-      
-  <li class="item">
-    
-<div class="breadcrumb">
 </div>
 
     <span><a href="/posts/a1926332/" title="Springboot+Vue二进制文件传输">Springboot+Vue二进制文件传输</a></span>
-  </li>
-
-      
-  <li class="item">
-    
-<div class="breadcrumb">
-<a href="/categories/%E5%89%8D%E7%AB%AF/" title="In 前端">前端</a>
-<i class="ic i-angle-right"></i>
-<a href="/categories/%E5%89%8D%E7%AB%AF/Vue/" title="In Vue">Vue</a>
-</div>
-
-    <span><a href="/posts/b5314c4/" title="Vue2语法简介">Vue2语法简介</a></span>
-  </li>
-
-      
-  <li class="item">
-    
-<div class="breadcrumb">
-<a href="/categories/Java%E9%9D%A2%E8%AF%95/" title="In Java面试">Java面试</a>
-<i class="ic i-angle-right"></i>
-<a href="/categories/Java%E9%9D%A2%E8%AF%95/%E7%AE%97%E6%B3%95/" title="In 算法">算法</a>
-</div>
-
-    <span><a href="/posts/b9b9f7e7/" title="二叉树遍历">二叉树遍历</a></span>
-  </li>
-
-      
-  <li class="item">
-    
-<div class="breadcrumb">
-<a href="/categories/%E5%89%8D%E7%AB%AF/" title="In 前端">前端</a>
-</div>
-
-    <span><a href="/posts/e43580c1/" title="flex布局">flex布局</a></span>
   </li>
 
       
@@ -500,6 +413,92 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
 </div>
 
     <span><a href="/posts/52d9f7d3/" title="Java面试必问--HashMap的底层">Java面试必问--HashMap的底层</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/Java/" title="In Java">Java</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/Java/Mybatis/" title="In Mybatis">Mybatis</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/Java/Mybatis/SpringBoot/" title="In SpringBoot">SpringBoot</a>
+</div>
+
+    <span><a href="/posts/31dc52e1/" title="MyBatis之分页查询：MyBatis PageHelper">MyBatis之分页查询：MyBatis PageHelper</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+</div>
+
+    <span><a href="/posts/1599bffe/" title="归并排序">归并排序</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/Java/" title="In Java">Java</a>
+</div>
+
+    <span><a href="/posts/d6d1be75/" title="在Javadoc注释中引用方法">在Javadoc注释中引用方法</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/Java%E9%9D%A2%E8%AF%95/" title="In Java面试">Java面试</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/Java%E9%9D%A2%E8%AF%95/Tools/" title="In Tools">Tools</a>
+</div>
+
+    <span><a href="/posts/6714b4a9/" title="FastJson序列化使用">FastJson序列化使用</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+</div>
+
+    <span><a href="/posts/de5e33d7/" title="关于JDK中的Arrays.sort排序方法">关于JDK中的Arrays.sort排序方法</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/Java/" title="In Java">Java</a>
+</div>
+
+    <span><a href="/posts/7a29d22a/" title="Java关于时间的轮子">Java关于时间的轮子</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/Java/" title="In Java">Java</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/Java/Mysql/" title="In Mysql">Mysql</a>
+</div>
+
+    <span><a href="/posts/69c17d37/" title="关于事务提交中踩坑">关于事务提交中踩坑</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/Java/" title="In Java">Java</a>
+</div>
+
+    <span><a href="/posts/60a1e80e/" title="java判断日期周几">java判断日期周几</a></span>
   </li>
 
   </ul>
@@ -524,13 +523,13 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
     <span class="post-meta-item-icon">
       <i class="ic i-chart-area"></i>
     </span>
-    <span title="Symbols count total">558k words</span>
+    <span title="Symbols count total">561k words</span>
 
     <span class="post-meta-divider">|</span>
     <span class="post-meta-item-icon">
       <i class="ic i-coffee"></i>
     </span>
-    <span title="Reading time total">8:27</span>
+    <span title="Reading time total">8:30</span>
   </div>
 </div>
 

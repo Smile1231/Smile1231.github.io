@@ -115,12 +115,12 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
       </div>
       <div id="imgs" class="pjax">
         <ul>
-          <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1giciundwu5j20zk0m8n9e.jpg"></li>
-          <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1giciub8ja1j20zk0m81ky.jpg"></li>
-          <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1giclgrvbd6j20zk0m8qv5.jpg"></li>
-          <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1giclffsa1cj20zk0m811l.jpg"></li>
-          <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1gipexe4oykj20zk0m87ji.jpg"></li>
-          <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1gicis3attqj20zk0m8k7l.jpg"></li>
+          <li class="item" data-background-image="https://tva1.sinaimg.cn/large/6833939bly1giclhtuo6nj20zk0m8ttm.jpg"></li>
+          <li class="item" data-background-image="https://tva1.sinaimg.cn/large/6833939bly1gicm0fdw5cj20zk0m8hdt.jpg"></li>
+          <li class="item" data-background-image="https://tva1.sinaimg.cn/large/6833939bly1gipevgoki5j20zk0m84qp.jpg"></li>
+          <li class="item" data-background-image="https://tva1.sinaimg.cn/large/6833939bly1gipevarprfj20zk0m8npd.jpg"></li>
+          <li class="item" data-background-image="https://tva1.sinaimg.cn/large/6833939bly1giclffsa1cj20zk0m811l.jpg"></li>
+          <li class="item" data-background-image="https://tva1.sinaimg.cn/large/6833939bly1gipet4bz0yj20zk0m8e81.jpg"></li>
         </ul>
       </div>
     </header>
@@ -164,30 +164,56 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
   <div class="body md" itemprop="articleBody">
     
 
-    <h2 id="索引失效的原因"><a href="#索引失效的原因" class="headerlink" title="索引失效的原因"></a>索引失效的原因</h2><p>发票项目当初查询列表时queryInvoicesForCom接口，该接口主要用来列表发票信息的，当时是因为业务反应前端很久才会有显示，然后当时我来优化</p>
-<p>主要的耗时点是在一条sql上，老sql遗留问题，由于当初在设计t_invoice表的时候，是一条记录进行作用的，所以查询的时候，需要进行拆分 operate，通过状态进行拆分、</p>
-<p>sql语句是 union all </p>
-<p>explain 执行计划下来 type中有all全扫描，应该是没有击中索引，其实常见的未击中索引我都有去考虑过，</p>
-<p>where 中使用 != 或 &lt;&gt; 或 or 或表达式或函数（左侧）<br>like 语句 % 开头<br>字符串未加’’<br>索引字段区分度过低，如性别<br>未匹配最左前缀</p>
-<p>一点点的抽丝剥茧，也问了很多同事，身边的架构师，讲道理来说是会命中索引的，应该是mysql自己优化成不走索引了，线上数据目前是800w左右，时间区间是三个月，数据量过于大的时候，就会不走索引<br>所以这也是急需要优化的点，加上mybatis会查询两次，时间就进行了翻倍，<br>执行计划一条type为ref rows属性达到了100w，所以数据量<br>所以需要删除一些历史遗留的merchantID，以及缩小时间区间看看是否能够优化，因为在测试环境是可以走通的，测试环境的话只有几十万，所以都是没有问题的，最后原因如果数据量过大的话，也不会一定走索引，所以这个时候只能多加限制了。。。。</p>
-<p>各属性含义：<br>id：查询的序列号</p>
+    <h2 id="索引失效的原因"><a class="markdownIt-Anchor" href="#索引失效的原因">#</a> 索引失效的原因</h2>
+<p>发票项目当初查询列表时 queryInvoicesForCom 接口，该接口主要用来列表发票信息的，当时是因为业务反应前端很久才会有显示，然后当时我来优化</p>
+<p>主要的耗时点是在一条 sql 上，老 sql 遗留问题，由于当初在设计 t_invoice 表的时候，是一条记录进行作用的，所以查询的时候，需要进行拆分 operate，通过状态进行拆分、</p>
+<p>sql 语句是 union all</p>
+<p>explain 执行计划下来 type 中有 all 全扫描，应该是没有击中索引，其实常见的未击中索引我都有去考虑过，</p>
+<p>where 中使用！= 或 &lt;&gt; 或 or 或表达式或函数（左侧）<br>
+like 语句 % 开头<br>
+字符串未加’’<br>
+索引字段区分度过低，如性别<br>
+未匹配最左前缀</p>
+<p>一点点的抽丝剥茧，也问了很多同事，身边的架构师，讲道理来说是会命中索引的，应该是 mysql 自己优化成不走索引了，线上数据目前是 800w 左右，时间区间是三个月，数据量过于大的时候，就会不走索引<br>
+所以这也是急需要优化的点，加上 mybatis 会查询两次，时间就进行了翻倍，<br>
+执行计划一条 type 为 ref rows 属性达到了 100w，所以数据量<br>
+所以需要删除一些历史遗留的 merchantID，以及缩小时间区间看看是否能够优化，因为在测试环境是可以走通的，测试环境的话只有几十万，所以都是没有问题的，最后原因如果数据量过大的话，也不会一定走索引，所以这个时候只能多加限制了。。。。</p>
+<p>各属性含义：<br>
+id：查询的序列号</p>
 <p>select_type：查询的类型，主要是区别普通查询和联合查询、子查询之类的复杂查询</p>
-<p>SIMPLE：查询中不包含子查询或者UNION<br>查询中若包含任何复杂的子部分，最外层查询则被标记为：PRIMARY<br>在SELECT或WHERE列表中包含了子查询，该子查询被标记为：SUBQUERY<br>table：输出的行所引用的表</p>
+<p>SIMPLE：查询中不包含子查询或者 UNION<br>
+ 查询中若包含任何复杂的子部分，最外层查询则被标记为：PRIMARY<br>
+ 在 SELECT 或 WHERE 列表中包含了子查询，该子查询被标记为：SUBQUERY<br>
+table：输出的行所引用的表</p>
 <p>type：访问类型</p>
 <p>从左至右，性能由差到好</p>
-<p>ALL：扫描全表<br>index：扫描全部索引树<br>range：扫描部分索引，索引范围扫描，对索引的扫描开始于某一点，返回匹配值域的行，常见于between、&lt;、&gt;等的查询<br>ref：使用非唯一索引或非唯一索引前缀进行的查找<br>（eq_ref和const的区别：）<br>eq_ref：唯一性索引扫描，对于每个索引键，表中只有一条记录与之匹配。常见于主键或唯一索引扫描<br>const：单表中最多有一个匹配行，查询起来非常迅速，例如根据主键或唯一索引查询。<br>system：system是const类型的特例，当查询的表只有一行的情况下， 使用system。<br>NULL：不用访问表或者索引，直接就能得到结果，如select 1 from test where 1<br>possible_keys：表示查询时可能使用的索引。如果是空的，没有相关的索引。这时要提高性能，可通过检验WHERE子句，看是否引用某些字段，或者检查字段不是适合索引。</p>
-<p>key：显示MySQL实际决定使用的索引。如果没有索引被选择，是NULL</p>
-<p>key_len：使用到索引字段的长度<br>注：key_len显示的值为索引字段的最大可能长度，并非实际使用长度，即key_len是根据表定义计算而得，不是通过表内检索出的。</p>
-<p>ref：显示哪个字段或常数与key一起被使用</p>
-<p>rows：这个数表示mysql要遍历多少数据才能找到，表示MySQL根据表统计信息及索引选用情况，估算的找到所需的记录所需要读取的行数，在innodb上可能是不准确的</p>
+<p>ALL：扫描全表<br>
+ index：扫描全部索引树<br>
+ range：扫描部分索引，索引范围扫描，对索引的扫描开始于某一点，返回匹配值域的行，常见于 between、&lt;、&gt; 等的查询<br>
+ ref：使用非唯一索引或非唯一索引前缀进行的查找<br>
+（eq_ref 和 const 的区别：）<br>
+eq_ref：唯一性索引扫描，对于每个索引键，表中只有一条记录与之匹配。常见于主键或唯一索引扫描<br>
+ const：单表中最多有一个匹配行，查询起来非常迅速，例如根据主键或唯一索引查询。<br>
+system：system 是 const 类型的特例，当查询的表只有一行的情况下， 使用 system。<br>
+NULL：不用访问表或者索引，直接就能得到结果，如 select 1 from test where 1<br>
+possible_keys：表示查询时可能使用的索引。如果是空的，没有相关的索引。这时要提高性能，可通过检验 WHERE 子句，看是否引用某些字段，或者检查字段不是适合索引。</p>
+<p>key：显示 MySQL 实际决定使用的索引。如果没有索引被选择，是 NULL</p>
+<p>key_len：使用到索引字段的长度<br>
+注：key_len 显示的值为索引字段的最大可能长度，并非实际使用长度，即 key_len 是根据表定义计算而得，不是通过表内检索出的。</p>
+<p>ref：显示哪个字段或常数与 key 一起被使用</p>
+<p>rows：这个数表示 mysql 要遍历多少数据才能找到，表示 MySQL 根据表统计信息及索引选用情况，估算的找到所需的记录所需要读取的行数，在 innodb 上可能是不准确的</p>
 <p>Extra：执行情况的说明和描述。包含不适合在其他列中显示但十分重要的额外信息。</p>
 <p>Using index：表示使用索引，如果只有 Using index，说明他没有查询到数据表，只用索引表就完成了这个查询，这个叫覆盖索引。</p>
 <p>Using where：表示条件查询，如果不读取表的所有数据，或不是仅仅通过索引就可以获取所有需要的数据，则会出现 Using where。</p>
-<p>查询条件中IS NULL，当命中结果数量小于40%的时候，会走索引。</p>
-<p>查询条件中的IS NOT NULL,命中结果数小于30%的时候，会走索引。</p>
-<h2 id="当初对账项目找不到mapper文件的原因（多数据源引起）"><a href="#当初对账项目找不到mapper文件的原因（多数据源引起）" class="headerlink" title="当初对账项目找不到mapper文件的原因（多数据源引起）"></a>当初对账项目找不到mapper文件的原因（多数据源引起）</h2><p>其实这个问题是当初开发日清算的时候有的，其实这个问题是因为多数据源引起的，多数据源primary注解，多数据源时会逐步扫描config包下的config文件，读取config文件时，当时项目的分层出现了严重的问题，不同数据源需要<br>不同的包进行隔离，但是但是主数据源就卸载了dao下，但是另一个副数据源缺新建了包，这个问题呢，很巧的是本地环境不会有问题，开发和测试环境出现过一次但是生产环境就会一直报错。。。</p>
-<h2 id="文件上传前端超时的问题如何解决"><a href="#文件上传前端超时的问题如何解决" class="headerlink" title="文件上传前端超时的问题如何解决"></a>文件上传前端超时的问题如何解决</h2><p>有一个上传的需求需要上传1000个司机，但是由于是同步操作</p>
-<h2 id="在同一个事务中调用服务的另一个方法引起的问题（司机离职）"><a href="#在同一个事务中调用服务的另一个方法引起的问题（司机离职）" class="headerlink" title="在同一个事务中调用服务的另一个方法引起的问题（司机离职）"></a>在同一个事务中调用服务的另一个方法引起的问题（司机离职）</h2>
+<p>查询条件中 IS NULL，当命中结果数量小于 40% 的时候，会走索引。</p>
+<p>查询条件中的 IS NOT NULL, 命中结果数小于 30% 的时候，会走索引。</p>
+<h2 id="当初对账项目找不到mapper文件的原因多数据源引起"><a class="markdownIt-Anchor" href="#当初对账项目找不到mapper文件的原因多数据源引起">#</a> 当初对账项目找不到 mapper 文件的原因（多数据源引起）</h2>
+<p>其实这个问题是当初开发日清算的时候有的，其实这个问题是因为多数据源引起的，多数据源 primary 注解，多数据源时会逐步扫描 config 包下的 config 文件，读取 config 文件时，当时项目的分层出现了严重的问题，不同数据源需要<br>
+不同的包进行隔离，但是但是主数据源就卸载了 dao 下，但是另一个副数据源缺新建了包，这个问题呢，很巧的是本地环境不会有问题，开发和测试环境出现过一次但是生产环境就会一直报错。。。</p>
+<h2 id="文件上传前端超时的问题如何解决"><a class="markdownIt-Anchor" href="#文件上传前端超时的问题如何解决">#</a> 文件上传前端超时的问题如何解决</h2>
+<p>有一个上传的需求需要上传 1000 个司机，但是由于是同步操作</p>
+<h2 id="在同一个事务中调用服务的另一个方法引起的问题司机离职"><a class="markdownIt-Anchor" href="#在同一个事务中调用服务的另一个方法引起的问题司机离职">#</a> 在同一个事务中调用服务的另一个方法引起的问题（司机离职）</h2>
+
   </div>
 
    <footer>
@@ -238,7 +264,7 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
     <div class="item left">
       
 
-  <a href="/posts/4187faeb/" itemprop="url" rel="prev" data-background-image="https:&#x2F;&#x2F;tva3.sinaimg.cn&#x2F;mw690&#x2F;6833939bly1gipew28b65j20zk0m8hdt.jpg" title="English self_introduction">
+  <a href="/posts/4187faeb/" itemprop="url" rel="prev" data-background-image="https:&#x2F;&#x2F;tva1.sinaimg.cn&#x2F;mw690&#x2F;6833939bly1gicit4jrvuj20zk0m8785.jpg" title="English self_introduction">
   <span class="type">Previous Post</span>
   <span class="category"><i class="ic i-flag"></i> SAP</span>
   <h3>English self_introduction</h3>
@@ -248,7 +274,7 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
     <div class="item right">
       
 
-  <a href="/posts/96b6e8a1/" itemprop="url" rel="next" data-background-image="https:&#x2F;&#x2F;tva3.sinaimg.cn&#x2F;mw690&#x2F;6833939bly1gipevarprfj20zk0m8npd.jpg" title="simple self introduction">
+  <a href="/posts/96b6e8a1/" itemprop="url" rel="next" data-background-image="https:&#x2F;&#x2F;tva1.sinaimg.cn&#x2F;mw690&#x2F;6833939bly1gicm0fdw5cj20zk0m8hdt.jpg" title="simple self introduction">
   <span class="type">Next Post</span>
   <span class="category"><i class="ic i-flag"></i> SAP</span>
   <h3>simple self introduction</h3>
@@ -270,7 +296,7 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
   <div class="panels">
     <div class="inner">
       <div class="contents panel pjax" data-title="Contents">
-          <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%B4%A2%E5%BC%95%E5%A4%B1%E6%95%88%E7%9A%84%E5%8E%9F%E5%9B%A0"><span class="toc-number">1.</span> <span class="toc-text">索引失效的原因</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%BD%93%E5%88%9D%E5%AF%B9%E8%B4%A6%E9%A1%B9%E7%9B%AE%E6%89%BE%E4%B8%8D%E5%88%B0mapper%E6%96%87%E4%BB%B6%E7%9A%84%E5%8E%9F%E5%9B%A0%EF%BC%88%E5%A4%9A%E6%95%B0%E6%8D%AE%E6%BA%90%E5%BC%95%E8%B5%B7%EF%BC%89"><span class="toc-number">2.</span> <span class="toc-text">当初对账项目找不到mapper文件的原因（多数据源引起）</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%96%87%E4%BB%B6%E4%B8%8A%E4%BC%A0%E5%89%8D%E7%AB%AF%E8%B6%85%E6%97%B6%E7%9A%84%E9%97%AE%E9%A2%98%E5%A6%82%E4%BD%95%E8%A7%A3%E5%86%B3"><span class="toc-number">3.</span> <span class="toc-text">文件上传前端超时的问题如何解决</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%9C%A8%E5%90%8C%E4%B8%80%E4%B8%AA%E4%BA%8B%E5%8A%A1%E4%B8%AD%E8%B0%83%E7%94%A8%E6%9C%8D%E5%8A%A1%E7%9A%84%E5%8F%A6%E4%B8%80%E4%B8%AA%E6%96%B9%E6%B3%95%E5%BC%95%E8%B5%B7%E7%9A%84%E9%97%AE%E9%A2%98%EF%BC%88%E5%8F%B8%E6%9C%BA%E7%A6%BB%E8%81%8C%EF%BC%89"><span class="toc-number">4.</span> <span class="toc-text">在同一个事务中调用服务的另一个方法引起的问题（司机离职）</span></a></li></ol>
+          <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%B4%A2%E5%BC%95%E5%A4%B1%E6%95%88%E7%9A%84%E5%8E%9F%E5%9B%A0"><span class="toc-number">1.</span> <span class="toc-text"> 索引失效的原因</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%BD%93%E5%88%9D%E5%AF%B9%E8%B4%A6%E9%A1%B9%E7%9B%AE%E6%89%BE%E4%B8%8D%E5%88%B0mapper%E6%96%87%E4%BB%B6%E7%9A%84%E5%8E%9F%E5%9B%A0%E5%A4%9A%E6%95%B0%E6%8D%AE%E6%BA%90%E5%BC%95%E8%B5%B7"><span class="toc-number">2.</span> <span class="toc-text"> 当初对账项目找不到 mapper 文件的原因（多数据源引起）</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%96%87%E4%BB%B6%E4%B8%8A%E4%BC%A0%E5%89%8D%E7%AB%AF%E8%B6%85%E6%97%B6%E7%9A%84%E9%97%AE%E9%A2%98%E5%A6%82%E4%BD%95%E8%A7%A3%E5%86%B3"><span class="toc-number">3.</span> <span class="toc-text"> 文件上传前端超时的问题如何解决</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%9C%A8%E5%90%8C%E4%B8%80%E4%B8%AA%E4%BA%8B%E5%8A%A1%E4%B8%AD%E8%B0%83%E7%94%A8%E6%9C%8D%E5%8A%A1%E7%9A%84%E5%8F%A6%E4%B8%80%E4%B8%AA%E6%96%B9%E6%B3%95%E5%BC%95%E8%B5%B7%E7%9A%84%E9%97%AE%E9%A2%98%E5%8F%B8%E6%9C%BA%E7%A6%BB%E8%81%8C"><span class="toc-number">4.</span> <span class="toc-text"> 在同一个事务中调用服务的另一个方法引起的问题（司机离职）</span></a></li></ol>
       </div>
       <div class="related panel pjax" data-title="Related">
       </div>
@@ -285,19 +311,19 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
 <nav class="state">
     <div class="item posts">
       <a href="/archives/">
-        <span class="count">135</span>
+        <span class="count">136</span>
         <span class="name">posts</span>
       </a>
     </div>
     <div class="item categories">
       <a href="/categories/">
-        <span class="count">70</span>
+        <span class="count">71</span>
         <span class="name">categories</span>
       </a>
     </div>
     <div class="item tags">
       <a href="/tags/">
-        <span class="count">99</span>
+        <span class="count">101</span>
         <span class="name">tags</span>
       </a>
     </div>
@@ -376,32 +402,16 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
   <li class="item">
     
 <div class="breadcrumb">
-<a href="/categories/Java%E9%9D%A2%E8%AF%95/" title="In Java面试">Java面试</a>
-<i class="ic i-angle-right"></i>
-<a href="/categories/Java%E9%9D%A2%E8%AF%95/%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92/" title="In 动态规划">动态规划</a>
-</div>
-
-    <span><a href="/posts/a80d0031/" title="动态规划">动态规划</a></span>
-  </li>
-
-      
-  <li class="item">
-    
-<div class="breadcrumb">
-<a href="/categories/IDEA/" title="In IDEA">IDEA</a>
-</div>
-
-    <span><a href="/posts/579bb697/" title="IDEA小图标含义">IDEA小图标含义</a></span>
-  </li>
-
-      
-  <li class="item">
-    
-<div class="breadcrumb">
 <a href="/categories/Java/" title="In Java">Java</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/Java/Mybatis/" title="In Mybatis">Mybatis</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/Java/Mybatis/SpringBoot/" title="In SpringBoot">SpringBoot</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/Java/Mybatis/SpringBoot/%E5%88%86%E9%A1%B5%E6%9F%A5%E8%AF%A2/" title="In 分页查询">分页查询</a>
 </div>
 
-    <span><a href="/posts/1748805d/" title="java线程池与五种常用线程池策略使用与解析">java线程池与五种常用线程池策略使用与解析</a></span>
+    <span><a href="/posts/2edf7887/" title="MybatisPlus实现分页查询">MybatisPlus实现分页查询</a></span>
   </li>
 
       
@@ -420,12 +430,38 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
   <li class="item">
     
 <div class="breadcrumb">
-<a href="/categories/%E5%89%8D%E7%AB%AF/" title="In 前端">前端</a>
+<a href="/categories/Java/" title="In Java">Java</a>
 <i class="ic i-angle-right"></i>
-<a href="/categories/%E5%89%8D%E7%AB%AF/Vue/" title="In Vue">Vue</a>
+<a href="/categories/Java/%E5%A4%9A%E7%BA%BF%E7%A8%8B/" title="In 多线程">多线程</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/Java/%E5%A4%9A%E7%BA%BF%E7%A8%8B/Java%E9%9D%A2%E8%AF%95/" title="In Java面试">Java面试</a>
 </div>
 
-    <span><a href="/posts/8408ed11/" title="Vue-Cli介绍以及使用">Vue-Cli介绍以及使用</a></span>
+    <span><a href="/posts/12fecb94/" title="多线程笔记">多线程笔记</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/Java/" title="In Java">Java</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/Java/Mysql/" title="In Mysql">Mysql</a>
+</div>
+
+    <span><a href="/posts/69c17d37/" title="关于事务提交中踩坑">关于事务提交中踩坑</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/Java%E9%9D%A2%E8%AF%95/" title="In Java面试">Java面试</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/Java%E9%9D%A2%E8%AF%95/%E7%AE%97%E6%B3%95/" title="In 算法">算法</a>
+</div>
+
+    <span><a href="/posts/b9b9f7e7/" title="二叉树遍历">二叉树遍历</a></span>
   </li>
 
       
@@ -446,37 +482,46 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
   <li class="item">
     
 <div class="breadcrumb">
+<a href="/categories/%E5%89%8D%E7%AB%AF/" title="In 前端">前端</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/%E5%89%8D%E7%AB%AF/TypeScript/" title="In TypeScript">TypeScript</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/%E5%89%8D%E7%AB%AF/TypeScript/WebPack/" title="In WebPack">WebPack</a>
 </div>
 
-    <span><a href="/posts/bf4d20ae/" title="写在最前面">写在最前面</a></span>
+    <span><a href="/posts/ddb0d187/" title="TS配置Webpack">TS配置Webpack</a></span>
   </li>
 
       
   <li class="item">
     
 <div class="breadcrumb">
+<a href="/categories/Java%E9%9D%A2%E8%AF%95/" title="In Java面试">Java面试</a>
 </div>
 
-    <span><a href="/posts/de5e33d7/" title="关于JDK中的Arrays.sort排序方法">关于JDK中的Arrays.sort排序方法</a></span>
+    <span><a href="/posts/a5258aa2/" title="Java面试小册子">Java面试小册子</a></span>
   </li>
 
       
   <li class="item">
     
 <div class="breadcrumb">
-<a href="/categories/Git/" title="In Git">Git</a>
+<a href="/categories/Java/" title="In Java">Java</a>
 </div>
 
-    <span><a href="/posts/424eebf1/" title="关于在IDEA中回滚Git版本">关于在IDEA中回滚Git版本</a></span>
+    <span><a href="/posts/97604c34/" title="获取指定集合要求中的mapkey值并重新返回map">获取指定集合要求中的mapkey值并重新返回map</a></span>
   </li>
 
       
   <li class="item">
     
 <div class="breadcrumb">
+<a href="/categories/%E5%89%8D%E7%AB%AF/" title="In 前端">前端</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/%E5%89%8D%E7%AB%AF/Vue/" title="In Vue">Vue</a>
 </div>
 
-    <span><a href="/posts/8da68a98/" title="Java运行调用Shell脚本">Java运行调用Shell脚本</a></span>
+    <span><a href="/posts/8408ed11/" title="Vue-Cli介绍以及使用">Vue-Cli介绍以及使用</a></span>
   </li>
 
   </ul>
@@ -501,13 +546,13 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
     <span class="post-meta-item-icon">
       <i class="ic i-chart-area"></i>
     </span>
-    <span title="Symbols count total">558k words</span>
+    <span title="Symbols count total">561k words</span>
 
     <span class="post-meta-divider">|</span>
     <span class="post-meta-item-icon">
       <i class="ic i-coffee"></i>
     </span>
-    <span title="Reading time total">8:27</span>
+    <span title="Reading time total">8:30</span>
   </div>
 </div>
 

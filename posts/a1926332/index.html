@@ -117,12 +117,12 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
       </div>
       <div id="imgs" class="pjax">
         <ul>
-          <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1giclga70tsj20zk0m84mr.jpg"></li>
-          <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1giclflwv2aj20zk0m84qp.jpg"></li>
-          <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1giclimtf7dj20zk0m8qav.jpg"></li>
-          <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1giciszlczyj20zk0m816d.jpg"></li>
-          <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1gipesng5oej20zk0m87d4.jpg"></li>
-          <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1giclwuom7cj20zk0m8dvn.jpg"></li>
+          <li class="item" data-background-image="https://tva1.sinaimg.cn/large/6833939bly1gipewkhf1zj20zk0m81kx.jpg"></li>
+          <li class="item" data-background-image="https://tva1.sinaimg.cn/large/6833939bly1giph4wqtg4j20zk0m8x6p.jpg"></li>
+          <li class="item" data-background-image="https://tva1.sinaimg.cn/large/6833939bly1giph4baakhj20zk0m8h5q.jpg"></li>
+          <li class="item" data-background-image="https://tva1.sinaimg.cn/large/6833939bly1giclj61ylzj20zk0m8b29.jpg"></li>
+          <li class="item" data-background-image="https://tva1.sinaimg.cn/large/6833939bly1gipexj2jgzj20zk0m8b09.jpg"></li>
+          <li class="item" data-background-image="https://tva1.sinaimg.cn/large/6833939bly1gipexw3o58j20zk0m8e81.jpg"></li>
         </ul>
       </div>
     </header>
@@ -166,30 +166,17 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
   <div class="body md" itemprop="articleBody">
     
 
-    <p>最近用到了<code>springboot</code>项目返回二进制流，话不多说，代码贴上:</p>
+    <p>最近用到了 <code>springboot</code>  项目返回二进制流，话不多说，代码贴上:</p>
 <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">@PostMapping(value = &quot;/file/&#123;fileName&#125;&quot;)</span></span><br><span class="line"><span class="function"><span class="keyword">public</span> ResponseEntity&lt;FileSystemResource&gt; <span class="title">getFile</span><span class="params">(<span class="meta">@PathVariable(&quot;fileName&quot;)</span> String fileName)</span> <span class="keyword">throws</span> FileNotFoundException </span>&#123;</span><br><span class="line">	File file = <span class="keyword">new</span> File(filePath, fileName);</span><br><span class="line">	<span class="keyword">if</span> (file.exists()) &#123;</span><br><span class="line">		<span class="keyword">return</span> export(file);</span><br><span class="line">	&#125;</span><br><span class="line">	System.out.println(file);</span><br><span class="line">	<span class="keyword">return</span> <span class="keyword">null</span>;</span><br><span class="line">&#125;</span><br><span class="line"> </span><br><span class="line"><span class="function"><span class="keyword">public</span> ResponseEntity&lt;FileSystemResource&gt; <span class="title">export</span><span class="params">(File file)</span> </span>&#123;</span><br><span class="line">	<span class="keyword">if</span> (file == <span class="keyword">null</span>) &#123;</span><br><span class="line">		<span class="keyword">return</span> <span class="keyword">null</span>;</span><br><span class="line">	&#125;</span><br><span class="line">	HttpHeaders headers = <span class="keyword">new</span> HttpHeaders();</span><br><span class="line">	headers.add(<span class="string">&quot;Cache-Control&quot;</span>, <span class="string">&quot;no-cache, no-store, must-revalidate&quot;</span>);</span><br><span class="line">	headers.add(<span class="string">&quot;Content-Disposition&quot;</span>, <span class="string">&quot;attachment; filename=&quot;</span> + file.getName());</span><br><span class="line">	headers.add(<span class="string">&quot;Pragma&quot;</span>, <span class="string">&quot;no-cache&quot;</span>);</span><br><span class="line">	headers.add(<span class="string">&quot;Expires&quot;</span>, <span class="string">&quot;0&quot;</span>);</span><br><span class="line">	headers.add(<span class="string">&quot;Last-Modified&quot;</span>, <span class="keyword">new</span> Date().toString());</span><br><span class="line">	headers.add(<span class="string">&quot;ETag&quot;</span>, String.valueOf(System.currentTimeMillis()));</span><br><span class="line">	<span class="keyword">return</span> ResponseEntity.ok()</span><br><span class="line">                        .headers(headers)</span><br><span class="line">                        .contentLength(file.length())</span><br><span class="line">                        .contentType(MediaType.parseMediaType(<span class="string">&quot;application/octet-stream&quot;</span>))</span><br><span class="line">                        .body(<span class="keyword">new</span> FileSystemResource(file));</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <span id="more"></span>
-
-<p>前端<code>Vue</code>代码：</p>
+<p>前端 <code>Vue</code>  代码：</p>
 <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line">downloadXLSXFile() &#123;</span><br><span class="line">	<span class="keyword">var</span> that = <span class="keyword">this</span>;</span><br><span class="line">	that.axios</span><br><span class="line">	.post(</span><br><span class="line">		<span class="string">&quot;/download/XLSXExampleFile&quot;</span>,</span><br><span class="line">		&#123; fileId: <span class="number">123</span> &#125;, <span class="comment">//入参</span></span><br><span class="line">		&#123; responseType: <span class="string">&quot;blob&quot;</span> &#125; <span class="comment">// 设置responseType对象格式为 blob:</span></span><br><span class="line">	)</span><br><span class="line">	.then((res) =&gt; &#123;</span><br><span class="line">		let blob = <span class="keyword">new</span> Blob([res.data], &#123;</span><br><span class="line">		type: <span class="string">&quot;application/octet-stream&quot;</span>,</span><br><span class="line">		&#125;); <span class="comment">// 获取请求返回的response对象中的blob 设置文件类型</span></span><br><span class="line"></span><br><span class="line">		let url = window.URL.createObjectURL(blob); <span class="comment">// 创建一个临时的url指向blob对象</span></span><br><span class="line">		let a = document.createElement(<span class="string">&quot;a&quot;</span>);</span><br><span class="line">		a.href = url;</span><br><span class="line">		a.download = <span class="string">&quot;text.xslx&quot;</span>; <span class="comment">//下载的文件名</span></span><br><span class="line">		a.click();</span><br><span class="line">		window.URL.revokeObjectURL(url); <span class="comment">//释放blob对象</span></span><br><span class="line">	&#125;);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
 <blockquote>
-<p>同时贴一个<code>Springboot</code>接受前端`Vue``对象参数</p>
+<p>同时贴一个 <code>Springboot</code>  接受前端 `Vue`` 对象参数</p>
 </blockquote>
 <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">@Slf4j</span></span><br><span class="line"><span class="meta">@RequestMapping(&quot;/business&quot;)</span></span><br><span class="line"><span class="meta">@RestController</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">SubmitController</span> </span>&#123;</span><br><span class="line">    <span class="meta">@Autowired</span></span><br><span class="line">    <span class="keyword">private</span> SubmitService submitService;</span><br><span class="line"></span><br><span class="line">    <span class="meta">@PostMapping(&quot;/submit&quot;)</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> ResultVO <span class="title">submitAction</span><span class="params">(<span class="meta">@RequestBody</span> UploadFileSubmitEntity uploadFileSubmitEntity)</span></span>&#123;</span><br><span class="line">        log.info(<span class="string">&quot;start submitAction ...&quot;</span>);</span><br><span class="line">        log.info(uploadFileSubmitEntity.toString());</span><br><span class="line">        <span class="keyword">return</span> submitService.submitAction(uploadFileSubmitEntity);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="meta">@Data</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">UploadFileSubmitEntity</span> </span>&#123;</span><br><span class="line">    <span class="comment">//gz 文件列表</span></span><br><span class="line">    <span class="meta">@JsonProperty(&quot;GZFileList&quot;)</span></span><br><span class="line">    <span class="keyword">private</span> ArrayList&lt;UploadRes&gt; GZFileList;</span><br><span class="line">    <span class="comment">//xlsx 文件列表</span></span><br><span class="line">    <span class="meta">@JsonProperty(&quot;XLSXFileList&quot;)</span></span><br><span class="line">    <span class="keyword">private</span> ArrayList&lt;UploadRes&gt; XLSXFileList;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <p>前端:</p>
 <figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> that = <span class="built_in">this</span>;</span><br><span class="line"><span class="keyword">var</span> param = &#123;</span><br><span class="line">	<span class="string">&quot;GZFileList&quot;</span>: <span class="built_in">this</span>.GZFileList,</span><br><span class="line">	<span class="string">&quot;XLSXFileList&quot;</span>: <span class="built_in">this</span>.XLSXFileList,</span><br><span class="line">&#125;;</span><br><span class="line">that.axios(&#123;</span><br><span class="line">	<span class="attr">method</span>: <span class="string">&quot;post&quot;</span>,</span><br><span class="line">	<span class="attr">url</span>: <span class="string">&quot;/business/submit&quot;</span>,</span><br><span class="line">	<span class="attr">data</span>: <span class="built_in">JSON</span>.stringify(param),</span><br><span class="line">	<span class="attr">headers</span>: &#123;</span><br><span class="line">		<span class="string">&quot;Content-Type&quot;</span>: <span class="string">&quot;application/json;charset=UTF-8&quot;</span>,</span><br><span class="line">	&#125;,</span><br><span class="line">	&#125;)</span><br><span class="line">	.then(<span class="function">(<span class="params">res</span>) =&gt;</span> &#123;</span><br><span class="line">	<span class="keyword">if</span>(res.data.code == <span class="number">200</span>)&#123;</span><br><span class="line">		that.$message.success(<span class="string">&quot;submit successfully! , Plz wait for some time .&quot;</span>);</span><br><span class="line">	&#125;</span><br><span class="line">	&#125;);</span><br></pre></td></tr></table></figure>
-
-
-
-
-
-
-
-
-
-
-
 
       <div class="tags">
           <a href="/tags/SpringBoot/" rel="tag"><i class="ic i-tag"></i> SpringBoot</a>
@@ -245,7 +232,7 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
     <div class="item left">
       
 
-  <a href="/posts/7733848a/" itemprop="url" rel="prev" data-background-image="https:&#x2F;&#x2F;tva3.sinaimg.cn&#x2F;mw690&#x2F;6833939bly1giclh3brzpj20zk0m8ann.jpg" title="文件上传前端小结">
+  <a href="/posts/7733848a/" itemprop="url" rel="prev" data-background-image="https:&#x2F;&#x2F;tva1.sinaimg.cn&#x2F;mw690&#x2F;6833939bly1giclgrvbd6j20zk0m8qv5.jpg" title="文件上传前端小结">
   <span class="type">Previous Post</span>
   <span class="category"><i class="ic i-flag"></i> 前端</span>
   <h3>文件上传前端小结</h3>
@@ -255,7 +242,7 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
     <div class="item right">
       
 
-  <a href="/posts/d6d1be75/" itemprop="url" rel="next" data-background-image="https:&#x2F;&#x2F;tva3.sinaimg.cn&#x2F;mw690&#x2F;6833939bly1gipevuctzzj20zk0m84qp.jpg" title="在Javadoc注释中引用方法">
+  <a href="/posts/d6d1be75/" itemprop="url" rel="next" data-background-image="https:&#x2F;&#x2F;tva1.sinaimg.cn&#x2F;mw690&#x2F;6833939bly1gicljgocqbj20zk0m8e81.jpg" title="在Javadoc注释中引用方法">
   <span class="type">Next Post</span>
   <span class="category"><i class="ic i-flag"></i> Java</span>
   <h3>在Javadoc注释中引用方法</h3>
@@ -291,19 +278,19 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
 <nav class="state">
     <div class="item posts">
       <a href="/archives/">
-        <span class="count">135</span>
+        <span class="count">136</span>
         <span class="name">posts</span>
       </a>
     </div>
     <div class="item categories">
       <a href="/categories/">
-        <span class="count">70</span>
+        <span class="count">71</span>
         <span class="name">categories</span>
       </a>
     </div>
     <div class="item tags">
       <a href="/tags/">
-        <span class="count">99</span>
+        <span class="count">101</span>
         <span class="name">tags</span>
       </a>
     </div>
@@ -382,50 +369,22 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
   <li class="item">
     
 <div class="breadcrumb">
-<a href="/categories/Tools/" title="In Tools">Tools</a>
+<a href="/categories/SpringBoot/" title="In SpringBoot">SpringBoot</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/SpringBoot/Java/" title="In Java">Java</a>
 </div>
 
-    <span><a href="/posts/ba83fda/" title="超级好用的StringJoiner">超级好用的StringJoiner</a></span>
+    <span><a href="/posts/f976ebe7/" title="SpringMvc中标准的后端接口格式">SpringMvc中标准的后端接口格式</a></span>
   </li>
 
       
   <li class="item">
     
 <div class="breadcrumb">
-<a href="/categories/DDD/" title="In DDD">DDD</a>
+<a href="/categories/Shell/" title="In Shell">Shell</a>
 </div>
 
-    <span><a href="/posts/3fec5852/" title="DDD领域驱动设计">DDD领域驱动设计</a></span>
-  </li>
-
-      
-  <li class="item">
-    
-<div class="breadcrumb">
-<a href="/categories/%E5%89%8D%E7%AB%AF/" title="In 前端">前端</a>
-</div>
-
-    <span><a href="/posts/e43580c1/" title="flex布局">flex布局</a></span>
-  </li>
-
-      
-  <li class="item">
-    
-<div class="breadcrumb">
-<a href="/categories/%E6%95%B0%E6%8D%AE%E5%BA%93/" title="In 数据库">数据库</a>
-</div>
-
-    <span><a href="/posts/377b6f7d/" title="关于mysql中对Json类型字段进行筛选查询">关于mysql中对Json类型字段进行筛选查询</a></span>
-  </li>
-
-      
-  <li class="item">
-    
-<div class="breadcrumb">
-<a href="/categories/Java/" title="In Java">Java</a>
-</div>
-
-    <span><a href="/posts/96eb888f/" title="Java学习线路图">Java学习线路图</a></span>
+    <span><a href="/posts/55b095e0/" title="The learning of Shell">The learning of Shell</a></span>
   </li>
 
       
@@ -434,12 +393,74 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
 <div class="breadcrumb">
 <a href="/categories/Java%E9%9D%A2%E8%AF%95/" title="In Java面试">Java面试</a>
 <i class="ic i-angle-right"></i>
-<a href="/categories/Java%E9%9D%A2%E8%AF%95/%E5%A0%86%E6%8E%92%E5%BA%8F/" title="In 堆排序">堆排序</a>
-<i class="ic i-angle-right"></i>
-<a href="/categories/Java%E9%9D%A2%E8%AF%95/%E5%A0%86%E6%8E%92%E5%BA%8F/%E7%AE%97%E6%B3%95/" title="In 算法">算法</a>
+<a href="/categories/Java%E9%9D%A2%E8%AF%95/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/" title="In 数据结构">数据结构</a>
 </div>
 
-    <span><a href="/posts/c2a5fdc5/" title="堆排序">堆排序</a></span>
+    <span><a href="/posts/9f9a6182/" title="面试之旅关于数据结构">面试之旅关于数据结构</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+</div>
+
+    <span><a href="/posts/4da9c93/" title="Web-based design and analysis tools for CRISPR base editing 文献阅读">Web-based design and analysis tools for CRISPR base editing 文献阅读</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/Java%E9%9D%A2%E8%AF%95/" title="In Java面试">Java面试</a>
+</div>
+
+    <span><a href="/posts/a5258aa2/" title="Java面试小册子">Java面试小册子</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+</div>
+
+    <span><a href="/posts/3c59e6c8/" title="如何让自己的博客被Google以及百度收录">如何让自己的博客被Google以及百度收录</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/%E5%89%8D%E7%AB%AF/" title="In 前端">前端</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/%E5%89%8D%E7%AB%AF/Vue/" title="In Vue">Vue</a>
+</div>
+
+    <span><a href="/posts/b5314c4/" title="Vue2语法简介">Vue2语法简介</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/Java%E9%9D%A2%E8%AF%95/" title="In Java面试">Java面试</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/Java%E9%9D%A2%E8%AF%95/SpringBoot/" title="In SpringBoot">SpringBoot</a>
+</div>
+
+    <span><a href="/posts/eec4b728/" title="SpringBoot中如何优雅的使用多线程">SpringBoot中如何优雅的使用多线程</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/Java%E9%9D%A2%E8%AF%95/" title="In Java面试">Java面试</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/Java%E9%9D%A2%E8%AF%95/Mybatis/" title="In Mybatis">Mybatis</a>
+</div>
+
+    <span><a href="/posts/31d0fffb/" title="Mybatis中#号和$号的区别">Mybatis中#号和$号的区别</a></span>
   </li>
 
       
@@ -447,43 +468,9 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
     
 <div class="breadcrumb">
 <a href="/categories/Java/" title="In Java">Java</a>
-<i class="ic i-angle-right"></i>
-<a href="/categories/Java/Tools/" title="In Tools">Tools</a>
 </div>
 
-    <span><a href="/posts/13370746/" title="使用EasyExcel读取excel文件为Java实体类">使用EasyExcel读取excel文件为Java实体类</a></span>
-  </li>
-
-      
-  <li class="item">
-    
-<div class="breadcrumb">
-<a href="/categories/Hexo/" title="In Hexo">Hexo</a>
-<i class="ic i-angle-right"></i>
-<a href="/categories/Hexo/Tools/" title="In Tools">Tools</a>
-</div>
-
-    <span><a href="/posts/3d071a12/" title="使用hexo框架+next主题+githubPage搭建个人博客">使用hexo框架+next主题+githubPage搭建个人博客</a></span>
-  </li>
-
-      
-  <li class="item">
-    
-<div class="breadcrumb">
-<a href="/categories/Hexo/" title="In Hexo">Hexo</a>
-</div>
-
-    <span><a href="/posts/5c2529f6/" title="Hexo中添加动态2d二次元人物模型">Hexo中添加动态2d二次元人物模型</a></span>
-  </li>
-
-      
-  <li class="item">
-    
-<div class="breadcrumb">
-<a href="/categories/%E5%9F%BA%E5%9B%A0%E7%BC%96%E8%BE%91/" title="In 基因编辑">基因编辑</a>
-</div>
-
-    <span><a href="/posts/1f142005/" title="CRISPR-Cas9英文介绍">CRISPR-Cas9英文介绍</a></span>
+    <span><a href="/posts/bd76a990/" title="一图看懂Java中的PO,BO,VO,DTO,POJO,DAO,DO">一图看懂Java中的PO,BO,VO,DTO,POJO,DAO,DO</a></span>
   </li>
 
   </ul>
@@ -508,13 +495,13 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
     <span class="post-meta-item-icon">
       <i class="ic i-chart-area"></i>
     </span>
-    <span title="Symbols count total">558k words</span>
+    <span title="Symbols count total">561k words</span>
 
     <span class="post-meta-divider">|</span>
     <span class="post-meta-item-icon">
       <i class="ic i-coffee"></i>
     </span>
-    <span title="Reading time total">8:27</span>
+    <span title="Reading time total">8:30</span>
   </div>
 </div>
 

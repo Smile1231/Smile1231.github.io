@@ -76,7 +76,7 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
       <i class="ic i-pen"></i>
     </span>
     <span class="text">Symbols count in article</span>
-    <span>877</span>
+    <span>879</span>
     <span class="text">words</span>
   </span>
   <span class="item" title="Reading time">
@@ -117,12 +117,12 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
       </div>
       <div id="imgs" class="pjax">
         <ul>
-          <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1gipesng5oej20zk0m87d4.jpg"></li>
-          <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1gipesrnqv3j20zk0m8ava.jpg"></li>
-          <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1gipeun65urj20zk0m81ii.jpg"></li>
-          <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1giclflwv2aj20zk0m84qp.jpg"></li>
-          <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1gicitcxhpij20zk0m8hdt.jpg"></li>
-          <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1gicm0fdw5cj20zk0m8hdt.jpg"></li>
+          <li class="item" data-background-image="https://tva1.sinaimg.cn/large/6833939bly1giclwrdwyaj20zk0m8are.jpg"></li>
+          <li class="item" data-background-image="https://tva1.sinaimg.cn/large/6833939bly1gicli9lfebj20zk0m84qp.jpg"></li>
+          <li class="item" data-background-image="https://tva1.sinaimg.cn/large/6833939bly1gipey84bjtj20zk0m8hdt.jpg"></li>
+          <li class="item" data-background-image="https://tva1.sinaimg.cn/large/6833939bly1gipevarprfj20zk0m8npd.jpg"></li>
+          <li class="item" data-background-image="https://tva1.sinaimg.cn/large/6833939bly1gipeu1usa7j20zk0m8b29.jpg"></li>
+          <li class="item" data-background-image="https://tva1.sinaimg.cn/large/6833939bly1giciryrr3rj20zk0m8nhk.jpg"></li>
         </ul>
       </div>
     </header>
@@ -168,26 +168,25 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
   <div class="body md" itemprop="articleBody">
     
 
-    <h1 id="文章置顶"><a href="#文章置顶" class="headerlink" title="文章置顶"></a>文章置顶</h1><p><code>Hexo</code> 本身并没有内置文章置顶功能，因此需要自行安装。不过 <code>Hexo</code> 本身有一个对文章排序的组件，也就是在站点配置文件内的 <code>index_generator</code> 选项，置顶功能其实就是每次排序的时候，把其中的置顶文章排在最前，本质上是一个排序组件，<code>Hexo</code> 默认的是 <code>hexo-generator-index</code>，所以先卸载再重新安装一个可以置顶的排序组件：</p>
+    <h1 id="文章置顶"><a class="markdownIt-Anchor" href="#文章置顶">#</a> 文章置顶</h1>
+<p><code>Hexo</code>  本身并没有内置文章置顶功能，因此需要自行安装。不过  <code>Hexo</code>  本身有一个对文章排序的组件，也就是在站点配置文件内的  <code>index_generator</code>  选项，置顶功能其实就是每次排序的时候，把其中的置顶文章排在最前，本质上是一个排序组件， <code>Hexo</code>  默认的是  <code>hexo-generator-index</code> ，所以先卸载再重新安装一个可以置顶的排序组件：</p>
 <span id="more"></span>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"># 先卸载</span><br><span class="line">npm uninstall --save hexo-generator-index</span><br><span class="line"></span><br><span class="line"># 再安装</span><br><span class="line">npm install --save hexo-generator-index-pin-top</span><br></pre></td></tr></table></figure>
-<p>从插件名字上就能看得出来支持置顶了。该插件的 <code>GitHub</code> 地址：<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL25ldGNhbi9oZXhvLWdlbmVyYXRvci1pbmRleC1waW4tdG9w">hexo-generator-index-pin-top</span>。插件安装完之后，只需要在文章头部信息栏内设置 <code>top</code> 属性即可：</p>
+<p>从插件名字上就能看得出来支持置顶了。该插件的  <code>GitHub</code>  地址：<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL25ldGNhbi9oZXhvLWdlbmVyYXRvci1pbmRleC1waW4tdG9w">hexo-generator-index-pin-top</span>。插件安装完之后，只需要在文章头部信息栏内设置  <code>top</code>  属性即可：</p>
 <figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">---</span><br><span class="line">title: 写在最前面</span><br><span class="line">hide: false</span><br><span class="line"><span class="section">top: true</span></span><br><span class="line"><span class="section">---</span></span><br></pre></td></tr></table></figure>
-<p>这样这篇文章就具有置顶效果了。不过，仅仅只是这么做，文章虽然确实置顶了，但是从文章列表上来看，和普通的文章没什么不同。如果不特意去对比文章发布时间，可能会以为只是最新的文章而已。例如一些说明、通知之类的，为了能有个比较突出的标志，可以在 <code>next/layout/_macro/post.swig</code> 文件中找到以下位置并添加代码：</p>
+<p>这样这篇文章就具有置顶效果了。不过，仅仅只是这么做，文章虽然确实置顶了，但是从文章列表上来看，和普通的文章没什么不同。如果不特意去对比文章发布时间，可能会以为只是最新的文章而已。例如一些说明、通知之类的，为了能有个比较突出的标志，可以在  <code>next/layout/_macro/post.swig</code>  文件中找到以下位置并添加代码：</p>
 <figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">&#123;% if post.top %&#125;</span><br><span class="line">    <span class="tag">&lt;<span class="name">i</span> <span class="attr">class</span>=<span class="string">&quot;fa fa-thumb-tack&quot;</span> <span class="attr">style</span>=<span class="string">&quot;color: #EB6D39&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">i</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">font</span> <span class="attr">color</span>=<span class="string">#FFFF00</span>	&gt;</span>置顶<span class="tag">&lt;/<span class="name">font</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">span</span> <span class="attr">class</span>=<span class="string">&quot;post-meta-divider&quot;</span>&gt;</span>|<span class="tag">&lt;/<span class="name">span</span>&gt;</span></span><br><span class="line">&#123;% endif %&#125;</span><br></pre></td></tr></table></figure>
 <img data-src="/posts/575a6046/2021-11-17-13-47-07.png" class="">
-
 <p>效果如下:</p>
 <img data-src="/posts/575a6046/2021-11-17-13-54-56.png" class="">
-
-<h2 id="关于在Hexo中的小图标"><a href="#关于在Hexo中的小图标" class="headerlink" title="关于在Hexo中的小图标"></a>关于在<code>Hexo</code>中的小图标</h2><p>使用<code>Hexo</code>搭建的<code>Blog</code>中,都是从专门的图标库中获取:</p>
+<h2 id="关于在hexo中的小图标"><a class="markdownIt-Anchor" href="#关于在hexo中的小图标">#</a> 关于在 <code>Hexo</code>  中的小图标</h2>
+<p>使用 <code>Hexo</code>  搭建的 <code>Blog</code>  中，都是从专门的图标库中获取:</p>
 <ul>
 <li><span class="exturl" data-url="aHR0cHM6Ly9mb250YXdlc29tZS5jb20vaWNvbnM/ZD1nYWxsZXJ5">国外地址</span></li>
 <li><span class="exturl" data-url="aHR0cHM6Ly9mb250YXdlc29tZS5kYXNoZ2FtZS5jb20v">国内地址</span></li>
 </ul>
-<p>例如在主题的配置文件<code>_config.yml</code>中</p>
+<p>例如在主题的配置文件 <code>_config.yml</code>  中</p>
 <img data-src="/posts/575a6046/2021-11-17-14-01-18.png" class="">
-
 <p>都是使用的图标库中的图标</p>
 
       <div class="tags">
@@ -245,7 +244,7 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
     <div class="item left">
       
 
-  <a href="/posts/3eca6246/" itemprop="url" rel="prev" data-background-image="https:&#x2F;&#x2F;tva3.sinaimg.cn&#x2F;mw690&#x2F;6833939bly1gipey0a334j20zk0m8qpt.jpg" title="使用npm时报python错误的解决方案">
+  <a href="/posts/3eca6246/" itemprop="url" rel="prev" data-background-image="https:&#x2F;&#x2F;tva1.sinaimg.cn&#x2F;mw690&#x2F;6833939bly1giclh3brzpj20zk0m8ann.jpg" title="使用npm时报python错误的解决方案">
   <span class="type">Previous Post</span>
   <span class="category"><i class="ic i-flag"></i> 前端</span>
   <h3>使用npm时报python错误的解决方案</h3>
@@ -255,7 +254,7 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
     <div class="item right">
       
 
-  <a href="/posts/45934af9/" itemprop="url" rel="next" data-background-image="https:&#x2F;&#x2F;tva3.sinaimg.cn&#x2F;mw690&#x2F;6833939bly1gipev1x5e4j20zk0m8b29.jpg" title="使用vscode书写hexo博客粘贴图片解决方案">
+  <a href="/posts/45934af9/" itemprop="url" rel="next" data-background-image="https:&#x2F;&#x2F;tva1.sinaimg.cn&#x2F;mw690&#x2F;6833939bly1giclh3brzpj20zk0m8ann.jpg" title="使用vscode书写hexo博客粘贴图片解决方案">
   <span class="type">Next Post</span>
   <span class="category"><i class="ic i-flag"></i> Tools</span>
   <h3>使用vscode书写hexo博客粘贴图片解决方案</h3>
@@ -277,7 +276,7 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
   <div class="panels">
     <div class="inner">
       <div class="contents panel pjax" data-title="Contents">
-          <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E6%96%87%E7%AB%A0%E7%BD%AE%E9%A1%B6"><span class="toc-number">1.</span> <span class="toc-text">文章置顶</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%85%B3%E4%BA%8E%E5%9C%A8Hexo%E4%B8%AD%E7%9A%84%E5%B0%8F%E5%9B%BE%E6%A0%87"><span class="toc-number">1.1.</span> <span class="toc-text">关于在Hexo中的小图标</span></a></li></ol></li></ol>
+          <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E6%96%87%E7%AB%A0%E7%BD%AE%E9%A1%B6"><span class="toc-number">1.</span> <span class="toc-text"> 文章置顶</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%85%B3%E4%BA%8E%E5%9C%A8hexo%E4%B8%AD%E7%9A%84%E5%B0%8F%E5%9B%BE%E6%A0%87"><span class="toc-number">1.1.</span> <span class="toc-text"> 关于在 Hexo  中的小图标</span></a></li></ol></li></ol>
       </div>
       <div class="related panel pjax" data-title="Related">
         <ul>
@@ -295,19 +294,19 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
 <nav class="state">
     <div class="item posts">
       <a href="/archives/">
-        <span class="count">135</span>
+        <span class="count">136</span>
         <span class="name">posts</span>
       </a>
     </div>
     <div class="item categories">
       <a href="/categories/">
-        <span class="count">70</span>
+        <span class="count">71</span>
         <span class="name">categories</span>
       </a>
     </div>
     <div class="item tags">
       <a href="/tags/">
-        <span class="count">99</span>
+        <span class="count">101</span>
         <span class="name">tags</span>
       </a>
     </div>
@@ -386,78 +385,81 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
   <li class="item">
     
 <div class="breadcrumb">
+<a href="/categories/Java/" title="In Java">Java</a>
+</div>
+
+    <span><a href="/posts/b536fa7f/" title="关于junit测试类防止事务回滚">关于junit测试类防止事务回滚</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/%E5%A4%A7%E6%95%B0%E6%8D%AE/" title="In 大数据">大数据</a>
+</div>
+
+    <span><a href="/posts/737c98ca/" title="什么是MapReduce">什么是MapReduce</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/Java/" title="In Java">Java</a>
+</div>
+
+    <span><a href="/posts/1da18d70/" title="Java8内置四大函数式接口">Java8内置四大函数式接口</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/Java/" title="In Java">Java</a>
+</div>
+
+    <span><a href="/posts/405fde88/" title="关于Exception的处理细节">关于Exception的处理细节</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+</div>
+
+    <span><a href="/posts/d0966c4d/" title="工作难点">工作难点</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/%E5%89%8D%E7%AB%AF/" title="In 前端">前端</a>
+</div>
+
+    <span><a href="/posts/e43580c1/" title="flex布局">flex布局</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/Java%E9%9D%A2%E8%AF%95/" title="In Java面试">Java面试</a>
+</div>
+
+    <span><a href="/posts/6b5f7afc/" title="面试之旅关于Java知识点">面试之旅关于Java知识点</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
 <a href="/categories/%E5%89%8D%E7%AB%AF/" title="In 前端">前端</a>
 <i class="ic i-angle-right"></i>
-<a href="/categories/%E5%89%8D%E7%AB%AF/Vue/" title="In Vue">Vue</a>
+<a href="/categories/%E5%89%8D%E7%AB%AF/Css/" title="In Css">Css</a>
 </div>
 
-    <span><a href="/posts/8408ed11/" title="Vue-Cli介绍以及使用">Vue-Cli介绍以及使用</a></span>
-  </li>
-
-      
-  <li class="item">
-    
-<div class="breadcrumb">
-<a href="/categories/Java%E9%9D%A2%E8%AF%95/" title="In Java面试">Java面试</a>
-<i class="ic i-angle-right"></i>
-<a href="/categories/Java%E9%9D%A2%E8%AF%95/%E5%A0%86%E6%8E%92%E5%BA%8F/" title="In 堆排序">堆排序</a>
-<i class="ic i-angle-right"></i>
-<a href="/categories/Java%E9%9D%A2%E8%AF%95/%E5%A0%86%E6%8E%92%E5%BA%8F/%E7%AE%97%E6%B3%95/" title="In 算法">算法</a>
-</div>
-
-    <span><a href="/posts/c2a5fdc5/" title="堆排序">堆排序</a></span>
-  </li>
-
-      
-  <li class="item">
-    
-<div class="breadcrumb">
-<a href="/categories/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/" title="In 设计模式">设计模式</a>
-</div>
-
-    <span><a href="/posts/79c6d028/" title="23设计模式(更新中)">23设计模式(更新中)</a></span>
-  </li>
-
-      
-  <li class="item">
-    
-<div class="breadcrumb">
-<a href="/categories/SAP/" title="In SAP">SAP</a>
-</div>
-
-    <span><a href="/posts/ef55dc85/" title="CEST与北京时间转换表">CEST与北京时间转换表</a></span>
-  </li>
-
-      
-  <li class="item">
-    
-<div class="breadcrumb">
-<a href="/categories/Java/" title="In Java">Java</a>
-</div>
-
-    <span><a href="/posts/1748805d/" title="java线程池与五种常用线程池策略使用与解析">java线程池与五种常用线程池策略使用与解析</a></span>
-  </li>
-
-      
-  <li class="item">
-    
-<div class="breadcrumb">
-<a href="/categories/Java/" title="In Java">Java</a>
-<i class="ic i-angle-right"></i>
-<a href="/categories/Java/Tools/" title="In Tools">Tools</a>
-</div>
-
-    <span><a href="/posts/49b96938/" title="Java获取一天时间的起始">Java获取一天时间的起始</a></span>
-  </li>
-
-      
-  <li class="item">
-    
-<div class="breadcrumb">
-<a href="/categories/%E6%95%B0%E6%8D%AE%E5%BA%93/" title="In 数据库">数据库</a>
-</div>
-
-    <span><a href="/posts/60f024c8/" title="关于sql执行计划">关于sql执行计划</a></span>
+    <span><a href="/posts/2e6621e1/" title="DisPlay属性">DisPlay属性</a></span>
   </li>
 
       
@@ -466,29 +468,17 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
 <div class="breadcrumb">
 </div>
 
-    <span><a href="/posts/e694a882/" title="Windows下如何查看某个端口被谁占用">Windows下如何查看某个端口被谁占用</a></span>
+    <span><a href="/posts/ac1ae082/" title="SpringBoot如何优雅的发邮件">SpringBoot如何优雅的发邮件</a></span>
   </li>
 
       
   <li class="item">
     
 <div class="breadcrumb">
-<a href="/categories/Java%E9%9D%A2%E8%AF%95/" title="In Java面试">Java面试</a>
-<i class="ic i-angle-right"></i>
-<a href="/categories/Java%E9%9D%A2%E8%AF%95/Spring/" title="In Spring">Spring</a>
+<a href="/categories/%E5%89%8D%E7%AB%AF/" title="In 前端">前端</a>
 </div>
 
-    <span><a href="/posts/89080a8e/" title="Spring Bean的生命周期">Spring Bean的生命周期</a></span>
-  </li>
-
-      
-  <li class="item">
-    
-<div class="breadcrumb">
-<a href="/categories/SpringBoot/" title="In SpringBoot">SpringBoot</a>
-</div>
-
-    <span><a href="/posts/67f40b37/" title="Spring Boot 获取服务IP地址和端口号">Spring Boot 获取服务IP地址和端口号</a></span>
+    <span><a href="/posts/3eca6246/" title="使用npm时报python错误的解决方案">使用npm时报python错误的解决方案</a></span>
   </li>
 
   </ul>
@@ -513,13 +503,13 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
     <span class="post-meta-item-icon">
       <i class="ic i-chart-area"></i>
     </span>
-    <span title="Symbols count total">558k words</span>
+    <span title="Symbols count total">561k words</span>
 
     <span class="post-meta-divider">|</span>
     <span class="post-meta-item-icon">
       <i class="ic i-coffee"></i>
     </span>
-    <span title="Reading time total">8:27</span>
+    <span title="Reading time total">8:30</span>
   </div>
 </div>
 

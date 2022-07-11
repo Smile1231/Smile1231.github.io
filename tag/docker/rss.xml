@@ -7,52 +7,54 @@
         <language>en</language>
         <pubDate>Thu, 30 Jun 2022 21:30:40 +0800</pubDate>
         <lastBuildDate>Thu, 30 Jun 2022 21:30:40 +0800</lastBuildDate>
-        <category>SAP</category>
-        <category>生物信息</category>
-        <category>基因编辑</category>
         <category>Java</category>
-        <category>Corn</category>
         <category>Cache</category>
         <category>Cookie</category>
         <category>Session</category>
         <category>Java面试</category>
+        <category>SAP</category>
+        <category>Corn</category>
+        <category>生物信息</category>
+        <category>基因编辑</category>
+        <category>前端</category>
+        <category>Css</category>
         <category>Docker</category>
         <category>DDD</category>
         <category>领域驱动设计</category>
+        <category>FastJson</category>
         <category>blog</category>
         <category>hexo</category>
         <category>next</category>
-        <category>前端</category>
-        <category>Css</category>
-        <category>JavaScript</category>
-        <category>Html</category>
-        <category>FastJson</category>
         <category>DisPlay属性</category>
         <category>IDEA</category>
         <category>SpringBoot</category>
+        <category>JavaScript</category>
+        <category>Html</category>
         <category>函数式接口</category>
-        <category>Jvm</category>
         <category>Assert</category>
         <category>map</category>
         <category>Stream流</category>
+        <category>Jvm</category>
         <category>java</category>
         <category>calender</category>
+        <category>Springboot</category>
         <category>LeetCode</category>
         <category>算法</category>
         <category>递归</category>
+        <category>Linux</category>
         <category>Mybatis</category>
         <category>分页查询</category>
-        <category>Linux</category>
-        <category>Springboot</category>
         <category>模糊查询</category>
-        <category>Nginx</category>
-        <category>Spring</category>
-        <category>SrpingBoot</category>
         <category>文件上传</category>
+        <category>SrpingBoot</category>
+        <category>Spring</category>
         <category>事务</category>
-        <category>master</category>
         <category>TypeScript</category>
         <category>WebPack</category>
+        <category>Nginx</category>
+        <category>master</category>
+        <category>Jenkins</category>
+        <category>Groovy</category>
         <category>UML</category>
         <category>Ubuntu</category>
         <category>Mysql</category>
@@ -67,35 +69,35 @@
         <category>ubuntu</category>
         <category>虚拟机</category>
         <category>二分查找</category>
-        <category>Hadoop</category>
         <category>数据挖掘</category>
+        <category>操作系统</category>
         <category>EasyExcel</category>
         <category>node</category>
-        <category>JVM</category>
-        <category>操作系统</category>
+        <category>Hadoop</category>
         <category>Yaml</category>
-        <category>Hexo</category>
         <category>junit</category>
+        <category>JVM</category>
+        <category>Hexo</category>
         <category>数据库</category>
-        <category>Mysql事务</category>
-        <category>git,npm,node</category>
-        <category>冒泡排序</category>
         <category>Git</category>
+        <category>Mysql事务</category>
+        <category>冒泡排序</category>
+        <category>git,npm,node</category>
         <category>动态规划</category>
         <category>堆排序</category>
-        <category>幂等性</category>
-        <category>多线程</category>
         <category>Google</category>
+        <category>幂等性</category>
         <category>流</category>
         <category>归并排序</category>
-        <category>正则表达式</category>
         <category>快速排序</category>
+        <category>多线程</category>
         <category>直接插入排序</category>
+        <category>正则表达式</category>
+        <category>Spring事务</category>
+        <category>选择排序</category>
         <category>Java 面试</category>
         <category>数据结构</category>
         <category>阻塞队列</category>
-        <category>选择排序</category>
-        <category>Spring事务</category>
         <category>JDK</category>
         <category>动态代理</category>
         <category>Date</category>
@@ -116,89 +118,96 @@
             <description><![CDATA[ &lt;p&gt;文档地址：&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly95ZWFzeS5naXRib29rLmlvL2RvY2tlcl9wcmFjdGljZS8=&#34;&gt;https://yeasy.gitbook.io/docker_practice/&lt;/span&gt;&lt;/p&gt;
 &lt;p&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9odWIuZG9ja2VyLmNvbS8=&#34;&gt;Docker hub&lt;/span&gt;&lt;/p&gt;
 &lt;p&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9kb2NzLmRvY2tlci5jb20vZW5naW5lL2luc3RhbGwv&#34;&gt;Docker Install&lt;/span&gt;&lt;/p&gt;
-&lt;h2 id=&#34;列出所有镜像&#34;&gt;&lt;a href=&#34;#列出所有镜像&#34; class=&#34;headerlink&#34; title=&#34;列出所有镜像&#34;&gt;&lt;/a&gt;列出所有镜像&lt;/h2&gt;&lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;docker images&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-
-&lt;h2 id=&#34;查看运行的容器&#34;&gt;&lt;a href=&#34;#查看运行的容器&#34; class=&#34;headerlink&#34; title=&#34;查看运行的容器&#34;&gt;&lt;/a&gt;查看运行的容器&lt;/h2&gt;&lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;docker ps&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;h2 id=&#34;列出所有镜像&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#列出所有镜像&#34;&gt;#&lt;/a&gt; 列出所有镜像&lt;/h2&gt;
+&lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;docker images&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;h2 id=&#34;查看运行的容器&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#查看运行的容器&#34;&gt;#&lt;/a&gt; 查看运行的容器&lt;/h2&gt;
+&lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;docker ps&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
 &lt;blockquote&gt;
-&lt;p&gt;列出所有容器ID&lt;/p&gt;
+&lt;p&gt;列出所有容器 ID&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;docker ps -aq&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-
 &lt;span id=&#34;more&#34;&gt;&lt;/span&gt;
-
-&lt;h2 id=&#34;查看所有的容器包括停止的&#34;&gt;&lt;a href=&#34;#查看所有的容器包括停止的&#34; class=&#34;headerlink&#34; title=&#34;查看所有的容器包括停止的&#34;&gt;&lt;/a&gt;查看所有的容器包括停止的&lt;/h2&gt;&lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;docker ps -a&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-
-&lt;h2 id=&#34;删除&#34;&gt;&lt;a href=&#34;#删除&#34; class=&#34;headerlink&#34; title=&#34;删除&#34;&gt;&lt;/a&gt;删除&lt;/h2&gt;&lt;blockquote&gt;
-&lt;p&gt;删除容器  &lt;/p&gt;
+&lt;h2 id=&#34;查看所有的容器包括停止的&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#查看所有的容器包括停止的&#34;&gt;#&lt;/a&gt; 查看所有的容器包括停止的&lt;/h2&gt;
+&lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;docker ps -a&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;h2 id=&#34;删除&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#删除&#34;&gt;#&lt;/a&gt; 删除&lt;/h2&gt;
+&lt;blockquote&gt;
+&lt;p&gt;删除容器&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;docker rm &amp;lt;NAMES&amp;gt;/&amp;lt;CONTAINER ID&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
 &lt;blockquote&gt;
 &lt;p&gt;删除镜像&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;docker image rm &amp;lt;IMAGES&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-
 &lt;img data-src=&#34;/posts/11faeb76/2022-06-30-22-57-53.png&#34; class=&#34;&#34;&gt;
-
-&lt;h2 id=&#34;停止、启动、杀死、重启一个容器&#34;&gt;&lt;a href=&#34;#停止、启动、杀死、重启一个容器&#34; class=&#34;headerlink&#34; title=&#34;停止、启动、杀死、重启一个容器&#34;&gt;&lt;/a&gt;停止、启动、杀死、重启一个容器&lt;/h2&gt;&lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;docker stop Name或者ID  &lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;docker start Name或者ID  &lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;docker &lt;span class=&#34;built_in&#34;&gt;kill&lt;/span&gt; Name或者ID  &lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;docker restart name或者ID&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-
-&lt;h2 id=&#34;docker启动失败如何查看容器日志&#34;&gt;&lt;a href=&#34;#docker启动失败如何查看容器日志&#34; class=&#34;headerlink&#34; title=&#34;docker启动失败如何查看容器日志&#34;&gt;&lt;/a&gt;&lt;code&gt;docker&lt;/code&gt;启动失败如何查看容器日志&lt;/h2&gt;&lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;# 我们可以通过如下命令来获取容器的日志地址&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;docker inspect --format &lt;span class=&#34;string&#34;&gt;&amp;#x27;&amp;#123;&amp;#123;.LogPath&amp;#125;&amp;#125;&amp;#x27;&lt;/span&gt; &amp;lt;NAMES&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;#  然后通过cat命令查看上述命令找到的日志地址&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;h2 id=&#34;停止-启动-杀死-重启一个容器&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#停止-启动-杀死-重启一个容器&#34;&gt;#&lt;/a&gt; 停止、启动、杀死、重启一个容器&lt;/h2&gt;
+&lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;docker stop Name或者ID  &lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;docker start Name或者ID  &lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;docker &lt;span class=&#34;built_in&#34;&gt;kill&lt;/span&gt; Name或者ID  &lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;docker restart name或者ID&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;h2 id=&#34;docker启动失败如何查看容器日志&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#docker启动失败如何查看容器日志&#34;&gt;#&lt;/a&gt;  &lt;code&gt;docker&lt;/code&gt;  启动失败如何查看容器日志&lt;/h2&gt;
+&lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;# 我们可以通过如下命令来获取容器的日志地址&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;docker inspect --format &lt;span class=&#34;string&#34;&gt;&amp;#x27;&amp;#123;&amp;#123;.LogPath&amp;#125;&amp;#125;&amp;#x27;&lt;/span&gt; &amp;lt;NAMES&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;#  然后通过cat命令查看上述命令找到的日志地址&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
 &lt;img data-src=&#34;/posts/11faeb76/2022-06-30-23-11-07.png&#34; class=&#34;&#34;&gt;
-
 &lt;blockquote&gt;
 &lt;p&gt;更简单的方式&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;docker logs &amp;lt;NAMES&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-
-&lt;h2 id=&#34;M1拉取Mysql数据库&#34;&gt;&lt;a href=&#34;#M1拉取Mysql数据库&#34; class=&#34;headerlink&#34; title=&#34;M1拉取Mysql数据库&#34;&gt;&lt;/a&gt;&lt;code&gt;M1&lt;/code&gt;拉取&lt;code&gt;Mysql&lt;/code&gt;数据库&lt;/h2&gt;&lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;docker pull --platform linux/x86_64 mysql:5.7&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;# 启动mysql&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;docker run --name mymysql -e MYSQL_ROOT_PASSWORD=root -d -p 3306:3306  mysql:5.7&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-
-&lt;h2 id=&#34;Docker安装Nginx并且部署Vue项目&#34;&gt;&lt;a href=&#34;#Docker安装Nginx并且部署Vue项目&#34; class=&#34;headerlink&#34; title=&#34;Docker安装Nginx并且部署Vue项目&#34;&gt;&lt;/a&gt;&lt;code&gt;Docker&lt;/code&gt;安装&lt;code&gt;Nginx&lt;/code&gt;并且部署&lt;code&gt;Vue&lt;/code&gt;项目&lt;/h2&gt;&lt;h3 id=&#34;拉取Nginx&#34;&gt;&lt;a href=&#34;#拉取Nginx&#34; class=&#34;headerlink&#34; title=&#34;拉取Nginx&#34;&gt;&lt;/a&gt;拉取&lt;code&gt;Nginx&lt;/code&gt;&lt;/h3&gt;&lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;docker pull nginx&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-
-&lt;h3 id=&#34;创建挂载目录&#34;&gt;&lt;a href=&#34;#创建挂载目录&#34; class=&#34;headerlink&#34; title=&#34;创建挂载目录&#34;&gt;&lt;/a&gt;创建挂载目录&lt;/h3&gt;&lt;p&gt;找个目录创建一下目录（在&lt;code&gt;/Users/jinmao/Documents/Docker/&lt;/code&gt;下创建&lt;code&gt;/nginx&lt;/code&gt;）&lt;/p&gt;
+&lt;h2 id=&#34;m1拉取mysql数据库&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#m1拉取mysql数据库&#34;&gt;#&lt;/a&gt;  &lt;code&gt;M1&lt;/code&gt;  拉取 &lt;code&gt;Mysql&lt;/code&gt;  数据库&lt;/h2&gt;
+&lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;docker pull --platform linux/x86_64 mysql:5.7&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;# 启动mysql&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;docker run --name mymysql -e MYSQL_ROOT_PASSWORD=root -d -p 3306:3306  mysql:5.7&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;h2 id=&#34;docker安装nginx并且部署vue项目&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#docker安装nginx并且部署vue项目&#34;&gt;#&lt;/a&gt;  &lt;code&gt;Docker&lt;/code&gt;  安装 &lt;code&gt;Nginx&lt;/code&gt;  并且部署 &lt;code&gt;Vue&lt;/code&gt;  项目&lt;/h2&gt;
+&lt;h3 id=&#34;拉取nginx&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#拉取nginx&#34;&gt;#&lt;/a&gt; 拉取 &lt;code&gt;Nginx&lt;/code&gt;&lt;/h3&gt;
+&lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;docker pull nginx&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;h3 id=&#34;创建挂载目录&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#创建挂载目录&#34;&gt;#&lt;/a&gt; 创建挂载目录&lt;/h3&gt;
+&lt;p&gt;找个目录创建一下目录（在 &lt;code&gt;/Users/jinmao/Documents/Docker/&lt;/code&gt;  下创建 &lt;code&gt;/nginx&lt;/code&gt; ）&lt;/p&gt;
 &lt;figure class=&#34;highlight arduino&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;mkdir&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-
-&lt;h3 id=&#34;运行并且挂载nginx&#34;&gt;&lt;a href=&#34;#运行并且挂载nginx&#34; class=&#34;headerlink&#34; title=&#34;运行并且挂载nginx&#34;&gt;&lt;/a&gt;运行并且挂载&lt;code&gt;nginx&lt;/code&gt;&lt;/h3&gt;&lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;docker run -d -p 80:80 --name nginx_BEBA  -v /Users/jinmao/Documents/Docker/nginx/dist:/usr/share/nginx/html --restart=always nginx&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-
-&lt;h3 id=&#34;把vue的目录上传到挂载的目录&#34;&gt;&lt;a href=&#34;#把vue的目录上传到挂载的目录&#34; class=&#34;headerlink&#34; title=&#34;把vue的目录上传到挂载的目录&#34;&gt;&lt;/a&gt;把&lt;code&gt;vue&lt;/code&gt;的目录上传到挂载的目录&lt;/h3&gt;&lt;p&gt;&lt;code&gt;vue&lt;/code&gt;项目打包&lt;/p&gt;
+&lt;h3 id=&#34;运行并且挂载nginx&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#运行并且挂载nginx&#34;&gt;#&lt;/a&gt; 运行并且挂载 &lt;code&gt;nginx&lt;/code&gt;&lt;/h3&gt;
+&lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;docker run -d -p 80:80 --name nginx_BEBA  -v /Users/jinmao/Documents/Docker/nginx/dist:/usr/share/nginx/html --restart=always nginx&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;h3 id=&#34;把vue的目录上传到挂载的目录&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#把vue的目录上传到挂载的目录&#34;&gt;#&lt;/a&gt; 把 &lt;code&gt;vue&lt;/code&gt;  的目录上传到挂载的目录&lt;/h3&gt;
+&lt;p&gt;&lt;code&gt;vue&lt;/code&gt;  项目打包&lt;/p&gt;
 &lt;figure class=&#34;highlight routeros&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;npm &lt;span class=&#34;builtin-name&#34;&gt;run&lt;/span&gt; build&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-
 &lt;img data-src=&#34;/posts/11faeb76/2022-07-02-09-15-41.png&#34; class=&#34;&#34;&gt;
-
-&lt;h3 id=&#34;重启Docker容器&#34;&gt;&lt;a href=&#34;#重启Docker容器&#34; class=&#34;headerlink&#34; title=&#34;重启Docker容器&#34;&gt;&lt;/a&gt;重启&lt;code&gt;Docker&lt;/code&gt;容器&lt;/h3&gt;&lt;figure class=&#34;highlight xml&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;docker restart &lt;span class=&#34;tag&#34;&gt;&amp;lt;&lt;span class=&#34;name&#34;&gt;NAMES&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-
-&lt;p&gt;此时就可以了，&lt;code&gt;nginx&lt;/code&gt;开放端口为&lt;code&gt;80&lt;/code&gt;,直接&lt;code&gt;ip&lt;/code&gt;访问即可&lt;/p&gt;
-&lt;h3 id=&#34;为什么要挂载在到docker的-usr-share-nginx-html&#34;&gt;&lt;a href=&#34;#为什么要挂载在到docker的-usr-share-nginx-html&#34; class=&#34;headerlink&#34; title=&#34;为什么要挂载在到docker的/usr/share/nginx/html&#34;&gt;&lt;/a&gt;为什么要挂载在到&lt;code&gt;docker&lt;/code&gt;的&lt;code&gt;/usr/share/nginx/html&lt;/code&gt;&lt;/h3&gt;&lt;p&gt;看&lt;code&gt;nginx&lt;/code&gt;的默认配置就知道&lt;br&gt;进入&lt;code&gt;docker&lt;/code&gt;的容器里面：&lt;br&gt;通过命令&lt;code&gt;docker ps&lt;/code&gt;查看运行容器信息；&lt;br&gt;在通过命令 &lt;code&gt;docker exec -it 容器id /bin/bash &lt;/code&gt;进入容器目录&lt;/p&gt;
+&lt;h3 id=&#34;重启docker容器&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#重启docker容器&#34;&gt;#&lt;/a&gt; 重启 &lt;code&gt;Docker&lt;/code&gt;  容器&lt;/h3&gt;
+&lt;figure class=&#34;highlight xml&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;docker restart &lt;span class=&#34;tag&#34;&gt;&amp;lt;&lt;span class=&#34;name&#34;&gt;NAMES&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;此时就可以了， &lt;code&gt;nginx&lt;/code&gt;  开放端口为 &lt;code&gt;80&lt;/code&gt; , 直接 &lt;code&gt;ip&lt;/code&gt;  访问即可&lt;/p&gt;
+&lt;h3 id=&#34;为什么要挂载在到docker的usrsharenginxhtml&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#为什么要挂载在到docker的usrsharenginxhtml&#34;&gt;#&lt;/a&gt; 为什么要挂载在到 &lt;code&gt;docker&lt;/code&gt;  的 &lt;code&gt;/usr/share/nginx/html&lt;/code&gt;&lt;/h3&gt;
+&lt;p&gt;看 &lt;code&gt;nginx&lt;/code&gt;  的默认配置就知道&lt;br&gt;
+进入 &lt;code&gt;docker&lt;/code&gt;  的容器里面：&lt;br&gt;
+通过命令 &lt;code&gt;docker ps&lt;/code&gt;  查看运行容器信息；&lt;br&gt;
+在通过命令  &lt;code&gt;docker exec -it 容器id /bin/bash &lt;/code&gt; 进入容器目录&lt;/p&gt;
 &lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;docker &lt;span class=&#34;built_in&#34;&gt;exec&lt;/span&gt; -it &amp;lt;NAMES&amp;gt; /bin/bash&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-
-&lt;p&gt;进入&lt;code&gt;cd /etc/nginx/conf.d&lt;/code&gt; , 查看&lt;code&gt;default.conf&lt;/code&gt;文件&lt;/p&gt;
+&lt;p&gt;进入 &lt;code&gt;cd /etc/nginx/conf.d&lt;/code&gt;  , 查看 &lt;code&gt;default.conf&lt;/code&gt;  文件&lt;/p&gt;
 &lt;img data-src=&#34;/posts/11faeb76/2022-07-02-09-34-32.png&#34; class=&#34;&#34;&gt;
-
-
-&lt;p&gt;但是你会发现&lt;code&gt;etc/nginx&lt;/code&gt;下有个&lt;code&gt;nginx.conf&lt;/code&gt; 配置文件我们查看配置发现这里有条语句是引用了上面&lt;code&gt;default.conf&lt;/code&gt;的配置，由此可见我们以后需要配置其他项目路径就直接配置&lt;code&gt;default.conf&lt;/code&gt;就行了。&lt;/p&gt;
+&lt;p&gt;但是你会发现 &lt;code&gt;etc/nginx&lt;/code&gt;  下有个 &lt;code&gt;nginx.conf&lt;/code&gt;  配置文件我们查看配置发现这里有条语句是引用了上面 &lt;code&gt;default.conf&lt;/code&gt;  的配置，由此可见我们以后需要配置其他项目路径就直接配置 &lt;code&gt;default.conf&lt;/code&gt;  就行了。&lt;/p&gt;
 &lt;img data-src=&#34;/posts/11faeb76/2022-07-02-09-36-44.png&#34; class=&#34;&#34;&gt;
-
 &lt;p&gt;但是这个有个缺点每次修改都需要进入容器的内部求修改。&lt;/p&gt;
-&lt;h3 id=&#34;优化nginx的配置文件（为了以后多项目部署方便修改Nginx）&#34;&gt;&lt;a href=&#34;#优化nginx的配置文件（为了以后多项目部署方便修改Nginx）&#34; class=&#34;headerlink&#34; title=&#34;优化nginx的配置文件（为了以后多项目部署方便修改Nginx）&#34;&gt;&lt;/a&gt;优化&lt;code&gt;nginx&lt;/code&gt;的配置文件（为了以后多项目部署方便修改&lt;code&gt;Nginx&lt;/code&gt;）&lt;/h3&gt;&lt;p&gt;我们可以通过把&lt;code&gt;etc/nginx&lt;/code&gt; 复制到宿主机的目录下这样我们就可以修改宿主机的配置文件在重新启动一下容器就可以实现最新的配置&lt;/p&gt;
+&lt;h3 id=&#34;优化nginx的配置文件为了以后多项目部署方便修改nginx&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#优化nginx的配置文件为了以后多项目部署方便修改nginx&#34;&gt;#&lt;/a&gt; 优化 &lt;code&gt;nginx&lt;/code&gt;  的配置文件（为了以后多项目部署方便修改 &lt;code&gt;Nginx&lt;/code&gt; ）&lt;/h3&gt;
+&lt;p&gt;我们可以通过把 &lt;code&gt;etc/nginx&lt;/code&gt;  复制到宿主机的目录下这样我们就可以修改宿主机的配置文件在重新启动一下容器就可以实现最新的配置&lt;/p&gt;
 &lt;ol&gt;
-&lt;li&gt;&lt;p&gt;使用命令复制容器的文件到宿主机：&lt;code&gt;docker cp &amp;lt;NAMES&amp;gt;:/etc/nginx /Users/jinmao/Documents/Docker/nginx/&lt;/code&gt;&lt;/p&gt;
+&lt;li&gt;
+&lt;p&gt;使用命令复制容器的文件到宿主机： &lt;code&gt;docker cp &amp;lt;NAMES&amp;gt;:/etc/nginx /Users/jinmao/Documents/Docker/nginx/&lt;/code&gt;&lt;/p&gt;
 &lt;blockquote&gt;
-&lt;p&gt;&lt;code&gt;/etc/nginx&lt;/code&gt;:为需要复制的文件&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;/etc/nginx&lt;/code&gt; : 为需要复制的文件&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;blockquote&gt;
-&lt;p&gt;&lt;code&gt;/Users/jinmao/Documents/Docker/nginx/dist&lt;/code&gt; :把他保存到那个目录下&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;/Users/jinmao/Documents/Docker/nginx/dist&lt;/code&gt;  : 把他保存到那个目录下&lt;/p&gt;
 &lt;/blockquote&gt;
- &lt;img data-src=&#34;/posts/11faeb76/2022-07-02-09-52-09.png&#34; class=&#34;&#34;&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;进入&lt;code&gt;/nginx&lt;/code&gt;修改宿主机(本地的)的&lt;code&gt;default.conf&lt;/code&gt;配置文件命令&lt;/p&gt;
- &lt;img data-src=&#34;/posts/11faeb76/2022-07-02-10-35-29.png&#34; class=&#34;&#34;&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;通过命令删除就的&lt;code&gt;nginx&lt;/code&gt;容器：&lt;code&gt;docker rm 容器id&lt;/code&gt; 删除容器&lt;/p&gt;
+ &lt;img data-src=&#34;/posts/11faeb76/2022-07-02-09-52-09.png&#34; class=&#34;&#34;&gt;
 &lt;/li&gt;
-&lt;li&gt;&lt;p&gt;重新启动容器&lt;/p&gt;
+&lt;li&gt;
+&lt;p&gt;进入 &lt;code&gt;/nginx&lt;/code&gt;  修改宿主机 (本地的) 的 &lt;code&gt;default.conf&lt;/code&gt;  配置文件命令&lt;/p&gt;
+ &lt;img data-src=&#34;/posts/11faeb76/2022-07-02-10-35-29.png&#34; class=&#34;&#34;&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;通过命令删除就的 &lt;code&gt;nginx&lt;/code&gt;  容器： &lt;code&gt;docker rm 容器id&lt;/code&gt;  删除容器&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;重新启动容器&lt;/p&gt;
 &lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;8&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;docker run --name &amp;lt;name&amp;gt; -p 80:80 -v /Users/jinmao/Documents/Docker/nginx/dist:/Users/jinmao/Documents/Study/doctor/Topic1/frontPro/dist -v /Users/jinmao/Documents/Docker/nginx/nginx:/etc/nginx -d nginx&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;# 解释：&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;# –name：后面的是容器名称&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;# -p:冒号前面是宿主机的对外端口，冒号后面的是容器的端口&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;# -v：冒号前面的是宿主机的文件目录，冒号后面是容器的内部文件目录&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;# -d:表示后端运行&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;# nginx：最后面的nginx是镜像的名称&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
- &lt;img data-src=&#34;/posts/11faeb76/2022-07-02-11-08-24.png&#34; class=&#34;&#34;&gt;&lt;/li&gt;
+ &lt;img data-src=&#34;/posts/11faeb76/2022-07-02-11-08-24.png&#34; class=&#34;&#34;&gt;
+&lt;/li&gt;
 &lt;/ol&gt;
-&lt;p&gt;现在已经把宿主机的&lt;code&gt;vue&lt;/code&gt;项目&lt;code&gt;dist&lt;/code&gt;挂载到&lt;code&gt;nginx&lt;/code&gt;容器中，这样监听的请求就会被&lt;code&gt;nginx&lt;/code&gt;代理到对应的目录中访问资源，还有宿主机的&lt;code&gt;/Users/jinmao/Documents/Docker/nginx/nginx&lt;/code&gt;也被挂载到了容器&lt;code&gt;etc/nginx&lt;/code&gt;中，这样只要修改宿主机的&lt;code&gt;nginx&lt;/code&gt;配置,只要重启容器最新配置就会生效。&lt;/p&gt;
+&lt;p&gt;现在已经把宿主机的 &lt;code&gt;vue&lt;/code&gt;  项目 &lt;code&gt;dist&lt;/code&gt;  挂载到 &lt;code&gt;nginx&lt;/code&gt;  容器中，这样监听的请求就会被 &lt;code&gt;nginx&lt;/code&gt;  代理到对应的目录中访问资源，还有宿主机的 &lt;code&gt;/Users/jinmao/Documents/Docker/nginx/nginx&lt;/code&gt;  也被挂载到了容器 &lt;code&gt;etc/nginx&lt;/code&gt;  中，这样只要修改宿主机的 &lt;code&gt;nginx&lt;/code&gt;  配置，只要重启容器最新配置就会生效。&lt;/p&gt;
 &lt;p&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9ibG9nLjUxY3RvLmNvbS91XzE1NTg1Njk5LzUxNzk2ODg=&#34;&gt;参考链接&lt;/span&gt;&lt;/p&gt;
-&lt;h2 id=&#34;制作Dockerfile-Springboot&#34;&gt;&lt;a href=&#34;#制作Dockerfile-Springboot&#34; class=&#34;headerlink&#34; title=&#34;制作Dockerfile(Springboot)&#34;&gt;&lt;/a&gt;制作&lt;code&gt;Dockerfile&lt;/code&gt;(&lt;code&gt;Springboot&lt;/code&gt;)&lt;/h2&gt;&lt;p&gt;&lt;code&gt;Maven&lt;/code&gt; 打包完&lt;code&gt;jar&lt;/code&gt;包，忽略。。&lt;/p&gt;
-&lt;h3 id=&#34;编辑DockerFile文件&#34;&gt;&lt;a href=&#34;#编辑DockerFile文件&#34; class=&#34;headerlink&#34; title=&#34;编辑DockerFile文件&#34;&gt;&lt;/a&gt;编辑&lt;code&gt;DockerFile&lt;/code&gt;文件&lt;/h3&gt;&lt;p&gt;和 &lt;code&gt;jar&lt;/code&gt;包在同一级&lt;/p&gt;
+&lt;h2 id=&#34;制作dockerfilespringboot&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#制作dockerfilespringboot&#34;&gt;#&lt;/a&gt; 制作 &lt;code&gt;Dockerfile&lt;/code&gt; ( &lt;code&gt;Springboot&lt;/code&gt; )&lt;/h2&gt;
+&lt;p&gt;&lt;code&gt;Maven&lt;/code&gt;  打包完 &lt;code&gt;jar&lt;/code&gt;  包，忽略。。&lt;/p&gt;
+&lt;h3 id=&#34;编辑dockerfile文件&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#编辑dockerfile文件&#34;&gt;#&lt;/a&gt; 编辑 &lt;code&gt;DockerFile&lt;/code&gt;  文件&lt;/h3&gt;
+&lt;p&gt;和  &lt;code&gt;jar&lt;/code&gt;  包在同一级&lt;/p&gt;
 &lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;vim Dockerfile&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
 &lt;p&gt;example:&lt;/p&gt;
 &lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;9&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;# Docker image for springboot file run&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;# VERSION 1.0.0&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;# Author: jinmao&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;FROM java:8&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;VOLUME /tmp&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;EXPOSE 9999&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;ADD thesis-project.jar /app.jar&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;RUN bash -c &lt;span class=&#34;string&#34;&gt;&amp;#x27;touch /app.jar&amp;#x27;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;ENTRYPOINT [&lt;span class=&#34;string&#34;&gt;&amp;quot;java&amp;quot;&lt;/span&gt;,&lt;span class=&#34;string&#34;&gt;&amp;quot;-jar&amp;quot;&lt;/span&gt;,&lt;span class=&#34;string&#34;&gt;&amp;quot;/app.jar&amp;quot;&lt;/span&gt;]&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
@@ -207,15 +216,11 @@
 &lt;/blockquote&gt;
 &lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;docker buil -t &amp;lt;lower_name&amp;gt; .&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
 &lt;img data-src=&#34;/posts/11faeb76/2022-07-02-13-32-00.png&#34; class=&#34;&#34;&gt;
-
 &lt;blockquote&gt;
 &lt;p&gt;运行&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;docker run -p 9999:9999 --name BABE_Thesis -d babe_end&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
 &lt;img data-src=&#34;/posts/11faeb76/2022-07-02-13-35-28.png&#34; class=&#34;&#34;&gt;
-
-
-
  ]]></description>
         </item>
     </channel>

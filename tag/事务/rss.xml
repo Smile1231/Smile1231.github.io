@@ -7,52 +7,54 @@
         <language>en</language>
         <pubDate>Thu, 16 Dec 2021 18:49:45 +0800</pubDate>
         <lastBuildDate>Thu, 16 Dec 2021 18:49:45 +0800</lastBuildDate>
-        <category>SAP</category>
-        <category>生物信息</category>
-        <category>基因编辑</category>
         <category>Java</category>
-        <category>Corn</category>
         <category>Cache</category>
         <category>Cookie</category>
         <category>Session</category>
         <category>Java面试</category>
+        <category>SAP</category>
+        <category>Corn</category>
+        <category>生物信息</category>
+        <category>基因编辑</category>
+        <category>前端</category>
+        <category>Css</category>
         <category>Docker</category>
         <category>DDD</category>
         <category>领域驱动设计</category>
+        <category>FastJson</category>
         <category>blog</category>
         <category>hexo</category>
         <category>next</category>
-        <category>前端</category>
-        <category>Css</category>
-        <category>JavaScript</category>
-        <category>Html</category>
-        <category>FastJson</category>
         <category>DisPlay属性</category>
         <category>IDEA</category>
         <category>SpringBoot</category>
+        <category>JavaScript</category>
+        <category>Html</category>
         <category>函数式接口</category>
-        <category>Jvm</category>
         <category>Assert</category>
         <category>map</category>
         <category>Stream流</category>
+        <category>Jvm</category>
         <category>java</category>
         <category>calender</category>
+        <category>Springboot</category>
         <category>LeetCode</category>
         <category>算法</category>
         <category>递归</category>
+        <category>Linux</category>
         <category>Mybatis</category>
         <category>分页查询</category>
-        <category>Linux</category>
-        <category>Springboot</category>
         <category>模糊查询</category>
-        <category>Nginx</category>
-        <category>Spring</category>
-        <category>SrpingBoot</category>
         <category>文件上传</category>
+        <category>SrpingBoot</category>
+        <category>Spring</category>
         <category>事务</category>
-        <category>master</category>
         <category>TypeScript</category>
         <category>WebPack</category>
+        <category>Nginx</category>
+        <category>master</category>
+        <category>Jenkins</category>
+        <category>Groovy</category>
         <category>UML</category>
         <category>Ubuntu</category>
         <category>Mysql</category>
@@ -67,35 +69,35 @@
         <category>ubuntu</category>
         <category>虚拟机</category>
         <category>二分查找</category>
-        <category>Hadoop</category>
         <category>数据挖掘</category>
+        <category>操作系统</category>
         <category>EasyExcel</category>
         <category>node</category>
-        <category>JVM</category>
-        <category>操作系统</category>
+        <category>Hadoop</category>
         <category>Yaml</category>
-        <category>Hexo</category>
         <category>junit</category>
+        <category>JVM</category>
+        <category>Hexo</category>
         <category>数据库</category>
-        <category>Mysql事务</category>
-        <category>git,npm,node</category>
-        <category>冒泡排序</category>
         <category>Git</category>
+        <category>Mysql事务</category>
+        <category>冒泡排序</category>
+        <category>git,npm,node</category>
         <category>动态规划</category>
         <category>堆排序</category>
-        <category>幂等性</category>
-        <category>多线程</category>
         <category>Google</category>
+        <category>幂等性</category>
         <category>流</category>
         <category>归并排序</category>
-        <category>正则表达式</category>
         <category>快速排序</category>
+        <category>多线程</category>
         <category>直接插入排序</category>
+        <category>正则表达式</category>
+        <category>Spring事务</category>
+        <category>选择排序</category>
         <category>Java 面试</category>
         <category>数据结构</category>
         <category>阻塞队列</category>
-        <category>选择排序</category>
-        <category>Spring事务</category>
         <category>JDK</category>
         <category>动态代理</category>
         <category>Date</category>
@@ -114,22 +116,29 @@
             <category>Spring</category>
             <category>事务</category>
             <pubDate>Thu, 16 Dec 2021 18:49:45 +0800</pubDate>
-            <description><![CDATA[ &lt;p&gt;转载&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly93d3cuY25ibG9ncy5jb20vbXlpdG5ld3MvcC8xMzM3MDg5OS5odG1s&#34;&gt;https://www.cnblogs.com/myitnews/p/13370899.html&lt;/span&gt;&lt;/p&gt;
+            <description><![CDATA[ &lt;p&gt;转载&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly93d3cuY25ibG9ncy5jb20vbXlpdG5ld3MvcC8xMzM3MDg5OS5odG1s&#34;&gt; https://www.cnblogs.com/myitnews/p/13370899.html&lt;/span&gt;&lt;/p&gt;
 &lt;p&gt;这边是讲解如何手动回滚事务&lt;/p&gt;
 &lt;span id=&#34;more&#34;&gt;&lt;/span&gt;
-&lt;h1 id=&#34;一、手动回滚事务&#34;&gt;&lt;a href=&#34;#一、手动回滚事务&#34; class=&#34;headerlink&#34; title=&#34;一、手动回滚事务&#34;&gt;&lt;/a&gt;一、手动回滚事务&lt;/h1&gt;&lt;p&gt;有时我们需要捕获一些错误信息，又需要进行事务回滚，这时我们就需要用到&lt;code&gt;Spring&lt;/code&gt;提供的事务切面支持类&lt;code&gt;TransactionAspectSupport&lt;/code&gt;。&lt;/p&gt;
+&lt;h1 id=&#34;一-手动回滚事务&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#一-手动回滚事务&#34;&gt;#&lt;/a&gt; 一、手动回滚事务&lt;/h1&gt;
+&lt;p&gt;有时我们需要捕获一些错误信息，又需要进行事务回滚，这时我们就需要用到 &lt;code&gt;Spring&lt;/code&gt;  提供的事务切面支持类 &lt;code&gt;TransactionAspectSupport&lt;/code&gt; 。&lt;/p&gt;
 &lt;figure class=&#34;highlight java&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;12&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;meta&#34;&gt;@Transactional(rollbackFor = Exception.class)&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;meta&#34;&gt;@Override&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;function&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;public&lt;/span&gt; &lt;span class=&#34;keyword&#34;&gt;void&lt;/span&gt; &lt;span class=&#34;title&#34;&gt;saveEntity&lt;/span&gt;&lt;span class=&#34;params&#34;&gt;()&lt;/span&gt; &lt;span class=&#34;keyword&#34;&gt;throws&lt;/span&gt; Exception&lt;/span&gt;&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;keyword&#34;&gt;try&lt;/span&gt; &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        userDao.saveUser();&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        studentDao.saveStudent();&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &amp;#125;&lt;span class=&#34;keyword&#34;&gt;catch&lt;/span&gt; (Exception e)&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        System.out.println(&lt;span class=&#34;string&#34;&gt;&amp;quot;异常了=====&amp;quot;&lt;/span&gt; + e);&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        &lt;span class=&#34;comment&#34;&gt;//手动强制回滚事务，这里一定要第一时间处理&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        TransactionAspectSupport.currentTransactionStatus().setRollbackOnly();&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;p&gt;手动回滚事务一定要加上&lt;code&gt;@Transactional&lt;/code&gt;，不然会报以下错误：&lt;/p&gt;
+&lt;p&gt;手动回滚事务一定要加上 &lt;code&gt;@Transactional&lt;/code&gt; ，不然会报以下错误：&lt;/p&gt;
 &lt;figure class=&#34;highlight java&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;org.springframework.transaction.NoTransactionException: No transaction aspect-managed TransactionStatus in scope&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;p&gt;想想也是，不开启事务，何来手动回滚，所以&lt;code&gt;@Transactional&lt;/code&gt;必不可少。&lt;/p&gt;
-&lt;h1 id=&#34;二、回滚部分异常&#34;&gt;&lt;a href=&#34;#二、回滚部分异常&#34; class=&#34;headerlink&#34; title=&#34;二、回滚部分异常&#34;&gt;&lt;/a&gt;二、回滚部分异常&lt;/h1&gt;&lt;p&gt;使用&lt;code&gt;Object savePoint = TransactionAspectSupport.currentTransactionStatus().createSavepoint()&lt;/code&gt;; 设置回滚点。&lt;br&gt;使用&lt;code&gt;TransactionAspectSupport.currentTransactionStatus().rollbackToSavepoint(savePoint)&lt;/code&gt;; 回滚到&lt;code&gt;savePoint&lt;/code&gt;。&lt;/p&gt;
+&lt;p&gt;想想也是，不开启事务，何来手动回滚，所以 &lt;code&gt;@Transactional&lt;/code&gt;  必不可少。&lt;/p&gt;
+&lt;h1 id=&#34;二-回滚部分异常&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#二-回滚部分异常&#34;&gt;#&lt;/a&gt; 二、回滚部分异常&lt;/h1&gt;
+&lt;p&gt;使用 &lt;code&gt;Object savePoint = TransactionAspectSupport.currentTransactionStatus().createSavepoint()&lt;/code&gt; ; 设置回滚点。&lt;br&gt;
+使用 &lt;code&gt;TransactionAspectSupport.currentTransactionStatus().rollbackToSavepoint(savePoint)&lt;/code&gt; ; 回滚到 &lt;code&gt;savePoint&lt;/code&gt; 。&lt;/p&gt;
 &lt;figure class=&#34;highlight java&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;13&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;14&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;15&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;16&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;meta&#34;&gt;@Transactional(rollbackFor = Exception.class)&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;meta&#34;&gt;@Override&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;function&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;public&lt;/span&gt; &lt;span class=&#34;keyword&#34;&gt;void&lt;/span&gt; &lt;span class=&#34;title&#34;&gt;saveEntity&lt;/span&gt;&lt;span class=&#34;params&#34;&gt;()&lt;/span&gt; &lt;span class=&#34;keyword&#34;&gt;throws&lt;/span&gt; Exception&lt;/span&gt;&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    Object savePoint = &lt;span class=&#34;keyword&#34;&gt;null&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;keyword&#34;&gt;try&lt;/span&gt; &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        userDao.saveUser();&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        &lt;span class=&#34;comment&#34;&gt;//设置回滚点&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        savePoint = TransactionAspectSupport.currentTransactionStatus().createSavepoint();&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        studentDao.saveStudent(); &lt;span class=&#34;comment&#34;&gt;//执行成功&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        &lt;span class=&#34;keyword&#34;&gt;int&lt;/span&gt; a = &lt;span class=&#34;number&#34;&gt;10&lt;/span&gt;/&lt;span class=&#34;number&#34;&gt;0&lt;/span&gt;; &lt;span class=&#34;comment&#34;&gt;//这里因为除数0会报异常,进入catch块&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &amp;#125;&lt;span class=&#34;keyword&#34;&gt;catch&lt;/span&gt; (Exception e)&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        System.out.println(&lt;span class=&#34;string&#34;&gt;&amp;quot;异常了=====&amp;quot;&lt;/span&gt; + e);&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        &lt;span class=&#34;comment&#34;&gt;//手工回滚异常&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        TransactionAspectSupport.currentTransactionStatus().rollbackToSavepoint(savePoint);&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;h1 id=&#34;三、DataSourceTransactionManager&#34;&gt;&lt;a href=&#34;#三、DataSourceTransactionManager&#34; class=&#34;headerlink&#34; title=&#34;三、DataSourceTransactionManager&#34;&gt;&lt;/a&gt;三、&lt;code&gt;DataSourceTransactionManager&lt;/code&gt;&lt;/h1&gt;&lt;p&gt;&lt;code&gt;spring&lt;/code&gt; 开启事务以及手动提交事务，可以在服务类上加上两个注解。&lt;/p&gt;
+&lt;h1 id=&#34;三-datasourcetransactionmanager&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#三-datasourcetransactionmanager&#34;&gt;#&lt;/a&gt; 三、 &lt;code&gt;DataSourceTransactionManager&lt;/code&gt;&lt;/h1&gt;
+&lt;p&gt;&lt;code&gt;spring&lt;/code&gt;  开启事务以及手动提交事务，可以在服务类上加上两个注解。&lt;/p&gt;
 &lt;figure class=&#34;highlight java&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;meta&#34;&gt;@Autowired&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;DataSourceTransactionManager dataSourceTransactionManager;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;meta&#34;&gt;@Autowired&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;TransactionDefinition transactionDefinition;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
 &lt;ul&gt;
-&lt;li&gt;手动开启事务&lt;br&gt;  &lt;code&gt;TransactionStatus transactionStatus = dataSourceTransactionManager.getTransaction(transactionDefinition);&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;手动提交事务&lt;br&gt;  &lt;code&gt;dataSourceTransactionManager.commit(transactionStatus);//提交&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;手动回滚事务&lt;br&gt;  &lt;code&gt;dataSourceTransactionManager.rollback(transactionStatus);&lt;/code&gt;//最好是放在&lt;code&gt;catch&lt;/code&gt; 里面,防止程序异常而事务一直卡在哪里未提交&lt;/li&gt;
+&lt;li&gt;手动开启事务&lt;br&gt;
+ &lt;code&gt;TransactionStatus transactionStatus = dataSourceTransactionManager.getTransaction(transactionDefinition);&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;手动提交事务&lt;br&gt;
+ &lt;code&gt;dataSourceTransactionManager.commit(transactionStatus);//提交&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;手动回滚事务&lt;br&gt;
+ &lt;code&gt;dataSourceTransactionManager.rollback(transactionStatus);&lt;/code&gt; // 最好是放在 &lt;code&gt;catch&lt;/code&gt;  里面，防止程序异常而事务一直卡在哪里未提交&lt;/li&gt;
 &lt;/ul&gt;
  ]]></description>
         </item>

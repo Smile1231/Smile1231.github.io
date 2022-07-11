@@ -117,12 +117,12 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
       </div>
       <div id="imgs" class="pjax">
         <ul>
-          <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1gipeuv80yoj20zk0m8kjl.jpg"></li>
-          <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1gipet8c1a2j20zk0m8kct.jpg"></li>
-          <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1gicliierfjj20zk0m8npd.jpg"></li>
-          <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1giclffsa1cj20zk0m811l.jpg"></li>
-          <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1gipeun65urj20zk0m81ii.jpg"></li>
-          <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1giciundwu5j20zk0m8n9e.jpg"></li>
+          <li class="item" data-background-image="https://tva1.sinaimg.cn/large/6833939bly1gipeubcbajj20zk0m8h1h.jpg"></li>
+          <li class="item" data-background-image="https://tva1.sinaimg.cn/large/6833939bly1gicm07ih54j20zk0m84qp.jpg"></li>
+          <li class="item" data-background-image="https://tva1.sinaimg.cn/large/6833939bly1giclfw2t96j20zk0m8x6p.jpg"></li>
+          <li class="item" data-background-image="https://tva1.sinaimg.cn/large/6833939bly1gipeyvx1d4j20zk0m8hdt.jpg"></li>
+          <li class="item" data-background-image="https://tva1.sinaimg.cn/large/6833939bly1giph47e9vtj20zk0m8x6l.jpg"></li>
+          <li class="item" data-background-image="https://tva1.sinaimg.cn/large/6833939bly1gipew28b65j20zk0m8hdt.jpg"></li>
         </ul>
       </div>
     </header>
@@ -174,39 +174,39 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
   <div class="body md" itemprop="articleBody">
     
 
-    <h2 id="快排-不稳定"><a href="#快排-不稳定" class="headerlink" title="快排 (不稳定)"></a>快排 (不稳定)</h2><p>快速排序的基本思想是：通过一趟排序将要排序的数据分割成独立的两部分，其中一部分的所有数据比另一部分的所有数据要小，再按这种方法对这两部分数据分别进行快速排序，整个排序过程可以递归进行，使整个数据变成有序序列。</p>
-<h3 id="快速排序的原理"><a href="#快速排序的原理" class="headerlink" title="快速排序的原理"></a>快速排序的原理</h3><span id="more"></span>
-
-<p>排序算法的思想非常简单，在待排序的数列中，我们首先要找一个数字作为基准数（这只是个专用名词）。为了方便，我们一般选择第 <code>1</code> 个数字作为基准数（其实选择第几个并没有关系）。接下来我们需要把这个待排序的数列中小于基准数的元素移动到待排序的数列的左边，把大于基准数的元素移动到待排序的数列的右边。这时，左右两个分区的元素就相对有序了；接着把两个分区的元素分别按照上面两种方法继续对每个分区找出基准数，然后移动，直到各个分区只有一个数时为止。</p>
+    <h2 id="快排-不稳定"><a class="markdownIt-Anchor" href="#快排-不稳定">#</a> 快排 (不稳定)</h2>
+<p>快速排序的基本思想是：通过一趟排序将要排序的数据分割成独立的两部分，其中一部分的所有数据比另一部分的所有数据要小，再按这种方法对这两部分数据分别进行快速排序，整个排序过程可以递归进行，使整个数据变成有序序列。</p>
+<h3 id="快速排序的原理"><a class="markdownIt-Anchor" href="#快速排序的原理">#</a> 快速排序的原理</h3>
+<span id="more"></span>
+<p>排序算法的思想非常简单，在待排序的数列中，我们首先要找一个数字作为基准数（这只是个专用名词）。为了方便，我们一般选择第  <code>1</code>  个数字作为基准数（其实选择第几个并没有关系）。接下来我们需要把这个待排序的数列中小于基准数的元素移动到待排序的数列的左边，把大于基准数的元素移动到待排序的数列的右边。这时，左右两个分区的元素就相对有序了；接着把两个分区的元素分别按照上面两种方法继续对每个分区找出基准数，然后移动，直到各个分区只有一个数时为止。</p>
 <p>这是典型的分治思想，即分治法。下面我们对一个实际例子进行算法描述，讲解快速排序的排序步骤。</p>
-<p><code>以 47、29、71、99、78、19、24、47</code> 的待排序的数列为例进行排序，为了方便区分两个 <code>47</code>，我们对后面的 <code>47</code> 增加一个下画线，即待排序的数列为 <code>47、29、71、99、78、19、24、47</code>。</p>
-<p>首先我们需要在数列中选择一个基准数，我们一般会选择中间的一个数或者头尾的数，这里直接选择第 <code>1</code> 个数 <code>47</code> 作为基准数，接着把比 <code>47</code> 小的数字移动到左边，把比 <code>47</code> 大的数字移动到右边，对于相等的数字不做移动。所以实际上我们需要找到中间的某个位置 <code>k</code>，这样 <code>k</code> 左边的值全部比 <code>k</code> 上的值小，<code>k</code> 右边的值全部比 <code>k</code> 上的值大。</p>
-<p>接下来开始移动元素。怎么移动呢？其实冒泡排序也涉及对元素的移动，但是那样移动起来很累，比如把最后一个元素移动到第 <code>1</code> 个，就需要比较 <code>n-1</code> 次，同时交换 <code>n-1</code> 次，效率很低。其实，只需把第 <code>1</code> 个元素和最后一个元素交换就好了，这种思想是不是在排序时可以借鉴呢？之前说快速排序就是对冒泡排序的一个改进，就是这个原因。</p>
-<p>快速排序的操作是这样的：首先从数列的右边开始往左边找，我们设这个下标为 <code>i</code>，也就是进行减减操作（<code>i--</code>），找到第 <code>1</code> 个比基准数小的值，让它与基准值交换；接着从左边开始往右边找，设这个下标为 <code>j</code>，然后执行加加操作<code>（j++）</code>，找到第 <code>1</code> 个比基准数大的值，让它与基准值交换；然后继续寻找，直到 <code>i </code>与 <code>j</code> 相遇时结束，最后基准值所在的位置即 <code>k</code> 的位置，也就是说 <code>k</code> 左边的值均比 <code>k</code> 上的值小，而 <code>k</code> 右边的值都比 <code>k </code>上的值大。</p>
-<p>所以对于上面的数列 47、29、71、99、78、19、24、 <u>47</u>，进行第 <code>1</code> 趟第 <code>1</code> 个交换的排序情况如下，第 <code>1</code> 次的操作情况如图 1 所示。</p>
+<p><code>以 47、29、71、99、78、19、24、47</code>  的待排序的数列为例进行排序，为了方便区分两个  <code>47</code> ，我们对后面的  <code>47</code>  增加一个下画线，即待排序的数列为  <code>47、29、71、99、78、19、24、47</code> 。</p>
+<p>首先我们需要在数列中选择一个基准数，我们一般会选择中间的一个数或者头尾的数，这里直接选择第  <code>1</code>  个数  <code>47</code>  作为基准数，接着把比  <code>47</code>  小的数字移动到左边，把比  <code>47</code>  大的数字移动到右边，对于相等的数字不做移动。所以实际上我们需要找到中间的某个位置  <code>k</code> ，这样  <code>k</code>  左边的值全部比  <code>k</code>  上的值小， <code>k</code>  右边的值全部比  <code>k</code>  上的值大。</p>
+<p>接下来开始移动元素。怎么移动呢？其实冒泡排序也涉及对元素的移动，但是那样移动起来很累，比如把最后一个元素移动到第  <code>1</code>  个，就需要比较  <code>n-1</code>  次，同时交换  <code>n-1</code>  次，效率很低。其实，只需把第  <code>1</code>  个元素和最后一个元素交换就好了，这种思想是不是在排序时可以借鉴呢？之前说快速排序就是对冒泡排序的一个改进，就是这个原因。</p>
+<p>快速排序的操作是这样的：首先从数列的右边开始往左边找，我们设这个下标为  <code>i</code> ，也就是进行减减操作（ <code>i--</code> ），找到第  <code>1</code>  个比基准数小的值，让它与基准值交换；接着从左边开始往右边找，设这个下标为  <code>j</code> ，然后执行加加操作 <code>（j++）</code> ，找到第  <code>1</code>  个比基准数大的值，让它与基准值交换；然后继续寻找，直到  <code>i </code> 与  <code>j</code>  相遇时结束，最后基准值所在的位置即  <code>k</code>  的位置，也就是说  <code>k</code>  左边的值均比  <code>k</code>  上的值小，而  <code>k</code>  右边的值都比  <code>k </code> 上的值大。</p>
+<p>所以对于上面的数列 47、29、71、99、78、19、24、 <u>47</u>，进行第  <code>1</code>  趟第  <code>1</code>  个交换的排序情况如下，第  <code>1</code>  次的操作情况如图 1 所示。</p>
 <img data-src="/posts/ff8068c0/2022-03-12-16-52-14.png" class="">
-
-<p>交换之后，<code>j</code> 移动到了下标为 <code>6</code> 的位置，对 <code>i</code> 继续扫描，如图 <code>2</code> 所示。</p>
+<p>交换之后， <code>j</code>  移动到了下标为  <code>6</code>  的位置，对  <code>i</code>  继续扫描，如图  <code>2</code>  所示。</p>
 <img data-src="/posts/ff8068c0/2022-03-12-16-55-14.png" class="">
-
-<p>此时交换后的数列变为 24、29、47、99、78、19、71、<u>47</u>。接下来我们继续对 i、j 进行操作，如图 3 所示，继续进行 i– 及 j++ 的比较操作。</p>
+<p>此时交换后的数列变为 24、29、47、99、78、19、71、<u>47</u>。接下来我们继续对 i、j 进行操作，如图 3 所示，继续进行 i-- 及 j++ 的比较操作。</p>
 <img data-src="/posts/ff8068c0/2022-03-12-16-58-42.png" class="">
-
-<p>进行了这两次 i、j 的移动、比较、交换之后，我们最终得到的数列是 24、29、19、47、78、99、71、<u>47</u>。接下来我们继续进行 i– 的操作，发现在 i 为 4 时比 47 大不用交换，在 i 为 3 时与 j 相遇，这时就不需要继续移动、比较了，已经找到 k 了，并且 k 的值为 3。我们可以确认一下当前的数列是不是 k 左边的值都比 47 小，而 k 右边的值都比 47 大（由于要保持相对位置不变，所以 47 同样在基准值 47 的右边）。</p>
+<p>进行了这两次 i、j 的移动、比较、交换之后，我们最终得到的数列是 24、29、19、47、78、99、71、<u>47</u>。接下来我们继续进行 i-- 的操作，发现在 i 为 4 时比 47 大不用交换，在 i 为 3 时与 j 相遇，这时就不需要继续移动、比较了，已经找到 k 了，并且 k 的值为 3。我们可以确认一下当前的数列是不是 k 左边的值都比 47 小，而 k 右边的值都比 47 大（由于要保持相对位置不变，所以 47 同样在基准值 47 的右边）。</p>
 <p>47 这个值已经落到了它该在的位置，第 1 趟排序完成了。接下来就是以 k 为基准，分为两部分，然后在左右两部分分别执行上述排序操作，最后数据会分为 4 部分；接着对每部分进行操作，直到每部分都只有一个值为止。</p>
-<p>接下来进行第 2 趟排序，现在左边部分为 24、29、19，我们选择第 1 个数 24 作为基准数，接着进行 i–、j++ 的操作，我们发现 i 最初的值为 19，比 24 这个基准值小，所以与基准值进行交换，得到的数列为 19、29、24；当 j 为 1 时，我们发现 29 比 24 大，所以与基准值进行交换，得到的数列 19、24、29，此时 i 为 2，j 为 1；继续 i– 时发现 i 为 1，与 j 相遇，左边部分的数列的 k 为 1，并且左右两部分分别只有一个元素，此时第 2 轮排序的左边部分的排序结束，同时左边部分的所有数据都排序完成。</p>
+<p>接下来进行第 2 趟排序，现在左边部分为 24、29、19，我们选择第 1 个数 24 作为基准数，接着进行 i–、j++ 的操作，我们发现 i 最初的值为 19，比 24 这个基准值小，所以与基准值进行交换，得到的数列为 19、29、24；当 j 为 1 时，我们发现 29 比 24 大，所以与基准值进行交换，得到的数列 19、24、29，此时 i 为 2，j 为 1；继续 i-- 时发现 i 为 1，与 j 相遇，左边部分的数列的 k 为 1，并且左右两部分分别只有一个元素，此时第 2 轮排序的左边部分的排序结束，同时左边部分的所有数据都排序完成。</p>
 <p>我们接着看右边部分的排序，待排序的数列为 78、99、71、<u>47</u>，我们同样选择第 1 个值 78 为基准值，接下来进行 i 与 j 的移动与比较，发现 47 比 78 小，进行交换，得到的数列 47、99、71、78；从左往右发现 99 比基准值 78 大，进行交换，得到的数列为 47、78、71、99；继续从右向左看，发现 71 比基准值 78 小，进行交换，得到的数列为 <u>47</u>、71、78、99。此时 i 在整体数组中的下标为 6，j 为 5，若继续 j++ 则与 i 相遇，所以完成此轮排序。</p>
-<p>此时右边数列的 k 为 6，一般会是相遇的位置，也就是基准值所在的位置，这时数列又被分为两部分，左边是 47、71，右边是 99，需要继续对左边部分的数据进行排序，虽然只有两个数据，但我们还是继续按照快速排序的思想操作一下，选择 <u>47</u> 作为基准数，将i进行从右向左的移动、比较，发现 i 与 j 相等时没有产生移动，完成第 2 轮排序。</p>
+<p>此时右边数列的 k 为 6，一般会是相遇的位置，也就是基准值所在的位置，这时数列又被分为两部分，左边是 47、71，右边是 99，需要继续对左边部分的数据进行排序，虽然只有两个数据，但我们还是继续按照快速排序的思想操作一下，选择 <u>47</u> 作为基准数，将 i 进行从右向左的移动、比较，发现 i 与 j 相等时没有产生移动，完成第 2 轮排序。</p>
 <p>至此，所有排序都已经完成，最终数列的结果是 19、24、29、47、47、71、78、99，怎么样，快速排序是不是非常简单地完成了所有的排序呢？虽然本次快速排序没有改变相同值的元素的顺序，但是由于快速排序需要对数列中的元素来回移动，有时还是会改变相对顺序的（比如 47 在第 1 轮的移动过程中就被移动到 47 的右边了），所以快速排序并不是一个稳定的算法。</p>
-<h2 id="快速排序的实现"><a href="#快速排序的实现" class="headerlink" title="快速排序的实现"></a>快速排序的实现</h2><p>通过以上的学习，你是否可以自己写出快速排序的实现代码呢？在接着学习之前，最好自己能对代码的实现进行一些思考，然后和下面的内容进行比对，看看自己有哪些疏忽之处。</p>
+<h2 id="快速排序的实现"><a class="markdownIt-Anchor" href="#快速排序的实现">#</a> 快速排序的实现</h2>
+<p>通过以上的学习，你是否可以自己写出快速排序的实现代码呢？在接着学习之前，最好自己能对代码的实现进行一些思考，然后和下面的内容进行比对，看看自己有哪些疏忽之处。</p>
 <p>其实快速排序有一个比较简单的思想，就是递归。对于每一趟排序都是一样的思想，只不过需要进行排序的数组的范围越来越小了，使用递归实现这种排序最适合不过了。</p>
-<h3 id="实现一"><a href="#实现一" class="headerlink" title="实现一"></a>实现一</h3><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">QuickSort</span> </span>&#123;</span><br><span class="line">    <span class="keyword">private</span> <span class="keyword">int</span>[] array;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="title">QuickSort</span><span class="params">(<span class="keyword">int</span>[] array)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">this</span>.array = array;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">sort</span><span class="params">()</span> </span>&#123;</span><br><span class="line">        quickSort(array, <span class="number">0</span>, array.length - <span class="number">1</span>);</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">print</span><span class="params">()</span> </span>&#123;</span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; array.length; i++) &#123;</span><br><span class="line">            System.out.println(array[i]);</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">   </span><br><span class="line">    <span class="comment">/**</span></span><br><span class="line"><span class="comment">     * 递归排序</span></span><br><span class="line"><span class="comment">     * <span class="doctag">@param</span> src</span></span><br><span class="line"><span class="comment">     * <span class="doctag">@param</span> begin</span></span><br><span class="line"><span class="comment">     * <span class="doctag">@param</span> end</span></span><br><span class="line"><span class="comment">     */</span></span><br><span class="line">    <span class="function"><span class="keyword">private</span> <span class="keyword">void</span> <span class="title">quickSort</span><span class="params">(<span class="keyword">int</span>[] src, <span class="keyword">int</span> begin, <span class="keyword">int</span> end)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">if</span> (begin &lt; end) &#123;</span><br><span class="line">            <span class="keyword">int</span> key = src[begin];</span><br><span class="line">            <span class="keyword">int</span> i = begin;</span><br><span class="line">            <span class="keyword">int</span> j = end;</span><br><span class="line">            <span class="keyword">while</span> (i &lt; j) &#123;</span><br><span class="line">                <span class="keyword">while</span> (i &lt; j &amp;&amp; src[j] &gt; key) &#123;</span><br><span class="line">                    j--;</span><br><span class="line">                &#125;</span><br><span class="line">                <span class="keyword">if</span> (i &lt; j) &#123;</span><br><span class="line">                    src[i] = src[j];</span><br><span class="line">                    i++;</span><br><span class="line">                &#125;</span><br><span class="line">                <span class="keyword">while</span> (i &lt; j &amp;&amp; src[i] &lt; key) &#123;</span><br><span class="line">                    i++;</span><br><span class="line">                &#125;</span><br><span class="line">                <span class="keyword">if</span> (i &lt; j) &#123;</span><br><span class="line">                    src[j] = src[i];</span><br><span class="line">                    j--;</span><br><span class="line">                &#125;</span><br><span class="line">            &#125;</span><br><span class="line">            src[i] = key;</span><br><span class="line">            quickSort(src, begin, i - <span class="number">1</span>);</span><br><span class="line">            quickSort(src, i + <span class="number">1</span>, end);</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<h3 id="实现二"><a href="#实现二" class="headerlink" title="实现二"></a>实现二</h3><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">quickSort</span><span class="params">(<span class="keyword">int</span>[] arr, <span class="keyword">int</span> low, <span class="keyword">int</span> high)</span></span>&#123;</span><br><span class="line">    <span class="keyword">if</span>(arr.length &lt;= <span class="number">0</span>) <span class="keyword">return</span>;</span><br><span class="line">    <span class="keyword">if</span>(low &gt;= high) <span class="keyword">return</span>;</span><br><span class="line">    <span class="keyword">int</span> left = low;</span><br><span class="line">    <span class="keyword">int</span> right = high;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">int</span> temp = arr[left];   <span class="comment">//挖坑1：保存基准的值</span></span><br><span class="line">    <span class="keyword">while</span> (left &lt; right)&#123;</span><br><span class="line">        <span class="keyword">while</span>(left &lt; right &amp;&amp; arr[right] &gt;= temp)&#123;  <span class="comment">//坑2：从后向前找到比基准小的元素，插入到基准位置坑1中</span></span><br><span class="line">            right--;</span><br><span class="line">        &#125;</span><br><span class="line">        arr[left] = arr[right];</span><br><span class="line">        <span class="keyword">while</span>(left &lt; right &amp;&amp; arr[left] &lt;= temp)&#123;   <span class="comment">//坑3：从前往后找到比基准大的元素，放到刚才挖的坑2中</span></span><br><span class="line">            left++;</span><br><span class="line">        &#125;</span><br><span class="line">        arr[right] = arr[left];</span><br><span class="line">    &#125;</span><br><span class="line">    arr[left] = temp;   <span class="comment">//基准值填补到坑3中，准备分治递归快排</span></span><br><span class="line">    System.out.println(<span class="string">&quot;Sorting: &quot;</span> + Arrays.toString(arr));</span><br><span class="line">    quickSort(arr, low, left-<span class="number">1</span>);</span><br><span class="line">    quickSort(arr, left+<span class="number">1</span>, high);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<h2 id="快速排序的特点及性能"><a href="#快速排序的特点及性能" class="headerlink" title="快速排序的特点及性能"></a>快速排序的特点及性能</h2><p>快速排序是在冒泡排序的基础上改进而来的，冒泡排序每次只能交换相邻的两个元素，而快速排序是跳跃式的交换，交换的距离很大，因此总的比较和交换次数少了很多，速度也快了不少。</p>
-<p>但是快速排序在最坏情况下的时间复杂度和冒泡排序一样，是 <code>O(n2)</code>，实际上每次比较都需要交换，但是这种情况并不常见。我们可以思考一下如果每次比较都需要交换，那么数列的平均时间复杂度是 <code>O(nlogn)</code>，事实上在大多数时候，排序的速度要快于这个平均时间复杂度。这种算法实际上是一种分治法思想，也就是分而治之，把问题分为一个个的小部分来分别解决，再把结果组合起来。</p>
-<p>快速排序只是使用数组原本的空间进行排序，所以所占用的空间应该是常量级的，但是由于每次划分之后是递归调用，所以递归调用在运行的过程中会消耗一定的空间，在一般情况下的空间复杂度为 <code>O(logn)</code>，在最差的情况下，若每次只完成了一个元素，那么空间复杂度为<code> O(n)</code>。所以我们一般认为快速排序的空间复杂度为 <code>O(logn)</code>。</p>
+<h3 id="实现一"><a class="markdownIt-Anchor" href="#实现一">#</a> 实现一</h3>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">QuickSort</span> </span>&#123;</span><br><span class="line">    <span class="keyword">private</span> <span class="keyword">int</span>[] array;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="title">QuickSort</span><span class="params">(<span class="keyword">int</span>[] array)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">this</span>.array = array;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">sort</span><span class="params">()</span> </span>&#123;</span><br><span class="line">        quickSort(array, <span class="number">0</span>, array.length - <span class="number">1</span>);</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">print</span><span class="params">()</span> </span>&#123;</span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; array.length; i++) &#123;</span><br><span class="line">            System.out.println(array[i]);</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">   </span><br><span class="line">    <span class="comment">/**</span></span><br><span class="line"><span class="comment">     * 递归排序</span></span><br><span class="line"><span class="comment">     * <span class="doctag">@param</span> src</span></span><br><span class="line"><span class="comment">     * <span class="doctag">@param</span> begin</span></span><br><span class="line"><span class="comment">     * <span class="doctag">@param</span> end</span></span><br><span class="line"><span class="comment">     */</span></span><br><span class="line">    <span class="function"><span class="keyword">private</span> <span class="keyword">void</span> <span class="title">quickSort</span><span class="params">(<span class="keyword">int</span>[] src, <span class="keyword">int</span> begin, <span class="keyword">int</span> end)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">if</span> (begin &lt; end) &#123;</span><br><span class="line">            <span class="keyword">int</span> key = src[begin];</span><br><span class="line">            <span class="keyword">int</span> i = begin;</span><br><span class="line">            <span class="keyword">int</span> j = end;</span><br><span class="line">            <span class="keyword">while</span> (i &lt; j) &#123;</span><br><span class="line">                <span class="keyword">while</span> (i &lt; j &amp;&amp; src[j] &gt; key) &#123;</span><br><span class="line">                    j--;</span><br><span class="line">                &#125;</span><br><span class="line">                <span class="keyword">if</span> (i &lt; j) &#123;</span><br><span class="line">                    src[i] = src[j];</span><br><span class="line">                    i++;</span><br><span class="line">                &#125;</span><br><span class="line">                <span class="keyword">while</span> (i &lt; j &amp;&amp; src[i] &lt; key) &#123;</span><br><span class="line">                    i++;</span><br><span class="line">                &#125;</span><br><span class="line">                <span class="keyword">if</span> (i &lt; j) &#123;</span><br><span class="line">                    src[j] = src[i];</span><br><span class="line">                    j--;</span><br><span class="line">                &#125;</span><br><span class="line">            &#125;</span><br><span class="line">            src[i] = key;</span><br><span class="line">            quickSort(src, begin, i - <span class="number">1</span>);</span><br><span class="line">            quickSort(src, i + <span class="number">1</span>, end);</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h3 id="实现二"><a class="markdownIt-Anchor" href="#实现二">#</a> 实现二</h3>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">quickSort</span><span class="params">(<span class="keyword">int</span>[] arr, <span class="keyword">int</span> low, <span class="keyword">int</span> high)</span></span>&#123;</span><br><span class="line">    <span class="keyword">if</span>(arr.length &lt;= <span class="number">0</span>) <span class="keyword">return</span>;</span><br><span class="line">    <span class="keyword">if</span>(low &gt;= high) <span class="keyword">return</span>;</span><br><span class="line">    <span class="keyword">int</span> left = low;</span><br><span class="line">    <span class="keyword">int</span> right = high;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">int</span> temp = arr[left];   <span class="comment">//挖坑1：保存基准的值</span></span><br><span class="line">    <span class="keyword">while</span> (left &lt; right)&#123;</span><br><span class="line">        <span class="keyword">while</span>(left &lt; right &amp;&amp; arr[right] &gt;= temp)&#123;  <span class="comment">//坑2：从后向前找到比基准小的元素，插入到基准位置坑1中</span></span><br><span class="line">            right--;</span><br><span class="line">        &#125;</span><br><span class="line">        arr[left] = arr[right];</span><br><span class="line">        <span class="keyword">while</span>(left &lt; right &amp;&amp; arr[left] &lt;= temp)&#123;   <span class="comment">//坑3：从前往后找到比基准大的元素，放到刚才挖的坑2中</span></span><br><span class="line">            left++;</span><br><span class="line">        &#125;</span><br><span class="line">        arr[right] = arr[left];</span><br><span class="line">    &#125;</span><br><span class="line">    arr[left] = temp;   <span class="comment">//基准值填补到坑3中，准备分治递归快排</span></span><br><span class="line">    System.out.println(<span class="string">&quot;Sorting: &quot;</span> + Arrays.toString(arr));</span><br><span class="line">    quickSort(arr, low, left-<span class="number">1</span>);</span><br><span class="line">    quickSort(arr, left+<span class="number">1</span>, high);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h2 id="快速排序的特点及性能"><a class="markdownIt-Anchor" href="#快速排序的特点及性能">#</a> 快速排序的特点及性能</h2>
+<p>快速排序是在冒泡排序的基础上改进而来的，冒泡排序每次只能交换相邻的两个元素，而快速排序是跳跃式的交换，交换的距离很大，因此总的比较和交换次数少了很多，速度也快了不少。</p>
+<p>但是快速排序在最坏情况下的时间复杂度和冒泡排序一样，是  <code>O(n2)</code> ，实际上每次比较都需要交换，但是这种情况并不常见。我们可以思考一下如果每次比较都需要交换，那么数列的平均时间复杂度是  <code>O(nlogn)</code> ，事实上在大多数时候，排序的速度要快于这个平均时间复杂度。这种算法实际上是一种分治法思想，也就是分而治之，把问题分为一个个的小部分来分别解决，再把结果组合起来。</p>
+<p>快速排序只是使用数组原本的空间进行排序，所以所占用的空间应该是常量级的，但是由于每次划分之后是递归调用，所以递归调用在运行的过程中会消耗一定的空间，在一般情况下的空间复杂度为  <code>O(logn)</code> ，在最差的情况下，若每次只完成了一个元素，那么空间复杂度为 <code> O(n)</code> 。所以我们一般认为快速排序的空间复杂度为  <code>O(logn)</code> 。</p>
 <p>快速排序是一个不稳定的算法，在经过排序之后，可能会对相同值的元素的相对位置造成改变。</p>
 <p>快速排序基本上被认为是相同数量级的所有排序算法中，平均性能最好的。</p>
 <p><span class="exturl" data-url="aHR0cDovL2RhdGEuYmlhbmNoZW5nLm5ldC92aWV3LzExNy5odG1s">本文链接</span></p>
@@ -266,7 +266,7 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
     <div class="item left">
       
 
-  <a href="/posts/2f57a694/" itemprop="url" rel="prev" data-background-image="https:&#x2F;&#x2F;tva3.sinaimg.cn&#x2F;mw690&#x2F;6833939bly1giciuja1j1j20zk0m8kjl.jpg" title="正则表达式">
+  <a href="/posts/2f57a694/" itemprop="url" rel="prev" data-background-image="https:&#x2F;&#x2F;tva1.sinaimg.cn&#x2F;mw690&#x2F;6833939bly1gicli9lfebj20zk0m84qp.jpg" title="正则表达式">
   <span class="type">Previous Post</span>
   <span class="category"><i class="ic i-flag"></i> 正则表达式</span>
   <h3>正则表达式</h3>
@@ -276,7 +276,7 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
     <div class="item right">
       
 
-  <a href="/posts/2b06d603/" itemprop="url" rel="next" data-background-image="https:&#x2F;&#x2F;tva3.sinaimg.cn&#x2F;mw690&#x2F;6833939bly1gipesng5oej20zk0m87d4.jpg" title="直接插入排序">
+  <a href="/posts/2b06d603/" itemprop="url" rel="next" data-background-image="https:&#x2F;&#x2F;tva1.sinaimg.cn&#x2F;mw690&#x2F;6833939bly1gipewf5l51j20zk0m8b29.jpg" title="直接插入排序">
   <span class="type">Next Post</span>
   <span class="category"><i class="ic i-flag"></i> 算法</span>
   <h3>直接插入排序</h3>
@@ -298,7 +298,7 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
   <div class="panels">
     <div class="inner">
       <div class="contents panel pjax" data-title="Contents">
-          <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%BF%AB%E6%8E%92-%E4%B8%8D%E7%A8%B3%E5%AE%9A"><span class="toc-number">1.</span> <span class="toc-text">快排 (不稳定)</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%BF%AB%E9%80%9F%E6%8E%92%E5%BA%8F%E7%9A%84%E5%8E%9F%E7%90%86"><span class="toc-number">1.1.</span> <span class="toc-text">快速排序的原理</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%BF%AB%E9%80%9F%E6%8E%92%E5%BA%8F%E7%9A%84%E5%AE%9E%E7%8E%B0"><span class="toc-number">2.</span> <span class="toc-text">快速排序的实现</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%AE%9E%E7%8E%B0%E4%B8%80"><span class="toc-number">2.1.</span> <span class="toc-text">实现一</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%AE%9E%E7%8E%B0%E4%BA%8C"><span class="toc-number">2.2.</span> <span class="toc-text">实现二</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%BF%AB%E9%80%9F%E6%8E%92%E5%BA%8F%E7%9A%84%E7%89%B9%E7%82%B9%E5%8F%8A%E6%80%A7%E8%83%BD"><span class="toc-number">3.</span> <span class="toc-text">快速排序的特点及性能</span></a></li></ol>
+          <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%BF%AB%E6%8E%92-%E4%B8%8D%E7%A8%B3%E5%AE%9A"><span class="toc-number">1.</span> <span class="toc-text"> 快排 (不稳定)</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%BF%AB%E9%80%9F%E6%8E%92%E5%BA%8F%E7%9A%84%E5%8E%9F%E7%90%86"><span class="toc-number">1.1.</span> <span class="toc-text"> 快速排序的原理</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%BF%AB%E9%80%9F%E6%8E%92%E5%BA%8F%E7%9A%84%E5%AE%9E%E7%8E%B0"><span class="toc-number">2.</span> <span class="toc-text"> 快速排序的实现</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%AE%9E%E7%8E%B0%E4%B8%80"><span class="toc-number">2.1.</span> <span class="toc-text"> 实现一</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%AE%9E%E7%8E%B0%E4%BA%8C"><span class="toc-number">2.2.</span> <span class="toc-text"> 实现二</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%BF%AB%E9%80%9F%E6%8E%92%E5%BA%8F%E7%9A%84%E7%89%B9%E7%82%B9%E5%8F%8A%E6%80%A7%E8%83%BD"><span class="toc-number">3.</span> <span class="toc-text"> 快速排序的特点及性能</span></a></li></ol>
       </div>
       <div class="related panel pjax" data-title="Related">
         <ul>
@@ -316,19 +316,19 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
 <nav class="state">
     <div class="item posts">
       <a href="/archives/">
-        <span class="count">135</span>
+        <span class="count">136</span>
         <span class="name">posts</span>
       </a>
     </div>
     <div class="item categories">
       <a href="/categories/">
-        <span class="count">70</span>
+        <span class="count">71</span>
         <span class="name">categories</span>
       </a>
     </div>
     <div class="item tags">
       <a href="/tags/">
-        <span class="count">99</span>
+        <span class="count">101</span>
         <span class="name">tags</span>
       </a>
     </div>
@@ -407,32 +407,19 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
   <li class="item">
     
 <div class="breadcrumb">
-<a href="/categories/Java/" title="In Java">Java</a>
-<i class="ic i-angle-right"></i>
-<a href="/categories/Java/Tools/" title="In Tools">Tools</a>
 </div>
 
-    <span><a href="/posts/b246d3ce/" title="Java自带的好用的工具类">Java自带的好用的工具类</a></span>
+    <span><a href="/posts/3c59e6c8/" title="如何让自己的博客被Google以及百度收录">如何让自己的博客被Google以及百度收录</a></span>
   </li>
 
       
   <li class="item">
     
 <div class="breadcrumb">
-<a href="/categories/Tools/" title="In Tools">Tools</a>
+<a href="/categories/LeetCode/" title="In LeetCode">LeetCode</a>
 </div>
 
-    <span><a href="/posts/ba83fda/" title="超级好用的StringJoiner">超级好用的StringJoiner</a></span>
-  </li>
-
-      
-  <li class="item">
-    
-<div class="breadcrumb">
-<a href="/categories/Java/" title="In Java">Java</a>
-</div>
-
-    <span><a href="/posts/7a29d22a/" title="Java关于时间的轮子">Java关于时间的轮子</a></span>
+    <span><a href="/posts/5d0c3fcc/" title="LeetCode172_阶乘后的0">LeetCode172_阶乘后的0</a></span>
   </li>
 
       
@@ -440,77 +427,87 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
     
 <div class="breadcrumb">
 <a href="/categories/Java/" title="In Java">Java</a>
+</div>
+
+    <span><a href="/posts/1c3390ab/" title="将Java数据输出为本地txt">将Java数据输出为本地txt</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/Java/" title="In Java">Java</a>
+</div>
+
+    <span><a href="/posts/bd76a990/" title="一图看懂Java中的PO,BO,VO,DTO,POJO,DAO,DO">一图看懂Java中的PO,BO,VO,DTO,POJO,DAO,DO</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/Java/" title="In Java">Java</a>
 <i class="ic i-angle-right"></i>
-<a href="/categories/Java/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/" title="In 操作系统">操作系统</a>
+<a href="/categories/Java/Stream/" title="In Stream">Stream</a>
+</div>
+
+    <span><a href="/posts/b1231c9f/" title="java stream中Collectors的用法">java stream中Collectors的用法</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/%E5%89%8D%E7%AB%AF/" title="In 前端">前端</a>
 <i class="ic i-angle-right"></i>
-<a href="/categories/Java/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/Java%E9%9D%A2%E8%AF%95/" title="In Java面试">Java面试</a>
+<a href="/categories/%E5%89%8D%E7%AB%AF/Css/" title="In Css">Css</a>
 </div>
 
-    <span><a href="/posts/166a1445/" title="位，字节， 字符">位，字节， 字符</a></span>
+    <span><a href="/posts/54880bcd/" title="Css样式">Css样式</a></span>
   </li>
 
       
   <li class="item">
     
 <div class="breadcrumb">
-<a href="/categories/Java%E9%9D%A2%E8%AF%95/" title="In Java面试">Java面试</a>
+<a href="/categories/%E5%89%8D%E7%AB%AF/" title="In 前端">前端</a>
 <i class="ic i-angle-right"></i>
-<a href="/categories/Java%E9%9D%A2%E8%AF%95/%E7%AE%97%E6%B3%95/" title="In 算法">算法</a>
-</div>
-
-    <span><a href="/posts/b9b9f7e7/" title="二叉树遍历">二叉树遍历</a></span>
-  </li>
-
-      
-  <li class="item">
-    
-<div class="breadcrumb">
-<a href="/categories/Java%E9%9D%A2%E8%AF%95/" title="In Java面试">Java面试</a>
+<a href="/categories/%E5%89%8D%E7%AB%AF/JavaScript/" title="In JavaScript">JavaScript</a>
 <i class="ic i-angle-right"></i>
-<a href="/categories/Java%E9%9D%A2%E8%AF%95/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/" title="In 操作系统">操作系统</a>
+<a href="/categories/%E5%89%8D%E7%AB%AF/JavaScript/Html/" title="In Html">Html</a>
 </div>
 
-    <span><a href="/posts/4847d2e5/" title="面试之旅关于操作系统">面试之旅关于操作系统</a></span>
+    <span><a href="/posts/7b604068/" title="Html页面插入地图">Html页面插入地图</a></span>
   </li>
 
       
   <li class="item">
     
 <div class="breadcrumb">
-<a href="/categories/SpringBoot/" title="In SpringBoot">SpringBoot</a>
+<a href="/categories/Java/" title="In Java">Java</a>
 </div>
 
-    <span><a href="/posts/67f40b37/" title="Spring Boot 获取服务IP地址和端口号">Spring Boot 获取服务IP地址和端口号</a></span>
+    <span><a href="/posts/e18abc1d/" title="关于YAML中List存放Map">关于YAML中List存放Map</a></span>
   </li>
 
       
   <li class="item">
     
 <div class="breadcrumb">
-<a href="/categories/Java%E9%9D%A2%E8%AF%95/" title="In Java面试">Java面试</a>
-<i class="ic i-angle-right"></i>
-<a href="/categories/Java%E9%9D%A2%E8%AF%95/%E6%95%B0%E6%8D%AE%E5%BA%93/" title="In 数据库">数据库</a>
+<a href="/categories/SAP/" title="In SAP">SAP</a>
 </div>
 
-    <span><a href="/posts/666b2933/" title="面试之旅关于数据库">面试之旅关于数据库</a></span>
+    <span><a href="/posts/4187faeb/" title="English self_introduction">English self_introduction</a></span>
   </li>
 
       
   <li class="item">
     
 <div class="breadcrumb">
+<a href="/categories/SAP/" title="In SAP">SAP</a>
 </div>
 
-    <span><a href="/posts/e694a882/" title="Windows下如何查看某个端口被谁占用">Windows下如何查看某个端口被谁占用</a></span>
-  </li>
-
-      
-  <li class="item">
-    
-<div class="breadcrumb">
-</div>
-
-    <span><a href="/posts/2dc35ee/" title="多线程分批处理方案">多线程分批处理方案</a></span>
+    <span><a href="/posts/ef55dc85/" title="CEST与北京时间转换表">CEST与北京时间转换表</a></span>
   </li>
 
   </ul>
@@ -535,13 +532,13 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
     <span class="post-meta-item-icon">
       <i class="ic i-chart-area"></i>
     </span>
-    <span title="Symbols count total">558k words</span>
+    <span title="Symbols count total">561k words</span>
 
     <span class="post-meta-divider">|</span>
     <span class="post-meta-item-icon">
       <i class="ic i-coffee"></i>
     </span>
-    <span title="Reading time total">8:27</span>
+    <span title="Reading time total">8:30</span>
   </div>
 </div>
 

@@ -117,12 +117,12 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
       </div>
       <div id="imgs" class="pjax">
         <ul>
-          <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1giclhfehz7j20zk0m8u0x.jpg"></li>
-          <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1giph4baakhj20zk0m8h5q.jpg"></li>
-          <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1giclga70tsj20zk0m84mr.jpg"></li>
-          <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1gicitspjpbj20zk0m81ky.jpg"></li>
-          <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1giclwrdwyaj20zk0m8are.jpg"></li>
-          <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1gicli3sbvtj20zk0m8x6p.jpg"></li>
+          <li class="item" data-background-image="https://tva1.sinaimg.cn/large/6833939bly1gipetlbztpj20zk0m84qp.jpg"></li>
+          <li class="item" data-background-image="https://tva1.sinaimg.cn/large/6833939bly1gipev1x5e4j20zk0m8b29.jpg"></li>
+          <li class="item" data-background-image="https://tva1.sinaimg.cn/large/6833939bly1gipewf5l51j20zk0m8b29.jpg"></li>
+          <li class="item" data-background-image="https://tva1.sinaimg.cn/large/6833939bly1gipet4bz0yj20zk0m8e81.jpg"></li>
+          <li class="item" data-background-image="https://tva1.sinaimg.cn/large/6833939bly1giclh0m9pdj20zk0m8hdt.jpg"></li>
+          <li class="item" data-background-image="https://tva1.sinaimg.cn/large/6833939bly1giclhtuo6nj20zk0m8ttm.jpg"></li>
         </ul>
       </div>
     </header>
@@ -168,63 +168,61 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
   <div class="body md" itemprop="articleBody">
     
 
-    <h1 id="超级好用的StringJoiner"><a href="#超级好用的StringJoiner" class="headerlink" title="超级好用的StringJoiner"></a>超级好用的<code>StringJoiner</code></h1><p>主要先说一下自己的最近的需求,类似于</p>
+    <h1 id="超级好用的stringjoiner"><a class="markdownIt-Anchor" href="#超级好用的stringjoiner">#</a> 超级好用的 <code>StringJoiner</code></h1>
+<p>主要先说一下自己的最近的需求，类似于</p>
 <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//&amp;lt;402162465.20106.1625035747695.JavaMail.saicapp@deployment-invoiceservice-7bc58468c5-gtqb7&amp;gt;</span></span><br><span class="line"></span><br><span class="line"><span class="comment">//其实是读取的时候 &lt;&gt; 大小于号 变成了字符串,所以现在要做的就是把他还原成</span></span><br><span class="line"><span class="comment">//&lt;402162465.20106.1625035747695.JavaMail.saicapp@deployment-invoiceservice-7bc58468c5-gtqb7&gt;</span></span><br></pre></td></tr></table></figure>
-
 <span id="more"></span>
-
-<p>需要做的有两步,将<code>&amp;lt;</code> <code>&amp;gt;</code> 去掉,然后再加前后缀 <code>&lt;</code>,<code>&gt;</code></p>
+<p>需要做的有两步，将 <code>&amp;lt;</code>   <code>&amp;gt;</code>  去掉，然后再加前后缀  <code>&lt;</code> , <code>&gt;</code></p>
 <p>基本上的做法就是:</p>
 <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">static</span> String <span class="title">messageIdHandle</span><span class="params">(String messageId)</span> </span>&#123;</span><br><span class="line">    <span class="comment">//&amp;lt;402162465.20106.1625035747695.JavaMail.saicapp@deployment-invoiceservice-7bc58468c5-gtqb7&amp;gt;</span></span><br><span class="line">    <span class="comment">//去除前后缀</span></span><br><span class="line">    String noPreMessageId = StrUtil.removePrefix(messageId, <span class="string">&quot;&amp;lt;&quot;</span>);</span><br><span class="line">    String noPreAndSufMessageId = StrUtil.removeSuffix(noPreMessageId, <span class="string">&quot;&amp;gt;&quot;</span>);</span><br><span class="line">    <span class="comment">//拼接&lt;&gt; 号</span></span><br><span class="line">    StringJoiner stringJoiner = <span class="keyword">new</span> StringJoiner(<span class="string">&quot;&quot;</span>, <span class="string">&quot;&lt;&quot;</span>, <span class="string">&quot;&gt;&quot;</span>);</span><br><span class="line">    StringJoiner realMessageId = stringJoiner.add(<span class="string">&quot;&quot;</span>).add(noPreAndSufMessageId);</span><br><span class="line"></span><br><span class="line">    <span class="keyword">return</span> realMessageId.toString();</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<p>所以我觉得<code>StringJoiner</code>挺好玩的!</p>
-<h2 id="StringJoiner类详解"><a href="#StringJoiner类详解" class="headerlink" title="StringJoiner类详解"></a><code>StringJoiner</code>类详解</h2><img data-src="/posts/ba83fda/2022-01-26-23-02-22.png" class="">
-
-<p>我们可以构造由定界符分隔的字符序列，并可选地以提供的前缀开头并以提供的后缀结尾。然后调用<code>add</code>方法添加字符串。例子代码如下：</p>
+<p>所以我觉得 <code>StringJoiner</code>  挺好玩的！</p>
+<h2 id="stringjoiner类详解"><a class="markdownIt-Anchor" href="#stringjoiner类详解">#</a>  <code>StringJoiner</code>  类详解</h2>
+<img data-src="/posts/ba83fda/2022-01-26-23-02-22.png" class="">
+<p>我们可以构造由定界符分隔的字符序列，并可选地以提供的前缀开头并以提供的后缀结尾。然后调用 <code>add</code>  方法添加字符串。例子代码如下：</p>
 <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">StringJoiner stringJoiner = <span class="keyword">new</span> StringJoiner(<span class="string">&quot;:&quot;</span>, <span class="string">&quot;[&quot;</span>, <span class="string">&quot;]&quot;</span>);</span><br><span class="line">stringJoiner.add(<span class="string">&quot;George&quot;</span>).add(<span class="string">&quot;Sally&quot;</span>).add(<span class="string">&quot;Fred&quot;</span>);</span><br><span class="line"></span><br><span class="line">System.out.println(stringJoiner);</span><br></pre></td></tr></table></figure>
 <p>打印结果:</p>
 <img data-src="/posts/ba83fda/2022-01-26-23-02-31.png" class="">
-
-<h3 id="参数"><a href="#参数" class="headerlink" title="参数"></a>参数</h3><p>StringJoiner总共有五个参数：</p>
+<h3 id="参数"><a class="markdownIt-Anchor" href="#参数">#</a> 参数</h3>
+<p>StringJoiner 总共有五个参数：</p>
 <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">private</span> <span class="keyword">final</span> String prefix;    <span class="comment">//前缀</span></span><br><span class="line"><span class="keyword">private</span> <span class="keyword">final</span> String delimiter; <span class="comment">//分隔符</span></span><br><span class="line"><span class="keyword">private</span> <span class="keyword">final</span> String suffix;    <span class="comment">//后缀</span></span><br><span class="line"><span class="keyword">private</span> StringBuilder value;  </span><br><span class="line"><span class="keyword">private</span> String emptyValue;   </span><br></pre></td></tr></table></figure>
 <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">private</span> StringBuilder value; </span><br><span class="line"><span class="comment">//其实是Joiner的底层，说到底StringJoiner还是调用的StringBuiler方法，只是这层封装里加上了有关于前缀，后缀和连接符的操作，让我们可以方便一些。</span></span><br></pre></td></tr></table></figure>
-
 <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/*</span></span><br><span class="line"><span class="comment">* By default, the string consisting of prefix+suffix, returned by</span></span><br><span class="line"><span class="comment">* toString(), or properties of value, when no elements have yet been added,</span></span><br><span class="line"><span class="comment">* i.e. when it is empty.  This may be overridden by the user to be some</span></span><br><span class="line"><span class="comment">* other value including the empty String.</span></span><br><span class="line"><span class="comment">*/</span></span><br><span class="line"> <span class="keyword">private</span> String emptyValue;</span><br><span class="line"><span class="comment">//emptyValue 你可以把它看作是当你的StringJoiner对象没有进行任何add的操作时，调用toString() 方法会return 这个字符串而不是空。具体的用法后面看到setEmptyValue的时候再举例子。</span></span><br></pre></td></tr></table></figure>
-<h3 id="构造器"><a href="#构造器" class="headerlink" title="构造器"></a>构造器</h3><img data-src="/posts/ba83fda/2022-01-26-23-02-42.png" class="">
+<h3 id="构造器"><a class="markdownIt-Anchor" href="#构造器">#</a> 构造器</h3>
+<img data-src="/posts/ba83fda/2022-01-26-23-02-42.png" class="">
 <p>参数比较多的构造器</p>
 <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">public</span> <span class="title">StringJoiner</span><span class="params">(CharSequence delimiter,CharSequence prefix,CharSequence suffix)</span> </span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    Objects.requireNonNull(prefix, <span class="string">&quot;The prefix must not be null&quot;</span>);</span><br><span class="line">    Objects.requireNonNull(delimiter, <span class="string">&quot;The delimiter must not be null&quot;</span>);</span><br><span class="line">    Objects.requireNonNull(suffix, <span class="string">&quot;The suffix must not be null&quot;</span>);</span><br><span class="line">    <span class="comment">// make defensive copies of arguments</span></span><br><span class="line">    <span class="keyword">this</span>.prefix = prefix.toString();</span><br><span class="line">    <span class="keyword">this</span>.delimiter = delimiter.toString();</span><br><span class="line">    <span class="keyword">this</span>.suffix = suffix.toString();</span><br><span class="line">    <span class="keyword">this</span>.emptyValue = <span class="keyword">this</span>.prefix + <span class="keyword">this</span>.suffix;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p>这里面三个参数分别是前缀后缀和连接符，然后这里有一个操作就是将<code>emptyValue</code>赋值了前缀+后缀的字符串。也就是说当你用了这个构造器的时候，<code>emptyValue</code>就已经有值了，就是前缀+后缀拼接。当你<code>StringJoiner</code>不执行<code>add</code>方法直接<code>toString()</code>时，会<code>return</code>的对象就是你的前缀+后缀。例子：</p>
+<p>这里面三个参数分别是前缀后缀和连接符，然后这里有一个操作就是将 <code>emptyValue</code>  赋值了前缀 + 后缀的字符串。也就是说当你用了这个构造器的时候， <code>emptyValue</code>  就已经有值了，就是前缀 + 后缀拼接。当你 <code>StringJoiner</code>  不执行 <code>add</code>  方法直接 <code>toString()</code>  时，会 <code>return</code>  的对象就是你的前缀 + 后缀。例子：</p>
 <img data-src="/posts/ba83fda/2022-01-26-23-02-52.png" class="">
 <p>参数比较少的构造器:</p>
 <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">public</span> <span class="title">StringJoiner</span><span class="params">(CharSequence delimiter)</span> </span>&#123;</span><br><span class="line">    <span class="keyword">this</span>(delimiter, <span class="string">&quot;&quot;</span>, <span class="string">&quot;&quot;</span>);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p>其实还是调用的三参构造器，只不过前后缀默认值为<code>&quot;&quot;</code>,也就是没有前后缀。这种情况下<code>emptyValue</code>是什么呢？ 其实和上面一样的，<code>&quot;&quot;+&quot;&quot;</code>就是<code>&quot;&quot;</code>,不难理解。</p>
-<h3 id="方法"><a href="#方法" class="headerlink" title="方法"></a>方法</h3><p>先看上面提到最多的<code>toString().</code></p>
+<p>其实还是调用的三参构造器，只不过前后缀默认值为 <code>&quot;&quot;</code> , 也就是没有前后缀。这种情况下 <code>emptyValue</code>  是什么呢？ 其实和上面一样的， <code>&quot;&quot;+&quot;&quot;</code>  就是 <code>&quot;&quot;</code> , 不难理解。</p>
+<h3 id="方法"><a class="markdownIt-Anchor" href="#方法">#</a> 方法</h3>
+<p>先看上面提到最多的 <code>toString().</code></p>
 <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">@Override</span></span><br><span class="line">   <span class="function"><span class="keyword">public</span> String <span class="title">toString</span><span class="params">()</span> </span>&#123;</span><br><span class="line">       <span class="keyword">if</span> (value == <span class="keyword">null</span>) &#123;</span><br><span class="line">           <span class="keyword">return</span> emptyValue;</span><br><span class="line">       &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">           <span class="keyword">if</span> (suffix.equals(<span class="string">&quot;&quot;</span>)) &#123;</span><br><span class="line">               <span class="keyword">return</span> value.toString();</span><br><span class="line">           &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">               <span class="keyword">int</span> initialLength = value.length();</span><br><span class="line">               String result = value.append(suffix).toString();</span><br><span class="line">               <span class="comment">// reset value to pre-append initialLength</span></span><br><span class="line">               value.setLength(initialLength);</span><br><span class="line">               <span class="keyword">return</span> result;</span><br><span class="line">           &#125;</span><br><span class="line">       &#125;</span><br><span class="line">   &#125;</span><br></pre></td></tr></table></figure>
-
-<p>当<code>value</code>为空(也就是<code>StringBuilder</code>为空)时，会<code>return emptyVaule</code>， 如果不为空，就会加上一个给你加后缀的操作。当然这里加后缀你可以看作一次性的，他在加之前会取一个长度，不管你后缀多长，加完之后会<code>set</code>到初始长度。</p>
+<p>当 <code>value</code>  为空 (也就是 <code>StringBuilder</code>  为空) 时，会 <code>return emptyVaule</code> ， 如果不为空，就会加上一个给你加后缀的操作。当然这里加后缀你可以看作一次性的，他在加之前会取一个长度，不管你后缀多长，加完之后会 <code>set</code>  到初始长度。</p>
 <p>知道了后缀是这里加的，那前缀呢。</p>
-<p>来看最核心的<code>add</code>方法：</p>
+<p>来看最核心的 <code>add</code>  方法：</p>
 <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">public</span> StringJoiner <span class="title">add</span><span class="params">(CharSequence newElement)</span> </span>&#123;</span><br><span class="line">    prepareBuilder().append(newElement);</span><br><span class="line">    <span class="keyword">return</span> <span class="keyword">this</span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">private</span> StringBuilder <span class="title">prepareBuilder</span><span class="params">()</span> </span>&#123;</span><br><span class="line">    <span class="keyword">if</span> (value != <span class="keyword">null</span>) &#123;</span><br><span class="line">        value.append(delimiter);</span><br><span class="line">    &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">        value = <span class="keyword">new</span> StringBuilder().append(prefix);</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> value;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<p>前缀就是在你调用第一个add的时候就加上了，为什么是第一个呢，因为第一次调用<code>add</code>的时候，你的<code>value</code>肯定是空的，所以它会走<code>else</code>的逻辑给你构造一个<code>StringBuilder</code>出来，这个时候会把前缀加好。所以你后面不管有几个<code>add</code>，都是基于一个<code>StringBuilder</code>上在加字符串。当你的<code>value</code>不为空了，就会给你拼接上连接符，最后再拼接上<code>add()</code>方法里的参数。完美。</p>
-<p>再结合<code>toString</code>方法来看，当你没有调用过<code>add</code>方法而直接<code>toString</code>时，<code>value</code>为空，它就会<code>return emptyValue</code>了。</p>
-<p>再来看个和<code>emptyValue</code>有关的方法<code>setEmptyValue(CharSequence emptyValue)：</code></p>
+<p>前缀就是在你调用第一个 add 的时候就加上了，为什么是第一个呢，因为第一次调用 <code>add</code>  的时候，你的 <code>value</code>  肯定是空的，所以它会走 <code>else</code>  的逻辑给你构造一个 <code>StringBuilder</code>  出来，这个时候会把前缀加好。所以你后面不管有几个 <code>add</code> ，都是基于一个 <code>StringBuilder</code>  上在加字符串。当你的 <code>value</code>  不为空了，就会给你拼接上连接符，最后再拼接上 <code>add()</code>  方法里的参数。完美。</p>
+<p>再结合 <code>toString</code>  方法来看，当你没有调用过 <code>add</code>  方法而直接 <code>toString</code>  时， <code>value</code>  为空，它就会 <code>return emptyValue</code>  了。</p>
+<p>再来看个和 <code>emptyValue</code>  有关的方法 <code>setEmptyValue(CharSequence emptyValue)：</code></p>
 <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"> <span class="function"><span class="keyword">public</span> StringJoiner <span class="title">setEmptyValue</span><span class="params">(CharSequence emptyValue)</span> </span>&#123;</span><br><span class="line">    <span class="keyword">this</span>.emptyValue = Objects.requireNonNull(emptyValue,</span><br><span class="line">        <span class="string">&quot;The empty value must not be null&quot;</span>).toString();</span><br><span class="line">    <span class="keyword">return</span> <span class="keyword">this</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p>这个方法其实是暴露给开发者主动设置<code>emptyValue</code>值的方法，也就是说，当你没有调用<code>set</code>方法，<code>emptyValue</code>默认值为前缀+后缀，不管前后缀是否为空；当你调用了<code>set</code>方法，<code>emptyValue</code>就是设置的值。 举个例子：</p>
+<p>这个方法其实是暴露给开发者主动设置 <code>emptyValue</code>  值的方法，也就是说，当你没有调用 <code>set</code>  方法， <code>emptyValue</code>  默认值为前缀 + 后缀，不管前后缀是否为空；当你调用了 <code>set</code>  方法， <code>emptyValue</code>  就是设置的值。 举个例子：</p>
 <img data-src="/posts/ba83fda/2022-01-26-23-03-07.png" class="">
-<p>这里的打印结果就是<code>anson</code>，注意不是<code>[anson]</code>哦。</p>
-<p>还有一个有关字符串操作的方法 <code>merge(StringJoiner)</code></p>
+<p>这里的打印结果就是 <code>anson</code> ，注意不是 <code>[anson]</code>  哦。</p>
+<p>还有一个有关字符串操作的方法  <code>merge(StringJoiner)</code></p>
 <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">public</span> StringJoiner <span class="title">merge</span><span class="params">(StringJoiner other)</span> </span>&#123;</span><br><span class="line">    Objects.requireNonNull(other);</span><br><span class="line">    <span class="keyword">if</span> (other.value != <span class="keyword">null</span>) &#123;</span><br><span class="line">        <span class="keyword">final</span> <span class="keyword">int</span> length = other.value.length();</span><br><span class="line">        <span class="comment">// lock the length so that we can seize the data to be appended</span></span><br><span class="line">        <span class="comment">// before initiate copying to avoid interference, especially when</span></span><br><span class="line">        <span class="comment">// merge &#x27;this&#x27;</span></span><br><span class="line">        StringBuilder builder = prepareBuilder();</span><br><span class="line">        builder.append(other.value, other.prefix.length(), length);</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> <span class="keyword">this</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p>这里面调用了一个<code>StringBuilder</code>的<code>append()</code>重载方法：</p>
+<p>这里面调用了一个 <code>StringBuilder</code>  的 <code>append()</code>  重载方法：</p>
 <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"> <span class="function"><span class="keyword">public</span> StringBuilder <span class="title">append</span><span class="params">(CharSequence s, <span class="keyword">int</span> start, <span class="keyword">int</span> end)</span> </span>&#123;</span><br><span class="line">    <span class="keyword">super</span>.append(s, start, end);</span><br><span class="line">    <span class="keyword">return</span> <span class="keyword">this</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p>也就是说<code>merge</code>操作是把另一个<code>StringJoiner(简称sj2)</code>的从前缀开始(不包括前缀)包括连接符但是不包括后缀的字符串加进去<code>sj1</code>里面。</p>
-<p>上个例子:  </p>
+<p>也就是说 <code>merge</code>  操作是把另一个 <code>StringJoiner(简称sj2)</code>  的从前缀开始 (不包括前缀) 包括连接符但是不包括后缀的字符串加进去 <code>sj1</code>  里面。</p>
+<p>上个例子:</p>
 <img data-src="/posts/ba83fda/2022-01-26-23-03-17.png" class="">
-<p>前后缀都是<code>sj1</code>的，<code>ac</code>间的连接符是<code>sj2</code>的。</p>
+<p>前后缀都是 <code>sj1</code>  的， <code>ac</code>  间的连接符是 <code>sj2</code>  的。</p>
 <p>最后再看个简单的方法收尾</p>
 <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"> <span class="function"><span class="keyword">public</span> <span class="keyword">int</span> <span class="title">length</span><span class="params">()</span> </span>&#123;</span><br><span class="line">    <span class="comment">// Remember that we never actually append the suffix unless we return</span></span><br><span class="line">    <span class="comment">// the full (present) value or some sub-string or length of it, so that</span></span><br><span class="line">    <span class="comment">// we can add on more if we need to.</span></span><br><span class="line">    <span class="keyword">return</span> (value != <span class="keyword">null</span> ? value.length() + suffix.length() :</span><br><span class="line">            emptyValue.length());</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p><code>length()</code>方法大家最熟悉，获取长度。这里能看到有一个好处就是当你没有调用<code>add</code>方法也就是没有初始化<code>StringBuilder</code>时，调用这个方法不会空指针，因为有默认的<code>emptyValue。</code></p>
-<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><p>总结一下，<code>Java 8</code>的新类<code>StringJoiner</code>用法很简单，其实就是一个披着<code>StringJoiner</code>皮的<code>StringBuilder</code>而已嘛。不过有人帮你封装好了加减后缀和连接符的方法也是好的！</p>
+<p><code>length()</code>  方法大家最熟悉，获取长度。这里能看到有一个好处就是当你没有调用 <code>add</code>  方法也就是没有初始化 <code>StringBuilder</code>  时，调用这个方法不会空指针，因为有默认的 <code>emptyValue。</code></p>
+<h2 id="总结"><a class="markdownIt-Anchor" href="#总结">#</a> 总结</h2>
+<p>总结一下， <code>Java 8</code>  的新类 <code>StringJoiner</code>  用法很简单，其实就是一个披着 <code>StringJoiner</code>  皮的 <code>StringBuilder</code>  而已嘛。不过有人帮你封装好了加减后缀和连接符的方法也是好的！</p>
 
   </div>
 
@@ -276,7 +274,7 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
     <div class="item left">
       
 
-  <a href="/posts/9a0369ec/" itemprop="url" rel="prev" data-background-image="https:&#x2F;&#x2F;tva3.sinaimg.cn&#x2F;mw690&#x2F;6833939bly1giclil3m4ej20zk0m8tn8.jpg" title="布隆过滤器">
+  <a href="/posts/9a0369ec/" itemprop="url" rel="prev" data-background-image="https:&#x2F;&#x2F;tva1.sinaimg.cn&#x2F;mw690&#x2F;6833939bly1gipeu7txpzj20zk0m81kx.jpg" title="布隆过滤器">
   <span class="type">Previous Post</span>
   <span class="category"><i class="ic i-flag"></i> Daily</span>
   <h3>布隆过滤器</h3>
@@ -286,7 +284,7 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
     <div class="item right">
       
 
-  <a href="/posts/817eab42/" itemprop="url" rel="next" data-background-image="https:&#x2F;&#x2F;tva3.sinaimg.cn&#x2F;mw690&#x2F;6833939bly1gipevo9j1jj20zk0m8e81.jpg" title="java中产生指定范围内的随机数">
+  <a href="/posts/817eab42/" itemprop="url" rel="next" data-background-image="https:&#x2F;&#x2F;tva1.sinaimg.cn&#x2F;mw690&#x2F;6833939bly1gipexoj0moj20zk0m8kgu.jpg" title="java中产生指定范围内的随机数">
   <span class="type">Next Post</span>
   <span class="category"><i class="ic i-flag"></i> Tools</span>
   <h3>java中产生指定范围内的随机数</h3>
@@ -308,7 +306,7 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
   <div class="panels">
     <div class="inner">
       <div class="contents panel pjax" data-title="Contents">
-          <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E8%B6%85%E7%BA%A7%E5%A5%BD%E7%94%A8%E7%9A%84StringJoiner"><span class="toc-number">1.</span> <span class="toc-text">超级好用的StringJoiner</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#StringJoiner%E7%B1%BB%E8%AF%A6%E8%A7%A3"><span class="toc-number">1.1.</span> <span class="toc-text">StringJoiner类详解</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%8F%82%E6%95%B0"><span class="toc-number">1.1.1.</span> <span class="toc-text">参数</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%9E%84%E9%80%A0%E5%99%A8"><span class="toc-number">1.1.2.</span> <span class="toc-text">构造器</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%96%B9%E6%B3%95"><span class="toc-number">1.1.3.</span> <span class="toc-text">方法</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%80%BB%E7%BB%93"><span class="toc-number">1.2.</span> <span class="toc-text">总结</span></a></li></ol></li></ol>
+          <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E8%B6%85%E7%BA%A7%E5%A5%BD%E7%94%A8%E7%9A%84stringjoiner"><span class="toc-number">1.</span> <span class="toc-text"> 超级好用的 StringJoiner</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#stringjoiner%E7%B1%BB%E8%AF%A6%E8%A7%A3"><span class="toc-number">1.1.</span> <span class="toc-text">  StringJoiner  类详解</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%8F%82%E6%95%B0"><span class="toc-number">1.1.1.</span> <span class="toc-text"> 参数</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%9E%84%E9%80%A0%E5%99%A8"><span class="toc-number">1.1.2.</span> <span class="toc-text"> 构造器</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%96%B9%E6%B3%95"><span class="toc-number">1.1.3.</span> <span class="toc-text"> 方法</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%80%BB%E7%BB%93"><span class="toc-number">1.2.</span> <span class="toc-text"> 总结</span></a></li></ol></li></ol>
       </div>
       <div class="related panel pjax" data-title="Related">
         <ul>
@@ -326,19 +324,19 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
 <nav class="state">
     <div class="item posts">
       <a href="/archives/">
-        <span class="count">135</span>
+        <span class="count">136</span>
         <span class="name">posts</span>
       </a>
     </div>
     <div class="item categories">
       <a href="/categories/">
-        <span class="count">70</span>
+        <span class="count">71</span>
         <span class="name">categories</span>
       </a>
     </div>
     <div class="item tags">
       <a href="/tags/">
-        <span class="count">99</span>
+        <span class="count">101</span>
         <span class="name">tags</span>
       </a>
     </div>
@@ -417,10 +415,20 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
   <li class="item">
     
 <div class="breadcrumb">
-<a href="/categories/LeetCode/" title="In LeetCode">LeetCode</a>
+<a href="/categories/Hexo/" title="In Hexo">Hexo</a>
 </div>
 
-    <span><a href="/posts/4491edd3/" title="LeetCode07_整数反转">LeetCode07_整数反转</a></span>
+    <span><a href="/posts/5c2529f6/" title="Hexo中添加动态2d二次元人物模型">Hexo中添加动态2d二次元人物模型</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/Java%E9%9D%A2%E8%AF%95/" title="In Java面试">Java面试</a>
+</div>
+
+    <span><a href="/posts/3b6bfba3/" title="如何保证接口的幂等性">如何保证接口的幂等性</a></span>
   </li>
 
       
@@ -429,7 +437,21 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
 <div class="breadcrumb">
 </div>
 
-    <span><a href="/posts/823298d2/" title="VsCode 如何Debug Shell">VsCode 如何Debug Shell</a></span>
+    <span><a href="/posts/4da9c93/" title="Web-based design and analysis tools for CRISPR base editing 文献阅读">Web-based design and analysis tools for CRISPR base editing 文献阅读</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/Java%E9%9D%A2%E8%AF%95/" title="In Java面试">Java面试</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/Java%E9%9D%A2%E8%AF%95/%E9%80%89%E6%8B%A9%E6%8E%92%E5%BA%8F/" title="In 选择排序">选择排序</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/Java%E9%9D%A2%E8%AF%95/%E9%80%89%E6%8B%A9%E6%8E%92%E5%BA%8F/%E7%AE%97%E6%B3%95/" title="In 算法">算法</a>
+</div>
+
+    <span><a href="/posts/43d00a99/" title="选择排序">选择排序</a></span>
   </li>
 
       
@@ -437,58 +459,23 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
     
 <div class="breadcrumb">
 <a href="/categories/Java/" title="In Java">Java</a>
-</div>
-
-    <span><a href="/posts/7a29d22a/" title="Java关于时间的轮子">Java关于时间的轮子</a></span>
-  </li>
-
-      
-  <li class="item">
-    
-<div class="breadcrumb">
-<a href="/categories/DDD/" title="In DDD">DDD</a>
-</div>
-
-    <span><a href="/posts/3fec5852/" title="DDD领域驱动设计">DDD领域驱动设计</a></span>
-  </li>
-
-      
-  <li class="item">
-    
-<div class="breadcrumb">
-</div>
-
-    <span><a href="/posts/7874a051/" title="Nginx踩坑之解决前后端跨域">Nginx踩坑之解决前后端跨域</a></span>
-  </li>
-
-      
-  <li class="item">
-    
-<div class="breadcrumb">
-</div>
-
-    <span><a href="/posts/4a17b156/" title="Hello World">Hello World</a></span>
-  </li>
-
-      
-  <li class="item">
-    
-<div class="breadcrumb">
-<a href="/categories/%E5%89%8D%E7%AB%AF/" title="In 前端">前端</a>
 <i class="ic i-angle-right"></i>
-<a href="/categories/%E5%89%8D%E7%AB%AF/Vue/" title="In Vue">Vue</a>
+<a href="/categories/Java/Tools/" title="In Tools">Tools</a>
 </div>
 
-    <span><a href="/posts/8408ed11/" title="Vue-Cli介绍以及使用">Vue-Cli介绍以及使用</a></span>
+    <span><a href="/posts/b246d3ce/" title="Java自带的好用的工具类">Java自带的好用的工具类</a></span>
   </li>
 
       
   <li class="item">
     
 <div class="breadcrumb">
+<a href="/categories/Java/" title="In Java">Java</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/Java/SpringBoot/" title="In SpringBoot">SpringBoot</a>
 </div>
 
-    <span><a href="/posts/afe5178f/" title="关于设置git以及npm代理">关于设置git以及npm代理</a></span>
+    <span><a href="/posts/a3dfcd98/" title="SpringBoot中常见的几种解决跨域的方式">SpringBoot中常见的几种解决跨域的方式</a></span>
   </li>
 
       
@@ -497,24 +484,44 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
 <div class="breadcrumb">
 <a href="/categories/Java%E9%9D%A2%E8%AF%95/" title="In Java面试">Java面试</a>
 <i class="ic i-angle-right"></i>
-<a href="/categories/Java%E9%9D%A2%E8%AF%95/%E7%AE%97%E6%B3%95/" title="In 算法">算法</a>
+<a href="/categories/Java%E9%9D%A2%E8%AF%95/HashMap/" title="In HashMap">HashMap</a>
 </div>
 
-    <span><a href="/posts/b9b9f7e7/" title="二叉树遍历">二叉树遍历</a></span>
+    <span><a href="/posts/52d9f7d3/" title="Java面试必问--HashMap的底层">Java面试必问--HashMap的底层</a></span>
   </li>
 
       
   <li class="item">
     
 <div class="breadcrumb">
-<a href="/categories/Java%E9%9D%A2%E8%AF%95/" title="In Java面试">Java面试</a>
+<a href="/categories/Java/" title="In Java">Java</a>
 <i class="ic i-angle-right"></i>
-<a href="/categories/Java%E9%9D%A2%E8%AF%95/%E7%9B%B4%E6%8E%A5%E6%8F%92%E5%85%A5%E6%8E%92%E5%BA%8F/" title="In 直接插入排序">直接插入排序</a>
+<a href="/categories/Java/Mybatis/" title="In Mybatis">Mybatis</a>
 <i class="ic i-angle-right"></i>
-<a href="/categories/Java%E9%9D%A2%E8%AF%95/%E7%9B%B4%E6%8E%A5%E6%8F%92%E5%85%A5%E6%8E%92%E5%BA%8F/%E7%AE%97%E6%B3%95/" title="In 算法">算法</a>
+<a href="/categories/Java/Mybatis/SpringBoot/" title="In SpringBoot">SpringBoot</a>
 </div>
 
-    <span><a href="/posts/2b06d603/" title="直接插入排序">直接插入排序</a></span>
+    <span><a href="/posts/c112412d/" title="Mybatis封装成Map结果">Mybatis封装成Map结果</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/%E6%95%B0%E6%8D%AE%E5%BA%93/" title="In 数据库">数据库</a>
+</div>
+
+    <span><a href="/posts/377b6f7d/" title="关于mysql中对Json类型字段进行筛选查询">关于mysql中对Json类型字段进行筛选查询</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/%E6%95%B0%E6%8D%AE%E5%BA%93/" title="In 数据库">数据库</a>
+</div>
+
+    <span><a href="/posts/388f5c14/" title="mysql日期加减">mysql日期加减</a></span>
   </li>
 
   </ul>
@@ -539,13 +546,13 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
     <span class="post-meta-item-icon">
       <i class="ic i-chart-area"></i>
     </span>
-    <span title="Symbols count total">558k words</span>
+    <span title="Symbols count total">561k words</span>
 
     <span class="post-meta-divider">|</span>
     <span class="post-meta-item-icon">
       <i class="ic i-coffee"></i>
     </span>
-    <span title="Reading time total">8:27</span>
+    <span title="Reading time total">8:30</span>
   </div>
 </div>
 

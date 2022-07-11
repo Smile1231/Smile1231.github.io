@@ -7,52 +7,54 @@
         <language>en</language>
         <pubDate>Wed, 17 Nov 2021 09:32:54 +0800</pubDate>
         <lastBuildDate>Wed, 17 Nov 2021 09:32:54 +0800</lastBuildDate>
-        <category>SAP</category>
-        <category>生物信息</category>
-        <category>基因编辑</category>
         <category>Java</category>
-        <category>Corn</category>
         <category>Cache</category>
         <category>Cookie</category>
         <category>Session</category>
         <category>Java面试</category>
+        <category>SAP</category>
+        <category>Corn</category>
+        <category>生物信息</category>
+        <category>基因编辑</category>
+        <category>前端</category>
+        <category>Css</category>
         <category>Docker</category>
         <category>DDD</category>
         <category>领域驱动设计</category>
+        <category>FastJson</category>
         <category>blog</category>
         <category>hexo</category>
         <category>next</category>
-        <category>前端</category>
-        <category>Css</category>
-        <category>JavaScript</category>
-        <category>Html</category>
-        <category>FastJson</category>
         <category>DisPlay属性</category>
         <category>IDEA</category>
         <category>SpringBoot</category>
+        <category>JavaScript</category>
+        <category>Html</category>
         <category>函数式接口</category>
-        <category>Jvm</category>
         <category>Assert</category>
         <category>map</category>
         <category>Stream流</category>
+        <category>Jvm</category>
         <category>java</category>
         <category>calender</category>
+        <category>Springboot</category>
         <category>LeetCode</category>
         <category>算法</category>
         <category>递归</category>
+        <category>Linux</category>
         <category>Mybatis</category>
         <category>分页查询</category>
-        <category>Linux</category>
-        <category>Springboot</category>
         <category>模糊查询</category>
-        <category>Nginx</category>
-        <category>Spring</category>
-        <category>SrpingBoot</category>
         <category>文件上传</category>
+        <category>SrpingBoot</category>
+        <category>Spring</category>
         <category>事务</category>
-        <category>master</category>
         <category>TypeScript</category>
         <category>WebPack</category>
+        <category>Nginx</category>
+        <category>master</category>
+        <category>Jenkins</category>
+        <category>Groovy</category>
         <category>UML</category>
         <category>Ubuntu</category>
         <category>Mysql</category>
@@ -67,35 +69,35 @@
         <category>ubuntu</category>
         <category>虚拟机</category>
         <category>二分查找</category>
-        <category>Hadoop</category>
         <category>数据挖掘</category>
+        <category>操作系统</category>
         <category>EasyExcel</category>
         <category>node</category>
-        <category>JVM</category>
-        <category>操作系统</category>
+        <category>Hadoop</category>
         <category>Yaml</category>
-        <category>Hexo</category>
         <category>junit</category>
+        <category>JVM</category>
+        <category>Hexo</category>
         <category>数据库</category>
-        <category>Mysql事务</category>
-        <category>git,npm,node</category>
-        <category>冒泡排序</category>
         <category>Git</category>
+        <category>Mysql事务</category>
+        <category>冒泡排序</category>
+        <category>git,npm,node</category>
         <category>动态规划</category>
         <category>堆排序</category>
-        <category>幂等性</category>
-        <category>多线程</category>
         <category>Google</category>
+        <category>幂等性</category>
         <category>流</category>
         <category>归并排序</category>
-        <category>正则表达式</category>
         <category>快速排序</category>
+        <category>多线程</category>
         <category>直接插入排序</category>
+        <category>正则表达式</category>
+        <category>Spring事务</category>
+        <category>选择排序</category>
         <category>Java 面试</category>
         <category>数据结构</category>
         <category>阻塞队列</category>
-        <category>选择排序</category>
-        <category>Spring事务</category>
         <category>JDK</category>
         <category>动态代理</category>
         <category>Date</category>
@@ -112,15 +114,13 @@
             <link>https://smile1231.github.io/posts/3eca6246/</link>
             <category>node</category>
             <pubDate>Wed, 17 Nov 2021 09:32:54 +0800</pubDate>
-            <description><![CDATA[ &lt;p&gt;由于本人是做后端的,最近有用到前端的一些东西,由于安装了&lt;code&gt;node&lt;/code&gt;之后,&lt;code&gt;npm&lt;/code&gt;是自带的,最近在,拉取前端的&lt;code&gt;web&lt;/code&gt;项目之后,使用&lt;code&gt;npm install&lt;/code&gt;之后,老是会报一个&lt;code&gt;node-sass&lt;/code&gt;的错误,错误里面还夹杂了关于&lt;code&gt;python&lt;/code&gt;的错误(也可能因为我之前安装了&lt;code&gt;anoconda&lt;/code&gt;的原因,虽然卸载了,但还是报这样的错误)&lt;/p&gt;
+            <description><![CDATA[ &lt;p&gt;由于本人是做后端的，最近有用到前端的一些东西，由于安装了 &lt;code&gt;node&lt;/code&gt;  之后， &lt;code&gt;npm&lt;/code&gt;  是自带的，最近在，拉取前端的 &lt;code&gt;web&lt;/code&gt;  项目之后，使用 &lt;code&gt;npm install&lt;/code&gt;  之后，老是会报一个 &lt;code&gt;node-sass&lt;/code&gt;  的错误，错误里面还夹杂了关于 &lt;code&gt;python&lt;/code&gt;  的错误 (也可能因为我之前安装了 &lt;code&gt;anoconda&lt;/code&gt;  的原因，虽然卸载了，但还是报这样的错误)&lt;/p&gt;
 &lt;img data-src=&#34;/posts/3eca6246/2021-11-17-10-21-32.png&#34; class=&#34;&#34;&gt;
-
-&lt;h2 id=&#34;解决方案&#34;&gt;&lt;a href=&#34;#解决方案&#34; class=&#34;headerlink&#34; title=&#34;解决方案&#34;&gt;&lt;/a&gt;解决方案&lt;/h2&gt;&lt;span id=&#34;more&#34;&gt;&lt;/span&gt;
-
-&lt;p&gt;在网上找了很多解决方案,最后也是自己拼拼凑凑解决了,自己使用的&lt;code&gt;VSCODE&lt;/code&gt;编译器,打开终端依次输入以下:&lt;/p&gt;
+&lt;h2 id=&#34;解决方案&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#解决方案&#34;&gt;#&lt;/a&gt; 解决方案&lt;/h2&gt;
+&lt;span id=&#34;more&#34;&gt;&lt;/span&gt;
+&lt;p&gt;在网上找了很多解决方案，最后也是自己拼拼凑凑解决了，自己使用的 &lt;code&gt;VSCODE&lt;/code&gt;  编译器，打开终端依次输入以下:&lt;/p&gt;
 &lt;figure class=&#34;highlight plaintext&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;npm install -g node-gyp&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;npm install --global --production windows-build-tools&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;npm install node-sass@latest //安装最新的node-sass&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-
-&lt;p&gt;然后应该就不会报错啦!&lt;/p&gt;
+&lt;p&gt;然后应该就不会报错啦！&lt;/p&gt;
  ]]></description>
         </item>
     </channel>

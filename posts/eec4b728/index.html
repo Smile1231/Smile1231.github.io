@@ -117,12 +117,12 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
       </div>
       <div id="imgs" class="pjax">
         <ul>
-          <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1gipewkhf1zj20zk0m81kx.jpg"></li>
-          <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1gicitht3xtj20zk0m8k5v.jpg"></li>
-          <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1gipeyvx1d4j20zk0m8hdt.jpg"></li>
-          <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1gipexbei4hj20zk0m8npd.jpg"></li>
-          <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1gipesng5oej20zk0m87d4.jpg"></li>
-          <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1giph4fomxoj20zk0m8axp.jpg"></li>
+          <li class="item" data-background-image="https://tva1.sinaimg.cn/large/6833939bly1gipexbei4hj20zk0m8npd.jpg"></li>
+          <li class="item" data-background-image="https://tva1.sinaimg.cn/large/6833939bly1giclx6phq6j20zk0m8e36.jpg"></li>
+          <li class="item" data-background-image="https://tva1.sinaimg.cn/large/6833939bly1giclh0m9pdj20zk0m8hdt.jpg"></li>
+          <li class="item" data-background-image="https://tva1.sinaimg.cn/large/6833939bly1gicljitigmj20zk0m87fp.jpg"></li>
+          <li class="item" data-background-image="https://tva1.sinaimg.cn/large/6833939bly1giclfw2t96j20zk0m8x6p.jpg"></li>
+          <li class="item" data-background-image="https://tva1.sinaimg.cn/large/6833939bly1giclga70tsj20zk0m84mr.jpg"></li>
         </ul>
       </div>
     </header>
@@ -171,37 +171,36 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
   <div class="body md" itemprop="articleBody">
     
 
-    <h1 id="SpringBoot中如何优雅的使用多线程"><a href="#SpringBoot中如何优雅的使用多线程" class="headerlink" title="SpringBoot中如何优雅的使用多线程"></a><code>SpringBoot</code>中如何优雅的使用多线程</h1><p>在 <code>SpringBoot</code> 应用中，经常会遇到在一个接口中，同时做事情1，事情2，事情3，如果同步执行的话，则本次接口时间取决于事情1 2 3执行时间之和；如果三件事同时执行，则本次接口时间取决于事情1 2 3执行时间最长的那个，合理使用多线程，可以大大缩短接口时间。那么在 <code>SpringBoot</code> 应用中如何优雅的使用多线程呢？</p>
-<p><code>Don&#39;t bb, show me code.</code></p>
-<h2 id="快速使用"><a href="#快速使用" class="headerlink" title="快速使用"></a><strong>快速使用</strong></h2><span id="more"></span>
-
-<p><code>SpringBoot</code>应用中需要添加<code>@EnableAsync</code>注解，来开启异步调用，一般还会配置一个线程池，异步的方法交给特定的线程池完成，如下：</p>
+    <h1 id="springboot中如何优雅的使用多线程"><a class="markdownIt-Anchor" href="#springboot中如何优雅的使用多线程">#</a>  <code>SpringBoot</code>  中如何优雅的使用多线程</h1>
+<p>在  <code>SpringBoot</code>  应用中，经常会遇到在一个接口中，同时做事情 1，事情 2，事情 3，如果同步执行的话，则本次接口时间取决于事情 1 2 3 执行时间之和；如果三件事同时执行，则本次接口时间取决于事情 1 2 3 执行时间最长的那个，合理使用多线程，可以大大缩短接口时间。那么在  <code>SpringBoot</code>  应用中如何优雅的使用多线程呢？</p>
+<p><code>Don't bb, show me code.</code></p>
+<h2 id="快速使用"><a class="markdownIt-Anchor" href="#快速使用">#</a> <strong>快速使用</strong></h2>
+<span id="more"></span>
+<p><code>SpringBoot</code>  应用中需要添加 <code>@EnableAsync</code>  注解，来开启异步调用，一般还会配置一个线程池，异步的方法交给特定的线程池完成，如下：</p>
 <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">@Configuration</span></span><br><span class="line"><span class="meta">@EnableAsync</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">AsyncConfiguration</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">    <span class="meta">@Bean(&quot;doSomethingExecutor&quot;)</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> Executor <span class="title">doSomethingExecutor</span><span class="params">()</span> </span>&#123;</span><br><span class="line">        ThreadPoolTaskExecutor executor = <span class="keyword">new</span> ThreadPoolTaskExecutor();</span><br><span class="line">        <span class="comment">// 核心线程数：线程池创建时候初始化的线程数</span></span><br><span class="line">        executor.setCorePoolSize(<span class="number">10</span>);</span><br><span class="line">        <span class="comment">// 最大线程数：线程池最大的线程数，只有在缓冲队列满了之后才会申请超过核心线程数的线程</span></span><br><span class="line">        executor.setMaxPoolSize(<span class="number">20</span>);</span><br><span class="line">        <span class="comment">// 缓冲队列：用来缓冲执行任务的队列</span></span><br><span class="line">        executor.setQueueCapacity(<span class="number">500</span>);</span><br><span class="line">        <span class="comment">// 允许线程的空闲时间60秒：当超过了核心线程之外的线程在空闲时间到达之后会被销毁</span></span><br><span class="line">        executor.setKeepAliveSeconds(<span class="number">60</span>);</span><br><span class="line">        <span class="comment">// 线程池名的前缀：设置好了之后可以方便我们定位处理任务所在的线程池</span></span><br><span class="line">        executor.setThreadNamePrefix(<span class="string">&quot;do-something-&quot;</span>);</span><br><span class="line">        <span class="comment">// 缓冲队列满了之后的拒绝策略：由调用线程处理（一般是主线程）</span></span><br><span class="line">        executor.setRejectedExecutionHandler(<span class="keyword">new</span> ThreadPoolExecutor.DiscardPolicy());</span><br><span class="line">        executor.initialize();</span><br><span class="line">        <span class="keyword">return</span> executor;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p>使用的方式非常简单，在需要异步的方法上加<code>@Async</code>注解</p>
+<p>使用的方式非常简单，在需要异步的方法上加 <code>@Async</code>  注解</p>
 <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">@RestController</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">AsyncController</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">    <span class="meta">@Autowired</span></span><br><span class="line">    <span class="keyword">private</span> AsyncService asyncService;</span><br><span class="line"></span><br><span class="line">    <span class="meta">@GetMapping(&quot;/open/something&quot;)</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> String <span class="title">something</span><span class="params">()</span> </span>&#123;</span><br><span class="line">        <span class="keyword">int</span> count = <span class="number">10</span>;</span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; count; i++) &#123;</span><br><span class="line">            asyncService.doSomething(<span class="string">&quot;index = &quot;</span> + i);</span><br><span class="line">        &#125;</span><br><span class="line">        lon</span><br><span class="line">        <span class="keyword">return</span> <span class="string">&quot;success&quot;</span>;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="meta">@Slf4j</span></span><br><span class="line"><span class="meta">@Service</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">AsyncService</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">    <span class="comment">// 指定使用beanname为doSomethingExecutor的线程池</span></span><br><span class="line">    <span class="meta">@Async(&quot;doSomethingExecutor&quot;)</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> String <span class="title">doSomething</span><span class="params">(String message)</span> </span>&#123;</span><br><span class="line">        log.info(<span class="string">&quot;do something, message=&#123;&#125;&quot;</span>, message);</span><br><span class="line">        <span class="keyword">try</span> &#123;</span><br><span class="line">            Thread.sleep(<span class="number">1000</span>);</span><br><span class="line">        &#125; <span class="keyword">catch</span> (InterruptedException e) &#123;</span><br><span class="line">            log.error(<span class="string">&quot;do something error: &quot;</span>, e);</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> message;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<p>访问：<code>127.0.0.1:8080/open/something</code>，日志如下</p>
+<p>访问： <code>127.0.0.1:8080/open/something</code> ，日志如下</p>
 <img data-src="/posts/eec4b728/2022-02-16-21-01-21.png" class="">
-
 <p>由此可见已经达到异步执行的效果了，并且使用到了咱们配置的线程池。</p>
-<h2 id="获取异步方法返回值"><a href="#获取异步方法返回值" class="headerlink" title="获取异步方法返回值"></a><strong>获取异步方法返回值</strong></h2><p>当异步方法有返回值时，如何获取异步方法执行的返回结果呢？这时需要异步调用的方法带有返回<code>CompletableFuture</code>。</p>
-<p><code>CompletableFuture</code>是对<code>Feature</code>的增强，<code>Feature</code>只能处理简单的异步任务，而<code>CompletableFuture</code>可以将多个异步任务进行复杂的组合。如下：</p>
+<h2 id="获取异步方法返回值"><a class="markdownIt-Anchor" href="#获取异步方法返回值">#</a> <strong>获取异步方法返回值</strong></h2>
+<p>当异步方法有返回值时，如何获取异步方法执行的返回结果呢？这时需要异步调用的方法带有返回 <code>CompletableFuture</code> 。</p>
+<p><code>CompletableFuture</code>  是对 <code>Feature</code>  的增强， <code>Feature</code>  只能处理简单的异步任务，而 <code>CompletableFuture</code>  可以将多个异步任务进行复杂的组合。如下：</p>
 <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">@RestController</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">AsyncController</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">    <span class="meta">@Autowired</span></span><br><span class="line">    <span class="keyword">private</span> AsyncService asyncService;</span><br><span class="line"></span><br><span class="line">    <span class="meta">@SneakyThrows</span></span><br><span class="line">    <span class="meta">@ApiOperation(&quot;异步 有返回值&quot;)</span></span><br><span class="line">    <span class="meta">@GetMapping(&quot;/open/somethings&quot;)</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> String <span class="title">somethings</span><span class="params">()</span> </span>&#123;</span><br><span class="line">        CompletableFuture&lt;String&gt; createOrder = asyncService.doSomething1(<span class="string">&quot;create order&quot;</span>);</span><br><span class="line">        CompletableFuture&lt;String&gt; reduceAccount = asyncService.doSomething2(<span class="string">&quot;reduce account&quot;</span>);</span><br><span class="line">        CompletableFuture&lt;String&gt; saveLog = asyncService.doSomething3(<span class="string">&quot;save log&quot;</span>);</span><br><span class="line">        </span><br><span class="line">        <span class="comment">// 等待所有任务都执行完</span></span><br><span class="line">        CompletableFuture.allOf(createOrder, reduceAccount, saveLog).join();</span><br><span class="line">        <span class="comment">// 获取每个任务的返回结果</span></span><br><span class="line">        String result = createOrder.get() + reduceAccount.get() + saveLog.get();</span><br><span class="line">        <span class="keyword">return</span> result;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="meta">@Slf4j</span></span><br><span class="line"><span class="meta">@Service</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">AsyncService</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">    <span class="meta">@Async(&quot;doSomethingExecutor&quot;)</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> CompletableFuture&lt;String&gt; <span class="title">doSomething1</span><span class="params">(String message)</span> <span class="keyword">throws</span> InterruptedException </span>&#123;</span><br><span class="line">        log.info(<span class="string">&quot;do something1: &#123;&#125;&quot;</span>, message);</span><br><span class="line">        Thread.sleep(<span class="number">1000</span>);</span><br><span class="line">        <span class="keyword">return</span> CompletableFuture.completedFuture(<span class="string">&quot;do something1: &quot;</span> + message);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="meta">@Async(&quot;doSomethingExecutor&quot;)</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> CompletableFuture&lt;String&gt; <span class="title">doSomething2</span><span class="params">(String message)</span> <span class="keyword">throws</span> InterruptedException </span>&#123;</span><br><span class="line">        log.info(<span class="string">&quot;do something2: &#123;&#125;&quot;</span>, message);</span><br><span class="line">        Thread.sleep(<span class="number">1000</span>);</span><br><span class="line">        <span class="keyword">return</span> CompletableFuture.completedFuture(<span class="string">&quot;; do something2: &quot;</span> + message);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="meta">@Async(&quot;doSomethingExecutor&quot;)</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> CompletableFuture&lt;String&gt; <span class="title">doSomething3</span><span class="params">(String message)</span> <span class="keyword">throws</span> InterruptedException </span>&#123;</span><br><span class="line">        log.info(<span class="string">&quot;do something3: &#123;&#125;&quot;</span>, message);</span><br><span class="line">        Thread.sleep(<span class="number">1000</span>);</span><br><span class="line">        <span class="keyword">return</span> CompletableFuture.completedFuture(<span class="string">&quot;; do something3: &quot;</span> + message);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <p>控制台上日志：</p>
 <img data-src="/posts/eec4b728/2022-02-16-21-01-47.png" class="">
-
-<h2 id="注意事项"><a href="#注意事项" class="headerlink" title="注意事项"></a><strong>注意事项</strong></h2><p><code>@Async</code>注解会在以下几个场景失效，也就是说明明使用了<code>@Async</code>注解，但就没有走多线程。</p>
+<h2 id="注意事项"><a class="markdownIt-Anchor" href="#注意事项">#</a> <strong>注意事项</strong></h2>
+<p><code>@Async</code>  注解会在以下几个场景失效，也就是说明明使用了 <code>@Async</code>  注解，但就没有走多线程。</p>
 <ul>
-<li>异步方法使用<code>static</code>关键词修饰；</li>
-<li>异步类不是一个<code>Spring</code>容器的<code>bean</code>（一般使用注解<code>@Component</code>和<code>@Service</code>，并且能被<code>Spring</code>扫描到）；</li>
-<li><code>SpringBoot</code>应用中没有添加<code>@EnableAsync</code>注解；</li>
-<li>在同一个类中，一个方法调用另外一个有<code>@Async</code>注解的方法，注解不会生效。原因是<code>@Async</code>注解的方法，是在代理类中执行的。</li>
+<li>异步方法使用 <code>static</code>  关键词修饰；</li>
+<li>异步类不是一个 <code>Spring</code>  容器的 <code>bean</code> （一般使用注解 <code>@Component</code>  和 <code>@Service</code> ，并且能被 <code>Spring</code>  扫描到）；</li>
+<li><code>SpringBoot</code>  应用中没有添加 <code>@EnableAsync</code>  注解；</li>
+<li>在同一个类中，一个方法调用另外一个有 <code>@Async</code>  注解的方法，注解不会生效。原因是 <code>@Async</code>  注解的方法，是在代理类中执行的。</li>
 </ul>
-<p>需要注意的是： 异步方法使用注解<code>@Async</code>的返回值只能为<code>void</code>或者<code>Future</code>及其子类，当返回结果为其他类型时，方法还是会异步执行，但是返回值都是<code>null</code>，部分源码如下：</p>
-<p><code>AsyncExecutionInterceptor</code>-<code>#invoke</code></p>
+<p>需要注意的是： 异步方法使用注解 <code>@Async</code>  的返回值只能为 <code>void</code>  或者 <code>Future</code>  及其子类，当返回结果为其他类型时，方法还是会异步执行，但是返回值都是 <code>null</code> ，部分源码如下：</p>
+<p><code>AsyncExecutionInterceptor</code> - <code>#invoke</code></p>
 <img data-src="/posts/eec4b728/2022-02-16-21-01-58.png" class="">
-
-<p>通过上边几个示例，<code>@Async</code>实际还是通过<code>Future</code>或<code>CompletableFuture</code>来异步执行的，<code>Spring</code>又封装了一下，让我们使用的更方便。</p>
+<p>通过上边几个示例， <code>@Async</code>  实际还是通过 <code>Future</code>  或 <code>CompletableFuture</code>  来异步执行的， <code>Spring</code>  又封装了一下，让我们使用的更方便。</p>
 
       <div class="tags">
           <a href="/tags/Java%E9%9D%A2%E8%AF%95/" rel="tag"><i class="ic i-tag"></i> Java面试</a>
@@ -257,7 +256,7 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
     <div class="item left">
       
 
-  <a href="/posts/89080a8e/" itemprop="url" rel="prev" data-background-image="https:&#x2F;&#x2F;tva3.sinaimg.cn&#x2F;mw690&#x2F;6833939bly1giph4lm9i7j20zk0m84qp.jpg" title="Spring Bean的生命周期">
+  <a href="/posts/89080a8e/" itemprop="url" rel="prev" data-background-image="https:&#x2F;&#x2F;tva1.sinaimg.cn&#x2F;mw690&#x2F;6833939bly1giclj61ylzj20zk0m8b29.jpg" title="Spring Bean的生命周期">
   <span class="type">Previous Post</span>
   <span class="category"><i class="ic i-flag"></i> Spring</span>
   <h3>Spring Bean的生命周期</h3>
@@ -267,7 +266,7 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
     <div class="item right">
       
 
-  <a href="/posts/20ac1950/" itemprop="url" rel="next" data-background-image="https:&#x2F;&#x2F;tva3.sinaimg.cn&#x2F;mw690&#x2F;6833939bly1gipeu7txpzj20zk0m81kx.jpg" title="SpringBoot文件上传下载">
+  <a href="/posts/20ac1950/" itemprop="url" rel="next" data-background-image="https:&#x2F;&#x2F;tva1.sinaimg.cn&#x2F;mw690&#x2F;6833939bly1giph47e9vtj20zk0m8x6l.jpg" title="SpringBoot文件上传下载">
   <span class="type">Next Post</span>
   <span class="category"><i class="ic i-flag"></i> SpringBoot</span>
   <h3>SpringBoot文件上传下载</h3>
@@ -289,7 +288,7 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
   <div class="panels">
     <div class="inner">
       <div class="contents panel pjax" data-title="Contents">
-          <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#SpringBoot%E4%B8%AD%E5%A6%82%E4%BD%95%E4%BC%98%E9%9B%85%E7%9A%84%E4%BD%BF%E7%94%A8%E5%A4%9A%E7%BA%BF%E7%A8%8B"><span class="toc-number">1.</span> <span class="toc-text">SpringBoot中如何优雅的使用多线程</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%BF%AB%E9%80%9F%E4%BD%BF%E7%94%A8"><span class="toc-number">1.1.</span> <span class="toc-text">快速使用</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%8E%B7%E5%8F%96%E5%BC%82%E6%AD%A5%E6%96%B9%E6%B3%95%E8%BF%94%E5%9B%9E%E5%80%BC"><span class="toc-number">1.2.</span> <span class="toc-text">获取异步方法返回值</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%B3%A8%E6%84%8F%E4%BA%8B%E9%A1%B9"><span class="toc-number">1.3.</span> <span class="toc-text">注意事项</span></a></li></ol></li></ol>
+          <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#springboot%E4%B8%AD%E5%A6%82%E4%BD%95%E4%BC%98%E9%9B%85%E7%9A%84%E4%BD%BF%E7%94%A8%E5%A4%9A%E7%BA%BF%E7%A8%8B"><span class="toc-number">1.</span> <span class="toc-text">  SpringBoot  中如何优雅的使用多线程</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%BF%AB%E9%80%9F%E4%BD%BF%E7%94%A8"><span class="toc-number">1.1.</span> <span class="toc-text"> 快速使用</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%8E%B7%E5%8F%96%E5%BC%82%E6%AD%A5%E6%96%B9%E6%B3%95%E8%BF%94%E5%9B%9E%E5%80%BC"><span class="toc-number">1.2.</span> <span class="toc-text"> 获取异步方法返回值</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%B3%A8%E6%84%8F%E4%BA%8B%E9%A1%B9"><span class="toc-number">1.3.</span> <span class="toc-text"> 注意事项</span></a></li></ol></li></ol>
       </div>
       <div class="related panel pjax" data-title="Related">
         <ul>
@@ -307,19 +306,19 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
 <nav class="state">
     <div class="item posts">
       <a href="/archives/">
-        <span class="count">135</span>
+        <span class="count">136</span>
         <span class="name">posts</span>
       </a>
     </div>
     <div class="item categories">
       <a href="/categories/">
-        <span class="count">70</span>
+        <span class="count">71</span>
         <span class="name">categories</span>
       </a>
     </div>
     <div class="item tags">
       <a href="/tags/">
-        <span class="count">99</span>
+        <span class="count">101</span>
         <span class="name">tags</span>
       </a>
     </div>
@@ -398,42 +397,19 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
   <li class="item">
     
 <div class="breadcrumb">
-<a href="/categories/Java%E9%9D%A2%E8%AF%95/" title="In Java面试">Java面试</a>
-<i class="ic i-angle-right"></i>
-<a href="/categories/Java%E9%9D%A2%E8%AF%95/Jvm/" title="In Jvm">Jvm</a>
 </div>
 
-    <span><a href="/posts/57681474/" title="JVM简单原理">JVM简单原理</a></span>
+    <span><a href="/posts/d0edc1ed/" title="Linux常用命令">Linux常用命令</a></span>
   </li>
 
       
   <li class="item">
     
 <div class="breadcrumb">
+<a href="/categories/Java/" title="In Java">Java</a>
 </div>
 
-    <span><a href="/posts/e694a882/" title="Windows下如何查看某个端口被谁占用">Windows下如何查看某个端口被谁占用</a></span>
-  </li>
-
-      
-  <li class="item">
-    
-<div class="breadcrumb">
-<a href="/categories/Java%E9%9D%A2%E8%AF%95/" title="In Java面试">Java面试</a>
-<i class="ic i-angle-right"></i>
-<a href="/categories/Java%E9%9D%A2%E8%AF%95/Mybatis/" title="In Mybatis">Mybatis</a>
-</div>
-
-    <span><a href="/posts/31d0fffb/" title="Mybatis中#号和$号的区别">Mybatis中#号和$号的区别</a></span>
-  </li>
-
-      
-  <li class="item">
-    
-<div class="breadcrumb">
-</div>
-
-    <span><a href="/posts/4da9c93/" title="Web-based design and analysis tools for CRISPR base editing 文献阅读">Web-based design and analysis tools for CRISPR base editing 文献阅读</a></span>
+    <span><a href="/posts/97604c34/" title="获取指定集合要求中的mapkey值并重新返回map">获取指定集合要求中的mapkey值并重新返回map</a></span>
   </li>
 
       
@@ -443,7 +419,31 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
 <a href="/categories/%E5%9F%BA%E5%9B%A0%E7%BC%96%E8%BE%91/" title="In 基因编辑">基因编辑</a>
 </div>
 
-    <span><a href="/posts/1f142005/" title="CRISPR-Cas9英文介绍">CRISPR-Cas9英文介绍</a></span>
+    <span><a href="/posts/b7653deb/" title="什么是CRISPR&#x2F;Cas9">什么是CRISPR/Cas9</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/Java%E9%9D%A2%E8%AF%95/" title="In Java面试">Java面试</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/Java%E9%9D%A2%E8%AF%95/%E6%95%B0%E6%8D%AE%E5%BA%93/" title="In 数据库">数据库</a>
+</div>
+
+    <span><a href="/posts/666b2933/" title="面试之旅关于数据库">面试之旅关于数据库</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/%E5%89%8D%E7%AB%AF/" title="In 前端">前端</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/%E5%89%8D%E7%AB%AF/Vue/" title="In Vue">Vue</a>
+</div>
+
+    <span><a href="/posts/b5314c4/" title="Vue2语法简介">Vue2语法简介</a></span>
   </li>
 
       
@@ -452,35 +452,17 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
 <div class="breadcrumb">
 </div>
 
-    <span><a href="/posts/3c59e6c8/" title="如何让自己的博客被Google以及百度收录">如何让自己的博客被Google以及百度收录</a></span>
+    <span><a href="/posts/5a74c6a6/" title="宝儿的大腿小腿围">宝儿的大腿小腿围</a></span>
   </li>
 
       
   <li class="item">
     
 <div class="breadcrumb">
+<a href="/categories/UML/" title="In UML">UML</a>
 </div>
 
-    <span><a href="/posts/159c6098/" title="阻塞队列">阻塞队列</a></span>
-  </li>
-
-      
-  <li class="item">
-    
-<div class="breadcrumb">
-</div>
-
-    <span><a href="/posts/56be7cc9/" title="关于Linux排查问题命令">关于Linux排查问题命令</a></span>
-  </li>
-
-      
-  <li class="item">
-    
-<div class="breadcrumb">
-<a href="/categories/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/" title="In 设计模式">设计模式</a>
-</div>
-
-    <span><a href="/posts/79c6d028/" title="23设计模式(更新中)">23设计模式(更新中)</a></span>
+    <span><a href="/posts/f610585/" title="UML:类图关系总结">UML:类图关系总结</a></span>
   </li>
 
       
@@ -488,11 +470,32 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
     
 <div class="breadcrumb">
 <a href="/categories/Hexo/" title="In Hexo">Hexo</a>
-<i class="ic i-angle-right"></i>
-<a href="/categories/Hexo/Tools/" title="In Tools">Tools</a>
 </div>
 
-    <span><a href="/posts/45934af9/" title="使用vscode书写hexo博客粘贴图片解决方案">使用vscode书写hexo博客粘贴图片解决方案</a></span>
+    <span><a href="/posts/5c2529f6/" title="Hexo中添加动态2d二次元人物模型">Hexo中添加动态2d二次元人物模型</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+</div>
+
+    <span><a href="/posts/8da68a98/" title="Java运行调用Shell脚本">Java运行调用Shell脚本</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/%E5%89%8D%E7%AB%AF/" title="In 前端">前端</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/%E5%89%8D%E7%AB%AF/JavaScript/" title="In JavaScript">JavaScript</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/%E5%89%8D%E7%AB%AF/JavaScript/Html/" title="In Html">Html</a>
+</div>
+
+    <span><a href="/posts/7b604068/" title="Html页面插入地图">Html页面插入地图</a></span>
   </li>
 
   </ul>
@@ -517,13 +520,13 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
     <span class="post-meta-item-icon">
       <i class="ic i-chart-area"></i>
     </span>
-    <span title="Symbols count total">558k words</span>
+    <span title="Symbols count total">561k words</span>
 
     <span class="post-meta-divider">|</span>
     <span class="post-meta-item-icon">
       <i class="ic i-coffee"></i>
     </span>
-    <span title="Reading time total">8:27</span>
+    <span title="Reading time total">8:30</span>
   </div>
 </div>
 

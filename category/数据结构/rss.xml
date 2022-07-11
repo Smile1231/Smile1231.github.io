@@ -7,52 +7,54 @@
         <language>en</language>
         <pubDate>Wed, 16 Feb 2022 21:13:39 +0800</pubDate>
         <lastBuildDate>Wed, 16 Feb 2022 21:13:39 +0800</lastBuildDate>
-        <category>SAP</category>
-        <category>生物信息</category>
-        <category>基因编辑</category>
         <category>Java</category>
-        <category>Corn</category>
         <category>Cache</category>
         <category>Cookie</category>
         <category>Session</category>
         <category>Java面试</category>
+        <category>SAP</category>
+        <category>Corn</category>
+        <category>生物信息</category>
+        <category>基因编辑</category>
+        <category>前端</category>
+        <category>Css</category>
         <category>Docker</category>
         <category>DDD</category>
         <category>领域驱动设计</category>
+        <category>FastJson</category>
         <category>blog</category>
         <category>hexo</category>
         <category>next</category>
-        <category>前端</category>
-        <category>Css</category>
-        <category>JavaScript</category>
-        <category>Html</category>
-        <category>FastJson</category>
         <category>DisPlay属性</category>
         <category>IDEA</category>
         <category>SpringBoot</category>
+        <category>JavaScript</category>
+        <category>Html</category>
         <category>函数式接口</category>
-        <category>Jvm</category>
         <category>Assert</category>
         <category>map</category>
         <category>Stream流</category>
+        <category>Jvm</category>
         <category>java</category>
         <category>calender</category>
+        <category>Springboot</category>
         <category>LeetCode</category>
         <category>算法</category>
         <category>递归</category>
+        <category>Linux</category>
         <category>Mybatis</category>
         <category>分页查询</category>
-        <category>Linux</category>
-        <category>Springboot</category>
         <category>模糊查询</category>
-        <category>Nginx</category>
-        <category>Spring</category>
-        <category>SrpingBoot</category>
         <category>文件上传</category>
+        <category>SrpingBoot</category>
+        <category>Spring</category>
         <category>事务</category>
-        <category>master</category>
         <category>TypeScript</category>
         <category>WebPack</category>
+        <category>Nginx</category>
+        <category>master</category>
+        <category>Jenkins</category>
+        <category>Groovy</category>
         <category>UML</category>
         <category>Ubuntu</category>
         <category>Mysql</category>
@@ -67,35 +69,35 @@
         <category>ubuntu</category>
         <category>虚拟机</category>
         <category>二分查找</category>
-        <category>Hadoop</category>
         <category>数据挖掘</category>
+        <category>操作系统</category>
         <category>EasyExcel</category>
         <category>node</category>
-        <category>JVM</category>
-        <category>操作系统</category>
+        <category>Hadoop</category>
         <category>Yaml</category>
-        <category>Hexo</category>
         <category>junit</category>
+        <category>JVM</category>
+        <category>Hexo</category>
         <category>数据库</category>
-        <category>Mysql事务</category>
-        <category>git,npm,node</category>
-        <category>冒泡排序</category>
         <category>Git</category>
+        <category>Mysql事务</category>
+        <category>冒泡排序</category>
+        <category>git,npm,node</category>
         <category>动态规划</category>
         <category>堆排序</category>
-        <category>幂等性</category>
-        <category>多线程</category>
         <category>Google</category>
+        <category>幂等性</category>
         <category>流</category>
         <category>归并排序</category>
-        <category>正则表达式</category>
         <category>快速排序</category>
+        <category>多线程</category>
         <category>直接插入排序</category>
+        <category>正则表达式</category>
+        <category>Spring事务</category>
+        <category>选择排序</category>
         <category>Java 面试</category>
         <category>数据结构</category>
         <category>阻塞队列</category>
-        <category>选择排序</category>
-        <category>Spring事务</category>
         <category>JDK</category>
         <category>动态代理</category>
         <category>Date</category>
@@ -113,85 +115,85 @@
             <category>Java面试</category>
             <category>数据结构</category>
             <pubDate>Wed, 16 Feb 2022 21:13:39 +0800</pubDate>
-            <description><![CDATA[ &lt;h1 id=&#34;面试之旅关于数据结构&#34;&gt;&lt;a href=&#34;#面试之旅关于数据结构&#34; class=&#34;headerlink&#34; title=&#34;面试之旅关于数据结构&#34;&gt;&lt;/a&gt;面试之旅关于数据结构&lt;/h1&gt;&lt;p&gt;&lt;strong&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cDovL2RhdGEuYmlhbmNoZW5nLm5ldC9pbnRyby8=&#34;&gt;数据结构详细讲解&lt;/span&gt;&lt;/strong&gt;&lt;/p&gt;
+            <description><![CDATA[ &lt;h1 id=&#34;面试之旅关于数据结构&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#面试之旅关于数据结构&#34;&gt;#&lt;/a&gt; 面试之旅关于数据结构&lt;/h1&gt;
+&lt;p&gt;&lt;strong&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cDovL2RhdGEuYmlhbmNoZW5nLm5ldC9pbnRyby8=&#34;&gt;数据结构详细讲解&lt;/span&gt;&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;数据结构是计算机存储、组织数据的方式。数据结构是指相互之间存在一种或多种特定关系的数据元素的集合。通常情况下，精心选择的数据结构可以带来更高的运行或者存储效率。数据结构往往同高效的检索算法和索引技术有关。&lt;/p&gt;
-&lt;h2 id=&#34;数据结构中的逻辑结构&#34;&gt;&lt;a href=&#34;#数据结构中的逻辑结构&#34; class=&#34;headerlink&#34; title=&#34;数据结构中的逻辑结构&#34;&gt;&lt;/a&gt;数据结构中的逻辑结构&lt;/h2&gt;&lt;blockquote&gt;
+&lt;h2 id=&#34;数据结构中的逻辑结构&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#数据结构中的逻辑结构&#34;&gt;#&lt;/a&gt; 数据结构中的逻辑结构&lt;/h2&gt;
+&lt;blockquote&gt;
 &lt;p&gt;集合结构&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;p&gt;集合结构的里面的元素关系是孤立的&lt;/p&gt;
 &lt;img data-src=&#34;/posts/9f9a6182/2022-02-16-21-37-01.png&#34; class=&#34;&#34;&gt;
-
 &lt;blockquote&gt;
 &lt;p&gt;线性结构&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;p&gt;线性结构里面的元素关系：一对一&lt;/p&gt;
 &lt;img data-src=&#34;/posts/9f9a6182/2022-02-16-21-37-13.png&#34; class=&#34;&#34;&gt;
-
-
 &lt;blockquote&gt;
 &lt;p&gt;树形结构&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;p&gt;树形结构里面的元素关系：一对多&lt;/p&gt;
 &lt;img data-src=&#34;/posts/9f9a6182/2022-02-16-21-37-28.png&#34; class=&#34;&#34;&gt;
-
-
 &lt;blockquote&gt;
 &lt;p&gt;图结构&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;p&gt;图结构里面的元素关系：多对多&lt;/p&gt;
 &lt;img data-src=&#34;/posts/9f9a6182/2022-02-16-21-37-47.png&#34; class=&#34;&#34;&gt;
-
-&lt;h2 id=&#34;数据结构的物理结构&#34;&gt;&lt;a href=&#34;#数据结构的物理结构&#34; class=&#34;headerlink&#34; title=&#34;数据结构的物理结构&#34;&gt;&lt;/a&gt;数据结构的物理结构&lt;/h2&gt;&lt;p&gt;物理结构:是指数据的逻辑结构在计算机中的存储形式。存储结构有两种：&lt;/p&gt;
+&lt;h2 id=&#34;数据结构的物理结构&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#数据结构的物理结构&#34;&gt;#&lt;/a&gt; 数据结构的物理结构&lt;/h2&gt;
+&lt;p&gt;物理结构：是指数据的逻辑结构在计算机中的存储形式。存储结构有两种：&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;顺序存储结构：&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;p&gt;顺序存储结构：是把数据元素存放在地址连续的存储单元里，其数据间的逻辑关系和物理关系是一致的。&lt;/p&gt;
 &lt;img data-src=&#34;/posts/9f9a6182/2022-02-16-21-37-57.png&#34; class=&#34;&#34;&gt;
-
 &lt;blockquote&gt;
 &lt;p&gt;链式存储结构&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;p&gt;链式存储结构：是把数据元素存放在任意的存储单元里，这组存储单元可以是连续的，也可以是不连续的。&lt;/p&gt;
 &lt;img data-src=&#34;/posts/9f9a6182/2022-02-16-21-38-04.png&#34; class=&#34;&#34;&gt;
-
-
-&lt;h2 id=&#34;常见的数据结构&#34;&gt;&lt;a href=&#34;#常见的数据结构&#34; class=&#34;headerlink&#34; title=&#34;常见的数据结构&#34;&gt;&lt;/a&gt;常见的数据结构&lt;/h2&gt;&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;数组（&lt;code&gt;Array&lt;/code&gt;）&lt;/p&gt;
+&lt;h2 id=&#34;常见的数据结构&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#常见的数据结构&#34;&gt;#&lt;/a&gt; 常见的数据结构&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;数组（ &lt;code&gt;Array&lt;/code&gt; ）&lt;/p&gt;
 &lt;/li&gt;
-&lt;li&gt;&lt;p&gt;堆栈（&lt;code&gt;Stack&lt;/code&gt;）&lt;/p&gt;
+&lt;li&gt;
+&lt;p&gt;堆栈（ &lt;code&gt;Stack&lt;/code&gt; ）&lt;/p&gt;
 &lt;/li&gt;
-&lt;li&gt;&lt;p&gt;队列（&lt;code&gt;Queue&lt;/code&gt;）&lt;/p&gt;
+&lt;li&gt;
+&lt;p&gt;队列（ &lt;code&gt;Queue&lt;/code&gt; ）&lt;/p&gt;
 &lt;/li&gt;
-&lt;li&gt;&lt;p&gt;链表（&lt;code&gt;Linked List&lt;/code&gt;）&lt;/p&gt;
+&lt;li&gt;
+&lt;p&gt;链表（ &lt;code&gt;Linked List&lt;/code&gt; ）&lt;/p&gt;
 &lt;/li&gt;
-&lt;li&gt;&lt;p&gt;树（&lt;code&gt;Tree&lt;/code&gt;）&lt;/p&gt;
+&lt;li&gt;
+&lt;p&gt;树（ &lt;code&gt;Tree&lt;/code&gt; ）&lt;/p&gt;
 &lt;/li&gt;
-&lt;li&gt;&lt;p&gt;图（&lt;code&gt;Graph&lt;/code&gt;）&lt;/p&gt;
+&lt;li&gt;
+&lt;p&gt;图（ &lt;code&gt;Graph&lt;/code&gt; ）&lt;/p&gt;
 &lt;/li&gt;
-&lt;li&gt;&lt;p&gt;堆（&lt;code&gt;Heap&lt;/code&gt;）&lt;/p&gt;
+&lt;li&gt;
+&lt;p&gt;堆（ &lt;code&gt;Heap&lt;/code&gt; ）&lt;/p&gt;
 &lt;/li&gt;
-&lt;li&gt;&lt;p&gt;散列表（&lt;code&gt;Hash&lt;/code&gt;）&lt;/p&gt;
+&lt;li&gt;
+&lt;p&gt;散列表（ &lt;code&gt;Hash&lt;/code&gt; ）&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2 id=&#34;链表&#34;&gt;&lt;a href=&#34;#链表&#34; class=&#34;headerlink&#34; title=&#34;链表&#34;&gt;&lt;/a&gt;链表&lt;/h2&gt;&lt;p&gt;链表是一种数据结构，和数组同级。比如，&lt;code&gt;Java&lt;/code&gt;中我们使用的&lt;code&gt;ArrayList&lt;/code&gt;，其实现原理是数组。而&lt;code&gt;LinkedList&lt;/code&gt;的实现原理就是链表了。链表在进行循环遍历时效率不高，但是插入和删除时优势明显。下面对单向链表做一个介绍。&lt;/p&gt;
-&lt;p&gt;单向链表是一种线性表，实际上是由节点（&lt;code&gt;Node&lt;/code&gt;）组成的，一个链表拥有不定数量的节点。其数据在内存中存储是不连续的，它存储的数据分散在内存中，每个结点只能也只有它能知道下一个结点的存储位置。由N各节点（&lt;code&gt;Node&lt;/code&gt;）组成单向链表，每一个&lt;code&gt;Node&lt;/code&gt;记录本&lt;code&gt;Node&lt;/code&gt;的数据及下一个&lt;code&gt;Node&lt;/code&gt;。向外暴露的只有一个头节点（&lt;code&gt;Head&lt;/code&gt;），我们对链表的所有操作，都是直接或者间接地通过其头节点来进行的。&lt;/p&gt;
+&lt;h2 id=&#34;链表&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#链表&#34;&gt;#&lt;/a&gt; 链表&lt;/h2&gt;
+&lt;p&gt;链表是一种数据结构，和数组同级。比如， &lt;code&gt;Java&lt;/code&gt;  中我们使用的 &lt;code&gt;ArrayList&lt;/code&gt; ，其实现原理是数组。而 &lt;code&gt;LinkedList&lt;/code&gt;  的实现原理就是链表了。链表在进行循环遍历时效率不高，但是插入和删除时优势明显。下面对单向链表做一个介绍。&lt;/p&gt;
+&lt;p&gt;单向链表是一种线性表，实际上是由节点（ &lt;code&gt;Node&lt;/code&gt; ）组成的，一个链表拥有不定数量的节点。其数据在内存中存储是不连续的，它存储的数据分散在内存中，每个结点只能也只有它能知道下一个结点的存储位置。由 N 各节点（ &lt;code&gt;Node&lt;/code&gt; ）组成单向链表，每一个 &lt;code&gt;Node&lt;/code&gt;  记录本 &lt;code&gt;Node&lt;/code&gt;  的数据及下一个 &lt;code&gt;Node&lt;/code&gt; 。向外暴露的只有一个头节点（ &lt;code&gt;Head&lt;/code&gt; ），我们对链表的所有操作，都是直接或者间接地通过其头节点来进行的。&lt;/p&gt;
 &lt;img data-src=&#34;/posts/9f9a6182/2022-02-16-21-38-15.png&#34; class=&#34;&#34;&gt;
-
-&lt;p&gt;上图中最左边的节点即为头结点（&lt;code&gt;Head&lt;/code&gt;），但是添加节点的顺序是从右向左的，添加的新节点会被作为新节点。最先添加的节点对下一节点的引用可以为空。引用是引用下一个节点而非下一个节点的对象。因为有着不断的引用，所以头节点就可以操作所有节点了。&lt;/p&gt;
+&lt;p&gt;上图中最左边的节点即为头结点（ &lt;code&gt;Head&lt;/code&gt; ），但是添加节点的顺序是从右向左的，添加的新节点会被作为新节点。最先添加的节点对下一节点的引用可以为空。引用是引用下一个节点而非下一个节点的对象。因为有着不断的引用，所以头节点就可以操作所有节点了。&lt;/p&gt;
 &lt;p&gt;下图描述了单向链表存储情况。存储是分散的，每一个节点只要记录下一节点，就把所有数据串了起来，形成了一个单向链表。&lt;/p&gt;
 &lt;img data-src=&#34;/posts/9f9a6182/2022-02-16-21-38-25.png&#34; class=&#34;&#34;&gt;
-
-&lt;p&gt;节点（&lt;code&gt;Node&lt;/code&gt;）是由一个需要储存的对象及对下一个节点的引用组成的。也就是说，节点拥有两个成员：储存的对象、对下一个节点的引用。下面图是具体的说明：&lt;/p&gt;
+&lt;p&gt;节点（ &lt;code&gt;Node&lt;/code&gt; ）是由一个需要储存的对象及对下一个节点的引用组成的。也就是说，节点拥有两个成员：储存的对象、对下一个节点的引用。下面图是具体的说明：&lt;/p&gt;
 &lt;img data-src=&#34;/posts/9f9a6182/2022-02-16-21-38-31.png&#34; class=&#34;&#34;&gt;
-
 &lt;blockquote&gt;
 &lt;p&gt;单链表实现&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;figure class=&#34;highlight java&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;13&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;14&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;15&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;16&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;17&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;18&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;19&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;20&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;21&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;22&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;23&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;24&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;25&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;26&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;27&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;28&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;29&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;30&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;31&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;32&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;33&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;34&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;35&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;36&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;37&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;38&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;39&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;40&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;41&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;42&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;43&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;44&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;45&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;46&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;47&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;48&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;49&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;50&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;51&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;52&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;53&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;54&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;55&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;56&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;57&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;58&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;59&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;60&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;61&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;62&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;63&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;64&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;65&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;66&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;67&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;68&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;69&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;70&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;71&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;72&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;73&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;74&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;75&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;76&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;77&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;78&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;79&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;80&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;81&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;82&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;83&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;84&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;85&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;86&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;87&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;88&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;89&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;90&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;91&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;92&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;93&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;94&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;95&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;96&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;97&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;98&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;99&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;100&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;101&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;102&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;103&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;104&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;105&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;106&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;107&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;108&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;109&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;110&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;111&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;112&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;113&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;114&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;115&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;116&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;117&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;118&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;119&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;120&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;121&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;122&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;123&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;124&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;125&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;126&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;127&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;package&lt;/span&gt; com.zjn.LinkAndQueue;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;/**&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt; * 自定义链表设计&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt; * &lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt; * &lt;span class=&#34;doctag&#34;&gt;@author&lt;/span&gt; zjn&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt; *&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt; */&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;public&lt;/span&gt; &lt;span class=&#34;class&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;class&lt;/span&gt; &lt;span class=&#34;title&#34;&gt;MyLink&lt;/span&gt; &lt;/span&gt;&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    Node head = &lt;span class=&#34;keyword&#34;&gt;null&lt;/span&gt;; &lt;span class=&#34;comment&#34;&gt;// 头节点&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;comment&#34;&gt;/**&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;     * 链表中的节点，data代表节点的值，next是指向下一个节点的引用&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;     * &lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;     * &lt;span class=&#34;doctag&#34;&gt;@author&lt;/span&gt; zjn&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;     *&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;     */&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;class&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;class&lt;/span&gt; &lt;span class=&#34;title&#34;&gt;Node&lt;/span&gt; &lt;/span&gt;&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        Node next = &lt;span class=&#34;keyword&#34;&gt;null&lt;/span&gt;;&lt;span class=&#34;comment&#34;&gt;// 节点的引用，指向下一个节点&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        &lt;span class=&#34;keyword&#34;&gt;int&lt;/span&gt; data;&lt;span class=&#34;comment&#34;&gt;// 节点的对象，即内容&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        &lt;span class=&#34;function&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;public&lt;/span&gt; &lt;span class=&#34;title&#34;&gt;Node&lt;/span&gt;&lt;span class=&#34;params&#34;&gt;(&lt;span class=&#34;keyword&#34;&gt;int&lt;/span&gt; data)&lt;/span&gt; &lt;/span&gt;&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;            &lt;span class=&#34;keyword&#34;&gt;this&lt;/span&gt;.data = data;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;comment&#34;&gt;/**&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;     * 向链表中插入数据&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;     * &lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;     * &lt;span class=&#34;doctag&#34;&gt;@param&lt;/span&gt; d&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;     */&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;function&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;public&lt;/span&gt; &lt;span class=&#34;keyword&#34;&gt;void&lt;/span&gt; &lt;span class=&#34;title&#34;&gt;addNode&lt;/span&gt;&lt;span class=&#34;params&#34;&gt;(&lt;span class=&#34;keyword&#34;&gt;int&lt;/span&gt; d)&lt;/span&gt; &lt;/span&gt;&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        Node newNode = &lt;span class=&#34;keyword&#34;&gt;new&lt;/span&gt; Node(d);&lt;span class=&#34;comment&#34;&gt;// 实例化一个节点&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        &lt;span class=&#34;keyword&#34;&gt;if&lt;/span&gt; (head == &lt;span class=&#34;keyword&#34;&gt;null&lt;/span&gt;) &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;            head = newNode;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;            &lt;span class=&#34;keyword&#34;&gt;return&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        Node tmp = head;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        &lt;span class=&#34;keyword&#34;&gt;while&lt;/span&gt; (tmp.next != &lt;span class=&#34;keyword&#34;&gt;null&lt;/span&gt;) &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;            tmp = tmp.next;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        tmp.next = newNode;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;comment&#34;&gt;/**&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;     * &lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;     * &lt;span class=&#34;doctag&#34;&gt;@param&lt;/span&gt; index:删除第index个节点&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;     * &lt;span class=&#34;doctag&#34;&gt;@return&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;     */&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;function&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;public&lt;/span&gt; &lt;span class=&#34;keyword&#34;&gt;boolean&lt;/span&gt; &lt;span class=&#34;title&#34;&gt;deleteNode&lt;/span&gt;&lt;span class=&#34;params&#34;&gt;(&lt;span class=&#34;keyword&#34;&gt;int&lt;/span&gt; index)&lt;/span&gt; &lt;/span&gt;&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        &lt;span class=&#34;keyword&#34;&gt;if&lt;/span&gt; (index &amp;lt; &lt;span class=&#34;number&#34;&gt;1&lt;/span&gt; || index &amp;gt; length()) &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;            &lt;span class=&#34;keyword&#34;&gt;return&lt;/span&gt; &lt;span class=&#34;keyword&#34;&gt;false&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        &lt;span class=&#34;keyword&#34;&gt;if&lt;/span&gt; (index == &lt;span class=&#34;number&#34;&gt;1&lt;/span&gt;) &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;            head = head.next;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;            &lt;span class=&#34;keyword&#34;&gt;return&lt;/span&gt; &lt;span class=&#34;keyword&#34;&gt;true&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        &lt;span class=&#34;keyword&#34;&gt;int&lt;/span&gt; i = &lt;span class=&#34;number&#34;&gt;1&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        Node preNode = head;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        Node curNode = preNode.next;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        &lt;span class=&#34;keyword&#34;&gt;while&lt;/span&gt; (curNode != &lt;span class=&#34;keyword&#34;&gt;null&lt;/span&gt;) &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;            &lt;span class=&#34;keyword&#34;&gt;if&lt;/span&gt; (i == index) &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;                preNode.next = curNode.next;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;                &lt;span class=&#34;keyword&#34;&gt;return&lt;/span&gt; &lt;span class=&#34;keyword&#34;&gt;true&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;            &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;            preNode = curNode;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;            curNode = curNode.next;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;            i++;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        &lt;span class=&#34;keyword&#34;&gt;return&lt;/span&gt; &lt;span class=&#34;keyword&#34;&gt;false&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;comment&#34;&gt;/**&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;     * &lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;     * &lt;span class=&#34;doctag&#34;&gt;@return&lt;/span&gt; 返回节点长度&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;     */&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;function&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;public&lt;/span&gt; &lt;span class=&#34;keyword&#34;&gt;int&lt;/span&gt; &lt;span class=&#34;title&#34;&gt;length&lt;/span&gt;&lt;span class=&#34;params&#34;&gt;()&lt;/span&gt; &lt;/span&gt;&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        &lt;span class=&#34;keyword&#34;&gt;int&lt;/span&gt; length = &lt;span class=&#34;number&#34;&gt;0&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        Node tmp = head;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        &lt;span class=&#34;keyword&#34;&gt;while&lt;/span&gt; (tmp != &lt;span class=&#34;keyword&#34;&gt;null&lt;/span&gt;) &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;            length++;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;            tmp = tmp.next;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        &lt;span class=&#34;keyword&#34;&gt;return&lt;/span&gt; length;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;comment&#34;&gt;/**&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;     * 在不知道头指针的情况下删除指定节点&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;     * &lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;     * &lt;span class=&#34;doctag&#34;&gt;@param&lt;/span&gt; n&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;     * &lt;span class=&#34;doctag&#34;&gt;@return&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;     */&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;function&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;public&lt;/span&gt; &lt;span class=&#34;keyword&#34;&gt;boolean&lt;/span&gt; &lt;span class=&#34;title&#34;&gt;deleteNode11&lt;/span&gt;&lt;span class=&#34;params&#34;&gt;(Node n)&lt;/span&gt; &lt;/span&gt;&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        &lt;span class=&#34;keyword&#34;&gt;if&lt;/span&gt; (n == &lt;span class=&#34;keyword&#34;&gt;null&lt;/span&gt; || n.next == &lt;span class=&#34;keyword&#34;&gt;null&lt;/span&gt;)&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;            &lt;span class=&#34;keyword&#34;&gt;return&lt;/span&gt; &lt;span class=&#34;keyword&#34;&gt;false&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        &lt;span class=&#34;keyword&#34;&gt;int&lt;/span&gt; tmp = n.data;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        n.data = n.next.data;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        n.next.data = tmp;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        n.next = n.next.next;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        System.out.println(&lt;span class=&#34;string&#34;&gt;&amp;quot;删除成功！&amp;quot;&lt;/span&gt;);&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        &lt;span class=&#34;keyword&#34;&gt;return&lt;/span&gt; &lt;span class=&#34;keyword&#34;&gt;true&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;function&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;public&lt;/span&gt; &lt;span class=&#34;keyword&#34;&gt;void&lt;/span&gt; &lt;span class=&#34;title&#34;&gt;printList&lt;/span&gt;&lt;span class=&#34;params&#34;&gt;()&lt;/span&gt; &lt;/span&gt;&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        Node tmp = head;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        &lt;span class=&#34;keyword&#34;&gt;while&lt;/span&gt; (tmp != &lt;span class=&#34;keyword&#34;&gt;null&lt;/span&gt;) &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;            System.out.println(tmp.data);&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;            tmp = tmp.next;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;function&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;public&lt;/span&gt; &lt;span class=&#34;keyword&#34;&gt;static&lt;/span&gt; &lt;span class=&#34;keyword&#34;&gt;void&lt;/span&gt; &lt;span class=&#34;title&#34;&gt;main&lt;/span&gt;&lt;span class=&#34;params&#34;&gt;(String[] args)&lt;/span&gt; &lt;/span&gt;&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        MyLink list = &lt;span class=&#34;keyword&#34;&gt;new&lt;/span&gt; MyLink();&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        list.addNode(&lt;span class=&#34;number&#34;&gt;5&lt;/span&gt;);&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        list.addNode(&lt;span class=&#34;number&#34;&gt;3&lt;/span&gt;);&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        list.addNode(&lt;span class=&#34;number&#34;&gt;1&lt;/span&gt;);&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        list.addNode(&lt;span class=&#34;number&#34;&gt;2&lt;/span&gt;);&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        list.addNode(&lt;span class=&#34;number&#34;&gt;55&lt;/span&gt;);&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        list.addNode(&lt;span class=&#34;number&#34;&gt;36&lt;/span&gt;);&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        System.out.println(&lt;span class=&#34;string&#34;&gt;&amp;quot;linkLength:&amp;quot;&lt;/span&gt; + list.length());&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        System.out.println(&lt;span class=&#34;string&#34;&gt;&amp;quot;head.data:&amp;quot;&lt;/span&gt; + list.head.data);&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        list.printList();&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        list.deleteNode(&lt;span class=&#34;number&#34;&gt;4&lt;/span&gt;);&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        System.out.println(&lt;span class=&#34;string&#34;&gt;&amp;quot;After deleteNode(4):&amp;quot;&lt;/span&gt;);&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        list.printList();&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-
-&lt;h2 id=&#34;树&#34;&gt;&lt;a href=&#34;#树&#34; class=&#34;headerlink&#34; title=&#34;树&#34;&gt;&lt;/a&gt;树&lt;/h2&gt;&lt;p&gt;非线性存储结构&lt;/p&gt;
+&lt;h2 id=&#34;树&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#树&#34;&gt;#&lt;/a&gt; 树&lt;/h2&gt;
+&lt;p&gt;非线性存储结构&lt;/p&gt;
 &lt;img data-src=&#34;/posts/9f9a6182/2022-02-16-21-38-44.png&#34; class=&#34;&#34;&gt;
-
 &lt;p&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cDovL2RhdGEuYmlhbmNoZW5nLm5ldC92aWV3LzIzLmh0bWw=&#34;&gt;树的详细讲解&lt;/span&gt;&lt;/p&gt;
  ]]></description>
         </item>

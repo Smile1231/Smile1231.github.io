@@ -74,7 +74,7 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
       <i class="ic i-pen"></i>
     </span>
     <span class="text">Symbols count in article</span>
-    <span>578</span>
+    <span>574</span>
     <span class="text">words</span>
   </span>
   <span class="item" title="Reading time">
@@ -115,12 +115,12 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
       </div>
       <div id="imgs" class="pjax">
         <ul>
-          <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1giclxfdlttj20zk0m8npd.jpg"></li>
-          <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1giclj61ylzj20zk0m8b29.jpg"></li>
-          <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1gicljitigmj20zk0m87fp.jpg"></li>
-          <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1gipeu1usa7j20zk0m8b29.jpg"></li>
-          <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1gicis081o9j20zk0m8dmr.jpg"></li>
-          <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1gipeyvx1d4j20zk0m8hdt.jpg"></li>
+          <li class="item" data-background-image="https://tva1.sinaimg.cn/large/6833939bly1gipexj2jgzj20zk0m8b09.jpg"></li>
+          <li class="item" data-background-image="https://tva1.sinaimg.cn/large/6833939bly1giclize41wj20zk0m87gk.jpg"></li>
+          <li class="item" data-background-image="https://tva1.sinaimg.cn/large/6833939bly1giclhnx9glj20zk0m8npd.jpg"></li>
+          <li class="item" data-background-image="https://tva1.sinaimg.cn/large/6833939bly1gipeuibk9fj20zk0m8ay2.jpg"></li>
+          <li class="item" data-background-image="https://tva1.sinaimg.cn/large/6833939bly1gicitspjpbj20zk0m81ky.jpg"></li>
+          <li class="item" data-background-image="https://tva1.sinaimg.cn/large/6833939bly1giclflwv2aj20zk0m84qp.jpg"></li>
         </ul>
       </div>
     </header>
@@ -170,17 +170,21 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
     
 
     <ol>
-<li><p><code>Math.random()</code>方法返回一个<code>[0.0 , 1.0)</code>的伪随机<code>double</code>类型的随机数</p>
+<li>
+<p><code>Math.random()</code>  方法返回一个 <code>[0.0 , 1.0)</code>  的伪随机 <code>double</code>  类型的随机数</p>
 </li>
-<li><p><code>[min,max]</code>范围内的数</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">int</span>    num = min + (<span class="keyword">int</span>)(Math.random() * (max-min));</span><br><span class="line"><span class="keyword">double</span> num = min + (Math.random() * (max-min));</span><br></pre></td></tr></table></figure>
-<span id="more"></span></li>
-<li><p>用<code>nextInt</code>方法生成区间范围内的随机整数</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">Random rand=<span class="keyword">new</span> Random();</span><br><span class="line">        <span class="keyword">int</span> n1=rand.nextInt(<span class="number">100</span>);<span class="comment">//返回值在范围[0,100) 即[0,99]</span></span><br><span class="line">        <span class="keyword">int</span> n2=rand.nextInt(<span class="number">100</span>)+<span class="number">1</span>;<span class="comment">//[1,100]内的随机整数</span></span><br><span class="line">        <span class="keyword">int</span> n3=rand.nextInt(<span class="number">80</span>)+<span class="number">10</span>;<span class="comment">//[10,89]内的随机整数</span></span><br><span class="line">        <span class="keyword">int</span> n4=rand.nextInt(<span class="number">27</span>)+<span class="number">82</span>;<span class="comment">//[82,108]内的随机整数</span></span><br></pre></td></tr></table></figure>
-<p>注意<code>rand.nextInt(n)</code>中的参数<code>n</code>代表的是生成随机整数的数量，与生成随机整数的范围无关。比如代码中的<code>n4</code>,整数取值为<code>[82,108]</code>,共<code>27</code>个数，加上后面的<code>82</code>表示区间最小值</p>
+<li>
+<p><code>[min,max]</code>  范围内的数</p>
 </li>
 </ol>
-<p>生成<code>[min,max]</code>范围内随机整数的通用公式为：**<code>n=rand.nextInt(max-min+1)+min。</code>**</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">int</span>    num = min + (<span class="keyword">int</span>)(Math.random() * (max-min));</span><br><span class="line"><span class="keyword">double</span> num = min + (Math.random() * (max-min));</span><br></pre></td></tr></table></figure>
+<span id="more"></span>
+<ol start="3">
+<li>用 <code>nextInt</code>  方法生成区间范围内的随机整数</li>
+</ol>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">Random rand=<span class="keyword">new</span> Random();</span><br><span class="line">        <span class="keyword">int</span> n1=rand.nextInt(<span class="number">100</span>);<span class="comment">//返回值在范围[0,100) 即[0,99]</span></span><br><span class="line">        <span class="keyword">int</span> n2=rand.nextInt(<span class="number">100</span>)+<span class="number">1</span>;<span class="comment">//[1,100]内的随机整数</span></span><br><span class="line">        <span class="keyword">int</span> n3=rand.nextInt(<span class="number">80</span>)+<span class="number">10</span>;<span class="comment">//[10,89]内的随机整数</span></span><br><span class="line">        <span class="keyword">int</span> n4=rand.nextInt(<span class="number">27</span>)+<span class="number">82</span>;<span class="comment">//[82,108]内的随机整数</span></span><br></pre></td></tr></table></figure>
+<p>注意 <code>rand.nextInt(n)</code>  中的参数 <code>n</code>  代表的是生成随机整数的数量，与生成随机整数的范围无关。比如代码中的 <code>n4</code> , 整数取值为 <code>[82,108]</code> , 共 <code>27</code>  个数，加上后面的 <code>82</code>  表示区间最小值</p>
+<p>生成 <code>[min,max]</code>  范围内随机整数的通用公式为：<strong> <code>n=rand.nextInt(max-min+1)+min。</code> </strong></p>
 <p>原文链接：<span class="exturl" data-url="aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dzal9qZXJyeTUyMS9hcnRpY2xlL2RldGFpbHMvMTA5NzM1ODAx">https://blog.csdn.net/wsj_jerry521/article/details/109735801</span></p>
 
   </div>
@@ -233,7 +237,7 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
     <div class="item left">
       
 
-  <a href="/posts/ba83fda/" itemprop="url" rel="prev" data-background-image="https:&#x2F;&#x2F;tva3.sinaimg.cn&#x2F;mw690&#x2F;6833939bly1giclxxcb6rj20zk0m8b29.jpg" title="超级好用的StringJoiner">
+  <a href="/posts/ba83fda/" itemprop="url" rel="prev" data-background-image="https:&#x2F;&#x2F;tva1.sinaimg.cn&#x2F;mw690&#x2F;6833939bly1giclx6phq6j20zk0m8e36.jpg" title="超级好用的StringJoiner">
   <span class="type">Previous Post</span>
   <span class="category"><i class="ic i-flag"></i> Tools</span>
   <h3>超级好用的StringJoiner</h3>
@@ -243,7 +247,7 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
     <div class="item right">
       
 
-  <a href="/posts/feb84842/" itemprop="url" rel="next" data-background-image="https:&#x2F;&#x2F;tva3.sinaimg.cn&#x2F;mw690&#x2F;6833939bly1gipeyonbf9j20zk0m8e81.jpg" title="Java面试必问--ArrayList的底层">
+  <a href="/posts/feb84842/" itemprop="url" rel="next" data-background-image="https:&#x2F;&#x2F;tva1.sinaimg.cn&#x2F;mw690&#x2F;6833939bly1giclil3m4ej20zk0m8tn8.jpg" title="Java面试必问--ArrayList的底层">
   <span class="type">Next Post</span>
   <span class="category"><i class="ic i-flag"></i> Java面试</span>
   <h3>Java面试必问--ArrayList的底层</h3>
@@ -282,19 +286,19 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
 <nav class="state">
     <div class="item posts">
       <a href="/archives/">
-        <span class="count">135</span>
+        <span class="count">136</span>
         <span class="name">posts</span>
       </a>
     </div>
     <div class="item categories">
       <a href="/categories/">
-        <span class="count">70</span>
+        <span class="count">71</span>
         <span class="name">categories</span>
       </a>
     </div>
     <div class="item tags">
       <a href="/tags/">
-        <span class="count">99</span>
+        <span class="count">101</span>
         <span class="name">tags</span>
       </a>
     </div>
@@ -373,36 +377,12 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
   <li class="item">
     
 <div class="breadcrumb">
-<a href="/categories/%E5%89%8D%E7%AB%AF/" title="In 前端">前端</a>
-<i class="ic i-angle-right"></i>
-<a href="/categories/%E5%89%8D%E7%AB%AF/JavaScript/" title="In JavaScript">JavaScript</a>
-<i class="ic i-angle-right"></i>
-<a href="/categories/%E5%89%8D%E7%AB%AF/JavaScript/Html/" title="In Html">Html</a>
-</div>
-
-    <span><a href="/posts/7b604068/" title="Html页面插入地图">Html页面插入地图</a></span>
-  </li>
-
-      
-  <li class="item">
-    
-<div class="breadcrumb">
 <a href="/categories/Java%E9%9D%A2%E8%AF%95/" title="In Java面试">Java面试</a>
 <i class="ic i-angle-right"></i>
-<a href="/categories/Java%E9%9D%A2%E8%AF%95/%E7%AE%97%E6%B3%95/" title="In 算法">算法</a>
+<a href="/categories/Java%E9%9D%A2%E8%AF%95/Spring/" title="In Spring">Spring</a>
 </div>
 
-    <span><a href="/posts/7474c898/" title="分治算法">分治算法</a></span>
-  </li>
-
-      
-  <li class="item">
-    
-<div class="breadcrumb">
-<a href="/categories/DDD/" title="In DDD">DDD</a>
-</div>
-
-    <span><a href="/posts/3fec5852/" title="DDD领域驱动设计">DDD领域驱动设计</a></span>
+    <span><a href="/posts/89080a8e/" title="Spring Bean的生命周期">Spring Bean的生命周期</a></span>
   </li>
 
       
@@ -411,17 +391,7 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
 <div class="breadcrumb">
 </div>
 
-    <span><a href="/posts/dfdc2005/" title="JDK动态代理原理剖析(简洁版)">JDK动态代理原理剖析(简洁版)</a></span>
-  </li>
-
-      
-  <li class="item">
-    
-<div class="breadcrumb">
-<a href="/categories/master/" title="In master">master</a>
-</div>
-
-    <span><a href="/posts/378107f2/" title="The Basic knowledge of Anaconda">The Basic knowledge of Anaconda</a></span>
+    <span><a href="/posts/11faeb76/" title="Docker指令以及部署">Docker指令以及部署</a></span>
   </li>
 
       
@@ -431,17 +401,53 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
 <a href="/categories/Java/" title="In Java">Java</a>
 </div>
 
-    <span><a href="/posts/e18abc1d/" title="关于YAML中List存放Map">关于YAML中List存放Map</a></span>
+    <span><a href="/posts/405fde88/" title="关于Exception的处理细节">关于Exception的处理细节</a></span>
   </li>
 
       
   <li class="item">
     
 <div class="breadcrumb">
-<a href="/categories/IDEA/" title="In IDEA">IDEA</a>
+<a href="/categories/SpringBoot/" title="In SpringBoot">SpringBoot</a>
 </div>
 
-    <span><a href="/posts/579bb697/" title="IDEA小图标含义">IDEA小图标含义</a></span>
+    <span><a href="/posts/67f40b37/" title="Spring Boot 获取服务IP地址和端口号">Spring Boot 获取服务IP地址和端口号</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/Java%E9%9D%A2%E8%AF%95/" title="In Java面试">Java面试</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/Java%E9%9D%A2%E8%AF%95/Mybatis/" title="In Mybatis">Mybatis</a>
+</div>
+
+    <span><a href="/posts/31d0fffb/" title="Mybatis中#号和$号的区别">Mybatis中#号和$号的区别</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/Java/" title="In Java">Java</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/Java/Stream/" title="In Stream">Stream</a>
+</div>
+
+    <span><a href="/posts/b1231c9f/" title="java stream中Collectors的用法">java stream中Collectors的用法</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/Java/" title="In Java">Java</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/Java/Java%E9%9D%A2%E8%AF%95/" title="In Java面试">Java面试</a>
+</div>
+
+    <span><a href="/posts/b42f0c87/" title="Cache、Cookie、Session、Token">Cache、Cookie、Session、Token</a></span>
   </li>
 
       
@@ -450,29 +456,34 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
 <div class="breadcrumb">
 <a href="/categories/%E5%89%8D%E7%AB%AF/" title="In 前端">前端</a>
 <i class="ic i-angle-right"></i>
-<a href="/categories/%E5%89%8D%E7%AB%AF/JavaScript/" title="In JavaScript">JavaScript</a>
+<a href="/categories/%E5%89%8D%E7%AB%AF/Css/" title="In Css">Css</a>
 </div>
 
-    <span><a href="/posts/4aa00b9a/" title="Js中的some、find、findindex、includes、filter的使用">Js中的some、find、findindex、includes、filter的使用</a></span>
+    <span><a href="/posts/2e6621e1/" title="DisPlay属性">DisPlay属性</a></span>
   </li>
 
       
   <li class="item">
     
 <div class="breadcrumb">
-<a href="/categories/%E6%95%B0%E6%8D%AE%E5%BA%93/" title="In 数据库">数据库</a>
+<a href="/categories/Ubuntu/" title="In Ubuntu">Ubuntu</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/Ubuntu/Mysql/" title="In Mysql">Mysql</a>
 </div>
 
-    <span><a href="/posts/388f5c14/" title="mysql日期加减">mysql日期加减</a></span>
+    <span><a href="/posts/31f95091/" title="Ubuntu中安装卸载Mysql数据库">Ubuntu中安装卸载Mysql数据库</a></span>
   </li>
 
       
   <li class="item">
     
 <div class="breadcrumb">
+<a href="/categories/SpringBoot/" title="In SpringBoot">SpringBoot</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/SpringBoot/Java/" title="In Java">Java</a>
 </div>
 
-    <span><a href="/posts/e694a882/" title="Windows下如何查看某个端口被谁占用">Windows下如何查看某个端口被谁占用</a></span>
+    <span><a href="/posts/f976ebe7/" title="SpringMvc中标准的后端接口格式">SpringMvc中标准的后端接口格式</a></span>
   </li>
 
   </ul>
@@ -497,13 +508,13 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
     <span class="post-meta-item-icon">
       <i class="ic i-chart-area"></i>
     </span>
-    <span title="Symbols count total">558k words</span>
+    <span title="Symbols count total">561k words</span>
 
     <span class="post-meta-divider">|</span>
     <span class="post-meta-item-icon">
       <i class="ic i-coffee"></i>
     </span>
-    <span title="Reading time total">8:27</span>
+    <span title="Reading time total">8:30</span>
   </div>
 </div>
 
