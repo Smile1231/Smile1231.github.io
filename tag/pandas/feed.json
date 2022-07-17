@@ -1,0 +1,21 @@
+{
+    "version": "https://jsonfeed.org/version/1",
+    "title": "JIN MAO 's Blog • All posts by \"pandas\" tag",
+    "description": "",
+    "home_page_url": "https://smile1231.github.io",
+    "items": [
+        {
+            "id": "https://smile1231.github.io/posts/1b930e38/",
+            "url": "https://smile1231.github.io/posts/1b930e38/",
+            "title": "Machine Learning essays",
+            "date_published": "2022-07-17T13:44:54.000Z",
+            "content_html": "<p>最近在看 <code>数据挖掘</code> 以及 <code>ML</code>  的课程</p>\n<p><span class=\"exturl\" data-url=\"aHR0cHM6Ly9kb2NzLmh3bC5jb29sL3B5dGhvbi8lRTYlOTUlQjAlRTYlOEQlQUUlRTYlOEMlOTYlRTYlOEUlOTgv\">数据挖掘资料</span></p>\n<h2 id=\"python中的head方法\"><a class=\"markdownIt-Anchor\" href=\"#python中的head方法\">#</a>  <code>python</code>  中的 <code>head</code>  方法</h2>\n<p><code>head()</code>  根据位置返回对象的前 <code>n</code>  行。 如果你的对象中包含正确的数据类型，则对于快速测试很有用。 此方法用于返回数据帧或序列的前 <code>n</code>  行 (默认值为 <code>5</code> )。  <code>n：</code> 它是指返回行数的整数值。</p>\n<h2 id=\"pandas交叉表\"><a class=\"markdownIt-Anchor\" href=\"#pandas交叉表\">#</a>  <code>pandas</code>  交叉表</h2>\n<p>交叉表是由列和行组成的双向表。 它也被称为数据透视表或多维表。 其最大的优势是能够构造、汇总及显示大量数据。 交叉表还可用于确定行变量与列变量之间是否存在关系。</p>\n<p><span class=\"exturl\" data-url=\"aHR0cHM6Ly9kb2NzLnRpYmNvLmNvbS9wdWIvc3BvdGZpcmVfd2ViX3BsYXllci82LjAuMC1ub3ZlbWJlci0yMDEzL3poLUNOL1dlYkhlbHAvR1VJRC0xRjY3QjJGMy0wNTZCLTQzMjQtQjJDQy0xNEQ3M0QzNzg2OTMuaHRtbA==\">参考链接</span></p>\n",
+            "tags": [
+                "Machine Learning",
+                "numpy",
+                "pandas",
+                "sklearn"
+            ]
+        }
+    ]
+}

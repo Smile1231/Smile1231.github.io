@@ -1,0 +1,136 @@
+<?xml version="1.0"?>
+<rss version="2.0">
+    <channel>
+        <title>JIN MAO &#39;s Blog • Posts by &#34;sklearn&#34; tag</title>
+        <link>https://smile1231.github.io</link>
+        <description></description>
+        <language>en</language>
+        <pubDate>Sun, 17 Jul 2022 21:44:54 +0800</pubDate>
+        <lastBuildDate>Sun, 17 Jul 2022 21:44:54 +0800</lastBuildDate>
+        <category>生物信息</category>
+        <category>基因编辑</category>
+        <category>SAP</category>
+        <category>Java</category>
+        <category>Cache</category>
+        <category>Cookie</category>
+        <category>Session</category>
+        <category>Java面试</category>
+        <category>Corn</category>
+        <category>前端</category>
+        <category>Css</category>
+        <category>DDD</category>
+        <category>领域驱动设计</category>
+        <category>DisPlay属性</category>
+        <category>blog</category>
+        <category>hexo</category>
+        <category>next</category>
+        <category>Docker</category>
+        <category>JavaScript</category>
+        <category>Html</category>
+        <category>SpringBoot</category>
+        <category>IDEA</category>
+        <category>FastJson</category>
+        <category>Jvm</category>
+        <category>函数式接口</category>
+        <category>Assert</category>
+        <category>Springboot</category>
+        <category>map</category>
+        <category>Stream流</category>
+        <category>java</category>
+        <category>calender</category>
+        <category>Python</category>
+        <category>Jupyter</category>
+        <category>Machine Learning</category>
+        <category>LeetCode</category>
+        <category>算法</category>
+        <category>递归</category>
+        <category>Mybatis</category>
+        <category>分页查询</category>
+        <category>Linux</category>
+        <category>模糊查询</category>
+        <category>numpy</category>
+        <category>pandas</category>
+        <category>sklearn</category>
+        <category>SrpingBoot</category>
+        <category>文件上传</category>
+        <category>Spring</category>
+        <category>事务</category>
+        <category>Nginx</category>
+        <category>TypeScript</category>
+        <category>WebPack</category>
+        <category>master</category>
+        <category>Jenkins</category>
+        <category>Groovy</category>
+        <category>UML</category>
+        <category>Ubuntu</category>
+        <category>Mysql</category>
+        <category>VsCode</category>
+        <category>Shell</category>
+        <category>VSCODE</category>
+        <category>快捷键</category>
+        <category>Vue</category>
+        <category>Stream</category>
+        <category>线程池</category>
+        <category>日期</category>
+        <category>操作系统</category>
+        <category>ubuntu</category>
+        <category>虚拟机</category>
+        <category>二分查找</category>
+        <category>数据挖掘</category>
+        <category>EasyExcel</category>
+        <category>node</category>
+        <category>Hadoop</category>
+        <category>JVM</category>
+        <category>Hexo</category>
+        <category>数据库</category>
+        <category>junit</category>
+        <category>Yaml</category>
+        <category>Git</category>
+        <category>Mysql事务</category>
+        <category>冒泡排序</category>
+        <category>git,npm,node</category>
+        <category>动态规划</category>
+        <category>堆排序</category>
+        <category>多线程</category>
+        <category>Google</category>
+        <category>幂等性</category>
+        <category>归并排序</category>
+        <category>快速排序</category>
+        <category>流</category>
+        <category>正则表达式</category>
+        <category>直接插入排序</category>
+        <category>选择排序</category>
+        <category>Java 面试</category>
+        <category>数据结构</category>
+        <category>阻塞队列</category>
+        <category>Spring事务</category>
+        <category>JDK</category>
+        <category>动态代理</category>
+        <category>Date</category>
+        <category>ArrayList</category>
+        <category>接口</category>
+        <category>SpringMvc</category>
+        <category>排序</category>
+        <category>执行计划</category>
+        <category>HashMap</category>
+        <category>设计模式</category>
+        <item>
+            <guid isPermalink="true">https://smile1231.github.io/posts/1b930e38/</guid>
+            <title>Machine Learning essays</title>
+            <link>https://smile1231.github.io/posts/1b930e38/</link>
+            <category>Machine Learning</category>
+            <category>numpy</category>
+            <category>pandas</category>
+            <category>sklearn</category>
+            <pubDate>Sun, 17 Jul 2022 21:44:54 +0800</pubDate>
+            <description><![CDATA[ &lt;p&gt;最近在看 &lt;code&gt;数据挖掘&lt;/code&gt; 以及 &lt;code&gt;ML&lt;/code&gt;  的课程&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9kb2NzLmh3bC5jb29sL3B5dGhvbi8lRTYlOTUlQjAlRTYlOEQlQUUlRTYlOEMlOTYlRTYlOEUlOTgv&#34;&gt;数据挖掘资料&lt;/span&gt;&lt;/p&gt;
+&lt;h2 id=&#34;python中的head方法&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#python中的head方法&#34;&gt;#&lt;/a&gt;  &lt;code&gt;python&lt;/code&gt;  中的 &lt;code&gt;head&lt;/code&gt;  方法&lt;/h2&gt;
+&lt;p&gt;&lt;code&gt;head()&lt;/code&gt;  根据位置返回对象的前 &lt;code&gt;n&lt;/code&gt;  行。 如果你的对象中包含正确的数据类型，则对于快速测试很有用。 此方法用于返回数据帧或序列的前 &lt;code&gt;n&lt;/code&gt;  行 (默认值为 &lt;code&gt;5&lt;/code&gt; )。  &lt;code&gt;n：&lt;/code&gt; 它是指返回行数的整数值。&lt;/p&gt;
+&lt;h2 id=&#34;pandas交叉表&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#pandas交叉表&#34;&gt;#&lt;/a&gt;  &lt;code&gt;pandas&lt;/code&gt;  交叉表&lt;/h2&gt;
+&lt;p&gt;交叉表是由列和行组成的双向表。 它也被称为数据透视表或多维表。 其最大的优势是能够构造、汇总及显示大量数据。 交叉表还可用于确定行变量与列变量之间是否存在关系。&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9kb2NzLnRpYmNvLmNvbS9wdWIvc3BvdGZpcmVfd2ViX3BsYXllci82LjAuMC1ub3ZlbWJlci0yMDEzL3poLUNOL1dlYkhlbHAvR1VJRC0xRjY3QjJGMy0wNTZCLTQzMjQtQjJDQy0xNEQ3M0QzNzg2OTMuaHRtbA==&#34;&gt;参考链接&lt;/span&gt;&lt;/p&gt;
+ ]]></description>
+        </item>
+    </channel>
+</rss>

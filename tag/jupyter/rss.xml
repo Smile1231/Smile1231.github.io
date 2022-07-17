@@ -1,0 +1,212 @@
+<?xml version="1.0"?>
+<rss version="2.0">
+    <channel>
+        <title>JIN MAO &#39;s Blog • Posts by &#34;jupyter&#34; tag</title>
+        <link>https://smile1231.github.io</link>
+        <description></description>
+        <language>en</language>
+        <pubDate>Sun, 17 Jul 2022 22:44:03 +0800</pubDate>
+        <lastBuildDate>Sun, 17 Jul 2022 22:44:03 +0800</lastBuildDate>
+        <category>生物信息</category>
+        <category>基因编辑</category>
+        <category>SAP</category>
+        <category>Java</category>
+        <category>Cache</category>
+        <category>Cookie</category>
+        <category>Session</category>
+        <category>Java面试</category>
+        <category>Corn</category>
+        <category>前端</category>
+        <category>Css</category>
+        <category>DDD</category>
+        <category>领域驱动设计</category>
+        <category>DisPlay属性</category>
+        <category>blog</category>
+        <category>hexo</category>
+        <category>next</category>
+        <category>Docker</category>
+        <category>JavaScript</category>
+        <category>Html</category>
+        <category>SpringBoot</category>
+        <category>IDEA</category>
+        <category>FastJson</category>
+        <category>Jvm</category>
+        <category>函数式接口</category>
+        <category>Assert</category>
+        <category>Springboot</category>
+        <category>map</category>
+        <category>Stream流</category>
+        <category>java</category>
+        <category>calender</category>
+        <category>Python</category>
+        <category>Jupyter</category>
+        <category>Machine Learning</category>
+        <category>LeetCode</category>
+        <category>算法</category>
+        <category>递归</category>
+        <category>Mybatis</category>
+        <category>分页查询</category>
+        <category>Linux</category>
+        <category>模糊查询</category>
+        <category>numpy</category>
+        <category>pandas</category>
+        <category>sklearn</category>
+        <category>SrpingBoot</category>
+        <category>文件上传</category>
+        <category>Spring</category>
+        <category>事务</category>
+        <category>Nginx</category>
+        <category>TypeScript</category>
+        <category>WebPack</category>
+        <category>master</category>
+        <category>Jenkins</category>
+        <category>Groovy</category>
+        <category>UML</category>
+        <category>Ubuntu</category>
+        <category>Mysql</category>
+        <category>VsCode</category>
+        <category>Shell</category>
+        <category>VSCODE</category>
+        <category>快捷键</category>
+        <category>Vue</category>
+        <category>Stream</category>
+        <category>线程池</category>
+        <category>日期</category>
+        <category>操作系统</category>
+        <category>ubuntu</category>
+        <category>虚拟机</category>
+        <category>二分查找</category>
+        <category>数据挖掘</category>
+        <category>EasyExcel</category>
+        <category>node</category>
+        <category>Hadoop</category>
+        <category>JVM</category>
+        <category>Hexo</category>
+        <category>数据库</category>
+        <category>junit</category>
+        <category>Yaml</category>
+        <category>Git</category>
+        <category>Mysql事务</category>
+        <category>冒泡排序</category>
+        <category>git,npm,node</category>
+        <category>动态规划</category>
+        <category>堆排序</category>
+        <category>多线程</category>
+        <category>Google</category>
+        <category>幂等性</category>
+        <category>归并排序</category>
+        <category>快速排序</category>
+        <category>流</category>
+        <category>正则表达式</category>
+        <category>直接插入排序</category>
+        <category>选择排序</category>
+        <category>Java 面试</category>
+        <category>数据结构</category>
+        <category>阻塞队列</category>
+        <category>Spring事务</category>
+        <category>JDK</category>
+        <category>动态代理</category>
+        <category>Date</category>
+        <category>ArrayList</category>
+        <category>接口</category>
+        <category>SpringMvc</category>
+        <category>排序</category>
+        <category>执行计划</category>
+        <category>HashMap</category>
+        <category>设计模式</category>
+        <item>
+            <guid isPermalink="true">https://smile1231.github.io/posts/53fbbba3/</guid>
+            <title>Jupyter notebook使用</title>
+            <link>https://smile1231.github.io/posts/53fbbba3/</link>
+            <category>Python</category>
+            <category>Jupyter</category>
+            <category>Machine Learning</category>
+            <pubDate>Sun, 17 Jul 2022 22:44:03 +0800</pubDate>
+            <description><![CDATA[ &lt;p&gt;&lt;code&gt;Jupyter&lt;/code&gt;不乏为一个很好的编译工具，搭配上&lt;code&gt;Anoconda&lt;/code&gt;简直是无敌了&lt;/p&gt;
+&lt;h2 id=&#34;Jupyter常用快捷键：&#34;&gt;&lt;a href=&#34;#Jupyter常用快捷键：&#34; class=&#34;headerlink&#34; title=&#34;Jupyter常用快捷键：&#34;&gt;&lt;/a&gt;&lt;code&gt;Jupyter&lt;/code&gt;常用快捷键：&lt;/h2&gt;&lt;h3 id=&#34;命令模式（按Esc键）：&#34;&gt;&lt;a href=&#34;#命令模式（按Esc键）：&#34; class=&#34;headerlink&#34; title=&#34;命令模式（按Esc键）：&#34;&gt;&lt;/a&gt;命令模式（按&lt;code&gt;Esc&lt;/code&gt;键）：&lt;/h3&gt;&lt;ol&gt;
+&lt;li&gt;Enter：转入编辑模式&lt;/li&gt;
+&lt;li&gt;Shift-Enter：运行本单元，选中下个单元&lt;/li&gt;
+&lt;li&gt;Ctrl-Enter：运行本单元&lt;/li&gt;
+&lt;li&gt;Alt-Enter：运行本单元，在其下插入新单元&lt;/li&gt;
+&lt;li&gt;Y：单元转入代码状态&lt;/li&gt;
+&lt;li&gt;M：单元转入markdown状态&lt;/li&gt;
+&lt;li&gt;R：单元转入raw状态&lt;/li&gt;
+&lt;li&gt;1：设定 1 级标题&lt;/li&gt;
+&lt;li&gt;2：设定 2 级标题&lt;/li&gt;
+&lt;li&gt;3：设定 3 级标题&lt;/li&gt;
+&lt;li&gt;4：设定 4 级标题&lt;/li&gt;
+&lt;li&gt;5：设定 5 级标题&lt;/li&gt;
+&lt;li&gt;6：设定 6 级标题&lt;/li&gt;
+&lt;li&gt;Up：选中上方单元&lt;/li&gt;
+&lt;li&gt;K：选中上方单元&lt;/li&gt;
+&lt;li&gt;Down：选中下方单元&lt;/li&gt;
+&lt;li&gt;J：选中下方单元&lt;/li&gt;
+&lt;li&gt;Shift-K：扩大选中上方单元&lt;/li&gt;
+&lt;li&gt;Shift-J：扩大选中下方单元&lt;/li&gt;
+&lt;li&gt;A：在上方插入新单元&lt;/li&gt;
+&lt;li&gt;B：在下方插入新单元&lt;/li&gt;
+&lt;li&gt;X：剪切选中的单元&lt;/li&gt;
+&lt;li&gt;C：复制选中的单元&lt;/li&gt;
+&lt;li&gt;Shift-V：粘贴到上方单元&lt;/li&gt;
+&lt;li&gt;V：粘贴到下方单元&lt;/li&gt;
+&lt;li&gt;Z：恢复删除的最后一个单元&lt;/li&gt;
+&lt;li&gt;D,D：删除选中的单元&lt;/li&gt;
+&lt;li&gt;Shift-M：合并选中的单元&lt;/li&gt;
+&lt;li&gt;Ctrl-S：文件存盘&lt;/li&gt;
+&lt;li&gt;S：文件存盘&lt;/li&gt;
+&lt;li&gt;L：转换行号&lt;/li&gt;
+&lt;li&gt;O：转换输出&lt;/li&gt;
+&lt;li&gt;Shift-O：转换输出滚动&lt;/li&gt;
+&lt;li&gt;Esc：关闭页面&lt;/li&gt;
+&lt;li&gt;Q：关闭页面&lt;/li&gt;
+&lt;li&gt;H：显示快捷键帮助&lt;/li&gt;
+&lt;li&gt;I,I：中断Notebook内核&lt;/li&gt;
+&lt;li&gt;0,0：重启Notebook内核&lt;/li&gt;
+&lt;li&gt;Shift：忽略&lt;/li&gt;
+&lt;li&gt;Shift-Space：向上滚动&lt;/li&gt;
+&lt;li&gt;Space：向下滚动&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id=&#34;编辑模式：&#34;&gt;&lt;a href=&#34;#编辑模式：&#34; class=&#34;headerlink&#34; title=&#34;编辑模式：&#34;&gt;&lt;/a&gt;编辑模式：&lt;/h3&gt;&lt;ol&gt;
+&lt;li&gt;Tab : 代码补全或缩进&lt;/li&gt;
+&lt;li&gt;Shift-Tab : 提示&lt;/li&gt;
+&lt;li&gt;Ctrl-] : 缩进&lt;/li&gt;
+&lt;li&gt;Ctrl-[ : 解除缩进&lt;/li&gt;
+&lt;li&gt;Ctrl-A : 全选&lt;/li&gt;
+&lt;li&gt;Ctrl-Z : 复原&lt;/li&gt;
+&lt;li&gt;Ctrl-Shift-Z : 再做&lt;/li&gt;
+&lt;li&gt;Ctrl-Y : 再做&lt;/li&gt;
+&lt;li&gt;Ctrl-Home : 跳到单元开头&lt;/li&gt;
+&lt;li&gt;Ctrl-Up : 跳到单元开头&lt;/li&gt;
+&lt;li&gt;Ctrl-End : 跳到单元末尾&lt;/li&gt;
+&lt;li&gt;Ctrl-Down : 跳到单元末尾&lt;/li&gt;
+&lt;li&gt;Ctrl-Left : 跳到左边一个字首&lt;/li&gt;
+&lt;li&gt;Ctrl-Right : 跳到右边一个字首&lt;/li&gt;
+&lt;li&gt;Ctrl-Backspace : 删除前面一个字&lt;/li&gt;
+&lt;li&gt;Ctrl-Delete : 删除后面一个字&lt;/li&gt;
+&lt;li&gt;Esc : 进入命令模式&lt;/li&gt;
+&lt;li&gt;Ctrl-M : 进入命令模式&lt;/li&gt;
+&lt;li&gt;Shift-Enter : 运行本单元，选中下一单元&lt;/li&gt;
+&lt;li&gt;Ctrl-Enter : 运行本单元&lt;/li&gt;
+&lt;li&gt;Alt-Enter : 运行本单元，在下面插入一单元&lt;/li&gt;
+&lt;li&gt;Ctrl-Shift– : 分割单元&lt;/li&gt;
+&lt;li&gt;Ctrl-Shift-Subtract : 分割单元&lt;/li&gt;
+&lt;li&gt;Ctrl-S : 文件存盘&lt;/li&gt;
+&lt;li&gt;Shift : 忽略&lt;/li&gt;
+&lt;li&gt;Up : 光标上移或转入上一单元&lt;/li&gt;
+&lt;li&gt;Down :光标下移或转入下一单元&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;注意事项：&#34;&gt;&lt;a href=&#34;#注意事项：&#34; class=&#34;headerlink&#34; title=&#34;注意事项：&#34;&gt;&lt;/a&gt;注意事项：&lt;/h2&gt;&lt;p&gt;&lt;code&gt;jupyter notebook&lt;/code&gt;每一个&lt;code&gt;cell&lt;/code&gt;运行完后都会把这个&lt;code&gt;cell&lt;/code&gt;中的变量保存到内存中，如果在一个&lt;code&gt;cell&lt;/code&gt;中修改了之前的变量，再此运行这个&lt;code&gt;cell&lt;/code&gt;的时候可能会导致一些问题产生。比如以下代码：&lt;/p&gt;
+&lt;figure class=&#34;highlight python&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;# 第一个cell中的代码&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;a = &lt;span class=&#34;number&#34;&gt;10&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;b = &lt;span class=&#34;number&#34;&gt;20&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;# 第二个cell中的代码&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;c = a/b&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;b = &lt;span class=&#34;number&#34;&gt;0&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;因为第二个&lt;code&gt;cell&lt;/code&gt;修改了&lt;code&gt;b&lt;/code&gt;变量，此时在整个环境中&lt;code&gt;b&lt;/code&gt;都是等于0的，所以以后再运行这个&lt;code&gt;cell&lt;/code&gt;的时候，&lt;code&gt;a/b&lt;/code&gt;这个就会出问题了。这时候可以使用&lt;code&gt;Kernel-&amp;gt;Rstart&amp;amp;Run All&lt;/code&gt;来重新运行整个项目。&lt;/p&gt;
+&lt;h2 id=&#34;Mac乱码解决&#34;&gt;&lt;a href=&#34;#Mac乱码解决&#34; class=&#34;headerlink&#34; title=&#34;Mac乱码解决&#34;&gt;&lt;/a&gt;&lt;code&gt;Mac&lt;/code&gt;乱码解决&lt;/h2&gt;&lt;h3 id=&#34;步骤一-查看自己的字体中有哪种中文字体&#34;&gt;&lt;a href=&#34;#步骤一-查看自己的字体中有哪种中文字体&#34; class=&#34;headerlink&#34; title=&#34;步骤一 查看自己的字体中有哪种中文字体&#34;&gt;&lt;/a&gt;步骤一 查看自己的字体中有哪种中文字体&lt;/h3&gt;&lt;figure class=&#34;highlight python&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;import&lt;/span&gt; matplotlib&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;a=&lt;span class=&#34;built_in&#34;&gt;sorted&lt;/span&gt;([f.name &lt;span class=&#34;keyword&#34;&gt;for&lt;/span&gt; f &lt;span class=&#34;keyword&#34;&gt;in&lt;/span&gt; matplotlib.font_manager.fontManager.ttflist])&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;for&lt;/span&gt; i &lt;span class=&#34;keyword&#34;&gt;in&lt;/span&gt; a:&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;	&lt;span class=&#34;built_in&#34;&gt;print&lt;/span&gt;(i)&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;img data-src=&#34;/posts/53fbbba3/2022-07-17-22-46-35.png&#34; class=&#34;&#34;&gt;
+
+&lt;p&gt;找到支持中文的字体&lt;/p&gt;
+&lt;img data-src=&#34;/posts/53fbbba3/2022-07-17-22-46-44.png&#34; class=&#34;&#34;&gt;
+
+&lt;h3 id=&#34;选择相应的字体&#34;&gt;&lt;a href=&#34;#选择相应的字体&#34; class=&#34;headerlink&#34; title=&#34;选择相应的字体&#34;&gt;&lt;/a&gt;选择相应的字体&lt;/h3&gt;&lt;figure class=&#34;highlight python&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;plt.rcParams[&lt;span class=&#34;string&#34;&gt;&amp;#x27;font.sans-serif&amp;#x27;&lt;/span&gt;]=&lt;span class=&#34;string&#34;&gt;&amp;#x27;Heiti TC&amp;#x27;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;plt.rcParams[&lt;span class=&#34;string&#34;&gt;&amp;#x27;axes.unicode_minus&amp;#x27;&lt;/span&gt;] = &lt;span class=&#34;literal&#34;&gt;False&lt;/span&gt;  &lt;span class=&#34;comment&#34;&gt;# 负号正常显示&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;img data-src=&#34;/posts/53fbbba3/2022-07-17-22-46-51.png&#34; class=&#34;&#34;&gt;
+ ]]></description>
+        </item>
+    </channel>
+</rss>
