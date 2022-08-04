@@ -8,54 +8,54 @@
         <pubDate>Thu, 30 Jun 2022 21:30:40 +0800</pubDate>
         <lastBuildDate>Thu, 30 Jun 2022 21:30:40 +0800</lastBuildDate>
         <category>SAP</category>
+        <category>生物信息</category>
+        <category>基因编辑</category>
         <category>Java</category>
         <category>Cache</category>
         <category>Cookie</category>
         <category>Session</category>
         <category>Java面试</category>
-        <category>生物信息</category>
-        <category>基因编辑</category>
         <category>Corn</category>
         <category>前端</category>
         <category>Css</category>
         <category>DDD</category>
         <category>领域驱动设计</category>
-        <category>DisPlay属性</category>
-        <category>Docker</category>
         <category>FastJson</category>
+        <category>Docker</category>
+        <category>DisPlay属性</category>
         <category>blog</category>
         <category>hexo</category>
         <category>next</category>
-        <category>JavaScript</category>
-        <category>Html</category>
         <category>IDEA</category>
         <category>SpringBoot</category>
+        <category>JavaScript</category>
+        <category>Html</category>
+        <category>Jvm</category>
         <category>函数式接口</category>
         <category>map</category>
         <category>Stream流</category>
         <category>Assert</category>
-        <category>Jvm</category>
-        <category>Springboot</category>
-        <category>LeetCode</category>
-        <category>算法</category>
-        <category>递归</category>
         <category>java</category>
         <category>calender</category>
-        <category>Linux</category>
+        <category>Springboot</category>
         <category>Python</category>
         <category>Jupyter</category>
         <category>Machine Learning</category>
+        <category>LeetCode</category>
+        <category>算法</category>
+        <category>递归</category>
+        <category>Linux</category>
         <category>numpy</category>
         <category>pandas</category>
         <category>sklearn</category>
         <category>Mybatis</category>
         <category>分页查询</category>
         <category>模糊查询</category>
+        <category>Nginx</category>
         <category>Spring</category>
         <category>SrpingBoot</category>
-        <category>Nginx</category>
-        <category>事务</category>
         <category>文件上传</category>
+        <category>事务</category>
         <category>TypeScript</category>
         <category>WebPack</category>
         <category>master</category>
@@ -74,36 +74,36 @@
         <category>线程池</category>
         <category>ubuntu</category>
         <category>虚拟机</category>
-        <category>数据挖掘</category>
         <category>二分查找</category>
         <category>Hadoop</category>
+        <category>数据挖掘</category>
         <category>操作系统</category>
         <category>EasyExcel</category>
         <category>node</category>
         <category>JVM</category>
-        <category>Hexo</category>
         <category>Yaml</category>
-        <category>junit</category>
+        <category>Hexo</category>
         <category>数据库</category>
+        <category>junit</category>
         <category>Mysql事务</category>
+        <category>git,npm,node</category>
         <category>Git</category>
         <category>冒泡排序</category>
-        <category>git,npm,node</category>
         <category>堆排序</category>
         <category>动态规划</category>
         <category>幂等性</category>
-        <category>Google</category>
         <category>多线程</category>
+        <category>Google</category>
         <category>流</category>
         <category>归并排序</category>
         <category>快速排序</category>
-        <category>直接插入排序</category>
         <category>正则表达式</category>
+        <category>直接插入排序</category>
         <category>选择排序</category>
-        <category>Spring事务</category>
-        <category>数据结构</category>
         <category>Java 面试</category>
+        <category>数据结构</category>
         <category>阻塞队列</category>
+        <category>Spring事务</category>
         <category>JDK</category>
         <category>动态代理</category>
         <category>Date</category>
@@ -221,13 +221,62 @@
 &lt;blockquote&gt;
 &lt;p&gt;打包命令&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;docker buil -t &amp;lt;lower_name&amp;gt; .&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;docker build -t &amp;lt;lower_name&amp;gt; .&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
 &lt;img data-src=&#34;/posts/11faeb76/2022-07-02-13-32-00.png&#34; class=&#34;&#34;&gt;
 &lt;blockquote&gt;
 &lt;p&gt;运行&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;docker run -p 9999:9999 --name BABE_Thesis -d babe_end&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
 &lt;img data-src=&#34;/posts/11faeb76/2022-07-02-13-35-28.png&#34; class=&#34;&#34;&gt;
+&lt;h2 id=&#34;docker安装jenkins&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#docker安装jenkins&#34;&gt;#&lt;/a&gt;  &lt;code&gt;Docker&lt;/code&gt;  安装 &lt;code&gt;Jenkins&lt;/code&gt;&lt;/h2&gt;
+&lt;p&gt;原理图：&lt;/p&gt;
+&lt;img data-src=&#34;/posts/11faeb76/2022-08-04-23-24-21.png&#34; class=&#34;&#34;&gt;
+&lt;ol&gt;
+&lt;li&gt;拉取镜像 (稳定版本)&lt;/li&gt;
+&lt;/ol&gt;
+&lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;docker pull jenkins/jenkins:lts&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;img data-src=&#34;/posts/11faeb76/2022-08-04-23-21-06.png&#34; class=&#34;&#34;&gt;
+&lt;ol start=&#34;2&#34;&gt;
+&lt;li&gt;创建挂载目录&lt;/li&gt;
+&lt;/ol&gt;
+&lt;blockquote&gt;
+&lt;p&gt;创建目录&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;/Users/jinmao/Documents/Docker/jenkins_mount&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;ol start=&#34;3&#34;&gt;
+&lt;li&gt;运行容器&lt;/li&gt;
+&lt;/ol&gt;
+&lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;# -d 后台运行镜像&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;# -p 10240:8080 将镜像的8080端口映射到服务器的10240端口。&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;# -p 10241:50000 将镜像的50000端口映射到服务器的10241端口&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;# -v /Users/jinmao/Documents/Docker/jenkins_mount:/var/jenkins_home /var/jenkins_home目录为容器jenkins工作目录，我们将硬盘上的一个目录挂载到这个位置，方便后续更新镜像后继续使用原来的工作目录。这里我们设置的就是上面我们创建的 /Users/jinmao/Documents/Docker/jenkins_mount 目录&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;# -v /etc/localtime:/etc/localtime让容器使用和服务器同样的时间设置。&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;# --name myJenkins 给容器起一个别名&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;docker run -d -p 10240:8080 -p 10241:50000 -v /Users/jinmao/Documents/Docker/jenkins_mount:/var/jenkins_home -v /etc/localtime:/etc/localtime --name myJenkins jenkins/jenkins:lts&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;img data-src=&#34;/posts/11faeb76/2022-08-05-00-10-33.png&#34; class=&#34;&#34;&gt;
+&lt;ol start=&#34;4&#34;&gt;
+&lt;li&gt;查看 &lt;code&gt;jenkins&lt;/code&gt;  是否启动成功&lt;/li&gt;
+&lt;/ol&gt;
+&lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;docker ps&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;img data-src=&#34;/posts/11faeb76/2022-08-05-00-12-41.png&#34; class=&#34;&#34;&gt;
+&lt;ol start=&#34;5&#34;&gt;
+&lt;li&gt;查看 &lt;code&gt;docker&lt;/code&gt;  容器日志。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;docker logs &amp;lt;name&amp;gt; &lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;# docker logs myJenkins&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;img data-src=&#34;/posts/11faeb76/2022-08-05-00-14-43.png&#34; class=&#34;&#34;&gt;
+&lt;ol start=&#34;6&#34;&gt;
+&lt;li&gt;进入挂载目录&lt;/li&gt;
+&lt;/ol&gt;
+&lt;img data-src=&#34;/posts/11faeb76/2022-08-05-00-15-42.png&#34; class=&#34;&#34;&gt;
+&lt;p&gt;可选做:&lt;br&gt;
+ &lt;code&gt;vim&lt;/code&gt;  修改  &lt;code&gt;hudson.model.UpdateCenter.xml&lt;/code&gt;  里的内容，将  &lt;code&gt;url&lt;/code&gt;  修改为 清华大学官方镜像： &lt;code&gt;https://mirrors.tuna.tsinghua.edu.cn/jenkins/updates/update-center.json&lt;/code&gt;&lt;/p&gt;
+&lt;ol start=&#34;7&#34;&gt;
+&lt;li&gt;访问 &lt;code&gt;Jenkins&lt;/code&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;localhost:10240&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;img data-src=&#34;/posts/11faeb76/2022-08-05-00-20-45.png&#34; class=&#34;&#34;&gt;
+&lt;p&gt;根据提示输入密码&lt;/p&gt;
+&lt;img data-src=&#34;/posts/11faeb76/2022-08-05-00-26-18.png&#34; class=&#34;&#34;&gt;
+&lt;ol start=&#34;8&#34;&gt;
+&lt;li&gt;安装  &lt;code&gt;plugin&lt;/code&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;img data-src=&#34;/posts/11faeb76/2022-08-05-00-27-44.png&#34; class=&#34;&#34;&gt;
+&lt;p&gt;安装完成创建一下账户即可使用 (账户截图未展示)&lt;/p&gt;
+&lt;img data-src=&#34;/posts/11faeb76/2022-08-05-00-28-01.png&#34; class=&#34;&#34;&gt;
  ]]></description>
         </item>
     </channel>

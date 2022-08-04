@@ -76,7 +76,7 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
       <i class="ic i-pen"></i>
     </span>
     <span class="text">Symbols count in article</span>
-    <span>2.5k</span>
+    <span>3.5k</span>
     <span class="text">words</span>
   </span>
   <span class="item" title="Reading time">
@@ -84,7 +84,7 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
       <i class="ic i-clock"></i>
     </span>
     <span class="text">Reading time</span>
-    <span>2 mins.</span>
+    <span>3 mins.</span>
   </span>
 </div>
 
@@ -117,12 +117,12 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
       </div>
       <div id="imgs" class="pjax">
         <ul>
-          <li class="item" data-background-image="https://tva1.sinaimg.cn/large/6833939bly1gipewkhf1zj20zk0m81kx.jpg"></li>
-          <li class="item" data-background-image="https://tva1.sinaimg.cn/large/6833939bly1gipesx5fdwj20zk0m81kx.jpg"></li>
-          <li class="item" data-background-image="https://tva1.sinaimg.cn/large/6833939bly1giclj61ylzj20zk0m8b29.jpg"></li>
-          <li class="item" data-background-image="https://tva1.sinaimg.cn/large/6833939bly1gicit4jrvuj20zk0m8785.jpg"></li>
-          <li class="item" data-background-image="https://tva1.sinaimg.cn/large/6833939bly1giclg5ms2rj20zk0m8u0x.jpg"></li>
-          <li class="item" data-background-image="https://tva1.sinaimg.cn/large/6833939bly1gicm07ih54j20zk0m84qp.jpg"></li>
+          <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1gipey84bjtj20zk0m8hdt.jpg"></li>
+          <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1giclh3brzpj20zk0m8ann.jpg"></li>
+          <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1gipesx5fdwj20zk0m81kx.jpg"></li>
+          <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1giclxfdlttj20zk0m8npd.jpg"></li>
+          <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1giclimtf7dj20zk0m8qav.jpg"></li>
+          <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1gipeuv80yoj20zk0m8kjl.jpg"></li>
         </ul>
       </div>
     </header>
@@ -265,13 +265,62 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
 <blockquote>
 <p>打包命令</p>
 </blockquote>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">docker buil -t &lt;lower_name&gt; .</span><br></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">docker build -t &lt;lower_name&gt; .</span><br></pre></td></tr></table></figure>
 <img data-src="/posts/11faeb76/2022-07-02-13-32-00.png" class="">
 <blockquote>
 <p>运行</p>
 </blockquote>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">docker run -p 9999:9999 --name BABE_Thesis -d babe_end</span><br></pre></td></tr></table></figure>
 <img data-src="/posts/11faeb76/2022-07-02-13-35-28.png" class="">
+<h2 id="docker安装jenkins"><a class="markdownIt-Anchor" href="#docker安装jenkins">#</a>  <code>Docker</code>  安装 <code>Jenkins</code></h2>
+<p>原理图：</p>
+<img data-src="/posts/11faeb76/2022-08-04-23-24-21.png" class="">
+<ol>
+<li>拉取镜像 (稳定版本)</li>
+</ol>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">docker pull jenkins/jenkins:lts</span><br></pre></td></tr></table></figure>
+<img data-src="/posts/11faeb76/2022-08-04-23-21-06.png" class="">
+<ol start="2">
+<li>创建挂载目录</li>
+</ol>
+<blockquote>
+<p>创建目录</p>
+</blockquote>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">/Users/jinmao/Documents/Docker/jenkins_mount</span><br></pre></td></tr></table></figure>
+<ol start="3">
+<li>运行容器</li>
+</ol>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># -d 后台运行镜像</span></span><br><span class="line"><span class="comment"># -p 10240:8080 将镜像的8080端口映射到服务器的10240端口。</span></span><br><span class="line"><span class="comment"># -p 10241:50000 将镜像的50000端口映射到服务器的10241端口</span></span><br><span class="line"><span class="comment"># -v /Users/jinmao/Documents/Docker/jenkins_mount:/var/jenkins_home /var/jenkins_home目录为容器jenkins工作目录，我们将硬盘上的一个目录挂载到这个位置，方便后续更新镜像后继续使用原来的工作目录。这里我们设置的就是上面我们创建的 /Users/jinmao/Documents/Docker/jenkins_mount 目录</span></span><br><span class="line"><span class="comment"># -v /etc/localtime:/etc/localtime让容器使用和服务器同样的时间设置。</span></span><br><span class="line"><span class="comment"># --name myJenkins 给容器起一个别名</span></span><br><span class="line">docker run -d -p 10240:8080 -p 10241:50000 -v /Users/jinmao/Documents/Docker/jenkins_mount:/var/jenkins_home -v /etc/localtime:/etc/localtime --name myJenkins jenkins/jenkins:lts</span><br></pre></td></tr></table></figure>
+<img data-src="/posts/11faeb76/2022-08-05-00-10-33.png" class="">
+<ol start="4">
+<li>查看 <code>jenkins</code>  是否启动成功</li>
+</ol>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">docker ps</span><br></pre></td></tr></table></figure>
+<img data-src="/posts/11faeb76/2022-08-05-00-12-41.png" class="">
+<ol start="5">
+<li>查看 <code>docker</code>  容器日志。</li>
+</ol>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">docker logs &lt;name&gt; </span><br><span class="line"><span class="comment"># docker logs myJenkins</span></span><br></pre></td></tr></table></figure>
+<img data-src="/posts/11faeb76/2022-08-05-00-14-43.png" class="">
+<ol start="6">
+<li>进入挂载目录</li>
+</ol>
+<img data-src="/posts/11faeb76/2022-08-05-00-15-42.png" class="">
+<p>可选做:<br>
+ <code>vim</code>  修改  <code>hudson.model.UpdateCenter.xml</code>  里的内容，将  <code>url</code>  修改为 清华大学官方镜像： <code>https://mirrors.tuna.tsinghua.edu.cn/jenkins/updates/update-center.json</code></p>
+<ol start="7">
+<li>访问 <code>Jenkins</code></li>
+</ol>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">localhost:10240</span><br></pre></td></tr></table></figure>
+<img data-src="/posts/11faeb76/2022-08-05-00-20-45.png" class="">
+<p>根据提示输入密码</p>
+<img data-src="/posts/11faeb76/2022-08-05-00-26-18.png" class="">
+<ol start="8">
+<li>安装  <code>plugin</code></li>
+</ol>
+<img data-src="/posts/11faeb76/2022-08-05-00-27-44.png" class="">
+<p>安装完成创建一下账户即可使用 (账户截图未展示)</p>
+<img data-src="/posts/11faeb76/2022-08-05-00-28-01.png" class="">
 
       <div class="tags">
           <a href="/tags/Java/" rel="tag"><i class="ic i-tag"></i> Java</a>
@@ -287,7 +336,7 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
       <i class="ic i-calendar-check"></i>
     </span>
     <span class="text">Edited on</span>
-    <time title="Modified: 2022-07-02 13:39:15" itemprop="dateModified" datetime="2022-07-02T13:39:15+08:00">2022-07-02</time>
+    <time title="Modified: 2022-08-05 00:31:55" itemprop="dateModified" datetime="2022-08-05T00:31:55+08:00">2022-08-05</time>
   </span>
   <span id="posts/11faeb76/" class="item leancloud_visitors" data-flag-title="Docker指令以及部署" title="Views">
       <span class="icon">
@@ -327,7 +376,7 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
     <div class="item left">
       
 
-  <a href="/posts/ba003691/" itemprop="url" rel="prev" data-background-image="https:&#x2F;&#x2F;tva1.sinaimg.cn&#x2F;mw690&#x2F;6833939bly1gipeyonbf9j20zk0m8e81.jpg" title="Springboot工程项目.gitignore配置">
+  <a href="/posts/ba003691/" itemprop="url" rel="prev" data-background-image="https:&#x2F;&#x2F;tva3.sinaimg.cn&#x2F;mw690&#x2F;6833939bly1giph4fomxoj20zk0m8axp.jpg" title="Springboot工程项目.gitignore配置">
   <span class="type">Previous Post</span>
   <span class="category"><i class="ic i-flag"></i> </span>
   <h3>Springboot工程项目.gitignore配置</h3>
@@ -337,7 +386,7 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
     <div class="item right">
       
 
-  <a href="/posts/823298d2/" itemprop="url" rel="next" data-background-image="https:&#x2F;&#x2F;tva1.sinaimg.cn&#x2F;mw690&#x2F;6833939bly1giclfdu6exj20zk0m87hw.jpg" title="VsCode 如何Debug Shell">
+  <a href="/posts/823298d2/" itemprop="url" rel="next" data-background-image="https:&#x2F;&#x2F;tva3.sinaimg.cn&#x2F;mw690&#x2F;6833939bly1gipewr8iypj20zk0m8b29.jpg" title="VsCode 如何Debug Shell">
   <span class="type">Next Post</span>
   <span class="category"><i class="ic i-flag"></i> </span>
   <h3>VsCode 如何Debug Shell</h3>
@@ -359,7 +408,7 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
   <div class="panels">
     <div class="inner">
       <div class="contents panel pjax" data-title="Contents">
-          <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%88%97%E5%87%BA%E6%89%80%E6%9C%89%E9%95%9C%E5%83%8F"><span class="toc-number">1.</span> <span class="toc-text"> 列出所有镜像</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%9F%A5%E7%9C%8B%E8%BF%90%E8%A1%8C%E7%9A%84%E5%AE%B9%E5%99%A8"><span class="toc-number">2.</span> <span class="toc-text"> 查看运行的容器</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%9F%A5%E7%9C%8B%E6%89%80%E6%9C%89%E7%9A%84%E5%AE%B9%E5%99%A8%E5%8C%85%E6%8B%AC%E5%81%9C%E6%AD%A2%E7%9A%84"><span class="toc-number">3.</span> <span class="toc-text"> 查看所有的容器包括停止的</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%88%A0%E9%99%A4"><span class="toc-number">4.</span> <span class="toc-text"> 删除</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%81%9C%E6%AD%A2-%E5%90%AF%E5%8A%A8-%E6%9D%80%E6%AD%BB-%E9%87%8D%E5%90%AF%E4%B8%80%E4%B8%AA%E5%AE%B9%E5%99%A8"><span class="toc-number">5.</span> <span class="toc-text"> 停止、启动、杀死、重启一个容器</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#docker%E5%90%AF%E5%8A%A8%E5%A4%B1%E8%B4%A5%E5%A6%82%E4%BD%95%E6%9F%A5%E7%9C%8B%E5%AE%B9%E5%99%A8%E6%97%A5%E5%BF%97"><span class="toc-number">6.</span> <span class="toc-text">  docker  启动失败如何查看容器日志</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#m1%E6%8B%89%E5%8F%96mysql%E6%95%B0%E6%8D%AE%E5%BA%93"><span class="toc-number">7.</span> <span class="toc-text">  M1  拉取 Mysql  数据库</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#docker%E5%AE%89%E8%A3%85nginx%E5%B9%B6%E4%B8%94%E9%83%A8%E7%BD%B2vue%E9%A1%B9%E7%9B%AE"><span class="toc-number">8.</span> <span class="toc-text">  Docker  安装 Nginx  并且部署 Vue  项目</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%8B%89%E5%8F%96nginx"><span class="toc-number">8.1.</span> <span class="toc-text"> 拉取 Nginx</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%88%9B%E5%BB%BA%E6%8C%82%E8%BD%BD%E7%9B%AE%E5%BD%95"><span class="toc-number">8.2.</span> <span class="toc-text"> 创建挂载目录</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%BF%90%E8%A1%8C%E5%B9%B6%E4%B8%94%E6%8C%82%E8%BD%BDnginx"><span class="toc-number">8.3.</span> <span class="toc-text"> 运行并且挂载 nginx</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%8A%8Avue%E7%9A%84%E7%9B%AE%E5%BD%95%E4%B8%8A%E4%BC%A0%E5%88%B0%E6%8C%82%E8%BD%BD%E7%9A%84%E7%9B%AE%E5%BD%95"><span class="toc-number">8.4.</span> <span class="toc-text"> 把 vue  的目录上传到挂载的目录</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%87%8D%E5%90%AFdocker%E5%AE%B9%E5%99%A8"><span class="toc-number">8.5.</span> <span class="toc-text"> 重启 Docker  容器</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%B8%BA%E4%BB%80%E4%B9%88%E8%A6%81%E6%8C%82%E8%BD%BD%E5%9C%A8%E5%88%B0docker%E7%9A%84usrsharenginxhtml"><span class="toc-number">8.6.</span> <span class="toc-text"> 为什么要挂载在到 docker  的 &#x2F;usr&#x2F;share&#x2F;nginx&#x2F;html</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%BC%98%E5%8C%96nginx%E7%9A%84%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6%E4%B8%BA%E4%BA%86%E4%BB%A5%E5%90%8E%E5%A4%9A%E9%A1%B9%E7%9B%AE%E9%83%A8%E7%BD%B2%E6%96%B9%E4%BE%BF%E4%BF%AE%E6%94%B9nginx"><span class="toc-number">8.7.</span> <span class="toc-text"> 优化 nginx  的配置文件（为了以后多项目部署方便修改 Nginx ）</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%88%B6%E4%BD%9Cdockerfilespringboot"><span class="toc-number">9.</span> <span class="toc-text"> 制作 Dockerfile ( Springboot )</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%BC%96%E8%BE%91dockerfile%E6%96%87%E4%BB%B6"><span class="toc-number">9.1.</span> <span class="toc-text"> 编辑 DockerFile  文件</span></a></li></ol></li></ol>
+          <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%88%97%E5%87%BA%E6%89%80%E6%9C%89%E9%95%9C%E5%83%8F"><span class="toc-number">1.</span> <span class="toc-text"> 列出所有镜像</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%9F%A5%E7%9C%8B%E8%BF%90%E8%A1%8C%E7%9A%84%E5%AE%B9%E5%99%A8"><span class="toc-number">2.</span> <span class="toc-text"> 查看运行的容器</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%9F%A5%E7%9C%8B%E6%89%80%E6%9C%89%E7%9A%84%E5%AE%B9%E5%99%A8%E5%8C%85%E6%8B%AC%E5%81%9C%E6%AD%A2%E7%9A%84"><span class="toc-number">3.</span> <span class="toc-text"> 查看所有的容器包括停止的</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%88%A0%E9%99%A4"><span class="toc-number">4.</span> <span class="toc-text"> 删除</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%81%9C%E6%AD%A2-%E5%90%AF%E5%8A%A8-%E6%9D%80%E6%AD%BB-%E9%87%8D%E5%90%AF%E4%B8%80%E4%B8%AA%E5%AE%B9%E5%99%A8"><span class="toc-number">5.</span> <span class="toc-text"> 停止、启动、杀死、重启一个容器</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#docker%E5%90%AF%E5%8A%A8%E5%A4%B1%E8%B4%A5%E5%A6%82%E4%BD%95%E6%9F%A5%E7%9C%8B%E5%AE%B9%E5%99%A8%E6%97%A5%E5%BF%97"><span class="toc-number">6.</span> <span class="toc-text">  docker  启动失败如何查看容器日志</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#m1%E6%8B%89%E5%8F%96mysql%E6%95%B0%E6%8D%AE%E5%BA%93"><span class="toc-number">7.</span> <span class="toc-text">  M1  拉取 Mysql  数据库</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#docker%E5%AE%89%E8%A3%85nginx%E5%B9%B6%E4%B8%94%E9%83%A8%E7%BD%B2vue%E9%A1%B9%E7%9B%AE"><span class="toc-number">8.</span> <span class="toc-text">  Docker  安装 Nginx  并且部署 Vue  项目</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%8B%89%E5%8F%96nginx"><span class="toc-number">8.1.</span> <span class="toc-text"> 拉取 Nginx</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%88%9B%E5%BB%BA%E6%8C%82%E8%BD%BD%E7%9B%AE%E5%BD%95"><span class="toc-number">8.2.</span> <span class="toc-text"> 创建挂载目录</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%BF%90%E8%A1%8C%E5%B9%B6%E4%B8%94%E6%8C%82%E8%BD%BDnginx"><span class="toc-number">8.3.</span> <span class="toc-text"> 运行并且挂载 nginx</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%8A%8Avue%E7%9A%84%E7%9B%AE%E5%BD%95%E4%B8%8A%E4%BC%A0%E5%88%B0%E6%8C%82%E8%BD%BD%E7%9A%84%E7%9B%AE%E5%BD%95"><span class="toc-number">8.4.</span> <span class="toc-text"> 把 vue  的目录上传到挂载的目录</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%87%8D%E5%90%AFdocker%E5%AE%B9%E5%99%A8"><span class="toc-number">8.5.</span> <span class="toc-text"> 重启 Docker  容器</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%B8%BA%E4%BB%80%E4%B9%88%E8%A6%81%E6%8C%82%E8%BD%BD%E5%9C%A8%E5%88%B0docker%E7%9A%84usrsharenginxhtml"><span class="toc-number">8.6.</span> <span class="toc-text"> 为什么要挂载在到 docker  的 &#x2F;usr&#x2F;share&#x2F;nginx&#x2F;html</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%BC%98%E5%8C%96nginx%E7%9A%84%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6%E4%B8%BA%E4%BA%86%E4%BB%A5%E5%90%8E%E5%A4%9A%E9%A1%B9%E7%9B%AE%E9%83%A8%E7%BD%B2%E6%96%B9%E4%BE%BF%E4%BF%AE%E6%94%B9nginx"><span class="toc-number">8.7.</span> <span class="toc-text"> 优化 nginx  的配置文件（为了以后多项目部署方便修改 Nginx ）</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%88%B6%E4%BD%9Cdockerfilespringboot"><span class="toc-number">9.</span> <span class="toc-text"> 制作 Dockerfile ( Springboot )</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%BC%96%E8%BE%91dockerfile%E6%96%87%E4%BB%B6"><span class="toc-number">9.1.</span> <span class="toc-text"> 编辑 DockerFile  文件</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#docker%E5%AE%89%E8%A3%85jenkins"><span class="toc-number">10.</span> <span class="toc-text">  Docker  安装 Jenkins</span></a></li></ol>
       </div>
       <div class="related panel pjax" data-title="Related">
       </div>
@@ -465,12 +514,9 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
   <li class="item">
     
 <div class="breadcrumb">
-<a href="/categories/SpringBoot/" title="In SpringBoot">SpringBoot</a>
-<i class="ic i-angle-right"></i>
-<a href="/categories/SpringBoot/Java/" title="In Java">Java</a>
 </div>
 
-    <span><a href="/posts/f976ebe7/" title="SpringMvc中标准的后端接口格式">SpringMvc中标准的后端接口格式</a></span>
+    <span><a href="/posts/66edb7d2/" title="关于hexo使用shoka主题注意点">关于hexo使用shoka主题注意点</a></span>
   </li>
 
       
@@ -491,84 +537,85 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
   <li class="item">
     
 <div class="breadcrumb">
-<a href="/categories/Ubuntu/" title="In Ubuntu">Ubuntu</a>
-</div>
-
-    <span><a href="/posts/6e65ed30/" title="ubuntu20无法安装vmtools解决">ubuntu20无法安装vmtools解决</a></span>
-  </li>
-
-      
-  <li class="item">
-    
-<div class="breadcrumb">
 <a href="/categories/Java/" title="In Java">Java</a>
 </div>
 
-    <span><a href="/posts/e18abc1d/" title="关于YAML中List存放Map">关于YAML中List存放Map</a></span>
+    <span><a href="/posts/b536fa7f/" title="关于junit测试类防止事务回滚">关于junit测试类防止事务回滚</a></span>
   </li>
 
       
   <li class="item">
     
 <div class="breadcrumb">
-</div>
-
-    <span><a href="/posts/159c6098/" title="阻塞队列">阻塞队列</a></span>
-  </li>
-
-      
-  <li class="item">
-    
-<div class="breadcrumb">
-</div>
-
-    <span><a href="/posts/7874a051/" title="Nginx踩坑之解决前后端跨域">Nginx踩坑之解决前后端跨域</a></span>
-  </li>
-
-      
-  <li class="item">
-    
-<div class="breadcrumb">
-<a href="/categories/Java/" title="In Java">Java</a>
-</div>
-
-    <span><a href="/posts/1da18d70/" title="Java8内置四大函数式接口">Java8内置四大函数式接口</a></span>
-  </li>
-
-      
-  <li class="item">
-    
-<div class="breadcrumb">
-<a href="/categories/SAP/" title="In SAP">SAP</a>
-</div>
-
-    <span><a href="/posts/ef55dc85/" title="CEST与北京时间转换表">CEST与北京时间转换表</a></span>
-  </li>
-
-      
-  <li class="item">
-    
-<div class="breadcrumb">
-<a href="/categories/Java/" title="In Java">Java</a>
-</div>
-
-    <span><a href="/posts/c3733521/" title="Java之assert关键字">Java之assert关键字</a></span>
-  </li>
-
-      
-  <li class="item">
-    
-<div class="breadcrumb">
-<a href="/categories/Java/" title="In Java">Java</a>
+<a href="/categories/Java%E9%9D%A2%E8%AF%95/" title="In Java面试">Java面试</a>
 <i class="ic i-angle-right"></i>
-<a href="/categories/Java/Mybatis/" title="In Mybatis">Mybatis</a>
-<i class="ic i-angle-right"></i>
-<a href="/categories/Java/Mybatis/SpringBoot/" title="In SpringBoot">SpringBoot</a>
-<i class="ic i-angle-right"></i>
-<a href="/categories/Java/Mybatis/SpringBoot/%E5%88%86%E9%A1%B5%E6%9F%A5%E8%AF%A2/" title="In 分页查询">分页查询</a>
+<a href="/categories/Java%E9%9D%A2%E8%AF%95/SpringBoot/" title="In SpringBoot">SpringBoot</a>
 </div>
 
-    <span><a href="/posts/2edf7887/" title="MybatisPlus实现分页查询">MybatisPlus实现分页查询</a></span>
+    <span><a href="/posts/eec4b728/" title="SpringBoot中如何优雅的使用多线程">SpringBoot中如何优雅的使用多线程</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/%E5%89%8D%E7%AB%AF/" title="In 前端">前端</a>
+</div>
+
+    <span><a href="/posts/e43580c1/" title="flex布局">flex布局</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/Java/" title="In Java">Java</a>
+</div>
+
+    <span><a href="/posts/405fde88/" title="关于Exception的处理细节">关于Exception的处理细节</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+</div>
+
+    <span><a href="/posts/d0edc1ed/" title="Linux常用命令">Linux常用命令</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F/" title="In 正则表达式">正则表达式</a>
+</div>
+
+    <span><a href="/posts/2f57a694/" title="正则表达式">正则表达式</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/Git/" title="In Git">Git</a>
+</div>
+
+    <span><a href="/posts/424eebf1/" title="关于在IDEA中回滚Git版本">关于在IDEA中回滚Git版本</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/Java%E9%9D%A2%E8%AF%95/" title="In Java面试">Java面试</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/Java%E9%9D%A2%E8%AF%95/%E5%BF%AB%E9%80%9F%E6%8E%92%E5%BA%8F/" title="In 快速排序">快速排序</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/Java%E9%9D%A2%E8%AF%95/%E5%BF%AB%E9%80%9F%E6%8E%92%E5%BA%8F/%E7%AE%97%E6%B3%95/" title="In 算法">算法</a>
+</div>
+
+    <span><a href="/posts/ff8068c0/" title="快速排序">快速排序</a></span>
   </li>
 
   </ul>
@@ -593,13 +640,13 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
     <span class="post-meta-item-icon">
       <i class="ic i-chart-area"></i>
     </span>
-    <span title="Symbols count total">615k words</span>
+    <span title="Symbols count total">616k words</span>
 
     <span class="post-meta-divider">|</span>
     <span class="post-meta-item-icon">
       <i class="ic i-coffee"></i>
     </span>
-    <span title="Reading time total">9:19</span>
+    <span title="Reading time total">9:20</span>
   </div>
 </div>
 
