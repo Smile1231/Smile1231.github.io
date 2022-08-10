@@ -18,19 +18,21 @@
         <category>Corn</category>
         <category>前端</category>
         <category>Css</category>
+        <category>DisPlay属性</category>
         <category>DDD</category>
         <category>领域驱动设计</category>
-        <category>FastJson</category>
         <category>Docker</category>
-        <category>DisPlay属性</category>
         <category>blog</category>
         <category>hexo</category>
         <category>next</category>
-        <category>IDEA</category>
-        <category>SpringBoot</category>
+        <category>FastJson</category>
         <category>JavaScript</category>
         <category>Html</category>
+        <category>SpringBoot</category>
+        <category>IDEA</category>
         <category>Jvm</category>
+        <category>Jenkins</category>
+        <category>CI/CD</category>
         <category>函数式接口</category>
         <category>map</category>
         <category>Stream流</category>
@@ -44,28 +46,27 @@
         <category>LeetCode</category>
         <category>算法</category>
         <category>递归</category>
-        <category>Linux</category>
         <category>numpy</category>
         <category>pandas</category>
         <category>sklearn</category>
+        <category>Linux</category>
         <category>Mybatis</category>
         <category>分页查询</category>
         <category>模糊查询</category>
-        <category>Nginx</category>
         <category>Spring</category>
+        <category>Nginx</category>
         <category>SrpingBoot</category>
         <category>文件上传</category>
         <category>事务</category>
+        <category>master</category>
         <category>TypeScript</category>
         <category>WebPack</category>
-        <category>master</category>
-        <category>Jenkins</category>
-        <category>Groovy</category>
         <category>UML</category>
-        <category>VsCode</category>
-        <category>Shell</category>
+        <category>Groovy</category>
         <category>Ubuntu</category>
         <category>Mysql</category>
+        <category>VsCode</category>
+        <category>Shell</category>
         <category>VSCODE</category>
         <category>快捷键</category>
         <category>Vue</category>
@@ -74,30 +75,30 @@
         <category>线程池</category>
         <category>ubuntu</category>
         <category>虚拟机</category>
-        <category>二分查找</category>
         <category>Hadoop</category>
-        <category>数据挖掘</category>
         <category>操作系统</category>
         <category>EasyExcel</category>
+        <category>二分查找</category>
         <category>node</category>
+        <category>数据挖掘</category>
         <category>JVM</category>
         <category>Yaml</category>
-        <category>Hexo</category>
         <category>数据库</category>
+        <category>Hexo</category>
         <category>junit</category>
         <category>Mysql事务</category>
-        <category>git,npm,node</category>
         <category>Git</category>
         <category>冒泡排序</category>
-        <category>堆排序</category>
+        <category>git,npm,node</category>
         <category>动态规划</category>
-        <category>幂等性</category>
+        <category>堆排序</category>
         <category>多线程</category>
+        <category>幂等性</category>
         <category>Google</category>
         <category>流</category>
-        <category>归并排序</category>
         <category>快速排序</category>
         <category>正则表达式</category>
+        <category>归并排序</category>
         <category>直接插入排序</category>
         <category>选择排序</category>
         <category>Java 面试</category>
@@ -121,15 +122,17 @@
             <link>https://smile1231.github.io/posts/737c98ca/</link>
             <category>Hadoop</category>
             <pubDate>Mon, 22 Nov 2021 10:28:54 +0800</pubDate>
-            <description><![CDATA[ &lt;p&gt;&lt;code&gt;Hadoop&lt;/code&gt;  的各个组成部分&lt;/p&gt;
+            <description><![CDATA[ &lt;p&gt;&lt;code&gt;Hadoop&lt;/code&gt;的各个组成部分&lt;/p&gt;
 &lt;img data-src=&#34;/posts/737c98ca/2021-11-22-11-27-10.png&#34; class=&#34;&#34;&gt;
+
 &lt;span id=&#34;more&#34;&gt;&lt;/span&gt;
+
 &lt;pre&gt;&lt;code&gt;归纳:
 Hadoop组成
  
     Hadoop  HDFS：一个高可靠、高吞吐量的分布式文件系统，对海量数据的存储。
- 	Hadoop  MapReduce：一个分布式的资源调度和离线并行计算框架。
- 	Hadoop  Yarn：基于HDFS,用于作业调度和集群资源管理的框架。
+     Hadoop  MapReduce：一个分布式的资源调度和离线并行计算框架。
+     Hadoop  Yarn：基于HDFS,用于作业调度和集群资源管理的框架。
 &lt;/code&gt;&lt;/pre&gt;
  ]]></description>
         </item>

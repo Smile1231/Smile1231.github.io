@@ -117,12 +117,12 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
       </div>
       <div id="imgs" class="pjax">
         <ul>
-          <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1giclx6phq6j20zk0m8e36.jpg"></li>
-          <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1gicliwyw55j20zk0m8hdt.jpg"></li>
-          <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1giclimtf7dj20zk0m8qav.jpg"></li>
-          <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1gicljitigmj20zk0m87fp.jpg"></li>
-          <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1giclga70tsj20zk0m84mr.jpg"></li>
-          <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1gipevuctzzj20zk0m84qp.jpg"></li>
+          <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1giciuja1j1j20zk0m8kjl.jpg"></li>
+          <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1giclil3m4ej20zk0m8tn8.jpg"></li>
+          <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1gipet4bz0yj20zk0m8e81.jpg"></li>
+          <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1giclj9410cj20zk0m8h12.jpg"></li>
+          <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1gipesng5oej20zk0m87d4.jpg"></li>
+          <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1gipeyhsblkj20zk0m81kx.jpg"></li>
         </ul>
       </div>
     </header>
@@ -169,6 +169,7 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
     
 
     <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br></pre></td><td class="code"><pre><span class="line">DateFormat sdf = <span class="keyword">new</span> SimpleDateFormat(<span class="string">&quot;yyyy-MM-dd&quot;</span>);</span><br><span class="line">String Date = <span class="string">&quot;2020-08-03&quot;</span>;  <span class="comment">//定义初始是周一</span></span><br><span class="line">Date testdate = sdf.parse(Date);</span><br><span class="line">Calendar cal = Calendar.getInstance();</span><br><span class="line">cal.setTime(testdate); </span><br><span class="line"><span class="keyword">if</span>(cal.get(Calendar.DAY_OF_WEEK)==Calendar.MONDAY)&#123;</span><br><span class="line">    System.out.println(sdf.format(cal.getTime())+<span class="string">&quot;=========&quot;</span>+<span class="string">&quot;是周一=========&quot;</span>);</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">//日期加一天</span></span><br><span class="line">cal.add(Calendar.DATE,<span class="number">1</span>);</span><br><span class="line"><span class="keyword">if</span>(cal.get(Calendar.DAY_OF_WEEK)==Calendar.TUESDAY) &#123;</span><br><span class="line">    System.out.println(sdf.format(cal.getTime())+<span class="string">&quot;=========&quot;</span>+<span class="string">&quot;是周二=========&quot;</span>);</span><br><span class="line">&#125;</span><br><span class="line">cal.add(Calendar.DATE,<span class="number">1</span>);</span><br><span class="line"><span class="keyword">if</span>(cal.get(Calendar.DAY_OF_WEEK)==Calendar.WEDNESDAY)&#123;</span><br><span class="line">    System.out.println(sdf.format(cal.getTime())+<span class="string">&quot;=========&quot;</span>+<span class="string">&quot;是周三=========&quot;</span>);</span><br><span class="line">&#125;</span><br><span class="line">cal.add(Calendar.DATE,<span class="number">1</span>);</span><br><span class="line"><span class="keyword">if</span>(cal.get(Calendar.DAY_OF_WEEK)==Calendar.THURSDAY)&#123;</span><br><span class="line">    System.out.println(sdf.format(cal.getTime())+<span class="string">&quot;=========&quot;</span>+<span class="string">&quot;是周四=========&quot;</span>);</span><br><span class="line">&#125;</span><br><span class="line">cal.add(Calendar.DATE,<span class="number">1</span>);</span><br><span class="line"><span class="keyword">if</span>(cal.get(Calendar.DAY_OF_WEEK)==Calendar.FRIDAY)&#123;</span><br><span class="line">    System.out.println(sdf.format(cal.getTime())+<span class="string">&quot;=========&quot;</span>+<span class="string">&quot;是周五=========&quot;</span>);</span><br><span class="line">&#125;</span><br><span class="line">cal.add(Calendar.DATE,<span class="number">1</span>);</span><br><span class="line"><span class="keyword">if</span>(cal.get(Calendar.DAY_OF_WEEK)==Calendar.SATURDAY)&#123;</span><br><span class="line">    System.out.println(sdf.format(cal.getTime())+<span class="string">&quot;=========&quot;</span>+<span class="string">&quot;是周六=========&quot;</span>);</span><br><span class="line">&#125;</span><br><span class="line">cal.add(Calendar.DATE,<span class="number">1</span>);</span><br><span class="line"><span class="keyword">if</span>(cal.get(Calendar.DAY_OF_WEEK)==Calendar.SUNDAY)&#123;</span><br><span class="line">    System.out.println(sdf.format(cal.getTime())+<span class="string">&quot;=========&quot;</span>+<span class="string">&quot;是周日=========&quot;</span>);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
 
       <div class="tags">
           <a href="/tags/Java/" rel="tag"><i class="ic i-tag"></i> Java</a>
@@ -224,7 +225,7 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
     <div class="item left">
       
 
-  <a href="/posts/e43580c1/" itemprop="url" rel="prev" data-background-image="https:&#x2F;&#x2F;tva3.sinaimg.cn&#x2F;mw690&#x2F;6833939bly1gicitcxhpij20zk0m8hdt.jpg" title="flex布局">
+  <a href="/posts/e43580c1/" itemprop="url" rel="prev" data-background-image="https:&#x2F;&#x2F;tva3.sinaimg.cn&#x2F;mw690&#x2F;6833939bly1gipexbei4hj20zk0m8npd.jpg" title="flex布局">
   <span class="type">Previous Post</span>
   <span class="category"><i class="ic i-flag"></i> 前端</span>
   <h3>flex布局</h3>
@@ -234,7 +235,7 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
     <div class="item right">
       
 
-  <a href="/posts/388f5c14/" itemprop="url" rel="next" data-background-image="https:&#x2F;&#x2F;tva3.sinaimg.cn&#x2F;mw690&#x2F;6833939bly1giciusoyjnj219g0u0x56.jpg" title="mysql日期加减">
+  <a href="/posts/388f5c14/" itemprop="url" rel="next" data-background-image="https:&#x2F;&#x2F;tva3.sinaimg.cn&#x2F;mw690&#x2F;6833939bly1gicitf0kl1j20zk0m87fe.jpg" title="mysql日期加减">
   <span class="type">Next Post</span>
   <span class="category"><i class="ic i-flag"></i> 数据库</span>
   <h3>mysql日期加减</h3>
@@ -273,7 +274,7 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
 <nav class="state">
     <div class="item posts">
       <a href="/archives/">
-        <span class="count">139</span>
+        <span class="count">142</span>
         <span class="name">posts</span>
       </a>
     </div>
@@ -285,7 +286,7 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
     </div>
     <div class="item tags">
       <a href="/tags/">
-        <span class="count">108</span>
+        <span class="count">109</span>
         <span class="name">tags</span>
       </a>
     </div>
@@ -364,86 +365,19 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
   <li class="item">
     
 <div class="breadcrumb">
-<a href="/categories/%E6%95%B0%E6%8D%AE%E5%BA%93/" title="In 数据库">数据库</a>
 </div>
 
-    <span><a href="/posts/377b6f7d/" title="关于mysql中对Json类型字段进行筛选查询">关于mysql中对Json类型字段进行筛选查询</a></span>
+    <span><a href="/posts/3c59e6c8/" title="如何让自己的博客被Google以及百度收录">如何让自己的博客被Google以及百度收录</a></span>
   </li>
 
       
   <li class="item">
     
 <div class="breadcrumb">
+<a href="/categories/%E5%9F%BA%E5%9B%A0%E7%BC%96%E8%BE%91/" title="In 基因编辑">基因编辑</a>
 </div>
 
-    <span><a href="/posts/afe5178f/" title="关于设置git以及npm代理">关于设置git以及npm代理</a></span>
-  </li>
-
-      
-  <li class="item">
-    
-<div class="breadcrumb">
-<a href="/categories/Shell/" title="In Shell">Shell</a>
-</div>
-
-    <span><a href="/posts/55b095e0/" title="The learning of Shell">The learning of Shell</a></span>
-  </li>
-
-      
-  <li class="item">
-    
-<div class="breadcrumb">
-<a href="/categories/SpringBoot/" title="In SpringBoot">SpringBoot</a>
-<i class="ic i-angle-right"></i>
-<a href="/categories/SpringBoot/Java/" title="In Java">Java</a>
-</div>
-
-    <span><a href="/posts/f976ebe7/" title="SpringMvc中标准的后端接口格式">SpringMvc中标准的后端接口格式</a></span>
-  </li>
-
-      
-  <li class="item">
-    
-<div class="breadcrumb">
-<a href="/categories/%E5%A4%A7%E6%95%B0%E6%8D%AE/" title="In 大数据">大数据</a>
-</div>
-
-    <span><a href="/posts/737c98ca/" title="什么是MapReduce">什么是MapReduce</a></span>
-  </li>
-
-      
-  <li class="item">
-    
-<div class="breadcrumb">
-<a href="/categories/Java%E9%9D%A2%E8%AF%95/" title="In Java面试">Java面试</a>
-<i class="ic i-angle-right"></i>
-<a href="/categories/Java%E9%9D%A2%E8%AF%95/%E5%86%92%E6%B3%A1%E6%8E%92%E5%BA%8F/" title="In 冒泡排序">冒泡排序</a>
-<i class="ic i-angle-right"></i>
-<a href="/categories/Java%E9%9D%A2%E8%AF%95/%E5%86%92%E6%B3%A1%E6%8E%92%E5%BA%8F/%E7%AE%97%E6%B3%95/" title="In 算法">算法</a>
-</div>
-
-    <span><a href="/posts/14e6f1eb/" title="冒泡排序">冒泡排序</a></span>
-  </li>
-
-      
-  <li class="item">
-    
-<div class="breadcrumb">
-<a href="/categories/Java%E9%9D%A2%E8%AF%95/" title="In Java面试">Java面试</a>
-<i class="ic i-angle-right"></i>
-<a href="/categories/Java%E9%9D%A2%E8%AF%95/Spring/" title="In Spring">Spring</a>
-</div>
-
-    <span><a href="/posts/89080a8e/" title="Spring Bean的生命周期">Spring Bean的生命周期</a></span>
-  </li>
-
-      
-  <li class="item">
-    
-<div class="breadcrumb">
-</div>
-
-    <span><a href="/posts/66edb7d2/" title="关于hexo使用shoka主题注意点">关于hexo使用shoka主题注意点</a></span>
+    <span><a href="/posts/1f142005/" title="CRISPR-Cas9英文介绍">CRISPR-Cas9英文介绍</a></span>
   </li>
 
       
@@ -451,11 +385,59 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
     
 <div class="breadcrumb">
 <a href="/categories/Java/" title="In Java">Java</a>
-<i class="ic i-angle-right"></i>
-<a href="/categories/Java/SpringBoot/" title="In SpringBoot">SpringBoot</a>
 </div>
 
-    <span><a href="/posts/a3dfcd98/" title="SpringBoot中常见的几种解决跨域的方式">SpringBoot中常见的几种解决跨域的方式</a></span>
+    <span><a href="/posts/97604c34/" title="获取指定集合要求中的mapkey值并重新返回map">获取指定集合要求中的mapkey值并重新返回map</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/IDEA/" title="In IDEA">IDEA</a>
+</div>
+
+    <span><a href="/posts/579bb697/" title="IDEA小图标含义">IDEA小图标含义</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+</div>
+
+    <span><a href="/posts/307637a3/" title="扫尾">扫尾</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/Java%E9%9D%A2%E8%AF%95/" title="In Java面试">Java面试</a>
+</div>
+
+    <span><a href="/posts/6b5f7afc/" title="面试之旅关于Java知识点">面试之旅关于Java知识点</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+</div>
+
+    <span><a href="/posts/a1926332/" title="Springboot+Vue二进制文件传输">Springboot+Vue二进制文件传输</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/Java%E9%9D%A2%E8%AF%95/" title="In Java面试">Java面试</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/Java%E9%9D%A2%E8%AF%95/%E7%AE%97%E6%B3%95/" title="In 算法">算法</a>
+</div>
+
+    <span><a href="/posts/a4ce31d2/" title="贪心算法">贪心算法</a></span>
   </li>
 
       
@@ -465,6 +447,18 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
 </div>
 
     <span><a href="/posts/56be7cc9/" title="关于Linux排查问题命令">关于Linux排查问题命令</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/%E5%89%8D%E7%AB%AF/" title="In 前端">前端</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/%E5%89%8D%E7%AB%AF/Vue/" title="In Vue">Vue</a>
+</div>
+
+    <span><a href="/posts/8408ed11/" title="Vue-Cli介绍以及使用">Vue-Cli介绍以及使用</a></span>
   </li>
 
   </ul>
@@ -489,13 +483,13 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
     <span class="post-meta-item-icon">
       <i class="ic i-chart-area"></i>
     </span>
-    <span title="Symbols count total">616k words</span>
+    <span title="Symbols count total">620k words</span>
 
     <span class="post-meta-divider">|</span>
     <span class="post-meta-item-icon">
       <i class="ic i-coffee"></i>
     </span>
-    <span title="Reading time total">9:20</span>
+    <span title="Reading time total">9:24</span>
   </div>
 </div>
 

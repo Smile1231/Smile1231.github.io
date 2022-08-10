@@ -76,7 +76,7 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
       <i class="ic i-pen"></i>
     </span>
     <span class="text">Symbols count in article</span>
-    <span>889</span>
+    <span>886</span>
     <span class="text">words</span>
   </span>
   <span class="item" title="Reading time">
@@ -117,12 +117,12 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
       </div>
       <div id="imgs" class="pjax">
         <ul>
-          <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1gicis081o9j20zk0m8dmr.jpg"></li>
-          <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1gipexj2jgzj20zk0m8b09.jpg"></li>
-          <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1giclffsa1cj20zk0m811l.jpg"></li>
-          <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1giciszlczyj20zk0m816d.jpg"></li>
-          <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1gipev1x5e4j20zk0m8b29.jpg"></li>
-          <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1giclh0m9pdj20zk0m8hdt.jpg"></li>
+          <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1gipeudstjqj20zk0m8k3r.jpg"></li>
+          <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1giclimtf7dj20zk0m8qav.jpg"></li>
+          <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1gipexe4oykj20zk0m87ji.jpg"></li>
+          <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1gipevuctzzj20zk0m84qp.jpg"></li>
+          <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1giciuv0socj20zk0m8qes.jpg"></li>
+          <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1giciuja1j1j20zk0m8kjl.jpg"></li>
         </ul>
       </div>
     </header>
@@ -171,15 +171,14 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
   <div class="body md" itemprop="articleBody">
     
 
-    <p>如何获取一个指定日期的一天起始时间呢: <code>hutool</code>  中有自带的方法:</p>
+    <p>如何获取一个指定日期的一天起始时间呢:<code>hutool</code>中有自带的方法:</p>
 <span id="more"></span>
+
 <figure class="highlight gradle"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">implementation <span class="keyword">group</span>: <span class="string">&#x27;cn.hutool&#x27;</span>, name: <span class="string">&#x27;hutool-all&#x27;</span>, version: <span class="string">&#x27;5.7.16&#x27;</span></span><br></pre></td></tr></table></figure>
-<h2 id="获取当天的开始时间"><a class="markdownIt-Anchor" href="#获取当天的开始时间">#</a> 获取当天的开始时间</h2>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">DateUtil.beginOfDay(<span class="keyword">new</span> Date())</span><br></pre></td></tr></table></figure>
-<h2 id="获取当天的结束时间"><a class="markdownIt-Anchor" href="#获取当天的结束时间">#</a> 获取当天的结束时间</h2>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">DateUtil.endOfDay(<span class="keyword">new</span> Date())</span><br></pre></td></tr></table></figure>
-<h2 id="在这里获取昨天的开始和结束时间需要结合calendar和hutool一起使用"><a class="markdownIt-Anchor" href="#在这里获取昨天的开始和结束时间需要结合calendar和hutool一起使用">#</a> 在这里获取昨天的开始和结束时间需要结合 <code>Calendar</code>  和 <code>hutool</code>  一起使用</h2>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line">SimpleDateFormat simpleDateFormat=<span class="keyword">new</span> SimpleDateFormat(<span class="string">&quot;yyyy-MM-dd HH:mm:ss&quot;</span>);</span><br><span class="line"></span><br><span class="line"><span class="comment">//例如今天是 2021-12-16 16:55:45</span></span><br><span class="line"><span class="comment">//获取昨天开始的时间</span></span><br><span class="line">Date beginOfDay = DateUtil.beginOfDay(<span class="keyword">new</span> Date());</span><br><span class="line">Calendar c = Calendar.getInstance();</span><br><span class="line">c.setTime(beginOfDay);</span><br><span class="line">c.add(Calendar.DAY_OF_MONTH,-<span class="number">1</span>);</span><br><span class="line">Date yesterBeginDay = c.getTime();</span><br><span class="line">String a = simpleDateFormat.format(yesterBeginDay);</span><br><span class="line">System.out.println(a);</span><br><span class="line"></span><br><span class="line">输出结果：<span class="number">2021</span>-<span class="number">12</span>-<span class="number">15</span> <span class="number">00</span>:<span class="number">00</span>:<span class="number">00</span></span><br><span class="line">    </span><br><span class="line"><span class="comment">//获取昨天结束的时间</span></span><br><span class="line">Date endOfDay = DateUtil.endOfDay(<span class="keyword">new</span> Date());</span><br><span class="line">c.setTime(endOfDay);</span><br><span class="line">c.add(Calendar.DAY_OF_MONTH,-<span class="number">1</span>);</span><br><span class="line">Date yesterEndDay = c.getTime();</span><br><span class="line">String b = simpleDateFormat.format(yesterEndDay);</span><br><span class="line">System.out.println(b);</span><br><span class="line"></span><br><span class="line">输出结果：<span class="number">2021</span>-<span class="number">12</span>-<span class="number">15</span> <span class="number">23</span>:<span class="number">59</span>:<span class="number">59</span></span><br></pre></td></tr></table></figure>
+<h2 id="获取当天的开始时间"><a href="#获取当天的开始时间" class="headerlink" title="获取当天的开始时间"></a>获取当天的开始时间</h2><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">DateUtil.beginOfDay(<span class="keyword">new</span> Date())</span><br></pre></td></tr></table></figure>
+<h2 id="获取当天的结束时间"><a href="#获取当天的结束时间" class="headerlink" title="获取当天的结束时间"></a>获取当天的结束时间</h2><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">DateUtil.endOfDay(<span class="keyword">new</span> Date())</span><br></pre></td></tr></table></figure>
+
+<h2 id="在这里获取昨天的开始和结束时间需要结合Calendar和hutool一起使用"><a href="#在这里获取昨天的开始和结束时间需要结合Calendar和hutool一起使用" class="headerlink" title="在这里获取昨天的开始和结束时间需要结合Calendar和hutool一起使用"></a>在这里获取昨天的开始和结束时间需要结合<code>Calendar</code>和<code>hutool</code>一起使用</h2><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line">SimpleDateFormat simpleDateFormat=<span class="keyword">new</span> SimpleDateFormat(<span class="string">&quot;yyyy-MM-dd HH:mm:ss&quot;</span>);</span><br><span class="line"></span><br><span class="line"><span class="comment">//例如今天是 2021-12-16 16:55:45</span></span><br><span class="line"><span class="comment">//获取昨天开始的时间</span></span><br><span class="line">Date beginOfDay = DateUtil.beginOfDay(<span class="keyword">new</span> Date());</span><br><span class="line">Calendar c = Calendar.getInstance();</span><br><span class="line">c.setTime(beginOfDay);</span><br><span class="line">c.add(Calendar.DAY_OF_MONTH,-<span class="number">1</span>);</span><br><span class="line">Date yesterBeginDay = c.getTime();</span><br><span class="line">String a = simpleDateFormat.format(yesterBeginDay);</span><br><span class="line">System.out.println(a);</span><br><span class="line"></span><br><span class="line">输出结果：<span class="number">2021</span>-<span class="number">12</span>-<span class="number">15</span> <span class="number">00</span>:<span class="number">00</span>:<span class="number">00</span></span><br><span class="line">    </span><br><span class="line"><span class="comment">//获取昨天结束的时间</span></span><br><span class="line">Date endOfDay = DateUtil.endOfDay(<span class="keyword">new</span> Date());</span><br><span class="line">c.setTime(endOfDay);</span><br><span class="line">c.add(Calendar.DAY_OF_MONTH,-<span class="number">1</span>);</span><br><span class="line">Date yesterEndDay = c.getTime();</span><br><span class="line">String b = simpleDateFormat.format(yesterEndDay);</span><br><span class="line">System.out.println(b);</span><br><span class="line"></span><br><span class="line">输出结果：<span class="number">2021</span>-<span class="number">12</span>-<span class="number">15</span> <span class="number">23</span>:<span class="number">59</span>:<span class="number">59</span></span><br></pre></td></tr></table></figure>
 
       <div class="tags">
           <a href="/tags/java/" rel="tag"><i class="ic i-tag"></i> java</a>
@@ -235,7 +234,7 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
     <div class="item left">
       
 
-  <a href="/posts/96e2d97b/" itemprop="url" rel="prev" data-background-image="https:&#x2F;&#x2F;tva3.sinaimg.cn&#x2F;mw690&#x2F;6833939bly1gipeybxm1pj20zk0m8niv.jpg" title="mysql 获取当前日期及格式化">
+  <a href="/posts/96e2d97b/" itemprop="url" rel="prev" data-background-image="https:&#x2F;&#x2F;tva3.sinaimg.cn&#x2F;mw690&#x2F;6833939bly1giclgrvbd6j20zk0m8qv5.jpg" title="mysql 获取当前日期及格式化">
   <span class="type">Previous Post</span>
   <span class="category"><i class="ic i-flag"></i> 数据库</span>
   <h3>mysql 获取当前日期及格式化</h3>
@@ -245,7 +244,7 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
     <div class="item right">
       
 
-  <a href="/posts/1c3390ab/" itemprop="url" rel="next" data-background-image="https:&#x2F;&#x2F;tva3.sinaimg.cn&#x2F;mw690&#x2F;6833939bly1gipeun65urj20zk0m81ii.jpg" title="将Java数据输出为本地txt">
+  <a href="/posts/1c3390ab/" itemprop="url" rel="next" data-background-image="https:&#x2F;&#x2F;tva3.sinaimg.cn&#x2F;mw690&#x2F;6833939bly1gipevo9j1jj20zk0m8e81.jpg" title="将Java数据输出为本地txt">
   <span class="type">Next Post</span>
   <span class="category"><i class="ic i-flag"></i> Java</span>
   <h3>将Java数据输出为本地txt</h3>
@@ -267,7 +266,7 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
   <div class="panels">
     <div class="inner">
       <div class="contents panel pjax" data-title="Contents">
-          <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%8E%B7%E5%8F%96%E5%BD%93%E5%A4%A9%E7%9A%84%E5%BC%80%E5%A7%8B%E6%97%B6%E9%97%B4"><span class="toc-number">1.</span> <span class="toc-text"> 获取当天的开始时间</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%8E%B7%E5%8F%96%E5%BD%93%E5%A4%A9%E7%9A%84%E7%BB%93%E6%9D%9F%E6%97%B6%E9%97%B4"><span class="toc-number">2.</span> <span class="toc-text"> 获取当天的结束时间</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%9C%A8%E8%BF%99%E9%87%8C%E8%8E%B7%E5%8F%96%E6%98%A8%E5%A4%A9%E7%9A%84%E5%BC%80%E5%A7%8B%E5%92%8C%E7%BB%93%E6%9D%9F%E6%97%B6%E9%97%B4%E9%9C%80%E8%A6%81%E7%BB%93%E5%90%88calendar%E5%92%8Chutool%E4%B8%80%E8%B5%B7%E4%BD%BF%E7%94%A8"><span class="toc-number">3.</span> <span class="toc-text"> 在这里获取昨天的开始和结束时间需要结合 Calendar  和 hutool  一起使用</span></a></li></ol>
+          <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%8E%B7%E5%8F%96%E5%BD%93%E5%A4%A9%E7%9A%84%E5%BC%80%E5%A7%8B%E6%97%B6%E9%97%B4"><span class="toc-number">1.</span> <span class="toc-text">获取当天的开始时间</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%8E%B7%E5%8F%96%E5%BD%93%E5%A4%A9%E7%9A%84%E7%BB%93%E6%9D%9F%E6%97%B6%E9%97%B4"><span class="toc-number">2.</span> <span class="toc-text">获取当天的结束时间</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%9C%A8%E8%BF%99%E9%87%8C%E8%8E%B7%E5%8F%96%E6%98%A8%E5%A4%A9%E7%9A%84%E5%BC%80%E5%A7%8B%E5%92%8C%E7%BB%93%E6%9D%9F%E6%97%B6%E9%97%B4%E9%9C%80%E8%A6%81%E7%BB%93%E5%90%88Calendar%E5%92%8Chutool%E4%B8%80%E8%B5%B7%E4%BD%BF%E7%94%A8"><span class="toc-number">3.</span> <span class="toc-text">在这里获取昨天的开始和结束时间需要结合Calendar和hutool一起使用</span></a></li></ol>
       </div>
       <div class="related panel pjax" data-title="Related">
         <ul>
@@ -285,7 +284,7 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
 <nav class="state">
     <div class="item posts">
       <a href="/archives/">
-        <span class="count">139</span>
+        <span class="count">142</span>
         <span class="name">posts</span>
       </a>
     </div>
@@ -297,7 +296,7 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
     </div>
     <div class="item tags">
       <a href="/tags/">
-        <span class="count">108</span>
+        <span class="count">109</span>
         <span class="name">tags</span>
       </a>
     </div>
@@ -376,34 +375,9 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
   <li class="item">
     
 <div class="breadcrumb">
-<a href="/categories/Java/" title="In Java">Java</a>
 </div>
 
-    <span><a href="/posts/b536fa7f/" title="关于junit测试类防止事务回滚">关于junit测试类防止事务回滚</a></span>
-  </li>
-
-      
-  <li class="item">
-    
-<div class="breadcrumb">
-<a href="/categories/Java%E9%9D%A2%E8%AF%95/" title="In Java面试">Java面试</a>
-<i class="ic i-angle-right"></i>
-<a href="/categories/Java%E9%9D%A2%E8%AF%95/%E7%AE%97%E6%B3%95/" title="In 算法">算法</a>
-</div>
-
-    <span><a href="/posts/7474c898/" title="分治算法">分治算法</a></span>
-  </li>
-
-      
-  <li class="item">
-    
-<div class="breadcrumb">
-<a href="/categories/Java%E9%9D%A2%E8%AF%95/" title="In Java面试">Java面试</a>
-<i class="ic i-angle-right"></i>
-<a href="/categories/Java%E9%9D%A2%E8%AF%95/Jvm/" title="In Jvm">Jvm</a>
-</div>
-
-    <span><a href="/posts/57681474/" title="JVM简单原理">JVM简单原理</a></span>
+    <span><a href="/posts/afe5178f/" title="关于设置git以及npm代理">关于设置git以及npm代理</a></span>
   </li>
 
       
@@ -412,7 +386,7 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
 <div class="breadcrumb">
 </div>
 
-    <span><a href="/posts/ba003691/" title="Springboot工程项目.gitignore配置">Springboot工程项目.gitignore配置</a></span>
+    <span><a href="/posts/49a9ac1a/" title="Springboot优雅的实现重试">Springboot优雅的实现重试</a></span>
   </li>
 
       
@@ -422,17 +396,19 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
 <a href="/categories/Java/" title="In Java">Java</a>
 </div>
 
-    <span><a href="/posts/1da18d70/" title="Java8内置四大函数式接口">Java8内置四大函数式接口</a></span>
+    <span><a href="/posts/1748805d/" title="java线程池与五种常用线程池策略使用与解析">java线程池与五种常用线程池策略使用与解析</a></span>
   </li>
 
       
   <li class="item">
     
 <div class="breadcrumb">
-<a href="/categories/Daily/" title="In Daily">Daily</a>
+<a href="/categories/Java%E9%9D%A2%E8%AF%95/" title="In Java面试">Java面试</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/Java%E9%9D%A2%E8%AF%95/Spring%E4%BA%8B%E5%8A%A1/" title="In Spring事务">Spring事务</a>
 </div>
 
-    <span><a href="/posts/9a0369ec/" title="布隆过滤器">布隆过滤器</a></span>
+    <span><a href="/posts/7e4601e3/" title="面试之旅之关于Spring事务处理">面试之旅之关于Spring事务处理</a></span>
   </li>
 
       
@@ -440,19 +416,30 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
     
 <div class="breadcrumb">
 <a href="/categories/%E5%89%8D%E7%AB%AF/" title="In 前端">前端</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/%E5%89%8D%E7%AB%AF/Vue/" title="In Vue">Vue</a>
 </div>
 
-    <span><a href="/posts/e43580c1/" title="flex布局">flex布局</a></span>
+    <span><a href="/posts/21d4b84b/" title="Vue3项目的创建">Vue3项目的创建</a></span>
   </li>
 
       
   <li class="item">
     
 <div class="breadcrumb">
-<a href="/categories/%E5%9F%BA%E5%9B%A0%E7%BC%96%E8%BE%91/" title="In 基因编辑">基因编辑</a>
 </div>
 
-    <span><a href="/posts/1f142005/" title="CRISPR-Cas9英文介绍">CRISPR-Cas9英文介绍</a></span>
+    <span><a href="/posts/5a74c6a6/" title="宝儿的大腿小腿围">宝儿的大腿小腿围</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/Ubuntu/" title="In Ubuntu">Ubuntu</a>
+</div>
+
+    <span><a href="/posts/6e65ed30/" title="ubuntu20无法安装vmtools解决">ubuntu20无法安装vmtools解决</a></span>
   </li>
 
       
@@ -461,20 +448,31 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
 <div class="breadcrumb">
 <a href="/categories/Java%E9%9D%A2%E8%AF%95/" title="In Java面试">Java面试</a>
 <i class="ic i-angle-right"></i>
-<a href="/categories/Java%E9%9D%A2%E8%AF%95/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/" title="In 数据结构">数据结构</a>
+<a href="/categories/Java%E9%9D%A2%E8%AF%95/%E5%BF%AB%E9%80%9F%E6%8E%92%E5%BA%8F/" title="In 快速排序">快速排序</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/Java%E9%9D%A2%E8%AF%95/%E5%BF%AB%E9%80%9F%E6%8E%92%E5%BA%8F/%E7%AE%97%E6%B3%95/" title="In 算法">算法</a>
 </div>
 
-    <span><a href="/posts/9f9a6182/" title="面试之旅关于数据结构">面试之旅关于数据结构</a></span>
+    <span><a href="/posts/ff8068c0/" title="快速排序">快速排序</a></span>
   </li>
 
       
   <li class="item">
     
 <div class="breadcrumb">
-<a href="/categories/%E5%A4%A7%E6%95%B0%E6%8D%AE/" title="In 大数据">大数据</a>
+<a href="/categories/Java%E9%9D%A2%E8%AF%95/" title="In Java面试">Java面试</a>
 </div>
 
-    <span><a href="/posts/737c98ca/" title="什么是MapReduce">什么是MapReduce</a></span>
+    <span><a href="/posts/6b5f7afc/" title="面试之旅关于Java知识点">面试之旅关于Java知识点</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+</div>
+
+    <span><a href="/posts/dfdc2005/" title="JDK动态代理原理剖析(简洁版)">JDK动态代理原理剖析(简洁版)</a></span>
   </li>
 
   </ul>
@@ -499,13 +497,13 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
     <span class="post-meta-item-icon">
       <i class="ic i-chart-area"></i>
     </span>
-    <span title="Symbols count total">616k words</span>
+    <span title="Symbols count total">620k words</span>
 
     <span class="post-meta-divider">|</span>
     <span class="post-meta-item-icon">
       <i class="ic i-coffee"></i>
     </span>
-    <span title="Reading time total">9:20</span>
+    <span title="Reading time total">9:24</span>
   </div>
 </div>
 

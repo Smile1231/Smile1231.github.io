@@ -18,19 +18,21 @@
         <category>Corn</category>
         <category>前端</category>
         <category>Css</category>
+        <category>DisPlay属性</category>
         <category>DDD</category>
         <category>领域驱动设计</category>
-        <category>FastJson</category>
         <category>Docker</category>
-        <category>DisPlay属性</category>
         <category>blog</category>
         <category>hexo</category>
         <category>next</category>
-        <category>IDEA</category>
-        <category>SpringBoot</category>
+        <category>FastJson</category>
         <category>JavaScript</category>
         <category>Html</category>
+        <category>SpringBoot</category>
+        <category>IDEA</category>
         <category>Jvm</category>
+        <category>Jenkins</category>
+        <category>CI/CD</category>
         <category>函数式接口</category>
         <category>map</category>
         <category>Stream流</category>
@@ -44,28 +46,27 @@
         <category>LeetCode</category>
         <category>算法</category>
         <category>递归</category>
-        <category>Linux</category>
         <category>numpy</category>
         <category>pandas</category>
         <category>sklearn</category>
+        <category>Linux</category>
         <category>Mybatis</category>
         <category>分页查询</category>
         <category>模糊查询</category>
-        <category>Nginx</category>
         <category>Spring</category>
+        <category>Nginx</category>
         <category>SrpingBoot</category>
         <category>文件上传</category>
         <category>事务</category>
+        <category>master</category>
         <category>TypeScript</category>
         <category>WebPack</category>
-        <category>master</category>
-        <category>Jenkins</category>
-        <category>Groovy</category>
         <category>UML</category>
-        <category>VsCode</category>
-        <category>Shell</category>
+        <category>Groovy</category>
         <category>Ubuntu</category>
         <category>Mysql</category>
+        <category>VsCode</category>
+        <category>Shell</category>
         <category>VSCODE</category>
         <category>快捷键</category>
         <category>Vue</category>
@@ -74,30 +75,30 @@
         <category>线程池</category>
         <category>ubuntu</category>
         <category>虚拟机</category>
-        <category>二分查找</category>
         <category>Hadoop</category>
-        <category>数据挖掘</category>
         <category>操作系统</category>
         <category>EasyExcel</category>
+        <category>二分查找</category>
         <category>node</category>
+        <category>数据挖掘</category>
         <category>JVM</category>
         <category>Yaml</category>
-        <category>Hexo</category>
         <category>数据库</category>
+        <category>Hexo</category>
         <category>junit</category>
         <category>Mysql事务</category>
-        <category>git,npm,node</category>
         <category>Git</category>
         <category>冒泡排序</category>
-        <category>堆排序</category>
+        <category>git,npm,node</category>
         <category>动态规划</category>
-        <category>幂等性</category>
+        <category>堆排序</category>
         <category>多线程</category>
+        <category>幂等性</category>
         <category>Google</category>
         <category>流</category>
-        <category>归并排序</category>
         <category>快速排序</category>
         <category>正则表达式</category>
+        <category>归并排序</category>
         <category>直接插入排序</category>
         <category>选择排序</category>
         <category>Java 面试</category>
@@ -123,18 +124,14 @@
             <category>算法</category>
             <category>二分查找</category>
             <pubDate>Wed, 16 Feb 2022 21:06:36 +0800</pubDate>
-            <description><![CDATA[ &lt;h1 id=&#34;二分查找&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#二分查找&#34;&gt;#&lt;/a&gt; 二分查找&lt;/h1&gt;
-&lt;p&gt;二分查找（ &lt;code&gt;binary search&lt;/code&gt; ），也称作折半查找（ &lt;code&gt;half-interval search&lt;/code&gt; ），每次划分一半进行下一步搜索，所以时间复杂度无非就是 &lt;code&gt;while&lt;/code&gt;  循环的次数！&lt;/p&gt;
+            <description><![CDATA[ &lt;h1 id=&#34;二分查找&#34;&gt;&lt;a href=&#34;#二分查找&#34; class=&#34;headerlink&#34; title=&#34;二分查找&#34;&gt;&lt;/a&gt;二分查找&lt;/h1&gt;&lt;p&gt;二分查找（&lt;code&gt;binary search&lt;/code&gt;），也称作折半查找（&lt;code&gt;half-interval search&lt;/code&gt;），每次划分一半进行下一步搜索，所以时间复杂度无非就是&lt;code&gt;while&lt;/code&gt;循环的次数！&lt;/p&gt;
 &lt;span id=&#34;more&#34;&gt;&lt;/span&gt;
+
 &lt;figure class=&#34;highlight java&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;13&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;14&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;15&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;16&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;17&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;18&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;19&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;20&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;//二分查找 Java 实现 （升序数组）&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;function&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;public&lt;/span&gt; &lt;span class=&#34;keyword&#34;&gt;static&lt;/span&gt; &lt;span class=&#34;keyword&#34;&gt;int&lt;/span&gt; &lt;span class=&#34;title&#34;&gt;binarySearch&lt;/span&gt;&lt;span class=&#34;params&#34;&gt;(Integer[] srcArray, &lt;span class=&#34;keyword&#34;&gt;int&lt;/span&gt; des)&lt;/span&gt; &lt;/span&gt;&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;keyword&#34;&gt;int&lt;/span&gt; low = &lt;span class=&#34;number&#34;&gt;0&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;keyword&#34;&gt;int&lt;/span&gt; high = srcArray.length - &lt;span class=&#34;number&#34;&gt;1&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt; &lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;keyword&#34;&gt;while&lt;/span&gt; ((low &amp;lt;= high) &amp;amp;&amp;amp; (low &amp;lt;= srcArray.length - &lt;span class=&#34;number&#34;&gt;1&lt;/span&gt;)&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;            &amp;amp;&amp;amp; (high &amp;lt;= srcArray.length - &lt;span class=&#34;number&#34;&gt;1&lt;/span&gt;)) &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;            &lt;span class=&#34;comment&#34;&gt;// &amp;gt;&amp;gt; 右移符号 表示除以 2&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        &lt;span class=&#34;keyword&#34;&gt;int&lt;/span&gt; middle = (high + low) &amp;gt;&amp;gt; &lt;span class=&#34;number&#34;&gt;1&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        &lt;span class=&#34;keyword&#34;&gt;if&lt;/span&gt; (des == srcArray[middle]) &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;            &lt;span class=&#34;keyword&#34;&gt;return&lt;/span&gt; middle;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        &lt;span class=&#34;comment&#34;&gt;// 如果要查找的值 小于最中间的值 就算选择 左边的区间&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        &amp;#125; &lt;span class=&#34;keyword&#34;&gt;else&lt;/span&gt; &lt;span class=&#34;keyword&#34;&gt;if&lt;/span&gt; (des &amp;lt; srcArray[middle]) &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;            high = middle - &lt;span class=&#34;number&#34;&gt;1&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        &amp;#125; &lt;span class=&#34;keyword&#34;&gt;else&lt;/span&gt; &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;            low = middle + &lt;span class=&#34;number&#34;&gt;1&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;keyword&#34;&gt;return&lt;/span&gt; -&lt;span class=&#34;number&#34;&gt;1&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;h2 id=&#34;时间复杂度&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#时间复杂度&#34;&gt;#&lt;/a&gt; 时间复杂度&lt;/h2&gt;
-&lt;p&gt;比如：总共有 &lt;code&gt;n&lt;/code&gt;  个元素，每次查找的区间大小就是 &lt;code&gt;n，n/2，n/4，…，n/2^k&lt;/code&gt; （接下来操作元素的剩余个数），其中 &lt;code&gt;k&lt;/code&gt;  就是循环的次数。&lt;br&gt;
-由于 &lt;code&gt;n/2^k&lt;/code&gt;  取整后 &lt;code&gt;&amp;gt;=1&lt;/code&gt; ，即令 &lt;code&gt;n/2^k=1&lt;/code&gt; ，&lt;br&gt;
-可得 &lt;code&gt;k=log2n&lt;/code&gt; ,（是以 &lt;code&gt;2&lt;/code&gt;  为底， &lt;code&gt;n&lt;/code&gt;  的对数），所以时间复杂度可以表示 &lt;code&gt;O()=O(log2n)&lt;/code&gt;&lt;/p&gt;
-&lt;h2 id=&#34;二分查找的缺点&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#二分查找的缺点&#34;&gt;#&lt;/a&gt; 二分查找的缺点&lt;/h2&gt;
-&lt;p&gt;虽然二分查找的效率高，但是要将表按关键字排序。而排序本身是一种很费时的运算。既使采用高效率的排序方法也要花费 &lt;code&gt;O(nlgn)&lt;/code&gt;  的时间。&lt;/p&gt;
-&lt;p&gt;二分查找只适用顺序存储结构。为保持表的有序性，在顺序结构里插入和删除都必须移动大量的结点。因此，二分查找特别适用于那种一经建立就很少改动、而又经常需要查找的线性表。&lt;/p&gt;
-&lt;p&gt;对那些查找少而又经常需要改动的线性表，可采用链表作存储结构，进行顺序查找。链表上无法实现二分查找。&lt;/p&gt;
+&lt;h2 id=&#34;时间复杂度&#34;&gt;&lt;a href=&#34;#时间复杂度&#34; class=&#34;headerlink&#34; title=&#34;时间复杂度&#34;&gt;&lt;/a&gt;时间复杂度&lt;/h2&gt;&lt;p&gt;比如：总共有&lt;code&gt;n&lt;/code&gt;个元素，每次查找的区间大小就是&lt;code&gt;n，n/2，n/4，…，n/2^k&lt;/code&gt;（接下来操作元素的剩余个数），其中&lt;code&gt;k&lt;/code&gt;就是循环的次数。&lt;br&gt;由于&lt;code&gt;n/2^k&lt;/code&gt;取整后&lt;code&gt;&amp;gt;=1&lt;/code&gt;，即令&lt;code&gt;n/2^k=1&lt;/code&gt;，&lt;br&gt;可得&lt;code&gt;k=log2n&lt;/code&gt;,（是以&lt;code&gt;2&lt;/code&gt;为底，&lt;code&gt;n&lt;/code&gt;的对数），所以时间复杂度可以表示&lt;code&gt;O()=O(log2n)&lt;/code&gt;&lt;/p&gt;
+&lt;h2 id=&#34;二分查找的缺点&#34;&gt;&lt;a href=&#34;#二分查找的缺点&#34; class=&#34;headerlink&#34; title=&#34;二分查找的缺点&#34;&gt;&lt;/a&gt;二分查找的缺点&lt;/h2&gt;&lt;p&gt;虽然二分查找的效率高，但是要将表按关键字排序。而排序本身是一种很费时的运算。既使采用高效率的排序方法也要花费&lt;code&gt;O(nlgn)&lt;/code&gt;的时间。&lt;/p&gt;
+&lt;p&gt;　　二分查找只适用顺序存储结构。为保持表的有序性，在顺序结构里插入和删除都必须移动大量的结点。因此，二分查找特别适用于那种一经建立就很少改动、而又经常需要查找的线性表。&lt;/p&gt;
+&lt;p&gt;　　对那些查找少而又经常需要改动的线性表，可采用链表作存储结构，进行顺序查找。链表上无法实现二分查找。&lt;/p&gt;
  ]]></description>
         </item>
     </channel>

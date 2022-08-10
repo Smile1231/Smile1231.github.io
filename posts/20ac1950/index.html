@@ -117,12 +117,12 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
       </div>
       <div id="imgs" class="pjax">
         <ul>
-          <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1giclffsa1cj20zk0m811l.jpg"></li>
-          <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1gipexj2jgzj20zk0m8b09.jpg"></li>
-          <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1giciub8ja1j20zk0m81ky.jpg"></li>
-          <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1gipeubcbajj20zk0m8h1h.jpg"></li>
-          <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1gipeuv80yoj20zk0m8kjl.jpg"></li>
-          <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1giclip4jbpj20zk0m87cv.jpg"></li>
+          <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1gicis081o9j20zk0m8dmr.jpg"></li>
+          <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1giclwuom7cj20zk0m8dvn.jpg"></li>
+          <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1gicm0n457cj20zk0m8e81.jpg"></li>
+          <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1gicit31ffoj20zk0m8naf.jpg"></li>
+          <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1gicivghyooj20zk0m8dir.jpg"></li>
+          <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1gicitf0kl1j20zk0m87fe.jpg"></li>
         </ul>
       </div>
     </header>
@@ -175,26 +175,37 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
 <p>文件上传与下载</p>
 </blockquote>
 <ol>
-<li><code>Spring Boot</code>  默认单个文件上传大小是 <code>1MB</code> , 默认多个文件上传总大小是 <code>10MB</code></li>
+<li><code>Spring Boot</code>默认单个文件上传大小是<code>1MB</code>,默认多个文件上传总大小是<code>10MB</code></li>
 </ol>
 <figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">spring:</span></span><br><span class="line">  <span class="attr">servlet:</span></span><br><span class="line">    <span class="comment">#配置单个上传文件的大小的限制</span></span><br><span class="line">    <span class="attr">multipart:</span></span><br><span class="line">      <span class="attr">max-file-size:</span> <span class="string">20MB</span></span><br><span class="line">    <span class="comment">#配置在一次请求中上传文件的总容量的限制</span></span><br><span class="line">      <span class="attr">max-request-size:</span> <span class="string">50MB</span></span><br></pre></td></tr></table></figure>
+
 <span id="more"></span>
+
 <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">@PostMapping(&quot;/upload&quot;)</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> String <span class="title">uploadFile</span><span class="params">(MultipartFile file)</span></span>&#123;</span><br><span class="line">        <span class="keyword">try</span> &#123;</span><br><span class="line">            <span class="comment">//生成文件在服务器端存放的名字</span></span><br><span class="line"></span><br><span class="line">            <span class="comment">//扩展名</span></span><br><span class="line">            String fileSuffix = file.getOriginalFilename().substring(file.getOriginalFilename().lastIndexOf(<span class="string">&quot;.&quot;</span>)+<span class="number">1</span>);</span><br><span class="line"></span><br><span class="line">            String fileName = System.currentTimeMillis() + <span class="string">&quot;.&quot;</span> +fileSuffix;</span><br><span class="line">            <span class="comment">//获取项目路径</span></span><br><span class="line">            System.out.println(System.getProperty(<span class="string">&quot;user.dir&quot;</span>));</span><br><span class="line"></span><br><span class="line">            File files = <span class="keyword">new</span> File(<span class="string">&quot;/Users/jinmao/Documents/IDEASpace/springboot01/src/&quot;</span> + fileName);</span><br><span class="line">            <span class="comment">//上传</span></span><br><span class="line">            <span class="keyword">if</span>(!files.exists()) files.mkdirs();</span><br><span class="line">            file.transferTo(files);</span><br><span class="line">        &#125; <span class="keyword">catch</span> (IOException e) &#123;</span><br><span class="line">            e.printStackTrace();</span><br><span class="line">            <span class="keyword">return</span> <span class="string">&quot;上传失败&quot;</span>;</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        <span class="keyword">return</span> <span class="string">&quot;上传成功&quot;</span>;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">     <span class="comment">//多文件上传</span></span><br><span class="line">     <span class="meta">@PostMapping(&quot;/batch&quot;)</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> String <span class="title">handleFileUpload</span><span class="params">(HttpServletRequest request)</span> </span>&#123;</span><br><span class="line">        List&lt;MultipartFile&gt; files = ((MultipartHttpServletRequest) request).getFiles(<span class="string">&quot;file&quot;</span>);</span><br><span class="line">        MultipartFile file = <span class="keyword">null</span>;</span><br><span class="line">        BufferedOutputStream stream = <span class="keyword">null</span>;</span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; files.size(); ++i) &#123;</span><br><span class="line">            file = files.get(i);</span><br><span class="line">            String filePath = <span class="string">&quot;/Users/dalaoyang/Downloads/&quot;</span>;</span><br><span class="line">            <span class="keyword">if</span> (!file.isEmpty()) &#123;</span><br><span class="line">                <span class="keyword">try</span> &#123;</span><br><span class="line">                    <span class="keyword">byte</span>[] bytes = file.getBytes();</span><br><span class="line">                    stream = <span class="keyword">new</span> BufferedOutputStream(<span class="keyword">new</span> FileOutputStream(</span><br><span class="line">                            <span class="keyword">new</span> File(filePath + file.getOriginalFilename())));<span class="comment">//设置文件路径及名字</span></span><br><span class="line">                    stream.write(bytes);<span class="comment">// 写入</span></span><br><span class="line">                    stream.close();</span><br><span class="line">                &#125; <span class="keyword">catch</span> (Exception e) &#123;</span><br><span class="line">                    stream = <span class="keyword">null</span>;</span><br><span class="line">                    <span class="keyword">return</span> <span class="string">&quot;第 &quot;</span> + i + <span class="string">&quot; 个文件上传失败 ==&gt; &quot;</span></span><br><span class="line">                            + e.getMessage();</span><br><span class="line">                &#125;</span><br><span class="line">            &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">                <span class="keyword">return</span> <span class="string">&quot;第 &quot;</span> + i</span><br><span class="line">                        + <span class="string">&quot; 个文件上传失败因为文件为空&quot;</span>;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> <span class="string">&quot;上传成功&quot;</span>;</span><br><span class="line">    &#125;</span><br></pre></td></tr></table></figure>
+
 <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//文件下载</span></span><br><span class="line"><span class="meta">@GetMapping(&quot;/download&quot;)</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> String <span class="title">downloadFile</span><span class="params">(HttpServletRequest request, HttpServletResponse response)</span> </span>&#123;</span><br><span class="line">        String fileName = <span class="string">&quot;dalaoyang.jpeg&quot;</span>;<span class="comment">// 文件名</span></span><br><span class="line">        <span class="keyword">if</span> (fileName != <span class="keyword">null</span>) &#123;</span><br><span class="line">            <span class="comment">//设置文件路径</span></span><br><span class="line">            File file = <span class="keyword">new</span> File(<span class="string">&quot;/Users/dalaoyang/Documents/dalaoyang.jpeg&quot;</span>);</span><br><span class="line">            <span class="comment">//File file = new File(realPath , fileName);</span></span><br><span class="line">            <span class="keyword">if</span> (file.exists()) &#123;</span><br><span class="line">                response.setContentType(<span class="string">&quot;application/force-download&quot;</span>);<span class="comment">// 设置强制下载不打开</span></span><br><span class="line">                response.addHeader(<span class="string">&quot;Content-Disposition&quot;</span>, <span class="string">&quot;attachment;fileName=&quot;</span> + fileName);<span class="comment">// 设置文件名</span></span><br><span class="line">                <span class="keyword">byte</span>[] buffer = <span class="keyword">new</span> <span class="keyword">byte</span>[<span class="number">1024</span>];</span><br><span class="line">                FileInputStream fis = <span class="keyword">null</span>;</span><br><span class="line">                BufferedInputStream bis = <span class="keyword">null</span>;</span><br><span class="line">                <span class="keyword">try</span> &#123;</span><br><span class="line">                    fis = <span class="keyword">new</span> FileInputStream(file);</span><br><span class="line">                    bis = <span class="keyword">new</span> BufferedInputStream(fis);</span><br><span class="line">                    OutputStream os = response.getOutputStream();</span><br><span class="line">                    <span class="keyword">int</span> i = bis.read(buffer);</span><br><span class="line">                    <span class="keyword">while</span> (i != -<span class="number">1</span>) &#123;</span><br><span class="line">                        os.write(buffer, <span class="number">0</span>, i);</span><br><span class="line">                        i = bis.read(buffer);</span><br><span class="line">                    &#125;</span><br><span class="line">                    <span class="keyword">return</span> <span class="string">&quot;下载成功&quot;</span>;</span><br><span class="line">                &#125; <span class="keyword">catch</span> (Exception e) &#123;</span><br><span class="line">                    e.printStackTrace();</span><br><span class="line">                &#125; <span class="keyword">finally</span> &#123;</span><br><span class="line">                    <span class="keyword">if</span> (bis != <span class="keyword">null</span>) &#123;</span><br><span class="line">                        <span class="keyword">try</span> &#123;</span><br><span class="line">                            bis.close();</span><br><span class="line">                        &#125; <span class="keyword">catch</span> (IOException e) &#123;</span><br><span class="line">                            e.printStackTrace();</span><br><span class="line">                        &#125;</span><br><span class="line">                    &#125;</span><br><span class="line">                    <span class="keyword">if</span> (fis != <span class="keyword">null</span>) &#123;</span><br><span class="line">                        <span class="keyword">try</span> &#123;</span><br><span class="line">                            fis.close();</span><br><span class="line">                        &#125; <span class="keyword">catch</span> (IOException e) &#123;</span><br><span class="line">                            e.printStackTrace();</span><br><span class="line">                        &#125;</span><br><span class="line">                    &#125;</span><br><span class="line">                &#125;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> <span class="string">&quot;下载失败&quot;</span>;</span><br><span class="line">    &#125;</span><br></pre></td></tr></table></figure>
-<h2 id="关于文件上传的理解"><a class="markdownIt-Anchor" href="#关于文件上传的理解">#</a> 关于文件上传的理解</h2>
-<p>以前是这样认为的，就像代码中所展示的那样</p>
+
+
+
+
+<h2 id="关于文件上传的理解"><a href="#关于文件上传的理解" class="headerlink" title="关于文件上传的理解"></a>关于文件上传的理解</h2><p>以前是这样认为的，就像代码中所展示的那样</p>
 <figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"> <span class="tag">&lt;<span class="name">swiper-item</span> &gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">image</span> <span class="attr">class</span>=<span class="string">&quot;&quot;</span> <span class="attr">src</span>=<span class="string">&quot;/Users/jinmao/Documents/Vscode/Space/StudyPlatform/images/swiper/1.png&quot;</span> <span class="attr">mode</span>=<span class="string">&quot;widthFix&quot;</span> <span class="attr">lazy-load</span>=<span class="string">&quot;false&quot;</span> <span class="attr">binderror</span>=<span class="string">&quot;&quot;</span> <span class="attr">bindload</span>=<span class="string">&quot;&quot;</span>&gt;</span>  <span class="tag">&lt;/<span class="name">image</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">swiper-item</span>&gt;</span></span><br></pre></td></tr></table></figure>
-<p><code>image</code>  标签只要 <code>src</code>  是静态的文件目录，感觉就是可以的，然后这就犯了一个很严重的错误，他是无法被解析的，必须是后端项目所带有的资源</p>
-<p>类似于一个服务端，一个客户端去访问他的资源，这个资源是服务端所带有的，并不是服务器上有的，只要是有他的全限定类名就 <code>ok</code>  的</p>
+
+<p><code>image</code>标签只要<code>src</code>是静态的文件目录，感觉就是可以的，然后这就犯了一个很严重的错误，他是无法被解析的，必须是后端项目所带有的资源</p>
+<p>类似于一个服务端，一个客户端去访问他的资源，这个资源是服务端所带有的，并不是服务器上有的，只要是有他的全限定类名就<code>ok</code>的</p>
 <p>所以任何资源都要通过后端去获取，后端所带有的，所以这个代码有很严重的错误，也是一个关于文件上传的大误区</p>
 <img data-src="/posts/20ac1950/2022-02-16-21-04-44.png" class="">
+
 <img data-src="/posts/20ac1950/2022-02-16-21-04-53.png" class="">
+
 <p>就可以显示出来了</p>
 <p><strong>续：</strong></p>
 <p>后来我又发现了新的问题，就是需要重启项目之后才能访问到相应的资源</p>
-<h3 id="配置访问虚拟路径"><a class="markdownIt-Anchor" href="#配置访问虚拟路径">#</a> 配置访问虚拟路径</h3>
-<p>文件实际是存在 路径下面，但是当访问 <code>http://ip:port/upload/xxx.jpg</code>  时，虚拟路径会映射到  <code>file://Users/path/xxx.jpg</code>  的路径中访问文件。也是对服务器文件的一种保护措施吧.</p>
+<h3 id="配置访问虚拟路径"><a href="#配置访问虚拟路径" class="headerlink" title="配置访问虚拟路径"></a>配置访问虚拟路径</h3><p>文件实际是存在 路径下面，但是当访问<code>http://ip:port/upload/xxx.jpg</code> 时，虚拟路径会映射到 <code>file://Users/path/xxx.jpg</code> 的路径中访问文件。也是对服务器文件的一种保护措施吧.</p>
 <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">@Configuration</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">WebMvcConfig</span> <span class="keyword">implements</span> <span class="title">WebMvcConfigurer</span> </span>&#123;</span><br><span class="line">    <span class="meta">@Override</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">addResourceHandlers</span><span class="params">(ResourceHandlerRegistry registry)</span> </span>&#123;</span><br><span class="line">        String path = System.getProperty(<span class="string">&quot;user.dir&quot;</span>) + <span class="string">&quot;/src/main/resources/upload/&quot;</span>;</span><br><span class="line">        <span class="comment">//registry.addResourceHandler(&quot;/static/**&quot;).addResourceLocations(&quot;classpath:/static/&quot;);</span></span><br><span class="line">        <span class="comment">//linux服务器文件目录</span></span><br><span class="line">        <span class="comment">//配置磁盘映射 , pathPattern  访问路径                                        磁盘映射路径，不然不能够访问</span></span><br><span class="line">                                        <span class="comment">//这是因为对服务器的保护措施导致的，服务器不能对外部暴露真实的资源路径，需要配置虚拟路径映射访问。</span></span><br><span class="line">        registry.addResourceHandler(<span class="string">&quot;/upload/**&quot;</span>).addResourceLocations(<span class="string">&quot;file:&quot;</span>+path);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+
+
 
       <div class="tags">
           <a href="/tags/Java%E9%9D%A2%E8%AF%95/" rel="tag"><i class="ic i-tag"></i> Java面试</a>
@@ -250,7 +261,7 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
     <div class="item left">
       
 
-  <a href="/posts/eec4b728/" itemprop="url" rel="prev" data-background-image="https:&#x2F;&#x2F;tva3.sinaimg.cn&#x2F;mw690&#x2F;6833939bly1giciub8ja1j20zk0m81ky.jpg" title="SpringBoot中如何优雅的使用多线程">
+  <a href="/posts/eec4b728/" itemprop="url" rel="prev" data-background-image="https:&#x2F;&#x2F;tva3.sinaimg.cn&#x2F;mw690&#x2F;6833939bly1gipeu1usa7j20zk0m8b29.jpg" title="SpringBoot中如何优雅的使用多线程">
   <span class="type">Previous Post</span>
   <span class="category"><i class="ic i-flag"></i> SpringBoot</span>
   <h3>SpringBoot中如何优雅的使用多线程</h3>
@@ -260,7 +271,7 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
     <div class="item right">
       
 
-  <a href="/posts/e8eb0481/" itemprop="url" rel="next" data-background-image="https:&#x2F;&#x2F;tva3.sinaimg.cn&#x2F;mw690&#x2F;6833939bly1giciusoyjnj219g0u0x56.jpg" title="二分查找">
+  <a href="/posts/e8eb0481/" itemprop="url" rel="next" data-background-image="https:&#x2F;&#x2F;tva3.sinaimg.cn&#x2F;mw690&#x2F;6833939bly1gipexbei4hj20zk0m8npd.jpg" title="二分查找">
   <span class="type">Next Post</span>
   <span class="category"><i class="ic i-flag"></i> 算法</span>
   <h3>二分查找</h3>
@@ -282,7 +293,7 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
   <div class="panels">
     <div class="inner">
       <div class="contents panel pjax" data-title="Contents">
-          <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%85%B3%E4%BA%8E%E6%96%87%E4%BB%B6%E4%B8%8A%E4%BC%A0%E7%9A%84%E7%90%86%E8%A7%A3"><span class="toc-number">1.</span> <span class="toc-text"> 关于文件上传的理解</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%85%8D%E7%BD%AE%E8%AE%BF%E9%97%AE%E8%99%9A%E6%8B%9F%E8%B7%AF%E5%BE%84"><span class="toc-number">1.1.</span> <span class="toc-text"> 配置访问虚拟路径</span></a></li></ol></li></ol>
+          <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%85%B3%E4%BA%8E%E6%96%87%E4%BB%B6%E4%B8%8A%E4%BC%A0%E7%9A%84%E7%90%86%E8%A7%A3"><span class="toc-number">1.</span> <span class="toc-text">关于文件上传的理解</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%85%8D%E7%BD%AE%E8%AE%BF%E9%97%AE%E8%99%9A%E6%8B%9F%E8%B7%AF%E5%BE%84"><span class="toc-number">1.1.</span> <span class="toc-text">配置访问虚拟路径</span></a></li></ol></li></ol>
       </div>
       <div class="related panel pjax" data-title="Related">
         <ul>
@@ -300,7 +311,7 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
 <nav class="state">
     <div class="item posts">
       <a href="/archives/">
-        <span class="count">139</span>
+        <span class="count">142</span>
         <span class="name">posts</span>
       </a>
     </div>
@@ -312,7 +323,7 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
     </div>
     <div class="item tags">
       <a href="/tags/">
-        <span class="count">108</span>
+        <span class="count">109</span>
         <span class="name">tags</span>
       </a>
     </div>
@@ -391,22 +402,61 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
   <li class="item">
     
 <div class="breadcrumb">
-<a href="/categories/Java/" title="In Java">Java</a>
+<a href="/categories/Java%E9%9D%A2%E8%AF%95/" title="In Java面试">Java面试</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/Java%E9%9D%A2%E8%AF%95/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/" title="In 操作系统">操作系统</a>
 </div>
 
-    <span><a href="/posts/7a29d22a/" title="Java关于时间的轮子">Java关于时间的轮子</a></span>
+    <span><a href="/posts/c7cf6e41/" title="面试之旅关于计算机网络">面试之旅关于计算机网络</a></span>
   </li>
 
       
   <li class="item">
     
 <div class="breadcrumb">
-<a href="/categories/Java%E9%9D%A2%E8%AF%95/" title="In Java面试">Java面试</a>
-<i class="ic i-angle-right"></i>
-<a href="/categories/Java%E9%9D%A2%E8%AF%95/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/" title="In 操作系统">操作系统</a>
 </div>
 
-    <span><a href="/posts/4847d2e5/" title="面试之旅关于操作系统">面试之旅关于操作系统</a></span>
+    <span><a href="/posts/56be7cc9/" title="关于Linux排查问题命令">关于Linux排查问题命令</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/Git/" title="In Git">Git</a>
+</div>
+
+    <span><a href="/posts/424eebf1/" title="关于在IDEA中回滚Git版本">关于在IDEA中回滚Git版本</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/%E5%89%8D%E7%AB%AF/" title="In 前端">前端</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/%E5%89%8D%E7%AB%AF/Css/" title="In Css">Css</a>
+</div>
+
+    <span><a href="/posts/7f59931c/" title="Css选择器">Css选择器</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+</div>
+
+    <span><a href="/posts/e694a882/" title="Windows下如何查看某个端口被谁占用">Windows下如何查看某个端口被谁占用</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+</div>
+
+    <span><a href="/posts/2dc35ee/" title="多线程分批处理方案">多线程分批处理方案</a></span>
   </li>
 
       
@@ -422,10 +472,9 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
   <li class="item">
     
 <div class="breadcrumb">
-<a href="/categories/Java/" title="In Java">Java</a>
 </div>
 
-    <span><a href="/posts/e18abc1d/" title="关于YAML中List存放Map">关于YAML中List存放Map</a></span>
+    <span><a href="/posts/de5e33d7/" title="关于JDK中的Arrays.sort排序方法">关于JDK中的Arrays.sort排序方法</a></span>
   </li>
 
       
@@ -435,59 +484,16 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
 <a href="/categories/Java/" title="In Java">Java</a>
 </div>
 
-    <span><a href="/posts/d6d1be75/" title="在Javadoc注释中引用方法">在Javadoc注释中引用方法</a></span>
+    <span><a href="/posts/fc16798c/" title="Java8遍历Map的三种方式">Java8遍历Map的三种方式</a></span>
   </li>
 
       
   <li class="item">
     
 <div class="breadcrumb">
-<a href="/categories/Java/" title="In Java">Java</a>
-<i class="ic i-angle-right"></i>
-<a href="/categories/Java/Stream/" title="In Stream">Stream</a>
 </div>
 
-    <span><a href="/posts/8b8fedea/" title="Stream流的介绍">Stream流的介绍</a></span>
-  </li>
-
-      
-  <li class="item">
-    
-<div class="breadcrumb">
-<a href="/categories/%E6%95%B0%E6%8D%AE%E5%BA%93/" title="In 数据库">数据库</a>
-</div>
-
-    <span><a href="/posts/388f5c14/" title="mysql日期加减">mysql日期加减</a></span>
-  </li>
-
-      
-  <li class="item">
-    
-<div class="breadcrumb">
-<a href="/categories/Mybtais/" title="In Mybtais">Mybtais</a>
-</div>
-
-    <span><a href="/posts/9aff665a/" title="mybatis中大于等于小于等于的写法">mybatis中大于等于小于等于的写法</a></span>
-  </li>
-
-      
-  <li class="item">
-    
-<div class="breadcrumb">
-<a href="/categories/Java/" title="In Java">Java</a>
-</div>
-
-    <span><a href="/posts/1c3390ab/" title="将Java数据输出为本地txt">将Java数据输出为本地txt</a></span>
-  </li>
-
-      
-  <li class="item">
-    
-<div class="breadcrumb">
-<a href="/categories/Java/" title="In Java">Java</a>
-</div>
-
-    <span><a href="/posts/97604c34/" title="获取指定集合要求中的mapkey值并重新返回map">获取指定集合要求中的mapkey值并重新返回map</a></span>
+    <span><a href="/posts/4a17b156/" title="Hello World">Hello World</a></span>
   </li>
 
   </ul>
@@ -512,13 +518,13 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
     <span class="post-meta-item-icon">
       <i class="ic i-chart-area"></i>
     </span>
-    <span title="Symbols count total">616k words</span>
+    <span title="Symbols count total">620k words</span>
 
     <span class="post-meta-divider">|</span>
     <span class="post-meta-item-icon">
       <i class="ic i-coffee"></i>
     </span>
-    <span title="Reading time total">9:20</span>
+    <span title="Reading time total">9:24</span>
   </div>
 </div>
 

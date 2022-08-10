@@ -18,19 +18,21 @@
         <category>Corn</category>
         <category>前端</category>
         <category>Css</category>
+        <category>DisPlay属性</category>
         <category>DDD</category>
         <category>领域驱动设计</category>
-        <category>FastJson</category>
         <category>Docker</category>
-        <category>DisPlay属性</category>
         <category>blog</category>
         <category>hexo</category>
         <category>next</category>
-        <category>IDEA</category>
-        <category>SpringBoot</category>
+        <category>FastJson</category>
         <category>JavaScript</category>
         <category>Html</category>
+        <category>SpringBoot</category>
+        <category>IDEA</category>
         <category>Jvm</category>
+        <category>Jenkins</category>
+        <category>CI/CD</category>
         <category>函数式接口</category>
         <category>map</category>
         <category>Stream流</category>
@@ -44,28 +46,27 @@
         <category>LeetCode</category>
         <category>算法</category>
         <category>递归</category>
-        <category>Linux</category>
         <category>numpy</category>
         <category>pandas</category>
         <category>sklearn</category>
+        <category>Linux</category>
         <category>Mybatis</category>
         <category>分页查询</category>
         <category>模糊查询</category>
-        <category>Nginx</category>
         <category>Spring</category>
+        <category>Nginx</category>
         <category>SrpingBoot</category>
         <category>文件上传</category>
         <category>事务</category>
+        <category>master</category>
         <category>TypeScript</category>
         <category>WebPack</category>
-        <category>master</category>
-        <category>Jenkins</category>
-        <category>Groovy</category>
         <category>UML</category>
-        <category>VsCode</category>
-        <category>Shell</category>
+        <category>Groovy</category>
         <category>Ubuntu</category>
         <category>Mysql</category>
+        <category>VsCode</category>
+        <category>Shell</category>
         <category>VSCODE</category>
         <category>快捷键</category>
         <category>Vue</category>
@@ -74,30 +75,30 @@
         <category>线程池</category>
         <category>ubuntu</category>
         <category>虚拟机</category>
-        <category>二分查找</category>
         <category>Hadoop</category>
-        <category>数据挖掘</category>
         <category>操作系统</category>
         <category>EasyExcel</category>
+        <category>二分查找</category>
         <category>node</category>
+        <category>数据挖掘</category>
         <category>JVM</category>
         <category>Yaml</category>
-        <category>Hexo</category>
         <category>数据库</category>
+        <category>Hexo</category>
         <category>junit</category>
         <category>Mysql事务</category>
-        <category>git,npm,node</category>
         <category>Git</category>
         <category>冒泡排序</category>
-        <category>堆排序</category>
+        <category>git,npm,node</category>
         <category>动态规划</category>
-        <category>幂等性</category>
+        <category>堆排序</category>
         <category>多线程</category>
+        <category>幂等性</category>
         <category>Google</category>
         <category>流</category>
-        <category>归并排序</category>
         <category>快速排序</category>
         <category>正则表达式</category>
+        <category>归并排序</category>
         <category>直接插入排序</category>
         <category>选择排序</category>
         <category>Java 面试</category>
@@ -124,19 +125,24 @@
             <category>junit</category>
             <pubDate>Sat, 12 Feb 2022 12:24:55 +0800</pubDate>
             <description><![CDATA[ &lt;blockquote&gt;
-&lt;p&gt;背景&lt;br&gt;
-昨晚在做一个 &lt;code&gt;Junit&lt;/code&gt;  测试时，使用了事务来测试某个业务，但是意外发现，在 ``SpringBoot &lt;code&gt;测试中会自定帮你回滚掉&lt;/code&gt;  CUD` 操作，下面是自己做的简单测试:&lt;/p&gt;
+&lt;p&gt;背景&lt;br&gt;昨晚在做一个&lt;code&gt;Junit&lt;/code&gt;测试时，使用了事务来测试某个业务，但是意外发现，在``SpringBoot&lt;code&gt;测试中会自定帮你回滚掉&lt;/code&gt;CUD`操作，下面是自己做的简单测试:&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;span id=&#34;more&#34;&gt;&lt;/span&gt;
+
 &lt;img data-src=&#34;/posts/b536fa7f/2022-02-12-16-03-00.png&#34; class=&#34;&#34;&gt;
+
 &lt;figure class=&#34;highlight java&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;12&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;meta&#34;&gt;@SpringBootTest&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;public&lt;/span&gt; &lt;span class=&#34;class&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;class&lt;/span&gt; &lt;span class=&#34;title&#34;&gt;StudentMapperTest&lt;/span&gt; &lt;/span&gt;&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;meta&#34;&gt;@Test&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;meta&#34;&gt;@Transactional(rollbackFor = Exception.class)&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;function&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;void&lt;/span&gt; &lt;span class=&#34;title&#34;&gt;context02&lt;/span&gt;&lt;span class=&#34;params&#34;&gt;()&lt;/span&gt;&lt;/span&gt;&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        LambdaUpdateWrapper&amp;lt;Student&amp;gt; updateWrapper = &lt;span class=&#34;keyword&#34;&gt;new&lt;/span&gt; LambdaUpdateWrapper&amp;lt;&amp;gt;();&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        updateWrapper.eq(Student::getName,&lt;span class=&#34;string&#34;&gt;&amp;quot;张三&amp;quot;&lt;/span&gt;)&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;                .set(Student::getName,&lt;span class=&#34;string&#34;&gt;&amp;quot;张三改&amp;quot;&lt;/span&gt;);&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        studentDao.update(Student.builder().build(), updateWrapper);&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+
 &lt;p&gt;可以看到这边做了一个简单的更新操作，然后进行操作时&lt;/p&gt;
 &lt;img data-src=&#34;/posts/b536fa7f/2022-02-12-16-22-47.png&#34; class=&#34;&#34;&gt;
+
 &lt;p&gt;此时观察数据库的确也没有被更新掉&lt;/p&gt;
-&lt;p&gt;只需要在测试方法上添加 &lt;code&gt;@Rollback(false)&lt;/code&gt; ，我们试一试&lt;/p&gt;
+&lt;p&gt;只需要在测试方法上添加&lt;code&gt;@Rollback(false)&lt;/code&gt;，我们试一试&lt;/p&gt;
 &lt;img data-src=&#34;/posts/b536fa7f/2022-02-12-16-39-25.png&#34; class=&#34;&#34;&gt;
+
 &lt;p&gt;运行结果&lt;/p&gt;
 &lt;img data-src=&#34;/posts/b536fa7f/2022-02-12-18-43-01.png&#34; class=&#34;&#34;&gt;
+
 &lt;p&gt;也算是一个小坑嘛，哈哈！&lt;/p&gt;
  ]]></description>
         </item>

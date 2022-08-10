@@ -117,12 +117,12 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
       </div>
       <div id="imgs" class="pjax">
         <ul>
-          <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1giclj9410cj20zk0m8h12.jpg"></li>
-          <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1giciub8ja1j20zk0m81ky.jpg"></li>
-          <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1giclxxcb6rj20zk0m8b29.jpg"></li>
-          <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1giph4fomxoj20zk0m8axp.jpg"></li>
-          <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1giclgi503lj20zk0m8hdt.jpg"></li>
-          <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1gicliwyw55j20zk0m8hdt.jpg"></li>
+          <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1gipeyonbf9j20zk0m8e81.jpg"></li>
+          <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1gipesrnqv3j20zk0m8ava.jpg"></li>
+          <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1gipewf5l51j20zk0m8b29.jpg"></li>
+          <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1gicitht3xtj20zk0m8k5v.jpg"></li>
+          <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1gipexw3o58j20zk0m8e81.jpg"></li>
+          <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1giciusoyjnj219g0u0x56.jpg"></li>
         </ul>
       </div>
     </header>
@@ -171,96 +171,88 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
   <div class="body md" itemprop="articleBody">
     
 
-    <h1 id="分治算法"><a class="markdownIt-Anchor" href="#分治算法">#</a> 分治算法</h1>
-<h2 id="定义"><a class="markdownIt-Anchor" href="#定义">#</a> 定义</h2>
-<p>将原问题划分成 <code>n</code>  个规模较小，并且结构与原问题相似的子问题，递归地解决这些子问题，然后再合并其结果，就得到原问题的解</p>
-<h2 id="分治策略"><a class="markdownIt-Anchor" href="#分治策略">#</a> 分治策略</h2>
-<p>“分而治之”，大问题能够拆成相似的小问题，记住这些小问题需要具有相似性。而后将小问题的每个解合成为大问题的解。所以说大问题如何拆，小问题如何合并才是这个算法最主要的一个思想。实际上很多算法如贪心算法，动态规划等等都是要求把大问题拆成小问题。而分治算法的重要一点就是要适用于能够重新把小问题的解合并为大问题的解。</p>
+    <h1 id="分治算法"><a href="#分治算法" class="headerlink" title="分治算法"></a>分治算法</h1><h2 id="定义"><a href="#定义" class="headerlink" title="定义"></a>定义</h2><p>将原问题划分成<code>n</code>个规模较小，并且结构与原问题相似的子问题，递归地解决这些子问题，然后再合并其结果，就得到原问题的解</p>
+<h2 id="分治策略"><a href="#分治策略" class="headerlink" title="分治策略"></a>分治策略</h2><p>“分而治之”，大问题能够拆成相似的小问题，记住这些小问题需要具有相似性。而后将小问题的每个解合成为大问题的解。所以说大问题如何拆，小问题如何合并才是这个算法最主要的一个思想。实际上很多算法如贪心算法，动态规划等等都是要求把大问题拆成小问题。而分治算法的重要一点就是要适用于能够重新把小问题的解合并为大问题的解。</p>
 <span id="more"></span>
-<h2 id="使用分治算法的前提条件"><a class="markdownIt-Anchor" href="#使用分治算法的前提条件">#</a> 使用分治算法的前提条件</h2>
-<ul>
+
+<h2 id="使用分治算法的前提条件"><a href="#使用分治算法的前提条件" class="headerlink" title="使用分治算法的前提条件"></a>使用分治算法的前提条件</h2><ul>
 <li>原问题与分解成的小问题具有相同的模式；</li>
 <li>原问题分解成的子问题可以独立求解，子问题之间没有相关性，<strong>这一点是分治算法跟动态规划的明显区别；</strong></li>
 <li>具有分解终止条件，也就是说，当问题足够小时，可以直接求解；</li>
 <li>可以将子问题合并成原问题，而这个合并操作的复杂度不能太高，否则就起不到减小算法总体复杂度的效果了</li>
 </ul>
-<h2 id="每一次递归都会涉及三个操作"><a class="markdownIt-Anchor" href="#每一次递归都会涉及三个操作">#</a> 每一次递归都会涉及三个操作</h2>
-<ul>
+<h2 id="每一次递归都会涉及三个操作"><a href="#每一次递归都会涉及三个操作" class="headerlink" title="每一次递归都会涉及三个操作"></a>每一次递归都会涉及三个操作</h2><ul>
 <li><strong>分解</strong>：将原问题分解成一系列子问题；</li>
 <li><strong>解决</strong>：递归地求解各个子问题，若子问题足够小，则直接求解；</li>
 <li><strong>合并</strong>：将子问题的结果合并成原问题</li>
 </ul>
-<h2 id="分治法适用条件"><a class="markdownIt-Anchor" href="#分治法适用条件">#</a> 分治法适用条件</h2>
-<ol>
-<li>
-<p>该问题的规模缩小到一定程度就可以很容易解决；</p>
+<h2 id="分治法适用条件"><a href="#分治法适用条件" class="headerlink" title="分治法适用条件"></a>分治法适用条件</h2><ol>
+<li><p>该问题的规模缩小到一定程度就可以很容易解决；</p>
 </li>
-<li>
-<p>该问题可以分解为若干个规模较小的相同问题，这里注意是最优子结构性质；</p>
+<li><p>该问题可以分解为若干个规模较小的相同问题，这里注意是最优子结构性质；</p>
 </li>
-<li>
-<p>利用该问题分解出的子问题的解可以合并为该问题的解；</p>
+<li><p>利用该问题分解出的子问题的解可以合并为该问题的解；</p>
 </li>
-<li>
-<p>该问题所分解出的各个子问题是相互独立的，即子问题之间不包含公共子问题；</p>
+<li><p>该问题所分解出的各个子问题是相互独立的，即子问题之间不包含公共子问题；</p>
 </li>
 </ol>
-<p><strong>对于很多算法而言，第一条往往是必要的，因为数据量一旦大起来，问题往往复杂度上升的特别快。这里就需要将这个大问题分解为小问题。小问题处理起来更加方便。第二、三条的才是分治思想的核心，因为很多时候我们会采用递归的方式进行解决，所以在大问题分解为小问题的时候需要保证小问题之间的相同性。单单分解为小问题之后还不能算完成，必须要能够将小问题的解合并为这个问题的最终解才能算真正用到了分治的思想。最后一条也是最关键的，各个子问题之间必须要保证独立性，即不互相影响。如果相互之间有影响，这时候我们采用的是动态规划就更加好一点。</strong></p>
-<h2 id="经典例题"><a class="markdownIt-Anchor" href="#经典例题">#</a> 经典例题</h2>
-<p>其实算法的思想不用讲太多，能够化为几句话是最好的，下面就举几个例子来看看分治算法：</p>
+<p>　　<strong>对于很多算法而言，第一条往往是必要的，因为数据量一旦大起来，问题往往复杂度上升的特别快。这里就需要将这个大问题分解为小问题。小问题处理起来更加方便。第二、三条的才是分治思想的核心，因为很多时候我们会采用递归的方式进行解决，所以在大问题分解为小问题的时候需要保证小问题之间的相同性。单单分解为小问题之后还不能算完成，必须要能够将小问题的解合并为这个问题的最终解才能算真正用到了分治的思想。最后一条也是最关键的，各个子问题之间必须要保证独立性，即不互相影响。如果相互之间有影响，这时候我们采用的是动态规划就更加好一点。</strong></p>
+<h2 id="经典例题"><a href="#经典例题" class="headerlink" title="经典例题"></a>经典例题</h2><p>其实算法的思想不用讲太多，能够化为几句话是最好的，下面就举几个例子来看看分治算法：</p>
 <blockquote>
-<p>例题一：二分查找，给定一个按照升序排好的数组 <code>array</code> ，要在这个数组中找出一个特定的元素 <code>x</code> ；<br>
-当我们遇到一个问题，完全可以在心里问自己下面四个问题：</p>
+<p>例题一：二分查找，给定一个按照升序排好的数组<code>array</code>，要在这个数组中找出一个特定的元素<code>x</code>；<br>当我们遇到一个问题，完全可以在心里问自己下面四个问题：</p>
 </blockquote>
-<p>1、当前问题能不能切分？</p>
-<p>答：能切分，因为数组按照升序来排列。所以当 x 大于某个元素 array [mid] 时，x 一定在 array [mid] 的右边。以此再来切分。每次切一半</p>
-<p>2、分解出来的子问题相同吗？</p>
-<p>答：相同，每个子问题的数据集都是父问题的 1/2 倍。并且每次只比较子问题的中间的数据</p>
-<p>3、子问题的解能合并为父问题的解吗？</p>
-<p>答：不需要合并，子问题的解即为父问题的解。</p>
-<p>4、子问题之间相互独立吗？</p>
-<p>答：独立，子问题只是判断，不需要和父问题有很强的关联性（这里可以参考一下动态规划算法，就能理解子问题之间怎么判断是独立的）</p>
-<h2 id="总结"><a class="markdownIt-Anchor" href="#总结">#</a> 总结</h2>
-<p>分治算法只是一种思想，不是一个具体的套路，只能说在碰见具体问题时我们能够从这个思路去思考，切分问题？合并问题？子问题之间影响关联大不大？这些都是具体问题具体考虑。还有很多很多题目是用了分治算法。也可以多刷刷题</p>
-<h2 id="循环赛日常表"><a class="markdownIt-Anchor" href="#循环赛日常表">#</a> 循环赛日常表</h2>
-<p>设有 <code>n=2^k</code>  个运动员，要进行网球循环赛。现在要设计一个满足以下要求的比赛日程表</p>
-<p>（1）每个选手必须与其他 <code>n-1</code>  个选手各赛一场</p>
+<p>　　1、当前问题能不能切分？</p>
+<p>　　答：能切分，因为数组按照升序来排列。所以当x大于某个元素array[mid]时，x一定在array[mid]的右边。以此再来切分。每次切一半</p>
+<p>　　2、分解出来的子问题相同吗？</p>
+<p>　　答：相同，每个子问题的数据集都是父问题的1/2倍。并且每次只比较子问题的中间的数据</p>
+<p>　　3、子问题的解能合并为父问题的解吗？</p>
+<p>　　答：不需要合并，子问题的解即为父问题的解。</p>
+<p>　　4、子问题之间相互独立吗？</p>
+<p>　　答：独立，子问题只是判断，不需要和父问题有很强的关联性（这里可以参考一下动态规划算法，就能理解子问题之间怎么判断是独立的）</p>
+<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><p>分治算法只是一种思想，不是一个具体的套路，只能说在碰见具体问题时我们能够从这个思路去思考，切分问题？合并问题？子问题之间影响关联大不大？这些都是具体问题具体考虑。还有很多很多题目是用了分治算法。也可以多刷刷题</p>
+<h2 id="循环赛日常表"><a href="#循环赛日常表" class="headerlink" title="循环赛日常表"></a>循环赛日常表</h2><p>设有<code>n=2^k</code>个运动员，要进行网球循环赛。现在要设计一个满足以下要求的比赛日程表</p>
+<p>（1）每个选手必须与其他<code>n-1</code>个选手各赛一场</p>
 <p>（2）每个选手一天只能赛一次</p>
-<p>（3）循环赛一共进行 <code>n-1</code>  天</p>
-<p>将比赛日程表设计成 <code>n</code>  行 <code>n</code>  列，表中除了第一列，其他 <code>n-1</code>  列才是我们要的，数组下标行列都从 <code>0</code>  开始，第 i 行 j 列代表第 <code>（i+1）</code> 位选手在第 j 天的对手：</p>
+<p>（3）循环赛一共进行<code>n-1</code>天</p>
+<p>将比赛日程表设计成<code>n</code>行<code>n</code>列，表中除了第一列，其他<code>n-1</code>列才是我们要的，数组下标行列都从<code>0</code>开始，第i行j列代表第<code>（i+1）</code>位选手在第j天的对手：</p>
 <img data-src="/posts/7474c898/2022-02-17-23-08-53.png" class="">
-<p>以 8 个选手为例子</p>
+
+<p>以8个选手为例子</p>
 <img data-src="/posts/7474c898/2022-02-17-23-09-01.png" class="">
-<p>①我们先初始化第一行各个数为 <code>1~8</code> （ <code>2~8</code>  为：第 <code>1</code>  天 — 第 <code>7</code>  天）；</p>
-<p>②因为是递归，那么要填 8x8 的左下角和右下角，分别需要知道它的右上角和左上角</p>
-<p>③而 <code>8x8</code>  的盒子它的左上角是一个 <code>4x4</code>  的盒子，要填 <code>4x4</code>  的左下角和右下角，也分别需要知道它的右上角和左上角</p>
-<p>④现在递归到 <code>4x4</code>  的盒子的左上角，是一个 <code>2x2</code>  的盒子，它不需要递归了，直接沿对角线填左下角和右下角的数字，也就是上面的图②</p>
-<p>⑤可以看到，经过上面的②③步，我们左上角 4x4 的盒子，它的・右上角和左上角已经知道了，那就可以沿对角线填它的左下角和右下角了，所以出现了图④</p>
+
+<p>①我们先初始化第一行各个数为<code>1~8</code>（<code>2~8</code>为：第<code>1</code>天 — 第<code>7</code>天）；</p>
+<p>②因为是递归，那么要填8x8的左下角和右下角，分别需要知道它的右上角和左上角</p>
+<p>③而<code>8x8</code>的盒子它的左上角是一个<code>4x4</code>的盒子，要填<code>4x4</code>的左下角和右下角，也分别需要知道它的右上角和左上角</p>
+<p>④现在递归到<code>4x4</code>的盒子的左上角，是一个<code>2x2</code>的盒子，它不需要递归了，直接沿对角线填左下角和右下角的数字，也就是上面的图②</p>
+<p>⑤可以看到，经过上面的②③步，我们左上角4x4的盒子，它的·右上角和左上角已经知道了，那就可以沿对角线填它的左下角和右下角了，所以出现了图④</p>
 <p>⑥其他的依次类推</p>
 <p>通俗易懂地讲，就是<strong>如果你想填一个大的，你得先得出它左上角和右上角两个盒子 ， 再沿对角线分别抄到右下角和左下角。 而为了得出它左上角和右上角，就需要递归了</strong></p>
 <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">SportsSchedule</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">scheduleTable</span><span class="params">(<span class="keyword">int</span>[][] table, <span class="keyword">int</span> n)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">if</span> (n == <span class="number">1</span>) &#123;</span><br><span class="line">            table[<span class="number">0</span>][<span class="number">0</span>] = <span class="number">1</span>;</span><br><span class="line">        &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">        <span class="comment">/* 填充左上区域矩阵</span></span><br><span class="line"><span class="comment">            n值的变化：8  4  2  1</span></span><br><span class="line"><span class="comment">            m值的变化：4  2  1  1  */</span></span><br><span class="line">            <span class="keyword">int</span> m = n / <span class="number">2</span>;</span><br><span class="line">            scheduleTable(table, m);</span><br><span class="line">            <span class="comment">//填充右上区域矩阵</span></span><br><span class="line">            <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; m; i++) &#123;</span><br><span class="line">                <span class="keyword">for</span> (<span class="keyword">int</span> j = m; j &lt; n; j++) &#123;</span><br><span class="line">                    table[i][j] = table[i][j - m] + m;</span><br><span class="line">                &#125;</span><br><span class="line">            &#125;</span><br><span class="line">            <span class="comment">//填充左下区域矩阵</span></span><br><span class="line">            <span class="keyword">for</span> (<span class="keyword">int</span> i = m; i &lt; n; i++) &#123;</span><br><span class="line">                <span class="keyword">for</span> (<span class="keyword">int</span> j = <span class="number">0</span>; j &lt; m; j++) &#123;</span><br><span class="line">                    table[i][j] = table[i - m][j] + m;</span><br><span class="line">                &#125;</span><br><span class="line">            &#125;</span><br><span class="line">            <span class="comment">//填充右下区域矩阵</span></span><br><span class="line">            <span class="keyword">for</span> (<span class="keyword">int</span> i = m; i &lt; n; i++) &#123;</span><br><span class="line">                <span class="keyword">for</span> (<span class="keyword">int</span> j = m; j &lt; n; j++) &#123;</span><br><span class="line">                    table[i][j] = table[i - m][j - m];</span><br><span class="line">                &#125;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">int</span>[][] table = <span class="keyword">new</span> <span class="keyword">int</span>[<span class="number">8</span>][<span class="number">8</span>];</span><br><span class="line">        <span class="keyword">int</span> n = <span class="number">8</span>;</span><br><span class="line">        SportsSchedule schedule = <span class="keyword">new</span> SportsSchedule();</span><br><span class="line">        schedule.scheduleTable(table, n);</span><br><span class="line">        <span class="keyword">int</span> c = <span class="number">0</span>;</span><br><span class="line">        <span class="comment">//打印二维数组</span></span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; n; i++) &#123;</span><br><span class="line">            <span class="keyword">for</span> (<span class="keyword">int</span> j = <span class="number">0</span>; j &lt; n; j++) &#123;</span><br><span class="line">                System.out.print(table[i][j] + <span class="string">&quot; &quot;</span>);</span><br><span class="line">                c++;<span class="comment">//每打印一个数，c++</span></span><br><span class="line">                <span class="keyword">if</span> (c % n == <span class="number">0</span>) &#123;<span class="comment">//说明打印一行了</span></span><br><span class="line">                    System.out.println();<span class="comment">//换行</span></span><br><span class="line">                &#125;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<h2 id="l型骨牌棋盘覆盖"><a class="markdownIt-Anchor" href="#l型骨牌棋盘覆盖">#</a>  <code>L</code>  型骨牌棋盘覆盖</h2>
-<h3 id="问题描述"><a class="markdownIt-Anchor" href="#问题描述">#</a> 问题描述</h3>
-<p>在一个 <code>2^k×2^k </code> 个方格组成的棋盘中，恰有一个方格与其他方格不同，称该方格为一特殊方格（特殊点），且称该棋盘为一特殊棋盘。在棋盘覆盖问题中，要用图示的 4 种不同形态的 L 型骨牌覆盖给定的特殊棋盘上除特殊方格以外的所有方格，且任何 <code>2</code>  个 <code>L</code>  型骨牌不得重叠覆盖。</p>
+
+<h2 id="L型骨牌棋盘覆盖"><a href="#L型骨牌棋盘覆盖" class="headerlink" title="L型骨牌棋盘覆盖"></a><code>L</code>型骨牌棋盘覆盖</h2><h3 id="问题描述"><a href="#问题描述" class="headerlink" title="问题描述"></a>问题描述</h3><p>在一个<code>2^k×2^k </code>个方格组成的棋盘中，恰有一个方格与其他方格不同，称该方格为一特殊方格（特殊点），且称该棋盘为一特殊棋盘。在棋盘覆盖问题中，要用图示的4种不同形态的L型骨牌覆盖给定的特殊棋盘上除特殊方格以外的所有方格，且任何<code>2</code>个<code>L</code>型骨牌不得重叠覆盖。</p>
 <img data-src="/posts/7474c898/2022-02-17-23-09-17.png" class="">
-<h3 id="解题思路"><a class="markdownIt-Anchor" href="#解题思路">#</a> 解题思路</h3>
-<blockquote>
-<p>分析</p>
+
+<h3 id="解题思路"><a href="#解题思路" class="headerlink" title="解题思路"></a>解题思路</h3><blockquote>
+<p>分析 </p>
 </blockquote>
-<p>当 <code>k&gt;0</code>  时，将 <code>2^k×2^k</code>  棋盘分割为 <code>4</code>  个 <code>2^k-1×2^k-1</code>  子棋盘 <code>(a)</code>  所示。特殊方格必位于 <code>4</code>  个较小子棋盘之一中，其余 <code>3</code>  个子棋盘中无特殊方格。为了将这 <code>3</code>  个无特殊方格的子棋盘转化为特殊棋盘，可以用一个 <code>L</code>  型骨牌覆盖这 <code>3</code>  个较小棋盘的会合处，如  <code>(b)</code>  所示，从而将原问题转化为 <code>4</code>  个较小规模的棋盘覆盖问题。递归地使用这种分割，直至棋盘简化为棋盘 <code>1×1</code> 。</p>
+<p>当<code>k&gt;0</code>时，将<code>2^k×2^k</code> 棋盘分割为<code>4</code>个<code>2^k-1×2^k-1</code> 子棋盘<code>(a)</code>所示。特殊方格必位于<code>4</code>个较小子棋盘之一中，其余<code>3</code>个子棋盘中无特殊方格。为了将这<code>3</code>个无特殊方格的子棋盘转化为特殊棋盘，可以用一个<code>L</code>型骨牌覆盖这<code>3</code>个较小棋盘的会合处，如 <code>(b)</code>所示，从而将原问题转化为<code>4</code>个较小规模的棋盘覆盖问题。递归地使用这种分割，直至棋盘简化为棋盘<code>1×1</code>。</p>
 <img data-src="/posts/7474c898/2022-02-17-23-09-30.png" class="">
+
 <blockquote>
 <p>实现：</p>
 </blockquote>
-<p>每次都对分割后的四个小方块进行判断，判断特殊方格是否在里面。这里的判断的方法是每次先记录下整个大方块的左上角方格的行列坐标，然后再与特殊方格坐标进行比较，就可以知道特殊方格是否在该块中。如果特殊方块在里面，这直接递归下去求即可，如果不在，这根据分割的四个方块的不同位置，把右下角、左下角、右上角或者左上角的方格标记为特殊方块，然后继续递归。在递归函数里，还要有一个变量 subSize 来记录边的方格数，每次对方块进行划分时，边的方格数都会减半，这个变量是为了方便判断特殊方格的位置。</p>
+<p>每次都对分割后的四个小方块进行判断，判断特殊方格是否在里面。这里的判断的方法是每次先记录下整个大方块的左上角方格的行列坐标，然后再与特殊方格坐标进行比较，就可以知道特殊方格是否在该块中。如果特殊方块在里面，这直接递归下去求即可，如果不在，这根据分割的四个方块的不同位置，把右下角、左下角、右上角或者左上角的方格标记为特殊方块，然后继续递归。在递归函数里，还要有一个变量subSize来记录边的方格数，每次对方块进行划分时，边的方格数都会减半，这个变量是为了方便判断特殊方格的位置。</p>
 <blockquote>
-<p>覆盖步骤如图：</p>
+<p> 覆盖步骤如图：</p>
 </blockquote>
 <img data-src="/posts/7474c898/2022-02-17-23-09-51.png" class="">
+
 <blockquote>
-<p>代码实现:</p>
+<p> 代码实现:</p>
 </blockquote>
 <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">package</span> cn.itcast.recursion;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">ChessBoradProblem</span> </span>&#123;</span><br><span class="line">    <span class="keyword">private</span> <span class="keyword">int</span>[][] board;<span class="comment">//棋盘</span></span><br><span class="line">    <span class="keyword">private</span> <span class="keyword">int</span> specialRow;<span class="comment">//特殊点行下标</span></span><br><span class="line">    <span class="keyword">private</span> <span class="keyword">int</span> specialCol;<span class="comment">//特殊点列下标</span></span><br><span class="line">    <span class="keyword">private</span> <span class="keyword">int</span> size;<span class="comment">//矩阵大小</span></span><br><span class="line">    <span class="keyword">private</span> <span class="keyword">int</span> type = <span class="number">0</span>;<span class="comment">//骨牌类型，1,2,3,4  因为是用数字表示的，所以用int</span></span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="title">ChessBoradProblem</span><span class="params">(<span class="keyword">int</span> specialRow, <span class="keyword">int</span> specialCol, <span class="keyword">int</span> size)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">this</span>.specialRow = specialRow;</span><br><span class="line">        <span class="keyword">this</span>.specialCol = specialCol;</span><br><span class="line">        <span class="keyword">this</span>.size = size;</span><br><span class="line">        board = <span class="keyword">new</span> <span class="keyword">int</span>[size][size];</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="comment">/**</span></span><br><span class="line"><span class="comment">     * <span class="doctag">@param</span> specialRow 特殊点的行下标</span></span><br><span class="line"><span class="comment">     * <span class="doctag">@param</span> specialCol 特殊点的列下标</span></span><br><span class="line"><span class="comment">     * <span class="doctag">@param</span> leftRow    分割成4个后每个矩阵的左边的起点行下标</span></span><br><span class="line"><span class="comment">     * <span class="doctag">@param</span> leftCol    分割成4个后每个矩阵的左边起点列下标</span></span><br><span class="line"><span class="comment">     * <span class="doctag">@param</span> size       矩阵的宽或者高</span></span><br><span class="line"><span class="comment">     */</span></span><br><span class="line"></span><br><span class="line">    <span class="comment">//相对于四个方格中右上的方格，左边起点的leftRow不一定是0了</span></span><br><span class="line">    <span class="function"><span class="keyword">private</span> <span class="keyword">void</span> <span class="title">ChessBoard</span><span class="params">(<span class="keyword">int</span> specialRow, <span class="keyword">int</span> specialCol, <span class="keyword">int</span> leftRow, <span class="keyword">int</span> leftCol, <span class="keyword">int</span> size)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">if</span> (size == <span class="number">1</span>) &#123;</span><br><span class="line">            <span class="keyword">return</span>;</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        <span class="keyword">int</span> subSize = size / <span class="number">2</span>;</span><br><span class="line">        type = type % <span class="number">4</span> + <span class="number">1</span>;<span class="comment">//不断+1，超过4就取模</span></span><br><span class="line">        <span class="keyword">int</span> n = type;</span><br><span class="line"></span><br><span class="line">        <span class="comment">//假设特殊点在左上角，然后行和列都小于一半</span></span><br><span class="line">        <span class="keyword">if</span> (specialRow &lt; leftRow + subSize &amp;&amp; specialCol &lt; leftCol + subSize) &#123;</span><br><span class="line">            ChessBoard(specialRow, specialCol, leftRow, leftCol, subSize);</span><br><span class="line">        &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">            <span class="comment">//不在左上角，左上角矩阵的右下角就是特殊点</span></span><br><span class="line">            board[leftRow + subSize - <span class="number">1</span>][leftCol + subSize - <span class="number">1</span>] = n;</span><br><span class="line">            ChessBoard(leftRow + subSize - <span class="number">1</span>, leftRow + subSize - <span class="number">1</span>, leftRow, leftCol, subSize);</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        <span class="comment">//特殊点在右上方，行小于一半，列大于一半</span></span><br><span class="line">        <span class="keyword">if</span> (specialRow &lt; leftRow + subSize &amp;&amp; specialCol &gt;= leftCol + subSize) &#123;</span><br><span class="line">            ChessBoard(specialRow, specialCol, leftRow, leftCol + subSize, subSize);</span><br><span class="line">        &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">            board[leftRow + subSize - <span class="number">1</span>][leftCol + subSize] = n;</span><br><span class="line">            ChessBoard(leftRow + subSize - <span class="number">1</span>, leftCol + subSize, leftRow, leftCol + subSize, subSize);</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        <span class="comment">//特殊点在左下方</span></span><br><span class="line">        <span class="keyword">if</span> (specialRow &gt;= leftRow + subSize &amp;&amp; specialCol &lt; leftCol + subSize) &#123;</span><br><span class="line">            ChessBoard(specialRow, specialCol, leftRow + subSize, leftCol, subSize);</span><br><span class="line">        &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">            board[leftRow + subSize][leftCol + subSize - <span class="number">1</span>] = n;</span><br><span class="line">            ChessBoard(leftRow + subSize, leftCol + subSize - <span class="number">1</span>, leftRow + subSize, leftCol, subSize);</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        <span class="comment">//特殊点在右下方</span></span><br><span class="line">        <span class="keyword">if</span> (specialRow &gt;= leftRow + subSize &amp;&amp; specialCol &gt;= leftCol + subSize) &#123;</span><br><span class="line">            ChessBoard(specialRow, specialCol, leftRow + subSize, leftCol + subSize, subSize);</span><br><span class="line">        &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">            board[leftRow + subSize][leftCol + subSize] = n;</span><br><span class="line">            ChessBoard(leftRow + subSize, leftCol + subSize, leftRow + subSize, leftCol + subSize, subSize);</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">printBoard</span><span class="params">(<span class="keyword">int</span> specialRow, <span class="keyword">int</span> specialCol, <span class="keyword">int</span> size)</span> </span>&#123;</span><br><span class="line">        ChessBoard(specialRow, specialCol, <span class="number">0</span>, <span class="number">0</span>, size);</span><br><span class="line">        printResult();</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">private</span> <span class="keyword">void</span> <span class="title">printResult</span><span class="params">()</span> </span>&#123;</span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; size; i++) &#123;</span><br><span class="line">            <span class="keyword">for</span> (<span class="keyword">int</span> j = <span class="number">0</span>; j &lt; size; j++) &#123;</span><br><span class="line">                System.out.print(board[i][j] + <span class="string">&quot; &quot;</span>);<span class="comment">//注意：print</span></span><br><span class="line">            &#125;</span><br><span class="line">            System.out.println();</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">int</span> N = <span class="number">4</span>;<span class="comment">//矩阵大小</span></span><br><span class="line">        <span class="comment">//选取特殊点</span></span><br><span class="line">        <span class="keyword">int</span> specialRow = <span class="number">0</span>;</span><br><span class="line">        <span class="keyword">int</span> specialCol = <span class="number">1</span>;</span><br><span class="line">        ChessBoradProblem boradProblem = <span class="keyword">new</span> ChessBoradProblem(specialRow, specialCol, N);</span><br><span class="line">        boradProblem.printBoard(specialRow, specialCol, N);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+
 
       <div class="tags">
           <a href="/tags/Java%E9%9D%A2%E8%AF%95/" rel="tag"><i class="ic i-tag"></i> Java面试</a>
@@ -316,7 +308,7 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
     <div class="item left">
       
 
-  <a href="/posts/b9b9f7e7/" itemprop="url" rel="prev" data-background-image="https:&#x2F;&#x2F;tva3.sinaimg.cn&#x2F;mw690&#x2F;6833939bly1giclxp31goj20zk0m8qv5.jpg" title="二叉树遍历">
+  <a href="/posts/b9b9f7e7/" itemprop="url" rel="prev" data-background-image="https:&#x2F;&#x2F;tva3.sinaimg.cn&#x2F;mw690&#x2F;6833939bly1gipeudstjqj20zk0m8k3r.jpg" title="二叉树遍历">
   <span class="type">Previous Post</span>
   <span class="category"><i class="ic i-flag"></i> 算法</span>
   <h3>二叉树遍历</h3>
@@ -326,7 +318,7 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
     <div class="item right">
       
 
-  <a href="/posts/a4ce31d2/" itemprop="url" rel="next" data-background-image="https:&#x2F;&#x2F;tva3.sinaimg.cn&#x2F;mw690&#x2F;6833939bly1giclip4jbpj20zk0m87cv.jpg" title="贪心算法">
+  <a href="/posts/a4ce31d2/" itemprop="url" rel="next" data-background-image="https:&#x2F;&#x2F;tva3.sinaimg.cn&#x2F;mw690&#x2F;6833939bly1giclfb3vzhj20zk0m8wny.jpg" title="贪心算法">
   <span class="type">Next Post</span>
   <span class="category"><i class="ic i-flag"></i> 算法</span>
   <h3>贪心算法</h3>
@@ -348,7 +340,7 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
   <div class="panels">
     <div class="inner">
       <div class="contents panel pjax" data-title="Contents">
-          <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%88%86%E6%B2%BB%E7%AE%97%E6%B3%95"><span class="toc-number">1.</span> <span class="toc-text"> 分治算法</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%AE%9A%E4%B9%89"><span class="toc-number">1.1.</span> <span class="toc-text"> 定义</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%88%86%E6%B2%BB%E7%AD%96%E7%95%A5"><span class="toc-number">1.2.</span> <span class="toc-text"> 分治策略</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BD%BF%E7%94%A8%E5%88%86%E6%B2%BB%E7%AE%97%E6%B3%95%E7%9A%84%E5%89%8D%E6%8F%90%E6%9D%A1%E4%BB%B6"><span class="toc-number">1.3.</span> <span class="toc-text"> 使用分治算法的前提条件</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%AF%8F%E4%B8%80%E6%AC%A1%E9%80%92%E5%BD%92%E9%83%BD%E4%BC%9A%E6%B6%89%E5%8F%8A%E4%B8%89%E4%B8%AA%E6%93%8D%E4%BD%9C"><span class="toc-number">1.4.</span> <span class="toc-text"> 每一次递归都会涉及三个操作</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%88%86%E6%B2%BB%E6%B3%95%E9%80%82%E7%94%A8%E6%9D%A1%E4%BB%B6"><span class="toc-number">1.5.</span> <span class="toc-text"> 分治法适用条件</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%BB%8F%E5%85%B8%E4%BE%8B%E9%A2%98"><span class="toc-number">1.6.</span> <span class="toc-text"> 经典例题</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%80%BB%E7%BB%93"><span class="toc-number">1.7.</span> <span class="toc-text"> 总结</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%BE%AA%E7%8E%AF%E8%B5%9B%E6%97%A5%E5%B8%B8%E8%A1%A8"><span class="toc-number">1.8.</span> <span class="toc-text"> 循环赛日常表</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#l%E5%9E%8B%E9%AA%A8%E7%89%8C%E6%A3%8B%E7%9B%98%E8%A6%86%E7%9B%96"><span class="toc-number">1.9.</span> <span class="toc-text">  L  型骨牌棋盘覆盖</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%97%AE%E9%A2%98%E6%8F%8F%E8%BF%B0"><span class="toc-number">1.9.1.</span> <span class="toc-text"> 问题描述</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%A7%A3%E9%A2%98%E6%80%9D%E8%B7%AF"><span class="toc-number">1.9.2.</span> <span class="toc-text"> 解题思路</span></a></li></ol></li></ol></li></ol>
+          <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%88%86%E6%B2%BB%E7%AE%97%E6%B3%95"><span class="toc-number">1.</span> <span class="toc-text">分治算法</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%AE%9A%E4%B9%89"><span class="toc-number">1.1.</span> <span class="toc-text">定义</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%88%86%E6%B2%BB%E7%AD%96%E7%95%A5"><span class="toc-number">1.2.</span> <span class="toc-text">分治策略</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BD%BF%E7%94%A8%E5%88%86%E6%B2%BB%E7%AE%97%E6%B3%95%E7%9A%84%E5%89%8D%E6%8F%90%E6%9D%A1%E4%BB%B6"><span class="toc-number">1.3.</span> <span class="toc-text">使用分治算法的前提条件</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%AF%8F%E4%B8%80%E6%AC%A1%E9%80%92%E5%BD%92%E9%83%BD%E4%BC%9A%E6%B6%89%E5%8F%8A%E4%B8%89%E4%B8%AA%E6%93%8D%E4%BD%9C"><span class="toc-number">1.4.</span> <span class="toc-text">每一次递归都会涉及三个操作</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%88%86%E6%B2%BB%E6%B3%95%E9%80%82%E7%94%A8%E6%9D%A1%E4%BB%B6"><span class="toc-number">1.5.</span> <span class="toc-text">分治法适用条件</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%BB%8F%E5%85%B8%E4%BE%8B%E9%A2%98"><span class="toc-number">1.6.</span> <span class="toc-text">经典例题</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%80%BB%E7%BB%93"><span class="toc-number">1.7.</span> <span class="toc-text">总结</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%BE%AA%E7%8E%AF%E8%B5%9B%E6%97%A5%E5%B8%B8%E8%A1%A8"><span class="toc-number">1.8.</span> <span class="toc-text">循环赛日常表</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#L%E5%9E%8B%E9%AA%A8%E7%89%8C%E6%A3%8B%E7%9B%98%E8%A6%86%E7%9B%96"><span class="toc-number">1.9.</span> <span class="toc-text">L型骨牌棋盘覆盖</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%97%AE%E9%A2%98%E6%8F%8F%E8%BF%B0"><span class="toc-number">1.9.1.</span> <span class="toc-text">问题描述</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%A7%A3%E9%A2%98%E6%80%9D%E8%B7%AF"><span class="toc-number">1.9.2.</span> <span class="toc-text">解题思路</span></a></li></ol></li></ol></li></ol>
       </div>
       <div class="related panel pjax" data-title="Related">
         <ul>
@@ -366,7 +358,7 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
 <nav class="state">
     <div class="item posts">
       <a href="/archives/">
-        <span class="count">139</span>
+        <span class="count">142</span>
         <span class="name">posts</span>
       </a>
     </div>
@@ -378,7 +370,7 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
     </div>
     <div class="item tags">
       <a href="/tags/">
-        <span class="count">108</span>
+        <span class="count">109</span>
         <span class="name">tags</span>
       </a>
     </div>
@@ -457,12 +449,19 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
   <li class="item">
     
 <div class="breadcrumb">
-<a href="/categories/Java%E9%9D%A2%E8%AF%95/" title="In Java面试">Java面试</a>
-<i class="ic i-angle-right"></i>
-<a href="/categories/Java%E9%9D%A2%E8%AF%95/%E6%95%B0%E6%8D%AE%E5%BA%93/" title="In 数据库">数据库</a>
 </div>
 
-    <span><a href="/posts/666b2933/" title="面试之旅关于数据库">面试之旅关于数据库</a></span>
+    <span><a href="/posts/bf4d20ae/" title="写在最前面">写在最前面</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/Machine-Learning/" title="In Machine Learning">Machine Learning</a>
+</div>
+
+    <span><a href="/posts/53fbbba3/" title="Jupyter notebook使用">Jupyter notebook使用</a></span>
   </li>
 
       
@@ -471,34 +470,66 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
 <div class="breadcrumb">
 <a href="/categories/Java%E9%9D%A2%E8%AF%95/" title="In Java面试">Java面试</a>
 <i class="ic i-angle-right"></i>
-<a href="/categories/Java%E9%9D%A2%E8%AF%95/Mybatis/" title="In Mybatis">Mybatis</a>
+<a href="/categories/Java%E9%9D%A2%E8%AF%95/Tools/" title="In Tools">Tools</a>
 </div>
 
-    <span><a href="/posts/31d0fffb/" title="Mybatis中#号和$号的区别">Mybatis中#号和$号的区别</a></span>
+    <span><a href="/posts/6714b4a9/" title="FastJson序列化使用">FastJson序列化使用</a></span>
   </li>
 
       
   <li class="item">
     
 <div class="breadcrumb">
-<a href="/categories/Java%E9%9D%A2%E8%AF%95/" title="In Java面试">Java面试</a>
+<a href="/categories/Java/" title="In Java">Java</a>
 <i class="ic i-angle-right"></i>
-<a href="/categories/Java%E9%9D%A2%E8%AF%95/Spring%E4%BA%8B%E5%8A%A1/" title="In Spring事务">Spring事务</a>
+<a href="/categories/Java/Java%E9%9D%A2%E8%AF%95/" title="In Java面试">Java面试</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/Java/Java%E9%9D%A2%E8%AF%95/SpringBoot/" title="In SpringBoot">SpringBoot</a>
 </div>
 
-    <span><a href="/posts/7e4601e3/" title="面试之旅之关于Spring事务处理">面试之旅之关于Spring事务处理</a></span>
+    <span><a href="/posts/59de1824/" title="spring中&#x2F;和&#x2F;*和&#x2F;**的区别">spring中/和/*和/**的区别</a></span>
   </li>
 
       
   <li class="item">
     
 <div class="breadcrumb">
-<a href="/categories/Java%E9%9D%A2%E8%AF%95/" title="In Java面试">Java面试</a>
-<i class="ic i-angle-right"></i>
-<a href="/categories/Java%E9%9D%A2%E8%AF%95/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/" title="In 操作系统">操作系统</a>
+<a href="/categories/Jenkins/" title="In Jenkins">Jenkins</a>
 </div>
 
-    <span><a href="/posts/4847d2e5/" title="面试之旅关于操作系统">面试之旅关于操作系统</a></span>
+    <span><a href="/posts/171f1b7f/" title="Jenkins&#x2F;CICD">Jenkins/CICD</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/Hexo/" title="In Hexo">Hexo</a>
+</div>
+
+    <span><a href="/posts/575a6046/" title="Hexo-Next主题如何文章置顶">Hexo-Next主题如何文章置顶</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/LeetCode/" title="In LeetCode">LeetCode</a>
+</div>
+
+    <span><a href="/posts/5d0c3fcc/" title="LeetCode172_阶乘后的0">LeetCode172_阶乘后的0</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/Java/" title="In Java">Java</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/Java/Java%E9%9D%A2%E8%AF%95/" title="In Java面试">Java面试</a>
+</div>
+
+    <span><a href="/posts/f23f1351/" title="equals与&#x3D;&#x3D;区别">equals与==区别</a></span>
   </li>
 
       
@@ -510,66 +541,17 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
 <a href="/categories/Java/Tools/" title="In Tools">Tools</a>
 </div>
 
-    <span><a href="/posts/b246d3ce/" title="Java自带的好用的工具类">Java自带的好用的工具类</a></span>
+    <span><a href="/posts/817eab42/" title="java中产生指定范围内的随机数">java中产生指定范围内的随机数</a></span>
   </li>
 
       
   <li class="item">
     
 <div class="breadcrumb">
+<a href="/categories/master/" title="In master">master</a>
 </div>
 
-    <span><a href="/posts/823298d2/" title="VsCode 如何Debug Shell">VsCode 如何Debug Shell</a></span>
-  </li>
-
-      
-  <li class="item">
-    
-<div class="breadcrumb">
-<a href="/categories/Java/" title="In Java">Java</a>
-<i class="ic i-angle-right"></i>
-<a href="/categories/Java/Mybatis/" title="In Mybatis">Mybatis</a>
-<i class="ic i-angle-right"></i>
-<a href="/categories/Java/Mybatis/SpringBoot/" title="In SpringBoot">SpringBoot</a>
-</div>
-
-    <span><a href="/posts/105c245f/" title="Mybatis使用Sql进行模糊查询">Mybatis使用Sql进行模糊查询</a></span>
-  </li>
-
-      
-  <li class="item">
-    
-<div class="breadcrumb">
-<a href="/categories/%E5%89%8D%E7%AB%AF/" title="In 前端">前端</a>
-<i class="ic i-angle-right"></i>
-<a href="/categories/%E5%89%8D%E7%AB%AF/Vue/" title="In Vue">Vue</a>
-</div>
-
-    <span><a href="/posts/8408ed11/" title="Vue-Cli介绍以及使用">Vue-Cli介绍以及使用</a></span>
-  </li>
-
-      
-  <li class="item">
-    
-<div class="breadcrumb">
-<a href="/categories/%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F/" title="In 正则表达式">正则表达式</a>
-</div>
-
-    <span><a href="/posts/2f57a694/" title="正则表达式">正则表达式</a></span>
-  </li>
-
-      
-  <li class="item">
-    
-<div class="breadcrumb">
-<a href="/categories/Java%E9%9D%A2%E8%AF%95/" title="In Java面试">Java面试</a>
-<i class="ic i-angle-right"></i>
-<a href="/categories/Java%E9%9D%A2%E8%AF%95/%E4%BA%8C%E5%88%86%E6%9F%A5%E6%89%BE/" title="In 二分查找">二分查找</a>
-<i class="ic i-angle-right"></i>
-<a href="/categories/Java%E9%9D%A2%E8%AF%95/%E4%BA%8C%E5%88%86%E6%9F%A5%E6%89%BE/%E7%AE%97%E6%B3%95/" title="In 算法">算法</a>
-</div>
-
-    <span><a href="/posts/e8eb0481/" title="二分查找">二分查找</a></span>
+    <span><a href="/posts/378107f2/" title="The Basic knowledge of Anaconda">The Basic knowledge of Anaconda</a></span>
   </li>
 
   </ul>
@@ -594,13 +576,13 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
     <span class="post-meta-item-icon">
       <i class="ic i-chart-area"></i>
     </span>
-    <span title="Symbols count total">616k words</span>
+    <span title="Symbols count total">620k words</span>
 
     <span class="post-meta-divider">|</span>
     <span class="post-meta-item-icon">
       <i class="ic i-coffee"></i>
     </span>
-    <span title="Reading time total">9:20</span>
+    <span title="Reading time total">9:24</span>
   </div>
 </div>
 

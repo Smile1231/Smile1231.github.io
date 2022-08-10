@@ -18,19 +18,21 @@
         <category>Corn</category>
         <category>前端</category>
         <category>Css</category>
+        <category>DisPlay属性</category>
         <category>DDD</category>
         <category>领域驱动设计</category>
-        <category>FastJson</category>
         <category>Docker</category>
-        <category>DisPlay属性</category>
         <category>blog</category>
         <category>hexo</category>
         <category>next</category>
-        <category>IDEA</category>
-        <category>SpringBoot</category>
+        <category>FastJson</category>
         <category>JavaScript</category>
         <category>Html</category>
+        <category>SpringBoot</category>
+        <category>IDEA</category>
         <category>Jvm</category>
+        <category>Jenkins</category>
+        <category>CI/CD</category>
         <category>函数式接口</category>
         <category>map</category>
         <category>Stream流</category>
@@ -44,28 +46,27 @@
         <category>LeetCode</category>
         <category>算法</category>
         <category>递归</category>
-        <category>Linux</category>
         <category>numpy</category>
         <category>pandas</category>
         <category>sklearn</category>
+        <category>Linux</category>
         <category>Mybatis</category>
         <category>分页查询</category>
         <category>模糊查询</category>
-        <category>Nginx</category>
         <category>Spring</category>
+        <category>Nginx</category>
         <category>SrpingBoot</category>
         <category>文件上传</category>
         <category>事务</category>
+        <category>master</category>
         <category>TypeScript</category>
         <category>WebPack</category>
-        <category>master</category>
-        <category>Jenkins</category>
-        <category>Groovy</category>
         <category>UML</category>
-        <category>VsCode</category>
-        <category>Shell</category>
+        <category>Groovy</category>
         <category>Ubuntu</category>
         <category>Mysql</category>
+        <category>VsCode</category>
+        <category>Shell</category>
         <category>VSCODE</category>
         <category>快捷键</category>
         <category>Vue</category>
@@ -74,30 +75,30 @@
         <category>线程池</category>
         <category>ubuntu</category>
         <category>虚拟机</category>
-        <category>二分查找</category>
         <category>Hadoop</category>
-        <category>数据挖掘</category>
         <category>操作系统</category>
         <category>EasyExcel</category>
+        <category>二分查找</category>
         <category>node</category>
+        <category>数据挖掘</category>
         <category>JVM</category>
         <category>Yaml</category>
-        <category>Hexo</category>
         <category>数据库</category>
+        <category>Hexo</category>
         <category>junit</category>
         <category>Mysql事务</category>
-        <category>git,npm,node</category>
         <category>Git</category>
         <category>冒泡排序</category>
-        <category>堆排序</category>
+        <category>git,npm,node</category>
         <category>动态规划</category>
-        <category>幂等性</category>
+        <category>堆排序</category>
         <category>多线程</category>
+        <category>幂等性</category>
         <category>Google</category>
         <category>流</category>
-        <category>归并排序</category>
         <category>快速排序</category>
         <category>正则表达式</category>
+        <category>归并排序</category>
         <category>直接插入排序</category>
         <category>选择排序</category>
         <category>Java 面试</category>
@@ -123,10 +124,10 @@
             <category>JVM</category>
             <pubDate>Sun, 13 Mar 2022 15:12:45 +0800</pubDate>
             <description><![CDATA[ &lt;p&gt;笔记链接： &lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3UwMTE4NjMwMjQvYXJ0aWNsZS9kZXRhaWxzLzExNDY4NDQyOA==&#34;&gt;大厂面试视频&lt;/span&gt;&lt;/p&gt;
-&lt;h2 id=&#34;jvm的标配参数和x参数&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#jvm的标配参数和x参数&#34;&gt;#&lt;/a&gt;  &lt;code&gt;JVM&lt;/code&gt;  的标配参数和 &lt;code&gt;X&lt;/code&gt;  参数&lt;/h2&gt;
-&lt;p&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9kb2NzLm9yYWNsZS5jb20vamF2YXNlLzgvZG9jcy90ZWNobm90ZXMvdG9vbHMvd2luZG93cy9qYXZhLmh0bWw=&#34;&gt;官方文档&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;&lt;code&gt;JVM&lt;/code&gt;  的参数类型：&lt;/p&gt;
+&lt;h2 id=&#34;JVM的标配参数和X参数&#34;&gt;&lt;a href=&#34;#JVM的标配参数和X参数&#34; class=&#34;headerlink&#34; title=&#34;JVM的标配参数和X参数&#34;&gt;&lt;/a&gt;&lt;code&gt;JVM&lt;/code&gt;的标配参数和&lt;code&gt;X&lt;/code&gt;参数&lt;/h2&gt;&lt;p&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9kb2NzLm9yYWNsZS5jb20vamF2YXNlLzgvZG9jcy90ZWNobm90ZXMvdG9vbHMvd2luZG93cy9qYXZhLmh0bWw=&#34;&gt;官方文档&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;JVM&lt;/code&gt;的参数类型：&lt;/p&gt;
 &lt;span id=&#34;more&#34;&gt;&lt;/span&gt;
+
 &lt;blockquote&gt;
 &lt;p&gt;标配参数&lt;/p&gt;
 &lt;/blockquote&gt;
@@ -135,108 +136,105 @@
 &lt;li&gt;&lt;code&gt;-help&lt;/code&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;blockquote&gt;
-&lt;p&gt;&lt;code&gt;X&lt;/code&gt;  参数（了解）&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;X&lt;/code&gt;参数（了解）&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;code&gt;-Xint&lt;/code&gt; ：解释执行&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;-Xcomp&lt;/code&gt; ：第一次使用就编译成本地代码&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;-Xmixed&lt;/code&gt; ：混合模式&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;-Xint&lt;/code&gt;：解释执行&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;-Xcomp&lt;/code&gt;：第一次使用就编译成本地代码&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;-Xmixed&lt;/code&gt;：混合模式&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2 id=&#34;vm的xx参数之布尔类型&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#vm的xx参数之布尔类型&#34;&gt;#&lt;/a&gt;  &lt;code&gt;VM&lt;/code&gt;  的 &lt;code&gt;XX&lt;/code&gt;  参数之布尔类型&lt;/h2&gt;
-&lt;p&gt;公式： &lt;code&gt;-XX:+&lt;/code&gt;  或者  &lt;code&gt;-&lt;/code&gt;  某个属性值（ &lt;code&gt;+&lt;/code&gt;  表示开启， &lt;code&gt;-&lt;/code&gt;  表示关闭）&lt;/p&gt;
-&lt;p&gt;如何查看一个正在运行中的 &lt;code&gt;java&lt;/code&gt;  程序，它的某个 &lt;code&gt;jvm&lt;/code&gt;  参数是否开启？具体值是多少？&lt;/p&gt;
+&lt;h2 id=&#34;VM的XX参数之布尔类型&#34;&gt;&lt;a href=&#34;#VM的XX参数之布尔类型&#34; class=&#34;headerlink&#34; title=&#34;VM的XX参数之布尔类型&#34;&gt;&lt;/a&gt;&lt;code&gt;VM&lt;/code&gt;的&lt;code&gt;XX&lt;/code&gt;参数之布尔类型&lt;/h2&gt;&lt;p&gt;公式：&lt;code&gt;-XX:+&lt;/code&gt; 或者 &lt;code&gt;-&lt;/code&gt; 某个属性值（&lt;code&gt;+&lt;/code&gt;表示开启，&lt;code&gt;-&lt;/code&gt;表示关闭）&lt;/p&gt;
+&lt;p&gt;如何查看一个正在运行中的&lt;code&gt;java&lt;/code&gt;程序，它的某个&lt;code&gt;jvm&lt;/code&gt;参数是否开启？具体值是多少？&lt;/p&gt;
 &lt;figure class=&#34;highlight java&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;jps -l 查看一个正在运行中的java程序，得到Java程序号。&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;jinfo -&lt;span class=&#34;function&#34;&gt;flag &lt;span class=&#34;title&#34;&gt;PrintGCDetails&lt;/span&gt; &lt;span class=&#34;params&#34;&gt;(Java程序号 )&lt;/span&gt;查看它的某个jvm参数（如PrintGCDetails ）是否开启。&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;function&#34;&gt;jinfo -&lt;span class=&#34;title&#34;&gt;flags&lt;/span&gt; &lt;span class=&#34;params&#34;&gt;(Java程序号 )&lt;/span&gt;查看它的所有jvm参数&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
 &lt;p&gt;Case&lt;/p&gt;
 &lt;blockquote&gt;
-&lt;p&gt;是否打印 &lt;code&gt;GC&lt;/code&gt;  收集细节&lt;/p&gt;
+&lt;p&gt;是否打印&lt;code&gt;GC&lt;/code&gt;收集细节&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;figure class=&#34;highlight java&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;-XX:-PrintGCDetails&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;-XX:+PrintGCDetails&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
 &lt;blockquote&gt;
 &lt;p&gt;是否使用串行垃圾回收器&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;figure class=&#34;highlight java&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;-XX:-UseSerialGC&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;-XX:+UserSerialGC&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;h2 id=&#34;jvm的xx参数之设值类型&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#jvm的xx参数之设值类型&#34;&gt;#&lt;/a&gt;  &lt;code&gt;JVM&lt;/code&gt;  的 &lt;code&gt;XX&lt;/code&gt;  参数之设值类型&lt;/h2&gt;
-&lt;p&gt;公式： &lt;code&gt;-XX&lt;/code&gt; : 属性 &lt;code&gt;key=&lt;/code&gt;  属性值 &lt;code&gt;value&lt;/code&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;JVM的XX参数之设值类型&#34;&gt;&lt;a href=&#34;#JVM的XX参数之设值类型&#34; class=&#34;headerlink&#34; title=&#34;JVM的XX参数之设值类型&#34;&gt;&lt;/a&gt;&lt;code&gt;JVM&lt;/code&gt;的&lt;code&gt;XX&lt;/code&gt;参数之设值类型&lt;/h2&gt;&lt;p&gt;公式：&lt;code&gt;-XX&lt;/code&gt;:属性&lt;code&gt;key=&lt;/code&gt;属性值&lt;code&gt;value&lt;/code&gt;&lt;/p&gt;
 &lt;p&gt;Case&lt;/p&gt;
 &lt;figure class=&#34;highlight java&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;-XX:MetaspaceSize=128m&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;-XX:MaxTenuringThreshold=&lt;span class=&#34;number&#34;&gt;15&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;h2 id=&#34;vm的xx参数之xmsxmx坑题&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#vm的xx参数之xmsxmx坑题&#34;&gt;#&lt;/a&gt;  &lt;code&gt;VM&lt;/code&gt;  的 &lt;code&gt;XX&lt;/code&gt;  参数之 &lt;code&gt;XmsXmx&lt;/code&gt;  坑题&lt;/h2&gt;
-&lt;p&gt;两个经典参数：&lt;/p&gt;
+&lt;h2 id=&#34;VM的XX参数之XmsXmx坑题&#34;&gt;&lt;a href=&#34;#VM的XX参数之XmsXmx坑题&#34; class=&#34;headerlink&#34; title=&#34;VM的XX参数之XmsXmx坑题&#34;&gt;&lt;/a&gt;&lt;code&gt;VM&lt;/code&gt;的&lt;code&gt;XX&lt;/code&gt;参数之&lt;code&gt;XmsXmx&lt;/code&gt;坑题&lt;/h2&gt;&lt;p&gt;两个经典参数：&lt;/p&gt;
 &lt;figure class=&#34;highlight java&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;-Xms等价于-XX:InitialHeapSize，初始大小内存，默认物理内存&lt;span class=&#34;number&#34;&gt;1&lt;/span&gt;/&lt;span class=&#34;number&#34;&gt;64&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;-Xmx等价于-XX:MaxHeapSize，最大分配内存，默认为物理内存&lt;span class=&#34;number&#34;&gt;1&lt;/span&gt;/&lt;span class=&#34;number&#34;&gt;4&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;h2 id=&#34;jvm盘点家底查看初始默认&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#jvm盘点家底查看初始默认&#34;&gt;#&lt;/a&gt;  &lt;code&gt;JVM&lt;/code&gt;  盘点家底查看初始默认&lt;/h2&gt;
-&lt;blockquote&gt;
+
+&lt;h2 id=&#34;JVM盘点家底查看初始默认&#34;&gt;&lt;a href=&#34;#JVM盘点家底查看初始默认&#34; class=&#34;headerlink&#34; title=&#34;JVM盘点家底查看初始默认&#34;&gt;&lt;/a&gt;&lt;code&gt;JVM&lt;/code&gt;盘点家底查看初始默认&lt;/h2&gt;&lt;blockquote&gt;
 &lt;p&gt;查看初始默认参数值&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;figure class=&#34;highlight java&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;-XX:+PrintFlagsInitial&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;p&gt;公式： &lt;code&gt;java -XX:+PrintFlagsInitial&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;公式：&lt;code&gt;java -XX:+PrintFlagsInitial&lt;/code&gt;&lt;/p&gt;
 &lt;img data-src=&#34;/posts/a72f470b/2022-03-13-15-29-37.png&#34; class=&#34;&#34;&gt;
+
 &lt;blockquote&gt;
 &lt;p&gt;查看修改更新参数值&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;figure class=&#34;highlight java&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;-XX:+PrintFlagsFinal&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;p&gt;公式： &lt;code&gt;java -XX:+PrintFlagsFinal&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;公式：&lt;code&gt;java -XX:+PrintFlagsFinal&lt;/code&gt;&lt;/p&gt;
 &lt;img data-src=&#34;/posts/a72f470b/2022-03-13-15-32-07.png&#34; class=&#34;&#34;&gt;
-&lt;p&gt;&lt;strong&gt; &lt;code&gt;=&lt;/code&gt;  表示默认， &lt;code&gt;:=&lt;/code&gt;  表示修改过的。&lt;/strong&gt;&lt;/p&gt;
-&lt;h2 id=&#34;jvm盘点家底查看修改变更值&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#jvm盘点家底查看修改变更值&#34;&gt;#&lt;/a&gt;  &lt;code&gt;JVM&lt;/code&gt;  盘点家底查看修改变更值&lt;/h2&gt;
-&lt;p&gt;&lt;code&gt;PrintFlagsFinal&lt;/code&gt;  举例，运行 &lt;code&gt;java&lt;/code&gt;  命令的同时打印出参数&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;&lt;code&gt;=&lt;/code&gt;表示默认，&lt;code&gt;:=&lt;/code&gt;表示修改过的。&lt;/strong&gt;&lt;/p&gt;
+&lt;h2 id=&#34;JVM盘点家底查看修改变更值&#34;&gt;&lt;a href=&#34;#JVM盘点家底查看修改变更值&#34; class=&#34;headerlink&#34; title=&#34;JVM盘点家底查看修改变更值&#34;&gt;&lt;/a&gt;&lt;code&gt;JVM&lt;/code&gt;盘点家底查看修改变更值&lt;/h2&gt;&lt;p&gt;&lt;code&gt;PrintFlagsFinal&lt;/code&gt;举例，运行&lt;code&gt;java&lt;/code&gt;命令的同时打印出参数&lt;/p&gt;
 &lt;figure class=&#34;highlight java&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;java -XX:+PrintFlagsFinal -XX:MetaspaceSize=512m HelloWorld&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;--------------&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;...&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;   size_t MetaspaceSize                            := &lt;span class=&#34;number&#34;&gt;536870912&lt;/span&gt;                               &amp;#123;pd product&amp;#125; &amp;#123;&lt;span class=&#34;keyword&#34;&gt;default&lt;/span&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;...&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+
 &lt;blockquote&gt;
 &lt;p&gt;打印命令行参数&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;figure class=&#34;highlight java&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;-XX:+PrintCommandLineFlags&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
 &lt;figure class=&#34;highlight java&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;(base) ➜  ~ java -XX:+PrintCommandLineFlags -version&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;-XX:G1ConcRefinementThreads=&lt;span class=&#34;number&#34;&gt;8&lt;/span&gt; -XX:GCDrainStackTargetSize=&lt;span class=&#34;number&#34;&gt;64&lt;/span&gt; -XX:InitialHeapSize=&lt;span class=&#34;number&#34;&gt;268435456&lt;/span&gt; -XX:MaxHeapSize=&lt;span class=&#34;number&#34;&gt;4294967296&lt;/span&gt; -XX:+PrintCommandLineFlags -XX:ReservedCodeCacheSize=&lt;span class=&#34;number&#34;&gt;251658240&lt;/span&gt; -XX:+SegmentedCodeCache -XX:+UseCompressedClassPointers -XX:+UseCompressedOops -XX:+UseG1GC&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;java version &lt;span class=&#34;string&#34;&gt;&amp;quot;11.0.10&amp;quot;&lt;/span&gt; &lt;span class=&#34;number&#34;&gt;2021&lt;/span&gt;-&lt;span class=&#34;number&#34;&gt;01&lt;/span&gt;-&lt;span class=&#34;number&#34;&gt;19&lt;/span&gt; &lt;span class=&#34;function&#34;&gt;LTS&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;function&#34;&gt;&lt;span class=&#34;title&#34;&gt;Java&lt;/span&gt;&lt;span class=&#34;params&#34;&gt;(TM)&lt;/span&gt; SE Runtime Environment 18.9 &lt;span class=&#34;params&#34;&gt;(build &lt;span class=&#34;number&#34;&gt;11.0&lt;/span&gt;&lt;span class=&#34;number&#34;&gt;.10&lt;/span&gt;+&lt;span class=&#34;number&#34;&gt;8&lt;/span&gt;-LTS-&lt;span class=&#34;number&#34;&gt;162&lt;/span&gt;)&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;function&#34;&gt;Java &lt;span class=&#34;title&#34;&gt;HotSpot&lt;/span&gt;&lt;span class=&#34;params&#34;&gt;(TM)&lt;/span&gt; 64-Bit Server VM 18.9 &lt;span class=&#34;params&#34;&gt;(build &lt;span class=&#34;number&#34;&gt;11.0&lt;/span&gt;&lt;span class=&#34;number&#34;&gt;.10&lt;/span&gt;+&lt;span class=&#34;number&#34;&gt;8&lt;/span&gt;-LTS-&lt;span class=&#34;number&#34;&gt;162&lt;/span&gt;, mixed mode)&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;h2 id=&#34;堆内存初始大小快速复习&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#堆内存初始大小快速复习&#34;&gt;#&lt;/a&gt; 堆内存初始大小快速复习&lt;/h2&gt;
-&lt;p&gt;&lt;code&gt;JDK 1.8&lt;/code&gt;  之后将最初的永久代取消了，由元空间取代。&lt;/p&gt;
+
+&lt;h2 id=&#34;堆内存初始大小快速复习&#34;&gt;&lt;a href=&#34;#堆内存初始大小快速复习&#34; class=&#34;headerlink&#34; title=&#34;堆内存初始大小快速复习&#34;&gt;&lt;/a&gt;堆内存初始大小快速复习&lt;/h2&gt;&lt;p&gt;&lt;code&gt;JDK 1.8&lt;/code&gt;之后将最初的永久代取消了，由元空间取代。&lt;/p&gt;
 &lt;img data-src=&#34;/posts/a72f470b/2022-03-13-15-48-45.png&#34; class=&#34;&#34;&gt;
-&lt;p&gt;在 &lt;code&gt;Java8&lt;/code&gt;  中，永久代已经被移除，被一个称为元空间的区域所取代。元空间的本质和永久代类似。&lt;/p&gt;
-&lt;p&gt;元空间 ( &lt;code&gt;Java8&lt;/code&gt; ) 与永久代 ( &lt;code&gt;Java7&lt;/code&gt; ) 之间最大的区别在于：永久带使用的 &lt;code&gt;JVM&lt;/code&gt;  的堆内存，但是 &lt;code&gt;Java8&lt;/code&gt;  以后的元空间&lt;strong&gt;并不在虚拟机中而是使用本机物理内存&lt;/strong&gt;。&lt;/p&gt;
-&lt;p&gt;因此，默认情况下，元空间的大小仅受本地内存限制。类的元数据放入 &lt;code&gt;native memory&lt;/code&gt; ，字符串池和类的静态变量放入 &lt;code&gt;java&lt;/code&gt;  堆中，这样可以加载多少类的元数据就不再由 &lt;code&gt;MaxPermSize&lt;/code&gt;  控制，而由系统的实际可用空间来控制。&lt;/p&gt;
+
+&lt;p&gt;在&lt;code&gt;Java8&lt;/code&gt;中，永久代已经被移除，被一个称为元空间的区域所取代。元空间的本质和永久代类似。&lt;/p&gt;
+&lt;p&gt;元空间(&lt;code&gt;Java8&lt;/code&gt;)与永久代(&lt;code&gt;Java7&lt;/code&gt;)之间最大的区别在于：永久带使用的&lt;code&gt;JVM&lt;/code&gt;的堆内存，但是&lt;code&gt;Java8&lt;/code&gt;以后的元空间&lt;strong&gt;并不在虚拟机中而是使用本机物理内存&lt;/strong&gt;。&lt;/p&gt;
+&lt;p&gt;因此，默认情况下，元空间的大小仅受本地内存限制。类的元数据放入&lt;code&gt;native memory&lt;/code&gt;，字符串池和类的静态变量放入&lt;code&gt;java&lt;/code&gt;堆中，这样可以加载多少类的元数据就不再由&lt;code&gt;MaxPermSize&lt;/code&gt;控制，而由系统的实际可用空间来控制。&lt;/p&gt;
 &lt;figure class=&#34;highlight java&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;12&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;public&lt;/span&gt; &lt;span class=&#34;class&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;class&lt;/span&gt; &lt;span class=&#34;title&#34;&gt;JVMMemorySizeDemo&lt;/span&gt; &lt;/span&gt;&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;function&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;public&lt;/span&gt; &lt;span class=&#34;keyword&#34;&gt;static&lt;/span&gt; &lt;span class=&#34;keyword&#34;&gt;void&lt;/span&gt; &lt;span class=&#34;title&#34;&gt;main&lt;/span&gt;&lt;span class=&#34;params&#34;&gt;(String[] args)&lt;/span&gt; &lt;span class=&#34;keyword&#34;&gt;throws&lt;/span&gt; InterruptedException &lt;/span&gt;&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        &lt;span class=&#34;comment&#34;&gt;// 返回Java虚拟机中内存的总量&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        &lt;span class=&#34;keyword&#34;&gt;long&lt;/span&gt; totalMemory = Runtime.getRuntime().totalMemory();&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        &lt;span class=&#34;comment&#34;&gt;// 返回Java虚拟机中试图使用的最大内存量&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        &lt;span class=&#34;keyword&#34;&gt;long&lt;/span&gt; maxMemory = Runtime.getRuntime().maxMemory();&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        System.out.println(String.format(&lt;span class=&#34;string&#34;&gt;&amp;quot;TOTAL_MEMORY(-Xms): %d B, %.2f MB.&amp;quot;&lt;/span&gt;, totalMemory, totalMemory / &lt;span class=&#34;number&#34;&gt;1024.0&lt;/span&gt; / &lt;span class=&#34;number&#34;&gt;1024&lt;/span&gt;));&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        System.out.println(String.format(&lt;span class=&#34;string&#34;&gt;&amp;quot;MAX_MEMORY(-Xmx): %d B, %.2f MB.&amp;quot;&lt;/span&gt;, maxMemory, maxMemory / &lt;span class=&#34;number&#34;&gt;1024.0&lt;/span&gt; / &lt;span class=&#34;number&#34;&gt;1024&lt;/span&gt;));&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
 &lt;p&gt;输出结果：&lt;/p&gt;
 &lt;img data-src=&#34;/posts/a72f470b/2022-03-13-15-51-39.png&#34; class=&#34;&#34;&gt;
-&lt;h2 id=&#34;常用基础参数栈内存xss讲解&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#常用基础参数栈内存xss讲解&#34;&gt;#&lt;/a&gt; 常用基础参数栈内存 &lt;code&gt;Xss&lt;/code&gt;  讲解&lt;/h2&gt;
-&lt;p&gt;设置单个线程栈的大小，一般默认为 &lt;code&gt;512k~1024K&lt;/code&gt;&lt;/p&gt;
-&lt;p&gt;等价于 &lt;code&gt;-XX:ThreadStackSize&lt;/code&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;常用基础参数栈内存Xss讲解&#34;&gt;&lt;a href=&#34;#常用基础参数栈内存Xss讲解&#34; class=&#34;headerlink&#34; title=&#34;常用基础参数栈内存Xss讲解&#34;&gt;&lt;/a&gt;常用基础参数栈内存&lt;code&gt;Xss&lt;/code&gt;讲解&lt;/h2&gt;&lt;p&gt;设置单个线程栈的大小，一般默认为&lt;code&gt;512k~1024K&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;等价于&lt;code&gt;-XX:ThreadStackSize&lt;/code&gt;&lt;/p&gt;
 &lt;blockquote&gt;
-&lt;p&gt;-XX:ThreadStackSize=size&lt;br&gt;
-Sets the thread stack size (in bytes). Append the letter k or K to indicate kilobytes, m or M to indicate megabytes, g or G to indicate gigabytes. The default value depends on virtual memory.&lt;br&gt;
-The following examples show how to set the thread stack size to 1024 KB in different units:&lt;br&gt;
--XX:ThreadStackSize=1m&lt;br&gt;
--XX:ThreadStackSize=1024k&lt;br&gt;
--XX:ThreadStackSize=1048576&lt;br&gt;
-This option is equivalent to  &lt;code&gt;-Xss&lt;/code&gt; . &lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9kb2NzLm9yYWNsZS5jb20vamF2YXNlLzgvZG9jcy90ZWNobm90ZXMvdG9vbHMvd2luZG93cy9qYXZhLmh0bWwjQkdCQ0lFRkM=&#34;&gt;文档&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;-XX:ThreadStackSize=size&lt;br&gt;Sets the thread stack size (in bytes). Append the letter k or K to indicate kilobytes, m or M to indicate megabytes, g or G to indicate gigabytes. The default value depends on virtual memory.&lt;br&gt;The following examples show how to set the thread stack size to 1024 KB in different units:&lt;br&gt;-XX:ThreadStackSize=1m&lt;br&gt;-XX:ThreadStackSize=1024k&lt;br&gt;-XX:ThreadStackSize=1048576&lt;br&gt;This option is equivalent to &lt;code&gt;-Xss&lt;/code&gt;. &lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9kb2NzLm9yYWNsZS5jb20vamF2YXNlLzgvZG9jcy90ZWNobm90ZXMvdG9vbHMvd2luZG93cy9qYXZhLmh0bWwjQkdCQ0lFRkM=&#34;&gt;文档&lt;/span&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;h2 id=&#34;常用基础参数元空间metaspacesize讲解&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#常用基础参数元空间metaspacesize讲解&#34;&gt;#&lt;/a&gt; 常用基础参数元空间 &lt;code&gt;MetaspaceSize&lt;/code&gt;  讲解&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;code&gt;-Xmn&lt;/code&gt; ：设置年轻代大小&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;-XX:MetaspaceSize&lt;/code&gt;  设置元空间大小&lt;/li&gt;
+&lt;h2 id=&#34;常用基础参数元空间MetaspaceSize讲解&#34;&gt;&lt;a href=&#34;#常用基础参数元空间MetaspaceSize讲解&#34; class=&#34;headerlink&#34; title=&#34;常用基础参数元空间MetaspaceSize讲解&#34;&gt;&lt;/a&gt;常用基础参数元空间&lt;code&gt;MetaspaceSize&lt;/code&gt;讲解&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;-Xmn&lt;/code&gt;：设置年轻代大小&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;-XX:MetaspaceSize&lt;/code&gt; 设置元空间大小&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;元空间的本质和永久代类似，都是对 JVM 规范中方法区的实现。不过元空间与永久代之间最大的区别在于：元空间并不在虚拟机中，而是使用本地内存。因此，默认情况下，元空间的大小仅受本地内存限制&lt;/p&gt;
+&lt;p&gt;元空间的本质和永久代类似，都是对JVM规范中方法区的实现。不过元空间与永久代之间最大的区别在于：元空间并不在虚拟机中，而是使用本地内存。因此，默认情况下，元空间的大小仅受本地内存限制&lt;/p&gt;
 &lt;p&gt;典型设置案例&lt;/p&gt;
 &lt;figure class=&#34;highlight java&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;-Xms128m -Xmx4096m -Xss1024k -XX:MetaspaceSize=512m -XX:+PrintCommandLineFlags -XX:+PrintGCDetails-XX:+UseSerialGC&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;h2 id=&#34;常用基础参数printgcdetails回收前后对比讲解&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#常用基础参数printgcdetails回收前后对比讲解&#34;&gt;#&lt;/a&gt; 常用基础参数 &lt;code&gt;PrintGCDetails&lt;/code&gt;  回收前后对比讲解&lt;/h2&gt;
-&lt;p&gt;&lt;code&gt;-XX:+PrintGCDetails&lt;/code&gt;  输出详细 &lt;code&gt;GC&lt;/code&gt;  收集日志信息&lt;/p&gt;
-&lt;p&gt;设置参数  &lt;code&gt;-Xms10m -Xmx10m -XX:+PrintGCDetails&lt;/code&gt;  运行以下程序&lt;/p&gt;
+
+&lt;h2 id=&#34;常用基础参数PrintGCDetails回收前后对比讲解&#34;&gt;&lt;a href=&#34;#常用基础参数PrintGCDetails回收前后对比讲解&#34; class=&#34;headerlink&#34; title=&#34;常用基础参数PrintGCDetails回收前后对比讲解&#34;&gt;&lt;/a&gt;常用基础参数&lt;code&gt;PrintGCDetails&lt;/code&gt;回收前后对比讲解&lt;/h2&gt;&lt;p&gt;&lt;code&gt;-XX:+PrintGCDetails&lt;/code&gt; 输出详细&lt;code&gt;GC&lt;/code&gt;收集日志信息&lt;/p&gt;
+&lt;p&gt;设置参数 &lt;code&gt;-Xms10m -Xmx10m -XX:+PrintGCDetails&lt;/code&gt; 运行以下程序&lt;/p&gt;
 &lt;figure class=&#34;highlight java&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;11&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;import&lt;/span&gt; java.util.concurrent.TimeUnit;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;public&lt;/span&gt; &lt;span class=&#34;class&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;class&lt;/span&gt; &lt;span class=&#34;title&#34;&gt;PrintGCDetailsDemo&lt;/span&gt; &lt;/span&gt;&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;	&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;	&lt;span class=&#34;function&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;public&lt;/span&gt; &lt;span class=&#34;keyword&#34;&gt;static&lt;/span&gt; &lt;span class=&#34;keyword&#34;&gt;void&lt;/span&gt; &lt;span class=&#34;title&#34;&gt;main&lt;/span&gt;&lt;span class=&#34;params&#34;&gt;(String[] args)&lt;/span&gt; &lt;span class=&#34;keyword&#34;&gt;throws&lt;/span&gt; InterruptedException &lt;/span&gt;&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;		&lt;span class=&#34;keyword&#34;&gt;byte&lt;/span&gt;[] byteArray = &lt;span class=&#34;keyword&#34;&gt;new&lt;/span&gt; &lt;span class=&#34;keyword&#34;&gt;byte&lt;/span&gt;[&lt;span class=&#34;number&#34;&gt;10&lt;/span&gt; * &lt;span class=&#34;number&#34;&gt;1024&lt;/span&gt; * &lt;span class=&#34;number&#34;&gt;1024&lt;/span&gt;];&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;		&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;		TimeUnit.SECONDS.sleep(Integer.MAX_VALUE);&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;	&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
 &lt;p&gt;输出结果：&lt;/p&gt;
 &lt;figure class=&#34;highlight java&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;13&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;14&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;15&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;16&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;[GC (Allocation Failure) [PSYoungGen: 778K-&amp;gt;480K(2560K)] 778K-&amp;gt;608K(9728K), &lt;span class=&#34;number&#34;&gt;0.0029909&lt;/span&gt; secs] [Times: user=&lt;span class=&#34;number&#34;&gt;0.00&lt;/span&gt; sys=&lt;span class=&#34;number&#34;&gt;0.00&lt;/span&gt;, real=&lt;span class=&#34;number&#34;&gt;0.00&lt;/span&gt; secs] &lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;[GC (Allocation Failure) [PSYoungGen: 480K-&amp;gt;480K(2560K)] 608K-&amp;gt;616K(9728K), &lt;span class=&#34;number&#34;&gt;0.0007890&lt;/span&gt; secs] [Times: user=&lt;span class=&#34;number&#34;&gt;0.00&lt;/span&gt; sys=&lt;span class=&#34;number&#34;&gt;0.00&lt;/span&gt;, real=&lt;span class=&#34;number&#34;&gt;0.00&lt;/span&gt; secs] &lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;[&lt;span class=&#34;function&#34;&gt;Full &lt;span class=&#34;title&#34;&gt;GC&lt;/span&gt; &lt;span class=&#34;params&#34;&gt;(Allocation Failure)&lt;/span&gt; [PSYoungGen: 480K-&amp;gt;0&lt;span class=&#34;title&#34;&gt;K&lt;/span&gt;&lt;span class=&#34;params&#34;&gt;(2560K)&lt;/span&gt;] [ParOldGen: 136K-&amp;gt;518&lt;span class=&#34;title&#34;&gt;K&lt;/span&gt;&lt;span class=&#34;params&#34;&gt;(7168K)&lt;/span&gt;] 616K-&amp;gt;518&lt;span class=&#34;title&#34;&gt;K&lt;/span&gt;&lt;span class=&#34;params&#34;&gt;(9728K)&lt;/span&gt;, [Metaspace: 2644K-&amp;gt;2644&lt;span class=&#34;title&#34;&gt;K&lt;/span&gt;&lt;span class=&#34;params&#34;&gt;(1056768K)&lt;/span&gt;], 0.0058272 secs] [Times: user&lt;/span&gt;=&lt;span class=&#34;number&#34;&gt;0.00&lt;/span&gt; sys=&lt;span class=&#34;number&#34;&gt;0.00&lt;/span&gt;, real=&lt;span class=&#34;number&#34;&gt;0.01&lt;/span&gt; secs] &lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;[GC (Allocation Failure) [PSYoungGen: 0K-&amp;gt;0K(2560K)] 518K-&amp;gt;518K(9728K), &lt;span class=&#34;number&#34;&gt;0.0002924&lt;/span&gt; secs] [Times: user=&lt;span class=&#34;number&#34;&gt;0.00&lt;/span&gt; sys=&lt;span class=&#34;number&#34;&gt;0.00&lt;/span&gt;, real=&lt;span class=&#34;number&#34;&gt;0.00&lt;/span&gt; secs] &lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;[&lt;span class=&#34;function&#34;&gt;Full &lt;span class=&#34;title&#34;&gt;GC&lt;/span&gt; &lt;span class=&#34;params&#34;&gt;(Allocation Failure)&lt;/span&gt; [PSYoungGen: 0K-&amp;gt;0&lt;span class=&#34;title&#34;&gt;K&lt;/span&gt;&lt;span class=&#34;params&#34;&gt;(2560K)&lt;/span&gt;] [ParOldGen: 518K-&amp;gt;506&lt;span class=&#34;title&#34;&gt;K&lt;/span&gt;&lt;span class=&#34;params&#34;&gt;(7168K)&lt;/span&gt;] 518K-&amp;gt;506&lt;span class=&#34;title&#34;&gt;K&lt;/span&gt;&lt;span class=&#34;params&#34;&gt;(9728K)&lt;/span&gt;, [Metaspace: 2644K-&amp;gt;2644&lt;span class=&#34;title&#34;&gt;K&lt;/span&gt;&lt;span class=&#34;params&#34;&gt;(1056768K)&lt;/span&gt;], 0.0056906 secs] [Times: user&lt;/span&gt;=&lt;span class=&#34;number&#34;&gt;0.01&lt;/span&gt; sys=&lt;span class=&#34;number&#34;&gt;0.00&lt;/span&gt;, real=&lt;span class=&#34;number&#34;&gt;0.01&lt;/span&gt; secs] &lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;Exception in thread &lt;span class=&#34;string&#34;&gt;&amp;quot;main&amp;quot;&lt;/span&gt; java.lang.OutOfMemoryError: Java heap space&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;	at com.lun.jvm.PrintGCDetailsDemo.main(PrintGCDetailsDemo.java:&lt;span class=&#34;number&#34;&gt;9&lt;/span&gt;)&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;Heap&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt; PSYoungGen      total 2560K, used 61K [&lt;span class=&#34;number&#34;&gt;0x00000000ffd00000&lt;/span&gt;, &lt;span class=&#34;number&#34;&gt;0x0000000100000000&lt;/span&gt;, &lt;span class=&#34;number&#34;&gt;0x0000000100000000&lt;/span&gt;)&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  eden space 2048K, &lt;span class=&#34;number&#34;&gt;3&lt;/span&gt;% used [&lt;span class=&#34;number&#34;&gt;0x00000000ffd00000&lt;/span&gt;,&lt;span class=&#34;number&#34;&gt;0x00000000ffd0f748&lt;/span&gt;,&lt;span class=&#34;number&#34;&gt;0x00000000fff00000&lt;/span&gt;)&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  from space 512K, &lt;span class=&#34;number&#34;&gt;0&lt;/span&gt;% used [&lt;span class=&#34;number&#34;&gt;0x00000000fff00000&lt;/span&gt;,&lt;span class=&#34;number&#34;&gt;0x00000000fff00000&lt;/span&gt;,&lt;span class=&#34;number&#34;&gt;0x00000000fff80000&lt;/span&gt;)&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  to   space 512K, &lt;span class=&#34;number&#34;&gt;0&lt;/span&gt;% used [&lt;span class=&#34;number&#34;&gt;0x00000000fff80000&lt;/span&gt;,&lt;span class=&#34;number&#34;&gt;0x00000000fff80000&lt;/span&gt;,&lt;span class=&#34;number&#34;&gt;0x0000000100000000&lt;/span&gt;)&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt; ParOldGen       total 7168K, used 506K [&lt;span class=&#34;number&#34;&gt;0x00000000ff600000&lt;/span&gt;, &lt;span class=&#34;number&#34;&gt;0x00000000ffd00000&lt;/span&gt;, &lt;span class=&#34;number&#34;&gt;0x00000000ffd00000&lt;/span&gt;)&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  object space 7168K, &lt;span class=&#34;number&#34;&gt;7&lt;/span&gt;% used [&lt;span class=&#34;number&#34;&gt;0x00000000ff600000&lt;/span&gt;,&lt;span class=&#34;number&#34;&gt;0x00000000ff67ea58&lt;/span&gt;,&lt;span class=&#34;number&#34;&gt;0x00000000ffd00000&lt;/span&gt;)&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt; Metaspace       used 2676K, capacity 4486K, committed 4864K, reserved 1056768K&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  &lt;span class=&#34;class&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;class&lt;/span&gt; &lt;span class=&#34;title&#34;&gt;space&lt;/span&gt;    &lt;span class=&#34;title&#34;&gt;used&lt;/span&gt; 285&lt;span class=&#34;title&#34;&gt;K&lt;/span&gt;, &lt;span class=&#34;title&#34;&gt;capacity&lt;/span&gt; 386&lt;span class=&#34;title&#34;&gt;K&lt;/span&gt;, &lt;span class=&#34;title&#34;&gt;committed&lt;/span&gt; 512&lt;span class=&#34;title&#34;&gt;K&lt;/span&gt;, &lt;span class=&#34;title&#34;&gt;reserved&lt;/span&gt; 1048576&lt;span class=&#34;title&#34;&gt;K&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+
 &lt;img data-src=&#34;/posts/a72f470b/2022-03-13-16-04-30.png&#34; class=&#34;&#34;&gt;
+
 &lt;img data-src=&#34;/posts/a72f470b/2022-03-13-16-04-40.png&#34; class=&#34;&#34;&gt;
-&lt;h2 id=&#34;常用基础参数survivorratio讲解&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#常用基础参数survivorratio讲解&#34;&gt;#&lt;/a&gt; 常用基础参数 &lt;code&gt;SurvivorRatio&lt;/code&gt;  讲解&lt;/h2&gt;
-&lt;img data-src=&#34;/posts/a72f470b/2022-03-13-16-05-01.png&#34; class=&#34;&#34;&gt;
-&lt;p&gt;调节新生代中  &lt;code&gt;eden&lt;/code&gt;  和  &lt;code&gt;S0、S1&lt;/code&gt;  的空间比例，默认为  &lt;code&gt;-XX:SuriviorRatio=8，Eden:S0:S1 = 8:1:1&lt;/code&gt;&lt;/p&gt;
-&lt;p&gt;假如设置成  &lt;code&gt;-XX:SurvivorRatio=4&lt;/code&gt; ，则为  &lt;code&gt;Eden:S0:S1 = 4:1:1&lt;/code&gt;&lt;/p&gt;
-&lt;p&gt;&lt;code&gt;SurvivorRatio&lt;/code&gt;  值就是设置 &lt;code&gt;eden&lt;/code&gt;  区的比例占多少， &lt;code&gt;S0&lt;/code&gt;  和 &lt;code&gt;S1&lt;/code&gt;  相同。&lt;/p&gt;
-&lt;h2 id=&#34;常用基础参数newratio讲解&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#常用基础参数newratio讲解&#34;&gt;#&lt;/a&gt; 常用基础参数 &lt;code&gt;NewRatio&lt;/code&gt;  讲解&lt;/h2&gt;
-&lt;p&gt;配置年轻代 &lt;code&gt;new&lt;/code&gt;  和老年代 &lt;code&gt;old&lt;/code&gt;  在堆结构的占比&lt;/p&gt;
-&lt;p&gt;默认： &lt;code&gt;-XX:NewRatio=2&lt;/code&gt;  新生代占 &lt;code&gt;1&lt;/code&gt; ，老年代 &lt;code&gt;2&lt;/code&gt; ，年轻代占整个堆的 &lt;code&gt;1/3&lt;/code&gt;&lt;/p&gt;
-&lt;p&gt;&lt;code&gt;-XX:NewRatio=4：&lt;/code&gt; 新生代占 &lt;code&gt;1&lt;/code&gt; ，老年代占 &lt;code&gt;4&lt;/code&gt; ，年轻代占整个堆的 &lt;code&gt;1/5&lt;/code&gt; ，&lt;/p&gt;
-&lt;p&gt;&lt;code&gt;NewRadio&lt;/code&gt;  值就是设置老年代的占比，剩下的 &lt;code&gt;1&lt;/code&gt;  个新生代。&lt;/p&gt;
-&lt;p&gt;新生代特别小，会造成频繁的进行 &lt;code&gt;GC&lt;/code&gt;  收集。&lt;/p&gt;
-&lt;h2 id=&#34;常用基础参数maxtenuringthreshold讲解&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#常用基础参数maxtenuringthreshold讲解&#34;&gt;#&lt;/a&gt; 常用基础参数 &lt;code&gt;MaxTenuringThreshold&lt;/code&gt;  讲解&lt;/h2&gt;
-&lt;p&gt;晋升到老年代的对象年龄。&lt;/p&gt;
-&lt;p&gt;&lt;code&gt;SurvivorTo和SurvivorFrom&lt;/code&gt;  互换，原 &lt;code&gt;SurvivorTo&lt;/code&gt;  成为下一次 &lt;code&gt;GC&lt;/code&gt;  时的 &lt;code&gt;SurvivorFrom&lt;/code&gt;  区，部分对象会在 &lt;code&gt;From&lt;/code&gt;  和 &lt;code&gt;To&lt;/code&gt;  区域中复制来复制去，如此交换 &lt;code&gt;15&lt;/code&gt;  次（由 &lt;code&gt;JVM&lt;/code&gt;  参数 &lt;code&gt;MaxTenuringThreshold&lt;/code&gt;  决定，这个参数默认为 &lt;code&gt;15&lt;/code&gt; ），最终如果还是存活，就存入老年代。&lt;/p&gt;
-&lt;p&gt;这里就是调整这个次数的，默认是 15，并且设置的值 在  &lt;code&gt;0~15&lt;/code&gt;  之间。&lt;/p&gt;
-&lt;p&gt;&lt;code&gt;-XX:MaxTenuringThreshold=0&lt;/code&gt; ：设置垃圾最大年龄。如果设置为 0 的话，则年轻对象不经过 &lt;code&gt;Survivor&lt;/code&gt;  区，直接进入老年代。对于年老代比较多的应用，可以提高效率。如果将此值设置为一个较大的值，则年轻代对象会在 &lt;code&gt;Survivor&lt;/code&gt;  区进行多次复制，这样可以增加对象再年轻代的存活时间，增加在年轻代即被回收的概念。&lt;/p&gt;
+
+&lt;h2 id=&#34;常用基础参数SurvivorRatio讲解&#34;&gt;&lt;a href=&#34;#常用基础参数SurvivorRatio讲解&#34; class=&#34;headerlink&#34; title=&#34;常用基础参数SurvivorRatio讲解&#34;&gt;&lt;/a&gt;常用基础参数&lt;code&gt;SurvivorRatio&lt;/code&gt;讲解&lt;/h2&gt;&lt;img data-src=&#34;/posts/a72f470b/2022-03-13-16-05-01.png&#34; class=&#34;&#34;&gt;
+
+&lt;p&gt;调节新生代中 &lt;code&gt;eden&lt;/code&gt; 和 &lt;code&gt;S0、S1&lt;/code&gt;的空间比例，默认为 &lt;code&gt;-XX:SuriviorRatio=8，Eden:S0:S1 = 8:1:1&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;假如设置成 &lt;code&gt;-XX:SurvivorRatio=4&lt;/code&gt;，则为 &lt;code&gt;Eden:S0:S1 = 4:1:1&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;SurvivorRatio&lt;/code&gt;值就是设置&lt;code&gt;eden&lt;/code&gt;区的比例占多少，&lt;code&gt;S0&lt;/code&gt;和&lt;code&gt;S1&lt;/code&gt;相同。&lt;/p&gt;
+&lt;h2 id=&#34;常用基础参数NewRatio讲解&#34;&gt;&lt;a href=&#34;#常用基础参数NewRatio讲解&#34; class=&#34;headerlink&#34; title=&#34;常用基础参数NewRatio讲解&#34;&gt;&lt;/a&gt;常用基础参数&lt;code&gt;NewRatio&lt;/code&gt;讲解&lt;/h2&gt;&lt;p&gt;配置年轻代&lt;code&gt;new&lt;/code&gt;和老年代&lt;code&gt;old&lt;/code&gt; 在堆结构的占比&lt;/p&gt;
+&lt;p&gt;默认：&lt;code&gt;-XX:NewRatio=2&lt;/code&gt; 新生代占&lt;code&gt;1&lt;/code&gt;，老年代&lt;code&gt;2&lt;/code&gt;，年轻代占整个堆的&lt;code&gt;1/3&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;-XX:NewRatio=4：&lt;/code&gt;新生代占&lt;code&gt;1&lt;/code&gt;，老年代占&lt;code&gt;4&lt;/code&gt;，年轻代占整个堆的&lt;code&gt;1/5&lt;/code&gt;，&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;NewRadio&lt;/code&gt;值就是设置老年代的占比，剩下的&lt;code&gt;1&lt;/code&gt;个新生代。&lt;/p&gt;
+&lt;p&gt;新生代特别小，会造成频繁的进行&lt;code&gt;GC&lt;/code&gt;收集。&lt;/p&gt;
+&lt;h2 id=&#34;常用基础参数MaxTenuringThreshold讲解&#34;&gt;&lt;a href=&#34;#常用基础参数MaxTenuringThreshold讲解&#34; class=&#34;headerlink&#34; title=&#34;常用基础参数MaxTenuringThreshold讲解&#34;&gt;&lt;/a&gt;常用基础参数&lt;code&gt;MaxTenuringThreshold&lt;/code&gt;讲解&lt;/h2&gt;&lt;p&gt;晋升到老年代的对象年龄。&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;SurvivorTo和SurvivorFrom&lt;/code&gt;互换，原&lt;code&gt;SurvivorTo&lt;/code&gt;成为下一次&lt;code&gt;GC&lt;/code&gt;时的&lt;code&gt;SurvivorFrom&lt;/code&gt;区，部分对象会在&lt;code&gt;From&lt;/code&gt;和&lt;code&gt;To&lt;/code&gt;区域中复制来复制去，如此交换&lt;code&gt;15&lt;/code&gt;次（由&lt;code&gt;JVM&lt;/code&gt;参数&lt;code&gt;MaxTenuringThreshold&lt;/code&gt;决定，这个参数默认为&lt;code&gt;15&lt;/code&gt;），最终如果还是存活，就存入老年代。&lt;/p&gt;
+&lt;p&gt;这里就是调整这个次数的，默认是15，并且设置的值 在 &lt;code&gt;0~15&lt;/code&gt;之间。&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;-XX:MaxTenuringThreshold=0&lt;/code&gt;：设置垃圾最大年龄。如果设置为0的话，则年轻对象不经过&lt;code&gt;Survivor&lt;/code&gt;区，直接进入老年代。对于年老代比较多的应用，可以提高效率。如果将此值设置为一个较大的值，则年轻代对象会在&lt;code&gt;Survivor&lt;/code&gt;区进行多次复制，这样可以增加对象再年轻代的存活时间，增加在年轻代即被回收的概念。&lt;/p&gt;
  ]]></description>
         </item>
         <item>
@@ -246,56 +244,65 @@ This option is equivalent to  &lt;code&gt;-Xss&lt;/code&gt; . &lt;span class=&#3
             <category>Java面试</category>
             <category>Jvm</category>
             <pubDate>Tue, 15 Feb 2022 22:33:11 +0800</pubDate>
-            <description><![CDATA[ &lt;h1 id=&#34;jvm原理的第一次接触&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#jvm原理的第一次接触&#34;&gt;#&lt;/a&gt;  &lt;code&gt;Jvm&lt;/code&gt;  原理的第一次接触&lt;/h1&gt;
-&lt;h2 id=&#34;jvm内存结构&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#jvm内存结构&#34;&gt;#&lt;/a&gt;  &lt;code&gt;JVM&lt;/code&gt;  内存结构&lt;/h2&gt;
-&lt;span id=&#34;more&#34;&gt;&lt;/span&gt;
+            <description><![CDATA[ &lt;h1 id=&#34;Jvm原理的第一次接触&#34;&gt;&lt;a href=&#34;#Jvm原理的第一次接触&#34; class=&#34;headerlink&#34; title=&#34;Jvm原理的第一次接触&#34;&gt;&lt;/a&gt;&lt;code&gt;Jvm&lt;/code&gt;原理的第一次接触&lt;/h1&gt;&lt;h2 id=&#34;JVM内存结构&#34;&gt;&lt;a href=&#34;#JVM内存结构&#34; class=&#34;headerlink&#34; title=&#34;JVM内存结构&#34;&gt;&lt;/a&gt;&lt;code&gt;JVM&lt;/code&gt;内存结构&lt;/h2&gt;&lt;span id=&#34;more&#34;&gt;&lt;/span&gt;
+
 &lt;img data-src=&#34;/posts/57681474/2022-02-16-20-49-46.png&#34; class=&#34;&#34;&gt;
+
 &lt;ul&gt;
-&lt;li&gt;第一， &lt;code&gt;JVM&lt;/code&gt;  分为五个区域：虚拟机栈 ( &lt;code&gt;VM Stack&lt;/code&gt; )、本地方法栈 ( &lt;code&gt;Native Method Stack&lt;/code&gt; )、方法区 ( &lt;code&gt;Method Area&lt;/code&gt; )、堆 ( &lt;code&gt;Heap&lt;/code&gt; )、程序计数器 ( &lt;code&gt;Program Counter Register&lt;/code&gt; )。 &lt;code&gt;PS&lt;/code&gt; ：大家不要排斥英语，此处用英文记忆反而更容易理解。&lt;/li&gt;
-&lt;li&gt;第二， &lt;code&gt;JVM&lt;/code&gt;  五个区中虚拟机栈、本地方法栈、程序计数器为线程私有，方法区和堆为线程共享区。图中已经用颜色区分，绿色表示 “通行”，橘黄色表示停一停（需等待）。&lt;/li&gt;
-&lt;li&gt;第三， &lt;code&gt;JVM&lt;/code&gt;  不同区域的占用内存大小不同，一般情况下堆最大，程序计数器较小。那么最大的区域会放什么？当然就是 &lt;code&gt;Java中最多的“对象”&lt;/code&gt;  了。&lt;br&gt;
-学习延伸：如果你记住了这张图，是不是就可以说出关于 &lt;code&gt;JVM&lt;/code&gt;  的内存结构了呢？可以尝试一下，切记不用死记硬背，发挥你的想象。&lt;/li&gt;
+&lt;li&gt;第一，&lt;code&gt;JVM&lt;/code&gt;分为五个区域：虚拟机栈(&lt;code&gt;VM Stack&lt;/code&gt;)、本地方法栈(&lt;code&gt;Native Method Stack&lt;/code&gt;)、方法区(&lt;code&gt;Method Area&lt;/code&gt;)、堆(&lt;code&gt;Heap&lt;/code&gt;)、程序计数器(&lt;code&gt;Program Counter Register&lt;/code&gt;)。&lt;code&gt;PS&lt;/code&gt;：大家不要排斥英语，此处用英文记忆反而更容易理解。&lt;/li&gt;
+&lt;li&gt;第二，&lt;code&gt;JVM&lt;/code&gt;五个区中虚拟机栈、本地方法栈、程序计数器为线程私有，方法区和堆为线程共享区。图中已经用颜色区分，绿色表示“通行”，橘黄色表示停一停（需等待）。&lt;/li&gt;
+&lt;li&gt;第三，&lt;code&gt;JVM&lt;/code&gt;不同区域的占用内存大小不同，一般情况下堆最大，程序计数器较小。那么最大的区域会放什么？当然就是&lt;code&gt;Java中最多的“对象”&lt;/code&gt;了。&lt;br&gt;学习延伸：如果你记住了这张图，是不是就可以说出关于&lt;code&gt;JVM&lt;/code&gt;的内存结构了呢？可以尝试一下，切记不用死记硬背，发挥你的想象。&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2 id=&#34;堆heap&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#堆heap&#34;&gt;#&lt;/a&gt; 堆 ( &lt;code&gt;Heap&lt;/code&gt; )&lt;/h2&gt;
-&lt;p&gt;上面已经得出结论，堆内存最大，堆是被线程共享，堆的目的就是存放对象。几乎所有的对象实例都在此分配。当然，随着优化技术的更新，某些数据也会被放在栈上等。&lt;/p&gt;
-&lt;p&gt;枪打出头鸟，树大招风。因为堆占用内存空间最大，堆也是 &lt;code&gt;Java&lt;/code&gt;  垃圾回收的主要区域（重点对象），因此也称作 &lt;code&gt;“GC堆”&lt;/code&gt; （ &lt;code&gt;Garbage Collected Heap&lt;/code&gt; ）。&lt;/p&gt;
-&lt;p&gt;关于 &lt;code&gt;GC&lt;/code&gt;  的操作，我们后面章节会详细讲，但正因为 &lt;code&gt;GC&lt;/code&gt;  的存在，而现代收集器基本都采用分代收集算法，堆又被细化了。&lt;/p&gt;
+&lt;h2 id=&#34;堆-Heap&#34;&gt;&lt;a href=&#34;#堆-Heap&#34; class=&#34;headerlink&#34; title=&#34;堆(Heap)&#34;&gt;&lt;/a&gt;堆(&lt;code&gt;Heap&lt;/code&gt;)&lt;/h2&gt;&lt;p&gt;上面已经得出结论，堆内存最大，堆是被线程共享，堆的目的就是存放对象。几乎所有的对象实例都在此分配。当然，随着优化技术的更新，某些数据也会被放在栈上等。&lt;/p&gt;
+&lt;p&gt;枪打出头鸟，树大招风。因为堆占用内存空间最大，堆也是&lt;code&gt;Java&lt;/code&gt;垃圾回收的主要区域（重点对象），因此也称作&lt;code&gt;“GC堆”&lt;/code&gt;（&lt;code&gt;Garbage Collected Heap&lt;/code&gt;）。&lt;/p&gt;
+&lt;p&gt;关于&lt;code&gt;GC&lt;/code&gt;的操作，我们后面章节会详细讲，但正因为&lt;code&gt;GC&lt;/code&gt;的存在，而现代收集器基本都采用分代收集算法，堆又被细化了。&lt;/p&gt;
 &lt;img data-src=&#34;/posts/57681474/2022-02-16-20-49-59.png&#34; class=&#34;&#34;&gt;
+
 &lt;p&gt;同样，对上图呈现内容汇总分析。&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;第一，堆的 &lt;code&gt;GC&lt;/code&gt;  操作采用分代收集算法。&lt;/li&gt;
+&lt;li&gt;第一，堆的&lt;code&gt;GC&lt;/code&gt;操作采用分代收集算法。&lt;/li&gt;
 &lt;li&gt;第二，堆区分了新生代和老年代；&lt;/li&gt;
-&lt;li&gt;第三，新生代又分为： &lt;code&gt;Eden&lt;/code&gt;  空间、 &lt;code&gt;From Survivor（S0）&lt;/code&gt; 空间、 &lt;code&gt;To Survivor（S1）&lt;/code&gt; 空间。&lt;/li&gt;
+&lt;li&gt;第三，新生代又分为：&lt;code&gt;Eden&lt;/code&gt;空间、&lt;code&gt;From Survivor（S0）&lt;/code&gt;空间、&lt;code&gt;To Survivor（S1）&lt;/code&gt;空间。&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;&lt;code&gt;Java&lt;/code&gt;  虚拟机规范规定， &lt;code&gt;Java&lt;/code&gt;  堆可以处于物理上不连续的内存空间中，只要逻辑上是连续的即可。也就是说堆的内存是一块块拼凑起来的。要增加堆空间时，往上 “拼凑”（可扩展性）即可，但当堆中没有内存完成实例分配，并且堆也无法再扩展时，将会抛出 &lt;code&gt;OutOfMemoryError&lt;/code&gt;  异常。&lt;/p&gt;
-&lt;h2 id=&#34;方法区method-area&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#方法区method-area&#34;&gt;#&lt;/a&gt; 方法区 &lt;code&gt;（Method Area）&lt;/code&gt;&lt;/h2&gt;
-&lt;p&gt;方法区与堆有很多共性：线程共享、内存不连续、可扩展、可垃圾回收，同样当无法再扩展时会抛出 &lt;code&gt;OutOfMemoryError&lt;/code&gt;  异常。&lt;/p&gt;
-&lt;p&gt;正因为如此相像， &lt;code&gt;Java&lt;/code&gt;  虚拟机规范把&lt;em&gt;&lt;strong&gt;方法区描述为堆&lt;/strong&gt;&lt;/em&gt;的一个逻辑部分，但目前实际上是与 &lt;code&gt;Java&lt;/code&gt;  堆分开的（ &lt;code&gt;Non-Heap&lt;/code&gt; ）。&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;Java&lt;/code&gt;虚拟机规范规定，&lt;code&gt;Java&lt;/code&gt;堆可以处于物理上不连续的内存空间中，只要逻辑上是连续的即可。也就是说堆的内存是一块块拼凑起来的。要增加堆空间时，往上“拼凑”（可扩展性）即可，但当堆中没有内存完成实例分配，并且堆也无法再扩展时，将会抛出&lt;code&gt;OutOfMemoryError&lt;/code&gt;异常。&lt;/p&gt;
+&lt;h2 id=&#34;方法区（Method-Area）&#34;&gt;&lt;a href=&#34;#方法区（Method-Area）&#34; class=&#34;headerlink&#34; title=&#34;方法区（Method Area）&#34;&gt;&lt;/a&gt;方法区&lt;code&gt;（Method Area）&lt;/code&gt;&lt;/h2&gt;&lt;p&gt;方法区与堆有很多共性：线程共享、内存不连续、可扩展、可垃圾回收，同样当无法再扩展时会抛出&lt;code&gt;OutOfMemoryError&lt;/code&gt;异常。&lt;/p&gt;
+&lt;p&gt;正因为如此相像，&lt;code&gt;Java&lt;/code&gt;虚拟机规范把&lt;em&gt;&lt;strong&gt;方法区描述为堆&lt;/strong&gt;&lt;/em&gt;的一个逻辑部分，但目前实际上是与&lt;code&gt;Java&lt;/code&gt;堆分开的（&lt;code&gt;Non-Heap&lt;/code&gt;）。&lt;/p&gt;
 &lt;p&gt;方法区个性化的是，它存储的是&lt;em&gt;&lt;strong&gt;已被虚拟机加载的类信息、常量、静态变量&lt;/strong&gt;&lt;/em&gt;即时编译器编译后的代码等数据。&lt;/p&gt;
-&lt;p&gt;方法区的内存回收目标主要是针对&lt;em&gt;&lt;strong&gt;常量池的回收和对类型的卸载&lt;/strong&gt;&lt;/em&gt;，一般来说这个区域的回收 “成绩” 比较难以令人满意，尤其是类型的卸载，条件相当苛刻，但是回收确实是有必要的。&lt;/p&gt;
+&lt;p&gt;方法区的内存回收目标主要是针对&lt;em&gt;&lt;strong&gt;常量池的回收和对类型的卸载&lt;/strong&gt;&lt;/em&gt;，一般来说这个区域的回收“成绩”比较难以令人满意，尤其是类型的卸载，条件相当苛刻，但是回收确实是有必要的。&lt;/p&gt;
 &lt;img data-src=&#34;/posts/57681474/2022-02-16-20-50-12.png&#34; class=&#34;&#34;&gt;
-&lt;h2 id=&#34;程序计数器program-counter-register&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#程序计数器program-counter-register&#34;&gt;#&lt;/a&gt; 程序计数器（ &lt;code&gt;Program Counter Register&lt;/code&gt; ）&lt;/h2&gt;
-&lt;p&gt;关于程序计数器我们已经得知：占用内存较小，现成私有。它是唯一没有 &lt;code&gt;OutOfMemoryError&lt;/code&gt;  异常的区域。&lt;/p&gt;
+
+
+&lt;h2 id=&#34;程序计数器（Program-Counter-Register）&#34;&gt;&lt;a href=&#34;#程序计数器（Program-Counter-Register）&#34; class=&#34;headerlink&#34; title=&#34;程序计数器（Program Counter Register）&#34;&gt;&lt;/a&gt;程序计数器（&lt;code&gt;Program Counter Register&lt;/code&gt;）&lt;/h2&gt;&lt;p&gt;关于程序计数器我们已经得知：占用内存较小，现成私有。它是唯一没有&lt;code&gt;OutOfMemoryError&lt;/code&gt;异常的区域。&lt;/p&gt;
 &lt;p&gt;程序计数器的作用可以看做是当前线程所执行的&lt;strong&gt;字节码的行号指示器&lt;/strong&gt;，字节码解释器工作时就是通过改变计数器的值来选取下一条字节码指令。其中，分支、循环、跳转、异常处理、线程恢复等基础功能都需要依赖计数器来完成。&lt;/p&gt;
-&lt;p&gt;&lt;code&gt;Java&lt;/code&gt;  虚拟机的多线程是通过线程轮流切换并分配处理器执行时间的方式来实现的，在任何一个确定的时刻，一个处理器（对于多核处理器来说是一个内核）只会执行一条线程中的指令。&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;Java&lt;/code&gt;虚拟机的多线程是通过线程轮流切换并分配处理器执行时间的方式来实现的，在任何一个确定的时刻，一个处理器（对于多核处理器来说是一个内核）只会执行一条线程中的指令。&lt;/p&gt;
 &lt;img data-src=&#34;/posts/57681474/2022-02-16-20-50-23.png&#34; class=&#34;&#34;&gt;
-&lt;p&gt;因此，为了线程切换后能恢复到正确的执行位置，每条线程都需要有一个独立的程序计数器，各条线程之间的计数器互不影响，独立存储，我们称这类内存区域为 “线程私有” 的内存。&lt;/p&gt;
-&lt;p&gt;如果线程正在执行的是一个 &lt;code&gt;Java&lt;/code&gt;  方法，这个计数器记录的是正在执行的虚拟机字节码指令的地址；如果正在执行的是 &lt;code&gt;Natvie&lt;/code&gt;  方法，这个计数器值则为空（ &lt;code&gt;Undefined&lt;/code&gt; ）。&lt;/p&gt;
-&lt;h2 id=&#34;虚拟机栈jvm-stacks&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#虚拟机栈jvm-stacks&#34;&gt;#&lt;/a&gt; 虚拟机栈（ &lt;code&gt;JVM Stacks&lt;/code&gt; ）&lt;/h2&gt;
-&lt;p&gt;虚拟机栈线程私有，生命周期与线程相同。&lt;/p&gt;
-&lt;p&gt;栈帧 ( &lt;code&gt;Stack Frame&lt;/code&gt; ) 是用于支持虚拟机进行方法调用和方法执行的数据结构。栈帧存储了方法的局部变量表、操作数栈、动态连接和方法返回地址等信息。每一个方法从调用至执行完成的过程，都对应着一个栈帧在虚拟机栈里从入栈到出栈的过程。&lt;/p&gt;
+
+
+
+&lt;p&gt;因此，为了线程切换后能恢复到正确的执行位置，每条线程都需要有一个独立的程序计数器，各条线程之间的计数器互不影响，独立存储，我们称这类内存区域为“线程私有”的内存。&lt;/p&gt;
+&lt;p&gt;如果线程正在执行的是一个&lt;code&gt;Java&lt;/code&gt;方法，这个计数器记录的是正在执行的虚拟机字节码指令的地址；如果正在执行的是&lt;code&gt;Natvie&lt;/code&gt;方法，这个计数器值则为空（&lt;code&gt;Undefined&lt;/code&gt;）。&lt;/p&gt;
+&lt;h2 id=&#34;虚拟机栈（JVM-Stacks）&#34;&gt;&lt;a href=&#34;#虚拟机栈（JVM-Stacks）&#34; class=&#34;headerlink&#34; title=&#34;虚拟机栈（JVM Stacks）&#34;&gt;&lt;/a&gt;虚拟机栈（&lt;code&gt;JVM Stacks&lt;/code&gt;）&lt;/h2&gt;&lt;p&gt;虚拟机栈线程私有，生命周期与线程相同。&lt;/p&gt;
+&lt;p&gt;栈帧(&lt;code&gt;Stack Frame&lt;/code&gt;)是用于支持虚拟机进行方法调用和方法执行的数据结构。栈帧存储了方法的局部变量表、操作数栈、动态连接和方法返回地址等信息。每一个方法从调用至执行完成的过程，都对应着一个栈帧在虚拟机栈里从入栈到出栈的过程。&lt;/p&gt;
 &lt;img data-src=&#34;/posts/57681474/2022-02-16-20-50-34.png&#34; class=&#34;&#34;&gt;
-&lt;p&gt;局部变量表 ( &lt;code&gt;Local Variable Table&lt;/code&gt; ) 是一组变量值存储空间，用于 &lt;code&gt;存放方法参数&lt;/code&gt; 和 &lt;code&gt;方法内定义&lt;/code&gt; 的局部变量。包括 8 种基本数据类型、对象引用（ &lt;code&gt;reference&lt;/code&gt;  类型）和 &lt;code&gt;returnAddress&lt;/code&gt;  类型（指向一条字节码指令的地址）。&lt;/p&gt;
-&lt;p&gt;其中 &lt;code&gt;64位&lt;/code&gt; 长度的 &lt;code&gt;long&lt;/code&gt;  和 &lt;code&gt;double&lt;/code&gt;  类型的数据会占用 2 个局部变量空间（ &lt;code&gt;Slot&lt;/code&gt; ），其余的数据类型只占用 &lt;code&gt;1&lt;/code&gt;  个。&lt;/p&gt;
-&lt;p&gt;如果线程请求的栈深度大于虚拟机所允许的深度，将抛出 &lt;code&gt;StackOverflowError&lt;/code&gt;  异常；如果虚拟机栈动态扩展时无法申请到足够的内存时会抛出 &lt;code&gt;OutOfMemoryError&lt;/code&gt;  异常。&lt;/p&gt;
-&lt;p&gt;操作数栈 ( &lt;code&gt;Operand Stack&lt;/code&gt; ) 也称作操作栈，是一个 &lt;code&gt;后入先出栈(LIFO)&lt;/code&gt; 。随着方法执行和字节码指令的执行，会从局部变量表或对象实例的字段中复制常量或变量写入到操作数栈，再随着计算的进行将栈中元素出栈到局部变量表或者返回给方法调用者，也就是出栈 / 入栈操作。&lt;/p&gt;
-&lt;p&gt;动态链接： &lt;code&gt;Java&lt;/code&gt;  虚拟机栈中，每个栈帧都包含一个指向运行时常量池中该栈所属方法的符号引用，持有这个引用的目的是为了支持方法调用过程中的动态链接 ( &lt;code&gt;Dynamic Linking&lt;/code&gt; )。&lt;/p&gt;
+
+
+&lt;p&gt;局部变量表(&lt;code&gt;Local Variable Table&lt;/code&gt;)是一组变量值存储空间，用于&lt;code&gt;存放方法参数&lt;/code&gt;和&lt;code&gt;方法内定义&lt;/code&gt;的局部变量。包括8种基本数据类型、对象引用（&lt;code&gt;reference&lt;/code&gt;类型）和&lt;code&gt;returnAddress&lt;/code&gt;类型（指向一条字节码指令的地址）。&lt;/p&gt;
+&lt;p&gt;其中&lt;code&gt;64位&lt;/code&gt;长度的&lt;code&gt;long&lt;/code&gt;和&lt;code&gt;double&lt;/code&gt;类型的数据会占用2个局部变量空间（&lt;code&gt;Slot&lt;/code&gt;），其余的数据类型只占用&lt;code&gt;1&lt;/code&gt;个。&lt;/p&gt;
+&lt;p&gt;如果线程请求的栈深度大于虚拟机所允许的深度，将抛出&lt;code&gt;StackOverflowError&lt;/code&gt;异常；如果虚拟机栈动态扩展时无法申请到足够的内存时会抛出&lt;code&gt;OutOfMemoryError&lt;/code&gt;异常。&lt;/p&gt;
+&lt;p&gt;操作数栈(&lt;code&gt;Operand Stack&lt;/code&gt;)也称作操作栈，是一个&lt;code&gt;后入先出栈(LIFO)&lt;/code&gt;。随着方法执行和字节码指令的执行，会从局部变量表或对象实例的字段中复制常量或变量写入到操作数栈，再随着计算的进行将栈中元素出栈到局部变量表或者返回给方法调用者，也就是出栈/入栈操作。&lt;/p&gt;
+&lt;p&gt;动态链接：&lt;code&gt;Java&lt;/code&gt;虚拟机栈中，每个栈帧都包含一个指向运行时常量池中该栈所属方法的符号引用，持有这个引用的目的是为了支持方法调用过程中的动态链接(&lt;code&gt;Dynamic Linking&lt;/code&gt;)。&lt;/p&gt;
 &lt;p&gt;方法返回：无论方法是否正常完成，都需要返回到方法被调用的位置，程序才能继续进行。&lt;/p&gt;
-&lt;h2 id=&#34;本地方法栈native-method-stacks&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#本地方法栈native-method-stacks&#34;&gt;#&lt;/a&gt; 本地方法栈（ &lt;code&gt;Native Method Stacks&lt;/code&gt; ）&lt;/h2&gt;
-&lt;p&gt;本地方法栈（ &lt;code&gt;Native Method Stacks&lt;/code&gt; ）与虚拟机栈作用相似，也会抛出 &lt;code&gt;StackOverflowError和OutOfMemoryError&lt;/code&gt;  异常。&lt;/p&gt;
-&lt;p&gt;区别在于虚拟机栈为虚拟机执行 &lt;code&gt;Java&lt;/code&gt;  方法（ &lt;code&gt;字节码&lt;/code&gt; ）服务，而本地方法栈是为虚拟机使用到的 &lt;code&gt;Native&lt;/code&gt;  方法服务。&lt;/p&gt;
-&lt;h2 id=&#34;小结&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#小结&#34;&gt;#&lt;/a&gt; 小结&lt;/h2&gt;
-&lt;img data-src=&#34;/posts/57681474/2022-02-16-20-50-46.png&#34; class=&#34;&#34;&gt;
+&lt;h2 id=&#34;本地方法栈（Native-Method-Stacks）&#34;&gt;&lt;a href=&#34;#本地方法栈（Native-Method-Stacks）&#34; class=&#34;headerlink&#34; title=&#34;本地方法栈（Native Method Stacks）&#34;&gt;&lt;/a&gt;本地方法栈（&lt;code&gt;Native Method Stacks&lt;/code&gt;）&lt;/h2&gt;&lt;p&gt;本地方法栈（&lt;code&gt;Native Method Stacks&lt;/code&gt;）与虚拟机栈作用相似，也会抛出&lt;code&gt;StackOverflowError和OutOfMemoryError&lt;/code&gt;异常。&lt;/p&gt;
+&lt;p&gt;区别在于虚拟机栈为虚拟机执行&lt;code&gt;Java&lt;/code&gt;方法（&lt;code&gt;字节码&lt;/code&gt;）服务，而本地方法栈是为虚拟机使用到的&lt;code&gt;Native&lt;/code&gt;方法服务。&lt;/p&gt;
+&lt;h2 id=&#34;小结&#34;&gt;&lt;a href=&#34;#小结&#34; class=&#34;headerlink&#34; title=&#34;小结&#34;&gt;&lt;/a&gt;小结&lt;/h2&gt;&lt;img data-src=&#34;/posts/57681474/2022-02-16-20-50-46.png&#34; class=&#34;&#34;&gt;
+
+
+
+
+
+
+
+
  ]]></description>
         </item>
     </channel>

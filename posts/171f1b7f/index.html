@@ -1,0 +1,629 @@
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#FFF">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+
+<link rel="icon" type="image/ico" sizes="32x32" href="/images/favicon.ico">
+  <meta http-equiv="Cache-Control" content="no-transform">
+  <meta http-equiv="Cache-Control" content="no-siteapp">
+
+
+<link rel="alternate" type="application/rss+xml" title="JIN MAO 's Blog" href="https://smile1231.github.io/rss.xml" />
+<link rel="alternate" type="application/atom+xml" title="JIN MAO 's Blog" href="https://smile1231.github.io/atom.xml" />
+<link rel="alternate" type="application/json" title="JIN MAO 's Blog" href="https://smile1231.github.io/feed.json" />
+
+<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Mulish:300,300italic,400,400italic,700,700italic%7CFredericka%20the%20Great:300,300italic,400,400italic,700,700italic%7CNoto%20Serif%20JP:300,300italic,400,400italic,700,700italic%7CNoto%20Serif%20SC:300,300italic,400,400italic,700,700italic%7CInconsolata:300,300italic,400,400italic,700,700italic&display=swap&subset=latin,latin-ext">
+
+<link rel="stylesheet" href="/css/app.css?v=0.2.5">
+
+  
+  <meta name="keywords" content="Jenkins,CI/CD" />
+
+
+<link rel="canonical" href="https://smile1231.github.io/posts/171f1b7f/">
+
+
+
+  <title>
+Jenkins/CICD - Jenkins |
+Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
+<meta name="generator" content="Hexo 5.4.0"></head>
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div id="loading">
+    <div class="cat">
+      <div class="body"></div>
+      <div class="head">
+        <div class="face"></div>
+      </div>
+      <div class="foot">
+        <div class="tummy-end"></div>
+        <div class="bottom"></div>
+        <div class="legs left"></div>
+        <div class="legs right"></div>
+      </div>
+      <div class="paw">
+        <div class="hands left"></div>
+        <div class="hands right"></div>
+      </div>
+    </div>
+  </div>
+  <div id="container">
+    <header id="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="inner">
+        <div id="brand">
+          <div class="pjax">
+          
+  <h1 itemprop="name headline">Jenkins/CICD
+  </h1>
+  
+<div class="meta">
+  <span class="item" title="Created: 2022-08-08 22:40:05">
+    <span class="icon">
+      <i class="ic i-calendar"></i>
+    </span>
+    <span class="text">Posted on</span>
+    <time itemprop="dateCreated datePublished" datetime="2022-08-08T22:40:05+08:00">2022-08-08</time>
+  </span>
+  <span class="item" title="Symbols count in article">
+    <span class="icon">
+      <i class="ic i-pen"></i>
+    </span>
+    <span class="text">Symbols count in article</span>
+    <span>1.9k</span>
+    <span class="text">words</span>
+  </span>
+  <span class="item" title="Reading time">
+    <span class="icon">
+      <i class="ic i-clock"></i>
+    </span>
+    <span class="text">Reading time</span>
+    <span>2 mins.</span>
+  </span>
+</div>
+
+
+          </div>
+        </div>
+        <nav id="nav">
+  <div class="inner">
+    <div class="toggle">
+      <div class="lines" aria-label="Toggle navigation bar">
+        <span class="line"></span>
+        <span class="line"></span>
+        <span class="line"></span>
+      </div>
+    </div>
+    <ul class="menu">
+      <li class="item title"><a href="/" rel="start">Jin Mao when to get rich ?</a></li>
+    </ul>
+    <ul class="right">
+      <li class="item theme">
+        <i class="ic i-sun"></i>
+      </li>
+      <li class="item search">
+        <i class="ic i-search"></i>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+      </div>
+      <div id="imgs" class="pjax">
+        <ul>
+          <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1gicljitigmj20zk0m87fp.jpg"></li>
+          <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1giclxp31goj20zk0m8qv5.jpg"></li>
+          <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1giciuja1j1j20zk0m8kjl.jpg"></li>
+          <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1giclh5u05ej20zk0m87df.jpg"></li>
+          <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1gipey0a334j20zk0m8qpt.jpg"></li>
+          <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1gipet8c1a2j20zk0m8kct.jpg"></li>
+        </ul>
+      </div>
+    </header>
+    <div id="waves">
+      <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+        <defs>
+          <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+        </defs>
+        <g class="parallax">
+          <use xlink:href="#gentle-wave" x="48" y="0" />
+          <use xlink:href="#gentle-wave" x="48" y="3" />
+          <use xlink:href="#gentle-wave" x="48" y="5" />
+          <use xlink:href="#gentle-wave" x="48" y="7" />
+        </g>
+      </svg>
+    </div>
+    <main>
+      <div class="inner">
+        <div id="main" class="pjax">
+          
+  <div class="article wrap">
+    
+<div class="breadcrumb" itemscope itemtype="https://schema.org/BreadcrumbList">
+<i class="ic i-home"></i>
+<span><a href="/">Home</a></span><i class="ic i-angle-right"></i>
+<span  class="current" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem"><a href="/categories/Jenkins/" itemprop="item" rel="index" title="In Jenkins"><span itemprop="name">Jenkins</span></a>
+<meta itemprop="position" content="1" /></span>
+</div>
+
+    <article itemscope itemtype="http://schema.org/Article" class="post block" lang="en">
+  <link itemprop="mainEntityOfPage" href="https://smile1231.github.io/posts/171f1b7f/">
+
+  <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <meta itemprop="image" content="/images/avatar.png">
+    <meta itemprop="name" content="JIN Mao">
+    <meta itemprop="description" content="got windy(起风了), ">
+  </span>
+
+  <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+    <meta itemprop="name" content="JIN MAO 's Blog">
+  </span>
+
+  <div class="body md" itemprop="articleBody">
+    
+
+    <p><a href="https://smile1231.github.io/posts/11faeb76/"><code>Docker</code>中安装<code>Jenkins</code></a></p>
+<p><a target="_blank" rel="noopener" href="https://www.cnblogs.com/yungyu16/p/12928802.html#%E6%93%8D%E4%BD%9C%E4%BB%BB%E5%8A%A1"><code>Java</code>操作<code>Jenkins</code>参考</a></p>
+<p><span class="exturl" data-url="aHR0cHM6Ly9pY29kZS5iZXN0L2kvODI4MDAwNDYwNDU0MDk=">参考文章</span></p>
+<p>完成<code>jenkins</code>在docker中的启动安装对应的插件之后</p>
+<p>由于我是使用的<code>docker</code>启动的<code>Jenkins</code>,所以需要在容器中装相应的环境：<code>jdk</code>,<code>maven</code>,<code>git</code>等等</p>
+<p>进入容器内部:<code>docker exec -u root -it myJenkins10242 bash</code></p>
+<h2 id="安装vim"><a href="#安装vim" class="headerlink" title="安装vim"></a>安装<code>vim</code></h2><blockquote>
+<p>在这之前需要对<code>apt</code>进行一下升级 </p>
+</blockquote>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">apt-get update</span><br></pre></td></tr></table></figure>
+
+<p>安装指令：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">apt-get install vim</span><br></pre></td></tr></table></figure>
+<img data-src="/posts/171f1b7f/2022-08-10-23-41-19.png" class="">
+
+<h2 id="安装jdk"><a href="#安装jdk" class="headerlink" title="安装jdk"></a>安装<code>jdk</code></h2><p>这里只讲解手动安装</p>
+<p>查看架构，下载arm64版本的jdk，这里下载jdk11，<span class="exturl" data-url="aHR0cHM6Ly93d3cub3JhY2xlLmNvbS9qYXZhL3RlY2hub2xvZ2llcy9qYXZhc2UvamRrMTEtYXJjaGl2ZS1kb3dubG9hZHMuaHRtbCNsaWNlbnNlLWxpZ2h0Ym94">jdk 11 aarch64_bin.tar.gz</span></p>
+<img data-src="/posts/171f1b7f/2022-08-10-22-18-27.png" class="">
+
+<p>我这边将包放在了<code>docker</code>的挂载目录上</p>
+<img data-src="/posts/171f1b7f/2022-08-10-23-52-53.png" class="">
+
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 解压</span></span><br><span class="line">tar -zxvf jdk-11.0.15_linux-aarch64_bin.tar.gz</span><br><span class="line"><span class="comment"># 配置环境变量</span></span><br><span class="line">vim /etc/profile</span><br></pre></td></tr></table></figure>
+<p>在最后加上：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">export</span> JAVA_HOME=/var/jenkins_home/install_package/jdk-11.0.15/</span><br><span class="line"><span class="built_in">export</span> PATH=<span class="variable">$PATH</span>:<span class="variable">$JAVA_HOME</span>/bin</span><br></pre></td></tr></table></figure>
+
+<p>最后：<code>source /etc/profile</code> 即可</p>
+<img data-src="/posts/171f1b7f/2022-08-11-00-02-07.png" class="">
+<h2 id="安装maven"><a href="#安装maven" class="headerlink" title="安装maven"></a>安装<code>maven</code></h2><p>安装<code>maven</code>的方法也类似，下载版本为<span class="exturl" data-url="aHR0cHM6Ly9hcmNoaXZlLmFwYWNoZS5vcmcvZGlzdC9tYXZlbi9tYXZlbi0zLzMuNS40L2JpbmFyaWVzL2FwYWNoZS1tYXZlbi0zLjUuNC1iaW4udGFyLmd6">maven-3.5.4</span></p>
+<p>依然放在了挂在目录中的<code>install_package</code>中</p>
+<p>解压：<code>tar -zxvf apache-maven-3.5.4-bin.tar.gz</code></p>
+<p>配置环境变量: <code>vim /etc/profile</code><br>加上</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">export</span> MAVEN_HOME=/var/jenkins_home/install_package/apache-maven-3.5.4</span><br><span class="line"><span class="built_in">export</span> PATH=<span class="variable">$PATH</span>:<span class="variable">$MAVEN_HOME</span>/bin</span><br></pre></td></tr></table></figure>
+<p>最后：<code>source /etc/profile</code> 即可</p>
+<img data-src="/posts/171f1b7f/2022-08-11-00-06-59.png" class="">
+
+<h2 id="Git"><a href="#Git" class="headerlink" title="Git"></a><code>Git</code></h2><p>容器中自带了<code>git</code>，所以无需安装，但是需要查看路径: <code>which git</code>，路径为：<code>/usr/bin/git</code></p>
+<img data-src="/posts/171f1b7f/2022-08-11-00-10-10.png" class="">
+
+<h2 id="配置Jenkins"><a href="#配置Jenkins" class="headerlink" title="配置Jenkins"></a>配置<code>Jenkins</code></h2><p>打开<code>Global Tool Configuration</code>:</p>
+<img data-src="/posts/171f1b7f/2022-08-11-00-12-49.png" class="">
+
+<p>这边是配置<code>maven</code>中的<code>settings</code>文件地址，我地址为：<code>/var/jenkins_home/install_package/apache-maven-3.5.4/conf/settings.xml</code></p>
+<img data-src="/posts/171f1b7f/2022-08-11-00-15-24.png" class="">
+
+
+<p>分别配置上<code>jdk</code>,<code>git</code>,<code>maven</code>的本地目录,然后<code>Apply</code>和<code>Save</code>：</p>
+<img data-src="/posts/171f1b7f/2022-08-11-00-17-12.png" class="">
+
+<img data-src="/posts/171f1b7f/2022-08-11-00-17-47.png" class="">
+
+<h2 id="安装plugin"><a href="#安装plugin" class="headerlink" title="安装plugin"></a>安装<code>plugin</code></h2><p>我们会发现新建一个<code>Item</code>是没有<code>Maven</code>项目的，需要安装一下对应的插件:<code>Maven Integration</code></p>
+<img data-src="/posts/171f1b7f/2022-08-11-00-20-56.png" class="">
+
+<p>等待安装完成即可</p>
+<h2 id="Maven项目部署测试"><a href="#Maven项目部署测试" class="headerlink" title="Maven项目部署测试"></a><code>Maven</code>项目部署测试</h2><h3 id="新建一个Maven，名字自取"><a href="#新建一个Maven，名字自取" class="headerlink" title="新建一个Maven，名字自取"></a>新建一个<code>Maven</code>，名字自取</h3><img data-src="/posts/171f1b7f/2022-08-11-00-22-22.png" class="">
+
+<h3 id="项目描述："><a href="#项目描述：" class="headerlink" title="项目描述："></a>项目描述：</h3><img data-src="/posts/171f1b7f/2022-08-11-00-26-00.png" class="">
+
+<h3 id="配置github"><a href="#配置github" class="headerlink" title="配置github"></a>配置<code>github</code></h3><img data-src="/posts/171f1b7f/2022-08-11-00-29-23.png" class="">
+
+<blockquote>
+<p>关于<code>GitHub</code>凭证配置</p>
+</blockquote>
+<p>配置地址： <code>https://github.com/settings/tokens</code></p>
+<img data-src="/posts/171f1b7f/2022-08-11-00-30-37.png" class="">
+
+<img data-src="/posts/171f1b7f/2022-08-11-00-31-02.png" class="">
+
+<p>将生成的<code>token</code>记载到本地</p>
+<img data-src="/posts/171f1b7f/2022-08-11-00-31-43.png" class="">
+
+<blockquote>
+<p><code>Jenkins</code>添加凭据</p>
+</blockquote>
+<img data-src="/posts/171f1b7f/2022-08-11-00-33-43.png" class="">
+
+<h3 id="github访问超时时间"><a href="#github访问超时时间" class="headerlink" title="github访问超时时间"></a><code>github</code>访问超时时间</h3><p>检出超时时间：</p>
+<img data-src="/posts/171f1b7f/2022-08-11-00-34-52.png" class="">
+
+<p><code>clone</code>超时时间：</p>
+<img data-src="/posts/171f1b7f/2022-08-11-00-36-01.png" class="">
+
+<h3 id="Build阶段"><a href="#Build阶段" class="headerlink" title="Build阶段"></a><code>Build</code>阶段</h3><p><code>clean package -Dmaven.test.skip=true -Prd -U</code></p>
+<img data-src="/posts/171f1b7f/2022-08-11-00-39-04.png" class="">
+
+<h3 id="配置构建项目后执行的Shell脚本"><a href="#配置构建项目后执行的Shell脚本" class="headerlink" title="配置构建项目后执行的Shell脚本"></a>配置构建项目后执行的<code>Shell</code>脚本</h3><img data-src="/posts/171f1b7f/2022-08-11-00-42-20.png" class="">
+
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#!/bin/bash</span></span><br><span class="line"><span class="comment">#输入Maven打包后的项目名称</span></span><br><span class="line">app=xxx-0.0.1-SNAPSHOT</span><br><span class="line"><span class="comment">#项目移动的目的地址</span></span><br><span class="line">path=/usr/xxx</span><br><span class="line"><span class="built_in">echo</span> this is app : <span class="variable">$app</span></span><br><span class="line"></span><br><span class="line"><span class="comment">#若项目已启动，杀死旧进程</span></span><br><span class="line">api_pid=`ps -ef | grep <span class="string">&quot;<span class="variable">$app</span>.jar&quot;</span> | grep -v grep | awk <span class="string">&#x27;&#123;print $2&#125;&#x27;</span>`</span><br><span class="line"><span class="built_in">echo</span> api_pid = <span class="variable">$api_pid</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span> [ <span class="string">&quot;<span class="variable">$api_pid</span>&quot;</span> != <span class="string">&quot;&quot;</span> ]; <span class="keyword">then</span></span><br><span class="line">        <span class="built_in">echo</span> <span class="built_in">kill</span> api</span><br><span class="line">        <span class="built_in">kill</span> -9 <span class="variable">$api_pid</span></span><br><span class="line"></span><br><span class="line">        <span class="built_in">echo</span> sleep 3s</span><br><span class="line">        sleep 1</span><br><span class="line">        <span class="built_in">echo</span> sleep 2s</span><br><span class="line">        sleep 1</span><br><span class="line">        <span class="built_in">echo</span> sleep 1s</span><br><span class="line">        sleep 1</span><br><span class="line"><span class="keyword">fi</span></span><br><span class="line"></span><br><span class="line"><span class="comment">#将jar包从jenkins工作空间中移动到指定路径下</span></span><br><span class="line">mv /root/.jenkins/workspace/项目名/target/<span class="variable">$app</span>.jar <span class="variable">$path</span></span><br><span class="line"><span class="built_in">cd</span> <span class="variable">$path</span></span><br><span class="line"></span><br><span class="line"><span class="comment">#防止进程被杀死</span></span><br><span class="line">BUILD_ID=dontKillMe</span><br><span class="line"></span><br><span class="line"><span class="comment">#后台进程形式启动项目，日志文件为out.log</span></span><br><span class="line">nohup java -jar <span class="variable">$app</span>.jar &gt;&gt; out.log 2&gt;&amp;1 &amp;</span><br><span class="line"><span class="built_in">echo</span> <span class="variable">$app</span> start success</span><br><span class="line"><span class="built_in">exit</span> 0</span><br></pre></td></tr></table></figure>
+<h2 id="Jenkins运行"><a href="#Jenkins运行" class="headerlink" title="Jenkins运行"></a><code>Jenkins</code>运行</h2><img data-src="/posts/171f1b7f/2022-08-11-00-43-49.png" class="">
+
+<img data-src="/posts/171f1b7f/2022-08-11-00-45-15.png" class="">
+
+      <div class="tags">
+          <a href="/tags/Jenkins/" rel="tag"><i class="ic i-tag"></i> Jenkins</a>
+          <a href="/tags/CI-CD/" rel="tag"><i class="ic i-tag"></i> CI/CD</a>
+      </div>
+  </div>
+
+   <footer>
+
+    <div class="meta">
+  <span class="item">
+    <span class="icon">
+      <i class="ic i-calendar-check"></i>
+    </span>
+    <span class="text">Edited on</span>
+    <time title="Modified: 2022-08-11 00:57:30" itemprop="dateModified" datetime="2022-08-11T00:57:30+08:00">2022-08-11</time>
+  </span>
+  <span id="posts/171f1b7f/" class="item leancloud_visitors" data-flag-title="Jenkins/CICD" title="Views">
+      <span class="icon">
+        <i class="ic i-eye"></i>
+      </span>
+      <span class="text">Views</span>
+      <span class="leancloud-visitors-count"></span>
+      <span class="text">times</span>
+  </span>
+</div>
+
+      
+
+<div id="copyright">
+<ul>
+  <li class="author">
+    <strong>Post author:  </strong>JIN Mao <i class="ic i-at"><em>@</em></i>JIN MAO 's Blog
+  </li>
+  <li class="link">
+    <strong>Post link: </strong>
+    <a href="https://smile1231.github.io/posts/171f1b7f/" title="Jenkins&#x2F;CICD">https://smile1231.github.io/posts/171f1b7f/</a>
+  </li>
+  <li class="license">
+    <strong>Copyright Notice:  </strong>All articles in this blog are licensed under <span class="exturl" data-url="aHR0cHM6Ly9jcmVhdGl2ZWNvbW1vbnMub3JnL2xpY2Vuc2VzL2J5LW5jLXNhLzQuMC9kZWVkLnpo"><i class="ic i-creative-commons"><em>(CC)</em></i>BY-NC-SA</span> unless stating additionally.
+  </li>
+</ul>
+</div>
+
+  </footer>
+
+</article>
+
+  </div>
+  
+
+<div class="post-nav">
+    <div class="item left">
+      
+
+  <a href="/posts/1b392612/" itemprop="url" rel="prev" data-background-image="https:&#x2F;&#x2F;tva3.sinaimg.cn&#x2F;mw690&#x2F;6833939bly1gipey0a334j20zk0m8qpt.jpg" title="速查表">
+  <span class="type">Previous Post</span>
+  <span class="category"><i class="ic i-flag"></i> cheatsheet</span>
+  <h3>速查表</h3>
+  </a>
+
+    </div>
+    <div class="item right">
+      
+
+  <a href="/posts/d05062ae/" itemprop="url" rel="next" data-background-image="https:&#x2F;&#x2F;tva3.sinaimg.cn&#x2F;mw690&#x2F;6833939bly1giclh5u05ej20zk0m87df.jpg" title="Java 操作Jenkins">
+  <span class="type">Next Post</span>
+  <span class="category"><i class="ic i-flag"></i> Jenkins</span>
+  <h3>Java 操作Jenkins</h3>
+  </a>
+
+    </div>
+</div>
+
+  
+  <div class="wrap" id="comments"></div>
+
+
+        </div>
+        <div id="sidebar">
+          
+
+<div class="inner">
+
+  <div class="panels">
+    <div class="inner">
+      <div class="contents panel pjax" data-title="Contents">
+          <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%AE%89%E8%A3%85vim"><span class="toc-number">1.</span> <span class="toc-text">安装vim</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%AE%89%E8%A3%85jdk"><span class="toc-number">2.</span> <span class="toc-text">安装jdk</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%AE%89%E8%A3%85maven"><span class="toc-number">3.</span> <span class="toc-text">安装maven</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Git"><span class="toc-number">4.</span> <span class="toc-text">Git</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E9%85%8D%E7%BD%AEJenkins"><span class="toc-number">5.</span> <span class="toc-text">配置Jenkins</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%AE%89%E8%A3%85plugin"><span class="toc-number">6.</span> <span class="toc-text">安装plugin</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Maven%E9%A1%B9%E7%9B%AE%E9%83%A8%E7%BD%B2%E6%B5%8B%E8%AF%95"><span class="toc-number">7.</span> <span class="toc-text">Maven项目部署测试</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%96%B0%E5%BB%BA%E4%B8%80%E4%B8%AAMaven%EF%BC%8C%E5%90%8D%E5%AD%97%E8%87%AA%E5%8F%96"><span class="toc-number">7.1.</span> <span class="toc-text">新建一个Maven，名字自取</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%A1%B9%E7%9B%AE%E6%8F%8F%E8%BF%B0%EF%BC%9A"><span class="toc-number">7.2.</span> <span class="toc-text">项目描述：</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%85%8D%E7%BD%AEgithub"><span class="toc-number">7.3.</span> <span class="toc-text">配置github</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#github%E8%AE%BF%E9%97%AE%E8%B6%85%E6%97%B6%E6%97%B6%E9%97%B4"><span class="toc-number">7.4.</span> <span class="toc-text">github访问超时时间</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Build%E9%98%B6%E6%AE%B5"><span class="toc-number">7.5.</span> <span class="toc-text">Build阶段</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%85%8D%E7%BD%AE%E6%9E%84%E5%BB%BA%E9%A1%B9%E7%9B%AE%E5%90%8E%E6%89%A7%E8%A1%8C%E7%9A%84Shell%E8%84%9A%E6%9C%AC"><span class="toc-number">7.6.</span> <span class="toc-text">配置构建项目后执行的Shell脚本</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Jenkins%E8%BF%90%E8%A1%8C"><span class="toc-number">8.</span> <span class="toc-text">Jenkins运行</span></a></li></ol>
+      </div>
+      <div class="related panel pjax" data-title="Related">
+        <ul>
+          <li><a href="/posts/273d98ce/" rel="bookmark" title="The learning of Jenkins Grammer">The learning of Jenkins Grammer</a></li><li class="active"><a href="/posts/171f1b7f/" rel="bookmark" title="Jenkins/CICD">Jenkins/CICD</a></li><li><a href="/posts/d05062ae/" rel="bookmark" title="Java 操作Jenkins">Java 操作Jenkins</a></li>
+        </ul>
+      </div>
+      <div class="overview panel" data-title="Overview">
+        <div class="author" itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <img class="image" itemprop="image" alt="JIN Mao"
+      data-src="/images/avatar.png">
+  <p class="name" itemprop="name">JIN Mao</p>
+  <div class="description" itemprop="description"></div>
+</div>
+
+<nav class="state">
+    <div class="item posts">
+      <a href="/archives/">
+        <span class="count">142</span>
+        <span class="name">posts</span>
+      </a>
+    </div>
+    <div class="item categories">
+      <a href="/categories/">
+        <span class="count">73</span>
+        <span class="name">categories</span>
+      </a>
+    </div>
+    <div class="item tags">
+      <a href="/tags/">
+        <span class="count">109</span>
+        <span class="name">tags</span>
+      </a>
+    </div>
+</nav>
+
+<div class="social">
+      <span class="exturl item github" data-url="aHR0cHM6Ly9naXRodWIuY29tL3NtaWxlMTIzMQ==" title="https:&#x2F;&#x2F;github.com&#x2F;smile1231"><i class="ic i-github"></i></span>
+</div>
+
+<ul class="menu">
+  
+    
+  <li class="item">
+    <a href="/" rel="section"><i class="ic i-home"></i>Home</a>
+  </li>
+
+    
+  <li class="item">
+    <a href="/about/" rel="section"><i class="ic i-user"></i>About</a>
+  </li>
+
+        
+  <li class="item dropdown">
+      <a href="javascript:void(0);"><i class="ic i-feather"></i>Posts</a>
+    <ul class="submenu">
+
+        
+  <li class="item">
+    <a href="/archives/" rel="section"><i class="ic i-list-alt"></i>Archives</a>
+  </li>
+
+        
+  <li class="item">
+    <a href="/categories/" rel="section"><i class="ic i-th"></i>Categories</a>
+  </li>
+
+        
+  <li class="item">
+    <a href="/tags/" rel="section"><i class="ic i-tags"></i>Tags</a>
+  </li>
+
+  </ul>
+
+</ul>
+
+      </div>
+    </div>
+  </div>
+
+  <ul id="quick">
+    <li class="prev pjax">
+        <a href="/posts/1b392612/" rel="prev" title="Previous Post"><i class="ic i-chevron-left"></i></a>
+    </li>
+    <li class="up"><i class="ic i-arrow-up"></i></li>
+    <li class="down"><i class="ic i-arrow-down"></i></li>
+    <li class="next pjax">
+        <a href="/posts/d05062ae/" rel="next" title="Next Post"><i class="ic i-chevron-right"></i></a>
+    </li>
+    <li class="percent"></li>
+  </ul>
+</div>
+
+
+        </div>
+        <div class="dimmer"></div>
+      </div>
+    </main>
+    <footer id="footer">
+      <div class="inner">
+        <div class="widgets">
+          
+<div class="rpost pjax">
+  <h2>Random Posts</h2>
+  <ul>
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/Java/" title="In Java">Java</a>
+</div>
+
+    <span><a href="/posts/bd76a990/" title="一图看懂Java中的PO,BO,VO,DTO,POJO,DAO,DO">一图看懂Java中的PO,BO,VO,DTO,POJO,DAO,DO</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/Java/" title="In Java">Java</a>
+</div>
+
+    <span><a href="/posts/97604c34/" title="获取指定集合要求中的mapkey值并重新返回map">获取指定集合要求中的mapkey值并重新返回map</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/Java%E9%9D%A2%E8%AF%95/" title="In Java面试">Java面试</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/Java%E9%9D%A2%E8%AF%95/%E7%AE%97%E6%B3%95/" title="In 算法">算法</a>
+</div>
+
+    <span><a href="/posts/7474c898/" title="分治算法">分治算法</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+</div>
+
+    <span><a href="/posts/dfdc2005/" title="JDK动态代理原理剖析(简洁版)">JDK动态代理原理剖析(简洁版)</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+</div>
+
+    <span><a href="/posts/49a9ac1a/" title="Springboot优雅的实现重试">Springboot优雅的实现重试</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/Java%E9%9D%A2%E8%AF%95/" title="In Java面试">Java面试</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/Java%E9%9D%A2%E8%AF%95/Spring%E4%BA%8B%E5%8A%A1/" title="In Spring事务">Spring事务</a>
+</div>
+
+    <span><a href="/posts/7e4601e3/" title="面试之旅之关于Spring事务处理">面试之旅之关于Spring事务处理</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/Java/" title="In Java">Java</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/Java/SpringBoot/" title="In SpringBoot">SpringBoot</a>
+</div>
+
+    <span><a href="/posts/a3dfcd98/" title="SpringBoot中常见的几种解决跨域的方式">SpringBoot中常见的几种解决跨域的方式</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/Java%E9%9D%A2%E8%AF%95/" title="In Java面试">Java面试</a>
+</div>
+
+    <span><a href="/posts/3b6bfba3/" title="如何保证接口的幂等性">如何保证接口的幂等性</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/Java/" title="In Java">Java</a>
+</div>
+
+    <span><a href="/posts/60a1e80e/" title="java判断日期周几">java判断日期周几</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/Hexo/" title="In Hexo">Hexo</a>
+</div>
+
+    <span><a href="/posts/5c2529f6/" title="Hexo中添加动态2d二次元人物模型">Hexo中添加动态2d二次元人物模型</a></span>
+  </li>
+
+  </ul>
+</div>
+<div>
+  <h2>Recent Comments</h2>
+  <ul class="leancloud-recent-comment"></ul>
+</div>
+
+        </div>
+        <div class="status">
+  <div class="copyright">
+    
+    &copy; 2021 – 
+    <span itemprop="copyrightYear">2022</span>
+    <span class="with-love">
+      <i class="ic i-sakura rotate"></i>
+    </span>
+    <span class="author" itemprop="copyrightHolder">JIN Mao @ Jin Mao when to get rich ?</span>
+  </div>
+  <div class="count">
+    <span class="post-meta-item-icon">
+      <i class="ic i-chart-area"></i>
+    </span>
+    <span title="Symbols count total">620k words</span>
+
+    <span class="post-meta-divider">|</span>
+    <span class="post-meta-item-icon">
+      <i class="ic i-coffee"></i>
+    </span>
+    <span title="Reading time total">9:24</span>
+  </div>
+</div>
+
+      </div>
+    </footer>
+  </div>
+<script data-config type="text/javascript">
+  var LOCAL = {
+    path: 'posts/171f1b7f/',
+    favicon: {
+      show: "You're welcome",
+      hide: "Wait for you"
+    },
+    search : {
+      placeholder: "Search for Posts",
+      empty: "We didn't find any results for the search: ${query}",
+      stats: "${hits} results found in ${time} ms"
+    },
+    valine: true,fancybox: true,
+    copyright: 'Copied to clipboard successfully! <br> All articles in this blog are licensed under <i class="ic i-creative-commons"></i>BY-NC-SA.',
+    ignores : [
+      function(uri) {
+        return uri.includes('#');
+      },
+      function(uri) {
+        return new RegExp(LOCAL.path+"$").test(uri);
+      }
+    ]
+  };
+</script>
+
+<script src="https://cdn.polyfill.io/v2/polyfill.js"></script>
+
+<script src="//cdn.jsdelivr.net/combine/npm/pace-js@1.0.2/pace.min.js,npm/pjax@0.2.8/pjax.min.js,npm/whatwg-fetch@3.4.0/dist/fetch.umd.min.js,npm/animejs@3.2.0/lib/anime.min.js,npm/algoliasearch@4/dist/algoliasearch-lite.umd.js,npm/instantsearch.js@4/dist/instantsearch.production.min.js,npm/lozad@1/dist/lozad.min.js,npm/quicklink@2/dist/quicklink.umd.js"></script>
+
+<script src="/js/app.js?v=0.2.5"></script>
+
+
+
+
+</body>
+</html>

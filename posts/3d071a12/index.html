@@ -115,12 +115,12 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
       </div>
       <div id="imgs" class="pjax">
         <ul>
-          <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1gicliierfjj20zk0m8npd.jpg"></li>
-          <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1giciusoyjnj219g0u0x56.jpg"></li>
-          <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1gipewr8iypj20zk0m8b29.jpg"></li>
-          <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1gicm0n457cj20zk0m8e81.jpg"></li>
+          <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1gipeudstjqj20zk0m8k3r.jpg"></li>
+          <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1giciszlczyj20zk0m816d.jpg"></li>
+          <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1giclffsa1cj20zk0m811l.jpg"></li>
+          <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1gipexbei4hj20zk0m8npd.jpg"></li>
           <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1giciundwu5j20zk0m8n9e.jpg"></li>
-          <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1giclhtuo6nj20zk0m8ttm.jpg"></li>
+          <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1gicivghyooj20zk0m8dir.jpg"></li>
         </ul>
       </div>
     </header>
@@ -169,64 +169,67 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
   <div class="body md" itemprop="articleBody">
     
 
-    <p>我自己的博客是采用了 <code>hexo</code> +  <code>Next</code>  主题搭建完成，并做了一些简单的配置，这边也将全面从 0-&gt;1 介绍</p>
-<h1 id="安装node"><a class="markdownIt-Anchor" href="#安装node">#</a> 安装 <code>Node</code></h1>
-<p><code>Node</code>  的官网为 <span class="exturl" data-url="aHR0cHM6Ly9ub2RlanMub3JnL3poLWNuL2Rvd25sb2FkLw==">https://nodejs.org/zh-cn/download/</span></p>
+    <p>我自己的博客是采用了<code>hexo</code>+ <code>Next</code>主题搭建完成，并做了一些简单的配置，这边也将全面从0-&gt;1介绍</p>
+<h1 id="安装Node"><a href="#安装Node" class="headerlink" title="安装Node"></a>安装<code>Node</code></h1><p><code>Node</code>的官网为 <span class="exturl" data-url="aHR0cHM6Ly9ub2RlanMub3JnL3poLWNuL2Rvd25sb2FkLw==">https://nodejs.org/zh-cn/download/</span>  </p>
 <img data-src="/posts/3d071a12/2021-11-13-00-33-44.png" class=""> 
+
 <p>下载自己对应的版本即可，傻瓜式的下一步下一步之后，在终端控制台输入</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">node -v</span><br></pre></td></tr></table></figure>
+
 <span id="more"></span>
+
 <img data-src="/posts/3d071a12/2021-11-13-00-34-52.png" class="">
-<p>说明安装成功，而在这个时候也会给你安装了 <code>npm</code>  环境，输入</p>
+
+<p>说明安装成功，而在这个时候也会给你安装了<code>npm</code>环境，输入</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm -v</span><br></pre></td></tr></table></figure>
 <img data-src="/posts/3d071a12/2021-11-13-00-36-59.png" class="">
+
 <p>此时我们需要将原生的镜像源换为淘宝镜像源，这样能加快下载速度：</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"># 设置镜像源</span><br><span class="line">npm config set registry=https://registry.npm.taobao.org/</span><br><span class="line"># 查看镜像源</span><br><span class="line">npm config get registry</span><br></pre></td></tr></table></figure>
-<p><code>Node</code>  环境安装完毕</p>
-<h1 id="安装git并创建github-pages"><a class="markdownIt-Anchor" href="#安装git并创建github-pages">#</a> 安装 <code>Git</code>  并创建 <code>github pages</code></h1>
-<p>git 安装地址 ： <span class="exturl" data-url="aHR0cHM6Ly9naXQtc2NtLmNvbS9ib29rL3poL3YyLyVFOCVCNSVCNyVFNiVBRCVBNS0lRTUlQUUlODklRTglQTMlODUtR2l0">https://git-scm.com/book/zh/v2 / 起步 - 安装 - Git</span></p>
-<p><code>github</code>  注册这边也不多赘述，不会的小伙伴可以自行百度</p>
-<h2 id="创建github项目"><a class="markdownIt-Anchor" href="#创建github项目">#</a> 创建 <code>github</code>  项目</h2>
-<h2 id="创建responsibility"><a class="markdownIt-Anchor" href="#创建responsibility">#</a> 创建 <code>responsibility</code></h2>
-<img data-src="/posts/3d071a12/2021-11-13-21-03-18.png" class="">
+
+<p><code>Node</code>环境安装完毕</p>
+<h1 id="安装Git并创建github-pages"><a href="#安装Git并创建github-pages" class="headerlink" title="安装Git并创建github pages"></a>安装<code>Git</code>并创建<code>github pages</code></h1><p>git安装地址 ： <span class="exturl" data-url="aHR0cHM6Ly9naXQtc2NtLmNvbS9ib29rL3poL3YyLyVFOCVCNSVCNyVFNiVBRCVBNS0lRTUlQUUlODklRTglQTMlODUtR2l0">https://git-scm.com/book/zh/v2/%E8%B5%B7%E6%AD%A5-%E5%AE%89%E8%A3%85-Git</span></p>
+<p><code>github</code>注册这边也不多赘述，不会的小伙伴可以自行百度</p>
+<h2 id="创建github项目"><a href="#创建github项目" class="headerlink" title="创建github项目"></a>创建<code>github</code>项目</h2><h2 id="创建responsibility"><a href="#创建responsibility" class="headerlink" title="创建responsibility"></a>创建<code>responsibility</code></h2><img data-src="/posts/3d071a12/2021-11-13-21-03-18.png" class="">
+
 <img data-src="/posts/3d071a12/2021-11-13-21-04-34.png" class="">
-<p>这边我踩了个坑，命名格式好像必须是  <code>owner/owner.github.io</code></p>
-<p>然后 <code>responsibility</code>  就创建好了</p>
-<h2 id="生成token"><a class="markdownIt-Anchor" href="#生成token">#</a> 生成 <code>token</code></h2>
-<p>按照图片步骤创建 <code>token</code></p>
+
+<p>这边我踩了个坑，命名格式好像必须是 <code>owner/owner.github.io</code></p>
+<p>然后<code>responsibility</code>就创建好了</p>
+<h2 id="生成token"><a href="#生成token" class="headerlink" title="生成token"></a>生成<code>token</code></h2><p>按照图片步骤创建<code>token</code></p>
 <img data-src="/posts/3d071a12/2021-11-13-21-10-03.png" class="">
+
 <img data-src="/posts/3d071a12/2021-11-13-21-10-54.png" class="">
+
 <img data-src="/posts/3d071a12/2021-11-13-21-33-00.png" class="">
-<p>此时生成的 <code>token</code>  只会显示这一次，尽量复制保存到本地，据说这个 <code>token</code>  不开启 <code>github Page</code>  无法</p>
-<h2 id="设置page"><a class="markdownIt-Anchor" href="#设置page">#</a> 设置 <code>page</code></h2>
-<img data-src="/posts/3d071a12/2021-11-15-22-00-27.png" class="">
-<p>点击 <code>Settings</code> ，向下拉到最后有个 <code>GitHub Pages</code> ，点击 <code>Choose a theme</code>  选择一个主题。然后等一会儿，此时点击图片中打码链接就是你的 <code>GitHub Pages</code>  地址了。应该是会跳出一个页面出来。</p>
-<h1 id="安装hexo"><a class="markdownIt-Anchor" href="#安装hexo">#</a> 安装 <code>Hexo</code></h1>
-<p>选择一个合适的本地位置存在你的 <code>Blog</code>  源码，比如我就存放在 <code>/Users/jinmao/Documents/Blog/blog_source/</code>  处，然后输入全局安装 <code>hexo</code>  脚手架</p>
+
+<p>此时生成的<code>token</code>只会显示这一次，尽量复制保存到本地，据说这个<code>token</code>不开启<code>github Page</code>无法</p>
+<h2 id="设置page"><a href="#设置page" class="headerlink" title="设置page"></a>设置<code>page</code></h2><img data-src="/posts/3d071a12/2021-11-15-22-00-27.png" class="">
+<p>点击<code>Settings</code>，向下拉到最后有个<code>GitHub Pages</code>，点击<code>Choose a theme</code>选择一个主题。然后等一会儿，此时点击图片中打码链接就是你的<code>GitHub Pages</code>地址了。应该是会跳出一个页面出来。</p>
+<h1 id="安装Hexo"><a href="#安装Hexo" class="headerlink" title="安装Hexo"></a>安装<code>Hexo</code></h1><p>选择一个合适的本地位置存在你的<code>Blog</code>源码，比如我就存放在<code>/Users/jinmao/Documents/Blog/blog_source/</code>处，然后输入全局安装<code>hexo</code>脚手架</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install -g hexo-cli</span><br></pre></td></tr></table></figure>
 <p>安装完后输入验证是否安装成功：</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo -v</span><br></pre></td></tr></table></figure>
 <img data-src="/posts/3d071a12/2021-11-15-23-18-45.png" class="">
 <p>说明安装成功啦！</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line"># hexo 常用指令</span><br><span class="line"></span><br><span class="line">hexo init [folder]  //初始化本地文件夹为网站的根目录 - folder 为可选</span><br><span class="line"></span><br><span class="line">//hexo new 命令用于新建文章，&lt;title&gt;字段需要加双引号</span><br><span class="line">hexo n [layout] &lt;title&gt;</span><br><span class="line"></span><br><span class="line">hexo generate //命令用于生成静态文件，一般可以简写为 hexo g</span><br><span class="line">hexo d -g //指生成后再部署</span><br><span class="line"></span><br><span class="line">hexo server //命令用于启动本地服务器，一般可以简写为hexo s</span><br><span class="line">//-p 选项，指定服务器端口，默认为 4000</span><br><span class="line">//-i 选项，指定服务器 IP 地址，默认为 0.0.0.0</span><br><span class="line">//-s 选项，静态模式 ，仅提供 public 文件夹中的文件并禁用文件监视</span><br><span class="line"></span><br><span class="line">hexo clean //命令用于清理缓存文件，是一个比较常用的命令</span><br><span class="line"></span><br><span class="line">hexo deploy //命令用于部署网站，一般可以简写为 hexo d</span><br></pre></td></tr></table></figure>
-<p>说明 ：运行服务器前需要安装  <code>hexo-server </code> 插件</p>
+<p>说明 ：运行服务器前需要安装 <code>hexo-server </code>插件</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-server --save</span><br></pre></td></tr></table></figure>
-<p>使用 <code>hexo -d</code>  前需要修改 <code>_config.yml</code>  配置文件，下面以  <code>git</code>  为例进行说明</p>
+
+<p>使用<code>hexo -d</code>前需要修改<code>_config.yml</code>配置文件，下面以 <code>git</code> 为例进行说明</p>
 <figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># Deployment</span></span><br><span class="line"><span class="comment">## Docs: https://hexo.io/docs/one-command-deployment</span></span><br><span class="line"><span class="attr">deploy:</span></span><br><span class="line">  <span class="attr">type:</span> <span class="string">&#x27;git&#x27;</span></span><br><span class="line">  <span class="attr">repo:</span> <span class="string">&lt;repository</span> <span class="string">url&gt;</span></span><br><span class="line">  <span class="attr">branch:</span> <span class="string">master</span></span><br><span class="line">  <span class="attr">message:</span> <span class="string">自定义提交消息，默认为Site</span> <span class="attr">updated:</span> &#123;&#123; <span class="string">now(&#x27;YYYY-MM-DD</span> <span class="string">HH:mm:ss&#x27;)</span> &#125;&#125;</span><br></pre></td></tr></table></figure>
-<h1 id="写文章-发布文章"><a class="markdownIt-Anchor" href="#写文章-发布文章">#</a> 写文章、发布文章</h1>
-<p>创建一篇新文章，例如</p>
+<h1 id="写文章、发布文章"><a href="#写文章、发布文章" class="headerlink" title="写文章、发布文章"></a>写文章、发布文章</h1><p>创建一篇新文章,例如</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo n &quot;写在最前面&quot;</span><br></pre></td></tr></table></figure>
-<p>然后会在 <code>source/_posts</code>  下生成一个 <code>markdown</code>  文件，在这个文件中使用的是正常的 <code>markdown</code>  语法。<br>
-然后依次输入以下步骤：</p>
+<p>然后会在<code>source/_posts</code>下生成一个<code>markdown</code>文件，在这个文件中使用的是正常的<code>markdown</code>语法。<br>然后依次输入以下步骤：</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">hexo clean //清理缓存</span><br><span class="line"></span><br><span class="line">hexo g //编译生成静态文件</span><br><span class="line"></span><br><span class="line">hexo s //启动本地服务器</span><br></pre></td></tr></table></figure>
 <img data-src="/posts/3d071a12/2021-11-17-00-01-23.png" class="">
-<p><code>command + 左键</code> 就可以在浏览器中浏览效果了</p>
-<h1 id="设置背景音乐"><a class="markdownIt-Anchor" href="#设置背景音乐">#</a> 设置背景音乐</h1>
-<img data-src="/posts/3d071a12/2021-11-21-22-39-25.png" class="">
+
+<p><code>command + 左键</code>就可以在浏览器中浏览效果了</p>
+<h1 id="设置背景音乐"><a href="#设置背景音乐" class="headerlink" title="设置背景音乐"></a>设置背景音乐</h1><img data-src="/posts/3d071a12/2021-11-21-22-39-25.png" class="">
 <img data-src="/posts/3d071a12/2021-11-21-22-39-51.png" class="">
 <img data-src="/posts/3d071a12/2021-11-21-22-40-14.png" class="">
-<p>我们将音乐插件添加到侧边栏，效果类似于此 <code>Blog</code> <br>
- 打开我们主题文件： <code>themes\next\layout\_macro\sidebar.swig找到sidebar-inner</code></p>
+
+<p>我们将音乐插件添加到侧边栏，效果类似于此<code>Blog</code><br>打开我们主题文件：<code>themes\next\layout\_macro\sidebar.swig找到sidebar-inner</code></p>
 <img data-src="/posts/3d071a12/2021-11-21-22-38-07.png" class="">
 <p>就可以啦！</p>
 
@@ -280,7 +283,7 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
     <div class="item left">
       
 
-  <a href="/posts/bf4d20ae/" itemprop="url" rel="prev" data-background-image="https:&#x2F;&#x2F;tva3.sinaimg.cn&#x2F;mw690&#x2F;6833939bly1giclhtuo6nj20zk0m8ttm.jpg" title="写在最前面">
+  <a href="/posts/bf4d20ae/" itemprop="url" rel="prev" data-background-image="https:&#x2F;&#x2F;tva3.sinaimg.cn&#x2F;mw690&#x2F;6833939bly1giciryrr3rj20zk0m8nhk.jpg" title="写在最前面">
   <span class="type">Previous Post</span>
   <span class="category"><i class="ic i-flag"></i> </span>
   <h3>写在最前面</h3>
@@ -290,7 +293,7 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
     <div class="item right">
       
 
-  <a href="/posts/3eca6246/" itemprop="url" rel="next" data-background-image="https:&#x2F;&#x2F;tva3.sinaimg.cn&#x2F;mw690&#x2F;6833939bly1gicitzannuj20zk0m8b29.jpg" title="使用npm时报python错误的解决方案">
+  <a href="/posts/3eca6246/" itemprop="url" rel="next" data-background-image="https:&#x2F;&#x2F;tva3.sinaimg.cn&#x2F;mw690&#x2F;6833939bly1gicli3sbvtj20zk0m8x6p.jpg" title="使用npm时报python错误的解决方案">
   <span class="type">Next Post</span>
   <span class="category"><i class="ic i-flag"></i> 前端</span>
   <h3>使用npm时报python错误的解决方案</h3>
@@ -312,7 +315,7 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
   <div class="panels">
     <div class="inner">
       <div class="contents panel pjax" data-title="Contents">
-          <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%AE%89%E8%A3%85node"><span class="toc-number">1.</span> <span class="toc-text"> 安装 Node</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%AE%89%E8%A3%85git%E5%B9%B6%E5%88%9B%E5%BB%BAgithub-pages"><span class="toc-number">2.</span> <span class="toc-text"> 安装 Git  并创建 github pages</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%88%9B%E5%BB%BAgithub%E9%A1%B9%E7%9B%AE"><span class="toc-number">2.1.</span> <span class="toc-text"> 创建 github  项目</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%88%9B%E5%BB%BAresponsibility"><span class="toc-number">2.2.</span> <span class="toc-text"> 创建 responsibility</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%94%9F%E6%88%90token"><span class="toc-number">2.3.</span> <span class="toc-text"> 生成 token</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%AE%BE%E7%BD%AEpage"><span class="toc-number">2.4.</span> <span class="toc-text"> 设置 page</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%AE%89%E8%A3%85hexo"><span class="toc-number">3.</span> <span class="toc-text"> 安装 Hexo</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%86%99%E6%96%87%E7%AB%A0-%E5%8F%91%E5%B8%83%E6%96%87%E7%AB%A0"><span class="toc-number">4.</span> <span class="toc-text"> 写文章、发布文章</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E8%AE%BE%E7%BD%AE%E8%83%8C%E6%99%AF%E9%9F%B3%E4%B9%90"><span class="toc-number">5.</span> <span class="toc-text"> 设置背景音乐</span></a></li></ol>
+          <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%AE%89%E8%A3%85Node"><span class="toc-number">1.</span> <span class="toc-text">安装Node</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%AE%89%E8%A3%85Git%E5%B9%B6%E5%88%9B%E5%BB%BAgithub-pages"><span class="toc-number">2.</span> <span class="toc-text">安装Git并创建github pages</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%88%9B%E5%BB%BAgithub%E9%A1%B9%E7%9B%AE"><span class="toc-number">2.1.</span> <span class="toc-text">创建github项目</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%88%9B%E5%BB%BAresponsibility"><span class="toc-number">2.2.</span> <span class="toc-text">创建responsibility</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%94%9F%E6%88%90token"><span class="toc-number">2.3.</span> <span class="toc-text">生成token</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%AE%BE%E7%BD%AEpage"><span class="toc-number">2.4.</span> <span class="toc-text">设置page</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%AE%89%E8%A3%85Hexo"><span class="toc-number">3.</span> <span class="toc-text">安装Hexo</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%86%99%E6%96%87%E7%AB%A0%E3%80%81%E5%8F%91%E5%B8%83%E6%96%87%E7%AB%A0"><span class="toc-number">4.</span> <span class="toc-text">写文章、发布文章</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E8%AE%BE%E7%BD%AE%E8%83%8C%E6%99%AF%E9%9F%B3%E4%B9%90"><span class="toc-number">5.</span> <span class="toc-text">设置背景音乐</span></a></li></ol>
       </div>
       <div class="related panel pjax" data-title="Related">
         <ul>
@@ -330,7 +333,7 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
 <nav class="state">
     <div class="item posts">
       <a href="/archives/">
-        <span class="count">139</span>
+        <span class="count">142</span>
         <span class="name">posts</span>
       </a>
     </div>
@@ -342,7 +345,7 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
     </div>
     <div class="item tags">
       <a href="/tags/">
-        <span class="count">108</span>
+        <span class="count">109</span>
         <span class="name">tags</span>
       </a>
     </div>
@@ -421,10 +424,24 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
   <li class="item">
     
 <div class="breadcrumb">
-<a href="/categories/%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F/" title="In 正则表达式">正则表达式</a>
+<a href="/categories/Java/" title="In Java">Java</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/Java/Stream/" title="In Stream">Stream</a>
 </div>
 
-    <span><a href="/posts/2f57a694/" title="正则表达式">正则表达式</a></span>
+    <span><a href="/posts/8b8fedea/" title="Stream流的介绍">Stream流的介绍</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/%E5%89%8D%E7%AB%AF/" title="In 前端">前端</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/%E5%89%8D%E7%AB%AF/Css/" title="In Css">Css</a>
+</div>
+
+    <span><a href="/posts/54880bcd/" title="Css样式">Css样式</a></span>
   </li>
 
       
@@ -433,22 +450,12 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
 <div class="breadcrumb">
 <a href="/categories/Java/" title="In Java">Java</a>
 <i class="ic i-angle-right"></i>
-<a href="/categories/Java/Tools/" title="In Tools">Tools</a>
-</div>
-
-    <span><a href="/posts/49b96938/" title="Java获取一天时间的起始">Java获取一天时间的起始</a></span>
-  </li>
-
-      
-  <li class="item">
-    
-<div class="breadcrumb">
-<a href="/categories/Java/" title="In Java">Java</a>
+<a href="/categories/Java/Java%E9%9D%A2%E8%AF%95/" title="In Java面试">Java面试</a>
 <i class="ic i-angle-right"></i>
-<a href="/categories/Java/Mysql/" title="In Mysql">Mysql</a>
+<a href="/categories/Java/Java%E9%9D%A2%E8%AF%95/SpringBoot/" title="In SpringBoot">SpringBoot</a>
 </div>
 
-    <span><a href="/posts/69c17d37/" title="关于事务提交中踩坑">关于事务提交中踩坑</a></span>
+    <span><a href="/posts/59de1824/" title="spring中&#x2F;和&#x2F;*和&#x2F;**的区别">spring中/和/*和/**的区别</a></span>
   </li>
 
       
@@ -457,26 +464,7 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
 <div class="breadcrumb">
 </div>
 
-    <span><a href="/posts/4a17b156/" title="Hello World">Hello World</a></span>
-  </li>
-
-      
-  <li class="item">
-    
-<div class="breadcrumb">
-<a href="/categories/Mybtais/" title="In Mybtais">Mybtais</a>
-</div>
-
-    <span><a href="/posts/9aff665a/" title="mybatis中大于等于小于等于的写法">mybatis中大于等于小于等于的写法</a></span>
-  </li>
-
-      
-  <li class="item">
-    
-<div class="breadcrumb">
-</div>
-
-    <span><a href="/posts/de5e33d7/" title="关于JDK中的Arrays.sort排序方法">关于JDK中的Arrays.sort排序方法</a></span>
+    <span><a href="/posts/f35c5140/" title="JAVA-jar包运行及日志输出">JAVA-jar包运行及日志输出</a></span>
   </li>
 
       
@@ -498,7 +486,7 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
 <a href="/categories/Java/" title="In Java">Java</a>
 </div>
 
-    <span><a href="/posts/7a29d22a/" title="Java关于时间的轮子">Java关于时间的轮子</a></span>
+    <span><a href="/posts/4ca5bfdf/" title="Spring手动回滚事务">Spring手动回滚事务</a></span>
   </li>
 
       
@@ -506,22 +494,43 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
     
 <div class="breadcrumb">
 <a href="/categories/Java/" title="In Java">Java</a>
-<i class="ic i-angle-right"></i>
-<a href="/categories/Java/Mybatis/" title="In Mybatis">Mybatis</a>
-<i class="ic i-angle-right"></i>
-<a href="/categories/Java/Mybatis/SpringBoot/" title="In SpringBoot">SpringBoot</a>
 </div>
 
-    <span><a href="/posts/31dc52e1/" title="MyBatis之分页查询：MyBatis PageHelper">MyBatis之分页查询：MyBatis PageHelper</a></span>
+    <span><a href="/posts/1748805d/" title="java线程池与五种常用线程池策略使用与解析">java线程池与五种常用线程池策略使用与解析</a></span>
   </li>
 
       
   <li class="item">
     
 <div class="breadcrumb">
+<a href="/categories/SpringBoot/" title="In SpringBoot">SpringBoot</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/SpringBoot/Java/" title="In Java">Java</a>
 </div>
 
-    <span><a href="/posts/56be7cc9/" title="关于Linux排查问题命令">关于Linux排查问题命令</a></span>
+    <span><a href="/posts/f976ebe7/" title="SpringMvc中标准的后端接口格式">SpringMvc中标准的后端接口格式</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/Jenkins/" title="In Jenkins">Jenkins</a>
+</div>
+
+    <span><a href="/posts/171f1b7f/" title="Jenkins&#x2F;CICD">Jenkins/CICD</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/%E5%89%8D%E7%AB%AF/" title="In 前端">前端</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/%E5%89%8D%E7%AB%AF/Css/" title="In Css">Css</a>
+</div>
+
+    <span><a href="/posts/7f59931c/" title="Css选择器">Css选择器</a></span>
   </li>
 
   </ul>
@@ -546,13 +555,13 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
     <span class="post-meta-item-icon">
       <i class="ic i-chart-area"></i>
     </span>
-    <span title="Symbols count total">616k words</span>
+    <span title="Symbols count total">620k words</span>
 
     <span class="post-meta-divider">|</span>
     <span class="post-meta-item-icon">
       <i class="ic i-coffee"></i>
     </span>
-    <span title="Reading time total">9:20</span>
+    <span title="Reading time total">9:24</span>
   </div>
 </div>
 

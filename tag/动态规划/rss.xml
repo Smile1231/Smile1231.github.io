@@ -18,19 +18,21 @@
         <category>Corn</category>
         <category>前端</category>
         <category>Css</category>
+        <category>DisPlay属性</category>
         <category>DDD</category>
         <category>领域驱动设计</category>
-        <category>FastJson</category>
         <category>Docker</category>
-        <category>DisPlay属性</category>
         <category>blog</category>
         <category>hexo</category>
         <category>next</category>
-        <category>IDEA</category>
-        <category>SpringBoot</category>
+        <category>FastJson</category>
         <category>JavaScript</category>
         <category>Html</category>
+        <category>SpringBoot</category>
+        <category>IDEA</category>
         <category>Jvm</category>
+        <category>Jenkins</category>
+        <category>CI/CD</category>
         <category>函数式接口</category>
         <category>map</category>
         <category>Stream流</category>
@@ -44,28 +46,27 @@
         <category>LeetCode</category>
         <category>算法</category>
         <category>递归</category>
-        <category>Linux</category>
         <category>numpy</category>
         <category>pandas</category>
         <category>sklearn</category>
+        <category>Linux</category>
         <category>Mybatis</category>
         <category>分页查询</category>
         <category>模糊查询</category>
-        <category>Nginx</category>
         <category>Spring</category>
+        <category>Nginx</category>
         <category>SrpingBoot</category>
         <category>文件上传</category>
         <category>事务</category>
+        <category>master</category>
         <category>TypeScript</category>
         <category>WebPack</category>
-        <category>master</category>
-        <category>Jenkins</category>
-        <category>Groovy</category>
         <category>UML</category>
-        <category>VsCode</category>
-        <category>Shell</category>
+        <category>Groovy</category>
         <category>Ubuntu</category>
         <category>Mysql</category>
+        <category>VsCode</category>
+        <category>Shell</category>
         <category>VSCODE</category>
         <category>快捷键</category>
         <category>Vue</category>
@@ -74,30 +75,30 @@
         <category>线程池</category>
         <category>ubuntu</category>
         <category>虚拟机</category>
-        <category>二分查找</category>
         <category>Hadoop</category>
-        <category>数据挖掘</category>
         <category>操作系统</category>
         <category>EasyExcel</category>
+        <category>二分查找</category>
         <category>node</category>
+        <category>数据挖掘</category>
         <category>JVM</category>
         <category>Yaml</category>
-        <category>Hexo</category>
         <category>数据库</category>
+        <category>Hexo</category>
         <category>junit</category>
         <category>Mysql事务</category>
-        <category>git,npm,node</category>
         <category>Git</category>
         <category>冒泡排序</category>
-        <category>堆排序</category>
+        <category>git,npm,node</category>
         <category>动态规划</category>
-        <category>幂等性</category>
+        <category>堆排序</category>
         <category>多线程</category>
+        <category>幂等性</category>
         <category>Google</category>
         <category>流</category>
-        <category>归并排序</category>
         <category>快速排序</category>
         <category>正则表达式</category>
+        <category>归并排序</category>
         <category>直接插入排序</category>
         <category>选择排序</category>
         <category>Java 面试</category>
@@ -122,58 +123,49 @@
             <category>Java面试</category>
             <category>动态规划</category>
             <pubDate>Thu, 17 Feb 2022 22:58:10 +0800</pubDate>
-            <description><![CDATA[ &lt;h1 id=&#34;动态规划算法&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#动态规划算法&#34;&gt;#&lt;/a&gt; 动态规划算法&lt;/h1&gt;
-&lt;h2 id=&#34;什么是动态规划&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#什么是动态规划&#34;&gt;#&lt;/a&gt; 什么是动态规划&lt;/h2&gt;
-&lt;p&gt;动态规划的大致思路是把一个复杂的问题转化成一个分阶段逐步递推的过程，从简单的初始状态一步一步递推，最终得到复杂问题的最优解。&lt;/p&gt;
+            <description><![CDATA[ &lt;h1 id=&#34;动态规划算法&#34;&gt;&lt;a href=&#34;#动态规划算法&#34; class=&#34;headerlink&#34; title=&#34;动态规划算法&#34;&gt;&lt;/a&gt;动态规划算法&lt;/h1&gt;&lt;h2 id=&#34;什么是动态规划&#34;&gt;&lt;a href=&#34;#什么是动态规划&#34; class=&#34;headerlink&#34; title=&#34;什么是动态规划&#34;&gt;&lt;/a&gt;什么是动态规划&lt;/h2&gt;&lt;p&gt;动态规划的大致思路是把一个复杂的问题转化成一个分阶段逐步递推的过程，从简单的初始状态一步一步递推，最终得到复杂问题的最优解。&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;基本思想与策略编辑:&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;p&gt;由于动态规划解决的问题多数有重叠子问题这个特点，为减少重复计算，对每一个子问题只解一次，将其不同阶段的不同状态保存在一个二维数组中&lt;/p&gt;
 &lt;span id=&#34;more&#34;&gt;&lt;/span&gt;
+
 &lt;ol&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;font color=&#34;red&#34;&gt;&lt;strong&gt;拆分问题&lt;/strong&gt;&lt;/font&gt;: 根据问题的可能性把问题划分成通过递推或者递归一步一步实现。关键就是这个步骤，动态规划有一类问题就是从后往前推到，有时候我们很容易知道：如果只有一种情况时，最佳的选择应该怎么做。然后根据这个最佳选择往前一步推导，得到前一步的最佳选择&lt;/p&gt;
+&lt;li&gt;&lt;p&gt;&lt;font color=&#34;red&#34;&gt;&lt;strong&gt;拆分问题&lt;/strong&gt;&lt;/font&gt;:根据问题的可能性把问题划分成通过递推或者递归一步一步实现。关键就是这个步骤,动态规划有一类问题就是从后往前推到,有时候我们很容易知道 : 如果只有一种情况时,最佳的选择应该怎么做.然后根据这个最佳选择往前一步推导,得到前一步的最佳选择&lt;/p&gt;
 &lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;font color=&#34;blue&#34;&gt;定义问题状态和状态之间的关系：&lt;/font&gt;用一种量化的形式表现出来，类似于高中学的推导公式，因为这种式子很容易用程序写出来，也可以说对程序比较亲和 (也就是最后所说的状态转移方程式)&lt;/p&gt;
+&lt;li&gt;&lt;p&gt;&lt;font color=&#34;blue&#34;&gt;定义问题状态和状态之间的关系：&lt;/font&gt;用一种量化的形式表现出来,类似于高中学的推导公式,因为这种式子很容易用程序写出来,也可以说对程序比较亲和(也就是最后所说的状态转移方程式)&lt;/p&gt;
 &lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;动态规划算法的基本思想与分治法类似，也是将待求解的问题分解为若干个子问题（阶段），按顺序求解子阶段，&lt;font color=&#34;white&#34;&gt;前一子问题的解，为后一子问题的求解提供了有用的信息。&lt;/font&gt;在求解任一子问题时，列出各种可能的局部解，通过决策保留那些有可能达到最优的局部解，丢弃其他局部解。依次解决各子问题，最后一个子问题就是初始问题的解。&lt;/p&gt;
+&lt;li&gt;&lt;p&gt;动态规划算法的基本思想与分治法类似，也是将待求解的问题分解为若干个子问题（阶段），按顺序求解子阶段，&lt;font color=&#34;white&#34;&gt;前一子问题的解，为后一子问题的求解提供了有用的信息。&lt;/font&gt;在求解任一子问题时，列出各种可能的局部解，通过决策保留那些有可能达到最优的局部解，丢弃其他局部解。依次解决各子问题，最后一个子问题就是初始问题的解。&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
-&lt;p&gt;&lt;strong&gt;我的理解是&lt;/strong&gt;：比如我们找到最优解，我们应该讲最优解保存下来，为了往前推导时能够使用前一步的最优解，在这个过程中难免有一些相比于最优解差的解，此时我们应该放弃，只保存最优解，&lt;/p&gt;
-&lt;p&gt;这样我们每一次都把最优解保存了下来，大大降低了时间复杂度。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;我的理解是&lt;/strong&gt;：比如我们找到最优解,我们应该讲最优解保存下来,为了往前推导时能够使用前一步的最优解,在这个过程中难免有一些相比于最优解差的解,此时我们应该放弃,只保存最优解,&lt;/p&gt;
+&lt;p&gt;这样我们每一次都把最优解保存了下来,大大降低了时间复杂度。&lt;/p&gt;
 &lt;hr/&gt;
+
 &lt;p&gt;动态规划解决问题的过程分为两步：&lt;/p&gt;
 &lt;ol&gt;
-&lt;li&gt;
-&lt;p&gt;寻找状态转移方程式&lt;/p&gt;
+&lt;li&gt;&lt;p&gt;寻找状态转移方程式&lt;/p&gt;
 &lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;利用状态转移方程式自底向上求解问题&lt;/p&gt;
+&lt;li&gt;&lt;p&gt;利用状态转移方程式自底向上求解问题&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
-&lt;h2 id=&#34;动态规划原理&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#动态规划原理&#34;&gt;#&lt;/a&gt; 动态规划原理&lt;/h2&gt;
-&lt;ul&gt;
+&lt;h2 id=&#34;动态规划原理&#34;&gt;&lt;a href=&#34;#动态规划原理&#34; class=&#34;headerlink&#34; title=&#34;动态规划原理&#34;&gt;&lt;/a&gt;动态规划原理&lt;/h2&gt;&lt;ul&gt;
 &lt;li&gt;使用条件：可分为多个相关子问题，子问题的解被重复使用&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;Optimal substructure（优化子结构）&lt;/code&gt; ：
-&lt;ul&gt;
-&lt;li&gt;一个问题的优化解包含了子问题的优化解&lt;/li&gt;
-&lt;li&gt;缩小子问题集合，只需那些优化问题中包含的子问题，降低实现复杂性&lt;/li&gt;
-&lt;li&gt;我们可以自下而上的&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Optimal substructure（优化子结构）&lt;/code&gt;：&lt;ul&gt;
+&lt;li&gt; 一个问题的优化解包含了子问题的优化解&lt;/li&gt;
+&lt;li&gt; 缩小子问题集合，只需那些优化问题中包含的子问题，降低实现复杂性&lt;/li&gt;
+&lt;li&gt; 我们可以自下而上的&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;&lt;code&gt;Subteties（重叠子问题）&lt;/code&gt; ：在问题的求解过程中，很多子问题的解将被多次使用。&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;动态规划算法的设计步骤：&lt;/strong&gt;
-&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;Subteties（重叠子问题）&lt;/code&gt;：在问题的求解过程中，很多子问题的解将被多次使用。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;动态规划算法的设计步骤：&lt;/strong&gt;&lt;ul&gt;
 &lt;li&gt;分析优化解的结构&lt;/li&gt;
 &lt;li&gt;递归地定义最优解的代价&lt;/li&gt;
 &lt;li&gt;自底向上地计算优化解的代价保存之，并获取构造最优解的信息&lt;/li&gt;
 &lt;li&gt;根据构造最优解的信息构造优化解&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;动态规划特点：
-&lt;ul&gt;
+&lt;li&gt;动态规划特点：&lt;ul&gt;
 &lt;li&gt;把原始问题划分成一系列子问题；&lt;/li&gt;
 &lt;li&gt;求解每个子问题仅一次，并将其结果保存在一个表中，以后用到时直接存取，不重复计算，节省计算时间&lt;/li&gt;
 &lt;li&gt;自底向上地计算。&lt;/li&gt;
@@ -181,40 +173,39 @@
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2 id=&#34;经典例题&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#经典例题&#34;&gt;#&lt;/a&gt; 经典例题&lt;/h2&gt;
-&lt;h3 id=&#34;最长公共子序列longest-common-subsequence-lcs&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#最长公共子序列longest-common-subsequence-lcs&#34;&gt;#&lt;/a&gt; 最长公共子序列（ &lt;code&gt;longest-common-subsequence, LCS&lt;/code&gt; ）&lt;/h3&gt;
-&lt;p&gt;&lt;a href=&#34;https://leetcode-cn.com/problems/longest-common-subsequence/&#34;&gt; &lt;code&gt;LeetCode&lt;/code&gt; &lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;经典例题&#34;&gt;&lt;a href=&#34;#经典例题&#34; class=&#34;headerlink&#34; title=&#34;经典例题&#34;&gt;&lt;/a&gt;经典例题&lt;/h2&gt;&lt;h3 id=&#34;最长公共子序列（longest-common-subsequence-LCS）&#34;&gt;&lt;a href=&#34;#最长公共子序列（longest-common-subsequence-LCS）&#34; class=&#34;headerlink&#34; title=&#34;最长公共子序列（longest-common-subsequence, LCS）&#34;&gt;&lt;/a&gt;最长公共子序列（&lt;code&gt;longest-common-subsequence, LCS&lt;/code&gt;）&lt;/h3&gt;&lt;p&gt;&lt;a href=&#34;https://leetcode-cn.com/problems/longest-common-subsequence/&#34;&gt;&lt;code&gt;LeetCode&lt;/code&gt;&lt;/a&gt;&lt;/p&gt;
 &lt;img data-src=&#34;/posts/a80d0031/2022-02-17-23-18-58.png&#34; class=&#34;&#34;&gt;
-&lt;p&gt;(1) 子序列：一个序列 &lt;code&gt;X ＝ x1x2...xn&lt;/code&gt; , 中任意删除若干项，剩余的序列叫做 &lt;code&gt;A&lt;/code&gt;  的一个子序列。也可以认为是从序列 &lt;code&gt;A&lt;/code&gt;  按原顺序保留任意若干项得到的序列。&lt;br&gt;
-例如：对序列  &lt;code&gt;1,3,5,4,2,6,8,7&lt;/code&gt;  来说，序列 &lt;code&gt;3,4,8,7&lt;/code&gt;  是它的一个子序列。对于一个长度为 &lt;code&gt;n&lt;/code&gt;  的序列，它一共有 &lt;code&gt;2^n&lt;/code&gt;  个子序列，有 &lt;code&gt;(2^n – 1)&lt;/code&gt;  个非空子序列。在这里需要提醒大家，子序列不是子集，它和原始序列的元素顺序是相关的。&lt;/p&gt;
-&lt;p&gt;(2) 公共子序列：如果序列 &lt;code&gt;Z&lt;/code&gt;  既是序列 &lt;code&gt;X&lt;/code&gt;  的子序列，同时也是序列 Y 的子序列，则称它为序列 &lt;code&gt;X&lt;/code&gt;  和序列 &lt;code&gt;Y&lt;/code&gt;  的公共子序列。空序列是任何两个序列的公共子序列。&lt;/p&gt;
-&lt;p&gt;(3) 最长公共子序列： &lt;code&gt;X&lt;/code&gt;  和 &lt;code&gt;Y&lt;/code&gt;  的公共子序列中长度最长的（包含元素最多的）叫做 &lt;code&gt;X&lt;/code&gt;  和 &lt;code&gt;Y&lt;/code&gt;  的最长公共子序列。&lt;/p&gt;
-&lt;p&gt;这个问题如果用穷举法时间，最终求出最长公共子序列时，时间复杂度是 &lt;code&gt;Ο（2mn）&lt;/code&gt; ，是指数级别的复杂度，对于长序列是不适用的。因此我们使用动态规划法来求解。&lt;/p&gt;
-&lt;h3 id=&#34;刻画最长公共子序列问题的最优子结构&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#刻画最长公共子序列问题的最优子结构&#34;&gt;#&lt;/a&gt; 刻画最长公共子序列问题的最优子结构&lt;/h3&gt;
-&lt;p&gt;设 &lt;code&gt;X=x1x2…xm&lt;/code&gt;  和 &lt;code&gt;Y=y1y2…yn&lt;/code&gt;  是两个序列， &lt;code&gt;Z=z1z2…zk&lt;/code&gt;  是这两个序列的一个最长公共子序列。&lt;/p&gt;
+
+&lt;p&gt;(1) 子序列：一个序列&lt;code&gt;X ＝ x1x2...xn&lt;/code&gt;,中任意删除若干项，剩余的序列叫做&lt;code&gt;A&lt;/code&gt;的一个子序列。也可以认为是从序列&lt;code&gt;A&lt;/code&gt;按原顺序保留任意若干项得到的序列。&lt;br&gt;      例如：对序列 &lt;code&gt;1,3,5,4,2,6,8,7&lt;/code&gt;来说，序列&lt;code&gt;3,4,8,7&lt;/code&gt; 是它的一个子序列。对于一个长度为&lt;code&gt;n&lt;/code&gt;的序列，它一共有&lt;code&gt;2^n&lt;/code&gt; 个子序列，有&lt;code&gt;(2^n – 1)&lt;/code&gt;个非空子序列。在这里需要提醒大家，子序列不是子集，它和原始序列的元素顺序是相关的。&lt;/p&gt;
+&lt;p&gt;(2) 公共子序列：如果序列&lt;code&gt;Z&lt;/code&gt;既是序列&lt;code&gt;X&lt;/code&gt;的子序列，同时也是序列Y的子序列，则称它为序列&lt;code&gt;X&lt;/code&gt;和序列&lt;code&gt;Y&lt;/code&gt;的公共子序列。空序列是任何两个序列的公共子序列。&lt;/p&gt;
+&lt;p&gt;(3) 最长公共子序列：&lt;code&gt;X&lt;/code&gt;和&lt;code&gt;Y&lt;/code&gt;的公共子序列中长度最长的（包含元素最多的）叫做&lt;code&gt;X&lt;/code&gt;和&lt;code&gt;Y&lt;/code&gt;的最长公共子序列。&lt;/p&gt;
+&lt;p&gt;这个问题如果用穷举法时间，最终求出最长公共子序列时，时间复杂度是&lt;code&gt;Ο（2mn）&lt;/code&gt;，是指数级别的复杂度，对于长序列是不适用的。因此我们使用动态规划法来求解。&lt;/p&gt;
+&lt;h3 id=&#34;刻画最长公共子序列问题的最优子结构&#34;&gt;&lt;a href=&#34;#刻画最长公共子序列问题的最优子结构&#34; class=&#34;headerlink&#34; title=&#34;刻画最长公共子序列问题的最优子结构&#34;&gt;&lt;/a&gt;刻画最长公共子序列问题的最优子结构&lt;/h3&gt;&lt;p&gt;设&lt;code&gt;X=x1x2…xm&lt;/code&gt;和&lt;code&gt;Y=y1y2…yn&lt;/code&gt;是两个序列，&lt;code&gt;Z=z1z2…zk&lt;/code&gt;是这两个序列的一个最长公共子序列。&lt;/p&gt;
 &lt;ol&gt;
-&lt;li&gt;
-&lt;p&gt;如果 &lt;code&gt;xm=yn&lt;/code&gt; ，那么 &lt;code&gt;zk=xm=yn&lt;/code&gt; ，且 &lt;code&gt;Zk-1&lt;/code&gt;  是 &lt;code&gt;Xm-1&lt;/code&gt; ， &lt;code&gt;Yn-1&lt;/code&gt;  的一个最长公共子序列；&lt;/p&gt;
+&lt;li&gt;&lt;p&gt;如果&lt;code&gt;xm=yn&lt;/code&gt;，那么&lt;code&gt;zk=xm=yn&lt;/code&gt;，且&lt;code&gt;Zk-1&lt;/code&gt;是&lt;code&gt;Xm-1&lt;/code&gt;，&lt;code&gt;Yn-1&lt;/code&gt;的一个最长公共子序列；&lt;/p&gt;
 &lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;如果 &lt;code&gt;xm≠yn&lt;/code&gt; ，那么 &lt;code&gt;zk≠xm&lt;/code&gt; ，意味着 &lt;code&gt;Z&lt;/code&gt;  是 &lt;code&gt;Xm-1&lt;/code&gt; ， &lt;code&gt;Y&lt;/code&gt;  的一个最长公共子序列；&lt;/p&gt;
+&lt;li&gt;&lt;p&gt;如果&lt;code&gt;xm≠yn&lt;/code&gt;，那么&lt;code&gt;zk≠xm&lt;/code&gt;，意味着&lt;code&gt;Z&lt;/code&gt;是&lt;code&gt;Xm-1&lt;/code&gt;，&lt;code&gt;Y&lt;/code&gt;的一个最长公共子序列；&lt;/p&gt;
 &lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;如果 &lt;code&gt;xm≠yn&lt;/code&gt; ，那么 &lt;code&gt;zk≠yn&lt;/code&gt; ，意味着 &lt;code&gt;Z&lt;/code&gt;  是 &lt;code&gt;X&lt;/code&gt; ， &lt;code&gt;Yn-1&lt;/code&gt;  的一个最长公共子序列。&lt;/p&gt;
+&lt;li&gt;&lt;p&gt;如果&lt;code&gt;xm≠yn&lt;/code&gt;，那么&lt;code&gt;zk≠yn&lt;/code&gt;，意味着&lt;code&gt;Z&lt;/code&gt;是&lt;code&gt;X&lt;/code&gt;，&lt;code&gt;Yn-1&lt;/code&gt;的一个最长公共子序列。&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
-&lt;p&gt;从上面三种情况可以看出，两个序列的 &lt;code&gt;LCS&lt;/code&gt;  包含两个序列的前缀的 &lt;code&gt;LCS&lt;/code&gt; 。因此， &lt;code&gt;LCS&lt;/code&gt;  问题具有最优子结构特征。&lt;/p&gt;
-&lt;h3 id=&#34;递归的定义最优质&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#递归的定义最优质&#34;&gt;#&lt;/a&gt; 递归的定义最优质&lt;/h3&gt;
-&lt;p&gt;从最优子结构可以看出，如果 &lt;code&gt;xm=yn&lt;/code&gt; ，那么我们应该求解 &lt;code&gt;Xm-1&lt;/code&gt; ， &lt;code&gt;Yn-1&lt;/code&gt;  的一个 &lt;code&gt;LCS&lt;/code&gt; ，并且将 &lt;code&gt;xm=yn&lt;/code&gt;  加入到这个 &lt;code&gt;LCS&lt;/code&gt;  的末尾，这样得到的一个新的 &lt;code&gt;LCS&lt;/code&gt;  就是所求。&lt;/p&gt;
-&lt;p&gt;如果 &lt;code&gt;xm≠yn&lt;/code&gt; ，我们需要求解两个子问题，分别求 &lt;code&gt;Xm-1&lt;/code&gt; ， &lt;code&gt;Y&lt;/code&gt;  的一个 &lt;code&gt;LCS&lt;/code&gt;  和 &lt;code&gt;X&lt;/code&gt; ， &lt;code&gt;Yn-1&lt;/code&gt;  的一个 &lt;code&gt;LCS&lt;/code&gt; 。两个 &lt;code&gt;LCS&lt;/code&gt;  中较长者就是 &lt;code&gt;X&lt;/code&gt;  和 &lt;code&gt;Y&lt;/code&gt;  的一个 &lt;code&gt;LCS&lt;/code&gt; 。&lt;/p&gt;
-&lt;p&gt;可以看出 &lt;code&gt;LCS&lt;/code&gt;  问题具有重叠子问题性质。为了求 &lt;code&gt;X&lt;/code&gt;  和 &lt;code&gt;Y&lt;/code&gt;  的一个 &lt;code&gt;LCS&lt;/code&gt; ，我们需要分别求出 &lt;code&gt;Xm-1&lt;/code&gt; ， &lt;code&gt;Y&lt;/code&gt;  的一个 &lt;code&gt;LCS&lt;/code&gt;  和 &lt;code&gt;X&lt;/code&gt; ， &lt;code&gt;Yn-1&lt;/code&gt;  的一个 &lt;code&gt;LCS&lt;/code&gt; ，这几个字问题又包含了求出 &lt;code&gt;Xm-1&lt;/code&gt; ， &lt;code&gt;Yn-1&lt;/code&gt;  的一个 &lt;code&gt;LCS&lt;/code&gt;  的子子问题。（有点绕了。。。晕没晕。。。。）&lt;/p&gt;
+&lt;p&gt;从上面三种情况可以看出，两个序列的&lt;code&gt;LCS&lt;/code&gt;包含两个序列的前缀的&lt;code&gt;LCS&lt;/code&gt;。因此，&lt;code&gt;LCS&lt;/code&gt;问题具有最优子结构特征。&lt;/p&gt;
+&lt;h3 id=&#34;递归的定义最优质&#34;&gt;&lt;a href=&#34;#递归的定义最优质&#34; class=&#34;headerlink&#34; title=&#34;递归的定义最优质&#34;&gt;&lt;/a&gt;递归的定义最优质&lt;/h3&gt;&lt;p&gt;从最优子结构可以看出，如果&lt;code&gt;xm=yn&lt;/code&gt;，那么我们应该求解&lt;code&gt;Xm-1&lt;/code&gt;，&lt;code&gt;Yn-1&lt;/code&gt;的一个&lt;code&gt;LCS&lt;/code&gt;，并且将&lt;code&gt;xm=yn&lt;/code&gt;加入到这个&lt;code&gt;LCS&lt;/code&gt;的末尾，这样得到的一个新的&lt;code&gt;LCS&lt;/code&gt;就是所求。&lt;/p&gt;
+&lt;p&gt;如果&lt;code&gt;xm≠yn&lt;/code&gt;，我们需要求解两个子问题，分别求&lt;code&gt;Xm-1&lt;/code&gt;，&lt;code&gt;Y&lt;/code&gt;的一个&lt;code&gt;LCS&lt;/code&gt;和&lt;code&gt;X&lt;/code&gt;，&lt;code&gt;Yn-1&lt;/code&gt;的一个&lt;code&gt;LCS&lt;/code&gt;。两个&lt;code&gt;LCS&lt;/code&gt;中较长者就是&lt;code&gt;X&lt;/code&gt;和&lt;code&gt;Y&lt;/code&gt;的一个&lt;code&gt;LCS&lt;/code&gt;。&lt;/p&gt;
+&lt;p&gt;可以看出&lt;code&gt;LCS&lt;/code&gt;问题具有重叠子问题性质。为了求&lt;code&gt;X&lt;/code&gt;和&lt;code&gt;Y&lt;/code&gt;的一个&lt;code&gt;LCS&lt;/code&gt;，我们需要分别求出&lt;code&gt;Xm-1&lt;/code&gt;，&lt;code&gt;Y&lt;/code&gt;的一个&lt;code&gt;LCS&lt;/code&gt;和&lt;code&gt;X&lt;/code&gt;，&lt;code&gt;Yn-1&lt;/code&gt;的一个&lt;code&gt;LCS&lt;/code&gt;，这几个字问题又包含了求出&lt;code&gt;Xm-1&lt;/code&gt;，&lt;code&gt;Yn-1&lt;/code&gt;的一个&lt;code&gt;LCS&lt;/code&gt;的子子问题。（有点绕了。。。晕没晕。。。。）&lt;/p&gt;
 &lt;p&gt;根据上面的分析，我们可以得出下面的公式；&lt;/p&gt;
 &lt;img data-src=&#34;/posts/a80d0031/2022-02-17-23-19-37.png&#34; class=&#34;&#34;&gt;
-&lt;h3 id=&#34;计算最优的解&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#计算最优的解&#34;&gt;#&lt;/a&gt; 计算最优的解&lt;/h3&gt;
-&lt;p&gt;根据上面的，我们很容易就可以写出递归计算 &lt;code&gt;LCS&lt;/code&gt;  问题的程序，通过这个程序我们可以求出各个子问题的 &lt;code&gt;LCS&lt;/code&gt;  的值，此外，为了求解最优解本身，我们好需要一个表 &lt;code&gt;dp，dp[i，j]&lt;/code&gt;  记录使 &lt;code&gt;C[i，j]&lt;/code&gt;  取值的最优子结构。&lt;/p&gt;
-&lt;h3 id=&#34;数组的填表过程&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#数组的填表过程&#34;&gt;#&lt;/a&gt; 数组的填表过程&lt;/h3&gt;
-&lt;img data-src=&#34;/posts/a80d0031/2022-02-17-23-19-46.png&#34; class=&#34;&#34;&gt;
+
+&lt;h3 id=&#34;计算最优的解&#34;&gt;&lt;a href=&#34;#计算最优的解&#34; class=&#34;headerlink&#34; title=&#34;计算最优的解&#34;&gt;&lt;/a&gt;计算最优的解&lt;/h3&gt;&lt;p&gt; 根据上面的，我们很容易就可以写出递归计算&lt;code&gt;LCS&lt;/code&gt;问题的程序，通过这个程序我们可以求出各个子问题的&lt;code&gt;LCS&lt;/code&gt;的值，此外，为了求解最优解本身，我们好需要一个表&lt;code&gt;dp，dp[i，j]&lt;/code&gt;记录使&lt;code&gt;C[i，j]&lt;/code&gt;取值的最优子结构。&lt;/p&gt;
+&lt;h3 id=&#34;数组的填表过程&#34;&gt;&lt;a href=&#34;#数组的填表过程&#34; class=&#34;headerlink&#34; title=&#34;数组的填表过程&#34;&gt;&lt;/a&gt;数组的填表过程&lt;/h3&gt;&lt;img data-src=&#34;/posts/a80d0031/2022-02-17-23-19-46.png&#34; class=&#34;&#34;&gt;
+
 &lt;figure class=&#34;highlight java&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;13&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;14&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;15&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;16&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;17&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;18&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;19&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;20&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;21&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;22&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;23&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;24&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;25&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;26&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;27&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;28&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;29&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;30&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;31&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;32&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;33&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;34&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;35&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;36&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;37&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;38&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;39&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;40&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;41&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;42&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;43&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;44&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;45&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;46&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;47&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;48&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;49&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;50&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;51&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;52&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;53&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;54&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;55&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;56&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;57&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;58&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;59&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;60&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;61&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;62&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;63&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;public&lt;/span&gt; &lt;span class=&#34;class&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;class&lt;/span&gt; &lt;span class=&#34;title&#34;&gt;LCS&lt;/span&gt; &lt;/span&gt;&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;function&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;public&lt;/span&gt; &lt;span class=&#34;keyword&#34;&gt;int&lt;/span&gt; &lt;span class=&#34;title&#34;&gt;findLCS&lt;/span&gt;&lt;span class=&#34;params&#34;&gt;(String A, String B)&lt;/span&gt; &lt;/span&gt;&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        &lt;span class=&#34;keyword&#34;&gt;int&lt;/span&gt; n = A.length();&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        &lt;span class=&#34;keyword&#34;&gt;int&lt;/span&gt; m = B.length();&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        &lt;span class=&#34;comment&#34;&gt;//返回一个字符数组，该字符数组中存放了当前字符串中的所有字符&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        &lt;span class=&#34;comment&#34;&gt;//返回的是字符数组char[]a&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        &lt;span class=&#34;keyword&#34;&gt;char&lt;/span&gt;[] a = A.toCharArray();&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        &lt;span class=&#34;keyword&#34;&gt;char&lt;/span&gt;[] b = B.toCharArray();&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        &lt;span class=&#34;comment&#34;&gt;//创建一个二维矩阵，用来推到公共子序列&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        &lt;span class=&#34;keyword&#34;&gt;int&lt;/span&gt;[][] dp = &lt;span class=&#34;keyword&#34;&gt;new&lt;/span&gt; &lt;span class=&#34;keyword&#34;&gt;int&lt;/span&gt;[n][m];&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        &lt;span class=&#34;keyword&#34;&gt;for&lt;/span&gt; (&lt;span class=&#34;keyword&#34;&gt;int&lt;/span&gt; i = &lt;span class=&#34;number&#34;&gt;0&lt;/span&gt;; i &amp;lt; n; i++) &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;            &lt;span class=&#34;comment&#34;&gt;//如果找到第一列其中一个字符等于第一行第一个字符&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;            &lt;span class=&#34;keyword&#34;&gt;if&lt;/span&gt; (a[i] == b[&lt;span class=&#34;number&#34;&gt;0&lt;/span&gt;]) &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;                &lt;span class=&#34;comment&#34;&gt;//找到第一列与第一行b[0]的相等的值，把其变成1&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;                dp[i][&lt;span class=&#34;number&#34;&gt;0&lt;/span&gt;] = &lt;span class=&#34;number&#34;&gt;1&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;                &lt;span class=&#34;comment&#34;&gt;//并将其后面的字符都变成1&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;                &lt;span class=&#34;keyword&#34;&gt;for&lt;/span&gt; (&lt;span class=&#34;keyword&#34;&gt;int&lt;/span&gt; j = i + &lt;span class=&#34;number&#34;&gt;1&lt;/span&gt;; j &amp;lt; n; j++) &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;                    dp[j][&lt;span class=&#34;number&#34;&gt;0&lt;/span&gt;] = &lt;span class=&#34;number&#34;&gt;1&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;                &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;                &lt;span class=&#34;keyword&#34;&gt;break&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;            &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        &lt;span class=&#34;keyword&#34;&gt;for&lt;/span&gt; (&lt;span class=&#34;keyword&#34;&gt;int&lt;/span&gt; i = &lt;span class=&#34;number&#34;&gt;0&lt;/span&gt;; i &amp;lt; m; i++) &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;            &lt;span class=&#34;comment&#34;&gt;//如果找到第一列其中一个字符等于第一行第一个字符&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;            &lt;span class=&#34;keyword&#34;&gt;if&lt;/span&gt; (b[i] == a[&lt;span class=&#34;number&#34;&gt;0&lt;/span&gt;]) &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;                &lt;span class=&#34;comment&#34;&gt;//则把第一列后面的字符都变成1&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;                dp[&lt;span class=&#34;number&#34;&gt;0&lt;/span&gt;][i] = &lt;span class=&#34;number&#34;&gt;1&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;                &lt;span class=&#34;keyword&#34;&gt;for&lt;/span&gt; (&lt;span class=&#34;keyword&#34;&gt;int&lt;/span&gt; j = i + &lt;span class=&#34;number&#34;&gt;1&lt;/span&gt;; j &amp;lt; m; j++) &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;                    dp[&lt;span class=&#34;number&#34;&gt;0&lt;/span&gt;][j] = &lt;span class=&#34;number&#34;&gt;1&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;                &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;                &lt;span class=&#34;keyword&#34;&gt;break&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;            &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        &lt;span class=&#34;comment&#34;&gt;//从1开始是因为横向和纵向下标为0的都遍历过了&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        &lt;span class=&#34;keyword&#34;&gt;for&lt;/span&gt; (&lt;span class=&#34;keyword&#34;&gt;int&lt;/span&gt; i = &lt;span class=&#34;number&#34;&gt;1&lt;/span&gt;; i &amp;lt; n; i++) &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;            &lt;span class=&#34;keyword&#34;&gt;for&lt;/span&gt; (&lt;span class=&#34;keyword&#34;&gt;int&lt;/span&gt; j = &lt;span class=&#34;number&#34;&gt;1&lt;/span&gt;; j &amp;lt; m; j++) &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;                &lt;span class=&#34;comment&#34;&gt;//横向和纵向有相等的值&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;                &lt;span class=&#34;keyword&#34;&gt;if&lt;/span&gt; (a[i] == b[j]) &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;                    &lt;span class=&#34;comment&#34;&gt;//当前位置左边的值+1&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;                    dp[i][j] = dp[i - &lt;span class=&#34;number&#34;&gt;1&lt;/span&gt;][j - &lt;span class=&#34;number&#34;&gt;1&lt;/span&gt;] + &lt;span class=&#34;number&#34;&gt;1&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;                &amp;#125; &lt;span class=&#34;keyword&#34;&gt;else&lt;/span&gt; &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;                    &lt;span class=&#34;comment&#34;&gt;//取当前位置（左边的值，上边的值）的最大值&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;                    dp[i][j] = Math.max(dp[i][j - &lt;span class=&#34;number&#34;&gt;1&lt;/span&gt;], dp[i - &lt;span class=&#34;number&#34;&gt;1&lt;/span&gt;][j]);&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;                &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;            &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        &lt;span class=&#34;keyword&#34;&gt;for&lt;/span&gt; (&lt;span class=&#34;keyword&#34;&gt;int&lt;/span&gt; i = &lt;span class=&#34;number&#34;&gt;0&lt;/span&gt;; i &amp;lt; n - &lt;span class=&#34;number&#34;&gt;1&lt;/span&gt;; i++) &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;            &lt;span class=&#34;keyword&#34;&gt;for&lt;/span&gt; (&lt;span class=&#34;keyword&#34;&gt;int&lt;/span&gt; j = &lt;span class=&#34;number&#34;&gt;0&lt;/span&gt;; j &amp;lt; m; j++) &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;                System.out.print(dp[i][j] + &lt;span class=&#34;string&#34;&gt;&amp;quot;  &amp;quot;&lt;/span&gt;);&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;            &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;            System.out.println();&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        &lt;span class=&#34;keyword&#34;&gt;return&lt;/span&gt; dp[n - &lt;span class=&#34;number&#34;&gt;1&lt;/span&gt;][m - &lt;span class=&#34;number&#34;&gt;1&lt;/span&gt;];&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;function&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;public&lt;/span&gt; &lt;span class=&#34;keyword&#34;&gt;static&lt;/span&gt; &lt;span class=&#34;keyword&#34;&gt;void&lt;/span&gt; &lt;span class=&#34;title&#34;&gt;main&lt;/span&gt;&lt;span class=&#34;params&#34;&gt;(String[] args)&lt;/span&gt; &lt;/span&gt;&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        LCS lcs = &lt;span class=&#34;keyword&#34;&gt;new&lt;/span&gt; LCS();&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        &lt;span class=&#34;keyword&#34;&gt;int&lt;/span&gt; findLCS = lcs.findLCS(&lt;span class=&#34;string&#34;&gt;&amp;quot;android&amp;quot;&lt;/span&gt;, &lt;span class=&#34;string&#34;&gt;&amp;quot;random&amp;quot;&lt;/span&gt;);&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        System.out.println(&lt;span class=&#34;string&#34;&gt;&amp;quot;最长子序列长度：&amp;quot;&lt;/span&gt; + findLCS);&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+
+
+
+
+
+
  ]]></description>
         </item>
     </channel>

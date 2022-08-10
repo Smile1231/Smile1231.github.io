@@ -76,7 +76,7 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
       <i class="ic i-pen"></i>
     </span>
     <span class="text">Symbols count in article</span>
-    <span>1.7k</span>
+    <span>1.6k</span>
     <span class="text">words</span>
   </span>
   <span class="item" title="Reading time">
@@ -84,7 +84,7 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
       <i class="ic i-clock"></i>
     </span>
     <span class="text">Reading time</span>
-    <span>2 mins.</span>
+    <span>1 mins.</span>
   </span>
 </div>
 
@@ -117,12 +117,12 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
       </div>
       <div id="imgs" class="pjax">
         <ul>
-          <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1giclga70tsj20zk0m84mr.jpg"></li>
-          <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1giclhnx9glj20zk0m8npd.jpg"></li>
-          <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1gicljgocqbj20zk0m8e81.jpg"></li>
-          <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1gicm0fdw5cj20zk0m8hdt.jpg"></li>
-          <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1gipesrnqv3j20zk0m8ava.jpg"></li>
+          <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1gipew8gmvyj20zk0m87wh.jpg"></li>
+          <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1gipeuibk9fj20zk0m8ay2.jpg"></li>
           <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1gipeun65urj20zk0m81ii.jpg"></li>
+          <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1gicm07ih54j20zk0m84qp.jpg"></li>
+          <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1gipeu7txpzj20zk0m81kx.jpg"></li>
+          <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1giclhpw3lwj20zk0m8gvw.jpg"></li>
         </ul>
       </div>
     </header>
@@ -174,34 +174,29 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
   <div class="body md" itemprop="articleBody">
     
 
-    <h2 id="堆排序不稳定"><a class="markdownIt-Anchor" href="#堆排序不稳定">#</a> 堆排序（不稳定）</h2>
-<p>个人感觉堆排序还是挺难的，虽然会有演示动画<br>
-<span class="exturl" data-url="aHR0cHM6Ly9pdGltZXRyYXZlbGVyLmdpdGh1Yi5pby8yMDE3LzA3LzE4LyVFNSU4NSVBQiVFNSVBNCVBNyVFNiU4RSU5MiVFNSVCQSU4RiVFNyVBRSU5NyVFNiVCMyU5NSVFNiU4MCVCQiVFNyVCQiU5MyVFNCVCOCU4RWphdmElRTUlQUUlOUUlRTclOEUlQjAvIyVFNSU5QiU5QiVFMyU4MCU4MSVFNSVBMCU4NiVFNiU4RSU5MiVFNSVCQSU4RiVFRiVCQyU4OEhlYXAtU29ydCVFRiVCQyU4OQ==">链接</span></p>
+    <h2 id="堆排序（不稳定）"><a href="#堆排序（不稳定）" class="headerlink" title="堆排序（不稳定）"></a>堆排序（不稳定）</h2><p>个人感觉堆排序还是挺难的，虽然会有演示动画<br><span class="exturl" data-url="aHR0cHM6Ly9pdGltZXRyYXZlbGVyLmdpdGh1Yi5pby8yMDE3LzA3LzE4LyVFNSU4NSVBQiVFNSVBNCVBNyVFNiU4RSU5MiVFNSVCQSU4RiVFNyVBRSU5NyVFNiVCMyU5NSVFNiU4MCVCQiVFNyVCQiU5MyVFNCVCOCU4RWphdmElRTUlQUUlOUUlRTclOEUlQjAvIyVFNSU5QiU5QiVFMyU4MCU4MSVFNSVBMCU4NiVFNiU4RSU5MiVFNSVCQSU4RiVFRiVCQyU4OEhlYXAtU29ydCVFRiVCQyU4OQ==">链接</span></p>
 <p>但是从代码层面就没有那么好的通俗</p>
 <span id="more"></span>
-<p>堆的含义就是：完全二叉树中任何一个非叶子节点的值均不大于（或不小于）其左，右孩子节点的值。由上述性质可知大顶堆的堆顶的关键字肯定是所有关键字中最大的，小顶堆的堆顶的关键字是所有关键字中最小的。因此我们可使用大顶堆进行升序排序，使用小顶堆进行降序排序。</p>
-<h3 id="1-基本思想"><a class="markdownIt-Anchor" href="#1-基本思想">#</a> 1、基本思想</h3>
-<p>此处以大顶堆为例，堆排序的过程就是将待排序的序列构造成一个堆，选出堆中最大的移走，再把剩余的元素调整成堆，找出最大的再移走，重复直至有序。</p>
-<h3 id="2-算法描述"><a class="markdownIt-Anchor" href="#2-算法描述">#</a> 2、算法描述</h3>
-<p>①. 先将初始序列 <code>K[1..n]</code>  建成一个大顶堆，那么此时第一个元素 <code>K1</code>  最大，此堆为初始的无序区.<br>
-②. 再将关键字最大的记录 <code>K1</code>  (即堆顶，第一个元素) 和无序区的最后一个记录  <code>Kn</code>  交换，由此得到新的无序区 <code>K[1..n−1]</code>  和有序区 <code>K[n]</code> , 且满足 <code>K[1..n−1].keys⩽K[n].key</code> <br>
-③. 交换 <code>K1</code>  和  <code>Kn</code>  后，堆顶可能违反堆性质，因此需将 <code>K[1..n−1]</code>  调整为堆。然后重复步骤②, 直到无序区只有一个元素时停止.</p>
-<h3 id="3-代码实现"><a class="markdownIt-Anchor" href="#3-代码实现">#</a> 3、代码实现</h3>
-<p>从算法描述来看，堆排序需要两个过程，一是建立堆，二是堆顶与堆的最后一个元素交换位置。所以堆排序有两个函数组成。一是建堆函数，二是反复调用建堆函数以选择出剩余未排元素中最大的数来实现排序的函数。</p>
+
+<p>堆的含义就是：完全二叉树中任何一个非叶子节点的值均不大于（或不小于）其左，右孩子节点的值。由上述性质可知大顶堆的堆顶的关键字肯定是所有关键字中最大的，小顶堆的堆顶的关键字是所有关键字中最小的。因此我们可使用大顶堆进行升序排序, 使用小顶堆进行降序排序。</p>
+<h3 id="1、基本思想"><a href="#1、基本思想" class="headerlink" title="1、基本思想"></a>1、基本思想</h3><p>此处以大顶堆为例，堆排序的过程就是将待排序的序列构造成一个堆，选出堆中最大的移走，再把剩余的元素调整成堆，找出最大的再移走，重复直至有序。</p>
+<h3 id="2、算法描述"><a href="#2、算法描述" class="headerlink" title="2、算法描述"></a>2、算法描述</h3><p>①. 先将初始序列<code>K[1..n]</code>建成一个大顶堆, 那么此时第一个元素<code>K1</code>最大, 此堆为初始的无序区.<br>②. 再将关键字最大的记录<code>K1</code> (即堆顶, 第一个元素)和无序区的最后一个记录 <code>Kn</code> 交换, 由此得到新的无序区<code>K[1..n−1]</code>和有序区<code>K[n]</code>, 且满足<code>K[1..n−1].keys⩽K[n].key</code><br>③. 交换<code>K1</code> 和 <code>Kn</code> 后, 堆顶可能违反堆性质, 因此需将<code>K[1..n−1]</code>调整为堆. 然后重复步骤②, 直到无序区只有一个元素时停止.</p>
+<h3 id="3、代码实现"><a href="#3、代码实现" class="headerlink" title="3、代码实现"></a>3、代码实现</h3><p>从算法描述来看，堆排序需要两个过程，一是建立堆，二是堆顶与堆的最后一个元素交换位置。所以堆排序有两个函数组成。一是建堆函数，二是反复调用建堆函数以选择出剩余未排元素中最大的数来实现排序的函数。</p>
 <p>总结起来就是定义了以下几种操作：</p>
 <ul>
-<li>最大堆调整（ <code>Max_Heapify</code> ）：将堆的末端子节点作调整，使得子节点永远小于父节点</li>
-<li>创建最大堆（ <code>Build_Max_Heap</code> ）：将堆所有数据重新排序</li>
-<li>堆排序（ <code>HeapSort</code> ）：移除位在第一个数据的根节点，并做最大堆调整的递归运算</li>
+<li>最大堆调整（<code>Max_Heapify</code>）：将堆的末端子节点作调整，使得子节点永远小于父节点</li>
+<li>创建最大堆（<code>Build_Max_Heap</code>）：将堆所有数据重新排序</li>
+<li>堆排序（<code>HeapSort</code>）：移除位在第一个数据的根节点，并做最大堆调整的递归运算</li>
 </ul>
 <p>对于堆节点的访问：</p>
 <ul>
-<li>父节点 i 的左子节点在位置： <code>(2*i+1);</code></li>
-<li>父节点 i 的右子节点在位置： <code>(2*i+2);</code></li>
-<li>子节点 i 的父节点在位置： <code>floor((i-1)/2);</code></li>
+<li>父节点i的左子节点在位置：<code>(2*i+1);</code></li>
+<li>父节点i的右子节点在位置：<code>(2*i+2);</code></li>
+<li>子节点i的父节点在位置：<code>floor((i-1)/2);</code></li>
 </ul>
 <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">heapSort</span><span class="params">(<span class="keyword">int</span>[] arr)</span></span>&#123;</span><br><span class="line">    <span class="keyword">for</span>(<span class="keyword">int</span> i = arr.length; i &gt; <span class="number">0</span>; i--)&#123;</span><br><span class="line">        max_heapify(arr, i);</span><br><span class="line"></span><br><span class="line">        <span class="keyword">int</span> temp = arr[<span class="number">0</span>];      <span class="comment">//堆顶元素(第一个元素)与Kn交换</span></span><br><span class="line">        arr[<span class="number">0</span>] = arr[i-<span class="number">1</span>];</span><br><span class="line">        arr[i-<span class="number">1</span>] = temp;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">private</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">max_heapify</span><span class="params">(<span class="keyword">int</span>[] arr, <span class="keyword">int</span> limit)</span></span>&#123;</span><br><span class="line">    <span class="keyword">if</span>(arr.length &lt;= <span class="number">0</span> || arr.length &lt; limit) <span class="keyword">return</span>;</span><br><span class="line">    <span class="keyword">int</span> parentIdx = limit / <span class="number">2</span>;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">for</span>(; parentIdx &gt;= <span class="number">0</span>; parentIdx--)&#123;</span><br><span class="line">        <span class="keyword">if</span>(parentIdx * <span class="number">2</span> &gt;= limit)&#123;</span><br><span class="line">            <span class="keyword">continue</span>;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">int</span> left = parentIdx * <span class="number">2</span>;       <span class="comment">//左子节点位置</span></span><br><span class="line">        <span class="keyword">int</span> right = (left + <span class="number">1</span>) &gt;= limit ? left : (left + <span class="number">1</span>);    <span class="comment">//右子节点位置，如果没有右节点，默认为左节点位置</span></span><br><span class="line"></span><br><span class="line">        <span class="keyword">int</span> maxChildId = arr[left] &gt;= arr[right] ? left : right;</span><br><span class="line">        <span class="keyword">if</span>(arr[maxChildId] &gt; arr[parentIdx])&#123;   <span class="comment">//交换父节点与左右子节点中的最大值</span></span><br><span class="line">            <span class="keyword">int</span> temp = arr[parentIdx];</span><br><span class="line">            arr[parentIdx] = arr[maxChildId];</span><br><span class="line">            arr[maxChildId] = temp;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    System.out.println(<span class="string">&quot;Max_Heapify: &quot;</span> + Arrays.toString(arr));</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p>Tips: 由于堆排序中初始化堆的过程比较次数较多，因此它不太适用于小序列。同时由于多次任意下标相互交换位置，相同元素之间原本相对的顺序被破坏了，因此，它是不稳定的排序.</p>
+
+<p>Tips: 由于堆排序中初始化堆的过程比较次数较多, 因此它不太适用于小序列. 同时由于多次任意下标相互交换位置, 相同元素之间原本相对的顺序被破坏了, 因此, 它是不稳定的排序.</p>
 <p><span class="exturl" data-url="aHR0cHM6Ly9pdGltZXRyYXZlbGVyLmdpdGh1Yi5pby8yMDE3LzA3LzE4LyVFNSU4NSVBQiVFNSVBNCVBNyVFNiU4RSU5MiVFNSVCQSU4RiVFNyVBRSU5NyVFNiVCMyU5NSVFNiU4MCVCQiVFNyVCQiU5MyVFNCVCOCU4RWphdmElRTUlQUUlOUUlRTclOEUlQjAv">链接</span></p>
 
       <div class="tags">
@@ -259,7 +254,7 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
     <div class="item left">
       
 
-  <a href="/posts/43d00a99/" itemprop="url" rel="prev" data-background-image="https:&#x2F;&#x2F;tva3.sinaimg.cn&#x2F;mw690&#x2F;6833939bly1giclxxcb6rj20zk0m8b29.jpg" title="选择排序">
+  <a href="/posts/43d00a99/" itemprop="url" rel="prev" data-background-image="https:&#x2F;&#x2F;tva3.sinaimg.cn&#x2F;mw690&#x2F;6833939bly1giclhfehz7j20zk0m8u0x.jpg" title="选择排序">
   <span class="type">Previous Post</span>
   <span class="category"><i class="ic i-flag"></i> 算法</span>
   <h3>选择排序</h3>
@@ -269,7 +264,7 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
     <div class="item right">
       
 
-  <a href="/posts/14e6f1eb/" itemprop="url" rel="next" data-background-image="https:&#x2F;&#x2F;tva3.sinaimg.cn&#x2F;mw690&#x2F;6833939bly1giciusoyjnj219g0u0x56.jpg" title="冒泡排序">
+  <a href="/posts/14e6f1eb/" itemprop="url" rel="next" data-background-image="https:&#x2F;&#x2F;tva3.sinaimg.cn&#x2F;mw690&#x2F;6833939bly1gipex2cdtbj20zk0m8x6p.jpg" title="冒泡排序">
   <span class="type">Next Post</span>
   <span class="category"><i class="ic i-flag"></i> 算法</span>
   <h3>冒泡排序</h3>
@@ -291,7 +286,7 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
   <div class="panels">
     <div class="inner">
       <div class="contents panel pjax" data-title="Contents">
-          <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%A0%86%E6%8E%92%E5%BA%8F%E4%B8%8D%E7%A8%B3%E5%AE%9A"><span class="toc-number">1.</span> <span class="toc-text"> 堆排序（不稳定）</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-%E5%9F%BA%E6%9C%AC%E6%80%9D%E6%83%B3"><span class="toc-number">1.1.</span> <span class="toc-text"> 1、基本思想</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-%E7%AE%97%E6%B3%95%E6%8F%8F%E8%BF%B0"><span class="toc-number">1.2.</span> <span class="toc-text"> 2、算法描述</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-%E4%BB%A3%E7%A0%81%E5%AE%9E%E7%8E%B0"><span class="toc-number">1.3.</span> <span class="toc-text"> 3、代码实现</span></a></li></ol></li></ol>
+          <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%A0%86%E6%8E%92%E5%BA%8F%EF%BC%88%E4%B8%8D%E7%A8%B3%E5%AE%9A%EF%BC%89"><span class="toc-number">1.</span> <span class="toc-text">堆排序（不稳定）</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1%E3%80%81%E5%9F%BA%E6%9C%AC%E6%80%9D%E6%83%B3"><span class="toc-number">1.1.</span> <span class="toc-text">1、基本思想</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2%E3%80%81%E7%AE%97%E6%B3%95%E6%8F%8F%E8%BF%B0"><span class="toc-number">1.2.</span> <span class="toc-text">2、算法描述</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3%E3%80%81%E4%BB%A3%E7%A0%81%E5%AE%9E%E7%8E%B0"><span class="toc-number">1.3.</span> <span class="toc-text">3、代码实现</span></a></li></ol></li></ol>
       </div>
       <div class="related panel pjax" data-title="Related">
         <ul>
@@ -309,7 +304,7 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
 <nav class="state">
     <div class="item posts">
       <a href="/archives/">
-        <span class="count">139</span>
+        <span class="count">142</span>
         <span class="name">posts</span>
       </a>
     </div>
@@ -321,7 +316,7 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
     </div>
     <div class="item tags">
       <a href="/tags/">
-        <span class="count">108</span>
+        <span class="count">109</span>
         <span class="name">tags</span>
       </a>
     </div>
@@ -400,14 +395,42 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
   <li class="item">
     
 <div class="breadcrumb">
-<a href="/categories/%E5%89%8D%E7%AB%AF/" title="In 前端">前端</a>
-<i class="ic i-angle-right"></i>
-<a href="/categories/%E5%89%8D%E7%AB%AF/JavaScript/" title="In JavaScript">JavaScript</a>
-<i class="ic i-angle-right"></i>
-<a href="/categories/%E5%89%8D%E7%AB%AF/JavaScript/Html/" title="In Html">Html</a>
+<a href="/categories/SAP/" title="In SAP">SAP</a>
 </div>
 
-    <span><a href="/posts/7b604068/" title="Html页面插入地图">Html页面插入地图</a></span>
+    <span><a href="/posts/4187faeb/" title="English self_introduction">English self_introduction</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/%E5%89%8D%E7%AB%AF/" title="In 前端">前端</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/%E5%89%8D%E7%AB%AF/Vue/" title="In Vue">Vue</a>
+</div>
+
+    <span><a href="/posts/8408ed11/" title="Vue-Cli介绍以及使用">Vue-Cli介绍以及使用</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/cheatsheet/" title="In cheatsheet">cheatsheet</a>
+</div>
+
+    <span><a href="/posts/1b392612/" title="速查表">速查表</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/%E5%89%8D%E7%AB%AF/" title="In 前端">前端</a>
+</div>
+
+    <span><a href="/posts/3eca6246/" title="使用npm时报python错误的解决方案">使用npm时报python错误的解决方案</a></span>
   </li>
 
       
@@ -415,35 +438,19 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
     
 <div class="breadcrumb">
 <a href="/categories/Java%E9%9D%A2%E8%AF%95/" title="In Java面试">Java面试</a>
-<i class="ic i-angle-right"></i>
-<a href="/categories/Java%E9%9D%A2%E8%AF%95/Spring/" title="In Spring">Spring</a>
 </div>
 
-    <span><a href="/posts/89080a8e/" title="Spring Bean的生命周期">Spring Bean的生命周期</a></span>
+    <span><a href="/posts/feb84842/" title="Java面试必问--ArrayList的底层">Java面试必问--ArrayList的底层</a></span>
   </li>
 
       
   <li class="item">
     
 <div class="breadcrumb">
-<a href="/categories/Java/" title="In Java">Java</a>
-<i class="ic i-angle-right"></i>
-<a href="/categories/Java/Java%E9%9D%A2%E8%AF%95/" title="In Java面试">Java面试</a>
-<i class="ic i-angle-right"></i>
-<a href="/categories/Java/Java%E9%9D%A2%E8%AF%95/SpringBoot/" title="In SpringBoot">SpringBoot</a>
+<a href="/categories/SAP/" title="In SAP">SAP</a>
 </div>
 
-    <span><a href="/posts/5e7baeeb/" title="过滤器和拦截器的区别">过滤器和拦截器的区别</a></span>
-  </li>
-
-      
-  <li class="item">
-    
-<div class="breadcrumb">
-<a href="/categories/%E5%9F%BA%E5%9B%A0%E7%BC%96%E8%BE%91/" title="In 基因编辑">基因编辑</a>
-</div>
-
-    <span><a href="/posts/b7653deb/" title="什么是CRISPR&#x2F;Cas9">什么是CRISPR/Cas9</a></span>
+    <span><a href="/posts/ef55dc85/" title="CEST与北京时间转换表">CEST与北京时间转换表</a></span>
   </li>
 
       
@@ -460,10 +467,21 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
   <li class="item">
     
 <div class="breadcrumb">
-<a href="/categories/Tools/" title="In Tools">Tools</a>
 </div>
 
-    <span><a href="/posts/ba83fda/" title="超级好用的StringJoiner">超级好用的StringJoiner</a></span>
+    <span><a href="/posts/66edb7d2/" title="关于hexo使用shoka主题注意点">关于hexo使用shoka主题注意点</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/%E5%89%8D%E7%AB%AF/" title="In 前端">前端</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/%E5%89%8D%E7%AB%AF/JavaScript/" title="In JavaScript">JavaScript</a>
+</div>
+
+    <span><a href="/posts/4aa00b9a/" title="Js中的some、find、findindex、includes、filter的使用">Js中的some、find、findindex、includes、filter的使用</a></span>
   </li>
 
       
@@ -474,38 +492,6 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
 </div>
 
     <span><a href="/posts/67f40b37/" title="Spring Boot 获取服务IP地址和端口号">Spring Boot 获取服务IP地址和端口号</a></span>
-  </li>
-
-      
-  <li class="item">
-    
-<div class="breadcrumb">
-<a href="/categories/Java%E9%9D%A2%E8%AF%95/" title="In Java面试">Java面试</a>
-<i class="ic i-angle-right"></i>
-<a href="/categories/Java%E9%9D%A2%E8%AF%95/Jvm/" title="In Jvm">Jvm</a>
-</div>
-
-    <span><a href="/posts/57681474/" title="JVM简单原理">JVM简单原理</a></span>
-  </li>
-
-      
-  <li class="item">
-    
-<div class="breadcrumb">
-<a href="/categories/Java/" title="In Java">Java</a>
-</div>
-
-    <span><a href="/posts/fc16798c/" title="Java8遍历Map的三种方式">Java8遍历Map的三种方式</a></span>
-  </li>
-
-      
-  <li class="item">
-    
-<div class="breadcrumb">
-<a href="/categories/Mybtais/" title="In Mybtais">Mybtais</a>
-</div>
-
-    <span><a href="/posts/9aff665a/" title="mybatis中大于等于小于等于的写法">mybatis中大于等于小于等于的写法</a></span>
   </li>
 
   </ul>
@@ -530,13 +516,13 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
     <span class="post-meta-item-icon">
       <i class="ic i-chart-area"></i>
     </span>
-    <span title="Symbols count total">616k words</span>
+    <span title="Symbols count total">620k words</span>
 
     <span class="post-meta-divider">|</span>
     <span class="post-meta-item-icon">
       <i class="ic i-coffee"></i>
     </span>
-    <span title="Reading time total">9:20</span>
+    <span title="Reading time total">9:24</span>
   </div>
 </div>
 
