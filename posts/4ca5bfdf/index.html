@@ -117,12 +117,12 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
       </div>
       <div id="imgs" class="pjax">
         <ul>
-          <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1giciszlczyj20zk0m816d.jpg"></li>
-          <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1gipeun65urj20zk0m81ii.jpg"></li>
-          <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1gipey0a334j20zk0m8qpt.jpg"></li>
-          <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1giclip4jbpj20zk0m87cv.jpg"></li>
-          <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1giciryrr3rj20zk0m8nhk.jpg"></li>
-          <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1gipetlbztpj20zk0m84qp.jpg"></li>
+          <li class="item" data-background-image="https://tva2.sinaimg.cn/large/6833939bly1gipeyvx1d4j20zk0m8hdt.jpg"></li>
+          <li class="item" data-background-image="https://tva2.sinaimg.cn/large/6833939bly1giciuja1j1j20zk0m8kjl.jpg"></li>
+          <li class="item" data-background-image="https://tva2.sinaimg.cn/large/6833939bly1giclx6phq6j20zk0m8e36.jpg"></li>
+          <li class="item" data-background-image="https://tva2.sinaimg.cn/large/6833939bly1gicmnywqgpj20zk0m8dwx.jpg"></li>
+          <li class="item" data-background-image="https://tva2.sinaimg.cn/large/6833939bly1giclhtuo6nj20zk0m8ttm.jpg"></li>
+          <li class="item" data-background-image="https://tva2.sinaimg.cn/large/6833939bly1giclxfdlttj20zk0m8npd.jpg"></li>
         </ul>
       </div>
     </header>
@@ -168,22 +168,29 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
   <div class="body md" itemprop="articleBody">
     
 
-    <p>转载<span class="exturl" data-url="aHR0cHM6Ly93d3cuY25ibG9ncy5jb20vbXlpdG5ld3MvcC8xMzM3MDg5OS5odG1s">https://www.cnblogs.com/myitnews/p/13370899.html</span></p>
+    <p>转载<span class="exturl" data-url="aHR0cHM6Ly93d3cuY25ibG9ncy5jb20vbXlpdG5ld3MvcC8xMzM3MDg5OS5odG1s"> https://www.cnblogs.com/myitnews/p/13370899.html</span></p>
 <p>这边是讲解如何手动回滚事务</p>
 <span id="more"></span>
-<h1 id="一、手动回滚事务"><a href="#一、手动回滚事务" class="headerlink" title="一、手动回滚事务"></a>一、手动回滚事务</h1><p>有时我们需要捕获一些错误信息，又需要进行事务回滚，这时我们就需要用到<code>Spring</code>提供的事务切面支持类<code>TransactionAspectSupport</code>。</p>
+<h1 id="一-手动回滚事务"><a class="markdownIt-Anchor" href="#一-手动回滚事务">#</a> 一、手动回滚事务</h1>
+<p>有时我们需要捕获一些错误信息，又需要进行事务回滚，这时我们就需要用到 <code>Spring</code>  提供的事务切面支持类 <code>TransactionAspectSupport</code> 。</p>
 <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">@Transactional(rollbackFor = Exception.class)</span></span><br><span class="line"><span class="meta">@Override</span></span><br><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">saveEntity</span><span class="params">()</span> <span class="keyword">throws</span> Exception</span>&#123;</span><br><span class="line">    <span class="keyword">try</span> &#123;</span><br><span class="line">        userDao.saveUser();</span><br><span class="line">        studentDao.saveStudent();</span><br><span class="line">    &#125;<span class="keyword">catch</span> (Exception e)&#123;</span><br><span class="line">        System.out.println(<span class="string">&quot;异常了=====&quot;</span> + e);</span><br><span class="line">        <span class="comment">//手动强制回滚事务，这里一定要第一时间处理</span></span><br><span class="line">        TransactionAspectSupport.currentTransactionStatus().setRollbackOnly();</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p>手动回滚事务一定要加上<code>@Transactional</code>，不然会报以下错误：</p>
+<p>手动回滚事务一定要加上 <code>@Transactional</code> ，不然会报以下错误：</p>
 <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">org.springframework.transaction.NoTransactionException: No transaction aspect-managed TransactionStatus in scope</span><br></pre></td></tr></table></figure>
-<p>想想也是，不开启事务，何来手动回滚，所以<code>@Transactional</code>必不可少。</p>
-<h1 id="二、回滚部分异常"><a href="#二、回滚部分异常" class="headerlink" title="二、回滚部分异常"></a>二、回滚部分异常</h1><p>使用<code>Object savePoint = TransactionAspectSupport.currentTransactionStatus().createSavepoint()</code>; 设置回滚点。<br>使用<code>TransactionAspectSupport.currentTransactionStatus().rollbackToSavepoint(savePoint)</code>; 回滚到<code>savePoint</code>。</p>
+<p>想想也是，不开启事务，何来手动回滚，所以 <code>@Transactional</code>  必不可少。</p>
+<h1 id="二-回滚部分异常"><a class="markdownIt-Anchor" href="#二-回滚部分异常">#</a> 二、回滚部分异常</h1>
+<p>使用 <code>Object savePoint = TransactionAspectSupport.currentTransactionStatus().createSavepoint()</code> ; 设置回滚点。<br>
+使用 <code>TransactionAspectSupport.currentTransactionStatus().rollbackToSavepoint(savePoint)</code> ; 回滚到 <code>savePoint</code> 。</p>
 <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">@Transactional(rollbackFor = Exception.class)</span></span><br><span class="line"><span class="meta">@Override</span></span><br><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">saveEntity</span><span class="params">()</span> <span class="keyword">throws</span> Exception</span>&#123;</span><br><span class="line">    Object savePoint = <span class="keyword">null</span>;</span><br><span class="line">    <span class="keyword">try</span> &#123;</span><br><span class="line">        userDao.saveUser();</span><br><span class="line">        <span class="comment">//设置回滚点</span></span><br><span class="line">        savePoint = TransactionAspectSupport.currentTransactionStatus().createSavepoint();</span><br><span class="line">        studentDao.saveStudent(); <span class="comment">//执行成功</span></span><br><span class="line">        <span class="keyword">int</span> a = <span class="number">10</span>/<span class="number">0</span>; <span class="comment">//这里因为除数0会报异常,进入catch块</span></span><br><span class="line">    &#125;<span class="keyword">catch</span> (Exception e)&#123;</span><br><span class="line">        System.out.println(<span class="string">&quot;异常了=====&quot;</span> + e);</span><br><span class="line">        <span class="comment">//手工回滚异常</span></span><br><span class="line">        TransactionAspectSupport.currentTransactionStatus().rollbackToSavepoint(savePoint);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<h1 id="三、DataSourceTransactionManager"><a href="#三、DataSourceTransactionManager" class="headerlink" title="三、DataSourceTransactionManager"></a>三、<code>DataSourceTransactionManager</code></h1><p><code>spring</code> 开启事务以及手动提交事务，可以在服务类上加上两个注解。</p>
+<h1 id="三-datasourcetransactionmanager"><a class="markdownIt-Anchor" href="#三-datasourcetransactionmanager">#</a> 三、 <code>DataSourceTransactionManager</code></h1>
+<p><code>spring</code>  开启事务以及手动提交事务，可以在服务类上加上两个注解。</p>
 <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">@Autowired</span></span><br><span class="line">DataSourceTransactionManager dataSourceTransactionManager;</span><br><span class="line"><span class="meta">@Autowired</span></span><br><span class="line">TransactionDefinition transactionDefinition;</span><br></pre></td></tr></table></figure>
 <ul>
-<li>手动开启事务<br>  <code>TransactionStatus transactionStatus = dataSourceTransactionManager.getTransaction(transactionDefinition);</code></li>
-<li>手动提交事务<br>  <code>dataSourceTransactionManager.commit(transactionStatus);//提交</code></li>
-<li>手动回滚事务<br>  <code>dataSourceTransactionManager.rollback(transactionStatus);</code>//最好是放在<code>catch</code> 里面,防止程序异常而事务一直卡在哪里未提交</li>
+<li>手动开启事务<br>
+ <code>TransactionStatus transactionStatus = dataSourceTransactionManager.getTransaction(transactionDefinition);</code></li>
+<li>手动提交事务<br>
+ <code>dataSourceTransactionManager.commit(transactionStatus);//提交</code></li>
+<li>手动回滚事务<br>
+ <code>dataSourceTransactionManager.rollback(transactionStatus);</code> // 最好是放在 <code>catch</code>  里面，防止程序异常而事务一直卡在哪里未提交</li>
 </ul>
 
       <div class="tags">
@@ -241,7 +248,7 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
     <div class="item left">
       
 
-  <a href="/posts/1c3390ab/" itemprop="url" rel="prev" data-background-image="https:&#x2F;&#x2F;tva3.sinaimg.cn&#x2F;mw690&#x2F;6833939bly1gipexbei4hj20zk0m8npd.jpg" title="将Java数据输出为本地txt">
+  <a href="/posts/1c3390ab/" itemprop="url" rel="prev" data-background-image="https:&#x2F;&#x2F;tva2.sinaimg.cn&#x2F;mw690&#x2F;6833939bly1gicitzannuj20zk0m8b29.jpg" title="将Java数据输出为本地txt">
   <span class="type">Previous Post</span>
   <span class="category"><i class="ic i-flag"></i> Java</span>
   <h3>将Java数据输出为本地txt</h3>
@@ -251,7 +258,7 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
     <div class="item right">
       
 
-  <a href="/posts/e694a882/" itemprop="url" rel="next" data-background-image="https:&#x2F;&#x2F;tva3.sinaimg.cn&#x2F;mw690&#x2F;6833939bly1giph47e9vtj20zk0m8x6l.jpg" title="Windows下如何查看某个端口被谁占用">
+  <a href="/posts/e694a882/" itemprop="url" rel="next" data-background-image="https:&#x2F;&#x2F;tva2.sinaimg.cn&#x2F;mw690&#x2F;6833939bly1gipetfk5zwj20zk0m8e81.jpg" title="Windows下如何查看某个端口被谁占用">
   <span class="type">Next Post</span>
   <span class="category"><i class="ic i-flag"></i> </span>
   <h3>Windows下如何查看某个端口被谁占用</h3>
@@ -273,11 +280,11 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
   <div class="panels">
     <div class="inner">
       <div class="contents panel pjax" data-title="Contents">
-          <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E4%B8%80%E3%80%81%E6%89%8B%E5%8A%A8%E5%9B%9E%E6%BB%9A%E4%BA%8B%E5%8A%A1"><span class="toc-number">1.</span> <span class="toc-text">一、手动回滚事务</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E4%BA%8C%E3%80%81%E5%9B%9E%E6%BB%9A%E9%83%A8%E5%88%86%E5%BC%82%E5%B8%B8"><span class="toc-number">2.</span> <span class="toc-text">二、回滚部分异常</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E4%B8%89%E3%80%81DataSourceTransactionManager"><span class="toc-number">3.</span> <span class="toc-text">三、DataSourceTransactionManager</span></a></li></ol>
+          <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E4%B8%80-%E6%89%8B%E5%8A%A8%E5%9B%9E%E6%BB%9A%E4%BA%8B%E5%8A%A1"><span class="toc-number">1.</span> <span class="toc-text"> 一、手动回滚事务</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E4%BA%8C-%E5%9B%9E%E6%BB%9A%E9%83%A8%E5%88%86%E5%BC%82%E5%B8%B8"><span class="toc-number">2.</span> <span class="toc-text"> 二、回滚部分异常</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E4%B8%89-datasourcetransactionmanager"><span class="toc-number">3.</span> <span class="toc-text"> 三、 DataSourceTransactionManager</span></a></li></ol>
       </div>
       <div class="related panel pjax" data-title="Related">
         <ul>
-          <li><a href="/posts/7a29d22a/" rel="bookmark" title="Java关于时间的轮子">Java关于时间的轮子</a></li><li><a href="/posts/60a1e80e/" rel="bookmark" title="java判断日期周几">java判断日期周几</a></li><li><a href="/posts/13370746/" rel="bookmark" title="使用EasyExcel读取excel文件为Java实体类">使用EasyExcel读取excel文件为Java实体类</a></li><li><a href="/posts/97604c34/" rel="bookmark" title="获取指定集合要求中的mapkey值并重新返回map">获取指定集合要求中的mapkey值并重新返回map</a></li><li><a href="/posts/fc16798c/" rel="bookmark" title="Java8遍历Map的三种方式">Java8遍历Map的三种方式</a></li><li><a href="/posts/49b96938/" rel="bookmark" title="Java获取一天时间的起始">Java获取一天时间的起始</a></li><li><a href="/posts/1c3390ab/" rel="bookmark" title="将Java数据输出为本地txt">将Java数据输出为本地txt</a></li><li class="active"><a href="/posts/4ca5bfdf/" rel="bookmark" title="Spring手动回滚事务">Spring手动回滚事务</a></li><li><a href="/posts/1748805d/" rel="bookmark" title="java线程池与五种常用线程池策略使用与解析">java线程池与五种常用线程池策略使用与解析</a></li><li><a href="/posts/817eab42/" rel="bookmark" title="java中产生指定范围内的随机数">java中产生指定范围内的随机数</a></li><li><a href="/posts/69c17d37/" rel="bookmark" title="关于事务提交中踩坑">关于事务提交中踩坑</a></li><li><a href="/posts/b536fa7f/" rel="bookmark" title="关于junit测试类防止事务回滚">关于junit测试类防止事务回滚</a></li><li><a href="/posts/1da18d70/" rel="bookmark" title="Java8内置四大函数式接口">Java8内置四大函数式接口</a></li><li><a href="/posts/405fde88/" rel="bookmark" title="关于Exception的处理细节">关于Exception的处理细节</a></li><li><a href="/posts/91c18f7c/" rel="bookmark" title="关于Try-With-Source的使用以及注意点">关于Try-With-Source的使用以及注意点</a></li><li><a href="/posts/e18abc1d/" rel="bookmark" title="关于YAML中List存放Map">关于YAML中List存放Map</a></li><li><a href="/posts/c3733521/" rel="bookmark" title="Java之assert关键字">Java之assert关键字</a></li><li><a href="/posts/9dcbb5fa/" rel="bookmark" title="Corn表达式">Corn表达式</a></li><li><a href="/posts/96eb888f/" rel="bookmark" title="Java学习线路图">Java学习线路图</a></li><li><a href="/posts/b246d3ce/" rel="bookmark" title="Java自带的好用的工具类">Java自带的好用的工具类</a></li><li><a href="/posts/105c245f/" rel="bookmark" title="Mybatis使用Sql进行模糊查询">Mybatis使用Sql进行模糊查询</a></li><li><a href="/posts/31dc52e1/" rel="bookmark" title="MyBatis之分页查询：MyBatis PageHelper">MyBatis之分页查询：MyBatis PageHelper</a></li><li><a href="/posts/2edf7887/" rel="bookmark" title="MybatisPlus实现分页查询">MybatisPlus实现分页查询</a></li><li><a href="/posts/c112412d/" rel="bookmark" title="Mybatis封装成Map结果">Mybatis封装成Map结果</a></li><li><a href="/posts/a3dfcd98/" rel="bookmark" title="SpringBoot中常见的几种解决跨域的方式">SpringBoot中常见的几种解决跨域的方式</a></li><li><a href="/posts/8b8fedea/" rel="bookmark" title="Stream流的介绍">Stream流的介绍</a></li><li><a href="/posts/b1231c9f/" rel="bookmark" title="java stream中Collectors的用法">java stream中Collectors的用法</a></li><li><a href="/posts/12fecb94/" rel="bookmark" title="多线程笔记">多线程笔记</a></li><li><a href="/posts/5e7baeeb/" rel="bookmark" title="过滤器和拦截器的区别">过滤器和拦截器的区别</a></li><li><a href="/posts/59de1824/" rel="bookmark" title="spring中/和/*和/**的区别">spring中/和/*和/**的区别</a></li><li><a href="/posts/166a1445/" rel="bookmark" title="位，字节， 字符">位，字节， 字符</a></li><li><a href="/posts/b42f0c87/" rel="bookmark" title="Cache、Cookie、Session、Token">Cache、Cookie、Session、Token</a></li><li><a href="/posts/f23f1351/" rel="bookmark" title="equals与==区别">equals与==区别</a></li><li><a href="/posts/d6d1be75/" rel="bookmark" title="在Javadoc注释中引用方法">在Javadoc注释中引用方法</a></li><li><a href="/posts/bd76a990/" rel="bookmark" title="一图看懂Java中的PO,BO,VO,DTO,POJO,DAO,DO">一图看懂Java中的PO,BO,VO,DTO,POJO,DAO,DO</a></li>
+          <li><a href="/posts/7a29d22a/" rel="bookmark" title="Java关于时间的轮子">Java关于时间的轮子</a></li><li><a href="/posts/60a1e80e/" rel="bookmark" title="java判断日期周几">java判断日期周几</a></li><li><a href="/posts/13370746/" rel="bookmark" title="使用EasyExcel读取excel文件为Java实体类">使用EasyExcel读取excel文件为Java实体类</a></li><li><a href="/posts/97604c34/" rel="bookmark" title="获取指定集合要求中的mapkey值并重新返回map">获取指定集合要求中的mapkey值并重新返回map</a></li><li><a href="/posts/fc16798c/" rel="bookmark" title="Java8遍历Map的三种方式">Java8遍历Map的三种方式</a></li><li><a href="/posts/49b96938/" rel="bookmark" title="Java获取一天时间的起始">Java获取一天时间的起始</a></li><li><a href="/posts/1c3390ab/" rel="bookmark" title="将Java数据输出为本地txt">将Java数据输出为本地txt</a></li><li class="active"><a href="/posts/4ca5bfdf/" rel="bookmark" title="Spring手动回滚事务">Spring手动回滚事务</a></li><li><a href="/posts/1748805d/" rel="bookmark" title="java线程池与五种常用线程池策略使用与解析">java线程池与五种常用线程池策略使用与解析</a></li><li><a href="/posts/817eab42/" rel="bookmark" title="java中产生指定范围内的随机数">java中产生指定范围内的随机数</a></li><li><a href="/posts/69c17d37/" rel="bookmark" title="关于事务提交中踩坑">关于事务提交中踩坑</a></li><li><a href="/posts/b536fa7f/" rel="bookmark" title="关于junit测试类防止事务回滚">关于junit测试类防止事务回滚</a></li><li><a href="/posts/1da18d70/" rel="bookmark" title="Java8内置四大函数式接口">Java8内置四大函数式接口</a></li><li><a href="/posts/405fde88/" rel="bookmark" title="关于Exception的处理细节">关于Exception的处理细节</a></li><li><a href="/posts/91c18f7c/" rel="bookmark" title="关于Try-With-Source的使用以及注意点">关于Try-With-Source的使用以及注意点</a></li><li><a href="/posts/e18abc1d/" rel="bookmark" title="关于YAML中List存放Map">关于YAML中List存放Map</a></li><li><a href="/posts/c3733521/" rel="bookmark" title="Java之assert关键字">Java之assert关键字</a></li><li><a href="/posts/9dcbb5fa/" rel="bookmark" title="Corn表达式">Corn表达式</a></li><li><a href="/posts/96eb888f/" rel="bookmark" title="Java学习线路图">Java学习线路图</a></li><li><a href="/posts/b246d3ce/" rel="bookmark" title="Java自带的好用的工具类">Java自带的好用的工具类</a></li><li><a href="/posts/105c245f/" rel="bookmark" title="Mybatis使用Sql进行模糊查询">Mybatis使用Sql进行模糊查询</a></li><li><a href="/posts/31dc52e1/" rel="bookmark" title="MyBatis之分页查询：MyBatis PageHelper">MyBatis之分页查询：MyBatis PageHelper</a></li><li><a href="/posts/2edf7887/" rel="bookmark" title="MybatisPlus实现分页查询">MybatisPlus实现分页查询</a></li><li><a href="/posts/c112412d/" rel="bookmark" title="Mybatis封装成Map结果">Mybatis封装成Map结果</a></li><li><a href="/posts/a3dfcd98/" rel="bookmark" title="SpringBoot中常见的几种解决跨域的方式">SpringBoot中常见的几种解决跨域的方式</a></li><li><a href="/posts/8b8fedea/" rel="bookmark" title="Stream流的介绍">Stream流的介绍</a></li><li><a href="/posts/b1231c9f/" rel="bookmark" title="java stream中Collectors的用法">java stream中Collectors的用法</a></li><li><a href="/posts/12fecb94/" rel="bookmark" title="多线程笔记">多线程笔记</a></li><li><a href="/posts/5e7baeeb/" rel="bookmark" title="过滤器和拦截器的区别">过滤器和拦截器的区别</a></li><li><a href="/posts/59de1824/" rel="bookmark" title="spring中/和/*和/**的区别">spring中/和/*和/**的区别</a></li><li><a href="/posts/166a1445/" rel="bookmark" title="位，字节， 字符">位，字节， 字符</a></li><li><a href="/posts/b42f0c87/" rel="bookmark" title="Cache、Cookie、Session、Token">Cache、Cookie、Session、Token</a></li><li><a href="/posts/f23f1351/" rel="bookmark" title="equals与==区别">equals与==区别</a></li><li><a href="/posts/d6d1be75/" rel="bookmark" title="在Javadoc注释中引用方法">在Javadoc注释中引用方法</a></li><li><a href="/posts/bd76a990/" rel="bookmark" title="一图看懂Java中的PO,BO,VO,DTO,POJO,DAO,DO">一图看懂Java中的PO,BO,VO,DTO,POJO,DAO,DO</a></li><li><a href="/posts/a54ed4b0/" rel="bookmark" title="Java通过URL下载资源">Java通过URL下载资源</a></li>
         </ul>
       </div>
       <div class="overview panel" data-title="Overview">
@@ -291,13 +298,13 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
 <nav class="state">
     <div class="item posts">
       <a href="/archives/">
-        <span class="count">142</span>
+        <span class="count">143</span>
         <span class="name">posts</span>
       </a>
     </div>
     <div class="item categories">
       <a href="/categories/">
-        <span class="count">73</span>
+        <span class="count">74</span>
         <span class="name">categories</span>
       </a>
     </div>
@@ -382,22 +389,30 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
   <li class="item">
     
 <div class="breadcrumb">
-<a href="/categories/SAP/" title="In SAP">SAP</a>
 </div>
 
-    <span><a href="/posts/4187faeb/" title="English self_introduction">English self_introduction</a></span>
+    <span><a href="/posts/11faeb76/" title="Docker指令以及部署">Docker指令以及部署</a></span>
   </li>
 
       
   <li class="item">
     
 <div class="breadcrumb">
-<a href="/categories/VSCODE/" title="In VSCODE">VSCODE</a>
+<a href="/categories/%E5%89%8D%E7%AB%AF/" title="In 前端">前端</a>
 <i class="ic i-angle-right"></i>
-<a href="/categories/VSCODE/%E5%BF%AB%E6%8D%B7%E9%94%AE/" title="In 快捷键">快捷键</a>
+<a href="/categories/%E5%89%8D%E7%AB%AF/Vue/" title="In Vue">Vue</a>
 </div>
 
-    <span><a href="/posts/d199d651/" title="VsCode快捷键">VsCode快捷键</a></span>
+    <span><a href="/posts/e7e56598/" title="Vue属性介绍">Vue属性介绍</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+</div>
+
+    <span><a href="/posts/5a74c6a6/" title="宝儿的大腿小腿围">宝儿的大腿小腿围</a></span>
   </li>
 
       
@@ -407,23 +422,7 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
 <a href="/categories/Java/" title="In Java">Java</a>
 </div>
 
-    <span><a href="/posts/405fde88/" title="关于Exception的处理细节">关于Exception的处理细节</a></span>
-  </li>
-
-      
-  <li class="item">
-    
-<div class="breadcrumb">
-<a href="/categories/Java/" title="In Java">Java</a>
-<i class="ic i-angle-right"></i>
-<a href="/categories/Java/Mybatis/" title="In Mybatis">Mybatis</a>
-<i class="ic i-angle-right"></i>
-<a href="/categories/Java/Mybatis/SpringBoot/" title="In SpringBoot">SpringBoot</a>
-<i class="ic i-angle-right"></i>
-<a href="/categories/Java/Mybatis/SpringBoot/%E5%88%86%E9%A1%B5%E6%9F%A5%E8%AF%A2/" title="In 分页查询">分页查询</a>
-</div>
-
-    <span><a href="/posts/2edf7887/" title="MybatisPlus实现分页查询">MybatisPlus实现分页查询</a></span>
+    <span><a href="/posts/e18abc1d/" title="关于YAML中List存放Map">关于YAML中List存放Map</a></span>
   </li>
 
       
@@ -432,20 +431,10 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
 <div class="breadcrumb">
 <a href="/categories/Java%E9%9D%A2%E8%AF%95/" title="In Java面试">Java面试</a>
 <i class="ic i-angle-right"></i>
-<a href="/categories/Java%E9%9D%A2%E8%AF%95/Tools/" title="In Tools">Tools</a>
+<a href="/categories/Java%E9%9D%A2%E8%AF%95/SpringBoot/" title="In SpringBoot">SpringBoot</a>
 </div>
 
-    <span><a href="/posts/6714b4a9/" title="FastJson序列化使用">FastJson序列化使用</a></span>
-  </li>
-
-      
-  <li class="item">
-    
-<div class="breadcrumb">
-<a href="/categories/Hexo/" title="In Hexo">Hexo</a>
-</div>
-
-    <span><a href="/posts/5c2529f6/" title="Hexo中添加动态2d二次元人物模型">Hexo中添加动态2d二次元人物模型</a></span>
+    <span><a href="/posts/20ac1950/" title="SpringBoot文件上传下载">SpringBoot文件上传下载</a></span>
   </li>
 
       
@@ -454,12 +443,10 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
 <div class="breadcrumb">
 <a href="/categories/Java%E9%9D%A2%E8%AF%95/" title="In Java面试">Java面试</a>
 <i class="ic i-angle-right"></i>
-<a href="/categories/Java%E9%9D%A2%E8%AF%95/%E5%BF%AB%E9%80%9F%E6%8E%92%E5%BA%8F/" title="In 快速排序">快速排序</a>
-<i class="ic i-angle-right"></i>
-<a href="/categories/Java%E9%9D%A2%E8%AF%95/%E5%BF%AB%E9%80%9F%E6%8E%92%E5%BA%8F/%E7%AE%97%E6%B3%95/" title="In 算法">算法</a>
+<a href="/categories/Java%E9%9D%A2%E8%AF%95/Jvm/" title="In Jvm">Jvm</a>
 </div>
 
-    <span><a href="/posts/ff8068c0/" title="快速排序">快速排序</a></span>
+    <span><a href="/posts/57681474/" title="JVM简单原理">JVM简单原理</a></span>
   </li>
 
       
@@ -469,7 +456,27 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
 <a href="/categories/Jenkins/" title="In Jenkins">Jenkins</a>
 </div>
 
-    <span><a href="/posts/171f1b7f/" title="Jenkins&#x2F;CICD">Jenkins/CICD</a></span>
+    <span><a href="/posts/273d98ce/" title="The learning of Jenkins Grammer">The learning of Jenkins Grammer</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/IDEA/" title="In IDEA">IDEA</a>
+</div>
+
+    <span><a href="/posts/610bdf07/" title="IDEA快捷键">IDEA快捷键</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/Java/" title="In Java">Java</a>
+</div>
+
+    <span><a href="/posts/4ca5bfdf/" title="Spring手动回滚事务">Spring手动回滚事务</a></span>
   </li>
 
       
@@ -479,17 +486,7 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
 <a href="/categories/Java%E9%9D%A2%E8%AF%95/" title="In Java面试">Java面试</a>
 </div>
 
-    <span><a href="/posts/3eb5e557/" title="赛可出行面试">赛可出行面试</a></span>
-  </li>
-
-      
-  <li class="item">
-    
-<div class="breadcrumb">
-<a href="/categories/Hexo/" title="In Hexo">Hexo</a>
-</div>
-
-    <span><a href="/posts/575a6046/" title="Hexo-Next主题如何文章置顶">Hexo-Next主题如何文章置顶</a></span>
+    <span><a href="/posts/a5258aa2/" title="Java面试小册子">Java面试小册子</a></span>
   </li>
 
   </ul>
@@ -514,13 +511,13 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
     <span class="post-meta-item-icon">
       <i class="ic i-chart-area"></i>
     </span>
-    <span title="Symbols count total">620k words</span>
+    <span title="Symbols count total">622k words</span>
 
     <span class="post-meta-divider">|</span>
     <span class="post-meta-item-icon">
       <i class="ic i-coffee"></i>
     </span>
-    <span title="Reading time total">9:24</span>
+    <span title="Reading time total">9:25</span>
   </div>
 </div>
 

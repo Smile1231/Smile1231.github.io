@@ -117,12 +117,12 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
       </div>
       <div id="imgs" class="pjax">
         <ul>
-          <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1gipeu7txpzj20zk0m81kx.jpg"></li>
-          <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1giciszlczyj20zk0m816d.jpg"></li>
-          <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1gipetfk5zwj20zk0m8e81.jpg"></li>
-          <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1giclfb3vzhj20zk0m8wny.jpg"></li>
-          <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1gicitf0kl1j20zk0m87fe.jpg"></li>
-          <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1gipesng5oej20zk0m87d4.jpg"></li>
+          <li class="item" data-background-image="https://tva2.sinaimg.cn/large/6833939bly1gipeuv80yoj20zk0m8kjl.jpg"></li>
+          <li class="item" data-background-image="https://tva2.sinaimg.cn/large/6833939bly1giclfb3vzhj20zk0m8wny.jpg"></li>
+          <li class="item" data-background-image="https://tva2.sinaimg.cn/large/6833939bly1gicis081o9j20zk0m8dmr.jpg"></li>
+          <li class="item" data-background-image="https://tva2.sinaimg.cn/large/6833939bly1giclil3m4ej20zk0m8tn8.jpg"></li>
+          <li class="item" data-background-image="https://tva2.sinaimg.cn/large/6833939bly1giclg5ms2rj20zk0m8u0x.jpg"></li>
+          <li class="item" data-background-image="https://tva2.sinaimg.cn/large/6833939bly1giciryrr3rj20zk0m8nhk.jpg"></li>
         </ul>
       </div>
     </header>
@@ -166,21 +166,13 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
   <div class="body md" itemprop="articleBody">
     
 
-    <p><code>guava-retrying</code> 包有一个重试工具，这便是重试示例代码，同时，参考文章有 <span class="exturl" data-url="aHR0cHM6Ly9jbG91ZC50ZW5jZW50LmNvbS9kZXZlbG9wZXIvYXJ0aWNsZS8xNzUyMDg2">https://cloud.tencent.com/developer/article/1752086</span></p>
-<p>引入<code>maven</code>包</p>
+    <p><code>guava-retrying</code>  包有一个重试工具，这便是重试示例代码，同时，参考文章有 <span class="exturl" data-url="aHR0cHM6Ly9jbG91ZC50ZW5jZW50LmNvbS9kZXZlbG9wZXIvYXJ0aWNsZS8xNzUyMDg2">https://cloud.tencent.com/developer/article/1752086</span></p>
+<p>引入 <code>maven</code>  包</p>
 <figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">dependency</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">groupId</span>&gt;</span>com.github.rholder<span class="tag">&lt;/<span class="name">groupId</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>guava-retrying<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">version</span>&gt;</span>2.0.0<span class="tag">&lt;/<span class="name">version</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">dependency</span>&gt;</span></span><br></pre></td></tr></table></figure>
-
 <span id="more"></span>
-
 <p>封装为工具类</p>
 <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">RetryUtil</span> </span>&#123;</span><br><span class="line"><span class="function"><span class="keyword">private</span> <span class="title">RetryUtil</span><span class="params">()</span></span>&#123;&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span> Retryer&lt;Boolean&gt; retryer = RetryerBuilder.&lt;Boolean&gt;newBuilder()</span><br><span class="line">        <span class="comment">//重试条件</span></span><br><span class="line">        .retryIfResult(aBoolean -&gt; Objects.equals(aBoolean,<span class="keyword">false</span>))</span><br><span class="line">        <span class="comment">//等待策略，此处为120秒重试一次</span></span><br><span class="line">        .withWaitStrategy(WaitStrategies.fixedWait(<span class="number">150</span>, TimeUnit.SECONDS))</span><br><span class="line">        <span class="comment">//停止策略，此处只重试10次</span></span><br><span class="line">        .withStopStrategy(StopStrategies.stopAfterAttempt(<span class="number">10</span>))</span><br><span class="line">        .build();</span><br><span class="line">&#125;</span><br><span class="line">````</span><br><span class="line"></span><br><span class="line">测试</span><br><span class="line"></span><br><span class="line">```java</span><br><span class="line"><span class="meta">@Slf4j</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">TestUtils</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">    <span class="meta">@Test</span></span><br><span class="line">    <span class="function"><span class="keyword">void</span> <span class="title">context</span><span class="params">()</span> <span class="keyword">throws</span> ExecutionException, RetryException </span>&#123;</span><br><span class="line">        AtomicInteger j = <span class="keyword">new</span> AtomicInteger();</span><br><span class="line">        RetryUtil.retryer.call(() -&gt; &#123;</span><br><span class="line">            log.info(<span class="string">&quot;start &#123;&#125; calculate&quot;</span>,j.get());</span><br><span class="line">           <span class="keyword">int</span> i = j.get();</span><br><span class="line">           <span class="keyword">if</span> (i &lt; <span class="number">8</span>)&#123;</span><br><span class="line">               j.getAndIncrement();</span><br><span class="line">               <span class="keyword">return</span> <span class="keyword">false</span>;</span><br><span class="line">           &#125;</span><br><span class="line">           <span class="keyword">return</span> <span class="keyword">true</span>;</span><br><span class="line">        &#125;);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <img data-src="/posts/49a9ac1a/2022-07-05-23-14-13.png" class="">
-
-
-
-
-
-
 
       <div class="tags">
           <a href="/tags/SpringBoot/" rel="tag"><i class="ic i-tag"></i> SpringBoot</a>
@@ -235,7 +227,7 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
     <div class="item left">
       
 
-  <a href="/posts/f35c5140/" itemprop="url" rel="prev" data-background-image="https:&#x2F;&#x2F;tva3.sinaimg.cn&#x2F;mw690&#x2F;6833939bly1giclhpw3lwj20zk0m8gvw.jpg" title="JAVA-jar包运行及日志输出">
+  <a href="/posts/f35c5140/" itemprop="url" rel="prev" data-background-image="https:&#x2F;&#x2F;tva2.sinaimg.cn&#x2F;mw690&#x2F;6833939bly1giciszlczyj20zk0m816d.jpg" title="JAVA-jar包运行及日志输出">
   <span class="type">Previous Post</span>
   <span class="category"><i class="ic i-flag"></i> </span>
   <h3>JAVA-jar包运行及日志输出</h3>
@@ -245,7 +237,7 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
     <div class="item right">
       
 
-  <a href="/posts/7874a051/" itemprop="url" rel="next" data-background-image="https:&#x2F;&#x2F;tva3.sinaimg.cn&#x2F;mw690&#x2F;6833939bly1gicis3attqj20zk0m8k7l.jpg" title="Nginx踩坑之解决前后端跨域">
+  <a href="/posts/7874a051/" itemprop="url" rel="next" data-background-image="https:&#x2F;&#x2F;tva2.sinaimg.cn&#x2F;mw690&#x2F;6833939bly1gicm07ih54j20zk0m84qp.jpg" title="Nginx踩坑之解决前后端跨域">
   <span class="type">Next Post</span>
   <span class="category"><i class="ic i-flag"></i> </span>
   <h3>Nginx踩坑之解决前后端跨域</h3>
@@ -281,13 +273,13 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
 <nav class="state">
     <div class="item posts">
       <a href="/archives/">
-        <span class="count">142</span>
+        <span class="count">143</span>
         <span class="name">posts</span>
       </a>
     </div>
     <div class="item categories">
       <a href="/categories/">
-        <span class="count">73</span>
+        <span class="count">74</span>
         <span class="name">categories</span>
       </a>
     </div>
@@ -372,10 +364,20 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
   <li class="item">
     
 <div class="breadcrumb">
-<a href="/categories/Git/" title="In Git">Git</a>
+<a href="/categories/Java/" title="In Java">Java</a>
 </div>
 
-    <span><a href="/posts/424eebf1/" title="关于在IDEA中回滚Git版本">关于在IDEA中回滚Git版本</a></span>
+    <span><a href="/posts/bd76a990/" title="一图看懂Java中的PO,BO,VO,DTO,POJO,DAO,DO">一图看懂Java中的PO,BO,VO,DTO,POJO,DAO,DO</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/%E6%95%B0%E6%8D%AE%E5%BA%93/" title="In 数据库">数据库</a>
+</div>
+
+    <span><a href="/posts/60f024c8/" title="关于sql执行计划">关于sql执行计划</a></span>
   </li>
 
       
@@ -384,28 +386,47 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
 <div class="breadcrumb">
 </div>
 
-    <span><a href="/posts/159c6098/" title="阻塞队列">阻塞队列</a></span>
+    <span><a href="/posts/307637a3/" title="扫尾">扫尾</a></span>
   </li>
 
       
   <li class="item">
     
 <div class="breadcrumb">
+<a href="/categories/Java%E9%9D%A2%E8%AF%95/" title="In Java面试">Java面试</a>
 </div>
 
-    <span><a href="/posts/2dc35ee/" title="多线程分批处理方案">多线程分批处理方案</a></span>
+    <span><a href="/posts/feb84842/" title="Java面试必问--ArrayList的底层">Java面试必问--ArrayList的底层</a></span>
   </li>
 
       
   <li class="item">
     
 <div class="breadcrumb">
-<a href="/categories/VSCODE/" title="In VSCODE">VSCODE</a>
-<i class="ic i-angle-right"></i>
-<a href="/categories/VSCODE/%E5%BF%AB%E6%8D%B7%E9%94%AE/" title="In 快捷键">快捷键</a>
+<a href="/categories/Java%E9%9D%A2%E8%AF%95/" title="In Java面试">Java面试</a>
 </div>
 
-    <span><a href="/posts/d199d651/" title="VsCode快捷键">VsCode快捷键</a></span>
+    <span><a href="/posts/3eb5e557/" title="赛可出行面试">赛可出行面试</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/SAP/" title="In SAP">SAP</a>
+</div>
+
+    <span><a href="/posts/96b6e8a1/" title="simple self introduction">simple self introduction</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/SAP/" title="In SAP">SAP</a>
+</div>
+
+    <span><a href="/posts/ef55dc85/" title="CEST与北京时间转换表">CEST与北京时间转换表</a></span>
   </li>
 
       
@@ -424,44 +445,12 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
   <li class="item">
     
 <div class="breadcrumb">
-<a href="/categories/DDD/" title="In DDD">DDD</a>
-</div>
-
-    <span><a href="/posts/3fec5852/" title="DDD领域驱动设计">DDD领域驱动设计</a></span>
-  </li>
-
-      
-  <li class="item">
-    
-<div class="breadcrumb">
-<a href="/categories/Mybtais/" title="In Mybtais">Mybtais</a>
-</div>
-
-    <span><a href="/posts/9aff665a/" title="mybatis中大于等于小于等于的写法">mybatis中大于等于小于等于的写法</a></span>
-  </li>
-
-      
-  <li class="item">
-    
-<div class="breadcrumb">
-<a href="/categories/Jenkins/" title="In Jenkins">Jenkins</a>
-</div>
-
-    <span><a href="/posts/171f1b7f/" title="Jenkins&#x2F;CICD">Jenkins/CICD</a></span>
-  </li>
-
-      
-  <li class="item">
-    
-<div class="breadcrumb">
 <a href="/categories/%E5%89%8D%E7%AB%AF/" title="In 前端">前端</a>
 <i class="ic i-angle-right"></i>
-<a href="/categories/%E5%89%8D%E7%AB%AF/TypeScript/" title="In TypeScript">TypeScript</a>
-<i class="ic i-angle-right"></i>
-<a href="/categories/%E5%89%8D%E7%AB%AF/TypeScript/WebPack/" title="In WebPack">WebPack</a>
+<a href="/categories/%E5%89%8D%E7%AB%AF/Vue/" title="In Vue">Vue</a>
 </div>
 
-    <span><a href="/posts/ddb0d187/" title="TS配置Webpack">TS配置Webpack</a></span>
+    <span><a href="/posts/e7e56598/" title="Vue属性介绍">Vue属性介绍</a></span>
   </li>
 
       
@@ -470,10 +459,10 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
 <div class="breadcrumb">
 <a href="/categories/Java%E9%9D%A2%E8%AF%95/" title="In Java面试">Java面试</a>
 <i class="ic i-angle-right"></i>
-<a href="/categories/Java%E9%9D%A2%E8%AF%95/Spring%E4%BA%8B%E5%8A%A1/" title="In Spring事务">Spring事务</a>
+<a href="/categories/Java%E9%9D%A2%E8%AF%95/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/" title="In 操作系统">操作系统</a>
 </div>
 
-    <span><a href="/posts/7e4601e3/" title="面试之旅之关于Spring事务处理">面试之旅之关于Spring事务处理</a></span>
+    <span><a href="/posts/c7cf6e41/" title="面试之旅关于计算机网络">面试之旅关于计算机网络</a></span>
   </li>
 
   </ul>
@@ -498,13 +487,13 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
     <span class="post-meta-item-icon">
       <i class="ic i-chart-area"></i>
     </span>
-    <span title="Symbols count total">620k words</span>
+    <span title="Symbols count total">622k words</span>
 
     <span class="post-meta-divider">|</span>
     <span class="post-meta-item-icon">
       <i class="ic i-coffee"></i>
     </span>
-    <span title="Reading time total">9:24</span>
+    <span title="Reading time total">9:25</span>
   </div>
 </div>
 

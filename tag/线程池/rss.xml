@@ -7,107 +7,107 @@
         <language>en</language>
         <pubDate>Tue, 28 Dec 2021 16:53:41 +0800</pubDate>
         <lastBuildDate>Tue, 28 Dec 2021 16:53:41 +0800</lastBuildDate>
-        <category>SAP</category>
         <category>生物信息</category>
         <category>基因编辑</category>
+        <category>前端</category>
+        <category>Css</category>
         <category>Java</category>
+        <category>Corn</category>
+        <category>DDD</category>
+        <category>领域驱动设计</category>
+        <category>SAP</category>
+        <category>DisPlay属性</category>
+        <category>Docker</category>
         <category>Cache</category>
         <category>Cookie</category>
         <category>Session</category>
         <category>Java面试</category>
-        <category>Corn</category>
-        <category>前端</category>
-        <category>Css</category>
-        <category>DisPlay属性</category>
-        <category>DDD</category>
-        <category>领域驱动设计</category>
-        <category>Docker</category>
         <category>blog</category>
         <category>hexo</category>
         <category>next</category>
         <category>FastJson</category>
+        <category>IDEA</category>
         <category>JavaScript</category>
         <category>Html</category>
         <category>SpringBoot</category>
-        <category>IDEA</category>
-        <category>Jvm</category>
         <category>Jenkins</category>
         <category>CI/CD</category>
-        <category>函数式接口</category>
         <category>map</category>
         <category>Stream流</category>
+        <category>Jvm</category>
         <category>Assert</category>
+        <category>函数式接口</category>
         <category>java</category>
         <category>calender</category>
         <category>Springboot</category>
-        <category>Python</category>
-        <category>Jupyter</category>
-        <category>Machine Learning</category>
         <category>LeetCode</category>
         <category>算法</category>
         <category>递归</category>
-        <category>numpy</category>
-        <category>pandas</category>
-        <category>sklearn</category>
         <category>Linux</category>
         <category>Mybatis</category>
         <category>分页查询</category>
-        <category>模糊查询</category>
-        <category>Spring</category>
+        <category>Machine Learning</category>
+        <category>numpy</category>
+        <category>pandas</category>
+        <category>sklearn</category>
+        <category>Python</category>
+        <category>Jupyter</category>
         <category>Nginx</category>
+        <category>Spring</category>
+        <category>模糊查询</category>
         <category>SrpingBoot</category>
         <category>文件上传</category>
-        <category>事务</category>
-        <category>master</category>
         <category>TypeScript</category>
         <category>WebPack</category>
-        <category>UML</category>
+        <category>master</category>
+        <category>事务</category>
         <category>Groovy</category>
+        <category>UML</category>
         <category>Ubuntu</category>
         <category>Mysql</category>
+        <category>Vue</category>
         <category>VsCode</category>
         <category>Shell</category>
         <category>VSCODE</category>
         <category>快捷键</category>
-        <category>Vue</category>
         <category>Stream</category>
-        <category>日期</category>
         <category>线程池</category>
         <category>ubuntu</category>
         <category>虚拟机</category>
+        <category>日期</category>
+        <category>二分查找</category>
+        <category>数据挖掘</category>
         <category>Hadoop</category>
         <category>操作系统</category>
         <category>EasyExcel</category>
-        <category>二分查找</category>
         <category>node</category>
-        <category>数据挖掘</category>
         <category>JVM</category>
         <category>Yaml</category>
-        <category>数据库</category>
-        <category>Hexo</category>
         <category>junit</category>
+        <category>Hexo</category>
+        <category>数据库</category>
         <category>Mysql事务</category>
-        <category>Git</category>
-        <category>冒泡排序</category>
         <category>git,npm,node</category>
+        <category>冒泡排序</category>
         <category>动态规划</category>
         <category>堆排序</category>
-        <category>多线程</category>
+        <category>Git</category>
         <category>幂等性</category>
         <category>Google</category>
+        <category>多线程</category>
         <category>流</category>
-        <category>快速排序</category>
-        <category>正则表达式</category>
         <category>归并排序</category>
+        <category>正则表达式</category>
+        <category>快速排序</category>
         <category>直接插入排序</category>
         <category>选择排序</category>
         <category>Java 面试</category>
         <category>数据结构</category>
         <category>阻塞队列</category>
         <category>Spring事务</category>
+        <category>Date</category>
         <category>JDK</category>
         <category>动态代理</category>
-        <category>Date</category>
         <category>ArrayList</category>
         <category>接口</category>
         <category>SpringMvc</category>
@@ -123,61 +123,79 @@
             <category>Java</category>
             <category>线程池</category>
             <pubDate>Tue, 28 Dec 2021 16:53:41 +0800</pubDate>
-            <description><![CDATA[ &lt;h1 id=&#34;一-线程池&#34;&gt;&lt;a href=&#34;#一-线程池&#34; class=&#34;headerlink&#34; title=&#34;一.线程池&#34;&gt;&lt;/a&gt;一.线程池&lt;/h1&gt;&lt;p&gt;关于为什么要使用线程池久不赘述了，首先看一下&lt;code&gt;java&lt;/code&gt;中作为线程池&lt;code&gt;Executor&lt;/code&gt;底层实现类的&lt;code&gt;ThredPoolExecutor&lt;/code&gt;的构造函数&lt;/p&gt;
+            <description><![CDATA[ &lt;h1 id=&#34;一线程池&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#一线程池&#34;&gt;#&lt;/a&gt; 一。线程池&lt;/h1&gt;
+&lt;p&gt;关于为什么要使用线程池久不赘述了，首先看一下 &lt;code&gt;java&lt;/code&gt;  中作为线程池 &lt;code&gt;Executor&lt;/code&gt;  底层实现类的 &lt;code&gt;ThredPoolExecutor&lt;/code&gt;  的构造函数&lt;/p&gt;
 &lt;figure class=&#34;highlight java&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;9&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;function&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;public&lt;/span&gt; &lt;span class=&#34;title&#34;&gt;ThreadPoolExecutor&lt;/span&gt;&lt;span class=&#34;params&#34;&gt;(&lt;span class=&#34;keyword&#34;&gt;int&lt;/span&gt; corePoolSize,&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;params&#34;&gt;&lt;span class=&#34;function&#34;&gt;                              &lt;span class=&#34;keyword&#34;&gt;int&lt;/span&gt; maximumPoolSize,&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;params&#34;&gt;&lt;span class=&#34;function&#34;&gt;                              &lt;span class=&#34;keyword&#34;&gt;long&lt;/span&gt; keepAliveTime,&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;params&#34;&gt;&lt;span class=&#34;function&#34;&gt;                              TimeUnit unit,&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;params&#34;&gt;&lt;span class=&#34;function&#34;&gt;                              BlockingQueue&amp;lt;Runnable&amp;gt; workQueue,&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;params&#34;&gt;&lt;span class=&#34;function&#34;&gt;                              ThreadFactory threadFactory,&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;params&#34;&gt;&lt;span class=&#34;function&#34;&gt;                              RejectedExecutionHandler handler)&lt;/span&gt; &lt;/span&gt;&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;       ...&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-
 &lt;span id=&#34;more&#34;&gt;&lt;/span&gt;
-
 &lt;p&gt;其中各个参数含义如下：&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;code&gt;corePoolSize&lt;/code&gt;- 池中所保存的线程数，包括空闲线程。需要注意的是在初创建线程池时线程不会立即启动，直到有任务提交才开始启动线程并逐渐时线程数目达到&lt;code&gt;corePoolSize&lt;/code&gt;。若想一开始就创建所有核心线程需调用&lt;code&gt;prestartAllCoreThreads&lt;/code&gt;方法。&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;maximumPoolSize&lt;/code&gt;- 池中允许的最大线程数。需要注意的是当核心线程满且阻塞队列也满时才会判断当前线程数是否小于最大线程数，并决定是否创建新线程。&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;keepAliveTime&lt;/code&gt; - 当线程数大于核心时，多于的空闲线程最多存活时间&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;unit&lt;/code&gt; - &lt;code&gt;keepAliveTime&lt;/code&gt; 参数的时间单位。&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;workQueue&lt;/code&gt; - 当线程数目超过核心线程数时用于保存任务的队列。主要有3种类型的&lt;code&gt;BlockingQueue&lt;/code&gt;可供选择：无界队列，有界队列和同步移交。将在下文中详细阐述。从参数中可以看到，此队列仅保存实现&lt;code&gt;Runnable&lt;/code&gt;接口的任务。&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;threadFactory&lt;/code&gt; - 执行程序创建新线程时使用的工厂。&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;handler&lt;/code&gt; - 阻塞队列已满且线程数达到最大值时所采取的饱和策略。&lt;code&gt;java&lt;/code&gt;默认提供了4种饱和策略的实现方式：中止、抛弃、抛弃最旧的、调用者运行。将在下文中详细阐述:&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;corePoolSize&lt;/code&gt; - 池中所保存的线程数，包括空闲线程。需要注意的是在初创建线程池时线程不会立即启动，直到有任务提交才开始启动线程并逐渐时线程数目达到 &lt;code&gt;corePoolSize&lt;/code&gt; 。若想一开始就创建所有核心线程需调用 &lt;code&gt;prestartAllCoreThreads&lt;/code&gt;  方法。&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;maximumPoolSize&lt;/code&gt; - 池中允许的最大线程数。需要注意的是当核心线程满且阻塞队列也满时才会判断当前线程数是否小于最大线程数，并决定是否创建新线程。&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;keepAliveTime&lt;/code&gt;  - 当线程数大于核心时，多于的空闲线程最多存活时间&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;unit&lt;/code&gt;  -  &lt;code&gt;keepAliveTime&lt;/code&gt;  参数的时间单位。&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;workQueue&lt;/code&gt;  - 当线程数目超过核心线程数时用于保存任务的队列。主要有 3 种类型的 &lt;code&gt;BlockingQueue&lt;/code&gt;  可供选择：无界队列，有界队列和同步移交。将在下文中详细阐述。从参数中可以看到，此队列仅保存实现 &lt;code&gt;Runnable&lt;/code&gt;  接口的任务。&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;threadFactory&lt;/code&gt;  - 执行程序创建新线程时使用的工厂。&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;handler&lt;/code&gt;  - 阻塞队列已满且线程数达到最大值时所采取的饱和策略。 &lt;code&gt;java&lt;/code&gt;  默认提供了 4 种饱和策略的实现方式：中止、抛弃、抛弃最旧的、调用者运行。将在下文中详细阐述:&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2 id=&#34;二-可选择的阻塞队列BlockingQueue详解&#34;&gt;&lt;a href=&#34;#二-可选择的阻塞队列BlockingQueue详解&#34; class=&#34;headerlink&#34; title=&#34;二.可选择的阻塞队列BlockingQueue详解&#34;&gt;&lt;/a&gt;二.可选择的阻塞队列&lt;code&gt;BlockingQueue&lt;/code&gt;详解&lt;/h2&gt;&lt;p&gt;首先看一下新任务进入时线程池的执行策略：&lt;br&gt;如果运行的线程少于&lt;code&gt;corePoolSize&lt;/code&gt;，则 &lt;code&gt;Executor&lt;/code&gt;始终首选添加新的线程，而不进行排队。（如果当前运行的线程小于&lt;code&gt;corePoolSize&lt;/code&gt;，则任务根本不会存入&lt;code&gt;queue&lt;/code&gt;中，而是直接运行）&lt;br&gt;如果运行的线程大于等于 &lt;code&gt;corePoolSize&lt;/code&gt;，则 &lt;code&gt;Executor&lt;/code&gt;始终首选将请求加入队列，而不添加新的线程。&lt;br&gt;如果无法将请求加入队列，则创建新的线程，除非创建此线程超出 &lt;code&gt;maximumPoolSize&lt;/code&gt;，在这种情况下，任务将被拒绝。&lt;br&gt;主要有3种类型的&lt;code&gt;BlockingQueue&lt;/code&gt;:&lt;/p&gt;
-&lt;h2 id=&#34;2-1-无界队列&#34;&gt;&lt;a href=&#34;#2-1-无界队列&#34; class=&#34;headerlink&#34; title=&#34;2.1 无界队列&#34;&gt;&lt;/a&gt;2.1 无界队列&lt;/h2&gt;&lt;p&gt;队列大小无限制，常用的为无界的&lt;code&gt;LinkedBlockingQueue&lt;/code&gt;，使用该队列做为阻塞队列时要尤其当心，当任务耗时较长时可能会导致大量新任务在队列中堆积最终导致&lt;code&gt;OOM&lt;/code&gt;。最近工作中就遇到因为采用&lt;code&gt;LinkedBlockingQueue&lt;/code&gt;作为阻塞队列，部分任务耗时&lt;code&gt;80s&lt;/code&gt;＋且不停有新任务进来，导致&lt;code&gt;cpu&lt;/code&gt;和内存飙升服务器挂掉。&lt;/p&gt;
-&lt;h2 id=&#34;2-2-有界队列&#34;&gt;&lt;a href=&#34;#2-2-有界队列&#34; class=&#34;headerlink&#34; title=&#34;2.2 有界队列&#34;&gt;&lt;/a&gt;2.2 有界队列&lt;/h2&gt;&lt;p&gt;常用的有两类，一类是遵循&lt;code&gt;FIFO&lt;/code&gt;原则的队列如&lt;code&gt;ArrayBlockingQueue&lt;/code&gt;与有界的&lt;code&gt;LinkedBlockingQueue&lt;/code&gt;，另一类是优先级队列如&lt;code&gt;PriorityBlockingQueue&lt;/code&gt;。&lt;code&gt;PriorityBlockingQueue&lt;/code&gt;中的优先级由任务的&lt;code&gt;Comparator&lt;/code&gt;决定。&lt;br&gt;使用有界队列时队列大小需和线程池大小互相配合，线程池较小有界队列较大时可减少内存消耗，降低&lt;code&gt;cpu&lt;/code&gt;使用率和上下文切换，但是可能会限制系统吞吐量。&lt;/p&gt;
-&lt;h2 id=&#34;2-3-同步移交&#34;&gt;&lt;a href=&#34;#2-3-同步移交&#34; class=&#34;headerlink&#34; title=&#34;2.3 同步移交&#34;&gt;&lt;/a&gt;2.3 同步移交&lt;/h2&gt;&lt;p&gt;如果不希望任务在队列中等待而是希望将任务直接移交给工作线程，可使用&lt;code&gt;SynchronousQueue&lt;/code&gt;作为等待队列。&lt;code&gt;SynchronousQueue&lt;/code&gt;不是一个真正的队列，而是一种线程之间移交的机制。要将一个元素放入&lt;code&gt;SynchronousQueue&lt;/code&gt;中，必须有另一个线程正在等待接收这个元素。只有在使用无界线程池或者有饱和策略时才建议使用该队列。&lt;/p&gt;
-&lt;h2 id=&#34;2-4-几种BlockingQueue的具体实现原理&#34;&gt;&lt;a href=&#34;#2-4-几种BlockingQueue的具体实现原理&#34; class=&#34;headerlink&#34; title=&#34;2.4 几种BlockingQueue的具体实现原理&#34;&gt;&lt;/a&gt;2.4 几种&lt;code&gt;BlockingQueue&lt;/code&gt;的具体实现原理&lt;/h2&gt;&lt;p&gt;关于上述几种&lt;code&gt;BlockingQueue&lt;/code&gt;的具体实现原理与分析将在下篇博文中详细阐述。&lt;/p&gt;
-&lt;h1 id=&#34;三-可选择的饱和策略RejectedExecutionHandler详解&#34;&gt;&lt;a href=&#34;#三-可选择的饱和策略RejectedExecutionHandler详解&#34; class=&#34;headerlink&#34; title=&#34;三.可选择的饱和策略RejectedExecutionHandler详解&#34;&gt;&lt;/a&gt;三.可选择的饱和策略&lt;code&gt;RejectedExecutionHandler&lt;/code&gt;详解&lt;/h1&gt;&lt;p&gt;&lt;code&gt;JDK&lt;/code&gt;主要提供了&lt;code&gt;4&lt;/code&gt;种饱和策略供选择。&lt;code&gt;4&lt;/code&gt;种策略都做为静态内部类在&lt;code&gt;ThreadPoolExcutor&lt;/code&gt;中进行实现。&lt;/p&gt;
-&lt;h2 id=&#34;3-1-AbortPolicy中止策略&#34;&gt;&lt;a href=&#34;#3-1-AbortPolicy中止策略&#34; class=&#34;headerlink&#34; title=&#34;3.1 AbortPolicy中止策略&#34;&gt;&lt;/a&gt;3.1 &lt;code&gt;AbortPolicy&lt;/code&gt;中止策略&lt;/h2&gt;&lt;p&gt;该策略是默认饱和策略。&lt;/p&gt;
+&lt;h2 id=&#34;二可选择的阻塞队列blockingqueue详解&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#二可选择的阻塞队列blockingqueue详解&#34;&gt;#&lt;/a&gt; 二。可选择的阻塞队列 &lt;code&gt;BlockingQueue&lt;/code&gt;  详解&lt;/h2&gt;
+&lt;p&gt;首先看一下新任务进入时线程池的执行策略：&lt;br&gt;
+如果运行的线程少于 &lt;code&gt;corePoolSize&lt;/code&gt; ，则  &lt;code&gt;Executor&lt;/code&gt;  始终首选添加新的线程，而不进行排队。（如果当前运行的线程小于 &lt;code&gt;corePoolSize&lt;/code&gt; ，则任务根本不会存入 &lt;code&gt;queue&lt;/code&gt;  中，而是直接运行）&lt;br&gt;
+如果运行的线程大于等于  &lt;code&gt;corePoolSize&lt;/code&gt; ，则  &lt;code&gt;Executor&lt;/code&gt;  始终首选将请求加入队列，而不添加新的线程。&lt;br&gt;
+如果无法将请求加入队列，则创建新的线程，除非创建此线程超出  &lt;code&gt;maximumPoolSize&lt;/code&gt; ，在这种情况下，任务将被拒绝。&lt;br&gt;
+主要有 3 种类型的 &lt;code&gt;BlockingQueue&lt;/code&gt; :&lt;/p&gt;
+&lt;h2 id=&#34;21-无界队列&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#21-无界队列&#34;&gt;#&lt;/a&gt; 2.1 无界队列&lt;/h2&gt;
+&lt;p&gt;队列大小无限制，常用的为无界的 &lt;code&gt;LinkedBlockingQueue&lt;/code&gt; ，使用该队列做为阻塞队列时要尤其当心，当任务耗时较长时可能会导致大量新任务在队列中堆积最终导致 &lt;code&gt;OOM&lt;/code&gt; 。最近工作中就遇到因为采用 &lt;code&gt;LinkedBlockingQueue&lt;/code&gt;  作为阻塞队列，部分任务耗时 &lt;code&gt;80s&lt;/code&gt; ＋且不停有新任务进来，导致 &lt;code&gt;cpu&lt;/code&gt;  和内存飙升服务器挂掉。&lt;/p&gt;
+&lt;h2 id=&#34;22-有界队列&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#22-有界队列&#34;&gt;#&lt;/a&gt; 2.2 有界队列&lt;/h2&gt;
+&lt;p&gt;常用的有两类，一类是遵循 &lt;code&gt;FIFO&lt;/code&gt;  原则的队列如 &lt;code&gt;ArrayBlockingQueue&lt;/code&gt;  与有界的 &lt;code&gt;LinkedBlockingQueue&lt;/code&gt; ，另一类是优先级队列如 &lt;code&gt;PriorityBlockingQueue&lt;/code&gt; 。 &lt;code&gt;PriorityBlockingQueue&lt;/code&gt;  中的优先级由任务的 &lt;code&gt;Comparator&lt;/code&gt;  决定。&lt;br&gt;
+使用有界队列时队列大小需和线程池大小互相配合，线程池较小有界队列较大时可减少内存消耗，降低 &lt;code&gt;cpu&lt;/code&gt;  使用率和上下文切换，但是可能会限制系统吞吐量。&lt;/p&gt;
+&lt;h2 id=&#34;23-同步移交&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#23-同步移交&#34;&gt;#&lt;/a&gt; 2.3 同步移交&lt;/h2&gt;
+&lt;p&gt;如果不希望任务在队列中等待而是希望将任务直接移交给工作线程，可使用 &lt;code&gt;SynchronousQueue&lt;/code&gt;  作为等待队列。 &lt;code&gt;SynchronousQueue&lt;/code&gt;  不是一个真正的队列，而是一种线程之间移交的机制。要将一个元素放入 &lt;code&gt;SynchronousQueue&lt;/code&gt;  中，必须有另一个线程正在等待接收这个元素。只有在使用无界线程池或者有饱和策略时才建议使用该队列。&lt;/p&gt;
+&lt;h2 id=&#34;24-几种blockingqueue的具体实现原理&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#24-几种blockingqueue的具体实现原理&#34;&gt;#&lt;/a&gt; 2.4 几种 &lt;code&gt;BlockingQueue&lt;/code&gt;  的具体实现原理&lt;/h2&gt;
+&lt;p&gt;关于上述几种 &lt;code&gt;BlockingQueue&lt;/code&gt;  的具体实现原理与分析将在下篇博文中详细阐述。&lt;/p&gt;
+&lt;h1 id=&#34;三可选择的饱和策略rejectedexecutionhandler详解&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#三可选择的饱和策略rejectedexecutionhandler详解&#34;&gt;#&lt;/a&gt; 三。可选择的饱和策略 &lt;code&gt;RejectedExecutionHandler&lt;/code&gt;  详解&lt;/h1&gt;
+&lt;p&gt;&lt;code&gt;JDK&lt;/code&gt;  主要提供了 &lt;code&gt;4&lt;/code&gt;  种饱和策略供选择。 &lt;code&gt;4&lt;/code&gt;  种策略都做为静态内部类在 &lt;code&gt;ThreadPoolExcutor&lt;/code&gt;  中进行实现。&lt;/p&gt;
+&lt;h2 id=&#34;31-abortpolicy中止策略&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#31-abortpolicy中止策略&#34;&gt;#&lt;/a&gt; 3.1  &lt;code&gt;AbortPolicy&lt;/code&gt;  中止策略&lt;/h2&gt;
+&lt;p&gt;该策略是默认饱和策略。&lt;/p&gt;
 &lt;figure class=&#34;highlight java&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;function&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;public&lt;/span&gt; &lt;span class=&#34;keyword&#34;&gt;void&lt;/span&gt; &lt;span class=&#34;title&#34;&gt;rejectedExecution&lt;/span&gt;&lt;span class=&#34;params&#34;&gt;(Runnable r, ThreadPoolExecutor e)&lt;/span&gt; &lt;/span&gt;&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;          &lt;span class=&#34;keyword&#34;&gt;throw&lt;/span&gt; &lt;span class=&#34;keyword&#34;&gt;new&lt;/span&gt; RejectedExecutionException(&lt;span class=&#34;string&#34;&gt;&amp;quot;Task &amp;quot;&lt;/span&gt; + r.toString() +&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;                                                &lt;span class=&#34;string&#34;&gt;&amp;quot; rejected from &amp;quot;&lt;/span&gt; +&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;                                                e.toString());&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;          &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-
-&lt;p&gt;使用该策略时在饱和时会抛出&lt;code&gt;RejectedExecutionException（继承自RuntimeException）&lt;/code&gt;，调用者可捕获该异常自行处理。&lt;/p&gt;
-&lt;h2 id=&#34;3-2-DiscardPolicy抛弃策略&#34;&gt;&lt;a href=&#34;#3-2-DiscardPolicy抛弃策略&#34; class=&#34;headerlink&#34; title=&#34;3.2 DiscardPolicy抛弃策略&#34;&gt;&lt;/a&gt;3.2 &lt;code&gt;DiscardPolicy&lt;/code&gt;抛弃策略&lt;/h2&gt;&lt;figure class=&#34;highlight java&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;function&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;public&lt;/span&gt; &lt;span class=&#34;keyword&#34;&gt;void&lt;/span&gt; &lt;span class=&#34;title&#34;&gt;rejectedExecution&lt;/span&gt;&lt;span class=&#34;params&#34;&gt;(Runnable r, ThreadPoolExecutor e)&lt;/span&gt; &lt;/span&gt;&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;      &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;使用该策略时在饱和时会抛出 &lt;code&gt;RejectedExecutionException（继承自RuntimeException）&lt;/code&gt; ，调用者可捕获该异常自行处理。&lt;/p&gt;
+&lt;h2 id=&#34;32-discardpolicy抛弃策略&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#32-discardpolicy抛弃策略&#34;&gt;#&lt;/a&gt; 3.2  &lt;code&gt;DiscardPolicy&lt;/code&gt;  抛弃策略&lt;/h2&gt;
+&lt;figure class=&#34;highlight java&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;function&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;public&lt;/span&gt; &lt;span class=&#34;keyword&#34;&gt;void&lt;/span&gt; &lt;span class=&#34;title&#34;&gt;rejectedExecution&lt;/span&gt;&lt;span class=&#34;params&#34;&gt;(Runnable r, ThreadPoolExecutor e)&lt;/span&gt; &lt;/span&gt;&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;      &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
 &lt;p&gt;如代码所示，不做任何处理直接抛弃任务&lt;/p&gt;
-&lt;h2 id=&#34;3-3-DiscardOldestPolicy抛弃旧任务策略&#34;&gt;&lt;a href=&#34;#3-3-DiscardOldestPolicy抛弃旧任务策略&#34; class=&#34;headerlink&#34; title=&#34;3.3 DiscardOldestPolicy抛弃旧任务策略&#34;&gt;&lt;/a&gt;3.3 DiscardOldestPolicy抛弃旧任务策略&lt;/h2&gt;&lt;figure class=&#34;highlight java&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;function&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;public&lt;/span&gt; &lt;span class=&#34;keyword&#34;&gt;void&lt;/span&gt; &lt;span class=&#34;title&#34;&gt;rejectedExecution&lt;/span&gt;&lt;span class=&#34;params&#34;&gt;(Runnable r, ThreadPoolExecutor e)&lt;/span&gt; &lt;/span&gt;&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        &lt;span class=&#34;keyword&#34;&gt;if&lt;/span&gt; (!e.isShutdown()) &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;            e.getQueue().poll();&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;            e.execute(r);&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;p&gt;如代码，先将阻塞队列中的头元素出队抛弃，再尝试提交任务。如果此时阻塞队列使用&lt;code&gt;PriorityBlockingQueue&lt;/code&gt;优先级队列，将会导致优先级最高的任务被抛弃，因此不建议将该种策略配合优先级队列使用。&lt;/p&gt;
-&lt;h2 id=&#34;3-4-CallerRunsPolicy调用者运行&#34;&gt;&lt;a href=&#34;#3-4-CallerRunsPolicy调用者运行&#34; class=&#34;headerlink&#34; title=&#34;3.4 CallerRunsPolicy调用者运行&#34;&gt;&lt;/a&gt;3.4 &lt;code&gt;CallerRunsPolicy&lt;/code&gt;调用者运行&lt;/h2&gt;&lt;figure class=&#34;highlight java&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;function&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;public&lt;/span&gt; &lt;span class=&#34;keyword&#34;&gt;void&lt;/span&gt; &lt;span class=&#34;title&#34;&gt;rejectedExecution&lt;/span&gt;&lt;span class=&#34;params&#34;&gt;(Runnable r, ThreadPoolExecutor e)&lt;/span&gt; &lt;/span&gt;&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        &lt;span class=&#34;keyword&#34;&gt;if&lt;/span&gt; (!e.isShutdown()) &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;            r.run();&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-
-&lt;p&gt;既不抛弃任务也不抛出异常，直接运行任务的&lt;code&gt;run&lt;/code&gt;方法，换言之将任务回退给调用者来直接运行。使用该策略时线程池饱和后将由调用线程池的主线程自己来执行任务，因此在执行任务的这段时间里主线程无法再提交新任务，从而使线程池中工作线程有时间将正在处理的任务处理完成。&lt;/p&gt;
-&lt;h1 id=&#34;四-java提供的四种常用线程池解析&#34;&gt;&lt;a href=&#34;#四-java提供的四种常用线程池解析&#34; class=&#34;headerlink&#34; title=&#34;四.java提供的四种常用线程池解析&#34;&gt;&lt;/a&gt;四.&lt;code&gt;java&lt;/code&gt;提供的四种常用线程池解析&lt;/h1&gt;&lt;p&gt;在&lt;code&gt;JDK&lt;/code&gt;帮助文档中，有如此一段话：&lt;/p&gt;
-&lt;p&gt;强烈建议程序员使用较为方便的&lt;code&gt;Executors&lt;/code&gt;工厂方法&lt;code&gt;Executors.newCachedThreadPool()&lt;/code&gt;（无界线程池，可以进行自动线程回收）、&lt;code&gt;Executors.newFixedThreadPool(int)&lt;/code&gt;（固定大小线程池）&lt;code&gt;Executors.newSingleThreadExecutor()&lt;/code&gt;（单个后台线程）它们均为大多数使用场景预定义了设置。&lt;/p&gt;
+&lt;h2 id=&#34;33-discardoldestpolicy抛弃旧任务策略&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#33-discardoldestpolicy抛弃旧任务策略&#34;&gt;#&lt;/a&gt; 3.3 DiscardOldestPolicy 抛弃旧任务策略&lt;/h2&gt;
+&lt;figure class=&#34;highlight java&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;function&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;public&lt;/span&gt; &lt;span class=&#34;keyword&#34;&gt;void&lt;/span&gt; &lt;span class=&#34;title&#34;&gt;rejectedExecution&lt;/span&gt;&lt;span class=&#34;params&#34;&gt;(Runnable r, ThreadPoolExecutor e)&lt;/span&gt; &lt;/span&gt;&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        &lt;span class=&#34;keyword&#34;&gt;if&lt;/span&gt; (!e.isShutdown()) &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;            e.getQueue().poll();&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;            e.execute(r);&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;如代码，先将阻塞队列中的头元素出队抛弃，再尝试提交任务。如果此时阻塞队列使用 &lt;code&gt;PriorityBlockingQueue&lt;/code&gt;  优先级队列，将会导致优先级最高的任务被抛弃，因此不建议将该种策略配合优先级队列使用。&lt;/p&gt;
+&lt;h2 id=&#34;34-callerrunspolicy调用者运行&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#34-callerrunspolicy调用者运行&#34;&gt;#&lt;/a&gt; 3.4  &lt;code&gt;CallerRunsPolicy&lt;/code&gt;  调用者运行&lt;/h2&gt;
+&lt;figure class=&#34;highlight java&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;function&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;public&lt;/span&gt; &lt;span class=&#34;keyword&#34;&gt;void&lt;/span&gt; &lt;span class=&#34;title&#34;&gt;rejectedExecution&lt;/span&gt;&lt;span class=&#34;params&#34;&gt;(Runnable r, ThreadPoolExecutor e)&lt;/span&gt; &lt;/span&gt;&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        &lt;span class=&#34;keyword&#34;&gt;if&lt;/span&gt; (!e.isShutdown()) &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;            r.run();&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;既不抛弃任务也不抛出异常，直接运行任务的 &lt;code&gt;run&lt;/code&gt;  方法，换言之将任务回退给调用者来直接运行。使用该策略时线程池饱和后将由调用线程池的主线程自己来执行任务，因此在执行任务的这段时间里主线程无法再提交新任务，从而使线程池中工作线程有时间将正在处理的任务处理完成。&lt;/p&gt;
+&lt;h1 id=&#34;四java提供的四种常用线程池解析&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#四java提供的四种常用线程池解析&#34;&gt;#&lt;/a&gt; 四. &lt;code&gt;java&lt;/code&gt;  提供的四种常用线程池解析&lt;/h1&gt;
+&lt;p&gt;在 &lt;code&gt;JDK&lt;/code&gt;  帮助文档中，有如此一段话：&lt;/p&gt;
+&lt;p&gt;强烈建议程序员使用较为方便的 &lt;code&gt;Executors&lt;/code&gt;  工厂方法 &lt;code&gt;Executors.newCachedThreadPool()&lt;/code&gt; （无界线程池，可以进行自动线程回收）、 &lt;code&gt;Executors.newFixedThreadPool(int)&lt;/code&gt; （固定大小线程池） &lt;code&gt;Executors.newSingleThreadExecutor()&lt;/code&gt; （单个后台线程）它们均为大多数使用场景预定义了设置。&lt;/p&gt;
 &lt;p&gt;详细介绍一下上述四种线程池。&lt;/p&gt;
-&lt;h2 id=&#34;4-1-newCachedThreadPool&#34;&gt;&lt;a href=&#34;#4-1-newCachedThreadPool&#34; class=&#34;headerlink&#34; title=&#34;4.1 newCachedThreadPool&#34;&gt;&lt;/a&gt;4.1 &lt;code&gt;newCachedThreadPool&lt;/code&gt;&lt;/h2&gt;&lt;figure class=&#34;highlight java&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;function&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;public&lt;/span&gt; &lt;span class=&#34;keyword&#34;&gt;static&lt;/span&gt; ExecutorService &lt;span class=&#34;title&#34;&gt;newCachedThreadPool&lt;/span&gt;&lt;span class=&#34;params&#34;&gt;()&lt;/span&gt; &lt;/span&gt;&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  &lt;span class=&#34;keyword&#34;&gt;return&lt;/span&gt; &lt;span class=&#34;keyword&#34;&gt;new&lt;/span&gt; ThreadPoolExecutor(&lt;span class=&#34;number&#34;&gt;0&lt;/span&gt;, Integer.MAX_VALUE,&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;                                &lt;span class=&#34;number&#34;&gt;60L&lt;/span&gt;, TimeUnit.SECONDS,&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;                                &lt;span class=&#34;keyword&#34;&gt;new&lt;/span&gt; SynchronousQueue&amp;lt;Runnable&amp;gt;());&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;p&gt;在&lt;code&gt;newCachedThreadPool&lt;/code&gt;中如果线程池长度超过处理需要，可灵活回收空闲线程，若无可回收，则新建线程。&lt;br&gt;初看该构造函数时我有这样的疑惑：核心线程池为&lt;code&gt;0&lt;/code&gt;，那按照前面所讲的线程池策略新任务来临时无法进入核心线程池，只能进入 &lt;code&gt;SynchronousQueue&lt;/code&gt;中进行等待，而&lt;code&gt;SynchronousQueue&lt;/code&gt;的大小为1，那岂不是第一个任务到达时只能等待在队列中，直到第二个任务到达发现无法进入队列才能创建第一个线程？&lt;br&gt;这个问题的答案在上面讲&lt;code&gt;SynchronousQueue&lt;/code&gt;时其实已经给出了，要将一个元素放入&lt;code&gt;SynchronousQueue&lt;/code&gt;中，必须有另一个线程正在等待接收这个元素。因此即便&lt;code&gt;SynchronousQueue&lt;/code&gt;一开始为空且大小为&lt;code&gt;1&lt;/code&gt;，第一个任务也无法放入其中，因为没有线程在等待从&lt;code&gt;SynchronousQueue&lt;/code&gt;中取走元素。因此第一个任务到达时便会创建一个新线程执行该任务。&lt;br&gt;这里引申出一个小技巧：有时我们可能希望线程池在没有任务的情况下销毁所有的线程，既设置线程池核心大小为&lt;code&gt;0&lt;/code&gt;，但又不想使用&lt;code&gt;SynchronousQueue&lt;/code&gt;而是想使用有界的等待队列。显然，不进行任何特殊设置的话这样的用法会发生奇怪的行为：直到等待队列被填满才会有新线程被创建，任务才开始执行。这并不是我们希望看到的，此时可通过&lt;code&gt;allowCoreThreadTimeOut&lt;/code&gt;使等待队列中的元素出队被调用执行&lt;/p&gt;
-&lt;h2 id=&#34;4-2-newFixedThreadPool-创建一个定长线程池，可控制线程最大并发数，超出的线程会在队列中等待。&#34;&gt;&lt;a href=&#34;#4-2-newFixedThreadPool-创建一个定长线程池，可控制线程最大并发数，超出的线程会在队列中等待。&#34; class=&#34;headerlink&#34; title=&#34;4.2 newFixedThreadPool 创建一个定长线程池，可控制线程最大并发数，超出的线程会在队列中等待。&#34;&gt;&lt;/a&gt;4.2 &lt;code&gt;newFixedThreadPool&lt;/code&gt; 创建一个定长线程池，可控制线程最大并发数，超出的线程会在队列中等待。&lt;/h2&gt;&lt;figure class=&#34;highlight java&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;function&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;public&lt;/span&gt; &lt;span class=&#34;keyword&#34;&gt;static&lt;/span&gt; ExecutorService &lt;span class=&#34;title&#34;&gt;newFixedThreadPool&lt;/span&gt;&lt;span class=&#34;params&#34;&gt;(&lt;span class=&#34;keyword&#34;&gt;int&lt;/span&gt; nThreads)&lt;/span&gt; &lt;/span&gt;&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;      &lt;span class=&#34;keyword&#34;&gt;return&lt;/span&gt; &lt;span class=&#34;keyword&#34;&gt;new&lt;/span&gt; ThreadPoolExecutor(nThreads, nThreads,&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;                                    &lt;span class=&#34;number&#34;&gt;0L&lt;/span&gt;, TimeUnit.MILLISECONDS,&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;                                    &lt;span class=&#34;keyword&#34;&gt;new&lt;/span&gt; LinkedBlockingQueue&amp;lt;Runnable&amp;gt;());&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;h2 id=&#34;41-newcachedthreadpool&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#41-newcachedthreadpool&#34;&gt;#&lt;/a&gt; 4.1  &lt;code&gt;newCachedThreadPool&lt;/code&gt;&lt;/h2&gt;
+&lt;figure class=&#34;highlight java&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;function&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;public&lt;/span&gt; &lt;span class=&#34;keyword&#34;&gt;static&lt;/span&gt; ExecutorService &lt;span class=&#34;title&#34;&gt;newCachedThreadPool&lt;/span&gt;&lt;span class=&#34;params&#34;&gt;()&lt;/span&gt; &lt;/span&gt;&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  &lt;span class=&#34;keyword&#34;&gt;return&lt;/span&gt; &lt;span class=&#34;keyword&#34;&gt;new&lt;/span&gt; ThreadPoolExecutor(&lt;span class=&#34;number&#34;&gt;0&lt;/span&gt;, Integer.MAX_VALUE,&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;                                &lt;span class=&#34;number&#34;&gt;60L&lt;/span&gt;, TimeUnit.SECONDS,&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;                                &lt;span class=&#34;keyword&#34;&gt;new&lt;/span&gt; SynchronousQueue&amp;lt;Runnable&amp;gt;());&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;在 &lt;code&gt;newCachedThreadPool&lt;/code&gt;  中如果线程池长度超过处理需要，可灵活回收空闲线程，若无可回收，则新建线程。&lt;br&gt;
+初看该构造函数时我有这样的疑惑：核心线程池为 &lt;code&gt;0&lt;/code&gt; ，那按照前面所讲的线程池策略新任务来临时无法进入核心线程池，只能进入  &lt;code&gt;SynchronousQueue&lt;/code&gt;  中进行等待，而 &lt;code&gt;SynchronousQueue&lt;/code&gt;  的大小为 1，那岂不是第一个任务到达时只能等待在队列中，直到第二个任务到达发现无法进入队列才能创建第一个线程？&lt;br&gt;
+这个问题的答案在上面讲 &lt;code&gt;SynchronousQueue&lt;/code&gt;  时其实已经给出了，要将一个元素放入 &lt;code&gt;SynchronousQueue&lt;/code&gt;  中，必须有另一个线程正在等待接收这个元素。因此即便 &lt;code&gt;SynchronousQueue&lt;/code&gt;  一开始为空且大小为 &lt;code&gt;1&lt;/code&gt; ，第一个任务也无法放入其中，因为没有线程在等待从 &lt;code&gt;SynchronousQueue&lt;/code&gt;  中取走元素。因此第一个任务到达时便会创建一个新线程执行该任务。&lt;br&gt;
+这里引申出一个小技巧：有时我们可能希望线程池在没有任务的情况下销毁所有的线程，既设置线程池核心大小为 &lt;code&gt;0&lt;/code&gt; ，但又不想使用 &lt;code&gt;SynchronousQueue&lt;/code&gt;  而是想使用有界的等待队列。显然，不进行任何特殊设置的话这样的用法会发生奇怪的行为：直到等待队列被填满才会有新线程被创建，任务才开始执行。这并不是我们希望看到的，此时可通过 &lt;code&gt;allowCoreThreadTimeOut&lt;/code&gt;  使等待队列中的元素出队被调用执行&lt;/p&gt;
+&lt;h2 id=&#34;42-newfixedthreadpool-创建一个定长线程池可控制线程最大并发数超出的线程会在队列中等待&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#42-newfixedthreadpool-创建一个定长线程池可控制线程最大并发数超出的线程会在队列中等待&#34;&gt;#&lt;/a&gt; 4.2  &lt;code&gt;newFixedThreadPool&lt;/code&gt;  创建一个定长线程池，可控制线程最大并发数，超出的线程会在队列中等待。&lt;/h2&gt;
+&lt;figure class=&#34;highlight java&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;function&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;public&lt;/span&gt; &lt;span class=&#34;keyword&#34;&gt;static&lt;/span&gt; ExecutorService &lt;span class=&#34;title&#34;&gt;newFixedThreadPool&lt;/span&gt;&lt;span class=&#34;params&#34;&gt;(&lt;span class=&#34;keyword&#34;&gt;int&lt;/span&gt; nThreads)&lt;/span&gt; &lt;/span&gt;&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;      &lt;span class=&#34;keyword&#34;&gt;return&lt;/span&gt; &lt;span class=&#34;keyword&#34;&gt;new&lt;/span&gt; ThreadPoolExecutor(nThreads, nThreads,&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;                                    &lt;span class=&#34;number&#34;&gt;0L&lt;/span&gt;, TimeUnit.MILLISECONDS,&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;                                    &lt;span class=&#34;keyword&#34;&gt;new&lt;/span&gt; LinkedBlockingQueue&amp;lt;Runnable&amp;gt;());&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
 &lt;p&gt;看代码一目了然了，使用固定大小的线程池并使用无限大的队列&lt;/p&gt;
-&lt;h2 id=&#34;4-3-newScheduledThreadPool-创建一个定长线程池，支持定时及周期性任务执行。&#34;&gt;&lt;a href=&#34;#4-3-newScheduledThreadPool-创建一个定长线程池，支持定时及周期性任务执行。&#34; class=&#34;headerlink&#34; title=&#34;4.3 newScheduledThreadPool 创建一个定长线程池，支持定时及周期性任务执行。&#34;&gt;&lt;/a&gt;4.3 &lt;code&gt;newScheduledThreadPool&lt;/code&gt; 创建一个定长线程池，支持定时及周期性任务执行。&lt;/h2&gt;&lt;figure class=&#34;highlight java&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;function&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;public&lt;/span&gt; &lt;span class=&#34;keyword&#34;&gt;static&lt;/span&gt; ScheduledExecutorService &lt;span class=&#34;title&#34;&gt;newScheduledThreadPool&lt;/span&gt;&lt;span class=&#34;params&#34;&gt;(&lt;span class=&#34;keyword&#34;&gt;int&lt;/span&gt; corePoolSize)&lt;/span&gt; &lt;/span&gt;&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;keyword&#34;&gt;return&lt;/span&gt; &lt;span class=&#34;keyword&#34;&gt;new&lt;/span&gt; ScheduledThreadPoolExecutor(corePoolSize);&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-
-&lt;p&gt;在来看看&lt;code&gt;ScheduledThreadPoolExecutor（）&lt;/code&gt;的构造函数&lt;/p&gt;
+&lt;h2 id=&#34;43-newscheduledthreadpool-创建一个定长线程池支持定时及周期性任务执行&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#43-newscheduledthreadpool-创建一个定长线程池支持定时及周期性任务执行&#34;&gt;#&lt;/a&gt; 4.3  &lt;code&gt;newScheduledThreadPool&lt;/code&gt;  创建一个定长线程池，支持定时及周期性任务执行。&lt;/h2&gt;
+&lt;figure class=&#34;highlight java&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;function&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;public&lt;/span&gt; &lt;span class=&#34;keyword&#34;&gt;static&lt;/span&gt; ScheduledExecutorService &lt;span class=&#34;title&#34;&gt;newScheduledThreadPool&lt;/span&gt;&lt;span class=&#34;params&#34;&gt;(&lt;span class=&#34;keyword&#34;&gt;int&lt;/span&gt; corePoolSize)&lt;/span&gt; &lt;/span&gt;&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;keyword&#34;&gt;return&lt;/span&gt; &lt;span class=&#34;keyword&#34;&gt;new&lt;/span&gt; ScheduledThreadPoolExecutor(corePoolSize);&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;在来看看 &lt;code&gt;ScheduledThreadPoolExecutor（）&lt;/code&gt; 的构造函数&lt;/p&gt;
 &lt;figure class=&#34;highlight java&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;function&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;public&lt;/span&gt; &lt;span class=&#34;title&#34;&gt;ScheduledThreadPoolExecutor&lt;/span&gt;&lt;span class=&#34;params&#34;&gt;(&lt;span class=&#34;keyword&#34;&gt;int&lt;/span&gt; corePoolSize)&lt;/span&gt; &lt;/span&gt;&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;      &lt;span class=&#34;keyword&#34;&gt;super&lt;/span&gt;(corePoolSize, Integer.MAX_VALUE, &lt;span class=&#34;number&#34;&gt;0&lt;/span&gt;, NANOSECONDS,&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;            &lt;span class=&#34;keyword&#34;&gt;new&lt;/span&gt; DelayedWorkQueue());&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;p&gt;&lt;code&gt;ScheduledThreadPoolExecutor&lt;/code&gt;的父类即&lt;code&gt;ThreadPoolExecutor&lt;/code&gt;，因此这里各参数含义和上面一样。值得关心的是&lt;code&gt;DelayedWorkQueue&lt;/code&gt;这个阻塞对列，在上面没有介绍，它作为静态内部类就在&lt;code&gt;ScheduledThreadPoolExecutor&lt;/code&gt;中进行了实现。具体分析讲会在后续博客中给出，在这里只进行简单说明：&lt;code&gt;DelayedWorkQueue&lt;/code&gt;是一个无界队列，它能按一定的顺序对工作队列中的元素进行排列。因此这里设置的最大线程数 &lt;code&gt;Integer.MAX_VALUE&lt;/code&gt;没有任何意义。&lt;/p&gt;
-&lt;h2 id=&#34;4-4-newSingleThreadExecutor-创建一个单线程化的线程池，它只会用唯一的工作线程来执行任务，保证所有任务按照指定顺序-FIFO-LIFO-优先级-执行。&#34;&gt;&lt;a href=&#34;#4-4-newSingleThreadExecutor-创建一个单线程化的线程池，它只会用唯一的工作线程来执行任务，保证所有任务按照指定顺序-FIFO-LIFO-优先级-执行。&#34; class=&#34;headerlink&#34; title=&#34;4.4 newSingleThreadExecutor 创建一个单线程化的线程池，它只会用唯一的工作线程来执行任务，保证所有任务按照指定顺序(FIFO, LIFO, 优先级)执行。&#34;&gt;&lt;/a&gt;4.4 &lt;code&gt;newSingleThreadExecutor&lt;/code&gt; 创建一个单线程化的线程池，它只会用唯一的工作线程来执行任务，保证所有任务按照指定顺序(&lt;code&gt;FIFO, LIFO,&lt;/code&gt; 优先级)执行。&lt;/h2&gt;&lt;figure class=&#34;highlight java&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;function&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;public&lt;/span&gt; &lt;span class=&#34;keyword&#34;&gt;static&lt;/span&gt; ScheduledExecutorService &lt;span class=&#34;title&#34;&gt;newSingleThreadScheduledExecutor&lt;/span&gt;&lt;span class=&#34;params&#34;&gt;()&lt;/span&gt; &lt;/span&gt;&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;keyword&#34;&gt;return&lt;/span&gt; &lt;span class=&#34;keyword&#34;&gt;new&lt;/span&gt; DelegatedScheduledExecutorService&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        (&lt;span class=&#34;keyword&#34;&gt;new&lt;/span&gt; ScheduledThreadPoolExecutor(&lt;span class=&#34;number&#34;&gt;1&lt;/span&gt;));&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;p&gt;首先&lt;code&gt;new&lt;/code&gt;了一个线程数目为&lt;code&gt;1&lt;/code&gt;的&lt;code&gt;ScheduledThreadPoolExecutor&lt;/code&gt;，再把该对象传入&lt;code&gt;DelegatedScheduledExecutorService&lt;/code&gt;中，看看&lt;code&gt;DelegatedScheduledExecutorService&lt;/code&gt;的实现代码：&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;ScheduledThreadPoolExecutor&lt;/code&gt;  的父类即 &lt;code&gt;ThreadPoolExecutor&lt;/code&gt; ，因此这里各参数含义和上面一样。值得关心的是 &lt;code&gt;DelayedWorkQueue&lt;/code&gt;  这个阻塞对列，在上面没有介绍，它作为静态内部类就在 &lt;code&gt;ScheduledThreadPoolExecutor&lt;/code&gt;  中进行了实现。具体分析讲会在后续博客中给出，在这里只进行简单说明： &lt;code&gt;DelayedWorkQueue&lt;/code&gt;  是一个无界队列，它能按一定的顺序对工作队列中的元素进行排列。因此这里设置的最大线程数  &lt;code&gt;Integer.MAX_VALUE&lt;/code&gt;  没有任何意义。&lt;/p&gt;
+&lt;h2 id=&#34;44-newsinglethreadexecutor-创建一个单线程化的线程池它只会用唯一的工作线程来执行任务保证所有任务按照指定顺序fifo-lifo-优先级执行&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#44-newsinglethreadexecutor-创建一个单线程化的线程池它只会用唯一的工作线程来执行任务保证所有任务按照指定顺序fifo-lifo-优先级执行&#34;&gt;#&lt;/a&gt; 4.4  &lt;code&gt;newSingleThreadExecutor&lt;/code&gt;  创建一个单线程化的线程池，它只会用唯一的工作线程来执行任务，保证所有任务按照指定顺序 ( &lt;code&gt;FIFO, LIFO,&lt;/code&gt;  优先级) 执行。&lt;/h2&gt;
+&lt;figure class=&#34;highlight java&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;function&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;public&lt;/span&gt; &lt;span class=&#34;keyword&#34;&gt;static&lt;/span&gt; ScheduledExecutorService &lt;span class=&#34;title&#34;&gt;newSingleThreadScheduledExecutor&lt;/span&gt;&lt;span class=&#34;params&#34;&gt;()&lt;/span&gt; &lt;/span&gt;&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;keyword&#34;&gt;return&lt;/span&gt; &lt;span class=&#34;keyword&#34;&gt;new&lt;/span&gt; DelegatedScheduledExecutorService&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        (&lt;span class=&#34;keyword&#34;&gt;new&lt;/span&gt; ScheduledThreadPoolExecutor(&lt;span class=&#34;number&#34;&gt;1&lt;/span&gt;));&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;首先 &lt;code&gt;new&lt;/code&gt;  了一个线程数目为 &lt;code&gt;1&lt;/code&gt;  的 &lt;code&gt;ScheduledThreadPoolExecutor&lt;/code&gt; ，再把该对象传入 &lt;code&gt;DelegatedScheduledExecutorService&lt;/code&gt;  中，看看 &lt;code&gt;DelegatedScheduledExecutorService&lt;/code&gt;  的实现代码：&lt;/p&gt;
 &lt;figure class=&#34;highlight java&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;DelegatedScheduledExecutorService(ScheduledExecutorService executor) &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;           &lt;span class=&#34;keyword&#34;&gt;super&lt;/span&gt;(executor);&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;           e = executor;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;       &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-
 &lt;p&gt;在看看它的父类&lt;/p&gt;
 &lt;figure class=&#34;highlight java&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;DelegatedExecutorService(ExecutorService executor) &amp;#123; e = executor; &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-
-&lt;p&gt;其实就是使用装饰模式增强了&lt;code&gt;ScheduledExecutorService（1）&lt;/code&gt;的功能，不仅确保只有一个线程顺序执行任务，也保证线程意外终止后会重新创建一个线程继续执行任务。具体实现原理会在后续博客中讲解。&lt;/p&gt;
-&lt;h2 id=&#34;4-5-newWorkStealingPool创建一个拥有多个任务队列（以便减少连接数）的线程池。&#34;&gt;&lt;a href=&#34;#4-5-newWorkStealingPool创建一个拥有多个任务队列（以便减少连接数）的线程池。&#34; class=&#34;headerlink&#34; title=&#34;4.5 newWorkStealingPool创建一个拥有多个任务队列（以便减少连接数）的线程池。&#34;&gt;&lt;/a&gt;4.5 &lt;code&gt;newWorkStealingPool&lt;/code&gt;创建一个拥有多个任务队列（以便减少连接数）的线程池。&lt;/h2&gt;&lt;p&gt;这是&lt;code&gt;jdk1.8&lt;/code&gt;中新增加的一种线程池实现，先看一下它的无参实现&lt;/p&gt;
+&lt;p&gt;其实就是使用装饰模式增强了 &lt;code&gt;ScheduledExecutorService（1）&lt;/code&gt; 的功能，不仅确保只有一个线程顺序执行任务，也保证线程意外终止后会重新创建一个线程继续执行任务。具体实现原理会在后续博客中讲解。&lt;/p&gt;
+&lt;h2 id=&#34;45-newworkstealingpool创建一个拥有多个任务队列以便减少连接数的线程池&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#45-newworkstealingpool创建一个拥有多个任务队列以便减少连接数的线程池&#34;&gt;#&lt;/a&gt; 4.5  &lt;code&gt;newWorkStealingPool&lt;/code&gt;  创建一个拥有多个任务队列（以便减少连接数）的线程池。&lt;/h2&gt;
+&lt;p&gt;这是 &lt;code&gt;jdk1.8&lt;/code&gt;  中新增加的一种线程池实现，先看一下它的无参实现&lt;/p&gt;
 &lt;figure class=&#34;highlight java&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;function&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;public&lt;/span&gt; &lt;span class=&#34;keyword&#34;&gt;static&lt;/span&gt; ExecutorService &lt;span class=&#34;title&#34;&gt;newWorkStealingPool&lt;/span&gt;&lt;span class=&#34;params&#34;&gt;()&lt;/span&gt; &lt;/span&gt;&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;keyword&#34;&gt;return&lt;/span&gt; &lt;span class=&#34;keyword&#34;&gt;new&lt;/span&gt; ForkJoinPool&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        (Runtime.getRuntime().availableProcessors(),&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;          ForkJoinPool.defaultForkJoinWorkerThreadFactory,&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;          &lt;span class=&#34;keyword&#34;&gt;null&lt;/span&gt;, &lt;span class=&#34;keyword&#34;&gt;true&lt;/span&gt;);&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;p&gt;返回的&lt;code&gt;ForkJoinPool&lt;/code&gt;从&lt;code&gt;jdk1.7&lt;/code&gt;开始引进，个人感觉类似于&lt;code&gt;mapreduce&lt;/code&gt;的思想。这个线程池较为特殊&lt;/p&gt;
+&lt;p&gt;返回的 &lt;code&gt;ForkJoinPool&lt;/code&gt;  从 &lt;code&gt;jdk1.7&lt;/code&gt;  开始引进，个人感觉类似于 &lt;code&gt;mapreduce&lt;/code&gt;  的思想。这个线程池较为特殊&lt;/p&gt;
  ]]></description>
         </item>
     </channel>

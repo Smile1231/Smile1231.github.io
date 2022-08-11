@@ -117,12 +117,12 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
       </div>
       <div id="imgs" class="pjax">
         <ul>
-          <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1gipexbei4hj20zk0m8npd.jpg"></li>
-          <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1gicitcxhpij20zk0m8hdt.jpg"></li>
-          <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1gipewr8iypj20zk0m8b29.jpg"></li>
-          <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1gicliwyw55j20zk0m8hdt.jpg"></li>
-          <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1gipex2cdtbj20zk0m8x6p.jpg"></li>
-          <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1gicm0fdw5cj20zk0m8hdt.jpg"></li>
+          <li class="item" data-background-image="https://tva2.sinaimg.cn/large/6833939bly1gipeun65urj20zk0m81ii.jpg"></li>
+          <li class="item" data-background-image="https://tva2.sinaimg.cn/large/6833939bly1giclj61ylzj20zk0m8b29.jpg"></li>
+          <li class="item" data-background-image="https://tva2.sinaimg.cn/large/6833939bly1gicljgocqbj20zk0m8e81.jpg"></li>
+          <li class="item" data-background-image="https://tva2.sinaimg.cn/large/6833939bly1giph4wqtg4j20zk0m8x6p.jpg"></li>
+          <li class="item" data-background-image="https://tva2.sinaimg.cn/large/6833939bly1giclj9410cj20zk0m8h12.jpg"></li>
+          <li class="item" data-background-image="https://tva2.sinaimg.cn/large/6833939bly1gipexw3o58j20zk0m8e81.jpg"></li>
         </ul>
       </div>
     </header>
@@ -166,27 +166,26 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
   <div class="body md" itemprop="articleBody">
     
 
-    <p> 我们在平时使用<code>git</code>或者<code>npm</code>等进行拉取项目或者安装一些需要科学上网的包时，就会报一些<code>connection timeout</code>的错误，这篇博客做了一些简单的汇总</p>
-<h2 id="关于git设置代理和取消代理"><a href="#关于git设置代理和取消代理" class="headerlink" title="关于git设置代理和取消代理"></a>关于<code>git</code>设置代理和取消代理</h2><span id="more"></span>
-
-
+    <p>我们在平时使用 <code>git</code>  或者 <code>npm</code>  等进行拉取项目或者安装一些需要科学上网的包时，就会报一些 <code>connection timeout</code>  的错误，这篇博客做了一些简单的汇总</p>
+<h2 id="关于git设置代理和取消代理"><a class="markdownIt-Anchor" href="#关于git设置代理和取消代理">#</a> 关于 <code>git</code>  设置代理和取消代理</h2>
+<span id="more"></span>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line">git config --global https.proxy http://127.0.0.1:1080</span><br><span class="line">//https</span><br><span class="line">git config --global https.proxy https://127.0.0.1:1080</span><br><span class="line">//使用socks5代理的 例如ss，ssr 1080是windows下ss的默认代理端口,mac下不同，或者有自定义的，根据自己的改</span><br><span class="line">git config --global http.proxy socks5://127.0.0.1:1080</span><br><span class="line">git config --global https.proxy socks5://127.0.0.1:1080</span><br><span class="line"></span><br><span class="line">//只对github.com使用代理，其他仓库不走代理</span><br><span class="line">git config --global http.https://github.com.proxy socks5://127.0.0.1:10808</span><br><span class="line">git config --global https.https://github.com.proxy socks5://127.0.0.1:10808</span><br><span class="line">//取消github代理</span><br><span class="line">git config --global --<span class="built_in">unset</span> http.https://github.com.proxy</span><br><span class="line">git config --global --<span class="built_in">unset</span> https.https://github.com.proxy</span><br><span class="line"></span><br><span class="line">//查看代理</span><br><span class="line">git config --global --get http.proxy</span><br><span class="line">git config --global --get https.proxy</span><br><span class="line"></span><br><span class="line">//取消全局代理</span><br><span class="line">git config --global --<span class="built_in">unset</span> http.proxy</span><br><span class="line">git config --global --<span class="built_in">unset</span> https.proxy</span><br></pre></td></tr></table></figure>
-
-<h2 id="关于npm的设置代理和取消代理"><a href="#关于npm的设置代理和取消代理" class="headerlink" title="关于npm的设置代理和取消代理"></a>关于<code>npm</code>的设置代理和取消代理</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">npm config set proxy socks5://127.0.0.1:10808</span><br><span class="line">npm config set https-proxy socks5://127.0.0.1:10808</span><br><span class="line"></span><br><span class="line"># npm设置镜像源</span><br><span class="line">npm config set registry=http://registry.npmjs.org</span><br><span class="line"></span><br><span class="line"># 查看镜像源</span><br><span class="line">npm config get registry</span><br><span class="line"></span><br><span class="line"># 淘宝镜像源 https://registry.npm.taobao.org/</span><br><span class="line"></span><br><span class="line"># 取消代理</span><br><span class="line">npm config delete proxy</span><br><span class="line">npm config delete https-proxy</span><br></pre></td></tr></table></figure>
-
-<h2 id="关于git修改推送仓库地址"><a href="#关于git修改推送仓库地址" class="headerlink" title="关于git修改推送仓库地址"></a>关于<code>git</code>修改推送仓库地址</h2><blockquote>
+<h2 id="关于npm的设置代理和取消代理"><a class="markdownIt-Anchor" href="#关于npm的设置代理和取消代理">#</a> 关于 <code>npm</code>  的设置代理和取消代理</h2>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">npm config set proxy socks5://127.0.0.1:10808</span><br><span class="line">npm config set https-proxy socks5://127.0.0.1:10808</span><br><span class="line"></span><br><span class="line"># npm设置镜像源</span><br><span class="line">npm config set registry=http://registry.npmjs.org</span><br><span class="line"></span><br><span class="line"># 查看镜像源</span><br><span class="line">npm config get registry</span><br><span class="line"></span><br><span class="line"># 淘宝镜像源 https://registry.npm.taobao.org/</span><br><span class="line"></span><br><span class="line"># 取消代理</span><br><span class="line">npm config delete proxy</span><br><span class="line">npm config delete https-proxy</span><br></pre></td></tr></table></figure>
+<h2 id="关于git修改推送仓库地址"><a class="markdownIt-Anchor" href="#关于git修改推送仓库地址">#</a> 关于 <code>git</code>  修改推送仓库地址</h2>
+<blockquote>
 <p>查看远程仓库地址</p>
 </blockquote>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git remote -v</span><br></pre></td></tr></table></figure>
-
 <p>方法有三种：</p>
 <p>修改命令</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git remote set-url origin [url]</span><br></pre></td></tr></table></figure>
 <p>先删后加</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">git remote rm origin</span><br><span class="line">git remote add origin [url]</span><br></pre></td></tr></table></figure>
-
-<h2 id="git统计项目代码行数"><a href="#git统计项目代码行数" class="headerlink" title="git统计项目代码行数"></a><code>git</code>统计项目代码行数</h2><blockquote>
-<p>显示项目的所有文件列表及行数（已删除的文件显示为空）<br>最后一行会显示项目代码的总行数</p>
+<h2 id="git统计项目代码行数"><a class="markdownIt-Anchor" href="#git统计项目代码行数">#</a>  <code>git</code>  统计项目代码行数</h2>
+<blockquote>
+<p>显示项目的所有文件列表及行数（已删除的文件显示为空）<br>
+最后一行会显示项目代码的总行数</p>
 </blockquote>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git ls-files | xargs wc -l</span><br></pre></td></tr></table></figure>
 <blockquote>
@@ -197,8 +196,7 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
 <p>只查看项目文件列表</p>
 </blockquote>
 <figure class="highlight vim"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git <span class="keyword">ls</span>-<span class="keyword">files</span></span><br></pre></td></tr></table></figure>
-
-<p><a target="_blank" rel="noopener" href="https://ipaddress.com/website/github.com">查看<code>Ip</code></a></p>
+<p><a target="_blank" rel="noopener" href="https://ipaddress.com/website/github.com">查看 <code>Ip</code> </a></p>
 <!-- https://github.com/microsoft/terminal -->
 
       <div class="tags">
@@ -256,7 +254,7 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
     <div class="item right">
       
 
-  <a href="/posts/60f024c8/" itemprop="url" rel="next" data-background-image="https:&#x2F;&#x2F;tva3.sinaimg.cn&#x2F;mw690&#x2F;6833939bly1gipevarprfj20zk0m8npd.jpg" title="关于sql执行计划">
+  <a href="/posts/60f024c8/" itemprop="url" rel="next" data-background-image="https:&#x2F;&#x2F;tva2.sinaimg.cn&#x2F;mw690&#x2F;6833939bly1giclwuom7cj20zk0m8dvn.jpg" title="关于sql执行计划">
   <span class="type">Next Post</span>
   <span class="category"><i class="ic i-flag"></i> 数据库</span>
   <h3>关于sql执行计划</h3>
@@ -278,7 +276,7 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
   <div class="panels">
     <div class="inner">
       <div class="contents panel pjax" data-title="Contents">
-          <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%85%B3%E4%BA%8Egit%E8%AE%BE%E7%BD%AE%E4%BB%A3%E7%90%86%E5%92%8C%E5%8F%96%E6%B6%88%E4%BB%A3%E7%90%86"><span class="toc-number">1.</span> <span class="toc-text">关于git设置代理和取消代理</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%85%B3%E4%BA%8Enpm%E7%9A%84%E8%AE%BE%E7%BD%AE%E4%BB%A3%E7%90%86%E5%92%8C%E5%8F%96%E6%B6%88%E4%BB%A3%E7%90%86"><span class="toc-number">2.</span> <span class="toc-text">关于npm的设置代理和取消代理</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%85%B3%E4%BA%8Egit%E4%BF%AE%E6%94%B9%E6%8E%A8%E9%80%81%E4%BB%93%E5%BA%93%E5%9C%B0%E5%9D%80"><span class="toc-number">3.</span> <span class="toc-text">关于git修改推送仓库地址</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#git%E7%BB%9F%E8%AE%A1%E9%A1%B9%E7%9B%AE%E4%BB%A3%E7%A0%81%E8%A1%8C%E6%95%B0"><span class="toc-number">4.</span> <span class="toc-text">git统计项目代码行数</span></a></li></ol>
+          <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%85%B3%E4%BA%8Egit%E8%AE%BE%E7%BD%AE%E4%BB%A3%E7%90%86%E5%92%8C%E5%8F%96%E6%B6%88%E4%BB%A3%E7%90%86"><span class="toc-number">1.</span> <span class="toc-text"> 关于 git  设置代理和取消代理</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%85%B3%E4%BA%8Enpm%E7%9A%84%E8%AE%BE%E7%BD%AE%E4%BB%A3%E7%90%86%E5%92%8C%E5%8F%96%E6%B6%88%E4%BB%A3%E7%90%86"><span class="toc-number">2.</span> <span class="toc-text"> 关于 npm  的设置代理和取消代理</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%85%B3%E4%BA%8Egit%E4%BF%AE%E6%94%B9%E6%8E%A8%E9%80%81%E4%BB%93%E5%BA%93%E5%9C%B0%E5%9D%80"><span class="toc-number">3.</span> <span class="toc-text"> 关于 git  修改推送仓库地址</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#git%E7%BB%9F%E8%AE%A1%E9%A1%B9%E7%9B%AE%E4%BB%A3%E7%A0%81%E8%A1%8C%E6%95%B0"><span class="toc-number">4.</span> <span class="toc-text">  git  统计项目代码行数</span></a></li></ol>
       </div>
       <div class="related panel pjax" data-title="Related">
       </div>
@@ -293,13 +291,13 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
 <nav class="state">
     <div class="item posts">
       <a href="/archives/">
-        <span class="count">142</span>
+        <span class="count">143</span>
         <span class="name">posts</span>
       </a>
     </div>
     <div class="item categories">
       <a href="/categories/">
-        <span class="count">73</span>
+        <span class="count">74</span>
         <span class="name">categories</span>
       </a>
     </div>
@@ -382,75 +380,9 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
   <li class="item">
     
 <div class="breadcrumb">
-<a href="/categories/Tools/" title="In Tools">Tools</a>
 </div>
 
-    <span><a href="/posts/ba83fda/" title="超级好用的StringJoiner">超级好用的StringJoiner</a></span>
-  </li>
-
-      
-  <li class="item">
-    
-<div class="breadcrumb">
-</div>
-
-    <span><a href="/posts/5a74c6a6/" title="宝儿的大腿小腿围">宝儿的大腿小腿围</a></span>
-  </li>
-
-      
-  <li class="item">
-    
-<div class="breadcrumb">
-<a href="/categories/Java%E9%9D%A2%E8%AF%95/" title="In Java面试">Java面试</a>
-<i class="ic i-angle-right"></i>
-<a href="/categories/Java%E9%9D%A2%E8%AF%95/Mybatis/" title="In Mybatis">Mybatis</a>
-</div>
-
-    <span><a href="/posts/31d0fffb/" title="Mybatis中#号和$号的区别">Mybatis中#号和$号的区别</a></span>
-  </li>
-
-      
-  <li class="item">
-    
-<div class="breadcrumb">
-<a href="/categories/Java/" title="In Java">Java</a>
-</div>
-
-    <span><a href="/posts/c3733521/" title="Java之assert关键字">Java之assert关键字</a></span>
-  </li>
-
-      
-  <li class="item">
-    
-<div class="breadcrumb">
-<a href="/categories/Java/" title="In Java">Java</a>
-<i class="ic i-angle-right"></i>
-<a href="/categories/Java/Java%E9%9D%A2%E8%AF%95/" title="In Java面试">Java面试</a>
-</div>
-
-    <span><a href="/posts/f23f1351/" title="equals与&#x3D;&#x3D;区别">equals与==区别</a></span>
-  </li>
-
-      
-  <li class="item">
-    
-<div class="breadcrumb">
-<a href="/categories/%E5%89%8D%E7%AB%AF/" title="In 前端">前端</a>
-</div>
-
-    <span><a href="/posts/e43580c1/" title="flex布局">flex布局</a></span>
-  </li>
-
-      
-  <li class="item">
-    
-<div class="breadcrumb">
-<a href="/categories/%E5%89%8D%E7%AB%AF/" title="In 前端">前端</a>
-<i class="ic i-angle-right"></i>
-<a href="/categories/%E5%89%8D%E7%AB%AF/Vue/" title="In Vue">Vue</a>
-</div>
-
-    <span><a href="/posts/8408ed11/" title="Vue-Cli介绍以及使用">Vue-Cli介绍以及使用</a></span>
+    <span><a href="/posts/d0966c4d/" title="工作难点">工作难点</a></span>
   </li>
 
       
@@ -462,25 +394,101 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
 <a href="/categories/Java/Tools/" title="In Tools">Tools</a>
 </div>
 
-    <span><a href="/posts/13370746/" title="使用EasyExcel读取excel文件为Java实体类">使用EasyExcel读取excel文件为Java实体类</a></span>
+    <span><a href="/posts/49b96938/" title="Java获取一天时间的起始">Java获取一天时间的起始</a></span>
   </li>
 
       
   <li class="item">
     
 <div class="breadcrumb">
+<a href="/categories/Java%E9%9D%A2%E8%AF%95/" title="In Java面试">Java面试</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/Java%E9%9D%A2%E8%AF%95/%E7%AE%97%E6%B3%95/" title="In 算法">算法</a>
 </div>
 
-    <span><a href="/posts/1599bffe/" title="归并排序">归并排序</a></span>
+    <span><a href="/posts/b9b9f7e7/" title="二叉树遍历">二叉树遍历</a></span>
   </li>
 
       
   <li class="item">
     
 <div class="breadcrumb">
+<a href="/categories/IDEA/" title="In IDEA">IDEA</a>
 </div>
 
-    <span><a href="/posts/a72f470b/" title="关于JVM常用参数">关于JVM常用参数</a></span>
+    <span><a href="/posts/579bb697/" title="IDEA小图标含义">IDEA小图标含义</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/%E6%95%B0%E6%8D%AE%E5%BA%93/" title="In 数据库">数据库</a>
+</div>
+
+    <span><a href="/posts/96e2d97b/" title="mysql 获取当前日期及格式化">mysql 获取当前日期及格式化</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/Java%E9%9D%A2%E8%AF%95/" title="In Java面试">Java面试</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/Java%E9%9D%A2%E8%AF%95/%E6%95%B0%E6%8D%AE%E5%BA%93/" title="In 数据库">数据库</a>
+</div>
+
+    <span><a href="/posts/666b2933/" title="面试之旅关于数据库">面试之旅关于数据库</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/Java%E9%9D%A2%E8%AF%95/" title="In Java面试">Java面试</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/Java%E9%9D%A2%E8%AF%95/%E5%BF%AB%E9%80%9F%E6%8E%92%E5%BA%8F/" title="In 快速排序">快速排序</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/Java%E9%9D%A2%E8%AF%95/%E5%BF%AB%E9%80%9F%E6%8E%92%E5%BA%8F/%E7%AE%97%E6%B3%95/" title="In 算法">算法</a>
+</div>
+
+    <span><a href="/posts/ff8068c0/" title="快速排序">快速排序</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/Java%E9%9D%A2%E8%AF%95/" title="In Java面试">Java面试</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/Java%E9%9D%A2%E8%AF%95/%E7%9B%B4%E6%8E%A5%E6%8F%92%E5%85%A5%E6%8E%92%E5%BA%8F/" title="In 直接插入排序">直接插入排序</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/Java%E9%9D%A2%E8%AF%95/%E7%9B%B4%E6%8E%A5%E6%8F%92%E5%85%A5%E6%8E%92%E5%BA%8F/%E7%AE%97%E6%B3%95/" title="In 算法">算法</a>
+</div>
+
+    <span><a href="/posts/2b06d603/" title="直接插入排序">直接插入排序</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/SAP/" title="In SAP">SAP</a>
+</div>
+
+    <span><a href="/posts/4187faeb/" title="English self_introduction">English self_introduction</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/%E5%89%8D%E7%AB%AF/" title="In 前端">前端</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/%E5%89%8D%E7%AB%AF/Css/" title="In Css">Css</a>
+</div>
+
+    <span><a href="/posts/7f59931c/" title="Css选择器">Css选择器</a></span>
   </li>
 
   </ul>
@@ -505,13 +513,13 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
     <span class="post-meta-item-icon">
       <i class="ic i-chart-area"></i>
     </span>
-    <span title="Symbols count total">620k words</span>
+    <span title="Symbols count total">622k words</span>
 
     <span class="post-meta-divider">|</span>
     <span class="post-meta-item-icon">
       <i class="ic i-coffee"></i>
     </span>
-    <span title="Reading time total">9:24</span>
+    <span title="Reading time total">9:25</span>
   </div>
 </div>
 

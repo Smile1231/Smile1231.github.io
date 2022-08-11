@@ -76,7 +76,7 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
       <i class="ic i-pen"></i>
     </span>
     <span class="text">Symbols count in article</span>
-    <span>843</span>
+    <span>847</span>
     <span class="text">words</span>
   </span>
   <span class="item" title="Reading time">
@@ -117,12 +117,12 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
       </div>
       <div id="imgs" class="pjax">
         <ul>
-          <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1gipewf5l51j20zk0m8b29.jpg"></li>
-          <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1giph4fomxoj20zk0m8axp.jpg"></li>
-          <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1giclh5u05ej20zk0m87df.jpg"></li>
-          <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1gipevuctzzj20zk0m84qp.jpg"></li>
-          <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1giclwrdwyaj20zk0m8are.jpg"></li>
-          <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1giph4lm9i7j20zk0m84qp.jpg"></li>
+          <li class="item" data-background-image="https://tva2.sinaimg.cn/large/6833939bly1giclize41wj20zk0m87gk.jpg"></li>
+          <li class="item" data-background-image="https://tva2.sinaimg.cn/large/6833939bly1giph4fomxoj20zk0m8axp.jpg"></li>
+          <li class="item" data-background-image="https://tva2.sinaimg.cn/large/6833939bly1giclxxcb6rj20zk0m8b29.jpg"></li>
+          <li class="item" data-background-image="https://tva2.sinaimg.cn/large/6833939bly1giph4wqtg4j20zk0m8x6p.jpg"></li>
+          <li class="item" data-background-image="https://tva2.sinaimg.cn/large/6833939bly1gicitcxhpij20zk0m8hdt.jpg"></li>
+          <li class="item" data-background-image="https://tva2.sinaimg.cn/large/6833939bly1gipeyhsblkj20zk0m81kx.jpg"></li>
         </ul>
       </div>
     </header>
@@ -174,14 +174,20 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
   <div class="body md" itemprop="articleBody">
     
 
-    <h2 id="冒泡排序（稳定）"><a href="#冒泡排序（稳定）" class="headerlink" title="冒泡排序（稳定）"></a>冒泡排序（稳定）</h2><h3 id="1、基本思想"><a href="#1、基本思想" class="headerlink" title="1、基本思想"></a>1、基本思想</h3><p>冒泡排序（<code>Bubble Sort</code>）是一种简单的排序算法。它重复地走访过要排序的数列，一次比较两个元素，如果他们的顺序错误就把他们交换过来。走访数列的工作是重复地进行直到没有再需要交换，也就是说该数列已经排序完成。这个算法的名字由来是因为越小的元素会经由交换慢慢“浮”到数列的顶端。</p>
+    <h2 id="冒泡排序稳定"><a class="markdownIt-Anchor" href="#冒泡排序稳定">#</a> 冒泡排序（稳定）</h2>
+<h3 id="1-基本思想"><a class="markdownIt-Anchor" href="#1-基本思想">#</a> 1、基本思想</h3>
+<p>冒泡排序（ <code>Bubble Sort</code> ）是一种简单的排序算法。它重复地走访过要排序的数列，一次比较两个元素，如果他们的顺序错误就把他们交换过来。走访数列的工作是重复地进行直到没有再需要交换，也就是说该数列已经排序完成。这个算法的名字由来是因为越小的元素会经由交换慢慢 “浮” 到数列的顶端。</p>
 <span id="more"></span>
-<h3 id="2、算法描述"><a href="#2、算法描述" class="headerlink" title="2、算法描述"></a>2、算法描述</h3><p>冒泡排序算法的运作如下：</p>
-<p>①. 比较相邻的元素。如果第一个比第二个大，就交换他们两个。<br>②. 对每一对相邻元素作同样的工作，从开始第一对到结尾的最后一对。这步做完后，最后的元素会是最大的数。<br>③. 针对所有的元素重复以上的步骤，除了最后一个。<br>④. 持续每次对越来越少的元素重复上面的步骤①~③，直到没有任何一对数字需要比较。</p>
-<h3 id="3、代码实现"><a href="#3、代码实现" class="headerlink" title="3、代码实现"></a>3、代码实现</h3><p>冒泡排序需要两个嵌套的循环. 其中, 外层循环移动游标; 内层循环遍历游标及之后(或之前)的元素, 通过两两交换的方式, 每次只确保该内循环结束位置排序正确, 然后内层循环周期结束, 交由外层循环往后(或前)移动游标, 随即开始下一轮内层循环, 以此类推, 直至循环结束.</p>
+<h3 id="2-算法描述"><a class="markdownIt-Anchor" href="#2-算法描述">#</a> 2、算法描述</h3>
+<p>冒泡排序算法的运作如下：</p>
+<p>①. 比较相邻的元素。如果第一个比第二个大，就交换他们两个。<br>
+②. 对每一对相邻元素作同样的工作，从开始第一对到结尾的最后一对。这步做完后，最后的元素会是最大的数。<br>
+③. 针对所有的元素重复以上的步骤，除了最后一个。<br>
+④. 持续每次对越来越少的元素重复上面的步骤①~③，直到没有任何一对数字需要比较。</p>
+<h3 id="3-代码实现"><a class="markdownIt-Anchor" href="#3-代码实现">#</a> 3、代码实现</h3>
+<p>冒泡排序需要两个嵌套的循环。其中，外层循环移动游标；内层循环遍历游标及之后 (或之前) 的元素，通过两两交换的方式，每次只确保该内循环结束位置排序正确，然后内层循环周期结束，交由外层循环往后 (或前) 移动游标，随即开始下一轮内层循环，以此类推，直至循环结束.</p>
 <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">bubbleSort</span><span class="params">(<span class="keyword">int</span>[] arr)</span></span>&#123;</span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">int</span> i = arr.length; i &gt; <span class="number">0</span>; i--) &#123;      <span class="comment">//外层循环移动游标</span></span><br><span class="line">        <span class="keyword">for</span>(<span class="keyword">int</span> j = <span class="number">0</span>; j &lt; i &amp;&amp; (j+<span class="number">1</span>) &lt; i; j++)&#123;    <span class="comment">//内层循环遍历游标及之后(或之前)的元素</span></span><br><span class="line">            <span class="keyword">if</span>(arr[j] &gt; arr[j+<span class="number">1</span>])&#123;</span><br><span class="line">                <span class="keyword">int</span> temp = arr[j];</span><br><span class="line">                arr[j] = arr[j+<span class="number">1</span>];</span><br><span class="line">                arr[j+<span class="number">1</span>] = temp;</span><br><span class="line">                System.out.println(<span class="string">&quot;Sorting: &quot;</span> + Arrays.toString(arr));</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<p>Tips: 由于冒泡排序只在相邻元素大小不符合要求时才调换他们的位置, 它并不改变相同元素之间的相对顺序, 因此它是稳定的排序算法.</p>
+<p>Tips: 由于冒泡排序只在相邻元素大小不符合要求时才调换他们的位置，它并不改变相同元素之间的相对顺序，因此它是稳定的排序算法.</p>
 <p><span class="exturl" data-url="aHR0cHM6Ly9pdGltZXRyYXZlbGVyLmdpdGh1Yi5pby8yMDE3LzA3LzE4LyVFNSU4NSVBQiVFNSVBNCVBNyVFNiU4RSU5MiVFNSVCQSU4RiVFNyVBRSU5NyVFNiVCMyU5NSVFNiU4MCVCQiVFNyVCQiU5MyVFNCVCOCU4RWphdmElRTUlQUUlOUUlRTclOEUlQjAv">链接</span></p>
 
       <div class="tags">
@@ -239,7 +245,7 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
     <div class="item left">
       
 
-  <a href="/posts/c2a5fdc5/" itemprop="url" rel="prev" data-background-image="https:&#x2F;&#x2F;tva3.sinaimg.cn&#x2F;mw690&#x2F;6833939bly1gicis3attqj20zk0m8k7l.jpg" title="堆排序">
+  <a href="/posts/c2a5fdc5/" itemprop="url" rel="prev" data-background-image="https:&#x2F;&#x2F;tva2.sinaimg.cn&#x2F;mw690&#x2F;6833939bly1giclip4jbpj20zk0m87cv.jpg" title="堆排序">
   <span class="type">Previous Post</span>
   <span class="category"><i class="ic i-flag"></i> 算法</span>
   <h3>堆排序</h3>
@@ -249,7 +255,7 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
     <div class="item right">
       
 
-  <a href="/posts/1599bffe/" itemprop="url" rel="next" data-background-image="https:&#x2F;&#x2F;tva3.sinaimg.cn&#x2F;mw690&#x2F;6833939bly1gicit31ffoj20zk0m8naf.jpg" title="归并排序">
+  <a href="/posts/1599bffe/" itemprop="url" rel="next" data-background-image="https:&#x2F;&#x2F;tva2.sinaimg.cn&#x2F;mw690&#x2F;6833939bly1giclwrdwyaj20zk0m8are.jpg" title="归并排序">
   <span class="type">Next Post</span>
   <span class="category"><i class="ic i-flag"></i> </span>
   <h3>归并排序</h3>
@@ -271,7 +277,7 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
   <div class="panels">
     <div class="inner">
       <div class="contents panel pjax" data-title="Contents">
-          <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%86%92%E6%B3%A1%E6%8E%92%E5%BA%8F%EF%BC%88%E7%A8%B3%E5%AE%9A%EF%BC%89"><span class="toc-number">1.</span> <span class="toc-text">冒泡排序（稳定）</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1%E3%80%81%E5%9F%BA%E6%9C%AC%E6%80%9D%E6%83%B3"><span class="toc-number">1.1.</span> <span class="toc-text">1、基本思想</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2%E3%80%81%E7%AE%97%E6%B3%95%E6%8F%8F%E8%BF%B0"><span class="toc-number">1.2.</span> <span class="toc-text">2、算法描述</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3%E3%80%81%E4%BB%A3%E7%A0%81%E5%AE%9E%E7%8E%B0"><span class="toc-number">1.3.</span> <span class="toc-text">3、代码实现</span></a></li></ol></li></ol>
+          <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%86%92%E6%B3%A1%E6%8E%92%E5%BA%8F%E7%A8%B3%E5%AE%9A"><span class="toc-number">1.</span> <span class="toc-text"> 冒泡排序（稳定）</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-%E5%9F%BA%E6%9C%AC%E6%80%9D%E6%83%B3"><span class="toc-number">1.1.</span> <span class="toc-text"> 1、基本思想</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-%E7%AE%97%E6%B3%95%E6%8F%8F%E8%BF%B0"><span class="toc-number">1.2.</span> <span class="toc-text"> 2、算法描述</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-%E4%BB%A3%E7%A0%81%E5%AE%9E%E7%8E%B0"><span class="toc-number">1.3.</span> <span class="toc-text"> 3、代码实现</span></a></li></ol></li></ol>
       </div>
       <div class="related panel pjax" data-title="Related">
         <ul>
@@ -289,13 +295,13 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
 <nav class="state">
     <div class="item posts">
       <a href="/archives/">
-        <span class="count">142</span>
+        <span class="count">143</span>
         <span class="name">posts</span>
       </a>
     </div>
     <div class="item categories">
       <a href="/categories/">
-        <span class="count">73</span>
+        <span class="count">74</span>
         <span class="name">categories</span>
       </a>
     </div>
@@ -382,22 +388,36 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
 <div class="breadcrumb">
 <a href="/categories/Java%E9%9D%A2%E8%AF%95/" title="In Java面试">Java面试</a>
 <i class="ic i-angle-right"></i>
-<a href="/categories/Java%E9%9D%A2%E8%AF%95/%E7%9B%B4%E6%8E%A5%E6%8F%92%E5%85%A5%E6%8E%92%E5%BA%8F/" title="In 直接插入排序">直接插入排序</a>
+<a href="/categories/Java%E9%9D%A2%E8%AF%95/%E4%BA%8C%E5%88%86%E6%9F%A5%E6%89%BE/" title="In 二分查找">二分查找</a>
 <i class="ic i-angle-right"></i>
-<a href="/categories/Java%E9%9D%A2%E8%AF%95/%E7%9B%B4%E6%8E%A5%E6%8F%92%E5%85%A5%E6%8E%92%E5%BA%8F/%E7%AE%97%E6%B3%95/" title="In 算法">算法</a>
+<a href="/categories/Java%E9%9D%A2%E8%AF%95/%E4%BA%8C%E5%88%86%E6%9F%A5%E6%89%BE/%E7%AE%97%E6%B3%95/" title="In 算法">算法</a>
 </div>
 
-    <span><a href="/posts/2b06d603/" title="直接插入排序">直接插入排序</a></span>
+    <span><a href="/posts/e8eb0481/" title="二分查找">二分查找</a></span>
   </li>
 
       
   <li class="item">
     
 <div class="breadcrumb">
-<a href="/categories/Jenkins/" title="In Jenkins">Jenkins</a>
+<a href="/categories/%E5%89%8D%E7%AB%AF/" title="In 前端">前端</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/%E5%89%8D%E7%AB%AF/Css/" title="In Css">Css</a>
 </div>
 
-    <span><a href="/posts/171f1b7f/" title="Jenkins&#x2F;CICD">Jenkins/CICD</a></span>
+    <span><a href="/posts/7f59931c/" title="Css选择器">Css选择器</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/Java%E9%9D%A2%E8%AF%95/" title="In Java面试">Java面试</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/Java%E9%9D%A2%E8%AF%95/Tools/" title="In Tools">Tools</a>
+</div>
+
+    <span><a href="/posts/6714b4a9/" title="FastJson序列化使用">FastJson序列化使用</a></span>
   </li>
 
       
@@ -405,9 +425,53 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
     
 <div class="breadcrumb">
 <a href="/categories/Java/" title="In Java">Java</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/Java/SpringBoot/" title="In SpringBoot">SpringBoot</a>
 </div>
 
-    <span><a href="/posts/d6d1be75/" title="在Javadoc注释中引用方法">在Javadoc注释中引用方法</a></span>
+    <span><a href="/posts/a3dfcd98/" title="SpringBoot中常见的几种解决跨域的方式">SpringBoot中常见的几种解决跨域的方式</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/SpringBoot/" title="In SpringBoot">SpringBoot</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/SpringBoot/Java/" title="In Java">Java</a>
+</div>
+
+    <span><a href="/posts/f976ebe7/" title="SpringMvc中标准的后端接口格式">SpringMvc中标准的后端接口格式</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/%E5%9F%BA%E5%9B%A0%E7%BC%96%E8%BE%91/" title="In 基因编辑">基因编辑</a>
+</div>
+
+    <span><a href="/posts/b7653deb/" title="什么是CRISPR&#x2F;Cas9">什么是CRISPR/Cas9</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/Daily/" title="In Daily">Daily</a>
+</div>
+
+    <span><a href="/posts/9a0369ec/" title="布隆过滤器">布隆过滤器</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/Machine-Learning/" title="In Machine Learning">Machine Learning</a>
+</div>
+
+    <span><a href="/posts/1b930e38/" title="Machine Learning essays">Machine Learning essays</a></span>
   </li>
 
       
@@ -428,64 +492,10 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
   <li class="item">
     
 <div class="breadcrumb">
-<a href="/categories/Java%E9%9D%A2%E8%AF%95/" title="In Java面试">Java面试</a>
-<i class="ic i-angle-right"></i>
-<a href="/categories/Java%E9%9D%A2%E8%AF%95/%E5%86%92%E6%B3%A1%E6%8E%92%E5%BA%8F/" title="In 冒泡排序">冒泡排序</a>
-<i class="ic i-angle-right"></i>
-<a href="/categories/Java%E9%9D%A2%E8%AF%95/%E5%86%92%E6%B3%A1%E6%8E%92%E5%BA%8F/%E7%AE%97%E6%B3%95/" title="In 算法">算法</a>
+<a href="/categories/%E5%9F%BA%E5%9B%A0%E7%BC%96%E8%BE%91/" title="In 基因编辑">基因编辑</a>
 </div>
 
-    <span><a href="/posts/14e6f1eb/" title="冒泡排序">冒泡排序</a></span>
-  </li>
-
-      
-  <li class="item">
-    
-<div class="breadcrumb">
-<a href="/categories/Java/" title="In Java">Java</a>
-</div>
-
-    <span><a href="/posts/9dcbb5fa/" title="Corn表达式">Corn表达式</a></span>
-  </li>
-
-      
-  <li class="item">
-    
-<div class="breadcrumb">
-<a href="/categories/Ubuntu/" title="In Ubuntu">Ubuntu</a>
-<i class="ic i-angle-right"></i>
-<a href="/categories/Ubuntu/Mysql/" title="In Mysql">Mysql</a>
-</div>
-
-    <span><a href="/posts/31f95091/" title="Ubuntu中安装卸载Mysql数据库">Ubuntu中安装卸载Mysql数据库</a></span>
-  </li>
-
-      
-  <li class="item">
-    
-<div class="breadcrumb">
-</div>
-
-    <span><a href="/posts/7874a051/" title="Nginx踩坑之解决前后端跨域">Nginx踩坑之解决前后端跨域</a></span>
-  </li>
-
-      
-  <li class="item">
-    
-<div class="breadcrumb">
-</div>
-
-    <span><a href="/posts/dfdc2005/" title="JDK动态代理原理剖析(简洁版)">JDK动态代理原理剖析(简洁版)</a></span>
-  </li>
-
-      
-  <li class="item">
-    
-<div class="breadcrumb">
-<a href="/categories/Daily/" title="In Daily">Daily</a>
-</div>
-
-    <span><a href="/posts/9a0369ec/" title="布隆过滤器">布隆过滤器</a></span>
+    <span><a href="/posts/1f142005/" title="CRISPR-Cas9英文介绍">CRISPR-Cas9英文介绍</a></span>
   </li>
 
   </ul>
@@ -510,13 +520,13 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
     <span class="post-meta-item-icon">
       <i class="ic i-chart-area"></i>
     </span>
-    <span title="Symbols count total">620k words</span>
+    <span title="Symbols count total">622k words</span>
 
     <span class="post-meta-divider">|</span>
     <span class="post-meta-item-icon">
       <i class="ic i-coffee"></i>
     </span>
-    <span title="Reading time total">9:24</span>
+    <span title="Reading time total">9:25</span>
   </div>
 </div>
 

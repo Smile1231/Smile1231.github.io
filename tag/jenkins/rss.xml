@@ -7,107 +7,107 @@
         <language>en</language>
         <pubDate>Thu, 11 Aug 2022 00:47:15 +0800</pubDate>
         <lastBuildDate>Thu, 11 Aug 2022 00:47:15 +0800</lastBuildDate>
-        <category>SAP</category>
         <category>生物信息</category>
         <category>基因编辑</category>
+        <category>前端</category>
+        <category>Css</category>
         <category>Java</category>
+        <category>Corn</category>
+        <category>DDD</category>
+        <category>领域驱动设计</category>
+        <category>SAP</category>
+        <category>DisPlay属性</category>
+        <category>Docker</category>
         <category>Cache</category>
         <category>Cookie</category>
         <category>Session</category>
         <category>Java面试</category>
-        <category>Corn</category>
-        <category>前端</category>
-        <category>Css</category>
-        <category>DisPlay属性</category>
-        <category>DDD</category>
-        <category>领域驱动设计</category>
-        <category>Docker</category>
         <category>blog</category>
         <category>hexo</category>
         <category>next</category>
         <category>FastJson</category>
+        <category>IDEA</category>
         <category>JavaScript</category>
         <category>Html</category>
         <category>SpringBoot</category>
-        <category>IDEA</category>
-        <category>Jvm</category>
         <category>Jenkins</category>
         <category>CI/CD</category>
-        <category>函数式接口</category>
         <category>map</category>
         <category>Stream流</category>
+        <category>Jvm</category>
         <category>Assert</category>
+        <category>函数式接口</category>
         <category>java</category>
         <category>calender</category>
         <category>Springboot</category>
-        <category>Python</category>
-        <category>Jupyter</category>
-        <category>Machine Learning</category>
         <category>LeetCode</category>
         <category>算法</category>
         <category>递归</category>
-        <category>numpy</category>
-        <category>pandas</category>
-        <category>sklearn</category>
         <category>Linux</category>
         <category>Mybatis</category>
         <category>分页查询</category>
-        <category>模糊查询</category>
-        <category>Spring</category>
+        <category>Machine Learning</category>
+        <category>numpy</category>
+        <category>pandas</category>
+        <category>sklearn</category>
+        <category>Python</category>
+        <category>Jupyter</category>
         <category>Nginx</category>
+        <category>Spring</category>
+        <category>模糊查询</category>
         <category>SrpingBoot</category>
         <category>文件上传</category>
-        <category>事务</category>
-        <category>master</category>
         <category>TypeScript</category>
         <category>WebPack</category>
-        <category>UML</category>
+        <category>master</category>
+        <category>事务</category>
         <category>Groovy</category>
+        <category>UML</category>
         <category>Ubuntu</category>
         <category>Mysql</category>
+        <category>Vue</category>
         <category>VsCode</category>
         <category>Shell</category>
         <category>VSCODE</category>
         <category>快捷键</category>
-        <category>Vue</category>
         <category>Stream</category>
-        <category>日期</category>
         <category>线程池</category>
         <category>ubuntu</category>
         <category>虚拟机</category>
+        <category>日期</category>
+        <category>二分查找</category>
+        <category>数据挖掘</category>
         <category>Hadoop</category>
         <category>操作系统</category>
         <category>EasyExcel</category>
-        <category>二分查找</category>
         <category>node</category>
-        <category>数据挖掘</category>
         <category>JVM</category>
         <category>Yaml</category>
-        <category>数据库</category>
-        <category>Hexo</category>
         <category>junit</category>
+        <category>Hexo</category>
+        <category>数据库</category>
         <category>Mysql事务</category>
-        <category>Git</category>
-        <category>冒泡排序</category>
         <category>git,npm,node</category>
+        <category>冒泡排序</category>
         <category>动态规划</category>
         <category>堆排序</category>
-        <category>多线程</category>
+        <category>Git</category>
         <category>幂等性</category>
         <category>Google</category>
+        <category>多线程</category>
         <category>流</category>
-        <category>快速排序</category>
-        <category>正则表达式</category>
         <category>归并排序</category>
+        <category>正则表达式</category>
+        <category>快速排序</category>
         <category>直接插入排序</category>
         <category>选择排序</category>
         <category>Java 面试</category>
         <category>数据结构</category>
         <category>阻塞队列</category>
         <category>Spring事务</category>
+        <category>Date</category>
         <category>JDK</category>
         <category>动态代理</category>
-        <category>Date</category>
         <category>ArrayList</category>
         <category>接口</category>
         <category>SpringMvc</category>
@@ -135,97 +135,87 @@
             <category>Jenkins</category>
             <category>CI/CD</category>
             <pubDate>Mon, 08 Aug 2022 22:40:05 +0800</pubDate>
-            <description><![CDATA[ &lt;p&gt;&lt;a href=&#34;https://smile1231.github.io/posts/11faeb76/&#34;&gt;&lt;code&gt;Docker&lt;/code&gt;中安装&lt;code&gt;Jenkins&lt;/code&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href=&#34;https://www.cnblogs.com/yungyu16/p/12928802.html#%E6%93%8D%E4%BD%9C%E4%BB%BB%E5%8A%A1&#34;&gt;&lt;code&gt;Java&lt;/code&gt;操作&lt;code&gt;Jenkins&lt;/code&gt;参考&lt;/a&gt;&lt;/p&gt;
+            <description><![CDATA[ &lt;p&gt;&lt;a href=&#34;https://smile1231.github.io/posts/11faeb76/&#34;&gt; &lt;code&gt;Docker&lt;/code&gt;  中安装 &lt;code&gt;Jenkins&lt;/code&gt; &lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.cnblogs.com/yungyu16/p/12928802.html#%E6%93%8D%E4%BD%9C%E4%BB%BB%E5%8A%A1&#34;&gt; &lt;code&gt;Java&lt;/code&gt;  操作 &lt;code&gt;Jenkins&lt;/code&gt;  参考&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9pY29kZS5iZXN0L2kvODI4MDAwNDYwNDU0MDk=&#34;&gt;参考文章&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;完成&lt;code&gt;jenkins&lt;/code&gt;在docker中的启动安装对应的插件之后&lt;/p&gt;
-&lt;p&gt;由于我是使用的&lt;code&gt;docker&lt;/code&gt;启动的&lt;code&gt;Jenkins&lt;/code&gt;,所以需要在容器中装相应的环境：&lt;code&gt;jdk&lt;/code&gt;,&lt;code&gt;maven&lt;/code&gt;,&lt;code&gt;git&lt;/code&gt;等等&lt;/p&gt;
-&lt;p&gt;进入容器内部:&lt;code&gt;docker exec -u root -it myJenkins10242 bash&lt;/code&gt;&lt;/p&gt;
-&lt;h2 id=&#34;安装vim&#34;&gt;&lt;a href=&#34;#安装vim&#34; class=&#34;headerlink&#34; title=&#34;安装vim&#34;&gt;&lt;/a&gt;安装&lt;code&gt;vim&lt;/code&gt;&lt;/h2&gt;&lt;blockquote&gt;
-&lt;p&gt;在这之前需要对&lt;code&gt;apt&lt;/code&gt;进行一下升级 &lt;/p&gt;
+&lt;p&gt;完成 &lt;code&gt;jenkins&lt;/code&gt;  在 docker 中的启动安装对应的插件之后&lt;/p&gt;
+&lt;p&gt;由于我是使用的 &lt;code&gt;docker&lt;/code&gt;  启动的 &lt;code&gt;Jenkins&lt;/code&gt; , 所以需要在容器中装相应的环境： &lt;code&gt;jdk&lt;/code&gt; , &lt;code&gt;maven&lt;/code&gt; , &lt;code&gt;git&lt;/code&gt;  等等&lt;/p&gt;
+&lt;p&gt;进入容器内部: &lt;code&gt;docker exec -u root -it myJenkins10242 bash&lt;/code&gt;&lt;/p&gt;
+&lt;h2 id=&#34;安装vim&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#安装vim&#34;&gt;#&lt;/a&gt; 安装 &lt;code&gt;vim&lt;/code&gt;&lt;/h2&gt;
+&lt;blockquote&gt;
+&lt;p&gt;在这之前需要对 &lt;code&gt;apt&lt;/code&gt;  进行一下升级&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;apt-get update&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-
 &lt;p&gt;安装指令：&lt;/p&gt;
 &lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;apt-get install vim&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
 &lt;img data-src=&#34;/posts/171f1b7f/2022-08-10-23-41-19.png&#34; class=&#34;&#34;&gt;
-
-&lt;h2 id=&#34;安装jdk&#34;&gt;&lt;a href=&#34;#安装jdk&#34; class=&#34;headerlink&#34; title=&#34;安装jdk&#34;&gt;&lt;/a&gt;安装&lt;code&gt;jdk&lt;/code&gt;&lt;/h2&gt;&lt;p&gt;这里只讲解手动安装&lt;/p&gt;
-&lt;p&gt;查看架构，下载arm64版本的jdk，这里下载jdk11，&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly93d3cub3JhY2xlLmNvbS9qYXZhL3RlY2hub2xvZ2llcy9qYXZhc2UvamRrMTEtYXJjaGl2ZS1kb3dubG9hZHMuaHRtbCNsaWNlbnNlLWxpZ2h0Ym94&#34;&gt;jdk 11 aarch64_bin.tar.gz&lt;/span&gt;&lt;/p&gt;
+&lt;h2 id=&#34;安装jdk&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#安装jdk&#34;&gt;#&lt;/a&gt; 安装 &lt;code&gt;jdk&lt;/code&gt;&lt;/h2&gt;
+&lt;p&gt;这里只讲解手动安装&lt;/p&gt;
+&lt;p&gt;查看架构，下载 arm64 版本的 jdk，这里下载 jdk11，&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly93d3cub3JhY2xlLmNvbS9qYXZhL3RlY2hub2xvZ2llcy9qYXZhc2UvamRrMTEtYXJjaGl2ZS1kb3dubG9hZHMuaHRtbCNsaWNlbnNlLWxpZ2h0Ym94&#34;&gt;jdk 11 aarch64_bin.tar.gz&lt;/span&gt;&lt;/p&gt;
 &lt;img data-src=&#34;/posts/171f1b7f/2022-08-10-22-18-27.png&#34; class=&#34;&#34;&gt;
-
-&lt;p&gt;我这边将包放在了&lt;code&gt;docker&lt;/code&gt;的挂载目录上&lt;/p&gt;
+&lt;p&gt;我这边将包放在了 &lt;code&gt;docker&lt;/code&gt;  的挂载目录上&lt;/p&gt;
 &lt;img data-src=&#34;/posts/171f1b7f/2022-08-10-23-52-53.png&#34; class=&#34;&#34;&gt;
-
 &lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;# 解压&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;tar -zxvf jdk-11.0.15_linux-aarch64_bin.tar.gz&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;# 配置环境变量&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;vim /etc/profile&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
 &lt;p&gt;在最后加上：&lt;/p&gt;
 &lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;built_in&#34;&gt;export&lt;/span&gt; JAVA_HOME=/var/jenkins_home/install_package/jdk-11.0.15/&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;built_in&#34;&gt;export&lt;/span&gt; PATH=&lt;span class=&#34;variable&#34;&gt;$PATH&lt;/span&gt;:&lt;span class=&#34;variable&#34;&gt;$JAVA_HOME&lt;/span&gt;/bin&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-
-&lt;p&gt;最后：&lt;code&gt;source /etc/profile&lt;/code&gt; 即可&lt;/p&gt;
+&lt;p&gt;最后： &lt;code&gt;source /etc/profile&lt;/code&gt;  即可&lt;/p&gt;
 &lt;img data-src=&#34;/posts/171f1b7f/2022-08-11-00-02-07.png&#34; class=&#34;&#34;&gt;
-&lt;h2 id=&#34;安装maven&#34;&gt;&lt;a href=&#34;#安装maven&#34; class=&#34;headerlink&#34; title=&#34;安装maven&#34;&gt;&lt;/a&gt;安装&lt;code&gt;maven&lt;/code&gt;&lt;/h2&gt;&lt;p&gt;安装&lt;code&gt;maven&lt;/code&gt;的方法也类似，下载版本为&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9hcmNoaXZlLmFwYWNoZS5vcmcvZGlzdC9tYXZlbi9tYXZlbi0zLzMuNS40L2JpbmFyaWVzL2FwYWNoZS1tYXZlbi0zLjUuNC1iaW4udGFyLmd6&#34;&gt;maven-3.5.4&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;依然放在了挂在目录中的&lt;code&gt;install_package&lt;/code&gt;中&lt;/p&gt;
-&lt;p&gt;解压：&lt;code&gt;tar -zxvf apache-maven-3.5.4-bin.tar.gz&lt;/code&gt;&lt;/p&gt;
-&lt;p&gt;配置环境变量: &lt;code&gt;vim /etc/profile&lt;/code&gt;&lt;br&gt;加上&lt;/p&gt;
+&lt;h2 id=&#34;安装maven&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#安装maven&#34;&gt;#&lt;/a&gt; 安装 &lt;code&gt;maven&lt;/code&gt;&lt;/h2&gt;
+&lt;p&gt;安装 &lt;code&gt;maven&lt;/code&gt;  的方法也类似，下载版本为&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9hcmNoaXZlLmFwYWNoZS5vcmcvZGlzdC9tYXZlbi9tYXZlbi0zLzMuNS40L2JpbmFyaWVzL2FwYWNoZS1tYXZlbi0zLjUuNC1iaW4udGFyLmd6&#34;&gt; maven-3.5.4&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;依然放在了挂在目录中的 &lt;code&gt;install_package&lt;/code&gt;  中&lt;/p&gt;
+&lt;p&gt;解压： &lt;code&gt;tar -zxvf apache-maven-3.5.4-bin.tar.gz&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;配置环境变量:  &lt;code&gt;vim /etc/profile&lt;/code&gt; &lt;br&gt;
+ 加上&lt;/p&gt;
 &lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;built_in&#34;&gt;export&lt;/span&gt; MAVEN_HOME=/var/jenkins_home/install_package/apache-maven-3.5.4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;built_in&#34;&gt;export&lt;/span&gt; PATH=&lt;span class=&#34;variable&#34;&gt;$PATH&lt;/span&gt;:&lt;span class=&#34;variable&#34;&gt;$MAVEN_HOME&lt;/span&gt;/bin&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;p&gt;最后：&lt;code&gt;source /etc/profile&lt;/code&gt; 即可&lt;/p&gt;
+&lt;p&gt;最后： &lt;code&gt;source /etc/profile&lt;/code&gt;  即可&lt;/p&gt;
 &lt;img data-src=&#34;/posts/171f1b7f/2022-08-11-00-06-59.png&#34; class=&#34;&#34;&gt;
-
-&lt;h2 id=&#34;Git&#34;&gt;&lt;a href=&#34;#Git&#34; class=&#34;headerlink&#34; title=&#34;Git&#34;&gt;&lt;/a&gt;&lt;code&gt;Git&lt;/code&gt;&lt;/h2&gt;&lt;p&gt;容器中自带了&lt;code&gt;git&lt;/code&gt;，所以无需安装，但是需要查看路径: &lt;code&gt;which git&lt;/code&gt;，路径为：&lt;code&gt;/usr/bin/git&lt;/code&gt;&lt;/p&gt;
+&lt;h2 id=&#34;git&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#git&#34;&gt;#&lt;/a&gt;  &lt;code&gt;Git&lt;/code&gt;&lt;/h2&gt;
+&lt;p&gt;容器中自带了 &lt;code&gt;git&lt;/code&gt; ，所以无需安装，但是需要查看路径:  &lt;code&gt;which git&lt;/code&gt; ，路径为： &lt;code&gt;/usr/bin/git&lt;/code&gt;&lt;/p&gt;
 &lt;img data-src=&#34;/posts/171f1b7f/2022-08-11-00-10-10.png&#34; class=&#34;&#34;&gt;
-
-&lt;h2 id=&#34;配置Jenkins&#34;&gt;&lt;a href=&#34;#配置Jenkins&#34; class=&#34;headerlink&#34; title=&#34;配置Jenkins&#34;&gt;&lt;/a&gt;配置&lt;code&gt;Jenkins&lt;/code&gt;&lt;/h2&gt;&lt;p&gt;打开&lt;code&gt;Global Tool Configuration&lt;/code&gt;:&lt;/p&gt;
+&lt;h2 id=&#34;配置jenkins&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#配置jenkins&#34;&gt;#&lt;/a&gt; 配置 &lt;code&gt;Jenkins&lt;/code&gt;&lt;/h2&gt;
+&lt;p&gt;打开 &lt;code&gt;Global Tool Configuration&lt;/code&gt; :&lt;/p&gt;
 &lt;img data-src=&#34;/posts/171f1b7f/2022-08-11-00-12-49.png&#34; class=&#34;&#34;&gt;
-
-&lt;p&gt;这边是配置&lt;code&gt;maven&lt;/code&gt;中的&lt;code&gt;settings&lt;/code&gt;文件地址，我地址为：&lt;code&gt;/var/jenkins_home/install_package/apache-maven-3.5.4/conf/settings.xml&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;这边是配置 &lt;code&gt;maven&lt;/code&gt;  中的 &lt;code&gt;settings&lt;/code&gt;  文件地址，我地址为： &lt;code&gt;/var/jenkins_home/install_package/apache-maven-3.5.4/conf/settings.xml&lt;/code&gt;&lt;/p&gt;
 &lt;img data-src=&#34;/posts/171f1b7f/2022-08-11-00-15-24.png&#34; class=&#34;&#34;&gt;
-
-
-&lt;p&gt;分别配置上&lt;code&gt;jdk&lt;/code&gt;,&lt;code&gt;git&lt;/code&gt;,&lt;code&gt;maven&lt;/code&gt;的本地目录,然后&lt;code&gt;Apply&lt;/code&gt;和&lt;code&gt;Save&lt;/code&gt;：&lt;/p&gt;
+&lt;p&gt;分别配置上 &lt;code&gt;jdk&lt;/code&gt; , &lt;code&gt;git&lt;/code&gt; , &lt;code&gt;maven&lt;/code&gt;  的本地目录，然后 &lt;code&gt;Apply&lt;/code&gt;  和 &lt;code&gt;Save&lt;/code&gt; ：&lt;/p&gt;
 &lt;img data-src=&#34;/posts/171f1b7f/2022-08-11-00-17-12.png&#34; class=&#34;&#34;&gt;
-
 &lt;img data-src=&#34;/posts/171f1b7f/2022-08-11-00-17-47.png&#34; class=&#34;&#34;&gt;
-
-&lt;h2 id=&#34;安装plugin&#34;&gt;&lt;a href=&#34;#安装plugin&#34; class=&#34;headerlink&#34; title=&#34;安装plugin&#34;&gt;&lt;/a&gt;安装&lt;code&gt;plugin&lt;/code&gt;&lt;/h2&gt;&lt;p&gt;我们会发现新建一个&lt;code&gt;Item&lt;/code&gt;是没有&lt;code&gt;Maven&lt;/code&gt;项目的，需要安装一下对应的插件:&lt;code&gt;Maven Integration&lt;/code&gt;&lt;/p&gt;
+&lt;h2 id=&#34;安装plugin&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#安装plugin&#34;&gt;#&lt;/a&gt; 安装 &lt;code&gt;plugin&lt;/code&gt;&lt;/h2&gt;
+&lt;p&gt;我们会发现新建一个 &lt;code&gt;Item&lt;/code&gt;  是没有 &lt;code&gt;Maven&lt;/code&gt;  项目的，需要安装一下对应的插件: &lt;code&gt;Maven Integration&lt;/code&gt;&lt;/p&gt;
 &lt;img data-src=&#34;/posts/171f1b7f/2022-08-11-00-20-56.png&#34; class=&#34;&#34;&gt;
-
 &lt;p&gt;等待安装完成即可&lt;/p&gt;
-&lt;h2 id=&#34;Maven项目部署测试&#34;&gt;&lt;a href=&#34;#Maven项目部署测试&#34; class=&#34;headerlink&#34; title=&#34;Maven项目部署测试&#34;&gt;&lt;/a&gt;&lt;code&gt;Maven&lt;/code&gt;项目部署测试&lt;/h2&gt;&lt;h3 id=&#34;新建一个Maven，名字自取&#34;&gt;&lt;a href=&#34;#新建一个Maven，名字自取&#34; class=&#34;headerlink&#34; title=&#34;新建一个Maven，名字自取&#34;&gt;&lt;/a&gt;新建一个&lt;code&gt;Maven&lt;/code&gt;，名字自取&lt;/h3&gt;&lt;img data-src=&#34;/posts/171f1b7f/2022-08-11-00-22-22.png&#34; class=&#34;&#34;&gt;
-
-&lt;h3 id=&#34;项目描述：&#34;&gt;&lt;a href=&#34;#项目描述：&#34; class=&#34;headerlink&#34; title=&#34;项目描述：&#34;&gt;&lt;/a&gt;项目描述：&lt;/h3&gt;&lt;img data-src=&#34;/posts/171f1b7f/2022-08-11-00-26-00.png&#34; class=&#34;&#34;&gt;
-
-&lt;h3 id=&#34;配置github&#34;&gt;&lt;a href=&#34;#配置github&#34; class=&#34;headerlink&#34; title=&#34;配置github&#34;&gt;&lt;/a&gt;配置&lt;code&gt;github&lt;/code&gt;&lt;/h3&gt;&lt;img data-src=&#34;/posts/171f1b7f/2022-08-11-00-29-23.png&#34; class=&#34;&#34;&gt;
-
+&lt;h2 id=&#34;maven项目部署测试&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#maven项目部署测试&#34;&gt;#&lt;/a&gt;  &lt;code&gt;Maven&lt;/code&gt;  项目部署测试&lt;/h2&gt;
+&lt;h3 id=&#34;新建一个maven名字自取&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#新建一个maven名字自取&#34;&gt;#&lt;/a&gt; 新建一个 &lt;code&gt;Maven&lt;/code&gt; ，名字自取&lt;/h3&gt;
+&lt;img data-src=&#34;/posts/171f1b7f/2022-08-11-00-22-22.png&#34; class=&#34;&#34;&gt;
+&lt;h3 id=&#34;项目描述&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#项目描述&#34;&gt;#&lt;/a&gt; 项目描述：&lt;/h3&gt;
+&lt;img data-src=&#34;/posts/171f1b7f/2022-08-11-00-26-00.png&#34; class=&#34;&#34;&gt;
+&lt;h3 id=&#34;配置github&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#配置github&#34;&gt;#&lt;/a&gt; 配置 &lt;code&gt;github&lt;/code&gt;&lt;/h3&gt;
+&lt;img data-src=&#34;/posts/171f1b7f/2022-08-11-00-29-23.png&#34; class=&#34;&#34;&gt;
 &lt;blockquote&gt;
-&lt;p&gt;关于&lt;code&gt;GitHub&lt;/code&gt;凭证配置&lt;/p&gt;
+&lt;p&gt;关于 &lt;code&gt;GitHub&lt;/code&gt;  凭证配置&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;p&gt;配置地址： &lt;code&gt;https://github.com/settings/tokens&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;配置地址：  &lt;code&gt;https://github.com/settings/tokens&lt;/code&gt;&lt;/p&gt;
 &lt;img data-src=&#34;/posts/171f1b7f/2022-08-11-00-30-37.png&#34; class=&#34;&#34;&gt;
-
 &lt;img data-src=&#34;/posts/171f1b7f/2022-08-11-00-31-02.png&#34; class=&#34;&#34;&gt;
-
-&lt;p&gt;将生成的&lt;code&gt;token&lt;/code&gt;记载到本地&lt;/p&gt;
+&lt;p&gt;将生成的 &lt;code&gt;token&lt;/code&gt;  记载到本地&lt;/p&gt;
 &lt;img data-src=&#34;/posts/171f1b7f/2022-08-11-00-31-43.png&#34; class=&#34;&#34;&gt;
-
 &lt;blockquote&gt;
-&lt;p&gt;&lt;code&gt;Jenkins&lt;/code&gt;添加凭据&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;Jenkins&lt;/code&gt;  添加凭据&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;img data-src=&#34;/posts/171f1b7f/2022-08-11-00-33-43.png&#34; class=&#34;&#34;&gt;
-
-&lt;h3 id=&#34;github访问超时时间&#34;&gt;&lt;a href=&#34;#github访问超时时间&#34; class=&#34;headerlink&#34; title=&#34;github访问超时时间&#34;&gt;&lt;/a&gt;&lt;code&gt;github&lt;/code&gt;访问超时时间&lt;/h3&gt;&lt;p&gt;检出超时时间：&lt;/p&gt;
+&lt;h3 id=&#34;github访问超时时间&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#github访问超时时间&#34;&gt;#&lt;/a&gt;  &lt;code&gt;github&lt;/code&gt;  访问超时时间&lt;/h3&gt;
+&lt;p&gt;检出超时时间：&lt;/p&gt;
 &lt;img data-src=&#34;/posts/171f1b7f/2022-08-11-00-34-52.png&#34; class=&#34;&#34;&gt;
-
-&lt;p&gt;&lt;code&gt;clone&lt;/code&gt;超时时间：&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;clone&lt;/code&gt;  超时时间：&lt;/p&gt;
 &lt;img data-src=&#34;/posts/171f1b7f/2022-08-11-00-36-01.png&#34; class=&#34;&#34;&gt;
-
-&lt;h3 id=&#34;Build阶段&#34;&gt;&lt;a href=&#34;#Build阶段&#34; class=&#34;headerlink&#34; title=&#34;Build阶段&#34;&gt;&lt;/a&gt;&lt;code&gt;Build&lt;/code&gt;阶段&lt;/h3&gt;&lt;p&gt;&lt;code&gt;clean package -Dmaven.test.skip=true -Prd -U&lt;/code&gt;&lt;/p&gt;
+&lt;h3 id=&#34;build阶段&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#build阶段&#34;&gt;#&lt;/a&gt;  &lt;code&gt;Build&lt;/code&gt;  阶段&lt;/h3&gt;
+&lt;p&gt;&lt;code&gt;clean package -Dmaven.test.skip=true -Prd -U&lt;/code&gt;&lt;/p&gt;
 &lt;img data-src=&#34;/posts/171f1b7f/2022-08-11-00-39-04.png&#34; class=&#34;&#34;&gt;
-
-&lt;h3 id=&#34;配置构建项目后执行的Shell脚本&#34;&gt;&lt;a href=&#34;#配置构建项目后执行的Shell脚本&#34; class=&#34;headerlink&#34; title=&#34;配置构建项目后执行的Shell脚本&#34;&gt;&lt;/a&gt;配置构建项目后执行的&lt;code&gt;Shell&lt;/code&gt;脚本&lt;/h3&gt;&lt;img data-src=&#34;/posts/171f1b7f/2022-08-11-00-42-20.png&#34; class=&#34;&#34;&gt;
-
+&lt;h3 id=&#34;配置构建项目后执行的shell脚本&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#配置构建项目后执行的shell脚本&#34;&gt;#&lt;/a&gt; 配置构建项目后执行的 &lt;code&gt;Shell&lt;/code&gt;  脚本&lt;/h3&gt;
+&lt;img data-src=&#34;/posts/171f1b7f/2022-08-11-00-42-20.png&#34; class=&#34;&#34;&gt;
 &lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;13&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;14&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;15&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;16&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;17&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;18&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;19&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;20&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;21&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;22&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;23&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;24&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;25&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;26&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;27&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;28&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;29&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;30&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;31&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;32&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;33&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;34&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;meta&#34;&gt;#!/bin/bash&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;#输入Maven打包后的项目名称&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;app=xxx-0.0.1-SNAPSHOT&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;#项目移动的目的地址&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;path=/usr/xxx&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;built_in&#34;&gt;echo&lt;/span&gt; this is app : &lt;span class=&#34;variable&#34;&gt;$app&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;#若项目已启动，杀死旧进程&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;api_pid=`ps -ef | grep &lt;span class=&#34;string&#34;&gt;&amp;quot;&lt;span class=&#34;variable&#34;&gt;$app&lt;/span&gt;.jar&amp;quot;&lt;/span&gt; | grep -v grep | awk &lt;span class=&#34;string&#34;&gt;&amp;#x27;&amp;#123;print $2&amp;#125;&amp;#x27;&lt;/span&gt;`&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;built_in&#34;&gt;echo&lt;/span&gt; api_pid = &lt;span class=&#34;variable&#34;&gt;$api_pid&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;if&lt;/span&gt; [ &lt;span class=&#34;string&#34;&gt;&amp;quot;&lt;span class=&#34;variable&#34;&gt;$api_pid&lt;/span&gt;&amp;quot;&lt;/span&gt; != &lt;span class=&#34;string&#34;&gt;&amp;quot;&amp;quot;&lt;/span&gt; ]; &lt;span class=&#34;keyword&#34;&gt;then&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        &lt;span class=&#34;built_in&#34;&gt;echo&lt;/span&gt; &lt;span class=&#34;built_in&#34;&gt;kill&lt;/span&gt; api&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        &lt;span class=&#34;built_in&#34;&gt;kill&lt;/span&gt; -9 &lt;span class=&#34;variable&#34;&gt;$api_pid&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        &lt;span class=&#34;built_in&#34;&gt;echo&lt;/span&gt; sleep 3s&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        sleep 1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        &lt;span class=&#34;built_in&#34;&gt;echo&lt;/span&gt; sleep 2s&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        sleep 1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        &lt;span class=&#34;built_in&#34;&gt;echo&lt;/span&gt; sleep 1s&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        sleep 1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;fi&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;#将jar包从jenkins工作空间中移动到指定路径下&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;mv /root/.jenkins/workspace/项目名/target/&lt;span class=&#34;variable&#34;&gt;$app&lt;/span&gt;.jar &lt;span class=&#34;variable&#34;&gt;$path&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;built_in&#34;&gt;cd&lt;/span&gt; &lt;span class=&#34;variable&#34;&gt;$path&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;#防止进程被杀死&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;BUILD_ID=dontKillMe&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;#后台进程形式启动项目，日志文件为out.log&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;nohup java -jar &lt;span class=&#34;variable&#34;&gt;$app&lt;/span&gt;.jar &amp;gt;&amp;gt; out.log 2&amp;gt;&amp;amp;1 &amp;amp;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;built_in&#34;&gt;echo&lt;/span&gt; &lt;span class=&#34;variable&#34;&gt;$app&lt;/span&gt; start success&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;built_in&#34;&gt;exit&lt;/span&gt; 0&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;h2 id=&#34;Jenkins运行&#34;&gt;&lt;a href=&#34;#Jenkins运行&#34; class=&#34;headerlink&#34; title=&#34;Jenkins运行&#34;&gt;&lt;/a&gt;&lt;code&gt;Jenkins&lt;/code&gt;运行&lt;/h2&gt;&lt;img data-src=&#34;/posts/171f1b7f/2022-08-11-00-43-49.png&#34; class=&#34;&#34;&gt;
-
+&lt;h2 id=&#34;jenkins运行&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#jenkins运行&#34;&gt;#&lt;/a&gt;  &lt;code&gt;Jenkins&lt;/code&gt;  运行&lt;/h2&gt;
+&lt;img data-src=&#34;/posts/171f1b7f/2022-08-11-00-43-49.png&#34; class=&#34;&#34;&gt;
 &lt;img data-src=&#34;/posts/171f1b7f/2022-08-11-00-45-15.png&#34; class=&#34;&#34;&gt;
  ]]></description>
         </item>
@@ -236,61 +226,65 @@
             <category>Jenkins</category>
             <category>Groovy</category>
             <pubDate>Sun, 10 Jul 2022 13:44:11 +0800</pubDate>
-            <description><![CDATA[ &lt;p&gt;Recently , i use jenkinsFile to realize some function &lt;/p&gt;
-&lt;h2 id=&#34;处理JSON&#34;&gt;&lt;a href=&#34;#处理JSON&#34; class=&#34;headerlink&#34; title=&#34;处理JSON&#34;&gt;&lt;/a&gt;处理&lt;code&gt;JSON&lt;/code&gt;&lt;/h2&gt;&lt;h2 id=&#34;压缩方法&#34;&gt;&lt;a href=&#34;#压缩方法&#34; class=&#34;headerlink&#34; title=&#34;压缩方法&#34;&gt;&lt;/a&gt;压缩方法&lt;/h2&gt;&lt;p&gt;可能是自带的方法&lt;/p&gt;
+            <description><![CDATA[ &lt;p&gt;Recently , i use jenkinsFile to realize some function&lt;/p&gt;
+&lt;h2 id=&#34;处理json&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#处理json&#34;&gt;#&lt;/a&gt; 处理 &lt;code&gt;JSON&lt;/code&gt;&lt;/h2&gt;
+&lt;h2 id=&#34;压缩方法&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#压缩方法&#34;&gt;#&lt;/a&gt; 压缩方法&lt;/h2&gt;
+&lt;p&gt;可能是自带的方法&lt;/p&gt;
 &lt;figure class=&#34;highlight groovy&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;zip &lt;span class=&#34;attr&#34;&gt;zipFile:&lt;/span&gt; &lt;span class=&#34;string&#34;&gt;&amp;#x27;&amp;lt;zipFileName&amp;gt;&amp;#x27;&lt;/span&gt;, &lt;span class=&#34;attr&#34;&gt;archive:&lt;/span&gt; &lt;span class=&#34;literal&#34;&gt;true&lt;/span&gt;, &lt;span class=&#34;attr&#34;&gt;glob:&lt;/span&gt; &lt;span class=&#34;string&#34;&gt;&amp;#x27;&amp;lt;file_path&amp;gt;&amp;#x27;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;// example： zip zipFile: &amp;#x27;upload.zip&amp;#x27;, archive: true, glob: &amp;#x27;/binary/&amp;#x27;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-
-
-&lt;h2 id=&#34;JSON操作&#34;&gt;&lt;a href=&#34;#JSON操作&#34; class=&#34;headerlink&#34; title=&#34;JSON操作&#34;&gt;&lt;/a&gt;&lt;code&gt;JSON&lt;/code&gt;操作&lt;/h2&gt;&lt;blockquote&gt;
-&lt;p&gt;读取：从文件中读取  &lt;code&gt;JSON&lt;/code&gt; 字符串，并直接解析为对象&lt;/p&gt;
+&lt;h2 id=&#34;json操作&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#json操作&#34;&gt;#&lt;/a&gt;  &lt;code&gt;JSON&lt;/code&gt;  操作&lt;/h2&gt;
+&lt;blockquote&gt;
+&lt;p&gt;读取：从文件中读取   &lt;code&gt;JSON&lt;/code&gt;  字符串，并直接解析为对象&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;figure class=&#34;highlight groovy&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;// 从文件中读取&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;def&lt;/span&gt; dataObject = readJSON &lt;span class=&#34;attr&#34;&gt;file:&lt;/span&gt; &lt;span class=&#34;string&#34;&gt;&amp;#x27;message2.json&amp;#x27;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;echo &lt;span class=&#34;string&#34;&gt;&amp;quot;color: $&amp;#123;dataObject.attachments[0].color&amp;#125;&amp;quot;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;//从文本中读取&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;def&lt;/span&gt; dataObject = readJSON &lt;span class=&#34;attr&#34;&gt;text:&lt;/span&gt; &lt;span class=&#34;string&#34;&gt;&amp;#x27;message2.json&amp;#x27;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
 &lt;blockquote&gt;
 &lt;p&gt;写入文件&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;figure class=&#34;highlight groovy&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;//保存：将对象直接写入文件，无需先转化为 JSON 字符串&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;// Building json from code and write it to file&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;writeJSON(&lt;span class=&#34;attr&#34;&gt;file:&lt;/span&gt; &lt;span class=&#34;string&#34;&gt;&amp;#x27;message1.json&amp;#x27;&lt;/span&gt;, &lt;span class=&#34;attr&#34;&gt;json:&lt;/span&gt; dataObject)&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-
-
-&lt;h2 id=&#34;groovy获取shell执行结果和执行状态码&#34;&gt;&lt;a href=&#34;#groovy获取shell执行结果和执行状态码&#34; class=&#34;headerlink&#34; title=&#34;groovy获取shell执行结果和执行状态码&#34;&gt;&lt;/a&gt;groovy获取shell执行结果和执行状态码&lt;/h2&gt;&lt;blockquote&gt;
+&lt;h2 id=&#34;groovy获取shell执行结果和执行状态码&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#groovy获取shell执行结果和执行状态码&#34;&gt;#&lt;/a&gt; groovy 获取 shell 执行结果和执行状态码&lt;/h2&gt;
+&lt;blockquote&gt;
 &lt;p&gt;获取执行结果&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;figure class=&#34;highlight groovy&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;result = sh(&lt;span class=&#34;attr&#34;&gt;script:&lt;/span&gt; &lt;span class=&#34;string&#34;&gt;&amp;quot;shell command&amp;quot;&lt;/span&gt;, &lt;span class=&#34;attr&#34;&gt;returnStdout:&lt;/span&gt; &lt;span class=&#34;literal&#34;&gt;true&lt;/span&gt;)&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
 &lt;blockquote&gt;
-&lt;p&gt;获取执行状态码（0或者非0）&lt;/p&gt;
+&lt;p&gt;获取执行状态码（0 或者非 0）&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;figure class=&#34;highlight groovy&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;excuteCode = sh(&lt;span class=&#34;attr&#34;&gt;script:&lt;/span&gt; &lt;span class=&#34;string&#34;&gt;&amp;quot;shell command&amp;quot;&lt;/span&gt;, &lt;span class=&#34;attr&#34;&gt;returnStatus:&lt;/span&gt; &lt;span class=&#34;literal&#34;&gt;true&lt;/span&gt;)&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;h2 id=&#34;Jenkins声明式Pipeline中单引号和双引号的区别&#34;&gt;&lt;a href=&#34;#Jenkins声明式Pipeline中单引号和双引号的区别&#34; class=&#34;headerlink&#34; title=&#34;Jenkins声明式Pipeline中单引号和双引号的区别&#34;&gt;&lt;/a&gt;&lt;code&gt;Jenkins&lt;/code&gt;声明式&lt;code&gt;Pipeline&lt;/code&gt;中单引号和双引号的区别&lt;/h2&gt;&lt;p&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzM0NzE5MzkyL2FydGljbGUvZGV0YWlscy8xMjE0NzI4OTQ=&#34;&gt;原文地址&lt;/span&gt;&lt;/p&gt;
+&lt;h2 id=&#34;jenkins声明式pipeline中单引号和双引号的区别&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#jenkins声明式pipeline中单引号和双引号的区别&#34;&gt;#&lt;/a&gt;  &lt;code&gt;Jenkins&lt;/code&gt;  声明式 &lt;code&gt;Pipeline&lt;/code&gt;  中单引号和双引号的区别&lt;/h2&gt;
+&lt;p&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzM0NzE5MzkyL2FydGljbGUvZGV0YWlscy8xMjE0NzI4OTQ=&#34;&gt;原文地址&lt;/span&gt;&lt;/p&gt;
 &lt;ol&gt;
-&lt;li&gt;&lt;p&gt;如果使用三个单引号，那么其中的字符，除了&lt;code&gt;&amp;#39;\&amp;#39;&lt;/code&gt;会被解析为转义字符外，其他都会被原封不动地传递给&lt;code&gt;P&lt;/code&gt;owershell`，不作任何解析&lt;/p&gt;
+&lt;li&gt;
+&lt;p&gt;如果使用三个单引号，那么其中的字符，除了 &lt;code&gt;&#39;\&#39;&lt;/code&gt;  会被解析为转义字符外，其他都会被原封不动地传递给 &lt;code&gt;P&lt;/code&gt; owershell`，不作任何解析&lt;/p&gt;
 &lt;/li&gt;
-&lt;li&gt;&lt;p&gt;如果使用三个双引号，则绝大部分字符也会被原封不动地传递给&lt;code&gt;Powershel&lt;/code&gt;l，但如下三个字符除外：&lt;/p&gt;
-&lt;p&gt; ① &lt;code&gt;&amp;#39;$&amp;#39;&lt;/code&gt;（美元字符）&lt;code&gt;：&lt;/code&gt;用于引用&lt;code&gt;Jenkinsfile&lt;/code&gt;中的环境变量。&lt;/p&gt;
-&lt;p&gt; ② &lt;code&gt;&amp;#39;\&amp;#39;&lt;/code&gt;（反斜杠字符）&lt;code&gt;：&lt;/code&gt;用于转义。&lt;/p&gt;
-&lt;p&gt; ③ &lt;code&gt;&amp;#39; &amp;quot; &amp;#39;&lt;/code&gt;（双引号字符）：本身无特殊含义，但是三个双引号之间不允许出现非转义的双引号字符，否则将导致语法错误。&lt;/p&gt;
+&lt;li&gt;
+&lt;p&gt;如果使用三个双引号，则绝大部分字符也会被原封不动地传递给 &lt;code&gt;Powershel&lt;/code&gt; l，但如下三个字符除外：&lt;/p&gt;
+&lt;p&gt;①  &lt;code&gt;&#39;$&#39;&lt;/code&gt; （美元字符） &lt;code&gt;：&lt;/code&gt; 用于引用 &lt;code&gt;Jenkinsfile&lt;/code&gt;  中的环境变量。&lt;/p&gt;
+&lt;p&gt;②  &lt;code&gt;&#39;\&#39;&lt;/code&gt; （反斜杠字符） &lt;code&gt;：&lt;/code&gt; 用于转义。&lt;/p&gt;
+&lt;p&gt;③  &lt;code&gt;&#39; &amp;quot; &#39;&lt;/code&gt; （双引号字符）：本身无特殊含义，但是三个双引号之间不允许出现非转义的双引号字符，否则将导致语法错误。&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
-&lt;p&gt;如果确实需要使用上述三个字符本身，而不是使用其特殊含义，则必须在前面加上&lt;code&gt;&amp;#39;\&amp;#39;&lt;/code&gt;字符进行转义，即：&lt;code&gt;&amp;#39;\$&amp;#39;&lt;/code&gt;、&lt;code&gt;&amp;#39;\\&amp;#39;&lt;/code&gt;、&lt;code&gt;&amp;#39;\&amp;quot;&amp;#39;&lt;/code&gt;。&lt;/p&gt;
+&lt;p&gt;如果确实需要使用上述三个字符本身，而不是使用其特殊含义，则必须在前面加上 &lt;code&gt;&#39;\&#39;&lt;/code&gt;  字符进行转义，即： &lt;code&gt;&#39;\$&#39;&lt;/code&gt; 、 &lt;code&gt;&#39;\\&#39;&lt;/code&gt; 、 &lt;code&gt;&#39;\&amp;quot;&#39;&lt;/code&gt; 。&lt;/p&gt;
 &lt;blockquote&gt;
-&lt;p&gt;总结&lt;code&gt;：&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;总结 &lt;code&gt;：&lt;/code&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;p&gt;三单引号的优点是，语法简洁，不存在过多转义；缺点是，无法引用&lt;code&gt;Jenkins&lt;/code&gt;中的环境变量。而三双引号的优缺点与此正好相反。&lt;/p&gt;
-&lt;p&gt;个人对于使用三双引号的建议是：仅在必须声明和引用&lt;code&gt;Powershell&lt;/code&gt;变量（而非&lt;code&gt;Jenkins&lt;/code&gt;环境变量）时，才使用三单引号或三双引号。其他时候，每一条命令都应拆分，并以&lt;code&gt;powershell&lt;/code&gt;开头。这样做的好处是便于调试（尤其是使用&lt;code&gt;Blue Ocean&lt;/code&gt;调试时）。在这一前提下，如果需要在三引号中引用&lt;code&gt;Jenkins&lt;/code&gt;环境变量，则必须使用三双引号；否则，使用三单引号表达更为简洁。&lt;/p&gt;
-&lt;h2 id=&#34;jenkins-pipeline中获取shell命令的标准输出或者状态&#34;&gt;&lt;a href=&#34;#jenkins-pipeline中获取shell命令的标准输出或者状态&#34; class=&#34;headerlink&#34; title=&#34;jenkins pipeline中获取shell命令的标准输出或者状态&#34;&gt;&lt;/a&gt;&lt;code&gt;jenkins pipeline&lt;/code&gt;中获取&lt;code&gt;shell&lt;/code&gt;命令的标准输出或者状态&lt;/h2&gt;&lt;figure class=&#34;highlight groovy&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;13&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;14&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;15&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;16&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;17&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;18&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;19&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;20&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;21&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;22&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;23&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;//获取标准输出&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;//第一种&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;result = sh &lt;span class=&#34;attr&#34;&gt;returnStdout:&lt;/span&gt; &lt;span class=&#34;literal&#34;&gt;true&lt;/span&gt; ,&lt;span class=&#34;attr&#34;&gt;script:&lt;/span&gt; &lt;span class=&#34;string&#34;&gt;&amp;quot;&amp;lt;shell command&amp;gt;&amp;quot;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;result = result.trim()&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;//第二种&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;result = sh(&lt;span class=&#34;attr&#34;&gt;script:&lt;/span&gt; &lt;span class=&#34;string&#34;&gt;&amp;quot;&amp;lt;shell command&amp;gt;&amp;quot;&lt;/span&gt;, &lt;span class=&#34;attr&#34;&gt;returnStdout:&lt;/span&gt; &lt;span class=&#34;literal&#34;&gt;true&lt;/span&gt;).trim()&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;//第三种&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;sh &lt;span class=&#34;string&#34;&gt;&amp;quot;&amp;lt;shell command&amp;gt; &amp;gt; commandResult&amp;quot;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;result = readFile(&lt;span class=&#34;string&#34;&gt;&amp;#x27;commandResult&amp;#x27;&lt;/span&gt;).trim()&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;//获取执行状态&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;//第一种&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;result = sh &lt;span class=&#34;attr&#34;&gt;returnStatus:&lt;/span&gt; &lt;span class=&#34;literal&#34;&gt;true&lt;/span&gt; ,&lt;span class=&#34;attr&#34;&gt;script:&lt;/span&gt; &lt;span class=&#34;string&#34;&gt;&amp;quot;&amp;lt;shell command&amp;gt;&amp;quot;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;result = result.trim()&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;//第二种&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;result = sh(&lt;span class=&#34;attr&#34;&gt;script:&lt;/span&gt; &lt;span class=&#34;string&#34;&gt;&amp;quot;&amp;lt;shell command&amp;gt;&amp;quot;&lt;/span&gt;, &lt;span class=&#34;attr&#34;&gt;returnStatus:&lt;/span&gt; &lt;span class=&#34;literal&#34;&gt;true&lt;/span&gt;).trim()&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;//第三种&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;sh &lt;span class=&#34;string&#34;&gt;&amp;#x27;&amp;lt;shell command&amp;gt;; echo $? &amp;gt; status&amp;#x27;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;def&lt;/span&gt; r = readFile(&lt;span class=&#34;string&#34;&gt;&amp;#x27;status&amp;#x27;&lt;/span&gt;).trim()&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;//无需返回值，仅执行shell命令&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;//最简单的方式&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;sh &lt;span class=&#34;string&#34;&gt;&amp;#x27;&amp;lt;shell command&amp;gt;&amp;#x27;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;三单引号的优点是，语法简洁，不存在过多转义；缺点是，无法引用 &lt;code&gt;Jenkins&lt;/code&gt;  中的环境变量。而三双引号的优缺点与此正好相反。&lt;/p&gt;
+&lt;p&gt;个人对于使用三双引号的建议是：仅在必须声明和引用 &lt;code&gt;Powershell&lt;/code&gt;  变量（而非 &lt;code&gt;Jenkins&lt;/code&gt;  环境变量）时，才使用三单引号或三双引号。其他时候，每一条命令都应拆分，并以 &lt;code&gt;powershell&lt;/code&gt;  开头。这样做的好处是便于调试（尤其是使用 &lt;code&gt;Blue Ocean&lt;/code&gt;  调试时）。在这一前提下，如果需要在三引号中引用 &lt;code&gt;Jenkins&lt;/code&gt;  环境变量，则必须使用三双引号；否则，使用三单引号表达更为简洁。&lt;/p&gt;
+&lt;h2 id=&#34;jenkins-pipeline中获取shell命令的标准输出或者状态&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#jenkins-pipeline中获取shell命令的标准输出或者状态&#34;&gt;#&lt;/a&gt;  &lt;code&gt;jenkins pipeline&lt;/code&gt;  中获取 &lt;code&gt;shell&lt;/code&gt;  命令的标准输出或者状态&lt;/h2&gt;
+&lt;figure class=&#34;highlight groovy&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;13&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;14&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;15&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;16&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;17&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;18&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;19&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;20&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;21&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;22&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;23&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;//获取标准输出&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;//第一种&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;result = sh &lt;span class=&#34;attr&#34;&gt;returnStdout:&lt;/span&gt; &lt;span class=&#34;literal&#34;&gt;true&lt;/span&gt; ,&lt;span class=&#34;attr&#34;&gt;script:&lt;/span&gt; &lt;span class=&#34;string&#34;&gt;&amp;quot;&amp;lt;shell command&amp;gt;&amp;quot;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;result = result.trim()&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;//第二种&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;result = sh(&lt;span class=&#34;attr&#34;&gt;script:&lt;/span&gt; &lt;span class=&#34;string&#34;&gt;&amp;quot;&amp;lt;shell command&amp;gt;&amp;quot;&lt;/span&gt;, &lt;span class=&#34;attr&#34;&gt;returnStdout:&lt;/span&gt; &lt;span class=&#34;literal&#34;&gt;true&lt;/span&gt;).trim()&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;//第三种&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;sh &lt;span class=&#34;string&#34;&gt;&amp;quot;&amp;lt;shell command&amp;gt; &amp;gt; commandResult&amp;quot;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;result = readFile(&lt;span class=&#34;string&#34;&gt;&amp;#x27;commandResult&amp;#x27;&lt;/span&gt;).trim()&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;//获取执行状态&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;//第一种&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;result = sh &lt;span class=&#34;attr&#34;&gt;returnStatus:&lt;/span&gt; &lt;span class=&#34;literal&#34;&gt;true&lt;/span&gt; ,&lt;span class=&#34;attr&#34;&gt;script:&lt;/span&gt; &lt;span class=&#34;string&#34;&gt;&amp;quot;&amp;lt;shell command&amp;gt;&amp;quot;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;result = result.trim()&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;//第二种&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;result = sh(&lt;span class=&#34;attr&#34;&gt;script:&lt;/span&gt; &lt;span class=&#34;string&#34;&gt;&amp;quot;&amp;lt;shell command&amp;gt;&amp;quot;&lt;/span&gt;, &lt;span class=&#34;attr&#34;&gt;returnStatus:&lt;/span&gt; &lt;span class=&#34;literal&#34;&gt;true&lt;/span&gt;).trim()&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;//第三种&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;sh &lt;span class=&#34;string&#34;&gt;&amp;#x27;&amp;lt;shell command&amp;gt;; echo $? &amp;gt; status&amp;#x27;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;def&lt;/span&gt; r = readFile(&lt;span class=&#34;string&#34;&gt;&amp;#x27;status&amp;#x27;&lt;/span&gt;).trim()&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;//无需返回值，仅执行shell命令&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;//最简单的方式&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;sh &lt;span class=&#34;string&#34;&gt;&amp;#x27;&amp;lt;shell command&amp;gt;&amp;#x27;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
 &lt;p&gt;例如：&lt;/p&gt;
 &lt;blockquote&gt;
-&lt;p&gt;工作中需要获取&lt;code&gt;shell &lt;/code&gt;命令的执行状态，返回0或者非0&lt;br&gt;&lt;code&gt;groovy&lt;/code&gt;语句写法为：&lt;/p&gt;
+&lt;p&gt;工作中需要获取 &lt;code&gt;shell &lt;/code&gt; 命令的执行状态，返回 0 或者非 0&lt;br&gt;
+ &lt;code&gt;groovy&lt;/code&gt;  语句写法为：&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;figure class=&#34;highlight groovy&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;def&lt;/span&gt; exitValue = sh(&lt;span class=&#34;attr&#34;&gt;script:&lt;/span&gt; &lt;span class=&#34;string&#34;&gt;&amp;quot;grep -i &amp;#x27;xxx&amp;#x27; /etc/myfolder&amp;quot;&lt;/span&gt;, &lt;span class=&#34;attr&#34;&gt;returnStatus:&lt;/span&gt; &lt;span class=&#34;literal&#34;&gt;true&lt;/span&gt;)&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;echo &lt;span class=&#34;string&#34;&gt;&amp;quot;return exitValue :$&amp;#123;exitValue&amp;#125;&amp;quot;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;if&lt;/span&gt;(exitValue != &lt;span class=&#34;number&#34;&gt;0&lt;/span&gt;)&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    执行操作&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;p&gt;如果&lt;code&gt;grep&lt;/code&gt;命令执行没有报错，正常情况下&lt;code&gt;exitValue&lt;/code&gt;为&lt;code&gt;0&lt;/code&gt;，报错则为非&lt;code&gt;0&lt;/code&gt;&lt;/p&gt;
-&lt;p&gt;需要注意的是当命令中存在重定向的时候，会出现返回状态异常，因为我们要返回状态，删除重定向（&lt;code&gt;&amp;amp;&amp;gt;/dev/null&lt;/code&gt;）即可，比如：&lt;/p&gt;
+&lt;p&gt;如果 &lt;code&gt;grep&lt;/code&gt;  命令执行没有报错，正常情况下 &lt;code&gt;exitValue&lt;/code&gt;  为 &lt;code&gt;0&lt;/code&gt; ，报错则为非 &lt;code&gt;0&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;需要注意的是当命令中存在重定向的时候，会出现返回状态异常，因为我们要返回状态，删除重定向（ &lt;code&gt;&amp;amp;&amp;gt;/dev/null&lt;/code&gt; ）即可，比如：&lt;/p&gt;
 &lt;figure class=&#34;highlight groovy&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;def&lt;/span&gt; exitValue = sh(&lt;span class=&#34;attr&#34;&gt;script:&lt;/span&gt; &lt;span class=&#34;string&#34;&gt;&amp;quot;grep -i &amp;#x27;xxx&amp;#x27; /etc/myfolder &amp;amp;&amp;gt;/dev/null&amp;quot;&lt;/span&gt;, &lt;span class=&#34;attr&#34;&gt;returnStatus:&lt;/span&gt; &lt;span class=&#34;literal&#34;&gt;true&lt;/span&gt;)&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;xxx不存在，正常逻辑是返回非&lt;span class=&#34;number&#34;&gt;0&lt;/span&gt;，但是实际中返回的是&lt;span class=&#34;number&#34;&gt;0&lt;/span&gt; 。可以理解为先执行命令然后赋值操作，类似下面的动作：（个人理解）&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;sh &lt;span class=&#34;string&#34;&gt;&amp;quot;ls -l &amp;gt; commandResult&amp;quot;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;result = readFile(&lt;span class=&#34;string&#34;&gt;&amp;#x27;commandResult&amp;#x27;&lt;/span&gt;).trim()&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-
-&lt;p&gt;&lt;code&gt;groovy&lt;/code&gt;中存在另外一种解析&lt;code&gt;shell&lt;/code&gt;脚本的方法，在&lt;code&gt;jenkins pipeline&lt;/code&gt;中会使用会报异常,&lt;code&gt;jenkins&lt;/code&gt;相关资料中也没有看到此种用法，应该是不支持&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;groovy&lt;/code&gt;  中存在另外一种解析 &lt;code&gt;shell&lt;/code&gt;  脚本的方法，在 &lt;code&gt;jenkins pipeline&lt;/code&gt;  中会使用会报异常， &lt;code&gt;jenkins&lt;/code&gt;  相关资料中也没有看到此种用法，应该是不支持&lt;/p&gt;
 &lt;figure class=&#34;highlight stylus&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;groovy&lt;span class=&#34;selector-class&#34;&gt;.lang&lt;/span&gt;&lt;span class=&#34;selector-class&#34;&gt;.MissingPropertyException&lt;/span&gt;: No such property: rhel &lt;span class=&#34;keyword&#34;&gt;for&lt;/span&gt; class: groovy&lt;span class=&#34;selector-class&#34;&gt;.lang&lt;/span&gt;.Binding&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
 &lt;p&gt;写法为：&lt;/p&gt;
 &lt;figure class=&#34;highlight groovy&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;def&lt;/span&gt; command = &lt;span class=&#34;string&#34;&gt;&amp;quot;git log&amp;quot;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;def&lt;/span&gt; proc = command.execute()&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;proc.waitFor()&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;def&lt;/span&gt; status = proc.exitValue()&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-
-&lt;h2 id=&#34;pipleline讲解&#34;&gt;&lt;a href=&#34;#pipleline讲解&#34; class=&#34;headerlink&#34; title=&#34;pipleline讲解&#34;&gt;&lt;/a&gt;&lt;code&gt;pipleline&lt;/code&gt;讲解&lt;/h2&gt;&lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;13&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;14&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;15&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;16&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;17&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;18&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;19&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;20&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;21&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;22&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;23&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;24&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;25&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;26&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;27&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;28&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;29&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;30&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;31&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;32&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;33&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;34&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;35&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;36&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;37&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;38&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;39&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;40&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;41&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;42&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;43&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;44&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;45&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;46&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;47&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;48&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;49&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;50&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;51&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;52&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;53&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;54&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;pipeline &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  agent &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    /**&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    * agent none ，这样可以在具体的stages中定义&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;agent：指定流水线的执行位置，流水线中的每个阶段都必须在某个地方（物理机，虚拟机或 Docker 容器）执行，agent 部分即指定具体在哪里执行。&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    */&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    /*&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    *说明某项目要在jdk8的环境中创建&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    *实际上agent &amp;#123; label &lt;span class=&#34;string&#34;&gt;&amp;#x27;jdk8&amp;#x27;&lt;/span&gt; &amp;#125;是 agent &amp;#123; node &amp;#123; label &lt;span class=&#34;string&#34;&gt;&amp;#x27;jdk8&amp;#x27;&lt;/span&gt; &amp;#125; &amp;#125; 的简写。 &lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    */&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    label &lt;span class=&#34;string&#34;&gt;&amp;#x27;jdk8&amp;#x27;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  /*&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  environment指令指定一系列键值对，这些对值将被定义为所有步骤的环境变量或阶段特定步骤&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;environment&amp;#123;…&amp;#125;, 大括号里面写一些键值对，也就是定义一些变量并赋值，这些变量就是环境变量。环境变量的作用范围，取决你environment&amp;#123;…&amp;#125;所写的位置，你可以写在顶层环境变量，让所有的stage下的step共享这些变量，也可以单独定义在某一个stage下，只能供这个stage去调用变量，其他的stage不能共享这些变量。一般来说，我们基本上上定义全局环境变量，如果是局部环境变量，我们直接用def关键字声明就可以，没必要放environment&amp;#123;…&amp;#125;里面。&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;*/&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  environment&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    project = &lt;span class=&#34;string&#34;&gt;&amp;#x27;&amp;#x27;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    staticname = &lt;span class=&#34;string&#34;&gt;&amp;#x27;&amp;#x27;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    appname= &lt;span class=&#34;string&#34;&gt;&amp;#x27;&amp;#x27;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    version=&lt;span class=&#34;string&#34;&gt;&amp;#x27;&amp;#x27;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;//  需要配置jdk环境，那这个里面的jdk环境与agent label有啥区别&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;tools&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;   jdk &lt;span class=&#34;string&#34;&gt;&amp;#x27;jdk1.8.0_121&amp;#x27;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;// 定义阶段，可以设置并行和串行，默认情况就是串行的，默认的如下举例&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;/**&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;* stage(&lt;span class=&#34;string&#34;&gt;&amp;#x27;Parallel Stage&amp;#x27;&lt;/span&gt;) &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;*           failFast &lt;span class=&#34;literal&#34;&gt;true&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;*            parallel &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;*                stage(&lt;span class=&#34;string&#34;&gt;&amp;#x27;并行一&amp;#x27;&lt;/span&gt;) &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;*                    steps &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;*                        &lt;span class=&#34;built_in&#34;&gt;echo&lt;/span&gt; &lt;span class=&#34;string&#34;&gt;&amp;quot;并行一&amp;quot;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;*                    &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;*                stage(&lt;span class=&#34;string&#34;&gt;&amp;#x27;并行2&amp;#x27;&lt;/span&gt;) &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;*                    steps &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;*                        &lt;span class=&#34;built_in&#34;&gt;echo&lt;/span&gt; &lt;span class=&#34;string&#34;&gt;&amp;quot;并行2&amp;quot;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;*                    &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;*            &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;*&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;**/&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  stages &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;     stage (&lt;span class=&#34;string&#34;&gt;&amp;#x27;build&amp;#x27;&lt;/span&gt;) &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;         steps &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;            &lt;span class=&#34;built_in&#34;&gt;echo&lt;/span&gt; &lt;span class=&#34;string&#34;&gt;&amp;#x27;build&amp;#x27;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;         &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;     &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;h2 id=&#34;pipleline讲解&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#pipleline讲解&#34;&gt;#&lt;/a&gt;  &lt;code&gt;pipleline&lt;/code&gt;  讲解&lt;/h2&gt;
+&lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;13&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;14&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;15&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;16&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;17&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;18&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;19&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;20&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;21&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;22&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;23&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;24&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;25&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;26&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;27&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;28&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;29&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;30&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;31&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;32&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;33&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;34&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;35&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;36&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;37&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;38&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;39&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;40&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;41&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;42&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;43&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;44&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;45&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;46&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;47&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;48&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;49&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;50&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;51&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;52&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;53&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;54&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;pipeline &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  agent &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    /**&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    * agent none ，这样可以在具体的stages中定义&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;agent：指定流水线的执行位置，流水线中的每个阶段都必须在某个地方（物理机，虚拟机或 Docker 容器）执行，agent 部分即指定具体在哪里执行。&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    */&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    /*&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    *说明某项目要在jdk8的环境中创建&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    *实际上agent &amp;#123; label &lt;span class=&#34;string&#34;&gt;&amp;#x27;jdk8&amp;#x27;&lt;/span&gt; &amp;#125;是 agent &amp;#123; node &amp;#123; label &lt;span class=&#34;string&#34;&gt;&amp;#x27;jdk8&amp;#x27;&lt;/span&gt; &amp;#125; &amp;#125; 的简写。 &lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    */&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    label &lt;span class=&#34;string&#34;&gt;&amp;#x27;jdk8&amp;#x27;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  /*&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  environment指令指定一系列键值对，这些对值将被定义为所有步骤的环境变量或阶段特定步骤&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;environment&amp;#123;…&amp;#125;, 大括号里面写一些键值对，也就是定义一些变量并赋值，这些变量就是环境变量。环境变量的作用范围，取决你environment&amp;#123;…&amp;#125;所写的位置，你可以写在顶层环境变量，让所有的stage下的step共享这些变量，也可以单独定义在某一个stage下，只能供这个stage去调用变量，其他的stage不能共享这些变量。一般来说，我们基本上上定义全局环境变量，如果是局部环境变量，我们直接用def关键字声明就可以，没必要放environment&amp;#123;…&amp;#125;里面。&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;*/&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  environment&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    project = &lt;span class=&#34;string&#34;&gt;&amp;#x27;&amp;#x27;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    staticname = &lt;span class=&#34;string&#34;&gt;&amp;#x27;&amp;#x27;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    appname= &lt;span class=&#34;string&#34;&gt;&amp;#x27;&amp;#x27;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    version=&lt;span class=&#34;string&#34;&gt;&amp;#x27;&amp;#x27;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;//  需要配置jdk环境，那这个里面的jdk环境与agent label有啥区别&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;tools&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;   jdk &lt;span class=&#34;string&#34;&gt;&amp;#x27;jdk1.8.0_121&amp;#x27;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;// 定义阶段，可以设置并行和串行，默认情况就是串行的，默认的如下举例&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;/**&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;* stage(&lt;span class=&#34;string&#34;&gt;&amp;#x27;Parallel Stage&amp;#x27;&lt;/span&gt;) &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;*           failFast &lt;span class=&#34;literal&#34;&gt;true&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;*            parallel &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;*                stage(&lt;span class=&#34;string&#34;&gt;&amp;#x27;并行一&amp;#x27;&lt;/span&gt;) &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;*                    steps &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;*                        &lt;span class=&#34;built_in&#34;&gt;echo&lt;/span&gt; &lt;span class=&#34;string&#34;&gt;&amp;quot;并行一&amp;quot;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;*                    &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;*                stage(&lt;span class=&#34;string&#34;&gt;&amp;#x27;并行2&amp;#x27;&lt;/span&gt;) &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;*                    steps &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;*                        &lt;span class=&#34;built_in&#34;&gt;echo&lt;/span&gt; &lt;span class=&#34;string&#34;&gt;&amp;quot;并行2&amp;quot;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;*                    &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;*            &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;*&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;**/&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  stages &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;     stage (&lt;span class=&#34;string&#34;&gt;&amp;#x27;build&amp;#x27;&lt;/span&gt;) &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;         steps &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;            &lt;span class=&#34;built_in&#34;&gt;echo&lt;/span&gt; &lt;span class=&#34;string&#34;&gt;&amp;#x27;build&amp;#x27;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;         &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;     &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
  ]]></description>
         </item>
     </channel>

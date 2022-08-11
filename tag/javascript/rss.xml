@@ -7,107 +7,107 @@
         <language>en</language>
         <pubDate>Mon, 14 Feb 2022 22:11:32 +0800</pubDate>
         <lastBuildDate>Mon, 14 Feb 2022 22:11:32 +0800</lastBuildDate>
-        <category>SAP</category>
         <category>生物信息</category>
         <category>基因编辑</category>
+        <category>前端</category>
+        <category>Css</category>
         <category>Java</category>
+        <category>Corn</category>
+        <category>DDD</category>
+        <category>领域驱动设计</category>
+        <category>SAP</category>
+        <category>DisPlay属性</category>
+        <category>Docker</category>
         <category>Cache</category>
         <category>Cookie</category>
         <category>Session</category>
         <category>Java面试</category>
-        <category>Corn</category>
-        <category>前端</category>
-        <category>Css</category>
-        <category>DisPlay属性</category>
-        <category>DDD</category>
-        <category>领域驱动设计</category>
-        <category>Docker</category>
         <category>blog</category>
         <category>hexo</category>
         <category>next</category>
         <category>FastJson</category>
+        <category>IDEA</category>
         <category>JavaScript</category>
         <category>Html</category>
         <category>SpringBoot</category>
-        <category>IDEA</category>
-        <category>Jvm</category>
         <category>Jenkins</category>
         <category>CI/CD</category>
-        <category>函数式接口</category>
         <category>map</category>
         <category>Stream流</category>
+        <category>Jvm</category>
         <category>Assert</category>
+        <category>函数式接口</category>
         <category>java</category>
         <category>calender</category>
         <category>Springboot</category>
-        <category>Python</category>
-        <category>Jupyter</category>
-        <category>Machine Learning</category>
         <category>LeetCode</category>
         <category>算法</category>
         <category>递归</category>
-        <category>numpy</category>
-        <category>pandas</category>
-        <category>sklearn</category>
         <category>Linux</category>
         <category>Mybatis</category>
         <category>分页查询</category>
-        <category>模糊查询</category>
-        <category>Spring</category>
+        <category>Machine Learning</category>
+        <category>numpy</category>
+        <category>pandas</category>
+        <category>sklearn</category>
+        <category>Python</category>
+        <category>Jupyter</category>
         <category>Nginx</category>
+        <category>Spring</category>
+        <category>模糊查询</category>
         <category>SrpingBoot</category>
         <category>文件上传</category>
-        <category>事务</category>
-        <category>master</category>
         <category>TypeScript</category>
         <category>WebPack</category>
-        <category>UML</category>
+        <category>master</category>
+        <category>事务</category>
         <category>Groovy</category>
+        <category>UML</category>
         <category>Ubuntu</category>
         <category>Mysql</category>
+        <category>Vue</category>
         <category>VsCode</category>
         <category>Shell</category>
         <category>VSCODE</category>
         <category>快捷键</category>
-        <category>Vue</category>
         <category>Stream</category>
-        <category>日期</category>
         <category>线程池</category>
         <category>ubuntu</category>
         <category>虚拟机</category>
+        <category>日期</category>
+        <category>二分查找</category>
+        <category>数据挖掘</category>
         <category>Hadoop</category>
         <category>操作系统</category>
         <category>EasyExcel</category>
-        <category>二分查找</category>
         <category>node</category>
-        <category>数据挖掘</category>
         <category>JVM</category>
         <category>Yaml</category>
-        <category>数据库</category>
-        <category>Hexo</category>
         <category>junit</category>
+        <category>Hexo</category>
+        <category>数据库</category>
         <category>Mysql事务</category>
-        <category>Git</category>
-        <category>冒泡排序</category>
         <category>git,npm,node</category>
+        <category>冒泡排序</category>
         <category>动态规划</category>
         <category>堆排序</category>
-        <category>多线程</category>
+        <category>Git</category>
         <category>幂等性</category>
         <category>Google</category>
+        <category>多线程</category>
         <category>流</category>
-        <category>快速排序</category>
-        <category>正则表达式</category>
         <category>归并排序</category>
+        <category>正则表达式</category>
+        <category>快速排序</category>
         <category>直接插入排序</category>
         <category>选择排序</category>
         <category>Java 面试</category>
         <category>数据结构</category>
         <category>阻塞队列</category>
         <category>Spring事务</category>
+        <category>Date</category>
         <category>JDK</category>
         <category>动态代理</category>
-        <category>Date</category>
         <category>ArrayList</category>
         <category>接口</category>
         <category>SpringMvc</category>
@@ -124,32 +124,22 @@
             <category>JavaScript</category>
             <category>Html</category>
             <pubDate>Mon, 14 Feb 2022 22:11:32 +0800</pubDate>
-            <description><![CDATA[ &lt;h1 id=&#34;html页面插入百度谷歌地图-react中插入百度地图&#34;&gt;&lt;a href=&#34;#html页面插入百度谷歌地图-react中插入百度地图&#34; class=&#34;headerlink&#34; title=&#34;html页面插入百度谷歌地图,react中插入百度地图&#34;&gt;&lt;/a&gt;&lt;code&gt;html&lt;/code&gt;页面插入百度谷歌地图,&lt;code&gt;react&lt;/code&gt;中插入百度地图&lt;/h1&gt;&lt;h2 id=&#34;Google地图&#34;&gt;&lt;a href=&#34;#Google地图&#34; class=&#34;headerlink&#34; title=&#34;Google地图&#34;&gt;&lt;/a&gt;&lt;code&gt;Google&lt;/code&gt;地图&lt;/h2&gt;&lt;ol&gt;
-&lt;li&gt;在谷歌地图中 &lt;code&gt;http://www.google.cn/maps/&lt;/code&gt;&lt;/li&gt;
+            <description><![CDATA[ &lt;h1 id=&#34;html页面插入百度谷歌地图react中插入百度地图&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#html页面插入百度谷歌地图react中插入百度地图&#34;&gt;#&lt;/a&gt;  &lt;code&gt;html&lt;/code&gt;  页面插入百度谷歌地图， &lt;code&gt;react&lt;/code&gt;  中插入百度地图&lt;/h1&gt;
+&lt;h2 id=&#34;google地图&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#google地图&#34;&gt;#&lt;/a&gt;  &lt;code&gt;Google&lt;/code&gt;  地图&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;在谷歌地图中  &lt;code&gt;http://www.google.cn/maps/&lt;/code&gt;&lt;/li&gt;
 &lt;/ol&gt;
-&lt;p&gt;输入地址，搜索到指定地点之后，点击“共享”按钮&lt;/p&gt;
+&lt;p&gt;输入地址，搜索到指定地点之后，点击 “共享” 按钮&lt;/p&gt;
 &lt;span id=&#34;more&#34;&gt;&lt;/span&gt;
-
 &lt;img data-src=&#34;/posts/7b604068/2022-02-14-22-35-40.png&#34; class=&#34;&#34;&gt;
-
 &lt;ol start=&#34;2&#34;&gt;
 &lt;li&gt;然后使用嵌入地图&lt;/li&gt;
 &lt;/ol&gt;
 &lt;img data-src=&#34;/posts/7b604068/2022-02-14-22-35-49.png&#34; class=&#34;&#34;&gt;
-
 &lt;ol start=&#34;3&#34;&gt;
-&lt;li&gt;将复制的&lt;code&gt;HTML&lt;/code&gt;代码粘贴到相应位置，根据自己需求修改宽高&lt;/li&gt;
+&lt;li&gt;将复制的 &lt;code&gt;HTML&lt;/code&gt;  代码粘贴到相应位置，根据自己需求修改宽高&lt;/li&gt;
 &lt;/ol&gt;
 &lt;figure class=&#34;highlight html&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;tag&#34;&gt;&amp;lt;&lt;span class=&#34;name&#34;&gt;div&lt;/span&gt; &lt;span class=&#34;attr&#34;&gt;class&lt;/span&gt;=&lt;span class=&#34;string&#34;&gt;&amp;quot;contact-map&amp;quot;&lt;/span&gt;&amp;gt;&lt;/span&gt;   &lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;tag&#34;&gt;&amp;lt;&lt;span class=&#34;name&#34;&gt;iframe&lt;/span&gt; &lt;span class=&#34;attr&#34;&gt;class&lt;/span&gt;=&lt;span class=&#34;string&#34;&gt;&amp;quot;contact-map-size&amp;quot;&lt;/span&gt; &lt;span class=&#34;attr&#34;&gt;src&lt;/span&gt;=&lt;span class=&#34;string&#34;&gt;&amp;quot;https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3392.8449822382095!2d119.92011513973418!3d31.747432000000007!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x35b46cf8c886febb%3A0x54a85cdf7ef32ab9!2z5rGf6IuP55CG5bel5a2m6Zmi55S15rCU5L-h5oGv5bel56iL5a2m6Zmi!5e0!3m2!1szh-CN!2sus!4v1617931666774!5m2!1szh-CN!2sus&amp;quot;&lt;/span&gt;   &lt;span class=&#34;attr&#34;&gt;allowfullscreen&lt;/span&gt;=&lt;span class=&#34;string&#34;&gt;&amp;quot;&amp;quot;&lt;/span&gt; &lt;span class=&#34;attr&#34;&gt;loading&lt;/span&gt;=&lt;span class=&#34;string&#34;&gt;&amp;quot;lazy&amp;quot;&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;span class=&#34;tag&#34;&gt;&amp;lt;/&lt;span class=&#34;name&#34;&gt;iframe&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;tag&#34;&gt;&amp;lt;/&lt;span class=&#34;name&#34;&gt;div&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-
-
-
-
-
-
-
-
-
  ]]></description>
         </item>
         <item>
@@ -159,86 +149,102 @@
             <category>前端</category>
             <category>JavaScript</category>
             <pubDate>Mon, 14 Feb 2022 21:30:46 +0800</pubDate>
-            <description><![CDATA[ &lt;h1 id=&#34;js中的some、find、findindex、includes、filter的使用&#34;&gt;&lt;a href=&#34;#js中的some、find、findindex、includes、filter的使用&#34; class=&#34;headerlink&#34; title=&#34;js中的some、find、findindex、includes、filter的使用&#34;&gt;&lt;/a&gt;&lt;code&gt;js&lt;/code&gt;中的&lt;code&gt;some、find、findindex、includes、filter&lt;/code&gt;的使用&lt;/h1&gt;&lt;blockquote&gt;
-&lt;p&gt;类似于&lt;code&gt;foreach&lt;/code&gt;的方法&lt;br&gt;为什么把这类方法归到一起讲，因为我在使用的过程中发现其实这些方法的用法和参数其实都是一样的，底层应该都是和&lt;code&gt;foreach&lt;/code&gt;差不多，差别只是在于返回的东西不一样，那么再来看看这些方法的差别以及用法。&lt;/p&gt;
+            <description><![CDATA[ &lt;h1 id=&#34;js中的some-find-findindex-includes-filter的使用&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#js中的some-find-findindex-includes-filter的使用&#34;&gt;#&lt;/a&gt;  &lt;code&gt;js&lt;/code&gt;  中的 &lt;code&gt;some、find、findindex、includes、filter&lt;/code&gt;  的使用&lt;/h1&gt;
+&lt;blockquote&gt;
+&lt;p&gt;类似于 &lt;code&gt;foreach&lt;/code&gt;  的方法&lt;br&gt;
+为什么把这类方法归到一起讲，因为我在使用的过程中发现其实这些方法的用法和参数其实都是一样的，底层应该都是和 &lt;code&gt;foreach&lt;/code&gt;  差不多，差别只是在于返回的东西不一样，那么再来看看这些方法的差别以及用法。&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;ul&gt;
-&lt;li&gt;语法&lt;br&gt;&lt;code&gt;array.方法名(function(currentValue, index, arr),thisValue)&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;语法&lt;br&gt;
+ &lt;code&gt;array.方法名(function(currentValue, index, arr),thisValue)&lt;/code&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;span id=&#34;more&#34;&gt;&lt;/span&gt;
-
 &lt;ul&gt;
 &lt;li&gt;参数&lt;/li&gt;
 &lt;/ul&gt;
 &lt;img data-src=&#34;/posts/4aa00b9a/2022-02-14-22-33-00.png&#34; class=&#34;&#34;&gt;
-
 &lt;p&gt;以上是这些方法共同的基本的语法以及参数&lt;/p&gt;
 &lt;p&gt;那么再来看看这些方法的不同点&lt;/p&gt;
-&lt;h2 id=&#34;forEach&#34;&gt;&lt;a href=&#34;#forEach&#34; class=&#34;headerlink&#34; title=&#34;forEach()&#34;&gt;&lt;/a&gt;&lt;code&gt;forEach()&lt;/code&gt;&lt;/h2&gt;&lt;p&gt;&lt;code&gt;forEach()&lt;/code&gt; 方法用于调用数组的每个元素，并将元素传递给回调函数。&lt;/p&gt;
-&lt;p&gt;注意: &lt;code&gt;forEach()&lt;/code&gt; 对于空数组是不会执行回调函数的。&lt;/p&gt;
+&lt;h2 id=&#34;foreach&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#foreach&#34;&gt;#&lt;/a&gt;  &lt;code&gt;forEach()&lt;/code&gt;&lt;/h2&gt;
+&lt;p&gt;&lt;code&gt;forEach()&lt;/code&gt;  方法用于调用数组的每个元素，并将元素传递给回调函数。&lt;/p&gt;
+&lt;p&gt;注意:  &lt;code&gt;forEach()&lt;/code&gt;  对于空数组是不会执行回调函数的。&lt;/p&gt;
 &lt;blockquote&gt;
-&lt;p&gt;也就是说 &lt;code&gt;forEach()&lt;/code&gt; 这个方法是没有任何限制的，回调函数最终返回的值是完全由自己决定的，也就是说其实后面介绍到的所有的方法其实也都可以通过&lt;code&gt;forEach()&lt;/code&gt;来实现相同的功能，只不过要自己写更多的代码量。&lt;br&gt;&lt;code&gt;forEach()&lt;/code&gt;可以通过&lt;code&gt;return&lt;/code&gt;来提前退出循环，同时返回相应的值&lt;/p&gt;
+&lt;p&gt;也就是说  &lt;code&gt;forEach()&lt;/code&gt;  这个方法是没有任何限制的，回调函数最终返回的值是完全由自己决定的，也就是说其实后面介绍到的所有的方法其实也都可以通过 &lt;code&gt;forEach()&lt;/code&gt;  来实现相同的功能，只不过要自己写更多的代码量。&lt;br&gt;
+ &lt;code&gt;forEach()&lt;/code&gt;  可以通过 &lt;code&gt;return&lt;/code&gt;  来提前退出循环，同时返回相应的值&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;h2 id=&#34;map&#34;&gt;&lt;a href=&#34;#map&#34; class=&#34;headerlink&#34; title=&#34;map()&#34;&gt;&lt;/a&gt;&lt;code&gt;map()&lt;/code&gt;&lt;/h2&gt;&lt;p&gt;&lt;code&gt;map()&lt;/code&gt; 方法返回一个新数组，数组中的元素为原始数组元素调用函数处理后的值。&lt;/p&gt;
-&lt;p&gt;&lt;code&gt;map()&lt;/code&gt; 方法按照原始数组元素顺序依次处理元素。&lt;/p&gt;
+&lt;h2 id=&#34;map&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#map&#34;&gt;#&lt;/a&gt;  &lt;code&gt;map()&lt;/code&gt;&lt;/h2&gt;
+&lt;p&gt;&lt;code&gt;map()&lt;/code&gt;  方法返回一个新数组，数组中的元素为原始数组元素调用函数处理后的值。&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;map()&lt;/code&gt;  方法按照原始数组元素顺序依次处理元素。&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;p&gt;注意： &lt;code&gt;map()&lt;/code&gt; 不会对空数组进行检测。&lt;/p&gt;
+&lt;li&gt;
+&lt;p&gt;注意：  &lt;code&gt;map()&lt;/code&gt;  不会对空数组进行检测。&lt;/p&gt;
 &lt;/li&gt;
-&lt;li&gt;&lt;p&gt;注意： &lt;code&gt;map()&lt;/code&gt; 不会改变原始数组。&lt;/p&gt;
+&lt;li&gt;
+&lt;p&gt;注意：  &lt;code&gt;map()&lt;/code&gt;  不会改变原始数组。&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;blockquote&gt;
-&lt;p&gt;&lt;code&gt;map&lt;/code&gt;和&lt;code&gt;foreach&lt;/code&gt;很像，差别就在于&lt;code&gt;map&lt;/code&gt;所得到的所有符合条件的结果都会通过一个数组来返回。在我们需要将结果放到一个数组中的时候直接使用&lt;code&gt;map&lt;/code&gt;就会更加的方便。&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;map&lt;/code&gt;  和 &lt;code&gt;foreach&lt;/code&gt;  很像，差别就在于 &lt;code&gt;map&lt;/code&gt;  所得到的所有符合条件的结果都会通过一个数组来返回。在我们需要将结果放到一个数组中的时候直接使用 &lt;code&gt;map&lt;/code&gt;  就会更加的方便。&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;blockquote&gt;
-&lt;p&gt;在&lt;code&gt;map()&lt;/code&gt;中&lt;code&gt;return&lt;/code&gt;无论如何都会返回一个数组，可以通过&lt;code&gt;return&lt;/code&gt;来对原数组进行操作返回一个新数组&lt;/p&gt;
+&lt;p&gt;在 &lt;code&gt;map()&lt;/code&gt;  中 &lt;code&gt;return&lt;/code&gt;  无论如何都会返回一个数组，可以通过 &lt;code&gt;return&lt;/code&gt;  来对原数组进行操作返回一个新数组&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;figure class=&#34;highlight js&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;8&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;keyword&#34;&gt;var&lt;/span&gt; arr = [&lt;span class=&#34;number&#34;&gt;1&lt;/span&gt;, &lt;span class=&#34;number&#34;&gt;2&lt;/span&gt;, &lt;span class=&#34;number&#34;&gt;3&lt;/span&gt;, &lt;span class=&#34;number&#34;&gt;4&lt;/span&gt;, &lt;span class=&#34;number&#34;&gt;5&lt;/span&gt;, &lt;span class=&#34;number&#34;&gt;6&lt;/span&gt;, &lt;span class=&#34;number&#34;&gt;7&lt;/span&gt;, &lt;span class=&#34;number&#34;&gt;8&lt;/span&gt;, &lt;span class=&#34;number&#34;&gt;9&lt;/span&gt;];&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;built_in&#34;&gt;console&lt;/span&gt;.log(arr.map(&lt;span class=&#34;function&#34;&gt;&lt;span class=&#34;params&#34;&gt;item&lt;/span&gt; =&amp;gt;&lt;/span&gt; &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;keyword&#34;&gt;return&lt;/span&gt; &lt;span class=&#34;literal&#34;&gt;true&lt;/span&gt;;     &lt;span class=&#34;comment&#34;&gt;//[[true, true, true, true, true, true, true, true, true]]&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;#125;));&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;built_in&#34;&gt;console&lt;/span&gt;.log(arr.map(&lt;span class=&#34;function&#34;&gt;&lt;span class=&#34;params&#34;&gt;item&lt;/span&gt; =&amp;gt;&lt;/span&gt; &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;keyword&#34;&gt;return&lt;/span&gt; item*&lt;span class=&#34;number&#34;&gt;2&lt;/span&gt;;     &lt;span class=&#34;comment&#34;&gt;//[2, 4, 6, 8, 10, 12, 14, 16, 18]&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;#125;));&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;h2 id=&#34;some&#34;&gt;&lt;a href=&#34;#some&#34; class=&#34;headerlink&#34; title=&#34;some()&#34;&gt;&lt;/a&gt;&lt;code&gt;some()&lt;/code&gt;&lt;/h2&gt;&lt;p&gt;&lt;code&gt;some()&lt;/code&gt; 方法用于检测数组中的元素是否满足指定条件（函数提供）。&lt;/p&gt;
-&lt;p&gt;&lt;code&gt;some()&lt;/code&gt; 方法会依次执行数组的每个元素：&lt;/p&gt;
-&lt;p&gt;如果有一个元素满足条件，则表达式返回&lt;code&gt;true&lt;/code&gt; , 剩余的元素不会再执行检测。&lt;br&gt;如果没有满足条件的元素，则返回&lt;code&gt;false&lt;/code&gt;。&lt;br&gt;注意： &lt;code&gt;some()&lt;/code&gt; 不会对空数组进行检测。&lt;br&gt;注意： &lt;code&gt;some()&lt;/code&gt; 不会改变原始数组。&lt;/p&gt;
-&lt;p&gt;也就是说&lt;code&gt;some&lt;/code&gt;并不一定会遍历完数组中全部的元素，当遍历到由符合条件的元素时就会返回&lt;code&gt;true&lt;/code&gt;并终止，否则返回&lt;code&gt;false&lt;/code&gt;，所以也就可以通过利用此特性来对数组中特定一部分的元素进行操作。&lt;/p&gt;
+&lt;h2 id=&#34;some&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#some&#34;&gt;#&lt;/a&gt;  &lt;code&gt;some()&lt;/code&gt;&lt;/h2&gt;
+&lt;p&gt;&lt;code&gt;some()&lt;/code&gt;  方法用于检测数组中的元素是否满足指定条件（函数提供）。&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;some()&lt;/code&gt;  方法会依次执行数组的每个元素：&lt;/p&gt;
+&lt;p&gt;如果有一个元素满足条件，则表达式返回 &lt;code&gt;true&lt;/code&gt;  , 剩余的元素不会再执行检测。&lt;br&gt;
+如果没有满足条件的元素，则返回 &lt;code&gt;false&lt;/code&gt; 。&lt;br&gt;
+注意：  &lt;code&gt;some()&lt;/code&gt;  不会对空数组进行检测。&lt;br&gt;
+注意：  &lt;code&gt;some()&lt;/code&gt;  不会改变原始数组。&lt;/p&gt;
+&lt;p&gt;也就是说 &lt;code&gt;some&lt;/code&gt;  并不一定会遍历完数组中全部的元素，当遍历到由符合条件的元素时就会返回 &lt;code&gt;true&lt;/code&gt;  并终止，否则返回 &lt;code&gt;false&lt;/code&gt; ，所以也就可以通过利用此特性来对数组中特定一部分的元素进行操作。&lt;/p&gt;
 &lt;figure class=&#34;highlight js&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;var&lt;/span&gt; arr = [&lt;span class=&#34;number&#34;&gt;1&lt;/span&gt;, &lt;span class=&#34;number&#34;&gt;2&lt;/span&gt;, &lt;span class=&#34;number&#34;&gt;3&lt;/span&gt;, &lt;span class=&#34;number&#34;&gt;4&lt;/span&gt;, &lt;span class=&#34;number&#34;&gt;5&lt;/span&gt;, &lt;span class=&#34;number&#34;&gt;6&lt;/span&gt;, &lt;span class=&#34;number&#34;&gt;7&lt;/span&gt;, &lt;span class=&#34;number&#34;&gt;8&lt;/span&gt;, &lt;span class=&#34;number&#34;&gt;9&lt;/span&gt;];&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;built_in&#34;&gt;console&lt;/span&gt;.log(arr.some(&lt;span class=&#34;function&#34;&gt;&lt;span class=&#34;params&#34;&gt;item&lt;/span&gt; =&amp;gt;&lt;/span&gt; &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;            &lt;span class=&#34;comment&#34;&gt;// 通过some可以对数组中符合要求的之前的元素进行操作&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;            &lt;span class=&#34;built_in&#34;&gt;console&lt;/span&gt;.log(item);&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;            &lt;span class=&#34;keyword&#34;&gt;return&lt;/span&gt; item &amp;gt; &lt;span class=&#34;number&#34;&gt;5&lt;/span&gt;;  &lt;span class=&#34;comment&#34;&gt;//可以通过return来设置返回值的条件&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;#125;));&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-
 &lt;p&gt;示例：&lt;/p&gt;
 &lt;figure class=&#34;highlight js&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;//读取缓存是否收藏&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;// || 意思为强转为 数组格式&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;let&lt;/span&gt; collect = wx.getStorageSync(&lt;span class=&#34;string&#34;&gt;&amp;quot;collect&amp;quot;&lt;/span&gt;)||[];&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;// 使用 some 遍历数组 判断 是否有id的值相等，只要有一个相等的 ， isCollect 都为true&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;let&lt;/span&gt; isCollect = collect.some(&lt;span class=&#34;function&#34;&gt;&lt;span class=&#34;params&#34;&gt;v&lt;/span&gt;=&amp;gt;&lt;/span&gt;v.id === &lt;span class=&#34;built_in&#34;&gt;this&lt;/span&gt;.data.courseDetails.id);&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;p&gt;&lt;strong&gt;还有一个相对的方法叫做 &lt;code&gt;every()&lt;/code&gt; ,条件时数组中所有的元素都满足条件。&lt;/strong&gt;&lt;/p&gt;
-&lt;h2 id=&#34;find&#34;&gt;&lt;a href=&#34;#find&#34; class=&#34;headerlink&#34; title=&#34;``find()&#34;&gt;&lt;/a&gt;``find()&lt;/h2&gt;&lt;p&gt;&lt;code&gt;find()&lt;/code&gt; 方法返回通过测试（函数内判断）的数组的第一个元素的值。&lt;/p&gt;
-&lt;p&gt;&lt;code&gt;find()&lt;/code&gt; 方法为数组中的每个元素都调用一次函数执行：&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;还有一个相对的方法叫做  &lt;code&gt;every()&lt;/code&gt;  , 条件时数组中所有的元素都满足条件。&lt;/strong&gt;&lt;/p&gt;
+&lt;h2 id=&#34;find&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#find&#34;&gt;#&lt;/a&gt; ``find()&lt;/h2&gt;
+&lt;p&gt;&lt;code&gt;find()&lt;/code&gt;  方法返回通过测试（函数内判断）的数组的第一个元素的值。&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;find()&lt;/code&gt;  方法为数组中的每个元素都调用一次函数执行：&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;当数组中的元素在测试条件时返回 &lt;code&gt;true&lt;/code&gt; 时, &lt;code&gt;find()&lt;/code&gt; 返回符合条件的元素，之后的值不会再调用执行函数。&lt;/li&gt;
-&lt;li&gt;如果没有符合条件的元素返回 &lt;code&gt;undefined&lt;/code&gt;  注意: &lt;code&gt;find()&lt;/code&gt; 对于空数组，函数是不会执行的。&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;当数组中的元素在测试条件时返回  &lt;code&gt;true&lt;/code&gt;  时， &lt;code&gt;find()&lt;/code&gt;  返回符合条件的元素，之后的值不会再调用执行函数。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;如果没有符合条件的元素返回  &lt;code&gt;undefined&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;注意:  &lt;code&gt;find()&lt;/code&gt;  对于空数组，函数是不会执行的。&lt;/p&gt;
+&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;注意: &lt;code&gt;find()&lt;/code&gt; 并没有改变数组的原始值。&lt;/p&gt;
+&lt;p&gt;注意:  &lt;code&gt;find()&lt;/code&gt;  并没有改变数组的原始值。&lt;/p&gt;
 &lt;figure class=&#34;highlight js&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;var&lt;/span&gt; arr = [&lt;span class=&#34;number&#34;&gt;1&lt;/span&gt;, &lt;span class=&#34;number&#34;&gt;2&lt;/span&gt;, &lt;span class=&#34;number&#34;&gt;3&lt;/span&gt;, &lt;span class=&#34;number&#34;&gt;4&lt;/span&gt;, &lt;span class=&#34;number&#34;&gt;5&lt;/span&gt;, &lt;span class=&#34;number&#34;&gt;6&lt;/span&gt;, &lt;span class=&#34;number&#34;&gt;7&lt;/span&gt;, &lt;span class=&#34;number&#34;&gt;8&lt;/span&gt;, &lt;span class=&#34;number&#34;&gt;9&lt;/span&gt;];&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;built_in&#34;&gt;console&lt;/span&gt;.log(arr.find(&lt;span class=&#34;function&#34;&gt;&lt;span class=&#34;params&#34;&gt;item&lt;/span&gt; =&amp;gt;&lt;/span&gt; &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;comment&#34;&gt;// 通过find也可以对数组中符合要求的之前的元素进行操作&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;built_in&#34;&gt;console&lt;/span&gt;.log(item);&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;keyword&#34;&gt;return&lt;/span&gt; item&amp;gt;&lt;span class=&#34;number&#34;&gt;5&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;#125;));&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-
-&lt;h2 id=&#34;findIndex&#34;&gt;&lt;a href=&#34;#findIndex&#34; class=&#34;headerlink&#34; title=&#34;findIndex()&#34;&gt;&lt;/a&gt;&lt;code&gt;findIndex()&lt;/code&gt;&lt;/h2&gt;&lt;p&gt;&lt;code&gt;findIndex()&lt;/code&gt; 方法返回传入一个测试条件（函数）符合条件的数组第一个元素位置。&lt;/p&gt;
-&lt;p&gt;&lt;code&gt;findIndex()&lt;/code&gt; 方法为数组中的每个元素都调用一次函数执行：&lt;/p&gt;
+&lt;h2 id=&#34;findindex&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#findindex&#34;&gt;#&lt;/a&gt;  &lt;code&gt;findIndex()&lt;/code&gt;&lt;/h2&gt;
+&lt;p&gt;&lt;code&gt;findIndex()&lt;/code&gt;  方法返回传入一个测试条件（函数）符合条件的数组第一个元素位置。&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;findIndex()&lt;/code&gt;  方法为数组中的每个元素都调用一次函数执行：&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;p&gt;当数组中的元素在测试条件时返回 &lt;code&gt;true&lt;/code&gt; 时, &lt;code&gt;findIndex()&lt;/code&gt; 返回符合条件的元素的索引位置，之后的值不会再调用执行函数。&lt;/p&gt;
+&lt;li&gt;
+&lt;p&gt;当数组中的元素在测试条件时返回  &lt;code&gt;true&lt;/code&gt;  时， &lt;code&gt;findIndex()&lt;/code&gt;  返回符合条件的元素的索引位置，之后的值不会再调用执行函数。&lt;/p&gt;
 &lt;/li&gt;
-&lt;li&gt;&lt;p&gt;如果没有符合条件的元素返回&lt;code&gt; -1&lt;/code&gt;&lt;/p&gt;
-&lt;p&gt;  注意: &lt;code&gt;findIndex()&lt;/code&gt; 对于空数组，函数是不会执行的。&lt;/p&gt;
+&lt;li&gt;
+&lt;p&gt;如果没有符合条件的元素返回 &lt;code&gt; -1&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;注意:  &lt;code&gt;findIndex()&lt;/code&gt;  对于空数组，函数是不会执行的。&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;注意: &lt;code&gt;findIndex()&lt;/code&gt; 并没有改变数组的原始值。&lt;/p&gt;
+&lt;p&gt;注意:  &lt;code&gt;findIndex()&lt;/code&gt;  并没有改变数组的原始值。&lt;/p&gt;
 &lt;blockquote&gt;
-&lt;p&gt;与&lt;code&gt;find&lt;/code&gt;方法类似，区别只在于这个方法返回的时元素在数组中的索引。&lt;/p&gt;
+&lt;p&gt;与 &lt;code&gt;find&lt;/code&gt;  方法类似，区别只在于这个方法返回的时元素在数组中的索引。&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;figure class=&#34;highlight js&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;var&lt;/span&gt; arr = [&lt;span class=&#34;number&#34;&gt;1&lt;/span&gt;, &lt;span class=&#34;number&#34;&gt;2&lt;/span&gt;, &lt;span class=&#34;number&#34;&gt;3&lt;/span&gt;, &lt;span class=&#34;number&#34;&gt;4&lt;/span&gt;, &lt;span class=&#34;number&#34;&gt;5&lt;/span&gt;, &lt;span class=&#34;number&#34;&gt;6&lt;/span&gt;, &lt;span class=&#34;number&#34;&gt;7&lt;/span&gt;, &lt;span class=&#34;number&#34;&gt;8&lt;/span&gt;, &lt;span class=&#34;number&#34;&gt;9&lt;/span&gt;];&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;built_in&#34;&gt;console&lt;/span&gt;.log(arr.findIndex(&lt;span class=&#34;function&#34;&gt;&lt;span class=&#34;params&#34;&gt;item&lt;/span&gt; =&amp;gt;&lt;/span&gt; &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;built_in&#34;&gt;console&lt;/span&gt;.log(item);&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;keyword&#34;&gt;return&lt;/span&gt; item&amp;gt;&lt;span class=&#34;number&#34;&gt;5&lt;/span&gt;;          &lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;#125;));&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-
 &lt;p&gt;示例：&lt;/p&gt;
 &lt;figure class=&#34;highlight js&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;// || 意思为强转为 数组格式&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;let&lt;/span&gt; collect = wx.getStorageSync(&lt;span class=&#34;string&#34;&gt;&amp;quot;collect&amp;quot;&lt;/span&gt;)||[];&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;// 使用findIndex遍历, 返回 数组中和 目标id 相等的 索引&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;let&lt;/span&gt; index = collect.findIndex(&lt;span class=&#34;function&#34;&gt;&lt;span class=&#34;params&#34;&gt;v&lt;/span&gt;=&amp;gt;&lt;/span&gt;v.id === &lt;span class=&#34;built_in&#34;&gt;this&lt;/span&gt;.data.courseDetails.id) ;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-
-&lt;h2 id=&#34;filter&#34;&gt;&lt;a href=&#34;#filter&#34; class=&#34;headerlink&#34; title=&#34;filter()&#34;&gt;&lt;/a&gt;&lt;code&gt;filter()&lt;/code&gt;&lt;/h2&gt;&lt;p&gt;&lt;code&gt;filter()&lt;/code&gt; 方法创建一个新的数组，新数组中的元素是通过检查指定数组中符合条件的所有元素。&lt;/p&gt;
-&lt;p&gt;注意： &lt;code&gt;filter()&lt;/code&gt; 不会对空数组进行检测。&lt;/p&gt;
-&lt;p&gt;注意： &lt;code&gt;filter()&lt;/code&gt; 不会改变原始数组。&lt;/p&gt;
+&lt;h2 id=&#34;filter&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#filter&#34;&gt;#&lt;/a&gt;  &lt;code&gt;filter()&lt;/code&gt;&lt;/h2&gt;
+&lt;p&gt;&lt;code&gt;filter()&lt;/code&gt;  方法创建一个新的数组，新数组中的元素是通过检查指定数组中符合条件的所有元素。&lt;/p&gt;
+&lt;p&gt;注意：  &lt;code&gt;filter()&lt;/code&gt;  不会对空数组进行检测。&lt;/p&gt;
+&lt;p&gt;注意：  &lt;code&gt;filter()&lt;/code&gt;  不会改变原始数组。&lt;/p&gt;
 &lt;blockquote&gt;
-&lt;p&gt;这个方法与&lt;code&gt;map&lt;/code&gt;方法类似，&lt;code&gt;map&lt;/code&gt;方法没有返回的条件，而这个方法可以直接通过&lt;code&gt;return&lt;/code&gt;来设置过滤条件。&lt;/p&gt;
+&lt;p&gt;这个方法与 &lt;code&gt;map&lt;/code&gt;  方法类似， &lt;code&gt;map&lt;/code&gt;  方法没有返回的条件，而这个方法可以直接通过 &lt;code&gt;return&lt;/code&gt;  来设置过滤条件。&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;figure class=&#34;highlight js&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;var&lt;/span&gt; arr = [&lt;span class=&#34;number&#34;&gt;1&lt;/span&gt;, &lt;span class=&#34;number&#34;&gt;2&lt;/span&gt;, &lt;span class=&#34;number&#34;&gt;3&lt;/span&gt;, &lt;span class=&#34;number&#34;&gt;4&lt;/span&gt;, &lt;span class=&#34;number&#34;&gt;5&lt;/span&gt;, &lt;span class=&#34;number&#34;&gt;6&lt;/span&gt;, &lt;span class=&#34;number&#34;&gt;7&lt;/span&gt;, &lt;span class=&#34;number&#34;&gt;8&lt;/span&gt;, &lt;span class=&#34;number&#34;&gt;9&lt;/span&gt;];&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;built_in&#34;&gt;console&lt;/span&gt;.log(arr.filter(&lt;span class=&#34;function&#34;&gt;&lt;span class=&#34;params&#34;&gt;item&lt;/span&gt; =&amp;gt;&lt;/span&gt; &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;keyword&#34;&gt;return&lt;/span&gt; item &amp;gt;&lt;span class=&#34;number&#34;&gt;2&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;#125;));&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-
-&lt;h2 id=&#34;includes&#34;&gt;&lt;a href=&#34;#includes&#34; class=&#34;headerlink&#34; title=&#34;includes()&#34;&gt;&lt;/a&gt;&lt;code&gt;includes()&lt;/code&gt;&lt;/h2&gt;&lt;p&gt;这个方法是&lt;code&gt;es6&lt;/code&gt;中新增的一个方法，可以用来判断一个数组或者是字符串中是否包含某一元素，如果是返回 &lt;code&gt;true&lt;/code&gt;，否则&lt;code&gt;false&lt;/code&gt;。&lt;/p&gt;
+&lt;h2 id=&#34;includes&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#includes&#34;&gt;#&lt;/a&gt;  &lt;code&gt;includes()&lt;/code&gt;&lt;/h2&gt;
+&lt;p&gt;这个方法是 &lt;code&gt;es6&lt;/code&gt;  中新增的一个方法，可以用来判断一个数组或者是字符串中是否包含某一元素，如果是返回  &lt;code&gt;true&lt;/code&gt; ，否则 &lt;code&gt;false&lt;/code&gt; 。&lt;/p&gt;
 &lt;p&gt;语法:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;code&gt;arr.includes(searchElement)&lt;/code&gt;&lt;/li&gt;
@@ -246,9 +252,10 @@
 &lt;/ul&gt;
 &lt;p&gt;参数:&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;code&gt;searchElement&lt;/code&gt; 必须。需要查找的元素值。&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;fromIndex&lt;/code&gt; 可选。从该索引处开始查找 &lt;code&gt;searchElement&lt;/code&gt;。如果为负值，则按升序从 &lt;code&gt;array.length + fromIndex &lt;/code&gt;的索引开始搜索。默认为&lt;code&gt; 0&lt;/code&gt;。&lt;figure class=&#34;highlight js&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;var&lt;/span&gt; arr = [&lt;span class=&#34;number&#34;&gt;1&lt;/span&gt;, &lt;span class=&#34;number&#34;&gt;2&lt;/span&gt;, &lt;span class=&#34;number&#34;&gt;3&lt;/span&gt;, &lt;span class=&#34;number&#34;&gt;4&lt;/span&gt;, &lt;span class=&#34;number&#34;&gt;5&lt;/span&gt;, &lt;span class=&#34;number&#34;&gt;6&lt;/span&gt;, &lt;span class=&#34;number&#34;&gt;7&lt;/span&gt;, &lt;span class=&#34;number&#34;&gt;8&lt;/span&gt;, &lt;span class=&#34;number&#34;&gt;9&lt;/span&gt;];&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;built_in&#34;&gt;console&lt;/span&gt;.log(arr.includes(&lt;span class=&#34;number&#34;&gt;5&lt;/span&gt;)); &lt;span class=&#34;comment&#34;&gt;//true&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;searchElement&lt;/code&gt;  必须。需要查找的元素值。&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;fromIndex&lt;/code&gt;  可选。从该索引处开始查找  &lt;code&gt;searchElement&lt;/code&gt; 。如果为负值，则按升序从  &lt;code&gt;array.length + fromIndex &lt;/code&gt; 的索引开始搜索。默认为 &lt;code&gt; 0&lt;/code&gt; 。&lt;/li&gt;
 &lt;/ul&gt;
+&lt;figure class=&#34;highlight js&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;var&lt;/span&gt; arr = [&lt;span class=&#34;number&#34;&gt;1&lt;/span&gt;, &lt;span class=&#34;number&#34;&gt;2&lt;/span&gt;, &lt;span class=&#34;number&#34;&gt;3&lt;/span&gt;, &lt;span class=&#34;number&#34;&gt;4&lt;/span&gt;, &lt;span class=&#34;number&#34;&gt;5&lt;/span&gt;, &lt;span class=&#34;number&#34;&gt;6&lt;/span&gt;, &lt;span class=&#34;number&#34;&gt;7&lt;/span&gt;, &lt;span class=&#34;number&#34;&gt;8&lt;/span&gt;, &lt;span class=&#34;number&#34;&gt;9&lt;/span&gt;];&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;built_in&#34;&gt;console&lt;/span&gt;.log(arr.includes(&lt;span class=&#34;number&#34;&gt;5&lt;/span&gt;)); &lt;span class=&#34;comment&#34;&gt;//true&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
  ]]></description>
         </item>
     </channel>

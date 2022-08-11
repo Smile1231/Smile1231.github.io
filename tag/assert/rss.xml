@@ -7,107 +7,107 @@
         <language>en</language>
         <pubDate>Sun, 13 Feb 2022 21:35:24 +0800</pubDate>
         <lastBuildDate>Sun, 13 Feb 2022 21:35:24 +0800</lastBuildDate>
-        <category>SAP</category>
         <category>生物信息</category>
         <category>基因编辑</category>
+        <category>前端</category>
+        <category>Css</category>
         <category>Java</category>
+        <category>Corn</category>
+        <category>DDD</category>
+        <category>领域驱动设计</category>
+        <category>SAP</category>
+        <category>DisPlay属性</category>
+        <category>Docker</category>
         <category>Cache</category>
         <category>Cookie</category>
         <category>Session</category>
         <category>Java面试</category>
-        <category>Corn</category>
-        <category>前端</category>
-        <category>Css</category>
-        <category>DisPlay属性</category>
-        <category>DDD</category>
-        <category>领域驱动设计</category>
-        <category>Docker</category>
         <category>blog</category>
         <category>hexo</category>
         <category>next</category>
         <category>FastJson</category>
+        <category>IDEA</category>
         <category>JavaScript</category>
         <category>Html</category>
         <category>SpringBoot</category>
-        <category>IDEA</category>
-        <category>Jvm</category>
         <category>Jenkins</category>
         <category>CI/CD</category>
-        <category>函数式接口</category>
         <category>map</category>
         <category>Stream流</category>
+        <category>Jvm</category>
         <category>Assert</category>
+        <category>函数式接口</category>
         <category>java</category>
         <category>calender</category>
         <category>Springboot</category>
-        <category>Python</category>
-        <category>Jupyter</category>
-        <category>Machine Learning</category>
         <category>LeetCode</category>
         <category>算法</category>
         <category>递归</category>
-        <category>numpy</category>
-        <category>pandas</category>
-        <category>sklearn</category>
         <category>Linux</category>
         <category>Mybatis</category>
         <category>分页查询</category>
-        <category>模糊查询</category>
-        <category>Spring</category>
+        <category>Machine Learning</category>
+        <category>numpy</category>
+        <category>pandas</category>
+        <category>sklearn</category>
+        <category>Python</category>
+        <category>Jupyter</category>
         <category>Nginx</category>
+        <category>Spring</category>
+        <category>模糊查询</category>
         <category>SrpingBoot</category>
         <category>文件上传</category>
-        <category>事务</category>
-        <category>master</category>
         <category>TypeScript</category>
         <category>WebPack</category>
-        <category>UML</category>
+        <category>master</category>
+        <category>事务</category>
         <category>Groovy</category>
+        <category>UML</category>
         <category>Ubuntu</category>
         <category>Mysql</category>
+        <category>Vue</category>
         <category>VsCode</category>
         <category>Shell</category>
         <category>VSCODE</category>
         <category>快捷键</category>
-        <category>Vue</category>
         <category>Stream</category>
-        <category>日期</category>
         <category>线程池</category>
         <category>ubuntu</category>
         <category>虚拟机</category>
+        <category>日期</category>
+        <category>二分查找</category>
+        <category>数据挖掘</category>
         <category>Hadoop</category>
         <category>操作系统</category>
         <category>EasyExcel</category>
-        <category>二分查找</category>
         <category>node</category>
-        <category>数据挖掘</category>
         <category>JVM</category>
         <category>Yaml</category>
-        <category>数据库</category>
-        <category>Hexo</category>
         <category>junit</category>
+        <category>Hexo</category>
+        <category>数据库</category>
         <category>Mysql事务</category>
-        <category>Git</category>
-        <category>冒泡排序</category>
         <category>git,npm,node</category>
+        <category>冒泡排序</category>
         <category>动态规划</category>
         <category>堆排序</category>
-        <category>多线程</category>
+        <category>Git</category>
         <category>幂等性</category>
         <category>Google</category>
+        <category>多线程</category>
         <category>流</category>
-        <category>快速排序</category>
-        <category>正则表达式</category>
         <category>归并排序</category>
+        <category>正则表达式</category>
+        <category>快速排序</category>
         <category>直接插入排序</category>
         <category>选择排序</category>
         <category>Java 面试</category>
         <category>数据结构</category>
         <category>阻塞队列</category>
         <category>Spring事务</category>
+        <category>Date</category>
         <category>JDK</category>
         <category>动态代理</category>
-        <category>Date</category>
         <category>ArrayList</category>
         <category>接口</category>
         <category>SpringMvc</category>
@@ -123,42 +123,41 @@
             <category>Java</category>
             <category>Assert</category>
             <pubDate>Sun, 13 Feb 2022 21:35:24 +0800</pubDate>
-            <description><![CDATA[ &lt;h1 id=&#34;Java之assert关键字&#34;&gt;&lt;a href=&#34;#Java之assert关键字&#34; class=&#34;headerlink&#34; title=&#34;Java之assert关键字&#34;&gt;&lt;/a&gt;&lt;code&gt;Java&lt;/code&gt;之&lt;code&gt;assert&lt;/code&gt;关键字&lt;/h1&gt;&lt;p&gt;在&lt;code&gt;Java&lt;/code&gt;中，&lt;code&gt;assert&lt;/code&gt;关键字是从&lt;code&gt;JAVA SE 1.4&lt;/code&gt; 引入的，为了避免和老版本的&lt;code&gt;Java&lt;/code&gt;代码中使用了&lt;code&gt;assert&lt;/code&gt;关键字导致错误，&lt;code&gt;Java&lt;/code&gt;在执行的时候默认是不启动断言检查的（这个时候，所有的断言语句都 将忽略！），如果要开启断言检查，则需要用开关&lt;code&gt;-enableassertions&lt;/code&gt;或&lt;code&gt;-ea&lt;/code&gt;来开启。&lt;/p&gt;
-&lt;p&gt;&lt;code&gt;assert&lt;/code&gt;关键字语法很简单，有两种用法：&lt;/p&gt;
+            <description><![CDATA[ &lt;h1 id=&#34;java之assert关键字&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#java之assert关键字&#34;&gt;#&lt;/a&gt;  &lt;code&gt;Java&lt;/code&gt;  之 &lt;code&gt;assert&lt;/code&gt;  关键字&lt;/h1&gt;
+&lt;p&gt;在 &lt;code&gt;Java&lt;/code&gt;  中， &lt;code&gt;assert&lt;/code&gt;  关键字是从 &lt;code&gt;JAVA SE 1.4&lt;/code&gt;  引入的，为了避免和老版本的 &lt;code&gt;Java&lt;/code&gt;  代码中使用了 &lt;code&gt;assert&lt;/code&gt;  关键字导致错误， &lt;code&gt;Java&lt;/code&gt;  在执行的时候默认是不启动断言检查的（这个时候，所有的断言语句都 将忽略！），如果要开启断言检查，则需要用开关 &lt;code&gt;-enableassertions&lt;/code&gt;  或 &lt;code&gt;-ea&lt;/code&gt;  来开启。&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;assert&lt;/code&gt;  关键字语法很简单，有两种用法：&lt;/p&gt;
 &lt;span id=&#34;more&#34;&gt;&lt;/span&gt;
-
 &lt;ol&gt;
-&lt;li&gt;&lt;p&gt;&lt;code&gt;assert&lt;/code&gt; &lt;code&gt;&amp;lt;boolean表达式&amp;gt;&lt;/code&gt;&lt;/p&gt;
-&lt;p&gt; 如果&lt;code&gt;&amp;lt;boolean表达式&amp;gt;&lt;/code&gt;为&lt;code&gt;true&lt;/code&gt;，则程序继续执行。&lt;/p&gt;
-&lt;p&gt; 如果为&lt;code&gt;false&lt;/code&gt;，则程序抛出&lt;code&gt;AssertionError&lt;/code&gt;，并终止执行。&lt;/p&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;assert&lt;/code&gt;   &lt;code&gt;&amp;lt;boolean表达式&amp;gt;&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;如果 &lt;code&gt;&amp;lt;boolean表达式&amp;gt;&lt;/code&gt;  为 &lt;code&gt;true&lt;/code&gt; ，则程序继续执行。&lt;/p&gt;
+&lt;p&gt;如果为 &lt;code&gt;false&lt;/code&gt; ，则程序抛出 &lt;code&gt;AssertionError&lt;/code&gt; ，并终止执行。&lt;/p&gt;
 &lt;/li&gt;
-&lt;li&gt;&lt;p&gt;&lt;code&gt;assert &amp;lt;boolean表达式&amp;gt;&lt;/code&gt; : &amp;lt;错误信息表达式&amp;gt;&lt;/p&gt;
-&lt;p&gt; 如果&lt;code&gt;&amp;lt;boolean表达式&amp;gt;&lt;/code&gt;为&lt;code&gt;true&lt;/code&gt;，则程序继续执行。&lt;/p&gt;
-&lt;p&gt; 如果为&lt;code&gt;false&lt;/code&gt;，则程序抛出&lt;code&gt;java.lang.AssertionError&lt;/code&gt;，并输入&amp;lt;错误信息表达式&amp;gt;。&lt;/p&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;assert &amp;lt;boolean表达式&amp;gt;&lt;/code&gt;  : &amp;lt;错误信息表达式&amp;gt;&lt;/p&gt;
+&lt;p&gt;如果 &lt;code&gt;&amp;lt;boolean表达式&amp;gt;&lt;/code&gt;  为 &lt;code&gt;true&lt;/code&gt; ，则程序继续执行。&lt;/p&gt;
+&lt;p&gt;如果为 &lt;code&gt;false&lt;/code&gt; ，则程序抛出 &lt;code&gt;java.lang.AssertionError&lt;/code&gt; ，并输入 &amp;lt;错误信息表达式&amp;gt;。&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
-&lt;h2 id=&#34;简单实例&#34;&gt;&lt;a href=&#34;#简单实例&#34; class=&#34;headerlink&#34; title=&#34;简单实例&#34;&gt;&lt;/a&gt;简单实例&lt;/h2&gt;&lt;figure class=&#34;highlight java&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;11&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;function&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;public&lt;/span&gt; &lt;span class=&#34;keyword&#34;&gt;static&lt;/span&gt; &lt;span class=&#34;keyword&#34;&gt;void&lt;/span&gt; &lt;span class=&#34;title&#34;&gt;main&lt;/span&gt;&lt;span class=&#34;params&#34;&gt;(String[] args)&lt;/span&gt; &lt;/span&gt;&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;comment&#34;&gt;//断言1结果为true，则继续往下执行&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;keyword&#34;&gt;assert&lt;/span&gt; &lt;span class=&#34;keyword&#34;&gt;true&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    System. out.println(&lt;span class=&#34;string&#34;&gt;&amp;quot;断言1没有问题，Go！&amp;quot;&lt;/span&gt;);&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    System. out.println(&lt;span class=&#34;string&#34;&gt;&amp;quot;\n-----------------\n&amp;quot;&lt;/span&gt;);&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;comment&#34;&gt;//断言2结果为false,程序终止&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;keyword&#34;&gt;assert&lt;/span&gt; &lt;span class=&#34;keyword&#34;&gt;false&lt;/span&gt; : &lt;span class=&#34;string&#34;&gt;&amp;quot;断言失败，此表达式的信息将会在抛出异常的时候输出！&amp;quot;&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    System. out.println(&lt;span class=&#34;string&#34;&gt;&amp;quot;断言2没有问题，Go！&amp;quot;&lt;/span&gt;);&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-
-&lt;p&gt;由于上述所说,在&lt;code&gt;IDEA&lt;/code&gt;中需要手动开启 断言机制&lt;/p&gt;
+&lt;h2 id=&#34;简单实例&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#简单实例&#34;&gt;#&lt;/a&gt; 简单实例&lt;/h2&gt;
+&lt;figure class=&#34;highlight java&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;11&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;function&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;public&lt;/span&gt; &lt;span class=&#34;keyword&#34;&gt;static&lt;/span&gt; &lt;span class=&#34;keyword&#34;&gt;void&lt;/span&gt; &lt;span class=&#34;title&#34;&gt;main&lt;/span&gt;&lt;span class=&#34;params&#34;&gt;(String[] args)&lt;/span&gt; &lt;/span&gt;&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;comment&#34;&gt;//断言1结果为true，则继续往下执行&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;keyword&#34;&gt;assert&lt;/span&gt; &lt;span class=&#34;keyword&#34;&gt;true&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    System. out.println(&lt;span class=&#34;string&#34;&gt;&amp;quot;断言1没有问题，Go！&amp;quot;&lt;/span&gt;);&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    System. out.println(&lt;span class=&#34;string&#34;&gt;&amp;quot;\n-----------------\n&amp;quot;&lt;/span&gt;);&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;comment&#34;&gt;//断言2结果为false,程序终止&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;keyword&#34;&gt;assert&lt;/span&gt; &lt;span class=&#34;keyword&#34;&gt;false&lt;/span&gt; : &lt;span class=&#34;string&#34;&gt;&amp;quot;断言失败，此表达式的信息将会在抛出异常的时候输出！&amp;quot;&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    System. out.println(&lt;span class=&#34;string&#34;&gt;&amp;quot;断言2没有问题，Go！&amp;quot;&lt;/span&gt;);&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;由于上述所说，在 &lt;code&gt;IDEA&lt;/code&gt;  中需要手动开启 断言机制&lt;/p&gt;
 &lt;p&gt;开启方法:&lt;/p&gt;
 &lt;img data-src=&#34;/posts/c3733521/2022-02-13-22-04-43.png&#34; class=&#34;&#34;&gt;
-
 &lt;img data-src=&#34;/posts/c3733521/2022-02-13-22-04-59.png&#34; class=&#34;&#34;&gt;
-
 &lt;img data-src=&#34;/posts/c3733521/2022-02-13-22-05-23.png&#34; class=&#34;&#34;&gt;
-
-&lt;p&gt;输入&lt;code&gt;-ea&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;输入 &lt;code&gt;-ea&lt;/code&gt;&lt;/p&gt;
 &lt;img data-src=&#34;/posts/c3733521/2022-02-13-22-05-35.png&#34; class=&#34;&#34;&gt;
-
 &lt;p&gt;运行结果&lt;/p&gt;
 &lt;img data-src=&#34;/posts/c3733521/2022-02-13-22-05-42.png&#34; class=&#34;&#34;&gt;
-
-&lt;h2 id=&#34;陷阱&#34;&gt;&lt;a href=&#34;#陷阱&#34; class=&#34;headerlink&#34; title=&#34;陷阱&#34;&gt;&lt;/a&gt;陷阱&lt;/h2&gt;&lt;p&gt;&lt;code&gt;assert&lt;/code&gt;关键字用法简单，但是使用&lt;code&gt;assert&lt;/code&gt;往往会让你陷入越来越深的陷阱中。应避免使用。笔者经过研究，总结了以下原因：&lt;/p&gt;
-&lt;p&gt;1、&lt;code&gt;assert&lt;/code&gt;关键字需要在运行时候显式开启才能生效，否则你的断言就没有任何意义。而现在主流的&lt;code&gt;Java IDE&lt;/code&gt;工具默认都没有开启&lt;code&gt;-ea&lt;/code&gt;断言检查功能。这就意味着你如果使用&lt;code&gt;IDE&lt;/code&gt;工具编码，调试运行时候会有一定的麻烦。并且，对于&lt;code&gt;Java Web&lt;/code&gt;应用，程序代码都是部署在容器里面，你没法直接去控制程序的运行，如果一定要开启&lt;code&gt;-ea&lt;/code&gt;的开关，则需要更改&lt;code&gt;Web&lt;/code&gt;容器的运行配置参数。这对程序的移 植和部署都带来很大的不便。&lt;/p&gt;
-&lt;p&gt;2、用&lt;code&gt;assert&lt;/code&gt;代替&lt;code&gt;if&lt;/code&gt;是陷阱之二。&lt;code&gt;assert&lt;/code&gt;的判断和&lt;code&gt;if&lt;/code&gt;语句差不多，但两者的作用有着本质的区别：&lt;code&gt;assert&lt;/code&gt;关键字本意上是为测试 调试程序时使用的，但如果不小心用&lt;code&gt;assert&lt;/code&gt;来控制了程序的业务流程，那在测试调试结束后去掉&lt;code&gt;assert&lt;/code&gt;关键字就意味着修改了程序的正常的逻辑。&lt;/p&gt;
-&lt;p&gt;3、&lt;code&gt;assert&lt;/code&gt;断言失败将面临程序的退出。这在一个生产环境下的应用是绝不能容忍的。一般都是通过异常处理来解决程序中潜在的错误。但是使用断言就很危险，一旦失败系统就挂了。&lt;/p&gt;
-&lt;h2 id=&#34;对assert的思考&#34;&gt;&lt;a href=&#34;#对assert的思考&#34; class=&#34;headerlink&#34; title=&#34;对assert的思考&#34;&gt;&lt;/a&gt;对&lt;code&gt;assert&lt;/code&gt;的思考&lt;/h2&gt;&lt;p&gt;&lt;code&gt;assert&lt;/code&gt;既然是为了调试测试程序用，不在正式生产环境下用，那应该考虑更好的测试&lt;code&gt;JUint&lt;/code&gt;来代替其做用，&lt;code&gt;JUint&lt;/code&gt;相对&lt;code&gt;assert&lt;/code&gt;关键的所提供的功能是有过之而无不及。当然完全可以通过&lt;code&gt;IDE debug&lt;/code&gt;来进行调试测试。在此看来，&lt;code&gt;assert&lt;/code&gt;的前途一片昏暗。&lt;/p&gt;
-&lt;p&gt;因此，应当避免在&lt;code&gt;Java&lt;/code&gt;中使用&lt;code&gt;assert&lt;/code&gt;关键字，除非哪一天&lt;code&gt;Java&lt;/code&gt;默认支持开启&lt;code&gt;-ea&lt;/code&gt;的开关，这时候可以考虑。对比一下，&lt;code&gt;assert&lt;/code&gt;能给你带来多少好处，多少麻烦，这是我们选择是否使用的的原则。&lt;/p&gt;
+&lt;h2 id=&#34;陷阱&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#陷阱&#34;&gt;#&lt;/a&gt; 陷阱&lt;/h2&gt;
+&lt;p&gt;&lt;code&gt;assert&lt;/code&gt;  关键字用法简单，但是使用 &lt;code&gt;assert&lt;/code&gt;  往往会让你陷入越来越深的陷阱中。应避免使用。笔者经过研究，总结了以下原因：&lt;/p&gt;
+&lt;p&gt;1、 &lt;code&gt;assert&lt;/code&gt;  关键字需要在运行时候显式开启才能生效，否则你的断言就没有任何意义。而现在主流的 &lt;code&gt;Java IDE&lt;/code&gt;  工具默认都没有开启 &lt;code&gt;-ea&lt;/code&gt;  断言检查功能。这就意味着你如果使用 &lt;code&gt;IDE&lt;/code&gt;  工具编码，调试运行时候会有一定的麻烦。并且，对于 &lt;code&gt;Java Web&lt;/code&gt;  应用，程序代码都是部署在容器里面，你没法直接去控制程序的运行，如果一定要开启 &lt;code&gt;-ea&lt;/code&gt;  的开关，则需要更改 &lt;code&gt;Web&lt;/code&gt;  容器的运行配置参数。这对程序的移 植和部署都带来很大的不便。&lt;/p&gt;
+&lt;p&gt;2、用 &lt;code&gt;assert&lt;/code&gt;  代替 &lt;code&gt;if&lt;/code&gt;  是陷阱之二。 &lt;code&gt;assert&lt;/code&gt;  的判断和 &lt;code&gt;if&lt;/code&gt;  语句差不多，但两者的作用有着本质的区别： &lt;code&gt;assert&lt;/code&gt;  关键字本意上是为测试 调试程序时使用的，但如果不小心用 &lt;code&gt;assert&lt;/code&gt;  来控制了程序的业务流程，那在测试调试结束后去掉 &lt;code&gt;assert&lt;/code&gt;  关键字就意味着修改了程序的正常的逻辑。&lt;/p&gt;
+&lt;p&gt;3、 &lt;code&gt;assert&lt;/code&gt;  断言失败将面临程序的退出。这在一个生产环境下的应用是绝不能容忍的。一般都是通过异常处理来解决程序中潜在的错误。但是使用断言就很危险，一旦失败系统就挂了。&lt;/p&gt;
+&lt;h2 id=&#34;对assert的思考&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#对assert的思考&#34;&gt;#&lt;/a&gt; 对 &lt;code&gt;assert&lt;/code&gt;  的思考&lt;/h2&gt;
+&lt;p&gt;&lt;code&gt;assert&lt;/code&gt;  既然是为了调试测试程序用，不在正式生产环境下用，那应该考虑更好的测试 &lt;code&gt;JUint&lt;/code&gt;  来代替其做用， &lt;code&gt;JUint&lt;/code&gt;  相对 &lt;code&gt;assert&lt;/code&gt;  关键的所提供的功能是有过之而无不及。当然完全可以通过 &lt;code&gt;IDE debug&lt;/code&gt;  来进行调试测试。在此看来， &lt;code&gt;assert&lt;/code&gt;  的前途一片昏暗。&lt;/p&gt;
+&lt;p&gt;因此，应当避免在 &lt;code&gt;Java&lt;/code&gt;  中使用 &lt;code&gt;assert&lt;/code&gt;  关键字，除非哪一天 &lt;code&gt;Java&lt;/code&gt;  默认支持开启 &lt;code&gt;-ea&lt;/code&gt;  的开关，这时候可以考虑。对比一下， &lt;code&gt;assert&lt;/code&gt;  能给你带来多少好处，多少麻烦，这是我们选择是否使用的的原则。&lt;/p&gt;
  ]]></description>
         </item>
     </channel>

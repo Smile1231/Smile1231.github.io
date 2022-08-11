@@ -117,12 +117,12 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
       </div>
       <div id="imgs" class="pjax">
         <ul>
-          <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1gipewf5l51j20zk0m8b29.jpg"></li>
-          <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1gipetfk5zwj20zk0m8e81.jpg"></li>
-          <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1gipevo9j1jj20zk0m8e81.jpg"></li>
-          <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1giciuv0socj20zk0m8qes.jpg"></li>
-          <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1gipexe4oykj20zk0m87ji.jpg"></li>
-          <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1giph4baakhj20zk0m8h5q.jpg"></li>
+          <li class="item" data-background-image="https://tva2.sinaimg.cn/large/6833939bly1gipetlbztpj20zk0m84qp.jpg"></li>
+          <li class="item" data-background-image="https://tva2.sinaimg.cn/large/6833939bly1giclh3brzpj20zk0m8ann.jpg"></li>
+          <li class="item" data-background-image="https://tva2.sinaimg.cn/large/6833939bly1giclgi503lj20zk0m8hdt.jpg"></li>
+          <li class="item" data-background-image="https://tva2.sinaimg.cn/large/6833939bly1gipeudstjqj20zk0m8k3r.jpg"></li>
+          <li class="item" data-background-image="https://tva2.sinaimg.cn/large/6833939bly1gicliierfjj20zk0m8npd.jpg"></li>
+          <li class="item" data-background-image="https://tva2.sinaimg.cn/large/6833939bly1giciuv0socj20zk0m8qes.jpg"></li>
         </ul>
       </div>
     </header>
@@ -168,42 +168,41 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
   <div class="body md" itemprop="articleBody">
     
 
-    <h1 id="Java之assert关键字"><a href="#Java之assert关键字" class="headerlink" title="Java之assert关键字"></a><code>Java</code>之<code>assert</code>关键字</h1><p>在<code>Java</code>中，<code>assert</code>关键字是从<code>JAVA SE 1.4</code> 引入的，为了避免和老版本的<code>Java</code>代码中使用了<code>assert</code>关键字导致错误，<code>Java</code>在执行的时候默认是不启动断言检查的（这个时候，所有的断言语句都 将忽略！），如果要开启断言检查，则需要用开关<code>-enableassertions</code>或<code>-ea</code>来开启。</p>
-<p><code>assert</code>关键字语法很简单，有两种用法：</p>
+    <h1 id="java之assert关键字"><a class="markdownIt-Anchor" href="#java之assert关键字">#</a>  <code>Java</code>  之 <code>assert</code>  关键字</h1>
+<p>在 <code>Java</code>  中， <code>assert</code>  关键字是从 <code>JAVA SE 1.4</code>  引入的，为了避免和老版本的 <code>Java</code>  代码中使用了 <code>assert</code>  关键字导致错误， <code>Java</code>  在执行的时候默认是不启动断言检查的（这个时候，所有的断言语句都 将忽略！），如果要开启断言检查，则需要用开关 <code>-enableassertions</code>  或 <code>-ea</code>  来开启。</p>
+<p><code>assert</code>  关键字语法很简单，有两种用法：</p>
 <span id="more"></span>
-
 <ol>
-<li><p><code>assert</code> <code>&lt;boolean表达式&gt;</code></p>
-<p> 如果<code>&lt;boolean表达式&gt;</code>为<code>true</code>，则程序继续执行。</p>
-<p> 如果为<code>false</code>，则程序抛出<code>AssertionError</code>，并终止执行。</p>
+<li>
+<p><code>assert</code>   <code>&lt;boolean表达式&gt;</code></p>
+<p>如果 <code>&lt;boolean表达式&gt;</code>  为 <code>true</code> ，则程序继续执行。</p>
+<p>如果为 <code>false</code> ，则程序抛出 <code>AssertionError</code> ，并终止执行。</p>
 </li>
-<li><p><code>assert &lt;boolean表达式&gt;</code> : &lt;错误信息表达式&gt;</p>
-<p> 如果<code>&lt;boolean表达式&gt;</code>为<code>true</code>，则程序继续执行。</p>
-<p> 如果为<code>false</code>，则程序抛出<code>java.lang.AssertionError</code>，并输入&lt;错误信息表达式&gt;。</p>
+<li>
+<p><code>assert &lt;boolean表达式&gt;</code>  : &lt;错误信息表达式&gt;</p>
+<p>如果 <code>&lt;boolean表达式&gt;</code>  为 <code>true</code> ，则程序继续执行。</p>
+<p>如果为 <code>false</code> ，则程序抛出 <code>java.lang.AssertionError</code> ，并输入 &lt;错误信息表达式&gt;。</p>
 </li>
 </ol>
-<h2 id="简单实例"><a href="#简单实例" class="headerlink" title="简单实例"></a>简单实例</h2><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">    <span class="comment">//断言1结果为true，则继续往下执行</span></span><br><span class="line">    <span class="keyword">assert</span> <span class="keyword">true</span>;</span><br><span class="line">    System. out.println(<span class="string">&quot;断言1没有问题，Go！&quot;</span>);</span><br><span class="line"></span><br><span class="line">    System. out.println(<span class="string">&quot;\n-----------------\n&quot;</span>);</span><br><span class="line"></span><br><span class="line">    <span class="comment">//断言2结果为false,程序终止</span></span><br><span class="line">    <span class="keyword">assert</span> <span class="keyword">false</span> : <span class="string">&quot;断言失败，此表达式的信息将会在抛出异常的时候输出！&quot;</span>;</span><br><span class="line">    System. out.println(<span class="string">&quot;断言2没有问题，Go！&quot;</span>);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<p>由于上述所说,在<code>IDEA</code>中需要手动开启 断言机制</p>
+<h2 id="简单实例"><a class="markdownIt-Anchor" href="#简单实例">#</a> 简单实例</h2>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">    <span class="comment">//断言1结果为true，则继续往下执行</span></span><br><span class="line">    <span class="keyword">assert</span> <span class="keyword">true</span>;</span><br><span class="line">    System. out.println(<span class="string">&quot;断言1没有问题，Go！&quot;</span>);</span><br><span class="line"></span><br><span class="line">    System. out.println(<span class="string">&quot;\n-----------------\n&quot;</span>);</span><br><span class="line"></span><br><span class="line">    <span class="comment">//断言2结果为false,程序终止</span></span><br><span class="line">    <span class="keyword">assert</span> <span class="keyword">false</span> : <span class="string">&quot;断言失败，此表达式的信息将会在抛出异常的时候输出！&quot;</span>;</span><br><span class="line">    System. out.println(<span class="string">&quot;断言2没有问题，Go！&quot;</span>);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>由于上述所说，在 <code>IDEA</code>  中需要手动开启 断言机制</p>
 <p>开启方法:</p>
 <img data-src="/posts/c3733521/2022-02-13-22-04-43.png" class="">
-
 <img data-src="/posts/c3733521/2022-02-13-22-04-59.png" class="">
-
 <img data-src="/posts/c3733521/2022-02-13-22-05-23.png" class="">
-
-<p>输入<code>-ea</code></p>
+<p>输入 <code>-ea</code></p>
 <img data-src="/posts/c3733521/2022-02-13-22-05-35.png" class="">
-
 <p>运行结果</p>
 <img data-src="/posts/c3733521/2022-02-13-22-05-42.png" class="">
-
-<h2 id="陷阱"><a href="#陷阱" class="headerlink" title="陷阱"></a>陷阱</h2><p><code>assert</code>关键字用法简单，但是使用<code>assert</code>往往会让你陷入越来越深的陷阱中。应避免使用。笔者经过研究，总结了以下原因：</p>
-<p>1、<code>assert</code>关键字需要在运行时候显式开启才能生效，否则你的断言就没有任何意义。而现在主流的<code>Java IDE</code>工具默认都没有开启<code>-ea</code>断言检查功能。这就意味着你如果使用<code>IDE</code>工具编码，调试运行时候会有一定的麻烦。并且，对于<code>Java Web</code>应用，程序代码都是部署在容器里面，你没法直接去控制程序的运行，如果一定要开启<code>-ea</code>的开关，则需要更改<code>Web</code>容器的运行配置参数。这对程序的移 植和部署都带来很大的不便。</p>
-<p>2、用<code>assert</code>代替<code>if</code>是陷阱之二。<code>assert</code>的判断和<code>if</code>语句差不多，但两者的作用有着本质的区别：<code>assert</code>关键字本意上是为测试 调试程序时使用的，但如果不小心用<code>assert</code>来控制了程序的业务流程，那在测试调试结束后去掉<code>assert</code>关键字就意味着修改了程序的正常的逻辑。</p>
-<p>3、<code>assert</code>断言失败将面临程序的退出。这在一个生产环境下的应用是绝不能容忍的。一般都是通过异常处理来解决程序中潜在的错误。但是使用断言就很危险，一旦失败系统就挂了。</p>
-<h2 id="对assert的思考"><a href="#对assert的思考" class="headerlink" title="对assert的思考"></a>对<code>assert</code>的思考</h2><p><code>assert</code>既然是为了调试测试程序用，不在正式生产环境下用，那应该考虑更好的测试<code>JUint</code>来代替其做用，<code>JUint</code>相对<code>assert</code>关键的所提供的功能是有过之而无不及。当然完全可以通过<code>IDE debug</code>来进行调试测试。在此看来，<code>assert</code>的前途一片昏暗。</p>
-<p>因此，应当避免在<code>Java</code>中使用<code>assert</code>关键字，除非哪一天<code>Java</code>默认支持开启<code>-ea</code>的开关，这时候可以考虑。对比一下，<code>assert</code>能给你带来多少好处，多少麻烦，这是我们选择是否使用的的原则。</p>
+<h2 id="陷阱"><a class="markdownIt-Anchor" href="#陷阱">#</a> 陷阱</h2>
+<p><code>assert</code>  关键字用法简单，但是使用 <code>assert</code>  往往会让你陷入越来越深的陷阱中。应避免使用。笔者经过研究，总结了以下原因：</p>
+<p>1、 <code>assert</code>  关键字需要在运行时候显式开启才能生效，否则你的断言就没有任何意义。而现在主流的 <code>Java IDE</code>  工具默认都没有开启 <code>-ea</code>  断言检查功能。这就意味着你如果使用 <code>IDE</code>  工具编码，调试运行时候会有一定的麻烦。并且，对于 <code>Java Web</code>  应用，程序代码都是部署在容器里面，你没法直接去控制程序的运行，如果一定要开启 <code>-ea</code>  的开关，则需要更改 <code>Web</code>  容器的运行配置参数。这对程序的移 植和部署都带来很大的不便。</p>
+<p>2、用 <code>assert</code>  代替 <code>if</code>  是陷阱之二。 <code>assert</code>  的判断和 <code>if</code>  语句差不多，但两者的作用有着本质的区别： <code>assert</code>  关键字本意上是为测试 调试程序时使用的，但如果不小心用 <code>assert</code>  来控制了程序的业务流程，那在测试调试结束后去掉 <code>assert</code>  关键字就意味着修改了程序的正常的逻辑。</p>
+<p>3、 <code>assert</code>  断言失败将面临程序的退出。这在一个生产环境下的应用是绝不能容忍的。一般都是通过异常处理来解决程序中潜在的错误。但是使用断言就很危险，一旦失败系统就挂了。</p>
+<h2 id="对assert的思考"><a class="markdownIt-Anchor" href="#对assert的思考">#</a> 对 <code>assert</code>  的思考</h2>
+<p><code>assert</code>  既然是为了调试测试程序用，不在正式生产环境下用，那应该考虑更好的测试 <code>JUint</code>  来代替其做用， <code>JUint</code>  相对 <code>assert</code>  关键的所提供的功能是有过之而无不及。当然完全可以通过 <code>IDE debug</code>  来进行调试测试。在此看来， <code>assert</code>  的前途一片昏暗。</p>
+<p>因此，应当避免在 <code>Java</code>  中使用 <code>assert</code>  关键字，除非哪一天 <code>Java</code>  默认支持开启 <code>-ea</code>  的开关，这时候可以考虑。对比一下， <code>assert</code>  能给你带来多少好处，多少麻烦，这是我们选择是否使用的的原则。</p>
 
       <div class="tags">
           <a href="/tags/Java/" rel="tag"><i class="ic i-tag"></i> Java</a>
@@ -259,7 +258,7 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
     <div class="item left">
       
 
-  <a href="/posts/e18abc1d/" itemprop="url" rel="prev" data-background-image="https:&#x2F;&#x2F;tva3.sinaimg.cn&#x2F;mw690&#x2F;6833939bly1gicis3attqj20zk0m8k7l.jpg" title="关于YAML中List存放Map">
+  <a href="/posts/e18abc1d/" itemprop="url" rel="prev" data-background-image="https:&#x2F;&#x2F;tva2.sinaimg.cn&#x2F;mw690&#x2F;6833939bly1gicliwyw55j20zk0m8hdt.jpg" title="关于YAML中List存放Map">
   <span class="type">Previous Post</span>
   <span class="category"><i class="ic i-flag"></i> Java</span>
   <h3>关于YAML中List存放Map</h3>
@@ -269,7 +268,7 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
     <div class="item right">
       
 
-  <a href="/posts/9dcbb5fa/" itemprop="url" rel="next" data-background-image="https:&#x2F;&#x2F;tva3.sinaimg.cn&#x2F;mw690&#x2F;6833939bly1giciuja1j1j20zk0m8kjl.jpg" title="Corn表达式">
+  <a href="/posts/9dcbb5fa/" itemprop="url" rel="next" data-background-image="https:&#x2F;&#x2F;tva2.sinaimg.cn&#x2F;mw690&#x2F;6833939bly1gipexj2jgzj20zk0m8b09.jpg" title="Corn表达式">
   <span class="type">Next Post</span>
   <span class="category"><i class="ic i-flag"></i> Java</span>
   <h3>Corn表达式</h3>
@@ -291,11 +290,11 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
   <div class="panels">
     <div class="inner">
       <div class="contents panel pjax" data-title="Contents">
-          <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#Java%E4%B9%8Bassert%E5%85%B3%E9%94%AE%E5%AD%97"><span class="toc-number">1.</span> <span class="toc-text">Java之assert关键字</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%AE%80%E5%8D%95%E5%AE%9E%E4%BE%8B"><span class="toc-number">1.1.</span> <span class="toc-text">简单实例</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E9%99%B7%E9%98%B1"><span class="toc-number">1.2.</span> <span class="toc-text">陷阱</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%AF%B9assert%E7%9A%84%E6%80%9D%E8%80%83"><span class="toc-number">1.3.</span> <span class="toc-text">对assert的思考</span></a></li></ol></li></ol>
+          <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#java%E4%B9%8Bassert%E5%85%B3%E9%94%AE%E5%AD%97"><span class="toc-number">1.</span> <span class="toc-text">  Java  之 assert  关键字</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%AE%80%E5%8D%95%E5%AE%9E%E4%BE%8B"><span class="toc-number">1.1.</span> <span class="toc-text"> 简单实例</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E9%99%B7%E9%98%B1"><span class="toc-number">1.2.</span> <span class="toc-text"> 陷阱</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%AF%B9assert%E7%9A%84%E6%80%9D%E8%80%83"><span class="toc-number">1.3.</span> <span class="toc-text"> 对 assert  的思考</span></a></li></ol></li></ol>
       </div>
       <div class="related panel pjax" data-title="Related">
         <ul>
-          <li><a href="/posts/7a29d22a/" rel="bookmark" title="Java关于时间的轮子">Java关于时间的轮子</a></li><li><a href="/posts/60a1e80e/" rel="bookmark" title="java判断日期周几">java判断日期周几</a></li><li><a href="/posts/13370746/" rel="bookmark" title="使用EasyExcel读取excel文件为Java实体类">使用EasyExcel读取excel文件为Java实体类</a></li><li><a href="/posts/97604c34/" rel="bookmark" title="获取指定集合要求中的mapkey值并重新返回map">获取指定集合要求中的mapkey值并重新返回map</a></li><li><a href="/posts/fc16798c/" rel="bookmark" title="Java8遍历Map的三种方式">Java8遍历Map的三种方式</a></li><li><a href="/posts/49b96938/" rel="bookmark" title="Java获取一天时间的起始">Java获取一天时间的起始</a></li><li><a href="/posts/1c3390ab/" rel="bookmark" title="将Java数据输出为本地txt">将Java数据输出为本地txt</a></li><li><a href="/posts/4ca5bfdf/" rel="bookmark" title="Spring手动回滚事务">Spring手动回滚事务</a></li><li><a href="/posts/1748805d/" rel="bookmark" title="java线程池与五种常用线程池策略使用与解析">java线程池与五种常用线程池策略使用与解析</a></li><li><a href="/posts/817eab42/" rel="bookmark" title="java中产生指定范围内的随机数">java中产生指定范围内的随机数</a></li><li><a href="/posts/69c17d37/" rel="bookmark" title="关于事务提交中踩坑">关于事务提交中踩坑</a></li><li><a href="/posts/b536fa7f/" rel="bookmark" title="关于junit测试类防止事务回滚">关于junit测试类防止事务回滚</a></li><li><a href="/posts/1da18d70/" rel="bookmark" title="Java8内置四大函数式接口">Java8内置四大函数式接口</a></li><li><a href="/posts/405fde88/" rel="bookmark" title="关于Exception的处理细节">关于Exception的处理细节</a></li><li><a href="/posts/91c18f7c/" rel="bookmark" title="关于Try-With-Source的使用以及注意点">关于Try-With-Source的使用以及注意点</a></li><li><a href="/posts/e18abc1d/" rel="bookmark" title="关于YAML中List存放Map">关于YAML中List存放Map</a></li><li class="active"><a href="/posts/c3733521/" rel="bookmark" title="Java之assert关键字">Java之assert关键字</a></li><li><a href="/posts/9dcbb5fa/" rel="bookmark" title="Corn表达式">Corn表达式</a></li><li><a href="/posts/96eb888f/" rel="bookmark" title="Java学习线路图">Java学习线路图</a></li><li><a href="/posts/b246d3ce/" rel="bookmark" title="Java自带的好用的工具类">Java自带的好用的工具类</a></li><li><a href="/posts/105c245f/" rel="bookmark" title="Mybatis使用Sql进行模糊查询">Mybatis使用Sql进行模糊查询</a></li><li><a href="/posts/31dc52e1/" rel="bookmark" title="MyBatis之分页查询：MyBatis PageHelper">MyBatis之分页查询：MyBatis PageHelper</a></li><li><a href="/posts/2edf7887/" rel="bookmark" title="MybatisPlus实现分页查询">MybatisPlus实现分页查询</a></li><li><a href="/posts/c112412d/" rel="bookmark" title="Mybatis封装成Map结果">Mybatis封装成Map结果</a></li><li><a href="/posts/a3dfcd98/" rel="bookmark" title="SpringBoot中常见的几种解决跨域的方式">SpringBoot中常见的几种解决跨域的方式</a></li><li><a href="/posts/8b8fedea/" rel="bookmark" title="Stream流的介绍">Stream流的介绍</a></li><li><a href="/posts/b1231c9f/" rel="bookmark" title="java stream中Collectors的用法">java stream中Collectors的用法</a></li><li><a href="/posts/12fecb94/" rel="bookmark" title="多线程笔记">多线程笔记</a></li><li><a href="/posts/5e7baeeb/" rel="bookmark" title="过滤器和拦截器的区别">过滤器和拦截器的区别</a></li><li><a href="/posts/59de1824/" rel="bookmark" title="spring中/和/*和/**的区别">spring中/和/*和/**的区别</a></li><li><a href="/posts/166a1445/" rel="bookmark" title="位，字节， 字符">位，字节， 字符</a></li><li><a href="/posts/b42f0c87/" rel="bookmark" title="Cache、Cookie、Session、Token">Cache、Cookie、Session、Token</a></li><li><a href="/posts/f23f1351/" rel="bookmark" title="equals与==区别">equals与==区别</a></li><li><a href="/posts/d6d1be75/" rel="bookmark" title="在Javadoc注释中引用方法">在Javadoc注释中引用方法</a></li><li><a href="/posts/bd76a990/" rel="bookmark" title="一图看懂Java中的PO,BO,VO,DTO,POJO,DAO,DO">一图看懂Java中的PO,BO,VO,DTO,POJO,DAO,DO</a></li>
+          <li><a href="/posts/7a29d22a/" rel="bookmark" title="Java关于时间的轮子">Java关于时间的轮子</a></li><li><a href="/posts/60a1e80e/" rel="bookmark" title="java判断日期周几">java判断日期周几</a></li><li><a href="/posts/13370746/" rel="bookmark" title="使用EasyExcel读取excel文件为Java实体类">使用EasyExcel读取excel文件为Java实体类</a></li><li><a href="/posts/97604c34/" rel="bookmark" title="获取指定集合要求中的mapkey值并重新返回map">获取指定集合要求中的mapkey值并重新返回map</a></li><li><a href="/posts/fc16798c/" rel="bookmark" title="Java8遍历Map的三种方式">Java8遍历Map的三种方式</a></li><li><a href="/posts/49b96938/" rel="bookmark" title="Java获取一天时间的起始">Java获取一天时间的起始</a></li><li><a href="/posts/1c3390ab/" rel="bookmark" title="将Java数据输出为本地txt">将Java数据输出为本地txt</a></li><li><a href="/posts/4ca5bfdf/" rel="bookmark" title="Spring手动回滚事务">Spring手动回滚事务</a></li><li><a href="/posts/1748805d/" rel="bookmark" title="java线程池与五种常用线程池策略使用与解析">java线程池与五种常用线程池策略使用与解析</a></li><li><a href="/posts/817eab42/" rel="bookmark" title="java中产生指定范围内的随机数">java中产生指定范围内的随机数</a></li><li><a href="/posts/69c17d37/" rel="bookmark" title="关于事务提交中踩坑">关于事务提交中踩坑</a></li><li><a href="/posts/b536fa7f/" rel="bookmark" title="关于junit测试类防止事务回滚">关于junit测试类防止事务回滚</a></li><li><a href="/posts/1da18d70/" rel="bookmark" title="Java8内置四大函数式接口">Java8内置四大函数式接口</a></li><li><a href="/posts/405fde88/" rel="bookmark" title="关于Exception的处理细节">关于Exception的处理细节</a></li><li><a href="/posts/91c18f7c/" rel="bookmark" title="关于Try-With-Source的使用以及注意点">关于Try-With-Source的使用以及注意点</a></li><li><a href="/posts/e18abc1d/" rel="bookmark" title="关于YAML中List存放Map">关于YAML中List存放Map</a></li><li class="active"><a href="/posts/c3733521/" rel="bookmark" title="Java之assert关键字">Java之assert关键字</a></li><li><a href="/posts/9dcbb5fa/" rel="bookmark" title="Corn表达式">Corn表达式</a></li><li><a href="/posts/96eb888f/" rel="bookmark" title="Java学习线路图">Java学习线路图</a></li><li><a href="/posts/b246d3ce/" rel="bookmark" title="Java自带的好用的工具类">Java自带的好用的工具类</a></li><li><a href="/posts/105c245f/" rel="bookmark" title="Mybatis使用Sql进行模糊查询">Mybatis使用Sql进行模糊查询</a></li><li><a href="/posts/31dc52e1/" rel="bookmark" title="MyBatis之分页查询：MyBatis PageHelper">MyBatis之分页查询：MyBatis PageHelper</a></li><li><a href="/posts/2edf7887/" rel="bookmark" title="MybatisPlus实现分页查询">MybatisPlus实现分页查询</a></li><li><a href="/posts/c112412d/" rel="bookmark" title="Mybatis封装成Map结果">Mybatis封装成Map结果</a></li><li><a href="/posts/a3dfcd98/" rel="bookmark" title="SpringBoot中常见的几种解决跨域的方式">SpringBoot中常见的几种解决跨域的方式</a></li><li><a href="/posts/8b8fedea/" rel="bookmark" title="Stream流的介绍">Stream流的介绍</a></li><li><a href="/posts/b1231c9f/" rel="bookmark" title="java stream中Collectors的用法">java stream中Collectors的用法</a></li><li><a href="/posts/12fecb94/" rel="bookmark" title="多线程笔记">多线程笔记</a></li><li><a href="/posts/5e7baeeb/" rel="bookmark" title="过滤器和拦截器的区别">过滤器和拦截器的区别</a></li><li><a href="/posts/59de1824/" rel="bookmark" title="spring中/和/*和/**的区别">spring中/和/*和/**的区别</a></li><li><a href="/posts/166a1445/" rel="bookmark" title="位，字节， 字符">位，字节， 字符</a></li><li><a href="/posts/b42f0c87/" rel="bookmark" title="Cache、Cookie、Session、Token">Cache、Cookie、Session、Token</a></li><li><a href="/posts/f23f1351/" rel="bookmark" title="equals与==区别">equals与==区别</a></li><li><a href="/posts/d6d1be75/" rel="bookmark" title="在Javadoc注释中引用方法">在Javadoc注释中引用方法</a></li><li><a href="/posts/bd76a990/" rel="bookmark" title="一图看懂Java中的PO,BO,VO,DTO,POJO,DAO,DO">一图看懂Java中的PO,BO,VO,DTO,POJO,DAO,DO</a></li><li><a href="/posts/a54ed4b0/" rel="bookmark" title="Java通过URL下载资源">Java通过URL下载资源</a></li>
         </ul>
       </div>
       <div class="overview panel" data-title="Overview">
@@ -309,13 +308,13 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
 <nav class="state">
     <div class="item posts">
       <a href="/archives/">
-        <span class="count">142</span>
+        <span class="count">143</span>
         <span class="name">posts</span>
       </a>
     </div>
     <div class="item categories">
       <a href="/categories/">
-        <span class="count">73</span>
+        <span class="count">74</span>
         <span class="name">categories</span>
       </a>
     </div>
@@ -400,46 +399,34 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
   <li class="item">
     
 <div class="breadcrumb">
+<a href="/categories/IDEA/" title="In IDEA">IDEA</a>
 </div>
 
-    <span><a href="/posts/de5e33d7/" title="关于JDK中的Arrays.sort排序方法">关于JDK中的Arrays.sort排序方法</a></span>
+    <span><a href="/posts/610bdf07/" title="IDEA快捷键">IDEA快捷键</a></span>
   </li>
 
       
   <li class="item">
     
 <div class="breadcrumb">
+<a href="/categories/%E5%89%8D%E7%AB%AF/" title="In 前端">前端</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/%E5%89%8D%E7%AB%AF/JavaScript/" title="In JavaScript">JavaScript</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/%E5%89%8D%E7%AB%AF/JavaScript/Html/" title="In Html">Html</a>
 </div>
 
-    <span><a href="/posts/d0edc1ed/" title="Linux常用命令">Linux常用命令</a></span>
+    <span><a href="/posts/7b604068/" title="Html页面插入地图">Html页面插入地图</a></span>
   </li>
 
       
   <li class="item">
     
 <div class="breadcrumb">
+<a href="/categories/Java%E9%9D%A2%E8%AF%95/" title="In Java面试">Java面试</a>
 </div>
 
-    <span><a href="/posts/3c59e6c8/" title="如何让自己的博客被Google以及百度收录">如何让自己的博客被Google以及百度收录</a></span>
-  </li>
-
-      
-  <li class="item">
-    
-<div class="breadcrumb">
-</div>
-
-    <span><a href="/posts/e2b12017/" title="Dokcer镜像推送到DockerHub">Dokcer镜像推送到DockerHub</a></span>
-  </li>
-
-      
-  <li class="item">
-    
-<div class="breadcrumb">
-<a href="/categories/Ubuntu/" title="In Ubuntu">Ubuntu</a>
-</div>
-
-    <span><a href="/posts/6e65ed30/" title="ubuntu20无法安装vmtools解决">ubuntu20无法安装vmtools解决</a></span>
+    <span><a href="/posts/6b5f7afc/" title="面试之旅关于Java知识点">面试之旅关于Java知识点</a></span>
   </li>
 
       
@@ -451,30 +438,9 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
 <a href="/categories/Java/Mybatis/" title="In Mybatis">Mybatis</a>
 <i class="ic i-angle-right"></i>
 <a href="/categories/Java/Mybatis/SpringBoot/" title="In SpringBoot">SpringBoot</a>
-<i class="ic i-angle-right"></i>
-<a href="/categories/Java/Mybatis/SpringBoot/%E5%88%86%E9%A1%B5%E6%9F%A5%E8%AF%A2/" title="In 分页查询">分页查询</a>
 </div>
 
-    <span><a href="/posts/2edf7887/" title="MybatisPlus实现分页查询">MybatisPlus实现分页查询</a></span>
-  </li>
-
-      
-  <li class="item">
-    
-<div class="breadcrumb">
-<a href="/categories/cheatsheet/" title="In cheatsheet">cheatsheet</a>
-</div>
-
-    <span><a href="/posts/1b392612/" title="速查表">速查表</a></span>
-  </li>
-
-      
-  <li class="item">
-    
-<div class="breadcrumb">
-</div>
-
-    <span><a href="/posts/ac1ae082/" title="SpringBoot如何优雅的发邮件">SpringBoot如何优雅的发邮件</a></span>
+    <span><a href="/posts/31dc52e1/" title="MyBatis之分页查询：MyBatis PageHelper">MyBatis之分页查询：MyBatis PageHelper</a></span>
   </li>
 
       
@@ -484,19 +450,54 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
 <a href="/categories/Java/" title="In Java">Java</a>
 </div>
 
-    <span><a href="/posts/e18abc1d/" title="关于YAML中List存放Map">关于YAML中List存放Map</a></span>
+    <span><a href="/posts/1c3390ab/" title="将Java数据输出为本地txt">将Java数据输出为本地txt</a></span>
   </li>
 
       
   <li class="item">
     
 <div class="breadcrumb">
-<a href="/categories/Java%E9%9D%A2%E8%AF%95/" title="In Java面试">Java面试</a>
-<i class="ic i-angle-right"></i>
-<a href="/categories/Java%E9%9D%A2%E8%AF%95/HashMap/" title="In HashMap">HashMap</a>
 </div>
 
-    <span><a href="/posts/52d9f7d3/" title="Java面试必问--HashMap的底层">Java面试必问--HashMap的底层</a></span>
+    <span><a href="/posts/a72f470b/" title="关于JVM常用参数">关于JVM常用参数</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/Java/" title="In Java">Java</a>
+</div>
+
+    <span><a href="/posts/b536fa7f/" title="关于junit测试类防止事务回滚">关于junit测试类防止事务回滚</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+</div>
+
+    <span><a href="/posts/823298d2/" title="VsCode 如何Debug Shell">VsCode 如何Debug Shell</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/Hexo/" title="In Hexo">Hexo</a>
+</div>
+
+    <span><a href="/posts/575a6046/" title="Hexo-Next主题如何文章置顶">Hexo-Next主题如何文章置顶</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+</div>
+
+    <span><a href="/posts/f35c5140/" title="JAVA-jar包运行及日志输出">JAVA-jar包运行及日志输出</a></span>
   </li>
 
   </ul>
@@ -521,13 +522,13 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
     <span class="post-meta-item-icon">
       <i class="ic i-chart-area"></i>
     </span>
-    <span title="Symbols count total">620k words</span>
+    <span title="Symbols count total">622k words</span>
 
     <span class="post-meta-divider">|</span>
     <span class="post-meta-item-icon">
       <i class="ic i-coffee"></i>
     </span>
-    <span title="Reading time total">9:24</span>
+    <span title="Reading time total">9:25</span>
   </div>
 </div>
 

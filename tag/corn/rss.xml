@@ -7,107 +7,107 @@
         <language>en</language>
         <pubDate>Sun, 13 Feb 2022 21:35:47 +0800</pubDate>
         <lastBuildDate>Sun, 13 Feb 2022 21:35:47 +0800</lastBuildDate>
-        <category>SAP</category>
         <category>生物信息</category>
         <category>基因编辑</category>
+        <category>前端</category>
+        <category>Css</category>
         <category>Java</category>
+        <category>Corn</category>
+        <category>DDD</category>
+        <category>领域驱动设计</category>
+        <category>SAP</category>
+        <category>DisPlay属性</category>
+        <category>Docker</category>
         <category>Cache</category>
         <category>Cookie</category>
         <category>Session</category>
         <category>Java面试</category>
-        <category>Corn</category>
-        <category>前端</category>
-        <category>Css</category>
-        <category>DisPlay属性</category>
-        <category>DDD</category>
-        <category>领域驱动设计</category>
-        <category>Docker</category>
         <category>blog</category>
         <category>hexo</category>
         <category>next</category>
         <category>FastJson</category>
+        <category>IDEA</category>
         <category>JavaScript</category>
         <category>Html</category>
         <category>SpringBoot</category>
-        <category>IDEA</category>
-        <category>Jvm</category>
         <category>Jenkins</category>
         <category>CI/CD</category>
-        <category>函数式接口</category>
         <category>map</category>
         <category>Stream流</category>
+        <category>Jvm</category>
         <category>Assert</category>
+        <category>函数式接口</category>
         <category>java</category>
         <category>calender</category>
         <category>Springboot</category>
-        <category>Python</category>
-        <category>Jupyter</category>
-        <category>Machine Learning</category>
         <category>LeetCode</category>
         <category>算法</category>
         <category>递归</category>
-        <category>numpy</category>
-        <category>pandas</category>
-        <category>sklearn</category>
         <category>Linux</category>
         <category>Mybatis</category>
         <category>分页查询</category>
-        <category>模糊查询</category>
-        <category>Spring</category>
+        <category>Machine Learning</category>
+        <category>numpy</category>
+        <category>pandas</category>
+        <category>sklearn</category>
+        <category>Python</category>
+        <category>Jupyter</category>
         <category>Nginx</category>
+        <category>Spring</category>
+        <category>模糊查询</category>
         <category>SrpingBoot</category>
         <category>文件上传</category>
-        <category>事务</category>
-        <category>master</category>
         <category>TypeScript</category>
         <category>WebPack</category>
-        <category>UML</category>
+        <category>master</category>
+        <category>事务</category>
         <category>Groovy</category>
+        <category>UML</category>
         <category>Ubuntu</category>
         <category>Mysql</category>
+        <category>Vue</category>
         <category>VsCode</category>
         <category>Shell</category>
         <category>VSCODE</category>
         <category>快捷键</category>
-        <category>Vue</category>
         <category>Stream</category>
-        <category>日期</category>
         <category>线程池</category>
         <category>ubuntu</category>
         <category>虚拟机</category>
+        <category>日期</category>
+        <category>二分查找</category>
+        <category>数据挖掘</category>
         <category>Hadoop</category>
         <category>操作系统</category>
         <category>EasyExcel</category>
-        <category>二分查找</category>
         <category>node</category>
-        <category>数据挖掘</category>
         <category>JVM</category>
         <category>Yaml</category>
-        <category>数据库</category>
-        <category>Hexo</category>
         <category>junit</category>
+        <category>Hexo</category>
+        <category>数据库</category>
         <category>Mysql事务</category>
-        <category>Git</category>
-        <category>冒泡排序</category>
         <category>git,npm,node</category>
+        <category>冒泡排序</category>
         <category>动态规划</category>
         <category>堆排序</category>
-        <category>多线程</category>
+        <category>Git</category>
         <category>幂等性</category>
         <category>Google</category>
+        <category>多线程</category>
         <category>流</category>
-        <category>快速排序</category>
-        <category>正则表达式</category>
         <category>归并排序</category>
+        <category>正则表达式</category>
+        <category>快速排序</category>
         <category>直接插入排序</category>
         <category>选择排序</category>
         <category>Java 面试</category>
         <category>数据结构</category>
         <category>阻塞队列</category>
         <category>Spring事务</category>
+        <category>Date</category>
         <category>JDK</category>
         <category>动态代理</category>
-        <category>Date</category>
         <category>ArrayList</category>
         <category>接口</category>
         <category>SpringMvc</category>
@@ -123,9 +123,9 @@
             <category>Java</category>
             <category>Corn</category>
             <pubDate>Sun, 13 Feb 2022 21:35:47 +0800</pubDate>
-            <description><![CDATA[ &lt;h1 id=&#34;Corn表达式&#34;&gt;&lt;a href=&#34;#Corn表达式&#34; class=&#34;headerlink&#34; title=&#34;Corn表达式&#34;&gt;&lt;/a&gt;&lt;code&gt;Corn&lt;/code&gt;表达式&lt;/h1&gt;&lt;figure class=&#34;highlight plaintext&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;11&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;一个cron表达式有至少6个（也可能7个）有空格分隔的时间元素。&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;按顺序依次为&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;秒（0~59）&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;分钟（0~59）&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;小时（0~23）&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;天（月）（0~31，但是你需要考虑你月的天数）&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;月（0~11）&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;天（星期）（1~7 1=SUN 或 SUN，MON，TUE，WED，THU，FRI，SAT）&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;年份（1970－2099）&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;其中每个元素可以是一个值(如6),一个连续区间(9-12),一个间隔时间(8-18/4)(/表示每隔4小时),一个列表(1,3,5),通配符。由于&amp;quot;月份中的日期&amp;quot;和&amp;quot;星期中的日期&amp;quot;这两个元素互斥的,必须要对其中一个设置?&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+            <description><![CDATA[ &lt;h1 id=&#34;corn表达式&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#corn表达式&#34;&gt;#&lt;/a&gt;  &lt;code&gt;Corn&lt;/code&gt;  表达式&lt;/h1&gt;
+&lt;figure class=&#34;highlight plaintext&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;11&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;一个cron表达式有至少6个（也可能7个）有空格分隔的时间元素。&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;按顺序依次为&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;秒（0~59）&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;分钟（0~59）&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;小时（0~23）&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;天（月）（0~31，但是你需要考虑你月的天数）&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;月（0~11）&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;天（星期）（1~7 1=SUN 或 SUN，MON，TUE，WED，THU，FRI，SAT）&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;年份（1970－2099）&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;其中每个元素可以是一个值(如6),一个连续区间(9-12),一个间隔时间(8-18/4)(/表示每隔4小时),一个列表(1,3,5),通配符。由于&amp;quot;月份中的日期&amp;quot;和&amp;quot;星期中的日期&amp;quot;这两个元素互斥的,必须要对其中一个设置?&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
 &lt;span id=&#34;more&#34;&gt;&lt;/span&gt;
-
 &lt;table&gt;
 &lt;thead&gt;
 &lt;tr&gt;
@@ -136,7 +136,8 @@
 &lt;th&gt;备注&lt;/th&gt;
 &lt;/tr&gt;
 &lt;/thead&gt;
-&lt;tbody&gt;&lt;tr&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
 &lt;td&gt;&lt;code&gt;Seconds&lt;/code&gt;&lt;/td&gt;
 &lt;td&gt;是&lt;/td&gt;
 &lt;td&gt;0–59&lt;/td&gt;
@@ -148,35 +149,31 @@
 &lt;td&gt;是&lt;/td&gt;
 &lt;td&gt;0–59&lt;/td&gt;
 &lt;td&gt;&lt;code&gt;*,-&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
 &lt;td&gt;&lt;code&gt;Hours&lt;/code&gt;&lt;/td&gt;
 &lt;td&gt;是&lt;/td&gt;
 &lt;td&gt;0–23&lt;/td&gt;
 &lt;td&gt;&lt;code&gt;*,-&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
 &lt;td&gt;&lt;code&gt;Day of month&lt;/code&gt;&lt;/td&gt;
 &lt;td&gt;是&lt;/td&gt;
 &lt;td&gt;1–31&lt;/td&gt;
 &lt;td&gt;&lt;code&gt;*,-?LW&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;&lt;code&gt;?LW&lt;/code&gt;只有部分软件实现了&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;?LW&lt;/code&gt;  只有部分软件实现了&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
 &lt;td&gt;&lt;code&gt;Month&lt;/code&gt;&lt;/td&gt;
 &lt;td&gt;是&lt;/td&gt;
-&lt;td&gt;&lt;code&gt;1–12 or JAN–DEC&lt;/code&gt;    &lt;code&gt;*,-&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;&lt;/td&gt;
-&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;1–12 or JAN–DEC&lt;/code&gt; 	 &lt;code&gt;*,-&lt;/code&gt;&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
 &lt;td&gt;&lt;code&gt;Day of week&lt;/code&gt;&lt;/td&gt;
 &lt;td&gt;是&lt;/td&gt;
 &lt;td&gt;&lt;code&gt;0–7 or SUN–SAT&lt;/code&gt;&lt;/td&gt;
 &lt;td&gt;&lt;code&gt;*,-?L#&lt;/code&gt;&lt;/td&gt;
-&lt;td&gt;&lt;code&gt;?L#&lt;/code&gt;只有部分软件实现了&lt;code&gt;Linux&lt;/code&gt;和&lt;code&gt;Spring&lt;/code&gt;的允许值为&lt;code&gt;0-7&lt;/code&gt;，&lt;code&gt;0&lt;/code&gt;和&lt;code&gt;7&lt;/code&gt;为周日&lt;code&gt;Quartz&lt;/code&gt;的允许值为&lt;code&gt;1-7&lt;/code&gt;，&lt;code&gt;1&lt;/code&gt;为周日&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;?L#&lt;/code&gt; 只有部分软件实现了 &lt;code&gt;Linux&lt;/code&gt;  和 &lt;code&gt;Spring&lt;/code&gt;  的允许值为 &lt;code&gt;0-7&lt;/code&gt; ， &lt;code&gt;0&lt;/code&gt;  和 &lt;code&gt;7&lt;/code&gt;  为周日 &lt;code&gt;Quartz&lt;/code&gt;  的允许值为 &lt;code&gt;1-7&lt;/code&gt; ， &lt;code&gt;1&lt;/code&gt;  为周日&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
 &lt;td&gt;&lt;code&gt;Year&lt;/code&gt;&lt;/td&gt;
@@ -185,49 +182,59 @@
 &lt;td&gt;&lt;code&gt;*,-&lt;/code&gt;&lt;/td&gt;
 &lt;td&gt;标准实现不支持此字段。&lt;/td&gt;
 &lt;/tr&gt;
-&lt;/tbody&gt;&lt;/table&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
 &lt;p&gt;每一个域都使用数字，但还可以出现如下特殊字符，它们的含义是：&lt;/p&gt;
 &lt;ol&gt;
-&lt;li&gt;&lt;p&gt;&lt;code&gt;*&lt;/code&gt;：表示匹配该域的任意值，假如在&lt;code&gt;Minutes&lt;/code&gt;域使用*, 即表示每分钟都会触发事件。&lt;/p&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;*&lt;/code&gt; ：表示匹配该域的任意值，假如在 &lt;code&gt;Minutes&lt;/code&gt;  域使用 *, 即表示每分钟都会触发事件。&lt;/p&gt;
 &lt;/li&gt;
-&lt;li&gt;&lt;p&gt;&lt;code&gt;?&lt;/code&gt;:只能用在&lt;code&gt;DayofMonth&lt;/code&gt;和&lt;code&gt;DayofWeek&lt;/code&gt;两个域。它也匹配域的任意值，但实际不会。因为&lt;code&gt;DayofMonth&lt;/code&gt;和&lt;code&gt;DayofWeek&lt;/code&gt;会相互影响。例如想在每月的&lt;code&gt;20&lt;/code&gt;日触发调度，不管&lt;code&gt;20&lt;/code&gt;日到底是星期几，则只能使用如下写法： &lt;code&gt;13 13 15 20 * ?&lt;/code&gt;, 其中最后一位只能用&lt;code&gt;？&lt;/code&gt;，而不能使用&lt;code&gt;*&lt;/code&gt;，如果使用&lt;code&gt;*&lt;/code&gt;表示不管星期几都会触发，实际上并不是这样。&lt;/p&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;?&lt;/code&gt; : 只能用在 &lt;code&gt;DayofMonth&lt;/code&gt;  和 &lt;code&gt;DayofWeek&lt;/code&gt;  两个域。它也匹配域的任意值，但实际不会。因为 &lt;code&gt;DayofMonth&lt;/code&gt;  和 &lt;code&gt;DayofWeek&lt;/code&gt;  会相互影响。例如想在每月的 &lt;code&gt;20&lt;/code&gt;  日触发调度，不管 &lt;code&gt;20&lt;/code&gt;  日到底是星期几，则只能使用如下写法：  &lt;code&gt;13 13 15 20 * ?&lt;/code&gt; , 其中最后一位只能用 &lt;code&gt;？&lt;/code&gt; ，而不能使用 &lt;code&gt;*&lt;/code&gt; ，如果使用 &lt;code&gt;*&lt;/code&gt;  表示不管星期几都会触发，实际上并不是这样。&lt;/p&gt;
 &lt;/li&gt;
-&lt;li&gt;&lt;p&gt;&lt;code&gt;-&lt;/code&gt;:表示范围，例如在&lt;code&gt;Minutes&lt;/code&gt;域使用&lt;code&gt;5-20&lt;/code&gt;，表示从&lt;code&gt;5&lt;/code&gt;分到&lt;code&gt;20&lt;/code&gt;分钟每分钟触发一次&lt;/p&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;-&lt;/code&gt; : 表示范围，例如在 &lt;code&gt;Minutes&lt;/code&gt;  域使用 &lt;code&gt;5-20&lt;/code&gt; ，表示从 &lt;code&gt;5&lt;/code&gt;  分到 &lt;code&gt;20&lt;/code&gt;  分钟每分钟触发一次&lt;/p&gt;
 &lt;/li&gt;
-&lt;li&gt;&lt;p&gt;&lt;code&gt;/&lt;/code&gt;：表示起始时间开始触发，然后每隔固定时间触发一次，例如在&lt;code&gt;Minutes&lt;/code&gt;域使用&lt;code&gt;5/20&lt;/code&gt;,则意味着&lt;code&gt;5&lt;/code&gt;分钟触发一次，而&lt;code&gt;25，45&lt;/code&gt;等分别触发一次.&lt;/p&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;/&lt;/code&gt; ：表示起始时间开始触发，然后每隔固定时间触发一次，例如在 &lt;code&gt;Minutes&lt;/code&gt;  域使用 &lt;code&gt;5/20&lt;/code&gt; , 则意味着 &lt;code&gt;5&lt;/code&gt;  分钟触发一次，而 &lt;code&gt;25，45&lt;/code&gt;  等分别触发一次.&lt;/p&gt;
 &lt;/li&gt;
-&lt;li&gt;&lt;p&gt;&lt;code&gt;,&lt;/code&gt;:表示列出枚举值值。例如：在&lt;code&gt;Minutes&lt;/code&gt;域使用&lt;code&gt;5,20&lt;/code&gt;，则意味着在&lt;code&gt;5&lt;/code&gt;和&lt;code&gt;20&lt;/code&gt;分每分钟触发一次。&lt;/p&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;,&lt;/code&gt; : 表示列出枚举值值。例如：在 &lt;code&gt;Minutes&lt;/code&gt;  域使用 &lt;code&gt;5,20&lt;/code&gt; ，则意味着在 &lt;code&gt;5&lt;/code&gt;  和 &lt;code&gt;20&lt;/code&gt;  分每分钟触发一次。&lt;/p&gt;
 &lt;/li&gt;
-&lt;li&gt;&lt;p&gt;&lt;code&gt;L&lt;/code&gt;:表示最后，只能出现在&lt;code&gt;DayofWeek&lt;/code&gt;和&lt;code&gt;DayofMonth&lt;/code&gt;域，如果在&lt;code&gt;DayofWeek&lt;/code&gt;域使用&lt;code&gt;5L&lt;/code&gt;,意味着在最后的一个星期四触发。&lt;/p&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;L&lt;/code&gt; : 表示最后，只能出现在 &lt;code&gt;DayofWeek&lt;/code&gt;  和 &lt;code&gt;DayofMonth&lt;/code&gt;  域，如果在 &lt;code&gt;DayofWeek&lt;/code&gt;  域使用 &lt;code&gt;5L&lt;/code&gt; , 意味着在最后的一个星期四触发。&lt;/p&gt;
 &lt;/li&gt;
-&lt;li&gt;&lt;p&gt;&lt;code&gt;W&lt;/code&gt;:表示有效工作日(周一到周五),只能出现在&lt;code&gt;DayofMonth&lt;/code&gt;域，系统将在离指定日期的最近的有效工作日触发事件。例如：在 &lt;code&gt;DayofMonth&lt;/code&gt;使用&lt;code&gt;5W&lt;/code&gt;，如果&lt;code&gt;5&lt;/code&gt;日是星期六，则将在最近的工作日：星期五，即&lt;code&gt;4&lt;/code&gt;日触发。如果&lt;code&gt;5&lt;/code&gt;日是星期天，则在&lt;code&gt;6&lt;/code&gt;日(周一)触发；如果&lt;code&gt;5&lt;/code&gt;日在星期一到星期五中的一天，则就在&lt;code&gt;5&lt;/code&gt;日触发。另外一点，&lt;code&gt;W&lt;/code&gt;的最近寻找不会跨过月份&lt;/p&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;W&lt;/code&gt; : 表示有效工作日 (周一到周五), 只能出现在 &lt;code&gt;DayofMonth&lt;/code&gt;  域，系统将在离指定日期的最近的有效工作日触发事件。例如：在  &lt;code&gt;DayofMonth&lt;/code&gt;  使用 &lt;code&gt;5W&lt;/code&gt; ，如果 &lt;code&gt;5&lt;/code&gt;  日是星期六，则将在最近的工作日：星期五，即 &lt;code&gt;4&lt;/code&gt;  日触发。如果 &lt;code&gt;5&lt;/code&gt;  日是星期天，则在 &lt;code&gt;6&lt;/code&gt;  日 (周一) 触发；如果 &lt;code&gt;5&lt;/code&gt;  日在星期一到星期五中的一天，则就在 &lt;code&gt;5&lt;/code&gt;  日触发。另外一点， &lt;code&gt;W&lt;/code&gt;  的最近寻找不会跨过月份&lt;/p&gt;
 &lt;/li&gt;
-&lt;li&gt;&lt;p&gt;&lt;code&gt;LW&lt;/code&gt;:这两个字符可以连用，表示在某个月最后一个工作日，即最后一个星期五。&lt;/p&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;LW&lt;/code&gt; : 这两个字符可以连用，表示在某个月最后一个工作日，即最后一个星期五。&lt;/p&gt;
 &lt;/li&gt;
-&lt;li&gt;&lt;p&gt;&lt;code&gt;#&lt;/code&gt;:用于确定每个月第几个星期几，只能出现在&lt;code&gt;DayofMonth&lt;/code&gt;域。例如在&lt;code&gt;4#2&lt;/code&gt;，表示某月的第二个星期三。&lt;/p&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;#&lt;/code&gt; : 用于确定每个月第几个星期几，只能出现在 &lt;code&gt;DayofMonth&lt;/code&gt;  域。例如在 &lt;code&gt;4#2&lt;/code&gt; ，表示某月的第二个星期三。&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
 &lt;p&gt;一些例子:&lt;/p&gt;
 &lt;figure class=&#34;highlight plaintext&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;举几个例子:&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;0 0 2 1 * ? *    表示在每月的1日的凌晨2点调度任务&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;0 15 10 ? * MON-FRI    表示周一到周五每天上午10：15执行作业&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;0 15 10 ? 6L 2002-2006    表示2002-2006年的每个月的最后一个星期五上午10:15执行作&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-
-&lt;p&gt;其中每个元素可以是一个值&lt;code&gt;(如6)&lt;/code&gt;,一个连续区间&lt;code&gt;(9-12)&lt;/code&gt;,一个间隔时间&lt;code&gt;(8-18/4)(/表示每隔4小时)&lt;/code&gt;,一个列表&lt;code&gt;(1,3,5)&lt;/code&gt;,通配符。由于”月份中的日期”和”星期中的日期”这两个元素互斥的,必须要对其中一个设置?&lt;/p&gt;
+&lt;p&gt;其中每个元素可以是一个值 &lt;code&gt;(如6)&lt;/code&gt; , 一个连续区间 &lt;code&gt;(9-12)&lt;/code&gt; , 一个间隔时间 &lt;code&gt;(8-18/4)(/表示每隔4小时)&lt;/code&gt; , 一个列表 &lt;code&gt;(1,3,5)&lt;/code&gt; , 通配符。由于 &amp;quot;月份中的日期&amp;quot; 和 &amp;quot;星期中的日期&amp;quot; 这两个元素互斥的，必须要对其中一个设置？&lt;/p&gt;
 &lt;figure class=&#34;highlight plaintext&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;13&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;14&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;15&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;16&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;17&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;18&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;19&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;0 0 10,14,16 * * ? 每天上午10点，下午2点，4点&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;0 0/30 9-17 * * ? 朝九晚五工作时间内每半小时&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;0 0 12 ? * WED 表示每个星期三中午12点&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;quot;0 0 12 * * ?&amp;quot; 每天中午12点触发&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;quot;0 15 10 ? * *&amp;quot; 每天上午10:15触发&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;quot;0 15 10 * * ?&amp;quot; 每天上午10:15触发&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;quot;0 15 10 * * ? *&amp;quot; 每天上午10:15触发&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;quot;0 15 10 * * ? 2005&amp;quot; 2005年的每天上午10:15触发&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;quot;0 * 14 * * ?&amp;quot; 在每天下午2点到下午2:59期间的每1分钟触发&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;quot;0 0/5 14 * * ?&amp;quot; 在每天下午2点到下午2:55期间的每5分钟触发&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;quot;0 0/5 14,18 * * ?&amp;quot; 在每天下午2点到2:55期间和下午6点到6:55期间的每5分钟触发&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;quot;0 0-5 14 * * ?&amp;quot; 在每天下午2点到下午2:05期间的每1分钟触发&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;quot;0 10,44 14 ? 3 WED&amp;quot; 每年三月的星期三的下午2:10和2:44触发&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;quot;0 15 10 ? * MON-FRI&amp;quot; 周一至周五的上午10:15触发&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;quot;0 15 10 15 * ?&amp;quot; 每月15日上午10:15触发&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;quot;0 15 10 L * ?&amp;quot; 每月最后一日的上午10:15触发&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;quot;0 15 10 ? * 6L&amp;quot; 每月的最后一个星期五上午10:15触发&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;quot;0 15 10 ? * 6L 2002-2005&amp;quot; 2002年至2005年的每月的最后一个星期五上午10:15触发&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;quot;0 15 10 ? * 6#3&amp;quot; 每月的第三个星期五上午10:15触发&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-
 &lt;p&gt;有些子表达式能包含一些范围或列表&lt;/p&gt;
-&lt;p&gt;例如：子表达式（天（星期））可以为 &lt;code&gt;“MON-FRI”&lt;/code&gt;，&lt;code&gt;“MON，WED，FRI”&lt;/code&gt;，&lt;code&gt;“MON-WED,SAT”&lt;/code&gt;&lt;/p&gt;
-&lt;p&gt;&lt;code&gt;“*”&lt;/code&gt;字符代表所有可能的值&lt;/p&gt;
-&lt;p&gt;因此，&lt;code&gt;“*”&lt;/code&gt;在子表达式（月）里表示每个月的含义，&lt;code&gt;“*”&lt;/code&gt;在子表达式（天（星期））表示星期的每一天&lt;/p&gt;
-&lt;p&gt;&lt;code&gt;“/”&lt;/code&gt;字符用来指定数值的增量&lt;br&gt;例如：在子表达式（分钟）里的&lt;code&gt;“0/15”&lt;/code&gt;表示从第&lt;code&gt;0&lt;/code&gt;分钟开始，每&lt;code&gt;15&lt;/code&gt;分钟&lt;br&gt;在子表达式（分钟）里的&lt;code&gt;“3/20”&lt;/code&gt;表示从第&lt;code&gt;3&lt;/code&gt;分钟开始，每&lt;code&gt;20&lt;/code&gt;分钟（它和&lt;code&gt;“3，23，43”&lt;/code&gt;）的含义一样&lt;/p&gt;
-&lt;p&gt;&lt;code&gt;“？”&lt;/code&gt;字符仅被用于天（月）和天（星期）两个子表达式，表示不指定值&lt;br&gt;当2个子表达式其中之一被指定了值以后，为了避免冲突，需要将另一个子表达式的值设为&lt;code&gt;“?”&lt;/code&gt;&lt;/p&gt;
-&lt;p&gt;&lt;code&gt;“L” &lt;/code&gt;字符仅被用于天（月）和天（星期）两个子表达式，它是单词&lt;code&gt;“last”&lt;/code&gt;的缩写&lt;br&gt;但是它在两个子表达式里的含义是不同的。&lt;br&gt;在天（月）子表达式中，&lt;code&gt;“L”&lt;/code&gt;表示一个月的最后一天&lt;br&gt;在天（星期）自表达式中，&lt;code&gt;“L”&lt;/code&gt;表示一个星期的最后一天，也就是&lt;code&gt;SAT&lt;/code&gt;&lt;/p&gt;
-&lt;p&gt;如果在&lt;code&gt;“L”&lt;/code&gt;前有具体的内容，它就具有其他的含义了&lt;/p&gt;
-&lt;p&gt;例如：&lt;code&gt;“6L”&lt;/code&gt;表示这个月的倒数第&lt;code&gt;６&lt;/code&gt;天，&lt;code&gt;“FRIL”&lt;/code&gt;表示这个月的最一个星期五&lt;br&gt;注意：在使用&lt;code&gt;“L”&lt;/code&gt;参数时，不要指定列表或范围，因为这会导致问题&lt;/p&gt;
+&lt;p&gt;例如：子表达式（天（星期））可以为  &lt;code&gt;“MON-FRI”&lt;/code&gt; ， &lt;code&gt;“MON，WED，FRI”&lt;/code&gt; ， &lt;code&gt;“MON-WED,SAT”&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;“*”&lt;/code&gt;  字符代表所有可能的值&lt;/p&gt;
+&lt;p&gt;因此， &lt;code&gt;“*”&lt;/code&gt;  在子表达式（月）里表示每个月的含义， &lt;code&gt;“*”&lt;/code&gt;  在子表达式（天（星期））表示星期的每一天&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;“/”&lt;/code&gt;  字符用来指定数值的增量&lt;br&gt;
+例如：在子表达式（分钟）里的 &lt;code&gt;“0/15”&lt;/code&gt;  表示从第 &lt;code&gt;0&lt;/code&gt;  分钟开始，每 &lt;code&gt;15&lt;/code&gt;  分钟&lt;br&gt;
+在子表达式（分钟）里的 &lt;code&gt;“3/20”&lt;/code&gt;  表示从第 &lt;code&gt;3&lt;/code&gt;  分钟开始，每 &lt;code&gt;20&lt;/code&gt;  分钟（它和 &lt;code&gt;“3，23，43”&lt;/code&gt; ）的含义一样&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;“？”&lt;/code&gt;  字符仅被用于天（月）和天（星期）两个子表达式，表示不指定值&lt;br&gt;
+当 2 个子表达式其中之一被指定了值以后，为了避免冲突，需要将另一个子表达式的值设为 &lt;code&gt;“?”&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;“L” &lt;/code&gt; 字符仅被用于天（月）和天（星期）两个子表达式，它是单词 &lt;code&gt;“last”&lt;/code&gt;  的缩写&lt;br&gt;
+但是它在两个子表达式里的含义是不同的。&lt;br&gt;
+在天（月）子表达式中， &lt;code&gt;“L”&lt;/code&gt;  表示一个月的最后一天&lt;br&gt;
+在天（星期）自表达式中， &lt;code&gt;“L”&lt;/code&gt;  表示一个星期的最后一天，也就是 &lt;code&gt;SAT&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;如果在 &lt;code&gt;“L”&lt;/code&gt;  前有具体的内容，它就具有其他的含义了&lt;/p&gt;
+&lt;p&gt;例如： &lt;code&gt;“6L”&lt;/code&gt;  表示这个月的倒数第 &lt;code&gt;６&lt;/code&gt; 天， &lt;code&gt;“FRIL”&lt;/code&gt;  表示这个月的最一个星期五&lt;br&gt;
+注意：在使用 &lt;code&gt;“L”&lt;/code&gt;  参数时，不要指定列表或范围，因为这会导致问题&lt;/p&gt;
 &lt;figure class=&#34;highlight subunit&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;8&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;字段 允许值 允许的特殊字符&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;秒 0&lt;span class=&#34;string&#34;&gt;-59&lt;/span&gt; , - * /&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;分 0&lt;span class=&#34;string&#34;&gt;-59&lt;/span&gt; , - * /&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;小时 0&lt;span class=&#34;string&#34;&gt;-23&lt;/span&gt; , - * /&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;日期 1&lt;span class=&#34;string&#34;&gt;-31&lt;/span&gt; , - * ? / L W C&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;月份 1&lt;span class=&#34;string&#34;&gt;-12&lt;/span&gt; 或者 JAN-DEC , - * /&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;星期 1&lt;span class=&#34;string&#34;&gt;-7&lt;/span&gt; 或者 SUN-SAT , - * ? / L C #&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;年（可选） 留空, 1970&lt;span class=&#34;string&#34;&gt;-2099&lt;/span&gt; , - * /&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-
-
-
-
-
  ]]></description>
         </item>
     </channel>

@@ -7,107 +7,107 @@
         <language>en</language>
         <pubDate>Thu, 11 Aug 2022 00:47:15 +0800</pubDate>
         <lastBuildDate>Thu, 11 Aug 2022 00:47:15 +0800</lastBuildDate>
-        <category>SAP</category>
         <category>生物信息</category>
         <category>基因编辑</category>
+        <category>前端</category>
+        <category>Css</category>
         <category>Java</category>
+        <category>Corn</category>
+        <category>DDD</category>
+        <category>领域驱动设计</category>
+        <category>SAP</category>
+        <category>DisPlay属性</category>
+        <category>Docker</category>
         <category>Cache</category>
         <category>Cookie</category>
         <category>Session</category>
         <category>Java面试</category>
-        <category>Corn</category>
-        <category>前端</category>
-        <category>Css</category>
-        <category>DisPlay属性</category>
-        <category>DDD</category>
-        <category>领域驱动设计</category>
-        <category>Docker</category>
         <category>blog</category>
         <category>hexo</category>
         <category>next</category>
         <category>FastJson</category>
+        <category>IDEA</category>
         <category>JavaScript</category>
         <category>Html</category>
         <category>SpringBoot</category>
-        <category>IDEA</category>
-        <category>Jvm</category>
         <category>Jenkins</category>
         <category>CI/CD</category>
-        <category>函数式接口</category>
         <category>map</category>
         <category>Stream流</category>
+        <category>Jvm</category>
         <category>Assert</category>
+        <category>函数式接口</category>
         <category>java</category>
         <category>calender</category>
         <category>Springboot</category>
-        <category>Python</category>
-        <category>Jupyter</category>
-        <category>Machine Learning</category>
         <category>LeetCode</category>
         <category>算法</category>
         <category>递归</category>
-        <category>numpy</category>
-        <category>pandas</category>
-        <category>sklearn</category>
         <category>Linux</category>
         <category>Mybatis</category>
         <category>分页查询</category>
-        <category>模糊查询</category>
-        <category>Spring</category>
+        <category>Machine Learning</category>
+        <category>numpy</category>
+        <category>pandas</category>
+        <category>sklearn</category>
+        <category>Python</category>
+        <category>Jupyter</category>
         <category>Nginx</category>
+        <category>Spring</category>
+        <category>模糊查询</category>
         <category>SrpingBoot</category>
         <category>文件上传</category>
-        <category>事务</category>
-        <category>master</category>
         <category>TypeScript</category>
         <category>WebPack</category>
-        <category>UML</category>
+        <category>master</category>
+        <category>事务</category>
         <category>Groovy</category>
+        <category>UML</category>
         <category>Ubuntu</category>
         <category>Mysql</category>
+        <category>Vue</category>
         <category>VsCode</category>
         <category>Shell</category>
         <category>VSCODE</category>
         <category>快捷键</category>
-        <category>Vue</category>
         <category>Stream</category>
-        <category>日期</category>
         <category>线程池</category>
         <category>ubuntu</category>
         <category>虚拟机</category>
+        <category>日期</category>
+        <category>二分查找</category>
+        <category>数据挖掘</category>
         <category>Hadoop</category>
         <category>操作系统</category>
         <category>EasyExcel</category>
-        <category>二分查找</category>
         <category>node</category>
-        <category>数据挖掘</category>
         <category>JVM</category>
         <category>Yaml</category>
-        <category>数据库</category>
-        <category>Hexo</category>
         <category>junit</category>
+        <category>Hexo</category>
+        <category>数据库</category>
         <category>Mysql事务</category>
-        <category>Git</category>
-        <category>冒泡排序</category>
         <category>git,npm,node</category>
+        <category>冒泡排序</category>
         <category>动态规划</category>
         <category>堆排序</category>
-        <category>多线程</category>
+        <category>Git</category>
         <category>幂等性</category>
         <category>Google</category>
+        <category>多线程</category>
         <category>流</category>
-        <category>快速排序</category>
-        <category>正则表达式</category>
         <category>归并排序</category>
+        <category>正则表达式</category>
+        <category>快速排序</category>
         <category>直接插入排序</category>
         <category>选择排序</category>
         <category>Java 面试</category>
         <category>数据结构</category>
         <category>阻塞队列</category>
         <category>Spring事务</category>
+        <category>Date</category>
         <category>JDK</category>
         <category>动态代理</category>
-        <category>Date</category>
         <category>ArrayList</category>
         <category>接口</category>
         <category>SpringMvc</category>
@@ -135,97 +135,87 @@
             <category>Jenkins</category>
             <category>CI/CD</category>
             <pubDate>Mon, 08 Aug 2022 22:40:05 +0800</pubDate>
-            <description><![CDATA[ &lt;p&gt;&lt;a href=&#34;https://smile1231.github.io/posts/11faeb76/&#34;&gt;&lt;code&gt;Docker&lt;/code&gt;中安装&lt;code&gt;Jenkins&lt;/code&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href=&#34;https://www.cnblogs.com/yungyu16/p/12928802.html#%E6%93%8D%E4%BD%9C%E4%BB%BB%E5%8A%A1&#34;&gt;&lt;code&gt;Java&lt;/code&gt;操作&lt;code&gt;Jenkins&lt;/code&gt;参考&lt;/a&gt;&lt;/p&gt;
+            <description><![CDATA[ &lt;p&gt;&lt;a href=&#34;https://smile1231.github.io/posts/11faeb76/&#34;&gt; &lt;code&gt;Docker&lt;/code&gt;  中安装 &lt;code&gt;Jenkins&lt;/code&gt; &lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.cnblogs.com/yungyu16/p/12928802.html#%E6%93%8D%E4%BD%9C%E4%BB%BB%E5%8A%A1&#34;&gt; &lt;code&gt;Java&lt;/code&gt;  操作 &lt;code&gt;Jenkins&lt;/code&gt;  参考&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9pY29kZS5iZXN0L2kvODI4MDAwNDYwNDU0MDk=&#34;&gt;参考文章&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;完成&lt;code&gt;jenkins&lt;/code&gt;在docker中的启动安装对应的插件之后&lt;/p&gt;
-&lt;p&gt;由于我是使用的&lt;code&gt;docker&lt;/code&gt;启动的&lt;code&gt;Jenkins&lt;/code&gt;,所以需要在容器中装相应的环境：&lt;code&gt;jdk&lt;/code&gt;,&lt;code&gt;maven&lt;/code&gt;,&lt;code&gt;git&lt;/code&gt;等等&lt;/p&gt;
-&lt;p&gt;进入容器内部:&lt;code&gt;docker exec -u root -it myJenkins10242 bash&lt;/code&gt;&lt;/p&gt;
-&lt;h2 id=&#34;安装vim&#34;&gt;&lt;a href=&#34;#安装vim&#34; class=&#34;headerlink&#34; title=&#34;安装vim&#34;&gt;&lt;/a&gt;安装&lt;code&gt;vim&lt;/code&gt;&lt;/h2&gt;&lt;blockquote&gt;
-&lt;p&gt;在这之前需要对&lt;code&gt;apt&lt;/code&gt;进行一下升级 &lt;/p&gt;
+&lt;p&gt;完成 &lt;code&gt;jenkins&lt;/code&gt;  在 docker 中的启动安装对应的插件之后&lt;/p&gt;
+&lt;p&gt;由于我是使用的 &lt;code&gt;docker&lt;/code&gt;  启动的 &lt;code&gt;Jenkins&lt;/code&gt; , 所以需要在容器中装相应的环境： &lt;code&gt;jdk&lt;/code&gt; , &lt;code&gt;maven&lt;/code&gt; , &lt;code&gt;git&lt;/code&gt;  等等&lt;/p&gt;
+&lt;p&gt;进入容器内部: &lt;code&gt;docker exec -u root -it myJenkins10242 bash&lt;/code&gt;&lt;/p&gt;
+&lt;h2 id=&#34;安装vim&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#安装vim&#34;&gt;#&lt;/a&gt; 安装 &lt;code&gt;vim&lt;/code&gt;&lt;/h2&gt;
+&lt;blockquote&gt;
+&lt;p&gt;在这之前需要对 &lt;code&gt;apt&lt;/code&gt;  进行一下升级&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;apt-get update&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-
 &lt;p&gt;安装指令：&lt;/p&gt;
 &lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;apt-get install vim&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
 &lt;img data-src=&#34;/posts/171f1b7f/2022-08-10-23-41-19.png&#34; class=&#34;&#34;&gt;
-
-&lt;h2 id=&#34;安装jdk&#34;&gt;&lt;a href=&#34;#安装jdk&#34; class=&#34;headerlink&#34; title=&#34;安装jdk&#34;&gt;&lt;/a&gt;安装&lt;code&gt;jdk&lt;/code&gt;&lt;/h2&gt;&lt;p&gt;这里只讲解手动安装&lt;/p&gt;
-&lt;p&gt;查看架构，下载arm64版本的jdk，这里下载jdk11，&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly93d3cub3JhY2xlLmNvbS9qYXZhL3RlY2hub2xvZ2llcy9qYXZhc2UvamRrMTEtYXJjaGl2ZS1kb3dubG9hZHMuaHRtbCNsaWNlbnNlLWxpZ2h0Ym94&#34;&gt;jdk 11 aarch64_bin.tar.gz&lt;/span&gt;&lt;/p&gt;
+&lt;h2 id=&#34;安装jdk&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#安装jdk&#34;&gt;#&lt;/a&gt; 安装 &lt;code&gt;jdk&lt;/code&gt;&lt;/h2&gt;
+&lt;p&gt;这里只讲解手动安装&lt;/p&gt;
+&lt;p&gt;查看架构，下载 arm64 版本的 jdk，这里下载 jdk11，&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly93d3cub3JhY2xlLmNvbS9qYXZhL3RlY2hub2xvZ2llcy9qYXZhc2UvamRrMTEtYXJjaGl2ZS1kb3dubG9hZHMuaHRtbCNsaWNlbnNlLWxpZ2h0Ym94&#34;&gt;jdk 11 aarch64_bin.tar.gz&lt;/span&gt;&lt;/p&gt;
 &lt;img data-src=&#34;/posts/171f1b7f/2022-08-10-22-18-27.png&#34; class=&#34;&#34;&gt;
-
-&lt;p&gt;我这边将包放在了&lt;code&gt;docker&lt;/code&gt;的挂载目录上&lt;/p&gt;
+&lt;p&gt;我这边将包放在了 &lt;code&gt;docker&lt;/code&gt;  的挂载目录上&lt;/p&gt;
 &lt;img data-src=&#34;/posts/171f1b7f/2022-08-10-23-52-53.png&#34; class=&#34;&#34;&gt;
-
 &lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;# 解压&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;tar -zxvf jdk-11.0.15_linux-aarch64_bin.tar.gz&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;# 配置环境变量&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;vim /etc/profile&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
 &lt;p&gt;在最后加上：&lt;/p&gt;
 &lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;built_in&#34;&gt;export&lt;/span&gt; JAVA_HOME=/var/jenkins_home/install_package/jdk-11.0.15/&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;built_in&#34;&gt;export&lt;/span&gt; PATH=&lt;span class=&#34;variable&#34;&gt;$PATH&lt;/span&gt;:&lt;span class=&#34;variable&#34;&gt;$JAVA_HOME&lt;/span&gt;/bin&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-
-&lt;p&gt;最后：&lt;code&gt;source /etc/profile&lt;/code&gt; 即可&lt;/p&gt;
+&lt;p&gt;最后： &lt;code&gt;source /etc/profile&lt;/code&gt;  即可&lt;/p&gt;
 &lt;img data-src=&#34;/posts/171f1b7f/2022-08-11-00-02-07.png&#34; class=&#34;&#34;&gt;
-&lt;h2 id=&#34;安装maven&#34;&gt;&lt;a href=&#34;#安装maven&#34; class=&#34;headerlink&#34; title=&#34;安装maven&#34;&gt;&lt;/a&gt;安装&lt;code&gt;maven&lt;/code&gt;&lt;/h2&gt;&lt;p&gt;安装&lt;code&gt;maven&lt;/code&gt;的方法也类似，下载版本为&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9hcmNoaXZlLmFwYWNoZS5vcmcvZGlzdC9tYXZlbi9tYXZlbi0zLzMuNS40L2JpbmFyaWVzL2FwYWNoZS1tYXZlbi0zLjUuNC1iaW4udGFyLmd6&#34;&gt;maven-3.5.4&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;依然放在了挂在目录中的&lt;code&gt;install_package&lt;/code&gt;中&lt;/p&gt;
-&lt;p&gt;解压：&lt;code&gt;tar -zxvf apache-maven-3.5.4-bin.tar.gz&lt;/code&gt;&lt;/p&gt;
-&lt;p&gt;配置环境变量: &lt;code&gt;vim /etc/profile&lt;/code&gt;&lt;br&gt;加上&lt;/p&gt;
+&lt;h2 id=&#34;安装maven&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#安装maven&#34;&gt;#&lt;/a&gt; 安装 &lt;code&gt;maven&lt;/code&gt;&lt;/h2&gt;
+&lt;p&gt;安装 &lt;code&gt;maven&lt;/code&gt;  的方法也类似，下载版本为&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9hcmNoaXZlLmFwYWNoZS5vcmcvZGlzdC9tYXZlbi9tYXZlbi0zLzMuNS40L2JpbmFyaWVzL2FwYWNoZS1tYXZlbi0zLjUuNC1iaW4udGFyLmd6&#34;&gt; maven-3.5.4&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;依然放在了挂在目录中的 &lt;code&gt;install_package&lt;/code&gt;  中&lt;/p&gt;
+&lt;p&gt;解压： &lt;code&gt;tar -zxvf apache-maven-3.5.4-bin.tar.gz&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;配置环境变量:  &lt;code&gt;vim /etc/profile&lt;/code&gt; &lt;br&gt;
+ 加上&lt;/p&gt;
 &lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;built_in&#34;&gt;export&lt;/span&gt; MAVEN_HOME=/var/jenkins_home/install_package/apache-maven-3.5.4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;built_in&#34;&gt;export&lt;/span&gt; PATH=&lt;span class=&#34;variable&#34;&gt;$PATH&lt;/span&gt;:&lt;span class=&#34;variable&#34;&gt;$MAVEN_HOME&lt;/span&gt;/bin&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;p&gt;最后：&lt;code&gt;source /etc/profile&lt;/code&gt; 即可&lt;/p&gt;
+&lt;p&gt;最后： &lt;code&gt;source /etc/profile&lt;/code&gt;  即可&lt;/p&gt;
 &lt;img data-src=&#34;/posts/171f1b7f/2022-08-11-00-06-59.png&#34; class=&#34;&#34;&gt;
-
-&lt;h2 id=&#34;Git&#34;&gt;&lt;a href=&#34;#Git&#34; class=&#34;headerlink&#34; title=&#34;Git&#34;&gt;&lt;/a&gt;&lt;code&gt;Git&lt;/code&gt;&lt;/h2&gt;&lt;p&gt;容器中自带了&lt;code&gt;git&lt;/code&gt;，所以无需安装，但是需要查看路径: &lt;code&gt;which git&lt;/code&gt;，路径为：&lt;code&gt;/usr/bin/git&lt;/code&gt;&lt;/p&gt;
+&lt;h2 id=&#34;git&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#git&#34;&gt;#&lt;/a&gt;  &lt;code&gt;Git&lt;/code&gt;&lt;/h2&gt;
+&lt;p&gt;容器中自带了 &lt;code&gt;git&lt;/code&gt; ，所以无需安装，但是需要查看路径:  &lt;code&gt;which git&lt;/code&gt; ，路径为： &lt;code&gt;/usr/bin/git&lt;/code&gt;&lt;/p&gt;
 &lt;img data-src=&#34;/posts/171f1b7f/2022-08-11-00-10-10.png&#34; class=&#34;&#34;&gt;
-
-&lt;h2 id=&#34;配置Jenkins&#34;&gt;&lt;a href=&#34;#配置Jenkins&#34; class=&#34;headerlink&#34; title=&#34;配置Jenkins&#34;&gt;&lt;/a&gt;配置&lt;code&gt;Jenkins&lt;/code&gt;&lt;/h2&gt;&lt;p&gt;打开&lt;code&gt;Global Tool Configuration&lt;/code&gt;:&lt;/p&gt;
+&lt;h2 id=&#34;配置jenkins&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#配置jenkins&#34;&gt;#&lt;/a&gt; 配置 &lt;code&gt;Jenkins&lt;/code&gt;&lt;/h2&gt;
+&lt;p&gt;打开 &lt;code&gt;Global Tool Configuration&lt;/code&gt; :&lt;/p&gt;
 &lt;img data-src=&#34;/posts/171f1b7f/2022-08-11-00-12-49.png&#34; class=&#34;&#34;&gt;
-
-&lt;p&gt;这边是配置&lt;code&gt;maven&lt;/code&gt;中的&lt;code&gt;settings&lt;/code&gt;文件地址，我地址为：&lt;code&gt;/var/jenkins_home/install_package/apache-maven-3.5.4/conf/settings.xml&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;这边是配置 &lt;code&gt;maven&lt;/code&gt;  中的 &lt;code&gt;settings&lt;/code&gt;  文件地址，我地址为： &lt;code&gt;/var/jenkins_home/install_package/apache-maven-3.5.4/conf/settings.xml&lt;/code&gt;&lt;/p&gt;
 &lt;img data-src=&#34;/posts/171f1b7f/2022-08-11-00-15-24.png&#34; class=&#34;&#34;&gt;
-
-
-&lt;p&gt;分别配置上&lt;code&gt;jdk&lt;/code&gt;,&lt;code&gt;git&lt;/code&gt;,&lt;code&gt;maven&lt;/code&gt;的本地目录,然后&lt;code&gt;Apply&lt;/code&gt;和&lt;code&gt;Save&lt;/code&gt;：&lt;/p&gt;
+&lt;p&gt;分别配置上 &lt;code&gt;jdk&lt;/code&gt; , &lt;code&gt;git&lt;/code&gt; , &lt;code&gt;maven&lt;/code&gt;  的本地目录，然后 &lt;code&gt;Apply&lt;/code&gt;  和 &lt;code&gt;Save&lt;/code&gt; ：&lt;/p&gt;
 &lt;img data-src=&#34;/posts/171f1b7f/2022-08-11-00-17-12.png&#34; class=&#34;&#34;&gt;
-
 &lt;img data-src=&#34;/posts/171f1b7f/2022-08-11-00-17-47.png&#34; class=&#34;&#34;&gt;
-
-&lt;h2 id=&#34;安装plugin&#34;&gt;&lt;a href=&#34;#安装plugin&#34; class=&#34;headerlink&#34; title=&#34;安装plugin&#34;&gt;&lt;/a&gt;安装&lt;code&gt;plugin&lt;/code&gt;&lt;/h2&gt;&lt;p&gt;我们会发现新建一个&lt;code&gt;Item&lt;/code&gt;是没有&lt;code&gt;Maven&lt;/code&gt;项目的，需要安装一下对应的插件:&lt;code&gt;Maven Integration&lt;/code&gt;&lt;/p&gt;
+&lt;h2 id=&#34;安装plugin&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#安装plugin&#34;&gt;#&lt;/a&gt; 安装 &lt;code&gt;plugin&lt;/code&gt;&lt;/h2&gt;
+&lt;p&gt;我们会发现新建一个 &lt;code&gt;Item&lt;/code&gt;  是没有 &lt;code&gt;Maven&lt;/code&gt;  项目的，需要安装一下对应的插件: &lt;code&gt;Maven Integration&lt;/code&gt;&lt;/p&gt;
 &lt;img data-src=&#34;/posts/171f1b7f/2022-08-11-00-20-56.png&#34; class=&#34;&#34;&gt;
-
 &lt;p&gt;等待安装完成即可&lt;/p&gt;
-&lt;h2 id=&#34;Maven项目部署测试&#34;&gt;&lt;a href=&#34;#Maven项目部署测试&#34; class=&#34;headerlink&#34; title=&#34;Maven项目部署测试&#34;&gt;&lt;/a&gt;&lt;code&gt;Maven&lt;/code&gt;项目部署测试&lt;/h2&gt;&lt;h3 id=&#34;新建一个Maven，名字自取&#34;&gt;&lt;a href=&#34;#新建一个Maven，名字自取&#34; class=&#34;headerlink&#34; title=&#34;新建一个Maven，名字自取&#34;&gt;&lt;/a&gt;新建一个&lt;code&gt;Maven&lt;/code&gt;，名字自取&lt;/h3&gt;&lt;img data-src=&#34;/posts/171f1b7f/2022-08-11-00-22-22.png&#34; class=&#34;&#34;&gt;
-
-&lt;h3 id=&#34;项目描述：&#34;&gt;&lt;a href=&#34;#项目描述：&#34; class=&#34;headerlink&#34; title=&#34;项目描述：&#34;&gt;&lt;/a&gt;项目描述：&lt;/h3&gt;&lt;img data-src=&#34;/posts/171f1b7f/2022-08-11-00-26-00.png&#34; class=&#34;&#34;&gt;
-
-&lt;h3 id=&#34;配置github&#34;&gt;&lt;a href=&#34;#配置github&#34; class=&#34;headerlink&#34; title=&#34;配置github&#34;&gt;&lt;/a&gt;配置&lt;code&gt;github&lt;/code&gt;&lt;/h3&gt;&lt;img data-src=&#34;/posts/171f1b7f/2022-08-11-00-29-23.png&#34; class=&#34;&#34;&gt;
-
+&lt;h2 id=&#34;maven项目部署测试&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#maven项目部署测试&#34;&gt;#&lt;/a&gt;  &lt;code&gt;Maven&lt;/code&gt;  项目部署测试&lt;/h2&gt;
+&lt;h3 id=&#34;新建一个maven名字自取&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#新建一个maven名字自取&#34;&gt;#&lt;/a&gt; 新建一个 &lt;code&gt;Maven&lt;/code&gt; ，名字自取&lt;/h3&gt;
+&lt;img data-src=&#34;/posts/171f1b7f/2022-08-11-00-22-22.png&#34; class=&#34;&#34;&gt;
+&lt;h3 id=&#34;项目描述&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#项目描述&#34;&gt;#&lt;/a&gt; 项目描述：&lt;/h3&gt;
+&lt;img data-src=&#34;/posts/171f1b7f/2022-08-11-00-26-00.png&#34; class=&#34;&#34;&gt;
+&lt;h3 id=&#34;配置github&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#配置github&#34;&gt;#&lt;/a&gt; 配置 &lt;code&gt;github&lt;/code&gt;&lt;/h3&gt;
+&lt;img data-src=&#34;/posts/171f1b7f/2022-08-11-00-29-23.png&#34; class=&#34;&#34;&gt;
 &lt;blockquote&gt;
-&lt;p&gt;关于&lt;code&gt;GitHub&lt;/code&gt;凭证配置&lt;/p&gt;
+&lt;p&gt;关于 &lt;code&gt;GitHub&lt;/code&gt;  凭证配置&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;p&gt;配置地址： &lt;code&gt;https://github.com/settings/tokens&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;配置地址：  &lt;code&gt;https://github.com/settings/tokens&lt;/code&gt;&lt;/p&gt;
 &lt;img data-src=&#34;/posts/171f1b7f/2022-08-11-00-30-37.png&#34; class=&#34;&#34;&gt;
-
 &lt;img data-src=&#34;/posts/171f1b7f/2022-08-11-00-31-02.png&#34; class=&#34;&#34;&gt;
-
-&lt;p&gt;将生成的&lt;code&gt;token&lt;/code&gt;记载到本地&lt;/p&gt;
+&lt;p&gt;将生成的 &lt;code&gt;token&lt;/code&gt;  记载到本地&lt;/p&gt;
 &lt;img data-src=&#34;/posts/171f1b7f/2022-08-11-00-31-43.png&#34; class=&#34;&#34;&gt;
-
 &lt;blockquote&gt;
-&lt;p&gt;&lt;code&gt;Jenkins&lt;/code&gt;添加凭据&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;Jenkins&lt;/code&gt;  添加凭据&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;img data-src=&#34;/posts/171f1b7f/2022-08-11-00-33-43.png&#34; class=&#34;&#34;&gt;
-
-&lt;h3 id=&#34;github访问超时时间&#34;&gt;&lt;a href=&#34;#github访问超时时间&#34; class=&#34;headerlink&#34; title=&#34;github访问超时时间&#34;&gt;&lt;/a&gt;&lt;code&gt;github&lt;/code&gt;访问超时时间&lt;/h3&gt;&lt;p&gt;检出超时时间：&lt;/p&gt;
+&lt;h3 id=&#34;github访问超时时间&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#github访问超时时间&#34;&gt;#&lt;/a&gt;  &lt;code&gt;github&lt;/code&gt;  访问超时时间&lt;/h3&gt;
+&lt;p&gt;检出超时时间：&lt;/p&gt;
 &lt;img data-src=&#34;/posts/171f1b7f/2022-08-11-00-34-52.png&#34; class=&#34;&#34;&gt;
-
-&lt;p&gt;&lt;code&gt;clone&lt;/code&gt;超时时间：&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;clone&lt;/code&gt;  超时时间：&lt;/p&gt;
 &lt;img data-src=&#34;/posts/171f1b7f/2022-08-11-00-36-01.png&#34; class=&#34;&#34;&gt;
-
-&lt;h3 id=&#34;Build阶段&#34;&gt;&lt;a href=&#34;#Build阶段&#34; class=&#34;headerlink&#34; title=&#34;Build阶段&#34;&gt;&lt;/a&gt;&lt;code&gt;Build&lt;/code&gt;阶段&lt;/h3&gt;&lt;p&gt;&lt;code&gt;clean package -Dmaven.test.skip=true -Prd -U&lt;/code&gt;&lt;/p&gt;
+&lt;h3 id=&#34;build阶段&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#build阶段&#34;&gt;#&lt;/a&gt;  &lt;code&gt;Build&lt;/code&gt;  阶段&lt;/h3&gt;
+&lt;p&gt;&lt;code&gt;clean package -Dmaven.test.skip=true -Prd -U&lt;/code&gt;&lt;/p&gt;
 &lt;img data-src=&#34;/posts/171f1b7f/2022-08-11-00-39-04.png&#34; class=&#34;&#34;&gt;
-
-&lt;h3 id=&#34;配置构建项目后执行的Shell脚本&#34;&gt;&lt;a href=&#34;#配置构建项目后执行的Shell脚本&#34; class=&#34;headerlink&#34; title=&#34;配置构建项目后执行的Shell脚本&#34;&gt;&lt;/a&gt;配置构建项目后执行的&lt;code&gt;Shell&lt;/code&gt;脚本&lt;/h3&gt;&lt;img data-src=&#34;/posts/171f1b7f/2022-08-11-00-42-20.png&#34; class=&#34;&#34;&gt;
-
+&lt;h3 id=&#34;配置构建项目后执行的shell脚本&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#配置构建项目后执行的shell脚本&#34;&gt;#&lt;/a&gt; 配置构建项目后执行的 &lt;code&gt;Shell&lt;/code&gt;  脚本&lt;/h3&gt;
+&lt;img data-src=&#34;/posts/171f1b7f/2022-08-11-00-42-20.png&#34; class=&#34;&#34;&gt;
 &lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;13&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;14&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;15&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;16&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;17&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;18&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;19&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;20&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;21&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;22&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;23&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;24&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;25&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;26&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;27&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;28&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;29&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;30&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;31&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;32&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;33&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;34&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;meta&#34;&gt;#!/bin/bash&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;#输入Maven打包后的项目名称&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;app=xxx-0.0.1-SNAPSHOT&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;#项目移动的目的地址&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;path=/usr/xxx&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;built_in&#34;&gt;echo&lt;/span&gt; this is app : &lt;span class=&#34;variable&#34;&gt;$app&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;#若项目已启动，杀死旧进程&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;api_pid=`ps -ef | grep &lt;span class=&#34;string&#34;&gt;&amp;quot;&lt;span class=&#34;variable&#34;&gt;$app&lt;/span&gt;.jar&amp;quot;&lt;/span&gt; | grep -v grep | awk &lt;span class=&#34;string&#34;&gt;&amp;#x27;&amp;#123;print $2&amp;#125;&amp;#x27;&lt;/span&gt;`&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;built_in&#34;&gt;echo&lt;/span&gt; api_pid = &lt;span class=&#34;variable&#34;&gt;$api_pid&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;if&lt;/span&gt; [ &lt;span class=&#34;string&#34;&gt;&amp;quot;&lt;span class=&#34;variable&#34;&gt;$api_pid&lt;/span&gt;&amp;quot;&lt;/span&gt; != &lt;span class=&#34;string&#34;&gt;&amp;quot;&amp;quot;&lt;/span&gt; ]; &lt;span class=&#34;keyword&#34;&gt;then&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        &lt;span class=&#34;built_in&#34;&gt;echo&lt;/span&gt; &lt;span class=&#34;built_in&#34;&gt;kill&lt;/span&gt; api&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        &lt;span class=&#34;built_in&#34;&gt;kill&lt;/span&gt; -9 &lt;span class=&#34;variable&#34;&gt;$api_pid&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        &lt;span class=&#34;built_in&#34;&gt;echo&lt;/span&gt; sleep 3s&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        sleep 1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        &lt;span class=&#34;built_in&#34;&gt;echo&lt;/span&gt; sleep 2s&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        sleep 1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        &lt;span class=&#34;built_in&#34;&gt;echo&lt;/span&gt; sleep 1s&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        sleep 1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;fi&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;#将jar包从jenkins工作空间中移动到指定路径下&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;mv /root/.jenkins/workspace/项目名/target/&lt;span class=&#34;variable&#34;&gt;$app&lt;/span&gt;.jar &lt;span class=&#34;variable&#34;&gt;$path&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;built_in&#34;&gt;cd&lt;/span&gt; &lt;span class=&#34;variable&#34;&gt;$path&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;#防止进程被杀死&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;BUILD_ID=dontKillMe&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;#后台进程形式启动项目，日志文件为out.log&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;nohup java -jar &lt;span class=&#34;variable&#34;&gt;$app&lt;/span&gt;.jar &amp;gt;&amp;gt; out.log 2&amp;gt;&amp;amp;1 &amp;amp;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;built_in&#34;&gt;echo&lt;/span&gt; &lt;span class=&#34;variable&#34;&gt;$app&lt;/span&gt; start success&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;built_in&#34;&gt;exit&lt;/span&gt; 0&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;h2 id=&#34;Jenkins运行&#34;&gt;&lt;a href=&#34;#Jenkins运行&#34; class=&#34;headerlink&#34; title=&#34;Jenkins运行&#34;&gt;&lt;/a&gt;&lt;code&gt;Jenkins&lt;/code&gt;运行&lt;/h2&gt;&lt;img data-src=&#34;/posts/171f1b7f/2022-08-11-00-43-49.png&#34; class=&#34;&#34;&gt;
-
+&lt;h2 id=&#34;jenkins运行&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#jenkins运行&#34;&gt;#&lt;/a&gt;  &lt;code&gt;Jenkins&lt;/code&gt;  运行&lt;/h2&gt;
+&lt;img data-src=&#34;/posts/171f1b7f/2022-08-11-00-43-49.png&#34; class=&#34;&#34;&gt;
 &lt;img data-src=&#34;/posts/171f1b7f/2022-08-11-00-45-15.png&#34; class=&#34;&#34;&gt;
  ]]></description>
         </item>

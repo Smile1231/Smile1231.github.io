@@ -7,107 +7,107 @@
         <language>en</language>
         <pubDate>Fri, 01 Jul 2022 10:58:13 +0800</pubDate>
         <lastBuildDate>Fri, 01 Jul 2022 10:58:13 +0800</lastBuildDate>
-        <category>SAP</category>
         <category>生物信息</category>
         <category>基因编辑</category>
+        <category>前端</category>
+        <category>Css</category>
         <category>Java</category>
+        <category>Corn</category>
+        <category>DDD</category>
+        <category>领域驱动设计</category>
+        <category>SAP</category>
+        <category>DisPlay属性</category>
+        <category>Docker</category>
         <category>Cache</category>
         <category>Cookie</category>
         <category>Session</category>
         <category>Java面试</category>
-        <category>Corn</category>
-        <category>前端</category>
-        <category>Css</category>
-        <category>DisPlay属性</category>
-        <category>DDD</category>
-        <category>领域驱动设计</category>
-        <category>Docker</category>
         <category>blog</category>
         <category>hexo</category>
         <category>next</category>
         <category>FastJson</category>
+        <category>IDEA</category>
         <category>JavaScript</category>
         <category>Html</category>
         <category>SpringBoot</category>
-        <category>IDEA</category>
-        <category>Jvm</category>
         <category>Jenkins</category>
         <category>CI/CD</category>
-        <category>函数式接口</category>
         <category>map</category>
         <category>Stream流</category>
+        <category>Jvm</category>
         <category>Assert</category>
+        <category>函数式接口</category>
         <category>java</category>
         <category>calender</category>
         <category>Springboot</category>
-        <category>Python</category>
-        <category>Jupyter</category>
-        <category>Machine Learning</category>
         <category>LeetCode</category>
         <category>算法</category>
         <category>递归</category>
-        <category>numpy</category>
-        <category>pandas</category>
-        <category>sklearn</category>
         <category>Linux</category>
         <category>Mybatis</category>
         <category>分页查询</category>
-        <category>模糊查询</category>
-        <category>Spring</category>
+        <category>Machine Learning</category>
+        <category>numpy</category>
+        <category>pandas</category>
+        <category>sklearn</category>
+        <category>Python</category>
+        <category>Jupyter</category>
         <category>Nginx</category>
+        <category>Spring</category>
+        <category>模糊查询</category>
         <category>SrpingBoot</category>
         <category>文件上传</category>
-        <category>事务</category>
-        <category>master</category>
         <category>TypeScript</category>
         <category>WebPack</category>
-        <category>UML</category>
+        <category>master</category>
+        <category>事务</category>
         <category>Groovy</category>
+        <category>UML</category>
         <category>Ubuntu</category>
         <category>Mysql</category>
+        <category>Vue</category>
         <category>VsCode</category>
         <category>Shell</category>
         <category>VSCODE</category>
         <category>快捷键</category>
-        <category>Vue</category>
         <category>Stream</category>
-        <category>日期</category>
         <category>线程池</category>
         <category>ubuntu</category>
         <category>虚拟机</category>
+        <category>日期</category>
+        <category>二分查找</category>
+        <category>数据挖掘</category>
         <category>Hadoop</category>
         <category>操作系统</category>
         <category>EasyExcel</category>
-        <category>二分查找</category>
         <category>node</category>
-        <category>数据挖掘</category>
         <category>JVM</category>
         <category>Yaml</category>
-        <category>数据库</category>
-        <category>Hexo</category>
         <category>junit</category>
+        <category>Hexo</category>
+        <category>数据库</category>
         <category>Mysql事务</category>
-        <category>Git</category>
-        <category>冒泡排序</category>
         <category>git,npm,node</category>
+        <category>冒泡排序</category>
         <category>动态规划</category>
         <category>堆排序</category>
-        <category>多线程</category>
+        <category>Git</category>
         <category>幂等性</category>
         <category>Google</category>
+        <category>多线程</category>
         <category>流</category>
-        <category>快速排序</category>
-        <category>正则表达式</category>
         <category>归并排序</category>
+        <category>正则表达式</category>
+        <category>快速排序</category>
         <category>直接插入排序</category>
         <category>选择排序</category>
         <category>Java 面试</category>
         <category>数据结构</category>
         <category>阻塞队列</category>
         <category>Spring事务</category>
+        <category>Date</category>
         <category>JDK</category>
         <category>动态代理</category>
-        <category>Date</category>
         <category>ArrayList</category>
         <category>接口</category>
         <category>SpringMvc</category>
@@ -123,21 +123,19 @@
             <category>VsCode</category>
             <category>Shell</category>
             <pubDate>Fri, 01 Jul 2022 10:58:13 +0800</pubDate>
-            <description><![CDATA[ &lt;h2 id=&#34;1-下载Vscode插件-Bash-Debug&#34;&gt;&lt;a href=&#34;#1-下载Vscode插件-Bash-Debug&#34; class=&#34;headerlink&#34; title=&#34;1. 下载Vscode插件 Bash Debug&#34;&gt;&lt;/a&gt;1. 下载&lt;code&gt;Vscode&lt;/code&gt;插件 &lt;code&gt;Bash Debug&lt;/code&gt;&lt;/h2&gt;&lt;img data-src=&#34;/posts/823298d2/2022-07-01-10-59-08.png&#34; class=&#34;&#34;&gt;
-
+            <description><![CDATA[ &lt;h2 id=&#34;1-下载vscode插件-bash-debug&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#1-下载vscode插件-bash-debug&#34;&gt;#&lt;/a&gt; 1. 下载 &lt;code&gt;Vscode&lt;/code&gt;  插件  &lt;code&gt;Bash Debug&lt;/code&gt;&lt;/h2&gt;
+&lt;img data-src=&#34;/posts/823298d2/2022-07-01-10-59-08.png&#34; class=&#34;&#34;&gt;
 &lt;span id=&#34;more&#34;&gt;&lt;/span&gt;
-
-&lt;h2 id=&#34;2-create-launch-json-file&#34;&gt;&lt;a href=&#34;#2-create-launch-json-file&#34; class=&#34;headerlink&#34; title=&#34;2. create launch.json file&#34;&gt;&lt;/a&gt;2. &lt;code&gt;create launch.json file&lt;/code&gt;&lt;/h2&gt;&lt;p&gt;选择&lt;code&gt;Bash Debug&lt;/code&gt;&lt;/p&gt;
+&lt;h2 id=&#34;2-create-launchjson-file&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#2-create-launchjson-file&#34;&gt;#&lt;/a&gt; 2.  &lt;code&gt;create launch.json file&lt;/code&gt;&lt;/h2&gt;
+&lt;p&gt;选择 &lt;code&gt;Bash Debug&lt;/code&gt;&lt;/p&gt;
 &lt;img data-src=&#34;/posts/823298d2/2022-07-01-11-04-35.png&#34; class=&#34;&#34;&gt;
-
-&lt;h2 id=&#34;3-添加配置&#34;&gt;&lt;a href=&#34;#3-添加配置&#34; class=&#34;headerlink&#34; title=&#34;3. 添加配置&#34;&gt;&lt;/a&gt;3. 添加配置&lt;/h2&gt;&lt;img data-src=&#34;/posts/823298d2/2022-07-01-11-06-45.png&#34; class=&#34;&#34;&gt;
-
+&lt;h2 id=&#34;3-添加配置&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#3-添加配置&#34;&gt;#&lt;/a&gt; 3. 添加配置&lt;/h2&gt;
+&lt;img data-src=&#34;/posts/823298d2/2022-07-01-11-06-45.png&#34; class=&#34;&#34;&gt;
 &lt;img data-src=&#34;/posts/823298d2/2022-07-01-11-07-31.png&#34; class=&#34;&#34;&gt;
-
-&lt;p&gt;使用下拉菜单选中刚刚我们添加的 &lt;code&gt;select script from list of sh files&lt;/code&gt;，点击播放键运行。&lt;/p&gt;
-&lt;p&gt;选择想&lt;code&gt;debug&lt;/code&gt;的脚本，然后开始&lt;/p&gt;
-&lt;h2 id=&#34;4-查看变量名&#34;&gt;&lt;a href=&#34;#4-查看变量名&#34; class=&#34;headerlink&#34; title=&#34;4. 查看变量名&#34;&gt;&lt;/a&gt;4. 查看变量名&lt;/h2&gt;&lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;variable&#34;&gt;$&amp;#123;变量名&amp;#125;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;# 格式来添加，要确认哪个就添加哪个。&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-
+&lt;p&gt;使用下拉菜单选中刚刚我们添加的  &lt;code&gt;select script from list of sh files&lt;/code&gt; ，点击播放键运行。&lt;/p&gt;
+&lt;p&gt;选择想 &lt;code&gt;debug&lt;/code&gt;  的脚本，然后开始&lt;/p&gt;
+&lt;h2 id=&#34;4-查看变量名&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#4-查看变量名&#34;&gt;#&lt;/a&gt; 4. 查看变量名&lt;/h2&gt;
+&lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;variable&#34;&gt;$&amp;#123;变量名&amp;#125;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;# 格式来添加，要确认哪个就添加哪个。&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
  ]]></description>
         </item>
         <item>
@@ -147,38 +145,45 @@
             <category>VSCODE</category>
             <category>快捷键</category>
             <pubDate>Sun, 13 Feb 2022 21:52:23 +0800</pubDate>
-            <description><![CDATA[ &lt;h1 id=&#34;VsCode快捷键&#34;&gt;&lt;a href=&#34;#VsCode快捷键&#34; class=&#34;headerlink&#34; title=&#34;VsCode快捷键&#34;&gt;&lt;/a&gt;&lt;code&gt;VsCode&lt;/code&gt;快捷键&lt;/h1&gt;&lt;ul&gt;
-&lt;li&gt;&lt;code&gt;VS Code&lt;/code&gt;中代码格式化&lt;ul&gt;
+            <description><![CDATA[ &lt;h1 id=&#34;vscode快捷键&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#vscode快捷键&#34;&gt;#&lt;/a&gt;  &lt;code&gt;VsCode&lt;/code&gt;  快捷键&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;VS Code&lt;/code&gt;  中代码格式化
+&lt;ul&gt;
 &lt;li&gt;&lt;code&gt;Windows Shift + Alt + F&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;在&lt;code&gt;Mac&lt;/code&gt;上&lt;code&gt;Shift + Option + F&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;在 &lt;code&gt;Mac&lt;/code&gt;  上 &lt;code&gt;Shift + Option + F&lt;/code&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;一行优化显示&lt;ul&gt;
+&lt;li&gt;一行优化显示
+&lt;ul&gt;
 &lt;li&gt;&lt;code&gt;Alt + Z &lt;/code&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;h1 id=&#34;IDEA常用&#34;&gt;&lt;a href=&#34;#IDEA常用&#34; class=&#34;headerlink&#34; title=&#34;IDEA常用&#34;&gt;&lt;/a&gt;&lt;code&gt;IDEA&lt;/code&gt;常用&lt;/h1&gt;&lt;ul&gt;
-&lt;li&gt;&lt;code&gt;Ctrl + Z&lt;/code&gt; 撤销 （必备）&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;Ctrl + Shift + Z&lt;/code&gt; 恢复 （必备）&lt;span id=&#34;more&#34;&gt;&lt;/span&gt;&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;Ctrl + Y&lt;/code&gt; 删除光标所在行 或 删除选中的行 （必备）&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;Ctrl + W&lt;/code&gt; 递进式选择代码块。可选中光标所在的单词或段落，连续按会在原有选中的基础上再扩展选中范围（必备）&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;Ctrl + E&lt;/code&gt; 显示最近打开的文件记录列表 （必备）&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;Ctrl + Q&lt;/code&gt; 光标所在的变量 / 类名 / 方法名等上面（也可以在提示补充的时候按），显示文档内容&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;Ctrl + U&lt;/code&gt; 前往当前光标所在的方法的父类的方法 / 接口定义 （必备）&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;Ctrl + H&lt;/code&gt; 显示当前类的层次结构&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;Ctrl + F1&lt;/code&gt; 在光标所在的错误代码处显示错误信息 （必备）&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;Ctrl + F3&lt;/code&gt; 调转到所选中的词的下一个引用位置 （必备）&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;Ctrl + Alt + L&lt;/code&gt; 格式化代码，可以对当前文件和整个包目录使用 （必备）&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;Ctrl + Alt + S&lt;/code&gt; 打开 &lt;code&gt;IntelliJ IDEA&lt;/code&gt; 系统设置 （必备）&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;Ctrl + Alt + Enter&lt;/code&gt; 光标所在行上空出一行，光标定位到新行 （必备）&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;Alt + Shift + 前方向键&lt;/code&gt; 移动光标所在行向上移动 （必备）&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;Ctrl + Shift + Alt + V &lt;/code&gt;无格式黏贴 （必备)&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;F3&lt;/code&gt; 在查找模式下，定位到下一个匹配处&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;F4&lt;/code&gt; 编辑源 （必备）&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;Ctrl + Shift + F7&lt;/code&gt; 高亮显示所有该选中文本，按 &lt;code&gt;Esc&lt;/code&gt; 高亮消失 （必备）&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;Ctrl + Shift + Alt + U&lt;/code&gt; 自动生成&lt;code&gt;UML&lt;/code&gt;图,是真的方便. &lt;/li&gt;
-&lt;li&gt;&lt;code&gt;Ctrl + Shift + Alt + J&lt;/code&gt; 选中相同的&lt;/li&gt;
+&lt;h1 id=&#34;idea常用&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#idea常用&#34;&gt;#&lt;/a&gt;  &lt;code&gt;IDEA&lt;/code&gt;  常用&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;Ctrl + Z&lt;/code&gt;  撤销 （必备）&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Ctrl + Shift + Z&lt;/code&gt;  恢复 （必备）&lt;/li&gt;
+&lt;/ul&gt;
+&lt;span id=&#34;more&#34;&gt;&lt;/span&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;Ctrl + Y&lt;/code&gt;  删除光标所在行 或 删除选中的行 （必备）&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Ctrl + W&lt;/code&gt;  递进式选择代码块。可选中光标所在的单词或段落，连续按会在原有选中的基础上再扩展选中范围（必备）&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Ctrl + E&lt;/code&gt;  显示最近打开的文件记录列表 （必备）&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Ctrl + Q&lt;/code&gt;  光标所在的变量 / 类名 / 方法名等上面（也可以在提示补充的时候按），显示文档内容&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Ctrl + U&lt;/code&gt;  前往当前光标所在的方法的父类的方法 / 接口定义 （必备）&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Ctrl + H&lt;/code&gt;  显示当前类的层次结构&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Ctrl + F1&lt;/code&gt;  在光标所在的错误代码处显示错误信息 （必备）&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Ctrl + F3&lt;/code&gt;  调转到所选中的词的下一个引用位置 （必备）&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Ctrl + Alt + L&lt;/code&gt;  格式化代码，可以对当前文件和整个包目录使用 （必备）&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Ctrl + Alt + S&lt;/code&gt;  打开  &lt;code&gt;IntelliJ IDEA&lt;/code&gt;  系统设置 （必备）&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Ctrl + Alt + Enter&lt;/code&gt;  光标所在行上空出一行，光标定位到新行 （必备）&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Alt + Shift + 前方向键&lt;/code&gt;  移动光标所在行向上移动 （必备）&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Ctrl + Shift + Alt + V &lt;/code&gt; 无格式黏贴 （必备)&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;F3&lt;/code&gt;  在查找模式下，定位到下一个匹配处&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;F4&lt;/code&gt;  编辑源 （必备）&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Ctrl + Shift + F7&lt;/code&gt;  高亮显示所有该选中文本，按  &lt;code&gt;Esc&lt;/code&gt;  高亮消失 （必备）&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Ctrl + Shift + Alt + U&lt;/code&gt;  自动生成 &lt;code&gt;UML&lt;/code&gt;  图，是真的方便.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Ctrl + Shift + Alt + J&lt;/code&gt;  选中相同的&lt;/li&gt;
 &lt;/ul&gt;
  ]]></description>
         </item>

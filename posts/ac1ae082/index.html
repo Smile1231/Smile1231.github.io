@@ -117,12 +117,12 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
       </div>
       <div id="imgs" class="pjax">
         <ul>
-          <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1gipeu7txpzj20zk0m81kx.jpg"></li>
-          <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1gipex2cdtbj20zk0m8x6p.jpg"></li>
-          <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1giclflwv2aj20zk0m84qp.jpg"></li>
-          <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1giclfb3vzhj20zk0m8wny.jpg"></li>
-          <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1giclhpw3lwj20zk0m8gvw.jpg"></li>
-          <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1gipetfk5zwj20zk0m8e81.jpg"></li>
+          <li class="item" data-background-image="https://tva2.sinaimg.cn/large/6833939bly1gipetfk5zwj20zk0m8e81.jpg"></li>
+          <li class="item" data-background-image="https://tva2.sinaimg.cn/large/6833939bly1giclflwv2aj20zk0m84qp.jpg"></li>
+          <li class="item" data-background-image="https://tva2.sinaimg.cn/large/6833939bly1giph4baakhj20zk0m8h5q.jpg"></li>
+          <li class="item" data-background-image="https://tva2.sinaimg.cn/large/6833939bly1gipeudstjqj20zk0m8k3r.jpg"></li>
+          <li class="item" data-background-image="https://tva2.sinaimg.cn/large/6833939bly1gicitcxhpij20zk0m8hdt.jpg"></li>
+          <li class="item" data-background-image="https://tva2.sinaimg.cn/large/6833939bly1gicis081o9j20zk0m8dmr.jpg"></li>
         </ul>
       </div>
     </header>
@@ -166,26 +166,20 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
   <div class="body md" itemprop="articleBody">
     
 
-    <p>这里演示使用<code>163</code>邮箱发邮件</p>
-<h2 id="注册163，并打开配置"><a href="#注册163，并打开配置" class="headerlink" title="注册163，并打开配置"></a>注册<code>163</code>，并打开配置</h2><p>记得保存授权吗</p>
+    <p>这里演示使用 <code>163</code>  邮箱发邮件</p>
+<h2 id="注册163并打开配置"><a class="markdownIt-Anchor" href="#注册163并打开配置">#</a> 注册 <code>163</code> ，并打开配置</h2>
+<p>记得保存授权吗</p>
 <img data-src="/posts/ac1ae082/2022-07-06-21-58-05.png" class="">
-
 <span id="more"></span>
-
-<h2 id="增加maven以来"><a href="#增加maven以来" class="headerlink" title="增加maven以来"></a>增加<code>maven</code>以来</h2><figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">&lt;!-- send email --&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">dependency</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">groupId</span>&gt;</span>org.springframework.boot<span class="tag">&lt;/<span class="name">groupId</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>spring-boot-starter-mail<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">dependency</span>&gt;</span></span><br></pre></td></tr></table></figure>
-
-<h2 id="yaml文件配置"><a href="#yaml文件配置" class="headerlink" title="yaml文件配置"></a><code>yaml</code>文件配置</h2><figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">spring:</span></span><br><span class="line">  <span class="attr">mail:</span></span><br><span class="line">    <span class="attr">host:</span> <span class="string">smtp.163.com</span></span><br><span class="line">    <span class="attr">username:</span> <span class="string">********</span> <span class="comment">#登陆账号</span></span><br><span class="line">    <span class="attr">password:</span> <span class="string">********</span> <span class="comment">#登陆密码（或授权码），开启上面配置时会有</span></span><br><span class="line">    <span class="attr">properties:</span></span><br><span class="line">      <span class="attr">from:</span> <span class="string">JinMaoToRich@163.com</span> <span class="comment">#邮件发信人（即真实邮箱）</span></span><br></pre></td></tr></table></figure>
-
-<h2 id="Java代码"><a href="#Java代码" class="headerlink" title="Java代码"></a><code>Java</code>代码</h2><p>实体类代码</p>
+<h2 id="增加maven以来"><a class="markdownIt-Anchor" href="#增加maven以来">#</a> 增加 <code>maven</code>  以来</h2>
+<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">&lt;!-- send email --&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">dependency</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">groupId</span>&gt;</span>org.springframework.boot<span class="tag">&lt;/<span class="name">groupId</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>spring-boot-starter-mail<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">dependency</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<h2 id="yaml文件配置"><a class="markdownIt-Anchor" href="#yaml文件配置">#</a>  <code>yaml</code>  文件配置</h2>
+<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">spring:</span></span><br><span class="line">  <span class="attr">mail:</span></span><br><span class="line">    <span class="attr">host:</span> <span class="string">smtp.163.com</span></span><br><span class="line">    <span class="attr">username:</span> <span class="string">********</span> <span class="comment">#登陆账号</span></span><br><span class="line">    <span class="attr">password:</span> <span class="string">********</span> <span class="comment">#登陆密码（或授权码），开启上面配置时会有</span></span><br><span class="line">    <span class="attr">properties:</span></span><br><span class="line">      <span class="attr">from:</span> <span class="string">JinMaoToRich@163.com</span> <span class="comment">#邮件发信人（即真实邮箱）</span></span><br></pre></td></tr></table></figure>
+<h2 id="java代码"><a class="markdownIt-Anchor" href="#java代码">#</a>  <code>Java</code>  代码</h2>
+<p>实体类代码</p>
 <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">@Data</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">SendEmailRecord</span> <span class="keyword">implements</span> <span class="title">Serializable</span> </span>&#123;</span><br><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment">    * 主键</span></span><br><span class="line"><span class="comment">    */</span></span><br><span class="line"><span class="keyword">private</span> Integer id;</span><br><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment">    * 邮件发送人</span></span><br><span class="line"><span class="comment">    */</span></span><br><span class="line"><span class="keyword">private</span> String from;</span><br><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment">    * 邮件接受人</span></span><br><span class="line"><span class="comment">    */</span></span><br><span class="line"><span class="keyword">private</span> String to;</span><br><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment">    * 邮件主题</span></span><br><span class="line"><span class="comment">    */</span></span><br><span class="line"><span class="keyword">private</span> String subject;</span><br><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment">    * 邮件内容</span></span><br><span class="line"><span class="comment">    */</span></span><br><span class="line"><span class="keyword">private</span> String text;</span><br><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment">    * 抄送</span></span><br><span class="line"><span class="comment">    */</span></span><br><span class="line"><span class="keyword">private</span> String cc;</span><br><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment">    * 密送</span></span><br><span class="line"><span class="comment">    */</span></span><br><span class="line"><span class="keyword">private</span> String bcc;</span><br><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment">    * 0 - ok , 1 - fail</span></span><br><span class="line"><span class="comment">    */</span></span><br><span class="line"><span class="keyword">private</span> Byte status;</span><br><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment">    * 报错信息</span></span><br><span class="line"><span class="comment">    */</span></span><br><span class="line"><span class="keyword">private</span> String error;</span><br><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment">    * 发送时间</span></span><br><span class="line"><span class="comment">    */</span></span><br><span class="line"><span class="keyword">private</span> Date sendDate;</span><br><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment">    * 计算文件夹路径</span></span><br><span class="line"><span class="comment">    */</span></span><br><span class="line"><span class="keyword">private</span> String computationDirectory;</span><br><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment">    * 邮件附件</span></span><br><span class="line"><span class="comment">    */</span></span><br><span class="line"><span class="meta">@JsonIgnore</span></span><br><span class="line"><span class="keyword">private</span> List&lt;File&gt; fileList;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-
 <p>发送邮件代码</p>
 <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">@Slf4j</span></span><br><span class="line"><span class="meta">@Component</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">SendMailService</span> </span>&#123;</span><br><span class="line">    <span class="meta">@Autowired</span></span><br><span class="line">    <span class="keyword">private</span> JavaMailSenderImpl mailSender;<span class="comment">//注入邮件工具类</span></span><br><span class="line">    <span class="meta">@Autowired</span></span><br><span class="line">    <span class="keyword">private</span> SendEmailRecordDao sendEmailRecordDao;</span><br><span class="line">    <span class="meta">@Autowired</span></span><br><span class="line">    <span class="keyword">private</span> ShellProperties shellProperties;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">SendMailWithAttach</span><span class="params">(SendEmailRecord sendEmailInfo)</span></span>&#123;</span><br><span class="line">    <span class="keyword">try</span> &#123;</span><br><span class="line">        log.info(<span class="string">&quot;start to send email to &#123;&#125;&quot;</span>,sendEmailInfo.getTo());</span><br><span class="line">        MimeMessageHelper messageHelper = <span class="keyword">new</span> MimeMessageHelper(mailSender.createMimeMessage(), <span class="keyword">true</span>);<span class="comment">//true表示支持复杂类型</span></span><br><span class="line">        sendEmailInfo.setFrom(getMailSendFrom());<span class="comment">//邮件发信人从配置项读取</span></span><br><span class="line">        messageHelper.setFrom(sendEmailInfo.getFrom());<span class="comment">//邮件发信人</span></span><br><span class="line">        messageHelper.setTo(sendEmailInfo.getTo().split(<span class="string">&quot;,&quot;</span>));<span class="comment">//邮件收信人</span></span><br><span class="line">        messageHelper.setSubject(sendEmailInfo.getSubject());<span class="comment">//邮件主题</span></span><br><span class="line">        messageHelper.setText(sendEmailInfo.getText());<span class="comment">//邮件内容</span></span><br><span class="line">        <span class="keyword">if</span> (StrUtil.isNotBlank(sendEmailInfo.getCc())) &#123;<span class="comment">//抄送</span></span><br><span class="line">            messageHelper.setCc(sendEmailInfo.getCc().split(<span class="string">&quot;,&quot;</span>));</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">if</span> (StrUtil.isNotBlank(sendEmailInfo.getBcc())) &#123;<span class="comment">//密送</span></span><br><span class="line">            messageHelper.setCc(sendEmailInfo.getBcc().split(<span class="string">&quot;,&quot;</span>));</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">if</span> (CollUtil.isNotEmpty(sendEmailInfo.getFileList())) &#123;<span class="comment">//添加邮件附件</span></span><br><span class="line">            <span class="keyword">for</span> (File file : sendEmailInfo.getFileList()) &#123;</span><br><span class="line">                messageHelper.addAttachment(file.getName(),file);</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        mailSender.send(messageHelper.getMimeMessage());<span class="comment">//正式发送邮件</span></span><br><span class="line">        sendEmailInfo.setStatus(SendMailStatusEnum.OK.getCode());</span><br><span class="line">        log.info(<span class="string">&quot;Send Email Success ：&#123;&#125;-&gt;&#123;&#125;&quot;</span>, sendEmailInfo.getFrom(), sendEmailInfo.getTo());</span><br><span class="line">    &#125; <span class="keyword">catch</span> (Exception e) &#123;</span><br><span class="line">        log.error(<span class="string">&quot;send Email failed , error is &#123;&#125;&quot;</span>,e.getMessage());</span><br><span class="line">        sendEmailInfo.setStatus(SendMailStatusEnum.FAILED.getCode());</span><br><span class="line">        sendEmailInfo.setError(e.getMessage());</span><br><span class="line">    &#125;<span class="keyword">finally</span> &#123;</span><br><span class="line">        saveMail(sendEmailInfo);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">//保存邮件</span></span><br><span class="line"><span class="function"><span class="keyword">private</span> <span class="keyword">void</span> <span class="title">saveMail</span><span class="params">(SendEmailRecord emailInfo)</span> </span>&#123;</span><br><span class="line">    log.info(<span class="string">&quot;start save send email record to database.&quot;</span>);</span><br><span class="line">    <span class="keyword">if</span> (Objects.equals(emailInfo.getTo(),shellProperties.getAlarmEmail()))&#123;</span><br><span class="line">        log.info(<span class="string">&quot;this is alarm email , email info is &#123;&#125;&quot;</span>,emailInfo);</span><br><span class="line">        emailInfo.setStatus(SendMailStatusEnum.FAILED.getCode());</span><br><span class="line">    &#125;</span><br><span class="line">    sendEmailRecordDao.insertSelective(emailInfo);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">//获取邮件发信人</span></span><br><span class="line"><span class="function"><span class="keyword">public</span> String <span class="title">getMailSendFrom</span><span class="params">()</span> </span>&#123;</span><br><span class="line">    <span class="keyword">return</span> mailSender.getJavaMailProperties().getProperty(<span class="string">&quot;from&quot;</span>);</span><br><span class="line">&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-
-
-
 
       <div class="tags">
           <a href="/tags/SrpingBoot/" rel="tag"><i class="ic i-tag"></i> SrpingBoot</a>
@@ -240,7 +234,7 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
     <div class="item left">
       
 
-  <a href="/posts/7874a051/" itemprop="url" rel="prev" data-background-image="https:&#x2F;&#x2F;tva3.sinaimg.cn&#x2F;mw690&#x2F;6833939bly1giph4wqtg4j20zk0m8x6p.jpg" title="Nginx踩坑之解决前后端跨域">
+  <a href="/posts/7874a051/" itemprop="url" rel="prev" data-background-image="https:&#x2F;&#x2F;tva2.sinaimg.cn&#x2F;mw690&#x2F;6833939bly1gipeu1usa7j20zk0m8b29.jpg" title="Nginx踩坑之解决前后端跨域">
   <span class="type">Previous Post</span>
   <span class="category"><i class="ic i-flag"></i> </span>
   <h3>Nginx踩坑之解决前后端跨域</h3>
@@ -250,7 +244,7 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
     <div class="item right">
       
 
-  <a href="/posts/66edb7d2/" itemprop="url" rel="next" data-background-image="https:&#x2F;&#x2F;tva3.sinaimg.cn&#x2F;mw690&#x2F;6833939bly1gipev1x5e4j20zk0m8b29.jpg" title="关于hexo使用shoka主题注意点">
+  <a href="/posts/66edb7d2/" itemprop="url" rel="next" data-background-image="https:&#x2F;&#x2F;tva2.sinaimg.cn&#x2F;mw690&#x2F;6833939bly1giclize41wj20zk0m87gk.jpg" title="关于hexo使用shoka主题注意点">
   <span class="type">Next Post</span>
   <span class="category"><i class="ic i-flag"></i> </span>
   <h3>关于hexo使用shoka主题注意点</h3>
@@ -272,7 +266,7 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
   <div class="panels">
     <div class="inner">
       <div class="contents panel pjax" data-title="Contents">
-          <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%B3%A8%E5%86%8C163%EF%BC%8C%E5%B9%B6%E6%89%93%E5%BC%80%E9%85%8D%E7%BD%AE"><span class="toc-number">1.</span> <span class="toc-text">注册163，并打开配置</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%A2%9E%E5%8A%A0maven%E4%BB%A5%E6%9D%A5"><span class="toc-number">2.</span> <span class="toc-text">增加maven以来</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#yaml%E6%96%87%E4%BB%B6%E9%85%8D%E7%BD%AE"><span class="toc-number">3.</span> <span class="toc-text">yaml文件配置</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Java%E4%BB%A3%E7%A0%81"><span class="toc-number">4.</span> <span class="toc-text">Java代码</span></a></li></ol>
+          <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%B3%A8%E5%86%8C163%E5%B9%B6%E6%89%93%E5%BC%80%E9%85%8D%E7%BD%AE"><span class="toc-number">1.</span> <span class="toc-text"> 注册 163 ，并打开配置</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%A2%9E%E5%8A%A0maven%E4%BB%A5%E6%9D%A5"><span class="toc-number">2.</span> <span class="toc-text"> 增加 maven  以来</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#yaml%E6%96%87%E4%BB%B6%E9%85%8D%E7%BD%AE"><span class="toc-number">3.</span> <span class="toc-text">  yaml  文件配置</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#java%E4%BB%A3%E7%A0%81"><span class="toc-number">4.</span> <span class="toc-text">  Java  代码</span></a></li></ol>
       </div>
       <div class="related panel pjax" data-title="Related">
       </div>
@@ -287,13 +281,13 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
 <nav class="state">
     <div class="item posts">
       <a href="/archives/">
-        <span class="count">142</span>
+        <span class="count">143</span>
         <span class="name">posts</span>
       </a>
     </div>
     <div class="item categories">
       <a href="/categories/">
-        <span class="count">73</span>
+        <span class="count">74</span>
         <span class="name">categories</span>
       </a>
     </div>
@@ -378,10 +372,21 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
   <li class="item">
     
 <div class="breadcrumb">
-<a href="/categories/Java/" title="In Java">Java</a>
+<a href="/categories/%E5%89%8D%E7%AB%AF/" title="In 前端">前端</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/%E5%89%8D%E7%AB%AF/Vue/" title="In Vue">Vue</a>
 </div>
 
-    <span><a href="/posts/1da18d70/" title="Java8内置四大函数式接口">Java8内置四大函数式接口</a></span>
+    <span><a href="/posts/21d4b84b/" title="Vue3项目的创建">Vue3项目的创建</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+</div>
+
+    <span><a href="/posts/49a9ac1a/" title="Springboot优雅的实现重试">Springboot优雅的实现重试</a></span>
   </li>
 
       
@@ -390,30 +395,20 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
 <div class="breadcrumb">
 <a href="/categories/Java%E9%9D%A2%E8%AF%95/" title="In Java面试">Java面试</a>
 <i class="ic i-angle-right"></i>
-<a href="/categories/Java%E9%9D%A2%E8%AF%95/Spring%E4%BA%8B%E5%8A%A1/" title="In Spring事务">Spring事务</a>
+<a href="/categories/Java%E9%9D%A2%E8%AF%95/Tools/" title="In Tools">Tools</a>
 </div>
 
-    <span><a href="/posts/7e4601e3/" title="面试之旅之关于Spring事务处理">面试之旅之关于Spring事务处理</a></span>
+    <span><a href="/posts/6714b4a9/" title="FastJson序列化使用">FastJson序列化使用</a></span>
   </li>
 
       
   <li class="item">
     
 <div class="breadcrumb">
-<a href="/categories/%E6%95%B0%E6%8D%AE%E5%BA%93/" title="In 数据库">数据库</a>
+<a href="/categories/Hexo/" title="In Hexo">Hexo</a>
 </div>
 
-    <span><a href="/posts/377b6f7d/" title="关于mysql中对Json类型字段进行筛选查询">关于mysql中对Json类型字段进行筛选查询</a></span>
-  </li>
-
-      
-  <li class="item">
-    
-<div class="breadcrumb">
-<a href="/categories/Java/" title="In Java">Java</a>
-</div>
-
-    <span><a href="/posts/1c3390ab/" title="将Java数据输出为本地txt">将Java数据输出为本地txt</a></span>
+    <span><a href="/posts/575a6046/" title="Hexo-Next主题如何文章置顶">Hexo-Next主题如何文章置顶</a></span>
   </li>
 
       
@@ -432,34 +427,31 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
   <li class="item">
     
 <div class="breadcrumb">
-<a href="/categories/Java%E9%9D%A2%E8%AF%95/" title="In Java面试">Java面试</a>
+<a href="/categories/Java/" title="In Java">Java</a>
+</div>
+
+    <span><a href="/posts/a54ed4b0/" title="Java通过URL下载资源">Java通过URL下载资源</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+</div>
+
+    <span><a href="/posts/d0edc1ed/" title="Linux常用命令">Linux常用命令</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/Java/" title="In Java">Java</a>
 <i class="ic i-angle-right"></i>
-<a href="/categories/Java%E9%9D%A2%E8%AF%95/%E9%80%89%E6%8B%A9%E6%8E%92%E5%BA%8F/" title="In 选择排序">选择排序</a>
-<i class="ic i-angle-right"></i>
-<a href="/categories/Java%E9%9D%A2%E8%AF%95/%E9%80%89%E6%8B%A9%E6%8E%92%E5%BA%8F/%E7%AE%97%E6%B3%95/" title="In 算法">算法</a>
+<a href="/categories/Java/Mysql/" title="In Mysql">Mysql</a>
 </div>
 
-    <span><a href="/posts/43d00a99/" title="选择排序">选择排序</a></span>
-  </li>
-
-      
-  <li class="item">
-    
-<div class="breadcrumb">
-<a href="/categories/Mybtais/" title="In Mybtais">Mybtais</a>
-</div>
-
-    <span><a href="/posts/9aff665a/" title="mybatis中大于等于小于等于的写法">mybatis中大于等于小于等于的写法</a></span>
-  </li>
-
-      
-  <li class="item">
-    
-<div class="breadcrumb">
-<a href="/categories/Hexo/" title="In Hexo">Hexo</a>
-</div>
-
-    <span><a href="/posts/5c2529f6/" title="Hexo中添加动态2d二次元人物模型">Hexo中添加动态2d二次元人物模型</a></span>
+    <span><a href="/posts/69c17d37/" title="关于事务提交中踩坑">关于事务提交中踩坑</a></span>
   </li>
 
       
@@ -468,7 +460,7 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
 <div class="breadcrumb">
 </div>
 
-    <span><a href="/posts/1599bffe/" title="归并排序">归并排序</a></span>
+    <span><a href="/posts/dfdc2005/" title="JDK动态代理原理剖析(简洁版)">JDK动态代理原理剖析(简洁版)</a></span>
   </li>
 
       
@@ -477,7 +469,7 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
 <div class="breadcrumb">
 </div>
 
-    <span><a href="/posts/11faeb76/" title="Docker指令以及部署">Docker指令以及部署</a></span>
+    <span><a href="/posts/7874a051/" title="Nginx踩坑之解决前后端跨域">Nginx踩坑之解决前后端跨域</a></span>
   </li>
 
   </ul>
@@ -502,13 +494,13 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
     <span class="post-meta-item-icon">
       <i class="ic i-chart-area"></i>
     </span>
-    <span title="Symbols count total">620k words</span>
+    <span title="Symbols count total">622k words</span>
 
     <span class="post-meta-divider">|</span>
     <span class="post-meta-item-icon">
       <i class="ic i-coffee"></i>
     </span>
-    <span title="Reading time total">9:24</span>
+    <span title="Reading time total">9:25</span>
   </div>
 </div>
 

@@ -7,107 +7,107 @@
         <language>en</language>
         <pubDate>Wed, 16 Feb 2022 21:13:16 +0800</pubDate>
         <lastBuildDate>Wed, 16 Feb 2022 21:13:16 +0800</lastBuildDate>
-        <category>SAP</category>
         <category>生物信息</category>
         <category>基因编辑</category>
+        <category>前端</category>
+        <category>Css</category>
         <category>Java</category>
+        <category>Corn</category>
+        <category>DDD</category>
+        <category>领域驱动设计</category>
+        <category>SAP</category>
+        <category>DisPlay属性</category>
+        <category>Docker</category>
         <category>Cache</category>
         <category>Cookie</category>
         <category>Session</category>
         <category>Java面试</category>
-        <category>Corn</category>
-        <category>前端</category>
-        <category>Css</category>
-        <category>DisPlay属性</category>
-        <category>DDD</category>
-        <category>领域驱动设计</category>
-        <category>Docker</category>
         <category>blog</category>
         <category>hexo</category>
         <category>next</category>
         <category>FastJson</category>
+        <category>IDEA</category>
         <category>JavaScript</category>
         <category>Html</category>
         <category>SpringBoot</category>
-        <category>IDEA</category>
-        <category>Jvm</category>
         <category>Jenkins</category>
         <category>CI/CD</category>
-        <category>函数式接口</category>
         <category>map</category>
         <category>Stream流</category>
+        <category>Jvm</category>
         <category>Assert</category>
+        <category>函数式接口</category>
         <category>java</category>
         <category>calender</category>
         <category>Springboot</category>
-        <category>Python</category>
-        <category>Jupyter</category>
-        <category>Machine Learning</category>
         <category>LeetCode</category>
         <category>算法</category>
         <category>递归</category>
-        <category>numpy</category>
-        <category>pandas</category>
-        <category>sklearn</category>
         <category>Linux</category>
         <category>Mybatis</category>
         <category>分页查询</category>
-        <category>模糊查询</category>
-        <category>Spring</category>
+        <category>Machine Learning</category>
+        <category>numpy</category>
+        <category>pandas</category>
+        <category>sklearn</category>
+        <category>Python</category>
+        <category>Jupyter</category>
         <category>Nginx</category>
+        <category>Spring</category>
+        <category>模糊查询</category>
         <category>SrpingBoot</category>
         <category>文件上传</category>
-        <category>事务</category>
-        <category>master</category>
         <category>TypeScript</category>
         <category>WebPack</category>
-        <category>UML</category>
+        <category>master</category>
+        <category>事务</category>
         <category>Groovy</category>
+        <category>UML</category>
         <category>Ubuntu</category>
         <category>Mysql</category>
+        <category>Vue</category>
         <category>VsCode</category>
         <category>Shell</category>
         <category>VSCODE</category>
         <category>快捷键</category>
-        <category>Vue</category>
         <category>Stream</category>
-        <category>日期</category>
         <category>线程池</category>
         <category>ubuntu</category>
         <category>虚拟机</category>
+        <category>日期</category>
+        <category>二分查找</category>
+        <category>数据挖掘</category>
         <category>Hadoop</category>
         <category>操作系统</category>
         <category>EasyExcel</category>
-        <category>二分查找</category>
         <category>node</category>
-        <category>数据挖掘</category>
         <category>JVM</category>
         <category>Yaml</category>
-        <category>数据库</category>
-        <category>Hexo</category>
         <category>junit</category>
+        <category>Hexo</category>
+        <category>数据库</category>
         <category>Mysql事务</category>
-        <category>Git</category>
-        <category>冒泡排序</category>
         <category>git,npm,node</category>
+        <category>冒泡排序</category>
         <category>动态规划</category>
         <category>堆排序</category>
-        <category>多线程</category>
+        <category>Git</category>
         <category>幂等性</category>
         <category>Google</category>
+        <category>多线程</category>
         <category>流</category>
-        <category>快速排序</category>
-        <category>正则表达式</category>
         <category>归并排序</category>
+        <category>正则表达式</category>
+        <category>快速排序</category>
         <category>直接插入排序</category>
         <category>选择排序</category>
         <category>Java 面试</category>
         <category>数据结构</category>
         <category>阻塞队列</category>
         <category>Spring事务</category>
+        <category>Date</category>
         <category>JDK</category>
         <category>动态代理</category>
-        <category>Date</category>
         <category>ArrayList</category>
         <category>接口</category>
         <category>SpringMvc</category>
@@ -123,139 +123,174 @@
             <category>Java面试</category>
             <category>操作系统</category>
             <pubDate>Wed, 16 Feb 2022 21:13:16 +0800</pubDate>
-            <description><![CDATA[ &lt;h1 id=&#34;常见面试题整理–计算机网络篇（每位开发者必备）&#34;&gt;&lt;a href=&#34;#常见面试题整理–计算机网络篇（每位开发者必备）&#34; class=&#34;headerlink&#34; title=&#34;常见面试题整理–计算机网络篇（每位开发者必备）&#34;&gt;&lt;/a&gt;常见面试题整理–计算机网络篇（每位开发者必备）&lt;/h1&gt;&lt;img data-src=&#34;/posts/c7cf6e41/2022-02-16-21-31-41.png&#34; class=&#34;&#34;&gt;
-
-&lt;h2 id=&#34;1-请简述TCP-UDP的区别&#34;&gt;&lt;a href=&#34;#1-请简述TCP-UDP的区别&#34; class=&#34;headerlink&#34; title=&#34;1. 请简述TCP\UDP的区别&#34;&gt;&lt;/a&gt;1. 请简述&lt;code&gt;TCP\UDP&lt;/code&gt;的区别&lt;/h2&gt;&lt;p&gt;&lt;code&gt;TCP&lt;/code&gt;和&lt;code&gt;UDP&lt;/code&gt;是&lt;code&gt;OSI&lt;/code&gt;模型中的运输层中的协议。&lt;code&gt;TCP&lt;/code&gt;提供可靠的通信传输，而&lt;code&gt;UDP&lt;/code&gt;则常被用于让广播和细节控制交给应用的通信传输。&lt;/p&gt;
+            <description><![CDATA[ &lt;h1 id=&#34;常见面试题整理计算机网络篇每位开发者必备&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#常见面试题整理计算机网络篇每位开发者必备&#34;&gt;#&lt;/a&gt; 常见面试题整理–计算机网络篇（每位开发者必备）&lt;/h1&gt;
+&lt;img data-src=&#34;/posts/c7cf6e41/2022-02-16-21-31-41.png&#34; class=&#34;&#34;&gt;
+&lt;h2 id=&#34;1-请简述tcpudp的区别&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#1-请简述tcpudp的区别&#34;&gt;#&lt;/a&gt; 1. 请简述 &lt;code&gt;TCP\UDP&lt;/code&gt;  的区别&lt;/h2&gt;
+&lt;p&gt;&lt;code&gt;TCP&lt;/code&gt;  和 &lt;code&gt;UDP&lt;/code&gt;  是 &lt;code&gt;OSI&lt;/code&gt;  模型中的运输层中的协议。 &lt;code&gt;TCP&lt;/code&gt;  提供可靠的通信传输，而 &lt;code&gt;UDP&lt;/code&gt;  则常被用于让广播和细节控制交给应用的通信传输。&lt;/p&gt;
 &lt;p&gt;两者的区别大致如下：&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;code&gt;TCP&lt;/code&gt;面向连接，&lt;code&gt;UDP&lt;/code&gt;面向非连接即发送数据前不需要建立链接&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;TCP&lt;/code&gt;提供可靠的服务（数据传输），&lt;code&gt;UDP&lt;/code&gt;无法保证&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;TCP&lt;/code&gt;面向字节流，&lt;code&gt;UDP&lt;/code&gt;面向报文&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;TCP&lt;/code&gt;数据传输慢，&lt;code&gt;UDP&lt;/code&gt;数据传输快&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;TCP&lt;/code&gt;  面向连接， &lt;code&gt;UDP&lt;/code&gt;  面向非连接即发送数据前不需要建立链接&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;TCP&lt;/code&gt;  提供可靠的服务（数据传输）， &lt;code&gt;UDP&lt;/code&gt;  无法保证&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;TCP&lt;/code&gt;  面向字节流， &lt;code&gt;UDP&lt;/code&gt;  面向报文&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;TCP&lt;/code&gt;  数据传输慢， &lt;code&gt;UDP&lt;/code&gt;  数据传输快&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2 id=&#34;2-请简单说一下你了解的端口及对应的服务？&#34;&gt;&lt;a href=&#34;#2-请简单说一下你了解的端口及对应的服务？&#34; class=&#34;headerlink&#34; title=&#34;2. 请简单说一下你了解的端口及对应的服务？&#34;&gt;&lt;/a&gt;2. 请简单说一下你了解的端口及对应的服务？&lt;/h2&gt;&lt;span id=&#34;more&#34;&gt;&lt;/span&gt;
-
+&lt;h2 id=&#34;2-请简单说一下你了解的端口及对应的服务&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#2-请简单说一下你了解的端口及对应的服务&#34;&gt;#&lt;/a&gt; 2. 请简单说一下你了解的端口及对应的服务？&lt;/h2&gt;
+&lt;span id=&#34;more&#34;&gt;&lt;/span&gt;
 &lt;img data-src=&#34;/posts/c7cf6e41/2022-02-16-21-31-53.png&#34; class=&#34;&#34;&gt;
-
-&lt;p&gt;&lt;strong&gt;端口简介：本文介绍端口的概念，分类，以及如何关闭/开启一个端口&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;端口简介：本文介绍端口的概念，分类，以及如何关闭 / 开启一个端口&lt;/strong&gt;&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;p&gt;&lt;code&gt;21端口&lt;/code&gt;：21端口主要用于&lt;code&gt;FTP（File Transfer Protocol，文件传输协议）&lt;/code&gt;服务。&lt;/p&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;21端口&lt;/code&gt; ：21 端口主要用于 &lt;code&gt;FTP（File Transfer Protocol，文件传输协议）&lt;/code&gt; 服务。&lt;/p&gt;
 &lt;/li&gt;
-&lt;li&gt;&lt;p&gt;&lt;code&gt;23&lt;/code&gt;端口：23端口主要用于&lt;code&gt;Telnet（远程登录）&lt;/code&gt;服务，是&lt;code&gt;Internet&lt;/code&gt;上普遍采用的登录和仿真程序。&lt;/p&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;23&lt;/code&gt;  端口：23 端口主要用于 &lt;code&gt;Telnet（远程登录）&lt;/code&gt; 服务，是 &lt;code&gt;Internet&lt;/code&gt;  上普遍采用的登录和仿真程序。&lt;/p&gt;
 &lt;/li&gt;
-&lt;li&gt;&lt;p&gt;&lt;code&gt;25端口&lt;/code&gt;：25端口为&lt;code&gt;SMTP（Simple Mail Transfer Protocol，简单邮件传输协议）&lt;/code&gt;服务器所开放，主要用于发送邮件，如今绝大多数邮件服务器都使用该协议。&lt;/p&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;25端口&lt;/code&gt; ：25 端口为 &lt;code&gt;SMTP（Simple Mail Transfer Protocol，简单邮件传输协议）&lt;/code&gt; 服务器所开放，主要用于发送邮件，如今绝大多数邮件服务器都使用该协议。&lt;/p&gt;
 &lt;/li&gt;
-&lt;li&gt;&lt;p&gt;&lt;code&gt;53端口&lt;/code&gt;：53端口为&lt;code&gt;DNS（Domain Name Server，域名服务器）&lt;/code&gt;服务器所开放，主要用于域名解析，&lt;code&gt;DNS&lt;/code&gt;服务在&lt;code&gt;NT&lt;/code&gt;系统中使用的最为广泛。&lt;/p&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;53端口&lt;/code&gt; ：53 端口为 &lt;code&gt;DNS（Domain Name Server，域名服务器）&lt;/code&gt; 服务器所开放，主要用于域名解析， &lt;code&gt;DNS&lt;/code&gt;  服务在 &lt;code&gt;NT&lt;/code&gt;  系统中使用的最为广泛。&lt;/p&gt;
 &lt;/li&gt;
-&lt;li&gt;&lt;p&gt;&lt;code&gt;67、68端口&lt;/code&gt;：67、68端口分别是为&lt;code&gt;Bootstrap&lt;/code&gt;服务的&lt;code&gt;Bootstrap Protocol Server（引导程序协议服务端）&lt;/code&gt;和&lt;code&gt;Bootstrap Protocol Client（引导程序协议客户端）&lt;/code&gt;开放的端口。&lt;/p&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;67、68端口&lt;/code&gt; ：67、68 端口分别是为 &lt;code&gt;Bootstrap&lt;/code&gt;  服务的 &lt;code&gt;Bootstrap Protocol Server（引导程序协议服务端）&lt;/code&gt; 和 &lt;code&gt;Bootstrap Protocol Client（引导程序协议客户端）&lt;/code&gt; 开放的端口。&lt;/p&gt;
 &lt;/li&gt;
-&lt;li&gt;&lt;p&gt;&lt;code&gt;69端口&lt;/code&gt;：&lt;code&gt;TFTP&lt;/code&gt;是Cisco公司开发的一个&lt;code&gt;简单文件传输协议&lt;/code&gt;，类似于&lt;code&gt;FTP&lt;/code&gt;。&lt;/p&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;69端口&lt;/code&gt; ： &lt;code&gt;TFTP&lt;/code&gt;  是 Cisco 公司开发的一个 &lt;code&gt;简单文件传输协议&lt;/code&gt; ，类似于 &lt;code&gt;FTP&lt;/code&gt; 。&lt;/p&gt;
 &lt;/li&gt;
-&lt;li&gt;&lt;p&gt;&lt;code&gt;79端口&lt;/code&gt;：79端口是为&lt;code&gt;Finger&lt;/code&gt;服务开放的，主要用于查询远程主机在线用户、操作系统类型以及是否缓冲区溢出等用户的详细信息。&lt;/p&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;79端口&lt;/code&gt; ：79 端口是为 &lt;code&gt;Finger&lt;/code&gt;  服务开放的，主要用于查询远程主机在线用户、操作系统类型以及是否缓冲区溢出等用户的详细信息。&lt;/p&gt;
 &lt;/li&gt;
-&lt;li&gt;&lt;p&gt;&lt;code&gt;80端口&lt;/code&gt;：80端口是为&lt;code&gt;HTTP（HyperText Transport Protocol，超文本传输协议）&lt;/code&gt;开放的，这是上网冲浪使用最多的协议，主要用于在&lt;code&gt;WWW（World Wide Web，万维网）&lt;/code&gt;服务上传输信息的协议。&lt;/p&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;80端口&lt;/code&gt; ：80 端口是为 &lt;code&gt;HTTP（HyperText Transport Protocol，超文本传输协议）&lt;/code&gt; 开放的，这是上网冲浪使用最多的协议，主要用于在 &lt;code&gt;WWW（World Wide Web，万维网）&lt;/code&gt; 服务上传输信息的协议。&lt;/p&gt;
 &lt;/li&gt;
-&lt;li&gt;&lt;p&gt;&lt;code&gt;99端口&lt;/code&gt;：99端口是用于一个名为&lt;code&gt;“Metagram Relay”（亚对策延时）&lt;/code&gt;的服务，该服务比较少见，一般是用不到的。&lt;/p&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;99端口&lt;/code&gt; ：99 端口是用于一个名为 &lt;code&gt;“Metagram Relay”（亚对策延时）&lt;/code&gt; 的服务，该服务比较少见，一般是用不到的。&lt;/p&gt;
 &lt;/li&gt;
-&lt;li&gt;&lt;p&gt;&lt;code&gt;109、110端口&lt;/code&gt;：109端口是为&lt;code&gt;POP2（Post Office Protocol Version 2，邮局协议2）&lt;/code&gt;服务开放的，&lt;code&gt;110端口是为POP3（邮件协议3）&lt;/code&gt;服务开放的，&lt;code&gt;POP2、POP3&lt;/code&gt;都是主要用于接收邮件的。&lt;/p&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;109、110端口&lt;/code&gt; ：109 端口是为 &lt;code&gt;POP2（Post Office Protocol Version 2，邮局协议2）&lt;/code&gt; 服务开放的， &lt;code&gt;110端口是为POP3（邮件协议3）&lt;/code&gt; 服务开放的， &lt;code&gt;POP2、POP3&lt;/code&gt;  都是主要用于接收邮件的。&lt;/p&gt;
 &lt;/li&gt;
-&lt;li&gt;&lt;p&gt;&lt;code&gt;111端口&lt;/code&gt;：111端口是&lt;code&gt;SUN&lt;/code&gt;公司的&lt;code&gt;RPC（Remote Procedure Call，远程过程调用）&lt;/code&gt;服务所开放的端口，主要用于分布式系统中不同计算机的内部进程通信，RPC在多种网络服务中都是很重要的组件。&lt;/p&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;111端口&lt;/code&gt; ：111 端口是 &lt;code&gt;SUN&lt;/code&gt;  公司的 &lt;code&gt;RPC（Remote Procedure Call，远程过程调用）&lt;/code&gt; 服务所开放的端口，主要用于分布式系统中不同计算机的内部进程通信，RPC 在多种网络服务中都是很重要的组件。&lt;/p&gt;
 &lt;/li&gt;
-&lt;li&gt;&lt;p&gt;&lt;code&gt;113端口&lt;/code&gt;：113端口主要用于&lt;code&gt;Windows&lt;/code&gt;的&lt;code&gt;“Authentication Service”（验证服务）&lt;/code&gt;。&lt;/p&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;113端口&lt;/code&gt; ：113 端口主要用于 &lt;code&gt;Windows&lt;/code&gt;  的 &lt;code&gt;“Authentication Service”（验证服务）&lt;/code&gt; 。&lt;/p&gt;
 &lt;/li&gt;
-&lt;li&gt;&lt;p&gt;&lt;code&gt;119端口&lt;/code&gt;：119端口是为&lt;code&gt;“Network News Transfer Protocol”（网络新闻组传输协议，简称NNTP）&lt;/code&gt;开放的。&lt;/p&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;119端口&lt;/code&gt; ：119 端口是为 &lt;code&gt;“Network News Transfer Protocol”（网络新闻组传输协议，简称NNTP）&lt;/code&gt; 开放的。&lt;/p&gt;
 &lt;/li&gt;
-&lt;li&gt;&lt;p&gt;&lt;code&gt;135端口&lt;/code&gt;：135端口主要用于使用&lt;code&gt;RPC（Remote Procedure Call，远程过程调用）&lt;/code&gt;协议并提供&lt;code&gt;DCOM（分布式组件对象模型）&lt;/code&gt;服务。&lt;/p&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;135端口&lt;/code&gt; ：135 端口主要用于使用 &lt;code&gt;RPC（Remote Procedure Call，远程过程调用）&lt;/code&gt; 协议并提供 &lt;code&gt;DCOM（分布式组件对象模型）&lt;/code&gt; 服务。&lt;/p&gt;
 &lt;/li&gt;
-&lt;li&gt;&lt;p&gt;&lt;code&gt;137端口&lt;/code&gt;：137端口主要用于&lt;code&gt;“NetBIOS Name Service”（NetBIOS名称服务）&lt;/code&gt;。&lt;/p&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;137端口&lt;/code&gt; ：137 端口主要用于 &lt;code&gt;“NetBIOS Name Service”（NetBIOS名称服务）&lt;/code&gt; 。&lt;/p&gt;
 &lt;/li&gt;
-&lt;li&gt;&lt;p&gt;&lt;code&gt;139端口&lt;/code&gt;：139端口是为&lt;code&gt;“NetBIOS Session Service”&lt;/code&gt;提供的，主要用于提供&lt;code&gt;Windows&lt;/code&gt;文件和打印机共享以及&lt;code&gt;Unix&lt;/code&gt;中的&lt;code&gt;Samba&lt;/code&gt;服务。&lt;/p&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;139端口&lt;/code&gt; ：139 端口是为 &lt;code&gt;“NetBIOS Session Service”&lt;/code&gt;  提供的，主要用于提供 &lt;code&gt;Windows&lt;/code&gt;  文件和打印机共享以及 &lt;code&gt;Unix&lt;/code&gt;  中的 &lt;code&gt;Samba&lt;/code&gt;  服务。&lt;/p&gt;
 &lt;/li&gt;
-&lt;li&gt;&lt;p&gt;&lt;code&gt;143端口&lt;/code&gt;：143端口主要是用于&lt;code&gt;“Internet Message Access Protocol”v2（Internet消息访问协议，简称IMAP）&lt;/code&gt;。&lt;/p&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;143端口&lt;/code&gt; ：143 端口主要是用于 &lt;code&gt;“Internet Message Access Protocol”v2（Internet消息访问协议，简称IMAP）&lt;/code&gt; 。&lt;/p&gt;
 &lt;/li&gt;
-&lt;li&gt;&lt;p&gt;&lt;code&gt;161端口&lt;/code&gt;：161端口是用于&lt;code&gt;“Simple Network Management Protocol”（简单网络管理协议，简称SNMP）&lt;/code&gt;。&lt;/p&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;161端口&lt;/code&gt; ：161 端口是用于 &lt;code&gt;“Simple Network Management Protocol”（简单网络管理协议，简称SNMP）&lt;/code&gt; 。&lt;/p&gt;
 &lt;/li&gt;
-&lt;li&gt;&lt;p&gt;&lt;code&gt;443端口&lt;/code&gt;：43端口即网页浏览端口，主要是用于&lt;code&gt;HTTPS&lt;/code&gt;服务，是提供加密和通过安全端口传输的另一种&lt;code&gt;HTTP&lt;/code&gt;。&lt;/p&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;443端口&lt;/code&gt; ：43 端口即网页浏览端口，主要是用于 &lt;code&gt;HTTPS&lt;/code&gt;  服务，是提供加密和通过安全端口传输的另一种 &lt;code&gt;HTTP&lt;/code&gt; 。&lt;/p&gt;
 &lt;/li&gt;
-&lt;li&gt;&lt;p&gt;&lt;code&gt;554端口&lt;/code&gt;：554端口默认情况下用于&lt;code&gt;“Real Time Streaming Protocol”（实时流协议，简称RTSP）&lt;/code&gt;。&lt;/p&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;554端口&lt;/code&gt; ：554 端口默认情况下用于 &lt;code&gt;“Real Time Streaming Protocol”（实时流协议，简称RTSP）&lt;/code&gt; 。&lt;/p&gt;
 &lt;/li&gt;
-&lt;li&gt;&lt;p&gt;&lt;code&gt;1024端口&lt;/code&gt;：1024端口一般不固定分配给某个服务，在英文中的解释是&lt;code&gt;“Reserved”（保留）&lt;/code&gt;。&lt;/p&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;1024端口&lt;/code&gt; ：1024 端口一般不固定分配给某个服务，在英文中的解释是 &lt;code&gt;“Reserved”（保留）&lt;/code&gt; 。&lt;/p&gt;
 &lt;/li&gt;
-&lt;li&gt;&lt;p&gt;&lt;code&gt;1080端口&lt;/code&gt;：1080端口是Socks代理服务使用的端口，大家平时上网使用的WWW服务使用的是HTTP协议的代理服务。&lt;/p&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;1080端口&lt;/code&gt; ：1080 端口是 Socks 代理服务使用的端口，大家平时上网使用的 WWW 服务使用的是 HTTP 协议的代理服务。&lt;/p&gt;
 &lt;/li&gt;
-&lt;li&gt;&lt;p&gt;&lt;code&gt;1755端口&lt;/code&gt;：1755端口默认情况下用于&lt;code&gt;“Microsoft Media Server”（微软媒体服务器，简称MMS）&lt;/code&gt;。&lt;/p&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;1755端口&lt;/code&gt; ：1755 端口默认情况下用于 &lt;code&gt;“Microsoft Media Server”（微软媒体服务器，简称MMS）&lt;/code&gt; 。&lt;/p&gt;
 &lt;/li&gt;
-&lt;li&gt;&lt;p&gt;&lt;code&gt;4000端口&lt;/code&gt;：4000端口是用于大家经常使用的&lt;code&gt;QQ&lt;/code&gt;聊天工具的，再细说就是为&lt;code&gt;QQ&lt;/code&gt;客户端开放的端口，&lt;code&gt;QQ&lt;/code&gt;服务端使用的端口是&lt;code&gt;8000&lt;/code&gt;。&lt;/p&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;4000端口&lt;/code&gt; ：4000 端口是用于大家经常使用的 &lt;code&gt;QQ&lt;/code&gt;  聊天工具的，再细说就是为 &lt;code&gt;QQ&lt;/code&gt;  客户端开放的端口， &lt;code&gt;QQ&lt;/code&gt;  服务端使用的端口是 &lt;code&gt;8000&lt;/code&gt; 。&lt;/p&gt;
 &lt;/li&gt;
-&lt;li&gt;&lt;p&gt;&lt;code&gt;5554端口&lt;/code&gt;：在今年4月30日就报道出现了一种针对微软&lt;code&gt;lsass服务&lt;/code&gt;的新蠕虫病毒——震荡波（Worm.Sasser），该病毒可以利用&lt;code&gt;TCP 5554端口&lt;/code&gt;开启一个&lt;code&gt;FTP&lt;/code&gt;服务，主要被用于病毒的传播。&lt;/p&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;5554端口&lt;/code&gt; ：在今年 4 月 30 日就报道出现了一种针对微软 &lt;code&gt;lsass服务&lt;/code&gt; 的新蠕虫病毒 —— 震荡波（Worm.Sasser），该病毒可以利用 &lt;code&gt;TCP 5554端口&lt;/code&gt; 开启一个 &lt;code&gt;FTP&lt;/code&gt;  服务，主要被用于病毒的传播。&lt;/p&gt;
 &lt;/li&gt;
-&lt;li&gt;&lt;p&gt;&lt;code&gt;5632端口&lt;/code&gt;：5632端口是被大家所熟悉的远程控制软件&lt;code&gt;pcAnywhere&lt;/code&gt;所开启的端口。&lt;/p&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;5632端口&lt;/code&gt; ：5632 端口是被大家所熟悉的远程控制软件 &lt;code&gt;pcAnywhere&lt;/code&gt;  所开启的端口。&lt;/p&gt;
 &lt;/li&gt;
-&lt;li&gt;&lt;p&gt;&lt;code&gt;8080端口&lt;/code&gt;：8080端口同80端口，是被用于&lt;code&gt;WWW&lt;/code&gt;代理服务的，可以实现网页&lt;/p&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;8080端口&lt;/code&gt; ：8080 端口同 80 端口，是被用于 &lt;code&gt;WWW&lt;/code&gt;  代理服务的，可以实现网页&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2 id=&#34;3-说一说TCP的三次握手&#34;&gt;&lt;a href=&#34;#3-说一说TCP的三次握手&#34; class=&#34;headerlink&#34; title=&#34;3. 说一说TCP的三次握手&#34;&gt;&lt;/a&gt;3. 说一说&lt;code&gt;TCP&lt;/code&gt;的三次握手&lt;/h2&gt;&lt;p&gt;在&lt;code&gt;TCP/IP&lt;/code&gt;协议中，&lt;code&gt;TCP协议&lt;/code&gt;提供可靠的连接服务，连接是通过三次握手进行初始化的。三次握手的目的是同步连接双方的序列号和确认号并交换&lt;code&gt;TCP&lt;/code&gt;窗口大小信息。&lt;/p&gt;
-&lt;p&gt;下面详细说一下三次握手（来自简析&lt;code&gt;TCP&lt;/code&gt;的三次握手与四次分手）&lt;/p&gt;
+&lt;h2 id=&#34;3-说一说tcp的三次握手&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#3-说一说tcp的三次握手&#34;&gt;#&lt;/a&gt; 3. 说一说 &lt;code&gt;TCP&lt;/code&gt;  的三次握手&lt;/h2&gt;
+&lt;p&gt;在 &lt;code&gt;TCP/IP&lt;/code&gt;  协议中， &lt;code&gt;TCP协议&lt;/code&gt; 提供可靠的连接服务，连接是通过三次握手进行初始化的。三次握手的目的是同步连接双方的序列号和确认号并交换 &lt;code&gt;TCP&lt;/code&gt;  窗口大小信息。&lt;/p&gt;
+&lt;p&gt;下面详细说一下三次握手（来自简析 &lt;code&gt;TCP&lt;/code&gt;  的三次握手与四次分手）&lt;/p&gt;
 &lt;img data-src=&#34;/posts/c7cf6e41/2022-02-16-21-32-08.png&#34; class=&#34;&#34;&gt;
-
 &lt;img data-src=&#34;/posts/c7cf6e41/2022-02-16-21-32-16.png&#34; class=&#34;&#34;&gt;
-
-&lt;h2 id=&#34;4-有哪些私有（保留）地址？&#34;&gt;&lt;a href=&#34;#4-有哪些私有（保留）地址？&#34; class=&#34;headerlink&#34; title=&#34;4. 有哪些私有（保留）地址？&#34;&gt;&lt;/a&gt;4. 有哪些私有（保留）地址？&lt;/h2&gt;&lt;ul&gt;
-&lt;li&gt;&lt;code&gt;A&lt;/code&gt;类：&lt;code&gt;10.0.0.0 - 10.255.255.255&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;B&lt;/code&gt;类：&lt;code&gt;172.16.0.0 - 172.31.255.255&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;C&lt;/code&gt;类：&lt;code&gt;192.168.0.0 - 192.168.255.255&lt;/code&gt;&lt;/li&gt;
+&lt;h2 id=&#34;4-有哪些私有保留地址&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#4-有哪些私有保留地址&#34;&gt;#&lt;/a&gt; 4. 有哪些私有（保留）地址？&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;A&lt;/code&gt;  类： &lt;code&gt;10.0.0.0 - 10.255.255.255&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;B&lt;/code&gt;  类： &lt;code&gt;172.16.0.0 - 172.31.255.255&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;C&lt;/code&gt;  类： &lt;code&gt;192.168.0.0 - 192.168.255.255&lt;/code&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2 id=&#34;5-IP地址分为哪几类？简单说一下各个分类&#34;&gt;&lt;a href=&#34;#5-IP地址分为哪几类？简单说一下各个分类&#34; class=&#34;headerlink&#34; title=&#34;5. IP地址分为哪几类？简单说一下各个分类&#34;&gt;&lt;/a&gt;5. &lt;code&gt;IP&lt;/code&gt;地址分为哪几类？简单说一下各个分类&lt;/h2&gt;&lt;img data-src=&#34;/posts/c7cf6e41/2022-02-16-21-32-36.png&#34; class=&#34;&#34;&gt;
-
-&lt;p&gt;&lt;code&gt;IPv6 &lt;/code&gt;– 采用&lt;code&gt;128bit&lt;/code&gt;，首部固定部分为&lt;code&gt;40&lt;/code&gt;字节。&lt;/p&gt;
-&lt;h2 id=&#34;6-在浏览器中输入网址之后执行会发生什么？&#34;&gt;&lt;a href=&#34;#6-在浏览器中输入网址之后执行会发生什么？&#34; class=&#34;headerlink&#34; title=&#34;6. 在浏览器中输入网址之后执行会发生什么？&#34;&gt;&lt;/a&gt;6. 在浏览器中输入网址之后执行会发生什么？&lt;/h2&gt;&lt;ul&gt;
-&lt;li&gt;查找域名对应的&lt;code&gt;IP&lt;/code&gt;地址。这一步会依次查找浏览器缓存，系统缓存，路由器缓存，&lt;code&gt;ISPNDS&lt;/code&gt;缓存，根域名服务器&lt;/li&gt;
-&lt;li&gt;浏览器向&lt;code&gt;IP&lt;/code&gt;对应的&lt;code&gt;web&lt;/code&gt;服务器发送一个&lt;code&gt;HTTP&lt;/code&gt;请求&lt;/li&gt;
+&lt;h2 id=&#34;5-ip地址分为哪几类简单说一下各个分类&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#5-ip地址分为哪几类简单说一下各个分类&#34;&gt;#&lt;/a&gt; 5.  &lt;code&gt;IP&lt;/code&gt;  地址分为哪几类？简单说一下各个分类&lt;/h2&gt;
+&lt;img data-src=&#34;/posts/c7cf6e41/2022-02-16-21-32-36.png&#34; class=&#34;&#34;&gt;
+&lt;p&gt;&lt;code&gt;IPv6 &lt;/code&gt; – 采用 &lt;code&gt;128bit&lt;/code&gt; ，首部固定部分为 &lt;code&gt;40&lt;/code&gt;  字节。&lt;/p&gt;
+&lt;h2 id=&#34;6-在浏览器中输入网址之后执行会发生什么&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#6-在浏览器中输入网址之后执行会发生什么&#34;&gt;#&lt;/a&gt; 6. 在浏览器中输入网址之后执行会发生什么？&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;查找域名对应的 &lt;code&gt;IP&lt;/code&gt;  地址。这一步会依次查找浏览器缓存，系统缓存，路由器缓存， &lt;code&gt;ISPNDS&lt;/code&gt;  缓存，根域名服务器&lt;/li&gt;
+&lt;li&gt;浏览器向 &lt;code&gt;IP&lt;/code&gt;  对应的 &lt;code&gt;web&lt;/code&gt;  服务器发送一个 &lt;code&gt;HTTP&lt;/code&gt;  请求&lt;/li&gt;
 &lt;li&gt;服务器响应请求，发回网页内容&lt;/li&gt;
 &lt;li&gt;浏览器解析网页内容&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;更加详细的一种说法（以百度为例）（来自计算机网络之面试常考 - 牛客网）&lt;/p&gt;
 &lt;img data-src=&#34;/posts/c7cf6e41/2022-02-16-21-32-47.png&#34; class=&#34;&#34;&gt;
-
-&lt;h2 id=&#34;7-简单解释一些ARP协议的工作过程&#34;&gt;&lt;a href=&#34;#7-简单解释一些ARP协议的工作过程&#34; class=&#34;headerlink&#34; title=&#34;7. 简单解释一些ARP协议的工作过程&#34;&gt;&lt;/a&gt;7. 简单解释一些&lt;code&gt;ARP&lt;/code&gt;协议的工作过程&lt;/h2&gt;&lt;img data-src=&#34;/posts/c7cf6e41/2022-02-16-21-33-01.png&#34; class=&#34;&#34;&gt;
-
-&lt;h2 id=&#34;8-说一说OSI七层模型&#34;&gt;&lt;a href=&#34;#8-说一说OSI七层模型&#34; class=&#34;headerlink&#34; title=&#34;8. 说一说OSI七层模型&#34;&gt;&lt;/a&gt;8. 说一说&lt;code&gt;OSI&lt;/code&gt;七层模型&lt;/h2&gt;&lt;img data-src=&#34;/posts/c7cf6e41/2022-02-16-21-33-15.png&#34; class=&#34;&#34;&gt;
-
-&lt;h2 id=&#34;9-说一说TCP-IP四层模型&#34;&gt;&lt;a href=&#34;#9-说一说TCP-IP四层模型&#34; class=&#34;headerlink&#34; title=&#34;9. 说一说TCP/IP四层模型&#34;&gt;&lt;/a&gt;9. 说一说&lt;code&gt;TCP/IP&lt;/code&gt;四层模型&lt;/h2&gt;&lt;p&gt;&lt;code&gt;ISO&lt;/code&gt;制定的&lt;code&gt;OSI&lt;/code&gt;参考模型的过于庞大、复杂招致了许多批评。与此对照，由技术人员自己开发的&lt;code&gt;TCP/IP&lt;/code&gt;协议栈获得了更为广泛的应用。如图所示，是&lt;code&gt;TCP/IP&lt;/code&gt;参考模型和&lt;code&gt;OSI&lt;/code&gt;参考模型的对比示意图。&lt;/p&gt;
+&lt;h2 id=&#34;7-简单解释一些arp协议的工作过程&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#7-简单解释一些arp协议的工作过程&#34;&gt;#&lt;/a&gt; 7. 简单解释一些 &lt;code&gt;ARP&lt;/code&gt;  协议的工作过程&lt;/h2&gt;
+&lt;img data-src=&#34;/posts/c7cf6e41/2022-02-16-21-33-01.png&#34; class=&#34;&#34;&gt;
+&lt;h2 id=&#34;8-说一说osi七层模型&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#8-说一说osi七层模型&#34;&gt;#&lt;/a&gt; 8. 说一说 &lt;code&gt;OSI&lt;/code&gt;  七层模型&lt;/h2&gt;
+&lt;img data-src=&#34;/posts/c7cf6e41/2022-02-16-21-33-15.png&#34; class=&#34;&#34;&gt;
+&lt;h2 id=&#34;9-说一说tcpip四层模型&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#9-说一说tcpip四层模型&#34;&gt;#&lt;/a&gt; 9. 说一说 &lt;code&gt;TCP/IP&lt;/code&gt;  四层模型&lt;/h2&gt;
+&lt;p&gt;&lt;code&gt;ISO&lt;/code&gt;  制定的 &lt;code&gt;OSI&lt;/code&gt;  参考模型的过于庞大、复杂招致了许多批评。与此对照，由技术人员自己开发的 &lt;code&gt;TCP/IP&lt;/code&gt;  协议栈获得了更为广泛的应用。如图所示，是 &lt;code&gt;TCP/IP&lt;/code&gt;  参考模型和 &lt;code&gt;OSI&lt;/code&gt;  参考模型的对比示意图。&lt;/p&gt;
 &lt;img data-src=&#34;/posts/c7cf6e41/2022-02-16-21-33-24.png&#34; class=&#34;&#34;&gt;
-
 &lt;img data-src=&#34;/posts/c7cf6e41/2022-02-16-21-33-31.png&#34; class=&#34;&#34;&gt;
-
 &lt;p&gt;具体讲解：&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly93d3cuY25ibG9ncy5jb20vQmx1ZVR6YXIvYXJ0aWNsZXMvODExMTYwLmh0bWw=&#34;&gt;链接&lt;/span&gt;&lt;/p&gt;
-&lt;h2 id=&#34;10-HTTP-协议包括哪些请求？&#34;&gt;&lt;a href=&#34;#10-HTTP-协议包括哪些请求？&#34; class=&#34;headerlink&#34; title=&#34;10. HTTP 协议包括哪些请求？&#34;&gt;&lt;/a&gt;10. &lt;code&gt;HTTP&lt;/code&gt; 协议包括哪些请求？&lt;/h2&gt;&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;&lt;code&gt;GET&lt;/code&gt;：对服务器资源的简单请求&lt;/p&gt;
+&lt;h2 id=&#34;10-http-协议包括哪些请求&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#10-http-协议包括哪些请求&#34;&gt;#&lt;/a&gt; 10.  &lt;code&gt;HTTP&lt;/code&gt;  协议包括哪些请求？&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;GET&lt;/code&gt; ：对服务器资源的简单请求&lt;/p&gt;
 &lt;/li&gt;
-&lt;li&gt;&lt;p&gt;&lt;code&gt;POST&lt;/code&gt;：用于发送包含用户提交数据的请求&lt;/p&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;POST&lt;/code&gt; ：用于发送包含用户提交数据的请求&lt;br&gt;
+ ------------ 以及 ------------&lt;/p&gt;
 &lt;/li&gt;
-&lt;li&gt;&lt;p&gt;———–以及————&lt;/p&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;HEAD&lt;/code&gt; ：类似于 GET 请求，不过返回的响应中没有具体内容，用于获取报头&lt;/p&gt;
 &lt;/li&gt;
-&lt;li&gt;&lt;p&gt;&lt;code&gt;HEAD&lt;/code&gt;：类似于GET请求，不过返回的响应中没有具体内容，用于获取报头&lt;/p&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;PUT&lt;/code&gt; ：传说中请求文档的一个版本&lt;/p&gt;
 &lt;/li&gt;
-&lt;li&gt;&lt;p&gt;&lt;code&gt;PUT&lt;/code&gt;：传说中请求文档的一个版本&lt;/p&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;DELETE&lt;/code&gt; ：发出一个删除指定文档的请求&lt;/p&gt;
 &lt;/li&gt;
-&lt;li&gt;&lt;p&gt;&lt;code&gt;DELETE&lt;/code&gt;：发出一个删除指定文档的请求&lt;/p&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;TRACE&lt;/code&gt; ：发送一个请求副本，以跟踪其处理进程&lt;/p&gt;
 &lt;/li&gt;
-&lt;li&gt;&lt;p&gt;&lt;code&gt;TRACE&lt;/code&gt;：发送一个请求副本，以跟踪其处理进程&lt;/p&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;OPTIONS&lt;/code&gt; ：返回所有可用的方法，检查服务器支持哪些方法&lt;/p&gt;
 &lt;/li&gt;
-&lt;li&gt;&lt;p&gt;&lt;code&gt;OPTIONS&lt;/code&gt;：返回所有可用的方法，检查服务器支持哪些方法&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;&lt;code&gt;CONNECT&lt;/code&gt;：用于&lt;code&gt;ssl&lt;/code&gt;隧道的基于代理的请求&lt;/p&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;CONNECT&lt;/code&gt; ：用于 &lt;code&gt;ssl&lt;/code&gt;  隧道的基于代理的请求&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2 id=&#34;11-简述HTTP中GET和POST的区别&#34;&gt;&lt;a href=&#34;#11-简述HTTP中GET和POST的区别&#34; class=&#34;headerlink&#34; title=&#34;11. 简述HTTP中GET和POST的区别&#34;&gt;&lt;/a&gt;11. 简述&lt;code&gt;HTTP&lt;/code&gt;中&lt;code&gt;GET&lt;/code&gt;和&lt;code&gt;POST&lt;/code&gt;的区别&lt;/h2&gt;&lt;p&gt;从原理性看：&lt;/p&gt;
+&lt;h2 id=&#34;11-简述http中get和post的区别&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#11-简述http中get和post的区别&#34;&gt;#&lt;/a&gt; 11. 简述 &lt;code&gt;HTTP&lt;/code&gt;  中 &lt;code&gt;GET&lt;/code&gt;  和 &lt;code&gt;POST&lt;/code&gt;  的区别&lt;/h2&gt;
+&lt;p&gt;从原理性看：&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;根据&lt;code&gt;HTTP&lt;/code&gt;规范，&lt;code&gt;GET&lt;/code&gt;用于信息获取，而且应该是安全和幂等的&lt;/li&gt;
-&lt;li&gt;根据&lt;code&gt;HTTP&lt;/code&gt;规范，&lt;code&gt;POST&lt;/code&gt;请求表示可能修改服务器上资源的请求&lt;/li&gt;
+&lt;li&gt;根据 &lt;code&gt;HTTP&lt;/code&gt;  规范， &lt;code&gt;GET&lt;/code&gt;  用于信息获取，而且应该是安全和幂等的&lt;/li&gt;
+&lt;li&gt;根据 &lt;code&gt;HTTP&lt;/code&gt;  规范， &lt;code&gt;POST&lt;/code&gt;  请求表示可能修改服务器上资源的请求&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;从表面上看：&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;code&gt;GET&lt;/code&gt;请求的数据会附在&lt;code&gt;URL&lt;/code&gt;后面，&lt;code&gt;POST&lt;/code&gt;的数据放在&lt;code&gt;HTTP&lt;/code&gt;包体&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;POST&lt;/code&gt;安全性比&lt;code&gt;GET&lt;/code&gt;安全性高&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;GET&lt;/code&gt;  请求的数据会附在 &lt;code&gt;URL&lt;/code&gt;  后面， &lt;code&gt;POST&lt;/code&gt;  的数据放在 &lt;code&gt;HTTP&lt;/code&gt;  包体&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;POST&lt;/code&gt;  安全性比 &lt;code&gt;GET&lt;/code&gt;  安全性高&lt;/li&gt;
 &lt;/ul&gt;
  ]]></description>
         </item>
@@ -266,20 +301,22 @@
             <category>Java面试</category>
             <category>操作系统</category>
             <pubDate>Wed, 16 Feb 2022 21:10:40 +0800</pubDate>
-            <description><![CDATA[ &lt;h1 id=&#34;常见面试题整理–操作系统篇（每位开发者必备）&#34;&gt;&lt;a href=&#34;#常见面试题整理–操作系统篇（每位开发者必备）&#34; class=&#34;headerlink&#34; title=&#34;常见面试题整理–操作系统篇（每位开发者必备）&#34;&gt;&lt;/a&gt;常见面试题整理–操作系统篇（每位开发者必备）&lt;/h1&gt;&lt;img data-src=&#34;/posts/4847d2e5/2022-02-16-21-18-10.png&#34; class=&#34;&#34;&gt;
-
-&lt;h2 id=&#34;1-请分别简单说一说进程和线程以及它们的区别。&#34;&gt;&lt;a href=&#34;#1-请分别简单说一说进程和线程以及它们的区别。&#34; class=&#34;headerlink&#34; title=&#34;1. 请分别简单说一说进程和线程以及它们的区别。&#34;&gt;&lt;/a&gt;1. 请分别简单说一说进程和线程以及它们的区别。&lt;/h2&gt;&lt;blockquote&gt;
-&lt;p&gt;进程是具有一定功能的程序关于某个数据集合上的一次运行活动，进程是系统进行资源调度和分配的一个独立单位。线程是进程的实体，是&lt;code&gt;CPU&lt;/code&gt;调度和分派的基本单位，它是比进程更小的能独立运行的基本单位。一个进程可以有多个线程，多个线程也可以并发执行&lt;/p&gt;
+            <description><![CDATA[ &lt;h1 id=&#34;常见面试题整理操作系统篇每位开发者必备&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#常见面试题整理操作系统篇每位开发者必备&#34;&gt;#&lt;/a&gt; 常见面试题整理–操作系统篇（每位开发者必备）&lt;/h1&gt;
+&lt;img data-src=&#34;/posts/4847d2e5/2022-02-16-21-18-10.png&#34; class=&#34;&#34;&gt;
+&lt;h2 id=&#34;1-请分别简单说一说进程和线程以及它们的区别&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#1-请分别简单说一说进程和线程以及它们的区别&#34;&gt;#&lt;/a&gt; 1. 请分别简单说一说进程和线程以及它们的区别。&lt;/h2&gt;
+&lt;blockquote&gt;
+&lt;p&gt;进程是具有一定功能的程序关于某个数据集合上的一次运行活动，进程是系统进行资源调度和分配的一个独立单位。线程是进程的实体，是 &lt;code&gt;CPU&lt;/code&gt;  调度和分派的基本单位，它是比进程更小的能独立运行的基本单位。一个进程可以有多个线程，多个线程也可以并发执行&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;span id=&#34;more&#34;&gt;&lt;/span&gt;
-
-&lt;h2 id=&#34;2-线程同步的方式有哪些？&#34;&gt;&lt;a href=&#34;#2-线程同步的方式有哪些？&#34; class=&#34;headerlink&#34; title=&#34;2. 线程同步的方式有哪些？&#34;&gt;&lt;/a&gt;2. 线程同步的方式有哪些？&lt;/h2&gt;&lt;ul&gt;
+&lt;h2 id=&#34;2-线程同步的方式有哪些&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#2-线程同步的方式有哪些&#34;&gt;#&lt;/a&gt; 2. 线程同步的方式有哪些？&lt;/h2&gt;
+&lt;ul&gt;
 &lt;li&gt;互斥量：采用互斥对象机制，只有拥有互斥对象的线程才有访问公共资源的权限。因为互斥对象只有一个，所以可以保证公共资源不会被多个线程同时访问。&lt;/li&gt;
 &lt;li&gt;信号量：它允许同一时刻多个线程访问同一资源，但是需要控制同一时刻访问此资源的最大线程数量。&lt;/li&gt;
 &lt;li&gt;事件（信号): 通过通知操作的方式来保持多线程同步，还可以方便的实现多线程优先级的比较操作。&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2 id=&#34;3-进程的通信方式有哪些？&#34;&gt;&lt;a href=&#34;#3-进程的通信方式有哪些？&#34; class=&#34;headerlink&#34; title=&#34;3. 进程的通信方式有哪些？&#34;&gt;&lt;/a&gt;3. 进程的通信方式有哪些？&lt;/h2&gt;&lt;p&gt;主要分为：管道、系统&lt;code&gt;IPC&lt;/code&gt;（包括消息队列、信号量、共享存储）、&lt;code&gt;SOCKET&lt;/code&gt;&lt;/p&gt;
-&lt;p&gt;管道主要分为：普通管道&lt;code&gt;PIPE&lt;/code&gt; 、流管道（&lt;code&gt;s_pipe&lt;/code&gt;）、命名管道（&lt;code&gt;name_pipe&lt;/code&gt;）&lt;/p&gt;
+&lt;h2 id=&#34;3-进程的通信方式有哪些&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#3-进程的通信方式有哪些&#34;&gt;#&lt;/a&gt; 3. 进程的通信方式有哪些？&lt;/h2&gt;
+&lt;p&gt;主要分为：管道、系统 &lt;code&gt;IPC&lt;/code&gt; （包括消息队列、信号量、共享存储）、 &lt;code&gt;SOCKET&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;管道主要分为：普通管道 &lt;code&gt;PIPE&lt;/code&gt;  、流管道（ &lt;code&gt;s_pipe&lt;/code&gt; ）、命名管道（ &lt;code&gt;name_pipe&lt;/code&gt; ）&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;管道是一种半双工的通信方式，数据只能单项流动，并且只能在具有亲缘关系的进程间流动，进程的亲缘关系通常是父子进程&lt;/li&gt;
 &lt;li&gt;命名管道也是半双工的通信方式，它允许无亲缘关系的进程间进行通信&lt;/li&gt;
@@ -288,14 +325,16 @@
 &lt;li&gt;信号是一种比较复杂的通信方式，用于通知接收进程某个事件已经发生。&lt;/li&gt;
 &lt;li&gt;共享内存就是映射一段能被其它进程访问的内存，这段共享内存由一个进程创建，但是多个进程可以访问。&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2 id=&#34;4-什么是缓冲区溢出？有什么危害？其原因是什么？&#34;&gt;&lt;a href=&#34;#4-什么是缓冲区溢出？有什么危害？其原因是什么？&#34; class=&#34;headerlink&#34; title=&#34;4. 什么是缓冲区溢出？有什么危害？其原因是什么？&#34;&gt;&lt;/a&gt;4. 什么是缓冲区溢出？有什么危害？其原因是什么？&lt;/h2&gt;&lt;p&gt;缓冲区溢出是指当计算机向缓冲区填充数据时超出了缓冲区本身的容量，溢出的数据覆盖在合法数据上。&lt;/p&gt;
+&lt;h2 id=&#34;4-什么是缓冲区溢出有什么危害其原因是什么&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#4-什么是缓冲区溢出有什么危害其原因是什么&#34;&gt;#&lt;/a&gt; 4. 什么是缓冲区溢出？有什么危害？其原因是什么？&lt;/h2&gt;
+&lt;p&gt;缓冲区溢出是指当计算机向缓冲区填充数据时超出了缓冲区本身的容量，溢出的数据覆盖在合法数据上。&lt;/p&gt;
 &lt;p&gt;危害有以下两点：&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;程序崩溃，导致拒绝额服务&lt;/li&gt;
 &lt;li&gt;跳转并且执行一段恶意代码&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;造成缓冲区溢出的主要原因是程序中没有仔细检查用户输入。&lt;/p&gt;
-&lt;h2 id=&#34;5-什么是死锁？死锁产生的条件&#34;&gt;&lt;a href=&#34;#5-什么是死锁？死锁产生的条件&#34; class=&#34;headerlink&#34; title=&#34;5. 什么是死锁？死锁产生的条件&#34;&gt;&lt;/a&gt;5. 什么是死锁？死锁产生的条件&lt;/h2&gt;&lt;p&gt;在两个或者多个并发进程中，如果每个进程持有某种资源而又等待其它进程释放它或它们现在保持着的资源，在未改变这种状态之前都不能向前推进，称这一组进程产生了死锁。通俗的讲就是两个或多个进程无限期的阻塞、相互等待的一种状态。&lt;/p&gt;
+&lt;h2 id=&#34;5-什么是死锁死锁产生的条件&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#5-什么是死锁死锁产生的条件&#34;&gt;#&lt;/a&gt; 5. 什么是死锁？死锁产生的条件&lt;/h2&gt;
+&lt;p&gt;在两个或者多个并发进程中，如果每个进程持有某种资源而又等待其它进程释放它或它们现在保持着的资源，在未改变这种状态之前都不能向前推进，称这一组进程产生了死锁。通俗的讲就是两个或多个进程无限期的阻塞、相互等待的一种状态。&lt;/p&gt;
 &lt;p&gt;死锁产生的四个条件（有一个条件不成立，则不会产生死锁）&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;互斥条件：一个资源一次只能被一个进程使用&lt;/li&gt;
@@ -303,23 +342,32 @@
 &lt;li&gt;不剥夺条件：进程获得的资源，在未完全使用完之前，不能强行剥夺&lt;/li&gt;
 &lt;li&gt;循环等待条件：若干进程之间形成一种头尾相接的环形等待资源关系&lt;/li&gt;
 &lt;/ol&gt;
-&lt;h2 id=&#34;6-进程有哪几种状态？&#34;&gt;&lt;a href=&#34;#6-进程有哪几种状态？&#34; class=&#34;headerlink&#34; title=&#34;6. 进程有哪几种状态？&#34;&gt;&lt;/a&gt;6. 进程有哪几种状态？&lt;/h2&gt;&lt;ul&gt;
+&lt;h2 id=&#34;6-进程有哪几种状态&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#6-进程有哪几种状态&#34;&gt;#&lt;/a&gt; 6. 进程有哪几种状态？&lt;/h2&gt;
+&lt;ul&gt;
 &lt;li&gt;就绪状态：进程已获得除处理机以外的所需资源，等待分配处理机资源&lt;/li&gt;
-&lt;li&gt;运行状态：占用处理机资源运行，处于此状态的进程数小于等于&lt;code&gt;CPU&lt;/code&gt;数&lt;/li&gt;
+&lt;li&gt;运行状态：占用处理机资源运行，处于此状态的进程数小于等于 &lt;code&gt;CPU&lt;/code&gt;  数&lt;/li&gt;
 &lt;li&gt;阻塞状态： 进程等待某种条件，在条件满足之前无法执行&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2 id=&#34;7-分页和分段有什么区别？&#34;&gt;&lt;a href=&#34;#7-分页和分段有什么区别？&#34; class=&#34;headerlink&#34; title=&#34;7. 分页和分段有什么区别？&#34;&gt;&lt;/a&gt;7. 分页和分段有什么区别？&lt;/h2&gt;&lt;ul&gt;
+&lt;h2 id=&#34;7-分页和分段有什么区别&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#7-分页和分段有什么区别&#34;&gt;#&lt;/a&gt; 7. 分页和分段有什么区别？&lt;/h2&gt;
+&lt;ul&gt;
 &lt;li&gt;段是信息的逻辑单位，它是根据用户的需要划分的，因此段对用户是可见的 ；页是信息的物理单位，是为了管理主存的方便而划分的，对用户是透明的。&lt;/li&gt;
 &lt;li&gt;段的大小不固定，有它所完成的功能决定；页大大小固定，由系统决定&lt;/li&gt;
 &lt;li&gt;段向用户提供二维地址空间；页向用户提供的是一维地址空间&lt;/li&gt;
 &lt;li&gt;段是信息的逻辑单位，便于存储保护和信息的共享，页的保护和共享受到限制。&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2 id=&#34;8-操作系统中进程调度策略有哪几种？&#34;&gt;&lt;a href=&#34;#8-操作系统中进程调度策略有哪几种？&#34; class=&#34;headerlink&#34; title=&#34;8. 操作系统中进程调度策略有哪几种？&#34;&gt;&lt;/a&gt;8. 操作系统中进程调度策略有哪几种？&lt;/h2&gt;&lt;p&gt;&lt;code&gt;FCFS&lt;/code&gt;(先来先服务)，优先级，时间片轮转，多级反馈&lt;/p&gt;
-&lt;h2 id=&#34;9-说一说进程同步有哪几种机制&#34;&gt;&lt;a href=&#34;#9-说一说进程同步有哪几种机制&#34; class=&#34;headerlink&#34; title=&#34;9. 说一说进程同步有哪几种机制?&#34;&gt;&lt;/a&gt;9. 说一说进程同步有哪几种机制?&lt;/h2&gt;&lt;p&gt;原子操作、信号量机制、自旋锁管程、会合、分布式系统&lt;/p&gt;
-&lt;h2 id=&#34;10-说一说死锁的处理基本策略和常用方法&#34;&gt;&lt;a href=&#34;#10-说一说死锁的处理基本策略和常用方法&#34; class=&#34;headerlink&#34; title=&#34;10. 说一说死锁的处理基本策略和常用方法&#34;&gt;&lt;/a&gt;10. 说一说死锁的处理基本策略和常用方法&lt;/h2&gt;&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;解决死锁的基本方法如下：&lt;br&gt;预防死锁、避免死锁、检测死锁、解除死锁&lt;/p&gt;
+&lt;h2 id=&#34;8-操作系统中进程调度策略有哪几种&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#8-操作系统中进程调度策略有哪几种&#34;&gt;#&lt;/a&gt; 8. 操作系统中进程调度策略有哪几种？&lt;/h2&gt;
+&lt;p&gt;&lt;code&gt;FCFS&lt;/code&gt;  (先来先服务)，优先级，时间片轮转，多级反馈&lt;/p&gt;
+&lt;h2 id=&#34;9-说一说进程同步有哪几种机制&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#9-说一说进程同步有哪几种机制&#34;&gt;#&lt;/a&gt; 9. 说一说进程同步有哪几种机制？&lt;/h2&gt;
+&lt;p&gt;原子操作、信号量机制、自旋锁管程、会合、分布式系统&lt;/p&gt;
+&lt;h2 id=&#34;10-说一说死锁的处理基本策略和常用方法&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#10-说一说死锁的处理基本策略和常用方法&#34;&gt;#&lt;/a&gt; 10. 说一说死锁的处理基本策略和常用方法&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;解决死锁的基本方法如下：&lt;br&gt;
+预防死锁、避免死锁、检测死锁、解除死锁&lt;/p&gt;
 &lt;/li&gt;
-&lt;li&gt;&lt;p&gt;解决四多的常用策略如下：&lt;br&gt;鸵鸟策略、预防策略、避免策略、检测与解除死锁&lt;/p&gt;
+&lt;li&gt;
+&lt;p&gt;解决四多的常用策略如下：&lt;br&gt;
+鸵鸟策略、预防策略、避免策略、检测与解除死锁&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
  ]]></description>
@@ -332,76 +380,74 @@
             <category>Java面试</category>
             <category>操作系统</category>
             <pubDate>Tue, 15 Feb 2022 21:37:36 +0800</pubDate>
-            <description><![CDATA[ &lt;h2 id=&#34;位，字节，-字符&#34;&gt;&lt;a href=&#34;#位，字节，-字符&#34; class=&#34;headerlink&#34; title=&#34;位，字节， 字符&#34;&gt;&lt;/a&gt;位，字节， 字符&lt;/h2&gt;&lt;h3 id=&#34;1-位&#34;&gt;&lt;a href=&#34;#1-位&#34; class=&#34;headerlink&#34; title=&#34;1. 位&#34;&gt;&lt;/a&gt;1. 位&lt;/h3&gt;&lt;pre&gt;&lt;code&gt; 数据存储的最小单位。每个二进制数字0或者1就是1个位,比特为 bit ，简称 b
- 
+            <description><![CDATA[ &lt;h2 id=&#34;位字节-字符&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#位字节-字符&#34;&gt;#&lt;/a&gt; 位，字节， 字符&lt;/h2&gt;
+&lt;h3 id=&#34;1-位&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#1-位&#34;&gt;#&lt;/a&gt; 1. 位&lt;/h3&gt;
+&lt;pre&gt;&lt;code&gt; 数据存储的最小单位。每个二进制数字0或者1就是1个位,比特为 bit ，简称 b
 &lt;/code&gt;&lt;/pre&gt;
 &lt;span id=&#34;more&#34;&gt;&lt;/span&gt;
-
-&lt;h3 id=&#34;2-字节&#34;&gt;&lt;a href=&#34;#2-字节&#34; class=&#34;headerlink&#34; title=&#34;2. 字节&#34;&gt;&lt;/a&gt;2. 字节&lt;/h3&gt;&lt;pre&gt;&lt;code&gt; 8个位构成一个字节；即：1 byte (字节)= 8 bit(位)；
+&lt;h3 id=&#34;2-字节&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#2-字节&#34;&gt;#&lt;/a&gt; 2. 字节&lt;/h3&gt;
+&lt;pre&gt;&lt;code&gt; 8个位构成一个字节；即：1 byte (字节)= 8 bit(位)；
  Byte(字节)，简称B。byte是基本数据类型，Byte是byte的包装类
 &lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;     &lt;code&gt;1 KB&lt;/code&gt; = &lt;code&gt;1024 B&lt;/code&gt;(字节)；&lt;/p&gt;
-&lt;p&gt;     &lt;code&gt;1 MB&lt;/code&gt; = &lt;code&gt;1024 KB&lt;/code&gt;;  (&lt;code&gt;2^20 B&lt;/code&gt;)&lt;/p&gt;
-&lt;p&gt;     &lt;code&gt;1 GB&lt;/code&gt; = &lt;code&gt;1024 MB&lt;/code&gt;;  (&lt;code&gt;2^20 KB&lt;/code&gt;)&lt;/p&gt;
-&lt;p&gt;     &lt;code&gt;1 TB&lt;/code&gt; = &lt;code&gt;1024 GB&lt;/code&gt;;  (&lt;code&gt;2^30 KB&lt;/code&gt;)&lt;/p&gt;
-&lt;h3 id=&#34;3-字符&#34;&gt;&lt;a href=&#34;#3-字符&#34; class=&#34;headerlink&#34; title=&#34;3.字符&#34;&gt;&lt;/a&gt;3.字符&lt;/h3&gt;&lt;p&gt; &lt;code&gt;a、A、中、+、*、の......&lt;/code&gt;均表示一个字符；&lt;/p&gt;
-&lt;p&gt; 字符(汉字和汉字标点符号都算字符)&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;1 KB&lt;/code&gt;  =  &lt;code&gt;1024 B&lt;/code&gt;  (字节)；&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;1 MB&lt;/code&gt;  =  &lt;code&gt;1024 KB&lt;/code&gt; ;  ( &lt;code&gt;2^20 B&lt;/code&gt; )&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;1 GB&lt;/code&gt;  =  &lt;code&gt;1024 MB&lt;/code&gt; ;  ( &lt;code&gt;2^20 KB&lt;/code&gt; )&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;1 TB&lt;/code&gt;  =  &lt;code&gt;1024 GB&lt;/code&gt; ;  ( &lt;code&gt;2^30 KB&lt;/code&gt; )&lt;/p&gt;
+&lt;h3 id=&#34;3字符&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#3字符&#34;&gt;#&lt;/a&gt; 3. 字符&lt;/h3&gt;
+&lt;p&gt;&lt;code&gt;a、A、中、+、*、の......&lt;/code&gt;  均表示一个字符；&lt;/p&gt;
+&lt;p&gt;字符 (汉字和汉字标点符号都算字符)&lt;/p&gt;
 &lt;pre&gt;&lt;code&gt; 一般 utf-8 编码下，一个汉字 字符 占用 3 个 字节；
 
  一般 gbk 编码下，一个汉字  字符  占用 2 个 字节；
 &lt;/code&gt;&lt;/pre&gt;
-&lt;h3 id=&#34;4-字符集&#34;&gt;&lt;a href=&#34;#4-字符集&#34; class=&#34;headerlink&#34; title=&#34;4.字符集&#34;&gt;&lt;/a&gt;4.字符集&lt;/h3&gt;&lt;pre&gt;&lt;code&gt; 即各种各个字符的集合，也就是说哪些汉字，字母（A、b、c）和符号（空格、引号..）会被收入标准中；
+&lt;h3 id=&#34;4字符集&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#4字符集&#34;&gt;#&lt;/a&gt; 4. 字符集&lt;/h3&gt;
+&lt;pre&gt;&lt;code&gt; 即各种各个字符的集合，也就是说哪些汉字，字母（A、b、c）和符号（空格、引号..）会被收入标准中；
 &lt;/code&gt;&lt;/pre&gt;
-&lt;h3 id=&#34;5-编码&#34;&gt;&lt;a href=&#34;#5-编码&#34; class=&#34;headerlink&#34; title=&#34;5.编码&#34;&gt;&lt;/a&gt;5.编码&lt;/h3&gt;&lt;blockquote&gt;
-&lt;p&gt;&lt;code&gt;ASCII&lt;/code&gt;码：一个英文字母（不分大小写）占&lt;code&gt;一个字节&lt;/code&gt;的空间，一个中文汉字占&lt;code&gt;两个字节&lt;/code&gt;的空间。一个二进制数字序列，在计算机中作为一个数字单元，一般为8位二进制数，换算为十进制。最小值&lt;code&gt;-128&lt;/code&gt;，最大值&lt;code&gt;127&lt;/code&gt;。如一个&lt;code&gt;ASCII&lt;/code&gt;码就是&lt;code&gt;一个字节&lt;/code&gt;,&lt;code&gt;0~127&lt;/code&gt;(总共有&lt;code&gt;128&lt;/code&gt;个&lt;code&gt;ASCII&lt;/code&gt;码)。&lt;/p&gt;
+&lt;h3 id=&#34;5编码&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#5编码&#34;&gt;#&lt;/a&gt; 5. 编码&lt;/h3&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;code&gt;ASCII&lt;/code&gt;  码：一个英文字母（不分大小写）占 &lt;code&gt;一个字节&lt;/code&gt; 的空间，一个中文汉字占 &lt;code&gt;两个字节&lt;/code&gt; 的空间。一个二进制数字序列，在计算机中作为一个数字单元，一般为 8 位二进制数，换算为十进制。最小值 &lt;code&gt;-128&lt;/code&gt; ，最大值 &lt;code&gt;127&lt;/code&gt; 。如一个 &lt;code&gt;ASCII&lt;/code&gt;  码就是 &lt;code&gt;一个字节&lt;/code&gt; ， &lt;code&gt;0~127&lt;/code&gt;  (总共有 &lt;code&gt;128&lt;/code&gt;  个 &lt;code&gt;ASCII&lt;/code&gt;  码)。&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;blockquote&gt;
-&lt;p&gt;&lt;code&gt;UTF-8&lt;/code&gt;编码：一个&lt;code&gt;英文字符&lt;/code&gt;等于&lt;code&gt;一个字节&lt;/code&gt;，一个&lt;code&gt;中文（含繁体）&lt;/code&gt;等于&lt;code&gt;三个字节&lt;/code&gt;。&lt;code&gt;中文标点&lt;/code&gt;占&lt;code&gt;三个字节&lt;/code&gt;，英文标点占&lt;code&gt;一个字节&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;UTF-8&lt;/code&gt;  编码：一个 &lt;code&gt;英文字符&lt;/code&gt; 等于 &lt;code&gt;一个字节&lt;/code&gt; ，一个 &lt;code&gt;中文（含繁体）&lt;/code&gt; 等于 &lt;code&gt;三个字节&lt;/code&gt; 。 &lt;code&gt;中文标点&lt;/code&gt; 占 &lt;code&gt;三个字节&lt;/code&gt; ，英文标点占 &lt;code&gt;一个字节&lt;/code&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;blockquote&gt;
-&lt;p&gt;&lt;code&gt;Unicode&lt;/code&gt;编码：一个&lt;code&gt;英文&lt;/code&gt;等于&lt;code&gt;两个字节&lt;/code&gt;，一个&lt;code&gt;中文&lt;/code&gt;（含繁体）等于&lt;code&gt;两个字节&lt;/code&gt;。&lt;code&gt;中文标点&lt;/code&gt;占&lt;code&gt;两个字节&lt;/code&gt;，&lt;code&gt;英文标点&lt;/code&gt;占&lt;code&gt;两个字节&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;Unicode&lt;/code&gt;  编码：一个 &lt;code&gt;英文&lt;/code&gt; 等于 &lt;code&gt;两个字节&lt;/code&gt; ，一个 &lt;code&gt;中文&lt;/code&gt; （含繁体）等于 &lt;code&gt;两个字节&lt;/code&gt; 。 &lt;code&gt;中文标点&lt;/code&gt; 占 &lt;code&gt;两个字节&lt;/code&gt; ， &lt;code&gt;英文标点&lt;/code&gt; 占 &lt;code&gt;两个字节&lt;/code&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;h2 id=&#34;基本数据类型范围&#34;&gt;&lt;a href=&#34;#基本数据类型范围&#34; class=&#34;headerlink&#34; title=&#34;基本数据类型范围&#34;&gt;&lt;/a&gt;基本数据类型范围&lt;/h2&gt;&lt;p&gt;在&lt;code&gt;JAVA&lt;/code&gt;中一共有八种基本数据类型，他们分别是：&lt;code&gt;byte、short、int、long、float、double、char、boolean&lt;/code&gt;&lt;/p&gt;
+&lt;h2 id=&#34;基本数据类型范围&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#基本数据类型范围&#34;&gt;#&lt;/a&gt; 基本数据类型范围&lt;/h2&gt;
+&lt;p&gt;在 &lt;code&gt;JAVA&lt;/code&gt;  中一共有八种基本数据类型，他们分别是： &lt;code&gt;byte、short、int、long、float、double、char、boolean&lt;/code&gt;&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;code&gt;byte&lt;/code&gt;的取值范围为 &lt;code&gt;-128&lt;/code&gt; ~ &lt;code&gt;127&lt;/code&gt;, 占用&lt;code&gt;一个&lt;/code&gt;字节(&lt;code&gt;-2^7&lt;/code&gt; 到 &lt;code&gt;(2^7)-1&lt;/code&gt; )&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;short&lt;/code&gt; 的取值范围为 &lt;code&gt;-32768&lt;/code&gt; ～ &lt;code&gt;32767&lt;/code&gt;， 占用 &lt;code&gt;两个&lt;/code&gt; 字节 (&lt;code&gt;-2^15&lt;/code&gt; 到 &lt;code&gt;(2^31)-1&lt;/code&gt;)&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;int&lt;/code&gt; 的取值范围为 &lt;code&gt;-2147483648&lt;/code&gt;&lt;del&gt;&lt;code&gt;2147483647&lt;/code&gt;(&lt;code&gt;-2^31&lt;/code&gt;&lt;/del&gt;&lt;code&gt;(2^31)-1&lt;/code&gt;) , 占用&lt;code&gt;四个个&lt;/code&gt;字节&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;long&lt;/code&gt;的取值范围为（&lt;code&gt;-9223372036854774808&lt;/code&gt; ~ &lt;code&gt;9223372036854774807&lt;/code&gt;）, 占用&lt;code&gt;8个字节&lt;/code&gt;（&lt;code&gt;-2^63&lt;/code&gt; 到 &lt;code&gt;(2^63)-1&lt;/code&gt;）&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;byte&lt;/code&gt;  的取值范围为  &lt;code&gt;-128&lt;/code&gt;  ~  &lt;code&gt;127&lt;/code&gt; , 占用 &lt;code&gt;一个&lt;/code&gt; 字节 ( &lt;code&gt;-2^7&lt;/code&gt;  到  &lt;code&gt;(2^7)-1&lt;/code&gt;  )&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;short&lt;/code&gt;  的取值范围为  &lt;code&gt;-32768&lt;/code&gt;  ～  &lt;code&gt;32767&lt;/code&gt; ， 占用  &lt;code&gt;两个&lt;/code&gt;  字节 ( &lt;code&gt;-2^15&lt;/code&gt;  到  &lt;code&gt;(2^31)-1&lt;/code&gt; )&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;int&lt;/code&gt;  的取值范围为  &lt;code&gt;-2147483648&lt;/code&gt; &lt;sub&gt;``2147483647``(``-2^31``&lt;/sub&gt; &lt;code&gt;(2^31)-1&lt;/code&gt; ) , 占用 &lt;code&gt;四个个&lt;/code&gt; 字节&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;long&lt;/code&gt;  的取值范围为（ &lt;code&gt;-9223372036854774808&lt;/code&gt;  ~  &lt;code&gt;9223372036854774807&lt;/code&gt; ）, 占用 &lt;code&gt;8个字节&lt;/code&gt; （ &lt;code&gt;-2^63&lt;/code&gt;  到  &lt;code&gt;(2^63)-1&lt;/code&gt; ）&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;可以看到&lt;code&gt;byte&lt;/code&gt;和&lt;code&gt;short&lt;/code&gt;的取值范围比较小，而&lt;code&gt;long&lt;/code&gt;的取值范围太大，占用的空间多，基本上&lt;code&gt;int&lt;/code&gt;可以满足我们的日常的计算了，而且&lt;code&gt;int&lt;/code&gt;也是使用的最多的整型类型了。 在通常情况下，如果&lt;code&gt;JAVA&lt;/code&gt;中出现了一个整数数字比如&lt;code&gt;35&lt;/code&gt;，那么这个数字就是&lt;code&gt;int&lt;/code&gt;型的，如果我们希望它是&lt;code&gt;byte&lt;/code&gt;型的，可以在数据后加上大写的 &lt;code&gt;B&lt;/code&gt;：&lt;code&gt;35B&lt;/code&gt;，表示它是&lt;code&gt;byte&lt;/code&gt;型的. 同样的&lt;code&gt;35S&lt;/code&gt;表示&lt;code&gt;short&lt;/code&gt;型，&lt;code&gt;35L&lt;/code&gt;表示&lt;code&gt;long&lt;/code&gt;型的，表示&lt;code&gt;int&lt;/code&gt;我们可以什么都不用加，但是如果要表示&lt;code&gt;long&lt;/code&gt;型的，就一定要在数据后面加&lt;code&gt;“L”&lt;/code&gt;。&lt;/p&gt;
-&lt;p&gt;浮点型 &lt;code&gt;float&lt;/code&gt;和&lt;code&gt;double&lt;/code&gt;是表示浮点型的数据类型，他们之间的区别在于他们的精确度不同&lt;/p&gt;
+&lt;p&gt;可以看到 &lt;code&gt;byte&lt;/code&gt;  和 &lt;code&gt;short&lt;/code&gt;  的取值范围比较小，而 &lt;code&gt;long&lt;/code&gt;  的取值范围太大，占用的空间多，基本上 &lt;code&gt;int&lt;/code&gt;  可以满足我们的日常的计算了，而且 &lt;code&gt;int&lt;/code&gt;  也是使用的最多的整型类型了。 在通常情况下，如果 &lt;code&gt;JAVA&lt;/code&gt;  中出现了一个整数数字比如 &lt;code&gt;35&lt;/code&gt; ，那么这个数字就是 &lt;code&gt;int&lt;/code&gt;  型的，如果我们希望它是 &lt;code&gt;byte&lt;/code&gt;  型的，可以在数据后加上大写的  &lt;code&gt;B&lt;/code&gt; ： &lt;code&gt;35B&lt;/code&gt; ，表示它是 &lt;code&gt;byte&lt;/code&gt;  型的。同样的 &lt;code&gt;35S&lt;/code&gt;  表示 &lt;code&gt;short&lt;/code&gt;  型， &lt;code&gt;35L&lt;/code&gt;  表示 &lt;code&gt;long&lt;/code&gt;  型的，表示 &lt;code&gt;int&lt;/code&gt;  我们可以什么都不用加，但是如果要表示 &lt;code&gt;long&lt;/code&gt;  型的，就一定要在数据后面加 &lt;code&gt;“L”&lt;/code&gt; 。&lt;/p&gt;
+&lt;p&gt;浮点型  &lt;code&gt;float&lt;/code&gt;  和 &lt;code&gt;double&lt;/code&gt;  是表示浮点型的数据类型，他们之间的区别在于他们的精确度不同&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;code&gt;float&lt;/code&gt; &lt;code&gt;3.402823e+38 ~ 1.401298e-45&lt;/code&gt;（&lt;code&gt;e+38&lt;/code&gt;表示是乘以&lt;code&gt;10&lt;/code&gt;的&lt;code&gt;38&lt;/code&gt;次方，同样，&lt;code&gt;e-45&lt;/code&gt;表示乘以&lt;code&gt;10&lt;/code&gt;的负&lt;code&gt;45&lt;/code&gt;次方）, 占用&lt;code&gt;4个字节 &lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;double&lt;/code&gt; &lt;code&gt;1.797693e+308 ~ 4.9000000e-324&lt;/code&gt; 占用&lt;code&gt;8个字节&lt;/code&gt; . &lt;code&gt;double&lt;/code&gt;型比&lt;code&gt;float&lt;/code&gt;型存储范围更大，精度更高，所以通常的浮点型的数据在不声明的情况下都是&lt;code&gt;double&lt;/code&gt;型的，如果要表示一个数据是&lt;code&gt;float&lt;/code&gt;型的，可以在数据后面加上&lt;code&gt;“F”&lt;/code&gt;。 浮点型的数据是不能完全精确的，所以有的时候在计算的时候可能会在小数点最后几位出现浮动，这是正常的。&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;boolean&lt;/code&gt;型（布尔型） 这个类型只有两个值，&lt;code&gt;true&lt;/code&gt;和&lt;code&gt;false&lt;/code&gt;（真和非真） &lt;code&gt;boolean t = true&lt;/code&gt;； &lt;code&gt;boolean f = false；&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;char&lt;/code&gt;型（文本型） 用于存放字符的数据类型，占用&lt;code&gt;2个字节&lt;/code&gt;，采用&lt;code&gt;unicode&lt;/code&gt;编码，它的前&lt;code&gt;128字节&lt;/code&gt;编码与&lt;code&gt;ASCII&lt;/code&gt;兼容 字符的存储范围在&lt;code&gt;\u0000~\uFFFF&lt;/code&gt;，在定义字符型的数据时候要注意加&lt;code&gt;&amp;#39; &amp;#39;&lt;/code&gt;，比如&lt;code&gt; &amp;#39;1&amp;#39;&lt;/code&gt;表示字符&lt;code&gt;&amp;#39;1&amp;#39;&lt;/code&gt;而不是数值&lt;code&gt;1&lt;/code&gt;&lt;ul&gt;
-&lt;li&gt;&lt;code&gt;char c = &amp;#39; 1 &amp;#39;&lt;/code&gt;; 我们试着输出&lt;code&gt;c&lt;/code&gt;看看，&lt;code&gt;System.out.println(c)&lt;/code&gt;;&lt;/li&gt;
-&lt;li&gt;结果就是&lt;code&gt;1&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;而如果我们这样输出呢&lt;code&gt;System.out.println(c+0)&lt;/code&gt;; 结果却变成了&lt;code&gt;49&lt;/code&gt;。 如果我们这样定义&lt;code&gt;c&lt;/code&gt;看看 &lt;code&gt;char c = &amp;#39; \u0031 &amp;#39;&lt;/code&gt;;&lt;/li&gt;
-&lt;li&gt;输出的结果仍然是&lt;code&gt;1&lt;/code&gt;，&lt;/li&gt;
-&lt;li&gt;这是因为字符&lt;code&gt;&amp;#39;1&amp;#39;&lt;/code&gt;对应着unicode编码就是&lt;code&gt;\u0031&lt;/code&gt;, &lt;code&gt;char c1 = &amp;#39;h&amp;#39;&lt;/code&gt;,&lt;code&gt;c2 = &amp;#39;e&amp;#39;&lt;/code&gt;,&lt;code&gt;c3=&amp;#39;l&amp;#39;&lt;/code&gt;,&lt;code&gt;c4=&amp;#39;l&amp;#39;&lt;/code&gt;,&lt;code&gt;c5 = &amp;#39;o&amp;#39;&lt;/code&gt;;&lt;/li&gt;
-&lt;li&gt;&lt;code&gt; System.out.print(c1);&lt;/code&gt; &lt;code&gt;System.out.print(c2);&lt;/code&gt; &lt;code&gt;System.out.print(c3);&lt;/code&gt; &lt;code&gt;System.out.print(c4);&lt;/code&gt; &lt;code&gt;Sytem.out.print(c5);&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;float&lt;/code&gt;   &lt;code&gt;3.402823e+38 ~ 1.401298e-45&lt;/code&gt; （ &lt;code&gt;e+38&lt;/code&gt;  表示是乘以 &lt;code&gt;10&lt;/code&gt;  的 &lt;code&gt;38&lt;/code&gt;  次方，同样， &lt;code&gt;e-45&lt;/code&gt;  表示乘以 &lt;code&gt;10&lt;/code&gt;  的负 &lt;code&gt;45&lt;/code&gt;  次方）, 占用 &lt;code&gt;4个字节 &lt;/code&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;double&lt;/code&gt;   &lt;code&gt;1.797693e+308 ~ 4.9000000e-324&lt;/code&gt;  占用 &lt;code&gt;8个字节&lt;/code&gt;  .  &lt;code&gt;double&lt;/code&gt;  型比 &lt;code&gt;float&lt;/code&gt;  型存储范围更大，精度更高，所以通常的浮点型的数据在不声明的情况下都是 &lt;code&gt;double&lt;/code&gt;  型的，如果要表示一个数据是 &lt;code&gt;float&lt;/code&gt;  型的，可以在数据后面加上 &lt;code&gt;“F”&lt;/code&gt; 。 浮点型的数据是不能完全精确的，所以有的时候在计算的时候可能会在小数点最后几位出现浮动，这是正常的。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;boolean&lt;/code&gt;  型（布尔型） 这个类型只有两个值， &lt;code&gt;true&lt;/code&gt;  和 &lt;code&gt;false&lt;/code&gt; （真和非真）  &lt;code&gt;boolean t = true&lt;/code&gt; ；  &lt;code&gt;boolean f = false；&lt;/code&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;char&lt;/code&gt;  型（文本型） 用于存放字符的数据类型，占用 &lt;code&gt;2个字节&lt;/code&gt; ，采用 &lt;code&gt;unicode&lt;/code&gt;  编码，它的前 &lt;code&gt;128字节&lt;/code&gt; 编码与 &lt;code&gt;ASCII&lt;/code&gt;  兼容 字符的存储范围在 &lt;code&gt;\u0000~\uFFFF&lt;/code&gt; ，在定义字符型的数据时候要注意加 &lt;code&gt;&#39; &#39;&lt;/code&gt; ，比如 &lt;code&gt; &#39;1&#39;&lt;/code&gt;  表示字符 &lt;code&gt;&#39;1&#39;&lt;/code&gt;  而不是数值 &lt;code&gt;1&lt;/code&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;char c = &#39; 1 &#39;&lt;/code&gt; ; 我们试着输出 &lt;code&gt;c&lt;/code&gt;  看看， &lt;code&gt;System.out.println(c)&lt;/code&gt; ;&lt;/li&gt;
+&lt;li&gt;结果就是 &lt;code&gt;1&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;而如果我们这样输出呢 &lt;code&gt;System.out.println(c+0)&lt;/code&gt; ; 结果却变成了 &lt;code&gt;49&lt;/code&gt; 。 如果我们这样定义 &lt;code&gt;c&lt;/code&gt;  看看  &lt;code&gt;char c = &#39; \u0031 &#39;&lt;/code&gt; ;&lt;/li&gt;
+&lt;li&gt;输出的结果仍然是 &lt;code&gt;1&lt;/code&gt; ，&lt;/li&gt;
+&lt;li&gt;这是因为字符 &lt;code&gt;&#39;1&#39;&lt;/code&gt;  对应着 unicode 编码就是 &lt;code&gt;\u0031&lt;/code&gt; ,  &lt;code&gt;char c1 = &#39;h&#39;&lt;/code&gt; , &lt;code&gt;c2 = &#39;e&#39;&lt;/code&gt; , &lt;code&gt;c3=&#39;l&#39;&lt;/code&gt; , &lt;code&gt;c4=&#39;l&#39;&lt;/code&gt; , &lt;code&gt;c5 = &#39;o&#39;&lt;/code&gt; ;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt; System.out.print(c1);&lt;/code&gt;   &lt;code&gt;System.out.print(c2);&lt;/code&gt;   &lt;code&gt;System.out.print(c3);&lt;/code&gt;   &lt;code&gt;System.out.print(c4);&lt;/code&gt;   &lt;code&gt;Sytem.out.print(c5);&lt;/code&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;示例：&lt;/p&gt;
 &lt;figure class=&#34;highlight java&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;13&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;14&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;15&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;16&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;17&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;18&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;19&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;20&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;21&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;22&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;23&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;24&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;25&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;26&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;27&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;28&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;29&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;30&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;31&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;32&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;33&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;34&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;35&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;36&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;37&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;38&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;39&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;40&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;41&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;42&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;43&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;44&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;45&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;46&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;47&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;48&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;49&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;50&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;51&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;52&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;53&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;54&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;55&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;public&lt;/span&gt; &lt;span class=&#34;class&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;class&lt;/span&gt; &lt;span class=&#34;title&#34;&gt;PrimitiveTypeTest&lt;/span&gt; &lt;/span&gt;&amp;#123;  &lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;function&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;public&lt;/span&gt; &lt;span class=&#34;keyword&#34;&gt;static&lt;/span&gt; &lt;span class=&#34;keyword&#34;&gt;void&lt;/span&gt; &lt;span class=&#34;title&#34;&gt;main&lt;/span&gt;&lt;span class=&#34;params&#34;&gt;(String[] args)&lt;/span&gt; &lt;/span&gt;&amp;#123;  &lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        &lt;span class=&#34;comment&#34;&gt;// byte  &lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        System.out.println(&lt;span class=&#34;string&#34;&gt;&amp;quot;基本类型：byte 二进制位数：&amp;quot;&lt;/span&gt; + Byte.SIZE);  &lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        System.out.println(&lt;span class=&#34;string&#34;&gt;&amp;quot;包装类：java.lang.Byte&amp;quot;&lt;/span&gt;);  &lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        System.out.println(&lt;span class=&#34;string&#34;&gt;&amp;quot;最小值：Byte.MIN_VALUE=&amp;quot;&lt;/span&gt; + Byte.MIN_VALUE);  &lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        System.out.println(&lt;span class=&#34;string&#34;&gt;&amp;quot;最大值：Byte.MAX_VALUE=&amp;quot;&lt;/span&gt; + Byte.MAX_VALUE);  &lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        System.out.println();  &lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  &lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        &lt;span class=&#34;comment&#34;&gt;// short  &lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        System.out.println(&lt;span class=&#34;string&#34;&gt;&amp;quot;基本类型：short 二进制位数：&amp;quot;&lt;/span&gt; + Short.SIZE);  &lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        System.out.println(&lt;span class=&#34;string&#34;&gt;&amp;quot;包装类：java.lang.Short&amp;quot;&lt;/span&gt;);  &lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        System.out.println(&lt;span class=&#34;string&#34;&gt;&amp;quot;最小值：Short.MIN_VALUE=&amp;quot;&lt;/span&gt; + Short.MIN_VALUE);  &lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        System.out.println(&lt;span class=&#34;string&#34;&gt;&amp;quot;最大值：Short.MAX_VALUE=&amp;quot;&lt;/span&gt; + Short.MAX_VALUE);  &lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        System.out.println();  &lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  &lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        &lt;span class=&#34;comment&#34;&gt;// int  &lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        System.out.println(&lt;span class=&#34;string&#34;&gt;&amp;quot;基本类型：int 二进制位数：&amp;quot;&lt;/span&gt; + Integer.SIZE);  &lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        System.out.println(&lt;span class=&#34;string&#34;&gt;&amp;quot;包装类：java.lang.Integer&amp;quot;&lt;/span&gt;);  &lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        System.out.println(&lt;span class=&#34;string&#34;&gt;&amp;quot;最小值：Integer.MIN_VALUE=&amp;quot;&lt;/span&gt; + Integer.MIN_VALUE);  &lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        System.out.println(&lt;span class=&#34;string&#34;&gt;&amp;quot;最大值：Integer.MAX_VALUE=&amp;quot;&lt;/span&gt; + Integer.MAX_VALUE);  &lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        System.out.println();  &lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  &lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        &lt;span class=&#34;comment&#34;&gt;// long  &lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        System.out.println(&lt;span class=&#34;string&#34;&gt;&amp;quot;基本类型：long 二进制位数：&amp;quot;&lt;/span&gt; + Long.SIZE);  &lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        System.out.println(&lt;span class=&#34;string&#34;&gt;&amp;quot;包装类：java.lang.Long&amp;quot;&lt;/span&gt;);  &lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        System.out.println(&lt;span class=&#34;string&#34;&gt;&amp;quot;最小值：Long.MIN_VALUE=&amp;quot;&lt;/span&gt; + Long.MIN_VALUE);  &lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        System.out.println(&lt;span class=&#34;string&#34;&gt;&amp;quot;最大值：Long.MAX_VALUE=&amp;quot;&lt;/span&gt; + Long.MAX_VALUE);  &lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        System.out.println();  &lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  &lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        &lt;span class=&#34;comment&#34;&gt;// float  &lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        System.out.println(&lt;span class=&#34;string&#34;&gt;&amp;quot;基本类型：float 二进制位数：&amp;quot;&lt;/span&gt; + Float.SIZE);  &lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        System.out.println(&lt;span class=&#34;string&#34;&gt;&amp;quot;包装类：java.lang.Float&amp;quot;&lt;/span&gt;);  &lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        System.out.println(&lt;span class=&#34;string&#34;&gt;&amp;quot;最小值：Float.MIN_VALUE=&amp;quot;&lt;/span&gt; + Float.MIN_VALUE);  &lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        System.out.println(&lt;span class=&#34;string&#34;&gt;&amp;quot;最大值：Float.MAX_VALUE=&amp;quot;&lt;/span&gt; + Float.MAX_VALUE);  &lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        System.out.println();  &lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  &lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        &lt;span class=&#34;comment&#34;&gt;// double  &lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        System.out.println(&lt;span class=&#34;string&#34;&gt;&amp;quot;基本类型：double 二进制位数：&amp;quot;&lt;/span&gt; + Double.SIZE);  &lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        System.out.println(&lt;span class=&#34;string&#34;&gt;&amp;quot;包装类：java.lang.Double&amp;quot;&lt;/span&gt;);  &lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        System.out.println(&lt;span class=&#34;string&#34;&gt;&amp;quot;最小值：Double.MIN_VALUE=&amp;quot;&lt;/span&gt; + Double.MIN_VALUE);  &lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        System.out.println(&lt;span class=&#34;string&#34;&gt;&amp;quot;最大值：Double.MAX_VALUE=&amp;quot;&lt;/span&gt; + Double.MAX_VALUE);  &lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        System.out.println();  &lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;  &lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        &lt;span class=&#34;comment&#34;&gt;// char  &lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        System.out.println(&lt;span class=&#34;string&#34;&gt;&amp;quot;基本类型：char 二进制位数：&amp;quot;&lt;/span&gt; + Character.SIZE);  &lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        System.out.println(&lt;span class=&#34;string&#34;&gt;&amp;quot;包装类：java.lang.Character&amp;quot;&lt;/span&gt;);  &lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        &lt;span class=&#34;comment&#34;&gt;// 以数值形式而不是字符形式将Character.MIN_VALUE输出到控制台  &lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        System.out.println(&lt;span class=&#34;string&#34;&gt;&amp;quot;最小值：Character.MIN_VALUE=&amp;quot;&lt;/span&gt;  &lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;                + (&lt;span class=&#34;keyword&#34;&gt;int&lt;/span&gt;) Character.MIN_VALUE);  &lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        &lt;span class=&#34;comment&#34;&gt;// 以数值形式而不是字符形式将Character.MAX_VALUE输出到控制台  &lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        System.out.println(&lt;span class=&#34;string&#34;&gt;&amp;quot;最大值：Character.MAX_VALUE=&amp;quot;&lt;/span&gt;  &lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;                + (&lt;span class=&#34;keyword&#34;&gt;int&lt;/span&gt;) Character.MAX_VALUE);  &lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &amp;#125;  &lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;#125;  &lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-
 &lt;figure class=&#34;highlight java&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;13&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;14&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;15&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;16&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;17&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;18&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;19&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;20&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;21&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;22&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;23&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;24&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;25&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;26&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;27&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;28&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;29&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;30&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;31&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;32&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;33&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;34&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;基本类型：&lt;span class=&#34;keyword&#34;&gt;byte&lt;/span&gt; 二进制位数：&lt;span class=&#34;number&#34;&gt;8&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;包装类：java.lang.Byte&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;最小值：Byte.MIN_VALUE=-&lt;span class=&#34;number&#34;&gt;128&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;最大值：Byte.MAX_VALUE=&lt;span class=&#34;number&#34;&gt;127&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;基本类型：&lt;span class=&#34;keyword&#34;&gt;short&lt;/span&gt; 二进制位数：&lt;span class=&#34;number&#34;&gt;16&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;包装类：java.lang.Short&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;最小值：Short.MIN_VALUE=-&lt;span class=&#34;number&#34;&gt;32768&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;最大值：Short.MAX_VALUE=&lt;span class=&#34;number&#34;&gt;32767&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;基本类型：&lt;span class=&#34;keyword&#34;&gt;int&lt;/span&gt; 二进制位数：&lt;span class=&#34;number&#34;&gt;32&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;包装类：java.lang.Integer&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;最小值：Integer.MIN_VALUE=-&lt;span class=&#34;number&#34;&gt;2147483648&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;最大值：Integer.MAX_VALUE=&lt;span class=&#34;number&#34;&gt;2147483647&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;基本类型：&lt;span class=&#34;keyword&#34;&gt;long&lt;/span&gt; 二进制位数：&lt;span class=&#34;number&#34;&gt;64&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;包装类：java.lang.Long&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;最小值：Long.MIN_VALUE=-&lt;span class=&#34;number&#34;&gt;9223372036854775808&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;最大值：Long.MAX_VALUE=&lt;span class=&#34;number&#34;&gt;9223372036854775807&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;基本类型：&lt;span class=&#34;keyword&#34;&gt;float&lt;/span&gt; 二进制位数：&lt;span class=&#34;number&#34;&gt;32&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;包装类：java.lang.Float&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;最小值：Float.MIN_VALUE=&lt;span class=&#34;number&#34;&gt;1.4E-45&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;最大值：Float.MAX_VALUE=&lt;span class=&#34;number&#34;&gt;3.4028235E38&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;基本类型：&lt;span class=&#34;keyword&#34;&gt;double&lt;/span&gt; 二进制位数：&lt;span class=&#34;number&#34;&gt;64&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;包装类：java.lang.Double&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;最小值：Double.MIN_VALUE=&lt;span class=&#34;number&#34;&gt;4.9E-324&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;最大值：Double.MAX_VALUE=&lt;span class=&#34;number&#34;&gt;1.7976931348623157E308&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;基本类型：&lt;span class=&#34;keyword&#34;&gt;char&lt;/span&gt; 二进制位数：&lt;span class=&#34;number&#34;&gt;16&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;包装类：java.lang.Character&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;最小值：Character.MIN_VALUE=&lt;span class=&#34;number&#34;&gt;0&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;最大值：Character.MAX_VALUE=&lt;span class=&#34;number&#34;&gt;65535&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
  ]]></description>
         </item>
     </channel>

@@ -117,12 +117,12 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
       </div>
       <div id="imgs" class="pjax">
         <ul>
-          <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1giclwuom7cj20zk0m8dvn.jpg"></li>
-          <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1giclh5u05ej20zk0m87df.jpg"></li>
-          <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1gipetfk5zwj20zk0m8e81.jpg"></li>
-          <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1gicit4jrvuj20zk0m8785.jpg"></li>
-          <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1gipetv6p75j20zk0m8x6p.jpg"></li>
-          <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1giclip4jbpj20zk0m87cv.jpg"></li>
+          <li class="item" data-background-image="https://tva2.sinaimg.cn/large/6833939bly1gipexw3o58j20zk0m8e81.jpg"></li>
+          <li class="item" data-background-image="https://tva2.sinaimg.cn/large/6833939bly1giciundwu5j20zk0m8n9e.jpg"></li>
+          <li class="item" data-background-image="https://tva2.sinaimg.cn/large/6833939bly1gicitht3xtj20zk0m8k5v.jpg"></li>
+          <li class="item" data-background-image="https://tva2.sinaimg.cn/large/6833939bly1gicit31ffoj20zk0m8naf.jpg"></li>
+          <li class="item" data-background-image="https://tva2.sinaimg.cn/large/6833939bly1gicitcxhpij20zk0m8hdt.jpg"></li>
+          <li class="item" data-background-image="https://tva2.sinaimg.cn/large/6833939bly1giclwrdwyaj20zk0m8are.jpg"></li>
         </ul>
       </div>
     </header>
@@ -171,46 +171,47 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
   <div class="body md" itemprop="articleBody">
     
 
-    <h1 id="equals与-区别"><a href="#equals与-区别" class="headerlink" title="equals与 ==区别"></a><code>equals</code>与 <code>==</code>区别</h1><p><code>Java</code>中数据类型分两种：</p>
+    <h1 id="equals与-区别"><a class="markdownIt-Anchor" href="#equals与-区别">#</a>  <code>equals</code>  与  <code>==</code>  区别</h1>
+<p><code>Java</code>  中数据类型分两种：</p>
 <ol>
-<li>基本类型：<code>long,int,byte,float,double</code></li>
-<li>对象类型：<code>Long,Integer,Byte,Float,Double</code>其它一切<code>java</code>提供的，或者你自己创建的类。</li>
+<li>基本类型： <code>long,int,byte,float,double</code></li>
+<li>对象类型： <code>Long,Integer,Byte,Float,Double</code>  其它一切 <code>java</code>  提供的，或者你自己创建的类。</li>
 </ol>
 <span id="more"></span>
-
-<p>其中<code>Long</code>叫 <code>long</code>的包装类。<code>Integer、Byte</code>和<code>Float</code>也类似，一般包装类的名字首写是数值名的大写开头。</p>
+<p>其中 <code>Long</code>  叫  <code>long</code>  的包装类。 <code>Integer、Byte</code>  和 <code>Float</code>  也类似，一般包装类的名字首写是数值名的大写开头。</p>
 <blockquote>
 <p>什么是包装类？</p>
 </blockquote>
-<p>在<code>java</code>中有时候的运算必须是两个类对象之间进行的，不允许对象与数字之间进行运算。所以需要有一个对象，这个对象把数字进行了一下包装，这样这个对象就可以和另一个对象进行运算了。</p>
+<p>在 <code>java</code>  中有时候的运算必须是两个类对象之间进行的，不允许对象与数字之间进行运算。所以需要有一个对象，这个对象把数字进行了一下包装，这样这个对象就可以和另一个对象进行运算了。</p>
 <p>比如我们可以定义一个类：</p>
 <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Long</span> </span>&#123;  </span><br><span class="line">    <span class="keyword">int</span> i=<span class="number">0</span>;  </span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="title">Long</span> <span class="params">(<span class="keyword">int</span> i)</span></span>&#123;  </span><br><span class="line">        <span class="keyword">this</span>.i=i;  </span><br><span class="line">    &#125;  </span><br><span class="line">&#125;  </span><br></pre></td></tr></table></figure>
-<p>这个<code>Long</code> 就是一个包装类，它包装了一个整数值，然后可以在里面写一些运算符重载的方法使它支持某些运算。这个时候可以赋值：</p>
+<p>这个 <code>Long</code>  就是一个包装类，它包装了一个整数值，然后可以在里面写一些运算符重载的方法使它支持某些运算。这个时候可以赋值：</p>
 <p><code>Long l = new Long(10);</code></p>
-<p>现在变量 <code>l</code> 就是一个对象，不是一个数字。 </p>
-<p><code>long</code>是原始数据类型,没有属性方法,只能进行数学运算，<code>Long</code>是<code>long</code>相对应的引用数据类型，它有方法和属性，一个没方法属性，一个有方法属性,这就是它们的区别。</p>
-<h2 id="解读"><a href="#解读" class="headerlink" title="==解读"></a><code>==</code>解读</h2><p>对于基本类型和引用类型 <code>==</code> 的作用效果是不同的，如下所示：</p>
+<p>现在变量  <code>l</code>  就是一个对象，不是一个数字。</p>
+<p><code>long</code>  是原始数据类型，没有属性方法，只能进行数学运算， <code>Long</code>  是 <code>long</code>  相对应的引用数据类型，它有方法和属性，一个没方法属性，一个有方法属性，这就是它们的区别。</p>
+<h2 id="解读"><a class="markdownIt-Anchor" href="#解读">#</a>  <code>==</code>  解读</h2>
+<p>对于基本类型和引用类型  <code>==</code>  的作用效果是不同的，如下所示：</p>
 <ul>
 <li>基本类型：比较的是值是否相同；</li>
 <li>引用类型：比较的是引用是否相同；</li>
 </ul>
 <p>代码示例：</p>
 <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">String x = <span class="string">&quot;string&quot;</span>;</span><br><span class="line">String y = <span class="string">&quot;string&quot;</span>;</span><br><span class="line">String z = <span class="keyword">new</span> String(<span class="string">&quot;string&quot;</span>);</span><br><span class="line">System.out.println(x==y); <span class="comment">// true</span></span><br><span class="line">System.out.println(x==z); <span class="comment">// false</span></span><br><span class="line">System.out.println(x.equals(y)); <span class="comment">// true</span></span><br><span class="line">System.out.println(x.equals(z)); <span class="comment">// true</span></span><br></pre></td></tr></table></figure>
-
-<p>代码解读：因为 <code>x</code> 和 <code>y</code> 指向的是同一个引用，所以 <code>== </code>也是 <code>true</code>，而 <code>new String()</code>方法则重写开辟了内存空间，所以 <code>== </code>结果为 <code>false</code>，而 <code>equals</code> 比较的一直是值，所以结果都为 <code>true</code>。</p>
-<h2 id="equals-解读"><a href="#equals-解读" class="headerlink" title="equals 解读"></a><code>equals</code> 解读</h2><p><code>equals</code> 本质上就是 <code>==</code>，只不过<code> String</code> 和 <code>Integer</code> 等重写了 <code>equals</code> 方法，把它变成了值比较。看下面的代码就明白了。</p>
-<p>首先来看默认情况下 <code>equals</code> 比较一个有相同值的对象，代码如下：</p>
+<p>代码解读：因为  <code>x</code>  和  <code>y</code>  指向的是同一个引用，所以  <code>== </code> 也是  <code>true</code> ，而  <code>new String()</code>  方法则重写开辟了内存空间，所以  <code>== </code> 结果为  <code>false</code> ，而  <code>equals</code>  比较的一直是值，所以结果都为  <code>true</code> 。</p>
+<h2 id="equals-解读"><a class="markdownIt-Anchor" href="#equals-解读">#</a>  <code>equals</code>  解读</h2>
+<p><code>equals</code>  本质上就是  <code>==</code> ，只不过 <code> String</code>  和  <code>Integer</code>  等重写了  <code>equals</code>  方法，把它变成了值比较。看下面的代码就明白了。</p>
+<p>首先来看默认情况下  <code>equals</code>  比较一个有相同值的对象，代码如下：</p>
 <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Cat</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="title">Cat</span><span class="params">(String name)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">this</span>.name = name;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">private</span> String name;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> String <span class="title">getName</span><span class="params">()</span> </span>&#123;</span><br><span class="line">        <span class="keyword">return</span> name;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">setName</span><span class="params">(String name)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">this</span>.name = name;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">Cat c1 = <span class="keyword">new</span> Cat(<span class="string">&quot;王磊&quot;</span>);</span><br><span class="line">Cat c2 = <span class="keyword">new</span> Cat(<span class="string">&quot;王磊&quot;</span>);</span><br><span class="line">System.out.println(c1.equals(c2)); <span class="comment">// false</span></span><br></pre></td></tr></table></figure>
-
-<p>输出结果出乎我们的意料，竟然是 <code>false？</code>这是怎么回事，看了 <code>equals </code>源码就知道了，源码如下：</p>
+<p>输出结果出乎我们的意料，竟然是  <code>false？</code> 这是怎么回事，看了  <code>equals </code> 源码就知道了，源码如下：</p>
 <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">boolean</span> <span class="title">equals</span><span class="params">(Object obj)</span> </span>&#123;</span><br><span class="line">		<span class="keyword">return</span> (<span class="keyword">this</span> == obj);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<p>原来 <code>equals</code> 本质上就是 ==。<br>那问题来了，两个相同值的<code>String</code>对象，为什么返回的是<code> true？</code>代码如下：</p>
+<p>原来  <code>equals</code>  本质上就是 ==。<br>
+那问题来了，两个相同值的 <code>String</code>  对象，为什么返回的是 <code> true？</code> 代码如下：</p>
 <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">String s1 = <span class="keyword">new</span> String(<span class="string">&quot;老王&quot;</span>);</span><br><span class="line">String s2 = <span class="keyword">new</span> String(<span class="string">&quot;老王&quot;</span>);</span><br><span class="line">System.out.println(s1.equals(s2)); <span class="comment">// true</span></span><br></pre></td></tr></table></figure>
-<p>同样的，当我们进入 <code>String</code> 的 <code>equals</code> 方法，找到了答案，代码如下：</p>
+<p>同样的，当我们进入  <code>String</code>  的  <code>equals</code>  方法，找到了答案，代码如下：</p>
 <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">boolean</span> <span class="title">equals</span><span class="params">(Object anObject)</span> </span>&#123;</span><br><span class="line">    <span class="keyword">if</span> (<span class="keyword">this</span> == anObject) &#123;</span><br><span class="line">        <span class="keyword">return</span> <span class="keyword">true</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">if</span> (anObject <span class="keyword">instanceof</span> String) &#123;</span><br><span class="line">        String anotherString = (String)anObject;</span><br><span class="line">        <span class="keyword">int</span> n = value.length;</span><br><span class="line">        <span class="keyword">if</span> (n == anotherString.value.length) &#123;</span><br><span class="line">            <span class="keyword">char</span> v1[] = value;</span><br><span class="line">            <span class="keyword">char</span> v2[] = anotherString.value;</span><br><span class="line">            <span class="keyword">int</span> i = <span class="number">0</span>;</span><br><span class="line">            <span class="keyword">while</span> (n-- != <span class="number">0</span>) &#123;</span><br><span class="line">                <span class="keyword">if</span> (v1[i] != v2[i])</span><br><span class="line">                    <span class="keyword">return</span> <span class="keyword">false</span>;</span><br><span class="line">                i++;</span><br><span class="line">            &#125;</span><br><span class="line">            <span class="keyword">return</span> <span class="keyword">true</span>;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> <span class="keyword">false</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p>原来是 <code>String</code> 重写了 <code>Object</code> 的 <code>equals</code> 方法，把引用比较改成了值比较。</p>
-<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><p>总体来说，== 对于基本类型来说是值比较，对于引用类型来说是比较的是引用；而 <code>equals</code> 默认情况下是引用比较，只是很多类重写了 <code>equals</code> 方法，比如 <code>String、Integer</code> 等把它变成了值比较，所以一般情况下 <code>equals</code> 比较的是值是否相等。</p>
+<p>原来是  <code>String</code>  重写了  <code>Object</code>  的  <code>equals</code>  方法，把引用比较改成了值比较。</p>
+<h2 id="总结"><a class="markdownIt-Anchor" href="#总结">#</a> 总结</h2>
+<p>总体来说，== 对于基本类型来说是值比较，对于引用类型来说是比较的是引用；而  <code>equals</code>  默认情况下是引用比较，只是很多类重写了  <code>equals</code>  方法，比如  <code>String、Integer</code>  等把它变成了值比较，所以一般情况下  <code>equals</code>  比较的是值是否相等。</p>
 
       <div class="tags">
           <a href="/tags/Java/" rel="tag"><i class="ic i-tag"></i> Java</a>
@@ -266,7 +267,7 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
     <div class="item left">
       
 
-  <a href="/posts/b42f0c87/" itemprop="url" rel="prev" data-background-image="https:&#x2F;&#x2F;tva3.sinaimg.cn&#x2F;mw690&#x2F;6833939bly1giciukx8a7j20zk0m8aio.jpg" title="Cache、Cookie、Session、Token">
+  <a href="/posts/b42f0c87/" itemprop="url" rel="prev" data-background-image="https:&#x2F;&#x2F;tva2.sinaimg.cn&#x2F;mw690&#x2F;6833939bly1gicit4jrvuj20zk0m8785.jpg" title="Cache、Cookie、Session、Token">
   <span class="type">Previous Post</span>
   <span class="category"><i class="ic i-flag"></i> Java面试</span>
   <h3>Cache、Cookie、Session、Token</h3>
@@ -276,7 +277,7 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
     <div class="item right">
       
 
-  <a href="/posts/6714b4a9/" itemprop="url" rel="next" data-background-image="https:&#x2F;&#x2F;tva3.sinaimg.cn&#x2F;mw690&#x2F;6833939bly1giclfw2t96j20zk0m8x6p.jpg" title="FastJson序列化使用">
+  <a href="/posts/6714b4a9/" itemprop="url" rel="next" data-background-image="https:&#x2F;&#x2F;tva2.sinaimg.cn&#x2F;mw690&#x2F;6833939bly1gicm0n457cj20zk0m8e81.jpg" title="FastJson序列化使用">
   <span class="type">Next Post</span>
   <span class="category"><i class="ic i-flag"></i> Tools</span>
   <h3>FastJson序列化使用</h3>
@@ -298,7 +299,7 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
   <div class="panels">
     <div class="inner">
       <div class="contents panel pjax" data-title="Contents">
-          <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#equals%E4%B8%8E-%E5%8C%BA%E5%88%AB"><span class="toc-number">1.</span> <span class="toc-text">equals与 &#x3D;&#x3D;区别</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%A7%A3%E8%AF%BB"><span class="toc-number">1.1.</span> <span class="toc-text">&#x3D;&#x3D;解读</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#equals-%E8%A7%A3%E8%AF%BB"><span class="toc-number">1.2.</span> <span class="toc-text">equals 解读</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%80%BB%E7%BB%93"><span class="toc-number">1.3.</span> <span class="toc-text">总结</span></a></li></ol></li></ol>
+          <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#equals%E4%B8%8E-%E5%8C%BA%E5%88%AB"><span class="toc-number">1.</span> <span class="toc-text">  equals  与  &#x3D;&#x3D;  区别</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%A7%A3%E8%AF%BB"><span class="toc-number">1.1.</span> <span class="toc-text">  &#x3D;&#x3D;  解读</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#equals-%E8%A7%A3%E8%AF%BB"><span class="toc-number">1.2.</span> <span class="toc-text">  equals  解读</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%80%BB%E7%BB%93"><span class="toc-number">1.3.</span> <span class="toc-text"> 总结</span></a></li></ol></li></ol>
       </div>
       <div class="related panel pjax" data-title="Related">
         <ul>
@@ -316,13 +317,13 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
 <nav class="state">
     <div class="item posts">
       <a href="/archives/">
-        <span class="count">142</span>
+        <span class="count">143</span>
         <span class="name">posts</span>
       </a>
     </div>
     <div class="item categories">
       <a href="/categories/">
-        <span class="count">73</span>
+        <span class="count">74</span>
         <span class="name">categories</span>
       </a>
     </div>
@@ -407,67 +408,22 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
   <li class="item">
     
 <div class="breadcrumb">
-<a href="/categories/Java/" title="In Java">Java</a>
-<i class="ic i-angle-right"></i>
-<a href="/categories/Java/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/" title="In 操作系统">操作系统</a>
-<i class="ic i-angle-right"></i>
-<a href="/categories/Java/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/Java%E9%9D%A2%E8%AF%95/" title="In Java面试">Java面试</a>
-</div>
-
-    <span><a href="/posts/166a1445/" title="位，字节， 字符">位，字节， 字符</a></span>
-  </li>
-
-      
-  <li class="item">
-    
-<div class="breadcrumb">
-<a href="/categories/Machine-Learning/" title="In Machine Learning">Machine Learning</a>
-</div>
-
-    <span><a href="/posts/53fbbba3/" title="Jupyter notebook使用">Jupyter notebook使用</a></span>
-  </li>
-
-      
-  <li class="item">
-    
-<div class="breadcrumb">
-<a href="/categories/%E5%9F%BA%E5%9B%A0%E7%BC%96%E8%BE%91/" title="In 基因编辑">基因编辑</a>
-</div>
-
-    <span><a href="/posts/b7653deb/" title="什么是CRISPR&#x2F;Cas9">什么是CRISPR/Cas9</a></span>
-  </li>
-
-      
-  <li class="item">
-    
-<div class="breadcrumb">
-<a href="/categories/Java/" title="In Java">Java</a>
-</div>
-
-    <span><a href="/posts/1748805d/" title="java线程池与五种常用线程池策略使用与解析">java线程池与五种常用线程池策略使用与解析</a></span>
-  </li>
-
-      
-  <li class="item">
-    
-<div class="breadcrumb">
 <a href="/categories/Java%E9%9D%A2%E8%AF%95/" title="In Java面试">Java面试</a>
 <i class="ic i-angle-right"></i>
-<a href="/categories/Java%E9%9D%A2%E8%AF%95/%E5%A0%86%E6%8E%92%E5%BA%8F/" title="In 堆排序">堆排序</a>
-<i class="ic i-angle-right"></i>
-<a href="/categories/Java%E9%9D%A2%E8%AF%95/%E5%A0%86%E6%8E%92%E5%BA%8F/%E7%AE%97%E6%B3%95/" title="In 算法">算法</a>
+<a href="/categories/Java%E9%9D%A2%E8%AF%95/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/" title="In 操作系统">操作系统</a>
 </div>
 
-    <span><a href="/posts/c2a5fdc5/" title="堆排序">堆排序</a></span>
+    <span><a href="/posts/4847d2e5/" title="面试之旅关于操作系统">面试之旅关于操作系统</a></span>
   </li>
 
       
   <li class="item">
     
 <div class="breadcrumb">
+<a href="/categories/%E5%89%8D%E7%AB%AF/" title="In 前端">前端</a>
 </div>
 
-    <span><a href="/posts/4da9c93/" title="Web-based design and analysis tools for CRISPR base editing 文献阅读">Web-based design and analysis tools for CRISPR base editing 文献阅读</a></span>
+    <span><a href="/posts/7733848a/" title="文件上传前端小结">文件上传前端小结</a></span>
   </li>
 
       
@@ -488,31 +444,79 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
   <li class="item">
     
 <div class="breadcrumb">
+<a href="/categories/master/" title="In master">master</a>
 </div>
 
-    <span><a href="/posts/a1926332/" title="Springboot+Vue二进制文件传输">Springboot+Vue二进制文件传输</a></span>
+    <span><a href="/posts/378107f2/" title="The Basic knowledge of Anaconda">The Basic knowledge of Anaconda</a></span>
   </li>
 
       
   <li class="item">
     
 <div class="breadcrumb">
-<a href="/categories/Jenkins/" title="In Jenkins">Jenkins</a>
-</div>
-
-    <span><a href="/posts/273d98ce/" title="The learning of Jenkins Grammer">The learning of Jenkins Grammer</a></span>
-  </li>
-
-      
-  <li class="item">
-    
-<div class="breadcrumb">
-<a href="/categories/Java%E9%9D%A2%E8%AF%95/" title="In Java面试">Java面试</a>
+<a href="/categories/Java/" title="In Java">Java</a>
 <i class="ic i-angle-right"></i>
-<a href="/categories/Java%E9%9D%A2%E8%AF%95/SpringBoot/" title="In SpringBoot">SpringBoot</a>
+<a href="/categories/Java/Java%E9%9D%A2%E8%AF%95/" title="In Java面试">Java面试</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/Java/Java%E9%9D%A2%E8%AF%95/SpringBoot/" title="In SpringBoot">SpringBoot</a>
 </div>
 
-    <span><a href="/posts/20ac1950/" title="SpringBoot文件上传下载">SpringBoot文件上传下载</a></span>
+    <span><a href="/posts/5e7baeeb/" title="过滤器和拦截器的区别">过滤器和拦截器的区别</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/%E5%89%8D%E7%AB%AF/" title="In 前端">前端</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/%E5%89%8D%E7%AB%AF/Css/" title="In Css">Css</a>
+</div>
+
+    <span><a href="/posts/2e6621e1/" title="DisPlay属性">DisPlay属性</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/Java/" title="In Java">Java</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/Java/SpringBoot/" title="In SpringBoot">SpringBoot</a>
+</div>
+
+    <span><a href="/posts/a3dfcd98/" title="SpringBoot中常见的几种解决跨域的方式">SpringBoot中常见的几种解决跨域的方式</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/Hexo/" title="In Hexo">Hexo</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/Hexo/Tools/" title="In Tools">Tools</a>
+</div>
+
+    <span><a href="/posts/3d071a12/" title="使用hexo框架+next主题+githubPage搭建个人博客">使用hexo框架+next主题+githubPage搭建个人博客</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/%E6%95%B0%E6%8D%AE%E5%BA%93/" title="In 数据库">数据库</a>
+</div>
+
+    <span><a href="/posts/377b6f7d/" title="关于mysql中对Json类型字段进行筛选查询">关于mysql中对Json类型字段进行筛选查询</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+</div>
+
+    <span><a href="/posts/1599bffe/" title="归并排序">归并排序</a></span>
   </li>
 
   </ul>
@@ -537,13 +541,13 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
     <span class="post-meta-item-icon">
       <i class="ic i-chart-area"></i>
     </span>
-    <span title="Symbols count total">620k words</span>
+    <span title="Symbols count total">622k words</span>
 
     <span class="post-meta-divider">|</span>
     <span class="post-meta-item-icon">
       <i class="ic i-coffee"></i>
     </span>
-    <span title="Reading time total">9:24</span>
+    <span title="Reading time total">9:25</span>
   </div>
 </div>
 

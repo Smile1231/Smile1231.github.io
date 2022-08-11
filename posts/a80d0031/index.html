@@ -117,12 +117,12 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
       </div>
       <div id="imgs" class="pjax">
         <ul>
-          <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1gipexoj0moj20zk0m8kgu.jpg"></li>
-          <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1gipeu7txpzj20zk0m81kx.jpg"></li>
-          <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1gicis081o9j20zk0m8dmr.jpg"></li>
-          <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1giclx6phq6j20zk0m8e36.jpg"></li>
-          <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1giciundwu5j20zk0m8n9e.jpg"></li>
-          <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1gicitzannuj20zk0m8b29.jpg"></li>
+          <li class="item" data-background-image="https://tva2.sinaimg.cn/large/6833939bly1giciusoyjnj219g0u0x56.jpg"></li>
+          <li class="item" data-background-image="https://tva2.sinaimg.cn/large/6833939bly1gipew28b65j20zk0m8hdt.jpg"></li>
+          <li class="item" data-background-image="https://tva2.sinaimg.cn/large/6833939bly1gicliierfjj20zk0m8npd.jpg"></li>
+          <li class="item" data-background-image="https://tva2.sinaimg.cn/large/6833939bly1gipeu1usa7j20zk0m8b29.jpg"></li>
+          <li class="item" data-background-image="https://tva2.sinaimg.cn/large/6833939bly1giclflwv2aj20zk0m84qp.jpg"></li>
+          <li class="item" data-background-image="https://tva2.sinaimg.cn/large/6833939bly1gicitf0kl1j20zk0m87fe.jpg"></li>
         </ul>
       </div>
     </header>
@@ -171,49 +171,58 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
   <div class="body md" itemprop="articleBody">
     
 
-    <h1 id="动态规划算法"><a href="#动态规划算法" class="headerlink" title="动态规划算法"></a>动态规划算法</h1><h2 id="什么是动态规划"><a href="#什么是动态规划" class="headerlink" title="什么是动态规划"></a>什么是动态规划</h2><p>动态规划的大致思路是把一个复杂的问题转化成一个分阶段逐步递推的过程，从简单的初始状态一步一步递推，最终得到复杂问题的最优解。</p>
+    <h1 id="动态规划算法"><a class="markdownIt-Anchor" href="#动态规划算法">#</a> 动态规划算法</h1>
+<h2 id="什么是动态规划"><a class="markdownIt-Anchor" href="#什么是动态规划">#</a> 什么是动态规划</h2>
+<p>动态规划的大致思路是把一个复杂的问题转化成一个分阶段逐步递推的过程，从简单的初始状态一步一步递推，最终得到复杂问题的最优解。</p>
 <blockquote>
 <p>基本思想与策略编辑:</p>
 </blockquote>
 <p>由于动态规划解决的问题多数有重叠子问题这个特点，为减少重复计算，对每一个子问题只解一次，将其不同阶段的不同状态保存在一个二维数组中</p>
 <span id="more"></span>
-
 <ol>
-<li><p><font color="red"><strong>拆分问题</strong></font>:根据问题的可能性把问题划分成通过递推或者递归一步一步实现。关键就是这个步骤,动态规划有一类问题就是从后往前推到,有时候我们很容易知道 : 如果只有一种情况时,最佳的选择应该怎么做.然后根据这个最佳选择往前一步推导,得到前一步的最佳选择</p>
+<li>
+<p><font color="red"><strong>拆分问题</strong></font>: 根据问题的可能性把问题划分成通过递推或者递归一步一步实现。关键就是这个步骤，动态规划有一类问题就是从后往前推到，有时候我们很容易知道：如果只有一种情况时，最佳的选择应该怎么做。然后根据这个最佳选择往前一步推导，得到前一步的最佳选择</p>
 </li>
-<li><p><font color="blue">定义问题状态和状态之间的关系：</font>用一种量化的形式表现出来,类似于高中学的推导公式,因为这种式子很容易用程序写出来,也可以说对程序比较亲和(也就是最后所说的状态转移方程式)</p>
+<li>
+<p><font color="blue">定义问题状态和状态之间的关系：</font>用一种量化的形式表现出来，类似于高中学的推导公式，因为这种式子很容易用程序写出来，也可以说对程序比较亲和 (也就是最后所说的状态转移方程式)</p>
 </li>
-<li><p>动态规划算法的基本思想与分治法类似，也是将待求解的问题分解为若干个子问题（阶段），按顺序求解子阶段，<font color="white">前一子问题的解，为后一子问题的求解提供了有用的信息。</font>在求解任一子问题时，列出各种可能的局部解，通过决策保留那些有可能达到最优的局部解，丢弃其他局部解。依次解决各子问题，最后一个子问题就是初始问题的解。</p>
+<li>
+<p>动态规划算法的基本思想与分治法类似，也是将待求解的问题分解为若干个子问题（阶段），按顺序求解子阶段，<font color="white">前一子问题的解，为后一子问题的求解提供了有用的信息。</font>在求解任一子问题时，列出各种可能的局部解，通过决策保留那些有可能达到最优的局部解，丢弃其他局部解。依次解决各子问题，最后一个子问题就是初始问题的解。</p>
 </li>
 </ol>
-<p><strong>我的理解是</strong>：比如我们找到最优解,我们应该讲最优解保存下来,为了往前推导时能够使用前一步的最优解,在这个过程中难免有一些相比于最优解差的解,此时我们应该放弃,只保存最优解,</p>
-<p>这样我们每一次都把最优解保存了下来,大大降低了时间复杂度。</p>
+<p><strong>我的理解是</strong>：比如我们找到最优解，我们应该讲最优解保存下来，为了往前推导时能够使用前一步的最优解，在这个过程中难免有一些相比于最优解差的解，此时我们应该放弃，只保存最优解，</p>
+<p>这样我们每一次都把最优解保存了下来，大大降低了时间复杂度。</p>
 <hr/>
-
 <p>动态规划解决问题的过程分为两步：</p>
 <ol>
-<li><p>寻找状态转移方程式</p>
+<li>
+<p>寻找状态转移方程式</p>
 </li>
-<li><p>利用状态转移方程式自底向上求解问题</p>
+<li>
+<p>利用状态转移方程式自底向上求解问题</p>
 </li>
 </ol>
-<h2 id="动态规划原理"><a href="#动态规划原理" class="headerlink" title="动态规划原理"></a>动态规划原理</h2><ul>
+<h2 id="动态规划原理"><a class="markdownIt-Anchor" href="#动态规划原理">#</a> 动态规划原理</h2>
+<ul>
 <li>使用条件：可分为多个相关子问题，子问题的解被重复使用</li>
-<li><code>Optimal substructure（优化子结构）</code>：<ul>
-<li> 一个问题的优化解包含了子问题的优化解</li>
-<li> 缩小子问题集合，只需那些优化问题中包含的子问题，降低实现复杂性</li>
-<li> 我们可以自下而上的</li>
+<li><code>Optimal substructure（优化子结构）</code> ：
+<ul>
+<li>一个问题的优化解包含了子问题的优化解</li>
+<li>缩小子问题集合，只需那些优化问题中包含的子问题，降低实现复杂性</li>
+<li>我们可以自下而上的</li>
 </ul>
 </li>
-<li><code>Subteties（重叠子问题）</code>：在问题的求解过程中，很多子问题的解将被多次使用。</li>
-<li><strong>动态规划算法的设计步骤：</strong><ul>
+<li><code>Subteties（重叠子问题）</code> ：在问题的求解过程中，很多子问题的解将被多次使用。</li>
+<li><strong>动态规划算法的设计步骤：</strong>
+<ul>
 <li>分析优化解的结构</li>
 <li>递归地定义最优解的代价</li>
 <li>自底向上地计算优化解的代价保存之，并获取构造最优解的信息</li>
 <li>根据构造最优解的信息构造优化解</li>
 </ul>
 </li>
-<li>动态规划特点：<ul>
+<li>动态规划特点：
+<ul>
 <li>把原始问题划分成一系列子问题；</li>
 <li>求解每个子问题仅一次，并将其结果保存在一个表中，以后用到时直接存取，不重复计算，节省计算时间</li>
 <li>自底向上地计算。</li>
@@ -221,39 +230,40 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
 </ul>
 </li>
 </ul>
-<h2 id="经典例题"><a href="#经典例题" class="headerlink" title="经典例题"></a>经典例题</h2><h3 id="最长公共子序列（longest-common-subsequence-LCS）"><a href="#最长公共子序列（longest-common-subsequence-LCS）" class="headerlink" title="最长公共子序列（longest-common-subsequence, LCS）"></a>最长公共子序列（<code>longest-common-subsequence, LCS</code>）</h3><p><a target="_blank" rel="noopener" href="https://leetcode-cn.com/problems/longest-common-subsequence/"><code>LeetCode</code></a></p>
+<h2 id="经典例题"><a class="markdownIt-Anchor" href="#经典例题">#</a> 经典例题</h2>
+<h3 id="最长公共子序列longest-common-subsequence-lcs"><a class="markdownIt-Anchor" href="#最长公共子序列longest-common-subsequence-lcs">#</a> 最长公共子序列（ <code>longest-common-subsequence, LCS</code> ）</h3>
+<p><a target="_blank" rel="noopener" href="https://leetcode-cn.com/problems/longest-common-subsequence/"> <code>LeetCode</code> </a></p>
 <img data-src="/posts/a80d0031/2022-02-17-23-18-58.png" class="">
-
-<p>(1) 子序列：一个序列<code>X ＝ x1x2...xn</code>,中任意删除若干项，剩余的序列叫做<code>A</code>的一个子序列。也可以认为是从序列<code>A</code>按原顺序保留任意若干项得到的序列。<br>      例如：对序列 <code>1,3,5,4,2,6,8,7</code>来说，序列<code>3,4,8,7</code> 是它的一个子序列。对于一个长度为<code>n</code>的序列，它一共有<code>2^n</code> 个子序列，有<code>(2^n – 1)</code>个非空子序列。在这里需要提醒大家，子序列不是子集，它和原始序列的元素顺序是相关的。</p>
-<p>(2) 公共子序列：如果序列<code>Z</code>既是序列<code>X</code>的子序列，同时也是序列Y的子序列，则称它为序列<code>X</code>和序列<code>Y</code>的公共子序列。空序列是任何两个序列的公共子序列。</p>
-<p>(3) 最长公共子序列：<code>X</code>和<code>Y</code>的公共子序列中长度最长的（包含元素最多的）叫做<code>X</code>和<code>Y</code>的最长公共子序列。</p>
-<p>这个问题如果用穷举法时间，最终求出最长公共子序列时，时间复杂度是<code>Ο（2mn）</code>，是指数级别的复杂度，对于长序列是不适用的。因此我们使用动态规划法来求解。</p>
-<h3 id="刻画最长公共子序列问题的最优子结构"><a href="#刻画最长公共子序列问题的最优子结构" class="headerlink" title="刻画最长公共子序列问题的最优子结构"></a>刻画最长公共子序列问题的最优子结构</h3><p>设<code>X=x1x2…xm</code>和<code>Y=y1y2…yn</code>是两个序列，<code>Z=z1z2…zk</code>是这两个序列的一个最长公共子序列。</p>
+<p>(1) 子序列：一个序列 <code>X ＝ x1x2...xn</code> , 中任意删除若干项，剩余的序列叫做 <code>A</code>  的一个子序列。也可以认为是从序列 <code>A</code>  按原顺序保留任意若干项得到的序列。<br>
+例如：对序列  <code>1,3,5,4,2,6,8,7</code>  来说，序列 <code>3,4,8,7</code>  是它的一个子序列。对于一个长度为 <code>n</code>  的序列，它一共有 <code>2^n</code>  个子序列，有 <code>(2^n – 1)</code>  个非空子序列。在这里需要提醒大家，子序列不是子集，它和原始序列的元素顺序是相关的。</p>
+<p>(2) 公共子序列：如果序列 <code>Z</code>  既是序列 <code>X</code>  的子序列，同时也是序列 Y 的子序列，则称它为序列 <code>X</code>  和序列 <code>Y</code>  的公共子序列。空序列是任何两个序列的公共子序列。</p>
+<p>(3) 最长公共子序列： <code>X</code>  和 <code>Y</code>  的公共子序列中长度最长的（包含元素最多的）叫做 <code>X</code>  和 <code>Y</code>  的最长公共子序列。</p>
+<p>这个问题如果用穷举法时间，最终求出最长公共子序列时，时间复杂度是 <code>Ο（2mn）</code> ，是指数级别的复杂度，对于长序列是不适用的。因此我们使用动态规划法来求解。</p>
+<h3 id="刻画最长公共子序列问题的最优子结构"><a class="markdownIt-Anchor" href="#刻画最长公共子序列问题的最优子结构">#</a> 刻画最长公共子序列问题的最优子结构</h3>
+<p>设 <code>X=x1x2…xm</code>  和 <code>Y=y1y2…yn</code>  是两个序列， <code>Z=z1z2…zk</code>  是这两个序列的一个最长公共子序列。</p>
 <ol>
-<li><p>如果<code>xm=yn</code>，那么<code>zk=xm=yn</code>，且<code>Zk-1</code>是<code>Xm-1</code>，<code>Yn-1</code>的一个最长公共子序列；</p>
+<li>
+<p>如果 <code>xm=yn</code> ，那么 <code>zk=xm=yn</code> ，且 <code>Zk-1</code>  是 <code>Xm-1</code> ， <code>Yn-1</code>  的一个最长公共子序列；</p>
 </li>
-<li><p>如果<code>xm≠yn</code>，那么<code>zk≠xm</code>，意味着<code>Z</code>是<code>Xm-1</code>，<code>Y</code>的一个最长公共子序列；</p>
+<li>
+<p>如果 <code>xm≠yn</code> ，那么 <code>zk≠xm</code> ，意味着 <code>Z</code>  是 <code>Xm-1</code> ， <code>Y</code>  的一个最长公共子序列；</p>
 </li>
-<li><p>如果<code>xm≠yn</code>，那么<code>zk≠yn</code>，意味着<code>Z</code>是<code>X</code>，<code>Yn-1</code>的一个最长公共子序列。</p>
+<li>
+<p>如果 <code>xm≠yn</code> ，那么 <code>zk≠yn</code> ，意味着 <code>Z</code>  是 <code>X</code> ， <code>Yn-1</code>  的一个最长公共子序列。</p>
 </li>
 </ol>
-<p>从上面三种情况可以看出，两个序列的<code>LCS</code>包含两个序列的前缀的<code>LCS</code>。因此，<code>LCS</code>问题具有最优子结构特征。</p>
-<h3 id="递归的定义最优质"><a href="#递归的定义最优质" class="headerlink" title="递归的定义最优质"></a>递归的定义最优质</h3><p>从最优子结构可以看出，如果<code>xm=yn</code>，那么我们应该求解<code>Xm-1</code>，<code>Yn-1</code>的一个<code>LCS</code>，并且将<code>xm=yn</code>加入到这个<code>LCS</code>的末尾，这样得到的一个新的<code>LCS</code>就是所求。</p>
-<p>如果<code>xm≠yn</code>，我们需要求解两个子问题，分别求<code>Xm-1</code>，<code>Y</code>的一个<code>LCS</code>和<code>X</code>，<code>Yn-1</code>的一个<code>LCS</code>。两个<code>LCS</code>中较长者就是<code>X</code>和<code>Y</code>的一个<code>LCS</code>。</p>
-<p>可以看出<code>LCS</code>问题具有重叠子问题性质。为了求<code>X</code>和<code>Y</code>的一个<code>LCS</code>，我们需要分别求出<code>Xm-1</code>，<code>Y</code>的一个<code>LCS</code>和<code>X</code>，<code>Yn-1</code>的一个<code>LCS</code>，这几个字问题又包含了求出<code>Xm-1</code>，<code>Yn-1</code>的一个<code>LCS</code>的子子问题。（有点绕了。。。晕没晕。。。。）</p>
+<p>从上面三种情况可以看出，两个序列的 <code>LCS</code>  包含两个序列的前缀的 <code>LCS</code> 。因此， <code>LCS</code>  问题具有最优子结构特征。</p>
+<h3 id="递归的定义最优质"><a class="markdownIt-Anchor" href="#递归的定义最优质">#</a> 递归的定义最优质</h3>
+<p>从最优子结构可以看出，如果 <code>xm=yn</code> ，那么我们应该求解 <code>Xm-1</code> ， <code>Yn-1</code>  的一个 <code>LCS</code> ，并且将 <code>xm=yn</code>  加入到这个 <code>LCS</code>  的末尾，这样得到的一个新的 <code>LCS</code>  就是所求。</p>
+<p>如果 <code>xm≠yn</code> ，我们需要求解两个子问题，分别求 <code>Xm-1</code> ， <code>Y</code>  的一个 <code>LCS</code>  和 <code>X</code> ， <code>Yn-1</code>  的一个 <code>LCS</code> 。两个 <code>LCS</code>  中较长者就是 <code>X</code>  和 <code>Y</code>  的一个 <code>LCS</code> 。</p>
+<p>可以看出 <code>LCS</code>  问题具有重叠子问题性质。为了求 <code>X</code>  和 <code>Y</code>  的一个 <code>LCS</code> ，我们需要分别求出 <code>Xm-1</code> ， <code>Y</code>  的一个 <code>LCS</code>  和 <code>X</code> ， <code>Yn-1</code>  的一个 <code>LCS</code> ，这几个字问题又包含了求出 <code>Xm-1</code> ， <code>Yn-1</code>  的一个 <code>LCS</code>  的子子问题。（有点绕了。。。晕没晕。。。。）</p>
 <p>根据上面的分析，我们可以得出下面的公式；</p>
 <img data-src="/posts/a80d0031/2022-02-17-23-19-37.png" class="">
-
-<h3 id="计算最优的解"><a href="#计算最优的解" class="headerlink" title="计算最优的解"></a>计算最优的解</h3><p> 根据上面的，我们很容易就可以写出递归计算<code>LCS</code>问题的程序，通过这个程序我们可以求出各个子问题的<code>LCS</code>的值，此外，为了求解最优解本身，我们好需要一个表<code>dp，dp[i，j]</code>记录使<code>C[i，j]</code>取值的最优子结构。</p>
-<h3 id="数组的填表过程"><a href="#数组的填表过程" class="headerlink" title="数组的填表过程"></a>数组的填表过程</h3><img data-src="/posts/a80d0031/2022-02-17-23-19-46.png" class="">
-
+<h3 id="计算最优的解"><a class="markdownIt-Anchor" href="#计算最优的解">#</a> 计算最优的解</h3>
+<p>根据上面的，我们很容易就可以写出递归计算 <code>LCS</code>  问题的程序，通过这个程序我们可以求出各个子问题的 <code>LCS</code>  的值，此外，为了求解最优解本身，我们好需要一个表 <code>dp，dp[i，j]</code>  记录使 <code>C[i，j]</code>  取值的最优子结构。</p>
+<h3 id="数组的填表过程"><a class="markdownIt-Anchor" href="#数组的填表过程">#</a> 数组的填表过程</h3>
+<img data-src="/posts/a80d0031/2022-02-17-23-19-46.png" class="">
 <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">LCS</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">int</span> <span class="title">findLCS</span><span class="params">(String A, String B)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">int</span> n = A.length();</span><br><span class="line">        <span class="keyword">int</span> m = B.length();</span><br><span class="line">        <span class="comment">//返回一个字符数组，该字符数组中存放了当前字符串中的所有字符</span></span><br><span class="line">        <span class="comment">//返回的是字符数组char[]a</span></span><br><span class="line">        <span class="keyword">char</span>[] a = A.toCharArray();</span><br><span class="line">        <span class="keyword">char</span>[] b = B.toCharArray();</span><br><span class="line">        <span class="comment">//创建一个二维矩阵，用来推到公共子序列</span></span><br><span class="line">        <span class="keyword">int</span>[][] dp = <span class="keyword">new</span> <span class="keyword">int</span>[n][m];</span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; n; i++) &#123;</span><br><span class="line">            <span class="comment">//如果找到第一列其中一个字符等于第一行第一个字符</span></span><br><span class="line">            <span class="keyword">if</span> (a[i] == b[<span class="number">0</span>]) &#123;</span><br><span class="line">                <span class="comment">//找到第一列与第一行b[0]的相等的值，把其变成1</span></span><br><span class="line">                dp[i][<span class="number">0</span>] = <span class="number">1</span>;</span><br><span class="line">                <span class="comment">//并将其后面的字符都变成1</span></span><br><span class="line">                <span class="keyword">for</span> (<span class="keyword">int</span> j = i + <span class="number">1</span>; j &lt; n; j++) &#123;</span><br><span class="line">                    dp[j][<span class="number">0</span>] = <span class="number">1</span>;</span><br><span class="line">                &#125;</span><br><span class="line">                <span class="keyword">break</span>;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; m; i++) &#123;</span><br><span class="line">            <span class="comment">//如果找到第一列其中一个字符等于第一行第一个字符</span></span><br><span class="line">            <span class="keyword">if</span> (b[i] == a[<span class="number">0</span>]) &#123;</span><br><span class="line">                <span class="comment">//则把第一列后面的字符都变成1</span></span><br><span class="line">                dp[<span class="number">0</span>][i] = <span class="number">1</span>;</span><br><span class="line">                <span class="keyword">for</span> (<span class="keyword">int</span> j = i + <span class="number">1</span>; j &lt; m; j++) &#123;</span><br><span class="line">                    dp[<span class="number">0</span>][j] = <span class="number">1</span>;</span><br><span class="line">                &#125;</span><br><span class="line">                <span class="keyword">break</span>;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="comment">//从1开始是因为横向和纵向下标为0的都遍历过了</span></span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">1</span>; i &lt; n; i++) &#123;</span><br><span class="line">            <span class="keyword">for</span> (<span class="keyword">int</span> j = <span class="number">1</span>; j &lt; m; j++) &#123;</span><br><span class="line">                <span class="comment">//横向和纵向有相等的值</span></span><br><span class="line">                <span class="keyword">if</span> (a[i] == b[j]) &#123;</span><br><span class="line">                    <span class="comment">//当前位置左边的值+1</span></span><br><span class="line">                    dp[i][j] = dp[i - <span class="number">1</span>][j - <span class="number">1</span>] + <span class="number">1</span>;</span><br><span class="line">                &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">                    <span class="comment">//取当前位置（左边的值，上边的值）的最大值</span></span><br><span class="line">                    dp[i][j] = Math.max(dp[i][j - <span class="number">1</span>], dp[i - <span class="number">1</span>][j]);</span><br><span class="line">                &#125;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; n - <span class="number">1</span>; i++) &#123;</span><br><span class="line">            <span class="keyword">for</span> (<span class="keyword">int</span> j = <span class="number">0</span>; j &lt; m; j++) &#123;</span><br><span class="line">                System.out.print(dp[i][j] + <span class="string">&quot;  &quot;</span>);</span><br><span class="line">            &#125;</span><br><span class="line">            System.out.println();</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> dp[n - <span class="number">1</span>][m - <span class="number">1</span>];</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">        LCS lcs = <span class="keyword">new</span> LCS();</span><br><span class="line">        <span class="keyword">int</span> findLCS = lcs.findLCS(<span class="string">&quot;android&quot;</span>, <span class="string">&quot;random&quot;</span>);</span><br><span class="line">        System.out.println(<span class="string">&quot;最长子序列长度：&quot;</span> + findLCS);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-
-
-
-
-
 
       <div class="tags">
           <a href="/tags/Java%E9%9D%A2%E8%AF%95/" rel="tag"><i class="ic i-tag"></i> Java面试</a>
@@ -309,7 +319,7 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
     <div class="item left">
       
 
-  <a href="/posts/a4ce31d2/" itemprop="url" rel="prev" data-background-image="https:&#x2F;&#x2F;tva3.sinaimg.cn&#x2F;mw690&#x2F;6833939bly1gipey0a334j20zk0m8qpt.jpg" title="贪心算法">
+  <a href="/posts/a4ce31d2/" itemprop="url" rel="prev" data-background-image="https:&#x2F;&#x2F;tva2.sinaimg.cn&#x2F;mw690&#x2F;6833939bly1gipex2cdtbj20zk0m8x6p.jpg" title="贪心算法">
   <span class="type">Previous Post</span>
   <span class="category"><i class="ic i-flag"></i> 算法</span>
   <h3>贪心算法</h3>
@@ -319,7 +329,7 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
     <div class="item right">
       
 
-  <a href="/posts/f976ebe7/" itemprop="url" rel="next" data-background-image="https:&#x2F;&#x2F;tva3.sinaimg.cn&#x2F;mw690&#x2F;6833939bly1giclj61ylzj20zk0m8b29.jpg" title="SpringMvc中标准的后端接口格式">
+  <a href="/posts/f976ebe7/" itemprop="url" rel="next" data-background-image="https:&#x2F;&#x2F;tva2.sinaimg.cn&#x2F;mw690&#x2F;6833939bly1gicitzannuj20zk0m8b29.jpg" title="SpringMvc中标准的后端接口格式">
   <span class="type">Next Post</span>
   <span class="category"><i class="ic i-flag"></i> Java</span>
   <h3>SpringMvc中标准的后端接口格式</h3>
@@ -341,7 +351,7 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
   <div class="panels">
     <div class="inner">
       <div class="contents panel pjax" data-title="Contents">
-          <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92%E7%AE%97%E6%B3%95"><span class="toc-number">1.</span> <span class="toc-text">动态规划算法</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BB%80%E4%B9%88%E6%98%AF%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92"><span class="toc-number">1.1.</span> <span class="toc-text">什么是动态规划</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92%E5%8E%9F%E7%90%86"><span class="toc-number">1.2.</span> <span class="toc-text">动态规划原理</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%BB%8F%E5%85%B8%E4%BE%8B%E9%A2%98"><span class="toc-number">1.3.</span> <span class="toc-text">经典例题</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%9C%80%E9%95%BF%E5%85%AC%E5%85%B1%E5%AD%90%E5%BA%8F%E5%88%97%EF%BC%88longest-common-subsequence-LCS%EF%BC%89"><span class="toc-number">1.3.1.</span> <span class="toc-text">最长公共子序列（longest-common-subsequence, LCS）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%88%BB%E7%94%BB%E6%9C%80%E9%95%BF%E5%85%AC%E5%85%B1%E5%AD%90%E5%BA%8F%E5%88%97%E9%97%AE%E9%A2%98%E7%9A%84%E6%9C%80%E4%BC%98%E5%AD%90%E7%BB%93%E6%9E%84"><span class="toc-number">1.3.2.</span> <span class="toc-text">刻画最长公共子序列问题的最优子结构</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%80%92%E5%BD%92%E7%9A%84%E5%AE%9A%E4%B9%89%E6%9C%80%E4%BC%98%E8%B4%A8"><span class="toc-number">1.3.3.</span> <span class="toc-text">递归的定义最优质</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%AE%A1%E7%AE%97%E6%9C%80%E4%BC%98%E7%9A%84%E8%A7%A3"><span class="toc-number">1.3.4.</span> <span class="toc-text">计算最优的解</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%95%B0%E7%BB%84%E7%9A%84%E5%A1%AB%E8%A1%A8%E8%BF%87%E7%A8%8B"><span class="toc-number">1.3.5.</span> <span class="toc-text">数组的填表过程</span></a></li></ol></li></ol></li></ol>
+          <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92%E7%AE%97%E6%B3%95"><span class="toc-number">1.</span> <span class="toc-text"> 动态规划算法</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BB%80%E4%B9%88%E6%98%AF%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92"><span class="toc-number">1.1.</span> <span class="toc-text"> 什么是动态规划</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92%E5%8E%9F%E7%90%86"><span class="toc-number">1.2.</span> <span class="toc-text"> 动态规划原理</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%BB%8F%E5%85%B8%E4%BE%8B%E9%A2%98"><span class="toc-number">1.3.</span> <span class="toc-text"> 经典例题</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%9C%80%E9%95%BF%E5%85%AC%E5%85%B1%E5%AD%90%E5%BA%8F%E5%88%97longest-common-subsequence-lcs"><span class="toc-number">1.3.1.</span> <span class="toc-text"> 最长公共子序列（ longest-common-subsequence, LCS ）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%88%BB%E7%94%BB%E6%9C%80%E9%95%BF%E5%85%AC%E5%85%B1%E5%AD%90%E5%BA%8F%E5%88%97%E9%97%AE%E9%A2%98%E7%9A%84%E6%9C%80%E4%BC%98%E5%AD%90%E7%BB%93%E6%9E%84"><span class="toc-number">1.3.2.</span> <span class="toc-text"> 刻画最长公共子序列问题的最优子结构</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%80%92%E5%BD%92%E7%9A%84%E5%AE%9A%E4%B9%89%E6%9C%80%E4%BC%98%E8%B4%A8"><span class="toc-number">1.3.3.</span> <span class="toc-text"> 递归的定义最优质</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%AE%A1%E7%AE%97%E6%9C%80%E4%BC%98%E7%9A%84%E8%A7%A3"><span class="toc-number">1.3.4.</span> <span class="toc-text"> 计算最优的解</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%95%B0%E7%BB%84%E7%9A%84%E5%A1%AB%E8%A1%A8%E8%BF%87%E7%A8%8B"><span class="toc-number">1.3.5.</span> <span class="toc-text"> 数组的填表过程</span></a></li></ol></li></ol></li></ol>
       </div>
       <div class="related panel pjax" data-title="Related">
         <ul>
@@ -359,13 +369,13 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
 <nav class="state">
     <div class="item posts">
       <a href="/archives/">
-        <span class="count">142</span>
+        <span class="count">143</span>
         <span class="name">posts</span>
       </a>
     </div>
     <div class="item categories">
       <a href="/categories/">
-        <span class="count">73</span>
+        <span class="count">74</span>
         <span class="name">categories</span>
       </a>
     </div>
@@ -450,96 +460,6 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
   <li class="item">
     
 <div class="breadcrumb">
-</div>
-
-    <span><a href="/posts/d0edc1ed/" title="Linux常用命令">Linux常用命令</a></span>
-  </li>
-
-      
-  <li class="item">
-    
-<div class="breadcrumb">
-</div>
-
-    <span><a href="/posts/ba003691/" title="Springboot工程项目.gitignore配置">Springboot工程项目.gitignore配置</a></span>
-  </li>
-
-      
-  <li class="item">
-    
-<div class="breadcrumb">
-<a href="/categories/Java/" title="In Java">Java</a>
-<i class="ic i-angle-right"></i>
-<a href="/categories/Java/%E5%A4%9A%E7%BA%BF%E7%A8%8B/" title="In 多线程">多线程</a>
-<i class="ic i-angle-right"></i>
-<a href="/categories/Java/%E5%A4%9A%E7%BA%BF%E7%A8%8B/Java%E9%9D%A2%E8%AF%95/" title="In Java面试">Java面试</a>
-</div>
-
-    <span><a href="/posts/12fecb94/" title="多线程笔记">多线程笔记</a></span>
-  </li>
-
-      
-  <li class="item">
-    
-<div class="breadcrumb">
-<a href="/categories/Java/" title="In Java">Java</a>
-<i class="ic i-angle-right"></i>
-<a href="/categories/Java/Tools/" title="In Tools">Tools</a>
-</div>
-
-    <span><a href="/posts/b246d3ce/" title="Java自带的好用的工具类">Java自带的好用的工具类</a></span>
-  </li>
-
-      
-  <li class="item">
-    
-<div class="breadcrumb">
-<a href="/categories/Java/" title="In Java">Java</a>
-</div>
-
-    <span><a href="/posts/4ca5bfdf/" title="Spring手动回滚事务">Spring手动回滚事务</a></span>
-  </li>
-
-      
-  <li class="item">
-    
-<div class="breadcrumb">
-<a href="/categories/Java%E9%9D%A2%E8%AF%95/" title="In Java面试">Java面试</a>
-</div>
-
-    <span><a href="/posts/3eb5e557/" title="赛可出行面试">赛可出行面试</a></span>
-  </li>
-
-      
-  <li class="item">
-    
-<div class="breadcrumb">
-<a href="/categories/Java%E9%9D%A2%E8%AF%95/" title="In Java面试">Java面试</a>
-<i class="ic i-angle-right"></i>
-<a href="/categories/Java%E9%9D%A2%E8%AF%95/%E9%80%89%E6%8B%A9%E6%8E%92%E5%BA%8F/" title="In 选择排序">选择排序</a>
-<i class="ic i-angle-right"></i>
-<a href="/categories/Java%E9%9D%A2%E8%AF%95/%E9%80%89%E6%8B%A9%E6%8E%92%E5%BA%8F/%E7%AE%97%E6%B3%95/" title="In 算法">算法</a>
-</div>
-
-    <span><a href="/posts/43d00a99/" title="选择排序">选择排序</a></span>
-  </li>
-
-      
-  <li class="item">
-    
-<div class="breadcrumb">
-<a href="/categories/SpringBoot/" title="In SpringBoot">SpringBoot</a>
-<i class="ic i-angle-right"></i>
-<a href="/categories/SpringBoot/Java/" title="In Java">Java</a>
-</div>
-
-    <span><a href="/posts/f976ebe7/" title="SpringMvc中标准的后端接口格式">SpringMvc中标准的后端接口格式</a></span>
-  </li>
-
-      
-  <li class="item">
-    
-<div class="breadcrumb">
 <a href="/categories/Java/" title="In Java">Java</a>
 </div>
 
@@ -550,12 +470,95 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
   <li class="item">
     
 <div class="breadcrumb">
-<a href="/categories/Java%E9%9D%A2%E8%AF%95/" title="In Java面试">Java面试</a>
-<i class="ic i-angle-right"></i>
-<a href="/categories/Java%E9%9D%A2%E8%AF%95/SpringBoot/" title="In SpringBoot">SpringBoot</a>
+<a href="/categories/%E5%89%8D%E7%AB%AF/" title="In 前端">前端</a>
 </div>
 
-    <span><a href="/posts/eec4b728/" title="SpringBoot中如何优雅的使用多线程">SpringBoot中如何优雅的使用多线程</a></span>
+    <span><a href="/posts/3eca6246/" title="使用npm时报python错误的解决方案">使用npm时报python错误的解决方案</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/Java/" title="In Java">Java</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/Java/Stream/" title="In Stream">Stream</a>
+</div>
+
+    <span><a href="/posts/8b8fedea/" title="Stream流的介绍">Stream流的介绍</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/Java/" title="In Java">Java</a>
+</div>
+
+    <span><a href="/posts/1748805d/" title="java线程池与五种常用线程池策略使用与解析">java线程池与五种常用线程池策略使用与解析</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/" title="In 设计模式">设计模式</a>
+</div>
+
+    <span><a href="/posts/79c6d028/" title="23设计模式(更新中)">23设计模式(更新中)</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/Java%E9%9D%A2%E8%AF%95/" title="In Java面试">Java面试</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/Java%E9%9D%A2%E8%AF%95/%E5%BF%AB%E9%80%9F%E6%8E%92%E5%BA%8F/" title="In 快速排序">快速排序</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/Java%E9%9D%A2%E8%AF%95/%E5%BF%AB%E9%80%9F%E6%8E%92%E5%BA%8F/%E7%AE%97%E6%B3%95/" title="In 算法">算法</a>
+</div>
+
+    <span><a href="/posts/ff8068c0/" title="快速排序">快速排序</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/%E6%95%B0%E6%8D%AE%E5%BA%93/" title="In 数据库">数据库</a>
+</div>
+
+    <span><a href="/posts/60f024c8/" title="关于sql执行计划">关于sql执行计划</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+</div>
+
+    <span><a href="/posts/f35c5140/" title="JAVA-jar包运行及日志输出">JAVA-jar包运行及日志输出</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/SAP/" title="In SAP">SAP</a>
+</div>
+
+    <span><a href="/posts/96b6e8a1/" title="simple self introduction">simple self introduction</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/Jenkins/" title="In Jenkins">Jenkins</a>
+</div>
+
+    <span><a href="/posts/273d98ce/" title="The learning of Jenkins Grammer">The learning of Jenkins Grammer</a></span>
   </li>
 
   </ul>
@@ -580,13 +583,13 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
     <span class="post-meta-item-icon">
       <i class="ic i-chart-area"></i>
     </span>
-    <span title="Symbols count total">620k words</span>
+    <span title="Symbols count total">622k words</span>
 
     <span class="post-meta-divider">|</span>
     <span class="post-meta-item-icon">
       <i class="ic i-coffee"></i>
     </span>
-    <span title="Reading time total">9:24</span>
+    <span title="Reading time total">9:25</span>
   </div>
 </div>
 

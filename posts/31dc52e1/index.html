@@ -117,12 +117,12 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
       </div>
       <div id="imgs" class="pjax">
         <ul>
-          <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1gicli9lfebj20zk0m84qp.jpg"></li>
-          <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1gicm0fdw5cj20zk0m8hdt.jpg"></li>
-          <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1giclx6phq6j20zk0m8e36.jpg"></li>
-          <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1gicitzannuj20zk0m8b29.jpg"></li>
-          <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1gipew28b65j20zk0m8hdt.jpg"></li>
-          <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1gicljgocqbj20zk0m8e81.jpg"></li>
+          <li class="item" data-background-image="https://tva2.sinaimg.cn/large/6833939bly1giclxp31goj20zk0m8qv5.jpg"></li>
+          <li class="item" data-background-image="https://tva2.sinaimg.cn/large/6833939bly1gicljgocqbj20zk0m8e81.jpg"></li>
+          <li class="item" data-background-image="https://tva2.sinaimg.cn/large/6833939bly1gipew28b65j20zk0m8hdt.jpg"></li>
+          <li class="item" data-background-image="https://tva2.sinaimg.cn/large/6833939bly1giciszlczyj20zk0m816d.jpg"></li>
+          <li class="item" data-background-image="https://tva2.sinaimg.cn/large/6833939bly1gipexbei4hj20zk0m8npd.jpg"></li>
+          <li class="item" data-background-image="https://tva2.sinaimg.cn/large/6833939bly1gipevuctzzj20zk0m84qp.jpg"></li>
         </ul>
       </div>
     </header>
@@ -174,23 +174,23 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
   <div class="body md" itemprop="articleBody">
     
 
-    <h1 id="MyBatis之分页查询：MyBatis-PageHelper"><a href="#MyBatis之分页查询：MyBatis-PageHelper" class="headerlink" title="MyBatis之分页查询：MyBatis PageHelper"></a><code>MyBatis</code>之分页查询：<code>MyBatis PageHelper</code></h1><h2 id="1-添加依赖"><a href="#1-添加依赖" class="headerlink" title="1. 添加依赖"></a>1. 添加依赖</h2><figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">&lt;!--MyBatis 分页插件: MyBatis PageHelper--&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">dependency</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">groupId</span>&gt;</span>com.github.pagehelper<span class="tag">&lt;/<span class="name">groupId</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>pagehelper-spring-boot-starter<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">version</span>&gt;</span>1.2.5<span class="tag">&lt;/<span class="name">version</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">dependency</span>&gt;</span></span><br></pre></td></tr></table></figure>
-<h2 id="2-添加配置"><a href="#2-添加配置" class="headerlink" title="2. 添加配置"></a>2. 添加配置</h2><span id="more"></span>
-
-<p>在<code>application.properties</code>配置文件中添加<code>MyBatis PageHelper</code>的配置项</p>
+    <h1 id="mybatis之分页查询mybatis-pagehelper"><a class="markdownIt-Anchor" href="#mybatis之分页查询mybatis-pagehelper">#</a>  <code>MyBatis</code>  之分页查询： <code>MyBatis PageHelper</code></h1>
+<h2 id="1-添加依赖"><a class="markdownIt-Anchor" href="#1-添加依赖">#</a> 1. 添加依赖</h2>
+<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">&lt;!--MyBatis 分页插件: MyBatis PageHelper--&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">dependency</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">groupId</span>&gt;</span>com.github.pagehelper<span class="tag">&lt;/<span class="name">groupId</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>pagehelper-spring-boot-starter<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">version</span>&gt;</span>1.2.5<span class="tag">&lt;/<span class="name">version</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">dependency</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<h2 id="2-添加配置"><a class="markdownIt-Anchor" href="#2-添加配置">#</a> 2. 添加配置</h2>
+<span id="more"></span>
+<p>在 <code>application.properties</code>  配置文件中添加 <code>MyBatis PageHelper</code>  的配置项</p>
 <figure class="highlight properties"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># PageHelper 分页插件配置</span></span><br><span class="line"><span class="meta">pagehelper.helperDialect</span>=<span class="string">mysql</span></span><br><span class="line"><span class="meta">pagehelper.reasonable</span>=<span class="string">true</span></span><br><span class="line"><span class="meta">pagehelper.supportMethodsArguments</span>=<span class="string">true</span></span><br><span class="line"><span class="meta">pagehelper.params</span>=<span class="string">count=countSql</span></span><br></pre></td></tr></table></figure>
-
-<h2 id="3-分页查询"><a href="#3-分页查询" class="headerlink" title="3. 分页查询"></a>3. 分页查询</h2><p>通过 <code>MyBatis PageHelper</code> 进行分页查询实际上非常简单，只需在<code>service(或mapper)</code>方法执行查询前，调用一次 <code>PageHelper.startPage(pageNum,pageSize)</code> <code>来设置分页查询参数即可，其中pageNum</code> 为记录页数，<code>pageSize</code> 为单页记录数量。此时<code>service(或mapper)</code>方法的查询结果就是分页后的结果了。如果期望获得相关的分页信息，还可以将查询结果封装到<code>PageInfo</code>对象中，以获得总页数、总记录数、当前页数等相关分页信息</p>
-<p>现在通过一个实际示例，来具体演示操作，这里我们提供了一个分页查询的<code>Controller</code></p>
+<h2 id="3-分页查询"><a class="markdownIt-Anchor" href="#3-分页查询">#</a> 3. 分页查询</h2>
+<p>通过  <code>MyBatis PageHelper</code>  进行分页查询实际上非常简单，只需在 <code>service(或mapper)</code>  方法执行查询前，调用一次  <code>PageHelper.startPage(pageNum,pageSize)</code>   <code>来设置分页查询参数即可，其中pageNum</code>  为记录页数， <code>pageSize</code>  为单页记录数量。此时 <code>service(或mapper)</code>  方法的查询结果就是分页后的结果了。如果期望获得相关的分页信息，还可以将查询结果封装到 <code>PageInfo</code>  对象中，以获得总页数、总记录数、当前页数等相关分页信息</p>
+<p>现在通过一个实际示例，来具体演示操作，这里我们提供了一个分页查询的 <code>Controller</code></p>
 <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * 分页查询</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@param</span> pageNum 记录页数</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@param</span> pageSize 单页记录数量</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@return</span></span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="meta">@ResponseBody</span></span><br><span class="line"><span class="meta">@RequestMapping(&quot;/findPage&quot;)</span></span><br><span class="line"><span class="function"><span class="keyword">public</span> List&lt;Student&gt; <span class="title">findPage</span><span class="params">(<span class="meta">@RequestParam</span> <span class="keyword">int</span> pageNum, <span class="meta">@RequestParam</span> <span class="keyword">int</span> pageSize)</span> </span>&#123;</span><br><span class="line">    <span class="comment">// 设置分页查询参数</span></span><br><span class="line">    PageHelper.startPage(pageNum,pageSize);</span><br><span class="line">    List&lt;Student&gt; studentList = studentService.findList();</span><br><span class="line"></span><br><span class="line">    <span class="keyword">for</span>(Student student : studentList) &#123;</span><br><span class="line">        System.out.println(<span class="string">&quot;element : &quot;</span> + student);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="comment">// 封装分页查询结果到 PageInfo 对象中以获取相关分页信息</span></span><br><span class="line">    PageInfo pageInfo = <span class="keyword">new</span> PageInfo( studentList );</span><br><span class="line">    System.out.println(<span class="string">&quot;总页数: &quot;</span> + pageInfo.getPages());</span><br><span class="line">    System.out.println(<span class="string">&quot;总记录数: &quot;</span> + pageInfo.getTotal());</span><br><span class="line">    System.out.println(<span class="string">&quot;当前页数: &quot;</span> + pageInfo.getPageNum());</span><br><span class="line">    System.out.println(<span class="string">&quot;当前页面记录数量: &quot;</span> + pageInfo.getSize());</span><br><span class="line"></span><br><span class="line">    <span class="keyword">return</span> pageInfo.getList();</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<p><code>service</code>方法中所调用的查询<code>SQL</code>如下所示，可以看到，<code>SQL</code>中无需使用<code>limit</code>语句</p>
+<p><code>service</code>  方法中所调用的查询 <code>SQL</code>  如下所示，可以看到， <code>SQL</code>  中无需使用 <code>limit</code>  语句</p>
 <figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">...</span><br><span class="line"><span class="tag">&lt;<span class="name">resultMap</span> <span class="attr">id</span>=<span class="string">&quot;studentResultMap&quot;</span> <span class="attr">type</span>=<span class="string">&quot;com.aaron.springbootdemo.pojo.Student&quot;</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">id</span> <span class="attr">property</span>=<span class="string">&quot;id&quot;</span> <span class="attr">column</span>=<span class="string">&quot;id&quot;</span> <span class="attr">jdbcType</span>=<span class="string">&quot;INTEGER&quot;</span>/&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">result</span> <span class="attr">property</span>=<span class="string">&quot;username&quot;</span> <span class="attr">column</span>=<span class="string">&quot;username&quot;</span> <span class="attr">jdbcType</span>=<span class="string">&quot;VARCHAR&quot;</span>/&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">result</span> <span class="attr">property</span>=<span class="string">&quot;sex&quot;</span> <span class="attr">column</span>=<span class="string">&quot;sex&quot;</span> <span class="attr">jdbcType</span>=<span class="string">&quot;VARCHAR&quot;</span>/&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">result</span> <span class="attr">property</span>=<span class="string">&quot;address&quot;</span> <span class="attr">column</span>=<span class="string">&quot;address&quot;</span> <span class="attr">jdbcType</span>=<span class="string">&quot;VARCHAR&quot;</span>/&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">resultMap</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">select</span> <span class="attr">id</span>=<span class="string">&quot;findList&quot;</span> <span class="attr">parameterType</span>=<span class="string">&quot;String&quot;</span> <span class="attr">resultMap</span>=<span class="string">&quot;studentResultMap&quot;</span>&gt;</span>    </span><br><span class="line">    SELECT * FROM user</span><br><span class="line"><span class="tag">&lt;/<span class="name">select</span>&gt;</span></span><br><span class="line">...</span><br></pre></td></tr></table></figure>
-
 <blockquote>
-<p><code>NOTE:</code> </p>
+<p><code>NOTE:</code></p>
 </blockquote>
-<p><code>PageHelper.startPage(pageNum,pageSize)</code> 只对其后的第一次<code>SQL</code>查询进行分页。故若需进行分页查询，必须每次在<code>service（或mapper）</code>方法执行<code>SQL</code>查询前调用<code>PageHelper.startPage(pageNum,pageSize) </code>方法</p>
+<p><code>PageHelper.startPage(pageNum,pageSize)</code>  只对其后的第一次 <code>SQL</code>  查询进行分页。故若需进行分页查询，必须每次在 <code>service（或mapper）</code> 方法执行 <code>SQL</code>  查询前调用 <code>PageHelper.startPage(pageNum,pageSize) </code> 方法</p>
 
       <div class="tags">
           <a href="/tags/Java/" rel="tag"><i class="ic i-tag"></i> Java</a>
@@ -248,7 +248,7 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
     <div class="item left">
       
 
-  <a href="/posts/105c245f/" itemprop="url" rel="prev" data-background-image="https:&#x2F;&#x2F;tva3.sinaimg.cn&#x2F;mw690&#x2F;6833939bly1gicm0n457cj20zk0m8e81.jpg" title="Mybatis使用Sql进行模糊查询">
+  <a href="/posts/105c245f/" itemprop="url" rel="prev" data-background-image="https:&#x2F;&#x2F;tva2.sinaimg.cn&#x2F;mw690&#x2F;6833939bly1giclga70tsj20zk0m84mr.jpg" title="Mybatis使用Sql进行模糊查询">
   <span class="type">Previous Post</span>
   <span class="category"><i class="ic i-flag"></i> SpringBoot</span>
   <h3>Mybatis使用Sql进行模糊查询</h3>
@@ -258,7 +258,7 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
     <div class="item right">
       
 
-  <a href="/posts/2edf7887/" itemprop="url" rel="next" data-background-image="https:&#x2F;&#x2F;tva3.sinaimg.cn&#x2F;mw690&#x2F;6833939bly1gicitf0kl1j20zk0m87fe.jpg" title="MybatisPlus实现分页查询">
+  <a href="/posts/2edf7887/" itemprop="url" rel="next" data-background-image="https:&#x2F;&#x2F;tva2.sinaimg.cn&#x2F;mw690&#x2F;6833939bly1gipeu1usa7j20zk0m8b29.jpg" title="MybatisPlus实现分页查询">
   <span class="type">Next Post</span>
   <span class="category"><i class="ic i-flag"></i> 分页查询</span>
   <h3>MybatisPlus实现分页查询</h3>
@@ -280,7 +280,7 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
   <div class="panels">
     <div class="inner">
       <div class="contents panel pjax" data-title="Contents">
-          <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#MyBatis%E4%B9%8B%E5%88%86%E9%A1%B5%E6%9F%A5%E8%AF%A2%EF%BC%9AMyBatis-PageHelper"><span class="toc-number">1.</span> <span class="toc-text">MyBatis之分页查询：MyBatis PageHelper</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#1-%E6%B7%BB%E5%8A%A0%E4%BE%9D%E8%B5%96"><span class="toc-number">1.1.</span> <span class="toc-text">1. 添加依赖</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2-%E6%B7%BB%E5%8A%A0%E9%85%8D%E7%BD%AE"><span class="toc-number">1.2.</span> <span class="toc-text">2. 添加配置</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#3-%E5%88%86%E9%A1%B5%E6%9F%A5%E8%AF%A2"><span class="toc-number">1.3.</span> <span class="toc-text">3. 分页查询</span></a></li></ol></li></ol>
+          <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#mybatis%E4%B9%8B%E5%88%86%E9%A1%B5%E6%9F%A5%E8%AF%A2mybatis-pagehelper"><span class="toc-number">1.</span> <span class="toc-text">  MyBatis  之分页查询： MyBatis PageHelper</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#1-%E6%B7%BB%E5%8A%A0%E4%BE%9D%E8%B5%96"><span class="toc-number">1.1.</span> <span class="toc-text"> 1. 添加依赖</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2-%E6%B7%BB%E5%8A%A0%E9%85%8D%E7%BD%AE"><span class="toc-number">1.2.</span> <span class="toc-text"> 2. 添加配置</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#3-%E5%88%86%E9%A1%B5%E6%9F%A5%E8%AF%A2"><span class="toc-number">1.3.</span> <span class="toc-text"> 3. 分页查询</span></a></li></ol></li></ol>
       </div>
       <div class="related panel pjax" data-title="Related">
         <ul>
@@ -298,13 +298,13 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
 <nav class="state">
     <div class="item posts">
       <a href="/archives/">
-        <span class="count">142</span>
+        <span class="count">143</span>
         <span class="name">posts</span>
       </a>
     </div>
     <div class="item categories">
       <a href="/categories/">
-        <span class="count">73</span>
+        <span class="count">74</span>
         <span class="name">categories</span>
       </a>
     </div>
@@ -389,97 +389,10 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
   <li class="item">
     
 <div class="breadcrumb">
-<a href="/categories/Java%E9%9D%A2%E8%AF%95/" title="In Java面试">Java面试</a>
+<a href="/categories/Mybtais/" title="In Mybtais">Mybtais</a>
 </div>
 
-    <span><a href="/posts/3b6bfba3/" title="如何保证接口的幂等性">如何保证接口的幂等性</a></span>
-  </li>
-
-      
-  <li class="item">
-    
-<div class="breadcrumb">
-<a href="/categories/%E5%89%8D%E7%AB%AF/" title="In 前端">前端</a>
-</div>
-
-    <span><a href="/posts/7733848a/" title="文件上传前端小结">文件上传前端小结</a></span>
-  </li>
-
-      
-  <li class="item">
-    
-<div class="breadcrumb">
-<a href="/categories/Java%E9%9D%A2%E8%AF%95/" title="In Java面试">Java面试</a>
-<i class="ic i-angle-right"></i>
-<a href="/categories/Java%E9%9D%A2%E8%AF%95/%E7%9B%B4%E6%8E%A5%E6%8F%92%E5%85%A5%E6%8E%92%E5%BA%8F/" title="In 直接插入排序">直接插入排序</a>
-<i class="ic i-angle-right"></i>
-<a href="/categories/Java%E9%9D%A2%E8%AF%95/%E7%9B%B4%E6%8E%A5%E6%8F%92%E5%85%A5%E6%8E%92%E5%BA%8F/%E7%AE%97%E6%B3%95/" title="In 算法">算法</a>
-</div>
-
-    <span><a href="/posts/2b06d603/" title="直接插入排序">直接插入排序</a></span>
-  </li>
-
-      
-  <li class="item">
-    
-<div class="breadcrumb">
-</div>
-
-    <span><a href="/posts/66edb7d2/" title="关于hexo使用shoka主题注意点">关于hexo使用shoka主题注意点</a></span>
-  </li>
-
-      
-  <li class="item">
-    
-<div class="breadcrumb">
-<a href="/categories/UML/" title="In UML">UML</a>
-</div>
-
-    <span><a href="/posts/f610585/" title="UML:类图关系总结">UML:类图关系总结</a></span>
-  </li>
-
-      
-  <li class="item">
-    
-<div class="breadcrumb">
-<a href="/categories/Java%E9%9D%A2%E8%AF%95/" title="In Java面试">Java面试</a>
-</div>
-
-    <span><a href="/posts/a5258aa2/" title="Java面试小册子">Java面试小册子</a></span>
-  </li>
-
-      
-  <li class="item">
-    
-<div class="breadcrumb">
-<a href="/categories/Java/" title="In Java">Java</a>
-</div>
-
-    <span><a href="/posts/1da18d70/" title="Java8内置四大函数式接口">Java8内置四大函数式接口</a></span>
-  </li>
-
-      
-  <li class="item">
-    
-<div class="breadcrumb">
-<a href="/categories/Java%E9%9D%A2%E8%AF%95/" title="In Java面试">Java面试</a>
-<i class="ic i-angle-right"></i>
-<a href="/categories/Java%E9%9D%A2%E8%AF%95/%E9%80%89%E6%8B%A9%E6%8E%92%E5%BA%8F/" title="In 选择排序">选择排序</a>
-<i class="ic i-angle-right"></i>
-<a href="/categories/Java%E9%9D%A2%E8%AF%95/%E9%80%89%E6%8B%A9%E6%8E%92%E5%BA%8F/%E7%AE%97%E6%B3%95/" title="In 算法">算法</a>
-</div>
-
-    <span><a href="/posts/43d00a99/" title="选择排序">选择排序</a></span>
-  </li>
-
-      
-  <li class="item">
-    
-<div class="breadcrumb">
-<a href="/categories/Java%E9%9D%A2%E8%AF%95/" title="In Java面试">Java面试</a>
-</div>
-
-    <span><a href="/posts/3eb5e557/" title="赛可出行面试">赛可出行面试</a></span>
+    <span><a href="/posts/9aff665a/" title="mybatis中大于等于小于等于的写法">mybatis中大于等于小于等于的写法</a></span>
   </li>
 
       
@@ -488,10 +401,92 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
 <div class="breadcrumb">
 <a href="/categories/Java/" title="In Java">Java</a>
 <i class="ic i-angle-right"></i>
-<a href="/categories/Java/Tools/" title="In Tools">Tools</a>
+<a href="/categories/Java/Mysql/" title="In Mysql">Mysql</a>
 </div>
 
-    <span><a href="/posts/49b96938/" title="Java获取一天时间的起始">Java获取一天时间的起始</a></span>
+    <span><a href="/posts/69c17d37/" title="关于事务提交中踩坑">关于事务提交中踩坑</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/Java/" title="In Java">Java</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/Java/Stream/" title="In Stream">Stream</a>
+</div>
+
+    <span><a href="/posts/8b8fedea/" title="Stream流的介绍">Stream流的介绍</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/Machine-Learning/" title="In Machine Learning">Machine Learning</a>
+</div>
+
+    <span><a href="/posts/53fbbba3/" title="Jupyter notebook使用">Jupyter notebook使用</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/%E6%95%B0%E6%8D%AE%E5%BA%93/" title="In 数据库">数据库</a>
+</div>
+
+    <span><a href="/posts/60f024c8/" title="关于sql执行计划">关于sql执行计划</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+</div>
+
+    <span><a href="/posts/afe5178f/" title="关于设置git以及npm代理">关于设置git以及npm代理</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/SpringBoot/" title="In SpringBoot">SpringBoot</a>
+</div>
+
+    <span><a href="/posts/67f40b37/" title="Spring Boot 获取服务IP地址和端口号">Spring Boot 获取服务IP地址和端口号</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+</div>
+
+    <span><a href="/posts/a72f470b/" title="关于JVM常用参数">关于JVM常用参数</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/%E5%A4%A7%E6%95%B0%E6%8D%AE/" title="In 大数据">大数据</a>
+</div>
+
+    <span><a href="/posts/737c98ca/" title="什么是MapReduce">什么是MapReduce</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/Java%E9%9D%A2%E8%AF%95/" title="In Java面试">Java面试</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/Java%E9%9D%A2%E8%AF%95/Mybatis/" title="In Mybatis">Mybatis</a>
+</div>
+
+    <span><a href="/posts/31d0fffb/" title="Mybatis中#号和$号的区别">Mybatis中#号和$号的区别</a></span>
   </li>
 
   </ul>
@@ -516,13 +511,13 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
     <span class="post-meta-item-icon">
       <i class="ic i-chart-area"></i>
     </span>
-    <span title="Symbols count total">620k words</span>
+    <span title="Symbols count total">622k words</span>
 
     <span class="post-meta-divider">|</span>
     <span class="post-meta-item-icon">
       <i class="ic i-coffee"></i>
     </span>
-    <span title="Reading time total">9:24</span>
+    <span title="Reading time total">9:25</span>
   </div>
 </div>
 

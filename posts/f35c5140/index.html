@@ -117,12 +117,12 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
       </div>
       <div id="imgs" class="pjax">
         <ul>
-          <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1gipew8gmvyj20zk0m87wh.jpg"></li>
-          <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1gicmnywqgpj20zk0m8dwx.jpg"></li>
-          <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1gipevgoki5j20zk0m84qp.jpg"></li>
-          <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1gipexw3o58j20zk0m8e81.jpg"></li>
-          <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1giph47e9vtj20zk0m8x6l.jpg"></li>
-          <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1gipesx5fdwj20zk0m81kx.jpg"></li>
+          <li class="item" data-background-image="https://tva2.sinaimg.cn/large/6833939bly1giph4lm9i7j20zk0m84qp.jpg"></li>
+          <li class="item" data-background-image="https://tva2.sinaimg.cn/large/6833939bly1giciukx8a7j20zk0m8aio.jpg"></li>
+          <li class="item" data-background-image="https://tva2.sinaimg.cn/large/6833939bly1giclffsa1cj20zk0m811l.jpg"></li>
+          <li class="item" data-background-image="https://tva2.sinaimg.cn/large/6833939bly1gipexw3o58j20zk0m8e81.jpg"></li>
+          <li class="item" data-background-image="https://tva2.sinaimg.cn/large/6833939bly1gipet4bz0yj20zk0m8e81.jpg"></li>
+          <li class="item" data-background-image="https://tva2.sinaimg.cn/large/6833939bly1gipexoj0moj20zk0m8kgu.jpg"></li>
         </ul>
       </div>
     </header>
@@ -167,38 +167,38 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
     
 
     <p><span class="exturl" data-url="aHR0cHM6Ly93d3cuY25ibG9ncy5jb20vbHNoLWFkbWluL3AvMTUzNDUxNzYuaHRtbA==">原文地址</span></p>
-<p>一般情况下运行jar包，当前是可运行的jar包，直接命令</p>
+<p>一般情况下运行 jar 包，当前是可运行的 jar 包，直接命令</p>
 <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">java -jar common.jar </span><br></pre></td></tr></table></figure>
-<p>按下<code>ctrl+C</code> ，关闭当前<code>ssh</code>或者直接关闭窗口，当前程序都会退出。</p>
+<p>按下 <code>ctrl+C</code>  ，关闭当前 <code>ssh</code>  或者直接关闭窗口，当前程序都会退出。</p>
 <span id="more"></span>
-
-
-<p>我们在命令的结尾添加 <code>“&amp;”</code> ，&amp;表示该程序可以在后台执行</p>
+<p>我们在命令的结尾添加  <code>“&amp;”</code>  ，&amp; 表示该程序可以在后台执行</p>
 <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">java -jar common.jar &amp;</span><br></pre></td></tr></table></figure>
-<p> 但是在当窗口关闭时，程序也会中止运行</p>
+<p>但是在当窗口关闭时，程序也会中止运行</p>
 <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">nohup java -jar common.jar &amp;</span><br></pre></td></tr></table></figure>
-<p>命令最前面个<code>nohub</code>关键字，这样程序就会不挂断运行命令, 当ssh终端关闭时,程序仍然在运行，当前程序的日志会被写入到当前目录的<code>nohup.out</code>文件中</p>
+<p>命令最前面个 <code>nohub</code>  关键字，这样程序就会不挂断运行命令，当 ssh 终端关闭时，程序仍然在运行，当前程序的日志会被写入到当前目录的 <code>nohup.out</code>  文件中</p>
 <p>我们可以改下输入的日志文件</p>
 <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">nohup java -jar common.jar &gt; log.out &amp;</span><br></pre></td></tr></table></figure>
-<p>当前程序的日志会被写入到当前目录的<code>log.out</code>文件中</p>
-<p>如果不想写日志，可以将日志重定向到 <code>/dev/null</code> 中，<code>/dev/null</code>代表<code>linux</code>的空设备文件，所有往这个文件里面写入的内容都会丢失</p>
+<p>当前程序的日志会被写入到当前目录的 <code>log.out</code>  文件中</p>
+<p>如果不想写日志，可以将日志重定向到  <code>/dev/null</code>  中， <code>/dev/null</code>  代表 <code>linux</code>  的空设备文件，所有往这个文件里面写入的内容都会丢失</p>
 <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">nohup java -jar common.jar &gt; /dev/<span class="keyword">null</span> &amp;</span><br></pre></td></tr></table></figure>
 <p>标准输出就会不再存在，没有任何地方能够找到输出的内容</p>
 <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">nohup java -jar common-api.jar &gt;/dev/<span class="keyword">null</span> <span class="number">2</span>&gt;log.error &amp; </span><br></pre></td></tr></table></figure>
 <p>只输出错误信息到日志文件，标准输出不写入日志文件，直接丢弃</p>
 <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">nohup java -jar common-api.jar &gt;/dev/<span class="keyword">null</span> <span class="number">2</span>&gt;&amp;<span class="number">1</span> &amp; </span><br></pre></td></tr></table></figure>
-<p>标准输出<code>(stdout)</code>重定向到<code>/dev/null</code>中（丢弃标准输出），然后标准错误输出<code>(stderror)</code>由于重用了标准输出的描述符，所以标准错误输出也被定向到了<code>/dev/null</code>中，错误输出同样也被丢弃了</p>
+<p>标准输出 <code>(stdout)</code>  重定向到 <code>/dev/null</code>  中（丢弃标准输出），然后标准错误输出 <code>(stderror)</code>  由于重用了标准输出的描述符，所以标准错误输出也被定向到了 <code>/dev/null</code>  中，错误输出同样也被丢弃了</p>
 <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">nohup java -jar common-api.jar &gt;log.out <span class="number">2</span>&gt;&amp;<span class="number">1</span> &amp; </span><br></pre></td></tr></table></figure>
-<p>标准输出重定向到<code>log.out</code>中，然后错误输出由于重用了标准输出的描述符，所以错误输出也被定向到了<code>log.out</code>中 </p>
+<p>标准输出重定向到 <code>log.out</code>  中，然后错误输出由于重用了标准输出的描述符，所以错误输出也被定向到了 <code>log.out</code>  中</p>
 <p>但是不管那种情况，如果日志输出，日志文件都会增加很快，造成单个文件很大。所以需要拆分文件</p>
 <ol>
-<li><p>定时作业，每天将日志文件复制一份，然后将当前的日志文件清空。</p>
+<li>
+<p>定时作业，每天将日志文件复制一份，然后将当前的日志文件清空。</p>
 </li>
-<li><p>借助 <code>cronolog</code>来分隔日志</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">nohup java -jar common-api.jar | /usr/local/cronolog/sbin/cronolog logs/console-%Y-%m-%d.out &amp;</span><br></pre></td></tr></table></figure>
-<p>这样每天会产生一个<code>console</code>开头的日志文件。</p>
+<li>
+<p>借助  <code>cronolog</code>  来分隔日志</p>
 </li>
 </ol>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">nohup java -jar common-api.jar | /usr/local/cronolog/sbin/cronolog logs/console-%Y-%m-%d.out &amp;</span><br></pre></td></tr></table></figure>
+<p>这样每天会产生一个 <code>console</code>  开头的日志文件。</p>
 
       <div class="tags">
           <a href="/tags/SpringBoot/" rel="tag"><i class="ic i-tag"></i> SpringBoot</a>
@@ -253,7 +253,7 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
     <div class="item left">
       
 
-  <a href="/posts/823298d2/" itemprop="url" rel="prev" data-background-image="https:&#x2F;&#x2F;tva3.sinaimg.cn&#x2F;mw690&#x2F;6833939bly1giclwuom7cj20zk0m8dvn.jpg" title="VsCode 如何Debug Shell">
+  <a href="/posts/823298d2/" itemprop="url" rel="prev" data-background-image="https:&#x2F;&#x2F;tva2.sinaimg.cn&#x2F;mw690&#x2F;6833939bly1giclh5u05ej20zk0m87df.jpg" title="VsCode 如何Debug Shell">
   <span class="type">Previous Post</span>
   <span class="category"><i class="ic i-flag"></i> </span>
   <h3>VsCode 如何Debug Shell</h3>
@@ -263,7 +263,7 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
     <div class="item right">
       
 
-  <a href="/posts/49a9ac1a/" itemprop="url" rel="next" data-background-image="https:&#x2F;&#x2F;tva3.sinaimg.cn&#x2F;mw690&#x2F;6833939bly1gicm0fdw5cj20zk0m8hdt.jpg" title="Springboot优雅的实现重试">
+  <a href="/posts/49a9ac1a/" itemprop="url" rel="next" data-background-image="https:&#x2F;&#x2F;tva2.sinaimg.cn&#x2F;mw690&#x2F;6833939bly1gicitf0kl1j20zk0m87fe.jpg" title="Springboot优雅的实现重试">
   <span class="type">Next Post</span>
   <span class="category"><i class="ic i-flag"></i> </span>
   <h3>Springboot优雅的实现重试</h3>
@@ -299,13 +299,13 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
 <nav class="state">
     <div class="item posts">
       <a href="/archives/">
-        <span class="count">142</span>
+        <span class="count">143</span>
         <span class="name">posts</span>
       </a>
     </div>
     <div class="item categories">
       <a href="/categories/">
-        <span class="count">73</span>
+        <span class="count">74</span>
         <span class="name">categories</span>
       </a>
     </div>
@@ -390,19 +390,10 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
   <li class="item">
     
 <div class="breadcrumb">
-<a href="/categories/Mybtais/" title="In Mybtais">Mybtais</a>
+<a href="/categories/Java/" title="In Java">Java</a>
 </div>
 
-    <span><a href="/posts/9aff665a/" title="mybatis中大于等于小于等于的写法">mybatis中大于等于小于等于的写法</a></span>
-  </li>
-
-      
-  <li class="item">
-    
-<div class="breadcrumb">
-</div>
-
-    <span><a href="/posts/66edb7d2/" title="关于hexo使用shoka主题注意点">关于hexo使用shoka主题注意点</a></span>
+    <span><a href="/posts/4ca5bfdf/" title="Spring手动回滚事务">Spring手动回滚事务</a></span>
   </li>
 
       
@@ -410,9 +401,29 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
     
 <div class="breadcrumb">
 <a href="/categories/%E5%89%8D%E7%AB%AF/" title="In 前端">前端</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/%E5%89%8D%E7%AB%AF/Css/" title="In Css">Css</a>
 </div>
 
-    <span><a href="/posts/7733848a/" title="文件上传前端小结">文件上传前端小结</a></span>
+    <span><a href="/posts/7f59931c/" title="Css选择器">Css选择器</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+</div>
+
+    <span><a href="/posts/d0edc1ed/" title="Linux常用命令">Linux常用命令</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+</div>
+
+    <span><a href="/posts/823298d2/" title="VsCode 如何Debug Shell">VsCode 如何Debug Shell</a></span>
   </li>
 
       
@@ -421,12 +432,10 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
 <div class="breadcrumb">
 <a href="/categories/Java/" title="In Java">Java</a>
 <i class="ic i-angle-right"></i>
-<a href="/categories/Java/%E5%A4%9A%E7%BA%BF%E7%A8%8B/" title="In 多线程">多线程</a>
-<i class="ic i-angle-right"></i>
-<a href="/categories/Java/%E5%A4%9A%E7%BA%BF%E7%A8%8B/Java%E9%9D%A2%E8%AF%95/" title="In Java面试">Java面试</a>
+<a href="/categories/Java/Tools/" title="In Tools">Tools</a>
 </div>
 
-    <span><a href="/posts/12fecb94/" title="多线程笔记">多线程笔记</a></span>
+    <span><a href="/posts/b246d3ce/" title="Java自带的好用的工具类">Java自带的好用的工具类</a></span>
   </li>
 
       
@@ -435,38 +444,10 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
 <div class="breadcrumb">
 <a href="/categories/Java%E9%9D%A2%E8%AF%95/" title="In Java面试">Java面试</a>
 <i class="ic i-angle-right"></i>
-<a href="/categories/Java%E9%9D%A2%E8%AF%95/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/" title="In 操作系统">操作系统</a>
+<a href="/categories/Java%E9%9D%A2%E8%AF%95/SpringBoot/" title="In SpringBoot">SpringBoot</a>
 </div>
 
-    <span><a href="/posts/c7cf6e41/" title="面试之旅关于计算机网络">面试之旅关于计算机网络</a></span>
-  </li>
-
-      
-  <li class="item">
-    
-<div class="breadcrumb">
-</div>
-
-    <span><a href="/posts/4a17b156/" title="Hello World">Hello World</a></span>
-  </li>
-
-      
-  <li class="item">
-    
-<div class="breadcrumb">
-<a href="/categories/Shell/" title="In Shell">Shell</a>
-</div>
-
-    <span><a href="/posts/55b095e0/" title="The learning of Shell">The learning of Shell</a></span>
-  </li>
-
-      
-  <li class="item">
-    
-<div class="breadcrumb">
-</div>
-
-    <span><a href="/posts/d0966c4d/" title="工作难点">工作难点</a></span>
+    <span><a href="/posts/eec4b728/" title="SpringBoot中如何优雅的使用多线程">SpringBoot中如何优雅的使用多线程</a></span>
   </li>
 
       
@@ -478,7 +459,7 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
 <a href="/categories/%E5%89%8D%E7%AB%AF/Vue/" title="In Vue">Vue</a>
 </div>
 
-    <span><a href="/posts/e7e56598/" title="Vue属性介绍">Vue属性介绍</a></span>
+    <span><a href="/posts/21d4b84b/" title="Vue3项目的创建">Vue3项目的创建</a></span>
   </li>
 
       
@@ -488,7 +469,26 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
 <a href="/categories/%E6%95%B0%E6%8D%AE%E5%BA%93/" title="In 数据库">数据库</a>
 </div>
 
-    <span><a href="/posts/60f024c8/" title="关于sql执行计划">关于sql执行计划</a></span>
+    <span><a href="/posts/377b6f7d/" title="关于mysql中对Json类型字段进行筛选查询">关于mysql中对Json类型字段进行筛选查询</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/SAP/" title="In SAP">SAP</a>
+</div>
+
+    <span><a href="/posts/4187faeb/" title="English self_introduction">English self_introduction</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+</div>
+
+    <span><a href="/posts/bf4d20ae/" title="写在最前面">写在最前面</a></span>
   </li>
 
   </ul>
@@ -513,13 +513,13 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
     <span class="post-meta-item-icon">
       <i class="ic i-chart-area"></i>
     </span>
-    <span title="Symbols count total">620k words</span>
+    <span title="Symbols count total">622k words</span>
 
     <span class="post-meta-divider">|</span>
     <span class="post-meta-item-icon">
       <i class="ic i-coffee"></i>
     </span>
-    <span title="Reading time total">9:24</span>
+    <span title="Reading time total">9:25</span>
   </div>
 </div>
 

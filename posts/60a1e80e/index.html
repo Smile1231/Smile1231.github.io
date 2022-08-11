@@ -117,12 +117,12 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
       </div>
       <div id="imgs" class="pjax">
         <ul>
-          <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1giciuja1j1j20zk0m8kjl.jpg"></li>
-          <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1giclil3m4ej20zk0m8tn8.jpg"></li>
-          <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1gipet4bz0yj20zk0m8e81.jpg"></li>
-          <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1giclj9410cj20zk0m8h12.jpg"></li>
-          <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1gipesng5oej20zk0m87d4.jpg"></li>
-          <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1gipeyhsblkj20zk0m81kx.jpg"></li>
+          <li class="item" data-background-image="https://tva2.sinaimg.cn/large/6833939bly1gipey84bjtj20zk0m8hdt.jpg"></li>
+          <li class="item" data-background-image="https://tva2.sinaimg.cn/large/6833939bly1giciuv0socj20zk0m8qes.jpg"></li>
+          <li class="item" data-background-image="https://tva2.sinaimg.cn/large/6833939bly1gicm0fdw5cj20zk0m8hdt.jpg"></li>
+          <li class="item" data-background-image="https://tva2.sinaimg.cn/large/6833939bly1giph4fomxoj20zk0m8axp.jpg"></li>
+          <li class="item" data-background-image="https://tva2.sinaimg.cn/large/6833939bly1gicli9lfebj20zk0m84qp.jpg"></li>
+          <li class="item" data-background-image="https://tva2.sinaimg.cn/large/6833939bly1gicli3sbvtj20zk0m8x6p.jpg"></li>
         </ul>
       </div>
     </header>
@@ -169,7 +169,6 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
     
 
     <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br></pre></td><td class="code"><pre><span class="line">DateFormat sdf = <span class="keyword">new</span> SimpleDateFormat(<span class="string">&quot;yyyy-MM-dd&quot;</span>);</span><br><span class="line">String Date = <span class="string">&quot;2020-08-03&quot;</span>;  <span class="comment">//定义初始是周一</span></span><br><span class="line">Date testdate = sdf.parse(Date);</span><br><span class="line">Calendar cal = Calendar.getInstance();</span><br><span class="line">cal.setTime(testdate); </span><br><span class="line"><span class="keyword">if</span>(cal.get(Calendar.DAY_OF_WEEK)==Calendar.MONDAY)&#123;</span><br><span class="line">    System.out.println(sdf.format(cal.getTime())+<span class="string">&quot;=========&quot;</span>+<span class="string">&quot;是周一=========&quot;</span>);</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">//日期加一天</span></span><br><span class="line">cal.add(Calendar.DATE,<span class="number">1</span>);</span><br><span class="line"><span class="keyword">if</span>(cal.get(Calendar.DAY_OF_WEEK)==Calendar.TUESDAY) &#123;</span><br><span class="line">    System.out.println(sdf.format(cal.getTime())+<span class="string">&quot;=========&quot;</span>+<span class="string">&quot;是周二=========&quot;</span>);</span><br><span class="line">&#125;</span><br><span class="line">cal.add(Calendar.DATE,<span class="number">1</span>);</span><br><span class="line"><span class="keyword">if</span>(cal.get(Calendar.DAY_OF_WEEK)==Calendar.WEDNESDAY)&#123;</span><br><span class="line">    System.out.println(sdf.format(cal.getTime())+<span class="string">&quot;=========&quot;</span>+<span class="string">&quot;是周三=========&quot;</span>);</span><br><span class="line">&#125;</span><br><span class="line">cal.add(Calendar.DATE,<span class="number">1</span>);</span><br><span class="line"><span class="keyword">if</span>(cal.get(Calendar.DAY_OF_WEEK)==Calendar.THURSDAY)&#123;</span><br><span class="line">    System.out.println(sdf.format(cal.getTime())+<span class="string">&quot;=========&quot;</span>+<span class="string">&quot;是周四=========&quot;</span>);</span><br><span class="line">&#125;</span><br><span class="line">cal.add(Calendar.DATE,<span class="number">1</span>);</span><br><span class="line"><span class="keyword">if</span>(cal.get(Calendar.DAY_OF_WEEK)==Calendar.FRIDAY)&#123;</span><br><span class="line">    System.out.println(sdf.format(cal.getTime())+<span class="string">&quot;=========&quot;</span>+<span class="string">&quot;是周五=========&quot;</span>);</span><br><span class="line">&#125;</span><br><span class="line">cal.add(Calendar.DATE,<span class="number">1</span>);</span><br><span class="line"><span class="keyword">if</span>(cal.get(Calendar.DAY_OF_WEEK)==Calendar.SATURDAY)&#123;</span><br><span class="line">    System.out.println(sdf.format(cal.getTime())+<span class="string">&quot;=========&quot;</span>+<span class="string">&quot;是周六=========&quot;</span>);</span><br><span class="line">&#125;</span><br><span class="line">cal.add(Calendar.DATE,<span class="number">1</span>);</span><br><span class="line"><span class="keyword">if</span>(cal.get(Calendar.DAY_OF_WEEK)==Calendar.SUNDAY)&#123;</span><br><span class="line">    System.out.println(sdf.format(cal.getTime())+<span class="string">&quot;=========&quot;</span>+<span class="string">&quot;是周日=========&quot;</span>);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
 
       <div class="tags">
           <a href="/tags/Java/" rel="tag"><i class="ic i-tag"></i> Java</a>
@@ -225,7 +224,7 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
     <div class="item left">
       
 
-  <a href="/posts/e43580c1/" itemprop="url" rel="prev" data-background-image="https:&#x2F;&#x2F;tva3.sinaimg.cn&#x2F;mw690&#x2F;6833939bly1gipexbei4hj20zk0m8npd.jpg" title="flex布局">
+  <a href="/posts/e43580c1/" itemprop="url" rel="prev" data-background-image="https:&#x2F;&#x2F;tva2.sinaimg.cn&#x2F;mw690&#x2F;6833939bly1giclwuom7cj20zk0m8dvn.jpg" title="flex布局">
   <span class="type">Previous Post</span>
   <span class="category"><i class="ic i-flag"></i> 前端</span>
   <h3>flex布局</h3>
@@ -235,7 +234,7 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
     <div class="item right">
       
 
-  <a href="/posts/388f5c14/" itemprop="url" rel="next" data-background-image="https:&#x2F;&#x2F;tva3.sinaimg.cn&#x2F;mw690&#x2F;6833939bly1gicitf0kl1j20zk0m87fe.jpg" title="mysql日期加减">
+  <a href="/posts/388f5c14/" itemprop="url" rel="next" data-background-image="https:&#x2F;&#x2F;tva2.sinaimg.cn&#x2F;mw690&#x2F;6833939bly1giclxfdlttj20zk0m8npd.jpg" title="mysql日期加减">
   <span class="type">Next Post</span>
   <span class="category"><i class="ic i-flag"></i> 数据库</span>
   <h3>mysql日期加减</h3>
@@ -260,7 +259,7 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
       </div>
       <div class="related panel pjax" data-title="Related">
         <ul>
-          <li><a href="/posts/7a29d22a/" rel="bookmark" title="Java关于时间的轮子">Java关于时间的轮子</a></li><li class="active"><a href="/posts/60a1e80e/" rel="bookmark" title="java判断日期周几">java判断日期周几</a></li><li><a href="/posts/13370746/" rel="bookmark" title="使用EasyExcel读取excel文件为Java实体类">使用EasyExcel读取excel文件为Java实体类</a></li><li><a href="/posts/97604c34/" rel="bookmark" title="获取指定集合要求中的mapkey值并重新返回map">获取指定集合要求中的mapkey值并重新返回map</a></li><li><a href="/posts/fc16798c/" rel="bookmark" title="Java8遍历Map的三种方式">Java8遍历Map的三种方式</a></li><li><a href="/posts/49b96938/" rel="bookmark" title="Java获取一天时间的起始">Java获取一天时间的起始</a></li><li><a href="/posts/1c3390ab/" rel="bookmark" title="将Java数据输出为本地txt">将Java数据输出为本地txt</a></li><li><a href="/posts/4ca5bfdf/" rel="bookmark" title="Spring手动回滚事务">Spring手动回滚事务</a></li><li><a href="/posts/1748805d/" rel="bookmark" title="java线程池与五种常用线程池策略使用与解析">java线程池与五种常用线程池策略使用与解析</a></li><li><a href="/posts/817eab42/" rel="bookmark" title="java中产生指定范围内的随机数">java中产生指定范围内的随机数</a></li><li><a href="/posts/69c17d37/" rel="bookmark" title="关于事务提交中踩坑">关于事务提交中踩坑</a></li><li><a href="/posts/b536fa7f/" rel="bookmark" title="关于junit测试类防止事务回滚">关于junit测试类防止事务回滚</a></li><li><a href="/posts/1da18d70/" rel="bookmark" title="Java8内置四大函数式接口">Java8内置四大函数式接口</a></li><li><a href="/posts/405fde88/" rel="bookmark" title="关于Exception的处理细节">关于Exception的处理细节</a></li><li><a href="/posts/91c18f7c/" rel="bookmark" title="关于Try-With-Source的使用以及注意点">关于Try-With-Source的使用以及注意点</a></li><li><a href="/posts/e18abc1d/" rel="bookmark" title="关于YAML中List存放Map">关于YAML中List存放Map</a></li><li><a href="/posts/c3733521/" rel="bookmark" title="Java之assert关键字">Java之assert关键字</a></li><li><a href="/posts/9dcbb5fa/" rel="bookmark" title="Corn表达式">Corn表达式</a></li><li><a href="/posts/96eb888f/" rel="bookmark" title="Java学习线路图">Java学习线路图</a></li><li><a href="/posts/b246d3ce/" rel="bookmark" title="Java自带的好用的工具类">Java自带的好用的工具类</a></li><li><a href="/posts/105c245f/" rel="bookmark" title="Mybatis使用Sql进行模糊查询">Mybatis使用Sql进行模糊查询</a></li><li><a href="/posts/31dc52e1/" rel="bookmark" title="MyBatis之分页查询：MyBatis PageHelper">MyBatis之分页查询：MyBatis PageHelper</a></li><li><a href="/posts/2edf7887/" rel="bookmark" title="MybatisPlus实现分页查询">MybatisPlus实现分页查询</a></li><li><a href="/posts/c112412d/" rel="bookmark" title="Mybatis封装成Map结果">Mybatis封装成Map结果</a></li><li><a href="/posts/a3dfcd98/" rel="bookmark" title="SpringBoot中常见的几种解决跨域的方式">SpringBoot中常见的几种解决跨域的方式</a></li><li><a href="/posts/8b8fedea/" rel="bookmark" title="Stream流的介绍">Stream流的介绍</a></li><li><a href="/posts/b1231c9f/" rel="bookmark" title="java stream中Collectors的用法">java stream中Collectors的用法</a></li><li><a href="/posts/12fecb94/" rel="bookmark" title="多线程笔记">多线程笔记</a></li><li><a href="/posts/5e7baeeb/" rel="bookmark" title="过滤器和拦截器的区别">过滤器和拦截器的区别</a></li><li><a href="/posts/59de1824/" rel="bookmark" title="spring中/和/*和/**的区别">spring中/和/*和/**的区别</a></li><li><a href="/posts/166a1445/" rel="bookmark" title="位，字节， 字符">位，字节， 字符</a></li><li><a href="/posts/b42f0c87/" rel="bookmark" title="Cache、Cookie、Session、Token">Cache、Cookie、Session、Token</a></li><li><a href="/posts/f23f1351/" rel="bookmark" title="equals与==区别">equals与==区别</a></li><li><a href="/posts/d6d1be75/" rel="bookmark" title="在Javadoc注释中引用方法">在Javadoc注释中引用方法</a></li><li><a href="/posts/bd76a990/" rel="bookmark" title="一图看懂Java中的PO,BO,VO,DTO,POJO,DAO,DO">一图看懂Java中的PO,BO,VO,DTO,POJO,DAO,DO</a></li>
+          <li><a href="/posts/7a29d22a/" rel="bookmark" title="Java关于时间的轮子">Java关于时间的轮子</a></li><li class="active"><a href="/posts/60a1e80e/" rel="bookmark" title="java判断日期周几">java判断日期周几</a></li><li><a href="/posts/13370746/" rel="bookmark" title="使用EasyExcel读取excel文件为Java实体类">使用EasyExcel读取excel文件为Java实体类</a></li><li><a href="/posts/97604c34/" rel="bookmark" title="获取指定集合要求中的mapkey值并重新返回map">获取指定集合要求中的mapkey值并重新返回map</a></li><li><a href="/posts/fc16798c/" rel="bookmark" title="Java8遍历Map的三种方式">Java8遍历Map的三种方式</a></li><li><a href="/posts/49b96938/" rel="bookmark" title="Java获取一天时间的起始">Java获取一天时间的起始</a></li><li><a href="/posts/1c3390ab/" rel="bookmark" title="将Java数据输出为本地txt">将Java数据输出为本地txt</a></li><li><a href="/posts/4ca5bfdf/" rel="bookmark" title="Spring手动回滚事务">Spring手动回滚事务</a></li><li><a href="/posts/1748805d/" rel="bookmark" title="java线程池与五种常用线程池策略使用与解析">java线程池与五种常用线程池策略使用与解析</a></li><li><a href="/posts/817eab42/" rel="bookmark" title="java中产生指定范围内的随机数">java中产生指定范围内的随机数</a></li><li><a href="/posts/69c17d37/" rel="bookmark" title="关于事务提交中踩坑">关于事务提交中踩坑</a></li><li><a href="/posts/b536fa7f/" rel="bookmark" title="关于junit测试类防止事务回滚">关于junit测试类防止事务回滚</a></li><li><a href="/posts/1da18d70/" rel="bookmark" title="Java8内置四大函数式接口">Java8内置四大函数式接口</a></li><li><a href="/posts/405fde88/" rel="bookmark" title="关于Exception的处理细节">关于Exception的处理细节</a></li><li><a href="/posts/91c18f7c/" rel="bookmark" title="关于Try-With-Source的使用以及注意点">关于Try-With-Source的使用以及注意点</a></li><li><a href="/posts/e18abc1d/" rel="bookmark" title="关于YAML中List存放Map">关于YAML中List存放Map</a></li><li><a href="/posts/c3733521/" rel="bookmark" title="Java之assert关键字">Java之assert关键字</a></li><li><a href="/posts/9dcbb5fa/" rel="bookmark" title="Corn表达式">Corn表达式</a></li><li><a href="/posts/96eb888f/" rel="bookmark" title="Java学习线路图">Java学习线路图</a></li><li><a href="/posts/b246d3ce/" rel="bookmark" title="Java自带的好用的工具类">Java自带的好用的工具类</a></li><li><a href="/posts/105c245f/" rel="bookmark" title="Mybatis使用Sql进行模糊查询">Mybatis使用Sql进行模糊查询</a></li><li><a href="/posts/31dc52e1/" rel="bookmark" title="MyBatis之分页查询：MyBatis PageHelper">MyBatis之分页查询：MyBatis PageHelper</a></li><li><a href="/posts/2edf7887/" rel="bookmark" title="MybatisPlus实现分页查询">MybatisPlus实现分页查询</a></li><li><a href="/posts/c112412d/" rel="bookmark" title="Mybatis封装成Map结果">Mybatis封装成Map结果</a></li><li><a href="/posts/a3dfcd98/" rel="bookmark" title="SpringBoot中常见的几种解决跨域的方式">SpringBoot中常见的几种解决跨域的方式</a></li><li><a href="/posts/8b8fedea/" rel="bookmark" title="Stream流的介绍">Stream流的介绍</a></li><li><a href="/posts/b1231c9f/" rel="bookmark" title="java stream中Collectors的用法">java stream中Collectors的用法</a></li><li><a href="/posts/12fecb94/" rel="bookmark" title="多线程笔记">多线程笔记</a></li><li><a href="/posts/5e7baeeb/" rel="bookmark" title="过滤器和拦截器的区别">过滤器和拦截器的区别</a></li><li><a href="/posts/59de1824/" rel="bookmark" title="spring中/和/*和/**的区别">spring中/和/*和/**的区别</a></li><li><a href="/posts/166a1445/" rel="bookmark" title="位，字节， 字符">位，字节， 字符</a></li><li><a href="/posts/b42f0c87/" rel="bookmark" title="Cache、Cookie、Session、Token">Cache、Cookie、Session、Token</a></li><li><a href="/posts/f23f1351/" rel="bookmark" title="equals与==区别">equals与==区别</a></li><li><a href="/posts/d6d1be75/" rel="bookmark" title="在Javadoc注释中引用方法">在Javadoc注释中引用方法</a></li><li><a href="/posts/bd76a990/" rel="bookmark" title="一图看懂Java中的PO,BO,VO,DTO,POJO,DAO,DO">一图看懂Java中的PO,BO,VO,DTO,POJO,DAO,DO</a></li><li><a href="/posts/a54ed4b0/" rel="bookmark" title="Java通过URL下载资源">Java通过URL下载资源</a></li>
         </ul>
       </div>
       <div class="overview panel" data-title="Overview">
@@ -274,13 +273,13 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
 <nav class="state">
     <div class="item posts">
       <a href="/archives/">
-        <span class="count">142</span>
+        <span class="count">143</span>
         <span class="name">posts</span>
       </a>
     </div>
     <div class="item categories">
       <a href="/categories/">
-        <span class="count">73</span>
+        <span class="count">74</span>
         <span class="name">categories</span>
       </a>
     </div>
@@ -365,19 +364,31 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
   <li class="item">
     
 <div class="breadcrumb">
+<a href="/categories/cheatsheet/" title="In cheatsheet">cheatsheet</a>
 </div>
 
-    <span><a href="/posts/3c59e6c8/" title="如何让自己的博客被Google以及百度收录">如何让自己的博客被Google以及百度收录</a></span>
+    <span><a href="/posts/1b392612/" title="速查表">速查表</a></span>
   </li>
 
       
   <li class="item">
     
 <div class="breadcrumb">
-<a href="/categories/%E5%9F%BA%E5%9B%A0%E7%BC%96%E8%BE%91/" title="In 基因编辑">基因编辑</a>
+<a href="/categories/Java/" title="In Java">Java</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/Java/SpringBoot/" title="In SpringBoot">SpringBoot</a>
 </div>
 
-    <span><a href="/posts/1f142005/" title="CRISPR-Cas9英文介绍">CRISPR-Cas9英文介绍</a></span>
+    <span><a href="/posts/a3dfcd98/" title="SpringBoot中常见的几种解决跨域的方式">SpringBoot中常见的几种解决跨域的方式</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+</div>
+
+    <span><a href="/posts/823298d2/" title="VsCode 如何Debug Shell">VsCode 如何Debug Shell</a></span>
   </li>
 
       
@@ -387,45 +398,63 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
 <a href="/categories/Java/" title="In Java">Java</a>
 </div>
 
-    <span><a href="/posts/97604c34/" title="获取指定集合要求中的mapkey值并重新返回map">获取指定集合要求中的mapkey值并重新返回map</a></span>
+    <span><a href="/posts/e18abc1d/" title="关于YAML中List存放Map">关于YAML中List存放Map</a></span>
   </li>
 
       
   <li class="item">
     
 <div class="breadcrumb">
-<a href="/categories/IDEA/" title="In IDEA">IDEA</a>
+<a href="/categories/SpringBoot/" title="In SpringBoot">SpringBoot</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/SpringBoot/Java/" title="In Java">Java</a>
 </div>
 
-    <span><a href="/posts/579bb697/" title="IDEA小图标含义">IDEA小图标含义</a></span>
+    <span><a href="/posts/f976ebe7/" title="SpringMvc中标准的后端接口格式">SpringMvc中标准的后端接口格式</a></span>
   </li>
 
       
   <li class="item">
     
 <div class="breadcrumb">
+<a href="/categories/SAP/" title="In SAP">SAP</a>
 </div>
 
-    <span><a href="/posts/307637a3/" title="扫尾">扫尾</a></span>
+    <span><a href="/posts/96b6e8a1/" title="simple self introduction">simple self introduction</a></span>
   </li>
 
       
   <li class="item">
     
 <div class="breadcrumb">
-<a href="/categories/Java%E9%9D%A2%E8%AF%95/" title="In Java面试">Java面试</a>
+<a href="/categories/Java/" title="In Java">Java</a>
 </div>
 
-    <span><a href="/posts/6b5f7afc/" title="面试之旅关于Java知识点">面试之旅关于Java知识点</a></span>
+    <span><a href="/posts/9dcbb5fa/" title="Corn表达式">Corn表达式</a></span>
   </li>
 
       
   <li class="item">
     
 <div class="breadcrumb">
+<a href="/categories/Java/" title="In Java">Java</a>
 </div>
 
-    <span><a href="/posts/a1926332/" title="Springboot+Vue二进制文件传输">Springboot+Vue二进制文件传输</a></span>
+    <span><a href="/posts/96eb888f/" title="Java学习线路图">Java学习线路图</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/Java/" title="In Java">Java</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/Java/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/" title="In 操作系统">操作系统</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/Java/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/Java%E9%9D%A2%E8%AF%95/" title="In Java面试">Java面试</a>
+</div>
+
+    <span><a href="/posts/166a1445/" title="位，字节， 字符">位，字节， 字符</a></span>
   </li>
 
       
@@ -434,31 +463,10 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
 <div class="breadcrumb">
 <a href="/categories/Java%E9%9D%A2%E8%AF%95/" title="In Java面试">Java面试</a>
 <i class="ic i-angle-right"></i>
-<a href="/categories/Java%E9%9D%A2%E8%AF%95/%E7%AE%97%E6%B3%95/" title="In 算法">算法</a>
+<a href="/categories/Java%E9%9D%A2%E8%AF%95/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/" title="In 数据结构">数据结构</a>
 </div>
 
-    <span><a href="/posts/a4ce31d2/" title="贪心算法">贪心算法</a></span>
-  </li>
-
-      
-  <li class="item">
-    
-<div class="breadcrumb">
-</div>
-
-    <span><a href="/posts/56be7cc9/" title="关于Linux排查问题命令">关于Linux排查问题命令</a></span>
-  </li>
-
-      
-  <li class="item">
-    
-<div class="breadcrumb">
-<a href="/categories/%E5%89%8D%E7%AB%AF/" title="In 前端">前端</a>
-<i class="ic i-angle-right"></i>
-<a href="/categories/%E5%89%8D%E7%AB%AF/Vue/" title="In Vue">Vue</a>
-</div>
-
-    <span><a href="/posts/8408ed11/" title="Vue-Cli介绍以及使用">Vue-Cli介绍以及使用</a></span>
+    <span><a href="/posts/9f9a6182/" title="面试之旅关于数据结构">面试之旅关于数据结构</a></span>
   </li>
 
   </ul>
@@ -483,13 +491,13 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
     <span class="post-meta-item-icon">
       <i class="ic i-chart-area"></i>
     </span>
-    <span title="Symbols count total">620k words</span>
+    <span title="Symbols count total">622k words</span>
 
     <span class="post-meta-divider">|</span>
     <span class="post-meta-item-icon">
       <i class="ic i-coffee"></i>
     </span>
-    <span title="Reading time total">9:24</span>
+    <span title="Reading time total">9:25</span>
   </div>
 </div>
 

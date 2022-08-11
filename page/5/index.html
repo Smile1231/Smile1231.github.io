@@ -89,12 +89,12 @@
       </div>
       <div id="imgs" class="pjax">
         <ul>
-          <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1gipewkhf1zj20zk0m81kx.jpg"></li>
-          <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1giclflwv2aj20zk0m84qp.jpg"></li>
-          <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1giciryrr3rj20zk0m8nhk.jpg"></li>
-          <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1gicm0fdw5cj20zk0m8hdt.jpg"></li>
-          <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1giciusoyjnj219g0u0x56.jpg"></li>
-          <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1gicitcxhpij20zk0m8hdt.jpg"></li>
+          <li class="item" data-background-image="https://tva2.sinaimg.cn/large/6833939bly1gicliierfjj20zk0m8npd.jpg"></li>
+          <li class="item" data-background-image="https://tva2.sinaimg.cn/large/6833939bly1gipetv6p75j20zk0m8x6p.jpg"></li>
+          <li class="item" data-background-image="https://tva2.sinaimg.cn/large/6833939bly1giciszlczyj20zk0m816d.jpg"></li>
+          <li class="item" data-background-image="https://tva2.sinaimg.cn/large/6833939bly1gicli3sbvtj20zk0m8x6p.jpg"></li>
+          <li class="item" data-background-image="https://tva2.sinaimg.cn/large/6833939bly1gipeyhsblkj20zk0m81kx.jpg"></li>
+          <li class="item" data-background-image="https://tva2.sinaimg.cn/large/6833939bly1giclx6phq6j20zk0m8e36.jpg"></li>
         </ul>
       </div>
     </header>
@@ -120,7 +120,57 @@
         
 <article class="item">
   <div class="cover">
-    <a href="/posts/ff8068c0/" itemprop="url" title="快速排序"><img data-src="https://tva3.sinaimg.cn/mw690/6833939bly1gipew8gmvyj20zk0m87wh.jpg"></a>
+    <a href="/posts/2b06d603/" itemprop="url" title="直接插入排序"><img data-src="https://tva2.sinaimg.cn/mw690/6833939bly1giclj9410cj20zk0m8h12.jpg"></a>
+  </div>
+  <div class="info">
+    
+<div class="meta">
+  <span class="item" title="Created: 2022-03-12 17:57:45">
+    <span class="icon">
+      <i class="ic i-calendar"></i>
+    </span>
+    <time itemprop="dateCreated datePublished" datetime="2022-03-12T17:57:45+08:00">2022-03-12</time>
+  </span>
+  <span class="item" title="Symbols count in article">
+    <span class="icon">
+      <i class="ic i-pen"></i>
+    </span>
+    <span>1.2k</span>
+    <span class="text">words</span>
+  </span>
+  <span class="item" title="Reading time">
+    <span class="icon">
+      <i class="ic i-clock"></i>
+    </span>
+    <span>1 mins.</span>
+  </span>
+</div>
+
+    <h3><a href="/posts/2b06d603/" itemprop="url" title="直接插入排序">直接插入排序</a></h3>
+    <div class="excerpt">
+        <h2 id="插入排序稳定"><a class="markdownIt-Anchor" href="#插入排序稳定">#</a> 插入排序（稳定）</h2>
+<p>一般来说，插入排序都采用 in-place 在数组上实现。具体算法描述如下：</p>
+<p>①. 从第一个元素开始，该元素可以认为已经被排序<br>
+②. 取出下一个元素，在已经排序的元素序列中从后向前扫描<br>
+③. 如果该元素（已排序）大于新元素，将该元素移到下一位置<br>
+④. 重复步骤 3，直到找到已排序的元素小于或者等于新元素的位置<br>
+⑤. 将新元素插入到该位置后<br>
+⑥. 重复步骤②~⑤</p>
+      
+    </div>
+    <div class="meta footer">
+      <span>
+        <a href="/categories/Java%E9%9D%A2%E8%AF%95/%E7%9B%B4%E6%8E%A5%E6%8F%92%E5%85%A5%E6%8E%92%E5%BA%8F/%E7%AE%97%E6%B3%95/" itemprop="url" title="算法"><i class="ic i-flag"></i>算法</a>
+      </span>
+    </div>
+    <a href="/posts/2b06d603/" itemprop="url" title="直接插入排序" class="btn">more...</a>
+  </div>
+</article>
+
+        
+<article class="item">
+  <div class="cover">
+    <a href="/posts/ff8068c0/" itemprop="url" title="快速排序"><img data-src="https://tva2.sinaimg.cn/mw690/6833939bly1giph4fomxoj20zk0m8axp.jpg"></a>
   </div>
   <div class="info">
     
@@ -148,8 +198,9 @@
 
     <h3><a href="/posts/ff8068c0/" itemprop="url" title="快速排序">快速排序</a></h3>
     <div class="excerpt">
-        <h2 id="快排-不稳定"><a href="#快排-不稳定" class="headerlink" title="快排 (不稳定)"></a>快排 (不稳定)</h2><p>快速排序的基本思想是：通过一趟排序将要排序的数据分割成独立的两部分，其中一部分的所有数据比另一部分的所有数据要小，再按这种方法对这两部分数据分别进行快速排序，整个排序过程可以递归进行，使整个数据变成有序序列。</p>
-<h3 id="快速排序的原理"><a href="#快速排序的原理" class="headerlink" title="快速排序的原理"></a>快速排序的原理</h3>
+        <h2 id="快排-不稳定"><a class="markdownIt-Anchor" href="#快排-不稳定">#</a> 快排 (不稳定)</h2>
+<p>快速排序的基本思想是：通过一趟排序将要排序的数据分割成独立的两部分，其中一部分的所有数据比另一部分的所有数据要小，再按这种方法对这两部分数据分别进行快速排序，整个排序过程可以递归进行，使整个数据变成有序序列。</p>
+<h3 id="快速排序的原理"><a class="markdownIt-Anchor" href="#快速排序的原理">#</a> 快速排序的原理</h3>
       
     </div>
     <div class="meta footer">
@@ -164,7 +215,7 @@
         
 <article class="item">
   <div class="cover">
-    <a href="/posts/2f57a694/" itemprop="url" title="正则表达式"><img data-src="https://tva3.sinaimg.cn/mw690/6833939bly1gipeyonbf9j20zk0m8e81.jpg"></a>
+    <a href="/posts/2f57a694/" itemprop="url" title="正则表达式"><img data-src="https://tva2.sinaimg.cn/mw690/6833939bly1gipeuibk9fj20zk0m8ay2.jpg"></a>
   </div>
   <div class="info">
     
@@ -179,7 +230,7 @@
     <span class="icon">
       <i class="ic i-pen"></i>
     </span>
-    <span>5.8k</span>
+    <span>5.5k</span>
     <span class="text">words</span>
   </span>
   <span class="item" title="Reading time">
@@ -192,7 +243,9 @@
 
     <h3><a href="/posts/2f57a694/" itemprop="url" title="正则表达式">正则表达式</a></h3>
     <div class="excerpt">
-        <h1 id="正则表达式中的特殊字符"><a href="#正则表达式中的特殊字符" class="headerlink" title="正则表达式中的特殊字符"></a>正则表达式中的特殊字符</h1><h2 id="正则表达式中的特殊字符（📖表示-）"><a href="#正则表达式中的特殊字符（📖表示-）" class="headerlink" title="正则表达式中的特殊字符（📖表示 |）"></a>正则表达式中的特殊字符（📖表示 <code>|</code>）</h2><p>正则真的太难学了: <a target="_blank" rel="noopener" href="https://regexone.com/">https://regexone.com/</a>   学习网站这不就来了</p>
+        <h1 id="正则表达式中的特殊字符"><a class="markdownIt-Anchor" href="#正则表达式中的特殊字符">#</a> 正则表达式中的特殊字符</h1>
+<h2 id="正则表达式中的特殊字符表示"><a class="markdownIt-Anchor" href="#正则表达式中的特殊字符表示">#</a> 正则表达式中的特殊字符（📖表示  <code>|</code> ）</h2>
+<p>正则真的太难学了: <a target="_blank" rel="noopener" href="https://regexone.com/">https://regexone.com/</a>   学习网站这不就来了</p>
 <p><a target="_blank" rel="noopener" href="https://www.cnblogs.com/labuladong/p/12320413.html"> git + 正则 </a></p>
 <p><a target="_blank" rel="noopener" href="https://tool.oschina.net/uploads/apidocs/jquery/regexp.html"> 手册 </a></p>
 <p><a target="_blank" rel="noopener" href="https://regex101.com/r/cO8lqs/9"> 好用的网站 </a></p>
@@ -210,7 +263,7 @@
         
 <article class="item">
   <div class="cover">
-    <a href="/posts/f976ebe7/" itemprop="url" title="SpringMvc中标准的后端接口格式"><img data-src="https://tva3.sinaimg.cn/mw690/6833939bly1gipey0a334j20zk0m8qpt.jpg"></a>
+    <a href="/posts/f976ebe7/" itemprop="url" title="SpringMvc中标准的后端接口格式"><img data-src="https://tva2.sinaimg.cn/mw690/6833939bly1giclwrdwyaj20zk0m8are.jpg"></a>
   </div>
   <div class="info">
     
@@ -238,7 +291,8 @@
 
     <h3><a href="/posts/f976ebe7/" itemprop="url" title="SpringMvc中标准的后端接口格式">SpringMvc中标准的后端接口格式</a></h3>
     <div class="excerpt">
-        <h1 id="用SpringBoot手把手教你写出优雅的后端接口"><a href="#用SpringBoot手把手教你写出优雅的后端接口" class="headerlink" title="用SpringBoot手把手教你写出优雅的后端接口"></a>用<code>SpringBoot</code>手把手教你写出优雅的后端接口</h1><p>一个后端接口大致分为四个部分组成：<code>接口地址（url）</code>、<code>接口请求方式（get、post等）</code>、<code>请求数据（request）</code>、<code>响应数据（response）</code>。如何构建这几个部分每个公司要求都不同，没有什么“一定是最好的”标准，但一个优秀的后端接口和一个糟糕的后端接口对比起来差异还是蛮大的，其中最重要的关键点就是看是否规范!</p>
+        <h1 id="用springboot手把手教你写出优雅的后端接口"><a class="markdownIt-Anchor" href="#用springboot手把手教你写出优雅的后端接口">#</a> 用 <code>SpringBoot</code>  手把手教你写出优雅的后端接口</h1>
+<p>一个后端接口大致分为四个部分组成： <code>接口地址（url）</code> 、 <code>接口请求方式（get、post等）</code> 、 <code>请求数据（request）</code> 、 <code>响应数据（response）</code> 。如何构建这几个部分每个公司要求都不同，没有什么 “一定是最好的” 标准，但一个优秀的后端接口和一个糟糕的后端接口对比起来差异还是蛮大的，其中最重要的关键点就是看是否规范！</p>
 <p>本文就一步一步演示如何构建起一个优秀的后端接口体系，体系构建好了自然就有了规范，同时再构建新的后端接口也会十分轻松。</p>
 <p>所需依赖包</p>
       
@@ -255,7 +309,7 @@
         
 <article class="item">
   <div class="cover">
-    <a href="/posts/a80d0031/" itemprop="url" title="动态规划"><img data-src="https://tva3.sinaimg.cn/mw690/6833939bly1giclhtuo6nj20zk0m8ttm.jpg"></a>
+    <a href="/posts/a80d0031/" itemprop="url" title="动态规划"><img data-src="https://tva2.sinaimg.cn/mw690/6833939bly1giclj61ylzj20zk0m8b29.jpg"></a>
   </div>
   <div class="info">
     
@@ -283,7 +337,9 @@
 
     <h3><a href="/posts/a80d0031/" itemprop="url" title="动态规划">动态规划</a></h3>
     <div class="excerpt">
-        <h1 id="动态规划算法"><a href="#动态规划算法" class="headerlink" title="动态规划算法"></a>动态规划算法</h1><h2 id="什么是动态规划"><a href="#什么是动态规划" class="headerlink" title="什么是动态规划"></a>什么是动态规划</h2><p>动态规划的大致思路是把一个复杂的问题转化成一个分阶段逐步递推的过程，从简单的初始状态一步一步递推，最终得到复杂问题的最优解。</p>
+        <h1 id="动态规划算法"><a class="markdownIt-Anchor" href="#动态规划算法">#</a> 动态规划算法</h1>
+<h2 id="什么是动态规划"><a class="markdownIt-Anchor" href="#什么是动态规划">#</a> 什么是动态规划</h2>
+<p>动态规划的大致思路是把一个复杂的问题转化成一个分阶段逐步递推的过程，从简单的初始状态一步一步递推，最终得到复杂问题的最优解。</p>
 <blockquote>
 <p>基本思想与策略编辑:</p>
 </blockquote>
@@ -302,7 +358,7 @@
         
 <article class="item">
   <div class="cover">
-    <a href="/posts/a4ce31d2/" itemprop="url" title="贪心算法"><img data-src="https://tva3.sinaimg.cn/mw690/6833939bly1gipew28b65j20zk0m8hdt.jpg"></a>
+    <a href="/posts/a4ce31d2/" itemprop="url" title="贪心算法"><img data-src="https://tva2.sinaimg.cn/mw690/6833939bly1gicli3sbvtj20zk0m8x6p.jpg"></a>
   </div>
   <div class="info">
     
@@ -330,7 +386,9 @@
 
     <h3><a href="/posts/a4ce31d2/" itemprop="url" title="贪心算法">贪心算法</a></h3>
     <div class="excerpt">
-        <h1 id="贪心算法"><a href="#贪心算法" class="headerlink" title="贪心算法"></a>贪心算法</h1><h2 id="基本概念"><a href="#基本概念" class="headerlink" title="基本概念"></a>基本概念</h2><p>所谓贪心算法是指，在对问题求解时，总是做出<strong>在当前看来是最好的选择</strong>。也就是说，不从整体最优上加以考虑，他所做出的仅是在某种意义上的局部最优解。</p>
+        <h1 id="贪心算法"><a class="markdownIt-Anchor" href="#贪心算法">#</a> 贪心算法</h1>
+<h2 id="基本概念"><a class="markdownIt-Anchor" href="#基本概念">#</a> 基本概念</h2>
+<p>所谓贪心算法是指，在对问题求解时，总是做出<strong>在当前看来是最好的选择</strong>。也就是说，不从整体最优上加以考虑，他所做出的仅是在某种意义上的局部最优解。</p>
 <p>贪心算法没有固定的算法框架，算法设计的关键是贪心策略的选择。必须注意的是，贪心算法不是对所有问题都能得到整体最优解，选择的贪心策略必须具备无后效性，即某个状态以后的过程不会影响以前的状态，只与当前状态有关。</p>
       
     </div>
@@ -346,7 +404,7 @@
         
 <article class="item">
   <div class="cover">
-    <a href="/posts/7474c898/" itemprop="url" title="分治算法"><img data-src="https://tva3.sinaimg.cn/mw690/6833939bly1giclxp31goj20zk0m8qv5.jpg"></a>
+    <a href="/posts/7474c898/" itemprop="url" title="分治算法"><img data-src="https://tva2.sinaimg.cn/mw690/6833939bly1gipewf5l51j20zk0m8b29.jpg"></a>
   </div>
   <div class="info">
     
@@ -374,8 +432,11 @@
 
     <h3><a href="/posts/7474c898/" itemprop="url" title="分治算法">分治算法</a></h3>
     <div class="excerpt">
-        <h1 id="分治算法"><a href="#分治算法" class="headerlink" title="分治算法"></a>分治算法</h1><h2 id="定义"><a href="#定义" class="headerlink" title="定义"></a>定义</h2><p>将原问题划分成<code>n</code>个规模较小，并且结构与原问题相似的子问题，递归地解决这些子问题，然后再合并其结果，就得到原问题的解</p>
-<h2 id="分治策略"><a href="#分治策略" class="headerlink" title="分治策略"></a>分治策略</h2><p>“分而治之”，大问题能够拆成相似的小问题，记住这些小问题需要具有相似性。而后将小问题的每个解合成为大问题的解。所以说大问题如何拆，小问题如何合并才是这个算法最主要的一个思想。实际上很多算法如贪心算法，动态规划等等都是要求把大问题拆成小问题。而分治算法的重要一点就是要适用于能够重新把小问题的解合并为大问题的解。</p>
+        <h1 id="分治算法"><a class="markdownIt-Anchor" href="#分治算法">#</a> 分治算法</h1>
+<h2 id="定义"><a class="markdownIt-Anchor" href="#定义">#</a> 定义</h2>
+<p>将原问题划分成 <code>n</code>  个规模较小，并且结构与原问题相似的子问题，递归地解决这些子问题，然后再合并其结果，就得到原问题的解</p>
+<h2 id="分治策略"><a class="markdownIt-Anchor" href="#分治策略">#</a> 分治策略</h2>
+<p>“分而治之”，大问题能够拆成相似的小问题，记住这些小问题需要具有相似性。而后将小问题的每个解合成为大问题的解。所以说大问题如何拆，小问题如何合并才是这个算法最主要的一个思想。实际上很多算法如贪心算法，动态规划等等都是要求把大问题拆成小问题。而分治算法的重要一点就是要适用于能够重新把小问题的解合并为大问题的解。</p>
       
     </div>
     <div class="meta footer">
@@ -390,7 +451,7 @@
         
 <article class="item">
   <div class="cover">
-    <a href="/posts/b9b9f7e7/" itemprop="url" title="二叉树遍历"><img data-src="https://tva3.sinaimg.cn/mw690/6833939bly1gipevgoki5j20zk0m84qp.jpg"></a>
+    <a href="/posts/b9b9f7e7/" itemprop="url" title="二叉树遍历"><img data-src="https://tva2.sinaimg.cn/mw690/6833939bly1gipex2cdtbj20zk0m8x6p.jpg"></a>
   </div>
   <div class="info">
     
@@ -418,7 +479,8 @@
 
     <h3><a href="/posts/b9b9f7e7/" itemprop="url" title="二叉树遍历">二叉树遍历</a></h3>
     <div class="excerpt">
-        <h1 id="二叉树遍历（前序、中序、后序、层次遍历）"><a href="#二叉树遍历（前序、中序、后序、层次遍历）" class="headerlink" title="二叉树遍历（前序、中序、后序、层次遍历）"></a>二叉树遍历（前序、中序、后序、层次遍历）</h1><p>二叉树是一种非常重要的数据结构，很多其它数据结构都是基于二叉树的基础演变而来的。对于二叉树，有深度遍历和广度遍历，深度遍历有前序、中序以及后序三种遍历方法，广度遍历即我们平常所说的层次遍历。因为树的定义本身就是递归定义，因此采用递归的方法去实现树的三种遍历不仅容易理解而且代码很简洁，而对于广度遍历来说，需要其他数据结构的支撑，比如堆了。所以，对于一段代码来说，可读性有时候要比代码本身的效率要重要的多。</p>
+        <h1 id="二叉树遍历前序-中序-后序-层次遍历"><a class="markdownIt-Anchor" href="#二叉树遍历前序-中序-后序-层次遍历">#</a> 二叉树遍历（前序、中序、后序、层次遍历）</h1>
+<p>二叉树是一种非常重要的数据结构，很多其它数据结构都是基于二叉树的基础演变而来的。对于二叉树，有深度遍历和广度遍历，深度遍历有前序、中序以及后序三种遍历方法，广度遍历即我们平常所说的层次遍历。因为树的定义本身就是递归定义，因此采用递归的方法去实现树的三种遍历不仅容易理解而且代码很简洁，而对于广度遍历来说，需要其他数据结构的支撑，比如堆了。所以，对于一段代码来说，可读性有时候要比代码本身的效率要重要的多。</p>
 <p>四种主要的遍历思想为：</p>
       
     </div>
@@ -434,7 +496,7 @@
         
 <article class="item">
   <div class="cover">
-    <a href="/posts/7e4601e3/" itemprop="url" title="面试之旅之关于Spring事务处理"><img data-src="https://tva3.sinaimg.cn/mw690/6833939bly1giclgi503lj20zk0m8hdt.jpg"></a>
+    <a href="/posts/7e4601e3/" itemprop="url" title="面试之旅之关于Spring事务处理"><img data-src="https://tva2.sinaimg.cn/mw690/6833939bly1gipevgoki5j20zk0m84qp.jpg"></a>
   </div>
   <div class="info">
     
@@ -462,9 +524,11 @@
 
     <h3><a href="/posts/7e4601e3/" itemprop="url" title="面试之旅之关于Spring事务处理">面试之旅之关于Spring事务处理</a></h3>
     <div class="excerpt">
-        <h1 id="Spring事务处理"><a href="#Spring事务处理" class="headerlink" title="Spring事务处理"></a><code>Spring</code>事务处理</h1><h2 id="Spring和事务的关系"><a href="#Spring和事务的关系" class="headerlink" title="Spring和事务的关系"></a><code>Spring</code>和事务的关系</h2><p>关系型数据库、某些消息队列等产品或中间件称为事务性资源，因为它们本身支持事务，也能够处理事务。</p>
-<p><code>Spring</code>很显然不是事务性资源，但是它可以管理事务性资源，所以<code>Spring</code>和事务之间是管理关系。</p>
-<p>就像<code>Jack Ma</code>虽然不会写代码，但是他却管理者一大批会写代码的码农。</p>
+        <h1 id="spring事务处理"><a class="markdownIt-Anchor" href="#spring事务处理">#</a>  <code>Spring</code>  事务处理</h1>
+<h2 id="spring和事务的关系"><a class="markdownIt-Anchor" href="#spring和事务的关系">#</a>  <code>Spring</code>  和事务的关系</h2>
+<p>关系型数据库、某些消息队列等产品或中间件称为事务性资源，因为它们本身支持事务，也能够处理事务。</p>
+<p><code>Spring</code>  很显然不是事务性资源，但是它可以管理事务性资源，所以 <code>Spring</code>  和事务之间是管理关系。</p>
+<p>就像 <code>Jack Ma</code>  虽然不会写代码，但是他却管理者一大批会写代码的码农。</p>
       
     </div>
     <div class="meta footer">
@@ -479,7 +543,7 @@
         
 <article class="item">
   <div class="cover">
-    <a href="/posts/6b5f7afc/" itemprop="url" title="面试之旅关于Java知识点"><img data-src="https://tva3.sinaimg.cn/mw690/6833939bly1giclg5ms2rj20zk0m8u0x.jpg"></a>
+    <a href="/posts/6b5f7afc/" itemprop="url" title="面试之旅关于Java知识点"><img data-src="https://tva2.sinaimg.cn/mw690/6833939bly1giclil3m4ej20zk0m8tn8.jpg"></a>
   </div>
   <div class="info">
     
@@ -494,7 +558,7 @@
     <span class="icon">
       <i class="ic i-pen"></i>
     </span>
-    <span>300</span>
+    <span>302</span>
     <span class="text">words</span>
   </span>
   <span class="item" title="Reading time">
@@ -507,7 +571,9 @@
 
     <h3><a href="/posts/6b5f7afc/" itemprop="url" title="面试之旅关于Java知识点">面试之旅关于Java知识点</a></h3>
     <div class="excerpt">
-        <h1 id="Java知识点"><a href="#Java知识点" class="headerlink" title="Java知识点"></a><code>Java</code>知识点</h1><h2 id="Collection类"><a href="#Collection类" class="headerlink" title="Collection类"></a><code>Collection</code>类</h2><img src="/posts/6b5f7afc/2022-02-16-21-41-42.png" class="">
+        <h1 id="java知识点"><a class="markdownIt-Anchor" href="#java知识点">#</a>  <code>Java</code>  知识点</h1>
+<h2 id="collection类"><a class="markdownIt-Anchor" href="#collection类">#</a>  <code>Collection</code>  类</h2>
+<img src="/posts/6b5f7afc/2022-02-16-21-41-42.png" class="">
       
     </div>
     <div class="meta footer">
@@ -516,51 +582,6 @@
       </span>
     </div>
     <a href="/posts/6b5f7afc/" itemprop="url" title="面试之旅关于Java知识点" class="btn">more...</a>
-  </div>
-</article>
-
-        
-<article class="item">
-  <div class="cover">
-    <a href="/posts/666b2933/" itemprop="url" title="面试之旅关于数据库"><img data-src="https://tva3.sinaimg.cn/mw690/6833939bly1giclj9410cj20zk0m8h12.jpg"></a>
-  </div>
-  <div class="info">
-    
-<div class="meta">
-  <span class="item" title="Created: 2022-02-16 21:13:54">
-    <span class="icon">
-      <i class="ic i-calendar"></i>
-    </span>
-    <time itemprop="dateCreated datePublished" datetime="2022-02-16T21:13:54+08:00">2022-02-16</time>
-  </span>
-  <span class="item" title="Symbols count in article">
-    <span class="icon">
-      <i class="ic i-pen"></i>
-    </span>
-    <span>2.3k</span>
-    <span class="text">words</span>
-  </span>
-  <span class="item" title="Reading time">
-    <span class="icon">
-      <i class="ic i-clock"></i>
-    </span>
-    <span>2 mins.</span>
-  </span>
-</div>
-
-    <h3><a href="/posts/666b2933/" itemprop="url" title="面试之旅关于数据库">面试之旅关于数据库</a></h3>
-    <div class="excerpt">
-        <h1 id="常见面试题整理–数据库篇（每位开发者必备）"><a href="#常见面试题整理–数据库篇（每位开发者必备）" class="headerlink" title="常见面试题整理–数据库篇（每位开发者必备）"></a>常见面试题整理–数据库篇（每位开发者必备）</h1><img src="/posts/666b2933/2022-02-16-21-40-29.png" class="">
-
-<h2 id="1-什么是存储过程？有哪些优缺点？"><a href="#1-什么是存储过程？有哪些优缺点？" class="headerlink" title="1. 什么是存储过程？有哪些优缺点？"></a>1. 什么是存储过程？有哪些优缺点？</h2>
-      
-    </div>
-    <div class="meta footer">
-      <span>
-        <a href="/categories/Java%E9%9D%A2%E8%AF%95/%E6%95%B0%E6%8D%AE%E5%BA%93/" itemprop="url" title="数据库"><i class="ic i-flag"></i>数据库</a>
-      </span>
-    </div>
-    <a href="/posts/666b2933/" itemprop="url" title="面试之旅关于数据库" class="btn">more...</a>
   </div>
 </article>
 
@@ -599,13 +620,13 @@
 <nav class="state">
     <div class="item posts">
       <a href="/archives/">
-        <span class="count">142</span>
+        <span class="count">143</span>
         <span class="name">posts</span>
       </a>
     </div>
     <div class="item categories">
       <a href="/categories/">
-        <span class="count">73</span>
+        <span class="count">74</span>
         <span class="name">categories</span>
       </a>
     </div>
@@ -689,22 +710,29 @@
   <li class="item">
     
 <div class="breadcrumb">
-<a href="/categories/Java/" title="In Java">Java</a>
-<i class="ic i-angle-right"></i>
-<a href="/categories/Java/Stream/" title="In Stream">Stream</a>
+<a href="/categories/Jenkins/" title="In Jenkins">Jenkins</a>
 </div>
 
-    <span><a href="/posts/8b8fedea/" title="Stream流的介绍">Stream流的介绍</a></span>
+    <span><a href="/posts/273d98ce/" title="The learning of Jenkins Grammer">The learning of Jenkins Grammer</a></span>
   </li>
 
       
   <li class="item">
     
 <div class="breadcrumb">
-<a href="/categories/LeetCode/" title="In LeetCode">LeetCode</a>
+<a href="/categories/%E6%95%B0%E6%8D%AE%E5%BA%93/" title="In 数据库">数据库</a>
 </div>
 
-    <span><a href="/posts/4491edd3/" title="LeetCode07_整数反转">LeetCode07_整数反转</a></span>
+    <span><a href="/posts/60f024c8/" title="关于sql执行计划">关于sql执行计划</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+</div>
+
+    <span><a href="/posts/5a74c6a6/" title="宝儿的大腿小腿围">宝儿的大腿小腿围</a></span>
   </li>
 
       
@@ -721,22 +749,10 @@
   <li class="item">
     
 <div class="breadcrumb">
-<a href="/categories/SpringBoot/" title="In SpringBoot">SpringBoot</a>
-<i class="ic i-angle-right"></i>
-<a href="/categories/SpringBoot/Java/" title="In Java">Java</a>
+<a href="/categories/Java/" title="In Java">Java</a>
 </div>
 
-    <span><a href="/posts/f976ebe7/" title="SpringMvc中标准的后端接口格式">SpringMvc中标准的后端接口格式</a></span>
-  </li>
-
-      
-  <li class="item">
-    
-<div class="breadcrumb">
-<a href="/categories/cheatsheet/" title="In cheatsheet">cheatsheet</a>
-</div>
-
-    <span><a href="/posts/1b392612/" title="速查表">速查表</a></span>
+    <span><a href="/posts/96eb888f/" title="Java学习线路图">Java学习线路图</a></span>
   </li>
 
       
@@ -746,19 +762,43 @@
 <a href="/categories/Java/" title="In Java">Java</a>
 </div>
 
-    <span><a href="/posts/d6d1be75/" title="在Javadoc注释中引用方法">在Javadoc注释中引用方法</a></span>
+    <span><a href="/posts/a54ed4b0/" title="Java通过URL下载资源">Java通过URL下载资源</a></span>
   </li>
 
       
   <li class="item">
     
 <div class="breadcrumb">
-<a href="/categories/Java%E9%9D%A2%E8%AF%95/" title="In Java面试">Java面试</a>
+<a href="/categories/Java/" title="In Java">Java</a>
 <i class="ic i-angle-right"></i>
-<a href="/categories/Java%E9%9D%A2%E8%AF%95/%E6%95%B0%E6%8D%AE%E5%BA%93/" title="In 数据库">数据库</a>
+<a href="/categories/Java/Java%E9%9D%A2%E8%AF%95/" title="In Java面试">Java面试</a>
 </div>
 
-    <span><a href="/posts/666b2933/" title="面试之旅关于数据库">面试之旅关于数据库</a></span>
+    <span><a href="/posts/b42f0c87/" title="Cache、Cookie、Session、Token">Cache、Cookie、Session、Token</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/Ubuntu/" title="In Ubuntu">Ubuntu</a>
+</div>
+
+    <span><a href="/posts/6e65ed30/" title="ubuntu20无法安装vmtools解决">ubuntu20无法安装vmtools解决</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/Java/" title="In Java">Java</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/Java/Java%E9%9D%A2%E8%AF%95/" title="In Java面试">Java面试</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/Java/Java%E9%9D%A2%E8%AF%95/SpringBoot/" title="In SpringBoot">SpringBoot</a>
+</div>
+
+    <span><a href="/posts/59de1824/" title="spring中&#x2F;和&#x2F;*和&#x2F;**的区别">spring中/和/*和/**的区别</a></span>
   </li>
 
       
@@ -770,31 +810,7 @@
 <a href="/categories/Java%E9%9D%A2%E8%AF%95/%E7%AE%97%E6%B3%95/" title="In 算法">算法</a>
 </div>
 
-    <span><a href="/posts/7474c898/" title="分治算法">分治算法</a></span>
-  </li>
-
-      
-  <li class="item">
-    
-<div class="breadcrumb">
-<a href="/categories/%E5%89%8D%E7%AB%AF/" title="In 前端">前端</a>
-<i class="ic i-angle-right"></i>
-<a href="/categories/%E5%89%8D%E7%AB%AF/JavaScript/" title="In JavaScript">JavaScript</a>
-</div>
-
-    <span><a href="/posts/4aa00b9a/" title="Js中的some、find、findindex、includes、filter的使用">Js中的some、find、findindex、includes、filter的使用</a></span>
-  </li>
-
-      
-  <li class="item">
-    
-<div class="breadcrumb">
-<a href="/categories/Java%E9%9D%A2%E8%AF%95/" title="In Java面试">Java面试</a>
-<i class="ic i-angle-right"></i>
-<a href="/categories/Java%E9%9D%A2%E8%AF%95/HashMap/" title="In HashMap">HashMap</a>
-</div>
-
-    <span><a href="/posts/52d9f7d3/" title="Java面试必问--HashMap的底层">Java面试必问--HashMap的底层</a></span>
+    <span><a href="/posts/a4ce31d2/" title="贪心算法">贪心算法</a></span>
   </li>
 
   </ul>
@@ -819,13 +835,13 @@
     <span class="post-meta-item-icon">
       <i class="ic i-chart-area"></i>
     </span>
-    <span title="Symbols count total">620k words</span>
+    <span title="Symbols count total">622k words</span>
 
     <span class="post-meta-divider">|</span>
     <span class="post-meta-item-icon">
       <i class="ic i-coffee"></i>
     </span>
-    <span title="Reading time total">9:24</span>
+    <span title="Reading time total">9:25</span>
   </div>
 </div>
 
