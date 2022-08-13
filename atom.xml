@@ -46,15 +46,16 @@
     <link href="https://smile1231.github.io/posts/e2b12017/"/>
     <id>https://smile1231.github.io/posts/e2b12017/</id>
     <published>2022-08-10T16:52:36.000Z</published>
-    <updated>2022-08-11T16:25:20.342Z</updated>
+    <updated>2022-08-13T03:20:57.431Z</updated>
     
-    <content type="html"><![CDATA[<p><span class="exturl" data-url="aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2Jvb255YS9hcnRpY2xlL2RldGFpbHMvNzQ5MDY5Mjc=">参考文章</span></p>]]></content>
+    <content type="html"><![CDATA[<p>关于推送本地的镜像到 <code>Docker Hub</code>  上</p><p>关于如何制作镜像：<a href="https://smile1231.github.io/posts/11faeb76/">make DockerFile</a></p><h2 id="注册账号"><a class="markdownIt-Anchor" href="#注册账号">#</a> 注册账号</h2><p><span class="exturl" data-url="aHR0cHM6Ly9odWIuZG9ja2VyLmNvbS8=">official Website</span></p><p>注册完成之后，进入自己的账户信息页创建 <code>Token</code></p><img data-src="/posts/e2b12017/2022-08-13-10-51-18.png" class=""><h2 id="本地登陆账号"><a class="markdownIt-Anchor" href="#本地登陆账号">#</a> 本地登陆账号</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">docker login</span><br><span class="line"></span><br><span class="line"><span class="comment"># Username: jinmaohub</span></span><br><span class="line"><span class="comment"># Password: $&#123;token&#125;</span></span><br><span class="line"><span class="comment"># Login Successed</span></span><br></pre></td></tr></table></figure><h2 id="推送镜像"><a class="markdownIt-Anchor" href="#推送镜像">#</a> 推送镜像</h2><blockquote><p>get images</p></blockquote><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">docker images</span><br></pre></td></tr></table></figure><img data-src="/posts/e2b12017/2022-08-13-10-48-38.png" class=""><blockquote><p>用 <code>docker tag</code>  来进行标记</p></blockquote><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">docker tag &lt;image-name&gt; &lt;docekerhub-name&gt;/&lt;iamges-name&gt;:&lt;tag-name&gt;</span><br><span class="line"><span class="comment"># docker tag local_vue jinmaohub/local_vue:latest</span></span><br></pre></td></tr></table></figure><blockquote><p>推送 <code>images</code></p></blockquote><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">docker push &lt;docekerhub-name&gt;/&lt;iamges-name&gt;:&lt;tag-name&gt;</span><br><span class="line"><span class="comment"># docker push jinmaohub/local_hub:latest</span></span><br></pre></td></tr></table></figure><img data-src="/posts/e2b12017/2022-08-13-11-20-34.png" class=""><p>就会发现镜像推送成功了</p><img data-src="/posts/e2b12017/2022-08-13-11-20-56.png" class="">]]></content>
     
     
       
       
-    <summary type="html">&lt;p&gt;&lt;span class=&quot;exturl&quot; data-url=&quot;aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2Jvb255YS9hcnRpY2xlL2RldGFpbHMvNzQ5MDY5Mjc=&quot;&gt;参考文章&lt;/span&gt;&lt;/p&gt;
-</summary>
+    <summary type="html">&lt;p&gt;关于推送本地的镜像到 &lt;code&gt;Docker Hub&lt;/code&gt;  上&lt;/p&gt;
+&lt;p&gt;关于如何制作镜像：&lt;a href=&quot;https://smile1231.github.io/posts/11faeb76/&quot;&gt;make DockerFile&lt;/a&gt;&lt;/p&gt;
+&lt;h2 i</summary>
       
     
     
@@ -169,11 +170,11 @@
     <category term="Machine Learning" scheme="https://smile1231.github.io/categories/Machine-Learning/"/>
     
     
-    <category term="Machine Learning" scheme="https://smile1231.github.io/tags/Machine-Learning/"/>
-    
     <category term="Python" scheme="https://smile1231.github.io/tags/Python/"/>
     
     <category term="Jupyter" scheme="https://smile1231.github.io/tags/Jupyter/"/>
+    
+    <category term="Machine Learning" scheme="https://smile1231.github.io/tags/Machine-Learning/"/>
     
   </entry>
   

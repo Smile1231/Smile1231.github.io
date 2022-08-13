@@ -76,7 +76,7 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
       <i class="ic i-pen"></i>
     </span>
     <span class="text">Symbols count in article</span>
-    <span>4</span>
+    <span>476</span>
     <span class="text">words</span>
   </span>
   <span class="item" title="Reading time">
@@ -117,12 +117,12 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
       </div>
       <div id="imgs" class="pjax">
         <ul>
-          <li class="item" data-background-image="https://tva2.sinaimg.cn/large/6833939bly1gipex2cdtbj20zk0m8x6p.jpg"></li>
-          <li class="item" data-background-image="https://tva2.sinaimg.cn/large/6833939bly1gipexj2jgzj20zk0m8b09.jpg"></li>
-          <li class="item" data-background-image="https://tva2.sinaimg.cn/large/6833939bly1giph4lm9i7j20zk0m84qp.jpg"></li>
-          <li class="item" data-background-image="https://tva2.sinaimg.cn/large/6833939bly1giclxfdlttj20zk0m8npd.jpg"></li>
-          <li class="item" data-background-image="https://tva2.sinaimg.cn/large/6833939bly1gicivghyooj20zk0m8dir.jpg"></li>
-          <li class="item" data-background-image="https://tva2.sinaimg.cn/large/6833939bly1giclgi503lj20zk0m8hdt.jpg"></li>
+          <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1giclh0m9pdj20zk0m8hdt.jpg"></li>
+          <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1gipeybxm1pj20zk0m8niv.jpg"></li>
+          <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1gicliwyw55j20zk0m8hdt.jpg"></li>
+          <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1gipexbei4hj20zk0m8npd.jpg"></li>
+          <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1gipesng5oej20zk0m87d4.jpg"></li>
+          <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1giclxxcb6rj20zk0m8b29.jpg"></li>
         </ul>
       </div>
     </header>
@@ -168,7 +168,31 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
   <div class="body md" itemprop="articleBody">
     
 
-    <p><span class="exturl" data-url="aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2Jvb255YS9hcnRpY2xlL2RldGFpbHMvNzQ5MDY5Mjc=">参考文章</span></p>
+    <p>关于推送本地的镜像到 <code>Docker Hub</code>  上</p>
+<p>关于如何制作镜像：<a href="https://smile1231.github.io/posts/11faeb76/">make DockerFile</a></p>
+<h2 id="注册账号"><a class="markdownIt-Anchor" href="#注册账号">#</a> 注册账号</h2>
+<p><span class="exturl" data-url="aHR0cHM6Ly9odWIuZG9ja2VyLmNvbS8=">official Website</span></p>
+<p>注册完成之后，进入自己的账户信息页创建 <code>Token</code></p>
+<img data-src="/posts/e2b12017/2022-08-13-10-51-18.png" class="">
+<h2 id="本地登陆账号"><a class="markdownIt-Anchor" href="#本地登陆账号">#</a> 本地登陆账号</h2>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">docker login</span><br><span class="line"></span><br><span class="line"><span class="comment"># Username: jinmaohub</span></span><br><span class="line"><span class="comment"># Password: $&#123;token&#125;</span></span><br><span class="line"><span class="comment"># Login Successed</span></span><br></pre></td></tr></table></figure>
+<h2 id="推送镜像"><a class="markdownIt-Anchor" href="#推送镜像">#</a> 推送镜像</h2>
+<blockquote>
+<p>get images</p>
+</blockquote>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">docker images</span><br></pre></td></tr></table></figure>
+<img data-src="/posts/e2b12017/2022-08-13-10-48-38.png" class="">
+<blockquote>
+<p>用 <code>docker tag</code>  来进行标记</p>
+</blockquote>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">docker tag &lt;image-name&gt; &lt;docekerhub-name&gt;/&lt;iamges-name&gt;:&lt;tag-name&gt;</span><br><span class="line"><span class="comment"># docker tag local_vue jinmaohub/local_vue:latest</span></span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>推送 <code>images</code></p>
+</blockquote>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">docker push &lt;docekerhub-name&gt;/&lt;iamges-name&gt;:&lt;tag-name&gt;</span><br><span class="line"><span class="comment"># docker push jinmaohub/local_hub:latest</span></span><br></pre></td></tr></table></figure>
+<img data-src="/posts/e2b12017/2022-08-13-11-20-34.png" class="">
+<p>就会发现镜像推送成功了</p>
+<img data-src="/posts/e2b12017/2022-08-13-11-20-56.png" class="">
 
       <div class="tags">
           <a href="/tags/Docker/" rel="tag"><i class="ic i-tag"></i> Docker</a>
@@ -183,7 +207,7 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
       <i class="ic i-calendar-check"></i>
     </span>
     <span class="text">Edited on</span>
-    <time title="Modified: 2022-08-12 00:25:20" itemprop="dateModified" datetime="2022-08-12T00:25:20+08:00">2022-08-12</time>
+    <time title="Modified: 2022-08-13 11:20:57" itemprop="dateModified" datetime="2022-08-13T11:20:57+08:00">2022-08-13</time>
   </span>
   <span id="posts/e2b12017/" class="item leancloud_visitors" data-flag-title="Dokcer镜像推送到DockerHub" title="Views">
       <span class="icon">
@@ -223,7 +247,7 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
     <div class="item left">
       
 
-  <a href="/posts/d05062ae/" itemprop="url" rel="prev" data-background-image="https:&#x2F;&#x2F;tva2.sinaimg.cn&#x2F;mw690&#x2F;6833939bly1gicitcxhpij20zk0m8hdt.jpg" title="Java 操作Jenkins">
+  <a href="/posts/d05062ae/" itemprop="url" rel="prev" data-background-image="https:&#x2F;&#x2F;tva3.sinaimg.cn&#x2F;mw690&#x2F;6833939bly1gipevo9j1jj20zk0m8e81.jpg" title="Java 操作Jenkins">
   <span class="type">Previous Post</span>
   <span class="category"><i class="ic i-flag"></i> Jenkins</span>
   <h3>Java 操作Jenkins</h3>
@@ -233,7 +257,7 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
     <div class="item right">
       
 
-  <a href="/posts/a54ed4b0/" itemprop="url" rel="next" data-background-image="https:&#x2F;&#x2F;tva2.sinaimg.cn&#x2F;mw690&#x2F;6833939bly1giclga70tsj20zk0m84mr.jpg" title="Java通过URL下载资源">
+  <a href="/posts/a54ed4b0/" itemprop="url" rel="next" data-background-image="https:&#x2F;&#x2F;tva3.sinaimg.cn&#x2F;mw690&#x2F;6833939bly1gipexw3o58j20zk0m8e81.jpg" title="Java通过URL下载资源">
   <span class="type">Next Post</span>
   <span class="category"><i class="ic i-flag"></i> Java</span>
   <h3>Java通过URL下载资源</h3>
@@ -255,6 +279,7 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
   <div class="panels">
     <div class="inner">
       <div class="contents panel pjax" data-title="Contents">
+          <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%B3%A8%E5%86%8C%E8%B4%A6%E5%8F%B7"><span class="toc-number">1.</span> <span class="toc-text"> 注册账号</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%9C%AC%E5%9C%B0%E7%99%BB%E9%99%86%E8%B4%A6%E5%8F%B7"><span class="toc-number">2.</span> <span class="toc-text"> 本地登陆账号</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%8E%A8%E9%80%81%E9%95%9C%E5%83%8F"><span class="toc-number">3.</span> <span class="toc-text"> 推送镜像</span></a></li></ol>
       </div>
       <div class="related panel pjax" data-title="Related">
         <ul>
@@ -366,51 +391,36 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
 <a href="/categories/Java/" title="In Java">Java</a>
 </div>
 
-    <span><a href="/posts/60a1e80e/" title="java判断日期周几">java判断日期周几</a></span>
+    <span><a href="/posts/c3733521/" title="Java之assert关键字">Java之assert关键字</a></span>
   </li>
 
       
   <li class="item">
     
 <div class="breadcrumb">
-<a href="/categories/Java/" title="In Java">Java</a>
 </div>
 
-    <span><a href="/posts/4ca5bfdf/" title="Spring手动回滚事务">Spring手动回滚事务</a></span>
+    <span><a href="/posts/4da9c93/" title="Web-based design and analysis tools for CRISPR base editing 文献阅读">Web-based design and analysis tools for CRISPR base editing 文献阅读</a></span>
   </li>
 
       
   <li class="item">
     
 <div class="breadcrumb">
-<a href="/categories/LeetCode/" title="In LeetCode">LeetCode</a>
+<a href="/categories/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/" title="In 设计模式">设计模式</a>
 </div>
 
-    <span><a href="/posts/5d0c3fcc/" title="LeetCode172_阶乘后的0">LeetCode172_阶乘后的0</a></span>
+    <span><a href="/posts/79c6d028/" title="23设计模式(更新中)">23设计模式(更新中)</a></span>
   </li>
 
       
   <li class="item">
     
 <div class="breadcrumb">
-<a href="/categories/Java%E9%9D%A2%E8%AF%95/" title="In Java面试">Java面试</a>
-<i class="ic i-angle-right"></i>
-<a href="/categories/Java%E9%9D%A2%E8%AF%95/Spring%E4%BA%8B%E5%8A%A1/" title="In Spring事务">Spring事务</a>
+<a href="/categories/cheatsheet/" title="In cheatsheet">cheatsheet</a>
 </div>
 
-    <span><a href="/posts/7e4601e3/" title="面试之旅之关于Spring事务处理">面试之旅之关于Spring事务处理</a></span>
-  </li>
-
-      
-  <li class="item">
-    
-<div class="breadcrumb">
-<a href="/categories/Java/" title="In Java">Java</a>
-<i class="ic i-angle-right"></i>
-<a href="/categories/Java/Tools/" title="In Tools">Tools</a>
-</div>
-
-    <span><a href="/posts/13370746/" title="使用EasyExcel读取excel文件为Java实体类">使用EasyExcel读取excel文件为Java实体类</a></span>
+    <span><a href="/posts/1b392612/" title="速查表">速查表</a></span>
   </li>
 
       
@@ -419,38 +429,30 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
 <div class="breadcrumb">
 <a href="/categories/Java%E9%9D%A2%E8%AF%95/" title="In Java面试">Java面试</a>
 <i class="ic i-angle-right"></i>
-<a href="/categories/Java%E9%9D%A2%E8%AF%95/Jvm/" title="In Jvm">Jvm</a>
+<a href="/categories/Java%E9%9D%A2%E8%AF%95/%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92/" title="In 动态规划">动态规划</a>
 </div>
 
-    <span><a href="/posts/57681474/" title="JVM简单原理">JVM简单原理</a></span>
+    <span><a href="/posts/a80d0031/" title="动态规划">动态规划</a></span>
   </li>
 
       
   <li class="item">
     
 <div class="breadcrumb">
-<a href="/categories/SAP/" title="In SAP">SAP</a>
+<a href="/categories/Git/" title="In Git">Git</a>
 </div>
 
-    <span><a href="/posts/96b6e8a1/" title="simple self introduction">simple self introduction</a></span>
+    <span><a href="/posts/424eebf1/" title="关于在IDEA中回滚Git版本">关于在IDEA中回滚Git版本</a></span>
   </li>
 
       
   <li class="item">
     
 <div class="breadcrumb">
+<a href="/categories/Java%E9%9D%A2%E8%AF%95/" title="In Java面试">Java面试</a>
 </div>
 
-    <span><a href="/posts/1599bffe/" title="归并排序">归并排序</a></span>
-  </li>
-
-      
-  <li class="item">
-    
-<div class="breadcrumb">
-</div>
-
-    <span><a href="/posts/159c6098/" title="阻塞队列">阻塞队列</a></span>
+    <span><a href="/posts/feb84842/" title="Java面试必问--ArrayList的底层">Java面试必问--ArrayList的底层</a></span>
   </li>
 
       
@@ -459,10 +461,31 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
 <div class="breadcrumb">
 <a href="/categories/Java%E9%9D%A2%E8%AF%95/" title="In Java面试">Java面试</a>
 <i class="ic i-angle-right"></i>
-<a href="/categories/Java%E9%9D%A2%E8%AF%95/SpringBoot/" title="In SpringBoot">SpringBoot</a>
+<a href="/categories/Java%E9%9D%A2%E8%AF%95/%E5%A0%86%E6%8E%92%E5%BA%8F/" title="In 堆排序">堆排序</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/Java%E9%9D%A2%E8%AF%95/%E5%A0%86%E6%8E%92%E5%BA%8F/%E7%AE%97%E6%B3%95/" title="In 算法">算法</a>
 </div>
 
-    <span><a href="/posts/20ac1950/" title="SpringBoot文件上传下载">SpringBoot文件上传下载</a></span>
+    <span><a href="/posts/c2a5fdc5/" title="堆排序">堆排序</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/Jenkins/" title="In Jenkins">Jenkins</a>
+</div>
+
+    <span><a href="/posts/171f1b7f/" title="Jenkins&#x2F;CICD">Jenkins/CICD</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+</div>
+
+    <span><a href="/posts/e694a882/" title="Windows下如何查看某个端口被谁占用">Windows下如何查看某个端口被谁占用</a></span>
   </li>
 
   </ul>
@@ -493,7 +516,7 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
     <span class="post-meta-item-icon">
       <i class="ic i-coffee"></i>
     </span>
-    <span title="Reading time total">9:25</span>
+    <span title="Reading time total">9:26</span>
   </div>
 </div>
 
