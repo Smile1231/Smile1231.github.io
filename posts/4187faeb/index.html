@@ -76,7 +76,7 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
       <i class="ic i-pen"></i>
     </span>
     <span class="text">Symbols count in article</span>
-    <span>5.2k</span>
+    <span>17k</span>
     <span class="text">words</span>
   </span>
   <span class="item" title="Reading time">
@@ -84,7 +84,7 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
       <i class="ic i-clock"></i>
     </span>
     <span class="text">Reading time</span>
-    <span>5 mins.</span>
+    <span>16 mins.</span>
   </span>
 </div>
 
@@ -117,12 +117,12 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
       </div>
       <div id="imgs" class="pjax">
         <ul>
-          <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1gipeuibk9fj20zk0m8ay2.jpg"></li>
-          <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1giciuja1j1j20zk0m8kjl.jpg"></li>
-          <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1gicm0fdw5cj20zk0m8hdt.jpg"></li>
-          <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1gicm07ih54j20zk0m84qp.jpg"></li>
-          <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1gipeybxm1pj20zk0m8niv.jpg"></li>
-          <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1giciuv0socj20zk0m8qes.jpg"></li>
+          <li class="item" data-background-image="https://tva2.sinaimg.cn/large/6833939bly1gipeudstjqj20zk0m8k3r.jpg"></li>
+          <li class="item" data-background-image="https://tva2.sinaimg.cn/large/6833939bly1giciszlczyj20zk0m816d.jpg"></li>
+          <li class="item" data-background-image="https://tva2.sinaimg.cn/large/6833939bly1giclhfehz7j20zk0m8u0x.jpg"></li>
+          <li class="item" data-background-image="https://tva2.sinaimg.cn/large/6833939bly1giclx29mstj20zk0m8hdt.jpg"></li>
+          <li class="item" data-background-image="https://tva2.sinaimg.cn/large/6833939bly1giciukx8a7j20zk0m8aio.jpg"></li>
+          <li class="item" data-background-image="https://tva2.sinaimg.cn/large/6833939bly1giclxxcb6rj20zk0m8b29.jpg"></li>
         </ul>
       </div>
     </header>
@@ -168,17 +168,18 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
   <div class="body md" itemprop="articleBody">
     
 
-    <span id="more"></span>
-<p>面试官们好，我是今天的面试者，陈宜，你也可以称呼我的英文名 Darry，我今天面试的岗位是 java 开发，我于 2020 年在江苏理工学院毕业，目前已有两年经验，我有两份工作经历，第一家是在一家专门为医院开发系统的公司，由于公司不是很大，所以职责一般都是前后端都会开发，届时也有开发小程序的经验。这份工作中开发了很多医院的项目，类似于华山医院投诉管理系统，华山北院医技预约系统等等，华山医院主要是用来记录华山医院的一些客诉，然后后续投诉处理等等，医技预约系统是用来预约医院内部的各种检查：例如 CT 检查。前端主要是用的技术是 Vue + ElementUI ，后端为 SpringBoot 项目，ORM 都是使用的 mybatis 框架，都是比较简单的单体服务项目。第二那份工作就是我目前所在的企业：享道出行，该企业是一家互联网公司，产品为享道出行 app，我所在的部门为支付部门，所在的小组为结算小组，职位为 Java 开发，公司统一使用规范的分布式解决方案，注册中心使用 consul，配置中心为 Apollo，Rpc 框架为公司研制的 Krpc，和谷歌的 Grpc 类似，前后端规范都定义在 proto 文件中。 我主要负责的项目为公司的发票项目，该项目主要的难点在于业务的梳理以及开票流程的理解。       该项目涵盖了所有公司的发票业务：申请开票，进行开票，发送邮件。申请开票的来源有很多，有 app，渠道，以及 MIS 端，其中渠道端就是对接的外部渠道，类似于滴滴，高德等等。开票采用了接口 + job 的形式，以开票请求量最大的渠道开票来说，当开票请求请求到服务上时，一开始会做一些简单的参数验证，邮箱，电话等等 ，也会调用专门接口查询待开票列表 ， 其次将会对请求订单进行幂等验证和金额验证，特定的商户可能开票通道也会有所不同，最后对发票基本信息进行数据库存表，同时会返回对应的享道内部发票号，为一个异步行为，该发票号可以调用专门的接口查询发票信息，同时发票请求借口也使用 redis 做了防止重复点击。job 是整个开票的业务核心逻辑，首先筛选指定状态的发票进行开票，首先开票时会直接请求发票供应商接口，发票供应商也为一个异步开票流程，发票请求之后将需要轮询去查询发票是否开具成功，当发票成功开具之后，将会进行信息状态的更新，然后执行特定的后置处理器，主要事发票邮件的发送或者渠道的信息同步。整个开票逻辑的轮廓就是如此。同时我还负责了车司管项目的研发，该项目主要是负责享道签约合作公司对出租车司机的管理平台，我主要负责了与承包方案相关的接口开发，其中的难点在于定时修改承包方案时间点，从某个日期点生效的方案设计。另外也有一些其他服务的简单开发，对账服务的日清算周清算；羊刀平台的前后端开发等。在享道待的时间里，学到了很多，处理线上事件时正确的步骤以及方式，以及联调开发时单测的完整性等等。我想辞职的原因是因为公司于年初搬了新家，离我目前所在居住的地点车程过远，所以想找一份近一点的工作，以上就是我的个人介绍，谢谢你们的聆听！</p>
-<p>Hello interviewers, I am today’s interviewee, Chen Yi, you can also call my English name Darry. The position I am interviewing for today is Java development. I graduated from Jiangsu university of Technology in 2020 and have two years of experience. , I have two work experiences.</p>
-<h2 id="第一份工作"><a class="markdownIt-Anchor" href="#第一份工作">#</a> 第一份工作</h2>
-<p>The first one is in a company that develops systems for hospitals. Since the company is not very large, the responsibility is generally that the front and back ends will be developed, and there will also be experience in developing mini programs at that time. In this job, many hospital projects have been developed, similar to Huashan Hospital Complaint Management System, Huashan North Hospital Medical Technology Reservation System, etc. Huashan Hospital is mainly used to record some customer complaints of Huashan Hospital, and then follow-up complaint handling, etc., The medical technology reservation system is used to book various examinations within the hospital: CT examination and so on. The front-end technology is mainly Vue + ElementUI, the back-end is the SpringBoot project, and the ORM is the mybatis framework, which is a relatively simple single service project.</p>
-<h2 id="第二份工作"><a class="markdownIt-Anchor" href="#第二份工作">#</a> 第二份工作</h2>
-<p>The second job is the company I am currently working for: Xiangdao Travel, an Internet company whose product is the Xiangdao Travel app, my department is the payment department, my team is the settlement team, and my position is Java development. The company uses standardized distributed solutions in a unified manner. The registration center uses consul, the configuration center is Apollo, and the Rpc framework is Krpc developed by the company, which is similar to Google’s Grpc. The front-end and back-end specifications are defined in the proto file.</p>
-<h1 id="发票"><a class="markdownIt-Anchor" href="#发票">#</a> 发票</h1>
-<p>The project I am mainly responsible for is the company’s invoicing project. The main difficulty of this project lies in the sorting out of the business and the understanding of the invoicing process. The project covers all the company’s invoicing business: apply for invoicing, do invoicing, send mail. There are many sources for invoicing applications, including apps, channels, and MIS, where the channel is the external channel for docking, similar to Didi, gaode, etc. Invoicing adopts the form of interface + job. Taking the channel with the largest amount of invoicing requests for this project, when the invoicing request is requested to the service, it will do some simple parameter verification at the beginning, such as email, telephone, etc., and will also call the special interface. Query the to-be-invoiced list, and then perform idempotent（美  [aɪˈdempətənt]） verification and amount verification on the requested order. Certain merchants may have different invoicing channels. Finally, perform a database table on the basic information of the invoice, and return the corresponding Xiangdao internal invoiceNO, which is an asynchronous behavior, the invoice number can call a special interface to query the invoice information, and the invoice request excuse also uses redis to prevent repeated clicks. Job is the core business logic of the entire invoicing business. First, the invoices in the special state are screened for invoicing. First, the invoice supplier interface will be directly requested when the invoice is issued. The invoice supplier is also an asynchronous invoicing process. After the issuance is successful, when the invoice is successfully issued, the information status will be updated, and then a specific post-processor will be executed, which is mainly responsible for the sending of the invoice email or the information synchronization of the channel. This is the outline of the entire billing logic.</p>
-<p>At the same time, I was also in charge of the research and development of the car driver management project. This project is mainly responsible for the management platform for taxi drivers by the contracted cooperative company of Xiangdao. I was mainly responsible for the interface development related to the contracting scheme. The difficulty lies in modifying the contracting scheme regularly. A time point, a scheme design that takes effect from a certain date point. In addition, there are also simple development of some other services, daily settlement and weekly settlement of account  services; front-end and back-end development of the Yangdao platform, etc. During the time I spent, I learned a lot, the correct steps and methods for handling online events, and the integrity of unit testing during joint debugging and development. The reason I want to resign is because the company moved to a new home at the beginning of the year, which is too far from where I currently live, so I want to find a closer job. The above is my personal introduction, thank you for listening!</p>
-
+    <div class="hbe hbe-container" id="hexo-blog-encrypt" data-wpm="Oh, this is an invalid password. Check and try again, please." data-whm="OOPS, these decrypted content may changed, but you can still have a look.">
+  <script id="hbeData" type="hbeData" data-hmacdigest="10cfc2ebe57ec5171f3969aa4a64464932aa0f954b8d83b47d4e39bbef889ab6">10d79030e8222445804370796b90fca17946b910b924ddb960429c24562a8e923a4262af1068379632b7ce250c07bccd74c26e4e931789166569060fd23adcd001f368511f9919ddd7ee7592ae3a3d3e2b575464dfe0b53c3f69dd1578f45b2c8340b18e3c7d89ac72b1a36af93367e525df51d6248622d2fe46a8cce4393103fbd55e3686a0d045c5cbe7f4d3283509edbcc4bfc40081456ac8428c162afe56d00440b325bb7c07c16f06d9ca62bcb5792a4fac26c84ec214757eb4f5f9db070150b0045a506711ba91f6a12c65d784c41059e1f96ab48d2fa16bd560de5e57773883e0c86d726dfe8aa81ce76e14aa7bc0ddba8036c8d145c44b5b16da9c458884b5386a266f3ac23832d806c55c59c0fdbf2a3b8a22060a7c32de5cb97f470509a14ff96af43ebb27f4a15fa048c9817d8d142ba5378b027a4d61946f67afbabb40a420e682f77cbba8a68b7a880af68c73b0759826bb29eccca4ccf35cedf9a20c339f4341340cc853c24853844a22b33791ff3106c5d5b2aa8311ec1e25563f8e131422e1ddc76331f93888f77295671ea6f89f7d7d9677de2ae95ead9abdf8c23896b78faea682910ea21a2686503d0e2417f9057eae1220ed908b5c7f543c3413459bdd64adca6fe60c484e1834bdb47eb443c9973b75bdae0950f002ad07da4b4d239b6904596e598fa8997852ea9310b21d245e87dbe5e1f1e3716204e91e4215e528a26ff0b8cbf6224be2ee21764dbcfef1f38b9d2635d7ac4f20f2cf33b2dd4b48d75b9e9da9ebf9f3d2f7d7c89e4e6ba30b2b8817fb478d4037af5513f0ea593c5762509dc4bf7826e6860d1a16a1ad99274c7de56ade774489725e3b6d7370fe804d95cea6eb193ced9f279b3035d9a8e0e6705cd45ff27052ffd236aa464d2f10e9ed7d3ebbc93a9cf1bc2811affff9a5250ab4a04b8c8d1e3f4cc8af74037c64745f4ef0bd2651c4bbf8fe0e3d0ab63e4033a4a15489bce7b39ddb50b14e3e8957fb95bbd51cb1f10b7c9672140370a37ae012449a2e9498d154e1bfd8943c6a919b0b0360adbfd56b050a2f17ff837c08e294dec5fc292336a26a96e4e21fc626a2b2a95e0b8e966aa1aee8da22e60ab14d1d704cf9c74a4f90c5017368e8eed9701a149e87d291ddfda6ce8316df5b2bedbbb304e460f477d160e25aa0f75a7a21e93d23292495a1f5dad10b59d8b840185e492d861361fb766463343a706afa9c0d999cd407a8e6d9da58baa8d40907839123384f7e94cf2f3619e0439b7cd03625b74fea24b72f64d7af5fea4ab327088f4ee0155c4c0060a092693ca2df63d30601b367aed7e8690d639ecbff5759436e9567ef59f38baa3cd61e67de4fa9fb53e821bbca7dbe6a2a822f87472d419818588ca84bc373b9d7823076ef41d48fc09cb957c08ed14df193b94155ef7527a651816b0633c73537b27201feaf8d434ec7ec8a8660e9bf4cf29cdb30c8d8d518f4f777b4e8e58b79d98ad0078f17f3e39acb96645cc3e2e8273b2ca4609adcd85a826432d81a702cc0de3917e364eaa8925ac570ad64eefa52f95cac3a86ca7ed5b0cf712ec48ee19fa088ac4bc3695de0163738e724c036331f25b3a4fdce6769cebde483f01c5c0682b2a96036b285811e9cd8a8f5a0674c137283cb873199982b98c91425271e59b75178a1b27678300f31cc80ff2a75cff771654cefb3c3d2b5a6c4e160b6cac630ece05b78f822099642ea179d4e3012555c338930dd54093876d78cf10248cd31578ae1e28fc8eaed4b77ee064c4b55e0cd3c1554de5665704fca7827f3a003d795ee63aeb47e79e04b3b73e68f37e6b24cba3942ee2060bfa6e36dfaa00cccf2a73f92e70e2fbcf22fc546356e7c60852fbe4194eb553fd5128431aadad30c46dc138b0bf12bdd034bb6941322bd48bb007baab35af3bdb9b658e535c1cd04d3faa300a033a3cd3ea66ce6d613b5727e57f0bf92139ee32e005ddf04a3ee7300cd6405922a8e717404837c88076bad341fef4505bde57d82f16d54ad55d9e4e6e3c141ceeab0f1d56327db4365c2138a3a59c5707efe911a23dc08beb988b1cd2b43758e126a5043df7279d03599ed666597c061fbacf29eed6fd5e3449f1af6aec6030bb00f4fc65632cd9b321bf8fdc1df5f0cd02372d3a645f72d9c30f8896bf79743025feb170423c83cd7c4cb8f0f0f1556343e1e11d55366e583fbc2d333f4da717e18cbbd25329787fd7a2853c7dda5c6747c2f127303db2c91213c05004297332947ef9d85c0008ff8f356fc9b14974b5df4e15cee4ccc230f2acd9d18827d3e8026819ed58027b9bb289e2d5fe3079c19bfbb03dcfd6ad50f0bdf11d7d0c95031015d1c481b83db6b6a87f8831e6ca374d2d1ab4212ff9338e2319b10cf5a055f70772ff3699bfe754b9f7fafbf0d88334055f715f292419475d04f74b61d7ceaeba1571d936e60a859bcb240a92ef44c00dbd8098bb03d4c728c324839512c82c8160e0a408acff3c9ec583bbaff79dd34e4a47c5c999dbeb119c6920d9c7093a3f49aff5f0ccb694cd4f8415c5d6917f5a1563115377854ce9ce4a0846a8b4030284aac41e219e2e46e3a531d546c3ba99b00124abd5f77e229177eda445678cc2053e4f360001c669cb78d23262999aae3b7f03e0a442bc1f163cf801400bb65d850aab65cc9dfbd9ef628af56c97e0a0416e1fcdb8e37f5c79b0961e769e44912ca7e9edaf0323d2b23b36f7dac8fbd21fa40fccc607e9b9cf9afdb9459f6509bdad25795ed3f3ef2e804d2e7e430750bbc0796c2a82301cd0772ab15b4eb4116dd374184ec175ccd8f9ab121da79ef0f481422f84282fdf89a0fd874285b9b1be79b2d6c5740ac04931b4ca2adf75c00b0768028e1dd9d38ac538be75f03d41f2e62bb8949d86c5468a6c707267535d9e882c37aa9f99d2eee6ea2f5c9bb88d1e38ae5c69ec3c8096a507fa1f6b3365400372d7e68b637d086b72fbe60e90e6ed2b871676232d0e3a1373ba0445aa8f70cf3e9ae71b6582516f555f0023782e6806d70e847252e2f5ffb289b8b13f7708d192944924727d1512ab5031bcd0b82e59cfe2fb0c1a1d8ec238553aa62fdbda82e40c76fe20e95c5447bbd27c1acebca50b52b4c1bf20860773df2af924f1315ad89680d8bc7f933b60e20395eaa49b742a95ac4eea87869dbf46ec842749240bc3035d7cb901aa88cebe4108fb852f90cc46f37f6cf4164fd1ab778955dfd6d406e2836cc26686e3cac5cf655067df1c65facf03d9f1a6a5fb0f36d2901e3563a38c98f744de07ce38ad502e83e15579981320ef00129dc8acab5e160841dcfe8dd89a0ca62f4b0c1cf602e8880c6d35ed29452c097535dea17f8ef224abc1b83ff2dc3859a0e41466ed46a8c5069eb2329fce588fa61bf685c52fd5a1b404236186a5643424533c697fcf60166110b20a2288507423ceb849c9b70ddd2312d92ce171dc68393c72a848423192fb6d1b1a93031d92a65407ed65c071d164796cba8fef0bb200a1e6998d52c1a7ec021f6c34a538cddaf764a985ca4bf0b1ab020b9b8c9526df4112fa53ddb08f63cd0af725d3615747eb20965bb5161498f12947f075d50bf315b55ce4dafe4c03885acd64346dda68aac5685ec293778d833d311235bb4904a6860db89808df599d78fdc6760031bf5b10d9d8f9ff61663086c199a2fa8311c6ce53e87036d4c76b38f36fe0e006c0f7b4643cf58f9a87518815337f0023ef179c0bbd283a214288821902430a9074f77dbdd80a4d8546155dc4dbbf120d4b3688040c8d041e57fac40183378220f5f4a430df27f9c6ed6e41846a197cd63b12402d7e0fc40802dcd83224123020d6fb21813bac97aa06892561e0ec6b2be68571ba66f0bf3313d1a9fda634fba172adc9c76c004bf0bf0e5eddeffc65f0ef33a02834e93647ffca1c6fc90452184051d94700b8ad84301698a5e08b8341895bace5cfd5d16ce5301b46657b7518a178fa96f44693ea4da6e7ecb05298806c6a6401d5f640f5a378143bea6ebc1ff7f738390cf4e1b3a6214cb7577da2f104a8f215f67334f396bd09818b95d7dcd38d9aa41194cdd50bbecbf2dd72d71036a454ff7027f0d176a0df89e1b131e9020edd7a67375b64b47059428733d865e35fabbd60e728b5cd8dbdbf7edbc71c06990314f2b2de2cc2f47ee84840200fc249f91936499a70b2e7d4d89c1915f98f6227baa57ac862e8313c48dc8b7896b9cff24fb277f07a945928233f96e7295f138c50a0d5bdb07db1dc80d9e4615758cc939bc96361cc0574a2e1e45bc9c234d53d3f104db77a6814a920dffc163820c39237ad9082a461dfb9d0f16d2b5e8158b438d02b931014a72f607b6f3ba0c1624cde8e33ceca8873b038684ac9effae9c5313191ba140e7787ae065abdcbc96ac05a12c569d5c421da58d08096bd8a1e5b2ec0934c24757323c6bb31fec90b9abbf375dee783c66d05c0b6da8320bd9a6ebe482befc3183d32956c512c7b6ea83571854a991f361492d117745d1a83dde5e443f8a8c0231f806774f77ddda680028ef086fae49a7ea2db5ba6902e9d4f97631d040c2863dcffeea4017feb2208ef062cc782683240b63d4d201afc9ee9b6d8a945ab1b0fd24de4b09b2d255d01960ebeabc5372508b18f22b0ed4222036011313592b10b7822e4fb1805a129c30f336ab2d8c661fb66f84bbaaccadb79f36b58abb0fc0c82b79455457f28072c2c98e29711146b7e41665382656f2d3496c6a765da25998107dae7ae51cff20c8f40e0ef05ed079b3823d4e5cc77462b0f404df905e267f331c0daa319d204df36cba0b62b3421fbd57a77214373e259819d4fc0bac57581e27b8060c66584ab173f4bfe96dbaa70a6ba7a8938fcb636762af8b5ddcb96daeee6e996845124f7debe77755db4066196329b578e7fd815a04e48c3273c0fe0bddb3e6c25e8e59827a9e9d8bc122486488d30c7a17e0b51c2cb51a675bf11e9234b2b3ccb6a522f344870d5ff00533e109367a25f2484ed0e03a91b68b316c0ca804e4118fd6e91cee0e7c82da4ca45087c411b562b018e4066ff5e31b7ad6127794aa1c7a24b237c0d66aab0fdfb811541ef58acd44422cf45abc674119e5884a09628907062b508efd942f905632a9bf1cd4a26276f51b0b6291b973d57f2abf4874cef4dcda53475c542b5cdbf7b34e884e608d2382e4b2eeba7fc04e8c4c0bcc865875ddb36a6921f83bae2bb2c2e516f0f2c1dc2658d97ddf9c002d6d381e0f90c9052ff2686875024af8b1dc7e032f0190b1218490cebffe579b54b50053dd53f6e0f501d1bdb8293dd989d2c0ba7aa4bc5a9efb93e84cdef5ed2c8800a48f479de1be1030fb19173667731c1e118dd9bd5e5c5beec13c2d760ef80aebacc2823b54731fc998152b7354a06d6ca51b6b8343daf77e533e5174d2c8edb6d9a5a4f5bb62f28c2119dffe6a8a0e256d21da88e0c161928f3293d7fc09c3fad7f3945331622a520ac3570e9c802f56ecbf7072b1a17249abfcfc3579944b2ea068da25807c48d0e802f912a74cfbfec254e544e14f133b5e20f9f030a39c29512a62927fd32eee43d18dba4ebd05c5dd8daf5b38a93a83cd8748648ae12b80fd02cb43ba050f76d5a71cad2576de76946bf86e1dbfba135fecdbbfd8c517d399efe909fb391563b29b587b5f2b26da650962dffdb30ea05416e4a555388da9bd3f280d454bca06d65d48992574466f6288e83f0bd65c0be09d977b83fba67428211888ebbf1fe7a0c99501f9574476f9980eb8ee09161b9f8e47126923c15eb4fbda434005db2be749582cf9e2dcf39385091be244b0cd06b1f30be326061427eb2288d9b293446879f07648c10b6ea5c0174b25e8c7bb9829e70cb2e53b8dd945b2b789cb108ad20f5b6ba4aa0af7509fc6c58ac84d2241033271ab485c2c4b33e9b78a3933bda6548c0ab3a4244cc34797e684d93a650112efa1fee490a1ea49ff3ccd6e6345384d537d28216b6d562e4f22ed3c280924e74816afc7dc9d506a01065e3556a963a394ac7222d6ff2c98605e0b30bd5b97f62266e14803c762ec44acb3850c194c5f3aa47de10d46b78e8ffaa328f12683905efdd516aadaa8b122ae0e87daf0df330ffd47e689c82d86a672cd7a0c0cd1c734555b23f5733136bc8f7444f44afbff9556b2116a55e9bcbe97998f8916e62776997e09f30917dcd50db0067d6a997fd3264decd621c7956d28e06ffb0d18914b08ab235836094c10a649f0745829d114756f2f5ba4a6f2077ea67285e2199f4b3128c335c962469011d7f1222ceeed5a5f3b48c1c1c83c0a885a59fcd0b1a7cf0655d6e3cfa831b6778df5895bb660fc0ee9fb78c81846df7bacb18bcfa619f8fba4f9ec6cc38f46006fc577cc53c5032d39f24429925b7f9a2caf7ca3e3332e17a16cbe2af25a3f59117786e287673c4734993ba6573403f440d3f8bc773ad26f1476ffc2f9700112250866b0ca81136734a2dbc3cc4224c94d08e909944b1c249edccdc520a9dda38045e67595917858115bb43095eb924b742ce37f136fa0e273899ca1bdaee9c8ba86b62007a072ee09ba255864ecba76df9ad51256b5a0621941ffd5182294cbd4f5a7ef5665d02732a245fabe086078cff51936837fb09a97f89e5a100d784edd53c740773caefc17247ef775fbb85e8203ab8ffc360e767df2f8d0fffea0f899b38a628a2f3602eba12df3d0dee3d46fe404ea7af318f2637c8fdfcc9864b8c7e567e349f01ac7d0d5ca897a304629d0ae118d034a39286d41569dc76c3a0e69daa21e89cd536255b2d08af1f7f2206be42cb0ef52da0a4d746ad6a3541d9f50abc687e133fd5f511b283224c34068778e65f61af0d23ddd32b603e14e69d20c905761324d8a2821eaf2501e1fdbac8a3325a06c20750fd9c61fb232cb535930f03ba0ba458b06d5329587c8e1f8dfd5ea6045a1435cdba73b530155b16b1e2e88cda23a20525fde07d4509c9531434460d4fd1f83280fcd12efdf72213d61e6dc59589a90f2dd0786cb7157e2c7e046618a25a63568fb73185851d255dbbf2e4f84991bd611510e5e25bbc1b5baeabd809c03a848f7d30e36e4689e976cd9f6d7b26441ca901ef4c03a4d56f9e44b0b7f83e0b19ab2e5a8913c5093d7afa064cfbd544a85fdff8137a1f2a2f045d16ec46d96eaade48693bf27d2e3064e5239e59e15b6f5e0e4f1b0d4c5132482fcdcedfc756aacc7ca4578ff876f0e26391c5ea28896e84a2202375f37a2847d45f13bdc8acc0a55d89649a39bd3b3725c92f37b6f6c60aa19c2f6a50b01edff1b862e63b9a0d7c4d61fb93249732f6b26ee568c53820659b373a1e5c1dcd0fddd9aba368f8945ff47674bb082b4a3f2dbbb2c7c7233e188a6fcef1ad92175c192a4bb5c8e2cf385cbbf339c8749754fcc40ba61eb991785eeec5ff4005574657750efb29386f16bde13ee5d0e62a17330974313112b72ccbc4285e2dce3cc6266b4778fa3e7a7dc6bf6194f7f62132f01105c370b34df7ed0265e3f08122470ca1d5060a5d3f76a5f77416a2c2eae92c0bd1ce61668b610407d15679a450a1bc7c6461612dc272a3cf7222935279c708b79ce68c18eed950d658006fd367c9bce5dcb953c3e7593d1108ce36c6b762471fd7b6fc0bfd72aa29319b7f7926fd3e9e9a5d867802100a6b0d673301618b3ca93f9bc041588640a71aef15fef71bce7c870ad852b0a3d4b38bc9c3aaf5df01a74027b7e6f700b037ddf7fe2a76c2a3aad89726322b52a75e8bee4554a37d16f156f25c3fa73ffd5d5182ef55468c068075d57b72a321afb8fa0c292a5280d9181f4a682e620aa27efb90fc9d213336044fe085efa6dec1c6bfc549905d9a2168ced9bccabf9b7308d7f620325ca38a74984bc06365791979c581ce56529a2313cbae2d52f1a5c20e6ab8d5375f1cdc5f7f31ab4067bff94601e8e062e412a7a433082bc3b2de2214f043bef55e7cd35190d552cc71ced7e107ea0d6d5a270ce2e8c0efd45672ceb44b351f628eacb5f5c19db89d2bb3923116bd4f8f21831c9739ce840f6d5ab9d179bb2484928058478edb8b2c5bf1a651a076f627b5a9ff2996bdc6ddbd75e63502dbd9cbcad1ef464ba6562656945e1b272110dbae3078c41b6714a4a2fa851727ecbd23e284f0ddfc620b1db7e5680e0dd8b477b176ddf647ac04ab00d885ab0bb4e2622dca3a0dcda19d32a7a8e21d5757e6d1e88b769ad40c5db557e83c2ecbe999ad0152cd38f99b157dfe7e9abb8ba51aefaaea221715646a9e4573fca6cfd8291b3703a29dd8c9538f356cc26cdc90f9f2bc7dd99c896858ce8628165172b93de05ab9f12de38dedb1ba38d6487e84a5fa8ff6d8f72121c42018cef4d16754d6055bf1375de5ff9eee46b5b3e308e69caeffff462a8dcf0a591c19997989ecca6da13ce5e24045a7e6a0ad0ed42a9e6f90d25f26e33439866815c6782b0386ab4c270a230262caf35af4569b5958ea479e9cac3cdc0a3d43f93649f06f86dbf4326f46ea3699f0338074fda01cd8a626cba8632f06363d5d2b7a5788723f968edebea36cd8a42a130f5ca629f0d45318d35a252cf8fbc9e333f9d8da70abbb5955530152783e9299a2f7f330864e407525a3fdd3b129d6b9ac2e82faf739df04cee783a366e791c1dd437092ab22f857a35a1cdfb5c62ac93b8dc865d9f788aedad93768b33494bc6083b5dc0e5255501334c6692295a46008ae65423b6d75cc6dac39e975051a9057a703b624f0a545752222e090b75d0befb2a5552169b999b1e6d17facaf64539c01d2c76419a9e3b283dc87e8c6c2ae982bcab584b6052cbcae41151746999cd0df271632fd5b84eb3468c26dc12e48d35cc3e03a470305e5959f4fe8dd3ef18314780c6ebb4670b37e3f142de01f7fc25ff66f7222cc2c89804627c11b4ac950365c4374e7b2bbbb81c948f860a852b432817834af56316ac1f7bdd7f7f629732839964ef79c5ed1aab6c6a76f5aa4b6205ce122bcbc3fd1c236a03c820ee6b2ae108cd86ed2dc9521908114be3b33420424664745a9aec68bd44dbdd06280ca35504657efe5b4a6bd15bd05ddc54fbeffedac65ab7bed08692192c83705727d413b8c11d22c8f91a583248359d0de5b4bf0dd427008645201efb5b72a332191c23543aead82181929eff838bda31a061a36a6e39dd14b7d9929592a139d8db0a4f9be4a4eb9ed6292acb99c74127a88a97a004b603d38393a133bafd378004bc454b687850f7c91d01938e68ddaa198ad5abee4535a6318809d5ebe33ae2b9ebaeba6f3e438dfa1312f18728cdee5d6cc12c0962ca4a81fe3eb9e611a3426849d160c94aace309dafd4dc826df4b513a2f52d58ed240ffd037b7b6f7ccfd14cbf05ad0ceba14a69bdbd50303ff91b765e640c629c35fd7884f04b8277033325bdcc6010def7e9f378159b04a55da54685e7d0e24831fbe1fd55d248619bf7262af809f4e9d852eb5ac276b99a9c7d9e3348c92a81bd9712329eeb12879e069dfdc24dc996b95f7208a881c35041b7be3dd57ccc250cd426c6c8d6ea0b404560d7900abfb822d14ec1569178df5bdfc7713612ff136830ecc5b1350c6da76cff7ea8ad37d198665d46aa2e118b7bb78b7f8ded7915e7e8dbf2c48291b6a6126a46d575af55769f95cfad840dd169ab94f095dcb7a674a0ad85042479e4ebc2cd54702fd60b42113637cf4c2818c125170b3d627c9ac16a66e76231aacf286435ff8f5b51e4831b365b6046e9ece422b1df8f035f6c35b20f540794bc07816111b015203284a3d38c658fbeb677544e734458876eb5321f40e607fabd5096e10b4576e74f3bae2077af7228438360bec2c0b8f160203d3ce9aad5f50d3d6750b7c1e47ce6d1eb9d5fef4fa34eda51d9843324ef9da6a7d80794a298ce14beb130a0c829af55e7c4a59b7cce51321dd5934e8952fbe71287ac568ae2bf7aa91cee5a46ed27d58ca72ab0b5cdc1e14f3cd3e28a2a6a5537db1a9165384752adb93855a72df9a2bdc3f6d5025bdf8a1563e72e99d7b0c40d896e160b1e9c161a379a49387465944993d9107ee3e4a318b740cb88c2e1ff17bc66d6ce355a11c49f7ea602f39d2ae62bea8a657180f0b506a3df1ae47e38df1faf3c61c043ed77ce7fa5b25c7de8aca19601b4380805578b6ed62eda1943238e6b4ea2fb071ea82480bb5e74934adfff560d57da261f15de9b1e5baf412d212d149d61c0de34892aa026c2684e39e6bf7a17307e4c22c731a6cd3f4c79071158ec8b89108b9bcee473084154ff4f7613ba4d17a17bd7272dafb23a01e12626860f516868c03e0d7cce63d9408219d03aafbecf2d388de5eec48a93b5cef5f182af4668e3bdb2df6cbbb4dbc1c4e9b2fa64a93d1fbe8603d4b17d1badc1b9227d3f76c254f3a9d2c01cc533ac9f856371b197d6ee6f971f28e7d4e10082b4301c7fab4f5d30eab48ceea77ed46c5111bcf63b362877524c44c9ada69cb46774097652198eaa1a1b597ba61c55ce5f5277392ab7d116486b108b064a49161ddaa69343f3f5d5e7eec06c5a10c0540c6e067e445c21383e81f7a633466a5e86d5bd633e228b3723c8d19fe565375c7700d99948994517ef4fae210dfe87410b95e6ff42ed7b4532f0fbfba504bc0cb6ed36c74a3880f7a20e2e7f152aa6238ba4f7d86f1fcc2b25330b39fb42840528cf483092ddb741e301e6e339d392c54497e408ef44ac5f32d6da1aba1776b42fa778a75f94f19f2678eb6c662a1e14a1a47dee1f9988f25089d85f1803bb3453a49674ff24cfbfb8b77572d4beb39b7e8c4b8c03d2da534edf7756cb38fc522cb514080be5eb2fde285010a9996f1a7a5f50944d9873310aa6d642409c21e33c7ac2fec4a4180371dd70d54006298c5611f6bd69f6d5146147819a77c0dfb9c593bd4e65a977669067438f6ff48b3b3bdc5e430fec9e946deddec9a902bc9413c12654197009566b81086959788a60fcd22f77da9749235e53afd685cec0b28c4ea16148c970a3fe8aff2aa8e13dabfb70fc3a0d2e61fe3ae038f3176d99e52563659d6b6bc7575e19c783837b332a37ccd610d50dfeeca5c066af4f37a14e352c849d5e7a32e28ddd389eddff0769f51294971cdb5e8b3bf012cf89a81108f83cd82c993d81602f88bbb5a56ba9d7cf40642ee28bdcf7084d6bd718b6548eb94d262a9846c7527ea8dc1cfce975bff52527bd4a5642afcd8708e48271fe0f6a605319398c62760fb46129845d66321cd4b25ad7cf610df245282856cf7786021e7a520e8a0c3120b3679b35faff9ae19d7da6731ac0f0f3422182d826cf844fc3a4016d9482e0ef8623b505e96a9f6bb883e954ded520ca31df5ddcaa9a54626bc16e10bf8e74b3f983605256786c46a6514088cb10492e7f2d9dd25ef7afbd4180a160922928636273bba2f4ae17c080a002eac06ac522b19e67e1ae7565ce4853528781dacf7cc7201eb63b659a5a3c92465da5116a380ef5d33b356da3aaa47b4c7e0a1451aa432ba7416b4189a9c630109dcd53d87c427d5f06f0cc9ef95291c3d42954a7157d5b1749af2f0b04b0a74d8335fc2d478332e7093176a8c6dcbbb754dc226b05224adf002e9934771fa0361d60694b831550bf3242f81f061d470bd2a789b80e7453e77320932c4a39bd2158f2619a089bad5f7e21f8a6f266ecd745fccc88ea436452af5e76c6b45ef9e17d00bafb854bc6c586ac28e08e7197054f95b58186d2a4c2b4537d0725983c9200452a600d5bc579487cc710a518543cb1c61a4eeda311569c9ed5b9407ebb2a7f00bf04b0c00741be9e9042d6b29f905715789e3ef16cae491b61958a929cdc04bdec2f4cf3a1378248763c68469d62fa93e63f04772161cf1fbbb7d0d1d831ada1ef57f8cfa7490f11c1fe5f5151a4271eee7fbb9cde3041852a2cdc7180f6a03fb61947b2d377117146e379cca3bb9c73b7075ff3bc6ca0d32dfce31e4134fb4dae5d46eba0827d4f911c3c66c07337a3125dfe77cb032d2518cccaa76be2e77e0aec47d6d4346db5517a2b9028fc8b548ccdf9228bfaa9bd51ed5806339f396f5abe86726dcee7d14efa26316c59f09fcb0cbbdbdda2898cf025b650ea9c23eec57486268a58acee6b378ce2f098bf841c82cdbb969fbf7fd4cb35d411fd8fed4caa09803e9bdbdd34b60c3e3005fc769</script>
+  <div class="hbe hbe-content">
+    <div class="hbe hbe-input hbe-input-default">
+      <input class="hbe hbe-input-field hbe-input-field-default" type="password" id="hbePass">
+      <label class="hbe hbe-input-label hbe-input-label-default" for="hbePass">
+        <span class="hbe hbe-input-label-content hbe-input-label-content-default">Hey, password is required here.</span>
+      </label>
+    </div>
+  </div>
+</div>
+<script data-pjax src="/lib/hbe.js"></script><link href="/css/hbe.style.css" rel="stylesheet" type="text/css">
       <div class="tags">
           <a href="/tags/SAP/" rel="tag"><i class="ic i-tag"></i> SAP</a>
       </div>
@@ -192,7 +193,7 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
       <i class="ic i-calendar-check"></i>
     </span>
     <span class="text">Edited on</span>
-    <time title="Modified: 2022-04-29 22:08:18" itemprop="dateModified" datetime="2022-04-29T22:08:18+08:00">2022-04-29</time>
+    <time title="Modified: 2022-08-16 21:42:18" itemprop="dateModified" datetime="2022-08-16T21:42:18+08:00">2022-08-16</time>
   </span>
   <span id="posts/4187faeb/" class="item leancloud_visitors" data-flag-title="English self_introduction" title="Views">
       <span class="icon">
@@ -232,7 +233,7 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
     <div class="item left">
       
 
-  <a href="/posts/4da9c93/" itemprop="url" rel="prev" data-background-image="https:&#x2F;&#x2F;tva3.sinaimg.cn&#x2F;mw690&#x2F;6833939bly1giclwuom7cj20zk0m8dvn.jpg" title="Web-based design and analysis tools for CRISPR base editing 文献阅读">
+  <a href="/posts/4da9c93/" itemprop="url" rel="prev" data-background-image="https:&#x2F;&#x2F;tva2.sinaimg.cn&#x2F;mw690&#x2F;6833939bly1giph47e9vtj20zk0m8x6l.jpg" title="Web-based design and analysis tools for CRISPR base editing 文献阅读">
   <span class="type">Previous Post</span>
   <span class="category"><i class="ic i-flag"></i> </span>
   <h3>Web-based design and analysis tools for CRISPR base editing 文献阅读</h3>
@@ -242,7 +243,7 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
     <div class="item right">
       
 
-  <a href="/posts/d0966c4d/" itemprop="url" rel="next" data-background-image="https:&#x2F;&#x2F;tva3.sinaimg.cn&#x2F;mw690&#x2F;6833939bly1gipeubcbajj20zk0m8h1h.jpg" title="工作难点">
+  <a href="/posts/d0966c4d/" itemprop="url" rel="next" data-background-image="https:&#x2F;&#x2F;tva2.sinaimg.cn&#x2F;mw690&#x2F;6833939bly1giciuja1j1j20zk0m8kjl.jpg" title="工作难点">
   <span class="type">Next Post</span>
   <span class="category"><i class="ic i-flag"></i> </span>
   <h3>工作难点</h3>
@@ -264,7 +265,6 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
   <div class="panels">
     <div class="inner">
       <div class="contents panel pjax" data-title="Contents">
-          <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%AC%AC%E4%B8%80%E4%BB%BD%E5%B7%A5%E4%BD%9C"><span class="toc-number">1.</span> <span class="toc-text"> 第一份工作</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%AC%AC%E4%BA%8C%E4%BB%BD%E5%B7%A5%E4%BD%9C"><span class="toc-number">2.</span> <span class="toc-text"> 第二份工作</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%8F%91%E7%A5%A8"><span class="toc-number"></span> <span class="toc-text"> 发票</span></a>
       </div>
       <div class="related panel pjax" data-title="Related">
         <ul>
@@ -282,19 +282,19 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
 <nav class="state">
     <div class="item posts">
       <a href="/archives/">
-        <span class="count">143</span>
+        <span class="count">145</span>
         <span class="name">posts</span>
       </a>
     </div>
     <div class="item categories">
       <a href="/categories/">
-        <span class="count">74</span>
+        <span class="count">75</span>
         <span class="name">categories</span>
       </a>
     </div>
     <div class="item tags">
       <a href="/tags/">
-        <span class="count">109</span>
+        <span class="count">111</span>
         <span class="name">tags</span>
       </a>
     </div>
@@ -373,9 +373,14 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
   <li class="item">
     
 <div class="breadcrumb">
+<a href="/categories/Java/" title="In Java">Java</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/Java/Mybatis/" title="In Mybatis">Mybatis</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/Java/Mybatis/SpringBoot/" title="In SpringBoot">SpringBoot</a>
 </div>
 
-    <span><a href="/posts/d0edc1ed/" title="Linux常用命令">Linux常用命令</a></span>
+    <span><a href="/posts/c112412d/" title="Mybatis封装成Map结果">Mybatis封装成Map结果</a></span>
   </li>
 
       
@@ -383,9 +388,77 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
     
 <div class="breadcrumb">
 <a href="/categories/Java/" title="In Java">Java</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/Java/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/" title="In 操作系统">操作系统</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/Java/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/Java%E9%9D%A2%E8%AF%95/" title="In Java面试">Java面试</a>
 </div>
 
-    <span><a href="/posts/7a29d22a/" title="Java关于时间的轮子">Java关于时间的轮子</a></span>
+    <span><a href="/posts/166a1445/" title="位，字节， 字符">位，字节， 字符</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/LeetCode/" title="In LeetCode">LeetCode</a>
+</div>
+
+    <span><a href="/posts/4491edd3/" title="LeetCode07_整数反转">LeetCode07_整数反转</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/Java/" title="In Java">Java</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/Java/Tools/" title="In Tools">Tools</a>
+</div>
+
+    <span><a href="/posts/49b96938/" title="Java获取一天时间的起始">Java获取一天时间的起始</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/SAP/" title="In SAP">SAP</a>
+</div>
+
+    <span><a href="/posts/96b6e8a1/" title="simple self introduction">simple self introduction</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/cheatsheet/" title="In cheatsheet">cheatsheet</a>
+</div>
+
+    <span><a href="/posts/1b392612/" title="速查表">速查表</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/SAP/" title="In SAP">SAP</a>
+</div>
+
+    <span><a href="/posts/4187faeb/" title="English self_introduction">English self_introduction</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/VSCODE/" title="In VSCODE">VSCODE</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/VSCODE/%E5%BF%AB%E6%8D%B7%E9%94%AE/" title="In 快捷键">快捷键</a>
+</div>
+
+    <span><a href="/posts/d199d651/" title="VsCode快捷键">VsCode快捷键</a></span>
   </li>
 
       
@@ -397,27 +470,7 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
 <a href="/categories/%E5%89%8D%E7%AB%AF/Vue/" title="In Vue">Vue</a>
 </div>
 
-    <span><a href="/posts/b5314c4/" title="Vue2语法简介">Vue2语法简介</a></span>
-  </li>
-
-      
-  <li class="item">
-    
-<div class="breadcrumb">
-<a href="/categories/Java/" title="In Java">Java</a>
-</div>
-
-    <span><a href="/posts/97604c34/" title="获取指定集合要求中的mapkey值并重新返回map">获取指定集合要求中的mapkey值并重新返回map</a></span>
-  </li>
-
-      
-  <li class="item">
-    
-<div class="breadcrumb">
-<a href="/categories/%E6%95%B0%E6%8D%AE%E5%BA%93/" title="In 数据库">数据库</a>
-</div>
-
-    <span><a href="/posts/377b6f7d/" title="关于mysql中对Json类型字段进行筛选查询">关于mysql中对Json类型字段进行筛选查询</a></span>
+    <span><a href="/posts/21d4b84b/" title="Vue3项目的创建">Vue3项目的创建</a></span>
   </li>
 
       
@@ -426,53 +479,12 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
 <div class="breadcrumb">
 <a href="/categories/Java%E9%9D%A2%E8%AF%95/" title="In Java面试">Java面试</a>
 <i class="ic i-angle-right"></i>
-<a href="/categories/Java%E9%9D%A2%E8%AF%95/SpringBoot/" title="In SpringBoot">SpringBoot</a>
-</div>
-
-    <span><a href="/posts/20ac1950/" title="SpringBoot文件上传下载">SpringBoot文件上传下载</a></span>
-  </li>
-
-      
-  <li class="item">
-    
-<div class="breadcrumb">
-<a href="/categories/Machine-Learning/" title="In Machine Learning">Machine Learning</a>
-</div>
-
-    <span><a href="/posts/53fbbba3/" title="Jupyter notebook使用">Jupyter notebook使用</a></span>
-  </li>
-
-      
-  <li class="item">
-    
-<div class="breadcrumb">
-</div>
-
-    <span><a href="/posts/2dc35ee/" title="多线程分批处理方案">多线程分批处理方案</a></span>
-  </li>
-
-      
-  <li class="item">
-    
-<div class="breadcrumb">
-<a href="/categories/Java/" title="In Java">Java</a>
-</div>
-
-    <span><a href="/posts/405fde88/" title="关于Exception的处理细节">关于Exception的处理细节</a></span>
-  </li>
-
-      
-  <li class="item">
-    
-<div class="breadcrumb">
-<a href="/categories/Java/" title="In Java">Java</a>
+<a href="/categories/Java%E9%9D%A2%E8%AF%95/%E4%BA%8C%E5%88%86%E6%9F%A5%E6%89%BE/" title="In 二分查找">二分查找</a>
 <i class="ic i-angle-right"></i>
-<a href="/categories/Java/Java%E9%9D%A2%E8%AF%95/" title="In Java面试">Java面试</a>
-<i class="ic i-angle-right"></i>
-<a href="/categories/Java/Java%E9%9D%A2%E8%AF%95/SpringBoot/" title="In SpringBoot">SpringBoot</a>
+<a href="/categories/Java%E9%9D%A2%E8%AF%95/%E4%BA%8C%E5%88%86%E6%9F%A5%E6%89%BE/%E7%AE%97%E6%B3%95/" title="In 算法">算法</a>
 </div>
 
-    <span><a href="/posts/5e7baeeb/" title="过滤器和拦截器的区别">过滤器和拦截器的区别</a></span>
+    <span><a href="/posts/e8eb0481/" title="二分查找">二分查找</a></span>
   </li>
 
   </ul>
@@ -497,13 +509,13 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
     <span class="post-meta-item-icon">
       <i class="ic i-chart-area"></i>
     </span>
-    <span title="Symbols count total">622k words</span>
+    <span title="Symbols count total">676k words</span>
 
     <span class="post-meta-divider">|</span>
     <span class="post-meta-item-icon">
       <i class="ic i-coffee"></i>
     </span>
-    <span title="Reading time total">9:26</span>
+    <span title="Reading time total">10:15</span>
   </div>
 </div>
 

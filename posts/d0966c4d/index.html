@@ -74,7 +74,7 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
       <i class="ic i-pen"></i>
     </span>
     <span class="text">Symbols count in article</span>
-    <span>1.9k</span>
+    <span>12k</span>
     <span class="text">words</span>
   </span>
   <span class="item" title="Reading time">
@@ -82,7 +82,7 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
       <i class="ic i-clock"></i>
     </span>
     <span class="text">Reading time</span>
-    <span>2 mins.</span>
+    <span>11 mins.</span>
   </span>
 </div>
 
@@ -115,12 +115,12 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
       </div>
       <div id="imgs" class="pjax">
         <ul>
-          <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1gipeubcbajj20zk0m8h1h.jpg"></li>
-          <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1giciszlczyj20zk0m816d.jpg"></li>
-          <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1giciryrr3rj20zk0m8nhk.jpg"></li>
-          <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1gicljgocqbj20zk0m8e81.jpg"></li>
-          <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1giph4lm9i7j20zk0m84qp.jpg"></li>
-          <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1giclil3m4ej20zk0m8tn8.jpg"></li>
+          <li class="item" data-background-image="https://tva2.sinaimg.cn/large/6833939bly1giciukx8a7j20zk0m8aio.jpg"></li>
+          <li class="item" data-background-image="https://tva2.sinaimg.cn/large/6833939bly1gipexj2jgzj20zk0m8b09.jpg"></li>
+          <li class="item" data-background-image="https://tva2.sinaimg.cn/large/6833939bly1gipeu1usa7j20zk0m8b29.jpg"></li>
+          <li class="item" data-background-image="https://tva2.sinaimg.cn/large/6833939bly1giclga70tsj20zk0m84mr.jpg"></li>
+          <li class="item" data-background-image="https://tva2.sinaimg.cn/large/6833939bly1gipeubcbajj20zk0m8h1h.jpg"></li>
+          <li class="item" data-background-image="https://tva2.sinaimg.cn/large/6833939bly1gipeuibk9fj20zk0m8ay2.jpg"></li>
         </ul>
       </div>
     </header>
@@ -164,56 +164,18 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
   <div class="body md" itemprop="articleBody">
     
 
-    <h2 id="索引失效的原因"><a class="markdownIt-Anchor" href="#索引失效的原因">#</a> 索引失效的原因</h2>
-<p>发票项目当初查询列表时 queryInvoicesForCom 接口，该接口主要用来列表发票信息的，当时是因为业务反应前端很久才会有显示，然后当时我来优化</p>
-<p>主要的耗时点是在一条 sql 上，老 sql 遗留问题，由于当初在设计 t_invoice 表的时候，是一条记录进行作用的，所以查询的时候，需要进行拆分 operate，通过状态进行拆分、</p>
-<p>sql 语句是 union all</p>
-<p>explain 执行计划下来 type 中有 all 全扫描，应该是没有击中索引，其实常见的未击中索引我都有去考虑过，</p>
-<p>where 中使用！= 或 &lt;&gt; 或 or 或表达式或函数（左侧）<br>
-like 语句 % 开头<br>
-字符串未加’’<br>
-索引字段区分度过低，如性别<br>
-未匹配最左前缀</p>
-<p>一点点的抽丝剥茧，也问了很多同事，身边的架构师，讲道理来说是会命中索引的，应该是 mysql 自己优化成不走索引了，线上数据目前是 800w 左右，时间区间是三个月，数据量过于大的时候，就会不走索引<br>
-所以这也是急需要优化的点，加上 mybatis 会查询两次，时间就进行了翻倍，<br>
-执行计划一条 type 为 ref rows 属性达到了 100w，所以数据量<br>
-所以需要删除一些历史遗留的 merchantID，以及缩小时间区间看看是否能够优化，因为在测试环境是可以走通的，测试环境的话只有几十万，所以都是没有问题的，最后原因如果数据量过大的话，也不会一定走索引，所以这个时候只能多加限制了。。。。</p>
-<p>各属性含义：<br>
-id：查询的序列号</p>
-<p>select_type：查询的类型，主要是区别普通查询和联合查询、子查询之类的复杂查询</p>
-<p>SIMPLE：查询中不包含子查询或者 UNION<br>
- 查询中若包含任何复杂的子部分，最外层查询则被标记为：PRIMARY<br>
- 在 SELECT 或 WHERE 列表中包含了子查询，该子查询被标记为：SUBQUERY<br>
-table：输出的行所引用的表</p>
-<p>type：访问类型</p>
-<p>从左至右，性能由差到好</p>
-<p>ALL：扫描全表<br>
- index：扫描全部索引树<br>
- range：扫描部分索引，索引范围扫描，对索引的扫描开始于某一点，返回匹配值域的行，常见于 between、&lt;、&gt; 等的查询<br>
- ref：使用非唯一索引或非唯一索引前缀进行的查找<br>
-（eq_ref 和 const 的区别：）<br>
-eq_ref：唯一性索引扫描，对于每个索引键，表中只有一条记录与之匹配。常见于主键或唯一索引扫描<br>
- const：单表中最多有一个匹配行，查询起来非常迅速，例如根据主键或唯一索引查询。<br>
-system：system 是 const 类型的特例，当查询的表只有一行的情况下， 使用 system。<br>
-NULL：不用访问表或者索引，直接就能得到结果，如 select 1 from test where 1<br>
-possible_keys：表示查询时可能使用的索引。如果是空的，没有相关的索引。这时要提高性能，可通过检验 WHERE 子句，看是否引用某些字段，或者检查字段不是适合索引。</p>
-<p>key：显示 MySQL 实际决定使用的索引。如果没有索引被选择，是 NULL</p>
-<p>key_len：使用到索引字段的长度<br>
-注：key_len 显示的值为索引字段的最大可能长度，并非实际使用长度，即 key_len 是根据表定义计算而得，不是通过表内检索出的。</p>
-<p>ref：显示哪个字段或常数与 key 一起被使用</p>
-<p>rows：这个数表示 mysql 要遍历多少数据才能找到，表示 MySQL 根据表统计信息及索引选用情况，估算的找到所需的记录所需要读取的行数，在 innodb 上可能是不准确的</p>
-<p>Extra：执行情况的说明和描述。包含不适合在其他列中显示但十分重要的额外信息。</p>
-<p>Using index：表示使用索引，如果只有 Using index，说明他没有查询到数据表，只用索引表就完成了这个查询，这个叫覆盖索引。</p>
-<p>Using where：表示条件查询，如果不读取表的所有数据，或不是仅仅通过索引就可以获取所有需要的数据，则会出现 Using where。</p>
-<p>查询条件中 IS NULL，当命中结果数量小于 40% 的时候，会走索引。</p>
-<p>查询条件中的 IS NOT NULL, 命中结果数小于 30% 的时候，会走索引。</p>
-<h2 id="当初对账项目找不到mapper文件的原因多数据源引起"><a class="markdownIt-Anchor" href="#当初对账项目找不到mapper文件的原因多数据源引起">#</a> 当初对账项目找不到 mapper 文件的原因（多数据源引起）</h2>
-<p>其实这个问题是当初开发日清算的时候有的，其实这个问题是因为多数据源引起的，多数据源 primary 注解，多数据源时会逐步扫描 config 包下的 config 文件，读取 config 文件时，当时项目的分层出现了严重的问题，不同数据源需要<br>
-不同的包进行隔离，但是但是主数据源就卸载了 dao 下，但是另一个副数据源缺新建了包，这个问题呢，很巧的是本地环境不会有问题，开发和测试环境出现过一次但是生产环境就会一直报错。。。</p>
-<h2 id="文件上传前端超时的问题如何解决"><a class="markdownIt-Anchor" href="#文件上传前端超时的问题如何解决">#</a> 文件上传前端超时的问题如何解决</h2>
-<p>有一个上传的需求需要上传 1000 个司机，但是由于是同步操作</p>
-<h2 id="在同一个事务中调用服务的另一个方法引起的问题司机离职"><a class="markdownIt-Anchor" href="#在同一个事务中调用服务的另一个方法引起的问题司机离职">#</a> 在同一个事务中调用服务的另一个方法引起的问题（司机离职）</h2>
-
+    <div class="hbe hbe-container" id="hexo-blog-encrypt" data-wpm="Oh, this is an invalid password. Check and try again, please." data-whm="OOPS, these decrypted content may changed, but you can still have a look.">
+  <script id="hbeData" type="hbeData" data-hmacdigest="10a561080cd0f37befb212671abf3886070e826d15e8bc736759eb388061a0db">36b0d245773c4ce2339eb0a7bae59cc6a1a0da7a63994ce87fcfd6dc56f5cfdd025812a3cd319540864e180afd2e9ebee3ef4236354fe03168ba02713b84b512f3803d51604cdba264aa638f59fb8bbdbfcfc219e32bd64641b5863aaed1bb3da969266d08aa18ea4840766c9db85772816e7674b7812a452d4d0e4b95daa590e4f4e9305dbd4c40599b80d2e57460b34b2c35da1c7a5d406598786a8755608159ca9811706bec260ffaf35ea4392204f0804580ab63ad2af92e21042c9518a8a84f2f864131ccd27cd56afc12bab7a4df3b2de5d3c5fef9cdee187a15de0a1914a6c74944e6cb45408bee25e80f0d65ebf1ac8743e308b5c410535886df420aac3ca4362a3d960b46efed3f87a203e1a34cd562e678f091961857612456e215b56f03b660f2e28d4c72683f139cc71f3f20a5e22666db6979b90687c068d19539b5892ed6da1c56b7e7c3f49fd0a92de98cf938e9e2fab2238a535b6b36b2aec46e5fd010d27cae63473041365d6d25c8d206493d5080a8ff49fcd15f603a2ee1a51f331e7b242bd72eb72c99bd36769b9738d700906724f1cb552360cf3fcfc21a72979ccb89ba5a81909c914d28c97d49b39e9f7e9d5c67f6af88246cfcf72eb1ab8d1d38a48b70fa27df379a08eafdfe3c848a2bd21e5f8f04d8ea90aed3e56a8401c07fb0c90b31aa0218d6d90479ca5e1616abd0236788c673a735fafc8cb0bbd87f2c7572998d9bb51e47e6450f5e5dabd178f230dd97f16adb660a249357b34038ef58d498409ebed91e6d0a88129a7f17605ee051ec35ad602e4526f148fe931524d71187ca175f1605540950865da1f2a86d45e0d4c4c343cff4843dd171c05670f2146244db4d43fff9ab3c0f59202930f0efbed19ab3b2c182afac86979af2137844ef3b233c2951656d3fdc2acc27ee268074e46ea42d184ac668d6d0c0589c50a1fac101f851957d9b1b0ae029ce17e72492a5c6d402724ef1b8871b13b9997c232743e9bb1db0a16f81761e18979cc9a44e1d6bb49a55ed48f7f0b48ccca980840ffebb9899159a3a95db750fe233a7755d5daf2f06830fd7372bb66a1e3a45f9797bef9a6964c3483fbe61d61f4f7df7dc9882233e93ab46a9fa281aebdc7e923085dad360183b0f74f8a718c1ad87329ba36a8d9df6bcf34bb0fe32def1bb28bb235eb385beeffd407b88bb9dd2ef4676a6c9ce7595e79b5e980266116b0c7cb24d86161c5a8238d517ae3391f753181e2745ba67ef004e8d977f419ceca0d926dd81627cee353c5415bd0f7e15e835d4d554a0a36d1a7090d49b7445cad0138073b2c99bcfc44497bebd075acd82f6ee77e44798b9128327f5707bfcf359259ea4c54475ba96f80f455d810f4d9a4869a135f78dba8b40a91c08170b56be4a8f856d5482fd1fc9c3bac59b5124d888c5cb420a87d50478593102cb83ec0cd50827d0e711f4fd678e66a9d4c6a05a546496d32f06017d4d31be0d79a1e52ee3edf020c2d2bf6bf8e8c57e91e0e81e50d89164e2b1bd37e0874342f8e72ad98ce4b9399bb236c802986e2cd1fa95803395bb05b202e8dd52b22ebf9b9393c751b6e381e55a39b6f256bc4ca422259baa6ca01ebe320ba64f9f89f1692a24b45ceef1baed1b166ad74715db18c0eca692fe233833aaba05f27c18c7c45ff982c40e070eff827e2e791aab4d592c03b3da1b9fb312dec8e44ffdf24b179db4838c9a8397711949ed45011d2c14a51e3ce08ba8436db01d61ac80a0fe41c69b29dac09472cad508e5e3c88a0086817e5db1a41954de0f47f647346b7484ce90b6de316455ca3ddf9d0e007d7dbf72c86adf3c3f087d809bd5d20bb1fc232bf26aa93eb6878d7db75ab285f701db670cc6c500a878f51091e2b4a53ba07b3b3a03377ad02067a63426df1b94335e8dfef92f858f102eb3fc56e5465b746cd6ce007097c53c95af15dbc4760daef9e993e7d4e975d524ad68ad12d4de2330ec9900ee6be94f98f1ead7ec1858059414509769134aec1b73df6803096bfaf1ec376f654110bdfc63d5cdbd5d2ae0a93b3c9867162af2e885abb3b4fe758c820ca95f8309e299993b59bd2c101fcff21b499afb1339f842be56b12bd99f53513ddf3b38738a97248ac1845c2461b77e92ff1c1699d99a63b368fbd7a8e79f0551117d1c33f363f6a32dcfcd63883b8fc5521d40a94db54abc2744d983913dbfdf599df4a7b1991b92879dda6ee6c07140e315ecb883f0b2f44ff4868f215f1ce0b1b4a9d8490f845653bc75970eca9a398d9108270928571942ef93a65ea281e28185bc7ad497da149871e5fe73c2e4e6c8fedb42f93d3b9a0169ac8b60780141e6d473b4012e44c3017d66574b0d853696d38cb594d2c029c7f28a1332d26f915207ddc7db6e3d09530f22688c66e7f6896836af6bf124850efa9ea08701c02a1e22eff2275c0f30c0293886eb88c81cd1430aa09049e730154e6b95f83d648a7bc0865aa752a4e29f0b2b6fa90c63d65554e8ec4267a5eefd029d26a25566cd5e848f4ff6fb4f9b4393e227d9702d239fe6e73a010e78480e06c41bd4c44c38c461c5e795d6173a48b1dc4a8abd49cb266cb0036ee3ee2f5678210194069138d4a244a2da18d5036bd4466afcf4f80bc563aed101ce140455d511f70c4be32f0e84a501aefaadb62dcec5364da0c8b81c371d5b5371d187dc4120099178d063fdbfb7204ca08eae49639f4bb247672106d383938235f61202cad0a4941a85e0e62fd5bf8817bfc8b785e12046ea666f9f96e3c854d06fd11201b50dacd7d5c4a0d827c60f4fe1a2c0c95dca3ed1257387e7280cc343aee2263740e83d3832cbc94c0930f427469e83cf0ea7a6d6b783dd54a0ad38f262875f3d4d853689531c684efbdf58e1389055fca3cae4837716647a86aa1be6a6042f6e8f0593d156ceda2746d13298ca47e127dafab3826e0d70e76ad71e6603a5224e01e6e0f5b3958bab1828591f1b3a7ad5e0da55b22518c3a0e1400209a9141dd8f300e609c28d3c96d6f9ab7334408e586b01f818c19768a013c52e6b6dbbdab0f046566e8ee2f928b43a1e9f24bb1abec4bb2b635269eb0b1953f9660c049827e363bcb325c46fb6cf99ce234dec2a84a3000932f448116f0ba477f02324a1f3b5be361f6e07e2968c72820f41126dde1a6164e3bf64e369740d8323143cc8f12407972da29583ae3a9f6ffcdc1b9b5e18d778368bee3b8d6a6f4bcfdd1204728a02b6ac17e074823e49de5c2c7799f699b0ed5ef95e3d44d20761a24f451d334a7913ae4954393921b409a01c4fa0f3b8c1953211b78c5b1831c5b8fe548ff592218233807ed3a2ffcdbbded13cf57ab6e0a6342e6b9f21e77cca7f8b65149ee8c6e886e5424a74f67c1c6d981fbf9b8272850d866a727dee5c10091b6b5edd2dafc92366fb421b158c6b1d1fed68804b2860c4f86884f27260ff59dc2a20f2d8b262d0d88cd62dd6d1607db92fcf804f619c57985e1399e4a49bfee7ac58bb91fede3c28936f30ed2213b3972da9e51c23e31a73b853a164f045a8efc41f13db949f58828efc2bd018b5aa9e3f6ea349b222cc18f50b29cd6cc00abdec8b2d0723bd11e63aa747b33735c8b7c4a1edbf8e10ef41ff622d2125e6f029c6f99fbab6524eb232eee463b725d38d20ffebc10c451d97379eb7a1f1fe1a55096fbd70485cff4e3a24ff464344e4aa94037f8ee93dcb91f8df51eadf86dad65a2681ff86e1e5d9f4c1b9cf1de5326e30e6a87c003f2613480ba246ce5c539c5155275e32ed08b54fe39ef549f7b6dac48de89797744232e23689d3a6436c9e27378d32e97fe440aed8519281a4ab7e5e8db901cfb2dd5056b7572542771b4beac1200071116dc5a1f32c13c87a883562e9fef0132170e01ba5d5d76660c42a3d611ba640e482c7e4b705e6da7e33b3377a81ef515dc56d68ee1b69b515c7447a9493bd858040916508c744191cb1adfbd8f60c3990ba7ab8a0b1dfce1dccd0a02433026ac9d9e8c706100a23e702865150315d9bbb0d164afbd426b2812de2861c5f1a27738b77ef9c9b4872af0a399aa950e1d53517a4909bcc62d3d97a359d047d3e7bd7c12d2c048c6716fa02d80361c464c50dc9d785b526e7ebce5685663df4aaec110e060d0a844b5358d9f8bcb79ee2295ca4bd8c67d0bd6ccafe5aa04bb3cf33f5a14553dd58d020a888dea5c81c4f92e90769181a0cd9163714c5334707c86695a44cfb71eb8a6aafad081ab1cbc1621a49c70a43947eb6b228ee47165afa5a4c159d37568178ccde8ba4947b8d2c91e29411569ad63cb294274ddd1dd2ea39013e51dfa97bae8a587bd1d36d66e62dac1839d8f699de4928b3b50db89b7f7ca950e1e99dfb4fa157c0106491eeb40a6dadd1eba5a0a481f85ef6ef2437f5263fbd2084c4f92577a4deee4400f3253c09d7450d789f7a830af47a203a73e3076c1eae7d32e489027c2b32f069f6e23cd78b8a4f7897b93eda20845d6bec5ff90aa7043469b7e7faa4f9407eb351343d8fdae6c47250937a2e153363d12bcc0cc8b682336f2ce59043c247087fefb14f9b07b17e42b5f45f8bcf0a8c61c4af0fa0ddbb6fa1de51f1d73c16c473f3df89b0f29f9a19c32a0554eeb6e6769d0d21b0893b76285fc43412be24b366c419e30c72074efd183a9b4116d749846ccab1e0b9a7983eba3ed62bd661d0e024fc6a032160c62ad0490ccc9467c9bb4f3e67f6e80c39e622309ac68e4c18a87ef5753525871dcf7bbf228fa69081f1d7592b64800ede4d9fd5a60a016beb691ad2adde7a5d979c1cf5bbf289379ac8545a7a1de751f02da5529e728eca1889d6ae8b0ddd3e5cbffe9b3c00dc5cf18481560febfd302bead7b36961b371c5ce99c065cf73949b42438acf2057d2971b9696de13891cd4cc84d21aa763b29c51ac61fbffa3234de61ad04707f7783103551cb6e467d59c790de80e845d36d82e2b0ec7b74271bda45528b6a5ba2d983dad7dbd09c6e4ffaacadc360eba9aab0b644905abc9bafb165a546431a9eaeeddd4d0fa069e333ef08734986aebdc4b95715e1645c14dee1ab9a786ff6ee966af0a20282bcb761ec2af969352edfdb322005c3e66801b315a5de973d1c9d5286b6fe495ff91b4d0c05d595db6109a81b0143829592124ce922a4a0732be0b9282fa6cb1e6e7d115c09ae528e60afa2a6b427f557744541853d2f2437214a6848a54c731ba2765ce26f92a3fa249d38f50f4da5b5fb4d688a5763f7ef9d166159cec9a8cc07007caed2d3fc4cab605411cc01f5ba8b957a4007abf18e21e9bee68c715708816a85a190be23d3354ac4117bbc281378b0d1fa6fe22dec0a3d0792bb4b68523d6409762d1a6a839784fdadab01b5ef6cd2016b6912015e6718ce3f4ed2e4f56c9d2a0c347d33e5eb6403cdd594ac17f6f859599c3c63a16b04c4ecb9aa82aee8454c06a31a3204d72c5ad98133b68209fb6f7670e92e9b5c35f7909605413df5c8d802a7645f129d0b63d4f4be3e8a429deb9c1e7ce93e64d27163882b6932d400e4a7ccad14de598341fd6a5488122c5e533433aafd5b45f237a15cbba430097b77f1395b4f9145e39fb8ee511ceabd0e03a41402d1d0b3a06b25fa4e99bfa407c012c487846385d9bb846c5529380f8a16e8a1d4962a143b57227bd47ac98c19d2a0328b9bc37829734eb86877bedc093c94e0d115d5b13789e20724f8f55564c5337255609418cb1fda70a077058741b8ce610a29ff24493cab70af112a87ab3def8151e08d189c7427766f270c324d21659d08ab399b7bc7a1009a8befe139ea6f5e66822f3e069e9a88604cc5fa8120ccf098f9ae55100704ce8011cf646e9788810da2a72a7fa6cacf01993d253dcce10293365e8f2c9f90ff9f646f6807106429a12c42e21ed0e8167a1ce7253c6a856956ab3015953bd4c8b97ceacfdde65bb799bff3e03093e2bf280155e40c74cffdec34ab202accb1bac47ccc318f14eb41ae97a9d7840dc82fbf19e01d0e271430e23db37449f38de07038fad381ec035e14678e22cdf552cf36acb68f8877c8c22f1fbc3d2f4c39da1c487cb5b443b1974950e401d152bfe2e819bbac4916748a9f31eeba44f29bb2e7d6da0411e1740c2df547cfd7fbbd78e813ad891929de2718099d3db6ad840b2a6414c040d2a6f030f1aae7ead7c62f83076632877f02078d53d3ccf31ef3fe1a599978b855eb78e3f3b360395b6a2db5a3487474667f17fbad3cae75b55a4bc036160b1e4e3c7b0eda15bf0b7b92a31a5debfde0b24e55ef110fae5c36d0c6532b7f412503db617b553aadb73147d10f4c7b78ccfa81a8796b067c45a1e203931cd36d2f23cc2381e919fa49f7414ed3f5c4715e018bb1f9952b518ecb866bb91169de3c2c0761ff2e57df6e81d0faab9c64bb164a2f1d6cd8d01327ddfc330dbe584312ccb525fef29d103b8d0d89787a4ed51a355eafce7ab7e9b9d1006842009ca1e178dd47d3431bdf1d7fbcf4f7c9b428dcf4d1e93322a40e18bffa286b08ee4e1f7fbd376ddc1041c11e4b6692623757b4a569eafa73dd51330162927f1bb28b683ae81030bc2fab0a2ebe3b6a731ee25cfaf489aac6bce78b26a4bc004cbf60b686f7a7b2942cc28d3ca8e8065e2a9c3a2da9833ff4c365f2a09aee3191f342b0f736c2d9e008808f0e9483cfd57311a54884a170b86372be61f533836432bda864913a4fe63286bc7a170625fcb87d429cab963464b44549242da957c86dda0139307277d8af226524805fdaeec9485f8be9e08c7967acc1ec84d4d4a7929323fb47547f7b0517680d85108865117707f2f196e08d8dd0e06f9f74bdf17c09a480be926f8e04a81c5252b98696111f24574183e5ddf70af20312dd5e28244d921e4991418ad3048f4626b74a1bd9c38fc1e2c17f92b699091a7b5809c2e8a42d134d84bef8f19c6f2db6084b48b9c4649f5514097cb8853bddaf3cf75b42f6cc356ab77cf94fc6f23af108a58a457c684d5bb1104edc31c5d64a916ce2ef8de55dee0b353e0368b6102c8bce5b546671d5370826e4ba3f672c0dbfa6d0116ce6cb5cefe31b68ecdeca0402b1b2db600fbedfdc117e03eaa81a2459edd03a7710344d023fff29a74a52f567e4c04ff4c2118f1c5e29b3997db084169250cc012b162658a9bca5237a88d4b37f7bd8c03b449a0979430f0b13dbfa6a6b558adbffe363cc0ce96a3c10873ecb615f0c2ff5ad648020b8fd84c292794b9664de2f48829c973ce98346fb8855d29cd20bba64d9d73380cd6b041c248817988aa4e7c7f2c39c9bcbd99d055a03828da999e3e40490cdc9ebc9de74b9b147cc5350501bc14ce6e36b820f136fc21c62ac8eb1387d9b51d875ab1ba99813cf28ba844ebc5aeda66db514e25d94bdf39900274d02484eadfa6bee3992c2085f9679472503973f22d7ee7a8cc4f683e22fa3f71db20a0bf1a612c30a7ec6ba880d799dff34416e1250ad562365bd54ec6b701fc11eefdbd355a8b019634a789ba8024cb6e2c178b8aa9539a36e2acd1cef817e8170b8850428ca22d66a09d941ee25c5776f0e888872781a78eb08e21c21b75e7a1ccb37938e7faca86b00f440a6526cc8d0e83dd2c13f3c22d1996f8f639e2b0da54c468cdf86442f0f0bf3ce08077f77e375d513d8c342a290b2908b12073baca699227fa2ae9ef6f8d4a650828ae71b00be5e99836426425846e47663d1bf8c0366a5463b2bf40cc5f288ebc947b076205e5746f40e0546d71b03f76a9a02aab78f5f6e8cce735fdae6e87c361dcf8dbfbe3f268db611a9a29e3e5f49ad4475cf9123f6495d19e51aa96632670e6cbb83f6638539ee96abc6f6cd1befedaa128d2051c0c543420b96dda0dc15d9b9797c9be7c2db9a148e188ea557bde51604b48c3149c0bd2d88fe851a304a85d86d32866cd78f49d0c4aaec2ca0ef0611d46b0a90f92217417fc35f50cccf3baa755fa22aeb72688a9875ab88ed940071721401d1635a8aaeaa1b51307e0fcb2ecb7fe1618afcbbca7b0210b61ef5fbd27fe408bf55b9687bc0880ace1734231a7600d5daeb906426425310e5ddea419ab916716abbfa723f87e4fcf61021f8f2a03d88609ed1e71c5a0115addbba0ad872d4272ff06865805edf93afa55e33f7925a56bff9fc47d3ed57c41728d080f3253d19ac837f650ddf97cadf14ac61a81205db11261f55e0205d1556c4af64e6dcb7603a59065f51991f6510a88cecb2d1a3fd1bbc13cba753f2078e778523f2d6bda430b72c7fac3d45d89e0399bb9a1b1c27de6d64d726d000673bb93b3b946a3cf49e59f424d25e272168b4b49c23fac1855f365944cbcdbeb481fe1c1927ca1f51966e341b623bfbdf0b0b76fcff8b7c10625dc89c8c0f3c6292cf48e0e97ab23d7bda2dd29e5f3b381d8ed06</script>
+  <div class="hbe hbe-content">
+    <div class="hbe hbe-input hbe-input-default">
+      <input class="hbe hbe-input-field hbe-input-field-default" type="password" id="hbePass">
+      <label class="hbe hbe-input-label hbe-input-label-default" for="hbePass">
+        <span class="hbe hbe-input-label-content hbe-input-label-content-default">Hey, password is required here.</span>
+      </label>
+    </div>
+  </div>
+</div>
+<script data-pjax src="/lib/hbe.js"></script><link href="/css/hbe.style.css" rel="stylesheet" type="text/css">
   </div>
 
    <footer>
@@ -224,7 +186,7 @@ possible_keys：表示查询时可能使用的索引。如果是空的，没有�
       <i class="ic i-calendar-check"></i>
     </span>
     <span class="text">Edited on</span>
-    <time title="Modified: 2022-04-29 22:08:18" itemprop="dateModified" datetime="2022-04-29T22:08:18+08:00">2022-04-29</time>
+    <time title="Modified: 2022-08-16 21:42:04" itemprop="dateModified" datetime="2022-08-16T21:42:04+08:00">2022-08-16</time>
   </span>
   <span id="posts/d0966c4d/" class="item leancloud_visitors" data-flag-title="工作难点" title="Views">
       <span class="icon">
@@ -264,7 +226,7 @@ possible_keys：表示查询时可能使用的索引。如果是空的，没有�
     <div class="item left">
       
 
-  <a href="/posts/4187faeb/" itemprop="url" rel="prev" data-background-image="https:&#x2F;&#x2F;tva3.sinaimg.cn&#x2F;mw690&#x2F;6833939bly1gipexe4oykj20zk0m87ji.jpg" title="English self_introduction">
+  <a href="/posts/4187faeb/" itemprop="url" rel="prev" data-background-image="https:&#x2F;&#x2F;tva2.sinaimg.cn&#x2F;mw690&#x2F;6833939bly1giph4baakhj20zk0m8h5q.jpg" title="English self_introduction">
   <span class="type">Previous Post</span>
   <span class="category"><i class="ic i-flag"></i> SAP</span>
   <h3>English self_introduction</h3>
@@ -274,7 +236,7 @@ possible_keys：表示查询时可能使用的索引。如果是空的，没有�
     <div class="item right">
       
 
-  <a href="/posts/96b6e8a1/" itemprop="url" rel="next" data-background-image="https:&#x2F;&#x2F;tva3.sinaimg.cn&#x2F;mw690&#x2F;6833939bly1giclize41wj20zk0m87gk.jpg" title="simple self introduction">
+  <a href="/posts/96b6e8a1/" itemprop="url" rel="next" data-background-image="https:&#x2F;&#x2F;tva2.sinaimg.cn&#x2F;mw690&#x2F;6833939bly1gipeu7txpzj20zk0m81kx.jpg" title="simple self introduction">
   <span class="type">Next Post</span>
   <span class="category"><i class="ic i-flag"></i> SAP</span>
   <h3>simple self introduction</h3>
@@ -296,7 +258,6 @@ possible_keys：表示查询时可能使用的索引。如果是空的，没有�
   <div class="panels">
     <div class="inner">
       <div class="contents panel pjax" data-title="Contents">
-          <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%B4%A2%E5%BC%95%E5%A4%B1%E6%95%88%E7%9A%84%E5%8E%9F%E5%9B%A0"><span class="toc-number">1.</span> <span class="toc-text"> 索引失效的原因</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%BD%93%E5%88%9D%E5%AF%B9%E8%B4%A6%E9%A1%B9%E7%9B%AE%E6%89%BE%E4%B8%8D%E5%88%B0mapper%E6%96%87%E4%BB%B6%E7%9A%84%E5%8E%9F%E5%9B%A0%E5%A4%9A%E6%95%B0%E6%8D%AE%E6%BA%90%E5%BC%95%E8%B5%B7"><span class="toc-number">2.</span> <span class="toc-text"> 当初对账项目找不到 mapper 文件的原因（多数据源引起）</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%96%87%E4%BB%B6%E4%B8%8A%E4%BC%A0%E5%89%8D%E7%AB%AF%E8%B6%85%E6%97%B6%E7%9A%84%E9%97%AE%E9%A2%98%E5%A6%82%E4%BD%95%E8%A7%A3%E5%86%B3"><span class="toc-number">3.</span> <span class="toc-text"> 文件上传前端超时的问题如何解决</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%9C%A8%E5%90%8C%E4%B8%80%E4%B8%AA%E4%BA%8B%E5%8A%A1%E4%B8%AD%E8%B0%83%E7%94%A8%E6%9C%8D%E5%8A%A1%E7%9A%84%E5%8F%A6%E4%B8%80%E4%B8%AA%E6%96%B9%E6%B3%95%E5%BC%95%E8%B5%B7%E7%9A%84%E9%97%AE%E9%A2%98%E5%8F%B8%E6%9C%BA%E7%A6%BB%E8%81%8C"><span class="toc-number">4.</span> <span class="toc-text"> 在同一个事务中调用服务的另一个方法引起的问题（司机离职）</span></a></li></ol>
       </div>
       <div class="related panel pjax" data-title="Related">
       </div>
@@ -311,19 +272,19 @@ possible_keys：表示查询时可能使用的索引。如果是空的，没有�
 <nav class="state">
     <div class="item posts">
       <a href="/archives/">
-        <span class="count">143</span>
+        <span class="count">145</span>
         <span class="name">posts</span>
       </a>
     </div>
     <div class="item categories">
       <a href="/categories/">
-        <span class="count">74</span>
+        <span class="count">75</span>
         <span class="name">categories</span>
       </a>
     </div>
     <div class="item tags">
       <a href="/tags/">
-        <span class="count">109</span>
+        <span class="count">111</span>
         <span class="name">tags</span>
       </a>
     </div>
@@ -402,12 +363,12 @@ possible_keys：表示查询时可能使用的索引。如果是空的，没有�
   <li class="item">
     
 <div class="breadcrumb">
-<a href="/categories/Java%E9%9D%A2%E8%AF%95/" title="In Java面试">Java面试</a>
+<a href="/categories/Java/" title="In Java">Java</a>
 <i class="ic i-angle-right"></i>
-<a href="/categories/Java%E9%9D%A2%E8%AF%95/Tools/" title="In Tools">Tools</a>
+<a href="/categories/Java/Mysql/" title="In Mysql">Mysql</a>
 </div>
 
-    <span><a href="/posts/6714b4a9/" title="FastJson序列化使用">FastJson序列化使用</a></span>
+    <span><a href="/posts/69c17d37/" title="关于事务提交中踩坑">关于事务提交中踩坑</a></span>
   </li>
 
       
@@ -416,46 +377,24 @@ possible_keys：表示查询时可能使用的索引。如果是空的，没有�
 <div class="breadcrumb">
 <a href="/categories/Java%E9%9D%A2%E8%AF%95/" title="In Java面试">Java面试</a>
 <i class="ic i-angle-right"></i>
-<a href="/categories/Java%E9%9D%A2%E8%AF%95/%E6%95%B0%E6%8D%AE%E5%BA%93/" title="In 数据库">数据库</a>
+<a href="/categories/Java%E9%9D%A2%E8%AF%95/SpringBoot/" title="In SpringBoot">SpringBoot</a>
 </div>
 
-    <span><a href="/posts/666b2933/" title="面试之旅关于数据库">面试之旅关于数据库</a></span>
+    <span><a href="/posts/20ac1950/" title="SpringBoot文件上传下载">SpringBoot文件上传下载</a></span>
   </li>
 
       
   <li class="item">
     
 <div class="breadcrumb">
-<a href="/categories/%E5%89%8D%E7%AB%AF/" title="In 前端">前端</a>
+<a href="/categories/Java%E9%9D%A2%E8%AF%95/" title="In Java面试">Java面试</a>
 <i class="ic i-angle-right"></i>
-<a href="/categories/%E5%89%8D%E7%AB%AF/Vue/" title="In Vue">Vue</a>
+<a href="/categories/Java%E9%9D%A2%E8%AF%95/%E4%BA%8C%E5%88%86%E6%9F%A5%E6%89%BE/" title="In 二分查找">二分查找</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/Java%E9%9D%A2%E8%AF%95/%E4%BA%8C%E5%88%86%E6%9F%A5%E6%89%BE/%E7%AE%97%E6%B3%95/" title="In 算法">算法</a>
 </div>
 
-    <span><a href="/posts/21d4b84b/" title="Vue3项目的创建">Vue3项目的创建</a></span>
-  </li>
-
-      
-  <li class="item">
-    
-<div class="breadcrumb">
-<a href="/categories/SpringBoot/" title="In SpringBoot">SpringBoot</a>
-<i class="ic i-angle-right"></i>
-<a href="/categories/SpringBoot/Java/" title="In Java">Java</a>
-</div>
-
-    <span><a href="/posts/f976ebe7/" title="SpringMvc中标准的后端接口格式">SpringMvc中标准的后端接口格式</a></span>
-  </li>
-
-      
-  <li class="item">
-    
-<div class="breadcrumb">
-<a href="/categories/Hexo/" title="In Hexo">Hexo</a>
-<i class="ic i-angle-right"></i>
-<a href="/categories/Hexo/Tools/" title="In Tools">Tools</a>
-</div>
-
-    <span><a href="/posts/45934af9/" title="使用vscode书写hexo博客粘贴图片解决方案">使用vscode书写hexo博客粘贴图片解决方案</a></span>
+    <span><a href="/posts/e8eb0481/" title="二分查找">二分查找</a></span>
   </li>
 
       
@@ -472,41 +411,66 @@ possible_keys：表示查询时可能使用的索引。如果是空的，没有�
   <li class="item">
     
 <div class="breadcrumb">
-<a href="/categories/Java%E9%9D%A2%E8%AF%95/" title="In Java面试">Java面试</a>
+<a href="/categories/Java/" title="In Java">Java</a>
 </div>
 
-    <span><a href="/posts/a5258aa2/" title="Java面试小册子">Java面试小册子</a></span>
+    <span><a href="/posts/c3733521/" title="Java之assert关键字">Java之assert关键字</a></span>
   </li>
 
       
   <li class="item">
     
 <div class="breadcrumb">
-<a href="/categories/UML/" title="In UML">UML</a>
+<a href="/categories/%E5%A4%A7%E6%95%B0%E6%8D%AE/" title="In 大数据">大数据</a>
 </div>
 
-    <span><a href="/posts/f610585/" title="UML:类图关系总结">UML:类图关系总结</a></span>
+    <span><a href="/posts/737c98ca/" title="什么是MapReduce">什么是MapReduce</a></span>
   </li>
 
       
   <li class="item">
     
 <div class="breadcrumb">
-<a href="/categories/Hexo/" title="In Hexo">Hexo</a>
+<a href="/categories/IDEA/" title="In IDEA">IDEA</a>
+</div>
+
+    <span><a href="/posts/579bb697/" title="IDEA小图标含义">IDEA小图标含义</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/Java/" title="In Java">Java</a>
 <i class="ic i-angle-right"></i>
-<a href="/categories/Hexo/Tools/" title="In Tools">Tools</a>
+<a href="/categories/Java/Tools/" title="In Tools">Tools</a>
 </div>
 
-    <span><a href="/posts/3d071a12/" title="使用hexo框架+next主题+githubPage搭建个人博客">使用hexo框架+next主题+githubPage搭建个人博客</a></span>
+    <span><a href="/posts/b246d3ce/" title="Java自带的好用的工具类">Java自带的好用的工具类</a></span>
   </li>
 
       
   <li class="item">
     
 <div class="breadcrumb">
+<a href="/categories/Java%E9%9D%A2%E8%AF%95/" title="In Java面试">Java面试</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/Java%E9%9D%A2%E8%AF%95/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/" title="In 数据结构">数据结构</a>
 </div>
 
-    <span><a href="/posts/159c6098/" title="阻塞队列">阻塞队列</a></span>
+    <span><a href="/posts/9f9a6182/" title="面试之旅关于数据结构">面试之旅关于数据结构</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/Ubuntu/" title="In Ubuntu">Ubuntu</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/Ubuntu/Mysql/" title="In Mysql">Mysql</a>
+</div>
+
+    <span><a href="/posts/31f95091/" title="Ubuntu中安装卸载Mysql数据库">Ubuntu中安装卸载Mysql数据库</a></span>
   </li>
 
   </ul>
@@ -531,13 +495,13 @@ possible_keys：表示查询时可能使用的索引。如果是空的，没有�
     <span class="post-meta-item-icon">
       <i class="ic i-chart-area"></i>
     </span>
-    <span title="Symbols count total">622k words</span>
+    <span title="Symbols count total">676k words</span>
 
     <span class="post-meta-divider">|</span>
     <span class="post-meta-item-icon">
       <i class="ic i-coffee"></i>
     </span>
-    <span title="Reading time total">9:26</span>
+    <span title="Reading time total">10:15</span>
   </div>
 </div>
 

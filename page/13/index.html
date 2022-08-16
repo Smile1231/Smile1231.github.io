@@ -89,12 +89,12 @@
       </div>
       <div id="imgs" class="pjax">
         <ul>
-          <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1giciundwu5j20zk0m8n9e.jpg"></li>
-          <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1gipevgoki5j20zk0m84qp.jpg"></li>
-          <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1gipetv6p75j20zk0m8x6p.jpg"></li>
-          <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1giciuja1j1j20zk0m8kjl.jpg"></li>
-          <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1giclh5u05ej20zk0m87df.jpg"></li>
-          <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1giclx6phq6j20zk0m8e36.jpg"></li>
+          <li class="item" data-background-image="https://tva2.sinaimg.cn/large/6833939bly1gipexbei4hj20zk0m8npd.jpg"></li>
+          <li class="item" data-background-image="https://tva2.sinaimg.cn/large/6833939bly1gipetv6p75j20zk0m8x6p.jpg"></li>
+          <li class="item" data-background-image="https://tva2.sinaimg.cn/large/6833939bly1giclh3brzpj20zk0m8ann.jpg"></li>
+          <li class="item" data-background-image="https://tva2.sinaimg.cn/large/6833939bly1giclize41wj20zk0m87gk.jpg"></li>
+          <li class="item" data-background-image="https://tva2.sinaimg.cn/large/6833939bly1giclx29mstj20zk0m8hdt.jpg"></li>
+          <li class="item" data-background-image="https://tva2.sinaimg.cn/large/6833939bly1gipewf5l51j20zk0m8b29.jpg"></li>
         </ul>
       </div>
     </header>
@@ -120,7 +120,104 @@
         
 <article class="item">
   <div class="cover">
-    <a href="/posts/60a1e80e/" itemprop="url" title="java判断日期周几"><img data-src="https://tva3.sinaimg.cn/mw690/6833939bly1giclh0m9pdj20zk0m8hdt.jpg"></a>
+    <a href="/posts/13370746/" itemprop="url" title="使用EasyExcel读取excel文件为Java实体类"><img data-src="https://tva2.sinaimg.cn/mw690/6833939bly1giclfdu6exj20zk0m87hw.jpg"></a>
+  </div>
+  <div class="info">
+    
+<div class="meta">
+  <span class="item" title="Created: 2021-12-15 16:02:49">
+    <span class="icon">
+      <i class="ic i-calendar"></i>
+    </span>
+    <time itemprop="dateCreated datePublished" datetime="2021-12-15T16:02:49+08:00">2021-12-15</time>
+  </span>
+  <span class="item" title="Symbols count in article">
+    <span class="icon">
+      <i class="ic i-pen"></i>
+    </span>
+    <span>4k</span>
+    <span class="text">words</span>
+  </span>
+  <span class="item" title="Reading time">
+    <span class="icon">
+      <i class="ic i-clock"></i>
+    </span>
+    <span>4 mins.</span>
+  </span>
+</div>
+
+    <h3><a href="/posts/13370746/" itemprop="url" title="使用EasyExcel读取excel文件为Java实体类">使用EasyExcel读取excel文件为Java实体类</a></h3>
+    <div class="excerpt">
+        <p><a target="_blank" rel="noopener" href="https://www.yuque.com/easyexcel/doc/read">附赠 <code>EasyExcel</code>  的官方文档</a></p>
+<p>最近用到了需要使用 <code>Excel</code>  的 <code>InputStream</code>  流转化为 Java 实体类，然后再进行一些业务上的操作，这边稍加学习了之后也做了一些整理:</p>
+<p>本次所用到的依赖:</p>
+<figure class="highlight gradle"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">implementation <span class="string">&#x27;org.projectlombok:lombok:1.18.20&#x27;</span></span><br><span class="line">implementation <span class="keyword">group</span>: <span class="string">&#x27;cn.hutool&#x27;</span>, name: <span class="string">&#x27;hutool-all&#x27;</span>, version: <span class="string">&#x27;5.7.16&#x27;</span></span><br><span class="line">implementation(<span class="string">&#x27;com.alibaba:easyexcel:2.2.6&#x27;</span>)</span><br><span class="line">implementation <span class="string">&#x27;com.google.protobuf:protobuf-java:4.0.0-rc-2&#x27;</span></span><br></pre></td></tr></table></figure>
+<h2 id="首先需要建立一个和excel相对应的实体类"><a class="markdownIt-Anchor" href="#首先需要建立一个和excel相对应的实体类">#</a> 首先需要建立一个和 <code>Excel</code>  相对应的实体类</h2>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">@Data</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">IndexOrNameData</span> </span>&#123;</span><br><span class="line">    <span class="comment">/**</span></span><br><span class="line"><span class="comment">     * 强制读取第三个 这里不建议 index 和 name 同时用，要么一个对象只用index，要么一个对象只用name去匹配</span></span><br><span class="line"><span class="comment">     *  index 从0开始</span></span><br><span class="line"><span class="comment">     */</span></span><br><span class="line">    <span class="meta">@ExcelProperty(index = 2)</span></span><br><span class="line">    <span class="keyword">private</span> Double doubleData;</span><br><span class="line">    <span class="comment">/**</span></span><br><span class="line"><span class="comment">     * 用名字去匹配，这里需要注意，如果名字重复，会导致只有一个字段读取到数据</span></span><br><span class="line"><span class="comment">     */</span></span><br><span class="line">    <span class="meta">@ExcelProperty(&quot;字符串标题&quot;)</span></span><br><span class="line">    <span class="keyword">private</span> String string;</span><br><span class="line">    <span class="meta">@ExcelProperty(&quot;日期标题&quot;)</span></span><br><span class="line">    <span class="keyword">private</span> Date date;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+      
+    </div>
+    <div class="meta footer">
+      <span>
+        <a href="/categories/Java/Tools/" itemprop="url" title="Tools"><i class="ic i-flag"></i>Tools</a>
+      </span>
+    </div>
+    <a href="/posts/13370746/" itemprop="url" title="使用EasyExcel读取excel文件为Java实体类" class="btn">more...</a>
+  </div>
+</article>
+
+        
+<article class="item">
+  <div class="cover">
+    <a href="/posts/388f5c14/" itemprop="url" title="mysql日期加减"><img data-src="https://tva2.sinaimg.cn/mw690/6833939bly1giclhtuo6nj20zk0m8ttm.jpg"></a>
+  </div>
+  <div class="info">
+    
+<div class="meta">
+  <span class="item" title="Created: 2021-12-07 19:20:01">
+    <span class="icon">
+      <i class="ic i-calendar"></i>
+    </span>
+    <time itemprop="dateCreated datePublished" datetime="2021-12-07T19:20:01+08:00">2021-12-07</time>
+  </span>
+  <span class="item" title="Symbols count in article">
+    <span class="icon">
+      <i class="ic i-pen"></i>
+    </span>
+    <span>1.4k</span>
+    <span class="text">words</span>
+  </span>
+  <span class="item" title="Reading time">
+    <span class="icon">
+      <i class="ic i-clock"></i>
+    </span>
+    <span>1 mins.</span>
+  </span>
+</div>
+
+    <h3><a href="/posts/388f5c14/" itemprop="url" title="mysql日期加减">mysql日期加减</a></h3>
+    <div class="excerpt">
+        <h1 id="日期的加减"><a class="markdownIt-Anchor" href="#日期的加减">#</a> 日期的加减</h1>
+<p><code>date_add</code>  和 <code>date_sub</code> <br>
+ 语法为： <code>date_add(date,interval expr type)、date_sub(date,interval expr type)</code> <br>
+ 其中常用的 type 的类型有： <code>second、minute、hour、day、month、year</code>  等</p>
+<p><code>date_add</code>  是对日期的增加，如果天数为负数时，则表示对日期减少，<br>
+ <code>date_sub</code>  是对日期的减少，如果天数为负数时，则表示对日期增加<br>
+例如</p>
+      
+    </div>
+    <div class="meta footer">
+      <span>
+        <a href="/categories/%E6%95%B0%E6%8D%AE%E5%BA%93/" itemprop="url" title="数据库"><i class="ic i-flag"></i>数据库</a>
+      </span>
+    </div>
+    <a href="/posts/388f5c14/" itemprop="url" title="mysql日期加减" class="btn">more...</a>
+  </div>
+</article>
+
+        
+<article class="item">
+  <div class="cover">
+    <a href="/posts/60a1e80e/" itemprop="url" title="java判断日期周几"><img data-src="https://tva2.sinaimg.cn/mw690/6833939bly1gipevo9j1jj20zk0m8e81.jpg"></a>
   </div>
   <div class="info">
     
@@ -162,7 +259,7 @@
         
 <article class="item">
   <div class="cover">
-    <a href="/posts/e43580c1/" itemprop="url" title="flex布局"><img data-src="https://tva3.sinaimg.cn/mw690/6833939bly1giclffsa1cj20zk0m811l.jpg"></a>
+    <a href="/posts/e43580c1/" itemprop="url" title="flex布局"><img data-src="https://tva2.sinaimg.cn/mw690/6833939bly1giclil3m4ej20zk0m8tn8.jpg"></a>
   </div>
   <div class="info">
     
@@ -204,7 +301,7 @@
         
 <article class="item">
   <div class="cover">
-    <a href="/posts/1f142005/" itemprop="url" title="CRISPR-Cas9英文介绍"><img data-src="https://tva3.sinaimg.cn/mw690/6833939bly1giclj9410cj20zk0m8h12.jpg"></a>
+    <a href="/posts/1f142005/" itemprop="url" title="CRISPR-Cas9英文介绍"><img data-src="https://tva2.sinaimg.cn/mw690/6833939bly1gipetv6p75j20zk0m8x6p.jpg"></a>
   </div>
   <div class="info">
     
@@ -246,7 +343,7 @@
         
 <article class="item">
   <div class="cover">
-    <a href="/posts/2dc35ee/" itemprop="url" title="多线程分批处理方案"><img data-src="https://tva3.sinaimg.cn/mw690/6833939bly1gicliierfjj20zk0m8npd.jpg"></a>
+    <a href="/posts/2dc35ee/" itemprop="url" title="多线程分批处理方案"><img data-src="https://tva2.sinaimg.cn/mw690/6833939bly1gicis081o9j20zk0m8dmr.jpg"></a>
   </div>
   <div class="info">
     
@@ -284,7 +381,7 @@
         
 <article class="item">
   <div class="cover">
-    <a href="/posts/5a74c6a6/" itemprop="url" title="宝儿的大腿小腿围"><img data-src="https://tva3.sinaimg.cn/mw690/6833939bly1gipeu7txpzj20zk0m81kx.jpg"></a>
+    <a href="/posts/5a74c6a6/" itemprop="url" title="宝儿的大腿小腿围"><img data-src="https://tva2.sinaimg.cn/mw690/6833939bly1gipexj2jgzj20zk0m8b09.jpg"></a>
   </div>
   <div class="info">
     
@@ -299,7 +396,7 @@
     <span class="icon">
       <i class="ic i-pen"></i>
     </span>
-    <span>54</span>
+    <span>667</span>
     <span class="text">words</span>
   </span>
   <span class="item" title="Reading time">
@@ -312,20 +409,8 @@
 
     <h3><a href="/posts/5a74c6a6/" itemprop="url" title="宝儿的大腿小腿围">宝儿的大腿小腿围</a></h3>
     <div class="excerpt">
-        名字
-日期
-大腿
-小腿
-
-茂茂的女孩
-2021-11-24
-51.5
-34.5
-
-茂茂的女孩
-2021-12-07
-51.5
-34.5
+        Here's something encrypted, password is required to continue reading.
+      
     </div>
     <a href="/posts/5a74c6a6/" itemprop="url" title="宝儿的大腿小腿围" class="btn">more...</a>
   </div>
@@ -334,7 +419,7 @@
         
 <article class="item">
   <div class="cover">
-    <a href="/posts/4491edd3/" itemprop="url" title="LeetCode07_整数反转"><img data-src="https://tva3.sinaimg.cn/mw690/6833939bly1gicm0n457cj20zk0m8e81.jpg"></a>
+    <a href="/posts/4491edd3/" itemprop="url" title="LeetCode07_整数反转"><img data-src="https://tva2.sinaimg.cn/mw690/6833939bly1gipetv6p75j20zk0m8x6p.jpg"></a>
   </div>
   <div class="info">
     
@@ -377,7 +462,7 @@
         
 <article class="item">
   <div class="cover">
-    <a href="/posts/5d0c3fcc/" itemprop="url" title="LeetCode172_阶乘后的0"><img data-src="https://tva3.sinaimg.cn/mw690/6833939bly1gipesrnqv3j20zk0m8ava.jpg"></a>
+    <a href="/posts/5d0c3fcc/" itemprop="url" title="LeetCode172_阶乘后的0"><img data-src="https://tva2.sinaimg.cn/mw690/6833939bly1giclxp31goj20zk0m8qv5.jpg"></a>
   </div>
   <div class="info">
     
@@ -420,7 +505,7 @@
         
 <article class="item">
   <div class="cover">
-    <a href="/posts/6e65ed30/" itemprop="url" title="ubuntu20无法安装vmtools解决"><img data-src="https://tva3.sinaimg.cn/mw690/6833939bly1giciub8ja1j20zk0m81ky.jpg"></a>
+    <a href="/posts/6e65ed30/" itemprop="url" title="ubuntu20无法安装vmtools解决"><img data-src="https://tva2.sinaimg.cn/mw690/6833939bly1giclh3brzpj20zk0m8ann.jpg"></a>
   </div>
   <div class="info">
     
@@ -461,90 +546,6 @@
   </div>
 </article>
 
-        
-<article class="item">
-  <div class="cover">
-    <a href="/posts/307637a3/" itemprop="url" title="扫尾"><img data-src="https://tva3.sinaimg.cn/mw690/6833939bly1giciuv0socj20zk0m8qes.jpg"></a>
-  </div>
-  <div class="info">
-    
-<div class="meta">
-  <span class="item" title="Created: 2021-11-22 15:43:49">
-    <span class="icon">
-      <i class="ic i-calendar"></i>
-    </span>
-    <time itemprop="dateCreated datePublished" datetime="2021-11-22T15:43:49+08:00">2021-11-22</time>
-  </span>
-  <span class="item" title="Symbols count in article">
-    <span class="icon">
-      <i class="ic i-pen"></i>
-    </span>
-    <span>15</span>
-    <span class="text">words</span>
-  </span>
-  <span class="item" title="Reading time">
-    <span class="icon">
-      <i class="ic i-clock"></i>
-    </span>
-    <span>1 mins.</span>
-  </span>
-</div>
-
-    <h3><a href="/posts/307637a3/" itemprop="url" title="扫尾">扫尾</a></h3>
-    <div class="excerpt">
-        LeetCode 刷题顺序
-DDD
-    </div>
-    <a href="/posts/307637a3/" itemprop="url" title="扫尾" class="btn">more...</a>
-  </div>
-</article>
-
-        
-<article class="item">
-  <div class="cover">
-    <a href="/posts/7a29d22a/" itemprop="url" title="Java关于时间的轮子"><img data-src="https://tva3.sinaimg.cn/mw690/6833939bly1giclgrvbd6j20zk0m8qv5.jpg"></a>
-  </div>
-  <div class="info">
-    
-<div class="meta">
-  <span class="item" title="Created: 2021-11-22 15:29:28">
-    <span class="icon">
-      <i class="ic i-calendar"></i>
-    </span>
-    <time itemprop="dateCreated datePublished" datetime="2021-11-22T15:29:28+08:00">2021-11-22</time>
-  </span>
-  <span class="item" title="Symbols count in article">
-    <span class="icon">
-      <i class="ic i-pen"></i>
-    </span>
-    <span>16k</span>
-    <span class="text">words</span>
-  </span>
-  <span class="item" title="Reading time">
-    <span class="icon">
-      <i class="ic i-clock"></i>
-    </span>
-    <span>15 mins.</span>
-  </span>
-</div>
-
-    <h3><a href="/posts/7a29d22a/" itemprop="url" title="Java关于时间的轮子">Java关于时间的轮子</a></h3>
-    <div class="excerpt">
-        <h1 id="建议收藏减少百度重复造轮子"><a class="markdownIt-Anchor" href="#建议收藏减少百度重复造轮子">#</a> 建议收藏，减少百度重复造轮子</h1>
-<p>我们应该都知道 <code>SimpleDateFormat</code>  是线程不安全的，在多线程的环境下会出现日期错乱的问题。</p>
-<p>假设我们有一些字符串日期，需要格式化成日期，然后编写下面的程序，同时多个线程请求，观察结果：</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">SimpleDateFormatTest</span> </span>&#123;</span><br><span class="line">    <span class="comment">/**</span></span><br><span class="line"><span class="comment">     * 需要格式化的字符串</span></span><br><span class="line"><span class="comment">     */</span></span><br><span class="line">    <span class="keyword">private</span> <span class="keyword">static</span> <span class="keyword">final</span> SimpleDateFormat DATE_FORMAT = <span class="keyword">new</span> SimpleDateFormat(<span class="string">&quot;yyyy-MM-dd HH:mm:ss&quot;</span>);</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">final</span> CountDownLatch latch = <span class="keyword">new</span> CountDownLatch(<span class="number">1</span>);</span><br><span class="line">        List&lt;String&gt; date = Arrays.asList(<span class="string">&quot;2021-01-01 12:12:12&quot;</span>, <span class="string">&quot;2021-01-02 11:11:11&quot;</span>, <span class="string">&quot;2021-01-11 09:09:09&quot;</span>);</span><br><span class="line">        IntStream.range(<span class="number">1</span>, <span class="number">10</span>).forEach(v -&gt; &#123;</span><br><span class="line">            <span class="keyword">new</span> Thread(() -&gt; &#123;</span><br><span class="line">                <span class="keyword">try</span> &#123;</span><br><span class="line">                    latch.await();</span><br><span class="line">                &#125; <span class="keyword">catch</span> (InterruptedException e) &#123;</span><br><span class="line">                    e.printStackTrace();</span><br><span class="line">                &#125;</span><br><span class="line">                IntStream.range(<span class="number">0</span>, <span class="number">10</span>).forEach(i -&gt; &#123;</span><br><span class="line">                    <span class="keyword">try</span> &#123;</span><br><span class="line">                        System.out.println(DATE_FORMAT.parse(date.get(i % date.size())));</span><br><span class="line">                        Thread.sleep(<span class="number">100</span>);</span><br><span class="line">                    &#125; <span class="keyword">catch</span> (InterruptedException | ParseException e) &#123;</span><br><span class="line">                        e.printStackTrace();</span><br><span class="line">                    &#125;</span><br><span class="line">                &#125;);</span><br><span class="line">            &#125;).start();</span><br><span class="line">        &#125;);</span><br><span class="line">        latch.countDown();</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-      
-    </div>
-    <div class="meta footer">
-      <span>
-        <a href="/categories/Java/" itemprop="url" title="Java"><i class="ic i-flag"></i>Java</a>
-      </span>
-    </div>
-    <a href="/posts/7a29d22a/" itemprop="url" title="Java关于时间的轮子" class="btn">more...</a>
-  </div>
-</article>
-
     </div>
 
   </div>
@@ -580,19 +581,19 @@ DDD
 <nav class="state">
     <div class="item posts">
       <a href="/archives/">
-        <span class="count">143</span>
+        <span class="count">145</span>
         <span class="name">posts</span>
       </a>
     </div>
     <div class="item categories">
       <a href="/categories/">
-        <span class="count">74</span>
+        <span class="count">75</span>
         <span class="name">categories</span>
       </a>
     </div>
     <div class="item tags">
       <a href="/tags/">
-        <span class="count">109</span>
+        <span class="count">111</span>
         <span class="name">tags</span>
       </a>
     </div>
@@ -670,41 +671,10 @@ DDD
   <li class="item">
     
 <div class="breadcrumb">
-<a href="/categories/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/" title="In 设计模式">设计模式</a>
-</div>
-
-    <span><a href="/posts/79c6d028/" title="23设计模式(更新中)">23设计模式(更新中)</a></span>
-  </li>
-
-      
-  <li class="item">
-    
-<div class="breadcrumb">
-<a href="/categories/IDEA/" title="In IDEA">IDEA</a>
-</div>
-
-    <span><a href="/posts/579bb697/" title="IDEA小图标含义">IDEA小图标含义</a></span>
-  </li>
-
-      
-  <li class="item">
-    
-<div class="breadcrumb">
 <a href="/categories/%E5%89%8D%E7%AB%AF/" title="In 前端">前端</a>
-<i class="ic i-angle-right"></i>
-<a href="/categories/%E5%89%8D%E7%AB%AF/JavaScript/" title="In JavaScript">JavaScript</a>
 </div>
 
-    <span><a href="/posts/4aa00b9a/" title="Js中的some、find、findindex、includes、filter的使用">Js中的some、find、findindex、includes、filter的使用</a></span>
-  </li>
-
-      
-  <li class="item">
-    
-<div class="breadcrumb">
-</div>
-
-    <span><a href="/posts/bf4d20ae/" title="写在最前面">写在最前面</a></span>
+    <span><a href="/posts/7733848a/" title="文件上传前端小结">文件上传前端小结</a></span>
   </li>
 
       
@@ -714,7 +684,59 @@ DDD
 <a href="/categories/Java/" title="In Java">Java</a>
 </div>
 
-    <span><a href="/posts/1c3390ab/" title="将Java数据输出为本地txt">将Java数据输出为本地txt</a></span>
+    <span><a href="/posts/d6d1be75/" title="在Javadoc注释中引用方法">在Javadoc注释中引用方法</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/Java%E9%9D%A2%E8%AF%95/" title="In Java面试">Java面试</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/Java%E9%9D%A2%E8%AF%95/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/" title="In 数据结构">数据结构</a>
+</div>
+
+    <span><a href="/posts/9f9a6182/" title="面试之旅关于数据结构">面试之旅关于数据结构</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+</div>
+
+    <span><a href="/posts/11faeb76/" title="Docker指令以及部署">Docker指令以及部署</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/Java%E9%9D%A2%E8%AF%95/" title="In Java面试">Java面试</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/Java%E9%9D%A2%E8%AF%95/%E7%AE%97%E6%B3%95/" title="In 算法">算法</a>
+</div>
+
+    <span><a href="/posts/b9b9f7e7/" title="二叉树遍历">二叉树遍历</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/IDEA/" title="In IDEA">IDEA</a>
+</div>
+
+    <span><a href="/posts/610bdf07/" title="IDEA快捷键">IDEA快捷键</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+</div>
+
+    <span><a href="/posts/a72f470b/" title="关于JVM常用参数">关于JVM常用参数</a></span>
   </li>
 
       
@@ -735,39 +757,22 @@ DDD
   <li class="item">
     
 <div class="breadcrumb">
-<a href="/categories/Machine-Learning/" title="In Machine Learning">Machine Learning</a>
+<a href="/categories/Jenkins/" title="In Jenkins">Jenkins</a>
 </div>
 
-    <span><a href="/posts/1b930e38/" title="Machine Learning essays">Machine Learning essays</a></span>
+    <span><a href="/posts/171f1b7f/" title="Jenkins&#x2F;CICD">Jenkins/CICD</a></span>
   </li>
 
       
   <li class="item">
     
 <div class="breadcrumb">
-<a href="/categories/Hexo/" title="In Hexo">Hexo</a>
+<a href="/categories/Java/" title="In Java">Java</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/Java/Java%E9%9D%A2%E8%AF%95/" title="In Java面试">Java面试</a>
 </div>
 
-    <span><a href="/posts/575a6046/" title="Hexo-Next主题如何文章置顶">Hexo-Next主题如何文章置顶</a></span>
-  </li>
-
-      
-  <li class="item">
-    
-<div class="breadcrumb">
-</div>
-
-    <span><a href="/posts/3c59e6c8/" title="如何让自己的博客被Google以及百度收录">如何让自己的博客被Google以及百度收录</a></span>
-  </li>
-
-      
-  <li class="item">
-    
-<div class="breadcrumb">
-<a href="/categories/%E5%A4%A7%E6%95%B0%E6%8D%AE/" title="In 大数据">大数据</a>
-</div>
-
-    <span><a href="/posts/737c98ca/" title="什么是MapReduce">什么是MapReduce</a></span>
+    <span><a href="/posts/f23f1351/" title="equals与&#x3D;&#x3D;区别">equals与==区别</a></span>
   </li>
 
   </ul>
@@ -792,13 +797,13 @@ DDD
     <span class="post-meta-item-icon">
       <i class="ic i-chart-area"></i>
     </span>
-    <span title="Symbols count total">622k words</span>
+    <span title="Symbols count total">676k words</span>
 
     <span class="post-meta-divider">|</span>
     <span class="post-meta-item-icon">
       <i class="ic i-coffee"></i>
     </span>
-    <span title="Reading time total">9:26</span>
+    <span title="Reading time total">10:15</span>
   </div>
 </div>
 
