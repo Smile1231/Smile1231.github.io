@@ -5,8 +5,8 @@
         <link>https://smile1231.github.io</link>
         <description></description>
         <language>en</language>
-        <pubDate>Tue, 16 Aug 2022 21:43:58 +0800</pubDate>
-        <lastBuildDate>Tue, 16 Aug 2022 21:43:58 +0800</lastBuildDate>
+        <pubDate>Sun, 21 Aug 2022 21:46:23 +0800</pubDate>
+        <lastBuildDate>Sun, 21 Aug 2022 21:46:23 +0800</lastBuildDate>
         <category>SAP</category>
         <category>Java</category>
         <category>Cache</category>
@@ -14,32 +14,32 @@
         <category>Session</category>
         <category>Java面试</category>
         <category>Corn</category>
-        <category>生物信息</category>
-        <category>基因编辑</category>
         <category>前端</category>
         <category>Css</category>
+        <category>DisPlay属性</category>
+        <category>生物信息</category>
+        <category>基因编辑</category>
         <category>DDD</category>
         <category>领域驱动设计</category>
-        <category>DisPlay属性</category>
+        <category>Docker</category>
         <category>FastJson</category>
         <category>blog</category>
         <category>hexo</category>
         <category>next</category>
-        <category>Docker</category>
         <category>JavaScript</category>
         <category>Html</category>
-        <category>IDEA</category>
         <category>SpringBoot</category>
+        <category>IDEA</category>
         <category>Jvm</category>
-        <category>map</category>
-        <category>Stream流</category>
-        <category>Assert</category>
         <category>Jenkins</category>
         <category>CI/CD</category>
+        <category>map</category>
+        <category>Stream流</category>
         <category>函数式接口</category>
-        <category>Springboot</category>
+        <category>Assert</category>
         <category>java</category>
         <category>calender</category>
+        <category>Springboot</category>
         <category>Python</category>
         <category>Jupyter</category>
         <category>Machine Learning</category>
@@ -57,16 +57,16 @@
         <category>Spring</category>
         <category>SrpingBoot</category>
         <category>文件上传</category>
-        <category>TypeScript</category>
-        <category>WebPack</category>
+        <category>事务</category>
         <category>master</category>
         <category>Groovy</category>
+        <category>TypeScript</category>
+        <category>WebPack</category>
         <category>UML</category>
-        <category>VsCode</category>
-        <category>Shell</category>
-        <category>事务</category>
         <category>Ubuntu</category>
         <category>Mysql</category>
+        <category>VsCode</category>
+        <category>Shell</category>
         <category>VSCODE</category>
         <category>快捷键</category>
         <category>Vue</category>
@@ -77,35 +77,35 @@
         <category>ubuntu</category>
         <category>虚拟机</category>
         <category>二分查找</category>
-        <category>Hadoop</category>
         <category>数据挖掘</category>
-        <category>EasyExcel</category>
+        <category>Hadoop</category>
         <category>操作系统</category>
+        <category>EasyExcel</category>
         <category>node</category>
-        <category>Hexo</category>
-        <category>Yaml</category>
         <category>JVM</category>
+        <category>Yaml</category>
+        <category>Hexo</category>
+        <category>junit</category>
         <category>数据库</category>
         <category>Mysql事务</category>
-        <category>git,npm,node</category>
         <category>Git</category>
         <category>冒泡排序</category>
+        <category>git,npm,node</category>
+        <category>动态规划</category>
         <category>堆排序</category>
         <category>多线程</category>
-        <category>动态规划</category>
         <category>Google</category>
-        <category>junit</category>
-        <category>流</category>
         <category>幂等性</category>
-        <category>快速排序</category>
+        <category>流</category>
         <category>归并排序</category>
+        <category>直接插入排序</category>
+        <category>快速排序</category>
         <category>正则表达式</category>
         <category>选择排序</category>
-        <category>直接插入排序</category>
+        <category>Spring事务</category>
         <category>Java 面试</category>
         <category>数据结构</category>
         <category>阻塞队列</category>
-        <category>Spring事务</category>
         <category>JDK</category>
         <category>动态代理</category>
         <category>Date</category>
@@ -118,6 +118,20 @@
         <category>Email</category>
         <category>设计模式</category>
         <category>cheatsheet</category>
+        <item>
+            <guid isPermalink="true">https://smile1231.github.io/posts/80a06b6b/</guid>
+            <title>SpringBoot 接口添加统一前缀</title>
+            <link>https://smile1231.github.io/posts/80a06b6b/</link>
+            <category>SpringBoot</category>
+            <pubDate>Sun, 21 Aug 2022 21:46:23 +0800</pubDate>
+            <description><![CDATA[ &lt;p&gt;为 &lt;code&gt;SpringBoot&lt;/code&gt;  添加统一的接口路径前缀，例如 &lt;code&gt;/api/1.0&lt;/code&gt;  这样。&lt;/p&gt;
+&lt;p&gt;写一个 &lt;code&gt;Springboot&lt;/code&gt;  配置类即可:&lt;/p&gt;
+&lt;figure class=&#34;highlight java&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;13&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;14&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;/**&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt; * &lt;span class=&#34;doctag&#34;&gt;@author&lt;/span&gt; jinMao&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt; * &lt;span class=&#34;doctag&#34;&gt;@version&lt;/span&gt; 1.0.0&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt; * &lt;span class=&#34;doctag&#34;&gt;@ClassName&lt;/span&gt; WebMvcConfig.java&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt; * &lt;span class=&#34;doctag&#34;&gt;@Description&lt;/span&gt; TODO&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt; * &lt;span class=&#34;doctag&#34;&gt;@createTime&lt;/span&gt; 2022-08-20  00:14:00&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt; */&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;meta&#34;&gt;@Configuration&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;public&lt;/span&gt; &lt;span class=&#34;class&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;class&lt;/span&gt; &lt;span class=&#34;title&#34;&gt;WebMvcConfig&lt;/span&gt; &lt;span class=&#34;keyword&#34;&gt;implements&lt;/span&gt; &lt;span class=&#34;title&#34;&gt;WebMvcConfigurer&lt;/span&gt; &lt;/span&gt;&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;meta&#34;&gt;@Override&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;function&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;public&lt;/span&gt; &lt;span class=&#34;keyword&#34;&gt;void&lt;/span&gt; &lt;span class=&#34;title&#34;&gt;configurePathMatch&lt;/span&gt;&lt;span class=&#34;params&#34;&gt;(PathMatchConfigurer configurer)&lt;/span&gt; &lt;/span&gt;&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        configurer.addPathPrefix(&lt;span class=&#34;string&#34;&gt;&amp;quot;/api/1.0&amp;quot;&lt;/span&gt;, c -&amp;gt; c.isAnnotationPresent(RestController.class));&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;img data-src=&#34;/posts/80a06b6b/2022-08-21-21-52-28.png&#34; class=&#34;&#34;&gt;
+&lt;p&gt;会自动带上前缀：&lt;/p&gt;
+&lt;img data-src=&#34;/posts/80a06b6b/2022-08-21-21-52-48.png&#34; class=&#34;&#34;&gt;
+ ]]></description>
+        </item>
         <item>
             <guid isPermalink="true">https://smile1231.github.io/posts/dfc32b58/</guid>
             <title>SpringBoot javax操作邮箱</title>

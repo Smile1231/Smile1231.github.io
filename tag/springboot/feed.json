@@ -5,6 +5,16 @@
     "home_page_url": "https://smile1231.github.io",
     "items": [
         {
+            "id": "https://smile1231.github.io/posts/80a06b6b/",
+            "url": "https://smile1231.github.io/posts/80a06b6b/",
+            "title": "SpringBoot 接口添加统一前缀",
+            "date_published": "2022-08-21T13:46:23.000Z",
+            "content_html": "<p>为 <code>SpringBoot</code>  添加统一的接口路径前缀，例如 <code>/api/1.0</code>  这样。</p>\n<p>写一个 <code>Springboot</code>  配置类即可:</p>\n<figure class=\"highlight java\"><table><tr><td class=\"gutter\"><pre><span class=\"line\">1</span><br><span class=\"line\">2</span><br><span class=\"line\">3</span><br><span class=\"line\">4</span><br><span class=\"line\">5</span><br><span class=\"line\">6</span><br><span class=\"line\">7</span><br><span class=\"line\">8</span><br><span class=\"line\">9</span><br><span class=\"line\">10</span><br><span class=\"line\">11</span><br><span class=\"line\">12</span><br><span class=\"line\">13</span><br><span class=\"line\">14</span><br></pre></td><td class=\"code\"><pre><span class=\"line\"><span class=\"comment\">/**</span></span><br><span class=\"line\"><span class=\"comment\"> * <span class=\"doctag\">@author</span> jinMao</span></span><br><span class=\"line\"><span class=\"comment\"> * <span class=\"doctag\">@version</span> 1.0.0</span></span><br><span class=\"line\"><span class=\"comment\"> * <span class=\"doctag\">@ClassName</span> WebMvcConfig.java</span></span><br><span class=\"line\"><span class=\"comment\"> * <span class=\"doctag\">@Description</span> TODO</span></span><br><span class=\"line\"><span class=\"comment\"> * <span class=\"doctag\">@createTime</span> 2022-08-20  00:14:00</span></span><br><span class=\"line\"><span class=\"comment\"> */</span></span><br><span class=\"line\"><span class=\"meta\">@Configuration</span></span><br><span class=\"line\"><span class=\"keyword\">public</span> <span class=\"class\"><span class=\"keyword\">class</span> <span class=\"title\">WebMvcConfig</span> <span class=\"keyword\">implements</span> <span class=\"title\">WebMvcConfigurer</span> </span>&#123;</span><br><span class=\"line\">    <span class=\"meta\">@Override</span></span><br><span class=\"line\">    <span class=\"function\"><span class=\"keyword\">public</span> <span class=\"keyword\">void</span> <span class=\"title\">configurePathMatch</span><span class=\"params\">(PathMatchConfigurer configurer)</span> </span>&#123;</span><br><span class=\"line\">        configurer.addPathPrefix(<span class=\"string\">&quot;/api/1.0&quot;</span>, c -&gt; c.isAnnotationPresent(RestController.class));</span><br><span class=\"line\">    &#125;</span><br><span class=\"line\">&#125;</span><br></pre></td></tr></table></figure>\n<img data-src=\"/posts/80a06b6b/2022-08-21-21-52-28.png\" class=\"\">\n<p>会自动带上前缀：</p>\n<img data-src=\"/posts/80a06b6b/2022-08-21-21-52-48.png\" class=\"\">\n",
+            "tags": [
+                "SpringBoot"
+            ]
+        },
+        {
             "id": "https://smile1231.github.io/posts/dfc32b58/",
             "url": "https://smile1231.github.io/posts/dfc32b58/",
             "title": "SpringBoot javax操作邮箱",

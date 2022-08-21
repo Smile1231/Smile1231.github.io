@@ -14,32 +14,32 @@
         <category>Session</category>
         <category>Java面试</category>
         <category>Corn</category>
-        <category>生物信息</category>
-        <category>基因编辑</category>
         <category>前端</category>
         <category>Css</category>
+        <category>DisPlay属性</category>
+        <category>生物信息</category>
+        <category>基因编辑</category>
         <category>DDD</category>
         <category>领域驱动设计</category>
-        <category>DisPlay属性</category>
+        <category>Docker</category>
         <category>FastJson</category>
         <category>blog</category>
         <category>hexo</category>
         <category>next</category>
-        <category>Docker</category>
         <category>JavaScript</category>
         <category>Html</category>
-        <category>IDEA</category>
         <category>SpringBoot</category>
+        <category>IDEA</category>
         <category>Jvm</category>
-        <category>map</category>
-        <category>Stream流</category>
-        <category>Assert</category>
         <category>Jenkins</category>
         <category>CI/CD</category>
+        <category>map</category>
+        <category>Stream流</category>
         <category>函数式接口</category>
-        <category>Springboot</category>
+        <category>Assert</category>
         <category>java</category>
         <category>calender</category>
+        <category>Springboot</category>
         <category>Python</category>
         <category>Jupyter</category>
         <category>Machine Learning</category>
@@ -57,16 +57,16 @@
         <category>Spring</category>
         <category>SrpingBoot</category>
         <category>文件上传</category>
-        <category>TypeScript</category>
-        <category>WebPack</category>
+        <category>事务</category>
         <category>master</category>
         <category>Groovy</category>
+        <category>TypeScript</category>
+        <category>WebPack</category>
         <category>UML</category>
-        <category>VsCode</category>
-        <category>Shell</category>
-        <category>事务</category>
         <category>Ubuntu</category>
         <category>Mysql</category>
+        <category>VsCode</category>
+        <category>Shell</category>
         <category>VSCODE</category>
         <category>快捷键</category>
         <category>Vue</category>
@@ -77,35 +77,35 @@
         <category>ubuntu</category>
         <category>虚拟机</category>
         <category>二分查找</category>
-        <category>Hadoop</category>
         <category>数据挖掘</category>
-        <category>EasyExcel</category>
+        <category>Hadoop</category>
         <category>操作系统</category>
+        <category>EasyExcel</category>
         <category>node</category>
-        <category>Hexo</category>
-        <category>Yaml</category>
         <category>JVM</category>
+        <category>Yaml</category>
+        <category>Hexo</category>
+        <category>junit</category>
         <category>数据库</category>
         <category>Mysql事务</category>
-        <category>git,npm,node</category>
         <category>Git</category>
         <category>冒泡排序</category>
+        <category>git,npm,node</category>
+        <category>动态规划</category>
         <category>堆排序</category>
         <category>多线程</category>
-        <category>动态规划</category>
         <category>Google</category>
-        <category>junit</category>
-        <category>流</category>
         <category>幂等性</category>
-        <category>快速排序</category>
+        <category>流</category>
         <category>归并排序</category>
+        <category>直接插入排序</category>
+        <category>快速排序</category>
         <category>正则表达式</category>
         <category>选择排序</category>
-        <category>直接插入排序</category>
+        <category>Spring事务</category>
         <category>Java 面试</category>
         <category>数据结构</category>
         <category>阻塞队列</category>
-        <category>Spring事务</category>
         <category>JDK</category>
         <category>动态代理</category>
         <category>Date</category>
@@ -193,7 +193,7 @@
 &lt;/blockquote&gt;
 &lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;docker logs &amp;lt;NAMES&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
 &lt;h2 id=&#34;m1拉取mysql数据库&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#m1拉取mysql数据库&#34;&gt;#&lt;/a&gt;  &lt;code&gt;M1&lt;/code&gt;  拉取 &lt;code&gt;Mysql&lt;/code&gt;  数据库&lt;/h2&gt;
-&lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;docker pull --platform linux/x86_64 mysql:5.7&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;# 启动mysql&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;docker run --name mymysql -e MYSQL_ROOT_PASSWORD=root -d -p 3306:3306  mysql:5.7&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;docker pull --platform linux/x86_64 mysql:5.7&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;# 启动mysql&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;docker run --name mymysql -e MYSQL_ROOT_PASSWORD=root -v /etc/localtime:/etc/localtime -d -p 3306:3306  mysql:5.7&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
 &lt;h2 id=&#34;docker安装nginx并且部署vue项目&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#docker安装nginx并且部署vue项目&#34;&gt;#&lt;/a&gt;  &lt;code&gt;Docker&lt;/code&gt;  安装 &lt;code&gt;Nginx&lt;/code&gt;  并且部署 &lt;code&gt;Vue&lt;/code&gt;  项目&lt;/h2&gt;
 &lt;h3 id=&#34;拉取nginx&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#拉取nginx&#34;&gt;#&lt;/a&gt; 拉取 &lt;code&gt;Nginx&lt;/code&gt;&lt;/h3&gt;
 &lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;docker pull nginx&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
