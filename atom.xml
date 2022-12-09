@@ -6,7 +6,7 @@
   <link href="https://smile1231.github.io/atom.xml" rel="self"/>
   
   <link href="https://smile1231.github.io/"/>
-  <updated>2022-08-21T15:03:25.324Z</updated>
+  <updated>2022-12-09T15:57:53.291Z</updated>
   <id>https://smile1231.github.io/</id>
   
   <author>
@@ -15,6 +15,37 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Speaking practice</title>
+    <link href="https://smile1231.github.io/posts/9a088849/"/>
+    <id>https://smile1231.github.io/posts/9a088849/</id>
+    <published>2022-12-09T13:58:04.000Z</published>
+    <updated>2022-12-09T15:57:53.291Z</updated>
+    
+    <content type="html"><![CDATA[<blockquote><p>Speaking of which 说到这儿</p></blockquote><blockquote><p>we don’t see eye to eye 我们彼此看不顺眼</p></blockquote><blockquote><p>that’s how it is 原来如此</p></blockquote><blockquote><p>is this seat taken 我可以坐这儿吗</p></blockquote><blockquote><p>don’t flatter yourself 少臭美了</p></blockquote><blockquote><p>see you around 后会有期</p></blockquote><blockquote><p>keep your voice down 小声点</p></blockquote><blockquote><p>age before beauty 长者优先</p></blockquote><blockquote><p>with all due respect 恕我直言</p></blockquote><blockquote><p>go big or go home 要么吃鸡，要么成盒</p></blockquote><blockquote><p>time will tell 时间会证明一切</p></blockquote><blockquote><p>catch you later 回头见</p></blockquote><blockquote><p>are you serious 你是认真的吗</p></blockquote><blockquote><p>i don’t buy it 我才不信呢</p></blockquote><blockquote><p>it’s an honor to meet you 很荣幸见到你</p></blockquote><blockquote><p>you look so handsome 你好帅呀</p></blockquote><blockquote><p>i got you back 我挺你</p></blockquote><blockquote><p>don’t push your luck 别得寸进尺</p></blockquote><blockquote><p>it’s my day off 今天是我的休息日</p></blockquote><blockquote><p>how is everything 一切还好吗</p></blockquote><blockquote><p>i couldn’t agree more 再同意不过了</p></blockquote><blockquote><p>it’s only a matter of time 这只是时间问题而已</p></blockquote><blockquote><p>i told you so 我告诉过你了</p></blockquote><blockquote><p>the clock is ticking 时间不等人</p></blockquote><blockquote><p>anthor day anthor dollar 且过且得</p></blockquote><blockquote><p>night night 晚安</p></blockquote><blockquote><p>textbook 真他喵的典型的</p></blockquote><blockquote><p>it’s no big deal 没什么大不了的</p></blockquote><blockquote><p>get over yourself 别自作多情</p></blockquote><blockquote><p>go with the flow 顺其自然</p></blockquote><blockquote><p>have nothing to fear 无所畏惧</p></blockquote><blockquote><p>there’s no turning back 没有退路了</p></blockquote><blockquote><p>all set 一切就绪</p></blockquote><blockquote><p>no more bullshit 少废话</p></blockquote><blockquote><p>you’re on your own 你得靠你自己了</p></blockquote><blockquote><p>the chosen one 天选之子</p></blockquote><blockquote><p>hear me out 听我说完</p></blockquote><blockquote><p>got a second 有空吗</p></blockquote><blockquote><p>do me a favor 帮个忙</p></blockquote><blockquote><p>life sucks 生活糟透了</p></blockquote><blockquote><p>same old 老样子</p></blockquote><blockquote><p>you’re a peach 你真好</p></blockquote><blockquote><p>cut to the chase 快说重点</p></blockquote><blockquote><p>keep a low profile 保持低调</p></blockquote><blockquote><p>just kiffing 开个玩笑</p></blockquote>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;blockquote&gt;
+&lt;p&gt;Speaking of which 说到这儿&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;we don’t see eye to eye 我们彼此看不顺眼&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;</summary>
+      
+    
+    
+    
+    <category term="Spoken English" scheme="https://smile1231.github.io/categories/Spoken-English/"/>
+    
+    
+    <category term="Spoken English" scheme="https://smile1231.github.io/tags/Spoken-English/"/>
+    
+  </entry>
   
   <entry>
     <title>最近前端整理</title>
@@ -498,28 +529,6 @@
     <summary type="html">&lt;p&gt;&lt;code&gt;guava-retrying&lt;/code&gt;  包有一个重试工具，这便是重试示例代码，同时，参考文章有 &lt;a href=&quot;https://cloud.tencent.com/developer/article/1752086&quot;&gt;https://cloud.tencent.com/developer/article/1752086&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;引入 &lt;code&gt;maven&lt;/code&gt;  包&lt;/p&gt;
 &lt;figure class=&quot;highlight xml&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;tag&quot;&gt;&amp;lt;&lt;span class=&quot;name&quot;&gt;dependency&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &lt;span class=&quot;tag&quot;&gt;&amp;lt;&lt;span class=&quot;name&quot;&gt;groupId&lt;/span&gt;&amp;gt;&lt;/span&gt;com.github.rholder&lt;span class=&quot;tag&quot;&gt;&amp;lt;/&lt;span class=&quot;name&quot;&gt;groupId&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &lt;span class=&quot;tag&quot;&gt;&amp;lt;&lt;span class=&quot;name&quot;&gt;artifactId&lt;/span&gt;&amp;gt;&lt;/span&gt;guava-retrying&lt;span class=&quot;tag&quot;&gt;&amp;lt;/&lt;span class=&quot;name&quot;&gt;artifactId&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &lt;span class=&quot;tag&quot;&gt;&amp;lt;&lt;span class=&quot;name&quot;&gt;version&lt;/span&gt;&amp;gt;&lt;/span&gt;2.0.0&lt;span class=&quot;tag&quot;&gt;&amp;lt;/&lt;span class=&quot;name&quot;&gt;version&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;tag&quot;&gt;&amp;lt;/&lt;span class=&quot;name&quot;&gt;dependency&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;</summary>
-    
-    
-    
-    
-    <category term="SpringBoot" scheme="https://smile1231.github.io/tags/SpringBoot/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>JAVA-jar包运行及日志输出</title>
-    <link href="https://smile1231.github.io/posts/f35c5140/"/>
-    <id>https://smile1231.github.io/posts/f35c5140/</id>
-    <published>2022-07-05T14:01:26.000Z</published>
-    <updated>2022-07-05T15:40:39.946Z</updated>
-    
-    <content type="html"><![CDATA[<p><span class="exturl" data-url="aHR0cHM6Ly93d3cuY25ibG9ncy5jb20vbHNoLWFkbWluL3AvMTUzNDUxNzYuaHRtbA==">原文地址</span></p><p>一般情况下运行 jar 包，当前是可运行的 jar 包，直接命令</p><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">java -jar common.jar </span><br></pre></td></tr></table></figure><p>按下 <code>ctrl+C</code>  ，关闭当前 <code>ssh</code>  或者直接关闭窗口，当前程序都会退出。</p><span id="more"></span><p>我们在命令的结尾添加  <code>“&amp;”</code>  ，&amp; 表示该程序可以在后台执行</p><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">java -jar common.jar &amp;</span><br></pre></td></tr></table></figure><p>但是在当窗口关闭时，程序也会中止运行</p><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">nohup java -jar common.jar &amp;</span><br></pre></td></tr></table></figure><p>命令最前面个 <code>nohub</code>  关键字，这样程序就会不挂断运行命令，当 ssh 终端关闭时，程序仍然在运行，当前程序的日志会被写入到当前目录的 <code>nohup.out</code>  文件中</p><p>我们可以改下输入的日志文件</p><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">nohup java -jar common.jar &gt; log.out &amp;</span><br></pre></td></tr></table></figure><p>当前程序的日志会被写入到当前目录的 <code>log.out</code>  文件中</p><p>如果不想写日志，可以将日志重定向到  <code>/dev/null</code>  中， <code>/dev/null</code>  代表 <code>linux</code>  的空设备文件，所有往这个文件里面写入的内容都会丢失</p><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">nohup java -jar common.jar &gt; /dev/<span class="keyword">null</span> &amp;</span><br></pre></td></tr></table></figure><p>标准输出就会不再存在，没有任何地方能够找到输出的内容</p><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">nohup java -jar common-api.jar &gt;/dev/<span class="keyword">null</span> <span class="number">2</span>&gt;log.error &amp; </span><br></pre></td></tr></table></figure><p>只输出错误信息到日志文件，标准输出不写入日志文件，直接丢弃</p><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">nohup java -jar common-api.jar &gt;/dev/<span class="keyword">null</span> <span class="number">2</span>&gt;&amp;<span class="number">1</span> &amp; </span><br></pre></td></tr></table></figure><p>标准输出 <code>(stdout)</code>  重定向到 <code>/dev/null</code>  中（丢弃标准输出），然后标准错误输出 <code>(stderror)</code>  由于重用了标准输出的描述符，所以标准错误输出也被定向到了 <code>/dev/null</code>  中，错误输出同样也被丢弃了</p><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">nohup java -jar common-api.jar &gt;log.out <span class="number">2</span>&gt;&amp;<span class="number">1</span> &amp; </span><br></pre></td></tr></table></figure><p>标准输出重定向到 <code>log.out</code>  中，然后错误输出由于重用了标准输出的描述符，所以错误输出也被定向到了 <code>log.out</code>  中</p><p>但是不管那种情况，如果日志输出，日志文件都会增加很快，造成单个文件很大。所以需要拆分文件</p><ol><li><p>定时作业，每天将日志文件复制一份，然后将当前的日志文件清空。</p></li><li><p>借助  <code>cronolog</code>  来分隔日志</p></li></ol><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">nohup java -jar common-api.jar | /usr/local/cronolog/sbin/cronolog logs/console-%Y-%m-%d.out &amp;</span><br></pre></td></tr></table></figure><p>这样每天会产生一个 <code>console</code>  开头的日志文件。</p>]]></content>
-    
-    
-    <summary type="html">&lt;p&gt;&lt;a href=&quot;https://www.cnblogs.com/lsh-admin/p/15345176.html&quot;&gt;原文地址&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;一般情况下运行 jar 包，当前是可运行的 jar 包，直接命令&lt;/p&gt;
-&lt;figure class=&quot;highlight java&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;java -jar common.jar &lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;p&gt;按下 &lt;code&gt;ctrl+C&lt;/code&gt;  ，关闭当前 &lt;code&gt;ssh&lt;/code&gt;  或者直接关闭窗口，当前程序都会退出。&lt;/p&gt;</summary>
     
     
     

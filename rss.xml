@@ -5,23 +5,23 @@
         <link>https://smile1231.github.io</link>
         <description></description>
         <language>en</language>
-        <pubDate>Sun, 21 Aug 2022 22:51:33 +0800</pubDate>
-        <lastBuildDate>Sun, 21 Aug 2022 22:51:33 +0800</lastBuildDate>
+        <pubDate>Fri, 09 Dec 2022 21:58:04 +0800</pubDate>
+        <lastBuildDate>Fri, 09 Dec 2022 21:58:04 +0800</lastBuildDate>
+        <category>SAP</category>
         <category>生物信息</category>
         <category>基因编辑</category>
-        <category>前端</category>
-        <category>Css</category>
-        <category>DDD</category>
-        <category>领域驱动设计</category>
-        <category>DisPlay属性</category>
         <category>Java</category>
-        <category>Corn</category>
         <category>Cache</category>
         <category>Cookie</category>
         <category>Session</category>
         <category>Java面试</category>
-        <category>SAP</category>
+        <category>Corn</category>
+        <category>前端</category>
+        <category>Css</category>
+        <category>DDD</category>
+        <category>领域驱动设计</category>
         <category>Docker</category>
+        <category>DisPlay属性</category>
         <category>FastJson</category>
         <category>blog</category>
         <category>hexo</category>
@@ -29,10 +29,10 @@
         <category>JavaScript</category>
         <category>Html</category>
         <category>IDEA</category>
+        <category>SpringBoot</category>
         <category>Jvm</category>
         <category>Jenkins</category>
         <category>CI/CD</category>
-        <category>SpringBoot</category>
         <category>函数式接口</category>
         <category>Assert</category>
         <category>map</category>
@@ -51,9 +51,10 @@
         <category>pandas</category>
         <category>sklearn</category>
         <category>Mybatis</category>
-        <category>模糊查询</category>
         <category>分页查询</category>
+        <category>模糊查询</category>
         <category>Nginx</category>
+        <category>Spoken English</category>
         <category>Spring</category>
         <category>SrpingBoot</category>
         <category>文件上传</category>
@@ -65,48 +66,48 @@
         <category>UML</category>
         <category>Ubuntu</category>
         <category>Mysql</category>
-        <category>Vue</category>
-        <category>Stream</category>
-        <category>VSCODE</category>
-        <category>快捷键</category>
         <category>VsCode</category>
         <category>Shell</category>
+        <category>VSCODE</category>
+        <category>快捷键</category>
+        <category>Vue</category>
         <category>git</category>
+        <category>Stream</category>
         <category>日期</category>
         <category>线程池</category>
         <category>ubuntu</category>
         <category>虚拟机</category>
         <category>二分查找</category>
-        <category>Hadoop</category>
         <category>数据挖掘</category>
+        <category>Hadoop</category>
         <category>操作系统</category>
         <category>EasyExcel</category>
         <category>node</category>
-        <category>Hexo</category>
-        <category>Yaml</category>
         <category>JVM</category>
-        <category>数据库</category>
+        <category>Yaml</category>
+        <category>Hexo</category>
         <category>junit</category>
-        <category>git,npm,node</category>
-        <category>Git</category>
+        <category>数据库</category>
         <category>Mysql事务</category>
+        <category>Git</category>
+        <category>git,npm,node</category>
         <category>冒泡排序</category>
         <category>动态规划</category>
         <category>堆排序</category>
         <category>多线程</category>
         <category>幂等性</category>
         <category>Google</category>
-        <category>归并排序</category>
         <category>流</category>
+        <category>归并排序</category>
         <category>快速排序</category>
         <category>vue</category>
         <category>正则表达式</category>
         <category>直接插入排序</category>
         <category>选择排序</category>
-        <category>Spring事务</category>
         <category>Java 面试</category>
         <category>数据结构</category>
         <category>阻塞队列</category>
+        <category>Spring事务</category>
         <category>JDK</category>
         <category>动态代理</category>
         <category>Date</category>
@@ -119,6 +120,149 @@
         <category>Email</category>
         <category>设计模式</category>
         <category>cheatsheet</category>
+        <item>
+            <guid isPermalink="true">https://smile1231.github.io/posts/9a088849/</guid>
+            <title>Speaking practice</title>
+            <link>https://smile1231.github.io/posts/9a088849/</link>
+            <category>Spoken English</category>
+            <pubDate>Fri, 09 Dec 2022 21:58:04 +0800</pubDate>
+            <description><![CDATA[ &lt;blockquote&gt;
+&lt;p&gt;Speaking of which 说到这儿&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;we don’t see eye to eye 我们彼此看不顺眼&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;that’s how it is 原来如此&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;is this seat taken 我可以坐这儿吗&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;don’t flatter yourself 少臭美了&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;see you around 后会有期&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;keep your voice down 小声点&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;age before beauty 长者优先&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;with all due respect 恕我直言&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;go big or go home 要么吃鸡，要么成盒&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;time will tell 时间会证明一切&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;catch you later 回头见&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;are you serious 你是认真的吗&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;i don’t buy it 我才不信呢&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;it’s an honor to meet you 很荣幸见到你&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;you look so handsome 你好帅呀&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;i got you back 我挺你&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;don’t push your luck 别得寸进尺&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;it’s my day off 今天是我的休息日&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;how is everything 一切还好吗&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;i couldn’t agree more 再同意不过了&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;it’s only a matter of time 这只是时间问题而已&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;i told you so 我告诉过你了&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;the clock is ticking 时间不等人&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;anthor day anthor dollar 且过且得&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;night night 晚安&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;textbook 真他喵的典型的&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;it’s no big deal 没什么大不了的&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;get over yourself 别自作多情&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;go with the flow 顺其自然&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;have nothing to fear 无所畏惧&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;there’s no turning back 没有退路了&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;all set 一切就绪&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;no more bullshit 少废话&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;you’re on your own 你得靠你自己了&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;the chosen one 天选之子&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;hear me out 听我说完&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;got a second 有空吗&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;do me a favor 帮个忙&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;life sucks 生活糟透了&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;same old 老样子&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;you’re a peach 你真好&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;cut to the chase 快说重点&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;keep a low profile 保持低调&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;just kiffing 开个玩笑&lt;/p&gt;
+&lt;/blockquote&gt;
+ ]]></description>
+        </item>
         <item>
             <guid isPermalink="true">https://smile1231.github.io/posts/752b1c2a/</guid>
             <title>最近前端整理</title>
@@ -1201,47 +1345,6 @@
 &lt;p&gt;封装为工具类&lt;/p&gt;
 &lt;figure class=&#34;highlight java&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;13&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;14&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;15&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;16&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;17&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;18&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;19&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;20&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;21&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;22&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;23&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;24&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;25&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;26&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;27&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;28&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;29&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;30&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;31&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;32&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;33&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;34&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;public&lt;/span&gt; &lt;span class=&#34;class&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;class&lt;/span&gt; &lt;span class=&#34;title&#34;&gt;RetryUtil&lt;/span&gt; &lt;/span&gt;&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;function&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;private&lt;/span&gt; &lt;span class=&#34;title&#34;&gt;RetryUtil&lt;/span&gt;&lt;span class=&#34;params&#34;&gt;()&lt;/span&gt;&lt;/span&gt;&amp;#123;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;public&lt;/span&gt; &lt;span class=&#34;keyword&#34;&gt;static&lt;/span&gt; &lt;span class=&#34;keyword&#34;&gt;final&lt;/span&gt; Retryer&amp;lt;Boolean&amp;gt; retryer = RetryerBuilder.&amp;lt;Boolean&amp;gt;newBuilder()&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        &lt;span class=&#34;comment&#34;&gt;//重试条件&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        .retryIfResult(aBoolean -&amp;gt; Objects.equals(aBoolean,&lt;span class=&#34;keyword&#34;&gt;false&lt;/span&gt;))&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        &lt;span class=&#34;comment&#34;&gt;//等待策略，此处为120秒重试一次&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        .withWaitStrategy(WaitStrategies.fixedWait(&lt;span class=&#34;number&#34;&gt;150&lt;/span&gt;, TimeUnit.SECONDS))&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        &lt;span class=&#34;comment&#34;&gt;//停止策略，此处只重试10次&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        .withStopStrategy(StopStrategies.stopAfterAttempt(&lt;span class=&#34;number&#34;&gt;10&lt;/span&gt;))&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        .build();&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;````&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;测试&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;```java&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;meta&#34;&gt;@Slf4j&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;public&lt;/span&gt; &lt;span class=&#34;class&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;class&lt;/span&gt; &lt;span class=&#34;title&#34;&gt;TestUtils&lt;/span&gt; &lt;/span&gt;&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;meta&#34;&gt;@Test&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;function&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;void&lt;/span&gt; &lt;span class=&#34;title&#34;&gt;context&lt;/span&gt;&lt;span class=&#34;params&#34;&gt;()&lt;/span&gt; &lt;span class=&#34;keyword&#34;&gt;throws&lt;/span&gt; ExecutionException, RetryException &lt;/span&gt;&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        AtomicInteger j = &lt;span class=&#34;keyword&#34;&gt;new&lt;/span&gt; AtomicInteger();&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        RetryUtil.retryer.call(() -&amp;gt; &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;            log.info(&lt;span class=&#34;string&#34;&gt;&amp;quot;start &amp;#123;&amp;#125; calculate&amp;quot;&lt;/span&gt;,j.get());&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;           &lt;span class=&#34;keyword&#34;&gt;int&lt;/span&gt; i = j.get();&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;           &lt;span class=&#34;keyword&#34;&gt;if&lt;/span&gt; (i &amp;lt; &lt;span class=&#34;number&#34;&gt;8&lt;/span&gt;)&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;               j.getAndIncrement();&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;               &lt;span class=&#34;keyword&#34;&gt;return&lt;/span&gt; &lt;span class=&#34;keyword&#34;&gt;false&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;           &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;           &lt;span class=&#34;keyword&#34;&gt;return&lt;/span&gt; &lt;span class=&#34;keyword&#34;&gt;true&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        &amp;#125;);&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
 &lt;img data-src=&#34;/posts/49a9ac1a/2022-07-05-23-14-13.png&#34; class=&#34;&#34;&gt;
- ]]></description>
-        </item>
-        <item>
-            <guid isPermalink="true">https://smile1231.github.io/posts/f35c5140/</guid>
-            <title>JAVA-jar包运行及日志输出</title>
-            <link>https://smile1231.github.io/posts/f35c5140/</link>
-            <category>SpringBoot</category>
-            <pubDate>Tue, 05 Jul 2022 22:01:26 +0800</pubDate>
-            <description><![CDATA[ &lt;p&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly93d3cuY25ibG9ncy5jb20vbHNoLWFkbWluL3AvMTUzNDUxNzYuaHRtbA==&#34;&gt;原文地址&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;一般情况下运行 jar 包，当前是可运行的 jar 包，直接命令&lt;/p&gt;
-&lt;figure class=&#34;highlight java&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;java -jar common.jar &lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;p&gt;按下 &lt;code&gt;ctrl+C&lt;/code&gt;  ，关闭当前 &lt;code&gt;ssh&lt;/code&gt;  或者直接关闭窗口，当前程序都会退出。&lt;/p&gt;
-&lt;span id=&#34;more&#34;&gt;&lt;/span&gt;
-&lt;p&gt;我们在命令的结尾添加  &lt;code&gt;“&amp;amp;”&lt;/code&gt;  ，&amp;amp; 表示该程序可以在后台执行&lt;/p&gt;
-&lt;figure class=&#34;highlight java&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;java -jar common.jar &amp;amp;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;p&gt;但是在当窗口关闭时，程序也会中止运行&lt;/p&gt;
-&lt;figure class=&#34;highlight java&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;nohup java -jar common.jar &amp;amp;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;p&gt;命令最前面个 &lt;code&gt;nohub&lt;/code&gt;  关键字，这样程序就会不挂断运行命令，当 ssh 终端关闭时，程序仍然在运行，当前程序的日志会被写入到当前目录的 &lt;code&gt;nohup.out&lt;/code&gt;  文件中&lt;/p&gt;
-&lt;p&gt;我们可以改下输入的日志文件&lt;/p&gt;
-&lt;figure class=&#34;highlight java&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;nohup java -jar common.jar &amp;gt; log.out &amp;amp;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;p&gt;当前程序的日志会被写入到当前目录的 &lt;code&gt;log.out&lt;/code&gt;  文件中&lt;/p&gt;
-&lt;p&gt;如果不想写日志，可以将日志重定向到  &lt;code&gt;/dev/null&lt;/code&gt;  中， &lt;code&gt;/dev/null&lt;/code&gt;  代表 &lt;code&gt;linux&lt;/code&gt;  的空设备文件，所有往这个文件里面写入的内容都会丢失&lt;/p&gt;
-&lt;figure class=&#34;highlight java&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;nohup java -jar common.jar &amp;gt; /dev/&lt;span class=&#34;keyword&#34;&gt;null&lt;/span&gt; &amp;amp;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;p&gt;标准输出就会不再存在，没有任何地方能够找到输出的内容&lt;/p&gt;
-&lt;figure class=&#34;highlight java&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;nohup java -jar common-api.jar &amp;gt;/dev/&lt;span class=&#34;keyword&#34;&gt;null&lt;/span&gt; &lt;span class=&#34;number&#34;&gt;2&lt;/span&gt;&amp;gt;log.error &amp;amp; &lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;p&gt;只输出错误信息到日志文件，标准输出不写入日志文件，直接丢弃&lt;/p&gt;
-&lt;figure class=&#34;highlight java&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;nohup java -jar common-api.jar &amp;gt;/dev/&lt;span class=&#34;keyword&#34;&gt;null&lt;/span&gt; &lt;span class=&#34;number&#34;&gt;2&lt;/span&gt;&amp;gt;&amp;amp;&lt;span class=&#34;number&#34;&gt;1&lt;/span&gt; &amp;amp; &lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;p&gt;标准输出 &lt;code&gt;(stdout)&lt;/code&gt;  重定向到 &lt;code&gt;/dev/null&lt;/code&gt;  中（丢弃标准输出），然后标准错误输出 &lt;code&gt;(stderror)&lt;/code&gt;  由于重用了标准输出的描述符，所以标准错误输出也被定向到了 &lt;code&gt;/dev/null&lt;/code&gt;  中，错误输出同样也被丢弃了&lt;/p&gt;
-&lt;figure class=&#34;highlight java&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;nohup java -jar common-api.jar &amp;gt;log.out &lt;span class=&#34;number&#34;&gt;2&lt;/span&gt;&amp;gt;&amp;amp;&lt;span class=&#34;number&#34;&gt;1&lt;/span&gt; &amp;amp; &lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;p&gt;标准输出重定向到 &lt;code&gt;log.out&lt;/code&gt;  中，然后错误输出由于重用了标准输出的描述符，所以错误输出也被定向到了 &lt;code&gt;log.out&lt;/code&gt;  中&lt;/p&gt;
-&lt;p&gt;但是不管那种情况，如果日志输出，日志文件都会增加很快，造成单个文件很大。所以需要拆分文件&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;
-&lt;p&gt;定时作业，每天将日志文件复制一份，然后将当前的日志文件清空。&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;借助  &lt;code&gt;cronolog&lt;/code&gt;  来分隔日志&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ol&gt;
-&lt;figure class=&#34;highlight java&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;nohup java -jar common-api.jar | /usr/local/cronolog/sbin/cronolog logs/console-%Y-%m-%d.out &amp;amp;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;p&gt;这样每天会产生一个 &lt;code&gt;console&lt;/code&gt;  开头的日志文件。&lt;/p&gt;
  ]]></description>
         </item>
     </channel>
