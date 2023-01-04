@@ -20,8 +20,8 @@
         <category>Css</category>
         <category>DDD</category>
         <category>领域驱动设计</category>
-        <category>Docker</category>
         <category>DisPlay属性</category>
+        <category>Docker</category>
         <category>FastJson</category>
         <category>blog</category>
         <category>hexo</category>
@@ -34,9 +34,9 @@
         <category>Jenkins</category>
         <category>CI/CD</category>
         <category>函数式接口</category>
-        <category>Assert</category>
         <category>map</category>
         <category>Stream流</category>
+        <category>Assert</category>
         <category>java</category>
         <category>calender</category>
         <category>Springboot</category>
@@ -86,15 +86,15 @@
         <category>JVM</category>
         <category>Yaml</category>
         <category>Hexo</category>
-        <category>junit</category>
         <category>数据库</category>
+        <category>junit</category>
         <category>Mysql事务</category>
         <category>Git</category>
         <category>git,npm,node</category>
         <category>冒泡排序</category>
         <category>动态规划</category>
-        <category>堆排序</category>
         <category>多线程</category>
+        <category>堆排序</category>
         <category>幂等性</category>
         <category>Google</category>
         <category>流</category>

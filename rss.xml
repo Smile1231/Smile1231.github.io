@@ -20,8 +20,8 @@
         <category>Css</category>
         <category>DDD</category>
         <category>领域驱动设计</category>
-        <category>Docker</category>
         <category>DisPlay属性</category>
+        <category>Docker</category>
         <category>FastJson</category>
         <category>blog</category>
         <category>hexo</category>
@@ -34,9 +34,9 @@
         <category>Jenkins</category>
         <category>CI/CD</category>
         <category>函数式接口</category>
-        <category>Assert</category>
         <category>map</category>
         <category>Stream流</category>
+        <category>Assert</category>
         <category>java</category>
         <category>calender</category>
         <category>Springboot</category>
@@ -86,15 +86,15 @@
         <category>JVM</category>
         <category>Yaml</category>
         <category>Hexo</category>
-        <category>junit</category>
         <category>数据库</category>
+        <category>junit</category>
         <category>Mysql事务</category>
         <category>Git</category>
         <category>git,npm,node</category>
         <category>冒泡排序</category>
         <category>动态规划</category>
-        <category>堆排序</category>
         <category>多线程</category>
+        <category>堆排序</category>
         <category>幂等性</category>
         <category>Google</category>
         <category>流</category>
@@ -260,6 +260,36 @@
 &lt;/blockquote&gt;
 &lt;blockquote&gt;
 &lt;p&gt;just kiffing 开个玩笑&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;you know the drill 你知道该怎么做&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;ashes to ashes, dust to dust 尘归尘，土归土&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;I’m on a diet 我在减肥&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;don’t be childish 别孩子气了&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;people change 人是会变的&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;my hands are tried 我无能为力了&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;finders keepers losers weepers 谁捡归谁，谁丢倒霉&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;humer me 给个面子&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;that’s a good sign 这是个好兆头&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;think outside the box 突破常规&lt;/p&gt;
 &lt;/blockquote&gt;
  ]]></description>
         </item>
