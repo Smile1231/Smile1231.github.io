@@ -21,7 +21,7 @@
 
 <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Mulish:300,300italic,400,400italic,700,700italic%7CFredericka%20the%20Great:300,300italic,400,400italic,700,700italic%7CNoto%20Serif%20JP:300,300italic,400,400italic,700,700italic%7CNoto%20Serif%20SC:300,300italic,400,400italic,700,700italic%7CInconsolata:300,300italic,400,400italic,700,700italic&display=swap&subset=latin,latin-ext">
 
-<link rel="stylesheet" href="/css/app.css?v=0.2.5">
+<link rel="stylesheet" href="/blog/css/app.css?v=0.2.5">
 
   
   <meta name="keywords" content="Java面试,Linux" />
@@ -101,7 +101,7 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
       </div>
     </div>
     <ul class="menu">
-      <li class="item title"><a href="/" rel="start">Jin Mao when to get rich ?</a></li>
+      <li class="item title"><a href="/blog/" rel="start">Jin Mao when to get rich ?</a></li>
     </ul>
     <ul class="right">
       <li class="item theme">
@@ -117,12 +117,12 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
       </div>
       <div id="imgs" class="pjax">
         <ul>
-          <li class="item" data-background-image="https://tva2.sinaimg.cn/large/6833939bly1giclhfehz7j20zk0m8u0x.jpg"></li>
-          <li class="item" data-background-image="https://tva2.sinaimg.cn/large/6833939bly1gicljgocqbj20zk0m8e81.jpg"></li>
-          <li class="item" data-background-image="https://tva2.sinaimg.cn/large/6833939bly1gipewr8iypj20zk0m8b29.jpg"></li>
-          <li class="item" data-background-image="https://tva2.sinaimg.cn/large/6833939bly1gipeyhsblkj20zk0m81kx.jpg"></li>
-          <li class="item" data-background-image="https://tva2.sinaimg.cn/large/6833939bly1gipevo9j1jj20zk0m8e81.jpg"></li>
-          <li class="item" data-background-image="https://tva2.sinaimg.cn/large/6833939bly1gipey84bjtj20zk0m8hdt.jpg"></li>
+          <li class="item" data-background-image="https://tva2.sinaimg.cn/large/6833939bly1gipeudstjqj20zk0m8k3r.jpg"></li>
+          <li class="item" data-background-image="https://tva2.sinaimg.cn/large/6833939bly1gipewf5l51j20zk0m8b29.jpg"></li>
+          <li class="item" data-background-image="https://tva2.sinaimg.cn/large/6833939bly1giclffsa1cj20zk0m811l.jpg"></li>
+          <li class="item" data-background-image="https://tva2.sinaimg.cn/large/6833939bly1gicm07ih54j20zk0m84qp.jpg"></li>
+          <li class="item" data-background-image="https://tva2.sinaimg.cn/large/6833939bly1gipeu1usa7j20zk0m8b29.jpg"></li>
+          <li class="item" data-background-image="https://tva2.sinaimg.cn/large/6833939bly1gicm0fdw5cj20zk0m8hdt.jpg"></li>
         </ul>
       </div>
     </header>
@@ -147,14 +147,14 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
     
 <div class="breadcrumb" itemscope itemtype="https://schema.org/BreadcrumbList">
 <i class="ic i-home"></i>
-<span><a href="/">Home</a></span>
+<span><a href="/blog/">Home</a></span>
 </div>
 
     <article itemscope itemtype="http://schema.org/Article" class="post block" lang="en">
   <link itemprop="mainEntityOfPage" href="https://smile1231.github.io/posts/56be7cc9/">
 
   <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-    <meta itemprop="image" content="/images/avatar.png">
+    <meta itemprop="image" content="/blog/images/avatar.png">
     <meta itemprop="name" content="JIN Mao">
     <meta itemprop="description" content="got windy(起风了), ">
   </span>
@@ -166,143 +166,136 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
   <div class="body md" itemprop="articleBody">
     
 
-    <h2 id="linux命令之top"><a class="markdownIt-Anchor" href="#linux命令之top">#</a>  <code>Linux</code>  命令之 <code>top</code></h2>
-<blockquote>
+    <h2 id="Linux命令之top"><a href="#Linux命令之top" class="headerlink" title="Linux命令之top"></a><code>Linux</code>命令之<code>top</code></h2><blockquote>
 <p>top - 整机性能查看</p>
 </blockquote>
 <span id="more"></span>
-<img data-src="/posts/56be7cc9/2022-03-13-22-54-06.png" class="">
-<img data-src="/posts/56be7cc9/2022-03-13-22-58-37.png" class="">
-<p>主要看 <code>load average, CPU, MEN</code>  三部分</p>
+
+<img data-src="/blog/posts/56be7cc9/2022-03-13-22-54-06.png" class="">
+
+<img data-src="/blog/posts/56be7cc9/2022-03-13-22-58-37.png" class="">
+
+<p>主要看<code>load average, CPU, MEN</code>三部分</p>
 <ul>
-<li><code>load average</code>  表示系统负载，即任务队列的平均长度。 三个数值分别为  <code>1</code>  分钟、 <code>5</code>  分钟、 <code>15</code>  分钟前到现在的平均值。</li>
-<li><code>load average</code> : 如果这个数除以逻辑 <code>CPU</code>  的数量，结果高于 <code>5</code>  的时候就表明系统在超负荷运转了。</li>
+<li><code>load average</code>表示系统负载，即任务队列的平均长度。 三个数值分别为 <code>1</code>分钟、<code>5</code>分钟、<code>15</code>分钟前到现在的平均值。</li>
+<li><code>load average</code>: 如果这个数除以逻辑<code>CPU</code>的数量，结果高于<code>5</code>的时候就表明系统在超负荷运转了。</li>
 </ul>
-<p><a target="_blank" rel="noopener" href="https://yjclsx.blog.csdn.net/article/details/81508455"> <code>Linux</code>  中 <code>top</code>  命令参数详解</a></p>
+<p><a target="_blank" rel="noopener" href="https://yjclsx.blog.csdn.net/article/details/81508455"><code>Linux</code>中<code>top</code>命令参数详解</a></p>
 <blockquote>
 <p>uptime - 系统性能命令的精简版</p>
 </blockquote>
-<img data-src="/posts/56be7cc9/2022-03-13-23-00-56.png" class="">
-<h2 id="linux之cpu查看vmstat-mac中为vm_stat"><a class="markdownIt-Anchor" href="#linux之cpu查看vmstat-mac中为vm_stat">#</a>  <code>Linux</code>  之 <code>cpu</code>  查看 <code>vmstat</code>  ( <code>mac</code>  中为 <code>vm_stat</code> )</h2>
-<img data-src="/posts/56be7cc9/2022-03-13-23-05-38.png" class="">
+<img data-src="/blog/posts/56be7cc9/2022-03-13-23-00-56.png" class="">
+
+<h2 id="Linux之cpu查看vmstat-mac中为vm-stat"><a href="#Linux之cpu查看vmstat-mac中为vm-stat" class="headerlink" title="Linux之cpu查看vmstat (mac中为vm_stat)"></a><code>Linux</code>之<code>cpu</code>查看<code>vmstat</code> (<code>mac</code>中为<code>vm_stat</code>)</h2><img data-src="/blog/posts/56be7cc9/2022-03-13-23-05-38.png" class="">
+
 <ul>
-<li><code>procs</code>
-<ul>
-<li><code>r</code> ：运行和等待的 <code>CPU</code>  时间片的进程数，原则上 <code>1</code>  核的 <code>CPU</code>  的运行队列不要超过 <code>2</code> ，整个系统的运行队列不超过总核数的 2 倍，否则代表系统压力过大，我们看蘑菇博客测试服务器，能发现都超过了 <code>2</code> ，说明现在压力过大</li>
-<li><code>b</code> ：等待资源的进程数，比如正在等待磁盘 <code>I/O</code> 、网络 <code>I/O</code>  等</li>
+<li><code>procs</code><ul>
+<li><code>r</code>：运行和等待的<code>CPU</code>时间片的进程数，原则上<code>1</code>核的<code>CPU</code>的运行队列不要超过<code>2</code>，整个系统的运行队列不超过总核数的2倍，否则代表系统压力过大，我们看蘑菇博客测试服务器，能发现都超过了<code>2</code>，说明现在压力过大</li>
+<li><code>b</code>：等待资源的进程数，比如正在等待磁盘<code>I/O</code>、网络<code>I/O</code>等</li>
 </ul>
 </li>
-<li><code>cpu</code> <br>
- <code>us</code> ：用户进程消耗 <code>CPU</code>  时间百分比， <code>us</code>  值高，用户进程消耗 <code>CPU</code>  时间多，如果长期大于 <code>50%</code> ，优化程序<br>
- <code>sy</code> ：内核进程消耗的 CPU 时间百分比<br>
- <code>us + sy </code> 参考值为 <code>80%</code> ，如果 <code>us + sy</code>  大于 <code>80%</code> ，说明可能存在 <code>CPU</code>  不足，从上面的图片可以看出， <code>us + sy</code>  还没有超过百分 80，因此说明蘑菇博客的 <code>CPU</code>  消耗不是很高<br>
- <code>id</code> ：处于空闲的 <code>CPU</code>  百分比<br>
- <code>wa</code> ：系统等待 <code>IO</code>  的 <code>CPU</code>  时间百分比<br>
- <code>st</code> ：来自于一个虚拟机偷取的 <code>CPU</code>  时间比</li>
+<li><code>cpu</code><br>  <code>us</code>：用户进程消耗<code>CPU</code>时间百分比，<code>us</code>值高，用户进程消耗<code>CPU</code>时间多，如果长期大于<code>50%</code>，优化程序<br>  <code>sy</code>：内核进程消耗的CPU时间百分比<br>  <code>us + sy </code>参考值为<code>80%</code>，如果<code>us + sy</code> 大于<code>80%</code>，说明可能存在<code>CPU</code>不足，从上面的图片可以看出，<code>us + sy</code>还没有超过百分80，因此说明蘑菇博客的<code>CPU</code>消耗不是很高<br>  <code>id</code>：处于空闲的<code>CPU</code>百分比<br>  <code>wa</code>：系统等待<code>IO</code>的<code>CPU</code>时间百分比<br>  <code>st</code>：来自于一个虚拟机偷取的<code>CPU</code>时间比</li>
 </ul>
-<h2 id="linux之cpu查看pidstatmac中没有"><a class="markdownIt-Anchor" href="#linux之cpu查看pidstatmac中没有">#</a>  <code>Linux</code>  之 <code>cpu</code>  查看 <code>pidstat</code> （ <code>Mac</code>  中没有）</h2>
-<p>查看看所有 <code>cpu</code>  核信息</p>
+<h2 id="Linux之cpu查看pidstat（Mac中没有）"><a href="#Linux之cpu查看pidstat（Mac中没有）" class="headerlink" title="Linux之cpu查看pidstat（Mac中没有）"></a><code>Linux</code>之<code>cpu</code>查看<code>pidstat</code>（<code>Mac</code>中没有）</h2><p>查看看所有<code>cpu</code>核信息</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">mpstat -P ALL 2</span><br></pre></td></tr></table></figure>
-<img data-src="/posts/56be7cc9/2022-03-13-23-10-51.png" class="">
-<p>每个进程使用 <code>cpu</code>  的用量分解信息</p>
+
+<img data-src="/blog/posts/56be7cc9/2022-03-13-23-10-51.png" class="">
+
+
+<p>每个进程使用<code>cpu</code>的用量分解信息</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">pidstat -u 1 -p 进程编号</span><br></pre></td></tr></table></figure>
-<img data-src="/posts/56be7cc9/2022-03-13-23-11-14.png" class="">
-<h2 id="linux之内存查看free和pidstatmac中没有"><a class="markdownIt-Anchor" href="#linux之内存查看free和pidstatmac中没有">#</a>  <code>Linux</code>  之内存查看 <code>free</code>  和 <code>pidstat</code> （ <code>Mac</code>  中没有）</h2>
-<p>应用程序可用内存数</p>
+<img data-src="/blog/posts/56be7cc9/2022-03-13-23-11-14.png" class="">
+
+
+
+<h2 id="Linux之内存查看free和pidstat（Mac中没有）"><a href="#Linux之内存查看free和pidstat（Mac中没有）" class="headerlink" title="Linux之内存查看free和pidstat（Mac中没有）"></a><code>Linux</code>之内存查看<code>free</code>和<code>pidstat</code>（<code>Mac</code>中没有）</h2><p>应用程序可用内存数</p>
 <p>经验值</p>
-<p>应用程序可用内存 l 系统物理内存 &gt; <code>70%</code>  内存充足</p>
-<p>应用程序可用内存 / 系统物理内存 &lt; <code>20%</code>  内存不足，需要增加内存</p>
-<p><code>20%</code> &lt; 应用程序可用内存 / 系统物理内存 &lt; <code>70%</code>  内存基本够用</p>
-<p><code>m/g</code> ：兆 / 吉</p>
-<img data-src="/posts/56be7cc9/2022-03-13-23-12-13.png" class="">
+<p>应用程序可用内存l系统物理内存&gt;<code>70%</code>内存充足</p>
+<p>应用程序可用内存/系统物理内存&lt;<code>20%</code>内存不足，需要增加内存</p>
+<p><code>20%</code>&lt;应用程序可用内存/系统物理内存&lt;<code>70%</code>内存基本够用</p>
+<p><code>m/g</code>：兆/吉</p>
+<img data-src="/blog/posts/56be7cc9/2022-03-13-23-12-13.png" class="">
+
 <p>查看额外</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">pidstat -p 进程号 -r 采样间隔秒数</span><br></pre></td></tr></table></figure>
-<h2 id="linux之硬盘查看df"><a class="markdownIt-Anchor" href="#linux之硬盘查看df">#</a>  <code>Linux</code>  之硬盘查看 <code>df</code></h2>
-<p>查看磁盘剩余空间数</p>
-<img data-src="/posts/56be7cc9/2022-03-13-23-13-22.png" class="">
-<h2 id="linux之磁盘io查看iostat和pidstat"><a class="markdownIt-Anchor" href="#linux之磁盘io查看iostat和pidstat">#</a>  <code>Linux</code>  之磁盘 <code>IO</code>  查看 <code>iostat</code>  和 <code>pidstat</code></h2>
-<p>磁盘 <code>I/O</code>  性能评估<br>
- <code>mac</code> :</p>
-<img data-src="/posts/56be7cc9/2022-03-13-23-16-06.png" class="">
-<p><code>linux</code> :</p>
-<img data-src="/posts/56be7cc9/2022-03-13-23-16-54.png" class="">
+
+<h2 id="Linux之硬盘查看df"><a href="#Linux之硬盘查看df" class="headerlink" title="Linux之硬盘查看df"></a><code>Linux</code>之硬盘查看<code>df</code></h2><p>查看磁盘剩余空间数</p>
+<img data-src="/blog/posts/56be7cc9/2022-03-13-23-13-22.png" class="">
+
+<h2 id="Linux之磁盘IO查看iostat和pidstat"><a href="#Linux之磁盘IO查看iostat和pidstat" class="headerlink" title="Linux之磁盘IO查看iostat和pidstat"></a><code>Linux</code>之磁盘<code>IO</code>查看<code>iostat</code>和<code>pidstat</code></h2><p>磁盘<code>I/O</code>性能评估<br><code>mac</code>:</p>
+<img data-src="/blog/posts/56be7cc9/2022-03-13-23-16-06.png" class="">
+
+<p><code>linux</code>:</p>
+<img data-src="/blog/posts/56be7cc9/2022-03-13-23-16-54.png" class="">
+
 <p>磁盘块设备分布</p>
 <ul>
-<li><code>rkB/s</code>  每秒读取数据量 <code>kB;wkB/s</code>  每秒写入数据量 <code>kB</code> ;</li>
-<li><code>svctm lO</code>  请求的平均服务时间，单位毫秒；</li>
-<li><code>await l/O</code>  请求的平均等待时间，单位毫秒；值越小，性能越好；</li>
-<li><code>util</code>  一秒中有百分几的时间用于 <code>I/O</code>  操作。接近 <code>100%</code>  时，表示磁盘带宽跑满，需要优化程序或者增加磁盘；</li>
-<li><code>rkB/s、wkB/s</code>  根据系统应用不同会有不同的值，但有规律遵循：长期、超大数据读写，肯定不正常，需要优化程序读取。</li>
-<li><code>svctm</code>  的值与 <code>await</code>  的值很接近，表示几乎没有 IO 等待，磁盘性能好。</li>
-<li>如果 <code>await</code>  的值远高于 <code>svctm</code>  的值，则表示 <code>IO</code>  队列等待太长，需要优化程序或更换更快磁盘。</li>
+<li><code>rkB/s</code>每秒读取数据量<code>kB;wkB/s</code>每秒写入数据量<code>kB</code>;</li>
+<li><code>svctm lO</code>请求的平均服务时间，单位毫秒;</li>
+<li><code>await l/O</code>请求的平均等待时间，单位毫秒;值越小，性能越好;</li>
+<li><code>util</code>一秒中有百分几的时间用于<code>I/O</code>操作。接近<code>100%</code>时，表示磁盘带宽跑满，需要优化程序或者增加磁盘;</li>
+<li><code>rkB/s、wkB/s</code>根据系统应用不同会有不同的值，但有规律遵循:长期、超大数据读写，肯定不正常，需要优化程序读取。</li>
+<li><code>svctm</code>的值与<code>await</code>的值很接近，表示几乎没有IO等待，磁盘性能好。</li>
+<li>如果<code>await</code>的值远高于<code>svctm</code>的值，则表示<code>IO</code>队列等待太长，需要优化程序或更换更快磁盘。</li>
 </ul>
-<h2 id="linux之网络io查看ifstat"><a class="markdownIt-Anchor" href="#linux之网络io查看ifstat">#</a>  <code>Linux</code>  之网络 <code>IO</code>  查看 <code>ifstat</code></h2>
-<p>默认本地没有，下载 <code>ifstat</code></p>
+<h2 id="Linux之网络IO查看ifstat"><a href="#Linux之网络IO查看ifstat" class="headerlink" title="Linux之网络IO查看ifstat"></a><code>Linux</code>之网络<code>IO</code>查看<code>ifstat</code></h2><p>默认本地没有，下载<code>ifstat</code></p>
 <figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">wget http://gael.roualland.free.fr/lifstat/ifstat-1.1.tar.gz</span><br><span class="line">tar -xzvf ifstat-1.1.tar.gz</span><br><span class="line">cd ifstat-1.1</span><br><span class="line">./configure</span><br><span class="line">make</span><br><span class="line">make install</span><br></pre></td></tr></table></figure>
-<p>查看网络 <code>IO</code></p>
-<p>各个网卡的 <code>in、out</code></p>
+<p>查看网络<code>IO</code></p>
+<p>各个网卡的<code>in、out</code></p>
 <p>观察网络负载情况程序</p>
 <p>网络读写是否正常</p>
 <ul>
-<li>程序网络 <code>I/O</code>  优化</li>
-<li>增加网络 <code>I/O</code>  带宽</li>
+<li>程序网络<code>I/O</code>优化</li>
+<li>增加网络<code>I/O</code>带宽</li>
 </ul>
-<img data-src="/posts/56be7cc9/2022-03-13-23-19-52.png" class="">
-<h2 id="linux查看物理cpu个数-核数-逻辑cpu个数"><a class="markdownIt-Anchor" href="#linux查看物理cpu个数-核数-逻辑cpu个数">#</a>  <code>Linux</code>  查看物理 <code>CPU</code>  个数、核数、逻辑 <code>CPU</code>  个数</h2>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 总核数 = 物理CPU个数 X 每颗物理CPU的核数 </span></span><br><span class="line"><span class="comment"># 总逻辑CPU数 = 物理CPU个数 X 每颗物理CPU的核数 X 超线程数</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 查看物理CPU个数</span></span><br><span class="line">cat /proc/cpuinfo| grep <span class="string">&quot;physical id&quot;</span>| sort| uniq| wc -l</span><br><span class="line"></span><br><span class="line"><span class="comment"># 查看每个物理CPU中core的个数(即核数)</span></span><br><span class="line">cat /proc/cpuinfo| grep <span class="string">&quot;cpu cores&quot;</span>| uniq</span><br><span class="line"></span><br><span class="line"><span class="comment"># 查看逻辑CPU的个数 , 这是我们关心的,涉及到线程池大小</span></span><br><span class="line">cat /proc/cpuinfo| grep <span class="string">&quot;processor&quot;</span>| wc -l</span><br></pre></td></tr></table></figure>
+<img data-src="/blog/posts/56be7cc9/2022-03-13-23-19-52.png" class="">
+
+<h2 id="Linux查看物理CPU个数、核数、逻辑CPU个数"><a href="#Linux查看物理CPU个数、核数、逻辑CPU个数" class="headerlink" title="Linux查看物理CPU个数、核数、逻辑CPU个数"></a><code>Linux</code>查看物理<code>CPU</code>个数、核数、逻辑<code>CPU</code>个数</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 总核数 = 物理CPU个数 X 每颗物理CPU的核数 </span></span><br><span class="line"><span class="comment"># 总逻辑CPU数 = 物理CPU个数 X 每颗物理CPU的核数 X 超线程数</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 查看物理CPU个数</span></span><br><span class="line">cat /proc/cpuinfo| grep <span class="string">&quot;physical id&quot;</span>| sort| uniq| wc -l</span><br><span class="line"></span><br><span class="line"><span class="comment"># 查看每个物理CPU中core的个数(即核数)</span></span><br><span class="line">cat /proc/cpuinfo| grep <span class="string">&quot;cpu cores&quot;</span>| uniq</span><br><span class="line"></span><br><span class="line"><span class="comment"># 查看逻辑CPU的个数 , 这是我们关心的,涉及到线程池大小</span></span><br><span class="line">cat /proc/cpuinfo| grep <span class="string">&quot;processor&quot;</span>| wc -l</span><br></pre></td></tr></table></figure>
+
 <blockquote>
 <p>查看服务器信息指令</p>
 </blockquote>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#查看CPU信息（型号）</span></span><br><span class="line">cat /proc/cpuinfo | grep name | cut -f2 -d: | uniq -c</span><br><span class="line"></span><br><span class="line"><span class="comment">#查看内存信息</span></span><br><span class="line">cat /proc/meminfo</span><br><span class="line"></span><br><span class="line"><span class="comment">#如何查看Linux 内核</span></span><br><span class="line">uname -a</span><br><span class="line">cat /proc/version</span><br><span class="line"></span><br><span class="line"><span class="comment">#查看机器型号（机器硬件型号）</span></span><br><span class="line">dmidecode | grep <span class="string">&quot;Product Name&quot;</span></span><br><span class="line">dmidecode</span><br><span class="line"></span><br><span class="line"><span class="comment">#如何查看linux 系统版本</span></span><br><span class="line">cat /etc/redhat-release</span><br><span class="line">lsb_release -a</span><br><span class="line">cat  /etc/issue</span><br><span class="line"> </span><br><span class="line"><span class="comment">#如何查看linux系统和CPU型号，类型和大小</span></span><br><span class="line">cat /proc/cpuinfo</span><br><span class="line"></span><br><span class="line"><span class="comment">#如何查看linux 系统内存大小的信息，可以查看总内存，剩余内存，可使用内存等信息  </span></span><br><span class="line">cat /proc/meminfo</span><br></pre></td></tr></table></figure>
-<h2 id="cpu占用过高的定位分析思路"><a class="markdownIt-Anchor" href="#cpu占用过高的定位分析思路">#</a>  <code>CPU</code>  占用过高的定位分析思路</h2>
-<p>结合 <code>Linux</code>  和 <code>JDK</code>  命令一块分析</p>
+
+
+
+<h2 id="CPU占用过高的定位分析思路"><a href="#CPU占用过高的定位分析思路" class="headerlink" title="CPU占用过高的定位分析思路"></a><code>CPU</code>占用过高的定位分析思路</h2><p>结合<code>Linux</code>和<code>JDK</code>命令一块分析</p>
 <p>案例步骤</p>
 <ul>
-<li>先用 <code>top</code>  命令找出 <code>CPU</code>  占比最高的</li>
+<li>先用<code>top</code>命令找出<code>CPU</code>占比最高的</li>
 </ul>
-<img data-src="/posts/56be7cc9/2022-03-13-23-20-27.png" class="">
+<img data-src="/blog/posts/56be7cc9/2022-03-13-23-20-27.png" class="">
+
 <ul>
-<li><code>ps -ef</code>  或者 <code>jps</code>  进一步定位，得知是一个怎么样的一个后台程序作搞屎棍</li>
-</ul>
-<img data-src="/posts/56be7cc9/2022-03-13-23-24-51.png" class="">
+<li><p><code>ps -ef</code>或者<code>jps</code>进一步定位，得知是一个怎么样的一个后台程序作搞屎棍</p>
+<img data-src="/blog/posts/56be7cc9/2022-03-13-23-24-51.png" class=""></li>
+<li><p>定位到具体线程或者代码</p>
 <ul>
-<li>定位到具体线程或者代码
-<ul>
-<li><code>ps -mp</code>  进程  <code>-o THREAD,tid,time</code></li>
-<li><code>-m</code>  显示所有的线程</li>
-<li><code>-p pid</code>  进程使用 <code>cpu</code>  的时间</li>
-<li><code>-o</code>  该参数后是用户自定义格式</li>
+<li><code>ps -mp</code> 进程 <code>-o THREAD,tid,time</code></li>
+<li><code>-m</code> 显示所有的线程</li>
+<li><code>-p pid</code>进程使用<code>cpu</code>的时间</li>
+<li><code>-o</code> 该参数后是用户自定义格式</li>
 </ul>
 </li>
 </ul>
-<img data-src="/posts/56be7cc9/2022-03-13-23-25-31.png" class="">
+<img data-src="/blog/posts/56be7cc9/2022-03-13-23-25-31.png" class="">
+
 <ul>
-<li>将需要的线程 <code>ID</code>  转换为 <code>16</code>  进制格式（英文小写格式），命令 <code>printf %x 172 </code> 将 <code>172</code>  转换为十六进制</li>
-<li><code>jstack 进程ID | grep tid</code> （ <code>16</code>  进制线程 <code>ID</code>  小写英文） <code>-A60</code></li>
+<li>将需要的线程<code>ID</code>转换为<code>16</code>进制格式（英文小写格式），命令<code>printf %x 172 </code>将<code>172</code>转换为十六进制</li>
+<li><code>jstack 进程ID | grep tid</code>（<code>16</code>进制线程<code>ID</code>小写英文）<code>-A60</code></li>
 </ul>
 <blockquote>
-<p>ps - process status<br>
--A Display information about other users’ processes, including those without controlling terminals.<br>
--e Identical to -A.<br>
--f Display the uid, pid, parent pid, recent CPU usage, process start time, controlling tty, elapsed CPU usage, and the associated command. If the -u option is also used, display the user name rather then the numeric uid. When -o or -O is used to add to the display following -f, the command field is not truncated as severely as it is in other formats.<br>
-<span class="exturl" data-url="aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2x6dWZlbmcvYXJ0aWNsZS9kZXRhaWxzLzgzNTM3Mjc1">ps -ef 中的 e、f 是什么含义</span></p>
+<p>ps - process status<br>-A Display information about other users’ processes, including those without controlling terminals.<br>-e Identical to -A.<br>-f Display the uid, pid, parent pid, recent CPU usage, process start time, controlling tty, elapsed CPU usage, and the associated command. If the -u option is also used, display the user name rather then the numeric uid. When -o or -O is used to add to the display following -f, the command field is not truncated as severely as it is in other formats.<br><span class="exturl" data-url="aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2x6dWZlbmcvYXJ0aWNsZS9kZXRhaWxzLzgzNTM3Mjc1">ps -ef中的e、f是什么含义</span></p>
 </blockquote>
-<p>对于 <code>JDK</code>  自带的 <code>JVM</code>  监控和性能分析工具用过哪些？一般你是怎么用的？<span class="exturl" data-url="aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3UwMTE4NjMwMjQvYXJ0aWNsZS9kZXRhaWxzLzEwNjY1MTA2OA==">link</span></p>
-<h2 id="github骚操作之awesome搜索"><a class="markdownIt-Anchor" href="#github骚操作之awesome搜索">#</a>  <code>GitHub</code>  骚操作之 <code>awesome</code>  搜索</h2>
-<ul>
-<li>公式： <code>awesome</code>  关键字： <code>awesome</code>  系列，一般用来收集学习、工具、书籍类相关的项目</li>
-<li>搜索优秀的 <code>redis</code>  相关的项目，包括框架，教程等  <code>awesome redis</code></li>
+<p>对于<code>JDK</code>自带的<code>JVM</code>监控和性能分析工具用过哪些?一般你是怎么用的?<span class="exturl" data-url="aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3UwMTE4NjMwMjQvYXJ0aWNsZS9kZXRhaWxzLzEwNjY1MTA2OA==">link</span></p>
+<h2 id="GitHub骚操作之awesome搜索"><a href="#GitHub骚操作之awesome搜索" class="headerlink" title="GitHub骚操作之awesome搜索"></a><code>GitHub</code>骚操作之<code>awesome</code>搜索</h2><ul>
+<li>公式：<code>awesome</code> 关键字：<code>awesome</code>系列，一般用来收集学习、工具、书籍类相关的项目</li>
+<li>搜索优秀的<code>redis</code>相关的项目，包括框架，教程等 <code>awesome redis</code><h2 id="GitHub骚操作之-L数字"><a href="#GitHub骚操作之-L数字" class="headerlink" title="GitHub骚操作之#L数字"></a><code>GitHub</code>骚操作之<code>#L</code>数字</h2>一行：地址后面紧跟 <code>#L10</code><br><code>https://github.com/abc/abc/pom.xml#L13</code><br>多行：地址后面紧跟 <code>#Lx - #Ln</code><br><code>https://github.com/moxi624/abc/abc/pom.xml#L13-L30</code><h2 id="GitHub骚操作之T搜索"><a href="#GitHub骚操作之T搜索" class="headerlink" title="GitHub骚操作之T搜索"></a><code>GitHub</code>骚操作之<code>T</code>搜索</h2></li>
 </ul>
-<h2 id="github骚操作之l数字"><a class="markdownIt-Anchor" href="#github骚操作之l数字">#</a>  <code>GitHub</code>  骚操作之 <code>#L</code>  数字</h2>
-<p>一行：地址后面紧跟  <code>#L10</code> <br>
- <code>https://github.com/abc/abc/pom.xml#L13</code> <br>
- 多行：地址后面紧跟  <code>#Lx - #Ln</code> <br>
- <code>https://github.com/moxi624/abc/abc/pom.xml#L13-L30</code></p>
-<h2 id="github骚操作之t搜索"><a class="markdownIt-Anchor" href="#github骚操作之t搜索">#</a>  <code>GitHub</code>  骚操作之 <code>T</code>  搜索</h2>
-<img data-src="/posts/56be7cc9/2022-03-13-23-31-47.png" class="">
+<img data-src="/blog/posts/56be7cc9/2022-03-13-23-31-47.png" class="">
       <div class="tags">
-          <a href="/tags/Java%E9%9D%A2%E8%AF%95/" rel="tag"><i class="ic i-tag"></i> Java面试</a>
-          <a href="/tags/Linux/" rel="tag"><i class="ic i-tag"></i> Linux</a>
+          <a href="/blog/tags/Java%E9%9D%A2%E8%AF%95/" rel="tag"><i class="ic i-tag"></i> Java面试</a>
+          <a href="/blog/tags/Linux/" rel="tag"><i class="ic i-tag"></i> Linux</a>
       </div>
   </div>
 
@@ -354,7 +347,7 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
     <div class="item left">
       
 
-  <a href="/posts/a72f470b/" itemprop="url" rel="prev" data-background-image="https:&#x2F;&#x2F;tva2.sinaimg.cn&#x2F;mw690&#x2F;6833939bly1giclxp31goj20zk0m8qv5.jpg" title="关于JVM常用参数">
+  <a href="/blog/posts/a72f470b/" itemprop="url" rel="prev" data-background-image="https:&#x2F;&#x2F;tva2.sinaimg.cn&#x2F;mw690&#x2F;6833939bly1giciukx8a7j20zk0m8aio.jpg" title="关于JVM常用参数">
   <span class="type">Previous Post</span>
   <span class="category"><i class="ic i-flag"></i> </span>
   <h3>关于JVM常用参数</h3>
@@ -364,7 +357,7 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
     <div class="item right">
       
 
-  <a href="/posts/159c6098/" itemprop="url" rel="next" data-background-image="https:&#x2F;&#x2F;tva2.sinaimg.cn&#x2F;mw690&#x2F;6833939bly1giclffsa1cj20zk0m811l.jpg" title="阻塞队列">
+  <a href="/blog/posts/159c6098/" itemprop="url" rel="next" data-background-image="https:&#x2F;&#x2F;tva2.sinaimg.cn&#x2F;mw690&#x2F;6833939bly1giclhnx9glj20zk0m8npd.jpg" title="阻塞队列">
   <span class="type">Next Post</span>
   <span class="category"><i class="ic i-flag"></i> </span>
   <h3>阻塞队列</h3>
@@ -386,33 +379,33 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
   <div class="panels">
     <div class="inner">
       <div class="contents panel pjax" data-title="Contents">
-          <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#linux%E5%91%BD%E4%BB%A4%E4%B9%8Btop"><span class="toc-number">1.</span> <span class="toc-text">  Linux  命令之 top</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#linux%E4%B9%8Bcpu%E6%9F%A5%E7%9C%8Bvmstat-mac%E4%B8%AD%E4%B8%BAvm_stat"><span class="toc-number">2.</span> <span class="toc-text">  Linux  之 cpu  查看 vmstat  ( mac  中为 vm_stat )</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#linux%E4%B9%8Bcpu%E6%9F%A5%E7%9C%8Bpidstatmac%E4%B8%AD%E6%B2%A1%E6%9C%89"><span class="toc-number">3.</span> <span class="toc-text">  Linux  之 cpu  查看 pidstat （ Mac  中没有）</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#linux%E4%B9%8B%E5%86%85%E5%AD%98%E6%9F%A5%E7%9C%8Bfree%E5%92%8Cpidstatmac%E4%B8%AD%E6%B2%A1%E6%9C%89"><span class="toc-number">4.</span> <span class="toc-text">  Linux  之内存查看 free  和 pidstat （ Mac  中没有）</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#linux%E4%B9%8B%E7%A1%AC%E7%9B%98%E6%9F%A5%E7%9C%8Bdf"><span class="toc-number">5.</span> <span class="toc-text">  Linux  之硬盘查看 df</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#linux%E4%B9%8B%E7%A3%81%E7%9B%98io%E6%9F%A5%E7%9C%8Biostat%E5%92%8Cpidstat"><span class="toc-number">6.</span> <span class="toc-text">  Linux  之磁盘 IO  查看 iostat  和 pidstat</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#linux%E4%B9%8B%E7%BD%91%E7%BB%9Cio%E6%9F%A5%E7%9C%8Bifstat"><span class="toc-number">7.</span> <span class="toc-text">  Linux  之网络 IO  查看 ifstat</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#linux%E6%9F%A5%E7%9C%8B%E7%89%A9%E7%90%86cpu%E4%B8%AA%E6%95%B0-%E6%A0%B8%E6%95%B0-%E9%80%BB%E8%BE%91cpu%E4%B8%AA%E6%95%B0"><span class="toc-number">8.</span> <span class="toc-text">  Linux  查看物理 CPU  个数、核数、逻辑 CPU  个数</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#cpu%E5%8D%A0%E7%94%A8%E8%BF%87%E9%AB%98%E7%9A%84%E5%AE%9A%E4%BD%8D%E5%88%86%E6%9E%90%E6%80%9D%E8%B7%AF"><span class="toc-number">9.</span> <span class="toc-text">  CPU  占用过高的定位分析思路</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#github%E9%AA%9A%E6%93%8D%E4%BD%9C%E4%B9%8Bawesome%E6%90%9C%E7%B4%A2"><span class="toc-number">10.</span> <span class="toc-text">  GitHub  骚操作之 awesome  搜索</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#github%E9%AA%9A%E6%93%8D%E4%BD%9C%E4%B9%8Bl%E6%95%B0%E5%AD%97"><span class="toc-number">11.</span> <span class="toc-text">  GitHub  骚操作之 #L  数字</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#github%E9%AA%9A%E6%93%8D%E4%BD%9C%E4%B9%8Bt%E6%90%9C%E7%B4%A2"><span class="toc-number">12.</span> <span class="toc-text">  GitHub  骚操作之 T  搜索</span></a></li></ol>
+          <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#Linux%E5%91%BD%E4%BB%A4%E4%B9%8Btop"><span class="toc-number">1.</span> <span class="toc-text">Linux命令之top</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Linux%E4%B9%8Bcpu%E6%9F%A5%E7%9C%8Bvmstat-mac%E4%B8%AD%E4%B8%BAvm-stat"><span class="toc-number">2.</span> <span class="toc-text">Linux之cpu查看vmstat (mac中为vm_stat)</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Linux%E4%B9%8Bcpu%E6%9F%A5%E7%9C%8Bpidstat%EF%BC%88Mac%E4%B8%AD%E6%B2%A1%E6%9C%89%EF%BC%89"><span class="toc-number">3.</span> <span class="toc-text">Linux之cpu查看pidstat（Mac中没有）</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Linux%E4%B9%8B%E5%86%85%E5%AD%98%E6%9F%A5%E7%9C%8Bfree%E5%92%8Cpidstat%EF%BC%88Mac%E4%B8%AD%E6%B2%A1%E6%9C%89%EF%BC%89"><span class="toc-number">4.</span> <span class="toc-text">Linux之内存查看free和pidstat（Mac中没有）</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Linux%E4%B9%8B%E7%A1%AC%E7%9B%98%E6%9F%A5%E7%9C%8Bdf"><span class="toc-number">5.</span> <span class="toc-text">Linux之硬盘查看df</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Linux%E4%B9%8B%E7%A3%81%E7%9B%98IO%E6%9F%A5%E7%9C%8Biostat%E5%92%8Cpidstat"><span class="toc-number">6.</span> <span class="toc-text">Linux之磁盘IO查看iostat和pidstat</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Linux%E4%B9%8B%E7%BD%91%E7%BB%9CIO%E6%9F%A5%E7%9C%8Bifstat"><span class="toc-number">7.</span> <span class="toc-text">Linux之网络IO查看ifstat</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Linux%E6%9F%A5%E7%9C%8B%E7%89%A9%E7%90%86CPU%E4%B8%AA%E6%95%B0%E3%80%81%E6%A0%B8%E6%95%B0%E3%80%81%E9%80%BB%E8%BE%91CPU%E4%B8%AA%E6%95%B0"><span class="toc-number">8.</span> <span class="toc-text">Linux查看物理CPU个数、核数、逻辑CPU个数</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#CPU%E5%8D%A0%E7%94%A8%E8%BF%87%E9%AB%98%E7%9A%84%E5%AE%9A%E4%BD%8D%E5%88%86%E6%9E%90%E6%80%9D%E8%B7%AF"><span class="toc-number">9.</span> <span class="toc-text">CPU占用过高的定位分析思路</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#GitHub%E9%AA%9A%E6%93%8D%E4%BD%9C%E4%B9%8Bawesome%E6%90%9C%E7%B4%A2"><span class="toc-number">10.</span> <span class="toc-text">GitHub骚操作之awesome搜索</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#GitHub%E9%AA%9A%E6%93%8D%E4%BD%9C%E4%B9%8B-L%E6%95%B0%E5%AD%97"><span class="toc-number">11.</span> <span class="toc-text">GitHub骚操作之#L数字</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#GitHub%E9%AA%9A%E6%93%8D%E4%BD%9C%E4%B9%8BT%E6%90%9C%E7%B4%A2"><span class="toc-number">12.</span> <span class="toc-text">GitHub骚操作之T搜索</span></a></li></ol>
       </div>
       <div class="related panel pjax" data-title="Related">
       </div>
       <div class="overview panel" data-title="Overview">
         <div class="author" itemprop="author" itemscope itemtype="http://schema.org/Person">
   <img class="image" itemprop="image" alt="JIN Mao"
-      data-src="/images/avatar.png">
+      data-src="/blog/images/avatar.png">
   <p class="name" itemprop="name">JIN Mao</p>
   <div class="description" itemprop="description"></div>
 </div>
 
 <nav class="state">
     <div class="item posts">
-      <a href="/archives/">
+      <a href="/blog/archives/">
         <span class="count">150</span>
         <span class="name">posts</span>
       </a>
     </div>
     <div class="item categories">
-      <a href="/categories/">
+      <a href="/blog/categories/">
         <span class="count">78</span>
         <span class="name">categories</span>
       </a>
     </div>
     <div class="item tags">
-      <a href="/tags/">
+      <a href="/blog/tags/">
         <span class="count">113</span>
         <span class="name">tags</span>
       </a>
@@ -427,12 +420,12 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
   
     
   <li class="item">
-    <a href="/" rel="section"><i class="ic i-home"></i>Home</a>
+    <a href="/blog/" rel="section"><i class="ic i-home"></i>Home</a>
   </li>
 
     
   <li class="item">
-    <a href="/about/" rel="section"><i class="ic i-user"></i>About</a>
+    <a href="/blog/about/" rel="section"><i class="ic i-user"></i>About</a>
   </li>
 
         
@@ -442,17 +435,17 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
 
         
   <li class="item">
-    <a href="/archives/" rel="section"><i class="ic i-list-alt"></i>Archives</a>
+    <a href="/blog/archives/" rel="section"><i class="ic i-list-alt"></i>Archives</a>
   </li>
 
         
   <li class="item">
-    <a href="/categories/" rel="section"><i class="ic i-th"></i>Categories</a>
+    <a href="/blog/categories/" rel="section"><i class="ic i-th"></i>Categories</a>
   </li>
 
         
   <li class="item">
-    <a href="/tags/" rel="section"><i class="ic i-tags"></i>Tags</a>
+    <a href="/blog/tags/" rel="section"><i class="ic i-tags"></i>Tags</a>
   </li>
 
   </ul>
@@ -465,12 +458,12 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
 
   <ul id="quick">
     <li class="prev pjax">
-        <a href="/posts/a72f470b/" rel="prev" title="Previous Post"><i class="ic i-chevron-left"></i></a>
+        <a href="/blog/posts/a72f470b/" rel="prev" title="Previous Post"><i class="ic i-chevron-left"></i></a>
     </li>
     <li class="up"><i class="ic i-arrow-up"></i></li>
     <li class="down"><i class="ic i-arrow-down"></i></li>
     <li class="next pjax">
-        <a href="/posts/159c6098/" rel="next" title="Next Post"><i class="ic i-chevron-right"></i></a>
+        <a href="/blog/posts/159c6098/" rel="next" title="Next Post"><i class="ic i-chevron-right"></i></a>
     </li>
     <li class="percent"></li>
   </ul>
@@ -492,22 +485,43 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
   <li class="item">
     
 <div class="breadcrumb">
-<a href="/categories/Java/" title="In Java">Java</a>
 </div>
 
-    <span><a href="/posts/b536fa7f/" title="关于junit测试类防止事务回滚">关于junit测试类防止事务回滚</a></span>
+    <span><a href="/blog/posts/3c59e6c8/" title="如何让自己的博客被Google以及百度收录">如何让自己的博客被Google以及百度收录</a></span>
   </li>
 
       
   <li class="item">
     
 <div class="breadcrumb">
-<a href="/categories/Java/" title="In Java">Java</a>
+<a href="/blog/categories/DDD/" title="In DDD">DDD</a>
+</div>
+
+    <span><a href="/blog/posts/3fec5852/" title="DDD领域驱动设计">DDD领域驱动设计</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/blog/categories/Java/" title="In Java">Java</a>
 <i class="ic i-angle-right"></i>
-<a href="/categories/Java/Tools/" title="In Tools">Tools</a>
+<a href="/blog/categories/Java/Java%E9%9D%A2%E8%AF%95/" title="In Java面试">Java面试</a>
+<i class="ic i-angle-right"></i>
+<a href="/blog/categories/Java/Java%E9%9D%A2%E8%AF%95/SpringBoot/" title="In SpringBoot">SpringBoot</a>
 </div>
 
-    <span><a href="/posts/817eab42/" title="java中产生指定范围内的随机数">java中产生指定范围内的随机数</a></span>
+    <span><a href="/blog/posts/59de1824/" title="spring中&#x2F;和&#x2F;*和&#x2F;**的区别">spring中/和/*和/**的区别</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/blog/categories/Mybtais/" title="In Mybtais">Mybtais</a>
+</div>
+
+    <span><a href="/blog/posts/9aff665a/" title="mybatis中大于等于小于等于的写法">mybatis中大于等于小于等于的写法</a></span>
   </li>
 
       
@@ -516,57 +530,19 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
 <div class="breadcrumb">
 </div>
 
-    <span><a href="/posts/bf4d20ae/" title="写在最前面">写在最前面</a></span>
+    <span><a href="/blog/posts/66edb7d2/" title="关于hexo使用shoka主题注意点">关于hexo使用shoka主题注意点</a></span>
   </li>
 
       
   <li class="item">
     
 <div class="breadcrumb">
-<a href="/categories/Tools/" title="In Tools">Tools</a>
+<a href="/blog/categories/Java%E9%9D%A2%E8%AF%95/" title="In Java面试">Java面试</a>
+<i class="ic i-angle-right"></i>
+<a href="/blog/categories/Java%E9%9D%A2%E8%AF%95/%E7%AE%97%E6%B3%95/" title="In 算法">算法</a>
 </div>
 
-    <span><a href="/posts/ba83fda/" title="超级好用的StringJoiner">超级好用的StringJoiner</a></span>
-  </li>
-
-      
-  <li class="item">
-    
-<div class="breadcrumb">
-<a href="/categories/Java/" title="In Java">Java</a>
-</div>
-
-    <span><a href="/posts/e18abc1d/" title="关于YAML中List存放Map">关于YAML中List存放Map</a></span>
-  </li>
-
-      
-  <li class="item">
-    
-<div class="breadcrumb">
-<a href="/categories/Daily/" title="In Daily">Daily</a>
-</div>
-
-    <span><a href="/posts/9a0369ec/" title="布隆过滤器">布隆过滤器</a></span>
-  </li>
-
-      
-  <li class="item">
-    
-<div class="breadcrumb">
-<a href="/categories/%E5%89%8D%E7%AB%AF/" title="In 前端">前端</a>
-</div>
-
-    <span><a href="/posts/3eca6246/" title="使用npm时报python错误的解决方案">使用npm时报python错误的解决方案</a></span>
-  </li>
-
-      
-  <li class="item">
-    
-<div class="breadcrumb">
-<a href="/categories/Java/" title="In Java">Java</a>
-</div>
-
-    <span><a href="/posts/60a1e80e/" title="java判断日期周几">java判断日期周几</a></span>
+    <span><a href="/blog/posts/a4ce31d2/" title="贪心算法">贪心算法</a></span>
   </li>
 
       
@@ -575,7 +551,17 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
 <div class="breadcrumb">
 </div>
 
-    <span><a href="/posts/823298d2/" title="VsCode 如何Debug Shell">VsCode 如何Debug Shell</a></span>
+    <span><a href="/blog/posts/307637a3/" title="扫尾">扫尾</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/blog/categories/Java/" title="In Java">Java</a>
+</div>
+
+    <span><a href="/blog/posts/9dcbb5fa/" title="Corn表达式">Corn表达式</a></span>
   </li>
 
       
@@ -584,7 +570,17 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
 <div class="breadcrumb">
 </div>
 
-    <span><a href="/posts/1599bffe/" title="归并排序">归并排序</a></span>
+    <span><a href="/blog/posts/49a9ac1a/" title="Springboot优雅的实现重试">Springboot优雅的实现重试</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/blog/categories/git/" title="In git">git</a>
+</div>
+
+    <span><a href="/blog/posts/2543b551/" title="git项目中统计每个人提交代码行数">git项目中统计每个人提交代码行数</a></span>
   </li>
 
   </ul>
@@ -651,7 +647,7 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
 
 <script src="//cdn.jsdelivr.net/combine/npm/pace-js@1.0.2/pace.min.js,npm/pjax@0.2.8/pjax.min.js,npm/whatwg-fetch@3.4.0/dist/fetch.umd.min.js,npm/animejs@3.2.0/lib/anime.min.js,npm/algoliasearch@4/dist/algoliasearch-lite.umd.js,npm/instantsearch.js@4/dist/instantsearch.production.min.js,npm/lozad@1/dist/lozad.min.js,npm/quicklink@2/dist/quicklink.umd.js"></script>
 
-<script src="/js/app.js?v=0.2.5"></script>
+<script src="/blog/js/app.js?v=0.2.5"></script>
 
 
 

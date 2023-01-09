@@ -21,7 +21,7 @@
 
 <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Mulish:300,300italic,400,400italic,700,700italic%7CFredericka%20the%20Great:300,300italic,400,400italic,700,700italic%7CNoto%20Serif%20JP:300,300italic,400,400italic,700,700italic%7CNoto%20Serif%20SC:300,300italic,400,400italic,700,700italic%7CInconsolata:300,300italic,400,400italic,700,700italic&display=swap&subset=latin,latin-ext">
 
-<link rel="stylesheet" href="/css/app.css?v=0.2.5">
+<link rel="stylesheet" href="/blog/css/app.css?v=0.2.5">
 
   
   <meta name="keywords" content="事务" />
@@ -101,7 +101,7 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
       </div>
     </div>
     <ul class="menu">
-      <li class="item title"><a href="/" rel="start">Jin Mao when to get rich ?</a></li>
+      <li class="item title"><a href="/blog/" rel="start">Jin Mao when to get rich ?</a></li>
     </ul>
     <ul class="right">
       <li class="item theme">
@@ -117,12 +117,12 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
       </div>
       <div id="imgs" class="pjax">
         <ul>
-          <li class="item" data-background-image="https://tva2.sinaimg.cn/large/6833939bly1gicit31ffoj20zk0m8naf.jpg"></li>
-          <li class="item" data-background-image="https://tva2.sinaimg.cn/large/6833939bly1giclxp31goj20zk0m8qv5.jpg"></li>
-          <li class="item" data-background-image="https://tva2.sinaimg.cn/large/6833939bly1giciundwu5j20zk0m8n9e.jpg"></li>
-          <li class="item" data-background-image="https://tva2.sinaimg.cn/large/6833939bly1giclxfdlttj20zk0m8npd.jpg"></li>
-          <li class="item" data-background-image="https://tva2.sinaimg.cn/large/6833939bly1gicmnywqgpj20zk0m8dwx.jpg"></li>
-          <li class="item" data-background-image="https://tva2.sinaimg.cn/large/6833939bly1gipey84bjtj20zk0m8hdt.jpg"></li>
+          <li class="item" data-background-image="https://tva2.sinaimg.cn/large/6833939bly1gicli9lfebj20zk0m84qp.jpg"></li>
+          <li class="item" data-background-image="https://tva2.sinaimg.cn/large/6833939bly1giclh0m9pdj20zk0m8hdt.jpg"></li>
+          <li class="item" data-background-image="https://tva2.sinaimg.cn/large/6833939bly1giclfdu6exj20zk0m87hw.jpg"></li>
+          <li class="item" data-background-image="https://tva2.sinaimg.cn/large/6833939bly1gipet4bz0yj20zk0m8e81.jpg"></li>
+          <li class="item" data-background-image="https://tva2.sinaimg.cn/large/6833939bly1giclhfehz7j20zk0m8u0x.jpg"></li>
+          <li class="item" data-background-image="https://tva2.sinaimg.cn/large/6833939bly1giclg5ms2rj20zk0m8u0x.jpg"></li>
         </ul>
       </div>
     </header>
@@ -147,11 +147,11 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
     
 <div class="breadcrumb" itemscope itemtype="https://schema.org/BreadcrumbList">
 <i class="ic i-home"></i>
-<span><a href="/">Home</a></span><i class="ic i-angle-right"></i>
-<span  itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem"><a href="/categories/Java/" itemprop="item" rel="index" title="In Java"><span itemprop="name">Java</span></a>
+<span><a href="/blog/">Home</a></span><i class="ic i-angle-right"></i>
+<span  itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem"><a href="/blog/categories/Java/" itemprop="item" rel="index" title="In Java"><span itemprop="name">Java</span></a>
 <meta itemprop="position" content="1" /></span>
 <i class="ic i-angle-right"></i>
-<span  class="current" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem"><a href="/categories/Java/Mysql/" itemprop="item" rel="index" title="In Mysql"><span itemprop="name">Mysql</span></a>
+<span  class="current" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem"><a href="/blog/categories/Java/Mysql/" itemprop="item" rel="index" title="In Mysql"><span itemprop="name">Mysql</span></a>
 <meta itemprop="position" content="2" /></span>
 </div>
 
@@ -159,7 +159,7 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
   <link itemprop="mainEntityOfPage" href="https://smile1231.github.io/posts/69c17d37/">
 
   <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-    <meta itemprop="image" content="/images/avatar.png">
+    <meta itemprop="image" content="/blog/images/avatar.png">
     <meta itemprop="name" content="JIN Mao">
     <meta itemprop="description" content="got windy(起风了), ">
   </span>
@@ -173,21 +173,27 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
 
     <p>今天在处理一个问题时始终都没有头绪，主要场景是自己的方法中最后需要调用别人的方法进行回调，但是又同时处在一个大事务中，主要我做了以下场景来模拟</p>
 <span id="more"></span>
+
 <p>数据库表结构：</p>
-<img data-src="/posts/69c17d37/2022-02-10-23-42-40.png" class="">
+<img data-src="/blog/posts/69c17d37/2022-02-10-23-42-40.png" class="">
+
 <p>测试代码：</p>
 <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">@SpringBootTest</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">StudentMapperTest</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">    <span class="meta">@Autowired</span></span><br><span class="line">    <span class="keyword">private</span> StudentDao studentDao;</span><br><span class="line"></span><br><span class="line">    <span class="meta">@Test</span></span><br><span class="line">    <span class="meta">@Transactional(rollbackFor = Exception.class)</span></span><br><span class="line">    <span class="meta">@Rollback(false)</span></span><br><span class="line">    <span class="function"><span class="keyword">void</span> <span class="title">context01</span><span class="params">()</span></span>&#123;</span><br><span class="line"></span><br><span class="line">        <span class="comment">//查询张三</span></span><br><span class="line">        LambdaUpdateWrapper&lt;Student&gt; updateWrapper0 = <span class="keyword">new</span> LambdaUpdateWrapper&lt;&gt;();</span><br><span class="line">        updateWrapper0.eq(Student::getName,<span class="string">&quot;张三&quot;</span>);</span><br><span class="line"></span><br><span class="line">        List&lt;Student&gt; students = studentDao.selectList(updateWrapper0);</span><br><span class="line"></span><br><span class="line">        <span class="comment">//对张三进行修改为张三改</span></span><br><span class="line">        LambdaUpdateWrapper&lt;Student&gt; updateWrapper = <span class="keyword">new</span> LambdaUpdateWrapper&lt;&gt;();</span><br><span class="line">        updateWrapper.eq(Student::getName,<span class="string">&quot;张三&quot;</span>)</span><br><span class="line">                .set(Student::getName,<span class="string">&quot;张三改&quot;</span>);</span><br><span class="line"></span><br><span class="line">        studentDao.update(Student.builder().build(), updateWrapper);</span><br><span class="line"></span><br><span class="line">        <span class="comment">//再度查询张三</span></span><br><span class="line">        LambdaUpdateWrapper&lt;Student&gt; updateWrapper1 = <span class="keyword">new</span> LambdaUpdateWrapper&lt;&gt;();</span><br><span class="line">        updateWrapper1.eq(Student::getName,<span class="string">&quot;张三&quot;</span>);</span><br><span class="line">        List&lt;Student&gt; students1 = studentDao.selectList(updateWrapper1);</span><br><span class="line"></span><br><span class="line">        <span class="comment">//尝试查询修改后的张三改</span></span><br><span class="line">        LambdaUpdateWrapper&lt;Student&gt; updateWrapper2 = <span class="keyword">new</span> LambdaUpdateWrapper&lt;&gt;();</span><br><span class="line">        updateWrapper2.eq(Student::getName,<span class="string">&quot;张三改&quot;</span>);</span><br><span class="line"></span><br><span class="line">        List&lt;Student&gt; students2 = studentDao.selectList(updateWrapper2);</span><br><span class="line"></span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p><code>debug</code>  结果：</p>
-<img data-src="/posts/69c17d37/2022-02-10-23-47-46.png" class="">
-<img data-src="/posts/69c17d37/2022-02-10-23-47-01.png" class="">
+
+<p><code>debug</code>结果：</p>
+<img data-src="/blog/posts/69c17d37/2022-02-10-23-47-46.png" class="">
+
+<img data-src="/blog/posts/69c17d37/2022-02-10-23-47-01.png" class="">
+
 <p><strong>我们可以得到虽然事务没有提交但是同一会话查询时依然是修改后的值，但是此时如果为多线程下，别的线程将不会读取到提交事物之前的结果，这就是数据库的隔离性问题</strong>，此时事务没有提交，数据库结果未改变</p>
-<img data-src="/posts/69c17d37/2022-02-10-23-50-42.png" class="">
+<img data-src="/blog/posts/69c17d37/2022-02-10-23-50-42.png" class="">
+
 <p>当然，只有当程序正常运行结束之后，事务才会提交，数据库才会改变：</p>
-<img data-src="/posts/69c17d37/2022-02-10-23-51-07.png" class="">
+<img data-src="/blog/posts/69c17d37/2022-02-10-23-51-07.png" class="">
 
       <div class="tags">
-          <a href="/tags/Java/" rel="tag"><i class="ic i-tag"></i> Java</a>
-          <a href="/tags/Mysql%E4%BA%8B%E5%8A%A1/" rel="tag"><i class="ic i-tag"></i> Mysql事务</a>
+          <a href="/blog/tags/Java/" rel="tag"><i class="ic i-tag"></i> Java</a>
+          <a href="/blog/tags/Mysql%E4%BA%8B%E5%8A%A1/" rel="tag"><i class="ic i-tag"></i> Mysql事务</a>
       </div>
   </div>
 
@@ -239,7 +245,7 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
     <div class="item left">
       
 
-  <a href="/posts/52d9f7d3/" itemprop="url" rel="prev" data-background-image="https:&#x2F;&#x2F;tva2.sinaimg.cn&#x2F;mw690&#x2F;6833939bly1giciukx8a7j20zk0m8aio.jpg" title="Java面试必问--HashMap的底层">
+  <a href="/blog/posts/52d9f7d3/" itemprop="url" rel="prev" data-background-image="https:&#x2F;&#x2F;tva2.sinaimg.cn&#x2F;mw690&#x2F;6833939bly1gipeuv80yoj20zk0m8kjl.jpg" title="Java面试必问--HashMap的底层">
   <span class="type">Previous Post</span>
   <span class="category"><i class="ic i-flag"></i> HashMap</span>
   <h3>Java面试必问--HashMap的底层</h3>
@@ -249,7 +255,7 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
     <div class="item right">
       
 
-  <a href="/posts/b536fa7f/" itemprop="url" rel="next" data-background-image="https:&#x2F;&#x2F;tva2.sinaimg.cn&#x2F;mw690&#x2F;6833939bly1gicis081o9j20zk0m8dmr.jpg" title="关于junit测试类防止事务回滚">
+  <a href="/blog/posts/b536fa7f/" itemprop="url" rel="next" data-background-image="https:&#x2F;&#x2F;tva2.sinaimg.cn&#x2F;mw690&#x2F;6833939bly1giclh0m9pdj20zk0m8hdt.jpg" title="关于junit测试类防止事务回滚">
   <span class="type">Next Post</span>
   <span class="category"><i class="ic i-flag"></i> Java</span>
   <h3>关于junit测试类防止事务回滚</h3>
@@ -274,32 +280,32 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
       </div>
       <div class="related panel pjax" data-title="Related">
         <ul>
-          <li class="active"><a href="/posts/69c17d37/" rel="bookmark" title="关于事务提交中踩坑">关于事务提交中踩坑</a></li>
+          <li class="active"><a href="/blog/posts/69c17d37/" rel="bookmark" title="关于事务提交中踩坑">关于事务提交中踩坑</a></li>
         </ul>
       </div>
       <div class="overview panel" data-title="Overview">
         <div class="author" itemprop="author" itemscope itemtype="http://schema.org/Person">
   <img class="image" itemprop="image" alt="JIN Mao"
-      data-src="/images/avatar.png">
+      data-src="/blog/images/avatar.png">
   <p class="name" itemprop="name">JIN Mao</p>
   <div class="description" itemprop="description"></div>
 </div>
 
 <nav class="state">
     <div class="item posts">
-      <a href="/archives/">
+      <a href="/blog/archives/">
         <span class="count">150</span>
         <span class="name">posts</span>
       </a>
     </div>
     <div class="item categories">
-      <a href="/categories/">
+      <a href="/blog/categories/">
         <span class="count">78</span>
         <span class="name">categories</span>
       </a>
     </div>
     <div class="item tags">
-      <a href="/tags/">
+      <a href="/blog/tags/">
         <span class="count">113</span>
         <span class="name">tags</span>
       </a>
@@ -314,12 +320,12 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
   
     
   <li class="item">
-    <a href="/" rel="section"><i class="ic i-home"></i>Home</a>
+    <a href="/blog/" rel="section"><i class="ic i-home"></i>Home</a>
   </li>
 
     
   <li class="item">
-    <a href="/about/" rel="section"><i class="ic i-user"></i>About</a>
+    <a href="/blog/about/" rel="section"><i class="ic i-user"></i>About</a>
   </li>
 
         
@@ -329,17 +335,17 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
 
         
   <li class="item">
-    <a href="/archives/" rel="section"><i class="ic i-list-alt"></i>Archives</a>
+    <a href="/blog/archives/" rel="section"><i class="ic i-list-alt"></i>Archives</a>
   </li>
 
         
   <li class="item">
-    <a href="/categories/" rel="section"><i class="ic i-th"></i>Categories</a>
+    <a href="/blog/categories/" rel="section"><i class="ic i-th"></i>Categories</a>
   </li>
 
         
   <li class="item">
-    <a href="/tags/" rel="section"><i class="ic i-tags"></i>Tags</a>
+    <a href="/blog/tags/" rel="section"><i class="ic i-tags"></i>Tags</a>
   </li>
 
   </ul>
@@ -352,12 +358,12 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
 
   <ul id="quick">
     <li class="prev pjax">
-        <a href="/posts/52d9f7d3/" rel="prev" title="Previous Post"><i class="ic i-chevron-left"></i></a>
+        <a href="/blog/posts/52d9f7d3/" rel="prev" title="Previous Post"><i class="ic i-chevron-left"></i></a>
     </li>
     <li class="up"><i class="ic i-arrow-up"></i></li>
     <li class="down"><i class="ic i-arrow-down"></i></li>
     <li class="next pjax">
-        <a href="/posts/b536fa7f/" rel="next" title="Next Post"><i class="ic i-chevron-right"></i></a>
+        <a href="/blog/posts/b536fa7f/" rel="next" title="Next Post"><i class="ic i-chevron-right"></i></a>
     </li>
     <li class="percent"></li>
   </ul>
@@ -379,61 +385,62 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
   <li class="item">
     
 <div class="breadcrumb">
-<a href="/categories/Java/" title="In Java">Java</a>
+<a href="/blog/categories/SpringBoot/" title="In SpringBoot">SpringBoot</a>
+</div>
+
+    <span><a href="/blog/posts/67f40b37/" title="Spring Boot 获取服务IP地址和端口号">Spring Boot 获取服务IP地址和端口号</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/blog/categories/%E5%89%8D%E7%AB%AF/" title="In 前端">前端</a>
 <i class="ic i-angle-right"></i>
-<a href="/categories/Java/Mysql/" title="In Mysql">Mysql</a>
-</div>
-
-    <span><a href="/posts/69c17d37/" title="关于事务提交中踩坑">关于事务提交中踩坑</a></span>
-  </li>
-
-      
-  <li class="item">
-    
-<div class="breadcrumb">
-<a href="/categories/Java/" title="In Java">Java</a>
+<a href="/blog/categories/%E5%89%8D%E7%AB%AF/TypeScript/" title="In TypeScript">TypeScript</a>
 <i class="ic i-angle-right"></i>
-<a href="/categories/Java/Mybatis/" title="In Mybatis">Mybatis</a>
+<a href="/blog/categories/%E5%89%8D%E7%AB%AF/TypeScript/WebPack/" title="In WebPack">WebPack</a>
+</div>
+
+    <span><a href="/blog/posts/ddb0d187/" title="TS配置Webpack">TS配置Webpack</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/blog/categories/Hexo/" title="In Hexo">Hexo</a>
 <i class="ic i-angle-right"></i>
-<a href="/categories/Java/Mybatis/SpringBoot/" title="In SpringBoot">SpringBoot</a>
+<a href="/blog/categories/Hexo/Tools/" title="In Tools">Tools</a>
+</div>
+
+    <span><a href="/blog/posts/45934af9/" title="使用vscode书写hexo博客粘贴图片解决方案">使用vscode书写hexo博客粘贴图片解决方案</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/blog/categories/%E5%89%8D%E7%AB%AF/" title="In 前端">前端</a>
 <i class="ic i-angle-right"></i>
-<a href="/categories/Java/Mybatis/SpringBoot/%E5%88%86%E9%A1%B5%E6%9F%A5%E8%AF%A2/" title="In 分页查询">分页查询</a>
+<a href="/blog/categories/%E5%89%8D%E7%AB%AF/Vue/" title="In Vue">Vue</a>
 </div>
 
-    <span><a href="/posts/2edf7887/" title="MybatisPlus实现分页查询">MybatisPlus实现分页查询</a></span>
+    <span><a href="/blog/posts/e7e56598/" title="Vue属性介绍">Vue属性介绍</a></span>
   </li>
 
       
   <li class="item">
     
 <div class="breadcrumb">
-</div>
-
-    <span><a href="/posts/11faeb76/" title="Docker指令以及部署">Docker指令以及部署</a></span>
-  </li>
-
-      
-  <li class="item">
-    
-<div class="breadcrumb">
-<a href="/categories/cheatsheet/" title="In cheatsheet">cheatsheet</a>
-</div>
-
-    <span><a href="/posts/1b392612/" title="速查表">速查表</a></span>
-  </li>
-
-      
-  <li class="item">
-    
-<div class="breadcrumb">
-<a href="/categories/Java%E9%9D%A2%E8%AF%95/" title="In Java面试">Java面试</a>
+<a href="/blog/categories/Java/" title="In Java">Java</a>
 <i class="ic i-angle-right"></i>
-<a href="/categories/Java%E9%9D%A2%E8%AF%95/%E7%9B%B4%E6%8E%A5%E6%8F%92%E5%85%A5%E6%8E%92%E5%BA%8F/" title="In 直接插入排序">直接插入排序</a>
+<a href="/blog/categories/Java/Java%E9%9D%A2%E8%AF%95/" title="In Java面试">Java面试</a>
 <i class="ic i-angle-right"></i>
-<a href="/categories/Java%E9%9D%A2%E8%AF%95/%E7%9B%B4%E6%8E%A5%E6%8F%92%E5%85%A5%E6%8E%92%E5%BA%8F/%E7%AE%97%E6%B3%95/" title="In 算法">算法</a>
+<a href="/blog/categories/Java/Java%E9%9D%A2%E8%AF%95/SpringBoot/" title="In SpringBoot">SpringBoot</a>
 </div>
 
-    <span><a href="/posts/2b06d603/" title="直接插入排序">直接插入排序</a></span>
+    <span><a href="/blog/posts/59de1824/" title="spring中&#x2F;和&#x2F;*和&#x2F;**的区别">spring中/和/*和/**的区别</a></span>
   </li>
 
       
@@ -442,48 +449,50 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
 <div class="breadcrumb">
 </div>
 
-    <span><a href="/posts/de5e33d7/" title="关于JDK中的Arrays.sort排序方法">关于JDK中的Arrays.sort排序方法</a></span>
+    <span><a href="/blog/posts/e694a882/" title="Windows下如何查看某个端口被谁占用">Windows下如何查看某个端口被谁占用</a></span>
   </li>
 
       
   <li class="item">
     
 <div class="breadcrumb">
-<a href="/categories/Java/" title="In Java">Java</a>
 </div>
 
-    <span><a href="/posts/9dcbb5fa/" title="Corn表达式">Corn表达式</a></span>
+    <span><a href="/blog/posts/afe5178f/" title="关于设置git以及npm代理">关于设置git以及npm代理</a></span>
   </li>
 
       
   <li class="item">
     
 <div class="breadcrumb">
-<a href="/categories/Java%E9%9D%A2%E8%AF%95/" title="In Java面试">Java面试</a>
+<a href="/blog/categories/Jenkins/" title="In Jenkins">Jenkins</a>
 </div>
 
-    <span><a href="/posts/3b6bfba3/" title="如何保证接口的幂等性">如何保证接口的幂等性</a></span>
+    <span><a href="/blog/posts/d05062ae/" title="Java 操作Jenkins">Java 操作Jenkins</a></span>
   </li>
 
       
   <li class="item">
     
 <div class="breadcrumb">
-<a href="/categories/Java%E9%9D%A2%E8%AF%95/" title="In Java面试">Java面试</a>
+<a href="/blog/categories/Java%E9%9D%A2%E8%AF%95/" title="In Java面试">Java面试</a>
 <i class="ic i-angle-right"></i>
-<a href="/categories/Java%E9%9D%A2%E8%AF%95/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/" title="In 操作系统">操作系统</a>
+<a href="/blog/categories/Java%E9%9D%A2%E8%AF%95/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/" title="In 操作系统">操作系统</a>
 </div>
 
-    <span><a href="/posts/4847d2e5/" title="面试之旅关于操作系统">面试之旅关于操作系统</a></span>
+    <span><a href="/blog/posts/4847d2e5/" title="面试之旅关于操作系统">面试之旅关于操作系统</a></span>
   </li>
 
       
   <li class="item">
     
 <div class="breadcrumb">
+<a href="/blog/categories/Java%E9%9D%A2%E8%AF%95/" title="In Java面试">Java面试</a>
+<i class="ic i-angle-right"></i>
+<a href="/blog/categories/Java%E9%9D%A2%E8%AF%95/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/" title="In 操作系统">操作系统</a>
 </div>
 
-    <span><a href="/posts/1599bffe/" title="归并排序">归并排序</a></span>
+    <span><a href="/blog/posts/c7cf6e41/" title="面试之旅关于计算机网络">面试之旅关于计算机网络</a></span>
   </li>
 
   </ul>
@@ -550,7 +559,7 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
 
 <script src="//cdn.jsdelivr.net/combine/npm/pace-js@1.0.2/pace.min.js,npm/pjax@0.2.8/pjax.min.js,npm/whatwg-fetch@3.4.0/dist/fetch.umd.min.js,npm/animejs@3.2.0/lib/anime.min.js,npm/algoliasearch@4/dist/algoliasearch-lite.umd.js,npm/instantsearch.js@4/dist/instantsearch.production.min.js,npm/lozad@1/dist/lozad.min.js,npm/quicklink@2/dist/quicklink.umd.js"></script>
 
-<script src="/js/app.js?v=0.2.5"></script>
+<script src="/blog/js/app.js?v=0.2.5"></script>
 
 
 

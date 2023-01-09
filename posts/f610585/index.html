@@ -21,7 +21,7 @@
 
 <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Mulish:300,300italic,400,400italic,700,700italic%7CFredericka%20the%20Great:300,300italic,400,400italic,700,700italic%7CNoto%20Serif%20JP:300,300italic,400,400italic,700,700italic%7CNoto%20Serif%20SC:300,300italic,400,400italic,700,700italic%7CInconsolata:300,300italic,400,400italic,700,700italic&display=swap&subset=latin,latin-ext">
 
-<link rel="stylesheet" href="/css/app.css?v=0.2.5">
+<link rel="stylesheet" href="/blog/css/app.css?v=0.2.5">
 
   
   <meta name="keywords" content="UML" />
@@ -76,7 +76,7 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
       <i class="ic i-pen"></i>
     </span>
     <span class="text">Symbols count in article</span>
-    <span>886</span>
+    <span>879</span>
     <span class="text">words</span>
   </span>
   <span class="item" title="Reading time">
@@ -101,7 +101,7 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
       </div>
     </div>
     <ul class="menu">
-      <li class="item title"><a href="/" rel="start">Jin Mao when to get rich ?</a></li>
+      <li class="item title"><a href="/blog/" rel="start">Jin Mao when to get rich ?</a></li>
     </ul>
     <ul class="right">
       <li class="item theme">
@@ -117,12 +117,12 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
       </div>
       <div id="imgs" class="pjax">
         <ul>
-          <li class="item" data-background-image="https://tva2.sinaimg.cn/large/6833939bly1gipewr8iypj20zk0m8b29.jpg"></li>
-          <li class="item" data-background-image="https://tva2.sinaimg.cn/large/6833939bly1gipexw3o58j20zk0m8e81.jpg"></li>
-          <li class="item" data-background-image="https://tva2.sinaimg.cn/large/6833939bly1gipetlbztpj20zk0m84qp.jpg"></li>
-          <li class="item" data-background-image="https://tva2.sinaimg.cn/large/6833939bly1giclhnx9glj20zk0m8npd.jpg"></li>
-          <li class="item" data-background-image="https://tva2.sinaimg.cn/large/6833939bly1giclxxcb6rj20zk0m8b29.jpg"></li>
-          <li class="item" data-background-image="https://tva2.sinaimg.cn/large/6833939bly1giclize41wj20zk0m87gk.jpg"></li>
+          <li class="item" data-background-image="https://tva2.sinaimg.cn/large/6833939bly1gipeybxm1pj20zk0m8niv.jpg"></li>
+          <li class="item" data-background-image="https://tva2.sinaimg.cn/large/6833939bly1gipevgoki5j20zk0m84qp.jpg"></li>
+          <li class="item" data-background-image="https://tva2.sinaimg.cn/large/6833939bly1giclfdu6exj20zk0m87hw.jpg"></li>
+          <li class="item" data-background-image="https://tva2.sinaimg.cn/large/6833939bly1giclx29mstj20zk0m8hdt.jpg"></li>
+          <li class="item" data-background-image="https://tva2.sinaimg.cn/large/6833939bly1giclhfehz7j20zk0m8u0x.jpg"></li>
+          <li class="item" data-background-image="https://tva2.sinaimg.cn/large/6833939bly1gipetv6p75j20zk0m8x6p.jpg"></li>
         </ul>
       </div>
     </header>
@@ -147,8 +147,8 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
     
 <div class="breadcrumb" itemscope itemtype="https://schema.org/BreadcrumbList">
 <i class="ic i-home"></i>
-<span><a href="/">Home</a></span><i class="ic i-angle-right"></i>
-<span  class="current" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem"><a href="/categories/UML/" itemprop="item" rel="index" title="In UML"><span itemprop="name">UML</span></a>
+<span><a href="/blog/">Home</a></span><i class="ic i-angle-right"></i>
+<span  class="current" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem"><a href="/blog/categories/UML/" itemprop="item" rel="index" title="In UML"><span itemprop="name">UML</span></a>
 <meta itemprop="position" content="1" /></span>
 </div>
 
@@ -156,7 +156,7 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
   <link itemprop="mainEntityOfPage" href="https://smile1231.github.io/posts/f610585/">
 
   <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-    <meta itemprop="image" content="/images/avatar.png">
+    <meta itemprop="image" content="/blog/images/avatar.png">
     <meta itemprop="name" content="JIN Mao">
     <meta itemprop="description" content="got windy(起风了), ">
   </span>
@@ -168,48 +168,39 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
   <div class="body md" itemprop="articleBody">
     
 
-    <h1 id="uml类图关系总结"><a class="markdownIt-Anchor" href="#uml类图关系总结">#</a>  <code>UML</code> : 类图关系总结</h1>
-<p>UML 类图几种关系的总结，泛化 = 实现 &gt; 组合 &gt; 聚合 &gt; 关联 &gt; 依赖<br>
-在 UML 类图中，常见的有以下几种关系:  <code>泛化（Generalization）</code> ,  <code>实现（Realization）</code> ， <code>关联（Association)</code> ， <code>聚合（Aggregation）</code> ， <code>组合(Composition)</code> ， <code>依赖(Dependency)</code></p>
+    <h1 id="UML-类图关系总结"><a href="#UML-类图关系总结" class="headerlink" title="UML:类图关系总结"></a><code>UML</code>:类图关系总结</h1><p>UML类图几种关系的总结，泛化 = 实现 &gt; 组合 &gt; 聚合 &gt; 关联 &gt; 依赖<br>在UML类图中，常见的有以下几种关系: <code>泛化（Generalization）</code>, <code>实现（Realization）</code>，<code>关联（Association)</code>，<code>聚合（Aggregation）</code>，<code>组合(Composition)</code>，<code>依赖(Dependency)</code></p>
 <span id="more"></span>
-<h2 id="1-泛化generalization"><a class="markdownIt-Anchor" href="#1-泛化generalization">#</a> 1. 泛化（ <code>Generalization</code> ）</h2>
-<ul>
-<li>
-<p>【泛化关系】：是一种<strong>继承</strong>关系，表示一般与特殊的关系，它指定了子类如何特化父类的所有特征和行为。例如：老虎是动物的一种，即有老虎的特性也有动物的共性。</p>
-</li>
-<li>
-<p>【箭头指向】：带三角箭头的实线，箭头指向父类.</p>
-  <img data-src="/posts/f610585/2022-02-13-23-24-28.png" class="">
-</li>
+
+<h2 id="1-泛化（Generalization）"><a href="#1-泛化（Generalization）" class="headerlink" title="1. 泛化（Generalization）"></a>1. 泛化（<code>Generalization</code>）</h2><ul>
+<li>【泛化关系】：是一种<strong>继承</strong>关系，表示一般与特殊的关系，它指定了子类如何特化父类的所有特征和行为。例如：老虎是动物的一种，即有老虎的特性也有动物的共性。</li>
+<li>【箭头指向】：带三角箭头的实线，箭头指向父类.  <img data-src="/blog/posts/f610585/2022-02-13-23-24-28.png" class=""></li>
 </ul>
-<h2 id="2实现realization"><a class="markdownIt-Anchor" href="#2实现realization">#</a> 2. 实现（ <code>Realization</code> ）</h2>
-<p>【实现关系】：在这里插入图片描述是一种类与接口的关系，表示类是接口所有特征和行为的实现.</p>
+<h2 id="2-实现（Realization）"><a href="#2-实现（Realization）" class="headerlink" title="2.实现（Realization）"></a>2.实现（<code>Realization</code>）</h2><p>【实现关系】：在这里插入图片描述是一种类与接口的关系，表示类是接口所有特征和行为的实现.</p>
 <p>【箭头指向】：带三角箭头的虚线，箭头指向接口</p>
-<img data-src="/posts/f610585/2022-02-13-23-24-40.png" class="">
-<h2 id="3关联association"><a class="markdownIt-Anchor" href="#3关联association">#</a> 3. 关联（ <code>Association</code> )</h2>
-<p>【关联关系】：是一种拥有的关系，它使一个类知道另一个类的属性和方法；如：老师与学生，丈夫与妻子关联可以是双向的，也可以是单向的。双向的关联可以有两个箭头或者没有箭头，单向的关联有一个箭头。</p>
+<img data-src="/blog/posts/f610585/2022-02-13-23-24-40.png" class="">
+
+
+<h2 id="3-关联（Association"><a href="#3-关联（Association" class="headerlink" title="3.关联（Association)"></a>3.关联（<code>Association</code>)</h2><p>【关联关系】：是一种拥有的关系，它使一个类知道另一个类的属性和方法；如：老师与学生，丈夫与妻子关联可以是双向的，也可以是单向的。双向的关联可以有两个箭头或者没有箭头，单向的关联有一个箭头。</p>
 <p>【代码体现】：成员变量</p>
 <p>【箭头及指向】：带普通箭头的实心线，指向被拥有者</p>
-  <img data-src="/posts/f610585/2022-02-13-23-24-49.png" class="">
-<h2 id="4聚合aggregation"><a class="markdownIt-Anchor" href="#4聚合aggregation">#</a> 4. 聚合（ <code>Aggregation</code> ）</h2>
-<p>【聚合关系】：是整体与部分的关系，且部分可以离开整体而单独存在。如车和轮胎是整体和部分的关系，轮胎离开车仍然可以存在。<br>
-聚合关系是关联关系的一种，是强的关联关系；关联和聚合在语法上无法区分，必须考察具体的逻辑关系。<br>
-【代码体现】：成员变量<br>
-【箭头及指向】：带空心菱形的实心线，菱形指向整体</p>
-<img data-src="/posts/f610585/2022-02-13-23-24-59.png" class="">
-<h2 id="5组合composition"><a class="markdownIt-Anchor" href="#5组合composition">#</a> 5. 组合 ( <code>Composition</code> )</h2>
-<p>【组合关系】：是<strong>整体与部分</strong>的关系，但部分不能离开整体而单独存在。如公司和部门是整体和部分的关系，没有公司就不存在部门。<br>
-组合关系是关联关系的一种，是比聚合关系还要强的关系，它要求普通的聚合关系中代表整体的对象负责代表部分的对象的生命周期。<br>
-【代码体现】：成员变量</p>
+  <img data-src="/blog/posts/f610585/2022-02-13-23-24-49.png" class="">
+
+<h2 id="4-聚合（Aggregation）"><a href="#4-聚合（Aggregation）" class="headerlink" title="4.聚合（Aggregation）"></a>4.聚合（<code>Aggregation</code>）</h2><p>【聚合关系】：是整体与部分的关系，且部分可以离开整体而单独存在。如车和轮胎是整体和部分的关系，轮胎离开车仍然可以存在。<br>聚合关系是关联关系的一种，是强的关联关系；关联和聚合在语法上无法区分，必须考察具体的逻辑关系。<br>【代码体现】：成员变量<br>【箭头及指向】：带空心菱形的实心线，菱形指向整体</p>
+<img data-src="/blog/posts/f610585/2022-02-13-23-24-59.png" class="">
+<h2 id="5-组合-Composition"><a href="#5-组合-Composition" class="headerlink" title="5.组合(Composition)"></a>5.组合(<code>Composition</code>)</h2><p>【组合关系】：是<strong>整体与部分</strong>的关系，但部分不能离开整体而单独存在。如公司和部门是整体和部分的关系，没有公司就不存在部门。<br>组合关系是关联关系的一种，是比聚合关系还要强的关系，它要求普通的聚合关系中代表整体的对象负责代表部分的对象的生命周期。<br>【代码体现】：成员变量</p>
 <p>【箭头及指向】：带实心菱形的实线，菱形指向整体</p>
-<img data-src="/posts/f610585/2022-02-13-23-25-08.png" class="">
-<h2 id="6-依赖dependency"><a class="markdownIt-Anchor" href="#6-依赖dependency">#</a> 6. 依赖 ( <code>Dependency</code> )</h2>
-<p>只要在类中用到了对方，他们之间就存在依赖关系</p>
-<img data-src="/posts/f610585/2022-02-13-23-25-20.png" class="">
-<img data-src="/posts/f610585/2022-02-13-23-25-27.png" class="">
+<img data-src="/blog/posts/f610585/2022-02-13-23-25-08.png" class="">
+
+<h2 id="6-依赖-Dependency"><a href="#6-依赖-Dependency" class="headerlink" title="6. 依赖(Dependency)"></a>6. 依赖(<code>Dependency</code>)</h2><p> 只要在类中用到了对方，他们之间就存在依赖关系</p>
+<img data-src="/blog/posts/f610585/2022-02-13-23-25-20.png" class="">
+
+
+<img data-src="/blog/posts/f610585/2022-02-13-23-25-27.png" class="">
+
+
 
       <div class="tags">
-          <a href="/tags/UML/" rel="tag"><i class="ic i-tag"></i> UML</a>
+          <a href="/blog/tags/UML/" rel="tag"><i class="ic i-tag"></i> UML</a>
       </div>
   </div>
 
@@ -261,7 +252,7 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
     <div class="item left">
       
 
-  <a href="/posts/31f95091/" itemprop="url" rel="prev" data-background-image="https:&#x2F;&#x2F;tva2.sinaimg.cn&#x2F;mw690&#x2F;6833939bly1gipetv6p75j20zk0m8x6p.jpg" title="Ubuntu中安装卸载Mysql数据库">
+  <a href="/blog/posts/31f95091/" itemprop="url" rel="prev" data-background-image="https:&#x2F;&#x2F;tva2.sinaimg.cn&#x2F;mw690&#x2F;6833939bly1giciryrr3rj20zk0m8nhk.jpg" title="Ubuntu中安装卸载Mysql数据库">
   <span class="type">Previous Post</span>
   <span class="category"><i class="ic i-flag"></i> Mysql</span>
   <h3>Ubuntu中安装卸载Mysql数据库</h3>
@@ -271,7 +262,7 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
     <div class="item right">
       
 
-  <a href="/posts/d199d651/" itemprop="url" rel="next" data-background-image="https:&#x2F;&#x2F;tva2.sinaimg.cn&#x2F;mw690&#x2F;6833939bly1gipeyhsblkj20zk0m81kx.jpg" title="VsCode快捷键">
+  <a href="/blog/posts/d199d651/" itemprop="url" rel="next" data-background-image="https:&#x2F;&#x2F;tva2.sinaimg.cn&#x2F;mw690&#x2F;6833939bly1gipesx5fdwj20zk0m81kx.jpg" title="VsCode快捷键">
   <span class="type">Next Post</span>
   <span class="category"><i class="ic i-flag"></i> 快捷键</span>
   <h3>VsCode快捷键</h3>
@@ -293,36 +284,36 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
   <div class="panels">
     <div class="inner">
       <div class="contents panel pjax" data-title="Contents">
-          <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#uml%E7%B1%BB%E5%9B%BE%E5%85%B3%E7%B3%BB%E6%80%BB%E7%BB%93"><span class="toc-number">1.</span> <span class="toc-text">  UML : 类图关系总结</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#1-%E6%B3%9B%E5%8C%96generalization"><span class="toc-number">1.1.</span> <span class="toc-text"> 1. 泛化（ Generalization ）</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2%E5%AE%9E%E7%8E%B0realization"><span class="toc-number">1.2.</span> <span class="toc-text"> 2. 实现（ Realization ）</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#3%E5%85%B3%E8%81%94association"><span class="toc-number">1.3.</span> <span class="toc-text"> 3. 关联（ Association )</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#4%E8%81%9A%E5%90%88aggregation"><span class="toc-number">1.4.</span> <span class="toc-text"> 4. 聚合（ Aggregation ）</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#5%E7%BB%84%E5%90%88composition"><span class="toc-number">1.5.</span> <span class="toc-text"> 5. 组合 ( Composition )</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#6-%E4%BE%9D%E8%B5%96dependency"><span class="toc-number">1.6.</span> <span class="toc-text"> 6. 依赖 ( Dependency )</span></a></li></ol></li></ol>
+          <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#UML-%E7%B1%BB%E5%9B%BE%E5%85%B3%E7%B3%BB%E6%80%BB%E7%BB%93"><span class="toc-number">1.</span> <span class="toc-text">UML:类图关系总结</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#1-%E6%B3%9B%E5%8C%96%EF%BC%88Generalization%EF%BC%89"><span class="toc-number">1.1.</span> <span class="toc-text">1. 泛化（Generalization）</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2-%E5%AE%9E%E7%8E%B0%EF%BC%88Realization%EF%BC%89"><span class="toc-number">1.2.</span> <span class="toc-text">2.实现（Realization）</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#3-%E5%85%B3%E8%81%94%EF%BC%88Association"><span class="toc-number">1.3.</span> <span class="toc-text">3.关联（Association)</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#4-%E8%81%9A%E5%90%88%EF%BC%88Aggregation%EF%BC%89"><span class="toc-number">1.4.</span> <span class="toc-text">4.聚合（Aggregation）</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#5-%E7%BB%84%E5%90%88-Composition"><span class="toc-number">1.5.</span> <span class="toc-text">5.组合(Composition)</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#6-%E4%BE%9D%E8%B5%96-Dependency"><span class="toc-number">1.6.</span> <span class="toc-text">6. 依赖(Dependency)</span></a></li></ol></li></ol>
       </div>
       <div class="related panel pjax" data-title="Related">
         <ul>
-          <li class="active"><a href="/posts/f610585/" rel="bookmark" title="UML:类图关系总结">UML:类图关系总结</a></li>
+          <li class="active"><a href="/blog/posts/f610585/" rel="bookmark" title="UML:类图关系总结">UML:类图关系总结</a></li>
         </ul>
       </div>
       <div class="overview panel" data-title="Overview">
         <div class="author" itemprop="author" itemscope itemtype="http://schema.org/Person">
   <img class="image" itemprop="image" alt="JIN Mao"
-      data-src="/images/avatar.png">
+      data-src="/blog/images/avatar.png">
   <p class="name" itemprop="name">JIN Mao</p>
   <div class="description" itemprop="description"></div>
 </div>
 
 <nav class="state">
     <div class="item posts">
-      <a href="/archives/">
+      <a href="/blog/archives/">
         <span class="count">150</span>
         <span class="name">posts</span>
       </a>
     </div>
     <div class="item categories">
-      <a href="/categories/">
+      <a href="/blog/categories/">
         <span class="count">78</span>
         <span class="name">categories</span>
       </a>
     </div>
     <div class="item tags">
-      <a href="/tags/">
+      <a href="/blog/tags/">
         <span class="count">113</span>
         <span class="name">tags</span>
       </a>
@@ -337,12 +328,12 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
   
     
   <li class="item">
-    <a href="/" rel="section"><i class="ic i-home"></i>Home</a>
+    <a href="/blog/" rel="section"><i class="ic i-home"></i>Home</a>
   </li>
 
     
   <li class="item">
-    <a href="/about/" rel="section"><i class="ic i-user"></i>About</a>
+    <a href="/blog/about/" rel="section"><i class="ic i-user"></i>About</a>
   </li>
 
         
@@ -352,17 +343,17 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
 
         
   <li class="item">
-    <a href="/archives/" rel="section"><i class="ic i-list-alt"></i>Archives</a>
+    <a href="/blog/archives/" rel="section"><i class="ic i-list-alt"></i>Archives</a>
   </li>
 
         
   <li class="item">
-    <a href="/categories/" rel="section"><i class="ic i-th"></i>Categories</a>
+    <a href="/blog/categories/" rel="section"><i class="ic i-th"></i>Categories</a>
   </li>
 
         
   <li class="item">
-    <a href="/tags/" rel="section"><i class="ic i-tags"></i>Tags</a>
+    <a href="/blog/tags/" rel="section"><i class="ic i-tags"></i>Tags</a>
   </li>
 
   </ul>
@@ -375,12 +366,12 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
 
   <ul id="quick">
     <li class="prev pjax">
-        <a href="/posts/31f95091/" rel="prev" title="Previous Post"><i class="ic i-chevron-left"></i></a>
+        <a href="/blog/posts/31f95091/" rel="prev" title="Previous Post"><i class="ic i-chevron-left"></i></a>
     </li>
     <li class="up"><i class="ic i-arrow-up"></i></li>
     <li class="down"><i class="ic i-arrow-down"></i></li>
     <li class="next pjax">
-        <a href="/posts/d199d651/" rel="next" title="Next Post"><i class="ic i-chevron-right"></i></a>
+        <a href="/blog/posts/d199d651/" rel="next" title="Next Post"><i class="ic i-chevron-right"></i></a>
     </li>
     <li class="percent"></li>
   </ul>
@@ -404,105 +395,108 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
 <div class="breadcrumb">
 </div>
 
-    <span><a href="/posts/d0966c4d/" title="工作难点">工作难点</a></span>
+    <span><a href="/blog/posts/d0966c4d/" title="工作难点">工作难点</a></span>
   </li>
 
       
   <li class="item">
     
 <div class="breadcrumb">
-<a href="/categories/Jenkins/" title="In Jenkins">Jenkins</a>
+<a href="/blog/categories/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/" title="In 设计模式">设计模式</a>
 </div>
 
-    <span><a href="/posts/273d98ce/" title="The learning of Jenkins Grammer">The learning of Jenkins Grammer</a></span>
+    <span><a href="/blog/posts/79c6d028/" title="23设计模式(更新中)">23设计模式(更新中)</a></span>
   </li>
 
       
   <li class="item">
     
 <div class="breadcrumb">
-<a href="/categories/%E5%89%8D%E7%AB%AF/" title="In 前端">前端</a>
+</div>
+
+    <span><a href="/blog/posts/66edb7d2/" title="关于hexo使用shoka主题注意点">关于hexo使用shoka主题注意点</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+</div>
+
+    <span><a href="/blog/posts/a72f470b/" title="关于JVM常用参数">关于JVM常用参数</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/blog/categories/Java%E9%9D%A2%E8%AF%95/" title="In Java面试">Java面试</a>
 <i class="ic i-angle-right"></i>
-<a href="/categories/%E5%89%8D%E7%AB%AF/JavaScript/" title="In JavaScript">JavaScript</a>
+<a href="/blog/categories/Java%E9%9D%A2%E8%AF%95/Spring%E4%BA%8B%E5%8A%A1/" title="In Spring事务">Spring事务</a>
 </div>
 
-    <span><a href="/posts/4aa00b9a/" title="Js中的some、find、findindex、includes、filter的使用">Js中的some、find、findindex、includes、filter的使用</a></span>
+    <span><a href="/blog/posts/7e4601e3/" title="面试之旅之关于Spring事务处理">面试之旅之关于Spring事务处理</a></span>
   </li>
 
       
   <li class="item">
     
 <div class="breadcrumb">
-</div>
-
-    <span><a href="/posts/ac1ae082/" title="SpringBoot如何优雅的发邮件">SpringBoot如何优雅的发邮件</a></span>
-  </li>
-
-      
-  <li class="item">
-    
-<div class="breadcrumb">
-<a href="/categories/Java/" title="In Java">Java</a>
-</div>
-
-    <span><a href="/posts/9dcbb5fa/" title="Corn表达式">Corn表达式</a></span>
-  </li>
-
-      
-  <li class="item">
-    
-<div class="breadcrumb">
-</div>
-
-    <span><a href="/posts/bf4d20ae/" title="写在最前面">写在最前面</a></span>
-  </li>
-
-      
-  <li class="item">
-    
-<div class="breadcrumb">
-<a href="/categories/%E5%A4%A7%E6%95%B0%E6%8D%AE/" title="In 大数据">大数据</a>
-</div>
-
-    <span><a href="/posts/737c98ca/" title="什么是MapReduce">什么是MapReduce</a></span>
-  </li>
-
-      
-  <li class="item">
-    
-<div class="breadcrumb">
-<a href="/categories/Ubuntu/" title="In Ubuntu">Ubuntu</a>
+<a href="/blog/categories/Hexo/" title="In Hexo">Hexo</a>
 <i class="ic i-angle-right"></i>
-<a href="/categories/Ubuntu/Mysql/" title="In Mysql">Mysql</a>
+<a href="/blog/categories/Hexo/Tools/" title="In Tools">Tools</a>
 </div>
 
-    <span><a href="/posts/31f95091/" title="Ubuntu中安装卸载Mysql数据库">Ubuntu中安装卸载Mysql数据库</a></span>
+    <span><a href="/blog/posts/45934af9/" title="使用vscode书写hexo博客粘贴图片解决方案">使用vscode书写hexo博客粘贴图片解决方案</a></span>
   </li>
 
       
   <li class="item">
     
 <div class="breadcrumb">
-<a href="/categories/Java%E9%9D%A2%E8%AF%95/" title="In Java面试">Java面试</a>
+<a href="/blog/categories/Java%E9%9D%A2%E8%AF%95/" title="In Java面试">Java面试</a>
 <i class="ic i-angle-right"></i>
-<a href="/categories/Java%E9%9D%A2%E8%AF%95/%E9%80%89%E6%8B%A9%E6%8E%92%E5%BA%8F/" title="In 选择排序">选择排序</a>
+<a href="/blog/categories/Java%E9%9D%A2%E8%AF%95/%E7%9B%B4%E6%8E%A5%E6%8F%92%E5%85%A5%E6%8E%92%E5%BA%8F/" title="In 直接插入排序">直接插入排序</a>
 <i class="ic i-angle-right"></i>
-<a href="/categories/Java%E9%9D%A2%E8%AF%95/%E9%80%89%E6%8B%A9%E6%8E%92%E5%BA%8F/%E7%AE%97%E6%B3%95/" title="In 算法">算法</a>
+<a href="/blog/categories/Java%E9%9D%A2%E8%AF%95/%E7%9B%B4%E6%8E%A5%E6%8F%92%E5%85%A5%E6%8E%92%E5%BA%8F/%E7%AE%97%E6%B3%95/" title="In 算法">算法</a>
 </div>
 
-    <span><a href="/posts/43d00a99/" title="选择排序">选择排序</a></span>
+    <span><a href="/blog/posts/2b06d603/" title="直接插入排序">直接插入排序</a></span>
   </li>
 
       
   <li class="item">
     
 <div class="breadcrumb">
-<a href="/categories/Java%E9%9D%A2%E8%AF%95/" title="In Java面试">Java面试</a>
-<i class="ic i-angle-right"></i>
-<a href="/categories/Java%E9%9D%A2%E8%AF%95/SpringBoot/" title="In SpringBoot">SpringBoot</a>
 </div>
 
-    <span><a href="/posts/eec4b728/" title="SpringBoot中如何优雅的使用多线程">SpringBoot中如何优雅的使用多线程</a></span>
+    <span><a href="/blog/posts/a1926332/" title="Springboot+Vue二进制文件传输">Springboot+Vue二进制文件传输</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/blog/categories/Java%E9%9D%A2%E8%AF%95/" title="In Java面试">Java面试</a>
+<i class="ic i-angle-right"></i>
+<a href="/blog/categories/Java%E9%9D%A2%E8%AF%95/%E5%BF%AB%E9%80%9F%E6%8E%92%E5%BA%8F/" title="In 快速排序">快速排序</a>
+<i class="ic i-angle-right"></i>
+<a href="/blog/categories/Java%E9%9D%A2%E8%AF%95/%E5%BF%AB%E9%80%9F%E6%8E%92%E5%BA%8F/%E7%AE%97%E6%B3%95/" title="In 算法">算法</a>
+</div>
+
+    <span><a href="/blog/posts/ff8068c0/" title="快速排序">快速排序</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/blog/categories/%E5%89%8D%E7%AB%AF/" title="In 前端">前端</a>
+<i class="ic i-angle-right"></i>
+<a href="/blog/categories/%E5%89%8D%E7%AB%AF/Css/" title="In Css">Css</a>
+</div>
+
+    <span><a href="/blog/posts/2e6621e1/" title="DisPlay属性">DisPlay属性</a></span>
   </li>
 
   </ul>
@@ -569,7 +563,7 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
 
 <script src="//cdn.jsdelivr.net/combine/npm/pace-js@1.0.2/pace.min.js,npm/pjax@0.2.8/pjax.min.js,npm/whatwg-fetch@3.4.0/dist/fetch.umd.min.js,npm/animejs@3.2.0/lib/anime.min.js,npm/algoliasearch@4/dist/algoliasearch-lite.umd.js,npm/instantsearch.js@4/dist/instantsearch.production.min.js,npm/lozad@1/dist/lozad.min.js,npm/quicklink@2/dist/quicklink.umd.js"></script>
 
-<script src="/js/app.js?v=0.2.5"></script>
+<script src="/blog/js/app.js?v=0.2.5"></script>
 
 
 

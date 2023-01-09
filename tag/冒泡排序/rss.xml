@@ -7,34 +7,34 @@
         <language>en</language>
         <pubDate>Sat, 12 Mar 2022 21:58:14 +0800</pubDate>
         <lastBuildDate>Sat, 12 Mar 2022 21:58:14 +0800</lastBuildDate>
-        <category>生物信息</category>
-        <category>基因编辑</category>
+        <category>SAP</category>
         <category>Java</category>
         <category>Cache</category>
         <category>Cookie</category>
         <category>Session</category>
         <category>Java面试</category>
+        <category>生物信息</category>
+        <category>基因编辑</category>
         <category>Corn</category>
         <category>前端</category>
         <category>Css</category>
+        <category>Docker</category>
         <category>DDD</category>
         <category>领域驱动设计</category>
-        <category>Docker</category>
-        <category>DisPlay属性</category>
-        <category>SAP</category>
+        <category>FastJson</category>
         <category>blog</category>
         <category>hexo</category>
         <category>next</category>
-        <category>FastJson</category>
+        <category>DisPlay属性</category>
+        <category>JavaScript</category>
+        <category>Html</category>
         <category>IDEA</category>
         <category>SpringBoot</category>
         <category>Jvm</category>
-        <category>JavaScript</category>
-        <category>Html</category>
-        <category>Jenkins</category>
-        <category>CI/CD</category>
         <category>map</category>
         <category>Stream流</category>
+        <category>Jenkins</category>
+        <category>CI/CD</category>
         <category>函数式接口</category>
         <category>Assert</category>
         <category>java</category>
@@ -47,67 +47,67 @@
         <category>算法</category>
         <category>递归</category>
         <category>Linux</category>
+        <category>Mybatis</category>
+        <category>分页查询</category>
         <category>numpy</category>
         <category>pandas</category>
         <category>sklearn</category>
-        <category>Mybatis</category>
-        <category>分页查询</category>
         <category>模糊查询</category>
-        <category>Spring</category>
         <category>Nginx</category>
+        <category>Spring</category>
         <category>Spoken English</category>
         <category>SrpingBoot</category>
         <category>文件上传</category>
         <category>事务</category>
-        <category>master</category>
         <category>TypeScript</category>
         <category>WebPack</category>
         <category>Groovy</category>
+        <category>master</category>
+        <category>UML</category>
         <category>Ubuntu</category>
         <category>Mysql</category>
-        <category>VsCode</category>
-        <category>Shell</category>
-        <category>UML</category>
         <category>Vue</category>
         <category>VSCODE</category>
         <category>快捷键</category>
-        <category>git</category>
-        <category>Stream</category>
+        <category>VsCode</category>
+        <category>Shell</category>
         <category>日期</category>
+        <category>Stream</category>
+        <category>git</category>
         <category>线程池</category>
         <category>ubuntu</category>
         <category>虚拟机</category>
-        <category>数据挖掘</category>
-        <category>Hadoop</category>
-        <category>操作系统</category>
-        <category>node</category>
         <category>二分查找</category>
+        <category>数据挖掘</category>
+        <category>操作系统</category>
+        <category>Hadoop</category>
         <category>EasyExcel</category>
+        <category>node</category>
         <category>JVM</category>
         <category>Yaml</category>
-        <category>junit</category>
-        <category>数据库</category>
         <category>Hexo</category>
-        <category>Git</category>
+        <category>数据库</category>
+        <category>junit</category>
         <category>Mysql事务</category>
-        <category>git,npm,node</category>
-        <category>动态规划</category>
+        <category>Git</category>
         <category>冒泡排序</category>
+        <category>git,npm,node</category>
         <category>堆排序</category>
-        <category>多线程</category>
+        <category>动态规划</category>
         <category>幂等性</category>
         <category>Google</category>
-        <category>快速排序</category>
+        <category>多线程</category>
         <category>流</category>
         <category>归并排序</category>
+        <category>快速排序</category>
         <category>vue</category>
-        <category>直接插入排序</category>
         <category>正则表达式</category>
+        <category>直接插入排序</category>
         <category>选择排序</category>
-        <category>Spring事务</category>
         <category>Java 面试</category>
         <category>数据结构</category>
         <category>阻塞队列</category>
+        <category>Spring事务</category>
         <category>JDK</category>
         <category>动态代理</category>
         <category>Date</category>
@@ -128,20 +128,14 @@
             <category>算法</category>
             <category>冒泡排序</category>
             <pubDate>Sat, 12 Mar 2022 21:58:14 +0800</pubDate>
-            <description><![CDATA[ &lt;h2 id=&#34;冒泡排序稳定&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#冒泡排序稳定&#34;&gt;#&lt;/a&gt; 冒泡排序（稳定）&lt;/h2&gt;
-&lt;h3 id=&#34;1-基本思想&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#1-基本思想&#34;&gt;#&lt;/a&gt; 1、基本思想&lt;/h3&gt;
-&lt;p&gt;冒泡排序（ &lt;code&gt;Bubble Sort&lt;/code&gt; ）是一种简单的排序算法。它重复地走访过要排序的数列，一次比较两个元素，如果他们的顺序错误就把他们交换过来。走访数列的工作是重复地进行直到没有再需要交换，也就是说该数列已经排序完成。这个算法的名字由来是因为越小的元素会经由交换慢慢 “浮” 到数列的顶端。&lt;/p&gt;
+            <description><![CDATA[ &lt;h2 id=&#34;冒泡排序（稳定）&#34;&gt;&lt;a href=&#34;#冒泡排序（稳定）&#34; class=&#34;headerlink&#34; title=&#34;冒泡排序（稳定）&#34;&gt;&lt;/a&gt;冒泡排序（稳定）&lt;/h2&gt;&lt;h3 id=&#34;1、基本思想&#34;&gt;&lt;a href=&#34;#1、基本思想&#34; class=&#34;headerlink&#34; title=&#34;1、基本思想&#34;&gt;&lt;/a&gt;1、基本思想&lt;/h3&gt;&lt;p&gt;冒泡排序（&lt;code&gt;Bubble Sort&lt;/code&gt;）是一种简单的排序算法。它重复地走访过要排序的数列，一次比较两个元素，如果他们的顺序错误就把他们交换过来。走访数列的工作是重复地进行直到没有再需要交换，也就是说该数列已经排序完成。这个算法的名字由来是因为越小的元素会经由交换慢慢“浮”到数列的顶端。&lt;/p&gt;
 &lt;span id=&#34;more&#34;&gt;&lt;/span&gt;
-&lt;h3 id=&#34;2-算法描述&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#2-算法描述&#34;&gt;#&lt;/a&gt; 2、算法描述&lt;/h3&gt;
-&lt;p&gt;冒泡排序算法的运作如下：&lt;/p&gt;
-&lt;p&gt;①. 比较相邻的元素。如果第一个比第二个大，就交换他们两个。&lt;br&gt;
-②. 对每一对相邻元素作同样的工作，从开始第一对到结尾的最后一对。这步做完后，最后的元素会是最大的数。&lt;br&gt;
-③. 针对所有的元素重复以上的步骤，除了最后一个。&lt;br&gt;
-④. 持续每次对越来越少的元素重复上面的步骤①~③，直到没有任何一对数字需要比较。&lt;/p&gt;
-&lt;h3 id=&#34;3-代码实现&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#3-代码实现&#34;&gt;#&lt;/a&gt; 3、代码实现&lt;/h3&gt;
-&lt;p&gt;冒泡排序需要两个嵌套的循环。其中，外层循环移动游标；内层循环遍历游标及之后 (或之前) 的元素，通过两两交换的方式，每次只确保该内循环结束位置排序正确，然后内层循环周期结束，交由外层循环往后 (或前) 移动游标，随即开始下一轮内层循环，以此类推，直至循环结束.&lt;/p&gt;
+&lt;h3 id=&#34;2、算法描述&#34;&gt;&lt;a href=&#34;#2、算法描述&#34; class=&#34;headerlink&#34; title=&#34;2、算法描述&#34;&gt;&lt;/a&gt;2、算法描述&lt;/h3&gt;&lt;p&gt;冒泡排序算法的运作如下：&lt;/p&gt;
+&lt;p&gt;①. 比较相邻的元素。如果第一个比第二个大，就交换他们两个。&lt;br&gt;②. 对每一对相邻元素作同样的工作，从开始第一对到结尾的最后一对。这步做完后，最后的元素会是最大的数。&lt;br&gt;③. 针对所有的元素重复以上的步骤，除了最后一个。&lt;br&gt;④. 持续每次对越来越少的元素重复上面的步骤①~③，直到没有任何一对数字需要比较。&lt;/p&gt;
+&lt;h3 id=&#34;3、代码实现&#34;&gt;&lt;a href=&#34;#3、代码实现&#34; class=&#34;headerlink&#34; title=&#34;3、代码实现&#34;&gt;&lt;/a&gt;3、代码实现&lt;/h3&gt;&lt;p&gt;冒泡排序需要两个嵌套的循环. 其中, 外层循环移动游标; 内层循环遍历游标及之后(或之前)的元素, 通过两两交换的方式, 每次只确保该内循环结束位置排序正确, 然后内层循环周期结束, 交由外层循环往后(或前)移动游标, 随即开始下一轮内层循环, 以此类推, 直至循环结束.&lt;/p&gt;
 &lt;figure class=&#34;highlight java&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;12&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;function&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;public&lt;/span&gt; &lt;span class=&#34;keyword&#34;&gt;static&lt;/span&gt; &lt;span class=&#34;keyword&#34;&gt;void&lt;/span&gt; &lt;span class=&#34;title&#34;&gt;bubbleSort&lt;/span&gt;&lt;span class=&#34;params&#34;&gt;(&lt;span class=&#34;keyword&#34;&gt;int&lt;/span&gt;[] arr)&lt;/span&gt;&lt;/span&gt;&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;keyword&#34;&gt;for&lt;/span&gt; (&lt;span class=&#34;keyword&#34;&gt;int&lt;/span&gt; i = arr.length; i &amp;gt; &lt;span class=&#34;number&#34;&gt;0&lt;/span&gt;; i--) &amp;#123;      &lt;span class=&#34;comment&#34;&gt;//外层循环移动游标&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        &lt;span class=&#34;keyword&#34;&gt;for&lt;/span&gt;(&lt;span class=&#34;keyword&#34;&gt;int&lt;/span&gt; j = &lt;span class=&#34;number&#34;&gt;0&lt;/span&gt;; j &amp;lt; i &amp;amp;&amp;amp; (j+&lt;span class=&#34;number&#34;&gt;1&lt;/span&gt;) &amp;lt; i; j++)&amp;#123;    &lt;span class=&#34;comment&#34;&gt;//内层循环遍历游标及之后(或之前)的元素&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;            &lt;span class=&#34;keyword&#34;&gt;if&lt;/span&gt;(arr[j] &amp;gt; arr[j+&lt;span class=&#34;number&#34;&gt;1&lt;/span&gt;])&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;                &lt;span class=&#34;keyword&#34;&gt;int&lt;/span&gt; temp = arr[j];&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;                arr[j] = arr[j+&lt;span class=&#34;number&#34;&gt;1&lt;/span&gt;];&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;                arr[j+&lt;span class=&#34;number&#34;&gt;1&lt;/span&gt;] = temp;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;                System.out.println(&lt;span class=&#34;string&#34;&gt;&amp;quot;Sorting: &amp;quot;&lt;/span&gt; + Arrays.toString(arr));&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;            &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;p&gt;Tips: 由于冒泡排序只在相邻元素大小不符合要求时才调换他们的位置，它并不改变相同元素之间的相对顺序，因此它是稳定的排序算法.&lt;/p&gt;
+
+&lt;p&gt;Tips: 由于冒泡排序只在相邻元素大小不符合要求时才调换他们的位置, 它并不改变相同元素之间的相对顺序, 因此它是稳定的排序算法.&lt;/p&gt;
 &lt;p&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9pdGltZXRyYXZlbGVyLmdpdGh1Yi5pby8yMDE3LzA3LzE4LyVFNSU4NSVBQiVFNSVBNCVBNyVFNiU4RSU5MiVFNSVCQSU4RiVFNyVBRSU5NyVFNiVCMyU5NSVFNiU4MCVCQiVFNyVCQiU5MyVFNCVCOCU4RWphdmElRTUlQUUlOUUlRTclOEUlQjAv&#34;&gt;链接&lt;/span&gt;&lt;/p&gt;
  ]]></description>
         </item>

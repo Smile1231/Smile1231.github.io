@@ -7,34 +7,34 @@
         <language>en</language>
         <pubDate>Sun, 13 Feb 2022 21:49:51 +0800</pubDate>
         <lastBuildDate>Sun, 13 Feb 2022 21:49:51 +0800</lastBuildDate>
-        <category>生物信息</category>
-        <category>基因编辑</category>
+        <category>SAP</category>
         <category>Java</category>
         <category>Cache</category>
         <category>Cookie</category>
         <category>Session</category>
         <category>Java面试</category>
+        <category>生物信息</category>
+        <category>基因编辑</category>
         <category>Corn</category>
         <category>前端</category>
         <category>Css</category>
+        <category>Docker</category>
         <category>DDD</category>
         <category>领域驱动设计</category>
-        <category>Docker</category>
-        <category>DisPlay属性</category>
-        <category>SAP</category>
+        <category>FastJson</category>
         <category>blog</category>
         <category>hexo</category>
         <category>next</category>
-        <category>FastJson</category>
+        <category>DisPlay属性</category>
+        <category>JavaScript</category>
+        <category>Html</category>
         <category>IDEA</category>
         <category>SpringBoot</category>
         <category>Jvm</category>
-        <category>JavaScript</category>
-        <category>Html</category>
-        <category>Jenkins</category>
-        <category>CI/CD</category>
         <category>map</category>
         <category>Stream流</category>
+        <category>Jenkins</category>
+        <category>CI/CD</category>
         <category>函数式接口</category>
         <category>Assert</category>
         <category>java</category>
@@ -47,67 +47,67 @@
         <category>算法</category>
         <category>递归</category>
         <category>Linux</category>
+        <category>Mybatis</category>
+        <category>分页查询</category>
         <category>numpy</category>
         <category>pandas</category>
         <category>sklearn</category>
-        <category>Mybatis</category>
-        <category>分页查询</category>
         <category>模糊查询</category>
-        <category>Spring</category>
         <category>Nginx</category>
+        <category>Spring</category>
         <category>Spoken English</category>
         <category>SrpingBoot</category>
         <category>文件上传</category>
         <category>事务</category>
-        <category>master</category>
         <category>TypeScript</category>
         <category>WebPack</category>
         <category>Groovy</category>
+        <category>master</category>
+        <category>UML</category>
         <category>Ubuntu</category>
         <category>Mysql</category>
-        <category>VsCode</category>
-        <category>Shell</category>
-        <category>UML</category>
         <category>Vue</category>
         <category>VSCODE</category>
         <category>快捷键</category>
-        <category>git</category>
-        <category>Stream</category>
+        <category>VsCode</category>
+        <category>Shell</category>
         <category>日期</category>
+        <category>Stream</category>
+        <category>git</category>
         <category>线程池</category>
         <category>ubuntu</category>
         <category>虚拟机</category>
-        <category>数据挖掘</category>
-        <category>Hadoop</category>
-        <category>操作系统</category>
-        <category>node</category>
         <category>二分查找</category>
+        <category>数据挖掘</category>
+        <category>操作系统</category>
+        <category>Hadoop</category>
         <category>EasyExcel</category>
+        <category>node</category>
         <category>JVM</category>
         <category>Yaml</category>
-        <category>junit</category>
-        <category>数据库</category>
         <category>Hexo</category>
-        <category>Git</category>
+        <category>数据库</category>
+        <category>junit</category>
         <category>Mysql事务</category>
-        <category>git,npm,node</category>
-        <category>动态规划</category>
+        <category>Git</category>
         <category>冒泡排序</category>
+        <category>git,npm,node</category>
         <category>堆排序</category>
-        <category>多线程</category>
+        <category>动态规划</category>
         <category>幂等性</category>
         <category>Google</category>
-        <category>快速排序</category>
+        <category>多线程</category>
         <category>流</category>
         <category>归并排序</category>
+        <category>快速排序</category>
         <category>vue</category>
-        <category>直接插入排序</category>
         <category>正则表达式</category>
+        <category>直接插入排序</category>
         <category>选择排序</category>
-        <category>Spring事务</category>
         <category>Java 面试</category>
         <category>数据结构</category>
         <category>阻塞队列</category>
+        <category>Spring事务</category>
         <category>JDK</category>
         <category>动态代理</category>
         <category>Date</category>
@@ -127,79 +127,79 @@
             <category>Ubuntu</category>
             <category>Mysql</category>
             <pubDate>Sun, 13 Feb 2022 21:49:51 +0800</pubDate>
-            <description><![CDATA[ &lt;h1 id=&#34;ubuntu中安装卸载mysql数据库&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#ubuntu中安装卸载mysql数据库&#34;&gt;#&lt;/a&gt;  &lt;code&gt;Ubuntu&lt;/code&gt;  中安装卸载 &lt;code&gt;Mysql&lt;/code&gt;  数据库&lt;/h1&gt;
-&lt;blockquote&gt;
-&lt;p&gt;启动 &lt;code&gt;Mysql&lt;/code&gt;&lt;/p&gt;
+            <description><![CDATA[ &lt;h1 id=&#34;Ubuntu中安装卸载Mysql数据库&#34;&gt;&lt;a href=&#34;#Ubuntu中安装卸载Mysql数据库&#34; class=&#34;headerlink&#34; title=&#34;Ubuntu中安装卸载Mysql数据库&#34;&gt;&lt;/a&gt;&lt;code&gt;Ubuntu&lt;/code&gt;中安装卸载&lt;code&gt;Mysql&lt;/code&gt;数据库&lt;/h1&gt;&lt;blockquote&gt;
+&lt;p&gt;启动&lt;code&gt;Mysql&lt;/code&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;service mysql start&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
 &lt;blockquote&gt;
-&lt;p&gt;关闭 &lt;code&gt;Mysql&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;关闭&lt;code&gt;Mysql&lt;/code&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;service mysql stop&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+
 &lt;span id=&#34;more&#34;&gt;&lt;/span&gt;
+
 &lt;blockquote&gt;
-&lt;p&gt;重启 &lt;code&gt;Mysql&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;重启&lt;code&gt;Mysql&lt;/code&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;/etc/init.d/mysql restart&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;h2 id=&#34;mysql卸载&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#mysql卸载&#34;&gt;#&lt;/a&gt;  &lt;code&gt;Mysql&lt;/code&gt;  卸载&lt;/h2&gt;
-&lt;ol&gt;
-&lt;li&gt;先卸载  &lt;code&gt;mysql-common&lt;/code&gt;&lt;/li&gt;
+
+&lt;h2 id=&#34;Mysql卸载&#34;&gt;&lt;a href=&#34;#Mysql卸载&#34; class=&#34;headerlink&#34; title=&#34;Mysql卸载&#34;&gt;&lt;/a&gt;&lt;code&gt;Mysql&lt;/code&gt;卸载&lt;/h2&gt;&lt;ol&gt;
+&lt;li&gt;先卸载 &lt;code&gt;mysql-common&lt;/code&gt;&lt;/li&gt;
 &lt;/ol&gt;
 &lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;sudo apt-get remove mysql-common&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
 &lt;ol start=&#34;2&#34;&gt;
-&lt;li&gt;再卸载 (因为我的 &lt;code&gt;Mysql&lt;/code&gt;  是 &lt;code&gt;8.0&lt;/code&gt; )&lt;/li&gt;
+&lt;li&gt;再卸载(因为我的&lt;code&gt;Mysql&lt;/code&gt;是&lt;code&gt;8.0&lt;/code&gt;)&lt;/li&gt;
 &lt;/ol&gt;
 &lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;sudo apt-get autoremove --purge mysql-server-8.0&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+
 &lt;ol start=&#34;3&#34;&gt;
-&lt;li&gt;
-&lt;p&gt;再用 &lt;code&gt;dpkg --list|grep mysql&lt;/code&gt;  查看，还剩什么就卸载什么&lt;/p&gt;
+&lt;li&gt;&lt;p&gt;再用&lt;code&gt;dpkg --list|grep mysql&lt;/code&gt;查看，还剩什么就卸载什么&lt;/p&gt;
 &lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;最后清除残留数据&lt;/p&gt;
-&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;最后清除残留数据&lt;/p&gt;
+&lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;dpkg -l |grep ^rc|awk &lt;span class=&#34;string&#34;&gt;&amp;#x27;&amp;#123;print $2&amp;#125;&amp;#x27;&lt;/span&gt; |sudo xargs dpkg -P &lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/li&gt;
 &lt;/ol&gt;
-&lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;dpkg -l |grep ^rc|awk &lt;span class=&#34;string&#34;&gt;&amp;#x27;&amp;#123;print $2&amp;#125;&amp;#x27;&lt;/span&gt; |sudo xargs dpkg -P &lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;h2 id=&#34;mysql安装&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#mysql安装&#34;&gt;#&lt;/a&gt;  &lt;code&gt;Mysql&lt;/code&gt;  安装&lt;/h2&gt;
-&lt;h3 id=&#34;一-安装&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#一-安装&#34;&gt;#&lt;/a&gt; 一、安装&lt;/h3&gt;
-&lt;ol&gt;
-&lt;li&gt;更新软件库&lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;sudo apt update&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;/li&gt;
-&lt;li&gt;安装 &lt;code&gt;Mysql&lt;/code&gt;  服务&lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;sudo apt install mysql-server(这步就已经安装mysql-client)&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;/li&gt;
+&lt;h2 id=&#34;Mysql安装&#34;&gt;&lt;a href=&#34;#Mysql安装&#34; class=&#34;headerlink&#34; title=&#34;Mysql安装&#34;&gt;&lt;/a&gt;&lt;code&gt;Mysql&lt;/code&gt;安装&lt;/h2&gt;&lt;h3 id=&#34;一、安装&#34;&gt;&lt;a href=&#34;#一、安装&#34; class=&#34;headerlink&#34; title=&#34;一、安装&#34;&gt;&lt;/a&gt;一、安装&lt;/h3&gt;&lt;ol&gt;
+&lt;li&gt;更新软件库&lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;sudo apt update&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/li&gt;
+&lt;li&gt;安装&lt;code&gt;Mysql&lt;/code&gt;服务&lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;sudo apt install mysql-server(这步就已经安装mysql-client)&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/li&gt;
 &lt;li&gt;安装依赖&lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;   sudo apt install libmysqlclient-dev&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;   ```      &lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;### 二、检查状态&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;```bash&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;sudo netstat -tap | grep mysql&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;/li&gt;
+如果出现“无此命令”，输入命令&lt;code&gt;sudo apt install netstat&lt;/code&gt;&lt;/li&gt;
 &lt;/ol&gt;
-&lt;p&gt;如果出现 “无此命令”，输入命令 &lt;code&gt;sudo apt install netstat&lt;/code&gt;&lt;/p&gt;
-&lt;img data-src=&#34;/posts/31f95091/2022-02-13-23-21-16.png&#34; class=&#34;&#34;&gt;
-&lt;h3 id=&#34;三-设置root密码&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#三-设置root密码&#34;&gt;#&lt;/a&gt; 三、设置 &lt;code&gt;Root&lt;/code&gt;  密码&lt;/h3&gt;
-&lt;p&gt;1、进入 &lt;code&gt;root&lt;/code&gt;&lt;/p&gt;
+&lt;img data-src=&#34;/blog/posts/31f95091/2022-02-13-23-21-16.png&#34; class=&#34;&#34;&gt;
+
+&lt;h3 id=&#34;三、设置Root密码&#34;&gt;&lt;a href=&#34;#三、设置Root密码&#34; class=&#34;headerlink&#34; title=&#34;三、设置Root密码&#34;&gt;&lt;/a&gt;三、设置&lt;code&gt;Root&lt;/code&gt;密码&lt;/h3&gt;&lt;p&gt;1、进入&lt;code&gt;root&lt;/code&gt;&lt;/p&gt;
 &lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;sudo su&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;p&gt;2、进入 &lt;code&gt;mysql&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;2、进入&lt;code&gt;mysql&lt;/code&gt;&lt;/p&gt;
 &lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;mysql&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;p&gt;3、配置数据库 &lt;code&gt;root&lt;/code&gt;  权限&lt;/p&gt;
+&lt;p&gt;3、配置数据库&lt;code&gt;root&lt;/code&gt;权限&lt;/p&gt;
 &lt;figure class=&#34;highlight sql&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;update mysql.user &lt;span class=&#34;keyword&#34;&gt;set&lt;/span&gt; authentication_string&lt;span class=&#34;operator&#34;&gt;=&lt;/span&gt;PASSWORD(&lt;span class=&#34;string&#34;&gt;&amp;#x27;123456&amp;#x27;&lt;/span&gt;), plugin&lt;span class=&#34;operator&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;string&#34;&gt;&amp;#x27;mysql_native_password&amp;#x27;&lt;/span&gt; &lt;span class=&#34;keyword&#34;&gt;where&lt;/span&gt; &lt;span class=&#34;keyword&#34;&gt;user&lt;/span&gt;&lt;span class=&#34;operator&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;string&#34;&gt;&amp;#x27;root&amp;#x27;&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
 &lt;p&gt;或者&lt;/p&gt;
 &lt;figure class=&#34;highlight sql&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;ALTER&lt;/span&gt; &lt;span class=&#34;keyword&#34;&gt;USER&lt;/span&gt; &lt;span class=&#34;string&#34;&gt;&amp;#x27;root&amp;#x27;&lt;/span&gt;@&lt;span class=&#34;string&#34;&gt;&amp;#x27;localhost&amp;#x27;&lt;/span&gt; IDENTIFIED &lt;span class=&#34;keyword&#34;&gt;WITH&lt;/span&gt; mysql_native_password &lt;span class=&#34;keyword&#34;&gt;BY&lt;/span&gt; &lt;span class=&#34;string&#34;&gt;&amp;#x27;root&amp;#x27;&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;img data-src=&#34;/posts/31f95091/2022-02-13-23-21-34.png&#34; class=&#34;&#34;&gt;
+
+&lt;img data-src=&#34;/blog/posts/31f95091/2022-02-13-23-21-34.png&#34; class=&#34;&#34;&gt;
+
 &lt;p&gt;如果显示密码过于简单则需要重新设置密码强度&lt;/p&gt;
 &lt;figure class=&#34;highlight sql&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;SHOW&lt;/span&gt; VARIABLES &lt;span class=&#34;keyword&#34;&gt;LIKE&lt;/span&gt; &lt;span class=&#34;string&#34;&gt;&amp;#x27;validate_password%&amp;#x27;&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;img data-src=&#34;/posts/31f95091/2022-02-13-23-21-46.png&#34; class=&#34;&#34;&gt;
+
+&lt;img data-src=&#34;/blog/posts/31f95091/2022-02-13-23-21-46.png&#34; class=&#34;&#34;&gt;
+
 &lt;blockquote&gt;
-&lt;p&gt;密码的长度是由 &lt;code&gt;validate_password.length&lt;/code&gt;  决定的，但是可以通过以下命令修改&lt;/p&gt;
+&lt;p&gt;密码的长度是由&lt;code&gt;validate_password.length&lt;/code&gt;决定的,但是可以通过以下命令修改&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;figure class=&#34;highlight sql&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;set&lt;/span&gt; &lt;span class=&#34;keyword&#34;&gt;global&lt;/span&gt; validate_password.length&lt;span class=&#34;operator&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;number&#34;&gt;4&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
 &lt;blockquote&gt;
-&lt;p&gt;&lt;code&gt;validate_password.policy&lt;/code&gt;  决定密码的验证策略，默认等级为 &lt;code&gt;MEDIUM&lt;/code&gt;  (中等), 可通过以下命令修改为 &lt;code&gt;LOW&lt;/code&gt;  (低)&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;validate_password.policy&lt;/code&gt;决定密码的验证策略,默认等级为&lt;code&gt;MEDIUM&lt;/code&gt;(中等),可通过以下命令修改为&lt;code&gt;LOW&lt;/code&gt;(低)&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;figure class=&#34;highlight sql&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;set&lt;/span&gt; &lt;span class=&#34;keyword&#34;&gt;global&lt;/span&gt; validate_password.policy&lt;span class=&#34;operator&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;number&#34;&gt;0&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;img data-src=&#34;/posts/31f95091/2022-02-13-23-21-56.png&#34; class=&#34;&#34;&gt;
-&lt;h3 id=&#34;四-配置远程连接&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#四-配置远程连接&#34;&gt;#&lt;/a&gt; 四、配置远程连接&lt;/h3&gt;
-&lt;p&gt;查看目前是否支持远程连接&lt;/p&gt;
+
+&lt;img data-src=&#34;/blog/posts/31f95091/2022-02-13-23-21-56.png&#34; class=&#34;&#34;&gt;
+
+&lt;h3 id=&#34;四、配置远程连接&#34;&gt;&lt;a href=&#34;#四、配置远程连接&#34; class=&#34;headerlink&#34; title=&#34;四、配置远程连接&#34;&gt;&lt;/a&gt;四、配置远程连接&lt;/h3&gt;&lt;p&gt;查看目前是否支持远程连接&lt;/p&gt;
 &lt;figure class=&#34;highlight sql&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;use mysql;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;select&lt;/span&gt; &lt;span class=&#34;keyword&#34;&gt;user&lt;/span&gt;,host &lt;span class=&#34;keyword&#34;&gt;from&lt;/span&gt; &lt;span class=&#34;keyword&#34;&gt;user&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;img data-src=&#34;/posts/31f95091/2022-02-13-23-22-07.png&#34; class=&#34;&#34;&gt;
+&lt;img data-src=&#34;/blog/posts/31f95091/2022-02-13-23-22-07.png&#34; class=&#34;&#34;&gt;
+
 &lt;p&gt;目前只支持本地连接&lt;/p&gt;
 &lt;blockquote&gt;
-&lt;p&gt;更新域属性， &lt;code&gt;&#39;%&#39;&lt;/code&gt;  表示允许外部访问：&lt;/p&gt;
+&lt;p&gt;更新域属性，&lt;code&gt;&amp;#39;%&amp;#39;&lt;/code&gt;表示允许外部访问：&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;figure class=&#34;highlight sql&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;update &lt;span class=&#34;keyword&#34;&gt;user&lt;/span&gt; &lt;span class=&#34;keyword&#34;&gt;set&lt;/span&gt; host&lt;span class=&#34;operator&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;string&#34;&gt;&amp;#x27;%&amp;#x27;&lt;/span&gt; &lt;span class=&#34;keyword&#34;&gt;where&lt;/span&gt; &lt;span class=&#34;keyword&#34;&gt;user&lt;/span&gt; &lt;span class=&#34;operator&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;string&#34;&gt;&amp;#x27;root&amp;#x27;&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
 &lt;blockquote&gt;
@@ -210,36 +210,30 @@
 &lt;p&gt;再执行授权语句：&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;figure class=&#34;highlight sql&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;GRANT&lt;/span&gt; &lt;span class=&#34;keyword&#34;&gt;ALL&lt;/span&gt; PRIVILEGES &lt;span class=&#34;keyword&#34;&gt;ON&lt;/span&gt; &lt;span class=&#34;operator&#34;&gt;*&lt;/span&gt;.&lt;span class=&#34;operator&#34;&gt;*&lt;/span&gt; &lt;span class=&#34;keyword&#34;&gt;TO&lt;/span&gt; &lt;span class=&#34;string&#34;&gt;&amp;#x27;root&amp;#x27;&lt;/span&gt;@&lt;span class=&#34;string&#34;&gt;&amp;#x27;%&amp;#x27;&lt;/span&gt;&lt;span class=&#34;keyword&#34;&gt;WITH&lt;/span&gt; &lt;span class=&#34;keyword&#34;&gt;GRANT&lt;/span&gt; OPTION;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;p&gt;&lt;code&gt;FLUSH PRIVILEGES;&lt;/code&gt;  命令本质上的作用是：&lt;/p&gt;
-&lt;p&gt;将当前 &lt;code&gt;user&lt;/code&gt;  和 &lt;code&gt;privilige&lt;/code&gt;  表中的用户信息 / 权限设置从 &lt;code&gt;mysql&lt;/code&gt;  库 ( &lt;code&gt;MySQL&lt;/code&gt;  数据库的内置库) 中提取到内存里。&lt;/p&gt;
-&lt;p&gt;&lt;code&gt;MySQL&lt;/code&gt;  用户数据和权限有修改后，希望在 &amp;quot; 不重启 &lt;code&gt;MySQL&lt;/code&gt;  服务 &amp;quot; 的情况下直接生效，那么就需要执行这个命令。&lt;/p&gt;
-&lt;p&gt;通常是在修改 &lt;code&gt;ROOT&lt;/code&gt;  帐号的设置后，怕重启后无法再登录进来，那么直接 &lt;code&gt;flush&lt;/code&gt;  之后就可以看权限设置是否生效。&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;FLUSH PRIVILEGES;&lt;/code&gt; 命令本质上的作用是：&lt;/p&gt;
+&lt;p&gt;将当前&lt;code&gt;user&lt;/code&gt;和&lt;code&gt;privilige&lt;/code&gt;表中的用户信息/权限设置从&lt;code&gt;mysql&lt;/code&gt;库(&lt;code&gt;MySQL&lt;/code&gt;数据库的内置库)中提取到内存里。&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;MySQL&lt;/code&gt;用户数据和权限有修改后，希望在”不重启&lt;code&gt;MySQL&lt;/code&gt;服务”的情况下直接生效，那么就需要执行这个命令。&lt;/p&gt;
+&lt;p&gt;通常是在修改&lt;code&gt;ROOT&lt;/code&gt;帐号的设置后，怕重启后无法再登录进来，那么直接&lt;code&gt;flush&lt;/code&gt;之后就可以看权限设置是否生效。&lt;/p&gt;
 &lt;p&gt;而不必冒太大风险。&lt;/p&gt;
-&lt;h4 id=&#34;可能存在的其它问题&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#可能存在的其它问题&#34;&gt;#&lt;/a&gt; 可能存在的其它问题&lt;/h4&gt;
-&lt;p&gt;执行完之后，再用 &lt;code&gt;Navicat&lt;/code&gt;  连接 &lt;code&gt;mysql&lt;/code&gt; ，报错如下：&lt;/p&gt;
+&lt;h4 id=&#34;可能存在的其它问题&#34;&gt;&lt;a href=&#34;#可能存在的其它问题&#34; class=&#34;headerlink&#34; title=&#34;可能存在的其它问题&#34;&gt;&lt;/a&gt;可能存在的其它问题&lt;/h4&gt;&lt;p&gt;执行完之后，再用&lt;code&gt;Navicat&lt;/code&gt;连接&lt;code&gt;mysql&lt;/code&gt;，报错如下：&lt;/p&gt;
 &lt;figure class=&#34;highlight sql&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;Client does &lt;span class=&#34;keyword&#34;&gt;not&lt;/span&gt; support authentication protocol requested &lt;span class=&#34;keyword&#34;&gt;by&lt;/span&gt; server；&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
 &lt;p&gt;报错原因：&lt;/p&gt;
-&lt;p&gt;&lt;code&gt;mysql8.0&lt;/code&gt;  引入了新特性  &lt;code&gt;caching_sha2_password；&lt;/code&gt; 这种密码加密方式 &lt;code&gt;Navicat 12&lt;/code&gt;  以下客户端不支持；&lt;/p&gt;
-&lt;p&gt;&lt;code&gt;Navicat 12&lt;/code&gt;  以下客户端支持的是 &lt;code&gt;mysql_native_password&lt;/code&gt;  这种加密方式；&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;mysql8.0&lt;/code&gt; 引入了新特性 &lt;code&gt;caching_sha2_password；&lt;/code&gt;这种密码加密方式&lt;code&gt;Navicat 12&lt;/code&gt;以下客户端不支持；&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;Navicat 12&lt;/code&gt;以下客户端支持的是&lt;code&gt;mysql_native_password&lt;/code&gt; 这种加密方式；&lt;/p&gt;
 &lt;p&gt;解决方案:&lt;/p&gt;
 &lt;ol&gt;
-&lt;li&gt;用如下语句查看 &lt;code&gt;MySQL&lt;/code&gt;  当前加密方式&lt;/li&gt;
+&lt;li&gt;用如下语句查看&lt;code&gt;MySQL&lt;/code&gt;当前加密方式&lt;figure class=&#34;highlight sql&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;select&lt;/span&gt; host,&lt;span class=&#34;keyword&#34;&gt;user&lt;/span&gt;,plugin &lt;span class=&#34;keyword&#34;&gt;from&lt;/span&gt; &lt;span class=&#34;keyword&#34;&gt;user&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;img data-src=&#34;/blog/posts/31f95091/2022-02-13-23-22-58.png&#34; class=&#34;&#34;&gt;&lt;/li&gt;
 &lt;/ol&gt;
-&lt;figure class=&#34;highlight sql&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;select&lt;/span&gt; host,&lt;span class=&#34;keyword&#34;&gt;user&lt;/span&gt;,plugin &lt;span class=&#34;keyword&#34;&gt;from&lt;/span&gt; &lt;span class=&#34;keyword&#34;&gt;user&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;img data-src=&#34;/posts/31f95091/2022-02-13-23-22-58.png&#34; class=&#34;&#34;&gt;
-&lt;p&gt;一般第一行， &lt;code&gt;root&lt;/code&gt;  加密方式为 &lt;code&gt;caching_sha2_password&lt;/code&gt; 。&lt;/p&gt;
-&lt;p&gt;2，使用命令将他修改成 &lt;code&gt;mysql_native_password&lt;/code&gt;  加密模式：&lt;/p&gt;
+&lt;p&gt;一般第一行，&lt;code&gt;root&lt;/code&gt;加密方式为&lt;code&gt;caching_sha2_password&lt;/code&gt;。&lt;/p&gt;
+&lt;p&gt;2，使用命令将他修改成&lt;code&gt;mysql_native_password&lt;/code&gt;加密模式：&lt;/p&gt;
 &lt;figure class=&#34;highlight sql&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;update &lt;span class=&#34;keyword&#34;&gt;user&lt;/span&gt; &lt;span class=&#34;keyword&#34;&gt;set&lt;/span&gt; plugin&lt;span class=&#34;operator&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;string&#34;&gt;&amp;#x27;mysql_native_password&amp;#x27;&lt;/span&gt; &lt;span class=&#34;keyword&#34;&gt;where&lt;/span&gt; &lt;span class=&#34;keyword&#34;&gt;user&lt;/span&gt;&lt;span class=&#34;operator&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;string&#34;&gt;&amp;#x27;root&amp;#x27;&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
 &lt;p&gt;再次连接的时候，就成功了。&lt;/p&gt;
-&lt;h4 id=&#34;如果还连接不上&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#如果还连接不上&#34;&gt;#&lt;/a&gt; 如果还连接不上&lt;/h4&gt;
-&lt;p&gt;通过以上操作后，依然无法连接上，问题可能出在了防火墙上。&lt;/p&gt;
-&lt;p&gt;1， &lt;code&gt;MySQL&lt;/code&gt;  部署在实体服务器上解决方案如下：&lt;br&gt;
-a. 开放 &lt;code&gt;MySQL&lt;/code&gt;  的端口号，默认端口号是 &lt;code&gt;3306&lt;/code&gt; 。&lt;br&gt;
-b. 直接关闭防火墙（慎重操作，不建议。当然测试玩的话就随意了。。。。）&lt;/p&gt;
-&lt;p&gt;2， &lt;code&gt;MySQL&lt;/code&gt;  部署在云计算机上的方案如下：&lt;br&gt;
-a. 以阿里云为例，找到实例，设置安全组，开放端口号即可。&lt;/p&gt;
-&lt;h3 id=&#34;关于开放端口&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#关于开放端口&#34;&gt;#&lt;/a&gt; 关于开放端口&lt;/h3&gt;
-&lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;10&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;#防火墙开放3306端口&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;iptables -A INPUT -p tcp --dport 3306 -j ACCEPT&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;#修改MySQL监听&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;vim /etc/mysql/mysql.conf.d/mysqld.cnf&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;##注释掉bind-address = 127.0.0.1&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;#重启动MySQL&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;sudo /etc/init.d/mysql restart&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;#开放MySQL用户远程访问权限&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;grant all privileges on *.* to &lt;span class=&#34;string&#34;&gt;&amp;#x27;root&amp;#x27;&lt;/span&gt;@&lt;span class=&#34;string&#34;&gt;&amp;#x27;%&amp;#x27;&lt;/span&gt; identified by &lt;span class=&#34;string&#34;&gt;&amp;#x27;root&amp;#x27;&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;flush privileges;​&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;h4 id=&#34;如果还连接不上&#34;&gt;&lt;a href=&#34;#如果还连接不上&#34; class=&#34;headerlink&#34; title=&#34;如果还连接不上&#34;&gt;&lt;/a&gt;如果还连接不上&lt;/h4&gt;&lt;p&gt;通过以上操作后，依然无法连接上，问题可能出在了防火墙上。&lt;/p&gt;
+&lt;p&gt;1，&lt;code&gt;MySQL&lt;/code&gt;部署在实体服务器上解决方案如下：&lt;br&gt;a.开放&lt;code&gt;MySQL&lt;/code&gt;的端口号，默认端口号是&lt;code&gt;3306&lt;/code&gt;。&lt;br&gt;b.直接关闭防火墙（慎重操作，不建议。当然测试玩的话就随意了。。。。）&lt;/p&gt;
+&lt;p&gt;2，&lt;code&gt;MySQL&lt;/code&gt;部署在云计算机上的方案如下：&lt;br&gt;a.以阿里云为例，找到实例，设置安全组，开放端口号即可。&lt;/p&gt;
+&lt;h3 id=&#34;关于开放端口&#34;&gt;&lt;a href=&#34;#关于开放端口&#34; class=&#34;headerlink&#34; title=&#34;关于开放端口&#34;&gt;&lt;/a&gt;关于开放端口&lt;/h3&gt;&lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;10&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;#防火墙开放3306端口&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;iptables -A INPUT -p tcp --dport 3306 -j ACCEPT&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;#修改MySQL监听&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;vim /etc/mysql/mysql.conf.d/mysqld.cnf&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;##注释掉bind-address = 127.0.0.1&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;#重启动MySQL&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;sudo /etc/init.d/mysql restart&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;#开放MySQL用户远程访问权限&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;grant all privileges on *.* to &lt;span class=&#34;string&#34;&gt;&amp;#x27;root&amp;#x27;&lt;/span&gt;@&lt;span class=&#34;string&#34;&gt;&amp;#x27;%&amp;#x27;&lt;/span&gt; identified by &lt;span class=&#34;string&#34;&gt;&amp;#x27;root&amp;#x27;&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;flush privileges;​&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+
 &lt;p&gt;大功告成&lt;/p&gt;
  ]]></description>
         </item>
@@ -252,17 +246,23 @@ a. 以阿里云为例，找到实例，设置安全组，开放端口号即可�
             <pubDate>Thu, 10 Feb 2022 23:38:00 +0800</pubDate>
             <description><![CDATA[ &lt;p&gt;今天在处理一个问题时始终都没有头绪，主要场景是自己的方法中最后需要调用别人的方法进行回调，但是又同时处在一个大事务中，主要我做了以下场景来模拟&lt;/p&gt;
 &lt;span id=&#34;more&#34;&gt;&lt;/span&gt;
+
 &lt;p&gt;数据库表结构：&lt;/p&gt;
-&lt;img data-src=&#34;/posts/69c17d37/2022-02-10-23-42-40.png&#34; class=&#34;&#34;&gt;
+&lt;img data-src=&#34;/blog/posts/69c17d37/2022-02-10-23-42-40.png&#34; class=&#34;&#34;&gt;
+
 &lt;p&gt;测试代码：&lt;/p&gt;
 &lt;figure class=&#34;highlight java&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;13&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;14&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;15&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;16&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;17&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;18&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;19&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;20&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;21&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;22&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;23&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;24&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;25&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;26&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;27&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;28&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;29&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;30&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;31&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;32&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;33&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;34&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;35&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;36&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;37&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;meta&#34;&gt;@SpringBootTest&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;public&lt;/span&gt; &lt;span class=&#34;class&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;class&lt;/span&gt; &lt;span class=&#34;title&#34;&gt;StudentMapperTest&lt;/span&gt; &lt;/span&gt;&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;meta&#34;&gt;@Autowired&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;keyword&#34;&gt;private&lt;/span&gt; StudentDao studentDao;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;meta&#34;&gt;@Test&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;meta&#34;&gt;@Transactional(rollbackFor = Exception.class)&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;meta&#34;&gt;@Rollback(false)&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;function&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;void&lt;/span&gt; &lt;span class=&#34;title&#34;&gt;context01&lt;/span&gt;&lt;span class=&#34;params&#34;&gt;()&lt;/span&gt;&lt;/span&gt;&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        &lt;span class=&#34;comment&#34;&gt;//查询张三&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        LambdaUpdateWrapper&amp;lt;Student&amp;gt; updateWrapper0 = &lt;span class=&#34;keyword&#34;&gt;new&lt;/span&gt; LambdaUpdateWrapper&amp;lt;&amp;gt;();&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        updateWrapper0.eq(Student::getName,&lt;span class=&#34;string&#34;&gt;&amp;quot;张三&amp;quot;&lt;/span&gt;);&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        List&amp;lt;Student&amp;gt; students = studentDao.selectList(updateWrapper0);&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        &lt;span class=&#34;comment&#34;&gt;//对张三进行修改为张三改&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        LambdaUpdateWrapper&amp;lt;Student&amp;gt; updateWrapper = &lt;span class=&#34;keyword&#34;&gt;new&lt;/span&gt; LambdaUpdateWrapper&amp;lt;&amp;gt;();&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        updateWrapper.eq(Student::getName,&lt;span class=&#34;string&#34;&gt;&amp;quot;张三&amp;quot;&lt;/span&gt;)&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;                .set(Student::getName,&lt;span class=&#34;string&#34;&gt;&amp;quot;张三改&amp;quot;&lt;/span&gt;);&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        studentDao.update(Student.builder().build(), updateWrapper);&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        &lt;span class=&#34;comment&#34;&gt;//再度查询张三&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        LambdaUpdateWrapper&amp;lt;Student&amp;gt; updateWrapper1 = &lt;span class=&#34;keyword&#34;&gt;new&lt;/span&gt; LambdaUpdateWrapper&amp;lt;&amp;gt;();&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        updateWrapper1.eq(Student::getName,&lt;span class=&#34;string&#34;&gt;&amp;quot;张三&amp;quot;&lt;/span&gt;);&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        List&amp;lt;Student&amp;gt; students1 = studentDao.selectList(updateWrapper1);&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        &lt;span class=&#34;comment&#34;&gt;//尝试查询修改后的张三改&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        LambdaUpdateWrapper&amp;lt;Student&amp;gt; updateWrapper2 = &lt;span class=&#34;keyword&#34;&gt;new&lt;/span&gt; LambdaUpdateWrapper&amp;lt;&amp;gt;();&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        updateWrapper2.eq(Student::getName,&lt;span class=&#34;string&#34;&gt;&amp;quot;张三改&amp;quot;&lt;/span&gt;);&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        List&amp;lt;Student&amp;gt; students2 = studentDao.selectList(updateWrapper2);&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;p&gt;&lt;code&gt;debug&lt;/code&gt;  结果：&lt;/p&gt;
-&lt;img data-src=&#34;/posts/69c17d37/2022-02-10-23-47-46.png&#34; class=&#34;&#34;&gt;
-&lt;img data-src=&#34;/posts/69c17d37/2022-02-10-23-47-01.png&#34; class=&#34;&#34;&gt;
+
+&lt;p&gt;&lt;code&gt;debug&lt;/code&gt;结果：&lt;/p&gt;
+&lt;img data-src=&#34;/blog/posts/69c17d37/2022-02-10-23-47-46.png&#34; class=&#34;&#34;&gt;
+
+&lt;img data-src=&#34;/blog/posts/69c17d37/2022-02-10-23-47-01.png&#34; class=&#34;&#34;&gt;
+
 &lt;p&gt;&lt;strong&gt;我们可以得到虽然事务没有提交但是同一会话查询时依然是修改后的值，但是此时如果为多线程下，别的线程将不会读取到提交事物之前的结果，这就是数据库的隔离性问题&lt;/strong&gt;，此时事务没有提交，数据库结果未改变&lt;/p&gt;
-&lt;img data-src=&#34;/posts/69c17d37/2022-02-10-23-50-42.png&#34; class=&#34;&#34;&gt;
+&lt;img data-src=&#34;/blog/posts/69c17d37/2022-02-10-23-50-42.png&#34; class=&#34;&#34;&gt;
+
 &lt;p&gt;当然，只有当程序正常运行结束之后，事务才会提交，数据库才会改变：&lt;/p&gt;
-&lt;img data-src=&#34;/posts/69c17d37/2022-02-10-23-51-07.png&#34; class=&#34;&#34;&gt;
+&lt;img data-src=&#34;/blog/posts/69c17d37/2022-02-10-23-51-07.png&#34; class=&#34;&#34;&gt;
  ]]></description>
         </item>
     </channel>

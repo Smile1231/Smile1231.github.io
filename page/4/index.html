@@ -21,7 +21,7 @@
 
 <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Mulish:300,300italic,400,400italic,700,700italic%7CFredericka%20the%20Great:300,300italic,400,400italic,700,700italic%7CNoto%20Serif%20JP:300,300italic,400,400italic,700,700italic%7CNoto%20Serif%20SC:300,300italic,400,400italic,700,700italic%7CInconsolata:300,300italic,400,400italic,700,700italic&display=swap&subset=latin,latin-ext">
 
-<link rel="stylesheet" href="/css/app.css?v=0.2.5">
+<link rel="stylesheet" href="/blog/css/app.css?v=0.2.5">
 
   
 
@@ -56,7 +56,7 @@
         <div id="brand">
           <div class="pjax">
           
-            <a href="/" class="logo" rel="start"><p class="artboard">Jin Mao when to get rich ?</p>
+            <a href="/blog/" class="logo" rel="start"><p class="artboard">Jin Mao when to get rich ?</p>
               <h1 itemprop="name headline" class="title">JIN MAO 's Blog</h1>
             </a>
             <p class="meta" itemprop="description">= got windy(起风了) =</p>
@@ -73,7 +73,7 @@
       </div>
     </div>
     <ul class="menu">
-      <li class="item title"><a href="/" rel="start">Jin Mao when to get rich ?</a></li>
+      <li class="item title"><a href="/blog/" rel="start">Jin Mao when to get rich ?</a></li>
     </ul>
     <ul class="right">
       <li class="item theme">
@@ -89,12 +89,12 @@
       </div>
       <div id="imgs" class="pjax">
         <ul>
-          <li class="item" data-background-image="https://tva2.sinaimg.cn/large/6833939bly1gipeyhsblkj20zk0m81kx.jpg"></li>
-          <li class="item" data-background-image="https://tva2.sinaimg.cn/large/6833939bly1gicis081o9j20zk0m8dmr.jpg"></li>
-          <li class="item" data-background-image="https://tva2.sinaimg.cn/large/6833939bly1giciuja1j1j20zk0m8kjl.jpg"></li>
+          <li class="item" data-background-image="https://tva2.sinaimg.cn/large/6833939bly1giclhnx9glj20zk0m8npd.jpg"></li>
           <li class="item" data-background-image="https://tva2.sinaimg.cn/large/6833939bly1giclxp31goj20zk0m8qv5.jpg"></li>
           <li class="item" data-background-image="https://tva2.sinaimg.cn/large/6833939bly1gipeuibk9fj20zk0m8ay2.jpg"></li>
-          <li class="item" data-background-image="https://tva2.sinaimg.cn/large/6833939bly1giph4wqtg4j20zk0m8x6p.jpg"></li>
+          <li class="item" data-background-image="https://tva2.sinaimg.cn/large/6833939bly1gipew28b65j20zk0m8hdt.jpg"></li>
+          <li class="item" data-background-image="https://tva2.sinaimg.cn/large/6833939bly1gicis081o9j20zk0m8dmr.jpg"></li>
+          <li class="item" data-background-image="https://tva2.sinaimg.cn/large/6833939bly1gicli9lfebj20zk0m84qp.jpg"></li>
         </ul>
       </div>
     </header>
@@ -120,7 +120,7 @@
         
 <article class="item">
   <div class="cover">
-    <a href="/posts/a1926332/" itemprop="url" title="Springboot+Vue二进制文件传输"><img data-src="https://tva2.sinaimg.cn/mw690/6833939bly1gicliwyw55j20zk0m8hdt.jpg"></a>
+    <a href="/blog/posts/a1926332/" itemprop="url" title="Springboot+Vue二进制文件传输"><img data-src="https://tva2.sinaimg.cn/mw690/6833939bly1giclxxcb6rj20zk0m8b29.jpg"></a>
   </div>
   <div class="info">
     
@@ -146,20 +146,20 @@
   </span>
 </div>
 
-    <h3><a href="/posts/a1926332/" itemprop="url" title="Springboot+Vue二进制文件传输">Springboot+Vue二进制文件传输</a></h3>
+    <h3><a href="/blog/posts/a1926332/" itemprop="url" title="Springboot+Vue二进制文件传输">Springboot+Vue二进制文件传输</a></h3>
     <div class="excerpt">
-        <p>最近用到了 <code>springboot</code>  项目返回二进制流，话不多说，代码贴上:</p>
+        <p>最近用到了<code>springboot</code>项目返回二进制流，话不多说，代码贴上:</p>
 <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">@PostMapping(value = &quot;/file/&#123;fileName&#125;&quot;)</span></span><br><span class="line"><span class="function"><span class="keyword">public</span> ResponseEntity&lt;FileSystemResource&gt; <span class="title">getFile</span><span class="params">(<span class="meta">@PathVariable(&quot;fileName&quot;)</span> String fileName)</span> <span class="keyword">throws</span> FileNotFoundException </span>&#123;</span><br><span class="line">	File file = <span class="keyword">new</span> File(filePath, fileName);</span><br><span class="line">	<span class="keyword">if</span> (file.exists()) &#123;</span><br><span class="line">		<span class="keyword">return</span> export(file);</span><br><span class="line">	&#125;</span><br><span class="line">	System.out.println(file);</span><br><span class="line">	<span class="keyword">return</span> <span class="keyword">null</span>;</span><br><span class="line">&#125;</span><br><span class="line"> </span><br><span class="line"><span class="function"><span class="keyword">public</span> ResponseEntity&lt;FileSystemResource&gt; <span class="title">export</span><span class="params">(File file)</span> </span>&#123;</span><br><span class="line">	<span class="keyword">if</span> (file == <span class="keyword">null</span>) &#123;</span><br><span class="line">		<span class="keyword">return</span> <span class="keyword">null</span>;</span><br><span class="line">	&#125;</span><br><span class="line">	HttpHeaders headers = <span class="keyword">new</span> HttpHeaders();</span><br><span class="line">	headers.add(<span class="string">&quot;Cache-Control&quot;</span>, <span class="string">&quot;no-cache, no-store, must-revalidate&quot;</span>);</span><br><span class="line">	headers.add(<span class="string">&quot;Content-Disposition&quot;</span>, <span class="string">&quot;attachment; filename=&quot;</span> + file.getName());</span><br><span class="line">	headers.add(<span class="string">&quot;Pragma&quot;</span>, <span class="string">&quot;no-cache&quot;</span>);</span><br><span class="line">	headers.add(<span class="string">&quot;Expires&quot;</span>, <span class="string">&quot;0&quot;</span>);</span><br><span class="line">	headers.add(<span class="string">&quot;Last-Modified&quot;</span>, <span class="keyword">new</span> Date().toString());</span><br><span class="line">	headers.add(<span class="string">&quot;ETag&quot;</span>, String.valueOf(System.currentTimeMillis()));</span><br><span class="line">	<span class="keyword">return</span> ResponseEntity.ok()</span><br><span class="line">                        .headers(headers)</span><br><span class="line">                        .contentLength(file.length())</span><br><span class="line">                        .contentType(MediaType.parseMediaType(<span class="string">&quot;application/octet-stream&quot;</span>))</span><br><span class="line">                        .body(<span class="keyword">new</span> FileSystemResource(file));</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
       
     </div>
-    <a href="/posts/a1926332/" itemprop="url" title="Springboot+Vue二进制文件传输" class="btn">more...</a>
+    <a href="/blog/posts/a1926332/" itemprop="url" title="Springboot+Vue二进制文件传输" class="btn">more...</a>
   </div>
 </article>
 
         
 <article class="item">
   <div class="cover">
-    <a href="/posts/7733848a/" itemprop="url" title="文件上传前端小结"><img data-src="https://tva2.sinaimg.cn/mw690/6833939bly1giciundwu5j20zk0m8n9e.jpg"></a>
+    <a href="/blog/posts/7733848a/" itemprop="url" title="文件上传前端小结"><img data-src="https://tva2.sinaimg.cn/mw690/6833939bly1gipevgoki5j20zk0m84qp.jpg"></a>
   </div>
   <div class="info">
     
@@ -174,7 +174,7 @@
     <span class="icon">
       <i class="ic i-pen"></i>
     </span>
-    <span>78</span>
+    <span>77</span>
     <span class="text">words</span>
   </span>
   <span class="item" title="Reading time">
@@ -185,25 +185,24 @@
   </span>
 </div>
 
-    <h3><a href="/posts/7733848a/" itemprop="url" title="文件上传前端小结">文件上传前端小结</a></h3>
+    <h3><a href="/blog/posts/7733848a/" itemprop="url" title="文件上传前端小结">文件上传前端小结</a></h3>
     <div class="excerpt">
-        <h2 id="页面a标签-点击不跳转"><a class="markdownIt-Anchor" href="#页面a标签-点击不跳转">#</a> 页面 <code>a</code>  标签 点击不跳转</h2>
-<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">href=&quot;javascript:viod(0)&quot;</span><br><span class="line"></span><br><span class="line">href=&quot;javascript:;&quot;</span><br></pre></td></tr></table></figure>
+        <h2 id="页面a标签-点击不跳转"><a href="#页面a标签-点击不跳转" class="headerlink" title="页面a标签 点击不跳转"></a>页面<code>a</code>标签 点击不跳转</h2><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">href=&quot;javascript:viod(0)&quot;</span><br><span class="line"></span><br><span class="line">href=&quot;javascript:;&quot;</span><br></pre></td></tr></table></figure>
       
     </div>
     <div class="meta footer">
       <span>
-        <a href="/categories/%E5%89%8D%E7%AB%AF/" itemprop="url" title="前端"><i class="ic i-flag"></i>前端</a>
+        <a href="/blog/categories/%E5%89%8D%E7%AB%AF/" itemprop="url" title="前端"><i class="ic i-flag"></i>前端</a>
       </span>
     </div>
-    <a href="/posts/7733848a/" itemprop="url" title="文件上传前端小结" class="btn">more...</a>
+    <a href="/blog/posts/7733848a/" itemprop="url" title="文件上传前端小结" class="btn">more...</a>
   </div>
 </article>
 
         
 <article class="item">
   <div class="cover">
-    <a href="/posts/55b095e0/" itemprop="url" title="The learning of Shell"><img data-src="https://tva2.sinaimg.cn/mw690/6833939bly1gipeubcbajj20zk0m8h1h.jpg"></a>
+    <a href="/blog/posts/55b095e0/" itemprop="url" title="The learning of Shell"><img data-src="https://tva2.sinaimg.cn/mw690/6833939bly1giclh5u05ej20zk0m87df.jpg"></a>
   </div>
   <div class="info">
     
@@ -229,7 +228,7 @@
   </span>
 </div>
 
-    <h3><a href="/posts/55b095e0/" itemprop="url" title="The learning of Shell">The learning of Shell</a></h3>
+    <h3><a href="/blog/posts/55b095e0/" itemprop="url" title="The learning of Shell">The learning of Shell</a></h3>
     <div class="excerpt">
         <p>Nowdays , i hava a task about how to use shell script ,so it is time to learn shell .</p>
 <p><a target="_blank" rel="noopener" href="https://www.cnblogs.com/jingmoxukong/p/7867397.html"> shell  入门 </a></p>
@@ -238,17 +237,17 @@
     </div>
     <div class="meta footer">
       <span>
-        <a href="/categories/Shell/" itemprop="url" title="Shell"><i class="ic i-flag"></i>Shell</a>
+        <a href="/blog/categories/Shell/" itemprop="url" title="Shell"><i class="ic i-flag"></i>Shell</a>
       </span>
     </div>
-    <a href="/posts/55b095e0/" itemprop="url" title="The learning of Shell" class="btn">more...</a>
+    <a href="/blog/posts/55b095e0/" itemprop="url" title="The learning of Shell" class="btn">more...</a>
   </div>
 </article>
 
         
 <article class="item">
   <div class="cover">
-    <a href="/posts/ef55dc85/" itemprop="url" title="CEST与北京时间转换表"><img data-src="https://tva2.sinaimg.cn/mw690/6833939bly1giclffsa1cj20zk0m811l.jpg"></a>
+    <a href="/blog/posts/ef55dc85/" itemprop="url" title="CEST与北京时间转换表"><img data-src="https://tva2.sinaimg.cn/mw690/6833939bly1gipeu1usa7j20zk0m8b29.jpg"></a>
   </div>
   <div class="info">
     
@@ -274,24 +273,24 @@
   </span>
 </div>
 
-    <h3><a href="/posts/ef55dc85/" itemprop="url" title="CEST与北京时间转换表">CEST与北京时间转换表</a></h3>
+    <h3><a href="/blog/posts/ef55dc85/" itemprop="url" title="CEST与北京时间转换表">CEST与北京时间转换表</a></h3>
     <div class="excerpt">
         <p><a target="_blank" rel="noopener" href="https://datetime360.com/cn/cet-beijing-time/">参考链接</a></p>
       
     </div>
     <div class="meta footer">
       <span>
-        <a href="/categories/SAP/" itemprop="url" title="SAP"><i class="ic i-flag"></i>SAP</a>
+        <a href="/blog/categories/SAP/" itemprop="url" title="SAP"><i class="ic i-flag"></i>SAP</a>
       </span>
     </div>
-    <a href="/posts/ef55dc85/" itemprop="url" title="CEST与北京时间转换表" class="btn">more...</a>
+    <a href="/blog/posts/ef55dc85/" itemprop="url" title="CEST与北京时间转换表" class="btn">more...</a>
   </div>
 </article>
 
         
 <article class="item">
   <div class="cover">
-    <a href="/posts/96b6e8a1/" itemprop="url" title="simple self introduction"><img data-src="https://tva2.sinaimg.cn/mw690/6833939bly1gipey84bjtj20zk0m8hdt.jpg"></a>
+    <a href="/blog/posts/96b6e8a1/" itemprop="url" title="simple self introduction"><img data-src="https://tva2.sinaimg.cn/mw690/6833939bly1gicis3attqj20zk0m8k7l.jpg"></a>
   </div>
   <div class="info">
     
@@ -317,24 +316,24 @@
   </span>
 </div>
 
-    <h3><a href="/posts/96b6e8a1/" itemprop="url" title="simple self introduction">simple self introduction</a></h3>
+    <h3><a href="/blog/posts/96b6e8a1/" itemprop="url" title="simple self introduction">simple self introduction</a></h3>
     <div class="excerpt">
         Here's something encrypted, password is required to continue reading.
       
     </div>
     <div class="meta footer">
       <span>
-        <a href="/categories/SAP/" itemprop="url" title="SAP"><i class="ic i-flag"></i>SAP</a>
+        <a href="/blog/categories/SAP/" itemprop="url" title="SAP"><i class="ic i-flag"></i>SAP</a>
       </span>
     </div>
-    <a href="/posts/96b6e8a1/" itemprop="url" title="simple self introduction" class="btn">more...</a>
+    <a href="/blog/posts/96b6e8a1/" itemprop="url" title="simple self introduction" class="btn">more...</a>
   </div>
 </article>
 
         
 <article class="item">
   <div class="cover">
-    <a href="/posts/d0966c4d/" itemprop="url" title="工作难点"><img data-src="https://tva2.sinaimg.cn/mw690/6833939bly1giclj61ylzj20zk0m8b29.jpg"></a>
+    <a href="/blog/posts/d0966c4d/" itemprop="url" title="工作难点"><img data-src="https://tva2.sinaimg.cn/mw690/6833939bly1giciryrr3rj20zk0m8nhk.jpg"></a>
   </div>
   <div class="info">
     
@@ -360,19 +359,19 @@
   </span>
 </div>
 
-    <h3><a href="/posts/d0966c4d/" itemprop="url" title="工作难点">工作难点</a></h3>
+    <h3><a href="/blog/posts/d0966c4d/" itemprop="url" title="工作难点">工作难点</a></h3>
     <div class="excerpt">
         Here's something encrypted, password is required to continue reading.
       
     </div>
-    <a href="/posts/d0966c4d/" itemprop="url" title="工作难点" class="btn">more...</a>
+    <a href="/blog/posts/d0966c4d/" itemprop="url" title="工作难点" class="btn">more...</a>
   </div>
 </article>
 
         
 <article class="item">
   <div class="cover">
-    <a href="/posts/4187faeb/" itemprop="url" title="English self_introduction"><img data-src="https://tva2.sinaimg.cn/mw690/6833939bly1gipevo9j1jj20zk0m8e81.jpg"></a>
+    <a href="/blog/posts/4187faeb/" itemprop="url" title="English self_introduction"><img data-src="https://tva2.sinaimg.cn/mw690/6833939bly1giclga70tsj20zk0m84mr.jpg"></a>
   </div>
   <div class="info">
     
@@ -398,24 +397,24 @@
   </span>
 </div>
 
-    <h3><a href="/posts/4187faeb/" itemprop="url" title="English self_introduction">English self_introduction</a></h3>
+    <h3><a href="/blog/posts/4187faeb/" itemprop="url" title="English self_introduction">English self_introduction</a></h3>
     <div class="excerpt">
         Here's something encrypted, password is required to continue reading.
       
     </div>
     <div class="meta footer">
       <span>
-        <a href="/categories/SAP/" itemprop="url" title="SAP"><i class="ic i-flag"></i>SAP</a>
+        <a href="/blog/categories/SAP/" itemprop="url" title="SAP"><i class="ic i-flag"></i>SAP</a>
       </span>
     </div>
-    <a href="/posts/4187faeb/" itemprop="url" title="English self_introduction" class="btn">more...</a>
+    <a href="/blog/posts/4187faeb/" itemprop="url" title="English self_introduction" class="btn">more...</a>
   </div>
 </article>
 
         
 <article class="item">
   <div class="cover">
-    <a href="/posts/4da9c93/" itemprop="url" title="Web-based design and analysis tools for CRISPR base editing 文献阅读"><img data-src="https://tva2.sinaimg.cn/mw690/6833939bly1gipeun65urj20zk0m81ii.jpg"></a>
+    <a href="/blog/posts/4da9c93/" itemprop="url" title="Web-based design and analysis tools for CRISPR base editing 文献阅读"><img data-src="https://tva2.sinaimg.cn/mw690/6833939bly1giclhnx9glj20zk0m8npd.jpg"></a>
   </div>
   <div class="info">
     
@@ -430,7 +429,7 @@
     <span class="icon">
       <i class="ic i-pen"></i>
     </span>
-    <span>52</span>
+    <span>51</span>
     <span class="text">words</span>
   </span>
   <span class="item" title="Reading time">
@@ -441,19 +440,19 @@
   </span>
 </div>
 
-    <h3><a href="/posts/4da9c93/" itemprop="url" title="Web-based design and analysis tools for CRISPR base editing 文献阅读">Web-based design and analysis tools for CRISPR base editing 文献阅读</a></h3>
+    <h3><a href="/blog/posts/4da9c93/" itemprop="url" title="Web-based design and analysis tools for CRISPR base editing 文献阅读">Web-based design and analysis tools for CRISPR base editing 文献阅读</a></h3>
     <div class="excerpt">
-        <h2 id="web-based-design-and-analysis-tools-for-crispr-base-editing"><a class="markdownIt-Anchor" href="#web-based-design-and-analysis-tools-for-crispr-base-editing">#</a>  <code>Web-based design and analysis tools for CRISPR base editing</code></h2>
+        <h2 id="Web-based-design-and-analysis-tools-for-CRISPR-base-editing"><a href="#Web-based-design-and-analysis-tools-for-CRISPR-base-editing" class="headerlink" title="Web-based design and analysis tools for CRISPR base editing"></a><code>Web-based design and analysis tools for CRISPR base editing</code></h2>
       
     </div>
-    <a href="/posts/4da9c93/" itemprop="url" title="Web-based design and analysis tools for CRISPR base editing 文献阅读" class="btn">more...</a>
+    <a href="/blog/posts/4da9c93/" itemprop="url" title="Web-based design and analysis tools for CRISPR base editing 文献阅读" class="btn">more...</a>
   </div>
 </article>
 
         
 <article class="item">
   <div class="cover">
-    <a href="/posts/dfdc2005/" itemprop="url" title="JDK动态代理原理剖析(简洁版)"><img data-src="https://tva2.sinaimg.cn/mw690/6833939bly1giclhtuo6nj20zk0m8ttm.jpg"></a>
+    <a href="/blog/posts/dfdc2005/" itemprop="url" title="JDK动态代理原理剖析(简洁版)"><img data-src="https://tva2.sinaimg.cn/mw690/6833939bly1giciuja1j1j20zk0m8kjl.jpg"></a>
   </div>
   <div class="info">
     
@@ -479,23 +478,20 @@
   </span>
 </div>
 
-    <h3><a href="/posts/dfdc2005/" itemprop="url" title="JDK动态代理原理剖析(简洁版)">JDK动态代理原理剖析(简洁版)</a></h3>
+    <h3><a href="/blog/posts/dfdc2005/" itemprop="url" title="JDK动态代理原理剖析(简洁版)">JDK动态代理原理剖析(简洁版)</a></h3>
     <div class="excerpt">
-        <h2 id="动态代理两个实例视频中学的"><a class="markdownIt-Anchor" href="#动态代理两个实例视频中学的">#</a> 动态代理两个实例 (视频中学的)</h2>
-<p>动态代理在 <code>Java</code>  中有着广泛的应用，比如 <code>Spring AOP、Hibernate</code>  数据查询、测试框架的后端 <code>mock、RPC</code>  远程调用、 <code>Java</code>  注解对象获取、日志、用户鉴权、全局性异常处理、性能监控，甚至事务处理等。<br>
-本文主要介绍 <code>Java</code>  中两种常见的动态代理方式： <code>JDK</code>  原生动态代理和 <code>CGLIB</code>  动态代理。</p>
-<h3 id="代理模式"><a class="markdownIt-Anchor" href="#代理模式">#</a> 代理模式</h3>
-<p>本文将介绍的 <code>Java</code>  动态代理与设计模式中的代理模式有关，什么是代理模式呢？</p>
+        <h2 id="动态代理两个实例-视频中学的"><a href="#动态代理两个实例-视频中学的" class="headerlink" title="动态代理两个实例(视频中学的)"></a>动态代理两个实例(视频中学的)</h2><p>动态代理在<code>Java</code>中有着广泛的应用，比如<code>Spring AOP、Hibernate</code>数据查询、测试框架的后端<code>mock、RPC</code>远程调用、<code>Java</code>注解对象获取、日志、用户鉴权、全局性异常处理、性能监控，甚至事务处理等。<br>本文主要介绍<code>Java</code>中两种常见的动态代理方式：<code>JDK</code>原生动态代理和<code>CGLIB</code>动态代理。</p>
+<h3 id="代理模式"><a href="#代理模式" class="headerlink" title="代理模式"></a>代理模式</h3><p>本文将介绍的<code>Java</code>动态代理与设计模式中的代理模式有关，什么是代理模式呢？</p>
       
     </div>
-    <a href="/posts/dfdc2005/" itemprop="url" title="JDK动态代理原理剖析(简洁版)" class="btn">more...</a>
+    <a href="/blog/posts/dfdc2005/" itemprop="url" title="JDK动态代理原理剖析(简洁版)" class="btn">more...</a>
   </div>
 </article>
 
         
 <article class="item">
   <div class="cover">
-    <a href="/posts/159c6098/" itemprop="url" title="阻塞队列"><img data-src="https://tva2.sinaimg.cn/mw690/6833939bly1giclip4jbpj20zk0m87cv.jpg"></a>
+    <a href="/blog/posts/159c6098/" itemprop="url" title="阻塞队列"><img data-src="https://tva2.sinaimg.cn/mw690/6833939bly1giciundwu5j20zk0m8n9e.jpg"></a>
   </div>
   <div class="info">
     
@@ -521,14 +517,13 @@
   </span>
 </div>
 
-    <h3><a href="/posts/159c6098/" itemprop="url" title="阻塞队列">阻塞队列</a></h3>
+    <h3><a href="/blog/posts/159c6098/" itemprop="url" title="阻塞队列">阻塞队列</a></h3>
     <div class="excerpt">
-        <h2 id="阻塞队列接口结构和实现类"><a class="markdownIt-Anchor" href="#阻塞队列接口结构和实现类">#</a> 阻塞队列接口结构和实现类</h2>
-<p><strong>阻塞队列</strong>，顾名思义，首先它是一个队列，而一个阻塞队列在数据结构中所起的作用大致如下图所示：</p>
-<img src="/posts/159c6098/2022-03-13-16-33-09.png" class="">
+        <h2 id="阻塞队列接口结构和实现类"><a href="#阻塞队列接口结构和实现类" class="headerlink" title="阻塞队列接口结构和实现类"></a>阻塞队列接口结构和实现类</h2><p><strong>阻塞队列</strong>，顾名思义，首先它是一个队列，而一个阻塞队列在数据结构中所起的作用大致如下图所示：</p>
+<img src="/blog/posts/159c6098/2022-03-13-16-33-09.png" class="">
       
     </div>
-    <a href="/posts/159c6098/" itemprop="url" title="阻塞队列" class="btn">more...</a>
+    <a href="/blog/posts/159c6098/" itemprop="url" title="阻塞队列" class="btn">more...</a>
   </div>
 </article>
 
@@ -539,7 +534,7 @@
   
   <nav class="pagination">
     <div class="inner">
-    <a class="extend prev" rel="prev" href="/page/3/"><i class="ic i-angle-left" aria-label="Previous page"></i></a><a class="page-number" href="/">1</a><span class="space">&hellip;</span><a class="page-number" href="/page/3/">3</a><span class="page-number current">4</span><a class="page-number" href="/page/5/">5</a><span class="space">&hellip;</span><a class="page-number" href="/page/15/">15</a><a class="extend next" rel="next" href="/page/5/"><i class="ic i-angle-right" aria-label="Next page"></i></a>
+    <a class="extend prev" rel="prev" href="/blog/page/3/"><i class="ic i-angle-left" aria-label="Previous page"></i></a><a class="page-number" href="/blog/">1</a><span class="space">&hellip;</span><a class="page-number" href="/blog/page/3/">3</a><span class="page-number current">4</span><a class="page-number" href="/blog/page/5/">5</a><span class="space">&hellip;</span><a class="page-number" href="/blog/page/15/">15</a><a class="extend next" rel="next" href="/blog/page/5/"><i class="ic i-angle-right" aria-label="Next page"></i></a>
     </div>
   </nav>
 
@@ -559,26 +554,26 @@
       <div class="overview panel" data-title="Overview">
         <div class="author" itemprop="author" itemscope itemtype="http://schema.org/Person">
   <img class="image" itemprop="image" alt="JIN Mao"
-      data-src="/images/avatar.png">
+      data-src="/blog/images/avatar.png">
   <p class="name" itemprop="name">JIN Mao</p>
   <div class="description" itemprop="description"></div>
 </div>
 
 <nav class="state">
     <div class="item posts">
-      <a href="/archives/">
+      <a href="/blog/archives/">
         <span class="count">150</span>
         <span class="name">posts</span>
       </a>
     </div>
     <div class="item categories">
-      <a href="/categories/">
+      <a href="/blog/categories/">
         <span class="count">78</span>
         <span class="name">categories</span>
       </a>
     </div>
     <div class="item tags">
-      <a href="/tags/">
+      <a href="/blog/tags/">
         <span class="count">113</span>
         <span class="name">tags</span>
       </a>
@@ -593,12 +588,12 @@
   
     
   <li class="item">
-    <a href="/" rel="section"><i class="ic i-home"></i>Home</a>
+    <a href="/blog/" rel="section"><i class="ic i-home"></i>Home</a>
   </li>
 
     
   <li class="item">
-    <a href="/about/" rel="section"><i class="ic i-user"></i>About</a>
+    <a href="/blog/about/" rel="section"><i class="ic i-user"></i>About</a>
   </li>
 
         
@@ -608,17 +603,17 @@
 
         
   <li class="item">
-    <a href="/archives/" rel="section"><i class="ic i-list-alt"></i>Archives</a>
+    <a href="/blog/archives/" rel="section"><i class="ic i-list-alt"></i>Archives</a>
   </li>
 
         
   <li class="item">
-    <a href="/categories/" rel="section"><i class="ic i-th"></i>Categories</a>
+    <a href="/blog/categories/" rel="section"><i class="ic i-th"></i>Categories</a>
   </li>
 
         
   <li class="item">
-    <a href="/tags/" rel="section"><i class="ic i-tags"></i>Tags</a>
+    <a href="/blog/tags/" rel="section"><i class="ic i-tags"></i>Tags</a>
   </li>
 
   </ul>
@@ -631,12 +626,12 @@
 
   <ul id="quick">
     <li class="prev pjax">
-        <a href="/page/3/" rel="prev" title="Previous Post"><i class="ic i-chevron-left"></i></a>
+        <a href="/blog/page/3/" rel="prev" title="Previous Post"><i class="ic i-chevron-left"></i></a>
     </li>
     <li class="up"><i class="ic i-arrow-up"></i></li>
     <li class="down"><i class="ic i-arrow-down"></i></li>
     <li class="next pjax">
-        <a href="/page/5/" rel="next" title="Next Post"><i class="ic i-chevron-right"></i></a>
+        <a href="/blog/page/5/" rel="next" title="Next Post"><i class="ic i-chevron-right"></i></a>
     </li>
     <li class="percent"></li>
   </ul>
@@ -657,101 +652,104 @@
   <li class="item">
     
 <div class="breadcrumb">
-<a href="/categories/Java/" title="In Java">Java</a>
+<a href="/blog/categories/IDEA/" title="In IDEA">IDEA</a>
 </div>
 
-    <span><a href="/posts/c3733521/" title="Java之assert关键字">Java之assert关键字</a></span>
+    <span><a href="/blog/posts/610bdf07/" title="IDEA快捷键">IDEA快捷键</a></span>
   </li>
 
       
   <li class="item">
     
 <div class="breadcrumb">
-<a href="/categories/Machine-Learning/" title="In Machine Learning">Machine Learning</a>
+<a href="/blog/categories/Java/" title="In Java">Java</a>
 </div>
 
-    <span><a href="/posts/1b930e38/" title="Machine Learning essays">Machine Learning essays</a></span>
+    <span><a href="/blog/posts/d6d1be75/" title="在Javadoc注释中引用方法">在Javadoc注释中引用方法</a></span>
   </li>
 
       
   <li class="item">
     
 <div class="breadcrumb">
-<a href="/categories/UML/" title="In UML">UML</a>
+<a href="/blog/categories/SpringBoot/" title="In SpringBoot">SpringBoot</a>
 </div>
 
-    <span><a href="/posts/f610585/" title="UML:类图关系总结">UML:类图关系总结</a></span>
+    <span><a href="/blog/posts/67f40b37/" title="Spring Boot 获取服务IP地址和端口号">Spring Boot 获取服务IP地址和端口号</a></span>
   </li>
 
       
   <li class="item">
     
 <div class="breadcrumb">
-</div>
-
-    <span><a href="/posts/a1926332/" title="Springboot+Vue二进制文件传输">Springboot+Vue二进制文件传输</a></span>
-  </li>
-
-      
-  <li class="item">
-    
-<div class="breadcrumb">
-<a href="/categories/Java/" title="In Java">Java</a>
+<a href="/blog/categories/Java%E9%9D%A2%E8%AF%95/" title="In Java面试">Java面试</a>
 <i class="ic i-angle-right"></i>
-<a href="/categories/Java/Stream/" title="In Stream">Stream</a>
+<a href="/blog/categories/Java%E9%9D%A2%E8%AF%95/%E9%80%89%E6%8B%A9%E6%8E%92%E5%BA%8F/" title="In 选择排序">选择排序</a>
+<i class="ic i-angle-right"></i>
+<a href="/blog/categories/Java%E9%9D%A2%E8%AF%95/%E9%80%89%E6%8B%A9%E6%8E%92%E5%BA%8F/%E7%AE%97%E6%B3%95/" title="In 算法">算法</a>
 </div>
 
-    <span><a href="/posts/8b8fedea/" title="Stream流的介绍">Stream流的介绍</a></span>
+    <span><a href="/blog/posts/43d00a99/" title="选择排序">选择排序</a></span>
   </li>
 
       
   <li class="item">
     
 <div class="breadcrumb">
-<a href="/categories/Docker/" title="In Docker">Docker</a>
+<a href="/blog/categories/Vue/" title="In Vue">Vue</a>
 </div>
 
-    <span><a href="/posts/e2b12017/" title="Dokcer镜像推送到DockerHub">Dokcer镜像推送到DockerHub</a></span>
+    <span><a href="/blog/posts/bd30a519/" title="Vue实现Yaml验证组件">Vue实现Yaml验证组件</a></span>
   </li>
 
       
   <li class="item">
     
 <div class="breadcrumb">
-<a href="/categories/Java/" title="In Java">Java</a>
+<a href="/blog/categories/Java/" title="In Java">Java</a>
+<i class="ic i-angle-right"></i>
+<a href="/blog/categories/Java/Java%E9%9D%A2%E8%AF%95/" title="In Java面试">Java面试</a>
 </div>
 
-    <span><a href="/posts/1da18d70/" title="Java8内置四大函数式接口">Java8内置四大函数式接口</a></span>
+    <span><a href="/blog/posts/f23f1351/" title="equals与&#x3D;&#x3D;区别">equals与==区别</a></span>
   </li>
 
       
   <li class="item">
     
 <div class="breadcrumb">
-<a href="/categories/Java/" title="In Java">Java</a>
 </div>
 
-    <span><a href="/posts/405fde88/" title="关于Exception的处理细节">关于Exception的处理细节</a></span>
+    <span><a href="/blog/posts/7874a051/" title="Nginx踩坑之解决前后端跨域">Nginx踩坑之解决前后端跨域</a></span>
   </li>
 
       
   <li class="item">
     
 <div class="breadcrumb">
-<a href="/categories/%E6%95%B0%E6%8D%AE%E5%BA%93/" title="In 数据库">数据库</a>
+<a href="/blog/categories/IDEA/" title="In IDEA">IDEA</a>
 </div>
 
-    <span><a href="/posts/388f5c14/" title="mysql日期加减">mysql日期加减</a></span>
+    <span><a href="/blog/posts/579bb697/" title="IDEA小图标含义">IDEA小图标含义</a></span>
   </li>
 
       
   <li class="item">
     
 <div class="breadcrumb">
-<a href="/categories/Ubuntu/" title="In Ubuntu">Ubuntu</a>
+<a href="/blog/categories/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/" title="In 设计模式">设计模式</a>
 </div>
 
-    <span><a href="/posts/6e65ed30/" title="ubuntu20无法安装vmtools解决">ubuntu20无法安装vmtools解决</a></span>
+    <span><a href="/blog/posts/79c6d028/" title="23设计模式(更新中)">23设计模式(更新中)</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+</div>
+
+    <span><a href="/blog/posts/bf4d20ae/" title="写在最前面">写在最前面</a></span>
   </li>
 
   </ul>
@@ -818,7 +816,7 @@
 
 <script src="//cdn.jsdelivr.net/combine/npm/pace-js@1.0.2/pace.min.js,npm/pjax@0.2.8/pjax.min.js,npm/whatwg-fetch@3.4.0/dist/fetch.umd.min.js,npm/animejs@3.2.0/lib/anime.min.js,npm/algoliasearch@4/dist/algoliasearch-lite.umd.js,npm/instantsearch.js@4/dist/instantsearch.production.min.js,npm/lozad@1/dist/lozad.min.js,npm/quicklink@2/dist/quicklink.umd.js"></script>
 
-<script src="/js/app.js?v=0.2.5"></script>
+<script src="/blog/js/app.js?v=0.2.5"></script>
 
 
 

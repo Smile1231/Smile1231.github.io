@@ -7,34 +7,34 @@
         <language>en</language>
         <pubDate>Sat, 12 Mar 2022 21:45:07 +0800</pubDate>
         <lastBuildDate>Sat, 12 Mar 2022 21:45:07 +0800</lastBuildDate>
-        <category>生物信息</category>
-        <category>基因编辑</category>
+        <category>SAP</category>
         <category>Java</category>
         <category>Cache</category>
         <category>Cookie</category>
         <category>Session</category>
         <category>Java面试</category>
+        <category>生物信息</category>
+        <category>基因编辑</category>
         <category>Corn</category>
         <category>前端</category>
         <category>Css</category>
+        <category>Docker</category>
         <category>DDD</category>
         <category>领域驱动设计</category>
-        <category>Docker</category>
-        <category>DisPlay属性</category>
-        <category>SAP</category>
+        <category>FastJson</category>
         <category>blog</category>
         <category>hexo</category>
         <category>next</category>
-        <category>FastJson</category>
+        <category>DisPlay属性</category>
+        <category>JavaScript</category>
+        <category>Html</category>
         <category>IDEA</category>
         <category>SpringBoot</category>
         <category>Jvm</category>
-        <category>JavaScript</category>
-        <category>Html</category>
-        <category>Jenkins</category>
-        <category>CI/CD</category>
         <category>map</category>
         <category>Stream流</category>
+        <category>Jenkins</category>
+        <category>CI/CD</category>
         <category>函数式接口</category>
         <category>Assert</category>
         <category>java</category>
@@ -47,67 +47,67 @@
         <category>算法</category>
         <category>递归</category>
         <category>Linux</category>
+        <category>Mybatis</category>
+        <category>分页查询</category>
         <category>numpy</category>
         <category>pandas</category>
         <category>sklearn</category>
-        <category>Mybatis</category>
-        <category>分页查询</category>
         <category>模糊查询</category>
-        <category>Spring</category>
         <category>Nginx</category>
+        <category>Spring</category>
         <category>Spoken English</category>
         <category>SrpingBoot</category>
         <category>文件上传</category>
         <category>事务</category>
-        <category>master</category>
         <category>TypeScript</category>
         <category>WebPack</category>
         <category>Groovy</category>
+        <category>master</category>
+        <category>UML</category>
         <category>Ubuntu</category>
         <category>Mysql</category>
-        <category>VsCode</category>
-        <category>Shell</category>
-        <category>UML</category>
         <category>Vue</category>
         <category>VSCODE</category>
         <category>快捷键</category>
-        <category>git</category>
-        <category>Stream</category>
+        <category>VsCode</category>
+        <category>Shell</category>
         <category>日期</category>
+        <category>Stream</category>
+        <category>git</category>
         <category>线程池</category>
         <category>ubuntu</category>
         <category>虚拟机</category>
-        <category>数据挖掘</category>
-        <category>Hadoop</category>
-        <category>操作系统</category>
-        <category>node</category>
         <category>二分查找</category>
+        <category>数据挖掘</category>
+        <category>操作系统</category>
+        <category>Hadoop</category>
         <category>EasyExcel</category>
+        <category>node</category>
         <category>JVM</category>
         <category>Yaml</category>
-        <category>junit</category>
-        <category>数据库</category>
         <category>Hexo</category>
-        <category>Git</category>
+        <category>数据库</category>
+        <category>junit</category>
         <category>Mysql事务</category>
-        <category>git,npm,node</category>
-        <category>动态规划</category>
+        <category>Git</category>
         <category>冒泡排序</category>
+        <category>git,npm,node</category>
         <category>堆排序</category>
-        <category>多线程</category>
+        <category>动态规划</category>
         <category>幂等性</category>
         <category>Google</category>
-        <category>快速排序</category>
+        <category>多线程</category>
         <category>流</category>
         <category>归并排序</category>
+        <category>快速排序</category>
         <category>vue</category>
-        <category>直接插入排序</category>
         <category>正则表达式</category>
+        <category>直接插入排序</category>
         <category>选择排序</category>
-        <category>Spring事务</category>
         <category>Java 面试</category>
         <category>数据结构</category>
         <category>阻塞队列</category>
+        <category>Spring事务</category>
         <category>JDK</category>
         <category>动态代理</category>
         <category>Date</category>
@@ -128,18 +128,14 @@
             <category>算法</category>
             <category>选择排序</category>
             <pubDate>Sat, 12 Mar 2022 21:45:07 +0800</pubDate>
-            <description><![CDATA[ &lt;h2 id=&#34;选择排序不稳定on2&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#选择排序不稳定on2&#34;&gt;#&lt;/a&gt; 选择排序（不稳定）ON2&lt;/h2&gt;
-&lt;p&gt;从算法逻辑上看，选择排序是一种简单直观的排序算法，在简单选择排序过程中，所需移动记录的次数比较少。&lt;/p&gt;
-&lt;h3 id=&#34;1-基本思想&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#1-基本思想&#34;&gt;#&lt;/a&gt; 1、基本思想&lt;/h3&gt;
-&lt;p&gt;选择排序的基本思想：比较 + 交换。&lt;/p&gt;
+            <description><![CDATA[ &lt;h2 id=&#34;选择排序（不稳定）ON2&#34;&gt;&lt;a href=&#34;#选择排序（不稳定）ON2&#34; class=&#34;headerlink&#34; title=&#34;选择排序（不稳定）ON2&#34;&gt;&lt;/a&gt;选择排序（不稳定）ON2&lt;/h2&gt;&lt;p&gt;从算法逻辑上看，选择排序是一种简单直观的排序算法，在简单选择排序过程中，所需移动记录的次数比较少。&lt;/p&gt;
+&lt;h3 id=&#34;1、基本思想&#34;&gt;&lt;a href=&#34;#1、基本思想&#34; class=&#34;headerlink&#34; title=&#34;1、基本思想&#34;&gt;&lt;/a&gt;1、基本思想&lt;/h3&gt;&lt;p&gt;选择排序的基本思想：比较 + 交换。&lt;/p&gt;
 &lt;p&gt;在未排序序列中找到最小（大）元素，存放到未排序序列的起始位置。在所有的完全依靠交换去移动元素的排序方法中，选择排序属于非常好的一种。&lt;/p&gt;
-&lt;h3 id=&#34;2-算法描述&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#2-算法描述&#34;&gt;#&lt;/a&gt; 2、算法描述&lt;/h3&gt;
-&lt;p&gt;①. 从待排序序列中，找到关键字最小的元素；&lt;br&gt;
-②. 如果最小元素不是待排序序列的第一个元素，将其和第一个元素互换；&lt;br&gt;
-③. 从余下的 N - 1 个元素中，找出关键字最小的元素，重复①、②步，直到排序结束。&lt;/p&gt;
-&lt;h3 id=&#34;3-代码实现&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#3-代码实现&#34;&gt;#&lt;/a&gt; 3、代码实现&lt;/h3&gt;
-&lt;p&gt;选择排序比较简单，以下是我自己的实现，跟官方版差不多，所以完全可以参考。&lt;/p&gt;
+&lt;h3 id=&#34;2、算法描述&#34;&gt;&lt;a href=&#34;#2、算法描述&#34; class=&#34;headerlink&#34; title=&#34;2、算法描述&#34;&gt;&lt;/a&gt;2、算法描述&lt;/h3&gt;&lt;p&gt;①. 从待排序序列中，找到关键字最小的元素；&lt;br&gt;②. 如果最小元素不是待排序序列的第一个元素，将其和第一个元素互换；&lt;br&gt;③. 从余下的 N - 1 个元素中，找出关键字最小的元素，重复①、②步，直到排序结束。&lt;/p&gt;
+&lt;h3 id=&#34;3、代码实现&#34;&gt;&lt;a href=&#34;#3、代码实现&#34; class=&#34;headerlink&#34; title=&#34;3、代码实现&#34;&gt;&lt;/a&gt;3、代码实现&lt;/h3&gt;&lt;p&gt;选择排序比较简单，以下是我自己的实现，跟官方版差不多，所以完全可以参考。&lt;/p&gt;
 &lt;figure class=&#34;highlight java&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;13&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;14&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;15&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;16&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;function&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;public&lt;/span&gt; &lt;span class=&#34;keyword&#34;&gt;static&lt;/span&gt; &lt;span class=&#34;keyword&#34;&gt;void&lt;/span&gt; &lt;span class=&#34;title&#34;&gt;selectionSort&lt;/span&gt;&lt;span class=&#34;params&#34;&gt;(&lt;span class=&#34;keyword&#34;&gt;int&lt;/span&gt;[] arr)&lt;/span&gt;&lt;/span&gt;&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;keyword&#34;&gt;for&lt;/span&gt;(&lt;span class=&#34;keyword&#34;&gt;int&lt;/span&gt; i = &lt;span class=&#34;number&#34;&gt;0&lt;/span&gt;; i &amp;lt; arr.length-&lt;span class=&#34;number&#34;&gt;1&lt;/span&gt;; i++)&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        &lt;span class=&#34;keyword&#34;&gt;int&lt;/span&gt; min = i;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        &lt;span class=&#34;keyword&#34;&gt;for&lt;/span&gt;(&lt;span class=&#34;keyword&#34;&gt;int&lt;/span&gt; j = i+&lt;span class=&#34;number&#34;&gt;1&lt;/span&gt;; j &amp;lt; arr.length; j++)&amp;#123;    &lt;span class=&#34;comment&#34;&gt;//选出之后待排序中值最小的位置&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;            &lt;span class=&#34;keyword&#34;&gt;if&lt;/span&gt;(arr[j] &amp;lt; arr[min])&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;                min = j;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;            &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        &lt;span class=&#34;keyword&#34;&gt;if&lt;/span&gt;(min != i)&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;            &lt;span class=&#34;keyword&#34;&gt;int&lt;/span&gt; temp = arr[min];      &lt;span class=&#34;comment&#34;&gt;//交换操作&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;            arr[min] = arr[i];&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;            arr[i] = temp;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;            System.out.println(&lt;span class=&#34;string&#34;&gt;&amp;quot;Sorting:  &amp;quot;&lt;/span&gt; + Arrays.toString(arr));&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+
+
 &lt;p&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9pdGltZXRyYXZlbGVyLmdpdGh1Yi5pby8yMDE3LzA3LzE4LyVFNSU4NSVBQiVFNSVBNCVBNyVFNiU4RSU5MiVFNSVCQSU4RiVFNyVBRSU5NyVFNiVCMyU5NSVFNiU4MCVCQiVFNyVCQiU5MyVFNCVCOCU4RWphdmElRTUlQUUlOUUlRTclOEUlQjAv&#34;&gt;链接&lt;/span&gt;&lt;/p&gt;
  ]]></description>
         </item>

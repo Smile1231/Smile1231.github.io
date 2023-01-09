@@ -7,34 +7,34 @@
         <language>en</language>
         <pubDate>Sun, 17 Jul 2022 22:44:03 +0800</pubDate>
         <lastBuildDate>Sun, 17 Jul 2022 22:44:03 +0800</lastBuildDate>
-        <category>生物信息</category>
-        <category>基因编辑</category>
+        <category>SAP</category>
         <category>Java</category>
         <category>Cache</category>
         <category>Cookie</category>
         <category>Session</category>
         <category>Java面试</category>
+        <category>生物信息</category>
+        <category>基因编辑</category>
         <category>Corn</category>
         <category>前端</category>
         <category>Css</category>
+        <category>Docker</category>
         <category>DDD</category>
         <category>领域驱动设计</category>
-        <category>Docker</category>
-        <category>DisPlay属性</category>
-        <category>SAP</category>
+        <category>FastJson</category>
         <category>blog</category>
         <category>hexo</category>
         <category>next</category>
-        <category>FastJson</category>
+        <category>DisPlay属性</category>
+        <category>JavaScript</category>
+        <category>Html</category>
         <category>IDEA</category>
         <category>SpringBoot</category>
         <category>Jvm</category>
-        <category>JavaScript</category>
-        <category>Html</category>
-        <category>Jenkins</category>
-        <category>CI/CD</category>
         <category>map</category>
         <category>Stream流</category>
+        <category>Jenkins</category>
+        <category>CI/CD</category>
         <category>函数式接口</category>
         <category>Assert</category>
         <category>java</category>
@@ -47,67 +47,67 @@
         <category>算法</category>
         <category>递归</category>
         <category>Linux</category>
+        <category>Mybatis</category>
+        <category>分页查询</category>
         <category>numpy</category>
         <category>pandas</category>
         <category>sklearn</category>
-        <category>Mybatis</category>
-        <category>分页查询</category>
         <category>模糊查询</category>
-        <category>Spring</category>
         <category>Nginx</category>
+        <category>Spring</category>
         <category>Spoken English</category>
         <category>SrpingBoot</category>
         <category>文件上传</category>
         <category>事务</category>
-        <category>master</category>
         <category>TypeScript</category>
         <category>WebPack</category>
         <category>Groovy</category>
+        <category>master</category>
+        <category>UML</category>
         <category>Ubuntu</category>
         <category>Mysql</category>
-        <category>VsCode</category>
-        <category>Shell</category>
-        <category>UML</category>
         <category>Vue</category>
         <category>VSCODE</category>
         <category>快捷键</category>
-        <category>git</category>
-        <category>Stream</category>
+        <category>VsCode</category>
+        <category>Shell</category>
         <category>日期</category>
+        <category>Stream</category>
+        <category>git</category>
         <category>线程池</category>
         <category>ubuntu</category>
         <category>虚拟机</category>
-        <category>数据挖掘</category>
-        <category>Hadoop</category>
-        <category>操作系统</category>
-        <category>node</category>
         <category>二分查找</category>
+        <category>数据挖掘</category>
+        <category>操作系统</category>
+        <category>Hadoop</category>
         <category>EasyExcel</category>
+        <category>node</category>
         <category>JVM</category>
         <category>Yaml</category>
-        <category>junit</category>
-        <category>数据库</category>
         <category>Hexo</category>
-        <category>Git</category>
+        <category>数据库</category>
+        <category>junit</category>
         <category>Mysql事务</category>
-        <category>git,npm,node</category>
-        <category>动态规划</category>
+        <category>Git</category>
         <category>冒泡排序</category>
+        <category>git,npm,node</category>
         <category>堆排序</category>
-        <category>多线程</category>
+        <category>动态规划</category>
         <category>幂等性</category>
         <category>Google</category>
-        <category>快速排序</category>
+        <category>多线程</category>
         <category>流</category>
         <category>归并排序</category>
+        <category>快速排序</category>
         <category>vue</category>
-        <category>直接插入排序</category>
         <category>正则表达式</category>
+        <category>直接插入排序</category>
         <category>选择排序</category>
-        <category>Spring事务</category>
         <category>Java 面试</category>
         <category>数据结构</category>
         <category>阻塞队列</category>
+        <category>Spring事务</category>
         <category>JDK</category>
         <category>动态代理</category>
         <category>Date</category>
@@ -128,17 +128,15 @@
             <category>Jupyter</category>
             <category>Machine Learning</category>
             <pubDate>Sun, 17 Jul 2022 22:44:03 +0800</pubDate>
-            <description><![CDATA[ &lt;p&gt;&lt;code&gt;Jupyter&lt;/code&gt;  不乏为一个很好的编译工具，搭配上 &lt;code&gt;Anoconda&lt;/code&gt;  简直是无敌了&lt;/p&gt;
-&lt;h2 id=&#34;jupyter常用快捷键&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#jupyter常用快捷键&#34;&gt;#&lt;/a&gt;  &lt;code&gt;Jupyter&lt;/code&gt;  常用快捷键：&lt;/h2&gt;
-&lt;h3 id=&#34;命令模式按esc键&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#命令模式按esc键&#34;&gt;#&lt;/a&gt; 命令模式（按 &lt;code&gt;Esc&lt;/code&gt;  键）：&lt;/h3&gt;
-&lt;ol&gt;
+            <description><![CDATA[ &lt;p&gt;&lt;code&gt;Jupyter&lt;/code&gt;不乏为一个很好的编译工具，搭配上&lt;code&gt;Anoconda&lt;/code&gt;简直是无敌了&lt;/p&gt;
+&lt;h2 id=&#34;Jupyter常用快捷键：&#34;&gt;&lt;a href=&#34;#Jupyter常用快捷键：&#34; class=&#34;headerlink&#34; title=&#34;Jupyter常用快捷键：&#34;&gt;&lt;/a&gt;&lt;code&gt;Jupyter&lt;/code&gt;常用快捷键：&lt;/h2&gt;&lt;h3 id=&#34;命令模式（按Esc键）：&#34;&gt;&lt;a href=&#34;#命令模式（按Esc键）：&#34; class=&#34;headerlink&#34; title=&#34;命令模式（按Esc键）：&#34;&gt;&lt;/a&gt;命令模式（按&lt;code&gt;Esc&lt;/code&gt;键）：&lt;/h3&gt;&lt;ol&gt;
 &lt;li&gt;Enter：转入编辑模式&lt;/li&gt;
 &lt;li&gt;Shift-Enter：运行本单元，选中下个单元&lt;/li&gt;
 &lt;li&gt;Ctrl-Enter：运行本单元&lt;/li&gt;
 &lt;li&gt;Alt-Enter：运行本单元，在其下插入新单元&lt;/li&gt;
 &lt;li&gt;Y：单元转入代码状态&lt;/li&gt;
-&lt;li&gt;M：单元转入 markdown 状态&lt;/li&gt;
-&lt;li&gt;R：单元转入 raw 状态&lt;/li&gt;
+&lt;li&gt;M：单元转入markdown状态&lt;/li&gt;
+&lt;li&gt;R：单元转入raw状态&lt;/li&gt;
 &lt;li&gt;1：设定 1 级标题&lt;/li&gt;
 &lt;li&gt;2：设定 2 级标题&lt;/li&gt;
 &lt;li&gt;3：设定 3 级标题&lt;/li&gt;
@@ -168,14 +166,13 @@
 &lt;li&gt;Esc：关闭页面&lt;/li&gt;
 &lt;li&gt;Q：关闭页面&lt;/li&gt;
 &lt;li&gt;H：显示快捷键帮助&lt;/li&gt;
-&lt;li&gt;I,I：中断 Notebook 内核&lt;/li&gt;
-&lt;li&gt;0,0：重启 Notebook 内核&lt;/li&gt;
+&lt;li&gt;I,I：中断Notebook内核&lt;/li&gt;
+&lt;li&gt;0,0：重启Notebook内核&lt;/li&gt;
 &lt;li&gt;Shift：忽略&lt;/li&gt;
 &lt;li&gt;Shift-Space：向上滚动&lt;/li&gt;
 &lt;li&gt;Space：向下滚动&lt;/li&gt;
 &lt;/ol&gt;
-&lt;h3 id=&#34;编辑模式&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#编辑模式&#34;&gt;#&lt;/a&gt; 编辑模式：&lt;/h3&gt;
-&lt;ol&gt;
+&lt;h3 id=&#34;编辑模式：&#34;&gt;&lt;a href=&#34;#编辑模式：&#34; class=&#34;headerlink&#34; title=&#34;编辑模式：&#34;&gt;&lt;/a&gt;编辑模式：&lt;/h3&gt;&lt;ol&gt;
 &lt;li&gt;Tab : 代码补全或缩进&lt;/li&gt;
 &lt;li&gt;Shift-Tab : 提示&lt;/li&gt;
 &lt;li&gt;Ctrl-] : 缩进&lt;/li&gt;
@@ -197,26 +194,24 @@
 &lt;li&gt;Shift-Enter : 运行本单元，选中下一单元&lt;/li&gt;
 &lt;li&gt;Ctrl-Enter : 运行本单元&lt;/li&gt;
 &lt;li&gt;Alt-Enter : 运行本单元，在下面插入一单元&lt;/li&gt;
-&lt;li&gt;Ctrl-Shift-- : 分割单元&lt;/li&gt;
+&lt;li&gt;Ctrl-Shift– : 分割单元&lt;/li&gt;
 &lt;li&gt;Ctrl-Shift-Subtract : 分割单元&lt;/li&gt;
 &lt;li&gt;Ctrl-S : 文件存盘&lt;/li&gt;
 &lt;li&gt;Shift : 忽略&lt;/li&gt;
 &lt;li&gt;Up : 光标上移或转入上一单元&lt;/li&gt;
-&lt;li&gt;Down : 光标下移或转入下一单元&lt;/li&gt;
+&lt;li&gt;Down :光标下移或转入下一单元&lt;/li&gt;
 &lt;/ol&gt;
-&lt;h2 id=&#34;注意事项&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#注意事项&#34;&gt;#&lt;/a&gt; 注意事项：&lt;/h2&gt;
-&lt;p&gt;&lt;code&gt;jupyter notebook&lt;/code&gt;  每一个 &lt;code&gt;cell&lt;/code&gt;  运行完后都会把这个 &lt;code&gt;cell&lt;/code&gt;  中的变量保存到内存中，如果在一个 &lt;code&gt;cell&lt;/code&gt;  中修改了之前的变量，再此运行这个 &lt;code&gt;cell&lt;/code&gt;  的时候可能会导致一些问题产生。比如以下代码：&lt;/p&gt;
+&lt;h2 id=&#34;注意事项：&#34;&gt;&lt;a href=&#34;#注意事项：&#34; class=&#34;headerlink&#34; title=&#34;注意事项：&#34;&gt;&lt;/a&gt;注意事项：&lt;/h2&gt;&lt;p&gt;&lt;code&gt;jupyter notebook&lt;/code&gt;每一个&lt;code&gt;cell&lt;/code&gt;运行完后都会把这个&lt;code&gt;cell&lt;/code&gt;中的变量保存到内存中，如果在一个&lt;code&gt;cell&lt;/code&gt;中修改了之前的变量，再此运行这个&lt;code&gt;cell&lt;/code&gt;的时候可能会导致一些问题产生。比如以下代码：&lt;/p&gt;
 &lt;figure class=&#34;highlight python&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;# 第一个cell中的代码&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;a = &lt;span class=&#34;number&#34;&gt;10&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;b = &lt;span class=&#34;number&#34;&gt;20&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;# 第二个cell中的代码&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;c = a/b&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;b = &lt;span class=&#34;number&#34;&gt;0&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;p&gt;因为第二个 &lt;code&gt;cell&lt;/code&gt;  修改了 &lt;code&gt;b&lt;/code&gt;  变量，此时在整个环境中 &lt;code&gt;b&lt;/code&gt;  都是等于 0 的，所以以后再运行这个 &lt;code&gt;cell&lt;/code&gt;  的时候， &lt;code&gt;a/b&lt;/code&gt;  这个就会出问题了。这时候可以使用 &lt;code&gt;Kernel-&amp;gt;Rstart&amp;amp;Run All&lt;/code&gt;  来重新运行整个项目。&lt;/p&gt;
-&lt;h2 id=&#34;mac乱码解决&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#mac乱码解决&#34;&gt;#&lt;/a&gt;  &lt;code&gt;Mac&lt;/code&gt;  乱码解决&lt;/h2&gt;
-&lt;h3 id=&#34;步骤一-查看自己的字体中有哪种中文字体&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#步骤一-查看自己的字体中有哪种中文字体&#34;&gt;#&lt;/a&gt; 步骤一 查看自己的字体中有哪种中文字体&lt;/h3&gt;
-&lt;figure class=&#34;highlight python&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;import&lt;/span&gt; matplotlib&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;a=&lt;span class=&#34;built_in&#34;&gt;sorted&lt;/span&gt;([f.name &lt;span class=&#34;keyword&#34;&gt;for&lt;/span&gt; f &lt;span class=&#34;keyword&#34;&gt;in&lt;/span&gt; matplotlib.font_manager.fontManager.ttflist])&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;for&lt;/span&gt; i &lt;span class=&#34;keyword&#34;&gt;in&lt;/span&gt; a:&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;	&lt;span class=&#34;built_in&#34;&gt;print&lt;/span&gt;(i)&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;img data-src=&#34;/posts/53fbbba3/2022-07-17-22-46-35.png&#34; class=&#34;&#34;&gt;
+&lt;p&gt;因为第二个&lt;code&gt;cell&lt;/code&gt;修改了&lt;code&gt;b&lt;/code&gt;变量，此时在整个环境中&lt;code&gt;b&lt;/code&gt;都是等于0的，所以以后再运行这个&lt;code&gt;cell&lt;/code&gt;的时候，&lt;code&gt;a/b&lt;/code&gt;这个就会出问题了。这时候可以使用&lt;code&gt;Kernel-&amp;gt;Rstart&amp;amp;Run All&lt;/code&gt;来重新运行整个项目。&lt;/p&gt;
+&lt;h2 id=&#34;Mac乱码解决&#34;&gt;&lt;a href=&#34;#Mac乱码解决&#34; class=&#34;headerlink&#34; title=&#34;Mac乱码解决&#34;&gt;&lt;/a&gt;&lt;code&gt;Mac&lt;/code&gt;乱码解决&lt;/h2&gt;&lt;h3 id=&#34;步骤一-查看自己的字体中有哪种中文字体&#34;&gt;&lt;a href=&#34;#步骤一-查看自己的字体中有哪种中文字体&#34; class=&#34;headerlink&#34; title=&#34;步骤一 查看自己的字体中有哪种中文字体&#34;&gt;&lt;/a&gt;步骤一 查看自己的字体中有哪种中文字体&lt;/h3&gt;&lt;figure class=&#34;highlight python&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;import&lt;/span&gt; matplotlib&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;a=&lt;span class=&#34;built_in&#34;&gt;sorted&lt;/span&gt;([f.name &lt;span class=&#34;keyword&#34;&gt;for&lt;/span&gt; f &lt;span class=&#34;keyword&#34;&gt;in&lt;/span&gt; matplotlib.font_manager.fontManager.ttflist])&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;for&lt;/span&gt; i &lt;span class=&#34;keyword&#34;&gt;in&lt;/span&gt; a:&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;	&lt;span class=&#34;built_in&#34;&gt;print&lt;/span&gt;(i)&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;img data-src=&#34;/blog/posts/53fbbba3/2022-07-17-22-46-35.png&#34; class=&#34;&#34;&gt;
+
 &lt;p&gt;找到支持中文的字体&lt;/p&gt;
-&lt;img data-src=&#34;/posts/53fbbba3/2022-07-17-22-46-44.png&#34; class=&#34;&#34;&gt;
-&lt;h3 id=&#34;选择相应的字体&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#选择相应的字体&#34;&gt;#&lt;/a&gt; 选择相应的字体&lt;/h3&gt;
-&lt;figure class=&#34;highlight python&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;plt.rcParams[&lt;span class=&#34;string&#34;&gt;&amp;#x27;font.sans-serif&amp;#x27;&lt;/span&gt;]=&lt;span class=&#34;string&#34;&gt;&amp;#x27;Heiti TC&amp;#x27;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;plt.rcParams[&lt;span class=&#34;string&#34;&gt;&amp;#x27;axes.unicode_minus&amp;#x27;&lt;/span&gt;] = &lt;span class=&#34;literal&#34;&gt;False&lt;/span&gt;  &lt;span class=&#34;comment&#34;&gt;# 负号正常显示&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;img data-src=&#34;/posts/53fbbba3/2022-07-17-22-46-51.png&#34; class=&#34;&#34;&gt;
+&lt;img data-src=&#34;/blog/posts/53fbbba3/2022-07-17-22-46-44.png&#34; class=&#34;&#34;&gt;
+
+&lt;h3 id=&#34;选择相应的字体&#34;&gt;&lt;a href=&#34;#选择相应的字体&#34; class=&#34;headerlink&#34; title=&#34;选择相应的字体&#34;&gt;&lt;/a&gt;选择相应的字体&lt;/h3&gt;&lt;figure class=&#34;highlight python&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;plt.rcParams[&lt;span class=&#34;string&#34;&gt;&amp;#x27;font.sans-serif&amp;#x27;&lt;/span&gt;]=&lt;span class=&#34;string&#34;&gt;&amp;#x27;Heiti TC&amp;#x27;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;plt.rcParams[&lt;span class=&#34;string&#34;&gt;&amp;#x27;axes.unicode_minus&amp;#x27;&lt;/span&gt;] = &lt;span class=&#34;literal&#34;&gt;False&lt;/span&gt;  &lt;span class=&#34;comment&#34;&gt;# 负号正常显示&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;img data-src=&#34;/blog/posts/53fbbba3/2022-07-17-22-46-51.png&#34; class=&#34;&#34;&gt;
  ]]></description>
         </item>
         <item>
@@ -228,30 +223,27 @@
             <category>pandas</category>
             <category>sklearn</category>
             <pubDate>Sun, 17 Jul 2022 21:44:54 +0800</pubDate>
-            <description><![CDATA[ &lt;p&gt;最近在看 &lt;code&gt;数据挖掘&lt;/code&gt; 以及 &lt;code&gt;ML&lt;/code&gt;  的课程&lt;/p&gt;
+            <description><![CDATA[ &lt;p&gt;最近在看&lt;code&gt;数据挖掘&lt;/code&gt;以及&lt;code&gt;ML&lt;/code&gt;的课程&lt;/p&gt;
 &lt;p&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9kb2NzLmh3bC5jb29sL3B5dGhvbi8lRTYlOTUlQjAlRTYlOEQlQUUlRTYlOEMlOTYlRTYlOEUlOTgv&#34;&gt;数据挖掘资料&lt;/span&gt;&lt;/p&gt;
 &lt;p&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly93d3cubnVtcHkub3JnLmNuL3JlZmVyZW5jZS8=&#34;&gt;numpy reference&lt;/span&gt;&lt;/p&gt;
 &lt;p&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9zY2lraXQtbGVhcm4ub3JnL3N0YWJsZS9tb2R1bGVzL2NsYXNzZXMuaHRtbA==&#34;&gt;Sklearn Reference&lt;/span&gt;&lt;/p&gt;
 &lt;p&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cDovL3dlYmdyYXBodml6LmNvbS8=&#34;&gt;WebGraph&lt;/span&gt;&lt;/p&gt;
 &lt;p&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly93d3cua2FnZ2xlLmNvbS9kYXRhc2V0cy8=&#34;&gt;Kaggle&lt;/span&gt;&lt;/p&gt;
-&lt;h2 id=&#34;python中的head方法&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#python中的head方法&#34;&gt;#&lt;/a&gt;  &lt;code&gt;python&lt;/code&gt;  中的 &lt;code&gt;head&lt;/code&gt;  方法&lt;/h2&gt;
-&lt;p&gt;&lt;code&gt;head()&lt;/code&gt;  根据位置返回对象的前 &lt;code&gt;n&lt;/code&gt;  行。 如果你的对象中包含正确的数据类型，则对于快速测试很有用。 此方法用于返回数据帧或序列的前 &lt;code&gt;n&lt;/code&gt;  行 (默认值为 &lt;code&gt;5&lt;/code&gt; )。  &lt;code&gt;n：&lt;/code&gt; 它是指返回行数的整数值。&lt;/p&gt;
-&lt;h2 id=&#34;pandas交叉表&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#pandas交叉表&#34;&gt;#&lt;/a&gt;  &lt;code&gt;pandas&lt;/code&gt;  交叉表&lt;/h2&gt;
-&lt;p&gt;交叉表是由列和行组成的双向表。 它也被称为数据透视表或多维表。 其最大的优势是能够构造、汇总及显示大量数据。 交叉表还可用于确定行变量与列变量之间是否存在关系。&lt;/p&gt;
+&lt;h2 id=&#34;python中的head方法&#34;&gt;&lt;a href=&#34;#python中的head方法&#34; class=&#34;headerlink&#34; title=&#34;python中的head方法&#34;&gt;&lt;/a&gt;&lt;code&gt;python&lt;/code&gt;中的&lt;code&gt;head&lt;/code&gt;方法&lt;/h2&gt;&lt;p&gt;&lt;code&gt;head()&lt;/code&gt;根据位置返回对象的前&lt;code&gt;n&lt;/code&gt;行。 如果你的对象中包含正确的数据类型, 则对于快速测试很有用。 此方法用于返回数据帧或序列的前&lt;code&gt;n&lt;/code&gt;行(默认值为&lt;code&gt;5&lt;/code&gt;)。 &lt;code&gt;n：&lt;/code&gt;它是指返回行数的整数值。&lt;/p&gt;
+&lt;h2 id=&#34;pandas交叉表&#34;&gt;&lt;a href=&#34;#pandas交叉表&#34; class=&#34;headerlink&#34; title=&#34;pandas交叉表&#34;&gt;&lt;/a&gt;&lt;code&gt;pandas&lt;/code&gt;交叉表&lt;/h2&gt;&lt;p&gt;交叉表是由列和行组成的双向表。 它也被称为数据透视表或多维表。 其最大的优势是能够构造、汇总及显示大量数据。 交叉表还可用于确定行变量与列变量之间是否存在关系。&lt;/p&gt;
 &lt;p&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9kb2NzLnRpYmNvLmNvbS9wdWIvc3BvdGZpcmVfd2ViX3BsYXllci82LjAuMC1ub3ZlbWJlci0yMDEzL3poLUNOL1dlYkhlbHAvR1VJRC0xRjY3QjJGMy0wNTZCLTQzMjQtQjJDQy0xNEQ3M0QzNzg2OTMuaHRtbA==&#34;&gt;参考链接&lt;/span&gt;&lt;/p&gt;
-&lt;h2 id=&#34;网格搜索gridsearchcv&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#网格搜索gridsearchcv&#34;&gt;#&lt;/a&gt; 网格搜索（ &lt;code&gt;GridSearchCV&lt;/code&gt; ）&lt;/h2&gt;
-&lt;p&gt;&lt;code&gt;GridSearch和CV&lt;/code&gt; ，即网格搜索和交叉验证&lt;/p&gt;
+&lt;h2 id=&#34;网格搜索（GridSearchCV）&#34;&gt;&lt;a href=&#34;#网格搜索（GridSearchCV）&#34; class=&#34;headerlink&#34; title=&#34;网格搜索（GridSearchCV）&#34;&gt;&lt;/a&gt;网格搜索（&lt;code&gt;GridSearchCV&lt;/code&gt;）&lt;/h2&gt;&lt;p&gt;&lt;code&gt;GridSearch和CV&lt;/code&gt;，即网格搜索和交叉验证&lt;/p&gt;
 &lt;p&gt;网格搜索算法是一种通过遍历给定的参数组合来优化模型表现的方法&lt;/p&gt;
 &lt;p&gt;为何使用：超参数选择不恰当，就会出现欠拟合或者过拟合的问题&lt;/p&gt;
 &lt;p&gt;内容： 网格搜索，搜索的是参数，即在指定的参数范围内，按步长依次调整参数，利用调整的参数训练学习器，从所有的参数中找到在验证集上精度最高的参数，这其实是一个训练和比较的过程。&lt;/p&gt;
-&lt;p&gt;&lt;code&gt;Grid Search&lt;/code&gt; ：一种调参手段；穷举搜索：在所有候选的参数选择中，通过循环遍历，尝试每一种可能性，表现最好的参数就是最终的结果&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;Grid Search&lt;/code&gt;：一种调参手段；穷举搜索：在所有候选的参数选择中，通过循环遍历，尝试每一种可能性，表现最好的参数就是最终的结果&lt;/p&gt;
 &lt;p&gt;用法：网格搜索适用于三四个（或者更少）的超参数（当超参数的数量增长时，网格搜索的计算复杂度会呈现指数增长，这时候则使用随机搜索），用户列出一个较小的超参数值域，这些超参数至于的笛卡尔积（排列组合）为一组组超参数。网格搜索算法使用每组超参数训练模型并挑选验证集误差最小的超参数组合&lt;/p&gt;
 &lt;p&gt;缺点：遍历所有组合，比较耗时&lt;/p&gt;
-&lt;h2 id=&#34;打印表头&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#打印表头&#34;&gt;#&lt;/a&gt; 打印表头&lt;/h2&gt;
-&lt;figure class=&#34;highlight python&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;import&lt;/span&gt; pandas &lt;span class=&#34;keyword&#34;&gt;as&lt;/span&gt; pd&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;titanic = pd.read_csv(&lt;span class=&#34;string&#34;&gt;&amp;quot;./titanic/train.csv&amp;quot;&lt;/span&gt;)&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;built_in&#34;&gt;print&lt;/span&gt;(titanic.columns)&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;img data-src=&#34;/posts/1b930e38/2022-07-29-13-01-44.png&#34; class=&#34;&#34;&gt;
-&lt;h2 id=&#34;pandas的inplace参数&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#pandas的inplace参数&#34;&gt;#&lt;/a&gt;  &lt;code&gt;pandas&lt;/code&gt;  的 &lt;code&gt;inplace&lt;/code&gt;  参数&lt;/h2&gt;
-&lt;figure class=&#34;highlight plaintext&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;13&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;14&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;15&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;16&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;17&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;## 关于`python`中的随机种子——`random_state`&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;`random_state`是一个随机种子，是在任意带有随机性的类或函数里作为参数来控制随机模式。当`random_state`取某一个值时，也就确定了一种规则。&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;`random_state`可以用于很多函数，一般用于以下三个地方：1、训练集测试集的划分 2、构建决策树 3、构建随机森林&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;## 查看数据类型&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;```python&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;# type(a)   DataFrame数据类型&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;df.dtypes  #查看各列数据类型&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;df[A].dtypes  #查看A列数据类型&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;df[A].astypes(int)#将A列数据类型转换为int&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt; ]]></description>
+&lt;h2 id=&#34;打印表头&#34;&gt;&lt;a href=&#34;#打印表头&#34; class=&#34;headerlink&#34; title=&#34;打印表头&#34;&gt;&lt;/a&gt;打印表头&lt;/h2&gt;&lt;figure class=&#34;highlight python&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;import&lt;/span&gt; pandas &lt;span class=&#34;keyword&#34;&gt;as&lt;/span&gt; pd&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;titanic = pd.read_csv(&lt;span class=&#34;string&#34;&gt;&amp;quot;./titanic/train.csv&amp;quot;&lt;/span&gt;)&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;built_in&#34;&gt;print&lt;/span&gt;(titanic.columns)&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;img data-src=&#34;/blog/posts/1b930e38/2022-07-29-13-01-44.png&#34; class=&#34;&#34;&gt;
+
+
+&lt;h2 id=&#34;pandas的inplace参数&#34;&gt;&lt;a href=&#34;#pandas的inplace参数&#34; class=&#34;headerlink&#34; title=&#34;pandas的inplace参数&#34;&gt;&lt;/a&gt;&lt;code&gt;pandas&lt;/code&gt;的&lt;code&gt;inplace&lt;/code&gt;参数&lt;/h2&gt;&lt;figure class=&#34;highlight plaintext&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;13&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;14&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;15&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;16&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;17&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;## 关于`python`中的随机种子——`random_state`&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;`random_state`是一个随机种子，是在任意带有随机性的类或函数里作为参数来控制随机模式。当`random_state`取某一个值时，也就确定了一种规则。&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;`random_state`可以用于很多函数，一般用于以下三个地方：1、训练集测试集的划分 2、构建决策树 3、构建随机森林&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;## 查看数据类型&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;```python&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;# type(a)   DataFrame数据类型&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;df.dtypes  #查看各列数据类型&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;df[A].dtypes  #查看A列数据类型&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;df[A].astypes(int)#将A列数据类型转换为int&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt; ]]></description>
         </item>
     </channel>
 </rss>

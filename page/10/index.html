@@ -21,7 +21,7 @@
 
 <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Mulish:300,300italic,400,400italic,700,700italic%7CFredericka%20the%20Great:300,300italic,400,400italic,700,700italic%7CNoto%20Serif%20JP:300,300italic,400,400italic,700,700italic%7CNoto%20Serif%20SC:300,300italic,400,400italic,700,700italic%7CInconsolata:300,300italic,400,400italic,700,700italic&display=swap&subset=latin,latin-ext">
 
-<link rel="stylesheet" href="/css/app.css?v=0.2.5">
+<link rel="stylesheet" href="/blog/css/app.css?v=0.2.5">
 
   
 
@@ -56,7 +56,7 @@
         <div id="brand">
           <div class="pjax">
           
-            <a href="/" class="logo" rel="start"><p class="artboard">Jin Mao when to get rich ?</p>
+            <a href="/blog/" class="logo" rel="start"><p class="artboard">Jin Mao when to get rich ?</p>
               <h1 itemprop="name headline" class="title">JIN MAO 's Blog</h1>
             </a>
             <p class="meta" itemprop="description">= got windy(起风了) =</p>
@@ -73,7 +73,7 @@
       </div>
     </div>
     <ul class="menu">
-      <li class="item title"><a href="/" rel="start">Jin Mao when to get rich ?</a></li>
+      <li class="item title"><a href="/blog/" rel="start">Jin Mao when to get rich ?</a></li>
     </ul>
     <ul class="right">
       <li class="item theme">
@@ -89,12 +89,12 @@
       </div>
       <div id="imgs" class="pjax">
         <ul>
-          <li class="item" data-background-image="https://tva2.sinaimg.cn/large/6833939bly1giclflwv2aj20zk0m84qp.jpg"></li>
-          <li class="item" data-background-image="https://tva2.sinaimg.cn/large/6833939bly1gicis081o9j20zk0m8dmr.jpg"></li>
-          <li class="item" data-background-image="https://tva2.sinaimg.cn/large/6833939bly1gicit31ffoj20zk0m8naf.jpg"></li>
-          <li class="item" data-background-image="https://tva2.sinaimg.cn/large/6833939bly1gipevarprfj20zk0m8npd.jpg"></li>
-          <li class="item" data-background-image="https://tva2.sinaimg.cn/large/6833939bly1giclg5ms2rj20zk0m8u0x.jpg"></li>
-          <li class="item" data-background-image="https://tva2.sinaimg.cn/large/6833939bly1gipeuv80yoj20zk0m8kjl.jpg"></li>
+          <li class="item" data-background-image="https://tva2.sinaimg.cn/large/6833939bly1giclhtuo6nj20zk0m8ttm.jpg"></li>
+          <li class="item" data-background-image="https://tva2.sinaimg.cn/large/6833939bly1giph4lm9i7j20zk0m84qp.jpg"></li>
+          <li class="item" data-background-image="https://tva2.sinaimg.cn/large/6833939bly1giclffsa1cj20zk0m811l.jpg"></li>
+          <li class="item" data-background-image="https://tva2.sinaimg.cn/large/6833939bly1gicivghyooj20zk0m8dir.jpg"></li>
+          <li class="item" data-background-image="https://tva2.sinaimg.cn/large/6833939bly1gicliwyw55j20zk0m8hdt.jpg"></li>
+          <li class="item" data-background-image="https://tva2.sinaimg.cn/large/6833939bly1giph4fomxoj20zk0m8axp.jpg"></li>
         </ul>
       </div>
     </header>
@@ -120,7 +120,7 @@
         
 <article class="item">
   <div class="cover">
-    <a href="/posts/b1231c9f/" itemprop="url" title="java stream中Collectors的用法"><img data-src="https://tva2.sinaimg.cn/mw690/6833939bly1gicm0fdw5cj20zk0m8hdt.jpg"></a>
+    <a href="/blog/posts/b1231c9f/" itemprop="url" title="java stream中Collectors的用法"><img data-src="https://tva2.sinaimg.cn/mw690/6833939bly1giclj61ylzj20zk0m8b29.jpg"></a>
   </div>
   <div class="info">
     
@@ -146,26 +146,24 @@
   </span>
 </div>
 
-    <h3><a href="/posts/b1231c9f/" itemprop="url" title="java stream中Collectors的用法">java stream中Collectors的用法</a></h3>
+    <h3><a href="/blog/posts/b1231c9f/" itemprop="url" title="java stream中Collectors的用法">java stream中Collectors的用法</a></h3>
     <div class="excerpt">
-        <h1 id="java-stream中collectors的用法"><a class="markdownIt-Anchor" href="#java-stream中collectors的用法">#</a>  <code>java stream</code>  中 <code>Collectors</code>  的用法</h1>
-<ul>
-<li><a href="#java-stream%E4%B8%ADcollectors%E7%9A%84%E7%94%A8%E6%B3%95"> <code>java stream</code>  中 <code>Collectors</code>  的用法</a>
-<ul>
+        <h1 id="java-stream中Collectors的用法"><a href="#java-stream中Collectors的用法" class="headerlink" title="java stream中Collectors的用法"></a><code>java stream</code>中<code>Collectors</code>的用法</h1><ul>
+<li><a href="#java-stream%E4%B8%ADcollectors%E7%9A%84%E7%94%A8%E6%B3%95"><code>java stream</code>中<code>Collectors</code>的用法</a><ul>
 <li><a href="#%E7%AE%80%E4%BB%8B"><span id="common">简介</span></a></li>
-<li><a href="#collectorstolist"><span id="toList"> <code>Collectors.toList()</code> </span></a></li>
-<li><a href="#collectorstoset"><span id="toSet"> <code>Collectors.toSet()</code> </span></a></li>
-<li><a href="#collectorstocollection"><span id="toColl"> <code>Collectors.toCollection()</code> </span></a></li>
-<li><a href="#collectorstomap"><span id="toMap"> <code>Collectors.toMap()</code> </span></a></li>
-<li><a href="#collectorscollectingandthen"><span id="toCollAndThen"> <code>Collectors.collectingAndThen()</code> </span></a></li>
-<li><a href="#collectorsjoining"><span id="join"> <code>Collectors.joining()</code> </span></a></li>
-<li><a href="#collectorscounting"><span id="count"> <code>Collectors.counting()</code> </span></a></li>
-<li><a href="#collectorssummarizingdoublelongint"><span id="sum"> <code>Collectors.summarizingDouble/Long/Int()</code> </span></a></li>
-<li><a href="#collectorsaveragingdoublelongint"><span id="average"> <code>Collectors.averagingDouble/Long/Int()</code> </span></a></li>
-<li><a href="#collectorssummingdoublelongint"><span id="summing"> <code>Collectors.summingDouble/Long/Int()</code> </span></a></li>
-<li><a href="#collectorsmaxbyminby"><span id="max"> <code>Collectors.maxBy()/minBy()</code> </span></a></li>
-<li><a href="#collectorsgroupingby"><span id="group"> <code>Collectors.groupingBy()</code> </span></a></li>
-<li><a href="#collectorspartitioningby"><span id="par"> <code>Collectors.partitioningBy()</code> </span></a></li>
+<li><a href="#collectorstolist"><span id="toList"><code>Collectors.toList()</code></span></a></li>
+<li><a href="#collectorstoset"><span id="toSet"><code>Collectors.toSet()</code></span></a></li>
+<li><a href="#collectorstocollection"><span id="toColl"><code>Collectors.toCollection()</code></span></a></li>
+<li><a href="#collectorstomap"><span id="toMap"><code>Collectors.toMap()</code></span></a></li>
+<li><a href="#collectorscollectingandthen"><span id="toCollAndThen"><code>Collectors.collectingAndThen()</code></span></a></li>
+<li><a href="#collectorsjoining"><span id="join"><code>Collectors.joining()</code></span></a></li>
+<li><a href="#collectorscounting"><span id="count"><code>Collectors.counting()</code></span></a></li>
+<li><a href="#collectorssummarizingdoublelongint"><span id="sum"><code>Collectors.summarizingDouble/Long/Int()</code></span></a></li>
+<li><a href="#collectorsaveragingdoublelongint"><span id="average"><code>Collectors.averagingDouble/Long/Int()</code></span></a></li>
+<li><a href="#collectorssummingdoublelongint"><span id="summing"><code>Collectors.summingDouble/Long/Int()</code></span></a></li>
+<li><a href="#collectorsmaxbyminby"><span id="max"><code>Collectors.maxBy()/minBy()</code></span></a></li>
+<li><a href="#collectorsgroupingby"><span id="group"><code>Collectors.groupingBy()</code></span></a></li>
+<li><a href="#collectorspartitioningby"><span id="par"><code>Collectors.partitioningBy()</code></span></a></li>
 </ul>
 </li>
 </ul>
@@ -173,17 +171,17 @@
     </div>
     <div class="meta footer">
       <span>
-        <a href="/categories/Java/Stream/" itemprop="url" title="Stream"><i class="ic i-flag"></i>Stream</a>
+        <a href="/blog/categories/Java/Stream/" itemprop="url" title="Stream"><i class="ic i-flag"></i>Stream</a>
       </span>
     </div>
-    <a href="/posts/b1231c9f/" itemprop="url" title="java stream中Collectors的用法" class="btn">more...</a>
+    <a href="/blog/posts/b1231c9f/" itemprop="url" title="java stream中Collectors的用法" class="btn">more...</a>
   </div>
 </article>
 
         
 <article class="item">
   <div class="cover">
-    <a href="/posts/8b8fedea/" itemprop="url" title="Stream流的介绍"><img data-src="https://tva2.sinaimg.cn/mw690/6833939bly1giph4wqtg4j20zk0m8x6p.jpg"></a>
+    <a href="/blog/posts/8b8fedea/" itemprop="url" title="Stream流的介绍"><img data-src="https://tva2.sinaimg.cn/mw690/6833939bly1gipet4bz0yj20zk0m8e81.jpg"></a>
   </div>
   <div class="info">
     
@@ -209,31 +207,28 @@
   </span>
 </div>
 
-    <h3><a href="/posts/8b8fedea/" itemprop="url" title="Stream流的介绍">Stream流的介绍</a></h3>
+    <h3><a href="/blog/posts/8b8fedea/" itemprop="url" title="Stream流的介绍">Stream流的介绍</a></h3>
     <div class="excerpt">
-        <h1 id="stream-流的介绍"><a class="markdownIt-Anchor" href="#stream-流的介绍">#</a>  <code>Stream</code>  流的介绍</h1>
-<h2 id="11-java8-stream介绍"><a class="markdownIt-Anchor" href="#11-java8-stream介绍">#</a> 1.1  <code>java8 stream</code>  介绍</h2>
-<p><code>java8</code>  新增了 <code>stream</code>  流的特性，能够让用户以函数式的方式、更为简单的操纵集合等数据结构，并实现了用户无感知的并行计算。</p>
-<h2 id="12-从零开始实现一个stream流"><a class="markdownIt-Anchor" href="#12-从零开始实现一个stream流">#</a> 1.2 从零开始实现一个 <code>stream</code>  流</h2>
-<p>相信很多人在使用过 <code>java8</code>  的 <code>streamAPI</code>  接口之后，都会对其实现原理感到好奇，但往往在看到 <code>jdk</code>  的 <code>stream</code>  源码后却被其复杂的抽象、封装给弄糊涂了，而无法很好的理解其背后的原理。究其原因，是因为 <code>jdk</code>  的 <code>stream</code>  源码是高度工程化的代码，工程化的代码为了效率和满足各式各样的需求，会将代码实现的极其复杂，不易理解。</p>
-<p>在这里，我们将抛开 <code>jdk</code>  的实现思路，从零开始实现一个 <code>stream</code>  流。</p>
-<p>我们的 <code>stream</code>  流同样拥有惰性求值，函数式编程接口等特性，并兼容 <code>jdk</code>  的 <code>Collection</code>  等数据结构 (但不支持并行计算  <code>orz</code> )。</p>
-<p>相信在亲手实现一个 <code>stream</code>  流的框架之后，大家能更好的理解流计算的原理。</p>
+        <h1 id="Stream-流的介绍"><a href="#Stream-流的介绍" class="headerlink" title="Stream 流的介绍"></a><code>Stream</code> 流的介绍</h1><h2 id="1-1-java8-stream介绍"><a href="#1-1-java8-stream介绍" class="headerlink" title="1.1 java8 stream介绍"></a>1.1 <code>java8 stream</code>介绍</h2><p>　　<code>java8</code>新增了<code>stream</code>流的特性，能够让用户以函数式的方式、更为简单的操纵集合等数据结构，并实现了用户无感知的并行计算。</p>
+<h2 id="1-2-从零开始实现一个stream流"><a href="#1-2-从零开始实现一个stream流" class="headerlink" title="1.2 从零开始实现一个stream流"></a>1.2 从零开始实现一个<code>stream</code>流</h2><p>　　相信很多人在使用过<code>java8</code>的<code>streamAPI</code>接口之后，都会对其实现原理感到好奇，但往往在看到<code>jdk</code>的<code>stream</code>源码后却被其复杂的抽象、封装给弄糊涂了，而无法很好的理解其背后的原理。究其原因，是因为<code>jdk</code>的<code>stream</code>源码是高度工程化的代码，工程化的代码为了效率和满足各式各样的需求，会将代码实现的极其复杂，不易理解。</p>
+<p>　　在这里，我们将抛开<code>jdk</code>的实现思路，从零开始实现一个<code>stream</code>流。</p>
+<p>　　我们的<code>stream</code>流同样拥有惰性求值，函数式编程接口等特性，并兼容<code>jdk</code>的<code>Collection</code>等数据结构(但不支持并行计算 <code>orz</code>)。</p>
+<p>　　相信在亲手实现一个<code>stream</code>流的框架之后，大家能更好的理解流计算的原理。</p>
       
     </div>
     <div class="meta footer">
       <span>
-        <a href="/categories/Java/Stream/" itemprop="url" title="Stream"><i class="ic i-flag"></i>Stream</a>
+        <a href="/blog/categories/Java/Stream/" itemprop="url" title="Stream"><i class="ic i-flag"></i>Stream</a>
       </span>
     </div>
-    <a href="/posts/8b8fedea/" itemprop="url" title="Stream流的介绍" class="btn">more...</a>
+    <a href="/blog/posts/8b8fedea/" itemprop="url" title="Stream流的介绍" class="btn">more...</a>
   </div>
 </article>
 
         
 <article class="item">
   <div class="cover">
-    <a href="/posts/a3dfcd98/" itemprop="url" title="SpringBoot中常见的几种解决跨域的方式"><img data-src="https://tva2.sinaimg.cn/mw690/6833939bly1giclxp31goj20zk0m8qv5.jpg"></a>
+    <a href="/blog/posts/a3dfcd98/" itemprop="url" title="SpringBoot中常见的几种解决跨域的方式"><img data-src="https://tva2.sinaimg.cn/mw690/6833939bly1giclfw2t96j20zk0m8x6p.jpg"></a>
   </div>
   <div class="info">
     
@@ -259,27 +254,25 @@
   </span>
 </div>
 
-    <h3><a href="/posts/a3dfcd98/" itemprop="url" title="SpringBoot中常见的几种解决跨域的方式">SpringBoot中常见的几种解决跨域的方式</a></h3>
+    <h3><a href="/blog/posts/a3dfcd98/" itemprop="url" title="SpringBoot中常见的几种解决跨域的方式">SpringBoot中常见的几种解决跨域的方式</a></h3>
     <div class="excerpt">
-        <h1 id="springboot中常见的几种解决跨域的方式"><a class="markdownIt-Anchor" href="#springboot中常见的几种解决跨域的方式">#</a>  <code>SpringBoot</code>  中常见的几种解决跨域的方式</h1>
-<h2 id="一-为什么会出现跨域问题"><a class="markdownIt-Anchor" href="#一-为什么会出现跨域问题">#</a> 一、为什么会出现跨域问题</h2>
-<p>出于浏览器的同源策略限制。同源策略（ <code>Sameoriginpolicy</code> ）是一种约定，它是浏览器最核心也最基本的安全功能，如果缺少了同源策略，则浏览器的正常功能可能都会受到影响。可以说 <code>Web</code>  是构建在同源策略基础之上的，浏览器只是针对同源策略的一种实现。</p>
-<p>同源策略会阻止一个域的 <code>javascript</code>  脚本和另外一个域的内容进行交互。所谓同源（即指在同一个域）就是两个页面具有相同的协议（ <code>protocol</code> ），主机（ <code>host</code> ）和端口号（ <code>port</code> ）</p>
+        <h1 id="SpringBoot中常见的几种解决跨域的方式"><a href="#SpringBoot中常见的几种解决跨域的方式" class="headerlink" title="SpringBoot中常见的几种解决跨域的方式"></a><code>SpringBoot</code>中常见的几种解决跨域的方式</h1><h2 id="一、为什么会出现跨域问题"><a href="#一、为什么会出现跨域问题" class="headerlink" title="一、为什么会出现跨域问题"></a>一、为什么会出现跨域问题</h2><p>出于浏览器的同源策略限制。同源策略（<code>Sameoriginpolicy</code>）是一种约定，它是浏览器最核心也最基本的安全功能，如果缺少了同源策略，则浏览器的正常功能可能都会受到影响。可以说<code>Web</code>是构建在同源策略基础之上的，浏览器只是针对同源策略的一种实现。</p>
+<p>同源策略会阻止一个域的<code>javascript</code>脚本和另外一个域的内容进行交互。所谓同源（即指在同一个域）就是两个页面具有相同的协议（<code>protocol</code>），主机（<code>host</code>）和端口号（<code>port</code>）</p>
       
     </div>
     <div class="meta footer">
       <span>
-        <a href="/categories/Java/SpringBoot/" itemprop="url" title="SpringBoot"><i class="ic i-flag"></i>SpringBoot</a>
+        <a href="/blog/categories/Java/SpringBoot/" itemprop="url" title="SpringBoot"><i class="ic i-flag"></i>SpringBoot</a>
       </span>
     </div>
-    <a href="/posts/a3dfcd98/" itemprop="url" title="SpringBoot中常见的几种解决跨域的方式" class="btn">more...</a>
+    <a href="/blog/posts/a3dfcd98/" itemprop="url" title="SpringBoot中常见的几种解决跨域的方式" class="btn">more...</a>
   </div>
 </article>
 
         
 <article class="item">
   <div class="cover">
-    <a href="/posts/c112412d/" itemprop="url" title="Mybatis封装成Map结果"><img data-src="https://tva2.sinaimg.cn/mw690/6833939bly1giciuv0socj20zk0m8qes.jpg"></a>
+    <a href="/blog/posts/c112412d/" itemprop="url" title="Mybatis封装成Map结果"><img data-src="https://tva2.sinaimg.cn/mw690/6833939bly1gipetfk5zwj20zk0m8e81.jpg"></a>
   </div>
   <div class="info">
     
@@ -294,7 +287,7 @@
     <span class="icon">
       <i class="ic i-pen"></i>
     </span>
-    <span>603</span>
+    <span>601</span>
     <span class="text">words</span>
   </span>
   <span class="item" title="Reading time">
@@ -305,26 +298,24 @@
   </span>
 </div>
 
-    <h3><a href="/posts/c112412d/" itemprop="url" title="Mybatis封装成Map结果">Mybatis封装成Map结果</a></h3>
+    <h3><a href="/blog/posts/c112412d/" itemprop="url" title="Mybatis封装成Map结果">Mybatis封装成Map结果</a></h3>
     <div class="excerpt">
-        <h1 id="mybatis封装成map结果"><a class="markdownIt-Anchor" href="#mybatis封装成map结果">#</a>  <code>Mybatis</code>  封装成 <code>Map</code>  结果</h1>
-<h2 id="dao层"><a class="markdownIt-Anchor" href="#dao层">#</a>  <code>Dao</code>  层</h2>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">@MapKey(&quot;cityCode&quot;)</span></span><br><span class="line"><span class="function">Map&lt;String,InvoiceSubjectRuleCity&gt; <span class="title">bulkSelectRuleCityByRuleIdList</span><span class="params">(<span class="meta">@Param(&quot;ruleIdList&quot;)</span> List&lt;Long&gt; ruleIdList)</span></span>;</span><br></pre></td></tr></table></figure>
+        <h1 id="Mybatis封装成Map结果"><a href="#Mybatis封装成Map结果" class="headerlink" title="Mybatis封装成Map结果"></a><code>Mybatis</code>封装成<code>Map</code>结果</h1><h2 id="Dao层"><a href="#Dao层" class="headerlink" title="Dao层"></a><code>Dao</code>层</h2><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">@MapKey(&quot;cityCode&quot;)</span></span><br><span class="line"><span class="function">Map&lt;String,InvoiceSubjectRuleCity&gt; <span class="title">bulkSelectRuleCityByRuleIdList</span><span class="params">(<span class="meta">@Param(&quot;ruleIdList&quot;)</span> List&lt;Long&gt; ruleIdList)</span></span>;</span><br></pre></td></tr></table></figure>
       
     </div>
     <div class="meta footer">
       <span>
-        <a href="/categories/Java/Mybatis/SpringBoot/" itemprop="url" title="SpringBoot"><i class="ic i-flag"></i>SpringBoot</a>
+        <a href="/blog/categories/Java/Mybatis/SpringBoot/" itemprop="url" title="SpringBoot"><i class="ic i-flag"></i>SpringBoot</a>
       </span>
     </div>
-    <a href="/posts/c112412d/" itemprop="url" title="Mybatis封装成Map结果" class="btn">more...</a>
+    <a href="/blog/posts/c112412d/" itemprop="url" title="Mybatis封装成Map结果" class="btn">more...</a>
   </div>
 </article>
 
         
 <article class="item">
   <div class="cover">
-    <a href="/posts/2edf7887/" itemprop="url" title="MybatisPlus实现分页查询"><img data-src="https://tva2.sinaimg.cn/mw690/6833939bly1giph4wqtg4j20zk0m8x6p.jpg"></a>
+    <a href="/blog/posts/2edf7887/" itemprop="url" title="MybatisPlus实现分页查询"><img data-src="https://tva2.sinaimg.cn/mw690/6833939bly1gicli9lfebj20zk0m84qp.jpg"></a>
   </div>
   <div class="info">
     
@@ -350,29 +341,27 @@
   </span>
 </div>
 
-    <h3><a href="/posts/2edf7887/" itemprop="url" title="MybatisPlus实现分页查询">MybatisPlus实现分页查询</a></h3>
+    <h3><a href="/blog/posts/2edf7887/" itemprop="url" title="MybatisPlus实现分页查询">MybatisPlus实现分页查询</a></h3>
     <div class="excerpt">
-        <h1 id="mybatisplus实现分页查询"><a class="markdownIt-Anchor" href="#mybatisplus实现分页查询">#</a>  <code>MybatisPlus</code>  实现分页查询</h1>
-<h2 id="分页区别"><a class="markdownIt-Anchor" href="#分页区别">#</a> 分页区别</h2>
-<p>分页查询每个人程序猿几乎都使用过，但是有部分同学不懂什么是物理分页和逻辑分页。</p>
-<p>物理分页：相当于执行了 <code>limit</code>  分页语句，返回部分数据。物理分页只返回部分数据占用内存小，能够获取数据库最新的状态，实施性比较强，一般适用于数据量比较大，数据更新比较频繁的场景。</p>
+        <h1 id="MybatisPlus实现分页查询"><a href="#MybatisPlus实现分页查询" class="headerlink" title="MybatisPlus实现分页查询"></a><code>MybatisPlus</code>实现分页查询</h1><h2 id="分页区别"><a href="#分页区别" class="headerlink" title="分页区别"></a>分页区别</h2><p>分页查询每个人程序猿几乎都使用过，但是有部分同学不懂什么是物理分页和逻辑分页。</p>
+<p>物理分页：相当于执行了<code>limit</code>分页语句，返回部分数据。物理分页只返回部分数据占用内存小，能够获取数据库最新的状态，实施性比较强，一般适用于数据量比较大，数据更新比较频繁的场景。</p>
 <p>逻辑分页：一次性把全部的数据取出来，通过程序进行筛选数据。如果数据量大的情况下会消耗大量的内存，由于逻辑分页只需要读取数据库一次，不能获取数据库最新状态，实施性比较差，适用于数据量小，数据稳定的场合。</p>
-<p>那么 MP 中的物理分页怎么实现呢？ 往下看往下看</p>
+<p>那么MP中的物理分页怎么实现呢？ 往下看往下看</p>
       
     </div>
     <div class="meta footer">
       <span>
-        <a href="/categories/Java/Mybatis/SpringBoot/%E5%88%86%E9%A1%B5%E6%9F%A5%E8%AF%A2/" itemprop="url" title="分页查询"><i class="ic i-flag"></i>分页查询</a>
+        <a href="/blog/categories/Java/Mybatis/SpringBoot/%E5%88%86%E9%A1%B5%E6%9F%A5%E8%AF%A2/" itemprop="url" title="分页查询"><i class="ic i-flag"></i>分页查询</a>
       </span>
     </div>
-    <a href="/posts/2edf7887/" itemprop="url" title="MybatisPlus实现分页查询" class="btn">more...</a>
+    <a href="/blog/posts/2edf7887/" itemprop="url" title="MybatisPlus实现分页查询" class="btn">more...</a>
   </div>
 </article>
 
         
 <article class="item">
   <div class="cover">
-    <a href="/posts/31dc52e1/" itemprop="url" title="MyBatis之分页查询：MyBatis PageHelper"><img data-src="https://tva2.sinaimg.cn/mw690/6833939bly1gipexw3o58j20zk0m8e81.jpg"></a>
+    <a href="/blog/posts/31dc52e1/" itemprop="url" title="MyBatis之分页查询：MyBatis PageHelper"><img data-src="https://tva2.sinaimg.cn/mw690/6833939bly1giclwuom7cj20zk0m8dvn.jpg"></a>
   </div>
   <div class="info">
     
@@ -398,27 +387,25 @@
   </span>
 </div>
 
-    <h3><a href="/posts/31dc52e1/" itemprop="url" title="MyBatis之分页查询：MyBatis PageHelper">MyBatis之分页查询：MyBatis PageHelper</a></h3>
+    <h3><a href="/blog/posts/31dc52e1/" itemprop="url" title="MyBatis之分页查询：MyBatis PageHelper">MyBatis之分页查询：MyBatis PageHelper</a></h3>
     <div class="excerpt">
-        <h1 id="mybatis之分页查询mybatis-pagehelper"><a class="markdownIt-Anchor" href="#mybatis之分页查询mybatis-pagehelper">#</a>  <code>MyBatis</code>  之分页查询： <code>MyBatis PageHelper</code></h1>
-<h2 id="1-添加依赖"><a class="markdownIt-Anchor" href="#1-添加依赖">#</a> 1. 添加依赖</h2>
-<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">&lt;!--MyBatis 分页插件: MyBatis PageHelper--&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">dependency</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">groupId</span>&gt;</span>com.github.pagehelper<span class="tag">&lt;/<span class="name">groupId</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>pagehelper-spring-boot-starter<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">version</span>&gt;</span>1.2.5<span class="tag">&lt;/<span class="name">version</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">dependency</span>&gt;</span></span><br></pre></td></tr></table></figure>
-<h2 id="2-添加配置"><a class="markdownIt-Anchor" href="#2-添加配置">#</a> 2. 添加配置</h2>
+        <h1 id="MyBatis之分页查询：MyBatis-PageHelper"><a href="#MyBatis之分页查询：MyBatis-PageHelper" class="headerlink" title="MyBatis之分页查询：MyBatis PageHelper"></a><code>MyBatis</code>之分页查询：<code>MyBatis PageHelper</code></h1><h2 id="1-添加依赖"><a href="#1-添加依赖" class="headerlink" title="1. 添加依赖"></a>1. 添加依赖</h2><figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">&lt;!--MyBatis 分页插件: MyBatis PageHelper--&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">dependency</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">groupId</span>&gt;</span>com.github.pagehelper<span class="tag">&lt;/<span class="name">groupId</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>pagehelper-spring-boot-starter<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">version</span>&gt;</span>1.2.5<span class="tag">&lt;/<span class="name">version</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">dependency</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<h2 id="2-添加配置"><a href="#2-添加配置" class="headerlink" title="2. 添加配置"></a>2. 添加配置</h2>
       
     </div>
     <div class="meta footer">
       <span>
-        <a href="/categories/Java/Mybatis/SpringBoot/" itemprop="url" title="SpringBoot"><i class="ic i-flag"></i>SpringBoot</a>
+        <a href="/blog/categories/Java/Mybatis/SpringBoot/" itemprop="url" title="SpringBoot"><i class="ic i-flag"></i>SpringBoot</a>
       </span>
     </div>
-    <a href="/posts/31dc52e1/" itemprop="url" title="MyBatis之分页查询：MyBatis PageHelper" class="btn">more...</a>
+    <a href="/blog/posts/31dc52e1/" itemprop="url" title="MyBatis之分页查询：MyBatis PageHelper" class="btn">more...</a>
   </div>
 </article>
 
         
 <article class="item">
   <div class="cover">
-    <a href="/posts/105c245f/" itemprop="url" title="Mybatis使用Sql进行模糊查询"><img data-src="https://tva2.sinaimg.cn/mw690/6833939bly1gipey84bjtj20zk0m8hdt.jpg"></a>
+    <a href="/blog/posts/105c245f/" itemprop="url" title="Mybatis使用Sql进行模糊查询"><img data-src="https://tva2.sinaimg.cn/mw690/6833939bly1giclxxcb6rj20zk0m8b29.jpg"></a>
   </div>
   <div class="info">
     
@@ -444,27 +431,26 @@
   </span>
 </div>
 
-    <h3><a href="/posts/105c245f/" itemprop="url" title="Mybatis使用Sql进行模糊查询">Mybatis使用Sql进行模糊查询</a></h3>
+    <h3><a href="/blog/posts/105c245f/" itemprop="url" title="Mybatis使用Sql进行模糊查询">Mybatis使用Sql进行模糊查询</a></h3>
     <div class="excerpt">
-        <h1 id="mybatis使用sql进行模糊查询"><a class="markdownIt-Anchor" href="#mybatis使用sql进行模糊查询">#</a>  <code>Mybatis</code>  使用 <code>Sql</code>  进行模糊查询</h1>
-<h2 id="方式一"><a class="markdownIt-Anchor" href="#方式一">#</a> 方式一</h2>
-<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">&lt;!-- 根据名称模糊查询 --&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">select</span> <span class="attr">id</span>=<span class="string">&quot;findByName&quot;</span> <span class="attr">resultType</span>=<span class="string">&quot;com.sc.domain.User&quot;</span> <span class="attr">parameterType</span>=<span class="string">&quot;String&quot;</span>&gt;</span></span><br><span class="line">    select * from user where username like #&#123;username&#125;</span><br><span class="line"><span class="tag">&lt;/<span class="name">select</span>&gt;</span></span><br></pre></td></tr></table></figure>
+        <h1 id="Mybatis使用Sql进行模糊查询"><a href="#Mybatis使用Sql进行模糊查询" class="headerlink" title="Mybatis使用Sql进行模糊查询"></a><code>Mybatis</code>使用<code>Sql</code>进行模糊查询</h1><h2 id="方式一"><a href="#方式一" class="headerlink" title="方式一"></a>方式一</h2><figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">&lt;!-- 根据名称模糊查询 --&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">select</span> <span class="attr">id</span>=<span class="string">&quot;findByName&quot;</span> <span class="attr">resultType</span>=<span class="string">&quot;com.sc.domain.User&quot;</span> <span class="attr">parameterType</span>=<span class="string">&quot;String&quot;</span>&gt;</span></span><br><span class="line">    select * from user where username like #&#123;username&#125;</span><br><span class="line"><span class="tag">&lt;/<span class="name">select</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
 <p>模糊查询的测试方法</p>
       
     </div>
     <div class="meta footer">
       <span>
-        <a href="/categories/Java/Mybatis/SpringBoot/" itemprop="url" title="SpringBoot"><i class="ic i-flag"></i>SpringBoot</a>
+        <a href="/blog/categories/Java/Mybatis/SpringBoot/" itemprop="url" title="SpringBoot"><i class="ic i-flag"></i>SpringBoot</a>
       </span>
     </div>
-    <a href="/posts/105c245f/" itemprop="url" title="Mybatis使用Sql进行模糊查询" class="btn">more...</a>
+    <a href="/blog/posts/105c245f/" itemprop="url" title="Mybatis使用Sql进行模糊查询" class="btn">more...</a>
   </div>
 </article>
 
         
 <article class="item">
   <div class="cover">
-    <a href="/posts/b246d3ce/" itemprop="url" title="Java自带的好用的工具类"><img data-src="https://tva2.sinaimg.cn/mw690/6833939bly1gicljgocqbj20zk0m8e81.jpg"></a>
+    <a href="/blog/posts/b246d3ce/" itemprop="url" title="Java自带的好用的工具类"><img data-src="https://tva2.sinaimg.cn/mw690/6833939bly1giciuja1j1j20zk0m8kjl.jpg"></a>
   </div>
   <div class="info">
     
@@ -490,26 +476,24 @@
   </span>
 </div>
 
-    <h3><a href="/posts/b246d3ce/" itemprop="url" title="Java自带的好用的工具类">Java自带的好用的工具类</a></h3>
+    <h3><a href="/blog/posts/b246d3ce/" itemprop="url" title="Java自带的好用的工具类">Java自带的好用的工具类</a></h3>
     <div class="excerpt">
-        <h1 id="java自带的好用的工具类"><a class="markdownIt-Anchor" href="#java自带的好用的工具类">#</a>  <code>Java</code>  自带的好用的工具类</h1>
-<h2 id="list集合拼接成以逗号分隔的字符串"><a class="markdownIt-Anchor" href="#list集合拼接成以逗号分隔的字符串">#</a>  <code>List</code>  集合拼接成以逗号分隔的字符串</h2>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 如何把list集合拼接成以逗号分隔的字符串 a,b,c </span></span><br><span class="line">List&lt;String&gt; list = Arrays.asList(<span class="string">&quot;a&quot;</span>, <span class="string">&quot;b&quot;</span>, <span class="string">&quot;c&quot;</span>);  </span><br><span class="line"><span class="comment">// 第一种方法，可以用stream流 </span></span><br><span class="line">String join = list.stream().collect(Collectors.joining(<span class="string">&quot;,&quot;</span>));  </span><br><span class="line">System.out.println(join); <span class="comment">// 输出 a,b,c </span></span><br><span class="line"><span class="comment">// 第二种方法，其实String也有join方法可以实现这个功能 </span></span><br><span class="line">String join = String.join(<span class="string">&quot;,&quot;</span>, list);  </span><br><span class="line">System.out.println(join); <span class="comment">// 输出 a,b,c</span></span><br></pre></td></tr></table></figure>
+        <h1 id="Java自带的好用的工具类"><a href="#Java自带的好用的工具类" class="headerlink" title="Java自带的好用的工具类"></a><code>Java</code>自带的好用的工具类</h1><h2 id="List集合拼接成以逗号分隔的字符串"><a href="#List集合拼接成以逗号分隔的字符串" class="headerlink" title="List集合拼接成以逗号分隔的字符串"></a><code>List</code>集合拼接成以逗号分隔的字符串</h2><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 如何把list集合拼接成以逗号分隔的字符串 a,b,c </span></span><br><span class="line">List&lt;String&gt; list = Arrays.asList(<span class="string">&quot;a&quot;</span>, <span class="string">&quot;b&quot;</span>, <span class="string">&quot;c&quot;</span>);  </span><br><span class="line"><span class="comment">// 第一种方法，可以用stream流 </span></span><br><span class="line">String join = list.stream().collect(Collectors.joining(<span class="string">&quot;,&quot;</span>));  </span><br><span class="line">System.out.println(join); <span class="comment">// 输出 a,b,c </span></span><br><span class="line"><span class="comment">// 第二种方法，其实String也有join方法可以实现这个功能 </span></span><br><span class="line">String join = String.join(<span class="string">&quot;,&quot;</span>, list);  </span><br><span class="line">System.out.println(join); <span class="comment">// 输出 a,b,c</span></span><br></pre></td></tr></table></figure>
       
     </div>
     <div class="meta footer">
       <span>
-        <a href="/categories/Java/Tools/" itemprop="url" title="Tools"><i class="ic i-flag"></i>Tools</a>
+        <a href="/blog/categories/Java/Tools/" itemprop="url" title="Tools"><i class="ic i-flag"></i>Tools</a>
       </span>
     </div>
-    <a href="/posts/b246d3ce/" itemprop="url" title="Java自带的好用的工具类" class="btn">more...</a>
+    <a href="/blog/posts/b246d3ce/" itemprop="url" title="Java自带的好用的工具类" class="btn">more...</a>
   </div>
 </article>
 
         
 <article class="item">
   <div class="cover">
-    <a href="/posts/96eb888f/" itemprop="url" title="Java学习线路图"><img data-src="https://tva2.sinaimg.cn/mw690/6833939bly1gicitht3xtj20zk0m8k5v.jpg"></a>
+    <a href="/blog/posts/96eb888f/" itemprop="url" title="Java学习线路图"><img data-src="https://tva2.sinaimg.cn/mw690/6833939bly1gipeu1usa7j20zk0m8b29.jpg"></a>
   </div>
   <div class="info">
     
@@ -535,24 +519,24 @@
   </span>
 </div>
 
-    <h3><a href="/posts/96eb888f/" itemprop="url" title="Java学习线路图">Java学习线路图</a></h3>
+    <h3><a href="/blog/posts/96eb888f/" itemprop="url" title="Java学习线路图">Java学习线路图</a></h3>
     <div class="excerpt">
         <p>图片可能很长。。。</p>
       
     </div>
     <div class="meta footer">
       <span>
-        <a href="/categories/Java/" itemprop="url" title="Java"><i class="ic i-flag"></i>Java</a>
+        <a href="/blog/categories/Java/" itemprop="url" title="Java"><i class="ic i-flag"></i>Java</a>
       </span>
     </div>
-    <a href="/posts/96eb888f/" itemprop="url" title="Java学习线路图" class="btn">more...</a>
+    <a href="/blog/posts/96eb888f/" itemprop="url" title="Java学习线路图" class="btn">more...</a>
   </div>
 </article>
 
         
 <article class="item">
   <div class="cover">
-    <a href="/posts/579bb697/" itemprop="url" title="IDEA小图标含义"><img data-src="https://tva2.sinaimg.cn/mw690/6833939bly1gipexbei4hj20zk0m8npd.jpg"></a>
+    <a href="/blog/posts/579bb697/" itemprop="url" title="IDEA小图标含义"><img data-src="https://tva2.sinaimg.cn/mw690/6833939bly1gipeyhsblkj20zk0m81kx.jpg"></a>
   </div>
   <div class="info">
     
@@ -567,7 +551,7 @@
     <span class="icon">
       <i class="ic i-pen"></i>
     </span>
-    <span>24</span>
+    <span>22</span>
     <span class="text">words</span>
   </span>
   <span class="item" title="Reading time">
@@ -578,19 +562,18 @@
   </span>
 </div>
 
-    <h3><a href="/posts/579bb697/" itemprop="url" title="IDEA小图标含义">IDEA小图标含义</a></h3>
+    <h3><a href="/blog/posts/579bb697/" itemprop="url" title="IDEA小图标含义">IDEA小图标含义</a></h3>
     <div class="excerpt">
-        <h1 id="idea小图标含义"><a class="markdownIt-Anchor" href="#idea小图标含义">#</a>  <code>IDEA</code>  小图标含义</h1>
-<p>日常图标</p>
-<img src="/posts/579bb697/2022-02-13-22-13-27.png" class="">
+        <h1 id="IDEA小图标含义"><a href="#IDEA小图标含义" class="headerlink" title="IDEA小图标含义"></a><code>IDEA</code>小图标含义</h1><p>日常图标</p>
+<img src="/blog/posts/579bb697/2022-02-13-22-13-27.png" class="">
       
     </div>
     <div class="meta footer">
       <span>
-        <a href="/categories/IDEA/" itemprop="url" title="IDEA"><i class="ic i-flag"></i>IDEA</a>
+        <a href="/blog/categories/IDEA/" itemprop="url" title="IDEA"><i class="ic i-flag"></i>IDEA</a>
       </span>
     </div>
-    <a href="/posts/579bb697/" itemprop="url" title="IDEA小图标含义" class="btn">more...</a>
+    <a href="/blog/posts/579bb697/" itemprop="url" title="IDEA小图标含义" class="btn">more...</a>
   </div>
 </article>
 
@@ -601,7 +584,7 @@
   
   <nav class="pagination">
     <div class="inner">
-    <a class="extend prev" rel="prev" href="/page/9/"><i class="ic i-angle-left" aria-label="Previous page"></i></a><a class="page-number" href="/">1</a><span class="space">&hellip;</span><a class="page-number" href="/page/9/">9</a><span class="page-number current">10</span><a class="page-number" href="/page/11/">11</a><span class="space">&hellip;</span><a class="page-number" href="/page/15/">15</a><a class="extend next" rel="next" href="/page/11/"><i class="ic i-angle-right" aria-label="Next page"></i></a>
+    <a class="extend prev" rel="prev" href="/blog/page/9/"><i class="ic i-angle-left" aria-label="Previous page"></i></a><a class="page-number" href="/blog/">1</a><span class="space">&hellip;</span><a class="page-number" href="/blog/page/9/">9</a><span class="page-number current">10</span><a class="page-number" href="/blog/page/11/">11</a><span class="space">&hellip;</span><a class="page-number" href="/blog/page/15/">15</a><a class="extend next" rel="next" href="/blog/page/11/"><i class="ic i-angle-right" aria-label="Next page"></i></a>
     </div>
   </nav>
 
@@ -621,26 +604,26 @@
       <div class="overview panel" data-title="Overview">
         <div class="author" itemprop="author" itemscope itemtype="http://schema.org/Person">
   <img class="image" itemprop="image" alt="JIN Mao"
-      data-src="/images/avatar.png">
+      data-src="/blog/images/avatar.png">
   <p class="name" itemprop="name">JIN Mao</p>
   <div class="description" itemprop="description"></div>
 </div>
 
 <nav class="state">
     <div class="item posts">
-      <a href="/archives/">
+      <a href="/blog/archives/">
         <span class="count">150</span>
         <span class="name">posts</span>
       </a>
     </div>
     <div class="item categories">
-      <a href="/categories/">
+      <a href="/blog/categories/">
         <span class="count">78</span>
         <span class="name">categories</span>
       </a>
     </div>
     <div class="item tags">
-      <a href="/tags/">
+      <a href="/blog/tags/">
         <span class="count">113</span>
         <span class="name">tags</span>
       </a>
@@ -655,12 +638,12 @@
   
     
   <li class="item">
-    <a href="/" rel="section"><i class="ic i-home"></i>Home</a>
+    <a href="/blog/" rel="section"><i class="ic i-home"></i>Home</a>
   </li>
 
     
   <li class="item">
-    <a href="/about/" rel="section"><i class="ic i-user"></i>About</a>
+    <a href="/blog/about/" rel="section"><i class="ic i-user"></i>About</a>
   </li>
 
         
@@ -670,17 +653,17 @@
 
         
   <li class="item">
-    <a href="/archives/" rel="section"><i class="ic i-list-alt"></i>Archives</a>
+    <a href="/blog/archives/" rel="section"><i class="ic i-list-alt"></i>Archives</a>
   </li>
 
         
   <li class="item">
-    <a href="/categories/" rel="section"><i class="ic i-th"></i>Categories</a>
+    <a href="/blog/categories/" rel="section"><i class="ic i-th"></i>Categories</a>
   </li>
 
         
   <li class="item">
-    <a href="/tags/" rel="section"><i class="ic i-tags"></i>Tags</a>
+    <a href="/blog/tags/" rel="section"><i class="ic i-tags"></i>Tags</a>
   </li>
 
   </ul>
@@ -693,12 +676,12 @@
 
   <ul id="quick">
     <li class="prev pjax">
-        <a href="/page/9/" rel="prev" title="Previous Post"><i class="ic i-chevron-left"></i></a>
+        <a href="/blog/page/9/" rel="prev" title="Previous Post"><i class="ic i-chevron-left"></i></a>
     </li>
     <li class="up"><i class="ic i-arrow-up"></i></li>
     <li class="down"><i class="ic i-arrow-down"></i></li>
     <li class="next pjax">
-        <a href="/page/11/" rel="next" title="Next Post"><i class="ic i-chevron-right"></i></a>
+        <a href="/blog/page/11/" rel="next" title="Next Post"><i class="ic i-chevron-right"></i></a>
     </li>
     <li class="percent"></li>
   </ul>
@@ -721,106 +704,103 @@
 <div class="breadcrumb">
 </div>
 
-    <span><a href="/posts/a1926332/" title="Springboot+Vue二进制文件传输">Springboot+Vue二进制文件传输</a></span>
+    <span><a href="/blog/posts/ac1ae082/" title="SpringBoot如何优雅的发邮件">SpringBoot如何优雅的发邮件</a></span>
   </li>
 
       
   <li class="item">
     
 <div class="breadcrumb">
-<a href="/categories/Hexo/" title="In Hexo">Hexo</a>
+<a href="/blog/categories/Java/" title="In Java">Java</a>
 <i class="ic i-angle-right"></i>
-<a href="/categories/Hexo/Tools/" title="In Tools">Tools</a>
+<a href="/blog/categories/Java/Tools/" title="In Tools">Tools</a>
 </div>
 
-    <span><a href="/posts/45934af9/" title="使用vscode书写hexo博客粘贴图片解决方案">使用vscode书写hexo博客粘贴图片解决方案</a></span>
+    <span><a href="/blog/posts/13370746/" title="使用EasyExcel读取excel文件为Java实体类">使用EasyExcel读取excel文件为Java实体类</a></span>
   </li>
 
       
   <li class="item">
     
 <div class="breadcrumb">
-<a href="/categories/Java/" title="In Java">Java</a>
+<a href="/blog/categories/Jenkins/" title="In Jenkins">Jenkins</a>
+</div>
+
+    <span><a href="/blog/posts/d05062ae/" title="Java 操作Jenkins">Java 操作Jenkins</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/blog/categories/Java%E9%9D%A2%E8%AF%95/" title="In Java面试">Java面试</a>
 <i class="ic i-angle-right"></i>
-<a href="/categories/Java/Mybatis/" title="In Mybatis">Mybatis</a>
+<a href="/blog/categories/Java%E9%9D%A2%E8%AF%95/Spring/" title="In Spring">Spring</a>
+</div>
+
+    <span><a href="/blog/posts/89080a8e/" title="Spring Bean的生命周期">Spring Bean的生命周期</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/blog/categories/Java%E9%9D%A2%E8%AF%95/" title="In Java面试">Java面试</a>
+</div>
+
+    <span><a href="/blog/posts/feb84842/" title="Java面试必问--ArrayList的底层">Java面试必问--ArrayList的底层</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/blog/categories/SAP/" title="In SAP">SAP</a>
+</div>
+
+    <span><a href="/blog/posts/96b6e8a1/" title="simple self introduction">simple self introduction</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/blog/categories/master/" title="In master">master</a>
+</div>
+
+    <span><a href="/blog/posts/378107f2/" title="The Basic knowledge of Anaconda">The Basic knowledge of Anaconda</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/blog/categories/Java%E9%9D%A2%E8%AF%95/" title="In Java面试">Java面试</a>
 <i class="ic i-angle-right"></i>
-<a href="/categories/Java/Mybatis/SpringBoot/" title="In SpringBoot">SpringBoot</a>
-<i class="ic i-angle-right"></i>
-<a href="/categories/Java/Mybatis/SpringBoot/%E5%88%86%E9%A1%B5%E6%9F%A5%E8%AF%A2/" title="In 分页查询">分页查询</a>
+<a href="/blog/categories/Java%E9%9D%A2%E8%AF%95/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/" title="In 数据结构">数据结构</a>
 </div>
 
-    <span><a href="/posts/2edf7887/" title="MybatisPlus实现分页查询">MybatisPlus实现分页查询</a></span>
+    <span><a href="/blog/posts/9f9a6182/" title="面试之旅关于数据结构">面试之旅关于数据结构</a></span>
   </li>
 
       
   <li class="item">
     
 <div class="breadcrumb">
-<a href="/categories/Mybtais/" title="In Mybtais">Mybtais</a>
+<a href="/blog/categories/Hexo/" title="In Hexo">Hexo</a>
 </div>
 
-    <span><a href="/posts/9aff665a/" title="mybatis中大于等于小于等于的写法">mybatis中大于等于小于等于的写法</a></span>
+    <span><a href="/blog/posts/5c2529f6/" title="Hexo中添加动态2d二次元人物模型">Hexo中添加动态2d二次元人物模型</a></span>
   </li>
 
       
   <li class="item">
     
 <div class="breadcrumb">
+<a href="/blog/categories/Vue/" title="In Vue">Vue</a>
 </div>
 
-    <span><a href="/posts/4da9c93/" title="Web-based design and analysis tools for CRISPR base editing 文献阅读">Web-based design and analysis tools for CRISPR base editing 文献阅读</a></span>
-  </li>
-
-      
-  <li class="item">
-    
-<div class="breadcrumb">
-<a href="/categories/%E5%A4%A7%E6%95%B0%E6%8D%AE/" title="In 大数据">大数据</a>
-</div>
-
-    <span><a href="/posts/737c98ca/" title="什么是MapReduce">什么是MapReduce</a></span>
-  </li>
-
-      
-  <li class="item">
-    
-<div class="breadcrumb">
-<a href="/categories/Java%E9%9D%A2%E8%AF%95/" title="In Java面试">Java面试</a>
-<i class="ic i-angle-right"></i>
-<a href="/categories/Java%E9%9D%A2%E8%AF%95/%E7%AE%97%E6%B3%95/" title="In 算法">算法</a>
-</div>
-
-    <span><a href="/posts/b9b9f7e7/" title="二叉树遍历">二叉树遍历</a></span>
-  </li>
-
-      
-  <li class="item">
-    
-<div class="breadcrumb">
-<a href="/categories/Java/" title="In Java">Java</a>
-</div>
-
-    <span><a href="/posts/fc16798c/" title="Java8遍历Map的三种方式">Java8遍历Map的三种方式</a></span>
-  </li>
-
-      
-  <li class="item">
-    
-<div class="breadcrumb">
-<a href="/categories/Vue/" title="In Vue">Vue</a>
-</div>
-
-    <span><a href="/posts/bd30a519/" title="Vue实现Yaml验证组件">Vue实现Yaml验证组件</a></span>
-  </li>
-
-      
-  <li class="item">
-    
-<div class="breadcrumb">
-<a href="/categories/SpringBoot/" title="In SpringBoot">SpringBoot</a>
-</div>
-
-    <span><a href="/posts/dfc32b58/" title="SpringBoot javax操作邮箱">SpringBoot javax操作邮箱</a></span>
+    <span><a href="/blog/posts/bd30a519/" title="Vue实现Yaml验证组件">Vue实现Yaml验证组件</a></span>
   </li>
 
   </ul>
@@ -887,7 +867,7 @@
 
 <script src="//cdn.jsdelivr.net/combine/npm/pace-js@1.0.2/pace.min.js,npm/pjax@0.2.8/pjax.min.js,npm/whatwg-fetch@3.4.0/dist/fetch.umd.min.js,npm/animejs@3.2.0/lib/anime.min.js,npm/algoliasearch@4/dist/algoliasearch-lite.umd.js,npm/instantsearch.js@4/dist/instantsearch.production.min.js,npm/lozad@1/dist/lozad.min.js,npm/quicklink@2/dist/quicklink.umd.js"></script>
 
-<script src="/js/app.js?v=0.2.5"></script>
+<script src="/blog/js/app.js?v=0.2.5"></script>
 
 
 
