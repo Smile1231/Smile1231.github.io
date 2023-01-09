@@ -21,7 +21,7 @@
 
 <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Mulish:300,300italic,400,400italic,700,700italic%7CFredericka%20the%20Great:300,300italic,400,400italic,700,700italic%7CNoto%20Serif%20JP:300,300italic,400,400italic,700,700italic%7CNoto%20Serif%20SC:300,300italic,400,400italic,700,700italic%7CInconsolata:300,300italic,400,400italic,700,700italic&display=swap&subset=latin,latin-ext">
 
-<link rel="stylesheet" href="/blog/css/app.css?v=0.2.5">
+<link rel="stylesheet" href="/css/app.css?v=0.2.5">
 
   
   <meta name="keywords" content="数据库,DataBase" />
@@ -101,7 +101,7 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
       </div>
     </div>
     <ul class="menu">
-      <li class="item title"><a href="/blog/" rel="start">Jin Mao when to get rich ?</a></li>
+      <li class="item title"><a href="/" rel="start">Jin Mao when to get rich ?</a></li>
     </ul>
     <ul class="right">
       <li class="item theme">
@@ -117,12 +117,12 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
       </div>
       <div id="imgs" class="pjax">
         <ul>
-          <li class="item" data-background-image="https://tva2.sinaimg.cn/large/6833939bly1gipevo9j1jj20zk0m8e81.jpg"></li>
-          <li class="item" data-background-image="https://tva2.sinaimg.cn/large/6833939bly1giph47e9vtj20zk0m8x6l.jpg"></li>
-          <li class="item" data-background-image="https://tva2.sinaimg.cn/large/6833939bly1giclgrvbd6j20zk0m8qv5.jpg"></li>
-          <li class="item" data-background-image="https://tva2.sinaimg.cn/large/6833939bly1gicitzannuj20zk0m8b29.jpg"></li>
-          <li class="item" data-background-image="https://tva2.sinaimg.cn/large/6833939bly1giclh3brzpj20zk0m8ann.jpg"></li>
-          <li class="item" data-background-image="https://tva2.sinaimg.cn/large/6833939bly1gipewr8iypj20zk0m8b29.jpg"></li>
+          <li class="item" data-background-image="https://tva1.sinaimg.cn/large/6833939bly1giclimtf7dj20zk0m8qav.jpg"></li>
+          <li class="item" data-background-image="https://tva1.sinaimg.cn/large/6833939bly1giclgrvbd6j20zk0m8qv5.jpg"></li>
+          <li class="item" data-background-image="https://tva1.sinaimg.cn/large/6833939bly1gipetlbztpj20zk0m84qp.jpg"></li>
+          <li class="item" data-background-image="https://tva1.sinaimg.cn/large/6833939bly1gipexj2jgzj20zk0m8b09.jpg"></li>
+          <li class="item" data-background-image="https://tva1.sinaimg.cn/large/6833939bly1gicmnywqgpj20zk0m8dwx.jpg"></li>
+          <li class="item" data-background-image="https://tva1.sinaimg.cn/large/6833939bly1giclh0m9pdj20zk0m8hdt.jpg"></li>
         </ul>
       </div>
     </header>
@@ -147,8 +147,8 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
     
 <div class="breadcrumb" itemscope itemtype="https://schema.org/BreadcrumbList">
 <i class="ic i-home"></i>
-<span><a href="/blog/">Home</a></span><i class="ic i-angle-right"></i>
-<span  class="current" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem"><a href="/blog/categories/%E6%95%B0%E6%8D%AE%E5%BA%93/" itemprop="item" rel="index" title="In 数据库"><span itemprop="name">数据库</span></a>
+<span><a href="/">Home</a></span><i class="ic i-angle-right"></i>
+<span  class="current" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem"><a href="/categories/%E6%95%B0%E6%8D%AE%E5%BA%93/" itemprop="item" rel="index" title="In 数据库"><span itemprop="name">数据库</span></a>
 <meta itemprop="position" content="1" /></span>
 </div>
 
@@ -156,7 +156,7 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
   <link itemprop="mainEntityOfPage" href="https://smile1231.github.io/posts/388f5c14/">
 
   <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-    <meta itemprop="image" content="/blog/images/avatar.png">
+    <meta itemprop="image" content="/images/avatar.png">
     <meta itemprop="name" content="JIN Mao">
     <meta itemprop="description" content="got windy(起风了), ">
   </span>
@@ -168,12 +168,19 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
   <div class="body md" itemprop="articleBody">
     
 
-    <h1 id="日期的加减"><a href="#日期的加减" class="headerlink" title="日期的加减"></a>日期的加减</h1><p><code>date_add</code>和<code>date_sub</code><br>语法为：<code>date_add(date,interval expr type)、date_sub(date,interval expr type)</code><br>其中常用的type的类型有：<code>second、minute、hour、day、month、year</code>等</p>
-<p><code>date_add</code>是对日期的增加，如果天数为负数时，则表示对日期减少，<br><code>date_sub</code>是对日期的减少，如果天数为负数时，则表示对日期增加<br>例如</p>
+    <h1 id="日期的加减"><a class="markdownIt-Anchor" href="#日期的加减">#</a> 日期的加减</h1>
+<p><code>date_add</code>  和 <code>date_sub</code> <br>
+ 语法为： <code>date_add(date,interval expr type)、date_sub(date,interval expr type)</code> <br>
+ 其中常用的 type 的类型有： <code>second、minute、hour、day、month、year</code>  等</p>
+<p><code>date_add</code>  是对日期的增加，如果天数为负数时，则表示对日期减少，<br>
+ <code>date_sub</code>  是对日期的减少，如果天数为负数时，则表示对日期增加<br>
+例如</p>
 <span id="more"></span>
 <figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">-- 获取日期 2020-04-07</span></span><br><span class="line">curdate()</span><br><span class="line"><span class="comment">-- 获取日期加时间 2020-04-07 23:10:30</span></span><br><span class="line">now()</span><br><span class="line"><span class="comment">-- 获取明天的日期 2020-04-08</span></span><br><span class="line">date_add(curdate(),<span class="type">interval</span> <span class="number">1</span> <span class="keyword">day</span>)</span><br><span class="line"><span class="comment">--或者</span></span><br><span class="line">date_sub(curdate(),<span class="type">interval</span> <span class="number">-1</span> <span class="keyword">day</span>)</span><br><span class="line"><span class="comment">-- 获取明年的日期 2021-04-07</span></span><br><span class="line">date_add(curdate(),<span class="type">interval</span> <span class="number">1</span> <span class="keyword">year</span>)</span><br><span class="line"><span class="comment">-- 或者</span></span><br><span class="line">date_sub(curdate(),<span class="type">interval</span> <span class="number">-1</span> <span class="keyword">year</span>)</span><br></pre></td></tr></table></figure>
-
-<h1 id="日期的格式化"><a href="#日期的格式化" class="headerlink" title="日期的格式化"></a>日期的格式化</h1><h2 id="date-format"><a href="#date-format" class="headerlink" title="date_format"></a><code>date_format</code></h2><p>语法为：<code>date_format(date,format)，date</code> 参数是合法的日期。<code>format </code>规定日期/时间的输出格式。<br>常用的格式有：</p>
+<h1 id="日期的格式化"><a class="markdownIt-Anchor" href="#日期的格式化">#</a> 日期的格式化</h1>
+<h2 id="date_format"><a class="markdownIt-Anchor" href="#date_format">#</a>  <code>date_format</code></h2>
+<p>语法为： <code>date_format(date,format)，date</code>  参数是合法的日期。 <code>format </code> 规定日期 / 时间的输出格式。<br>
+常用的格式有：</p>
 <table>
 <thead>
 <tr>
@@ -181,7 +188,8 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
 <th>描述</th>
 </tr>
 </thead>
-<tbody><tr>
+<tbody>
+<tr>
 <td>%Y</td>
 <td>年，4 位</td>
 </tr>
@@ -191,7 +199,7 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
 </tr>
 <tr>
 <td>%m</td>
-<td>月，数值(00-12)</td>
+<td>月，数值 (00-12)</td>
 </tr>
 <tr>
 <td>%M</td>
@@ -203,7 +211,7 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
 </tr>
 <tr>
 <td>%d</td>
-<td>月的天，数值(00-31)</td>
+<td>月的天，数值 (00-31)</td>
 </tr>
 <tr>
 <td>%H</td>
@@ -215,22 +223,27 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
 </tr>
 <tr>
 <td>%i</td>
-<td>分钟，数值(00-59)</td>
+<td>分钟，数值 (00-59)</td>
 </tr>
 <tr>
 <td>%S</td>
-<td>秒(00-59)</td>
+<td>秒 (00-59)</td>
 </tr>
 <tr>
 <td>%s</td>
-<td>秒(00-59)</td>
+<td>秒 (00-59)</td>
 </tr>
-</tbody></table>
+</tbody>
+</table>
 <figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">-- 格式化当前日期 2020-04-07 23:23:23</span></span><br><span class="line">date_format(now(),<span class="string">&#x27;%Y-%m-%d %H:%i:%s&#x27;</span> )</span><br></pre></td></tr></table></figure>
-<h1 id="日期的差值"><a href="#日期的差值" class="headerlink" title="日期的差值"></a>日期的差值</h1><h2 id="datediff"><a href="#datediff" class="headerlink" title="datediff"></a><code>datediff</code></h2><p><code>DATEDIFF(date1，date2)</code> 返回起始时间 <code>date1</code> 和结束时间 <code>date2</code> 之间的天数（<code>date2-date1</code>，正负情况都存在）。<code>date1</code> 和<code> date2</code> 为日期或 <code>date-and-time </code>表达式，计算差值时只会计算日期的差值，单位为天。</p>
+<h1 id="日期的差值"><a class="markdownIt-Anchor" href="#日期的差值">#</a> 日期的差值</h1>
+<h2 id="datediff"><a class="markdownIt-Anchor" href="#datediff">#</a>  <code>datediff</code></h2>
+<p><code>DATEDIFF(date1，date2)</code>  返回起始时间  <code>date1</code>  和结束时间  <code>date2</code>  之间的天数（ <code>date2-date1</code> ，正负情况都存在）。 <code>date1</code>  和 <code> date2</code>  为日期或  <code>date-and-time </code> 表达式，计算差值时只会计算日期的差值，单位为天。</p>
 <figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">-- 当前时间2020-04-08，差值为-2</span></span><br><span class="line"><span class="keyword">SELECT</span> DATEDIFF(NOW(),<span class="string">&#x27;2020-04-10&#x27;</span>) </span><br><span class="line"><span class="comment">-- 当前时间2020-04-08，差值为2</span></span><br><span class="line"><span class="keyword">SELECT</span> DATEDIFF(NOW(),<span class="string">&#x27;2020-04-06&#x27;</span>) </span><br></pre></td></tr></table></figure>
-
-<h2 id="timestampdiff"><a href="#timestampdiff" class="headerlink" title="timestampdiff"></a><code>timestampdiff</code></h2><p>语法为：<code>TIMESTAMPDIFF(interval,datetime_expr1,datetime_expr2)。</code><br>返回日期或日期时间表达式<code>datetime_expr1 和datetime_expr2the </code>之间的整数差。其结果的单位由<code>interval</code> 参数给出。<br>常用的值有：</p>
+<h2 id="timestampdiff"><a class="markdownIt-Anchor" href="#timestampdiff">#</a>  <code>timestampdiff</code></h2>
+<p>语法为： <code>TIMESTAMPDIFF(interval,datetime_expr1,datetime_expr2)。</code> <br>
+返回日期或日期时间表达式 <code>datetime_expr1 和datetime_expr2the </code> 之间的整数差。其结果的单位由 <code>interval</code>  参数给出。<br>
+常用的值有：</p>
 <figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">FRAC_SECOND。表示间隔是毫秒</span><br><span class="line"><span class="keyword">SECOND</span>。秒</span><br><span class="line"><span class="keyword">MINUTE</span>。分钟</span><br><span class="line"><span class="keyword">HOUR</span>。小时</span><br><span class="line"><span class="keyword">DAY</span>。天</span><br><span class="line">WEEK。星期</span><br><span class="line"><span class="keyword">MONTH</span>。月</span><br><span class="line">QUARTER。季度</span><br><span class="line"><span class="keyword">YEAR</span>。年</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="comment">-- now()值为 2020-04-08 23:20:20</span></span><br><span class="line"><span class="keyword">SELECT</span> TIMESTAMPDIFF(<span class="keyword">DAY</span>,NOW(),<span class="string">&#x27;2020-04-10 23:23:23&#x27;</span>) </span><br><span class="line"><span class="comment">-- 结果为2，相差两天，取整数</span></span><br><span class="line"><span class="comment">-- 其他单位同理</span></span><br></pre></td></tr></table></figure>
 
   </div>
@@ -283,7 +296,7 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
     <div class="item left">
       
 
-  <a href="/blog/posts/60a1e80e/" itemprop="url" rel="prev" data-background-image="https:&#x2F;&#x2F;tva2.sinaimg.cn&#x2F;mw690&#x2F;6833939bly1gicitf0kl1j20zk0m87fe.jpg" title="java判断日期周几">
+  <a href="/posts/60a1e80e/" itemprop="url" rel="prev" data-background-image="https:&#x2F;&#x2F;tva1.sinaimg.cn&#x2F;mw690&#x2F;6833939bly1gicitf0kl1j20zk0m87fe.jpg" title="java判断日期周几">
   <span class="type">Previous Post</span>
   <span class="category"><i class="ic i-flag"></i> Java</span>
   <h3>java判断日期周几</h3>
@@ -293,7 +306,7 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
     <div class="item right">
       
 
-  <a href="/blog/posts/13370746/" itemprop="url" rel="next" data-background-image="https:&#x2F;&#x2F;tva2.sinaimg.cn&#x2F;mw690&#x2F;6833939bly1gipewr8iypj20zk0m8b29.jpg" title="使用EasyExcel读取excel文件为Java实体类">
+  <a href="/posts/13370746/" itemprop="url" rel="next" data-background-image="https:&#x2F;&#x2F;tva1.sinaimg.cn&#x2F;mw690&#x2F;6833939bly1gipeudstjqj20zk0m8k3r.jpg" title="使用EasyExcel读取excel文件为Java实体类">
   <span class="type">Next Post</span>
   <span class="category"><i class="ic i-flag"></i> Tools</span>
   <h3>使用EasyExcel读取excel文件为Java实体类</h3>
@@ -315,36 +328,36 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
   <div class="panels">
     <div class="inner">
       <div class="contents panel pjax" data-title="Contents">
-          <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E6%97%A5%E6%9C%9F%E7%9A%84%E5%8A%A0%E5%87%8F"><span class="toc-number">1.</span> <span class="toc-text">日期的加减</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E6%97%A5%E6%9C%9F%E7%9A%84%E6%A0%BC%E5%BC%8F%E5%8C%96"><span class="toc-number">2.</span> <span class="toc-text">日期的格式化</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#date-format"><span class="toc-number">2.1.</span> <span class="toc-text">date_format</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E6%97%A5%E6%9C%9F%E7%9A%84%E5%B7%AE%E5%80%BC"><span class="toc-number">3.</span> <span class="toc-text">日期的差值</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#datediff"><span class="toc-number">3.1.</span> <span class="toc-text">datediff</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#timestampdiff"><span class="toc-number">3.2.</span> <span class="toc-text">timestampdiff</span></a></li></ol></li></ol>
+          <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E6%97%A5%E6%9C%9F%E7%9A%84%E5%8A%A0%E5%87%8F"><span class="toc-number">1.</span> <span class="toc-text"> 日期的加减</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E6%97%A5%E6%9C%9F%E7%9A%84%E6%A0%BC%E5%BC%8F%E5%8C%96"><span class="toc-number">2.</span> <span class="toc-text"> 日期的格式化</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#date_format"><span class="toc-number">2.1.</span> <span class="toc-text">  date_format</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E6%97%A5%E6%9C%9F%E7%9A%84%E5%B7%AE%E5%80%BC"><span class="toc-number">3.</span> <span class="toc-text"> 日期的差值</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#datediff"><span class="toc-number">3.1.</span> <span class="toc-text">  datediff</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#timestampdiff"><span class="toc-number">3.2.</span> <span class="toc-text">  timestampdiff</span></a></li></ol></li></ol>
       </div>
       <div class="related panel pjax" data-title="Related">
         <ul>
-          <li><a href="/blog/posts/60f024c8/" rel="bookmark" title="关于sql执行计划">关于sql执行计划</a></li><li class="active"><a href="/blog/posts/388f5c14/" rel="bookmark" title="mysql日期加减">mysql日期加减</a></li><li><a href="/blog/posts/96e2d97b/" rel="bookmark" title="mysql 获取当前日期及格式化">mysql 获取当前日期及格式化</a></li><li><a href="/blog/posts/377b6f7d/" rel="bookmark" title="关于mysql中对Json类型字段进行筛选查询">关于mysql中对Json类型字段进行筛选查询</a></li>
+          <li><a href="/posts/60f024c8/" rel="bookmark" title="关于sql执行计划">关于sql执行计划</a></li><li class="active"><a href="/posts/388f5c14/" rel="bookmark" title="mysql日期加减">mysql日期加减</a></li><li><a href="/posts/96e2d97b/" rel="bookmark" title="mysql 获取当前日期及格式化">mysql 获取当前日期及格式化</a></li><li><a href="/posts/377b6f7d/" rel="bookmark" title="关于mysql中对Json类型字段进行筛选查询">关于mysql中对Json类型字段进行筛选查询</a></li>
         </ul>
       </div>
       <div class="overview panel" data-title="Overview">
         <div class="author" itemprop="author" itemscope itemtype="http://schema.org/Person">
   <img class="image" itemprop="image" alt="JIN Mao"
-      data-src="/blog/images/avatar.png">
+      data-src="/images/avatar.png">
   <p class="name" itemprop="name">JIN Mao</p>
   <div class="description" itemprop="description"></div>
 </div>
 
 <nav class="state">
     <div class="item posts">
-      <a href="/blog/archives/">
+      <a href="/archives/">
         <span class="count">150</span>
         <span class="name">posts</span>
       </a>
     </div>
     <div class="item categories">
-      <a href="/blog/categories/">
+      <a href="/categories/">
         <span class="count">78</span>
         <span class="name">categories</span>
       </a>
     </div>
     <div class="item tags">
-      <a href="/blog/tags/">
+      <a href="/tags/">
         <span class="count">113</span>
         <span class="name">tags</span>
       </a>
@@ -359,12 +372,12 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
   
     
   <li class="item">
-    <a href="/blog/" rel="section"><i class="ic i-home"></i>Home</a>
+    <a href="/" rel="section"><i class="ic i-home"></i>Home</a>
   </li>
 
     
   <li class="item">
-    <a href="/blog/about/" rel="section"><i class="ic i-user"></i>About</a>
+    <a href="/about/" rel="section"><i class="ic i-user"></i>About</a>
   </li>
 
         
@@ -374,17 +387,17 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
 
         
   <li class="item">
-    <a href="/blog/archives/" rel="section"><i class="ic i-list-alt"></i>Archives</a>
+    <a href="/archives/" rel="section"><i class="ic i-list-alt"></i>Archives</a>
   </li>
 
         
   <li class="item">
-    <a href="/blog/categories/" rel="section"><i class="ic i-th"></i>Categories</a>
+    <a href="/categories/" rel="section"><i class="ic i-th"></i>Categories</a>
   </li>
 
         
   <li class="item">
-    <a href="/blog/tags/" rel="section"><i class="ic i-tags"></i>Tags</a>
+    <a href="/tags/" rel="section"><i class="ic i-tags"></i>Tags</a>
   </li>
 
   </ul>
@@ -397,12 +410,12 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
 
   <ul id="quick">
     <li class="prev pjax">
-        <a href="/blog/posts/60a1e80e/" rel="prev" title="Previous Post"><i class="ic i-chevron-left"></i></a>
+        <a href="/posts/60a1e80e/" rel="prev" title="Previous Post"><i class="ic i-chevron-left"></i></a>
     </li>
     <li class="up"><i class="ic i-arrow-up"></i></li>
     <li class="down"><i class="ic i-arrow-down"></i></li>
     <li class="next pjax">
-        <a href="/blog/posts/13370746/" rel="next" title="Next Post"><i class="ic i-chevron-right"></i></a>
+        <a href="/posts/13370746/" rel="next" title="Next Post"><i class="ic i-chevron-right"></i></a>
     </li>
     <li class="percent"></li>
   </ul>
@@ -424,93 +437,90 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
   <li class="item">
     
 <div class="breadcrumb">
-<a href="/blog/categories/SpringBoot/" title="In SpringBoot">SpringBoot</a>
+<a href="/categories/Java%E9%9D%A2%E8%AF%95/" title="In Java面试">Java面试</a>
 <i class="ic i-angle-right"></i>
-<a href="/blog/categories/SpringBoot/Java/" title="In Java">Java</a>
+<a href="/categories/Java%E9%9D%A2%E8%AF%95/%E6%95%B0%E6%8D%AE%E5%BA%93/" title="In 数据库">数据库</a>
 </div>
 
-    <span><a href="/blog/posts/f976ebe7/" title="SpringMvc中标准的后端接口格式">SpringMvc中标准的后端接口格式</a></span>
+    <span><a href="/posts/666b2933/" title="面试之旅关于数据库">面试之旅关于数据库</a></span>
   </li>
 
       
   <li class="item">
     
 <div class="breadcrumb">
+<a href="/categories/%E5%9F%BA%E5%9B%A0%E7%BC%96%E8%BE%91/" title="In 基因编辑">基因编辑</a>
 </div>
 
-    <span><a href="/blog/posts/e694a882/" title="Windows下如何查看某个端口被谁占用">Windows下如何查看某个端口被谁占用</a></span>
+    <span><a href="/posts/1f142005/" title="CRISPR-Cas9英文介绍">CRISPR-Cas9英文介绍</a></span>
   </li>
 
       
   <li class="item">
     
 <div class="breadcrumb">
-<a href="/blog/categories/Jenkins/" title="In Jenkins">Jenkins</a>
-</div>
-
-    <span><a href="/blog/posts/171f1b7f/" title="Jenkins&#x2F;CICD">Jenkins/CICD</a></span>
-  </li>
-
-      
-  <li class="item">
-    
-<div class="breadcrumb">
-</div>
-
-    <span><a href="/blog/posts/56be7cc9/" title="关于Linux排查问题命令">关于Linux排查问题命令</a></span>
-  </li>
-
-      
-  <li class="item">
-    
-<div class="breadcrumb">
-<a href="/blog/categories/Java%E9%9D%A2%E8%AF%95/" title="In Java面试">Java面试</a>
-</div>
-
-    <span><a href="/blog/posts/a5258aa2/" title="Java面试小册子">Java面试小册子</a></span>
-  </li>
-
-      
-  <li class="item">
-    
-<div class="breadcrumb">
-</div>
-
-    <span><a href="/blog/posts/1599bffe/" title="归并排序">归并排序</a></span>
-  </li>
-
-      
-  <li class="item">
-    
-<div class="breadcrumb">
-<a href="/blog/categories/Mybatis/" title="In Mybatis">Mybatis</a>
-</div>
-
-    <span><a href="/blog/posts/cb74ceb6/" title="Mybatis批量插入">Mybatis批量插入</a></span>
-  </li>
-
-      
-  <li class="item">
-    
-<div class="breadcrumb">
-<a href="/blog/categories/Daily/" title="In Daily">Daily</a>
-</div>
-
-    <span><a href="/blog/posts/9a0369ec/" title="布隆过滤器">布隆过滤器</a></span>
-  </li>
-
-      
-  <li class="item">
-    
-<div class="breadcrumb">
-<a href="/blog/categories/Java%E9%9D%A2%E8%AF%95/" title="In Java面试">Java面试</a>
+<a href="/categories/%E5%89%8D%E7%AB%AF/" title="In 前端">前端</a>
 <i class="ic i-angle-right"></i>
-<a href="/blog/categories/Java%E9%9D%A2%E8%AF%95/%E9%80%89%E6%8B%A9%E6%8E%92%E5%BA%8F/" title="In 选择排序">选择排序</a>
-<i class="ic i-angle-right"></i>
-<a href="/blog/categories/Java%E9%9D%A2%E8%AF%95/%E9%80%89%E6%8B%A9%E6%8E%92%E5%BA%8F/%E7%AE%97%E6%B3%95/" title="In 算法">算法</a>
+<a href="/categories/%E5%89%8D%E7%AB%AF/Css/" title="In Css">Css</a>
 </div>
 
-    <span><a href="/blog/posts/43d00a99/" title="选择排序">选择排序</a></span>
+    <span><a href="/posts/54880bcd/" title="Css样式">Css样式</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/Java%E9%9D%A2%E8%AF%95/" title="In Java面试">Java面试</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/Java%E9%9D%A2%E8%AF%95/%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92/" title="In 动态规划">动态规划</a>
+</div>
+
+    <span><a href="/posts/a80d0031/" title="动态规划">动态规划</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/SAP/" title="In SAP">SAP</a>
+</div>
+
+    <span><a href="/posts/4187faeb/" title="English self_introduction">English self_introduction</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/Java/" title="In Java">Java</a>
+</div>
+
+    <span><a href="/posts/c3733521/" title="Java之assert关键字">Java之assert关键字</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/%E6%95%B0%E6%8D%AE%E5%BA%93/" title="In 数据库">数据库</a>
+</div>
+
+    <span><a href="/posts/388f5c14/" title="mysql日期加减">mysql日期加减</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/Java%E9%9D%A2%E8%AF%95/" title="In Java面试">Java面试</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/Java%E9%9D%A2%E8%AF%95/%E5%A0%86%E6%8E%92%E5%BA%8F/" title="In 堆排序">堆排序</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/Java%E9%9D%A2%E8%AF%95/%E5%A0%86%E6%8E%92%E5%BA%8F/%E7%AE%97%E6%B3%95/" title="In 算法">算法</a>
+</div>
+
+    <span><a href="/posts/c2a5fdc5/" title="堆排序">堆排序</a></span>
   </li>
 
       
@@ -519,7 +529,17 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
 <div class="breadcrumb">
 </div>
 
-    <span><a href="/blog/posts/ac1ae082/" title="SpringBoot如何优雅的发邮件">SpringBoot如何优雅的发邮件</a></span>
+    <span><a href="/posts/56be7cc9/" title="关于Linux排查问题命令">关于Linux排查问题命令</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/UML/" title="In UML">UML</a>
+</div>
+
+    <span><a href="/posts/f610585/" title="UML:类图关系总结">UML:类图关系总结</a></span>
   </li>
 
   </ul>
@@ -544,13 +564,13 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
     <span class="post-meta-item-icon">
       <i class="ic i-chart-area"></i>
     </span>
-    <span title="Symbols count total">684k words</span>
+    <span title="Symbols count total">657k words</span>
 
     <span class="post-meta-divider">|</span>
     <span class="post-meta-item-icon">
       <i class="ic i-coffee"></i>
     </span>
-    <span title="Reading time total">10:22</span>
+    <span title="Reading time total">9:57</span>
   </div>
 </div>
 
@@ -586,7 +606,7 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
 
 <script src="//cdn.jsdelivr.net/combine/npm/pace-js@1.0.2/pace.min.js,npm/pjax@0.2.8/pjax.min.js,npm/whatwg-fetch@3.4.0/dist/fetch.umd.min.js,npm/animejs@3.2.0/lib/anime.min.js,npm/algoliasearch@4/dist/algoliasearch-lite.umd.js,npm/instantsearch.js@4/dist/instantsearch.production.min.js,npm/lozad@1/dist/lozad.min.js,npm/quicklink@2/dist/quicklink.umd.js"></script>
 
-<script src="/blog/js/app.js?v=0.2.5"></script>
+<script src="/js/app.js?v=0.2.5"></script>
 
 
 

@@ -9,43 +9,43 @@
         <lastBuildDate>Wed, 29 Jun 2022 22:06:39 +0800</lastBuildDate>
         <category>SAP</category>
         <category>Java</category>
+        <category>Corn</category>
+        <category>生物信息</category>
+        <category>基因编辑</category>
         <category>Cache</category>
         <category>Cookie</category>
         <category>Session</category>
         <category>Java面试</category>
-        <category>生物信息</category>
-        <category>基因编辑</category>
-        <category>Corn</category>
         <category>前端</category>
         <category>Css</category>
-        <category>Docker</category>
         <category>DDD</category>
         <category>领域驱动设计</category>
-        <category>FastJson</category>
+        <category>DisPlay属性</category>
+        <category>Docker</category>
         <category>blog</category>
         <category>hexo</category>
         <category>next</category>
-        <category>DisPlay属性</category>
+        <category>FastJson</category>
         <category>JavaScript</category>
         <category>Html</category>
         <category>IDEA</category>
         <category>SpringBoot</category>
         <category>Jvm</category>
-        <category>map</category>
-        <category>Stream流</category>
+        <category>函数式接口</category>
         <category>Jenkins</category>
         <category>CI/CD</category>
-        <category>函数式接口</category>
+        <category>map</category>
+        <category>Stream流</category>
         <category>Assert</category>
         <category>java</category>
         <category>calender</category>
         <category>Springboot</category>
-        <category>Python</category>
-        <category>Jupyter</category>
-        <category>Machine Learning</category>
         <category>LeetCode</category>
         <category>算法</category>
         <category>递归</category>
+        <category>Python</category>
+        <category>Jupyter</category>
+        <category>Machine Learning</category>
         <category>Linux</category>
         <category>Mybatis</category>
         <category>分页查询</category>
@@ -54,59 +54,59 @@
         <category>sklearn</category>
         <category>模糊查询</category>
         <category>Nginx</category>
-        <category>Spring</category>
         <category>Spoken English</category>
+        <category>Spring</category>
         <category>SrpingBoot</category>
         <category>文件上传</category>
         <category>事务</category>
+        <category>master</category>
         <category>TypeScript</category>
         <category>WebPack</category>
-        <category>Groovy</category>
-        <category>master</category>
-        <category>UML</category>
-        <category>Ubuntu</category>
-        <category>Mysql</category>
-        <category>Vue</category>
-        <category>VSCODE</category>
-        <category>快捷键</category>
         <category>VsCode</category>
         <category>Shell</category>
-        <category>日期</category>
-        <category>Stream</category>
+        <category>Groovy</category>
+        <category>UML</category>
+        <category>VSCODE</category>
+        <category>快捷键</category>
+        <category>Vue</category>
+        <category>Ubuntu</category>
+        <category>Mysql</category>
         <category>git</category>
-        <category>线程池</category>
+        <category>Stream</category>
+        <category>日期</category>
         <category>ubuntu</category>
         <category>虚拟机</category>
         <category>二分查找</category>
+        <category>线程池</category>
+        <category>Hadoop</category>
         <category>数据挖掘</category>
         <category>操作系统</category>
-        <category>Hadoop</category>
         <category>EasyExcel</category>
-        <category>node</category>
         <category>JVM</category>
+        <category>node</category>
         <category>Yaml</category>
         <category>Hexo</category>
-        <category>数据库</category>
         <category>junit</category>
+        <category>数据库</category>
         <category>Mysql事务</category>
-        <category>Git</category>
-        <category>冒泡排序</category>
         <category>git,npm,node</category>
+        <category>冒泡排序</category>
+        <category>Git</category>
         <category>堆排序</category>
-        <category>动态规划</category>
         <category>幂等性</category>
-        <category>Google</category>
         <category>多线程</category>
         <category>流</category>
+        <category>Google</category>
+        <category>动态规划</category>
         <category>归并排序</category>
-        <category>快速排序</category>
         <category>vue</category>
+        <category>快速排序</category>
         <category>正则表达式</category>
         <category>直接插入排序</category>
-        <category>选择排序</category>
         <category>Java 面试</category>
         <category>数据结构</category>
         <category>阻塞队列</category>
+        <category>选择排序</category>
         <category>Spring事务</category>
         <category>JDK</category>
         <category>动态代理</category>
@@ -126,86 +126,88 @@
             <link>https://smile1231.github.io/posts/d0edc1ed/</link>
             <category>Linux</category>
             <pubDate>Wed, 29 Jun 2022 22:06:39 +0800</pubDate>
-            <description><![CDATA[ &lt;h2 id=&#34;Linux查看空间大小的命令&#34;&gt;&lt;a href=&#34;#Linux查看空间大小的命令&#34; class=&#34;headerlink&#34; title=&#34;Linux查看空间大小的命令&#34;&gt;&lt;/a&gt;&lt;code&gt;Linux&lt;/code&gt;查看空间大小的命令&lt;/h2&gt;&lt;span id=&#34;more&#34;&gt;&lt;/span&gt;
-
-&lt;h3 id=&#34;df&#34;&gt;&lt;a href=&#34;#df&#34; class=&#34;headerlink&#34; title=&#34;df&#34;&gt;&lt;/a&gt;&lt;code&gt;df&lt;/code&gt;&lt;/h3&gt;&lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;第一列：文件系统&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;第二列：容量&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;第三列：已用容量&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;第四列：可用容量&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;第五列：已用容量%&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;第六列：挂载点&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-
-&lt;img data-src=&#34;/blog/posts/d0edc1ed/2022-06-29-22-09-03.png&#34; class=&#34;&#34;&gt;
-
+            <description><![CDATA[ &lt;h2 id=&#34;linux查看空间大小的命令&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#linux查看空间大小的命令&#34;&gt;#&lt;/a&gt;  &lt;code&gt;Linux&lt;/code&gt;  查看空间大小的命令&lt;/h2&gt;
+&lt;span id=&#34;more&#34;&gt;&lt;/span&gt;
+&lt;h3 id=&#34;df&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#df&#34;&gt;#&lt;/a&gt;  &lt;code&gt;df&lt;/code&gt;&lt;/h3&gt;
+&lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;第一列：文件系统&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;第二列：容量&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;第三列：已用容量&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;第四列：可用容量&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;第五列：已用容量%&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;第六列：挂载点&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;img data-src=&#34;/posts/d0edc1ed/2022-06-29-22-09-03.png&#34; class=&#34;&#34;&gt;
 &lt;p&gt;参数&lt;/p&gt;
 &lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;13&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;14&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;15&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;-a: 显示所有文件系统信息，包括系统特有的 /proc、/sysfs 等文件系统；&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;-m: 以 MB 为单位显示容量；&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;-k: 以 KB 为单位显示容量，默认以 KB 为单位；&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;-h: 使用人们习惯的 KB、MB 或 GB 等单位自行显示容量；&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;-T: 显示该分区的文件系统名称；&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;-i: 不用硬盘容量显示，而是以含有 inode 的数量来显示。&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;--block-size=&amp;lt;区块大小&amp;gt;：以指定的区块大小来显示区块数目；&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;-l或--&lt;span class=&#34;built_in&#34;&gt;local&lt;/span&gt;：仅显示本地端的文件系统；&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;--no-sync：在取得磁盘使用信息前，不要执行sync指令，此为预设值；&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;-P或--portability：使用POSIX的输出格式；&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;--sync：在取得磁盘使用信息前，先执行sync指令；&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;-t&amp;lt;文件系统类型&amp;gt;或--&lt;span class=&#34;built_in&#34;&gt;type&lt;/span&gt;=&amp;lt;文件系统类型&amp;gt;：仅显示指定文件系统类型的磁盘信息；&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;-x&amp;lt;文件系统类型&amp;gt;或--exclude-type=&amp;lt;文件系统类型&amp;gt;：不要显示指定文件系统类型的磁盘信息；&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;--&lt;span class=&#34;built_in&#34;&gt;help&lt;/span&gt;：显示帮助；&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;--version：显示版本信息。&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;img data-src=&#34;/blog/posts/d0edc1ed/2022-06-29-22-17-18.png&#34; class=&#34;&#34;&gt;
-
-&lt;h3 id=&#34;du&#34;&gt;&lt;a href=&#34;#du&#34; class=&#34;headerlink&#34; title=&#34;du&#34;&gt;&lt;/a&gt;&lt;code&gt;du&lt;/code&gt;&lt;/h3&gt;&lt;img data-src=&#34;/blog/posts/d0edc1ed/2022-06-29-22-20-51.png&#34; class=&#34;&#34;&gt;
-
+&lt;img data-src=&#34;/posts/d0edc1ed/2022-06-29-22-17-18.png&#34; class=&#34;&#34;&gt;
+&lt;h3 id=&#34;du&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#du&#34;&gt;#&lt;/a&gt;  &lt;code&gt;du&lt;/code&gt;&lt;/h3&gt;
+&lt;img data-src=&#34;/posts/d0edc1ed/2022-06-29-22-20-51.png&#34; class=&#34;&#34;&gt;
 &lt;blockquote&gt;
-&lt;p&gt;如果只想查看当前目录占用空间的大小，不查看子目录或者子文件占用空间大小，那么&lt;code&gt;s&lt;/code&gt;选项无疑很有帮助，如下：&lt;/p&gt;
+&lt;p&gt;如果只想查看当前目录占用空间的大小，不查看子目录或者子文件占用空间大小，那么 &lt;code&gt;s&lt;/code&gt;  选项无疑很有帮助，如下：&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;figure class=&#34;highlight ebnf&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;attribute&#34;&gt;du -sh&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;img data-src=&#34;/blog/posts/d0edc1ed/2022-06-29-22-23-40.png&#34; class=&#34;&#34;&gt;
-
+&lt;img data-src=&#34;/posts/d0edc1ed/2022-06-29-22-23-40.png&#34; class=&#34;&#34;&gt;
 &lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;du -h --max-depth=0&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;img data-src=&#34;/blog/posts/d0edc1ed/2022-06-29-22-29-35.png&#34; class=&#34;&#34;&gt;
-
-&lt;h2 id=&#34;Mount文件挂载&#34;&gt;&lt;a href=&#34;#Mount文件挂载&#34; class=&#34;headerlink&#34; title=&#34;Mount文件挂载&#34;&gt;&lt;/a&gt;&lt;code&gt;Mount&lt;/code&gt;文件挂载&lt;/h2&gt;&lt;blockquote&gt;
+&lt;img data-src=&#34;/posts/d0edc1ed/2022-06-29-22-29-35.png&#34; class=&#34;&#34;&gt;
+&lt;h2 id=&#34;mount文件挂载&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#mount文件挂载&#34;&gt;#&lt;/a&gt;  &lt;code&gt;Mount&lt;/code&gt;  文件挂载&lt;/h2&gt;
+&lt;blockquote&gt;
 &lt;p&gt;文件系统挂载&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;p&gt;硬件设备必须挂载之后才能使用，只不过，有些硬件设备（比如硬盘分区）在每次系统启动时会自动挂载，而有些（比如 U 盘、光盘）则需要手动进行挂载。&lt;/p&gt;
-&lt;p&gt;挂载指的是将硬件设备的文件系统和 &lt;code&gt;Linux&lt;/code&gt; 系统中的文件系统，通过指定目录（作为挂载点）进行关联。而要将文件系统挂载到 &lt;code&gt;Linux&lt;/code&gt; 系统上，就需要使用 &lt;code&gt;mount&lt;/code&gt; 挂载命令。&lt;/p&gt;
+&lt;p&gt;挂载指的是将硬件设备的文件系统和  &lt;code&gt;Linux&lt;/code&gt;  系统中的文件系统，通过指定目录（作为挂载点）进行关联。而要将文件系统挂载到  &lt;code&gt;Linux&lt;/code&gt;  系统上，就需要使用  &lt;code&gt;mount&lt;/code&gt;  挂载命令。&lt;/p&gt;
 &lt;blockquote&gt;
-&lt;p&gt;&lt;code&gt;mount&lt;/code&gt; 命令的常用格式有以下几种：&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;mount&lt;/code&gt;  命令的常用格式有以下几种：&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;13&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;14&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;mount [-l]&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;# 单纯使用 `mount` 命令，会显示出系统中已挂载的设备信息，使用 `-l` 选项，会额外显示出卷标名称（读者可自行运行，查看输出结果）；&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;mount -a&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;# -a 选项的含义是自动检查 /etc/fstab 文件中有无疏漏被挂载的设备文件，如果有，则进行自动挂载操作。这里简单介绍一下 /etc/fstab 文件，此文件是自动挂载文件，系统开机时会主动读取 /etc/fstab 这个文件中的内容，根据该文件的配置，系统会自动挂载指定设备。&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;mount [-t 系统类型] [-L 卷标名] [-o 特殊选项] [-n] 设备文件名 挂载点&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;# 各选项的含义分别是：&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;# -t 系统类型：指定欲挂载的文件系统类型。Linux 常见的支持类型有 EXT2、EXT3、EXT4、iso9660（光盘格式）、vfat、reiserfs 等。如果不指定具体类型，挂载时 Linux 会自动检测。&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;# -L 卷标名：除了使用设备文件名（例如 /dev/hdc6）之外，还可以利用文件系统的卷标名称进行挂载。&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;# -n：在默认情况下，系统会将实际挂载的情况实时写入 /etc/mtab 文件中，但在某些场景下（例如单人维护模式），为了避免出现问题，会刻意不写入，此时就需要使用这个选项；&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;# -o 特殊选项：可以指定挂载的额外选项，比如读写权限、同步/异步等，如果不指定，则使用默认值（defaults）。&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
 &lt;blockquote&gt;
 &lt;p&gt;mount 命令选项及功能&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;13&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;14&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;15&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;16&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;17&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;rw/ro ：是否对挂载的文件系统拥有读写权限，rw 为默认值，表示拥有读写权限；ro 表示只读权限。&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;async/sync ： 此文件系统是否使用同步写入（sync）或异步（async）的内存机制，默认为异步 async。&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;dev/nodev ：是否允许从该文件系统的 block 文件中提取数据，为了保证数据安装，默认是 nodev。&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;auto/noauto ：是否允许此文件系统被以 mount -a 的方式进行自动挂载，默认是 auto。&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;suid/nosuid ：设定文件系统是否拥有 SetUID 和 SetGID 权限，默认是拥有。&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;built_in&#34;&gt;exec&lt;/span&gt;/noexec ：设定在文件系统中是否允许执行可执行文件，默认是允许。&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;user/nouser ：设定此文件系统是否允许让普通用户使用 mount 执行实现挂载，默认是不允许（nouser），仅有 root 可以。&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;defaults ：定义默认值，相当于 rw、suid、dev、&lt;span class=&#34;built_in&#34;&gt;exec&lt;/span&gt;、auto、nouser、async 这 7 个选项。&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;remount重新挂载已挂载的文件系统，一般用于指定修改特殊权限。&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-
-
-&lt;h2 id=&#34;查看系统信息&#34;&gt;&lt;a href=&#34;#查看系统信息&#34; class=&#34;headerlink&#34; title=&#34;查看系统信息&#34;&gt;&lt;/a&gt;查看系统信息&lt;/h2&gt;&lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;cat /etc/os-release&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;img data-src=&#34;/blog/posts/d0edc1ed/2022-06-30-10-12-30.png&#34; class=&#34;&#34;&gt;
-
-&lt;h3 id=&#34;查看内核版本&#34;&gt;&lt;a href=&#34;#查看内核版本&#34; class=&#34;headerlink&#34; title=&#34;查看内核版本&#34;&gt;&lt;/a&gt;查看内核版本&lt;/h3&gt;&lt;figure class=&#34;highlight plaintext&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;cat /proc/version&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;uname -a&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;uname -r&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;img data-src=&#34;/blog/posts/d0edc1ed/2022-08-06-10-40-55.png&#34; class=&#34;&#34;&gt;
-
-&lt;h3 id=&#34;查看linux版本信息&#34;&gt;&lt;a href=&#34;#查看linux版本信息&#34; class=&#34;headerlink&#34; title=&#34;查看linux版本信息&#34;&gt;&lt;/a&gt;查看&lt;code&gt;linux&lt;/code&gt;版本信息&lt;/h3&gt;&lt;figure class=&#34;highlight plaintext&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;lsb_release -a&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;cat /etc/issue&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;img data-src=&#34;/blog/posts/d0edc1ed/2022-08-06-10-42-19.png&#34; class=&#34;&#34;&gt;
-
-&lt;h3 id=&#34;查看linux是64为还是32位&#34;&gt;&lt;a href=&#34;#查看linux是64为还是32位&#34; class=&#34;headerlink&#34; title=&#34;查看linux是64为还是32位&#34;&gt;&lt;/a&gt;查看&lt;code&gt;linux&lt;/code&gt;是&lt;code&gt;64&lt;/code&gt;为还是&lt;code&gt;32&lt;/code&gt;位&lt;/h3&gt;&lt;figure class=&#34;highlight plaintext&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;getconf LONG_BIT&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;file /bin/ls&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;img data-src=&#34;/blog/posts/d0edc1ed/2022-08-06-10-43-41.png&#34; class=&#34;&#34;&gt;
-
-&lt;h3 id=&#34;直接查看系统的架构&#34;&gt;&lt;a href=&#34;#直接查看系统的架构&#34; class=&#34;headerlink&#34; title=&#34;直接查看系统的架构&#34;&gt;&lt;/a&gt;直接查看系统的架构&lt;/h3&gt;&lt;figure class=&#34;highlight plaintext&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;dpkg --print-architecture&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;arch&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;file /lib/systemd/systemd&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;img data-src=&#34;/blog/posts/d0edc1ed/2022-08-06-10-45-09.png&#34; class=&#34;&#34;&gt;
-
-
-&lt;h2 id=&#34;查看开放端口&#34;&gt;&lt;a href=&#34;#查看开放端口&#34; class=&#34;headerlink&#34; title=&#34;查看开放端口&#34;&gt;&lt;/a&gt;查看开放端口&lt;/h2&gt;&lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;netstat -lntu &lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;或者  ss -lntu&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;h2 id=&#34;查看系统信息&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#查看系统信息&#34;&gt;#&lt;/a&gt; 查看系统信息&lt;/h2&gt;
+&lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;cat /etc/os-release&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;img data-src=&#34;/posts/d0edc1ed/2022-06-30-10-12-30.png&#34; class=&#34;&#34;&gt;
+&lt;h3 id=&#34;查看内核版本&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#查看内核版本&#34;&gt;#&lt;/a&gt; 查看内核版本&lt;/h3&gt;
+&lt;figure class=&#34;highlight plaintext&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;cat /proc/version&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;uname -a&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;uname -r&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;img data-src=&#34;/posts/d0edc1ed/2022-08-06-10-40-55.png&#34; class=&#34;&#34;&gt;
+&lt;h3 id=&#34;查看linux版本信息&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#查看linux版本信息&#34;&gt;#&lt;/a&gt; 查看 &lt;code&gt;linux&lt;/code&gt;  版本信息&lt;/h3&gt;
+&lt;figure class=&#34;highlight plaintext&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;lsb_release -a&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;cat /etc/issue&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;img data-src=&#34;/posts/d0edc1ed/2022-08-06-10-42-19.png&#34; class=&#34;&#34;&gt;
+&lt;h3 id=&#34;查看linux是64为还是32位&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#查看linux是64为还是32位&#34;&gt;#&lt;/a&gt; 查看 &lt;code&gt;linux&lt;/code&gt;  是 &lt;code&gt;64&lt;/code&gt;  为还是 &lt;code&gt;32&lt;/code&gt;  位&lt;/h3&gt;
+&lt;figure class=&#34;highlight plaintext&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;getconf LONG_BIT&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;file /bin/ls&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;img data-src=&#34;/posts/d0edc1ed/2022-08-06-10-43-41.png&#34; class=&#34;&#34;&gt;
+&lt;h3 id=&#34;直接查看系统的架构&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#直接查看系统的架构&#34;&gt;#&lt;/a&gt; 直接查看系统的架构&lt;/h3&gt;
+&lt;figure class=&#34;highlight plaintext&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;dpkg --print-architecture&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;arch&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;file /lib/systemd/systemd&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;img data-src=&#34;/posts/d0edc1ed/2022-08-06-10-45-09.png&#34; class=&#34;&#34;&gt;
+&lt;h2 id=&#34;查看开放端口&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#查看开放端口&#34;&gt;#&lt;/a&gt; 查看开放端口&lt;/h2&gt;
+&lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;netstat -lntu &lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;或者  ss -lntu&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
 &lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;查看端口号&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;netstat -ntlp //查看当前所有tcp端口·&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;netstat -ntulp |grep 6666 //查看所有1935端口使用情况·&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;CentOS默认开放的本地端口范围&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;系统本地开放端口的范围：（默认30000多到60000多）&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-
-&lt;img data-src=&#34;/blog/posts/d0edc1ed/2022-06-30-10-13-53.png&#34; class=&#34;&#34;&gt;
-
-&lt;h2 id=&#34;检查端口是否打开&#34;&gt;&lt;a href=&#34;#检查端口是否打开&#34; class=&#34;headerlink&#34; title=&#34;检查端口是否打开&#34;&gt;&lt;/a&gt;检查端口是否打开&lt;/h2&gt;&lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;netstat -na | grep :9999&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;ss -na | grep :9999&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;p&gt;输出必须保持空白，从而验证它当前未被使用，以便我们可以将端口规则手动添加到系统&lt;code&gt;iptables&lt;/code&gt;防火墙。&lt;/p&gt;
-&lt;h2 id=&#34;centos查看防火墙状态的方法&#34;&gt;&lt;a href=&#34;#centos查看防火墙状态的方法&#34; class=&#34;headerlink&#34; title=&#34;centos查看防火墙状态的方法&#34;&gt;&lt;/a&gt;&lt;code&gt;centos&lt;/code&gt;查看防火墙状态的方法&lt;/h2&gt;&lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;12&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;service iptables status &lt;span class=&#34;comment&#34;&gt;#查看iptables防火墙状态&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;或&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;systemctl status firewalld &lt;span class=&#34;comment&#34;&gt;#查看firewall防火墙服务状态&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;#iptables防火墙&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;service iptables start &lt;span class=&#34;comment&#34;&gt;#启动防火墙&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;service iptables stop &lt;span class=&#34;comment&#34;&gt;#停止防火墙&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;service iptables restart &lt;span class=&#34;comment&#34;&gt;#重启防火墙&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;#firewall防火墙&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;service firewalld start &lt;span class=&#34;comment&#34;&gt;# 开启&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;service firewalld stop &lt;span class=&#34;comment&#34;&gt;# 关闭 &lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;service firewalld restart &lt;span class=&#34;comment&#34;&gt;# 重启&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-
-&lt;h2 id=&#34;开放端口&#34;&gt;&lt;a href=&#34;#开放端口&#34; class=&#34;headerlink&#34; title=&#34;开放端口&#34;&gt;&lt;/a&gt;开放端口&lt;/h2&gt;&lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;# 需要root权限&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;firewall-cmd --zone=public --add-port=80/tcp --permanent&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;# 命令含义：&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;--zone &lt;span class=&#34;comment&#34;&gt;#作用域&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;--add-port=6666/tcp &lt;span class=&#34;comment&#34;&gt;#添加端口，格式为：端口/通讯协议&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;--permanent &lt;span class=&#34;comment&#34;&gt;#永久生效，没有此参数重启后失效&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-
-&lt;h2 id=&#34;防火墙firewall&#34;&gt;&lt;a href=&#34;#防火墙firewall&#34; class=&#34;headerlink&#34; title=&#34;防火墙firewall&#34;&gt;&lt;/a&gt;防火墙&lt;code&gt;firewall&lt;/code&gt;&lt;/h2&gt;&lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;11&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;# 重启firewall&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;firewall-cmd --reload&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;# 检查是否生效&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;firewall-cmd --zone=public —query-port=8080/tcp&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;# 停止firewall&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;systemctl stop firewalld.service&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;# 禁止firewall开机启动&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;systemctl &lt;span class=&#34;built_in&#34;&gt;disable&lt;/span&gt; firewalld.service&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-
-&lt;h2 id=&#34;检测远程端口是否打开&#34;&gt;&lt;a href=&#34;#检测远程端口是否打开&#34; class=&#34;headerlink&#34; title=&#34;检测远程端口是否打开&#34;&gt;&lt;/a&gt;检测远程端口是否打开&lt;/h2&gt;&lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;telnet 118.10.6.128 88&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;# 测试远程主机端口是否打开&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-
+&lt;img data-src=&#34;/posts/d0edc1ed/2022-06-30-10-13-53.png&#34; class=&#34;&#34;&gt;
+&lt;h2 id=&#34;检查端口是否打开&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#检查端口是否打开&#34;&gt;#&lt;/a&gt; 检查端口是否打开&lt;/h2&gt;
+&lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;netstat -na | grep :9999&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;ss -na | grep :9999&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;输出必须保持空白，从而验证它当前未被使用，以便我们可以将端口规则手动添加到系统 &lt;code&gt;iptables&lt;/code&gt;  防火墙。&lt;/p&gt;
+&lt;h2 id=&#34;centos查看防火墙状态的方法&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#centos查看防火墙状态的方法&#34;&gt;#&lt;/a&gt;  &lt;code&gt;centos&lt;/code&gt;  查看防火墙状态的方法&lt;/h2&gt;
+&lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;12&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;service iptables status &lt;span class=&#34;comment&#34;&gt;#查看iptables防火墙状态&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;或&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;systemctl status firewalld &lt;span class=&#34;comment&#34;&gt;#查看firewall防火墙服务状态&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;#iptables防火墙&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;service iptables start &lt;span class=&#34;comment&#34;&gt;#启动防火墙&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;service iptables stop &lt;span class=&#34;comment&#34;&gt;#停止防火墙&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;service iptables restart &lt;span class=&#34;comment&#34;&gt;#重启防火墙&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;#firewall防火墙&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;service firewalld start &lt;span class=&#34;comment&#34;&gt;# 开启&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;service firewalld stop &lt;span class=&#34;comment&#34;&gt;# 关闭 &lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;service firewalld restart &lt;span class=&#34;comment&#34;&gt;# 重启&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;h2 id=&#34;开放端口&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#开放端口&#34;&gt;#&lt;/a&gt; 开放端口&lt;/h2&gt;
+&lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;# 需要root权限&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;firewall-cmd --zone=public --add-port=80/tcp --permanent&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;# 命令含义：&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;--zone &lt;span class=&#34;comment&#34;&gt;#作用域&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;--add-port=6666/tcp &lt;span class=&#34;comment&#34;&gt;#添加端口，格式为：端口/通讯协议&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;--permanent &lt;span class=&#34;comment&#34;&gt;#永久生效，没有此参数重启后失效&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;h2 id=&#34;防火墙firewall&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#防火墙firewall&#34;&gt;#&lt;/a&gt; 防火墙 &lt;code&gt;firewall&lt;/code&gt;&lt;/h2&gt;
+&lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;11&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;# 重启firewall&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;firewall-cmd --reload&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;# 检查是否生效&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;firewall-cmd --zone=public —query-port=8080/tcp&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;# 停止firewall&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;systemctl stop firewalld.service&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;# 禁止firewall开机启动&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;systemctl &lt;span class=&#34;built_in&#34;&gt;disable&lt;/span&gt; firewalld.service&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;h2 id=&#34;检测远程端口是否打开&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#检测远程端口是否打开&#34;&gt;#&lt;/a&gt; 检测远程端口是否打开&lt;/h2&gt;
+&lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;telnet 118.10.6.128 88&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;# 测试远程主机端口是否打开&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
 &lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;nmap ip -p port &lt;span class=&#34;comment&#34;&gt;#测试端口&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;nmap ip &lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;# 根据显示close/open确定端口是否打开&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;img data-src=&#34;/blog/posts/d0edc1ed/2022-07-01-09-13-27.png&#34; class=&#34;&#34;&gt;
-
-&lt;h2 id=&#34;Linux生成-UUID&#34;&gt;&lt;a href=&#34;#Linux生成-UUID&#34; class=&#34;headerlink&#34; title=&#34;Linux生成 UUID&#34;&gt;&lt;/a&gt;&lt;code&gt;Linux&lt;/code&gt;生成 &lt;code&gt;UUID&lt;/code&gt;&lt;/h2&gt;&lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;cat /proc/sys/kernel/random/uuid&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-
-&lt;h2 id=&#34;查看正在运行的java线程&#34;&gt;&lt;a href=&#34;#查看正在运行的java线程&#34; class=&#34;headerlink&#34; title=&#34;查看正在运行的java线程&#34;&gt;&lt;/a&gt;查看正在运行的&lt;code&gt;java&lt;/code&gt;线程&lt;/h2&gt;&lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;jps -l&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;## 杀死线程&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;built_in&#34;&gt;kill&lt;/span&gt; -9 &amp;lt;PID&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-
-&lt;h2 id=&#34;linux-shell-缺少-ps-命令&#34;&gt;&lt;a href=&#34;#linux-shell-缺少-ps-命令&#34; class=&#34;headerlink&#34; title=&#34;linux shell 缺少 ps 命令&#34;&gt;&lt;/a&gt;&lt;code&gt;linux shell&lt;/code&gt; 缺少 &lt;code&gt;ps&lt;/code&gt; 命令&lt;/h2&gt;&lt;ol&gt;
-&lt;li&gt;缺少 &lt;code&gt;ps&lt;/code&gt; 命令&lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;apt-get install -y procps&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;yum install -y procps&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/li&gt;
-&lt;li&gt;缺少 &lt;code&gt;pstree&lt;/code&gt; 命令&lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;apt-get install -y psmisc&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;yum install -y psmisc&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/li&gt;
-&lt;li&gt;出现找不到包的问题：&lt;img data-src=&#34;/blog/posts/d0edc1ed/2022-08-08-11-51-34.png&#34; class=&#34;&#34;&gt;
-更新一下就可以了：&lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;apt-get update&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/li&gt;
+&lt;img data-src=&#34;/posts/d0edc1ed/2022-07-01-09-13-27.png&#34; class=&#34;&#34;&gt;
+&lt;h2 id=&#34;linux生成-uuid&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#linux生成-uuid&#34;&gt;#&lt;/a&gt;  &lt;code&gt;Linux&lt;/code&gt;  生成  &lt;code&gt;UUID&lt;/code&gt;&lt;/h2&gt;
+&lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;cat /proc/sys/kernel/random/uuid&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;h2 id=&#34;查看正在运行的java线程&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#查看正在运行的java线程&#34;&gt;#&lt;/a&gt; 查看正在运行的 &lt;code&gt;java&lt;/code&gt;  线程&lt;/h2&gt;
+&lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;jps -l&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;## 杀死线程&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;built_in&#34;&gt;kill&lt;/span&gt; -9 &amp;lt;PID&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;h2 id=&#34;linux-shell-缺少-ps-命令&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#linux-shell-缺少-ps-命令&#34;&gt;#&lt;/a&gt;  &lt;code&gt;linux shell&lt;/code&gt;  缺少  &lt;code&gt;ps&lt;/code&gt;  命令&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;缺少  &lt;code&gt;ps&lt;/code&gt;  命令&lt;/li&gt;
 &lt;/ol&gt;
+&lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;apt-get install -y procps&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;yum install -y procps&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;ol start=&#34;2&#34;&gt;
+&lt;li&gt;缺少  &lt;code&gt;pstree&lt;/code&gt;  命令&lt;/li&gt;
+&lt;/ol&gt;
+&lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;apt-get install -y psmisc&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;yum install -y psmisc&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;ol start=&#34;3&#34;&gt;
+&lt;li&gt;出现找不到包的问题：&lt;/li&gt;
+&lt;/ol&gt;
+&lt;img data-src=&#34;/posts/d0edc1ed/2022-08-08-11-51-34.png&#34; class=&#34;&#34;&gt;
+&lt;p&gt;更新一下就可以了：&lt;/p&gt;
+&lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;apt-get update&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
  ]]></description>
         </item>
         <item>
@@ -215,133 +217,140 @@
             <category>Java面试</category>
             <category>Linux</category>
             <pubDate>Sun, 13 Mar 2022 15:13:24 +0800</pubDate>
-            <description><![CDATA[ &lt;h2 id=&#34;Linux命令之top&#34;&gt;&lt;a href=&#34;#Linux命令之top&#34; class=&#34;headerlink&#34; title=&#34;Linux命令之top&#34;&gt;&lt;/a&gt;&lt;code&gt;Linux&lt;/code&gt;命令之&lt;code&gt;top&lt;/code&gt;&lt;/h2&gt;&lt;blockquote&gt;
+            <description><![CDATA[ &lt;h2 id=&#34;linux命令之top&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#linux命令之top&#34;&gt;#&lt;/a&gt;  &lt;code&gt;Linux&lt;/code&gt;  命令之 &lt;code&gt;top&lt;/code&gt;&lt;/h2&gt;
+&lt;blockquote&gt;
 &lt;p&gt;top - 整机性能查看&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;span id=&#34;more&#34;&gt;&lt;/span&gt;
-
-&lt;img data-src=&#34;/blog/posts/56be7cc9/2022-03-13-22-54-06.png&#34; class=&#34;&#34;&gt;
-
-&lt;img data-src=&#34;/blog/posts/56be7cc9/2022-03-13-22-58-37.png&#34; class=&#34;&#34;&gt;
-
-&lt;p&gt;主要看&lt;code&gt;load average, CPU, MEN&lt;/code&gt;三部分&lt;/p&gt;
+&lt;img data-src=&#34;/posts/56be7cc9/2022-03-13-22-54-06.png&#34; class=&#34;&#34;&gt;
+&lt;img data-src=&#34;/posts/56be7cc9/2022-03-13-22-58-37.png&#34; class=&#34;&#34;&gt;
+&lt;p&gt;主要看 &lt;code&gt;load average, CPU, MEN&lt;/code&gt;  三部分&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;code&gt;load average&lt;/code&gt;表示系统负载，即任务队列的平均长度。 三个数值分别为 &lt;code&gt;1&lt;/code&gt;分钟、&lt;code&gt;5&lt;/code&gt;分钟、&lt;code&gt;15&lt;/code&gt;分钟前到现在的平均值。&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;load average&lt;/code&gt;: 如果这个数除以逻辑&lt;code&gt;CPU&lt;/code&gt;的数量，结果高于&lt;code&gt;5&lt;/code&gt;的时候就表明系统在超负荷运转了。&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;load average&lt;/code&gt;  表示系统负载，即任务队列的平均长度。 三个数值分别为  &lt;code&gt;1&lt;/code&gt;  分钟、 &lt;code&gt;5&lt;/code&gt;  分钟、 &lt;code&gt;15&lt;/code&gt;  分钟前到现在的平均值。&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;load average&lt;/code&gt; : 如果这个数除以逻辑 &lt;code&gt;CPU&lt;/code&gt;  的数量，结果高于 &lt;code&gt;5&lt;/code&gt;  的时候就表明系统在超负荷运转了。&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;&lt;a href=&#34;https://yjclsx.blog.csdn.net/article/details/81508455&#34;&gt;&lt;code&gt;Linux&lt;/code&gt;中&lt;code&gt;top&lt;/code&gt;命令参数详解&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://yjclsx.blog.csdn.net/article/details/81508455&#34;&gt; &lt;code&gt;Linux&lt;/code&gt;  中 &lt;code&gt;top&lt;/code&gt;  命令参数详解&lt;/a&gt;&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;uptime - 系统性能命令的精简版&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;img data-src=&#34;/blog/posts/56be7cc9/2022-03-13-23-00-56.png&#34; class=&#34;&#34;&gt;
-
-&lt;h2 id=&#34;Linux之cpu查看vmstat-mac中为vm-stat&#34;&gt;&lt;a href=&#34;#Linux之cpu查看vmstat-mac中为vm-stat&#34; class=&#34;headerlink&#34; title=&#34;Linux之cpu查看vmstat (mac中为vm_stat)&#34;&gt;&lt;/a&gt;&lt;code&gt;Linux&lt;/code&gt;之&lt;code&gt;cpu&lt;/code&gt;查看&lt;code&gt;vmstat&lt;/code&gt; (&lt;code&gt;mac&lt;/code&gt;中为&lt;code&gt;vm_stat&lt;/code&gt;)&lt;/h2&gt;&lt;img data-src=&#34;/blog/posts/56be7cc9/2022-03-13-23-05-38.png&#34; class=&#34;&#34;&gt;
-
+&lt;img data-src=&#34;/posts/56be7cc9/2022-03-13-23-00-56.png&#34; class=&#34;&#34;&gt;
+&lt;h2 id=&#34;linux之cpu查看vmstat-mac中为vm_stat&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#linux之cpu查看vmstat-mac中为vm_stat&#34;&gt;#&lt;/a&gt;  &lt;code&gt;Linux&lt;/code&gt;  之 &lt;code&gt;cpu&lt;/code&gt;  查看 &lt;code&gt;vmstat&lt;/code&gt;  ( &lt;code&gt;mac&lt;/code&gt;  中为 &lt;code&gt;vm_stat&lt;/code&gt; )&lt;/h2&gt;
+&lt;img data-src=&#34;/posts/56be7cc9/2022-03-13-23-05-38.png&#34; class=&#34;&#34;&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;code&gt;procs&lt;/code&gt;&lt;ul&gt;
-&lt;li&gt;&lt;code&gt;r&lt;/code&gt;：运行和等待的&lt;code&gt;CPU&lt;/code&gt;时间片的进程数，原则上&lt;code&gt;1&lt;/code&gt;核的&lt;code&gt;CPU&lt;/code&gt;的运行队列不要超过&lt;code&gt;2&lt;/code&gt;，整个系统的运行队列不超过总核数的2倍，否则代表系统压力过大，我们看蘑菇博客测试服务器，能发现都超过了&lt;code&gt;2&lt;/code&gt;，说明现在压力过大&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;b&lt;/code&gt;：等待资源的进程数，比如正在等待磁盘&lt;code&gt;I/O&lt;/code&gt;、网络&lt;code&gt;I/O&lt;/code&gt;等&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;procs&lt;/code&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;r&lt;/code&gt; ：运行和等待的 &lt;code&gt;CPU&lt;/code&gt;  时间片的进程数，原则上 &lt;code&gt;1&lt;/code&gt;  核的 &lt;code&gt;CPU&lt;/code&gt;  的运行队列不要超过 &lt;code&gt;2&lt;/code&gt; ，整个系统的运行队列不超过总核数的 2 倍，否则代表系统压力过大，我们看蘑菇博客测试服务器，能发现都超过了 &lt;code&gt;2&lt;/code&gt; ，说明现在压力过大&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;b&lt;/code&gt; ：等待资源的进程数，比如正在等待磁盘 &lt;code&gt;I/O&lt;/code&gt; 、网络 &lt;code&gt;I/O&lt;/code&gt;  等&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;&lt;code&gt;cpu&lt;/code&gt;&lt;br&gt;  &lt;code&gt;us&lt;/code&gt;：用户进程消耗&lt;code&gt;CPU&lt;/code&gt;时间百分比，&lt;code&gt;us&lt;/code&gt;值高，用户进程消耗&lt;code&gt;CPU&lt;/code&gt;时间多，如果长期大于&lt;code&gt;50%&lt;/code&gt;，优化程序&lt;br&gt;  &lt;code&gt;sy&lt;/code&gt;：内核进程消耗的CPU时间百分比&lt;br&gt;  &lt;code&gt;us + sy &lt;/code&gt;参考值为&lt;code&gt;80%&lt;/code&gt;，如果&lt;code&gt;us + sy&lt;/code&gt; 大于&lt;code&gt;80%&lt;/code&gt;，说明可能存在&lt;code&gt;CPU&lt;/code&gt;不足，从上面的图片可以看出，&lt;code&gt;us + sy&lt;/code&gt;还没有超过百分80，因此说明蘑菇博客的&lt;code&gt;CPU&lt;/code&gt;消耗不是很高&lt;br&gt;  &lt;code&gt;id&lt;/code&gt;：处于空闲的&lt;code&gt;CPU&lt;/code&gt;百分比&lt;br&gt;  &lt;code&gt;wa&lt;/code&gt;：系统等待&lt;code&gt;IO&lt;/code&gt;的&lt;code&gt;CPU&lt;/code&gt;时间百分比&lt;br&gt;  &lt;code&gt;st&lt;/code&gt;：来自于一个虚拟机偷取的&lt;code&gt;CPU&lt;/code&gt;时间比&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;cpu&lt;/code&gt; &lt;br&gt;
+ &lt;code&gt;us&lt;/code&gt; ：用户进程消耗 &lt;code&gt;CPU&lt;/code&gt;  时间百分比， &lt;code&gt;us&lt;/code&gt;  值高，用户进程消耗 &lt;code&gt;CPU&lt;/code&gt;  时间多，如果长期大于 &lt;code&gt;50%&lt;/code&gt; ，优化程序&lt;br&gt;
+ &lt;code&gt;sy&lt;/code&gt; ：内核进程消耗的 CPU 时间百分比&lt;br&gt;
+ &lt;code&gt;us + sy &lt;/code&gt; 参考值为 &lt;code&gt;80%&lt;/code&gt; ，如果 &lt;code&gt;us + sy&lt;/code&gt;  大于 &lt;code&gt;80%&lt;/code&gt; ，说明可能存在 &lt;code&gt;CPU&lt;/code&gt;  不足，从上面的图片可以看出， &lt;code&gt;us + sy&lt;/code&gt;  还没有超过百分 80，因此说明蘑菇博客的 &lt;code&gt;CPU&lt;/code&gt;  消耗不是很高&lt;br&gt;
+ &lt;code&gt;id&lt;/code&gt; ：处于空闲的 &lt;code&gt;CPU&lt;/code&gt;  百分比&lt;br&gt;
+ &lt;code&gt;wa&lt;/code&gt; ：系统等待 &lt;code&gt;IO&lt;/code&gt;  的 &lt;code&gt;CPU&lt;/code&gt;  时间百分比&lt;br&gt;
+ &lt;code&gt;st&lt;/code&gt; ：来自于一个虚拟机偷取的 &lt;code&gt;CPU&lt;/code&gt;  时间比&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2 id=&#34;Linux之cpu查看pidstat（Mac中没有）&#34;&gt;&lt;a href=&#34;#Linux之cpu查看pidstat（Mac中没有）&#34; class=&#34;headerlink&#34; title=&#34;Linux之cpu查看pidstat（Mac中没有）&#34;&gt;&lt;/a&gt;&lt;code&gt;Linux&lt;/code&gt;之&lt;code&gt;cpu&lt;/code&gt;查看&lt;code&gt;pidstat&lt;/code&gt;（&lt;code&gt;Mac&lt;/code&gt;中没有）&lt;/h2&gt;&lt;p&gt;查看看所有&lt;code&gt;cpu&lt;/code&gt;核信息&lt;/p&gt;
+&lt;h2 id=&#34;linux之cpu查看pidstatmac中没有&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#linux之cpu查看pidstatmac中没有&#34;&gt;#&lt;/a&gt;  &lt;code&gt;Linux&lt;/code&gt;  之 &lt;code&gt;cpu&lt;/code&gt;  查看 &lt;code&gt;pidstat&lt;/code&gt; （ &lt;code&gt;Mac&lt;/code&gt;  中没有）&lt;/h2&gt;
+&lt;p&gt;查看看所有 &lt;code&gt;cpu&lt;/code&gt;  核信息&lt;/p&gt;
 &lt;figure class=&#34;highlight plaintext&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;mpstat -P ALL 2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-
-&lt;img data-src=&#34;/blog/posts/56be7cc9/2022-03-13-23-10-51.png&#34; class=&#34;&#34;&gt;
-
-
-&lt;p&gt;每个进程使用&lt;code&gt;cpu&lt;/code&gt;的用量分解信息&lt;/p&gt;
+&lt;img data-src=&#34;/posts/56be7cc9/2022-03-13-23-10-51.png&#34; class=&#34;&#34;&gt;
+&lt;p&gt;每个进程使用 &lt;code&gt;cpu&lt;/code&gt;  的用量分解信息&lt;/p&gt;
 &lt;figure class=&#34;highlight plaintext&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;pidstat -u 1 -p 进程编号&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;img data-src=&#34;/blog/posts/56be7cc9/2022-03-13-23-11-14.png&#34; class=&#34;&#34;&gt;
-
-
-
-&lt;h2 id=&#34;Linux之内存查看free和pidstat（Mac中没有）&#34;&gt;&lt;a href=&#34;#Linux之内存查看free和pidstat（Mac中没有）&#34; class=&#34;headerlink&#34; title=&#34;Linux之内存查看free和pidstat（Mac中没有）&#34;&gt;&lt;/a&gt;&lt;code&gt;Linux&lt;/code&gt;之内存查看&lt;code&gt;free&lt;/code&gt;和&lt;code&gt;pidstat&lt;/code&gt;（&lt;code&gt;Mac&lt;/code&gt;中没有）&lt;/h2&gt;&lt;p&gt;应用程序可用内存数&lt;/p&gt;
+&lt;img data-src=&#34;/posts/56be7cc9/2022-03-13-23-11-14.png&#34; class=&#34;&#34;&gt;
+&lt;h2 id=&#34;linux之内存查看free和pidstatmac中没有&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#linux之内存查看free和pidstatmac中没有&#34;&gt;#&lt;/a&gt;  &lt;code&gt;Linux&lt;/code&gt;  之内存查看 &lt;code&gt;free&lt;/code&gt;  和 &lt;code&gt;pidstat&lt;/code&gt; （ &lt;code&gt;Mac&lt;/code&gt;  中没有）&lt;/h2&gt;
+&lt;p&gt;应用程序可用内存数&lt;/p&gt;
 &lt;p&gt;经验值&lt;/p&gt;
-&lt;p&gt;应用程序可用内存l系统物理内存&amp;gt;&lt;code&gt;70%&lt;/code&gt;内存充足&lt;/p&gt;
-&lt;p&gt;应用程序可用内存/系统物理内存&amp;lt;&lt;code&gt;20%&lt;/code&gt;内存不足，需要增加内存&lt;/p&gt;
-&lt;p&gt;&lt;code&gt;20%&lt;/code&gt;&amp;lt;应用程序可用内存/系统物理内存&amp;lt;&lt;code&gt;70%&lt;/code&gt;内存基本够用&lt;/p&gt;
-&lt;p&gt;&lt;code&gt;m/g&lt;/code&gt;：兆/吉&lt;/p&gt;
-&lt;img data-src=&#34;/blog/posts/56be7cc9/2022-03-13-23-12-13.png&#34; class=&#34;&#34;&gt;
-
+&lt;p&gt;应用程序可用内存 l 系统物理内存 &amp;gt; &lt;code&gt;70%&lt;/code&gt;  内存充足&lt;/p&gt;
+&lt;p&gt;应用程序可用内存 / 系统物理内存 &amp;lt; &lt;code&gt;20%&lt;/code&gt;  内存不足，需要增加内存&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;20%&lt;/code&gt; &amp;lt; 应用程序可用内存 / 系统物理内存 &amp;lt; &lt;code&gt;70%&lt;/code&gt;  内存基本够用&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;m/g&lt;/code&gt; ：兆 / 吉&lt;/p&gt;
+&lt;img data-src=&#34;/posts/56be7cc9/2022-03-13-23-12-13.png&#34; class=&#34;&#34;&gt;
 &lt;p&gt;查看额外&lt;/p&gt;
 &lt;figure class=&#34;highlight plaintext&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;pidstat -p 进程号 -r 采样间隔秒数&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-
-&lt;h2 id=&#34;Linux之硬盘查看df&#34;&gt;&lt;a href=&#34;#Linux之硬盘查看df&#34; class=&#34;headerlink&#34; title=&#34;Linux之硬盘查看df&#34;&gt;&lt;/a&gt;&lt;code&gt;Linux&lt;/code&gt;之硬盘查看&lt;code&gt;df&lt;/code&gt;&lt;/h2&gt;&lt;p&gt;查看磁盘剩余空间数&lt;/p&gt;
-&lt;img data-src=&#34;/blog/posts/56be7cc9/2022-03-13-23-13-22.png&#34; class=&#34;&#34;&gt;
-
-&lt;h2 id=&#34;Linux之磁盘IO查看iostat和pidstat&#34;&gt;&lt;a href=&#34;#Linux之磁盘IO查看iostat和pidstat&#34; class=&#34;headerlink&#34; title=&#34;Linux之磁盘IO查看iostat和pidstat&#34;&gt;&lt;/a&gt;&lt;code&gt;Linux&lt;/code&gt;之磁盘&lt;code&gt;IO&lt;/code&gt;查看&lt;code&gt;iostat&lt;/code&gt;和&lt;code&gt;pidstat&lt;/code&gt;&lt;/h2&gt;&lt;p&gt;磁盘&lt;code&gt;I/O&lt;/code&gt;性能评估&lt;br&gt;&lt;code&gt;mac&lt;/code&gt;:&lt;/p&gt;
-&lt;img data-src=&#34;/blog/posts/56be7cc9/2022-03-13-23-16-06.png&#34; class=&#34;&#34;&gt;
-
-&lt;p&gt;&lt;code&gt;linux&lt;/code&gt;:&lt;/p&gt;
-&lt;img data-src=&#34;/blog/posts/56be7cc9/2022-03-13-23-16-54.png&#34; class=&#34;&#34;&gt;
-
+&lt;h2 id=&#34;linux之硬盘查看df&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#linux之硬盘查看df&#34;&gt;#&lt;/a&gt;  &lt;code&gt;Linux&lt;/code&gt;  之硬盘查看 &lt;code&gt;df&lt;/code&gt;&lt;/h2&gt;
+&lt;p&gt;查看磁盘剩余空间数&lt;/p&gt;
+&lt;img data-src=&#34;/posts/56be7cc9/2022-03-13-23-13-22.png&#34; class=&#34;&#34;&gt;
+&lt;h2 id=&#34;linux之磁盘io查看iostat和pidstat&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#linux之磁盘io查看iostat和pidstat&#34;&gt;#&lt;/a&gt;  &lt;code&gt;Linux&lt;/code&gt;  之磁盘 &lt;code&gt;IO&lt;/code&gt;  查看 &lt;code&gt;iostat&lt;/code&gt;  和 &lt;code&gt;pidstat&lt;/code&gt;&lt;/h2&gt;
+&lt;p&gt;磁盘 &lt;code&gt;I/O&lt;/code&gt;  性能评估&lt;br&gt;
+ &lt;code&gt;mac&lt;/code&gt; :&lt;/p&gt;
+&lt;img data-src=&#34;/posts/56be7cc9/2022-03-13-23-16-06.png&#34; class=&#34;&#34;&gt;
+&lt;p&gt;&lt;code&gt;linux&lt;/code&gt; :&lt;/p&gt;
+&lt;img data-src=&#34;/posts/56be7cc9/2022-03-13-23-16-54.png&#34; class=&#34;&#34;&gt;
 &lt;p&gt;磁盘块设备分布&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;code&gt;rkB/s&lt;/code&gt;每秒读取数据量&lt;code&gt;kB;wkB/s&lt;/code&gt;每秒写入数据量&lt;code&gt;kB&lt;/code&gt;;&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;svctm lO&lt;/code&gt;请求的平均服务时间，单位毫秒;&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;await l/O&lt;/code&gt;请求的平均等待时间，单位毫秒;值越小，性能越好;&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;util&lt;/code&gt;一秒中有百分几的时间用于&lt;code&gt;I/O&lt;/code&gt;操作。接近&lt;code&gt;100%&lt;/code&gt;时，表示磁盘带宽跑满，需要优化程序或者增加磁盘;&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;rkB/s、wkB/s&lt;/code&gt;根据系统应用不同会有不同的值，但有规律遵循:长期、超大数据读写，肯定不正常，需要优化程序读取。&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;svctm&lt;/code&gt;的值与&lt;code&gt;await&lt;/code&gt;的值很接近，表示几乎没有IO等待，磁盘性能好。&lt;/li&gt;
-&lt;li&gt;如果&lt;code&gt;await&lt;/code&gt;的值远高于&lt;code&gt;svctm&lt;/code&gt;的值，则表示&lt;code&gt;IO&lt;/code&gt;队列等待太长，需要优化程序或更换更快磁盘。&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;rkB/s&lt;/code&gt;  每秒读取数据量 &lt;code&gt;kB;wkB/s&lt;/code&gt;  每秒写入数据量 &lt;code&gt;kB&lt;/code&gt; ;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;svctm lO&lt;/code&gt;  请求的平均服务时间，单位毫秒；&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;await l/O&lt;/code&gt;  请求的平均等待时间，单位毫秒；值越小，性能越好；&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;util&lt;/code&gt;  一秒中有百分几的时间用于 &lt;code&gt;I/O&lt;/code&gt;  操作。接近 &lt;code&gt;100%&lt;/code&gt;  时，表示磁盘带宽跑满，需要优化程序或者增加磁盘；&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;rkB/s、wkB/s&lt;/code&gt;  根据系统应用不同会有不同的值，但有规律遵循：长期、超大数据读写，肯定不正常，需要优化程序读取。&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;svctm&lt;/code&gt;  的值与 &lt;code&gt;await&lt;/code&gt;  的值很接近，表示几乎没有 IO 等待，磁盘性能好。&lt;/li&gt;
+&lt;li&gt;如果 &lt;code&gt;await&lt;/code&gt;  的值远高于 &lt;code&gt;svctm&lt;/code&gt;  的值，则表示 &lt;code&gt;IO&lt;/code&gt;  队列等待太长，需要优化程序或更换更快磁盘。&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2 id=&#34;Linux之网络IO查看ifstat&#34;&gt;&lt;a href=&#34;#Linux之网络IO查看ifstat&#34; class=&#34;headerlink&#34; title=&#34;Linux之网络IO查看ifstat&#34;&gt;&lt;/a&gt;&lt;code&gt;Linux&lt;/code&gt;之网络&lt;code&gt;IO&lt;/code&gt;查看&lt;code&gt;ifstat&lt;/code&gt;&lt;/h2&gt;&lt;p&gt;默认本地没有，下载&lt;code&gt;ifstat&lt;/code&gt;&lt;/p&gt;
+&lt;h2 id=&#34;linux之网络io查看ifstat&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#linux之网络io查看ifstat&#34;&gt;#&lt;/a&gt;  &lt;code&gt;Linux&lt;/code&gt;  之网络 &lt;code&gt;IO&lt;/code&gt;  查看 &lt;code&gt;ifstat&lt;/code&gt;&lt;/h2&gt;
+&lt;p&gt;默认本地没有，下载 &lt;code&gt;ifstat&lt;/code&gt;&lt;/p&gt;
 &lt;figure class=&#34;highlight shell&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;wget http://gael.roualland.free.fr/lifstat/ifstat-1.1.tar.gz&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;tar -xzvf ifstat-1.1.tar.gz&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;cd ifstat-1.1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;./configure&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;make&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;make install&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;p&gt;查看网络&lt;code&gt;IO&lt;/code&gt;&lt;/p&gt;
-&lt;p&gt;各个网卡的&lt;code&gt;in、out&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;查看网络 &lt;code&gt;IO&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;各个网卡的 &lt;code&gt;in、out&lt;/code&gt;&lt;/p&gt;
 &lt;p&gt;观察网络负载情况程序&lt;/p&gt;
 &lt;p&gt;网络读写是否正常&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;程序网络&lt;code&gt;I/O&lt;/code&gt;优化&lt;/li&gt;
-&lt;li&gt;增加网络&lt;code&gt;I/O&lt;/code&gt;带宽&lt;/li&gt;
+&lt;li&gt;程序网络 &lt;code&gt;I/O&lt;/code&gt;  优化&lt;/li&gt;
+&lt;li&gt;增加网络 &lt;code&gt;I/O&lt;/code&gt;  带宽&lt;/li&gt;
 &lt;/ul&gt;
-&lt;img data-src=&#34;/blog/posts/56be7cc9/2022-03-13-23-19-52.png&#34; class=&#34;&#34;&gt;
-
-&lt;h2 id=&#34;Linux查看物理CPU个数、核数、逻辑CPU个数&#34;&gt;&lt;a href=&#34;#Linux查看物理CPU个数、核数、逻辑CPU个数&#34; class=&#34;headerlink&#34; title=&#34;Linux查看物理CPU个数、核数、逻辑CPU个数&#34;&gt;&lt;/a&gt;&lt;code&gt;Linux&lt;/code&gt;查看物理&lt;code&gt;CPU&lt;/code&gt;个数、核数、逻辑&lt;code&gt;CPU&lt;/code&gt;个数&lt;/h2&gt;&lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;11&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;# 总核数 = 物理CPU个数 X 每颗物理CPU的核数 &lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;# 总逻辑CPU数 = 物理CPU个数 X 每颗物理CPU的核数 X 超线程数&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;# 查看物理CPU个数&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;cat /proc/cpuinfo| grep &lt;span class=&#34;string&#34;&gt;&amp;quot;physical id&amp;quot;&lt;/span&gt;| sort| uniq| wc -l&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;# 查看每个物理CPU中core的个数(即核数)&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;cat /proc/cpuinfo| grep &lt;span class=&#34;string&#34;&gt;&amp;quot;cpu cores&amp;quot;&lt;/span&gt;| uniq&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;# 查看逻辑CPU的个数 , 这是我们关心的,涉及到线程池大小&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;cat /proc/cpuinfo| grep &lt;span class=&#34;string&#34;&gt;&amp;quot;processor&amp;quot;&lt;/span&gt;| wc -l&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-
+&lt;img data-src=&#34;/posts/56be7cc9/2022-03-13-23-19-52.png&#34; class=&#34;&#34;&gt;
+&lt;h2 id=&#34;linux查看物理cpu个数-核数-逻辑cpu个数&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#linux查看物理cpu个数-核数-逻辑cpu个数&#34;&gt;#&lt;/a&gt;  &lt;code&gt;Linux&lt;/code&gt;  查看物理 &lt;code&gt;CPU&lt;/code&gt;  个数、核数、逻辑 &lt;code&gt;CPU&lt;/code&gt;  个数&lt;/h2&gt;
+&lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;11&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;# 总核数 = 物理CPU个数 X 每颗物理CPU的核数 &lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;# 总逻辑CPU数 = 物理CPU个数 X 每颗物理CPU的核数 X 超线程数&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;# 查看物理CPU个数&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;cat /proc/cpuinfo| grep &lt;span class=&#34;string&#34;&gt;&amp;quot;physical id&amp;quot;&lt;/span&gt;| sort| uniq| wc -l&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;# 查看每个物理CPU中core的个数(即核数)&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;cat /proc/cpuinfo| grep &lt;span class=&#34;string&#34;&gt;&amp;quot;cpu cores&amp;quot;&lt;/span&gt;| uniq&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;# 查看逻辑CPU的个数 , 这是我们关心的,涉及到线程池大小&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;cat /proc/cpuinfo| grep &lt;span class=&#34;string&#34;&gt;&amp;quot;processor&amp;quot;&lt;/span&gt;| wc -l&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
 &lt;blockquote&gt;
 &lt;p&gt;查看服务器信息指令&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;13&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;14&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;15&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;16&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;17&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;18&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;19&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;20&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;21&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;22&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;23&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;24&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;#查看CPU信息（型号）&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;cat /proc/cpuinfo | grep name | cut -f2 -d: | uniq -c&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;#查看内存信息&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;cat /proc/meminfo&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;#如何查看Linux 内核&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;uname -a&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;cat /proc/version&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;#查看机器型号（机器硬件型号）&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;dmidecode | grep &lt;span class=&#34;string&#34;&gt;&amp;quot;Product Name&amp;quot;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;dmidecode&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;#如何查看linux 系统版本&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;cat /etc/redhat-release&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;lsb_release -a&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;cat  /etc/issue&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt; &lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;#如何查看linux系统和CPU型号，类型和大小&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;cat /proc/cpuinfo&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;#如何查看linux 系统内存大小的信息，可以查看总内存，剩余内存，可使用内存等信息  &lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;cat /proc/meminfo&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-
-
-
-&lt;h2 id=&#34;CPU占用过高的定位分析思路&#34;&gt;&lt;a href=&#34;#CPU占用过高的定位分析思路&#34; class=&#34;headerlink&#34; title=&#34;CPU占用过高的定位分析思路&#34;&gt;&lt;/a&gt;&lt;code&gt;CPU&lt;/code&gt;占用过高的定位分析思路&lt;/h2&gt;&lt;p&gt;结合&lt;code&gt;Linux&lt;/code&gt;和&lt;code&gt;JDK&lt;/code&gt;命令一块分析&lt;/p&gt;
+&lt;h2 id=&#34;cpu占用过高的定位分析思路&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#cpu占用过高的定位分析思路&#34;&gt;#&lt;/a&gt;  &lt;code&gt;CPU&lt;/code&gt;  占用过高的定位分析思路&lt;/h2&gt;
+&lt;p&gt;结合 &lt;code&gt;Linux&lt;/code&gt;  和 &lt;code&gt;JDK&lt;/code&gt;  命令一块分析&lt;/p&gt;
 &lt;p&gt;案例步骤&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;先用&lt;code&gt;top&lt;/code&gt;命令找出&lt;code&gt;CPU&lt;/code&gt;占比最高的&lt;/li&gt;
+&lt;li&gt;先用 &lt;code&gt;top&lt;/code&gt;  命令找出 &lt;code&gt;CPU&lt;/code&gt;  占比最高的&lt;/li&gt;
 &lt;/ul&gt;
-&lt;img data-src=&#34;/blog/posts/56be7cc9/2022-03-13-23-20-27.png&#34; class=&#34;&#34;&gt;
-
+&lt;img data-src=&#34;/posts/56be7cc9/2022-03-13-23-20-27.png&#34; class=&#34;&#34;&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;p&gt;&lt;code&gt;ps -ef&lt;/code&gt;或者&lt;code&gt;jps&lt;/code&gt;进一步定位，得知是一个怎么样的一个后台程序作搞屎棍&lt;/p&gt;
-&lt;img data-src=&#34;/blog/posts/56be7cc9/2022-03-13-23-24-51.png&#34; class=&#34;&#34;&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;定位到具体线程或者代码&lt;/p&gt;
+&lt;li&gt;&lt;code&gt;ps -ef&lt;/code&gt;  或者 &lt;code&gt;jps&lt;/code&gt;  进一步定位，得知是一个怎么样的一个后台程序作搞屎棍&lt;/li&gt;
+&lt;/ul&gt;
+&lt;img data-src=&#34;/posts/56be7cc9/2022-03-13-23-24-51.png&#34; class=&#34;&#34;&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;code&gt;ps -mp&lt;/code&gt; 进程 &lt;code&gt;-o THREAD,tid,time&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;-m&lt;/code&gt; 显示所有的线程&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;-p pid&lt;/code&gt;进程使用&lt;code&gt;cpu&lt;/code&gt;的时间&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;-o&lt;/code&gt; 该参数后是用户自定义格式&lt;/li&gt;
+&lt;li&gt;定位到具体线程或者代码
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;ps -mp&lt;/code&gt;  进程  &lt;code&gt;-o THREAD,tid,time&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;-m&lt;/code&gt;  显示所有的线程&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;-p pid&lt;/code&gt;  进程使用 &lt;code&gt;cpu&lt;/code&gt;  的时间&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;-o&lt;/code&gt;  该参数后是用户自定义格式&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;img data-src=&#34;/blog/posts/56be7cc9/2022-03-13-23-25-31.png&#34; class=&#34;&#34;&gt;
-
+&lt;img data-src=&#34;/posts/56be7cc9/2022-03-13-23-25-31.png&#34; class=&#34;&#34;&gt;
 &lt;ul&gt;
-&lt;li&gt;将需要的线程&lt;code&gt;ID&lt;/code&gt;转换为&lt;code&gt;16&lt;/code&gt;进制格式（英文小写格式），命令&lt;code&gt;printf %x 172 &lt;/code&gt;将&lt;code&gt;172&lt;/code&gt;转换为十六进制&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;jstack 进程ID | grep tid&lt;/code&gt;（&lt;code&gt;16&lt;/code&gt;进制线程&lt;code&gt;ID&lt;/code&gt;小写英文）&lt;code&gt;-A60&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;将需要的线程 &lt;code&gt;ID&lt;/code&gt;  转换为 &lt;code&gt;16&lt;/code&gt;  进制格式（英文小写格式），命令 &lt;code&gt;printf %x 172 &lt;/code&gt; 将 &lt;code&gt;172&lt;/code&gt;  转换为十六进制&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;jstack 进程ID | grep tid&lt;/code&gt; （ &lt;code&gt;16&lt;/code&gt;  进制线程 &lt;code&gt;ID&lt;/code&gt;  小写英文） &lt;code&gt;-A60&lt;/code&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;blockquote&gt;
-&lt;p&gt;ps - process status&lt;br&gt;-A Display information about other users’ processes, including those without controlling terminals.&lt;br&gt;-e Identical to -A.&lt;br&gt;-f Display the uid, pid, parent pid, recent CPU usage, process start time, controlling tty, elapsed CPU usage, and the associated command. If the -u option is also used, display the user name rather then the numeric uid. When -o or -O is used to add to the display following -f, the command field is not truncated as severely as it is in other formats.&lt;br&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2x6dWZlbmcvYXJ0aWNsZS9kZXRhaWxzLzgzNTM3Mjc1&#34;&gt;ps -ef中的e、f是什么含义&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;ps - process status&lt;br&gt;
+-A Display information about other users’ processes, including those without controlling terminals.&lt;br&gt;
+-e Identical to -A.&lt;br&gt;
+-f Display the uid, pid, parent pid, recent CPU usage, process start time, controlling tty, elapsed CPU usage, and the associated command. If the -u option is also used, display the user name rather then the numeric uid. When -o or -O is used to add to the display following -f, the command field is not truncated as severely as it is in other formats.&lt;br&gt;
+&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2x6dWZlbmcvYXJ0aWNsZS9kZXRhaWxzLzgzNTM3Mjc1&#34;&gt;ps -ef 中的 e、f 是什么含义&lt;/span&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;p&gt;对于&lt;code&gt;JDK&lt;/code&gt;自带的&lt;code&gt;JVM&lt;/code&gt;监控和性能分析工具用过哪些?一般你是怎么用的?&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3UwMTE4NjMwMjQvYXJ0aWNsZS9kZXRhaWxzLzEwNjY1MTA2OA==&#34;&gt;link&lt;/span&gt;&lt;/p&gt;
-&lt;h2 id=&#34;GitHub骚操作之awesome搜索&#34;&gt;&lt;a href=&#34;#GitHub骚操作之awesome搜索&#34; class=&#34;headerlink&#34; title=&#34;GitHub骚操作之awesome搜索&#34;&gt;&lt;/a&gt;&lt;code&gt;GitHub&lt;/code&gt;骚操作之&lt;code&gt;awesome&lt;/code&gt;搜索&lt;/h2&gt;&lt;ul&gt;
-&lt;li&gt;公式：&lt;code&gt;awesome&lt;/code&gt; 关键字：&lt;code&gt;awesome&lt;/code&gt;系列，一般用来收集学习、工具、书籍类相关的项目&lt;/li&gt;
-&lt;li&gt;搜索优秀的&lt;code&gt;redis&lt;/code&gt;相关的项目，包括框架，教程等 &lt;code&gt;awesome redis&lt;/code&gt;&lt;h2 id=&#34;GitHub骚操作之-L数字&#34;&gt;&lt;a href=&#34;#GitHub骚操作之-L数字&#34; class=&#34;headerlink&#34; title=&#34;GitHub骚操作之#L数字&#34;&gt;&lt;/a&gt;&lt;code&gt;GitHub&lt;/code&gt;骚操作之&lt;code&gt;#L&lt;/code&gt;数字&lt;/h2&gt;一行：地址后面紧跟 &lt;code&gt;#L10&lt;/code&gt;&lt;br&gt;&lt;code&gt;https://github.com/abc/abc/pom.xml#L13&lt;/code&gt;&lt;br&gt;多行：地址后面紧跟 &lt;code&gt;#Lx - #Ln&lt;/code&gt;&lt;br&gt;&lt;code&gt;https://github.com/moxi624/abc/abc/pom.xml#L13-L30&lt;/code&gt;&lt;h2 id=&#34;GitHub骚操作之T搜索&#34;&gt;&lt;a href=&#34;#GitHub骚操作之T搜索&#34; class=&#34;headerlink&#34; title=&#34;GitHub骚操作之T搜索&#34;&gt;&lt;/a&gt;&lt;code&gt;GitHub&lt;/code&gt;骚操作之&lt;code&gt;T&lt;/code&gt;搜索&lt;/h2&gt;&lt;/li&gt;
+&lt;p&gt;对于 &lt;code&gt;JDK&lt;/code&gt;  自带的 &lt;code&gt;JVM&lt;/code&gt;  监控和性能分析工具用过哪些？一般你是怎么用的？&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3UwMTE4NjMwMjQvYXJ0aWNsZS9kZXRhaWxzLzEwNjY1MTA2OA==&#34;&gt;link&lt;/span&gt;&lt;/p&gt;
+&lt;h2 id=&#34;github骚操作之awesome搜索&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#github骚操作之awesome搜索&#34;&gt;#&lt;/a&gt;  &lt;code&gt;GitHub&lt;/code&gt;  骚操作之 &lt;code&gt;awesome&lt;/code&gt;  搜索&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;公式： &lt;code&gt;awesome&lt;/code&gt;  关键字： &lt;code&gt;awesome&lt;/code&gt;  系列，一般用来收集学习、工具、书籍类相关的项目&lt;/li&gt;
+&lt;li&gt;搜索优秀的 &lt;code&gt;redis&lt;/code&gt;  相关的项目，包括框架，教程等  &lt;code&gt;awesome redis&lt;/code&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;img data-src=&#34;/blog/posts/56be7cc9/2022-03-13-23-31-47.png&#34; class=&#34;&#34;&gt; ]]></description>
+&lt;h2 id=&#34;github骚操作之l数字&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#github骚操作之l数字&#34;&gt;#&lt;/a&gt;  &lt;code&gt;GitHub&lt;/code&gt;  骚操作之 &lt;code&gt;#L&lt;/code&gt;  数字&lt;/h2&gt;
+&lt;p&gt;一行：地址后面紧跟  &lt;code&gt;#L10&lt;/code&gt; &lt;br&gt;
+ &lt;code&gt;https://github.com/abc/abc/pom.xml#L13&lt;/code&gt; &lt;br&gt;
+ 多行：地址后面紧跟  &lt;code&gt;#Lx - #Ln&lt;/code&gt; &lt;br&gt;
+ &lt;code&gt;https://github.com/moxi624/abc/abc/pom.xml#L13-L30&lt;/code&gt;&lt;/p&gt;
+&lt;h2 id=&#34;github骚操作之t搜索&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#github骚操作之t搜索&#34;&gt;#&lt;/a&gt;  &lt;code&gt;GitHub&lt;/code&gt;  骚操作之 &lt;code&gt;T&lt;/code&gt;  搜索&lt;/h2&gt;
+&lt;img data-src=&#34;/posts/56be7cc9/2022-03-13-23-31-47.png&#34; class=&#34;&#34;&gt; ]]></description>
         </item>
     </channel>
 </rss>

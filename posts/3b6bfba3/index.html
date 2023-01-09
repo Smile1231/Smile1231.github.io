@@ -21,7 +21,7 @@
 
 <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Mulish:300,300italic,400,400italic,700,700italic%7CFredericka%20the%20Great:300,300italic,400,400italic,700,700italic%7CNoto%20Serif%20JP:300,300italic,400,400italic,700,700italic%7CNoto%20Serif%20SC:300,300italic,400,400italic,700,700italic%7CInconsolata:300,300italic,400,400italic,700,700italic&display=swap&subset=latin,latin-ext">
 
-<link rel="stylesheet" href="/blog/css/app.css?v=0.2.5">
+<link rel="stylesheet" href="/css/app.css?v=0.2.5">
 
   
   <meta name="keywords" content="Java面试,幂等性" />
@@ -101,7 +101,7 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
       </div>
     </div>
     <ul class="menu">
-      <li class="item title"><a href="/blog/" rel="start">Jin Mao when to get rich ?</a></li>
+      <li class="item title"><a href="/" rel="start">Jin Mao when to get rich ?</a></li>
     </ul>
     <ul class="right">
       <li class="item theme">
@@ -117,12 +117,12 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
       </div>
       <div id="imgs" class="pjax">
         <ul>
-          <li class="item" data-background-image="https://tva2.sinaimg.cn/large/6833939bly1gicivghyooj20zk0m8dir.jpg"></li>
-          <li class="item" data-background-image="https://tva2.sinaimg.cn/large/6833939bly1giclh3brzpj20zk0m8ann.jpg"></li>
-          <li class="item" data-background-image="https://tva2.sinaimg.cn/large/6833939bly1giph4fomxoj20zk0m8axp.jpg"></li>
-          <li class="item" data-background-image="https://tva2.sinaimg.cn/large/6833939bly1gipetv6p75j20zk0m8x6p.jpg"></li>
-          <li class="item" data-background-image="https://tva2.sinaimg.cn/large/6833939bly1giclxp31goj20zk0m8qv5.jpg"></li>
-          <li class="item" data-background-image="https://tva2.sinaimg.cn/large/6833939bly1giciszlczyj20zk0m816d.jpg"></li>
+          <li class="item" data-background-image="https://tva1.sinaimg.cn/large/6833939bly1giclg5ms2rj20zk0m8u0x.jpg"></li>
+          <li class="item" data-background-image="https://tva1.sinaimg.cn/large/6833939bly1gipew8gmvyj20zk0m87wh.jpg"></li>
+          <li class="item" data-background-image="https://tva1.sinaimg.cn/large/6833939bly1gipex2cdtbj20zk0m8x6p.jpg"></li>
+          <li class="item" data-background-image="https://tva1.sinaimg.cn/large/6833939bly1gicitspjpbj20zk0m81ky.jpg"></li>
+          <li class="item" data-background-image="https://tva1.sinaimg.cn/large/6833939bly1gicitf0kl1j20zk0m87fe.jpg"></li>
+          <li class="item" data-background-image="https://tva1.sinaimg.cn/large/6833939bly1gipeun65urj20zk0m81ii.jpg"></li>
         </ul>
       </div>
     </header>
@@ -147,8 +147,8 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
     
 <div class="breadcrumb" itemscope itemtype="https://schema.org/BreadcrumbList">
 <i class="ic i-home"></i>
-<span><a href="/blog/">Home</a></span><i class="ic i-angle-right"></i>
-<span  class="current" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem"><a href="/blog/categories/Java%E9%9D%A2%E8%AF%95/" itemprop="item" rel="index" title="In Java面试"><span itemprop="name">Java面试</span></a>
+<span><a href="/">Home</a></span><i class="ic i-angle-right"></i>
+<span  class="current" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem"><a href="/categories/Java%E9%9D%A2%E8%AF%95/" itemprop="item" rel="index" title="In Java面试"><span itemprop="name">Java面试</span></a>
 <meta itemprop="position" content="1" /></span>
 </div>
 
@@ -156,7 +156,7 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
   <link itemprop="mainEntityOfPage" href="https://smile1231.github.io/posts/3b6bfba3/">
 
   <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-    <meta itemprop="image" content="/blog/images/avatar.png">
+    <meta itemprop="image" content="/images/avatar.png">
     <meta itemprop="name" content="JIN Mao">
     <meta itemprop="description" content="got windy(起风了), ">
   </span>
@@ -168,52 +168,79 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
   <div class="body md" itemprop="articleBody">
     
 
-    <h1 id="如何保证接口的幂等性"><a href="#如何保证接口的幂等性" class="headerlink" title="如何保证接口的幂等性"></a><strong>如何保证接口的幂等性</strong></h1><h2 id="什么是幂等性"><a href="#什么是幂等性" class="headerlink" title="什么是幂等性"></a>什么是幂等性</h2><p>幂等性是系统服务对外一种承诺，承诺只要调用接口成功，外部多次调用对系统的影响是一致的。声明为幂等的服务会认为外部调用失败是常态，并且失败之后必然会有重试。</p>
+    <h1 id="如何保证接口的幂等性"><a class="markdownIt-Anchor" href="#如何保证接口的幂等性">#</a> <strong>如何保证接口的幂等性</strong></h1>
+<h2 id="什么是幂等性"><a class="markdownIt-Anchor" href="#什么是幂等性">#</a> 什么是幂等性</h2>
+<p>幂等性是系统服务对外一种承诺，承诺只要调用接口成功，外部多次调用对系统的影响是一致的。声明为幂等的服务会认为外部调用失败是常态，并且失败之后必然会有重试。</p>
 <span id="more"></span>
-
-<h2 id="什么情况下需要幂等"><a href="#什么情况下需要幂等" class="headerlink" title="什么情况下需要幂等"></a>什么情况下需要幂等</h2><p>以<code>SQL</code>为例：</p>
+<h2 id="什么情况下需要幂等"><a class="markdownIt-Anchor" href="#什么情况下需要幂等">#</a> 什么情况下需要幂等</h2>
+<p>以 <code>SQL</code>  为例：</p>
 <ul>
-<li><p><code>SELECT col1 FROM tab1 WHER col2=2，</code>无论执行多少次都不会改变状态，是天然的幂等。</p>
+<li>
+<p><code>SELECT col1 FROM tab1 WHER col2=2，</code> 无论执行多少次都不会改变状态，是天然的幂等。</p>
 </li>
-<li><p><code>UPDATE tab1 SET col1=1 WHERE col2=2</code>，无论执行成功多少次状态都是一致的，因此也是幂等操作。</p>
+<li>
+<p><code>UPDATE tab1 SET col1=1 WHERE col2=2</code> ，无论执行成功多少次状态都是一致的，因此也是幂等操作。</p>
 </li>
-<li><p><code>UPDATE tab1 SET col1=col1+1 WHERE col2=2</code>，每次执行的结果都会发生变化，这种不是幂等的。</p>
+<li>
+<p><code>UPDATE tab1 SET col1=col1+1 WHERE col2=2</code> ，每次执行的结果都会发生变化，这种不是幂等的。</p>
 </li>
-<li><p><code>insert into user(userid,name) values(1,&#39;a&#39;)</code> 如<code>userid</code>为唯一主键，即重复操作上面的业务，只会插入一条用户数据，具备幂等性。<br>如<code>userid</code>不是主键，可以重复，那上面业务多次操作，数据都会新增多条，不具备幂等性。</p>
+<li>
+<p><code>insert into user(userid,name) values(1,'a')</code>  如 <code>userid</code>  为唯一主键，即重复操作上面的业务，只会插入一条用户数据，具备幂等性。<br>
+如 <code>userid</code>  不是主键，可以重复，那上面业务多次操作，数据都会新增多条，不具备幂等性。</p>
 </li>
-<li><p><code>delete from user where userid=1</code>，多次操作，结果一样，具备幂等性</p>
+<li>
+<p><code>delete from user where userid=1</code> ，多次操作，结果一样，具备幂等性</p>
 </li>
 </ul>
-<h2 id="如何保证幂等"><a href="#如何保证幂等" class="headerlink" title="如何保证幂等"></a>如何保证幂等</h2><ul>
-<li><h3 id="token机制"><a href="#token机制" class="headerlink" title="token机制"></a><code>token</code>机制</h3><ol>
-<li><p>服务端提供了发送<code>token</code>的接口。我们在分析业务的时候，哪些业务是存在幂等问题的，就必须在执行业务前，先去获取<code>token</code>，服务器会把<code>token</code>保存到<code>redis</code>中。</p>
+<h2 id="如何保证幂等"><a class="markdownIt-Anchor" href="#如何保证幂等">#</a> 如何保证幂等</h2>
+<ul>
+<li>
+<h3 id="token机制"><a class="markdownIt-Anchor" href="#token机制">#</a>  <code>token</code>  机制</h3>
+<ol>
+<li>
+<p>服务端提供了发送 <code>token</code>  的接口。我们在分析业务的时候，哪些业务是存在幂等问题的，就必须在执行业务前，先去获取 <code>token</code> ，服务器会把 <code>token</code>  保存到 <code>redis</code>  中。</p>
 </li>
-<li><p>然后调用业务接口请求时，把<code>token</code>携带过去，一般放在请求头部。</p>
+<li>
+<p>然后调用业务接口请求时，把 <code>token</code>  携带过去，一般放在请求头部。</p>
 </li>
-<li><p>服务器判断<code>token</code>是否存在<code>redis</code>中，存在表示第一次请求，然后删除<code>token</code>,继续执行业务。</p>
+<li>
+<p>服务器判断 <code>token</code>  是否存在 <code>redis</code>  中，存在表示第一次请求，然后删除 <code>token</code> , 继续执行业务。</p>
 </li>
-<li><p>如果判断<code>token</code>不存在<code>redis</code>中，就表示是重复操作，直接返回重复标记给<code>client</code>，这样就保证了业务代码，不被重复执行。</p>
-<h4 id="关键点-先删除token，还是后删除token。"><a href="#关键点-先删除token，还是后删除token。" class="headerlink" title="关键点 先删除token，还是后删除token。"></a><strong>关键点 先删除<code>token</code>，还是后删除<code>token</code>。</strong></h4><p>   后删除<code>token</code>：如果进行业务处理成功后，删除<code>redis</code>中的<code>token</code>失败了，这样就导致了有可能会发生重复请求，因为<code>token</code>没有被删除。这个问题其实是数据库和缓存<code>redis</code>数据不一致问题，后续会写文章进行讲解。</p>
-<p>   先删除<code>token</code>：如果系统出现问题导致业务处理出现异常，业务处理没有成功，接口调用方也没有获取到明确的结果，然后进行重试，但<code>token</code>已经删除掉了，服务端判断<code>token</code>不存在，认为是重复请求，就直接返回了，无法进行业务处理了。</p>
-<p>   先删除<code>token</code>可以保证不会因为重复请求，业务数据出现问题。出现业务异常，可以让调用方配合处理一下，重新获取新的<code>token</code>，再次由业务调用方发起重试请求就<code>ok</code>了。</p>
-<h4 id="token机制缺点"><a href="#token机制缺点" class="headerlink" title="token机制缺点"></a><code>token</code>机制缺点</h4><p>   业务请求每次请求，都会有额外的请求（一次获取<code>token</code>请求、判断<code>token</code>是否存在的业务）。其实真实的生产环境中，1万请求也许只会存在<code>10</code>个左右的请求会发生重试，为了这<code>10</code>个请求，我们让<code>9990</code>个请求都发生了额外的请求。</p>
+<li>
+<p>如果判断 <code>token</code>  不存在 <code>redis</code>  中，就表示是重复操作，直接返回重复标记给 <code>client</code> ，这样就保证了业务代码，不被重复执行。</p>
+<h4 id="关键点-先删除token还是后删除token"><a class="markdownIt-Anchor" href="#关键点-先删除token还是后删除token">#</a> <strong>关键点 先删除 <code>token</code> ，还是后删除 <code>token</code> 。</strong></h4>
+<p>后删除 <code>token</code> ：如果进行业务处理成功后，删除 <code>redis</code>  中的 <code>token</code>  失败了，这样就导致了有可能会发生重复请求，因为 <code>token</code>  没有被删除。这个问题其实是数据库和缓存 <code>redis</code>  数据不一致问题，后续会写文章进行讲解。</p>
+<p>先删除 <code>token</code> ：如果系统出现问题导致业务处理出现异常，业务处理没有成功，接口调用方也没有获取到明确的结果，然后进行重试，但 <code>token</code>  已经删除掉了，服务端判断 <code>token</code>  不存在，认为是重复请求，就直接返回了，无法进行业务处理了。</p>
+<p>先删除 <code>token</code>  可以保证不会因为重复请求，业务数据出现问题。出现业务异常，可以让调用方配合处理一下，重新获取新的 <code>token</code> ，再次由业务调用方发起重试请求就 <code>ok</code>  了。</p>
+<h4 id="token机制缺点"><a class="markdownIt-Anchor" href="#token机制缺点">#</a>  <code>token</code>  机制缺点</h4>
+<p>业务请求每次请求，都会有额外的请求（一次获取 <code>token</code>  请求、判断 <code>token</code>  是否存在的业务）。其实真实的生产环境中，1 万请求也许只会存在 <code>10</code>  个左右的请求会发生重试，为了这 <code>10</code>  个请求，我们让 <code>9990</code>  个请求都发生了额外的请求。</p>
 </li>
 </ol>
 </li>
-<li><h3 id="乐观锁机制"><a href="#乐观锁机制" class="headerlink" title="乐观锁机制"></a>乐观锁机制</h3><p>  这种方法适合在更新的场景中<code>update t_goods set count = count -1 , version = version + 1 where good_id=2 and version = 1</code><br>  根据<code>version</code>版本，也就是在操作库存前先获取当前商品的<code>version</code>版本号，然后操作的时候带上此<code>version</code>号。我们梳理下，我们第一次操作库存时，得到<code>version</code>为<code>1</code>，调用库存服务<code>version</code>变成了<code>2</code>；但返回给订单服务出现了问题，订单服务又一次发起调用库存服务，当订单服务传如的<code>version</code>还是<code>1</code>，再执行上面的<code>sql</code>语句时，就不会执行；因为<code>version</code>已经变为<code>2</code>了，<code>where</code>条件就不成立。这样就保证了不管调用几次，只会真正的处理一次。<br>  乐观锁主要使用于处理读多写少的问题</p>
+<li>
+<h3 id="乐观锁机制"><a class="markdownIt-Anchor" href="#乐观锁机制">#</a> 乐观锁机制</h3>
+<p>这种方法适合在更新的场景中 <code>update t_goods set count = count -1 , version = version + 1 where good_id=2 and version = 1</code> <br>
+ 根据 <code>version</code>  版本，也就是在操作库存前先获取当前商品的 <code>version</code>  版本号，然后操作的时候带上此 <code>version</code>  号。我们梳理下，我们第一次操作库存时，得到 <code>version</code>  为 <code>1</code> ，调用库存服务 <code>version</code>  变成了 <code>2</code> ；但返回给订单服务出现了问题，订单服务又一次发起调用库存服务，当订单服务传如的 <code>version</code>  还是 <code>1</code> ，再执行上面的 <code>sql</code>  语句时，就不会执行；因为 <code>version</code>  已经变为 <code>2</code>  了， <code>where</code>  条件就不成立。这样就保证了不管调用几次，只会真正的处理一次。<br>
+乐观锁主要使用于处理读多写少的问题</p>
 </li>
-<li><h3 id="唯一主键"><a href="#唯一主键" class="headerlink" title="唯一主键"></a>唯一主键</h3><p>  这个机制是利用了数据库的主键唯一约束的特性，解决了在<code>insert</code>场景时幂等问题。但主键的要求不是自增的主键，这样就需要业务生成全局唯一的主键。</p>
-<p>  如果是分库分表场景下，路由规则要保证相同请求下，落地在同一个数据库和同一表中，要不然数据库主键约束就不起效果了，因为是不同的数据库和表主键不相关。</p>
+<li>
+<h3 id="唯一主键"><a class="markdownIt-Anchor" href="#唯一主键">#</a> 唯一主键</h3>
+<p>这个机制是利用了数据库的主键唯一约束的特性，解决了在 <code>insert</code>  场景时幂等问题。但主键的要求不是自增的主键，这样就需要业务生成全局唯一的主键。</p>
+<p>如果是分库分表场景下，路由规则要保证相同请求下，落地在同一个数据库和同一表中，要不然数据库主键约束就不起效果了，因为是不同的数据库和表主键不相关。</p>
 </li>
-<li><h3 id="防重表"><a href="#防重表" class="headerlink" title="防重表"></a>防重表</h3><p>  使用订单号<code>orderNo</code>做为去重表的唯一索引，把唯一索引插入去重表，再进行业务操作，且他们在同一个事务中。这个保证了重复请求时，因为去重表有唯一约束，导致请求失败，避免了幂等问题。这里要注意的是，去重表和业务表应该在同一库中，这样就保证了在同一个事务，即使业务操作失败了，也会把去重表的数据回滚。这个很好的保证了数据一致性。</p>
+<li>
+<h3 id="防重表"><a class="markdownIt-Anchor" href="#防重表">#</a> 防重表</h3>
+<p>使用订单号 <code>orderNo</code>  做为去重表的唯一索引，把唯一索引插入去重表，再进行业务操作，且他们在同一个事务中。这个保证了重复请求时，因为去重表有唯一约束，导致请求失败，避免了幂等问题。这里要注意的是，去重表和业务表应该在同一库中，这样就保证了在同一个事务，即使业务操作失败了，也会把去重表的数据回滚。这个很好的保证了数据一致性。</p>
 </li>
-<li><h3 id="唯一ID"><a href="#唯一ID" class="headerlink" title="唯一ID"></a>唯一<code>ID</code></h3><p>  调用接口时，生成一个唯一<code>id</code>，<code>redis</code>将数据保存到集合中（去重），存在即处理过。</p>
+<li>
+<h3 id="唯一id"><a class="markdownIt-Anchor" href="#唯一id">#</a> 唯一 <code>ID</code></h3>
+<p>调用接口时，生成一个唯一 <code>id</code> ， <code>redis</code>  将数据保存到集合中（去重），存在即处理过。</p>
 </li>
 </ul>
 
       <div class="tags">
-          <a href="/blog/tags/Java%E9%9D%A2%E8%AF%95/" rel="tag"><i class="ic i-tag"></i> Java面试</a>
-          <a href="/blog/tags/%E5%B9%82%E7%AD%89%E6%80%A7/" rel="tag"><i class="ic i-tag"></i> 幂等性</a>
+          <a href="/tags/Java%E9%9D%A2%E8%AF%95/" rel="tag"><i class="ic i-tag"></i> Java面试</a>
+          <a href="/tags/%E5%B9%82%E7%AD%89%E6%80%A7/" rel="tag"><i class="ic i-tag"></i> 幂等性</a>
       </div>
   </div>
 
@@ -265,7 +292,7 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
     <div class="item left">
       
 
-  <a href="/blog/posts/59de1824/" itemprop="url" rel="prev" data-background-image="https:&#x2F;&#x2F;tva2.sinaimg.cn&#x2F;mw690&#x2F;6833939bly1gicli9lfebj20zk0m84qp.jpg" title="spring中&#x2F;和&#x2F;*和&#x2F;**的区别">
+  <a href="/posts/59de1824/" itemprop="url" rel="prev" data-background-image="https:&#x2F;&#x2F;tva1.sinaimg.cn&#x2F;mw690&#x2F;6833939bly1gipevuctzzj20zk0m84qp.jpg" title="spring中&#x2F;和&#x2F;*和&#x2F;**的区别">
   <span class="type">Previous Post</span>
   <span class="category"><i class="ic i-flag"></i> SpringBoot</span>
   <h3>spring中/和/*和/**的区别</h3>
@@ -275,7 +302,7 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
     <div class="item right">
       
 
-  <a href="/blog/posts/3eb5e557/" itemprop="url" rel="next" data-background-image="https:&#x2F;&#x2F;tva2.sinaimg.cn&#x2F;mw690&#x2F;6833939bly1gipet4bz0yj20zk0m8e81.jpg" title="赛可出行面试">
+  <a href="/posts/3eb5e557/" itemprop="url" rel="next" data-background-image="https:&#x2F;&#x2F;tva1.sinaimg.cn&#x2F;mw690&#x2F;6833939bly1giclwuom7cj20zk0m8dvn.jpg" title="赛可出行面试">
   <span class="type">Next Post</span>
   <span class="category"><i class="ic i-flag"></i> Java面试</span>
   <h3>赛可出行面试</h3>
@@ -297,36 +324,36 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
   <div class="panels">
     <div class="inner">
       <div class="contents panel pjax" data-title="Contents">
-          <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%A6%82%E4%BD%95%E4%BF%9D%E8%AF%81%E6%8E%A5%E5%8F%A3%E7%9A%84%E5%B9%82%E7%AD%89%E6%80%A7"><span class="toc-number">1.</span> <span class="toc-text">如何保证接口的幂等性</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BB%80%E4%B9%88%E6%98%AF%E5%B9%82%E7%AD%89%E6%80%A7"><span class="toc-number">1.1.</span> <span class="toc-text">什么是幂等性</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BB%80%E4%B9%88%E6%83%85%E5%86%B5%E4%B8%8B%E9%9C%80%E8%A6%81%E5%B9%82%E7%AD%89"><span class="toc-number">1.2.</span> <span class="toc-text">什么情况下需要幂等</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%A6%82%E4%BD%95%E4%BF%9D%E8%AF%81%E5%B9%82%E7%AD%89"><span class="toc-number">1.3.</span> <span class="toc-text">如何保证幂等</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#token%E6%9C%BA%E5%88%B6"><span class="toc-number">1.3.1.</span> <span class="toc-text">token机制</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%85%B3%E9%94%AE%E7%82%B9-%E5%85%88%E5%88%A0%E9%99%A4token%EF%BC%8C%E8%BF%98%E6%98%AF%E5%90%8E%E5%88%A0%E9%99%A4token%E3%80%82"><span class="toc-number">1.3.1.1.</span> <span class="toc-text">关键点 先删除token，还是后删除token。</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#token%E6%9C%BA%E5%88%B6%E7%BC%BA%E7%82%B9"><span class="toc-number">1.3.1.2.</span> <span class="toc-text">token机制缺点</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%B9%90%E8%A7%82%E9%94%81%E6%9C%BA%E5%88%B6"><span class="toc-number">1.3.2.</span> <span class="toc-text">乐观锁机制</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%94%AF%E4%B8%80%E4%B8%BB%E9%94%AE"><span class="toc-number">1.3.3.</span> <span class="toc-text">唯一主键</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%98%B2%E9%87%8D%E8%A1%A8"><span class="toc-number">1.3.4.</span> <span class="toc-text">防重表</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%94%AF%E4%B8%80ID"><span class="toc-number">1.3.5.</span> <span class="toc-text">唯一ID</span></a></li></ol></li></ol></li></ol>
+          <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%A6%82%E4%BD%95%E4%BF%9D%E8%AF%81%E6%8E%A5%E5%8F%A3%E7%9A%84%E5%B9%82%E7%AD%89%E6%80%A7"><span class="toc-number">1.</span> <span class="toc-text"> 如何保证接口的幂等性</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BB%80%E4%B9%88%E6%98%AF%E5%B9%82%E7%AD%89%E6%80%A7"><span class="toc-number">1.1.</span> <span class="toc-text"> 什么是幂等性</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BB%80%E4%B9%88%E6%83%85%E5%86%B5%E4%B8%8B%E9%9C%80%E8%A6%81%E5%B9%82%E7%AD%89"><span class="toc-number">1.2.</span> <span class="toc-text"> 什么情况下需要幂等</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%A6%82%E4%BD%95%E4%BF%9D%E8%AF%81%E5%B9%82%E7%AD%89"><span class="toc-number">1.3.</span> <span class="toc-text"> 如何保证幂等</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#token%E6%9C%BA%E5%88%B6"><span class="toc-number">1.3.1.</span> <span class="toc-text">  token  机制</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%85%B3%E9%94%AE%E7%82%B9-%E5%85%88%E5%88%A0%E9%99%A4token%E8%BF%98%E6%98%AF%E5%90%8E%E5%88%A0%E9%99%A4token"><span class="toc-number">1.3.1.1.</span> <span class="toc-text"> 关键点 先删除 token ，还是后删除 token 。</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#token%E6%9C%BA%E5%88%B6%E7%BC%BA%E7%82%B9"><span class="toc-number">1.3.1.2.</span> <span class="toc-text">  token  机制缺点</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%B9%90%E8%A7%82%E9%94%81%E6%9C%BA%E5%88%B6"><span class="toc-number">1.3.2.</span> <span class="toc-text"> 乐观锁机制</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%94%AF%E4%B8%80%E4%B8%BB%E9%94%AE"><span class="toc-number">1.3.3.</span> <span class="toc-text"> 唯一主键</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%98%B2%E9%87%8D%E8%A1%A8"><span class="toc-number">1.3.4.</span> <span class="toc-text"> 防重表</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%94%AF%E4%B8%80id"><span class="toc-number">1.3.5.</span> <span class="toc-text"> 唯一 ID</span></a></li></ol></li></ol></li></ol>
       </div>
       <div class="related panel pjax" data-title="Related">
         <ul>
-          <li><a href="/blog/posts/feb84842/" rel="bookmark" title="Java面试必问--ArrayList的底层">Java面试必问--ArrayList的底层</a></li><li><a href="/blog/posts/52d9f7d3/" rel="bookmark" title="Java面试必问--HashMap的底层">Java面试必问--HashMap的底层</a></li><li class="active"><a href="/blog/posts/3b6bfba3/" rel="bookmark" title="如何保证接口的幂等性">如何保证接口的幂等性</a></li><li><a href="/blog/posts/3eb5e557/" rel="bookmark" title="赛可出行面试">赛可出行面试</a></li><li><a href="/blog/posts/6714b4a9/" rel="bookmark" title="FastJson序列化使用">FastJson序列化使用</a></li><li><a href="/blog/posts/a5258aa2/" rel="bookmark" title="Java面试小册子">Java面试小册子</a></li><li><a href="/blog/posts/57681474/" rel="bookmark" title="JVM简单原理">JVM简单原理</a></li><li><a href="/blog/posts/31d0fffb/" rel="bookmark" title="Mybatis中#号和$号的区别">Mybatis中#号和$号的区别</a></li><li><a href="/blog/posts/89080a8e/" rel="bookmark" title="Spring Bean的生命周期">Spring Bean的生命周期</a></li><li><a href="/blog/posts/eec4b728/" rel="bookmark" title="SpringBoot中如何优雅的使用多线程">SpringBoot中如何优雅的使用多线程</a></li><li><a href="/blog/posts/20ac1950/" rel="bookmark" title="SpringBoot文件上传下载">SpringBoot文件上传下载</a></li><li><a href="/blog/posts/e8eb0481/" rel="bookmark" title="二分查找">二分查找</a></li><li><a href="/blog/posts/4847d2e5/" rel="bookmark" title="面试之旅关于操作系统">面试之旅关于操作系统</a></li><li><a href="/blog/posts/c7cf6e41/" rel="bookmark" title="面试之旅关于计算机网络">面试之旅关于计算机网络</a></li><li><a href="/blog/posts/9f9a6182/" rel="bookmark" title="面试之旅关于数据结构">面试之旅关于数据结构</a></li><li><a href="/blog/posts/666b2933/" rel="bookmark" title="面试之旅关于数据库">面试之旅关于数据库</a></li><li><a href="/blog/posts/6b5f7afc/" rel="bookmark" title="面试之旅关于Java知识点">面试之旅关于Java知识点</a></li><li><a href="/blog/posts/7e4601e3/" rel="bookmark" title="面试之旅之关于Spring事务处理">面试之旅之关于Spring事务处理</a></li><li><a href="/blog/posts/b9b9f7e7/" rel="bookmark" title="二叉树遍历">二叉树遍历</a></li><li><a href="/blog/posts/7474c898/" rel="bookmark" title="分治算法">分治算法</a></li><li><a href="/blog/posts/a4ce31d2/" rel="bookmark" title="贪心算法">贪心算法</a></li><li><a href="/blog/posts/a80d0031/" rel="bookmark" title="动态规划">动态规划</a></li><li><a href="/blog/posts/ff8068c0/" rel="bookmark" title="快速排序">快速排序</a></li><li><a href="/blog/posts/2b06d603/" rel="bookmark" title="直接插入排序">直接插入排序</a></li><li><a href="/blog/posts/43d00a99/" rel="bookmark" title="选择排序">选择排序</a></li><li><a href="/blog/posts/c2a5fdc5/" rel="bookmark" title="堆排序">堆排序</a></li><li><a href="/blog/posts/14e6f1eb/" rel="bookmark" title="冒泡排序">冒泡排序</a></li>
+          <li><a href="/posts/feb84842/" rel="bookmark" title="Java面试必问--ArrayList的底层">Java面试必问--ArrayList的底层</a></li><li><a href="/posts/52d9f7d3/" rel="bookmark" title="Java面试必问--HashMap的底层">Java面试必问--HashMap的底层</a></li><li class="active"><a href="/posts/3b6bfba3/" rel="bookmark" title="如何保证接口的幂等性">如何保证接口的幂等性</a></li><li><a href="/posts/3eb5e557/" rel="bookmark" title="赛可出行面试">赛可出行面试</a></li><li><a href="/posts/6714b4a9/" rel="bookmark" title="FastJson序列化使用">FastJson序列化使用</a></li><li><a href="/posts/a5258aa2/" rel="bookmark" title="Java面试小册子">Java面试小册子</a></li><li><a href="/posts/57681474/" rel="bookmark" title="JVM简单原理">JVM简单原理</a></li><li><a href="/posts/31d0fffb/" rel="bookmark" title="Mybatis中#号和$号的区别">Mybatis中#号和$号的区别</a></li><li><a href="/posts/89080a8e/" rel="bookmark" title="Spring Bean的生命周期">Spring Bean的生命周期</a></li><li><a href="/posts/eec4b728/" rel="bookmark" title="SpringBoot中如何优雅的使用多线程">SpringBoot中如何优雅的使用多线程</a></li><li><a href="/posts/20ac1950/" rel="bookmark" title="SpringBoot文件上传下载">SpringBoot文件上传下载</a></li><li><a href="/posts/e8eb0481/" rel="bookmark" title="二分查找">二分查找</a></li><li><a href="/posts/4847d2e5/" rel="bookmark" title="面试之旅关于操作系统">面试之旅关于操作系统</a></li><li><a href="/posts/c7cf6e41/" rel="bookmark" title="面试之旅关于计算机网络">面试之旅关于计算机网络</a></li><li><a href="/posts/9f9a6182/" rel="bookmark" title="面试之旅关于数据结构">面试之旅关于数据结构</a></li><li><a href="/posts/666b2933/" rel="bookmark" title="面试之旅关于数据库">面试之旅关于数据库</a></li><li><a href="/posts/6b5f7afc/" rel="bookmark" title="面试之旅关于Java知识点">面试之旅关于Java知识点</a></li><li><a href="/posts/7e4601e3/" rel="bookmark" title="面试之旅之关于Spring事务处理">面试之旅之关于Spring事务处理</a></li><li><a href="/posts/b9b9f7e7/" rel="bookmark" title="二叉树遍历">二叉树遍历</a></li><li><a href="/posts/7474c898/" rel="bookmark" title="分治算法">分治算法</a></li><li><a href="/posts/a4ce31d2/" rel="bookmark" title="贪心算法">贪心算法</a></li><li><a href="/posts/a80d0031/" rel="bookmark" title="动态规划">动态规划</a></li><li><a href="/posts/ff8068c0/" rel="bookmark" title="快速排序">快速排序</a></li><li><a href="/posts/2b06d603/" rel="bookmark" title="直接插入排序">直接插入排序</a></li><li><a href="/posts/43d00a99/" rel="bookmark" title="选择排序">选择排序</a></li><li><a href="/posts/c2a5fdc5/" rel="bookmark" title="堆排序">堆排序</a></li><li><a href="/posts/14e6f1eb/" rel="bookmark" title="冒泡排序">冒泡排序</a></li>
         </ul>
       </div>
       <div class="overview panel" data-title="Overview">
         <div class="author" itemprop="author" itemscope itemtype="http://schema.org/Person">
   <img class="image" itemprop="image" alt="JIN Mao"
-      data-src="/blog/images/avatar.png">
+      data-src="/images/avatar.png">
   <p class="name" itemprop="name">JIN Mao</p>
   <div class="description" itemprop="description"></div>
 </div>
 
 <nav class="state">
     <div class="item posts">
-      <a href="/blog/archives/">
+      <a href="/archives/">
         <span class="count">150</span>
         <span class="name">posts</span>
       </a>
     </div>
     <div class="item categories">
-      <a href="/blog/categories/">
+      <a href="/categories/">
         <span class="count">78</span>
         <span class="name">categories</span>
       </a>
     </div>
     <div class="item tags">
-      <a href="/blog/tags/">
+      <a href="/tags/">
         <span class="count">113</span>
         <span class="name">tags</span>
       </a>
@@ -341,12 +368,12 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
   
     
   <li class="item">
-    <a href="/blog/" rel="section"><i class="ic i-home"></i>Home</a>
+    <a href="/" rel="section"><i class="ic i-home"></i>Home</a>
   </li>
 
     
   <li class="item">
-    <a href="/blog/about/" rel="section"><i class="ic i-user"></i>About</a>
+    <a href="/about/" rel="section"><i class="ic i-user"></i>About</a>
   </li>
 
         
@@ -356,17 +383,17 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
 
         
   <li class="item">
-    <a href="/blog/archives/" rel="section"><i class="ic i-list-alt"></i>Archives</a>
+    <a href="/archives/" rel="section"><i class="ic i-list-alt"></i>Archives</a>
   </li>
 
         
   <li class="item">
-    <a href="/blog/categories/" rel="section"><i class="ic i-th"></i>Categories</a>
+    <a href="/categories/" rel="section"><i class="ic i-th"></i>Categories</a>
   </li>
 
         
   <li class="item">
-    <a href="/blog/tags/" rel="section"><i class="ic i-tags"></i>Tags</a>
+    <a href="/tags/" rel="section"><i class="ic i-tags"></i>Tags</a>
   </li>
 
   </ul>
@@ -379,12 +406,12 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
 
   <ul id="quick">
     <li class="prev pjax">
-        <a href="/blog/posts/59de1824/" rel="prev" title="Previous Post"><i class="ic i-chevron-left"></i></a>
+        <a href="/posts/59de1824/" rel="prev" title="Previous Post"><i class="ic i-chevron-left"></i></a>
     </li>
     <li class="up"><i class="ic i-arrow-up"></i></li>
     <li class="down"><i class="ic i-arrow-down"></i></li>
     <li class="next pjax">
-        <a href="/blog/posts/3eb5e557/" rel="next" title="Next Post"><i class="ic i-chevron-right"></i></a>
+        <a href="/posts/3eb5e557/" rel="next" title="Next Post"><i class="ic i-chevron-right"></i></a>
     </li>
     <li class="percent"></li>
   </ul>
@@ -406,12 +433,42 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
   <li class="item">
     
 <div class="breadcrumb">
-<a href="/blog/categories/Java/" title="In Java">Java</a>
+<a href="/categories/Java/" title="In Java">Java</a>
+</div>
+
+    <span><a href="/posts/1c3390ab/" title="将Java数据输出为本地txt">将Java数据输出为本地txt</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/SpringBoot/" title="In SpringBoot">SpringBoot</a>
+</div>
+
+    <span><a href="/posts/67f40b37/" title="Spring Boot 获取服务IP地址和端口号">Spring Boot 获取服务IP地址和端口号</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/Java%E9%9D%A2%E8%AF%95/" title="In Java面试">Java面试</a>
 <i class="ic i-angle-right"></i>
-<a href="/blog/categories/Java/Tools/" title="In Tools">Tools</a>
+<a href="/categories/Java%E9%9D%A2%E8%AF%95/SpringBoot/" title="In SpringBoot">SpringBoot</a>
 </div>
 
-    <span><a href="/blog/posts/b246d3ce/" title="Java自带的好用的工具类">Java自带的好用的工具类</a></span>
+    <span><a href="/posts/20ac1950/" title="SpringBoot文件上传下载">SpringBoot文件上传下载</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/Jenkins/" title="In Jenkins">Jenkins</a>
+</div>
+
+    <span><a href="/posts/171f1b7f/" title="Jenkins&#x2F;CICD">Jenkins/CICD</a></span>
   </li>
 
       
@@ -420,92 +477,59 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
 <div class="breadcrumb">
 </div>
 
-    <span><a href="/blog/posts/bf4d20ae/" title="写在最前面">写在最前面</a></span>
+    <span><a href="/posts/159c6098/" title="阻塞队列">阻塞队列</a></span>
   </li>
 
       
   <li class="item">
     
 <div class="breadcrumb">
-<a href="/blog/categories/Java/" title="In Java">Java</a>
+<a href="/categories/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/" title="In 设计模式">设计模式</a>
 </div>
 
-    <span><a href="/blog/posts/60a1e80e/" title="java判断日期周几">java判断日期周几</a></span>
+    <span><a href="/posts/79c6d028/" title="23设计模式(更新中)">23设计模式(更新中)</a></span>
   </li>
 
       
   <li class="item">
     
 <div class="breadcrumb">
+<a href="/categories/Shell/" title="In Shell">Shell</a>
 </div>
 
-    <span><a href="/blog/posts/5a74c6a6/" title="宝儿的大腿小腿围">宝儿的大腿小腿围</a></span>
+    <span><a href="/posts/55b095e0/" title="The learning of Shell">The learning of Shell</a></span>
   </li>
 
       
   <li class="item">
     
 <div class="breadcrumb">
-<a href="/blog/categories/Mybtais/" title="In Mybtais">Mybtais</a>
+<a href="/categories/DDD/" title="In DDD">DDD</a>
 </div>
 
-    <span><a href="/blog/posts/9aff665a/" title="mybatis中大于等于小于等于的写法">mybatis中大于等于小于等于的写法</a></span>
+    <span><a href="/posts/3fec5852/" title="DDD领域驱动设计">DDD领域驱动设计</a></span>
   </li>
 
       
   <li class="item">
     
 <div class="breadcrumb">
-<a href="/blog/categories/%E6%95%B0%E6%8D%AE%E5%BA%93/" title="In 数据库">数据库</a>
-</div>
-
-    <span><a href="/blog/posts/60f024c8/" title="关于sql执行计划">关于sql执行计划</a></span>
-  </li>
-
-      
-  <li class="item">
-    
-<div class="breadcrumb">
-<a href="/blog/categories/IDEA/" title="In IDEA">IDEA</a>
-</div>
-
-    <span><a href="/blog/posts/579bb697/" title="IDEA小图标含义">IDEA小图标含义</a></span>
-  </li>
-
-      
-  <li class="item">
-    
-<div class="breadcrumb">
-<a href="/blog/categories/%E5%89%8D%E7%AB%AF/" title="In 前端">前端</a>
+<a href="/categories/Java%E9%9D%A2%E8%AF%95/" title="In Java面试">Java面试</a>
 <i class="ic i-angle-right"></i>
-<a href="/blog/categories/%E5%89%8D%E7%AB%AF/Vue/" title="In Vue">Vue</a>
+<a href="/categories/Java%E9%9D%A2%E8%AF%95/%E7%AE%97%E6%B3%95/" title="In 算法">算法</a>
 </div>
 
-    <span><a href="/blog/posts/e7e56598/" title="Vue属性介绍">Vue属性介绍</a></span>
+    <span><a href="/posts/7474c898/" title="分治算法">分治算法</a></span>
   </li>
 
       
   <li class="item">
     
 <div class="breadcrumb">
-<a href="/blog/categories/%E5%89%8D%E7%AB%AF/" title="In 前端">前端</a>
-<i class="ic i-angle-right"></i>
-<a href="/blog/categories/%E5%89%8D%E7%AB%AF/Vue/" title="In Vue">Vue</a>
+<a href="/categories/%E5%9F%BA%E5%9B%A0%E7%BC%96%E8%BE%91/" title="In 基因编辑">基因编辑</a>
 </div>
 
-    <span><a href="/blog/posts/b5314c4/" title="Vue2语法简介">Vue2语法简介</a></span>
-  </li>
-
-      
-  <li class="item">
-    
-<div class="breadcrumb">
-<a href="/blog/categories/Java%E9%9D%A2%E8%AF%95/" title="In Java面试">Java面试</a>
-<i class="ic i-angle-right"></i>
-<a href="/blog/categories/Java%E9%9D%A2%E8%AF%95/Mybatis/" title="In Mybatis">Mybatis</a>
-</div>
-
-    <span><a href="/blog/posts/31d0fffb/" title="Mybatis中#号和$号的区别">Mybatis中#号和$号的区别</a></span>
+    <span><a href="/posts/b7653deb/" title="什么是CRISPR&#x2F;Cas9">什么是CRISPR/Cas9</a></span>
   </li>
 
   </ul>
@@ -530,13 +554,13 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
     <span class="post-meta-item-icon">
       <i class="ic i-chart-area"></i>
     </span>
-    <span title="Symbols count total">684k words</span>
+    <span title="Symbols count total">657k words</span>
 
     <span class="post-meta-divider">|</span>
     <span class="post-meta-item-icon">
       <i class="ic i-coffee"></i>
     </span>
-    <span title="Reading time total">10:22</span>
+    <span title="Reading time total">9:57</span>
   </div>
 </div>
 
@@ -572,7 +596,7 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
 
 <script src="//cdn.jsdelivr.net/combine/npm/pace-js@1.0.2/pace.min.js,npm/pjax@0.2.8/pjax.min.js,npm/whatwg-fetch@3.4.0/dist/fetch.umd.min.js,npm/animejs@3.2.0/lib/anime.min.js,npm/algoliasearch@4/dist/algoliasearch-lite.umd.js,npm/instantsearch.js@4/dist/instantsearch.production.min.js,npm/lozad@1/dist/lozad.min.js,npm/quicklink@2/dist/quicklink.umd.js"></script>
 
-<script src="/blog/js/app.js?v=0.2.5"></script>
+<script src="/js/app.js?v=0.2.5"></script>
 
 
 

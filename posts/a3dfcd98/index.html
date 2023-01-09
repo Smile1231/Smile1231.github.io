@@ -21,7 +21,7 @@
 
 <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Mulish:300,300italic,400,400italic,700,700italic%7CFredericka%20the%20Great:300,300italic,400,400italic,700,700italic%7CNoto%20Serif%20JP:300,300italic,400,400italic,700,700italic%7CNoto%20Serif%20SC:300,300italic,400,400italic,700,700italic%7CInconsolata:300,300italic,400,400italic,700,700italic&display=swap&subset=latin,latin-ext">
 
-<link rel="stylesheet" href="/blog/css/app.css?v=0.2.5">
+<link rel="stylesheet" href="/css/app.css?v=0.2.5">
 
   
   <meta name="keywords" content="Java,SpringBoot" />
@@ -101,7 +101,7 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
       </div>
     </div>
     <ul class="menu">
-      <li class="item title"><a href="/blog/" rel="start">Jin Mao when to get rich ?</a></li>
+      <li class="item title"><a href="/" rel="start">Jin Mao when to get rich ?</a></li>
     </ul>
     <ul class="right">
       <li class="item theme">
@@ -117,12 +117,12 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
       </div>
       <div id="imgs" class="pjax">
         <ul>
-          <li class="item" data-background-image="https://tva2.sinaimg.cn/large/6833939bly1gipesng5oej20zk0m87d4.jpg"></li>
-          <li class="item" data-background-image="https://tva2.sinaimg.cn/large/6833939bly1giclj61ylzj20zk0m8b29.jpg"></li>
-          <li class="item" data-background-image="https://tva2.sinaimg.cn/large/6833939bly1gipevo9j1jj20zk0m8e81.jpg"></li>
-          <li class="item" data-background-image="https://tva2.sinaimg.cn/large/6833939bly1giclimtf7dj20zk0m8qav.jpg"></li>
-          <li class="item" data-background-image="https://tva2.sinaimg.cn/large/6833939bly1gipey0a334j20zk0m8qpt.jpg"></li>
-          <li class="item" data-background-image="https://tva2.sinaimg.cn/large/6833939bly1gipevuctzzj20zk0m84qp.jpg"></li>
+          <li class="item" data-background-image="https://tva1.sinaimg.cn/large/6833939bly1giclimtf7dj20zk0m8qav.jpg"></li>
+          <li class="item" data-background-image="https://tva1.sinaimg.cn/large/6833939bly1gicljitigmj20zk0m87fp.jpg"></li>
+          <li class="item" data-background-image="https://tva1.sinaimg.cn/large/6833939bly1gipeyonbf9j20zk0m8e81.jpg"></li>
+          <li class="item" data-background-image="https://tva1.sinaimg.cn/large/6833939bly1giph4fomxoj20zk0m8axp.jpg"></li>
+          <li class="item" data-background-image="https://tva1.sinaimg.cn/large/6833939bly1gipeyvx1d4j20zk0m8hdt.jpg"></li>
+          <li class="item" data-background-image="https://tva1.sinaimg.cn/large/6833939bly1giclil3m4ej20zk0m8tn8.jpg"></li>
         </ul>
       </div>
     </header>
@@ -147,11 +147,11 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
     
 <div class="breadcrumb" itemscope itemtype="https://schema.org/BreadcrumbList">
 <i class="ic i-home"></i>
-<span><a href="/blog/">Home</a></span><i class="ic i-angle-right"></i>
-<span  itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem"><a href="/blog/categories/Java/" itemprop="item" rel="index" title="In Java"><span itemprop="name">Java</span></a>
+<span><a href="/">Home</a></span><i class="ic i-angle-right"></i>
+<span  itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem"><a href="/categories/Java/" itemprop="item" rel="index" title="In Java"><span itemprop="name">Java</span></a>
 <meta itemprop="position" content="1" /></span>
 <i class="ic i-angle-right"></i>
-<span  class="current" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem"><a href="/blog/categories/Java/SpringBoot/" itemprop="item" rel="index" title="In SpringBoot"><span itemprop="name">SpringBoot</span></a>
+<span  class="current" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem"><a href="/categories/Java/SpringBoot/" itemprop="item" rel="index" title="In SpringBoot"><span itemprop="name">SpringBoot</span></a>
 <meta itemprop="position" content="2" /></span>
 </div>
 
@@ -159,7 +159,7 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
   <link itemprop="mainEntityOfPage" href="https://smile1231.github.io/posts/a3dfcd98/">
 
   <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-    <meta itemprop="image" content="/blog/images/avatar.png">
+    <meta itemprop="image" content="/images/avatar.png">
     <meta itemprop="name" content="JIN Mao">
     <meta itemprop="description" content="got windy(起风了), ">
   </span>
@@ -171,57 +171,54 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
   <div class="body md" itemprop="articleBody">
     
 
-    <h1 id="SpringBoot中常见的几种解决跨域的方式"><a href="#SpringBoot中常见的几种解决跨域的方式" class="headerlink" title="SpringBoot中常见的几种解决跨域的方式"></a><code>SpringBoot</code>中常见的几种解决跨域的方式</h1><h2 id="一、为什么会出现跨域问题"><a href="#一、为什么会出现跨域问题" class="headerlink" title="一、为什么会出现跨域问题"></a>一、为什么会出现跨域问题</h2><p>出于浏览器的同源策略限制。同源策略（<code>Sameoriginpolicy</code>）是一种约定，它是浏览器最核心也最基本的安全功能，如果缺少了同源策略，则浏览器的正常功能可能都会受到影响。可以说<code>Web</code>是构建在同源策略基础之上的，浏览器只是针对同源策略的一种实现。</p>
-<p>同源策略会阻止一个域的<code>javascript</code>脚本和另外一个域的内容进行交互。所谓同源（即指在同一个域）就是两个页面具有相同的协议（<code>protocol</code>），主机（<code>host</code>）和端口号（<code>port</code>）</p>
+    <h1 id="springboot中常见的几种解决跨域的方式"><a class="markdownIt-Anchor" href="#springboot中常见的几种解决跨域的方式">#</a>  <code>SpringBoot</code>  中常见的几种解决跨域的方式</h1>
+<h2 id="一-为什么会出现跨域问题"><a class="markdownIt-Anchor" href="#一-为什么会出现跨域问题">#</a> 一、为什么会出现跨域问题</h2>
+<p>出于浏览器的同源策略限制。同源策略（ <code>Sameoriginpolicy</code> ）是一种约定，它是浏览器最核心也最基本的安全功能，如果缺少了同源策略，则浏览器的正常功能可能都会受到影响。可以说 <code>Web</code>  是构建在同源策略基础之上的，浏览器只是针对同源策略的一种实现。</p>
+<p>同源策略会阻止一个域的 <code>javascript</code>  脚本和另外一个域的内容进行交互。所谓同源（即指在同一个域）就是两个页面具有相同的协议（ <code>protocol</code> ），主机（ <code>host</code> ）和端口号（ <code>port</code> ）</p>
 <span id="more"></span>
-
-<h2 id="二、什么是跨域"><a href="#二、什么是跨域" class="headerlink" title="二、什么是跨域"></a>二、什么是跨域</h2><p>当一个请求<code>url</code>的协议、域名、端口三者之间任意一个与当前页面<code>url</code>不同即为跨域</p>
-<h2 id="三、非同源限制"><a href="#三、非同源限制" class="headerlink" title="三、非同源限制"></a>三、非同源限制</h2><p>【1】无法读取非同源网页的 <code>Cookie</code>、<code>LocalStorage</code> 和 <code>IndexedDB</code></p>
-<p>【2】无法接触非同源网页的 <code>DOM</code></p>
-<p>【3】无法向非同源地址发送 <code>AJAX</code> 请求</p>
-<h2 id="四、java-后端-实现-CORS-跨域请求的方式"><a href="#四、java-后端-实现-CORS-跨域请求的方式" class="headerlink" title="四、java 后端 实现 CORS 跨域请求的方式"></a>四、<code>java</code> 后端 实现 <code>CORS</code> 跨域请求的方式</h2><p>对于 <code>CORS</code>的跨域请求，主要有以下几种方式可供选择：</p>
+<h2 id="二-什么是跨域"><a class="markdownIt-Anchor" href="#二-什么是跨域">#</a> 二、什么是跨域</h2>
+<p>当一个请求 <code>url</code>  的协议、域名、端口三者之间任意一个与当前页面 <code>url</code>  不同即为跨域</p>
+<h2 id="三-非同源限制"><a class="markdownIt-Anchor" href="#三-非同源限制">#</a> 三、非同源限制</h2>
+<p>【1】无法读取非同源网页的  <code>Cookie</code> 、 <code>LocalStorage</code>  和  <code>IndexedDB</code></p>
+<p>【2】无法接触非同源网页的  <code>DOM</code></p>
+<p>【3】无法向非同源地址发送  <code>AJAX</code>  请求</p>
+<h2 id="四-java-后端-实现-cors-跨域请求的方式"><a class="markdownIt-Anchor" href="#四-java-后端-实现-cors-跨域请求的方式">#</a> 四、 <code>java</code>  后端 实现  <code>CORS</code>  跨域请求的方式</h2>
+<p>对于  <code>CORS</code>  的跨域请求，主要有以下几种方式可供选择：</p>
 <ul>
-<li>返回新的<code>CorsFilter</code></li>
-<li>重写 <code>WebMvcConfigurer</code></li>
-<li>使用注解 <code>@CrossOrigin</code></li>
-<li>手动设置响应头 (<code>HttpServletResponse</code>)</li>
-<li>自定<code>web filter</code> 实现跨域</li>
+<li>返回新的 <code>CorsFilter</code></li>
+<li>重写  <code>WebMvcConfigurer</code></li>
+<li>使用注解  <code>@CrossOrigin</code></li>
+<li>手动设置响应头 ( <code>HttpServletResponse</code> )</li>
+<li>自定 <code>web filter</code>  实现跨域</li>
 </ul>
 <p>注意:</p>
 <ul>
-<li><code>CorFilter / WebMvConfigurer / @CrossOrigin</code> 需要 <code>SpringMVC 4.2</code>以上版本才支持，对应<code>springBoot 1.3</code>版本以上</li>
-<li>上面前两种方式属于全局 <code>CORS</code> 配置，后两种属于局部 <code>CORS</code>配置。如果使用了局部跨域是会覆盖全局跨域的规则，所以可以通过 <code>@CrossOrigin</code> 注解来进行细粒度更高的跨域资源控制。</li>
+<li><code>CorFilter / WebMvConfigurer / @CrossOrigin</code>  需要  <code>SpringMVC 4.2</code>  以上版本才支持，对应 <code>springBoot 1.3</code>  版本以上</li>
+<li>上面前两种方式属于全局  <code>CORS</code>  配置，后两种属于局部  <code>CORS</code>  配置。如果使用了局部跨域是会覆盖全局跨域的规则，所以可以通过  <code>@CrossOrigin</code>  注解来进行细粒度更高的跨域资源控制。</li>
 <li>其实无论哪种方案，最终目的都是修改响应头，向响应头中添加浏览器所要求的数据，进而实现跨域</li>
 </ul>
-<h2 id="1-返回新的-CorsFilter-全局跨域"><a href="#1-返回新的-CorsFilter-全局跨域" class="headerlink" title="1.返回新的 CorsFilter(全局跨域)"></a>1.返回新的 <code>CorsFilter</code>(全局跨域)</h2><p>在任意配置类，返回一个 新的 <code>CorsFIlter Bean</code> ，并添加映射路径和具体的<code>CORS</code>配置路径。</p>
+<h2 id="1返回新的-corsfilter全局跨域"><a class="markdownIt-Anchor" href="#1返回新的-corsfilter全局跨域">#</a> 1. 返回新的  <code>CorsFilter</code>  (全局跨域)</h2>
+<p>在任意配置类，返回一个 新的  <code>CorsFIlter Bean</code>  ，并添加映射路径和具体的 <code>CORS</code>  配置路径。</p>
 <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">@Configuration</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">GlobalCorsConfig</span> </span>&#123;</span><br><span class="line">    <span class="meta">@Bean</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> CorsFilter <span class="title">corsFilter</span><span class="params">()</span> </span>&#123;</span><br><span class="line">        <span class="comment">//1. 添加 CORS配置信息</span></span><br><span class="line">        CorsConfiguration config = <span class="keyword">new</span> CorsConfiguration();</span><br><span class="line">        <span class="comment">//放行哪些原始域</span></span><br><span class="line">        config.addAllowedOrigin(<span class="string">&quot;*&quot;</span>);</span><br><span class="line">        <span class="comment">//是否发送 Cookie</span></span><br><span class="line">        config.setAllowCredentials(<span class="keyword">true</span>);</span><br><span class="line">        <span class="comment">//放行哪些请求方式</span></span><br><span class="line">        config.addAllowedMethod(<span class="string">&quot;*&quot;</span>);</span><br><span class="line">        <span class="comment">//放行哪些原始请求头部信息</span></span><br><span class="line">        config.addAllowedHeader(<span class="string">&quot;*&quot;</span>);</span><br><span class="line">        <span class="comment">//暴露哪些头部信息</span></span><br><span class="line">        config.addExposedHeader(<span class="string">&quot;*&quot;</span>);</span><br><span class="line">        <span class="comment">//2. 添加映射路径</span></span><br><span class="line">        UrlBasedCorsConfigurationSource corsConfigurationSource = <span class="keyword">new</span> UrlBasedCorsConfigurationSource();</span><br><span class="line">        corsConfigurationSource.registerCorsConfiguration(<span class="string">&quot;/**&quot;</span>,config);</span><br><span class="line">        <span class="comment">//3. 返回新的CorsFilter</span></span><br><span class="line">        <span class="keyword">return</span> <span class="keyword">new</span> CorsFilter(corsConfigurationSource);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<h2 id="2-重写-WebMvcConfigurer-全局跨域"><a href="#2-重写-WebMvcConfigurer-全局跨域" class="headerlink" title="2. 重写 WebMvcConfigurer(全局跨域)"></a>2. 重写 <code>WebMvcConfigurer</code>(全局跨域)</h2><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">@Configuration</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">CorsConfig</span> <span class="keyword">implements</span> <span class="title">WebMvcConfigurer</span> </span>&#123;</span><br><span class="line">    <span class="meta">@Override</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">addCorsMappings</span><span class="params">(CorsRegistry registry)</span> </span>&#123;</span><br><span class="line">        registry.addMapping(<span class="string">&quot;/**&quot;</span>)</span><br><span class="line">                <span class="comment">//是否发送Cookie</span></span><br><span class="line">                .allowCredentials(<span class="keyword">true</span>)</span><br><span class="line">                <span class="comment">//放行哪些原始域</span></span><br><span class="line">                .allowedOrigins(<span class="string">&quot;*&quot;</span>)</span><br><span class="line">                .allowedMethods(<span class="keyword">new</span> String[]&#123;<span class="string">&quot;GET&quot;</span>, <span class="string">&quot;POST&quot;</span>, <span class="string">&quot;PUT&quot;</span>, <span class="string">&quot;DELETE&quot;</span>&#125;)</span><br><span class="line">                .allowedHeaders(<span class="string">&quot;*&quot;</span>)</span><br><span class="line">                .exposedHeaders(<span class="string">&quot;*&quot;</span>);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<h2 id="3-使用注解-局部跨域"><a href="#3-使用注解-局部跨域" class="headerlink" title="3. 使用注解 (局部跨域)"></a>3. 使用注解 (局部跨域)</h2><p>在控制器(类上)上使用注解 <code>@CrossOrigin:</code>，表示该类的所有方法允许跨域。</p>
+<h2 id="2-重写-webmvcconfigurer全局跨域"><a class="markdownIt-Anchor" href="#2-重写-webmvcconfigurer全局跨域">#</a> 2. 重写  <code>WebMvcConfigurer</code>  (全局跨域)</h2>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">@Configuration</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">CorsConfig</span> <span class="keyword">implements</span> <span class="title">WebMvcConfigurer</span> </span>&#123;</span><br><span class="line">    <span class="meta">@Override</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">addCorsMappings</span><span class="params">(CorsRegistry registry)</span> </span>&#123;</span><br><span class="line">        registry.addMapping(<span class="string">&quot;/**&quot;</span>)</span><br><span class="line">                <span class="comment">//是否发送Cookie</span></span><br><span class="line">                .allowCredentials(<span class="keyword">true</span>)</span><br><span class="line">                <span class="comment">//放行哪些原始域</span></span><br><span class="line">                .allowedOrigins(<span class="string">&quot;*&quot;</span>)</span><br><span class="line">                .allowedMethods(<span class="keyword">new</span> String[]&#123;<span class="string">&quot;GET&quot;</span>, <span class="string">&quot;POST&quot;</span>, <span class="string">&quot;PUT&quot;</span>, <span class="string">&quot;DELETE&quot;</span>&#125;)</span><br><span class="line">                .allowedHeaders(<span class="string">&quot;*&quot;</span>)</span><br><span class="line">                .exposedHeaders(<span class="string">&quot;*&quot;</span>);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h2 id="3-使用注解-局部跨域"><a class="markdownIt-Anchor" href="#3-使用注解-局部跨域">#</a> 3. 使用注解 (局部跨域)</h2>
+<p>在控制器 (类上) 上使用注解  <code>@CrossOrigin:</code> ，表示该类的所有方法允许跨域。</p>
 <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">@RestController</span></span><br><span class="line"><span class="meta">@CrossOrigin(origins = &quot;*&quot;)</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">HelloController</span> </span>&#123;</span><br><span class="line">    <span class="meta">@RequestMapping(&quot;/hello&quot;)</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> String <span class="title">hello</span><span class="params">()</span> </span>&#123;</span><br><span class="line">        <span class="keyword">return</span> <span class="string">&quot;hello world&quot;</span>;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<p>在方法上使用注解 <code>@CrossOrigin</code>:</p>
+<p>在方法上使用注解  <code>@CrossOrigin</code> :</p>
 <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">@RequestMapping(&quot;/hello&quot;)</span></span><br><span class="line">    <span class="meta">@CrossOrigin(origins = &quot;*&quot;)</span></span><br><span class="line">     <span class="comment">//@CrossOrigin(value = &quot;http://localhost:8081&quot;) //指定具体ip允许跨域</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> String <span class="title">hello</span><span class="params">()</span> </span>&#123;</span><br><span class="line">        <span class="keyword">return</span> <span class="string">&quot;hello world&quot;</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<h2 id="4-手动设置响应头-局部跨域"><a href="#4-手动设置响应头-局部跨域" class="headerlink" title="4. 手动设置响应头(局部跨域)"></a>4. 手动设置响应头(局部跨域)</h2><p>使用 <code>HttpServletResponse</code> 对象添加响应头<code>(Access-Control-Allow-Origin)</code>来授权原始域，这里 <code>Origin</code>的值也可以设置为<code> “*”</code>,表示全部放行。</p>
+<h2 id="4-手动设置响应头局部跨域"><a class="markdownIt-Anchor" href="#4-手动设置响应头局部跨域">#</a> 4. 手动设置响应头 (局部跨域)</h2>
+<p>使用  <code>HttpServletResponse</code>  对象添加响应头 <code>(Access-Control-Allow-Origin)</code>  来授权原始域，这里  <code>Origin</code>  的值也可以设置为 <code> “*”</code> , 表示全部放行。</p>
 <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">@RequestMapping(&quot;/index&quot;)</span></span><br><span class="line"><span class="function"><span class="keyword">public</span> String <span class="title">index</span><span class="params">(HttpServletResponse response)</span> </span>&#123;</span><br><span class="line">    response.addHeader(<span class="string">&quot;Access-Allow-Control-Origin&quot;</span>,<span class="string">&quot;*&quot;</span>);</span><br><span class="line">    <span class="keyword">return</span> <span class="string">&quot;index&quot;</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<h2 id="5-使用自定义filter实现跨域"><a href="#5-使用自定义filter实现跨域" class="headerlink" title="5. 使用自定义filter实现跨域"></a>5. 使用自定义<code>filter</code>实现跨域</h2><p>首先编写一个过滤器，可以起名字为<code>MyCorsFilter.java</code></p>
+<h2 id="5-使用自定义filter实现跨域"><a class="markdownIt-Anchor" href="#5-使用自定义filter实现跨域">#</a> 5. 使用自定义 <code>filter</code>  实现跨域</h2>
+<p>首先编写一个过滤器，可以起名字为 <code>MyCorsFilter.java</code></p>
 <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">package</span> com.mesnac.aop;</span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> java.io.IOException;</span><br><span class="line"><span class="keyword">import</span> javax.servlet.Filter;</span><br><span class="line"><span class="keyword">import</span> javax.servlet.FilterChain;</span><br><span class="line"><span class="keyword">import</span> javax.servlet.FilterConfig;</span><br><span class="line"><span class="keyword">import</span> javax.servlet.ServletException;</span><br><span class="line"><span class="keyword">import</span> javax.servlet.ServletRequest;</span><br><span class="line"><span class="keyword">import</span> javax.servlet.ServletResponse;</span><br><span class="line"><span class="keyword">import</span> javax.servlet.http.HttpServletResponse;</span><br><span class="line"><span class="keyword">import</span> org.springframework.stereotype.Component;</span><br><span class="line"><span class="meta">@Component</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">MyCorsFilter</span> <span class="keyword">implements</span> <span class="title">Filter</span> </span>&#123;</span><br><span class="line">  <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">doFilter</span><span class="params">(ServletRequest req, ServletResponse res, FilterChain chain)</span> <span class="keyword">throws</span> IOException, ServletException </span>&#123;</span><br><span class="line">    HttpServletResponse response = (HttpServletResponse) res;</span><br><span class="line">    response.setHeader(<span class="string">&quot;Access-Control-Allow-Origin&quot;</span>, <span class="string">&quot;*&quot;</span>);</span><br><span class="line">    response.setHeader(<span class="string">&quot;Access-Control-Allow-Methods&quot;</span>, <span class="string">&quot;POST, GET, OPTIONS, DELETE&quot;</span>);</span><br><span class="line">    response.setHeader(<span class="string">&quot;Access-Control-Max-Age&quot;</span>, <span class="string">&quot;3600&quot;</span>);</span><br><span class="line">    response.setHeader(<span class="string">&quot;Access-Control-Allow-Headers&quot;</span>, <span class="string">&quot;x-requested-with,content-type&quot;</span>);</span><br><span class="line">    chain.doFilter(req, res);</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">init</span><span class="params">(FilterConfig filterConfig)</span> </span>&#123;&#125;</span><br><span class="line">  <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">destroy</span><span class="params">()</span> </span>&#123;&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<p>在<code>web.xml</code>中配置这个过滤器，使其生效</p>
+<p>在 <code>web.xml</code>  中配置这个过滤器，使其生效</p>
 <figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">&lt;!-- 跨域访问 START--&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">filter</span>&gt;</span></span><br><span class="line"> <span class="tag">&lt;<span class="name">filter-name</span>&gt;</span>CorsFilter<span class="tag">&lt;/<span class="name">filter-name</span>&gt;</span></span><br><span class="line"> <span class="tag">&lt;<span class="name">filter-class</span>&gt;</span>com.mesnac.aop.MyCorsFilter<span class="tag">&lt;/<span class="name">filter-class</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">filter</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">filter-mapping</span>&gt;</span></span><br><span class="line"> <span class="tag">&lt;<span class="name">filter-name</span>&gt;</span>CorsFilter<span class="tag">&lt;/<span class="name">filter-name</span>&gt;</span></span><br><span class="line"> <span class="tag">&lt;<span class="name">url-pattern</span>&gt;</span>/*<span class="tag">&lt;/<span class="name">url-pattern</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">filter-mapping</span>&gt;</span></span><br><span class="line"><span class="comment">&lt;!-- 跨域访问 END  --&gt;</span></span><br></pre></td></tr></table></figure>
 
-
-
-
-
-
-
-
       <div class="tags">
-          <a href="/blog/tags/Java/" rel="tag"><i class="ic i-tag"></i> Java</a>
-          <a href="/blog/tags/SpringBoot/" rel="tag"><i class="ic i-tag"></i> SpringBoot</a>
+          <a href="/tags/Java/" rel="tag"><i class="ic i-tag"></i> Java</a>
+          <a href="/tags/SpringBoot/" rel="tag"><i class="ic i-tag"></i> SpringBoot</a>
       </div>
   </div>
 
@@ -273,7 +270,7 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
     <div class="item left">
       
 
-  <a href="/blog/posts/c112412d/" itemprop="url" rel="prev" data-background-image="https:&#x2F;&#x2F;tva2.sinaimg.cn&#x2F;mw690&#x2F;6833939bly1giclhtuo6nj20zk0m8ttm.jpg" title="Mybatis封装成Map结果">
+  <a href="/posts/c112412d/" itemprop="url" rel="prev" data-background-image="https:&#x2F;&#x2F;tva1.sinaimg.cn&#x2F;mw690&#x2F;6833939bly1gipey84bjtj20zk0m8hdt.jpg" title="Mybatis封装成Map结果">
   <span class="type">Previous Post</span>
   <span class="category"><i class="ic i-flag"></i> SpringBoot</span>
   <h3>Mybatis封装成Map结果</h3>
@@ -283,7 +280,7 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
     <div class="item right">
       
 
-  <a href="/blog/posts/8b8fedea/" itemprop="url" rel="next" data-background-image="https:&#x2F;&#x2F;tva2.sinaimg.cn&#x2F;mw690&#x2F;6833939bly1giclwuom7cj20zk0m8dvn.jpg" title="Stream流的介绍">
+  <a href="/posts/8b8fedea/" itemprop="url" rel="next" data-background-image="https:&#x2F;&#x2F;tva1.sinaimg.cn&#x2F;mw690&#x2F;6833939bly1gipesrnqv3j20zk0m8ava.jpg" title="Stream流的介绍">
   <span class="type">Next Post</span>
   <span class="category"><i class="ic i-flag"></i> Stream</span>
   <h3>Stream流的介绍</h3>
@@ -305,36 +302,36 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
   <div class="panels">
     <div class="inner">
       <div class="contents panel pjax" data-title="Contents">
-          <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#SpringBoot%E4%B8%AD%E5%B8%B8%E8%A7%81%E7%9A%84%E5%87%A0%E7%A7%8D%E8%A7%A3%E5%86%B3%E8%B7%A8%E5%9F%9F%E7%9A%84%E6%96%B9%E5%BC%8F"><span class="toc-number">1.</span> <span class="toc-text">SpringBoot中常见的几种解决跨域的方式</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%B8%80%E3%80%81%E4%B8%BA%E4%BB%80%E4%B9%88%E4%BC%9A%E5%87%BA%E7%8E%B0%E8%B7%A8%E5%9F%9F%E9%97%AE%E9%A2%98"><span class="toc-number">1.1.</span> <span class="toc-text">一、为什么会出现跨域问题</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BA%8C%E3%80%81%E4%BB%80%E4%B9%88%E6%98%AF%E8%B7%A8%E5%9F%9F"><span class="toc-number">1.2.</span> <span class="toc-text">二、什么是跨域</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%B8%89%E3%80%81%E9%9D%9E%E5%90%8C%E6%BA%90%E9%99%90%E5%88%B6"><span class="toc-number">1.3.</span> <span class="toc-text">三、非同源限制</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%9B%9B%E3%80%81java-%E5%90%8E%E7%AB%AF-%E5%AE%9E%E7%8E%B0-CORS-%E8%B7%A8%E5%9F%9F%E8%AF%B7%E6%B1%82%E7%9A%84%E6%96%B9%E5%BC%8F"><span class="toc-number">1.4.</span> <span class="toc-text">四、java 后端 实现 CORS 跨域请求的方式</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#1-%E8%BF%94%E5%9B%9E%E6%96%B0%E7%9A%84-CorsFilter-%E5%85%A8%E5%B1%80%E8%B7%A8%E5%9F%9F"><span class="toc-number">1.5.</span> <span class="toc-text">1.返回新的 CorsFilter(全局跨域)</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2-%E9%87%8D%E5%86%99-WebMvcConfigurer-%E5%85%A8%E5%B1%80%E8%B7%A8%E5%9F%9F"><span class="toc-number">1.6.</span> <span class="toc-text">2. 重写 WebMvcConfigurer(全局跨域)</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#3-%E4%BD%BF%E7%94%A8%E6%B3%A8%E8%A7%A3-%E5%B1%80%E9%83%A8%E8%B7%A8%E5%9F%9F"><span class="toc-number">1.7.</span> <span class="toc-text">3. 使用注解 (局部跨域)</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#4-%E6%89%8B%E5%8A%A8%E8%AE%BE%E7%BD%AE%E5%93%8D%E5%BA%94%E5%A4%B4-%E5%B1%80%E9%83%A8%E8%B7%A8%E5%9F%9F"><span class="toc-number">1.8.</span> <span class="toc-text">4. 手动设置响应头(局部跨域)</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#5-%E4%BD%BF%E7%94%A8%E8%87%AA%E5%AE%9A%E4%B9%89filter%E5%AE%9E%E7%8E%B0%E8%B7%A8%E5%9F%9F"><span class="toc-number">1.9.</span> <span class="toc-text">5. 使用自定义filter实现跨域</span></a></li></ol></li></ol>
+          <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#springboot%E4%B8%AD%E5%B8%B8%E8%A7%81%E7%9A%84%E5%87%A0%E7%A7%8D%E8%A7%A3%E5%86%B3%E8%B7%A8%E5%9F%9F%E7%9A%84%E6%96%B9%E5%BC%8F"><span class="toc-number">1.</span> <span class="toc-text">  SpringBoot  中常见的几种解决跨域的方式</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%B8%80-%E4%B8%BA%E4%BB%80%E4%B9%88%E4%BC%9A%E5%87%BA%E7%8E%B0%E8%B7%A8%E5%9F%9F%E9%97%AE%E9%A2%98"><span class="toc-number">1.1.</span> <span class="toc-text"> 一、为什么会出现跨域问题</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BA%8C-%E4%BB%80%E4%B9%88%E6%98%AF%E8%B7%A8%E5%9F%9F"><span class="toc-number">1.2.</span> <span class="toc-text"> 二、什么是跨域</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%B8%89-%E9%9D%9E%E5%90%8C%E6%BA%90%E9%99%90%E5%88%B6"><span class="toc-number">1.3.</span> <span class="toc-text"> 三、非同源限制</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%9B%9B-java-%E5%90%8E%E7%AB%AF-%E5%AE%9E%E7%8E%B0-cors-%E8%B7%A8%E5%9F%9F%E8%AF%B7%E6%B1%82%E7%9A%84%E6%96%B9%E5%BC%8F"><span class="toc-number">1.4.</span> <span class="toc-text"> 四、 java  后端 实现  CORS  跨域请求的方式</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#1%E8%BF%94%E5%9B%9E%E6%96%B0%E7%9A%84-corsfilter%E5%85%A8%E5%B1%80%E8%B7%A8%E5%9F%9F"><span class="toc-number">1.5.</span> <span class="toc-text"> 1. 返回新的  CorsFilter  (全局跨域)</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2-%E9%87%8D%E5%86%99-webmvcconfigurer%E5%85%A8%E5%B1%80%E8%B7%A8%E5%9F%9F"><span class="toc-number">1.6.</span> <span class="toc-text"> 2. 重写  WebMvcConfigurer  (全局跨域)</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#3-%E4%BD%BF%E7%94%A8%E6%B3%A8%E8%A7%A3-%E5%B1%80%E9%83%A8%E8%B7%A8%E5%9F%9F"><span class="toc-number">1.7.</span> <span class="toc-text"> 3. 使用注解 (局部跨域)</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#4-%E6%89%8B%E5%8A%A8%E8%AE%BE%E7%BD%AE%E5%93%8D%E5%BA%94%E5%A4%B4%E5%B1%80%E9%83%A8%E8%B7%A8%E5%9F%9F"><span class="toc-number">1.8.</span> <span class="toc-text"> 4. 手动设置响应头 (局部跨域)</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#5-%E4%BD%BF%E7%94%A8%E8%87%AA%E5%AE%9A%E4%B9%89filter%E5%AE%9E%E7%8E%B0%E8%B7%A8%E5%9F%9F"><span class="toc-number">1.9.</span> <span class="toc-text"> 5. 使用自定义 filter  实现跨域</span></a></li></ol></li></ol>
       </div>
       <div class="related panel pjax" data-title="Related">
         <ul>
-          <li class="active"><a href="/blog/posts/a3dfcd98/" rel="bookmark" title="SpringBoot中常见的几种解决跨域的方式">SpringBoot中常见的几种解决跨域的方式</a></li>
+          <li class="active"><a href="/posts/a3dfcd98/" rel="bookmark" title="SpringBoot中常见的几种解决跨域的方式">SpringBoot中常见的几种解决跨域的方式</a></li>
         </ul>
       </div>
       <div class="overview panel" data-title="Overview">
         <div class="author" itemprop="author" itemscope itemtype="http://schema.org/Person">
   <img class="image" itemprop="image" alt="JIN Mao"
-      data-src="/blog/images/avatar.png">
+      data-src="/images/avatar.png">
   <p class="name" itemprop="name">JIN Mao</p>
   <div class="description" itemprop="description"></div>
 </div>
 
 <nav class="state">
     <div class="item posts">
-      <a href="/blog/archives/">
+      <a href="/archives/">
         <span class="count">150</span>
         <span class="name">posts</span>
       </a>
     </div>
     <div class="item categories">
-      <a href="/blog/categories/">
+      <a href="/categories/">
         <span class="count">78</span>
         <span class="name">categories</span>
       </a>
     </div>
     <div class="item tags">
-      <a href="/blog/tags/">
+      <a href="/tags/">
         <span class="count">113</span>
         <span class="name">tags</span>
       </a>
@@ -349,12 +346,12 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
   
     
   <li class="item">
-    <a href="/blog/" rel="section"><i class="ic i-home"></i>Home</a>
+    <a href="/" rel="section"><i class="ic i-home"></i>Home</a>
   </li>
 
     
   <li class="item">
-    <a href="/blog/about/" rel="section"><i class="ic i-user"></i>About</a>
+    <a href="/about/" rel="section"><i class="ic i-user"></i>About</a>
   </li>
 
         
@@ -364,17 +361,17 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
 
         
   <li class="item">
-    <a href="/blog/archives/" rel="section"><i class="ic i-list-alt"></i>Archives</a>
+    <a href="/archives/" rel="section"><i class="ic i-list-alt"></i>Archives</a>
   </li>
 
         
   <li class="item">
-    <a href="/blog/categories/" rel="section"><i class="ic i-th"></i>Categories</a>
+    <a href="/categories/" rel="section"><i class="ic i-th"></i>Categories</a>
   </li>
 
         
   <li class="item">
-    <a href="/blog/tags/" rel="section"><i class="ic i-tags"></i>Tags</a>
+    <a href="/tags/" rel="section"><i class="ic i-tags"></i>Tags</a>
   </li>
 
   </ul>
@@ -387,12 +384,12 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
 
   <ul id="quick">
     <li class="prev pjax">
-        <a href="/blog/posts/c112412d/" rel="prev" title="Previous Post"><i class="ic i-chevron-left"></i></a>
+        <a href="/posts/c112412d/" rel="prev" title="Previous Post"><i class="ic i-chevron-left"></i></a>
     </li>
     <li class="up"><i class="ic i-arrow-up"></i></li>
     <li class="down"><i class="ic i-arrow-down"></i></li>
     <li class="next pjax">
-        <a href="/blog/posts/8b8fedea/" rel="next" title="Next Post"><i class="ic i-chevron-right"></i></a>
+        <a href="/posts/8b8fedea/" rel="next" title="Next Post"><i class="ic i-chevron-right"></i></a>
     </li>
     <li class="percent"></li>
   </ul>
@@ -414,100 +411,108 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
   <li class="item">
     
 <div class="breadcrumb">
-<a href="/blog/categories/Java%E9%9D%A2%E8%AF%95/" title="In Java面试">Java面试</a>
+<a href="/categories/Java/" title="In Java">Java</a>
+</div>
+
+    <span><a href="/posts/b536fa7f/" title="关于junit测试类防止事务回滚">关于junit测试类防止事务回滚</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/Java/" title="In Java">Java</a>
+</div>
+
+    <span><a href="/posts/e18abc1d/" title="关于YAML中List存放Map">关于YAML中List存放Map</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/Java%E9%9D%A2%E8%AF%95/" title="In Java面试">Java面试</a>
+</div>
+
+    <span><a href="/posts/feb84842/" title="Java面试必问--ArrayList的底层">Java面试必问--ArrayList的底层</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+</div>
+
+    <span><a href="/posts/a72f470b/" title="关于JVM常用参数">关于JVM常用参数</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/Docker/" title="In Docker">Docker</a>
+</div>
+
+    <span><a href="/posts/e2b12017/" title="Dokcer镜像推送到DockerHub">Dokcer镜像推送到DockerHub</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+</div>
+
+    <span><a href="/posts/7874a051/" title="Nginx踩坑之解决前后端跨域">Nginx踩坑之解决前后端跨域</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/Java/" title="In Java">Java</a>
 <i class="ic i-angle-right"></i>
-<a href="/blog/categories/Java%E9%9D%A2%E8%AF%95/SpringBoot/" title="In SpringBoot">SpringBoot</a>
+<a href="/categories/Java/Tools/" title="In Tools">Tools</a>
 </div>
 
-    <span><a href="/blog/posts/20ac1950/" title="SpringBoot文件上传下载">SpringBoot文件上传下载</a></span>
+    <span><a href="/posts/13370746/" title="使用EasyExcel读取excel文件为Java实体类">使用EasyExcel读取excel文件为Java实体类</a></span>
   </li>
 
       
   <li class="item">
     
 <div class="breadcrumb">
-<a href="/blog/categories/Java/" title="In Java">Java</a>
+<a href="/categories/Java/" title="In Java">Java</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/Java/Stream/" title="In Stream">Stream</a>
 </div>
 
-    <span><a href="/blog/posts/9dcbb5fa/" title="Corn表达式">Corn表达式</a></span>
+    <span><a href="/posts/b1231c9f/" title="java stream中Collectors的用法">java stream中Collectors的用法</a></span>
   </li>
 
       
   <li class="item">
     
 <div class="breadcrumb">
-<a href="/blog/categories/Java/" title="In Java">Java</a>
+<a href="/categories/Java/" title="In Java">Java</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/Java/Java%E9%9D%A2%E8%AF%95/" title="In Java面试">Java面试</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/Java/Java%E9%9D%A2%E8%AF%95/SpringBoot/" title="In SpringBoot">SpringBoot</a>
 </div>
 
-    <span><a href="/blog/posts/b536fa7f/" title="关于junit测试类防止事务回滚">关于junit测试类防止事务回滚</a></span>
+    <span><a href="/posts/5e7baeeb/" title="过滤器和拦截器的区别">过滤器和拦截器的区别</a></span>
   </li>
 
       
   <li class="item">
     
 <div class="breadcrumb">
-<a href="/blog/categories/git/" title="In git">git</a>
+<a href="/categories/Java%E9%9D%A2%E8%AF%95/" title="In Java面试">Java面试</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/Java%E9%9D%A2%E8%AF%95/%E7%AE%97%E6%B3%95/" title="In 算法">算法</a>
 </div>
 
-    <span><a href="/blog/posts/2543b551/" title="git项目中统计每个人提交代码行数">git项目中统计每个人提交代码行数</a></span>
-  </li>
-
-      
-  <li class="item">
-    
-<div class="breadcrumb">
-<a href="/blog/categories/Java/" title="In Java">Java</a>
-</div>
-
-    <span><a href="/blog/posts/bd76a990/" title="一图看懂Java中的PO,BO,VO,DTO,POJO,DAO,DO">一图看懂Java中的PO,BO,VO,DTO,POJO,DAO,DO</a></span>
-  </li>
-
-      
-  <li class="item">
-    
-<div class="breadcrumb">
-<a href="/blog/categories/Java/" title="In Java">Java</a>
-</div>
-
-    <span><a href="/blog/posts/a54ed4b0/" title="Java通过URL下载资源">Java通过URL下载资源</a></span>
-  </li>
-
-      
-  <li class="item">
-    
-<div class="breadcrumb">
-</div>
-
-    <span><a href="/blog/posts/d0edc1ed/" title="Linux常用命令">Linux常用命令</a></span>
-  </li>
-
-      
-  <li class="item">
-    
-<div class="breadcrumb">
-<a href="/blog/categories/Java/" title="In Java">Java</a>
-</div>
-
-    <span><a href="/blog/posts/e18abc1d/" title="关于YAML中List存放Map">关于YAML中List存放Map</a></span>
-  </li>
-
-      
-  <li class="item">
-    
-<div class="breadcrumb">
-<a href="/blog/categories/DDD/" title="In DDD">DDD</a>
-</div>
-
-    <span><a href="/blog/posts/3fec5852/" title="DDD领域驱动设计">DDD领域驱动设计</a></span>
-  </li>
-
-      
-  <li class="item">
-    
-<div class="breadcrumb">
-</div>
-
-    <span><a href="/blog/posts/7874a051/" title="Nginx踩坑之解决前后端跨域">Nginx踩坑之解决前后端跨域</a></span>
+    <span><a href="/posts/a4ce31d2/" title="贪心算法">贪心算法</a></span>
   </li>
 
   </ul>
@@ -532,13 +537,13 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
     <span class="post-meta-item-icon">
       <i class="ic i-chart-area"></i>
     </span>
-    <span title="Symbols count total">684k words</span>
+    <span title="Symbols count total">657k words</span>
 
     <span class="post-meta-divider">|</span>
     <span class="post-meta-item-icon">
       <i class="ic i-coffee"></i>
     </span>
-    <span title="Reading time total">10:22</span>
+    <span title="Reading time total">9:57</span>
   </div>
 </div>
 
@@ -574,7 +579,7 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
 
 <script src="//cdn.jsdelivr.net/combine/npm/pace-js@1.0.2/pace.min.js,npm/pjax@0.2.8/pjax.min.js,npm/whatwg-fetch@3.4.0/dist/fetch.umd.min.js,npm/animejs@3.2.0/lib/anime.min.js,npm/algoliasearch@4/dist/algoliasearch-lite.umd.js,npm/instantsearch.js@4/dist/instantsearch.production.min.js,npm/lozad@1/dist/lozad.min.js,npm/quicklink@2/dist/quicklink.umd.js"></script>
 
-<script src="/blog/js/app.js?v=0.2.5"></script>
+<script src="/js/app.js?v=0.2.5"></script>
 
 
 

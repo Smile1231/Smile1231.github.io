@@ -21,7 +21,7 @@
 
 <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Mulish:300,300italic,400,400italic,700,700italic%7CFredericka%20the%20Great:300,300italic,400,400italic,700,700italic%7CNoto%20Serif%20JP:300,300italic,400,400italic,700,700italic%7CNoto%20Serif%20SC:300,300italic,400,400italic,700,700italic%7CInconsolata:300,300italic,400,400italic,700,700italic&display=swap&subset=latin,latin-ext">
 
-<link rel="stylesheet" href="/blog/css/app.css?v=0.2.5">
+<link rel="stylesheet" href="/css/app.css?v=0.2.5">
 
   
   <meta name="keywords" content="Java 面试,数据结构,阻塞队列" />
@@ -101,7 +101,7 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
       </div>
     </div>
     <ul class="menu">
-      <li class="item title"><a href="/blog/" rel="start">Jin Mao when to get rich ?</a></li>
+      <li class="item title"><a href="/" rel="start">Jin Mao when to get rich ?</a></li>
     </ul>
     <ul class="right">
       <li class="item theme">
@@ -117,12 +117,12 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
       </div>
       <div id="imgs" class="pjax">
         <ul>
-          <li class="item" data-background-image="https://tva2.sinaimg.cn/large/6833939bly1giciundwu5j20zk0m8n9e.jpg"></li>
-          <li class="item" data-background-image="https://tva2.sinaimg.cn/large/6833939bly1giclg5ms2rj20zk0m8u0x.jpg"></li>
-          <li class="item" data-background-image="https://tva2.sinaimg.cn/large/6833939bly1giclwuom7cj20zk0m8dvn.jpg"></li>
-          <li class="item" data-background-image="https://tva2.sinaimg.cn/large/6833939bly1giciusoyjnj219g0u0x56.jpg"></li>
-          <li class="item" data-background-image="https://tva2.sinaimg.cn/large/6833939bly1gipew8gmvyj20zk0m87wh.jpg"></li>
-          <li class="item" data-background-image="https://tva2.sinaimg.cn/large/6833939bly1gicitf0kl1j20zk0m87fe.jpg"></li>
+          <li class="item" data-background-image="https://tva1.sinaimg.cn/large/6833939bly1giclil3m4ej20zk0m8tn8.jpg"></li>
+          <li class="item" data-background-image="https://tva1.sinaimg.cn/large/6833939bly1giclxp31goj20zk0m8qv5.jpg"></li>
+          <li class="item" data-background-image="https://tva1.sinaimg.cn/large/6833939bly1gicitcxhpij20zk0m8hdt.jpg"></li>
+          <li class="item" data-background-image="https://tva1.sinaimg.cn/large/6833939bly1giciuv0socj20zk0m8qes.jpg"></li>
+          <li class="item" data-background-image="https://tva1.sinaimg.cn/large/6833939bly1gicm0n457cj20zk0m8e81.jpg"></li>
+          <li class="item" data-background-image="https://tva1.sinaimg.cn/large/6833939bly1giclj61ylzj20zk0m8b29.jpg"></li>
         </ul>
       </div>
     </header>
@@ -147,14 +147,14 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
     
 <div class="breadcrumb" itemscope itemtype="https://schema.org/BreadcrumbList">
 <i class="ic i-home"></i>
-<span><a href="/blog/">Home</a></span>
+<span><a href="/">Home</a></span>
 </div>
 
     <article itemscope itemtype="http://schema.org/Article" class="post block" lang="en">
   <link itemprop="mainEntityOfPage" href="https://smile1231.github.io/posts/159c6098/">
 
   <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-    <meta itemprop="image" content="/blog/images/avatar.png">
+    <meta itemprop="image" content="/images/avatar.png">
     <meta itemprop="name" content="JIN Mao">
     <meta itemprop="description" content="got windy(起风了), ">
   </span>
@@ -166,34 +166,33 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
   <div class="body md" itemprop="articleBody">
     
 
-    <h2 id="阻塞队列接口结构和实现类"><a href="#阻塞队列接口结构和实现类" class="headerlink" title="阻塞队列接口结构和实现类"></a>阻塞队列接口结构和实现类</h2><p><strong>阻塞队列</strong>，顾名思义，首先它是一个队列，而一个阻塞队列在数据结构中所起的作用大致如下图所示：</p>
-<img data-src="/blog/posts/159c6098/2022-03-13-16-33-09.png" class="">
-
+    <h2 id="阻塞队列接口结构和实现类"><a class="markdownIt-Anchor" href="#阻塞队列接口结构和实现类">#</a> 阻塞队列接口结构和实现类</h2>
+<p><strong>阻塞队列</strong>，顾名思义，首先它是一个队列，而一个阻塞队列在数据结构中所起的作用大致如下图所示：</p>
+<img data-src="/posts/159c6098/2022-03-13-16-33-09.png" class="">
 <span id="more"></span>
-
-<p>线程1往阻塞队列中添加元素，而线程2从阻塞队列中移除元素。</p>
+<p>线程 1 往阻塞队列中添加元素，而线程 2 从阻塞队列中移除元素。</p>
 <p>当阻塞队列是空时，从队列中获取元素的操作将会被阻塞。</p>
 <p>当阻塞队列是满时，往队列里添加元素的操作将会被阻塞。</p>
 <p>试图从空的阻塞队列中获取元素的线程将会被阻塞，直到其他的线程往空的队列插入新的元素。</p>
 <p>同样试图往已满的阻塞队列中添加新元素的线程同样也会被阻塞，直到其他的线程从列中移除一个或者多个元素或者完全清空队列后使队列重新变得空闲起来并后续新增</p>
 <p><strong>为什么用？有什么好处？</strong></p>
 <p>在多线程领域：所谓阻塞，在某些情况下余挂起线程（即阻塞），一旦条件满足，被挂起的线程又会自动被唤醒</p>
-<p>为什么需要<code>BlockingQueue</code><br>好处是我们不需要关心什么时候需要阻塞线程，什么时候需要唤醒线程，因为这一切<code>BlockingQueue</code>都给你一手包办了</p>
-<p>在<code>Concurrent</code>包发布以前，在多线程环境下，我们每个程序员都必须去自己控制这些细节，尤其还要兼顾效率和线程安全，而这会给我们的程序带来不小的复杂度。</p>
+<p>为什么需要 <code>BlockingQueue</code> <br>
+ 好处是我们不需要关心什么时候需要阻塞线程，什么时候需要唤醒线程，因为这一切 <code>BlockingQueue</code>  都给你一手包办了</p>
+<p>在 <code>Concurrent</code>  包发布以前，在多线程环境下，我们每个程序员都必须去自己控制这些细节，尤其还要兼顾效率和线程安全，而这会给我们的程序带来不小的复杂度。</p>
 <p>架构介绍</p>
-<img data-src="/blog/posts/159c6098/2022-03-13-16-39-46.png" class="">
-
+<img data-src="/posts/159c6098/2022-03-13-16-39-46.png" class="">
 <p>种类分析：</p>
 <ul>
-<li><code>ArrayBlockingQueue</code>：由数组结构组成的有界阻塞队列。</li>
-<li><code>LinkedBlockingQueue</code>：由链表结构组成的有界（但大小默认值为<code>Integer.MAX_VALUE</code>）阻塞队列。</li>
-<li><code>PriorityBlockingQueue</code>：支持优先级排序的无界阻塞队列。</li>
-<li><code>DelayQueue</code>：使用优先级队列实现妁延迟无界阻塞队列。</li>
-<li><code>SynchronousQueue</code>：不存储元素的阻塞队列。</li>
-<li><code>LinkedTransferQueue</code>：由链表结构绒成的无界阻塞队列。</li>
-<li><code>LinkedBlockingDeque</code>：由链表结构组成的双向阻塞队列。</li>
+<li><code>ArrayBlockingQueue</code> ：由数组结构组成的有界阻塞队列。</li>
+<li><code>LinkedBlockingQueue</code> ：由链表结构组成的有界（但大小默认值为 <code>Integer.MAX_VALUE</code> ）阻塞队列。</li>
+<li><code>PriorityBlockingQueue</code> ：支持优先级排序的无界阻塞队列。</li>
+<li><code>DelayQueue</code> ：使用优先级队列实现妁延迟无界阻塞队列。</li>
+<li><code>SynchronousQueue</code> ：不存储元素的阻塞队列。</li>
+<li><code>LinkedTransferQueue</code> ：由链表结构绒成的无界阻塞队列。</li>
+<li><code>LinkedBlockingDeque</code> ：由链表结构组成的双向阻塞队列。</li>
 </ul>
-<p><strong><code>BlockingQueue</code>的核心方法</strong></p>
+<p><strong> <code>BlockingQueue</code>  的核心方法</strong></p>
 <table>
 <thead>
 <tr>
@@ -204,7 +203,8 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
 <th>超时</th>
 </tr>
 </thead>
-<tbody><tr>
+<tbody>
+<tr>
 <td>插入</td>
 <td>add(e)</td>
 <td>offer(e)</td>
@@ -225,36 +225,41 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
 <td>不可用</td>
 <td>不可用</td>
 </tr>
-</tbody></table>
-<table>
-<thead>
+</tbody>
+<tbody>
 <tr>
-<th>性质</th>
-<th>说明</th>
+<td>性质</td>
+<td>说明</td>
 </tr>
-</thead>
-<tbody><tr>
+<tr>
+<td>----</td>
+<td>—</td>
+</tr>
+<tr>
 <td>抛出异常</td>
-<td>当阻塞队列满时：在往队列中add插入元素会抛出 IIIegalStateException：Queue full    当阻塞队列空时：再往队列中remove移除元素，会抛出NoSuchException</td>
+<td>当阻塞队列满时：在往队列中 add 插入元素会抛出 IIIegalStateException：Queue full    当阻塞队列空时：再往队列中 remove 移除元素，会抛出 NoSuchException</td>
 </tr>
 <tr>
 <td>特殊性</td>
-<td>插入方法，成功true，失败false  移除方法：成功返回出队列元素，队列没有就返回空</td>
+<td>插入方法，成功 true，失败 false  移除方法：成功返回出队列元素，队列没有就返回空</td>
 </tr>
 <tr>
 <td>一直阻塞</td>
-<td>当阻塞队列满时，生产者继续往队列里put元素，队列会一直阻塞生产线程直到put数据or响应中断退出。  当阻塞队列空时，消费者线程试图从队列里take元素，队列会一直阻塞消费者线程直到队列可用。</td>
+<td>当阻塞队列满时，生产者继续往队列里 put 元素，队列会一直阻塞生产线程直到 put 数据 or 响应中断退出。  当阻塞队列空时，消费者线程试图从队列里 take 元素，队列会一直阻塞消费者线程直到队列可用。</td>
 </tr>
 <tr>
 <td>超时退出</td>
 <td>当阻塞队列满时，队里会阻塞生产者线程一定时间，超过限时后生产者线程会退出</td>
 </tr>
-</tbody></table>
-<h2 id="线程通信之生产者消费者传统"><a href="#线程通信之生产者消费者传统" class="headerlink" title="线程通信之生产者消费者传统"></a>线程通信之生产者消费者传统</h2><p>阻塞队列用在哪里？</p>
+</tbody>
+</table>
+<h2 id="线程通信之生产者消费者传统"><a class="markdownIt-Anchor" href="#线程通信之生产者消费者传统">#</a> 线程通信之生产者消费者传统</h2>
+<p>阻塞队列用在哪里？</p>
 <ul>
-<li>生产者消费者模式<ul>
-<li>传统版（<code>synchronized, wait, notify</code>）</li>
-<li>阻塞队列版（<code>lock, await, signal</code>）</li>
+<li>生产者消费者模式
+<ul>
+<li>传统版（ <code>synchronized, wait, notify</code> ）</li>
+<li>阻塞队列版（ <code>lock, await, signal</code> ）</li>
 </ul>
 </li>
 <li>线程池</li>
@@ -262,73 +267,68 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
 </ul>
 <p>实现一个简单的生产者消费者模式</p>
 <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">ShareData</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">private</span> <span class="keyword">int</span> number = <span class="number">0</span>;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">private</span> Lock lock = <span class="keyword">new</span> ReentrantLock();</span><br><span class="line"></span><br><span class="line">    <span class="keyword">private</span> Condition condition = lock.newCondition();</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">increment</span><span class="params">()</span> <span class="keyword">throws</span> Exception</span>&#123;</span><br><span class="line">        <span class="comment">// 同步代码块，加锁</span></span><br><span class="line">        lock.lock();</span><br><span class="line">        <span class="keyword">try</span> &#123;</span><br><span class="line">            <span class="comment">// 判断</span></span><br><span class="line">            <span class="keyword">while</span>(number != <span class="number">0</span>) &#123;</span><br><span class="line">                <span class="comment">// 等待不能生产</span></span><br><span class="line">                condition.await();</span><br><span class="line">            &#125;</span><br><span class="line"></span><br><span class="line">            <span class="comment">// 干活</span></span><br><span class="line">            number++;</span><br><span class="line"></span><br><span class="line">            System.out.println(Thread.currentThread().getName() + <span class="string">&quot;\t &quot;</span> + number);</span><br><span class="line"></span><br><span class="line">            <span class="comment">// 通知 唤醒</span></span><br><span class="line">            condition.signalAll();</span><br><span class="line">        &#125; <span class="keyword">catch</span> (Exception e) &#123;</span><br><span class="line">            e.printStackTrace();</span><br><span class="line">        &#125; <span class="keyword">finally</span> &#123;</span><br><span class="line">            lock.unlock();</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">decrement</span><span class="params">()</span> <span class="keyword">throws</span> Exception</span>&#123;</span><br><span class="line">        <span class="comment">// 同步代码块，加锁</span></span><br><span class="line">        lock.lock();</span><br><span class="line">        <span class="keyword">try</span> &#123;</span><br><span class="line">            <span class="comment">// 判断</span></span><br><span class="line">            <span class="keyword">while</span>(number == <span class="number">0</span>) &#123;</span><br><span class="line">                <span class="comment">// 等待不能消费</span></span><br><span class="line">                condition.await();</span><br><span class="line">            &#125;</span><br><span class="line"></span><br><span class="line">            <span class="comment">// 干活</span></span><br><span class="line">            number--;</span><br><span class="line"></span><br><span class="line">            System.out.println(Thread.currentThread().getName() + <span class="string">&quot;\t &quot;</span> + number);</span><br><span class="line"></span><br><span class="line">            <span class="comment">// 通知 唤醒</span></span><br><span class="line">            condition.signalAll();</span><br><span class="line">        &#125; <span class="keyword">catch</span> (Exception e) &#123;</span><br><span class="line">            e.printStackTrace();</span><br><span class="line">        &#125; <span class="keyword">finally</span> &#123;</span><br><span class="line">            lock.unlock();</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p>注意，<code>increment()</code>和<code>decrement()</code>内的</p>
+<p>注意， <code>increment()</code>  和 <code>decrement()</code>  内的</p>
 <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 判断</span></span><br><span class="line"><span class="keyword">while</span>(number != <span class="number">0</span>) &#123;</span><br><span class="line">    <span class="comment">// 等待不能生产</span></span><br><span class="line">    condition.await();</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p>不能用 (javaw文档中指出)</p>
+<p>不能用 (javaw 文档中指出)</p>
 <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 判断</span></span><br><span class="line"><span class="keyword">if</span>(number != <span class="number">0</span>) &#123;</span><br><span class="line">    <span class="comment">// 等待不能生产</span></span><br><span class="line">    condition.await();</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<h2 id="Synchronized和Lock有什么区别"><a href="#Synchronized和Lock有什么区别" class="headerlink" title="Synchronized和Lock有什么区别"></a><code>Synchronized</code>和<code>Lock</code>有什么区别</h2><ol>
-<li><code>synchronized</code>属于<code>JVM</code>层面，属于<code>java</code>的关键字<ul>
-<li><code>monitorenter</code>（底层是通过<code>monitor</code>对象来完成，其实<code>wait/notify</code>等方法也依赖于<code>monitor</code>对象 只能在同步块或者方法中才能调用 <code>wait/ notify</code>等方法）</li>
-<li><code>Lock</code>是具体类（<code>java.util.concurrent.locks.Lock</code>）是<code>api</code>层面的锁</li>
+<h2 id="synchronized和lock有什么区别"><a class="markdownIt-Anchor" href="#synchronized和lock有什么区别">#</a>  <code>Synchronized</code>  和 <code>Lock</code>  有什么区别</h2>
+<ol>
+<li><code>synchronized</code>  属于 <code>JVM</code>  层面，属于 <code>java</code>  的关键字
+<ul>
+<li><code>monitorenter</code> （底层是通过 <code>monitor</code>  对象来完成，其实 <code>wait/notify</code>  等方法也依赖于 <code>monitor</code>  对象 只能在同步块或者方法中才能调用  <code>wait/ notify</code>  等方法）</li>
+<li><code>Lock</code>  是具体类（ <code>java.util.concurrent.locks.Lock</code> ）是 <code>api</code>  层面的锁</li>
 </ul>
 </li>
-<li>使用方法：<ul>
-<li><code>synchronized：</code>不需要用户去手动释放锁，当<code>synchronized</code>代码执行后，系统会自动让线程释放对锁的占用。</li>
-<li><code>ReentrantLock：</code>则需要用户去手动释放锁，若没有主动释放锁，就有可能出现死锁的现象，需要<code>lock()</code> 和 <code>unlock()</code> 配置<code>try catch</code>语句来完成</li>
+<li>使用方法：
+<ul>
+<li><code>synchronized：</code> 不需要用户去手动释放锁，当 <code>synchronized</code>  代码执行后，系统会自动让线程释放对锁的占用。</li>
+<li><code>ReentrantLock：</code> 则需要用户去手动释放锁，若没有主动释放锁，就有可能出现死锁的现象，需要 <code>lock()</code>  和  <code>unlock()</code>  配置 <code>try catch</code>  语句来完成</li>
 </ul>
 </li>
-<li>等待是否中断<ul>
-<li><code>synchronized：</code>不可中断，除非抛出异常或者正常运行完成。</li>
-<li><code>ReentrantLock：</code>可中断，可以设置超时方法<ul>
-<li>设置超时方法，<code>trylock(long timeout, TimeUnit unit)</code></li>
-<li><code>lockInterrupible()</code> 放代码块中，调用<code>interrupt()</code> 方法可以中断</li>
+<li>等待是否中断
+<ul>
+<li><code>synchronized：</code> 不可中断，除非抛出异常或者正常运行完成。</li>
+<li><code>ReentrantLock：</code> 可中断，可以设置超时方法
+<ul>
+<li>设置超时方法， <code>trylock(long timeout, TimeUnit unit)</code></li>
+<li><code>lockInterrupible()</code>  放代码块中，调用 <code>interrupt()</code>  方法可以中断</li>
 </ul>
 </li>
 </ul>
 </li>
-<li>加锁是否公平<ul>
-<li><code>synchronized</code>：非公平锁</li>
-<li><code>ReentrantLock</code>：默认非公平锁，构造函数可以传递<code>boolean</code>值，<code>true</code>为公平锁，<code>false</code>为非公平锁</li>
+<li>加锁是否公平
+<ul>
+<li><code>synchronized</code> ：非公平锁</li>
+<li><code>ReentrantLock</code> ：默认非公平锁，构造函数可以传递 <code>boolean</code>  值， <code>true</code>  为公平锁， <code>false</code>  为非公平锁</li>
 </ul>
 </li>
-<li>锁绑定多个条件<code>Condition</code><ul>
-<li><code>synchronized</code>：没有，要么随机，要么全部唤醒</li>
-<li><code>ReentrantLock</code>：用来实现分组唤醒需要唤醒的线程，可以精确唤醒，而不是像<code>synchronized</code>那样，要么随机，要么全部唤醒</li>
+<li>锁绑定多个条件 <code>Condition</code>
+<ul>
+<li><code>synchronized</code> ：没有，要么随机，要么全部唤醒</li>
+<li><code>ReentrantLock</code> ：用来实现分组唤醒需要唤醒的线程，可以精确唤醒，而不是像 <code>synchronized</code>  那样，要么随机，要么全部唤醒</li>
 </ul>
 </li>
 </ol>
-<h2 id="锁绑定多个条件Condition"><a href="#锁绑定多个条件Condition" class="headerlink" title="锁绑定多个条件Condition"></a>锁绑定多个条件<code>Condition</code></h2><p>实现场景</p>
-<p>多线程之间按顺序调用，实现 <code>A-&gt; B -&gt; C</code> 三个线程启动，要求如下：<br><code>AA</code>打印<code>5</code>次，<code>BB</code>打印<code>10</code>次，<code>CC</code>打印<code>15</code>次<br>紧接着<br><code>AA</code>打印<code>5</code>次，<code>BB</code>打印<code>10</code>次，<code>CC</code>打印<code>15</code>次<br>…<br>来<code>10</code>轮</p>
+<h2 id="锁绑定多个条件condition"><a class="markdownIt-Anchor" href="#锁绑定多个条件condition">#</a> 锁绑定多个条件 <code>Condition</code></h2>
+<p>实现场景</p>
+<p>多线程之间按顺序调用，实现  <code>A-&gt; B -&gt; C</code>  三个线程启动，要求如下：<br>
+ <code>AA</code>  打印 <code>5</code>  次， <code>BB</code>  打印 <code>10</code>  次， <code>CC</code>  打印 <code>15</code>  次<br>
+紧接着<br>
+ <code>AA</code>  打印 <code>5</code>  次， <code>BB</code>  打印 <code>10</code>  次， <code>CC</code>  打印 <code>15</code>  次<br>
+…<br>
+ 来 <code>10</code>  轮</p>
 <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br><span class="line">105</span><br><span class="line">106</span><br><span class="line">107</span><br><span class="line">108</span><br><span class="line">109</span><br><span class="line">110</span><br><span class="line">111</span><br><span class="line">112</span><br><span class="line">113</span><br><span class="line">114</span><br><span class="line">115</span><br><span class="line">116</span><br><span class="line">117</span><br><span class="line">118</span><br><span class="line">119</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> java.util.concurrent.locks.Condition;</span><br><span class="line"><span class="keyword">import</span> java.util.concurrent.locks.Lock;</span><br><span class="line"><span class="keyword">import</span> java.util.concurrent.locks.ReentrantLock;</span><br><span class="line"></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">ShareResource</span> </span>&#123;</span><br><span class="line">    <span class="comment">// A 1   B 2   c 3</span></span><br><span class="line">    <span class="keyword">private</span> <span class="keyword">int</span> number = <span class="number">1</span>;</span><br><span class="line">    <span class="comment">// 创建一个重入锁</span></span><br><span class="line">    <span class="keyword">private</span> Lock lock = <span class="keyword">new</span> ReentrantLock();</span><br><span class="line"></span><br><span class="line">    <span class="comment">// 这三个相当于备用钥匙</span></span><br><span class="line">    <span class="keyword">private</span> Condition condition1 = lock.newCondition();</span><br><span class="line">    <span class="keyword">private</span> Condition condition2 = lock.newCondition();</span><br><span class="line">    <span class="keyword">private</span> Condition condition3 = lock.newCondition();</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">print5</span><span class="params">()</span> </span>&#123;</span><br><span class="line">        lock.lock();</span><br><span class="line">        <span class="keyword">try</span> &#123;</span><br><span class="line">            <span class="comment">// 判断</span></span><br><span class="line">            <span class="keyword">while</span>(number != <span class="number">1</span>) &#123;</span><br><span class="line">                <span class="comment">// 不等于1，需要等待</span></span><br><span class="line">                condition1.await();</span><br><span class="line">            &#125;</span><br><span class="line"></span><br><span class="line">            <span class="comment">// 干活</span></span><br><span class="line">            <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; <span class="number">5</span>; i++) &#123;</span><br><span class="line">                System.out.println(Thread.currentThread().getName() + <span class="string">&quot;\t &quot;</span> + number + <span class="string">&quot;\t&quot;</span> + i);</span><br><span class="line">            &#125;</span><br><span class="line"></span><br><span class="line">            <span class="comment">// 唤醒 （干完活后，需要通知B线程执行）</span></span><br><span class="line">            number = <span class="number">2</span>;</span><br><span class="line">            <span class="comment">// 通知2号去干活了</span></span><br><span class="line">            condition2.signal();</span><br><span class="line"></span><br><span class="line">        &#125; <span class="keyword">catch</span> (Exception e) &#123;</span><br><span class="line">            e.printStackTrace();</span><br><span class="line">        &#125; <span class="keyword">finally</span> &#123;</span><br><span class="line">            lock.unlock();</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">print10</span><span class="params">()</span> </span>&#123;</span><br><span class="line">        lock.lock();</span><br><span class="line">        <span class="keyword">try</span> &#123;</span><br><span class="line">            <span class="comment">// 判断</span></span><br><span class="line">            <span class="keyword">while</span>(number != <span class="number">2</span>) &#123;</span><br><span class="line">                <span class="comment">// 不等于1，需要等待</span></span><br><span class="line">                condition2.await();</span><br><span class="line">            &#125;</span><br><span class="line"></span><br><span class="line">            <span class="comment">// 干活</span></span><br><span class="line">            <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; <span class="number">10</span>; i++) &#123;</span><br><span class="line">                System.out.println(Thread.currentThread().getName() + <span class="string">&quot;\t &quot;</span> + number + <span class="string">&quot;\t&quot;</span> + i);</span><br><span class="line">            &#125;</span><br><span class="line"></span><br><span class="line">            <span class="comment">// 唤醒 （干完活后，需要通知C线程执行）</span></span><br><span class="line">            number = <span class="number">3</span>;</span><br><span class="line">            <span class="comment">// 通知2号去干活了</span></span><br><span class="line">            condition3.signal();</span><br><span class="line"></span><br><span class="line">        &#125; <span class="keyword">catch</span> (Exception e) &#123;</span><br><span class="line">            e.printStackTrace();</span><br><span class="line">        &#125; <span class="keyword">finally</span> &#123;</span><br><span class="line">            lock.unlock();</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">print15</span><span class="params">()</span> </span>&#123;</span><br><span class="line">        lock.lock();</span><br><span class="line">        <span class="keyword">try</span> &#123;</span><br><span class="line">            <span class="comment">// 判断</span></span><br><span class="line">            <span class="keyword">while</span>(number != <span class="number">3</span>) &#123;</span><br><span class="line">                <span class="comment">// 不等于1，需要等待</span></span><br><span class="line">                condition3.await();</span><br><span class="line">            &#125;</span><br><span class="line"></span><br><span class="line">            <span class="comment">// 干活</span></span><br><span class="line">            <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; <span class="number">15</span>; i++) &#123;</span><br><span class="line">                System.out.println(Thread.currentThread().getName() + <span class="string">&quot;\t &quot;</span> + number + <span class="string">&quot;\t&quot;</span> + i);</span><br><span class="line">            &#125;</span><br><span class="line"></span><br><span class="line">            <span class="comment">// 唤醒 （干完活后，需要通知C线程执行）</span></span><br><span class="line">            number = <span class="number">1</span>;</span><br><span class="line">            <span class="comment">// 通知1号去干活了</span></span><br><span class="line">            condition1.signal();</span><br><span class="line"></span><br><span class="line">        &#125; <span class="keyword">catch</span> (Exception e) &#123;</span><br><span class="line">            e.printStackTrace();</span><br><span class="line">        &#125; <span class="keyword">finally</span> &#123;</span><br><span class="line">            lock.unlock();</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">SynchronizedAndReentrantLockDemo</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">        ShareResource shareResource = <span class="keyword">new</span> ShareResource();</span><br><span class="line">        <span class="keyword">int</span> num = <span class="number">10</span>;</span><br><span class="line"></span><br><span class="line">        <span class="keyword">new</span> Thread(() -&gt; &#123;</span><br><span class="line">            <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; num; i++) &#123;</span><br><span class="line">                    shareResource.print5();</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;, <span class="string">&quot;A&quot;</span>).start();</span><br><span class="line"></span><br><span class="line">        <span class="keyword">new</span> Thread(() -&gt; &#123;</span><br><span class="line">            <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; num; i++) &#123;</span><br><span class="line">                shareResource.print10();</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;, <span class="string">&quot;B&quot;</span>).start();</span><br><span class="line"></span><br><span class="line">        <span class="keyword">new</span> Thread(() -&gt; &#123;</span><br><span class="line">            <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; num; i++) &#123;</span><br><span class="line">                shareResource.print15();</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;, <span class="string">&quot;C&quot;</span>).start();</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <p>输出结果：</p>
 <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br></pre></td><td class="code"><pre><span class="line">...</span><br><span class="line">A	 <span class="number">1</span>	<span class="number">0</span></span><br><span class="line">A	 <span class="number">1</span>	<span class="number">1</span></span><br><span class="line">A	 <span class="number">1</span>	<span class="number">2</span></span><br><span class="line">A	 <span class="number">1</span>	<span class="number">3</span></span><br><span class="line">A	 <span class="number">1</span>	<span class="number">4</span></span><br><span class="line">B	 <span class="number">2</span>	<span class="number">0</span></span><br><span class="line">B	 <span class="number">2</span>	<span class="number">1</span></span><br><span class="line">B	 <span class="number">2</span>	<span class="number">2</span></span><br><span class="line">B	 <span class="number">2</span>	<span class="number">3</span></span><br><span class="line">B	 <span class="number">2</span>	<span class="number">4</span></span><br><span class="line">B	 <span class="number">2</span>	<span class="number">5</span></span><br><span class="line">B	 <span class="number">2</span>	<span class="number">6</span></span><br><span class="line">B	 <span class="number">2</span>	<span class="number">7</span></span><br><span class="line">B	 <span class="number">2</span>	<span class="number">8</span></span><br><span class="line">B	 <span class="number">2</span>	<span class="number">9</span></span><br><span class="line">C	 <span class="number">3</span>	<span class="number">0</span></span><br><span class="line">C	 <span class="number">3</span>	<span class="number">1</span></span><br><span class="line">C	 <span class="number">3</span>	<span class="number">2</span></span><br><span class="line">C	 <span class="number">3</span>	<span class="number">3</span></span><br><span class="line">C	 <span class="number">3</span>	<span class="number">4</span></span><br><span class="line">C	 <span class="number">3</span>	<span class="number">5</span></span><br><span class="line">C	 <span class="number">3</span>	<span class="number">6</span></span><br><span class="line">C	 <span class="number">3</span>	<span class="number">7</span></span><br><span class="line">C	 <span class="number">3</span>	<span class="number">8</span></span><br><span class="line">C	 <span class="number">3</span>	<span class="number">9</span></span><br><span class="line">C	 <span class="number">3</span>	<span class="number">10</span></span><br><span class="line">C	 <span class="number">3</span>	<span class="number">11</span></span><br><span class="line">C	 <span class="number">3</span>	<span class="number">12</span></span><br><span class="line">C	 <span class="number">3</span>	<span class="number">13</span></span><br><span class="line">C	 <span class="number">3</span>	<span class="number">14</span></span><br><span class="line">A	 <span class="number">1</span>	<span class="number">0</span></span><br><span class="line">A	 <span class="number">1</span>	<span class="number">1</span></span><br><span class="line">A	 <span class="number">1</span>	<span class="number">2</span></span><br><span class="line">A	 <span class="number">1</span>	<span class="number">3</span></span><br><span class="line">A	 <span class="number">1</span>	<span class="number">4</span></span><br><span class="line">B	 <span class="number">2</span>	<span class="number">0</span></span><br><span class="line">B	 <span class="number">2</span>	<span class="number">1</span></span><br><span class="line">B	 <span class="number">2</span>	<span class="number">2</span></span><br><span class="line">B	 <span class="number">2</span>	<span class="number">3</span></span><br><span class="line">B	 <span class="number">2</span>	<span class="number">4</span></span><br><span class="line">B	 <span class="number">2</span>	<span class="number">5</span></span><br><span class="line">B	 <span class="number">2</span>	<span class="number">6</span></span><br><span class="line">B	 <span class="number">2</span>	<span class="number">7</span></span><br><span class="line">B	 <span class="number">2</span>	<span class="number">8</span></span><br><span class="line">B	 <span class="number">2</span>	<span class="number">9</span></span><br><span class="line">C	 <span class="number">3</span>	<span class="number">0</span></span><br><span class="line">C	 <span class="number">3</span>	<span class="number">1</span></span><br><span class="line">C	 <span class="number">3</span>	<span class="number">2</span></span><br><span class="line">C	 <span class="number">3</span>	<span class="number">3</span></span><br><span class="line">C	 <span class="number">3</span>	<span class="number">4</span></span><br><span class="line">C	 <span class="number">3</span>	<span class="number">5</span></span><br><span class="line">C	 <span class="number">3</span>	<span class="number">6</span></span><br><span class="line">C	 <span class="number">3</span>	<span class="number">7</span></span><br><span class="line">C	 <span class="number">3</span>	<span class="number">8</span></span><br><span class="line">C	 <span class="number">3</span>	<span class="number">9</span></span><br><span class="line">C	 <span class="number">3</span>	<span class="number">10</span></span><br><span class="line">C	 <span class="number">3</span>	<span class="number">11</span></span><br><span class="line">C	 <span class="number">3</span>	<span class="number">12</span></span><br><span class="line">C	 <span class="number">3</span>	<span class="number">13</span></span><br><span class="line">C	 <span class="number">3</span>	<span class="number">14</span></span><br></pre></td></tr></table></figure>
-<h2 id="线程通信之生产者消费者阻塞队列版"><a href="#线程通信之生产者消费者阻塞队列版" class="headerlink" title="线程通信之生产者消费者阻塞队列版"></a>线程通信之生产者消费者阻塞队列版</h2><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br><span class="line">105</span><br><span class="line">106</span><br><span class="line">107</span><br><span class="line">108</span><br><span class="line">109</span><br><span class="line">110</span><br><span class="line">111</span><br><span class="line">112</span><br><span class="line">113</span><br><span class="line">114</span><br><span class="line">115</span><br><span class="line">116</span><br><span class="line">117</span><br><span class="line">118</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> java.util.concurrent.ArrayBlockingQueue;</span><br><span class="line"><span class="keyword">import</span> java.util.concurrent.BlockingQueue;</span><br><span class="line"><span class="keyword">import</span> java.util.concurrent.TimeUnit;</span><br><span class="line"><span class="keyword">import</span> java.util.concurrent.atomic.AtomicInteger;</span><br><span class="line"></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">MyResource</span> </span>&#123;</span><br><span class="line">    <span class="comment">// 默认开启，进行生产消费</span></span><br><span class="line">    <span class="comment">// 这里用到了volatile是为了保持数据的可见性，也就是当TLAG修改时，要马上通知其它线程进行修改</span></span><br><span class="line">    <span class="keyword">private</span> <span class="keyword">volatile</span> <span class="keyword">boolean</span> FLAG = <span class="keyword">true</span>;</span><br><span class="line"></span><br><span class="line">    <span class="comment">// 使用原子包装类，而不用number++</span></span><br><span class="line">    <span class="keyword">private</span> AtomicInteger atomicInteger = <span class="keyword">new</span> AtomicInteger();</span><br><span class="line"></span><br><span class="line">    <span class="comment">// 这里不能为了满足条件，而实例化一个具体的SynchronousBlockingQueue</span></span><br><span class="line">    BlockingQueue&lt;String&gt; blockingQueue = <span class="keyword">null</span>;</span><br><span class="line"></span><br><span class="line">    <span class="comment">// 而应该采用依赖注入里面的，构造注入方法传入</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="title">MyResource</span><span class="params">(BlockingQueue&lt;String&gt; blockingQueue)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">this</span>.blockingQueue = blockingQueue;</span><br><span class="line">        <span class="comment">// 查询出传入的class是什么</span></span><br><span class="line">        System.out.println(blockingQueue.getClass().getName());</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">myProducer</span><span class="params">()</span> <span class="keyword">throws</span> Exception</span>&#123;</span><br><span class="line">        String data = <span class="keyword">null</span>;</span><br><span class="line">        <span class="keyword">boolean</span> retValue;</span><br><span class="line">        <span class="comment">// 多线程环境的判断，一定要使用while进行，防止出现虚假唤醒</span></span><br><span class="line">        <span class="comment">// 当FLAG为true的时候，开始生产</span></span><br><span class="line">        <span class="keyword">while</span>(FLAG) &#123;</span><br><span class="line">            data = atomicInteger.incrementAndGet() + <span class="string">&quot;&quot;</span>;</span><br><span class="line"></span><br><span class="line">            <span class="comment">// 2秒存入1个data</span></span><br><span class="line">            retValue = blockingQueue.offer(data, <span class="number">2L</span>, TimeUnit.SECONDS);</span><br><span class="line">            <span class="keyword">if</span>(retValue) &#123;</span><br><span class="line">                System.out.println(Thread.currentThread().getName() + <span class="string">&quot;\t 插入队列:&quot;</span> + data  + <span class="string">&quot;成功&quot;</span> );</span><br><span class="line">            &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">                System.out.println(Thread.currentThread().getName() + <span class="string">&quot;\t 插入队列:&quot;</span> + data  + <span class="string">&quot;失败&quot;</span> );</span><br><span class="line">            &#125;</span><br><span class="line"></span><br><span class="line">            <span class="keyword">try</span> &#123;</span><br><span class="line">                TimeUnit.SECONDS.sleep(<span class="number">1</span>);</span><br><span class="line">            &#125; <span class="keyword">catch</span> (InterruptedException e) &#123;</span><br><span class="line">                e.printStackTrace();</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        System.out.println(Thread.currentThread().getName() + <span class="string">&quot;\t 停止生产，表示FLAG=false，生产介绍&quot;</span>);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">myConsumer</span><span class="params">()</span> <span class="keyword">throws</span> Exception</span>&#123;</span><br><span class="line">        String retValue;</span><br><span class="line">        <span class="comment">// 多线程环境的判断，一定要使用while进行，防止出现虚假唤醒</span></span><br><span class="line">        <span class="comment">// 当FLAG为true的时候，开始生产</span></span><br><span class="line">        <span class="keyword">while</span>(FLAG) &#123;</span><br><span class="line">            <span class="comment">// 2秒存入1个data</span></span><br><span class="line">            retValue = blockingQueue.poll(<span class="number">2L</span>, TimeUnit.SECONDS);</span><br><span class="line">            <span class="keyword">if</span>(retValue != <span class="keyword">null</span> &amp;&amp; retValue != <span class="string">&quot;&quot;</span>) &#123;</span><br><span class="line">                System.out.println(Thread.currentThread().getName() + <span class="string">&quot;\t 消费队列:&quot;</span> + retValue  + <span class="string">&quot;成功&quot;</span> );</span><br><span class="line">            &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">                FLAG = <span class="keyword">false</span>;</span><br><span class="line">                System.out.println(Thread.currentThread().getName() + <span class="string">&quot;\t 消费失败，队列中已为空，退出&quot;</span> );</span><br><span class="line"></span><br><span class="line">                <span class="comment">// 退出消费队列</span></span><br><span class="line">                <span class="keyword">return</span>;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="comment">/**</span></span><br><span class="line"><span class="comment">     * 停止生产的判断</span></span><br><span class="line"><span class="comment">     */</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">stop</span><span class="params">()</span> </span>&#123;</span><br><span class="line">        <span class="keyword">this</span>.FLAG = <span class="keyword">false</span>;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">ProducerConsumerWithBlockingQueueDemo</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">        <span class="comment">// 传入具体的实现类， ArrayBlockingQueue</span></span><br><span class="line">        MyResource myResource = <span class="keyword">new</span> MyResource(<span class="keyword">new</span> ArrayBlockingQueue&lt;String&gt;(<span class="number">10</span>));</span><br><span class="line"></span><br><span class="line">        <span class="keyword">new</span> Thread(() -&gt; &#123;</span><br><span class="line">            System.out.println(Thread.currentThread().getName() + <span class="string">&quot;\t 生产线程启动\n\n&quot;</span>);</span><br><span class="line"></span><br><span class="line">            <span class="keyword">try</span> &#123;</span><br><span class="line">                myResource.myProducer();</span><br><span class="line">                System.out.println(<span class="string">&quot;\n&quot;</span>);</span><br><span class="line"></span><br><span class="line">            &#125; <span class="keyword">catch</span> (Exception e) &#123;</span><br><span class="line">                e.printStackTrace();</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;, <span class="string">&quot;producer&quot;</span>).start();</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">        <span class="keyword">new</span> Thread(() -&gt; &#123;</span><br><span class="line">            System.out.println(Thread.currentThread().getName() + <span class="string">&quot;\t 消费线程启动&quot;</span>);</span><br><span class="line"></span><br><span class="line">            <span class="keyword">try</span> &#123;</span><br><span class="line">                myResource.myConsumer();</span><br><span class="line">            &#125; <span class="keyword">catch</span> (Exception e) &#123;</span><br><span class="line">                e.printStackTrace();</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;, <span class="string">&quot;consumer&quot;</span>).start();</span><br><span class="line"></span><br><span class="line">        <span class="comment">// 5秒后，停止生产和消费</span></span><br><span class="line">        <span class="keyword">try</span> &#123;</span><br><span class="line">            TimeUnit.SECONDS.sleep(<span class="number">5</span>);</span><br><span class="line">        &#125; <span class="keyword">catch</span> (InterruptedException e) &#123;</span><br><span class="line">            e.printStackTrace();</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">        System.out.println(<span class="string">&quot;\n\n5秒中后，生产和消费线程停止，线程结束&quot;</span>);</span><br><span class="line">        myResource.stop();</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h2 id="线程通信之生产者消费者阻塞队列版"><a class="markdownIt-Anchor" href="#线程通信之生产者消费者阻塞队列版">#</a> 线程通信之生产者消费者阻塞队列版</h2>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br><span class="line">105</span><br><span class="line">106</span><br><span class="line">107</span><br><span class="line">108</span><br><span class="line">109</span><br><span class="line">110</span><br><span class="line">111</span><br><span class="line">112</span><br><span class="line">113</span><br><span class="line">114</span><br><span class="line">115</span><br><span class="line">116</span><br><span class="line">117</span><br><span class="line">118</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> java.util.concurrent.ArrayBlockingQueue;</span><br><span class="line"><span class="keyword">import</span> java.util.concurrent.BlockingQueue;</span><br><span class="line"><span class="keyword">import</span> java.util.concurrent.TimeUnit;</span><br><span class="line"><span class="keyword">import</span> java.util.concurrent.atomic.AtomicInteger;</span><br><span class="line"></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">MyResource</span> </span>&#123;</span><br><span class="line">    <span class="comment">// 默认开启，进行生产消费</span></span><br><span class="line">    <span class="comment">// 这里用到了volatile是为了保持数据的可见性，也就是当TLAG修改时，要马上通知其它线程进行修改</span></span><br><span class="line">    <span class="keyword">private</span> <span class="keyword">volatile</span> <span class="keyword">boolean</span> FLAG = <span class="keyword">true</span>;</span><br><span class="line"></span><br><span class="line">    <span class="comment">// 使用原子包装类，而不用number++</span></span><br><span class="line">    <span class="keyword">private</span> AtomicInteger atomicInteger = <span class="keyword">new</span> AtomicInteger();</span><br><span class="line"></span><br><span class="line">    <span class="comment">// 这里不能为了满足条件，而实例化一个具体的SynchronousBlockingQueue</span></span><br><span class="line">    BlockingQueue&lt;String&gt; blockingQueue = <span class="keyword">null</span>;</span><br><span class="line"></span><br><span class="line">    <span class="comment">// 而应该采用依赖注入里面的，构造注入方法传入</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="title">MyResource</span><span class="params">(BlockingQueue&lt;String&gt; blockingQueue)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">this</span>.blockingQueue = blockingQueue;</span><br><span class="line">        <span class="comment">// 查询出传入的class是什么</span></span><br><span class="line">        System.out.println(blockingQueue.getClass().getName());</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">myProducer</span><span class="params">()</span> <span class="keyword">throws</span> Exception</span>&#123;</span><br><span class="line">        String data = <span class="keyword">null</span>;</span><br><span class="line">        <span class="keyword">boolean</span> retValue;</span><br><span class="line">        <span class="comment">// 多线程环境的判断，一定要使用while进行，防止出现虚假唤醒</span></span><br><span class="line">        <span class="comment">// 当FLAG为true的时候，开始生产</span></span><br><span class="line">        <span class="keyword">while</span>(FLAG) &#123;</span><br><span class="line">            data = atomicInteger.incrementAndGet() + <span class="string">&quot;&quot;</span>;</span><br><span class="line"></span><br><span class="line">            <span class="comment">// 2秒存入1个data</span></span><br><span class="line">            retValue = blockingQueue.offer(data, <span class="number">2L</span>, TimeUnit.SECONDS);</span><br><span class="line">            <span class="keyword">if</span>(retValue) &#123;</span><br><span class="line">                System.out.println(Thread.currentThread().getName() + <span class="string">&quot;\t 插入队列:&quot;</span> + data  + <span class="string">&quot;成功&quot;</span> );</span><br><span class="line">            &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">                System.out.println(Thread.currentThread().getName() + <span class="string">&quot;\t 插入队列:&quot;</span> + data  + <span class="string">&quot;失败&quot;</span> );</span><br><span class="line">            &#125;</span><br><span class="line"></span><br><span class="line">            <span class="keyword">try</span> &#123;</span><br><span class="line">                TimeUnit.SECONDS.sleep(<span class="number">1</span>);</span><br><span class="line">            &#125; <span class="keyword">catch</span> (InterruptedException e) &#123;</span><br><span class="line">                e.printStackTrace();</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        System.out.println(Thread.currentThread().getName() + <span class="string">&quot;\t 停止生产，表示FLAG=false，生产介绍&quot;</span>);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">myConsumer</span><span class="params">()</span> <span class="keyword">throws</span> Exception</span>&#123;</span><br><span class="line">        String retValue;</span><br><span class="line">        <span class="comment">// 多线程环境的判断，一定要使用while进行，防止出现虚假唤醒</span></span><br><span class="line">        <span class="comment">// 当FLAG为true的时候，开始生产</span></span><br><span class="line">        <span class="keyword">while</span>(FLAG) &#123;</span><br><span class="line">            <span class="comment">// 2秒存入1个data</span></span><br><span class="line">            retValue = blockingQueue.poll(<span class="number">2L</span>, TimeUnit.SECONDS);</span><br><span class="line">            <span class="keyword">if</span>(retValue != <span class="keyword">null</span> &amp;&amp; retValue != <span class="string">&quot;&quot;</span>) &#123;</span><br><span class="line">                System.out.println(Thread.currentThread().getName() + <span class="string">&quot;\t 消费队列:&quot;</span> + retValue  + <span class="string">&quot;成功&quot;</span> );</span><br><span class="line">            &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">                FLAG = <span class="keyword">false</span>;</span><br><span class="line">                System.out.println(Thread.currentThread().getName() + <span class="string">&quot;\t 消费失败，队列中已为空，退出&quot;</span> );</span><br><span class="line"></span><br><span class="line">                <span class="comment">// 退出消费队列</span></span><br><span class="line">                <span class="keyword">return</span>;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="comment">/**</span></span><br><span class="line"><span class="comment">     * 停止生产的判断</span></span><br><span class="line"><span class="comment">     */</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">stop</span><span class="params">()</span> </span>&#123;</span><br><span class="line">        <span class="keyword">this</span>.FLAG = <span class="keyword">false</span>;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">ProducerConsumerWithBlockingQueueDemo</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">        <span class="comment">// 传入具体的实现类， ArrayBlockingQueue</span></span><br><span class="line">        MyResource myResource = <span class="keyword">new</span> MyResource(<span class="keyword">new</span> ArrayBlockingQueue&lt;String&gt;(<span class="number">10</span>));</span><br><span class="line"></span><br><span class="line">        <span class="keyword">new</span> Thread(() -&gt; &#123;</span><br><span class="line">            System.out.println(Thread.currentThread().getName() + <span class="string">&quot;\t 生产线程启动\n\n&quot;</span>);</span><br><span class="line"></span><br><span class="line">            <span class="keyword">try</span> &#123;</span><br><span class="line">                myResource.myProducer();</span><br><span class="line">                System.out.println(<span class="string">&quot;\n&quot;</span>);</span><br><span class="line"></span><br><span class="line">            &#125; <span class="keyword">catch</span> (Exception e) &#123;</span><br><span class="line">                e.printStackTrace();</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;, <span class="string">&quot;producer&quot;</span>).start();</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">        <span class="keyword">new</span> Thread(() -&gt; &#123;</span><br><span class="line">            System.out.println(Thread.currentThread().getName() + <span class="string">&quot;\t 消费线程启动&quot;</span>);</span><br><span class="line"></span><br><span class="line">            <span class="keyword">try</span> &#123;</span><br><span class="line">                myResource.myConsumer();</span><br><span class="line">            &#125; <span class="keyword">catch</span> (Exception e) &#123;</span><br><span class="line">                e.printStackTrace();</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;, <span class="string">&quot;consumer&quot;</span>).start();</span><br><span class="line"></span><br><span class="line">        <span class="comment">// 5秒后，停止生产和消费</span></span><br><span class="line">        <span class="keyword">try</span> &#123;</span><br><span class="line">            TimeUnit.SECONDS.sleep(<span class="number">5</span>);</span><br><span class="line">        &#125; <span class="keyword">catch</span> (InterruptedException e) &#123;</span><br><span class="line">            e.printStackTrace();</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">        System.out.println(<span class="string">&quot;\n\n5秒中后，生产和消费线程停止，线程结束&quot;</span>);</span><br><span class="line">        myResource.stop();</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <p>输出结果：</p>
 <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line">java.util.concurrent.ArrayBlockingQueue</span><br><span class="line">producer	 生产线程启动</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">consumer	 消费线程启动</span><br><span class="line">producer	 插入队列:<span class="number">1</span>成功</span><br><span class="line">consumer	 消费队列:<span class="number">1</span>成功</span><br><span class="line">producer	 插入队列:<span class="number">2</span>成功</span><br><span class="line">consumer	 消费队列:<span class="number">2</span>成功</span><br><span class="line">producer	 插入队列:<span class="number">3</span>成功</span><br><span class="line">consumer	 消费队列:<span class="number">3</span>成功</span><br><span class="line">producer	 插入队列:<span class="number">4</span>成功</span><br><span class="line">consumer	 消费队列:<span class="number">4</span>成功</span><br><span class="line">producer	 插入队列:<span class="number">5</span>成功</span><br><span class="line">consumer	 消费队列:<span class="number">5</span>成功</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="number">5</span>秒中后，生产和消费线程停止，线程结束</span><br><span class="line">producer	 停止生产，表示FLAG=<span class="keyword">false</span>，生产介绍</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">consumer	 消费失败，队列中已为空，退出</span><br></pre></td></tr></table></figure>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
       <div class="tags">
-          <a href="/blog/tags/Java-%E9%9D%A2%E8%AF%95/" rel="tag"><i class="ic i-tag"></i> Java 面试</a>
-          <a href="/blog/tags/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/" rel="tag"><i class="ic i-tag"></i> 数据结构</a>
-          <a href="/blog/tags/%E9%98%BB%E5%A1%9E%E9%98%9F%E5%88%97/" rel="tag"><i class="ic i-tag"></i> 阻塞队列</a>
+          <a href="/tags/Java-%E9%9D%A2%E8%AF%95/" rel="tag"><i class="ic i-tag"></i> Java 面试</a>
+          <a href="/tags/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/" rel="tag"><i class="ic i-tag"></i> 数据结构</a>
+          <a href="/tags/%E9%98%BB%E5%A1%9E%E9%98%9F%E5%88%97/" rel="tag"><i class="ic i-tag"></i> 阻塞队列</a>
       </div>
   </div>
 
@@ -380,7 +380,7 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
     <div class="item left">
       
 
-  <a href="/blog/posts/56be7cc9/" itemprop="url" rel="prev" data-background-image="https:&#x2F;&#x2F;tva2.sinaimg.cn&#x2F;mw690&#x2F;6833939bly1gicitf0kl1j20zk0m87fe.jpg" title="关于Linux排查问题命令">
+  <a href="/posts/56be7cc9/" itemprop="url" rel="prev" data-background-image="https:&#x2F;&#x2F;tva1.sinaimg.cn&#x2F;mw690&#x2F;6833939bly1gipewf5l51j20zk0m8b29.jpg" title="关于Linux排查问题命令">
   <span class="type">Previous Post</span>
   <span class="category"><i class="ic i-flag"></i> </span>
   <h3>关于Linux排查问题命令</h3>
@@ -390,7 +390,7 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
     <div class="item right">
       
 
-  <a href="/blog/posts/dfdc2005/" itemprop="url" rel="next" data-background-image="https:&#x2F;&#x2F;tva2.sinaimg.cn&#x2F;mw690&#x2F;6833939bly1gipexoj0moj20zk0m8kgu.jpg" title="JDK动态代理原理剖析(简洁版)">
+  <a href="/posts/dfdc2005/" itemprop="url" rel="next" data-background-image="https:&#x2F;&#x2F;tva1.sinaimg.cn&#x2F;mw690&#x2F;6833939bly1gipev1x5e4j20zk0m8b29.jpg" title="JDK动态代理原理剖析(简洁版)">
   <span class="type">Next Post</span>
   <span class="category"><i class="ic i-flag"></i> </span>
   <h3>JDK动态代理原理剖析(简洁版)</h3>
@@ -412,33 +412,33 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
   <div class="panels">
     <div class="inner">
       <div class="contents panel pjax" data-title="Contents">
-          <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E9%98%BB%E5%A1%9E%E9%98%9F%E5%88%97%E6%8E%A5%E5%8F%A3%E7%BB%93%E6%9E%84%E5%92%8C%E5%AE%9E%E7%8E%B0%E7%B1%BB"><span class="toc-number">1.</span> <span class="toc-text">阻塞队列接口结构和实现类</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%BA%BF%E7%A8%8B%E9%80%9A%E4%BF%A1%E4%B9%8B%E7%94%9F%E4%BA%A7%E8%80%85%E6%B6%88%E8%B4%B9%E8%80%85%E4%BC%A0%E7%BB%9F"><span class="toc-number">2.</span> <span class="toc-text">线程通信之生产者消费者传统</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Synchronized%E5%92%8CLock%E6%9C%89%E4%BB%80%E4%B9%88%E5%8C%BA%E5%88%AB"><span class="toc-number">3.</span> <span class="toc-text">Synchronized和Lock有什么区别</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E9%94%81%E7%BB%91%E5%AE%9A%E5%A4%9A%E4%B8%AA%E6%9D%A1%E4%BB%B6Condition"><span class="toc-number">4.</span> <span class="toc-text">锁绑定多个条件Condition</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%BA%BF%E7%A8%8B%E9%80%9A%E4%BF%A1%E4%B9%8B%E7%94%9F%E4%BA%A7%E8%80%85%E6%B6%88%E8%B4%B9%E8%80%85%E9%98%BB%E5%A1%9E%E9%98%9F%E5%88%97%E7%89%88"><span class="toc-number">5.</span> <span class="toc-text">线程通信之生产者消费者阻塞队列版</span></a></li></ol>
+          <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E9%98%BB%E5%A1%9E%E9%98%9F%E5%88%97%E6%8E%A5%E5%8F%A3%E7%BB%93%E6%9E%84%E5%92%8C%E5%AE%9E%E7%8E%B0%E7%B1%BB"><span class="toc-number">1.</span> <span class="toc-text"> 阻塞队列接口结构和实现类</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%BA%BF%E7%A8%8B%E9%80%9A%E4%BF%A1%E4%B9%8B%E7%94%9F%E4%BA%A7%E8%80%85%E6%B6%88%E8%B4%B9%E8%80%85%E4%BC%A0%E7%BB%9F"><span class="toc-number">2.</span> <span class="toc-text"> 线程通信之生产者消费者传统</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#synchronized%E5%92%8Clock%E6%9C%89%E4%BB%80%E4%B9%88%E5%8C%BA%E5%88%AB"><span class="toc-number">3.</span> <span class="toc-text">  Synchronized  和 Lock  有什么区别</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E9%94%81%E7%BB%91%E5%AE%9A%E5%A4%9A%E4%B8%AA%E6%9D%A1%E4%BB%B6condition"><span class="toc-number">4.</span> <span class="toc-text"> 锁绑定多个条件 Condition</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%BA%BF%E7%A8%8B%E9%80%9A%E4%BF%A1%E4%B9%8B%E7%94%9F%E4%BA%A7%E8%80%85%E6%B6%88%E8%B4%B9%E8%80%85%E9%98%BB%E5%A1%9E%E9%98%9F%E5%88%97%E7%89%88"><span class="toc-number">5.</span> <span class="toc-text"> 线程通信之生产者消费者阻塞队列版</span></a></li></ol>
       </div>
       <div class="related panel pjax" data-title="Related">
       </div>
       <div class="overview panel" data-title="Overview">
         <div class="author" itemprop="author" itemscope itemtype="http://schema.org/Person">
   <img class="image" itemprop="image" alt="JIN Mao"
-      data-src="/blog/images/avatar.png">
+      data-src="/images/avatar.png">
   <p class="name" itemprop="name">JIN Mao</p>
   <div class="description" itemprop="description"></div>
 </div>
 
 <nav class="state">
     <div class="item posts">
-      <a href="/blog/archives/">
+      <a href="/archives/">
         <span class="count">150</span>
         <span class="name">posts</span>
       </a>
     </div>
     <div class="item categories">
-      <a href="/blog/categories/">
+      <a href="/categories/">
         <span class="count">78</span>
         <span class="name">categories</span>
       </a>
     </div>
     <div class="item tags">
-      <a href="/blog/tags/">
+      <a href="/tags/">
         <span class="count">113</span>
         <span class="name">tags</span>
       </a>
@@ -453,12 +453,12 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
   
     
   <li class="item">
-    <a href="/blog/" rel="section"><i class="ic i-home"></i>Home</a>
+    <a href="/" rel="section"><i class="ic i-home"></i>Home</a>
   </li>
 
     
   <li class="item">
-    <a href="/blog/about/" rel="section"><i class="ic i-user"></i>About</a>
+    <a href="/about/" rel="section"><i class="ic i-user"></i>About</a>
   </li>
 
         
@@ -468,17 +468,17 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
 
         
   <li class="item">
-    <a href="/blog/archives/" rel="section"><i class="ic i-list-alt"></i>Archives</a>
+    <a href="/archives/" rel="section"><i class="ic i-list-alt"></i>Archives</a>
   </li>
 
         
   <li class="item">
-    <a href="/blog/categories/" rel="section"><i class="ic i-th"></i>Categories</a>
+    <a href="/categories/" rel="section"><i class="ic i-th"></i>Categories</a>
   </li>
 
         
   <li class="item">
-    <a href="/blog/tags/" rel="section"><i class="ic i-tags"></i>Tags</a>
+    <a href="/tags/" rel="section"><i class="ic i-tags"></i>Tags</a>
   </li>
 
   </ul>
@@ -491,12 +491,12 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
 
   <ul id="quick">
     <li class="prev pjax">
-        <a href="/blog/posts/56be7cc9/" rel="prev" title="Previous Post"><i class="ic i-chevron-left"></i></a>
+        <a href="/posts/56be7cc9/" rel="prev" title="Previous Post"><i class="ic i-chevron-left"></i></a>
     </li>
     <li class="up"><i class="ic i-arrow-up"></i></li>
     <li class="down"><i class="ic i-arrow-down"></i></li>
     <li class="next pjax">
-        <a href="/blog/posts/dfdc2005/" rel="next" title="Next Post"><i class="ic i-chevron-right"></i></a>
+        <a href="/posts/dfdc2005/" rel="next" title="Next Post"><i class="ic i-chevron-right"></i></a>
     </li>
     <li class="percent"></li>
   </ul>
@@ -518,111 +518,106 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
   <li class="item">
     
 <div class="breadcrumb">
-<a href="/blog/categories/SpringBoot/" title="In SpringBoot">SpringBoot</a>
-</div>
-
-    <span><a href="/blog/posts/80a06b6b/" title="SpringBoot 接口添加统一前缀">SpringBoot 接口添加统一前缀</a></span>
-  </li>
-
-      
-  <li class="item">
-    
-<div class="breadcrumb">
-</div>
-
-    <span><a href="/blog/posts/ac1ae082/" title="SpringBoot如何优雅的发邮件">SpringBoot如何优雅的发邮件</a></span>
-  </li>
-
-      
-  <li class="item">
-    
-<div class="breadcrumb">
-<a href="/blog/categories/Java%E9%9D%A2%E8%AF%95/" title="In Java面试">Java面试</a>
+<a href="/categories/Java/" title="In Java">Java</a>
 <i class="ic i-angle-right"></i>
-<a href="/blog/categories/Java%E9%9D%A2%E8%AF%95/HashMap/" title="In HashMap">HashMap</a>
+<a href="/categories/Java/Tools/" title="In Tools">Tools</a>
 </div>
 
-    <span><a href="/blog/posts/52d9f7d3/" title="Java面试必问--HashMap的底层">Java面试必问--HashMap的底层</a></span>
+    <span><a href="/posts/817eab42/" title="java中产生指定范围内的随机数">java中产生指定范围内的随机数</a></span>
   </li>
 
       
   <li class="item">
     
 <div class="breadcrumb">
-<a href="/blog/categories/Java%E9%9D%A2%E8%AF%95/" title="In Java面试">Java面试</a>
+<a href="/categories/LeetCode/" title="In LeetCode">LeetCode</a>
+</div>
+
+    <span><a href="/posts/5d0c3fcc/" title="LeetCode172_阶乘后的0">LeetCode172_阶乘后的0</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+</div>
+
+    <span><a href="/posts/56be7cc9/" title="关于Linux排查问题命令">关于Linux排查问题命令</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/Shell/" title="In Shell">Shell</a>
+</div>
+
+    <span><a href="/posts/55b095e0/" title="The learning of Shell">The learning of Shell</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+</div>
+
+    <span><a href="/posts/823298d2/" title="VsCode 如何Debug Shell">VsCode 如何Debug Shell</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/%E6%95%B0%E6%8D%AE%E5%BA%93/" title="In 数据库">数据库</a>
+</div>
+
+    <span><a href="/posts/377b6f7d/" title="关于mysql中对Json类型字段进行筛选查询">关于mysql中对Json类型字段进行筛选查询</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/Java/" title="In Java">Java</a>
 <i class="ic i-angle-right"></i>
-<a href="/blog/categories/Java%E9%9D%A2%E8%AF%95/%E7%9B%B4%E6%8E%A5%E6%8F%92%E5%85%A5%E6%8E%92%E5%BA%8F/" title="In 直接插入排序">直接插入排序</a>
+<a href="/categories/Java/Tools/" title="In Tools">Tools</a>
+</div>
+
+    <span><a href="/posts/13370746/" title="使用EasyExcel读取excel文件为Java实体类">使用EasyExcel读取excel文件为Java实体类</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/Java%E9%9D%A2%E8%AF%95/" title="In Java面试">Java面试</a>
 <i class="ic i-angle-right"></i>
-<a href="/blog/categories/Java%E9%9D%A2%E8%AF%95/%E7%9B%B4%E6%8E%A5%E6%8F%92%E5%85%A5%E6%8E%92%E5%BA%8F/%E7%AE%97%E6%B3%95/" title="In 算法">算法</a>
+<a href="/categories/Java%E9%9D%A2%E8%AF%95/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/" title="In 数据结构">数据结构</a>
 </div>
 
-    <span><a href="/blog/posts/2b06d603/" title="直接插入排序">直接插入排序</a></span>
+    <span><a href="/posts/9f9a6182/" title="面试之旅关于数据结构">面试之旅关于数据结构</a></span>
   </li>
 
       
   <li class="item">
     
 <div class="breadcrumb">
-<a href="/blog/categories/IDEA/" title="In IDEA">IDEA</a>
-</div>
-
-    <span><a href="/blog/posts/579bb697/" title="IDEA小图标含义">IDEA小图标含义</a></span>
-  </li>
-
-      
-  <li class="item">
-    
-<div class="breadcrumb">
-<a href="/blog/categories/%E5%89%8D%E7%AB%AF/" title="In 前端">前端</a>
-</div>
-
-    <span><a href="/blog/posts/7733848a/" title="文件上传前端小结">文件上传前端小结</a></span>
-  </li>
-
-      
-  <li class="item">
-    
-<div class="breadcrumb">
-<a href="/blog/categories/Java%E9%9D%A2%E8%AF%95/" title="In Java面试">Java面试</a>
+<a href="/categories/Java%E9%9D%A2%E8%AF%95/" title="In Java面试">Java面试</a>
 <i class="ic i-angle-right"></i>
-<a href="/blog/categories/Java%E9%9D%A2%E8%AF%95/%E5%86%92%E6%B3%A1%E6%8E%92%E5%BA%8F/" title="In 冒泡排序">冒泡排序</a>
-<i class="ic i-angle-right"></i>
-<a href="/blog/categories/Java%E9%9D%A2%E8%AF%95/%E5%86%92%E6%B3%A1%E6%8E%92%E5%BA%8F/%E7%AE%97%E6%B3%95/" title="In 算法">算法</a>
+<a href="/categories/Java%E9%9D%A2%E8%AF%95/HashMap/" title="In HashMap">HashMap</a>
 </div>
 
-    <span><a href="/blog/posts/14e6f1eb/" title="冒泡排序">冒泡排序</a></span>
+    <span><a href="/posts/52d9f7d3/" title="Java面试必问--HashMap的底层">Java面试必问--HashMap的底层</a></span>
   </li>
 
       
   <li class="item">
     
 <div class="breadcrumb">
-<a href="/blog/categories/DDD/" title="In DDD">DDD</a>
+<a href="/categories/SpringBoot/" title="In SpringBoot">SpringBoot</a>
 </div>
 
-    <span><a href="/blog/posts/3fec5852/" title="DDD领域驱动设计">DDD领域驱动设计</a></span>
-  </li>
-
-      
-  <li class="item">
-    
-<div class="breadcrumb">
-<a href="/blog/categories/Java%E9%9D%A2%E8%AF%95/" title="In Java面试">Java面试</a>
-<i class="ic i-angle-right"></i>
-<a href="/blog/categories/Java%E9%9D%A2%E8%AF%95/%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92/" title="In 动态规划">动态规划</a>
-</div>
-
-    <span><a href="/blog/posts/a80d0031/" title="动态规划">动态规划</a></span>
-  </li>
-
-      
-  <li class="item">
-    
-<div class="breadcrumb">
-<a href="/blog/categories/Java/" title="In Java">Java</a>
-</div>
-
-    <span><a href="/blog/posts/9dcbb5fa/" title="Corn表达式">Corn表达式</a></span>
+    <span><a href="/posts/67f40b37/" title="Spring Boot 获取服务IP地址和端口号">Spring Boot 获取服务IP地址和端口号</a></span>
   </li>
 
   </ul>
@@ -647,13 +642,13 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
     <span class="post-meta-item-icon">
       <i class="ic i-chart-area"></i>
     </span>
-    <span title="Symbols count total">684k words</span>
+    <span title="Symbols count total">657k words</span>
 
     <span class="post-meta-divider">|</span>
     <span class="post-meta-item-icon">
       <i class="ic i-coffee"></i>
     </span>
-    <span title="Reading time total">10:22</span>
+    <span title="Reading time total">9:57</span>
   </div>
 </div>
 
@@ -689,7 +684,7 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
 
 <script src="//cdn.jsdelivr.net/combine/npm/pace-js@1.0.2/pace.min.js,npm/pjax@0.2.8/pjax.min.js,npm/whatwg-fetch@3.4.0/dist/fetch.umd.min.js,npm/animejs@3.2.0/lib/anime.min.js,npm/algoliasearch@4/dist/algoliasearch-lite.umd.js,npm/instantsearch.js@4/dist/instantsearch.production.min.js,npm/lozad@1/dist/lozad.min.js,npm/quicklink@2/dist/quicklink.umd.js"></script>
 
-<script src="/blog/js/app.js?v=0.2.5"></script>
+<script src="/js/app.js?v=0.2.5"></script>
 
 
 

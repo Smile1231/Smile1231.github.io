@@ -9,43 +9,43 @@
         <lastBuildDate>Mon, 14 Feb 2022 22:46:41 +0800</lastBuildDate>
         <category>SAP</category>
         <category>Java</category>
+        <category>Corn</category>
+        <category>生物信息</category>
+        <category>基因编辑</category>
         <category>Cache</category>
         <category>Cookie</category>
         <category>Session</category>
         <category>Java面试</category>
-        <category>生物信息</category>
-        <category>基因编辑</category>
-        <category>Corn</category>
         <category>前端</category>
         <category>Css</category>
-        <category>Docker</category>
         <category>DDD</category>
         <category>领域驱动设计</category>
-        <category>FastJson</category>
+        <category>DisPlay属性</category>
+        <category>Docker</category>
         <category>blog</category>
         <category>hexo</category>
         <category>next</category>
-        <category>DisPlay属性</category>
+        <category>FastJson</category>
         <category>JavaScript</category>
         <category>Html</category>
         <category>IDEA</category>
         <category>SpringBoot</category>
         <category>Jvm</category>
-        <category>map</category>
-        <category>Stream流</category>
+        <category>函数式接口</category>
         <category>Jenkins</category>
         <category>CI/CD</category>
-        <category>函数式接口</category>
+        <category>map</category>
+        <category>Stream流</category>
         <category>Assert</category>
         <category>java</category>
         <category>calender</category>
         <category>Springboot</category>
-        <category>Python</category>
-        <category>Jupyter</category>
-        <category>Machine Learning</category>
         <category>LeetCode</category>
         <category>算法</category>
         <category>递归</category>
+        <category>Python</category>
+        <category>Jupyter</category>
+        <category>Machine Learning</category>
         <category>Linux</category>
         <category>Mybatis</category>
         <category>分页查询</category>
@@ -54,59 +54,59 @@
         <category>sklearn</category>
         <category>模糊查询</category>
         <category>Nginx</category>
-        <category>Spring</category>
         <category>Spoken English</category>
+        <category>Spring</category>
         <category>SrpingBoot</category>
         <category>文件上传</category>
         <category>事务</category>
+        <category>master</category>
         <category>TypeScript</category>
         <category>WebPack</category>
-        <category>Groovy</category>
-        <category>master</category>
-        <category>UML</category>
-        <category>Ubuntu</category>
-        <category>Mysql</category>
-        <category>Vue</category>
-        <category>VSCODE</category>
-        <category>快捷键</category>
         <category>VsCode</category>
         <category>Shell</category>
-        <category>日期</category>
-        <category>Stream</category>
+        <category>Groovy</category>
+        <category>UML</category>
+        <category>VSCODE</category>
+        <category>快捷键</category>
+        <category>Vue</category>
+        <category>Ubuntu</category>
+        <category>Mysql</category>
         <category>git</category>
-        <category>线程池</category>
+        <category>Stream</category>
+        <category>日期</category>
         <category>ubuntu</category>
         <category>虚拟机</category>
         <category>二分查找</category>
+        <category>线程池</category>
+        <category>Hadoop</category>
         <category>数据挖掘</category>
         <category>操作系统</category>
-        <category>Hadoop</category>
         <category>EasyExcel</category>
-        <category>node</category>
         <category>JVM</category>
+        <category>node</category>
         <category>Yaml</category>
         <category>Hexo</category>
-        <category>数据库</category>
         <category>junit</category>
+        <category>数据库</category>
         <category>Mysql事务</category>
-        <category>Git</category>
-        <category>冒泡排序</category>
         <category>git,npm,node</category>
+        <category>冒泡排序</category>
+        <category>Git</category>
         <category>堆排序</category>
-        <category>动态规划</category>
         <category>幂等性</category>
-        <category>Google</category>
         <category>多线程</category>
         <category>流</category>
+        <category>Google</category>
+        <category>动态规划</category>
         <category>归并排序</category>
-        <category>快速排序</category>
         <category>vue</category>
+        <category>快速排序</category>
         <category>正则表达式</category>
         <category>直接插入排序</category>
-        <category>选择排序</category>
         <category>Java 面试</category>
         <category>数据结构</category>
         <category>阻塞队列</category>
+        <category>选择排序</category>
         <category>Spring事务</category>
         <category>JDK</category>
         <category>动态代理</category>
@@ -132,37 +132,43 @@
 &lt;p&gt;线程的实现方式&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;ol&gt;
-&lt;li&gt;&lt;p&gt;继承Thread类&lt;/p&gt;
+&lt;li&gt;
+&lt;p&gt;继承 Thread 类&lt;/p&gt;
 &lt;/li&gt;
-&lt;li&gt;&lt;p&gt;实现Runnable接口&lt;/p&gt;
+&lt;li&gt;
+&lt;p&gt;实现 Runnable 接口&lt;/p&gt;
 &lt;/li&gt;
-&lt;li&gt;&lt;p&gt;使用Callable和Future&lt;/p&gt;
+&lt;li&gt;
+&lt;p&gt;使用 Callable 和 Future&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
 &lt;span id=&#34;more&#34;&gt;&lt;/span&gt;
-
 &lt;blockquote&gt;
-&lt;p&gt;Thread 类中的&lt;code&gt;start()&lt;/code&gt; 和 &lt;code&gt;run() &lt;/code&gt;方法有什么区别?&lt;/p&gt;
+&lt;p&gt;Thread 类中的 &lt;code&gt;start()&lt;/code&gt;  和  &lt;code&gt;run() &lt;/code&gt; 方法有什么区别？&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;ol&gt;
-&lt;li&gt;start（）方法来启动线程，真正实现了多线程运行。这时无需等待run方法体代码执行完毕，可以直接继续执行下面的代码；通过调用Thread类的start()方法来启动一个线程， 这时此线程是处于就绪状态， 并没有运行。 然后通过此Thread类调用方法run()来完成其运行操作的， 这里方法run()称为线程体，它包含了要执行的这个线程的内容， Run方法运行结束， 此线程终止。然后CPU再调度其它线程。&lt;/li&gt;
-&lt;li&gt;run（）方法当作普通方法的方式调用。程序还是要顺序执行，要等待run方法体执行完毕后，才可继续执行下面的代码； 程序中只有主线程——这一个线程， 其程序执行路径还是只有一条， 这样就没有达到写线程的目的。&lt;/li&gt;
+&lt;li&gt;start（）方法来启动线程，真正实现了多线程运行。这时无需等待 run 方法体代码执行完毕，可以直接继续执行下面的代码；通过调用 Thread 类的 start () 方法来启动一个线程， 这时此线程是处于就绪状态， 并没有运行。 然后通过此 Thread 类调用方法 run () 来完成其运行操作的， 这里方法 run () 称为线程体，它包含了要执行的这个线程的内容， Run 方法运行结束， 此线程终止。然后 CPU 再调度其它线程。&lt;/li&gt;
+&lt;li&gt;run（）方法当作普通方法的方式调用。程序还是要顺序执行，要等待 run 方法体执行完毕后，才可继续执行下面的代码； 程序中只有主线程 —— 这一个线程， 其程序执行路径还是只有一条， 这样就没有达到写线程的目的。&lt;/li&gt;
 &lt;/ol&gt;
 &lt;blockquote&gt;
-&lt;p&gt;线程&lt;code&gt;RUNNABLE&lt;/code&gt;状态&lt;/p&gt;
+&lt;p&gt;线程 &lt;code&gt;RUNNABLE&lt;/code&gt;  状态&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;p&gt;线程对象通过start方法进入runnable状态，启动的线程不一定会立即得到执行，线程的运行与否要看cpu的调度，我们把这个中间状态叫可执行状态（RUNNABLE)。&lt;/p&gt;
+&lt;p&gt;线程对象通过 start 方法进入 runnable 状态，启动的线程不一定会立即得到执行，线程的运行与否要看 cpu 的调度，我们把这个中间状态叫可执行状态（RUNNABLE)。&lt;/p&gt;
 &lt;blockquote&gt;
-&lt;p&gt;线程的&lt;code&gt;BLOCKED&lt;/code&gt;状态&lt;/p&gt;
+&lt;p&gt;线程的 &lt;code&gt;BLOCKED&lt;/code&gt;  状态&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;p&gt;线程正在等待获取锁。&lt;/p&gt;
-&lt;p&gt;进入&lt;code&gt;BLOCKED&lt;/code&gt;状态，比如调用了&lt;code&gt;sleep&lt;/code&gt;,或者&lt;code&gt;wait&lt;/code&gt;方法&lt;br&gt;进行某个阻塞的&lt;code&gt;io&lt;/code&gt;操作，比如因网络数据的读写进入&lt;code&gt;BLOCKED&lt;/code&gt;状态&lt;br&gt;获取某个锁资源，从而加入到该锁的阻塞队列中而进入&lt;code&gt;BLOCKED&lt;/code&gt;状态&lt;/p&gt;
+&lt;p&gt;进入 &lt;code&gt;BLOCKED&lt;/code&gt;  状态，比如调用了 &lt;code&gt;sleep&lt;/code&gt; , 或者 &lt;code&gt;wait&lt;/code&gt;  方法&lt;br&gt;
+进行某个阻塞的 &lt;code&gt;io&lt;/code&gt;  操作，比如因网络数据的读写进入 &lt;code&gt;BLOCKED&lt;/code&gt;  状态&lt;br&gt;
+获取某个锁资源，从而加入到该锁的阻塞队列中而进入 &lt;code&gt;BLOCKED&lt;/code&gt;  状态&lt;/p&gt;
 &lt;blockquote&gt;
-&lt;p&gt;线程的&lt;code&gt;TERMINATED&lt;/code&gt;状态&lt;/p&gt;
+&lt;p&gt;线程的 &lt;code&gt;TERMINATED&lt;/code&gt;  状态&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;p&gt;`TERMINATED``是一个线程的最终状态，在该状态下线程不会再切换到其他任何状态了，代表整个生命周期都结束了。&lt;/p&gt;
-&lt;p&gt;下面几种情况会进入&lt;code&gt;TERMINATED&lt;/code&gt;状态:&lt;/p&gt;
-&lt;p&gt;线程运行正常结束，结束生命周期&lt;br&gt;线程运行出错意外结束&lt;br&gt;&lt;code&gt;JVM Crash&lt;/code&gt; 导致所有的线程都结束&lt;/p&gt;
+&lt;p&gt;`TERMINATED`` 是一个线程的最终状态，在该状态下线程不会再切换到其他任何状态了，代表整个生命周期都结束了。&lt;/p&gt;
+&lt;p&gt;下面几种情况会进入 &lt;code&gt;TERMINATED&lt;/code&gt;  状态:&lt;/p&gt;
+&lt;p&gt;线程运行正常结束，结束生命周期&lt;br&gt;
+线程运行出错意外结束&lt;br&gt;
+ &lt;code&gt;JVM Crash&lt;/code&gt;  导致所有的线程都结束&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;如何知道代码段被哪个线程调用？&lt;/p&gt;
 &lt;/blockquote&gt;
@@ -170,75 +176,76 @@
 &lt;blockquote&gt;
 &lt;p&gt;停止线程&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;p&gt;&lt;code&gt;run&lt;/code&gt;方法执行完成，自然终止。&lt;/p&gt;
-&lt;p&gt;&lt;code&gt;stop()&lt;/code&gt;方法，&lt;code&gt;suspend()&lt;/code&gt;以及&lt;code&gt;resume()&lt;/code&gt;都是过期作废方法，使用它们结果不可预期。&lt;/p&gt;
-&lt;p&gt;大多数停止一个线程的操作使用&lt;code&gt;Thread.interrupt()&lt;/code&gt;等于说给线程打一个停止的标记, 此方法不回去终止一个正在运行的线程，需要加入一个判断才能可以完成线程的停止。&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;run&lt;/code&gt;  方法执行完成，自然终止。&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;stop()&lt;/code&gt;  方法， &lt;code&gt;suspend()&lt;/code&gt;  以及 &lt;code&gt;resume()&lt;/code&gt;  都是过期作废方法，使用它们结果不可预期。&lt;/p&gt;
+&lt;p&gt;大多数停止一个线程的操作使用 &lt;code&gt;Thread.interrupt()&lt;/code&gt;  等于说给线程打一个停止的标记，此方法不回去终止一个正在运行的线程，需要加入一个判断才能可以完成线程的停止。&lt;/p&gt;
 &lt;blockquote&gt;
-&lt;p&gt;&lt;code&gt;interrupted&lt;/code&gt; 和 &lt;code&gt;isInterrupted&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;interrupted&lt;/code&gt;  和  &lt;code&gt;isInterrupted&lt;/code&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;p&gt;&lt;code&gt;interrupted&lt;/code&gt; : 判断当前线程是否已经中断,会清除状态。&lt;/p&gt;
-&lt;p&gt;&lt;code&gt;isInterrupted&lt;/code&gt; ：判断线程是否已经中断，不会清除状态。&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;interrupted&lt;/code&gt;  : 判断当前线程是否已经中断，会清除状态。&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;isInterrupted&lt;/code&gt;  ：判断线程是否已经中断，不会清除状态。&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;&lt;code&gt;yield&lt;/code&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;p&gt;放弃当前cpu资源，将它让给其他的任务占用cpu执行时间。但放弃的时间不确定，有可能刚刚放弃，马上又获得cpu时间片。&lt;/p&gt;
+&lt;p&gt;放弃当前 cpu 资源，将它让给其他的任务占用 cpu 执行时间。但放弃的时间不确定，有可能刚刚放弃，马上又获得 cpu 时间片。&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;线程的优先级&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;p&gt;在操作系统中，线程可以划分优先级，优先级较高的线程得到cpu资源比较多，也就是cpu有限执行优先级较高的线程对象中的任务，但是不能保证一定优先级高，就先执行。&lt;/p&gt;
-&lt;p&gt;Java的优先级分为1～10个等级，数字越大优先级越高，默认优先级大小为5。超出范围则抛出：&lt;code&gt;java.lang.IllegalArgumentException&lt;/code&gt;。&lt;/p&gt;
+&lt;p&gt;在操作系统中，线程可以划分优先级，优先级较高的线程得到 cpu 资源比较多，也就是 cpu 有限执行优先级较高的线程对象中的任务，但是不能保证一定优先级高，就先执行。&lt;/p&gt;
+&lt;p&gt;Java 的优先级分为 1～10 个等级，数字越大优先级越高，默认优先级大小为 5。超出范围则抛出： &lt;code&gt;java.lang.IllegalArgumentException&lt;/code&gt; 。&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;优先级继承特性&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;p&gt;线程的优先级具有继承性，比如&lt;code&gt;a&lt;/code&gt;线程启动&lt;code&gt;b&lt;/code&gt;线程，&lt;code&gt;b&lt;/code&gt;线程与&lt;code&gt;a&lt;/code&gt;优先级是一样的。&lt;/p&gt;
+&lt;p&gt;线程的优先级具有继承性，比如 &lt;code&gt;a&lt;/code&gt;  线程启动 &lt;code&gt;b&lt;/code&gt;  线程， &lt;code&gt;b&lt;/code&gt;  线程与 &lt;code&gt;a&lt;/code&gt;  优先级是一样的。&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;线程种类&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;p&gt;&lt;code&gt;Java&lt;/code&gt;线程有两种，一种是用户线程，一种是守护线程。&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;Java&lt;/code&gt;  线程有两种，一种是用户线程，一种是守护线程。&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;守护线程的特点&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;p&gt;守护线程是一个比较特殊的线程，主要被用做程序中后台调度以及支持性工作。当&lt;code&gt;Java&lt;/code&gt;虚拟机中不存在非守护线程时，守护线程才会随着&lt;code&gt;JVM&lt;/code&gt;一同结束工作。&lt;/p&gt;
+&lt;p&gt;守护线程是一个比较特殊的线程，主要被用做程序中后台调度以及支持性工作。当 &lt;code&gt;Java&lt;/code&gt;  虚拟机中不存在非守护线程时，守护线程才会随着 &lt;code&gt;JVM&lt;/code&gt;  一同结束工作。&lt;/p&gt;
 &lt;blockquote&gt;
-&lt;p&gt;&lt;code&gt;Java&lt;/code&gt;中典型的守护线程&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;Java&lt;/code&gt;  中典型的守护线程&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;p&gt;&lt;code&gt;GC&lt;/code&gt;（垃圾回收器）&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;GC&lt;/code&gt; （垃圾回收器）&lt;/p&gt;
 &lt;blockquote&gt;
-&lt;p&gt;如何设置守护线程&lt;br&gt;&lt;code&gt;Thread.setDaemon(true)&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;如何设置守护线程&lt;br&gt;
+ &lt;code&gt;Thread.setDaemon(true)&lt;/code&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;p&gt;&lt;code&gt;PS:Daemon&lt;/code&gt;属性需要再启动线程之前设置，不能再启动后设置。&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;PS:Daemon&lt;/code&gt;  属性需要再启动线程之前设置，不能再启动后设置。&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;join&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;p&gt;join是指把指定的线程加入到当前线程，比如join某个线程a,会让当前线程b进入等待,直到a的生命周期结束，此期间b线程是处于blocked状态。&lt;/p&gt;
+&lt;p&gt;join 是指把指定的线程加入到当前线程，比如 join 某个线程 a, 会让当前线程 b 进入等待，直到 a 的生命周期结束，此期间 b 线程是处于 blocked 状态。&lt;/p&gt;
 &lt;blockquote&gt;
-&lt;p&gt;什么是synchronized?&lt;/p&gt;
+&lt;p&gt;什么是 synchronized?&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;p&gt;synchronized关键字可以时间一个简单的策略来防止线程干扰和内存一致性错误，如果一个对象是对多个线程可见的，那么对该对想的所有读写都将通过同步的方式来进行。&lt;/p&gt;
+&lt;p&gt;synchronized 关键字可以时间一个简单的策略来防止线程干扰和内存一致性错误，如果一个对象是对多个线程可见的，那么对该对想的所有读写都将通过同步的方式来进行。&lt;/p&gt;
 &lt;blockquote&gt;
-&lt;p&gt;synchronized包括哪两个jvm重要的指令？&lt;/p&gt;
+&lt;p&gt;synchronized 包括哪两个 jvm 重要的指令？&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;p&gt;monitor enter 和 monitor exit&lt;/p&gt;
 &lt;blockquote&gt;
-&lt;p&gt;synchronized关键字用法?&lt;/p&gt;
+&lt;p&gt;synchronized 关键字用法？&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;p&gt;可以用于对代码块或方法的修饰&lt;/p&gt;
 &lt;blockquote&gt;
-&lt;p&gt;synchronized锁的是什么?&lt;/p&gt;
+&lt;p&gt;synchronized 锁的是什么？&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;p&gt;普通同步方法 —————&amp;gt; 锁的是当前实力对象。&lt;/p&gt;
-&lt;p&gt;静态同步方法—————&amp;gt; 锁的是当前类的Class对象。&lt;/p&gt;
-&lt;p&gt;同步方法 块—————&amp;gt; 锁的是synchonized括号里配置的对象。&lt;/p&gt;
+&lt;p&gt;静态同步方法 —————&amp;gt; 锁的是当前类的 Class 对象。&lt;/p&gt;
+&lt;p&gt;同步方法 块 —————&amp;gt; 锁的是 synchonized 括号里配置的对象。&lt;/p&gt;
 &lt;blockquote&gt;
-&lt;p&gt;Java对象头&lt;/p&gt;
+&lt;p&gt;Java 对象头&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;p&gt;synchronized用的锁是存在Java对象头里的。对象如果是数组类型，虚拟机用3个字宽(Word)存储对象头，如果对象是非数组类型，用2字宽存储对象头。&lt;/p&gt;
-&lt;p&gt;Tips:32位虚拟机中一个字宽等于4字节。&lt;/p&gt;
+&lt;p&gt;synchronized 用的锁是存在 Java 对象头里的。对象如果是数组类型，虚拟机用 3 个字宽 (Word) 存储对象头，如果对象是非数组类型，用 2 字宽存储对象头。&lt;/p&gt;
+&lt;p&gt;Tips:32 位虚拟机中一个字宽等于 4 字节。&lt;/p&gt;
 &lt;blockquote&gt;
-&lt;p&gt;volatile关键字&lt;/p&gt;
+&lt;p&gt;volatile 关键字&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;p&gt;volatile 是轻量级的synchronized,它在多处理器开发中保证了共享变量的“可见性“。&lt;/p&gt;
-&lt;p&gt;Java语言规范第3版对volatile定义如下，Java允许线程访问共享变量，为了保证共享变量能准确和一致的更新，线程应该确保排它锁单独获得这个变量。如果一个字段被声明为volatile,Java线程内存模型所有线程看到这个变量的值是一致的。&lt;/p&gt;
+&lt;p&gt;volatile 是轻量级的 synchronized, 它在多处理器开发中保证了共享变量的 “可见性 “。&lt;/p&gt;
+&lt;p&gt;Java 语言规范第 3 版对 volatile 定义如下，Java 允许线程访问共享变量，为了保证共享变量能准确和一致的更新，线程应该确保排它锁单独获得这个变量。如果一个字段被声明为 volatile,Java 线程内存模型所有线程看到这个变量的值是一致的。&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;重入锁 ReentrantLock&lt;/p&gt;
 &lt;/blockquote&gt;
@@ -249,34 +256,36 @@
 &lt;p&gt;重进入是指任意线程在获取到锁之后能够再次获锁而不被锁阻塞。&lt;/p&gt;
 &lt;p&gt;该特性主要解决以下两个问题：&lt;/p&gt;
 &lt;ol&gt;
-&lt;li&gt;&lt;p&gt;锁需要去识别获取锁的线程是否为当前占据锁的线程，如果是则再次成功获取。&lt;/p&gt;
+&lt;li&gt;
+&lt;p&gt;锁需要去识别获取锁的线程是否为当前占据锁的线程，如果是则再次成功获取。&lt;/p&gt;
 &lt;/li&gt;
-&lt;li&gt;&lt;p&gt;所得最终释放。线程重复n次是获取了锁，随后在第n次释放该锁后，其他线程能够获取到该锁。&lt;/p&gt;
+&lt;li&gt;
+&lt;p&gt;所得最终释放。线程重复 n 次是获取了锁，随后在第 n 次释放该锁后，其他线程能够获取到该锁。&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
 &lt;blockquote&gt;
-&lt;p&gt;ReentrantLock默认锁？&lt;/p&gt;
+&lt;p&gt;ReentrantLock 默认锁？&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;p&gt;默认非公平锁&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;公平锁和非公平锁的区别&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;p&gt;公平性与否针对获取锁来说的，如果一个锁是公平的，那么锁的获取顺序就应该符合请求的绝对时间顺序，也就是&lt;code&gt;FIFO&lt;/code&gt;。&lt;/p&gt;
+&lt;p&gt;公平性与否针对获取锁来说的，如果一个锁是公平的，那么锁的获取顺序就应该符合请求的绝对时间顺序，也就是 &lt;code&gt;FIFO&lt;/code&gt; 。&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;读写锁&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;p&gt;读写锁允许同一时刻多个读线程访问，但是写线程和其他写线程均被阻塞。读写锁维护一个读锁一个写锁，读写分离，并发性得到了提升。&lt;br&gt;&lt;code&gt;Java&lt;/code&gt;中提供读写锁的实现类是&lt;code&gt;ReentrantReadWriteLock&lt;/code&gt;。&lt;/p&gt;
+&lt;p&gt;读写锁允许同一时刻多个读线程访问，但是写线程和其他写线程均被阻塞。读写锁维护一个读锁一个写锁，读写分离，并发性得到了提升。&lt;br&gt;
+ &lt;code&gt;Java&lt;/code&gt;  中提供读写锁的实现类是 &lt;code&gt;ReentrantReadWriteLock&lt;/code&gt; 。&lt;/p&gt;
 &lt;blockquote&gt;
-&lt;p&gt;Java并发容器，你知道几个？&lt;/p&gt;
+&lt;p&gt;Java 并发容器，你知道几个？&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;p&gt;ConcurrentHashMap、CopyOnWriteArrayList 、CopyOnWriteArraySet 、ConcurrentLinkedQueue、&lt;/p&gt;
 &lt;p&gt;ConcurrentLinkedDeque、ConcurrentSkipListMap、ConcurrentSkipListSet、ArrayBlockingQueue、&lt;/p&gt;
 &lt;p&gt;LinkedBlockingQueue、LinkedBlockingDeque、PriorityBlockingQueue、SynchronousQueue、&lt;/p&gt;
 &lt;p&gt;LinkedTransferQueue、DelayQueue&lt;/p&gt;
 &lt;blockquote&gt;
-&lt;p&gt;Java里的阻塞的队列&lt;/p&gt;
+&lt;p&gt;Java 里的阻塞的队列&lt;/p&gt;
 &lt;/blockquote&gt;
-
 
 &lt;blockquote&gt;
 &lt;p&gt;工作窃取算法&lt;/p&gt;
@@ -286,62 +295,70 @@
 &lt;p&gt;创建线程池参数有哪些，作用？&lt;/p&gt;
 &lt;/blockquote&gt;
 
-
 &lt;ol&gt;
-&lt;li&gt;&lt;p&gt;corePoolSize:核心线程池大小，当提交一个任务时，线程池会创建一个线程来执行任务，即使其他空闲的核心线程能够执行新任务也会创建，等待需要执行的任务数大于线程核心大小就不会继续创建。&lt;/p&gt;
+&lt;li&gt;
+&lt;p&gt;corePoolSize: 核心线程池大小，当提交一个任务时，线程池会创建一个线程来执行任务，即使其他空闲的核心线程能够执行新任务也会创建，等待需要执行的任务数大于线程核心大小就不会继续创建。&lt;/p&gt;
 &lt;/li&gt;
-&lt;li&gt;&lt;p&gt;maximumPoolSize:线程池最大数，允许创建的最大线程数，如果队列满了，并且已经创建的线程数小于最大线程数，则会创建新的线程执行任务。如果是无界队列，这个参数基本没用。&lt;/p&gt;
+&lt;li&gt;
+&lt;p&gt;maximumPoolSize: 线程池最大数，允许创建的最大线程数，如果队列满了，并且已经创建的线程数小于最大线程数，则会创建新的线程执行任务。如果是无界队列，这个参数基本没用。&lt;/p&gt;
 &lt;/li&gt;
-&lt;li&gt;&lt;p&gt;keepAliveTime: 线程保持活动时间，线程池工作线程空闲后，保持存活的时间，所以如果任务很多，并且每个任务执行时间较短，可以调大时间，提高线程利用率。&lt;/p&gt;
+&lt;li&gt;
+&lt;p&gt;keepAliveTime: 线程保持活动时间，线程池工作线程空闲后，保持存活的时间，所以如果任务很多，并且每个任务执行时间较短，可以调大时间，提高线程利用率。&lt;/p&gt;
 &lt;/li&gt;
-&lt;li&gt;&lt;p&gt;unit: 线程保持活动时间单位，天（DAYS)、小时(HOURS)、分钟(MINUTES、毫秒MILLISECONDS)、微秒(MICROSECONDS)、纳秒(NANOSECONDS)&lt;/p&gt;
+&lt;li&gt;
+&lt;p&gt;unit: 线程保持活动时间单位，天（DAYS)、小时 (HOURS)、分钟 (MINUTES、毫秒 MILLISECONDS)、微秒 (MICROSECONDS)、纳秒 (NANOSECONDS)&lt;/p&gt;
 &lt;/li&gt;
-&lt;li&gt;&lt;p&gt;workQueue: 任务队列，保存等待执行的任务的阻塞队列。&lt;/p&gt;
+&lt;li&gt;
+&lt;p&gt;workQueue: 任务队列，保存等待执行的任务的阻塞队列。&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
 &lt;p&gt;一般来说可以选择如下阻塞队列：&lt;/p&gt;
-&lt;p&gt;&lt;code&gt;ArrayBlockingQueue&lt;/code&gt;:基于数组的有界阻塞队列。&lt;/p&gt;
-&lt;p&gt;&lt;code&gt;LinkedBlockingQueue&lt;/code&gt;:基于链表的阻塞队列。&lt;/p&gt;
-&lt;p&gt;&lt;code&gt;SynchronizedQueue&lt;/code&gt;:一个不存储元素的阻塞队列。&lt;/p&gt;
-&lt;p&gt;&lt;code&gt;PriorityBlockingQueue&lt;/code&gt;:一个具有优先级的阻塞队列。&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;ArrayBlockingQueue&lt;/code&gt; : 基于数组的有界阻塞队列。&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;LinkedBlockingQueue&lt;/code&gt; : 基于链表的阻塞队列。&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;SynchronizedQueue&lt;/code&gt; : 一个不存储元素的阻塞队列。&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;PriorityBlockingQueue&lt;/code&gt; : 一个具有优先级的阻塞队列。&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;向线程池提交任务&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;p&gt;可以使用&lt;code&gt;execute()&lt;/code&gt;和&lt;code&gt;submit()&lt;/code&gt; 两种方式提交任务。&lt;/p&gt;
-&lt;p&gt;&lt;code&gt;execute()&lt;/code&gt;:无返回值，所以无法判断任务是否被执行成功。&lt;/p&gt;
-&lt;p&gt;&lt;code&gt;submit()&lt;/code&gt;:用于提交需要有返回值的任务。线程池返回一个&lt;code&gt;future&lt;/code&gt;类型的对象，通过这个&lt;code&gt;future&lt;/code&gt;对象可以判断任务是否执行成功，并且可以通过&lt;code&gt;future的get()&lt;/code&gt;来获取返回值，&lt;code&gt;get()&lt;/code&gt;方法会阻塞当前线程知道任务完成。&lt;code&gt;get(long timeout,TimeUnit unit)&lt;/code&gt;可以设置超市时间。&lt;/p&gt;
+&lt;p&gt;可以使用 &lt;code&gt;execute()&lt;/code&gt;  和 &lt;code&gt;submit()&lt;/code&gt;  两种方式提交任务。&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;execute()&lt;/code&gt; : 无返回值，所以无法判断任务是否被执行成功。&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;submit()&lt;/code&gt; : 用于提交需要有返回值的任务。线程池返回一个 &lt;code&gt;future&lt;/code&gt;  类型的对象，通过这个 &lt;code&gt;future&lt;/code&gt;  对象可以判断任务是否执行成功，并且可以通过 &lt;code&gt;future的get()&lt;/code&gt;  来获取返回值， &lt;code&gt;get()&lt;/code&gt;  方法会阻塞当前线程知道任务完成。 &lt;code&gt;get(long timeout,TimeUnit unit)&lt;/code&gt;  可以设置超市时间。&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;关闭线程池&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;p&gt;可以通过shutdown()或shutdownNow()来关闭线程池。它们的原理是遍历线程池中的工作线程，然后逐个调用线程的interrupt来中断线程，所以无法响应终端的任务可以能永远无法停止。&lt;/p&gt;
-&lt;p&gt;shutdownNow首先将线程池状态设置成STOP,然后尝试停止所有的正在执行或者暂停的线程，并返回等待执行任务的列表。&lt;/p&gt;
-&lt;p&gt;shutdown只是将线程池的状态设置成shutdown状态，然后中断所有没有正在执行任务的线程。&lt;/p&gt;
-&lt;p&gt;只要调用两者之一，isShutdown就会返回true,当所有任务都已关闭，isTerminaed就会返回true。&lt;/p&gt;
-&lt;p&gt;一般来说调用shutdown方法来关闭线程池，如果任务不一定要执行完，可以直接调用shutdownNow方法。&lt;/p&gt;
+&lt;p&gt;可以通过 shutdown () 或 shutdownNow () 来关闭线程池。它们的原理是遍历线程池中的工作线程，然后逐个调用线程的 interrupt 来中断线程，所以无法响应终端的任务可以能永远无法停止。&lt;/p&gt;
+&lt;p&gt;shutdownNow 首先将线程池状态设置成 STOP, 然后尝试停止所有的正在执行或者暂停的线程，并返回等待执行任务的列表。&lt;/p&gt;
+&lt;p&gt;shutdown 只是将线程池的状态设置成 shutdown 状态，然后中断所有没有正在执行任务的线程。&lt;/p&gt;
+&lt;p&gt;只要调用两者之一，isShutdown 就会返回 true, 当所有任务都已关闭，isTerminaed 就会返回 true。&lt;/p&gt;
+&lt;p&gt;一般来说调用 shutdown 方法来关闭线程池，如果任务不一定要执行完，可以直接调用 shutdownNow 方法。&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;线程池如何合理设置&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;p&gt;配置线程池可以从以下几个方面考虑。&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;p&gt;任务是cpu密集型、IO密集型或者混合型&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;任务优先级，高中低。&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;任务时间执行长短。&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;任务依赖性：是否依赖其他系统资源。&lt;/p&gt;
+&lt;li&gt;任务是 cpu 密集型、IO 密集型或者混合型&lt;/li&gt;
+&lt;li&gt;任务优先级，高中低。&lt;/li&gt;
+&lt;li&gt;任务时间执行长短。&lt;/li&gt;
+&lt;li&gt;任务依赖性：是否依赖其他系统资源。
 &lt;ul&gt;
-&lt;li&gt;&lt;p&gt;cpu密集型可以配置可能小的线程,比如 n + 1个线程。&lt;/p&gt;
+&lt;li&gt;
+&lt;p&gt;cpu 密集型可以配置可能小的线程，比如 n + 1 个线程。&lt;/p&gt;
 &lt;/li&gt;
-&lt;li&gt;&lt;p&gt;io密集型可以配置较多的线程，如 2n个线程。&lt;/p&gt;
+&lt;li&gt;
+&lt;p&gt;io 密集型可以配置较多的线程，如 2n 个线程。&lt;/p&gt;
 &lt;/li&gt;
-&lt;li&gt;&lt;p&gt;混合型可以拆成io密集型任务和cpu密集型任务，&lt;/p&gt;
+&lt;li&gt;
+&lt;p&gt;混合型可以拆成 io 密集型任务和 cpu 密集型任务，&lt;/p&gt;
 &lt;/li&gt;
-&lt;li&gt;&lt;p&gt;如果两个任务执行时间相差大，否-&amp;gt;分解后执行吞吐量将高于串行执行吞吐量。&lt;br&gt;否-&amp;gt;没必要分解。&lt;/p&gt;
+&lt;li&gt;
+&lt;p&gt;如果两个任务执行时间相差大，否 -&amp;gt; 分解后执行吞吐量将高于串行执行吞吐量。&lt;br&gt;
+否 -&amp;gt; 没必要分解。&lt;/p&gt;
 &lt;/li&gt;
-&lt;li&gt;&lt;p&gt;可以通过Runtime.getRuntime().availableProcessors()来获取cpu个数。&lt;/p&gt;
+&lt;li&gt;
+&lt;p&gt;可以通过 Runtime.getRuntime ().availableProcessors () 来获取 cpu 个数。&lt;/p&gt;
 &lt;/li&gt;
-&lt;li&gt;&lt;p&gt;建议使用有界队列，增加系统的预警能力和稳定性。&lt;/p&gt;
+&lt;li&gt;
+&lt;p&gt;建议使用有界队列，增加系统的预警能力和稳定性。&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
@@ -350,13 +367,17 @@
 &lt;p&gt;JDK 内置的拒绝策略&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;p&gt;AbortPolicy 抛出异常。&lt;/p&gt;
+&lt;li&gt;
+&lt;p&gt;AbortPolicy 抛出异常。&lt;/p&gt;
 &lt;/li&gt;
-&lt;li&gt;&lt;p&gt;DiscardPolicy 直接静悄悄的丢弃这个任务，不触发任何动作。这个策略基本不会使用&lt;/p&gt;
+&lt;li&gt;
+&lt;p&gt;DiscardPolicy 直接静悄悄的丢弃这个任务，不触发任何动作。这个策略基本不会使用&lt;/p&gt;
 &lt;/li&gt;
-&lt;li&gt;&lt;p&gt;DiscardOldestPolicy 丢弃队列最前面（最旧）的任务，然后重新尝试执行任务（重复此过程）。&lt;/p&gt;
+&lt;li&gt;
+&lt;p&gt;DiscardOldestPolicy 丢弃队列最前面（最旧）的任务，然后重新尝试执行任务（重复此过程）。&lt;/p&gt;
 &lt;/li&gt;
-&lt;li&gt;&lt;p&gt;CallerRunsPolicy 由调用线程处理该任务 。&lt;/p&gt;
+&lt;li&gt;
+&lt;p&gt;CallerRunsPolicy 由调用线程处理该任务 。&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
  ]]></description>

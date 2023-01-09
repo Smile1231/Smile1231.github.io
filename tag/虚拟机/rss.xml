@@ -9,43 +9,43 @@
         <lastBuildDate>Mon, 22 Nov 2021 17:05:19 +0800</lastBuildDate>
         <category>SAP</category>
         <category>Java</category>
+        <category>Corn</category>
+        <category>生物信息</category>
+        <category>基因编辑</category>
         <category>Cache</category>
         <category>Cookie</category>
         <category>Session</category>
         <category>Java面试</category>
-        <category>生物信息</category>
-        <category>基因编辑</category>
-        <category>Corn</category>
         <category>前端</category>
         <category>Css</category>
-        <category>Docker</category>
         <category>DDD</category>
         <category>领域驱动设计</category>
-        <category>FastJson</category>
+        <category>DisPlay属性</category>
+        <category>Docker</category>
         <category>blog</category>
         <category>hexo</category>
         <category>next</category>
-        <category>DisPlay属性</category>
+        <category>FastJson</category>
         <category>JavaScript</category>
         <category>Html</category>
         <category>IDEA</category>
         <category>SpringBoot</category>
         <category>Jvm</category>
-        <category>map</category>
-        <category>Stream流</category>
+        <category>函数式接口</category>
         <category>Jenkins</category>
         <category>CI/CD</category>
-        <category>函数式接口</category>
+        <category>map</category>
+        <category>Stream流</category>
         <category>Assert</category>
         <category>java</category>
         <category>calender</category>
         <category>Springboot</category>
-        <category>Python</category>
-        <category>Jupyter</category>
-        <category>Machine Learning</category>
         <category>LeetCode</category>
         <category>算法</category>
         <category>递归</category>
+        <category>Python</category>
+        <category>Jupyter</category>
+        <category>Machine Learning</category>
         <category>Linux</category>
         <category>Mybatis</category>
         <category>分页查询</category>
@@ -54,59 +54,59 @@
         <category>sklearn</category>
         <category>模糊查询</category>
         <category>Nginx</category>
-        <category>Spring</category>
         <category>Spoken English</category>
+        <category>Spring</category>
         <category>SrpingBoot</category>
         <category>文件上传</category>
         <category>事务</category>
+        <category>master</category>
         <category>TypeScript</category>
         <category>WebPack</category>
-        <category>Groovy</category>
-        <category>master</category>
-        <category>UML</category>
-        <category>Ubuntu</category>
-        <category>Mysql</category>
-        <category>Vue</category>
-        <category>VSCODE</category>
-        <category>快捷键</category>
         <category>VsCode</category>
         <category>Shell</category>
-        <category>日期</category>
-        <category>Stream</category>
+        <category>Groovy</category>
+        <category>UML</category>
+        <category>VSCODE</category>
+        <category>快捷键</category>
+        <category>Vue</category>
+        <category>Ubuntu</category>
+        <category>Mysql</category>
         <category>git</category>
-        <category>线程池</category>
+        <category>Stream</category>
+        <category>日期</category>
         <category>ubuntu</category>
         <category>虚拟机</category>
         <category>二分查找</category>
+        <category>线程池</category>
+        <category>Hadoop</category>
         <category>数据挖掘</category>
         <category>操作系统</category>
-        <category>Hadoop</category>
         <category>EasyExcel</category>
-        <category>node</category>
         <category>JVM</category>
+        <category>node</category>
         <category>Yaml</category>
         <category>Hexo</category>
-        <category>数据库</category>
         <category>junit</category>
+        <category>数据库</category>
         <category>Mysql事务</category>
-        <category>Git</category>
-        <category>冒泡排序</category>
         <category>git,npm,node</category>
+        <category>冒泡排序</category>
+        <category>Git</category>
         <category>堆排序</category>
-        <category>动态规划</category>
         <category>幂等性</category>
-        <category>Google</category>
         <category>多线程</category>
         <category>流</category>
+        <category>Google</category>
+        <category>动态规划</category>
         <category>归并排序</category>
-        <category>快速排序</category>
         <category>vue</category>
+        <category>快速排序</category>
         <category>正则表达式</category>
         <category>直接插入排序</category>
-        <category>选择排序</category>
         <category>Java 面试</category>
         <category>数据结构</category>
         <category>阻塞队列</category>
+        <category>选择排序</category>
         <category>Spring事务</category>
         <category>JDK</category>
         <category>动态代理</category>
@@ -127,51 +127,41 @@
             <category>ubuntu</category>
             <category>虚拟机</category>
             <pubDate>Mon, 22 Nov 2021 17:05:19 +0800</pubDate>
-            <description><![CDATA[ &lt;p&gt;使用&lt;code&gt;vmware&lt;/code&gt;安装&lt;code&gt;Ubuntu 20 LTS&lt;/code&gt; 后 &lt;code&gt;vmware tools&lt;/code&gt;工具选项为灰色，不允许安装，也无法共享文件夹问题。&lt;/p&gt;
-&lt;img data-src=&#34;/blog/posts/6e65ed30/2021-11-22-17-07-07.png&#34; class=&#34;&#34;&gt;
-
+            <description><![CDATA[ &lt;p&gt;使用 &lt;code&gt;vmware&lt;/code&gt;  安装 &lt;code&gt;Ubuntu 20 LTS&lt;/code&gt;  后  &lt;code&gt;vmware tools&lt;/code&gt;  工具选项为灰色，不允许安装，也无法共享文件夹问题。&lt;/p&gt;
+&lt;img data-src=&#34;/posts/6e65ed30/2021-11-22-17-07-07.png&#34; class=&#34;&#34;&gt;
 &lt;span id=&#34;more&#34;&gt;&lt;/span&gt;
-
-&lt;p&gt;&lt;code&gt;lsb_release -a&lt;/code&gt;查看当前&lt;code&gt;Ubutun&lt;/code&gt;版本。&lt;/p&gt;
-&lt;h2 id=&#34;解决办法：&#34;&gt;&lt;a href=&#34;#解决办法：&#34; class=&#34;headerlink&#34; title=&#34;解决办法：&#34;&gt;&lt;/a&gt;解决办法：&lt;/h2&gt;&lt;ol&gt;
-&lt;li&gt;在&lt;code&gt;vmware&lt;/code&gt;安装目录下找到&lt;code&gt;linux.iso&lt;/code&gt;文件&lt;/li&gt;
+&lt;p&gt;&lt;code&gt;lsb_release -a&lt;/code&gt;  查看当前 &lt;code&gt;Ubutun&lt;/code&gt;  版本。&lt;/p&gt;
+&lt;h2 id=&#34;解决办法&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#解决办法&#34;&gt;#&lt;/a&gt; 解决办法：&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;在 &lt;code&gt;vmware&lt;/code&gt;  安装目录下找到 &lt;code&gt;linux.iso&lt;/code&gt;  文件&lt;/li&gt;
 &lt;/ol&gt;
-&lt;img data-src=&#34;/blog/posts/6e65ed30/2021-11-22-17-09-52.png&#34; class=&#34;&#34;&gt;
-
+&lt;img data-src=&#34;/posts/6e65ed30/2021-11-22-17-09-52.png&#34; class=&#34;&#34;&gt;
 &lt;ol start=&#34;2&#34;&gt;
 &lt;li&gt;使用光盘挂接方式挂接到当前虚拟机。&lt;/li&gt;
 &lt;/ol&gt;
-&lt;img data-src=&#34;/blog/posts/6e65ed30/2021-11-22-17-30-17.png&#34; class=&#34;&#34;&gt;
+&lt;img data-src=&#34;/posts/6e65ed30/2021-11-22-17-30-17.png&#34; class=&#34;&#34;&gt;
 &lt;ol start=&#34;3&#34;&gt;
-&lt;li&gt;将会在虚拟机内看到一个&lt;code&gt;DVD&lt;/code&gt;显示为&lt;code&gt;VMWare Tools&lt;/code&gt;。&lt;/li&gt;
+&lt;li&gt;将会在虚拟机内看到一个 &lt;code&gt;DVD&lt;/code&gt;  显示为 &lt;code&gt;VMWare Tools&lt;/code&gt; 。&lt;/li&gt;
 &lt;/ol&gt;
-&lt;img data-src=&#34;/blog/posts/6e65ed30/2021-11-22-17-30-49.png&#34; class=&#34;&#34;&gt;
+&lt;img data-src=&#34;/posts/6e65ed30/2021-11-22-17-30-49.png&#34; class=&#34;&#34;&gt;
 &lt;ol start=&#34;4&#34;&gt;
-&lt;li&gt;进入到目标目录下并进入终端&lt;img data-src=&#34;/blog/posts/6e65ed30/2021-11-22-17-31-56.png&#34; class=&#34;&#34;&gt;
-&lt;img data-src=&#34;/blog/posts/6e65ed30/2021-11-22-17-32-26.png&#34; class=&#34;&#34;&gt;&lt;/li&gt;
-&lt;li&gt;进行解压 &lt;code&gt;tar -zxvf VMwareTools…tar.gz&lt;/code&gt;&lt;br&gt;在解压文件夹下&lt;code&gt;sudo ./vmware-install.pl&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;进入到目标目录下并进入终端&lt;/li&gt;
+&lt;/ol&gt;
+&lt;img data-src=&#34;/posts/6e65ed30/2021-11-22-17-31-56.png&#34; class=&#34;&#34;&gt;
+&lt;img data-src=&#34;/posts/6e65ed30/2021-11-22-17-32-26.png&#34; class=&#34;&#34;&gt;
+&lt;ol start=&#34;5&#34;&gt;
+&lt;li&gt;进行解压  &lt;code&gt;tar -zxvf VMwareTools…tar.gz&lt;/code&gt; &lt;br&gt;
+ 在解压文件夹下 &lt;code&gt;sudo ./vmware-install.pl&lt;/code&gt;&lt;/li&gt;
 &lt;/ol&gt;
 &lt;p&gt;7 都选择默认，一路回车安装完成。&lt;/p&gt;
-&lt;p&gt;8 最后在&lt;code&gt;mnt&lt;/code&gt;文件夹下就会看到&lt;code&gt;hgfs&lt;/code&gt;文件了，就可以实现和&lt;code&gt;Windows&lt;/code&gt;文件共享了。&lt;/p&gt;
-&lt;img data-src=&#34;/blog/posts/6e65ed30/2021-11-22-17-33-55.png&#34; class=&#34;&#34;&gt;
-
-
-
-
-&lt;h2 id=&#34;共享文件夹不存在解决办法&#34;&gt;&lt;a href=&#34;#共享文件夹不存在解决办法&#34; class=&#34;headerlink&#34; title=&#34;共享文件夹不存在解决办法&#34;&gt;&lt;/a&gt;共享文件夹不存在解决办法&lt;/h2&gt;&lt;figure class=&#34;highlight plaintext&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;sudo vmhgfs-fuse .host:/ /mnt/hgfs/ -o allow_other -o uid=1000&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-
-&lt;h2 id=&#34;使用apt无法定文软件版解决方案&#34;&gt;&lt;a href=&#34;#使用apt无法定文软件版解决方案&#34; class=&#34;headerlink&#34; title=&#34;使用apt无法定文软件版解决方案&#34;&gt;&lt;/a&gt;使用&lt;code&gt;apt&lt;/code&gt;无法定文软件版解决方案&lt;/h2&gt;&lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;13&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;14&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;15&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;16&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;17&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;18&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;19&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;20&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;21&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;22&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;23&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;24&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;25&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;26&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;27&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;28&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;29&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;#备份sources.list文件&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;sudo cp  /etc/apt/sources.list /etc/apt/sources.list.bak&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;#打开sources.list文件&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;sudo vim  /etc/apt/sources.list&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;#删除原内容，添加下列内容&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;deb https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ bionic main restricted universe multiverse&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;deb-src https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ bionic main restricted universe multiverse&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;deb https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ bionic-updates main restricted universe multiverse&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;deb-src https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ bionic-updates main restricted universe multiverse&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;deb https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ bionic-backports main restricted universe multiverse&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;deb-src https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ bionic-backports main restricted universe multiverse&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;deb https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ bionic-security main restricted universe multiverse&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;deb-src https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ bionic-security main restricted universe multiverse&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;deb https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ bionic-proposed main restricted universe multiverse&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;deb-src https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ bionic-proposed main restricted universe multiverse&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;deb http://mirrors.aliyun.com/ubuntu/ bionic main restricted universe multiverse&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;deb http://mirrors.aliyun.com/ubuntu/ bionic-security main restricted universe multiverse&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;deb http://mirrors.aliyun.com/ubuntu/ bionic-updates main restricted universe multiverse&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;deb http://mirrors.aliyun.com/ubuntu/ bionic-proposed main restricted universe multiverse&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;deb http://mirrors.aliyun.com/ubuntu/ bionic-backports main restricted universe multiverse&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;deb-src http://mirrors.aliyun.com/ubuntu/ bionic main restricted universe multiverse&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;deb-src http://mirrors.aliyun.com/ubuntu/ bionic-security main restricted universe multiverse&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;deb-src http://mirrors.aliyun.com/ubuntu/ bionic-updates main restricted universe multiverse&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;deb-src http://mirrors.aliyun.com/ubuntu/ bionic-proposed main restricted universe multiverse&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;deb-src http://mirrors.aliyun.com/ubuntu/ bionic-backports main restricted universe multiverse&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;#保存 做完以上前期工作，正式安装yum&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;sudo apt-get update&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;sudo apt install yum&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;#成功解决上楼报错&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;h2 id=&#34;Ubuntu-20-04-提示“检测到系统程序出现问题”解决&#34;&gt;&lt;a href=&#34;#Ubuntu-20-04-提示“检测到系统程序出现问题”解决&#34; class=&#34;headerlink&#34; title=&#34;Ubuntu 20 04 提示“检测到系统程序出现问题”解决&#34;&gt;&lt;/a&gt;&lt;code&gt;Ubuntu 20 04&lt;/code&gt; 提示“检测到系统程序出现问题”解决&lt;/h2&gt;&lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;sudo vi /etc/default/apport&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;# 将enabled=0&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;enabled=0&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-
-
-
-
-
-
-
-
-
-
+&lt;p&gt;8 最后在 &lt;code&gt;mnt&lt;/code&gt;  文件夹下就会看到 &lt;code&gt;hgfs&lt;/code&gt;  文件了，就可以实现和 &lt;code&gt;Windows&lt;/code&gt;  文件共享了。&lt;/p&gt;
+&lt;img data-src=&#34;/posts/6e65ed30/2021-11-22-17-33-55.png&#34; class=&#34;&#34;&gt;
+&lt;h2 id=&#34;共享文件夹不存在解决办法&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#共享文件夹不存在解决办法&#34;&gt;#&lt;/a&gt; 共享文件夹不存在解决办法&lt;/h2&gt;
+&lt;figure class=&#34;highlight plaintext&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;sudo vmhgfs-fuse .host:/ /mnt/hgfs/ -o allow_other -o uid=1000&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;h2 id=&#34;使用apt无法定文软件版解决方案&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#使用apt无法定文软件版解决方案&#34;&gt;#&lt;/a&gt; 使用 &lt;code&gt;apt&lt;/code&gt;  无法定文软件版解决方案&lt;/h2&gt;
+&lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;13&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;14&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;15&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;16&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;17&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;18&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;19&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;20&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;21&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;22&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;23&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;24&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;25&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;26&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;27&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;28&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;29&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;#备份sources.list文件&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;sudo cp  /etc/apt/sources.list /etc/apt/sources.list.bak&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;#打开sources.list文件&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;sudo vim  /etc/apt/sources.list&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;#删除原内容，添加下列内容&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;deb https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ bionic main restricted universe multiverse&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;deb-src https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ bionic main restricted universe multiverse&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;deb https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ bionic-updates main restricted universe multiverse&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;deb-src https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ bionic-updates main restricted universe multiverse&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;deb https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ bionic-backports main restricted universe multiverse&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;deb-src https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ bionic-backports main restricted universe multiverse&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;deb https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ bionic-security main restricted universe multiverse&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;deb-src https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ bionic-security main restricted universe multiverse&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;deb https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ bionic-proposed main restricted universe multiverse&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;deb-src https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ bionic-proposed main restricted universe multiverse&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;deb http://mirrors.aliyun.com/ubuntu/ bionic main restricted universe multiverse&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;deb http://mirrors.aliyun.com/ubuntu/ bionic-security main restricted universe multiverse&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;deb http://mirrors.aliyun.com/ubuntu/ bionic-updates main restricted universe multiverse&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;deb http://mirrors.aliyun.com/ubuntu/ bionic-proposed main restricted universe multiverse&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;deb http://mirrors.aliyun.com/ubuntu/ bionic-backports main restricted universe multiverse&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;deb-src http://mirrors.aliyun.com/ubuntu/ bionic main restricted universe multiverse&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;deb-src http://mirrors.aliyun.com/ubuntu/ bionic-security main restricted universe multiverse&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;deb-src http://mirrors.aliyun.com/ubuntu/ bionic-updates main restricted universe multiverse&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;deb-src http://mirrors.aliyun.com/ubuntu/ bionic-proposed main restricted universe multiverse&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;deb-src http://mirrors.aliyun.com/ubuntu/ bionic-backports main restricted universe multiverse&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;#保存 做完以上前期工作，正式安装yum&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;sudo apt-get update&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;sudo apt install yum&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;#成功解决上楼报错&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;h2 id=&#34;ubuntu-20-04-提示检测到系统程序出现问题解决&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#ubuntu-20-04-提示检测到系统程序出现问题解决&#34;&gt;#&lt;/a&gt;  &lt;code&gt;Ubuntu 20 04&lt;/code&gt;  提示 “检测到系统程序出现问题” 解决&lt;/h2&gt;
+&lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;sudo vi /etc/default/apport&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;# 将enabled=0&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;enabled=0&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
  ]]></description>
         </item>
     </channel>

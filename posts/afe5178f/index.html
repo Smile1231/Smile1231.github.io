@@ -21,7 +21,7 @@
 
 <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Mulish:300,300italic,400,400italic,700,700italic%7CFredericka%20the%20Great:300,300italic,400,400italic,700,700italic%7CNoto%20Serif%20JP:300,300italic,400,400italic,700,700italic%7CNoto%20Serif%20SC:300,300italic,400,400italic,700,700italic%7CInconsolata:300,300italic,400,400italic,700,700italic&display=swap&subset=latin,latin-ext">
 
-<link rel="stylesheet" href="/blog/css/app.css?v=0.2.5">
+<link rel="stylesheet" href="/css/app.css?v=0.2.5">
 
   
   <meta name="keywords" content="git,npm,node" />
@@ -101,7 +101,7 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
       </div>
     </div>
     <ul class="menu">
-      <li class="item title"><a href="/blog/" rel="start">Jin Mao when to get rich ?</a></li>
+      <li class="item title"><a href="/" rel="start">Jin Mao when to get rich ?</a></li>
     </ul>
     <ul class="right">
       <li class="item theme">
@@ -117,12 +117,12 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
       </div>
       <div id="imgs" class="pjax">
         <ul>
-          <li class="item" data-background-image="https://tva2.sinaimg.cn/large/6833939bly1gipey0a334j20zk0m8qpt.jpg"></li>
-          <li class="item" data-background-image="https://tva2.sinaimg.cn/large/6833939bly1giclflwv2aj20zk0m84qp.jpg"></li>
-          <li class="item" data-background-image="https://tva2.sinaimg.cn/large/6833939bly1gicivghyooj20zk0m8dir.jpg"></li>
-          <li class="item" data-background-image="https://tva2.sinaimg.cn/large/6833939bly1gipesrnqv3j20zk0m8ava.jpg"></li>
-          <li class="item" data-background-image="https://tva2.sinaimg.cn/large/6833939bly1gipey84bjtj20zk0m8hdt.jpg"></li>
-          <li class="item" data-background-image="https://tva2.sinaimg.cn/large/6833939bly1giph4fomxoj20zk0m8axp.jpg"></li>
+          <li class="item" data-background-image="https://tva1.sinaimg.cn/large/6833939bly1gicljitigmj20zk0m87fp.jpg"></li>
+          <li class="item" data-background-image="https://tva1.sinaimg.cn/large/6833939bly1giclh0m9pdj20zk0m8hdt.jpg"></li>
+          <li class="item" data-background-image="https://tva1.sinaimg.cn/large/6833939bly1giciszlczyj20zk0m816d.jpg"></li>
+          <li class="item" data-background-image="https://tva1.sinaimg.cn/large/6833939bly1gipesng5oej20zk0m87d4.jpg"></li>
+          <li class="item" data-background-image="https://tva1.sinaimg.cn/large/6833939bly1gipevgoki5j20zk0m84qp.jpg"></li>
+          <li class="item" data-background-image="https://tva1.sinaimg.cn/large/6833939bly1gicliwyw55j20zk0m8hdt.jpg"></li>
         </ul>
       </div>
     </header>
@@ -147,14 +147,14 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
     
 <div class="breadcrumb" itemscope itemtype="https://schema.org/BreadcrumbList">
 <i class="ic i-home"></i>
-<span><a href="/blog/">Home</a></span>
+<span><a href="/">Home</a></span>
 </div>
 
     <article itemscope itemtype="http://schema.org/Article" class="post block" lang="en">
   <link itemprop="mainEntityOfPage" href="https://smile1231.github.io/posts/afe5178f/">
 
   <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-    <meta itemprop="image" content="/blog/images/avatar.png">
+    <meta itemprop="image" content="/images/avatar.png">
     <meta itemprop="name" content="JIN Mao">
     <meta itemprop="description" content="got windy(起风了), ">
   </span>
@@ -166,27 +166,26 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
   <div class="body md" itemprop="articleBody">
     
 
-    <p> 我们在平时使用<code>git</code>或者<code>npm</code>等进行拉取项目或者安装一些需要科学上网的包时，就会报一些<code>connection timeout</code>的错误，这篇博客做了一些简单的汇总</p>
-<h2 id="关于git设置代理和取消代理"><a href="#关于git设置代理和取消代理" class="headerlink" title="关于git设置代理和取消代理"></a>关于<code>git</code>设置代理和取消代理</h2><span id="more"></span>
-
-
+    <p>我们在平时使用 <code>git</code>  或者 <code>npm</code>  等进行拉取项目或者安装一些需要科学上网的包时，就会报一些 <code>connection timeout</code>  的错误，这篇博客做了一些简单的汇总</p>
+<h2 id="关于git设置代理和取消代理"><a class="markdownIt-Anchor" href="#关于git设置代理和取消代理">#</a> 关于 <code>git</code>  设置代理和取消代理</h2>
+<span id="more"></span>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line">git config --global https.proxy http://127.0.0.1:1080</span><br><span class="line">//https</span><br><span class="line">git config --global https.proxy https://127.0.0.1:1080</span><br><span class="line">//使用socks5代理的 例如ss，ssr 1080是windows下ss的默认代理端口,mac下不同，或者有自定义的，根据自己的改</span><br><span class="line">git config --global http.proxy socks5://127.0.0.1:1080</span><br><span class="line">git config --global https.proxy socks5://127.0.0.1:1080</span><br><span class="line"></span><br><span class="line">//只对github.com使用代理，其他仓库不走代理</span><br><span class="line">git config --global http.https://github.com.proxy socks5://127.0.0.1:10808</span><br><span class="line">git config --global https.https://github.com.proxy socks5://127.0.0.1:10808</span><br><span class="line">//取消github代理</span><br><span class="line">git config --global --<span class="built_in">unset</span> http.https://github.com.proxy</span><br><span class="line">git config --global --<span class="built_in">unset</span> https.https://github.com.proxy</span><br><span class="line"></span><br><span class="line">//查看代理</span><br><span class="line">git config --global --get http.proxy</span><br><span class="line">git config --global --get https.proxy</span><br><span class="line"></span><br><span class="line">//取消全局代理</span><br><span class="line">git config --global --<span class="built_in">unset</span> http.proxy</span><br><span class="line">git config --global --<span class="built_in">unset</span> https.proxy</span><br></pre></td></tr></table></figure>
-
-<h2 id="关于npm的设置代理和取消代理"><a href="#关于npm的设置代理和取消代理" class="headerlink" title="关于npm的设置代理和取消代理"></a>关于<code>npm</code>的设置代理和取消代理</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">npm config set proxy socks5://127.0.0.1:10808</span><br><span class="line">npm config set https-proxy socks5://127.0.0.1:10808</span><br><span class="line"></span><br><span class="line"># npm设置镜像源</span><br><span class="line">npm config set registry=http://registry.npmjs.org</span><br><span class="line"></span><br><span class="line"># 查看镜像源</span><br><span class="line">npm config get registry</span><br><span class="line"></span><br><span class="line"># 淘宝镜像源 https://registry.npm.taobao.org/</span><br><span class="line"></span><br><span class="line"># 取消代理</span><br><span class="line">npm config delete proxy</span><br><span class="line">npm config delete https-proxy</span><br></pre></td></tr></table></figure>
-
-<h2 id="关于git修改推送仓库地址"><a href="#关于git修改推送仓库地址" class="headerlink" title="关于git修改推送仓库地址"></a>关于<code>git</code>修改推送仓库地址</h2><blockquote>
+<h2 id="关于npm的设置代理和取消代理"><a class="markdownIt-Anchor" href="#关于npm的设置代理和取消代理">#</a> 关于 <code>npm</code>  的设置代理和取消代理</h2>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">npm config set proxy socks5://127.0.0.1:10808</span><br><span class="line">npm config set https-proxy socks5://127.0.0.1:10808</span><br><span class="line"></span><br><span class="line"># npm设置镜像源</span><br><span class="line">npm config set registry=http://registry.npmjs.org</span><br><span class="line"></span><br><span class="line"># 查看镜像源</span><br><span class="line">npm config get registry</span><br><span class="line"></span><br><span class="line"># 淘宝镜像源 https://registry.npm.taobao.org/</span><br><span class="line"></span><br><span class="line"># 取消代理</span><br><span class="line">npm config delete proxy</span><br><span class="line">npm config delete https-proxy</span><br></pre></td></tr></table></figure>
+<h2 id="关于git修改推送仓库地址"><a class="markdownIt-Anchor" href="#关于git修改推送仓库地址">#</a> 关于 <code>git</code>  修改推送仓库地址</h2>
+<blockquote>
 <p>查看远程仓库地址</p>
 </blockquote>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git remote -v</span><br></pre></td></tr></table></figure>
-
 <p>方法有三种：</p>
 <p>修改命令</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git remote set-url origin [url]</span><br></pre></td></tr></table></figure>
 <p>先删后加</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">git remote rm origin</span><br><span class="line">git remote add origin [url]</span><br></pre></td></tr></table></figure>
-
-<h2 id="git统计项目代码行数"><a href="#git统计项目代码行数" class="headerlink" title="git统计项目代码行数"></a><code>git</code>统计项目代码行数</h2><blockquote>
-<p>显示项目的所有文件列表及行数（已删除的文件显示为空）<br>最后一行会显示项目代码的总行数</p>
+<h2 id="git统计项目代码行数"><a class="markdownIt-Anchor" href="#git统计项目代码行数">#</a>  <code>git</code>  统计项目代码行数</h2>
+<blockquote>
+<p>显示项目的所有文件列表及行数（已删除的文件显示为空）<br>
+最后一行会显示项目代码的总行数</p>
 </blockquote>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git ls-files | xargs wc -l</span><br></pre></td></tr></table></figure>
 <blockquote>
@@ -197,15 +196,13 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
 <p>只查看项目文件列表</p>
 </blockquote>
 <figure class="highlight vim"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git <span class="keyword">ls</span>-<span class="keyword">files</span></span><br></pre></td></tr></table></figure>
-
-<p><a target="_blank" rel="noopener" href="https://ipaddress.com/website/github.com">查看<code>Ip</code> link click</a></p>
-<h2 id="git-更改user-信息"><a href="#git-更改user-信息" class="headerlink" title="git 更改user 信息"></a>git 更改user 信息</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">git config --global user.name &quot;Your Name&quot;</span><br><span class="line">git config --global user.email &quot;your_email@example.com&quot;</span><br><span class="line"></span><br><span class="line">git config --list</span><br><span class="line"></span><br><span class="line">git config --global credential.helper cache</span><br><span class="line"></span><br></pre></td></tr></table></figure>
-
-
+<p><a target="_blank" rel="noopener" href="https://ipaddress.com/website/github.com">查看 <code>Ip</code>  link click</a></p>
+<h2 id="git-更改user-信息"><a class="markdownIt-Anchor" href="#git-更改user-信息">#</a> git 更改 user 信息</h2>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">git config --global user.name &quot;Your Name&quot;</span><br><span class="line">git config --global user.email &quot;your_email@example.com&quot;</span><br><span class="line"></span><br><span class="line">git config --list</span><br><span class="line"></span><br><span class="line">git config --global credential.helper cache</span><br><span class="line"></span><br></pre></td></tr></table></figure>
 <!-- https://github.com/microsoft/terminal -->
 
       <div class="tags">
-          <a href="/blog/tags/git-npm-node/" rel="tag"><i class="ic i-tag"></i> git,npm,node</a>
+          <a href="/tags/git-npm-node/" rel="tag"><i class="ic i-tag"></i> git,npm,node</a>
       </div>
   </div>
 
@@ -259,7 +256,7 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
     <div class="item right">
       
 
-  <a href="/blog/posts/60f024c8/" itemprop="url" rel="next" data-background-image="https:&#x2F;&#x2F;tva2.sinaimg.cn&#x2F;mw690&#x2F;6833939bly1gipex2cdtbj20zk0m8x6p.jpg" title="关于sql执行计划">
+  <a href="/posts/60f024c8/" itemprop="url" rel="next" data-background-image="https:&#x2F;&#x2F;tva1.sinaimg.cn&#x2F;mw690&#x2F;6833939bly1gipexoj0moj20zk0m8kgu.jpg" title="关于sql执行计划">
   <span class="type">Next Post</span>
   <span class="category"><i class="ic i-flag"></i> 数据库</span>
   <h3>关于sql执行计划</h3>
@@ -281,33 +278,33 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
   <div class="panels">
     <div class="inner">
       <div class="contents panel pjax" data-title="Contents">
-          <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%85%B3%E4%BA%8Egit%E8%AE%BE%E7%BD%AE%E4%BB%A3%E7%90%86%E5%92%8C%E5%8F%96%E6%B6%88%E4%BB%A3%E7%90%86"><span class="toc-number">1.</span> <span class="toc-text">关于git设置代理和取消代理</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%85%B3%E4%BA%8Enpm%E7%9A%84%E8%AE%BE%E7%BD%AE%E4%BB%A3%E7%90%86%E5%92%8C%E5%8F%96%E6%B6%88%E4%BB%A3%E7%90%86"><span class="toc-number">2.</span> <span class="toc-text">关于npm的设置代理和取消代理</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%85%B3%E4%BA%8Egit%E4%BF%AE%E6%94%B9%E6%8E%A8%E9%80%81%E4%BB%93%E5%BA%93%E5%9C%B0%E5%9D%80"><span class="toc-number">3.</span> <span class="toc-text">关于git修改推送仓库地址</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#git%E7%BB%9F%E8%AE%A1%E9%A1%B9%E7%9B%AE%E4%BB%A3%E7%A0%81%E8%A1%8C%E6%95%B0"><span class="toc-number">4.</span> <span class="toc-text">git统计项目代码行数</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#git-%E6%9B%B4%E6%94%B9user-%E4%BF%A1%E6%81%AF"><span class="toc-number">5.</span> <span class="toc-text">git 更改user 信息</span></a></li></ol>
+          <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%85%B3%E4%BA%8Egit%E8%AE%BE%E7%BD%AE%E4%BB%A3%E7%90%86%E5%92%8C%E5%8F%96%E6%B6%88%E4%BB%A3%E7%90%86"><span class="toc-number">1.</span> <span class="toc-text"> 关于 git  设置代理和取消代理</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%85%B3%E4%BA%8Enpm%E7%9A%84%E8%AE%BE%E7%BD%AE%E4%BB%A3%E7%90%86%E5%92%8C%E5%8F%96%E6%B6%88%E4%BB%A3%E7%90%86"><span class="toc-number">2.</span> <span class="toc-text"> 关于 npm  的设置代理和取消代理</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%85%B3%E4%BA%8Egit%E4%BF%AE%E6%94%B9%E6%8E%A8%E9%80%81%E4%BB%93%E5%BA%93%E5%9C%B0%E5%9D%80"><span class="toc-number">3.</span> <span class="toc-text"> 关于 git  修改推送仓库地址</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#git%E7%BB%9F%E8%AE%A1%E9%A1%B9%E7%9B%AE%E4%BB%A3%E7%A0%81%E8%A1%8C%E6%95%B0"><span class="toc-number">4.</span> <span class="toc-text">  git  统计项目代码行数</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#git-%E6%9B%B4%E6%94%B9user-%E4%BF%A1%E6%81%AF"><span class="toc-number">5.</span> <span class="toc-text"> git 更改 user 信息</span></a></li></ol>
       </div>
       <div class="related panel pjax" data-title="Related">
       </div>
       <div class="overview panel" data-title="Overview">
         <div class="author" itemprop="author" itemscope itemtype="http://schema.org/Person">
   <img class="image" itemprop="image" alt="JIN Mao"
-      data-src="/blog/images/avatar.png">
+      data-src="/images/avatar.png">
   <p class="name" itemprop="name">JIN Mao</p>
   <div class="description" itemprop="description"></div>
 </div>
 
 <nav class="state">
     <div class="item posts">
-      <a href="/blog/archives/">
+      <a href="/archives/">
         <span class="count">150</span>
         <span class="name">posts</span>
       </a>
     </div>
     <div class="item categories">
-      <a href="/blog/categories/">
+      <a href="/categories/">
         <span class="count">78</span>
         <span class="name">categories</span>
       </a>
     </div>
     <div class="item tags">
-      <a href="/blog/tags/">
+      <a href="/tags/">
         <span class="count">113</span>
         <span class="name">tags</span>
       </a>
@@ -322,12 +319,12 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
   
     
   <li class="item">
-    <a href="/blog/" rel="section"><i class="ic i-home"></i>Home</a>
+    <a href="/" rel="section"><i class="ic i-home"></i>Home</a>
   </li>
 
     
   <li class="item">
-    <a href="/blog/about/" rel="section"><i class="ic i-user"></i>About</a>
+    <a href="/about/" rel="section"><i class="ic i-user"></i>About</a>
   </li>
 
         
@@ -337,17 +334,17 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
 
         
   <li class="item">
-    <a href="/blog/archives/" rel="section"><i class="ic i-list-alt"></i>Archives</a>
+    <a href="/archives/" rel="section"><i class="ic i-list-alt"></i>Archives</a>
   </li>
 
         
   <li class="item">
-    <a href="/blog/categories/" rel="section"><i class="ic i-th"></i>Categories</a>
+    <a href="/categories/" rel="section"><i class="ic i-th"></i>Categories</a>
   </li>
 
         
   <li class="item">
-    <a href="/blog/tags/" rel="section"><i class="ic i-tags"></i>Tags</a>
+    <a href="/tags/" rel="section"><i class="ic i-tags"></i>Tags</a>
   </li>
 
   </ul>
@@ -385,70 +382,34 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
   <li class="item">
     
 <div class="breadcrumb">
-</div>
-
-    <span><a href="/blog/posts/11faeb76/" title="Docker指令以及部署">Docker指令以及部署</a></span>
-  </li>
-
-      
-  <li class="item">
-    
-<div class="breadcrumb">
-<a href="/blog/categories/Java/" title="In Java">Java</a>
-</div>
-
-    <span><a href="/blog/posts/b536fa7f/" title="关于junit测试类防止事务回滚">关于junit测试类防止事务回滚</a></span>
-  </li>
-
-      
-  <li class="item">
-    
-<div class="breadcrumb">
-<a href="/blog/categories/Java%E9%9D%A2%E8%AF%95/" title="In Java面试">Java面试</a>
+<a href="/categories/Java/" title="In Java">Java</a>
 <i class="ic i-angle-right"></i>
-<a href="/blog/categories/Java%E9%9D%A2%E8%AF%95/%E7%AE%97%E6%B3%95/" title="In 算法">算法</a>
+<a href="/categories/Java/Java%E9%9D%A2%E8%AF%95/" title="In Java面试">Java面试</a>
 </div>
 
-    <span><a href="/blog/posts/7474c898/" title="分治算法">分治算法</a></span>
+    <span><a href="/posts/b42f0c87/" title="Cache、Cookie、Session、Token">Cache、Cookie、Session、Token</a></span>
   </li>
 
       
   <li class="item">
     
 <div class="breadcrumb">
-<a href="/blog/categories/Java/" title="In Java">Java</a>
+<a href="/categories/%E6%95%B0%E6%8D%AE%E5%BA%93/" title="In 数据库">数据库</a>
 </div>
 
-    <span><a href="/blog/posts/60a1e80e/" title="java判断日期周几">java判断日期周几</a></span>
+    <span><a href="/posts/377b6f7d/" title="关于mysql中对Json类型字段进行筛选查询">关于mysql中对Json类型字段进行筛选查询</a></span>
   </li>
 
       
   <li class="item">
     
 <div class="breadcrumb">
+<a href="/categories/Ubuntu/" title="In Ubuntu">Ubuntu</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/Ubuntu/Mysql/" title="In Mysql">Mysql</a>
 </div>
 
-    <span><a href="/blog/posts/1599bffe/" title="归并排序">归并排序</a></span>
-  </li>
-
-      
-  <li class="item">
-    
-<div class="breadcrumb">
-<a href="/blog/categories/Vue/" title="In Vue">Vue</a>
-</div>
-
-    <span><a href="/blog/posts/bd30a519/" title="Vue实现Yaml验证组件">Vue实现Yaml验证组件</a></span>
-  </li>
-
-      
-  <li class="item">
-    
-<div class="breadcrumb">
-<a href="/blog/categories/%E6%95%B0%E6%8D%AE%E5%BA%93/" title="In 数据库">数据库</a>
-</div>
-
-    <span><a href="/blog/posts/388f5c14/" title="mysql日期加减">mysql日期加减</a></span>
+    <span><a href="/posts/31f95091/" title="Ubuntu中安装卸载Mysql数据库">Ubuntu中安装卸载Mysql数据库</a></span>
   </li>
 
       
@@ -457,17 +418,7 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
 <div class="breadcrumb">
 </div>
 
-    <span><a href="/blog/posts/2dc35ee/" title="多线程分批处理方案">多线程分批处理方案</a></span>
-  </li>
-
-      
-  <li class="item">
-    
-<div class="breadcrumb">
-<a href="/blog/categories/%E6%95%B0%E6%8D%AE%E5%BA%93/" title="In 数据库">数据库</a>
-</div>
-
-    <span><a href="/blog/posts/96e2d97b/" title="mysql 获取当前日期及格式化">mysql 获取当前日期及格式化</a></span>
+    <span><a href="/posts/4a17b156/" title="Hello World">Hello World</a></span>
   </li>
 
       
@@ -476,7 +427,62 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
 <div class="breadcrumb">
 </div>
 
-    <span><a href="/blog/posts/a1926332/" title="Springboot+Vue二进制文件传输">Springboot+Vue二进制文件传输</a></span>
+    <span><a href="/posts/d0edc1ed/" title="Linux常用命令">Linux常用命令</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/Java%E9%9D%A2%E8%AF%95/" title="In Java面试">Java面试</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/Java%E9%9D%A2%E8%AF%95/%E7%AE%97%E6%B3%95/" title="In 算法">算法</a>
+</div>
+
+    <span><a href="/posts/7474c898/" title="分治算法">分治算法</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+</div>
+
+    <span><a href="/posts/56be7cc9/" title="关于Linux排查问题命令">关于Linux排查问题命令</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/%E5%89%8D%E7%AB%AF/" title="In 前端">前端</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/%E5%89%8D%E7%AB%AF/JavaScript/" title="In JavaScript">JavaScript</a>
+<i class="ic i-angle-right"></i>
+<a href="/categories/%E5%89%8D%E7%AB%AF/JavaScript/Html/" title="In Html">Html</a>
+</div>
+
+    <span><a href="/posts/7b604068/" title="Html页面插入地图">Html页面插入地图</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/Java%E9%9D%A2%E8%AF%95/" title="In Java面试">Java面试</a>
+</div>
+
+    <span><a href="/posts/6b5f7afc/" title="面试之旅关于Java知识点">面试之旅关于Java知识点</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/Java/" title="In Java">Java</a>
+</div>
+
+    <span><a href="/posts/1da18d70/" title="Java8内置四大函数式接口">Java8内置四大函数式接口</a></span>
   </li>
 
   </ul>
@@ -501,13 +507,13 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
     <span class="post-meta-item-icon">
       <i class="ic i-chart-area"></i>
     </span>
-    <span title="Symbols count total">684k words</span>
+    <span title="Symbols count total">657k words</span>
 
     <span class="post-meta-divider">|</span>
     <span class="post-meta-item-icon">
       <i class="ic i-coffee"></i>
     </span>
-    <span title="Reading time total">10:22</span>
+    <span title="Reading time total">9:57</span>
   </div>
 </div>
 
@@ -543,7 +549,7 @@ Jin Mao when to get rich ? = JIN MAO 's Blog = got windy(起风了)</title>
 
 <script src="//cdn.jsdelivr.net/combine/npm/pace-js@1.0.2/pace.min.js,npm/pjax@0.2.8/pjax.min.js,npm/whatwg-fetch@3.4.0/dist/fetch.umd.min.js,npm/animejs@3.2.0/lib/anime.min.js,npm/algoliasearch@4/dist/algoliasearch-lite.umd.js,npm/instantsearch.js@4/dist/instantsearch.production.min.js,npm/lozad@1/dist/lozad.min.js,npm/quicklink@2/dist/quicklink.umd.js"></script>
 
-<script src="/blog/js/app.js?v=0.2.5"></script>
+<script src="/js/app.js?v=0.2.5"></script>
 
 
 
