@@ -1,0 +1,210 @@
+<?xml version="1.0"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <id>https://smile1231.github.io</id>
+    <title>JIN MAO &#39;s Blog • Posts by &#34;数据挖掘&#34; tag</title>
+    <link href="https://smile1231.github.io" />
+    <updated>2021-11-09T15:06:15.000Z</updated>
+    <category term="生物信息" />
+    <category term="基因编辑" />
+    <category term="SAP" />
+    <category term="前端" />
+    <category term="Css" />
+    <category term="Java" />
+    <category term="Cache" />
+    <category term="Cookie" />
+    <category term="Session" />
+    <category term="Java面试" />
+    <category term="DDD" />
+    <category term="领域驱动设计" />
+    <category term="DisPlay属性" />
+    <category term="Docker" />
+    <category term="Corn" />
+    <category term="blog" />
+    <category term="hexo" />
+    <category term="next" />
+    <category term="IDEA" />
+    <category term="FastJson" />
+    <category term="SpringBoot" />
+    <category term="JavaScript" />
+    <category term="Html" />
+    <category term="Jvm" />
+    <category term="函数式接口" />
+    <category term="Jenkins" />
+    <category term="CI/CD" />
+    <category term="java" />
+    <category term="calender" />
+    <category term="map" />
+    <category term="Stream流" />
+    <category term="Springboot" />
+    <category term="Assert" />
+    <category term="Python" />
+    <category term="Jupyter" />
+    <category term="Machine Learning" />
+    <category term="LeetCode" />
+    <category term="算法" />
+    <category term="递归" />
+    <category term="numpy" />
+    <category term="pandas" />
+    <category term="sklearn" />
+    <category term="Mybatis" />
+    <category term="Linux" />
+    <category term="分页查询" />
+    <category term="Nginx" />
+    <category term="Spring" />
+    <category term="模糊查询" />
+    <category term="Spoken English" />
+    <category term="SrpingBoot" />
+    <category term="事务" />
+    <category term="TypeScript" />
+    <category term="WebPack" />
+    <category term="master" />
+    <category term="文件上传" />
+    <category term="Groovy" />
+    <category term="UML" />
+    <category term="Ubuntu" />
+    <category term="Mysql" />
+    <category term="VsCode" />
+    <category term="Shell" />
+    <category term="VSCODE" />
+    <category term="快捷键" />
+    <category term="Vue" />
+    <category term="Stream" />
+    <category term="git" />
+    <category term="日期" />
+    <category term="线程池" />
+    <category term="ubuntu" />
+    <category term="虚拟机" />
+    <category term="二分查找" />
+    <category term="数据挖掘" />
+    <category term="Hadoop" />
+    <category term="操作系统" />
+    <category term="EasyExcel" />
+    <category term="node" />
+    <category term="JVM" />
+    <category term="Yaml" />
+    <category term="junit" />
+    <category term="Hexo" />
+    <category term="数据库" />
+    <category term="Mysql事务" />
+    <category term="Git" />
+    <category term="冒泡排序" />
+    <category term="动态规划" />
+    <category term="git,npm,node" />
+    <category term="Google" />
+    <category term="多线程" />
+    <category term="堆排序" />
+    <category term="幂等性" />
+    <category term="流" />
+    <category term="快速排序" />
+    <category term="归并排序" />
+    <category term="正则表达式" />
+    <category term="直接插入排序" />
+    <category term="vue" />
+    <category term="选择排序" />
+    <category term="Java 面试" />
+    <category term="数据结构" />
+    <category term="阻塞队列" />
+    <category term="Spring事务" />
+    <category term="JDK" />
+    <category term="动态代理" />
+    <category term="Date" />
+    <category term="ArrayList" />
+    <category term="接口" />
+    <category term="SpringMvc" />
+    <category term="排序" />
+    <category term="执行计划" />
+    <category term="HashMap" />
+    <category term="Email" />
+    <category term="设计模式" />
+    <category term="cheatsheet" />
+    <entry>
+        <id>https://smile1231.github.io/posts/b7653deb/</id>
+        <title>什么是CRISPR/Cas9</title>
+        <link rel="alternate" href="https://smile1231.github.io/posts/b7653deb/"/>
+        <content type="html">&lt;h1 id=&#34;什么是crispr-cas系统&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#什么是crispr-cas系统&#34;&gt;#&lt;/a&gt; 什么是 &lt;code&gt;CRISPR-Cas&lt;/code&gt;  系统&lt;/h1&gt;
+&lt;p&gt;&lt;code&gt;CRISPR-Cas&lt;/code&gt;  系统是原核生物的一种天然免疫系统。某些细菌在遭到病毒入侵后，能够把病毒基因的一小段存储到自身的  &lt;code&gt;DNA&lt;/code&gt;  里一个称为  &lt;code&gt;CRISPR&lt;/code&gt;  的存储空间。当再次遇到病毒入侵时，细菌能够根据存写的片段识别病毒，将病毒的 &lt;code&gt;DNA&lt;/code&gt;  切断而使之失效。&lt;/p&gt;
+&lt;span id=&#34;more&#34;&gt;&lt;/span&gt;
+&lt;img data-src=&#34;/posts/b7653deb/2021-11-10-15-36-21.png&#34; class=&#34;&#34;&gt;
+&lt;p&gt;&lt;code&gt;CRISPR-Cas&lt;/code&gt;  系统包含 &lt;code&gt;CRISPR&lt;/code&gt;  基因座和 &lt;code&gt;Cas&lt;/code&gt;  基因（ &lt;code&gt;CRISPR&lt;/code&gt;  关联基因）两部分。&lt;/p&gt;
+&lt;img data-src=&#34;/posts/b7653deb/2021-11-10-15-36-29.png&#34; class=&#34;&#34;&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;CRISPR&lt;/code&gt;  是原核生物基因组内的一段重复序列。 &lt;code&gt;CRISPR&lt;/code&gt;  全称 &lt;code&gt;Clustered Regularly Interspersed Short Palindromic Repeats&lt;/code&gt; （成簇的规律性间隔的短回文重复序列）。分布在 &lt;code&gt;40%&lt;/code&gt;  的已测序细菌和 &lt;code&gt;90%&lt;/code&gt;  的已测序古细菌当中。 （注：生活在深海的火山口、陆地的热泉以及盐碱湖等极端环境中，有一些独特结构的细菌，称为古细菌）&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;code&gt;CRISPR&lt;/code&gt;  基因序列主要由前导序列 &lt;code&gt;（leader）&lt;/code&gt; 、重复序列（ &lt;code&gt;repeat&lt;/code&gt; ）和间隔序列（ &lt;code&gt;spacer&lt;/code&gt; ）构成。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;①前导序列：富含 &lt;code&gt;AT&lt;/code&gt;  碱基，位于 &lt;code&gt;CRISPR&lt;/code&gt;  基因上游，被认为是 &lt;code&gt;CRISPR&lt;/code&gt;  序列的启动子。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;②重复序列：长度约 &lt;code&gt;20–50 bp&lt;/code&gt;  碱基且包含 &lt;code&gt;5–7 bp&lt;/code&gt;  回文序列，转录产物可以形成发卡结构，稳定 &lt;code&gt;RNA&lt;/code&gt;  的整体二级结构。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;③间隔序列：是被细菌俘获的外源 &lt;code&gt;DNA&lt;/code&gt;  序列。这就相当于细菌免疫系统的 “黑名单”，当这些外源遗传物质再次入侵时， &lt;code&gt;CRISPR/Cas&lt;/code&gt;  系统就会予以精确打击。&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;ol start=&#34;2&#34;&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;Cas&lt;/code&gt;  基因位于 &lt;code&gt;CRISPR&lt;/code&gt;  基因附近或分散于基因组其他地方，该基因编码的蛋白均可与 &lt;code&gt;CRISPR&lt;/code&gt;  序列区域共同发生作用。因此，该基因被命名为 &lt;code&gt;CRISPR&lt;/code&gt;  关联基因（ &lt;code&gt;CRISPR associated，Cas&lt;/code&gt; ）。&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;Cas&lt;/code&gt;  基因编码的 &lt;code&gt;Cas&lt;/code&gt;  蛋白在防御过程中至关重要，目前已经发现了 &lt;code&gt;Cas1-Cas10&lt;/code&gt;  等多种类型的 &lt;code&gt;Cas&lt;/code&gt;  基因。&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;依据 &lt;code&gt;Cas&lt;/code&gt;  蛋白在细菌免疫防御过程中参与的角色，目前将 &lt;code&gt;CRISPR-Cas&lt;/code&gt;  系统分为两大类。&lt;/p&gt;
+&lt;p&gt;第一大类：它们切割外源核酸的效应因子为多个 &lt;code&gt;Cas&lt;/code&gt;  蛋白形成的复合物，包括 &lt;code&gt;Ⅰ&lt;/code&gt;  型、 &lt;code&gt;Ⅲ&lt;/code&gt;  型和 &lt;code&gt;Ⅳ&lt;/code&gt;  型。&lt;/p&gt;
+&lt;p&gt;第二大类：它们的作用因子是比较单一的 &lt;code&gt;Cas&lt;/code&gt;  蛋白，比如 &lt;code&gt;Ⅱ&lt;/code&gt;  型的 &lt;code&gt;Cas9&lt;/code&gt;  蛋白和 &lt;code&gt;Ⅴ&lt;/code&gt;  型的 &lt;code&gt;Cpf&lt;/code&gt;  蛋白。&lt;/p&gt;
+&lt;img data-src=&#34;/posts/b7653deb/2021-11-10-15-36-36.png&#34; class=&#34;&#34;&gt;
+&lt;p&gt;&lt;font style=&#34;color:red;font-weight:bolder&#34;&gt;目前，被最为广泛应用的 &lt;code&gt;CRISPR&lt;/code&gt;  系统是 &lt;code&gt;II&lt;/code&gt;  型 &lt;code&gt;CRISPR-Cas&lt;/code&gt;  系统，也就是 &lt;code&gt;CRISPR-Cas9&lt;/code&gt;  系统。&lt;/font&gt;&lt;/p&gt;
+&lt;h1 id=&#34;crispr-cas9的作用原理&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#crispr-cas9的作用原理&#34;&gt;#&lt;/a&gt;  &lt;code&gt;CRISPR-Cas9&lt;/code&gt;  的作用原理&lt;/h1&gt;
+&lt;p&gt;对于 &lt;code&gt;CRISPR-Cas9&lt;/code&gt;  的作用机理可以分为三个阶段来理解。&lt;/p&gt;
+&lt;h2 id=&#34;1-第一阶段crispr-的高度可变的间隔区的获得俘获外源dna登记黑名单&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#1-第一阶段crispr-的高度可变的间隔区的获得俘获外源dna登记黑名单&#34;&gt;#&lt;/a&gt; 1、第一阶段： &lt;code&gt;CRISPR &lt;/code&gt; 的高度可变的间隔区的获得（俘获外源 &lt;code&gt;DNA&lt;/code&gt; ，登记 “黑名单”）&lt;/h2&gt;
+&lt;p&gt;&lt;code&gt;CRISPR&lt;/code&gt;  的高度可变的间隔区获得，其实就是指外来入侵的噬菌体或是质粒 &lt;code&gt;DNA&lt;/code&gt;  的一小段 &lt;code&gt;DNA&lt;/code&gt;  序列被整合到宿主菌的基因组，整合的位置位于 &lt;code&gt;CRRSPR &lt;/code&gt; 的 5’ 端的两个重复序列之间。因此， &lt;code&gt;CRISPR&lt;/code&gt;  基因座中的间隔序列从 5’ 到 3’ 的排列也记录了外源遗传物质入侵的时间顺序。&lt;/p&gt;
+&lt;p&gt;新间隔序列的获得可能分为三步：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;第 1 步： &lt;code&gt;Cas1&lt;/code&gt;  和 &lt;code&gt;Cas2&lt;/code&gt;  编码的蛋白将扫描入侵的 &lt;code&gt;DNA&lt;/code&gt; ，并识别出 &lt;code&gt;PAM&lt;/code&gt;  区域，然后将临近 &lt;code&gt;PAM&lt;/code&gt;  的 &lt;code&gt;DNA&lt;/code&gt;  序列作为候选的原型间隔序列。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;① &lt;code&gt;PAM&lt;/code&gt;  类似身份证，原型间隔序列类似身份证号码。&lt;/li&gt;
+&lt;li&gt;② &lt;code&gt;PAM&lt;/code&gt;  通常由 &lt;code&gt;NGG&lt;/code&gt;  三个碱基构成（ &lt;code&gt;N&lt;/code&gt;  为任意碱基）。&lt;/li&gt;
+&lt;li&gt;③ &lt;code&gt;Cas1&lt;/code&gt;  和 &lt;code&gt;Cas2&lt;/code&gt;  蛋白是负责新间隔序列获得的核心蛋白．另外研究发现 &lt;code&gt;TypeⅡ CRISRP/ Cas&lt;/code&gt;  系统中 &lt;code&gt;Csn2&lt;/code&gt;  蛋白对于新的间隔序列的获得也是必需的。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;第 2 步： &lt;code&gt;Cas1/2&lt;/code&gt;  蛋白复合物将原间隔序列从外源 &lt;code&gt;DNA&lt;/code&gt;  中剪切下来，并在其他酶的协助下将原间隔序列插入临近 &lt;code&gt;CRISPR&lt;/code&gt;  序列前导区的下游。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;第 3 步： &lt;code&gt;DNA&lt;/code&gt;  会进行修复，将打开的双链缺口闭合。这样一来，一段新的间隔序列就被添加到了基因组的 &lt;code&gt;CRISPR&lt;/code&gt;  序列之中。&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;img data-src=&#34;/posts/b7653deb/2021-11-10-15-36-53.png&#34; class=&#34;&#34;&gt;
+&lt;h2 id=&#34;2-第二阶段cripsr-基因座的表达包括转录和转录后的成熟加工&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#2-第二阶段cripsr-基因座的表达包括转录和转录后的成熟加工&#34;&gt;#&lt;/a&gt; 2、第二阶段： &lt;code&gt;CRIPSR&lt;/code&gt;  基因座的表达（包括转录和转录后的成熟加工）&lt;/h2&gt;
+&lt;p&gt;&lt;code&gt;CRISPR&lt;/code&gt;  序列在前导区的调控下转录产生 &lt;code&gt;pre-crRNA&lt;/code&gt; （ &lt;code&gt;crRNA&lt;/code&gt;  的前体），同时与 &lt;code&gt;pre-crRNA&lt;/code&gt;  序列互补的 &lt;code&gt;tracrRNA&lt;/code&gt; （反式激活 &lt;code&gt;crRNA&lt;/code&gt; ）也被转录出来。 &lt;code&gt;pre-crRNA&lt;/code&gt;  通过碱基互补配对与 &lt;code&gt;tracrRNA&lt;/code&gt;  形成双链 &lt;code&gt;RNA&lt;/code&gt;  并与 &lt;code&gt;Cas9&lt;/code&gt;  编码的蛋白组装成一个复合体。它将根据入侵者的类型，选取对应的 “身份证号码”（间隔序列 &lt;code&gt;RNA&lt;/code&gt; ），并在核糖核酸酶 Ⅲ（ &lt;code&gt;RNaseⅢ&lt;/code&gt; ）的协助下对这段 “身份证” 进行剪切，最终形成一段短小的 &lt;code&gt;crRNA&lt;/code&gt; （包含单一种类的间隔序列 &lt;code&gt;RNA&lt;/code&gt;  以及部分重复序列区）。&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;crRNA，Cas9&lt;/code&gt;  以及 &lt;code&gt;tracrRNA&lt;/code&gt;  组成最终的复合物，为下一步剪切做好准备。&lt;/p&gt;
+&lt;img data-src=&#34;/posts/b7653deb/2021-11-10-15-36-58.png&#34; class=&#34;&#34;&gt;
+&lt;h2 id=&#34;3-第三阶段crisprcas-系统活性的发挥靶向干扰&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#3-第三阶段crisprcas-系统活性的发挥靶向干扰&#34;&gt;#&lt;/a&gt; 3、第三阶段： &lt;code&gt;CRISPR/Cas&lt;/code&gt;  系统活性的发挥（靶向干扰）&lt;/h2&gt;
+&lt;p&gt;&lt;code&gt;crRNA，Cas9&lt;/code&gt;  以及 &lt;code&gt;tracrRNA&lt;/code&gt;  组成最终的复合物就像是一枚制导导弹，可以对入侵者的 DNA 进行精确的打击。这个复合物将扫描整个外源 &lt;code&gt;DNA&lt;/code&gt;  序列，并识别出与 &lt;code&gt;crRNA&lt;/code&gt;  互补的原间隔序列。这时，复合物将定位到 &lt;code&gt;PAM/&lt;/code&gt;  原间隔序列的区域， &lt;code&gt;DNA&lt;/code&gt;  双链将被解开，形成 &lt;code&gt;R-Loop。crRNA&lt;/code&gt;  将与互补链杂交，而另一条链则保持游离状态。&lt;/p&gt;
+&lt;p&gt;随后， &lt;code&gt;Cas9&lt;/code&gt;  蛋白精确的平端切割位点位于 &lt;code&gt;PAM&lt;/code&gt;  上游 &lt;code&gt;3&lt;/code&gt;  个核苷酸位置，形成平末端产物。 &lt;code&gt;Cas9&lt;/code&gt;  蛋白的 &lt;code&gt;HNH&lt;/code&gt;  结构域负责切割与 &lt;code&gt;crRNA&lt;/code&gt;  互补配对的那一条 DNA 链，而 &lt;code&gt;RuvC&lt;/code&gt;  结构域负责切割另外一条非互补 &lt;code&gt;DNA&lt;/code&gt;  链。最终在 &lt;code&gt;Cas9&lt;/code&gt;  的作用下 &lt;code&gt;DNA&lt;/code&gt;  双链断裂 &lt;code&gt;（DSB）&lt;/code&gt; ，外源 &lt;code&gt;DNA&lt;/code&gt;  的表达被沉默，入侵者被一举歼灭。&lt;/p&gt;
+&lt;img data-src=&#34;/posts/b7653deb/2021-11-10-15-37-03.png&#34; class=&#34;&#34;&gt;
+&lt;h1 id=&#34;crispr-cas9基因编辑技术及应用&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#crispr-cas9基因编辑技术及应用&#34;&gt;#&lt;/a&gt;  &lt;code&gt;CRISPR-Cas9&lt;/code&gt;  基因编辑技术及应用&lt;/h1&gt;
+&lt;p&gt;&lt;code&gt;tracrRNA-crRNA&lt;/code&gt;  在被融合为单链向导 &lt;code&gt;RNA（sgRNA）&lt;/code&gt; 时也可以发挥指导 &lt;code&gt;Cas9&lt;/code&gt;  的作用。&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;CRISPR-Cas9&lt;/code&gt;  基因编辑技术就是通过人工设计的  &lt;code&gt;sgRNA（guide RNA）&lt;/code&gt; 来识别目的基因组序列，并引导  &lt;code&gt;Cas9&lt;/code&gt;  蛋白酶进行有效切割 &lt;code&gt;DNA&lt;/code&gt;  双链，形成双链断裂，损伤后修复会造成基因敲除或敲入等，最终达到对基因组 &lt;code&gt;DNA&lt;/code&gt;  进行修饰的目的。&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;CRISPR-Cas9&lt;/code&gt;  的广泛应用&lt;/p&gt;
+&lt;h2 id=&#34;1基因敲除knock-out&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#1基因敲除knock-out&#34;&gt;#&lt;/a&gt; 1. 基因敲除 &lt;code&gt;（Knock-out）&lt;/code&gt;&lt;/h2&gt;
+&lt;p&gt;&lt;code&gt;Cas9&lt;/code&gt;  可以对靶基因组进行剪切，形成 &lt;code&gt;DNA&lt;/code&gt;  的双链断裂。在通常情况下，细胞会采用高效的非同源末端连接方式（ &lt;code&gt;NHEJ&lt;/code&gt; ）对断裂的 &lt;code&gt;DNA&lt;/code&gt;  进行修复。但是，在修复过程中通常会发生碱基插入或缺失的错配现象，造成移码突变，（移码突变：是指 &lt;code&gt;DNA&lt;/code&gt;  分子由于某位点碱基的缺失或插入，引起阅读框架变化，造成下游的一系列密码改变，使原来编码某种肽链的基因变成编码另一种完全不同的肽链序列。）使靶标基因失去功能，从而实现基因敲除。为了提高 &lt;code&gt;CRISPR&lt;/code&gt;  系统的特异性，可将 &lt;code&gt;Cas9&lt;/code&gt;  的一个结构域进行突变，形成只能对 &lt;code&gt;DNA&lt;/code&gt;  单链进行切割造成 &lt;code&gt;DNA&lt;/code&gt;  缺口的 &lt;code&gt;Cas9 nickase&lt;/code&gt;  核酸酶。因此想要形成双链断裂的效果可以设计两条 &lt;code&gt;sgRNA&lt;/code&gt;  序列，分别靶向 &lt;code&gt;DNA&lt;/code&gt;  互补的两条链，这样两条 &lt;code&gt;sgRNA&lt;/code&gt;  特异性的结合靶标序列，即可形成 &lt;code&gt;DNA&lt;/code&gt;  断裂，并在修复过程中通过移码突变实现基因敲除&lt;/p&gt;
+&lt;h2 id=&#34;2基因敲入knock-in&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#2基因敲入knock-in&#34;&gt;#&lt;/a&gt; 2. 基因敲入（ &lt;code&gt;Knock-in&lt;/code&gt; ）&lt;/h2&gt;
+&lt;p&gt;当 &lt;code&gt;DNA&lt;/code&gt;  双链断裂后，如果有 &lt;code&gt;DNA&lt;/code&gt;  修复模板进入到细胞中，基因组断裂部分会依据修复模板进行同源重组修复（ &lt;code&gt;HDR&lt;/code&gt; ），从而实现基因敲入。修复模板由需要导入的目标基因和靶序列上下游的同源性序列（同源臂）组成，同源臂的长度和位置由编辑序列的大小决定。 &lt;code&gt;DNA&lt;/code&gt;  修复模板可以是线性 / 双链脱氧核苷酸链，也可以是双链 &lt;code&gt;DNA&lt;/code&gt;  质粒。 &lt;code&gt;HDR&lt;/code&gt;  修复模式在细胞中发生率较低，通常小于 &lt;code&gt;10%&lt;/code&gt; 。为了增加基因敲入的成功率，目前有很多科学家致力于提高 &lt;code&gt;HDR&lt;/code&gt;  效率，将编辑的细胞同步至 &lt;code&gt;HDR&lt;/code&gt;  最活跃的细胞分裂时期，促进修复方式以 &lt;code&gt;HDR&lt;/code&gt;  进行；或者利用化学方法抑制基因进行 &lt;code&gt;NHEJ&lt;/code&gt; ，提高 &lt;code&gt;HDR&lt;/code&gt;  的效率&lt;/p&gt;
+&lt;h2 id=&#34;3基因抑制-基因激活&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#3基因抑制-基因激活&#34;&gt;#&lt;/a&gt; 3. 基因抑制、基因激活&lt;/h2&gt;
+&lt;p&gt;&lt;code&gt;Cas9&lt;/code&gt;  的特点是能够自主结合和切割目的基因，通过点突变的方式使 &lt;code&gt;Cas9&lt;/code&gt;  的两个结构域 &lt;code&gt;RuvC-&lt;/code&gt;  和 &lt;code&gt;HNH-&lt;/code&gt;  失去活性，形成的 &lt;code&gt;dCas9&lt;/code&gt;  只能在 &lt;code&gt;sgRNA&lt;/code&gt;  的介导下结合靶基因，而不具备剪切 &lt;code&gt;DNA&lt;/code&gt;  的功能。因此，将 &lt;code&gt;dCas9&lt;/code&gt;  结合到基因的转录起始位点，可以阻断转录的开始，从而抑制基因表达；将 &lt;code&gt;dCas9&lt;/code&gt;  结合到基因的启动子区域也可以结合转录抑制 / 活化物，使下游靶基因转录受到抑制或激活。因此 &lt;code&gt;dCas9&lt;/code&gt;  与 &lt;code&gt;Cas9、Cas9 nickase&lt;/code&gt;  的不同之处在于， &lt;code&gt;dCas9&lt;/code&gt;  造成的激活或者抑制是可逆的，并不会对基因组 &lt;code&gt;DNA&lt;/code&gt;  造成永久性的改变。&lt;/p&gt;
+&lt;h2 id=&#34;4多重编辑multiplex-editing&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#4多重编辑multiplex-editing&#34;&gt;#&lt;/a&gt; 4. 多重编辑 &lt;code&gt;（Multiplex Editing）&lt;/code&gt;&lt;/h2&gt;
+&lt;p&gt;将多个 &lt;code&gt;sgRNA&lt;/code&gt;  质粒转入到细胞中，可同时对多个基因进行编辑，具有基因组功能筛选作用。多重编辑的应用包括：使用双 &lt;code&gt;Cas9nickases&lt;/code&gt;  提高基因敲除的准确率、大范围的基因组缺失及同时编辑不同的基因。通常情况下，一个质粒上可以构建 &lt;code&gt;2～7&lt;/code&gt;  个不同的 &lt;code&gt;sgRNA&lt;/code&gt;  进行多重 &lt;code&gt;CRISPR&lt;/code&gt;  基因编辑。&lt;/p&gt;
+&lt;h2 id=&#34;5功能基因组筛选&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#5功能基因组筛选&#34;&gt;#&lt;/a&gt; 5. 功能基因组筛选&lt;/h2&gt;
+&lt;p&gt;利用 &lt;code&gt;CRISPR-Cas9&lt;/code&gt;  进行基因编辑可以产生大量的基因突变细胞，因此利用这些突变细胞可以确认表型的变化是否是由基因或者遗传因素导致的。基因组筛选的传统方法是 &lt;code&gt;shRNA&lt;/code&gt;  技术，但是 &lt;code&gt;shRNA&lt;/code&gt;  有其局限性：具有很高的脱靶效应以及无法抑制全部基因而形成假阴性的结果。 &lt;code&gt;CRISRP-Cas9&lt;/code&gt;  系统的基因组筛选功能具有高特异性和不可逆性的优势，在基因组筛选中得到了广泛的应用。目前 &lt;code&gt;CRISPR&lt;/code&gt;  的基因组筛选功能应用于筛选对表型有调节作用的相关基因，如对化疗药物或者毒素产生抑制的基因、影响肿瘤迁移的基因以及构建病毒筛选文库对潜在基因进行大范围筛选等。&lt;/p&gt;
+</content>
+        <category term="生物信息" />
+        <category term="基因编辑" />
+        <category term="数据挖掘" />
+        <updated>2021-11-09T15:06:15.000Z</updated>
+    </entry>
+</feed>

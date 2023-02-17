@@ -1,0 +1,142 @@
+<?xml version="1.0"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <id>https://smile1231.github.io</id>
+    <title>JIN MAO &#39;s Blog • Posts by &#34;二分查找&#34; category</title>
+    <link href="https://smile1231.github.io" />
+    <updated>2022-02-16T13:06:36.000Z</updated>
+    <category term="生物信息" />
+    <category term="基因编辑" />
+    <category term="SAP" />
+    <category term="前端" />
+    <category term="Css" />
+    <category term="Java" />
+    <category term="Cache" />
+    <category term="Cookie" />
+    <category term="Session" />
+    <category term="Java面试" />
+    <category term="DDD" />
+    <category term="领域驱动设计" />
+    <category term="DisPlay属性" />
+    <category term="Docker" />
+    <category term="Corn" />
+    <category term="blog" />
+    <category term="hexo" />
+    <category term="next" />
+    <category term="IDEA" />
+    <category term="FastJson" />
+    <category term="SpringBoot" />
+    <category term="JavaScript" />
+    <category term="Html" />
+    <category term="Jvm" />
+    <category term="函数式接口" />
+    <category term="Jenkins" />
+    <category term="CI/CD" />
+    <category term="java" />
+    <category term="calender" />
+    <category term="map" />
+    <category term="Stream流" />
+    <category term="Springboot" />
+    <category term="Assert" />
+    <category term="Python" />
+    <category term="Jupyter" />
+    <category term="Machine Learning" />
+    <category term="LeetCode" />
+    <category term="算法" />
+    <category term="递归" />
+    <category term="numpy" />
+    <category term="pandas" />
+    <category term="sklearn" />
+    <category term="Mybatis" />
+    <category term="Linux" />
+    <category term="分页查询" />
+    <category term="Nginx" />
+    <category term="Spring" />
+    <category term="模糊查询" />
+    <category term="Spoken English" />
+    <category term="SrpingBoot" />
+    <category term="事务" />
+    <category term="TypeScript" />
+    <category term="WebPack" />
+    <category term="master" />
+    <category term="文件上传" />
+    <category term="Groovy" />
+    <category term="UML" />
+    <category term="Ubuntu" />
+    <category term="Mysql" />
+    <category term="VsCode" />
+    <category term="Shell" />
+    <category term="VSCODE" />
+    <category term="快捷键" />
+    <category term="Vue" />
+    <category term="Stream" />
+    <category term="git" />
+    <category term="日期" />
+    <category term="线程池" />
+    <category term="ubuntu" />
+    <category term="虚拟机" />
+    <category term="二分查找" />
+    <category term="数据挖掘" />
+    <category term="Hadoop" />
+    <category term="操作系统" />
+    <category term="EasyExcel" />
+    <category term="node" />
+    <category term="JVM" />
+    <category term="Yaml" />
+    <category term="junit" />
+    <category term="Hexo" />
+    <category term="数据库" />
+    <category term="Mysql事务" />
+    <category term="Git" />
+    <category term="冒泡排序" />
+    <category term="动态规划" />
+    <category term="git,npm,node" />
+    <category term="Google" />
+    <category term="多线程" />
+    <category term="堆排序" />
+    <category term="幂等性" />
+    <category term="流" />
+    <category term="快速排序" />
+    <category term="归并排序" />
+    <category term="正则表达式" />
+    <category term="直接插入排序" />
+    <category term="vue" />
+    <category term="选择排序" />
+    <category term="Java 面试" />
+    <category term="数据结构" />
+    <category term="阻塞队列" />
+    <category term="Spring事务" />
+    <category term="JDK" />
+    <category term="动态代理" />
+    <category term="Date" />
+    <category term="ArrayList" />
+    <category term="接口" />
+    <category term="SpringMvc" />
+    <category term="排序" />
+    <category term="执行计划" />
+    <category term="HashMap" />
+    <category term="Email" />
+    <category term="设计模式" />
+    <category term="cheatsheet" />
+    <entry>
+        <id>https://smile1231.github.io/posts/e8eb0481/</id>
+        <title>二分查找</title>
+        <link rel="alternate" href="https://smile1231.github.io/posts/e8eb0481/"/>
+        <content type="html">&lt;h1 id=&#34;二分查找&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#二分查找&#34;&gt;#&lt;/a&gt; 二分查找&lt;/h1&gt;
+&lt;p&gt;二分查找（ &lt;code&gt;binary search&lt;/code&gt; ），也称作折半查找（ &lt;code&gt;half-interval search&lt;/code&gt; ），每次划分一半进行下一步搜索，所以时间复杂度无非就是 &lt;code&gt;while&lt;/code&gt;  循环的次数！&lt;/p&gt;
+&lt;span id=&#34;more&#34;&gt;&lt;/span&gt;
+&lt;figure class=&#34;highlight java&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;13&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;14&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;15&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;16&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;17&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;18&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;19&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;20&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;comment&#34;&gt;//二分查找 Java 实现 （升序数组）&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;function&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;public&lt;/span&gt; &lt;span class=&#34;keyword&#34;&gt;static&lt;/span&gt; &lt;span class=&#34;keyword&#34;&gt;int&lt;/span&gt; &lt;span class=&#34;title&#34;&gt;binarySearch&lt;/span&gt;&lt;span class=&#34;params&#34;&gt;(Integer[] srcArray, &lt;span class=&#34;keyword&#34;&gt;int&lt;/span&gt; des)&lt;/span&gt; &lt;/span&gt;&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;keyword&#34;&gt;int&lt;/span&gt; low = &lt;span class=&#34;number&#34;&gt;0&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;keyword&#34;&gt;int&lt;/span&gt; high = srcArray.length - &lt;span class=&#34;number&#34;&gt;1&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt; &lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;keyword&#34;&gt;while&lt;/span&gt; ((low &amp;lt;= high) &amp;amp;&amp;amp; (low &amp;lt;= srcArray.length - &lt;span class=&#34;number&#34;&gt;1&lt;/span&gt;)&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;            &amp;amp;&amp;amp; (high &amp;lt;= srcArray.length - &lt;span class=&#34;number&#34;&gt;1&lt;/span&gt;)) &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;            &lt;span class=&#34;comment&#34;&gt;// &amp;gt;&amp;gt; 右移符号 表示除以 2&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        &lt;span class=&#34;keyword&#34;&gt;int&lt;/span&gt; middle = (high + low) &amp;gt;&amp;gt; &lt;span class=&#34;number&#34;&gt;1&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        &lt;span class=&#34;keyword&#34;&gt;if&lt;/span&gt; (des == srcArray[middle]) &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;            &lt;span class=&#34;keyword&#34;&gt;return&lt;/span&gt; middle;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        &lt;span class=&#34;comment&#34;&gt;// 如果要查找的值 小于最中间的值 就算选择 左边的区间&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        &amp;#125; &lt;span class=&#34;keyword&#34;&gt;else&lt;/span&gt; &lt;span class=&#34;keyword&#34;&gt;if&lt;/span&gt; (des &amp;lt; srcArray[middle]) &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;            high = middle - &lt;span class=&#34;number&#34;&gt;1&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        &amp;#125; &lt;span class=&#34;keyword&#34;&gt;else&lt;/span&gt; &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;            low = middle + &lt;span class=&#34;number&#34;&gt;1&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;keyword&#34;&gt;return&lt;/span&gt; -&lt;span class=&#34;number&#34;&gt;1&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;h2 id=&#34;时间复杂度&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#时间复杂度&#34;&gt;#&lt;/a&gt; 时间复杂度&lt;/h2&gt;
+&lt;p&gt;比如：总共有 &lt;code&gt;n&lt;/code&gt;  个元素，每次查找的区间大小就是 &lt;code&gt;n，n/2，n/4，…，n/2^k&lt;/code&gt; （接下来操作元素的剩余个数），其中 &lt;code&gt;k&lt;/code&gt;  就是循环的次数。&lt;br&gt;
+由于 &lt;code&gt;n/2^k&lt;/code&gt;  取整后 &lt;code&gt;&amp;gt;=1&lt;/code&gt; ，即令 &lt;code&gt;n/2^k=1&lt;/code&gt; ，&lt;br&gt;
+可得 &lt;code&gt;k=log2n&lt;/code&gt; ,（是以 &lt;code&gt;2&lt;/code&gt;  为底， &lt;code&gt;n&lt;/code&gt;  的对数），所以时间复杂度可以表示 &lt;code&gt;O()=O(log2n)&lt;/code&gt;&lt;/p&gt;
+&lt;h2 id=&#34;二分查找的缺点&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#二分查找的缺点&#34;&gt;#&lt;/a&gt; 二分查找的缺点&lt;/h2&gt;
+&lt;p&gt;虽然二分查找的效率高，但是要将表按关键字排序。而排序本身是一种很费时的运算。既使采用高效率的排序方法也要花费 &lt;code&gt;O(nlgn)&lt;/code&gt;  的时间。&lt;/p&gt;
+&lt;p&gt;二分查找只适用顺序存储结构。为保持表的有序性，在顺序结构里插入和删除都必须移动大量的结点。因此，二分查找特别适用于那种一经建立就很少改动、而又经常需要查找的线性表。&lt;/p&gt;
+&lt;p&gt;对那些查找少而又经常需要改动的线性表，可采用链表作存储结构，进行顺序查找。链表上无法实现二分查找。&lt;/p&gt;
+</content>
+        <category term="Java面试" />
+        <category term="算法" />
+        <category term="二分查找" />
+        <updated>2022-02-16T13:06:36.000Z</updated>
+    </entry>
+</feed>

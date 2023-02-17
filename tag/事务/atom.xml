@@ -1,0 +1,154 @@
+<?xml version="1.0"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <id>https://smile1231.github.io</id>
+    <title>JIN MAO &#39;s Blog • Posts by &#34;事务&#34; tag</title>
+    <link href="https://smile1231.github.io" />
+    <updated>2021-12-16T10:49:45.000Z</updated>
+    <category term="生物信息" />
+    <category term="基因编辑" />
+    <category term="SAP" />
+    <category term="前端" />
+    <category term="Css" />
+    <category term="Java" />
+    <category term="Cache" />
+    <category term="Cookie" />
+    <category term="Session" />
+    <category term="Java面试" />
+    <category term="DDD" />
+    <category term="领域驱动设计" />
+    <category term="DisPlay属性" />
+    <category term="Docker" />
+    <category term="Corn" />
+    <category term="blog" />
+    <category term="hexo" />
+    <category term="next" />
+    <category term="IDEA" />
+    <category term="FastJson" />
+    <category term="SpringBoot" />
+    <category term="JavaScript" />
+    <category term="Html" />
+    <category term="Jvm" />
+    <category term="函数式接口" />
+    <category term="Jenkins" />
+    <category term="CI/CD" />
+    <category term="java" />
+    <category term="calender" />
+    <category term="map" />
+    <category term="Stream流" />
+    <category term="Springboot" />
+    <category term="Assert" />
+    <category term="Python" />
+    <category term="Jupyter" />
+    <category term="Machine Learning" />
+    <category term="LeetCode" />
+    <category term="算法" />
+    <category term="递归" />
+    <category term="numpy" />
+    <category term="pandas" />
+    <category term="sklearn" />
+    <category term="Mybatis" />
+    <category term="Linux" />
+    <category term="分页查询" />
+    <category term="Nginx" />
+    <category term="Spring" />
+    <category term="模糊查询" />
+    <category term="Spoken English" />
+    <category term="SrpingBoot" />
+    <category term="事务" />
+    <category term="TypeScript" />
+    <category term="WebPack" />
+    <category term="master" />
+    <category term="文件上传" />
+    <category term="Groovy" />
+    <category term="UML" />
+    <category term="Ubuntu" />
+    <category term="Mysql" />
+    <category term="VsCode" />
+    <category term="Shell" />
+    <category term="VSCODE" />
+    <category term="快捷键" />
+    <category term="Vue" />
+    <category term="Stream" />
+    <category term="git" />
+    <category term="日期" />
+    <category term="线程池" />
+    <category term="ubuntu" />
+    <category term="虚拟机" />
+    <category term="二分查找" />
+    <category term="数据挖掘" />
+    <category term="Hadoop" />
+    <category term="操作系统" />
+    <category term="EasyExcel" />
+    <category term="node" />
+    <category term="JVM" />
+    <category term="Yaml" />
+    <category term="junit" />
+    <category term="Hexo" />
+    <category term="数据库" />
+    <category term="Mysql事务" />
+    <category term="Git" />
+    <category term="冒泡排序" />
+    <category term="动态规划" />
+    <category term="git,npm,node" />
+    <category term="Google" />
+    <category term="多线程" />
+    <category term="堆排序" />
+    <category term="幂等性" />
+    <category term="流" />
+    <category term="快速排序" />
+    <category term="归并排序" />
+    <category term="正则表达式" />
+    <category term="直接插入排序" />
+    <category term="vue" />
+    <category term="选择排序" />
+    <category term="Java 面试" />
+    <category term="数据结构" />
+    <category term="阻塞队列" />
+    <category term="Spring事务" />
+    <category term="JDK" />
+    <category term="动态代理" />
+    <category term="Date" />
+    <category term="ArrayList" />
+    <category term="接口" />
+    <category term="SpringMvc" />
+    <category term="排序" />
+    <category term="执行计划" />
+    <category term="HashMap" />
+    <category term="Email" />
+    <category term="设计模式" />
+    <category term="cheatsheet" />
+    <entry>
+        <id>https://smile1231.github.io/posts/4ca5bfdf/</id>
+        <title>Spring手动回滚事务</title>
+        <link rel="alternate" href="https://smile1231.github.io/posts/4ca5bfdf/"/>
+        <content type="html">&lt;p&gt;转载&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly93d3cuY25ibG9ncy5jb20vbXlpdG5ld3MvcC8xMzM3MDg5OS5odG1s&#34;&gt; https://www.cnblogs.com/myitnews/p/13370899.html&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;这边是讲解如何手动回滚事务&lt;/p&gt;
+&lt;span id=&#34;more&#34;&gt;&lt;/span&gt;
+&lt;h1 id=&#34;一-手动回滚事务&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#一-手动回滚事务&#34;&gt;#&lt;/a&gt; 一、手动回滚事务&lt;/h1&gt;
+&lt;p&gt;有时我们需要捕获一些错误信息，又需要进行事务回滚，这时我们就需要用到 &lt;code&gt;Spring&lt;/code&gt;  提供的事务切面支持类 &lt;code&gt;TransactionAspectSupport&lt;/code&gt; 。&lt;/p&gt;
+&lt;figure class=&#34;highlight java&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;12&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;meta&#34;&gt;@Transactional(rollbackFor = Exception.class)&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;meta&#34;&gt;@Override&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;function&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;public&lt;/span&gt; &lt;span class=&#34;keyword&#34;&gt;void&lt;/span&gt; &lt;span class=&#34;title&#34;&gt;saveEntity&lt;/span&gt;&lt;span class=&#34;params&#34;&gt;()&lt;/span&gt; &lt;span class=&#34;keyword&#34;&gt;throws&lt;/span&gt; Exception&lt;/span&gt;&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;keyword&#34;&gt;try&lt;/span&gt; &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        userDao.saveUser();&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        studentDao.saveStudent();&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &amp;#125;&lt;span class=&#34;keyword&#34;&gt;catch&lt;/span&gt; (Exception e)&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        System.out.println(&lt;span class=&#34;string&#34;&gt;&amp;quot;异常了=====&amp;quot;&lt;/span&gt; + e);&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        &lt;span class=&#34;comment&#34;&gt;//手动强制回滚事务，这里一定要第一时间处理&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        TransactionAspectSupport.currentTransactionStatus().setRollbackOnly();&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;手动回滚事务一定要加上 &lt;code&gt;@Transactional&lt;/code&gt; ，不然会报以下错误：&lt;/p&gt;
+&lt;figure class=&#34;highlight java&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;org.springframework.transaction.NoTransactionException: No transaction aspect-managed TransactionStatus in scope&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;想想也是，不开启事务，何来手动回滚，所以 &lt;code&gt;@Transactional&lt;/code&gt;  必不可少。&lt;/p&gt;
+&lt;h1 id=&#34;二-回滚部分异常&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#二-回滚部分异常&#34;&gt;#&lt;/a&gt; 二、回滚部分异常&lt;/h1&gt;
+&lt;p&gt;使用 &lt;code&gt;Object savePoint = TransactionAspectSupport.currentTransactionStatus().createSavepoint()&lt;/code&gt; ; 设置回滚点。&lt;br&gt;
+使用 &lt;code&gt;TransactionAspectSupport.currentTransactionStatus().rollbackToSavepoint(savePoint)&lt;/code&gt; ; 回滚到 &lt;code&gt;savePoint&lt;/code&gt; 。&lt;/p&gt;
+&lt;figure class=&#34;highlight java&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;13&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;14&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;15&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;16&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;meta&#34;&gt;@Transactional(rollbackFor = Exception.class)&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;meta&#34;&gt;@Override&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;function&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;public&lt;/span&gt; &lt;span class=&#34;keyword&#34;&gt;void&lt;/span&gt; &lt;span class=&#34;title&#34;&gt;saveEntity&lt;/span&gt;&lt;span class=&#34;params&#34;&gt;()&lt;/span&gt; &lt;span class=&#34;keyword&#34;&gt;throws&lt;/span&gt; Exception&lt;/span&gt;&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    Object savePoint = &lt;span class=&#34;keyword&#34;&gt;null&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;keyword&#34;&gt;try&lt;/span&gt; &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        userDao.saveUser();&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        &lt;span class=&#34;comment&#34;&gt;//设置回滚点&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        savePoint = TransactionAspectSupport.currentTransactionStatus().createSavepoint();&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        studentDao.saveStudent(); &lt;span class=&#34;comment&#34;&gt;//执行成功&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        &lt;span class=&#34;keyword&#34;&gt;int&lt;/span&gt; a = &lt;span class=&#34;number&#34;&gt;10&lt;/span&gt;/&lt;span class=&#34;number&#34;&gt;0&lt;/span&gt;; &lt;span class=&#34;comment&#34;&gt;//这里因为除数0会报异常,进入catch块&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &amp;#125;&lt;span class=&#34;keyword&#34;&gt;catch&lt;/span&gt; (Exception e)&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        System.out.println(&lt;span class=&#34;string&#34;&gt;&amp;quot;异常了=====&amp;quot;&lt;/span&gt; + e);&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        &lt;span class=&#34;comment&#34;&gt;//手工回滚异常&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        TransactionAspectSupport.currentTransactionStatus().rollbackToSavepoint(savePoint);&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;h1 id=&#34;三-datasourcetransactionmanager&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#三-datasourcetransactionmanager&#34;&gt;#&lt;/a&gt; 三、 &lt;code&gt;DataSourceTransactionManager&lt;/code&gt;&lt;/h1&gt;
+&lt;p&gt;&lt;code&gt;spring&lt;/code&gt;  开启事务以及手动提交事务，可以在服务类上加上两个注解。&lt;/p&gt;
+&lt;figure class=&#34;highlight java&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;meta&#34;&gt;@Autowired&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;DataSourceTransactionManager dataSourceTransactionManager;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;meta&#34;&gt;@Autowired&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;TransactionDefinition transactionDefinition;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;ul&gt;
+&lt;li&gt;手动开启事务&lt;br&gt;
+ &lt;code&gt;TransactionStatus transactionStatus = dataSourceTransactionManager.getTransaction(transactionDefinition);&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;手动提交事务&lt;br&gt;
+ &lt;code&gt;dataSourceTransactionManager.commit(transactionStatus);//提交&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;手动回滚事务&lt;br&gt;
+ &lt;code&gt;dataSourceTransactionManager.rollback(transactionStatus);&lt;/code&gt; // 最好是放在 &lt;code&gt;catch&lt;/code&gt;  里面，防止程序异常而事务一直卡在哪里未提交&lt;/li&gt;
+&lt;/ul&gt;
+</content>
+        <category term="Java" />
+        <category term="Spring" />
+        <category term="事务" />
+        <updated>2021-12-16T10:49:45.000Z</updated>
+    </entry>
+</feed>

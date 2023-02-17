@@ -1,0 +1,143 @@
+<?xml version="1.0"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <id>https://smile1231.github.io</id>
+    <title>JIN MAO &#39;s Blog • Posts by &#34;选择排序&#34; tag</title>
+    <link href="https://smile1231.github.io" />
+    <updated>2022-03-12T13:45:07.000Z</updated>
+    <category term="生物信息" />
+    <category term="基因编辑" />
+    <category term="SAP" />
+    <category term="前端" />
+    <category term="Css" />
+    <category term="Java" />
+    <category term="Cache" />
+    <category term="Cookie" />
+    <category term="Session" />
+    <category term="Java面试" />
+    <category term="DDD" />
+    <category term="领域驱动设计" />
+    <category term="DisPlay属性" />
+    <category term="Docker" />
+    <category term="Corn" />
+    <category term="blog" />
+    <category term="hexo" />
+    <category term="next" />
+    <category term="IDEA" />
+    <category term="FastJson" />
+    <category term="SpringBoot" />
+    <category term="JavaScript" />
+    <category term="Html" />
+    <category term="Jvm" />
+    <category term="函数式接口" />
+    <category term="Jenkins" />
+    <category term="CI/CD" />
+    <category term="java" />
+    <category term="calender" />
+    <category term="map" />
+    <category term="Stream流" />
+    <category term="Springboot" />
+    <category term="Assert" />
+    <category term="Python" />
+    <category term="Jupyter" />
+    <category term="Machine Learning" />
+    <category term="LeetCode" />
+    <category term="算法" />
+    <category term="递归" />
+    <category term="numpy" />
+    <category term="pandas" />
+    <category term="sklearn" />
+    <category term="Mybatis" />
+    <category term="Linux" />
+    <category term="分页查询" />
+    <category term="Nginx" />
+    <category term="Spring" />
+    <category term="模糊查询" />
+    <category term="Spoken English" />
+    <category term="SrpingBoot" />
+    <category term="事务" />
+    <category term="TypeScript" />
+    <category term="WebPack" />
+    <category term="master" />
+    <category term="文件上传" />
+    <category term="Groovy" />
+    <category term="UML" />
+    <category term="Ubuntu" />
+    <category term="Mysql" />
+    <category term="VsCode" />
+    <category term="Shell" />
+    <category term="VSCODE" />
+    <category term="快捷键" />
+    <category term="Vue" />
+    <category term="Stream" />
+    <category term="git" />
+    <category term="日期" />
+    <category term="线程池" />
+    <category term="ubuntu" />
+    <category term="虚拟机" />
+    <category term="二分查找" />
+    <category term="数据挖掘" />
+    <category term="Hadoop" />
+    <category term="操作系统" />
+    <category term="EasyExcel" />
+    <category term="node" />
+    <category term="JVM" />
+    <category term="Yaml" />
+    <category term="junit" />
+    <category term="Hexo" />
+    <category term="数据库" />
+    <category term="Mysql事务" />
+    <category term="Git" />
+    <category term="冒泡排序" />
+    <category term="动态规划" />
+    <category term="git,npm,node" />
+    <category term="Google" />
+    <category term="多线程" />
+    <category term="堆排序" />
+    <category term="幂等性" />
+    <category term="流" />
+    <category term="快速排序" />
+    <category term="归并排序" />
+    <category term="正则表达式" />
+    <category term="直接插入排序" />
+    <category term="vue" />
+    <category term="选择排序" />
+    <category term="Java 面试" />
+    <category term="数据结构" />
+    <category term="阻塞队列" />
+    <category term="Spring事务" />
+    <category term="JDK" />
+    <category term="动态代理" />
+    <category term="Date" />
+    <category term="ArrayList" />
+    <category term="接口" />
+    <category term="SpringMvc" />
+    <category term="排序" />
+    <category term="执行计划" />
+    <category term="HashMap" />
+    <category term="Email" />
+    <category term="设计模式" />
+    <category term="cheatsheet" />
+    <entry>
+        <id>https://smile1231.github.io/posts/43d00a99/</id>
+        <title>选择排序</title>
+        <link rel="alternate" href="https://smile1231.github.io/posts/43d00a99/"/>
+        <content type="html">&lt;h2 id=&#34;选择排序不稳定on2&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#选择排序不稳定on2&#34;&gt;#&lt;/a&gt; 选择排序（不稳定）ON2&lt;/h2&gt;
+&lt;p&gt;从算法逻辑上看，选择排序是一种简单直观的排序算法，在简单选择排序过程中，所需移动记录的次数比较少。&lt;/p&gt;
+&lt;h3 id=&#34;1-基本思想&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#1-基本思想&#34;&gt;#&lt;/a&gt; 1、基本思想&lt;/h3&gt;
+&lt;p&gt;选择排序的基本思想：比较 + 交换。&lt;/p&gt;
+&lt;p&gt;在未排序序列中找到最小（大）元素，存放到未排序序列的起始位置。在所有的完全依靠交换去移动元素的排序方法中，选择排序属于非常好的一种。&lt;/p&gt;
+&lt;h3 id=&#34;2-算法描述&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#2-算法描述&#34;&gt;#&lt;/a&gt; 2、算法描述&lt;/h3&gt;
+&lt;p&gt;①. 从待排序序列中，找到关键字最小的元素；&lt;br&gt;
+②. 如果最小元素不是待排序序列的第一个元素，将其和第一个元素互换；&lt;br&gt;
+③. 从余下的 N - 1 个元素中，找出关键字最小的元素，重复①、②步，直到排序结束。&lt;/p&gt;
+&lt;h3 id=&#34;3-代码实现&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#3-代码实现&#34;&gt;#&lt;/a&gt; 3、代码实现&lt;/h3&gt;
+&lt;p&gt;选择排序比较简单，以下是我自己的实现，跟官方版差不多，所以完全可以参考。&lt;/p&gt;
+&lt;figure class=&#34;highlight java&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;13&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;14&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;15&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;16&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;function&#34;&gt;&lt;span class=&#34;keyword&#34;&gt;public&lt;/span&gt; &lt;span class=&#34;keyword&#34;&gt;static&lt;/span&gt; &lt;span class=&#34;keyword&#34;&gt;void&lt;/span&gt; &lt;span class=&#34;title&#34;&gt;selectionSort&lt;/span&gt;&lt;span class=&#34;params&#34;&gt;(&lt;span class=&#34;keyword&#34;&gt;int&lt;/span&gt;[] arr)&lt;/span&gt;&lt;/span&gt;&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &lt;span class=&#34;keyword&#34;&gt;for&lt;/span&gt;(&lt;span class=&#34;keyword&#34;&gt;int&lt;/span&gt; i = &lt;span class=&#34;number&#34;&gt;0&lt;/span&gt;; i &amp;lt; arr.length-&lt;span class=&#34;number&#34;&gt;1&lt;/span&gt;; i++)&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        &lt;span class=&#34;keyword&#34;&gt;int&lt;/span&gt; min = i;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        &lt;span class=&#34;keyword&#34;&gt;for&lt;/span&gt;(&lt;span class=&#34;keyword&#34;&gt;int&lt;/span&gt; j = i+&lt;span class=&#34;number&#34;&gt;1&lt;/span&gt;; j &amp;lt; arr.length; j++)&amp;#123;    &lt;span class=&#34;comment&#34;&gt;//选出之后待排序中值最小的位置&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;            &lt;span class=&#34;keyword&#34;&gt;if&lt;/span&gt;(arr[j] &amp;lt; arr[min])&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;                min = j;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;            &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        &lt;span class=&#34;keyword&#34;&gt;if&lt;/span&gt;(min != i)&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;            &lt;span class=&#34;keyword&#34;&gt;int&lt;/span&gt; temp = arr[min];      &lt;span class=&#34;comment&#34;&gt;//交换操作&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;            arr[min] = arr[i];&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;            arr[i] = temp;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;            System.out.println(&lt;span class=&#34;string&#34;&gt;&amp;quot;Sorting:  &amp;quot;&lt;/span&gt; + Arrays.toString(arr));&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;        &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;    &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9pdGltZXRyYXZlbGVyLmdpdGh1Yi5pby8yMDE3LzA3LzE4LyVFNSU4NSVBQiVFNSVBNCVBNyVFNiU4RSU5MiVFNSVCQSU4RiVFNyVBRSU5NyVFNiVCMyU5NSVFNiU4MCVCQiVFNyVCQiU5MyVFNCVCOCU4RWphdmElRTUlQUUlOUUlRTclOEUlQjAv&#34;&gt;链接&lt;/span&gt;&lt;/p&gt;
+</content>
+        <category term="Java面试" />
+        <category term="算法" />
+        <category term="选择排序" />
+        <updated>2022-03-12T13:45:07.000Z</updated>
+    </entry>
+</feed>
